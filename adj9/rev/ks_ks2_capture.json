@@ -1,0 +1,919 @@
+{
+ "ks2": {
+  "keystore2:25174": [],
+  "1-service-qti:623": [
+   {
+    "t": "mods",
+    "pid": 623,
+    "names": [
+     "libcrypto.so:HMAC_Final",
+     "libcrypto.so:EVP_DigestSignInit",
+     "libcrypto.so:HMAC",
+     "libcrypto.so:HMAC_Init_ex",
+     "libcrypto.so:EVP_DigestSignUpdate"
+    ]
+   },
+   {
+    "t": "hooked",
+    "name": "HMAC_Final",
+    "mod": "libcrypto.so",
+    "pid": 623
+   },
+   {
+    "t": "hooked",
+    "name": "EVP_DigestSignInit",
+    "mod": "libcrypto.so",
+    "pid": 623
+   },
+   {
+    "t": "hooked",
+    "name": "HMAC",
+    "mod": "libcrypto.so",
+    "pid": 623
+   },
+   {
+    "t": "hooked",
+    "name": "HMAC_Init_ex",
+    "mod": "libcrypto.so",
+    "pid": 623
+   },
+   {
+    "t": "hooked",
+    "name": "EVP_DigestSignUpdate",
+    "mod": "libcrypto.so",
+    "pid": 623
+   },
+   {
+    "t": "ready",
+    "pid": 623,
+    "hooks": 5
+   }
+  ],
+  "keystore2:29830": [
+   {
+    "t": "mods",
+    "pid": 29830,
+    "names": [
+     "libcrypto.so:EVP_DigestSignInit",
+     "libcrypto.so:HMAC",
+     "libcrypto.so:HMAC_Final",
+     "libcrypto.so:EVP_DigestSignUpdate",
+     "libcrypto.so:HMAC_Init_ex"
+    ]
+   },
+   {
+    "t": "hooked",
+    "name": "EVP_DigestSignInit",
+    "mod": "libcrypto.so",
+    "pid": 29830
+   },
+   {
+    "t": "hooked",
+    "name": "HMAC",
+    "mod": "libcrypto.so",
+    "pid": 29830
+   },
+   {
+    "t": "hooked",
+    "name": "HMAC_Final",
+    "mod": "libcrypto.so",
+    "pid": 29830
+   },
+   {
+    "t": "hooked",
+    "name": "EVP_DigestSignUpdate",
+    "mod": "libcrypto.so",
+    "pid": 29830
+   },
+   {
+    "t": "hooked",
+    "name": "HMAC_Init_ex",
+    "mod": "libcrypto.so",
+    "pid": 29830
+   },
+   {
+    "t": "ready",
+    "pid": 29830,
+    "hooks": 5
+   }
+  ]
+ },
+ "app_hooks": [
+  {
+   "t": "mods",
+   "pid": 29693,
+   "names": [
+    "libcrypto.so:EVP_DigestSignInit",
+    "libcrypto.so:HMAC",
+    "libcrypto.so:HMAC_Final",
+    "libcrypto.so:EVP_DigestSignUpdate",
+    "libcrypto.so:HMAC_Init_ex",
+    "libcrypto.so:EVP_DigestSignUpdate",
+    "libcrypto.so:HMAC_Init_ex",
+    "libcrypto.so:EVP_DigestSignInit",
+    "libcrypto.so:HMAC",
+    "libcrypto.so:HMAC_Final",
+    "libcrypto_httpengine.so:HMAC_Final",
+    "libcrypto_httpengine.so:HMAC_Init_ex",
+    "libcrypto_httpengine.so:HMAC",
+    "libcrypto_httpengine.so:EVP_DigestSignInit"
+   ]
+  },
+  {
+   "t": "hooked",
+   "name": "EVP_DigestSignInit",
+   "mod": "libcrypto.so",
+   "pid": 29693
+  },
+  {
+   "t": "hooked",
+   "name": "HMAC",
+   "mod": "libcrypto.so",
+   "pid": 29693
+  },
+  {
+   "t": "hooked",
+   "name": "HMAC_Final",
+   "mod": "libcrypto.so",
+   "pid": 29693
+  },
+  {
+   "t": "hooked",
+   "name": "EVP_DigestSignUpdate",
+   "mod": "libcrypto.so",
+   "pid": 29693
+  },
+  {
+   "t": "hooked",
+   "name": "HMAC_Init_ex",
+   "mod": "libcrypto.so",
+   "pid": 29693
+  },
+  {
+   "t": "hooked",
+   "name": "EVP_DigestSignUpdate",
+   "mod": "libcrypto.so",
+   "pid": 29693
+  },
+  {
+   "t": "hooked",
+   "name": "HMAC_Init_ex",
+   "mod": "libcrypto.so",
+   "pid": 29693
+  },
+  {
+   "t": "hooked",
+   "name": "EVP_DigestSignInit",
+   "mod": "libcrypto.so",
+   "pid": 29693
+  },
+  {
+   "t": "hooked",
+   "name": "HMAC",
+   "mod": "libcrypto.so",
+   "pid": 29693
+  },
+  {
+   "t": "hooked",
+   "name": "HMAC_Final",
+   "mod": "libcrypto.so",
+   "pid": 29693
+  },
+  {
+   "t": "hooked",
+   "name": "HMAC_Final",
+   "mod": "libcrypto_httpengine.so",
+   "pid": 29693
+  },
+  {
+   "t": "hooked",
+   "name": "HMAC_Init_ex",
+   "mod": "libcrypto_httpengine.so",
+   "pid": 29693
+  },
+  {
+   "t": "hooked",
+   "name": "HMAC",
+   "mod": "libcrypto_httpengine.so",
+   "pid": 29693
+  },
+  {
+   "t": "hooked",
+   "name": "EVP_DigestSignInit",
+   "mod": "libcrypto_httpengine.so",
+   "pid": 29693
+  },
+  {
+   "t": "ready",
+   "pid": 29693,
+   "hooks": 14
+  },
+  {
+   "t": "hmac_key",
+   "via": "HMAC(1shot)",
+   "pid": 29693,
+   "mod": "libcrypto.so",
+   "klen": 48,
+   "key": "n/a",
+   "mlen": 48,
+   "msg": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+  },
+  {
+   "t": "hmac_key",
+   "via": "HMAC_Init_ex",
+   "pid": 29693,
+   "mod": "libcrypto.so",
+   "klen": 48,
+   "key": "n/a",
+   "hex64": "n/a"
+  },
+  {
+   "t": "hmac_final",
+   "pid": 29693,
+   "mod": "libcrypto.so",
+   "out": "n/a"
+  },
+  {
+   "t": "hmac_key",
+   "via": "HMAC_Init_ex",
+   "pid": 29693,
+   "mod": "libcrypto.so",
+   "klen": 48,
+   "key": "n/a",
+   "hex64": "n/a"
+  },
+  {
+   "t": "hmac_key",
+   "via": "HMAC(1shot)",
+   "pid": 29693,
+   "mod": "libcrypto.so",
+   "klen": 48,
+   "key": "n/a",
+   "mlen": 32,
+   "msg": "n/a"
+  },
+  {
+   "t": "hmac_key",
+   "via": "HMAC_Init_ex",
+   "pid": 29693,
+   "mod": "libcrypto.so",
+   "klen": 48,
+   "key": "n/a",
+   "hex64": "n/a"
+  },
+  {
+   "t": "hmac_key",
+   "via": "HMAC_Init_ex",
+   "pid": 29693,
+   "mod": "libcrypto.so",
+   "klen": 48,
+   "key": "n/a",
+   "hex64": "n/a"
+  },
+  {
+   "t": "hmac_key",
+   "via": "HMAC_Init_ex",
+   "pid": 29693,
+   "mod": "libcrypto.so",
+   "klen": 48,
+   "key": "n/a",
+   "hex64": "n/a"
+  },
+  {
+   "t": "hmac_key",
+   "via": "HMAC_Init_ex",
+   "pid": 29693,
+   "mod": "libcrypto.so",
+   "klen": 48,
+   "key": "n/a",
+   "hex64": "n/a"
+  },
+  {
+   "t": "hmac_final",
+   "pid": 29693,
+   "mod": "libcrypto.so",
+   "out": "7063dd2174000000207190db74000000800fde21740000003dee53df74000000"
+  },
+  {
+   "t": "hmac_final",
+   "pid": 29693,
+   "mod": "libcrypto.so",
+   "out": "n/a"
+  },
+  {
+   "t": "hmac_key",
+   "via": "HMAC_Init_ex",
+   "pid": 29693,
+   "mod": "libcrypto.so",
+   "klen": 48,
+   "key": "n/a",
+   "hex64": "n/a"
+  },
+  {
+   "t": "hmac_key",
+   "via": "HMAC_Init_ex",
+   "pid": 29693,
+   "mod": "libcrypto.so",
+   "klen": 48,
+   "key": "n/a",
+   "hex64": "n/a"
+  },
+  {
+   "t": "hmac_key",
+   "via": "HMAC_Init_ex",
+   "pid": 29693,
+   "mod": "libcrypto.so",
+   "klen": 48,
+   "key": "n/a",
+   "hex64": "n/a"
+  },
+  {
+   "t": "hmac_final",
+   "pid": 29693,
+   "mod": "libcrypto.so",
+   "out": "c065dd2174000000110108ac000000002001000000000000f8ffffff00000000"
+  },
+  {
+   "t": "hmac_final",
+   "pid": 29693,
+   "mod": "libcrypto.so",
+   "out": "0100000000000000009c221978000000b171dd21740000002073dd2174000000"
+  },
+  {
+   "t": "hmac_final",
+   "pid": 29693,
+   "mod": "libcrypto.so",
+   "out": "90901c7200000000b072dd2174000000800fde21740000000000000000000000"
+  },
+  {
+   "t": "hmac_final",
+   "pid": 29693,
+   "mod": "libcrypto.so",
+   "out": "90901c7200000000b072dd2174000000800fde21740000000000000000000000"
+  },
+  {
+   "t": "hmac_final",
+   "pid": 29693,
+   "mod": "libcrypto.so",
+   "out": "90901c7200000000b072dd2174000000800fde21740000000000000000000000"
+  },
+  {
+   "t": "hmac_final",
+   "pid": 29693,
+   "mod": "libcrypto.so",
+   "out": "90901c7200000000b072dd2174000000800fde21740000000000000000000000"
+  }
+ ],
+ "app": [
+  {
+   "t": "probe",
+   "step": "use Mac ok"
+  },
+  {
+   "t": "probe",
+   "step": "use String ok"
+  },
+  {
+   "t": "probe",
+   "step": "use KeyStore ok"
+  },
+  {
+   "t": "probe",
+   "step": "getInstance ok"
+  },
+  {
+   "t": "probe",
+   "step": "load ok"
+  },
+  {
+   "t": "probe",
+   "step": "containsAlias ok"
+  },
+  {
+   "t": "probe",
+   "step": "had",
+   "v": "true"
+  },
+  {
+   "t": "probe",
+   "step": "getKey(over) ok"
+  },
+  {
+   "t": "probe",
+   "step": "key.getClass ERR",
+   "v": "TypeError: not a function  @  TypeError: not a function |     at <anonymous> (ks_probe_src.js:55)"
+  },
+  {
+   "t": "probe",
+   "step": "key class"
+  },
+  {
+   "t": "probe",
+   "step": "getEncoded ok"
+  },
+  {
+   "t": "probe",
+   "step": "key_encoded",
+   "v": "null (not exportable -> need native hook)"
+  },
+  {
+   "t": "probe",
+   "step": "default Mac provider",
+   "v": "AndroidOpenSSL"
+  },
+  {
+   "t": "probe",
+   "step": "SPI implementation",
+   "v": "com.android.org.conscrypt.OpenSSLMac$HmacSHA256"
+  },
+  {
+   "t": "probe",
+   "step": "probe provider ok"
+  },
+  {
+   "t": "probe",
+   "step": "prov#1",
+   "v": "AndroidOpenSSL -> com.android.org.conscrypt.OpenSSLMac$HmacSHA256"
+  },
+  {
+   "t": "probe",
+   "step": "prov#3",
+   "v": "AndroidKeyStoreBCWorkaround -> android.security.keystore2.AndroidKeyStoreHmacSpi$HmacSHA256"
+  },
+  {
+   "t": "probe",
+   "step": "enumerate Mac providers ok"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.NativeCrypto.EVP_DigestFinal_ex",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.NativeCrypto.EVP_DigestInit_ex",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.NativeCrypto.EVP_DigestSign",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.NativeCrypto.EVP_DigestSignFinal",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.NativeCrypto.EVP_DigestSignInit",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.NativeCrypto.EVP_DigestSignUpdate",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.NativeCrypto.EVP_DigestUpdate",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.NativeCrypto.HMAC_CTX_free",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.NativeCrypto.HMAC_CTX_new",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.NativeCrypto.HMAC_Final",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.NativeCrypto.HMAC_Init_ex",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.NativeCrypto.HMAC_Update",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hookedNamed com.android.org.conscrypt.NativeCrypto",
+   "v": "12 methods matched"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.OpenSSLMac.engineInit",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.OpenSSLMac.engineUpdate",
+   "v": "2 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.OpenSSLMac.engineDoFinal",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hookedNamed com.android.org.conscrypt.OpenSSLMac$HmacSHA256",
+   "v": "0 methods matched"
+  },
+  {
+   "t": "probe",
+   "step": "--- msg 0 ---",
+   "v": "PROBE-KEY2-MESSAGE"
+  },
+  {
+   "t": "probe",
+   "step": "Mac.getInstance2 ERR",
+   "v": "Error: java.security.NoSuchAlgorithmException: no such algorithm: HmacSHA256 for provider AndroidKeyStore  @  Error: java.security.NoSuchAlgorithmException: no such algorithm: HmacSHA256 for provider AndroidKeyStore |     at <anonymous> (/node_modules/frida-java-bridge/lib/env.js:230)"
+  },
+  {
+   "t": "probe",
+   "step": "mac_ks_0",
+   "v": "ERR getInstance"
+  },
+  {
+   "t": "probe",
+   "step": "Mac.getInstance1 ok"
+  },
+  {
+   "t": "probe",
+   "step": "Mac.init ok"
+  },
+  {
+   "t": "probe",
+   "step": "getBytes ok"
+  },
+  {
+   "t": "probe",
+   "step": "doFinal ok"
+  },
+  {
+   "t": "probe",
+   "step": "mac_def_0",
+   "v": "8f54cb1d0f46ef9bc9acd3dcb26e75da15e6584f13a93238292c56aa63f8f727"
+  },
+  {
+   "t": "mac",
+   "msg": "PROBE-KEY2-MESSAGE",
+   "ks_provider": "ERR getInstance",
+   "def_provider": "8f54cb1d0f46ef9bc9acd3dcb26e75da15e6584f13a93238292c56aa63f8f727"
+  },
+  {
+   "t": "probe",
+   "step": "--- msg 1 ---",
+   "v": "{\"a\":\"b\"}"
+  },
+  {
+   "t": "probe",
+   "step": "Mac.getInstance2 ERR",
+   "v": "Error: java.security.NoSuchAlgorithmException: no such algorithm: HmacSHA256 for provider AndroidKeyStore  @  Error: java.security.NoSuchAlgorithmException: no such algorithm: HmacSHA256 for provider AndroidKeyStore |     at <anonymous> (/node_modules/frida-java-bridge/lib/env.js:230)"
+  },
+  {
+   "t": "probe",
+   "step": "mac_ks_1",
+   "v": "ERR getInstance"
+  },
+  {
+   "t": "probe",
+   "step": "Mac.getInstance1 ok"
+  },
+  {
+   "t": "probe",
+   "step": "Mac.init ok"
+  },
+  {
+   "t": "probe",
+   "step": "getBytes ok"
+  },
+  {
+   "t": "probe",
+   "step": "doFinal ok"
+  },
+  {
+   "t": "probe",
+   "step": "mac_def_1",
+   "v": "3d1872b71322e4ec4d217af6a1620648af66d79b1fc5f9cab50fc12becb2fb77"
+  },
+  {
+   "t": "mac",
+   "msg": "{\"a\":\"b\"}",
+   "ks_provider": "ERR getInstance",
+   "def_provider": "3d1872b71322e4ec4d217af6a1620648af66d79b1fc5f9cab50fc12becb2fb77"
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef32ed",
+    "501900600376"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef32ed",
+    "b[27]30193117301506035504030c0e2a2e70656e74692e636f6d2e7472",
+    "0",
+    "27"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef32ed",
+    "b[16]00000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef136d",
+    "501900663168"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef136d",
+    "b[294]30820122300d06092a864886f70d01010105000382010f003082010a0282010100ea64a3",
+    "0",
+    "294"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef136d",
+    "b[20]0000000000000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef1e2d",
+    "501900663280"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef1e2d",
+    "b[294]30820122300d06092a864886f70d01010105000382010f003082010a0282010100ea64a3",
+    "0",
+    "294"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef1e2d",
+    "b[32]0000000000000000000000000000000000000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef3bed",
+    "501900600376"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef3bed",
+    "b[201]3081c6310b30090603550406130255533110300e060355040813074172697a6f6e613113",
+    "0",
+    "201"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef3bed",
+    "b[16]00000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef3a0d",
+    "501900663168"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef3a0d",
+    "b[294]30820122300d06092a864886f70d01010105000382010f003082010a0282010100e59066",
+    "0",
+    "294"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef3a0d",
+    "b[20]0000000000000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef71ed",
+    "501900663280"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef71ed",
+    "b[294]30820122300d06092a864886f70d01010105000382010f003082010a0282010100e59066",
+    "0",
+    "294"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef71ed",
+    "b[32]0000000000000000000000000000000000000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef302d",
+    "501900600376"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef302d",
+    "b[146]30818f310b30090603550406130255533110300e060355040813074172697a6f6e613113",
+    "0",
+    "146"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef302d",
+    "b[16]00000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef19ad",
+    "501900663168"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef19ad",
+    "b[294]30820122300d06092a864886f70d01010105000382010f003082010a0282010100bdedc1",
+    "0",
+    "294"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef19ad",
+    "b[20]0000000000000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ee214d",
+    "501900663280"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ee214d",
+    "b[294]30820122300d06092a864886f70d01010105000382010f003082010a0282010100bdedc1",
+    "0",
+    "294"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ee214d",
+    "b[32]0000000000000000000000000000000000000000000000000000000000000000",
+    "0"
+   ]
+  }
+ ],
+ "ks2_pids": [
+  25174,
+  623,
+  29830
+ ]
+}

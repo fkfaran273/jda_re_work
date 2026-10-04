@@ -1,0 +1,16 @@
+{
+ "click_id": "846262e0-a929-43d5-a2bf-0e5ee25d263f",
+ "device_gaid": "9d1cf722-8ec5-4b73-a0ff-1e14a2f02271",
+ "reftag": "cQaQhwCnWQw2a",
+ "verdict": {
+  "tracker_token": "wy7261z",
+  "tracker_name": "Organic",
+  "network": "Organic",
+  "engagement_time": "0001-01-01T00:00:00Z",
+  "installed_at": "2026-09-16T11:12:03Z",
+  "first_session_time": "2026-09-16T11:12:03Z",
+  "is_reattributed": false,
+  "is_redownload_install": false
+ },
+ "state_ref": "utm_source=(not%20set)&utm_medium=(not%20set)ppppppt"
+}

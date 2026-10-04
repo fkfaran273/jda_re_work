@@ -1,0 +1,208 @@
+RAW-ONLY VERIFICATION (notes/*.md and derived captures are not read)
+
+######## adj9_wh4.log ########
+=== CLAIMS FROM RAW sign_input RECORDS ===
+records: 8
+  attribution: 1
+    size:attribution: 1
+  click: 3
+    size:click: 3
+  session: 4
+    size:session: 4
+unsupported kinds: 0 (event/info have no desc10_keys/build_desc10 implementation)
+union of raw wire keys by kind:
+  attribution (29): activity_kind, adj_signing_id, adj_verification, algorithm, android_uuid, api_level, app_token, app_version, attribution_deeplink, client_sdk, created_at, device_name, device_type, environment, foreground, gps_adid, gps_adid_attempt, gps_adid_src, headers_id, initiated_by, native_version, needs_response_details, offline_mode_enabled, os_name, os_version, package_name, sent_at, tracking_enabled, ui_mode
+  click (49): activity_kind, adj_signing_id, adj_verification, algorithm, android_uuid, api_level, app_token, app_version, attribution_deeplink, client_sdk, connectivity_type, cpu_type, created_at, device_manufacturer, device_name, device_type, display_height, display_width, environment, foreground, google_play_instant, gps_adid, gps_adid_attempt, gps_adid_src, hardware_name, headers_id, installed_at, language, native_version, needs_response_details, offline_mode_enabled, os_build, os_name, os_version, package_name, referrer, referrer_api, screen_density, screen_format, screen_size, sent_at, session_count, session_length, source, subsession_count, time_spent, tracking_enabled, ui_mode, updated_at
+  session (50): activity_kind, adj_signing_id, adj_verification, algorithm, android_uuid, api_level, app_token, app_version, attribution_deeplink, client_sdk, connectivity_type, cpu_type, created_at, device_manufacturer, device_name, device_type, display_height, display_width, enqueue_size, environment, first_error, foreground, gps_adid, gps_adid_attempt, gps_adid_src, hardware_name, headers_id, initiating_package_name, installed_at, language, last_error, native_version, needs_response_details, offline_mode_enabled, os_build, os_name, os_version, package_name, retry_count, screen_density, screen_format, screen_size, sent_at, session_count, store_name_from_system, tracking_enabled, ui_mode, updated_at, wait_time, wait_total
+implemented claim-key unions by kind:
+  session (27): activity_kind, adj_signing_id, adj_verification, android_uuid, api_level, app_token, app_version, client_sdk, created_at, device_name, device_type, environment, gps_adid, gps_adid_src, hardware_name, headers_id, initiating_package_name, installed_at, native_version, os_build, os_name, os_version, package_name, session_count, store_name_from_system, tracking_enabled, updated_at
+  click (32): activity_kind, adj_signing_id, adj_verification, android_uuid, api_level, app_token, app_version, client_sdk, created_at, device_name, device_type, environment, google_play_instant, gps_adid, gps_adid_src, hardware_name, headers_id, installed_at, native_version, os_build, os_name, os_version, package_name, referrer, referrer_api, session_count, session_length, source, subsession_count, time_spent, tracking_enabled, updated_at
+  attribution (21): activity_kind, adj_signing_id, adj_verification, android_uuid, api_level, app_token, app_version, client_sdk, created_at, device_name, device_type, environment, gps_adid, gps_adid_src, headers_id, initiated_by, native_version, os_name, os_version, package_name, tracking_enabled
+wire-only key patterns (proves selection is not 'all sign_input params'):
+  attribution x1: gps_adid_attempt, foreground, sent_at, offline_mode_enabled, needs_response_details, attribution_deeplink, ui_mode, algorithm
+  click x3: gps_adid_attempt, language, foreground, connectivity_type, device_manufacturer, display_width, needs_response_details, cpu_type, screen_size, screen_format, sent_at, offline_mode_enabled, screen_density, attribution_deeplink, display_height, ui_mode, algorithm
+  session x4: gps_adid_attempt, wait_total, language, foreground, connectivity_type, device_manufacturer, display_width, needs_response_details, cpu_type, retry_count, screen_size, screen_format, last_error, wait_time, first_error, sent_at, offline_mode_enabled, screen_density, attribution_deeplink, display_height, ui_mode, enqueue_size, algorithm
+special raw values (repr proves exact characters/no escaping):
+  click:referrer (3 shown):
+    adj9_wh4.log:2698: 'utm_source=google-play&utm_medium=organic'
+    adj9_wh4.log:146981: 'utm_source=google-play&utm_medium=organic'
+    adj9_wh4.log:246031: 'utm_source=google-play&utm_medium=organic'
+  offset:attribution:+0200 (2 shown):
+    adj9_wh4.log:64459: '+0200'
+    adj9_wh4.log:64459: '+0200'
+  offset:click:+0200 (12 shown):
+    adj9_wh4.log:2698: '+0200'
+    adj9_wh4.log:2698: '+0200'
+    adj9_wh4.log:2698: '+0200'
+  offset:session:+0200 (16 shown):
+    adj9_wh4.log:2285: '+0200'
+    adj9_wh4.log:2285: '+0200'
+    adj9_wh4.log:2285: '+0200'
+map_toString exact unescaped reconstruction mismatches: 0
+raw UTF-8/order integrity mismatches: 0
+claim value mismatches: 0
+records with missing claim values: 0
+successful build_desc10 comparisons: 8
+total claim mismatches/events: 0
+=== AUTHORIZATION FROM RAW nsign utf8len=419 RECORDS ===
+nsign records: 8; authorization records: 8
+hypothesis results over all pairs:
+  (a) base64(blob): 8/8 exact; failures=0
+  (b) blob + nano_out bytes (5 encodings): 0/8 exact
+  (c) sha256/HMAC-SHA256 of blob (6 variants): 0/8 exact
+  (d) decoded signature XOR blob: 8/8 are all-zero; nonzero=0
+  mint_pipeline.auth_header exact full header: 8/8 exact; mismatches=0
+auth_header base64 component exact: 8/8
+nano_out/signing second conclusion: base64 input is exactly the 192-byte blob; nano_out and signing second are not appended, hashed, or XOR-mixed in the Authorization encoding (the second may already affect blob generation).
+constant values across every authorization record in these two logs:
+  headers_id: 1 unique -> ['10']
+  adj_signing_id: 1 unique -> ['1500000']
+  native_version: 1 unique -> ['5.0.0']
+  algorithm: 1 unique -> ['adj9']
+  adj_verification: 1 unique -> ['KlcAG2cbAAsKSl1KVi0FGiJbDHMI']
+authorization mismatches/events: 0
+exact evidence samples (signature prefix only):
+  adj9_wh4.log:2276 -> adj9_wh4.log:2291: len=192, nano_out=1846909670807, second=1789240076, sig[0:24]='IRws1CNvvthg5ltLP5m96qL0', xor_nonzero=0
+  adj9_wh4.log:2689 -> adj9_wh4.log:2704: len=192, nano_out=1847337274808, second=1789240076, sig[0:24]='OAGV3iEQ1XsE7no+Fcn3fiCf', xor_nonzero=0
+  adj9_wh4.log:64450 -> adj9_wh4.log:64465: len=192, nano_out=1850635619512, second=1789240079, sig[0:24]='A3S4HCnoSPQd4wpFD1Sv5jOg', xor_nonzero=0
+  adj9_wh4.log:133884 -> adj9_wh4.log:133905: len=192, nano_out=2000069156013, second=1789240229, sig[0:24]='UF8wx0+SkT4QhdojTjBrikS0', xor_nonzero=0
+
+######## adj9_wh2.log ########
+=== CLAIMS FROM RAW sign_input RECORDS ===
+records: 193
+  click: 71
+    size:click: 16
+    size:click: 55
+  event: 27
+    size:event: 1
+    size:event: 26
+  info: 18
+    size:info: 18
+  session: 77
+    size:session: 18
+    size:session: 55
+    size:session: 3
+    size:session: 1
+unsupported kinds: 45 (event/info have no desc10_keys/build_desc10 implementation)
+union of raw wire keys by kind:
+  click (50): activity_kind, adj_signing_id, adj_verification, algorithm, android_uuid, api_level, app_token, app_version, attribution_deeplink, client_sdk, connectivity_type, cpu_type, created_at, device_manufacturer, device_name, device_type, display_height, display_width, environment, foreground, google_play_instant, gps_adid, gps_adid_attempt, gps_adid_src, hardware_name, headers_id, installed_at, language, native_version, needs_response_details, offline_mode_enabled, os_build, os_name, os_version, package_name, push_token, referrer, referrer_api, screen_density, screen_format, screen_size, sent_at, session_count, session_length, source, subsession_count, time_spent, tracking_enabled, ui_mode, updated_at
+  event (54): activity_kind, adj_signing_id, adj_verification, algorithm, android_uuid, api_level, app_token, app_version, attribution_deeplink, client_sdk, connectivity_type, cpu_type, created_at, device_manufacturer, device_name, device_type, display_height, display_width, enqueue_size, environment, event_count, event_token, first_error, foreground, gps_adid, gps_adid_attempt, gps_adid_src, hardware_name, headers_id, language, last_error, native_version, needs_response_details, offline_mode_enabled, os_build, os_name, os_version, package_name, partner_params, push_token, retry_count, screen_density, screen_format, screen_size, sent_at, seq, session_count, session_length, subsession_count, time_spent, tracking_enabled, ui_mode, wait_time, wait_total
+  info (28): activity_kind, adj_signing_id, adj_verification, algorithm, android_uuid, app_token, attribution_deeplink, client_sdk, created_at, enqueue_size, environment, first_error, foreground, gps_adid, gps_adid_attempt, gps_adid_src, headers_id, last_error, native_version, needs_response_details, offline_mode_enabled, push_token, retry_count, sent_at, source, tracking_enabled, wait_time, wait_total
+  session (54): activity_kind, adj_signing_id, adj_verification, algorithm, android_uuid, api_level, app_token, app_version, attribution_deeplink, client_sdk, connectivity_type, cpu_type, created_at, device_manufacturer, device_name, device_type, display_height, display_width, enqueue_size, environment, first_error, foreground, gps_adid, gps_adid_attempt, gps_adid_src, hardware_name, headers_id, initiating_package_name, installed_at, language, last_error, native_version, needs_response_details, offline_mode_enabled, os_build, os_name, os_version, package_name, push_token, retry_count, screen_density, screen_format, screen_size, sent_at, session_count, session_length, store_name_from_system, subsession_count, time_spent, tracking_enabled, ui_mode, updated_at, wait_time, wait_total
+implemented claim-key unions by kind:
+  session (28): activity_kind, adj_signing_id, adj_verification, android_uuid, api_level, app_token, app_version, client_sdk, created_at, device_name, device_type, environment, gps_adid, gps_adid_src, hardware_name, headers_id, initiating_package_name, installed_at, native_version, os_build, os_name, os_version, package_name, push_token, session_count, store_name_from_system, tracking_enabled, updated_at
+  click (33): activity_kind, adj_signing_id, adj_verification, android_uuid, api_level, app_token, app_version, client_sdk, created_at, device_name, device_type, environment, google_play_instant, gps_adid, gps_adid_src, hardware_name, headers_id, installed_at, native_version, os_build, os_name, os_version, package_name, push_token, referrer, referrer_api, session_count, session_length, source, subsession_count, time_spent, tracking_enabled, updated_at
+  attribution (0): 
+wire-only key patterns (proves selection is not 'all sign_input params'):
+  click x71: gps_adid_attempt, language, foreground, connectivity_type, device_manufacturer, display_width, needs_response_details, cpu_type, screen_size, screen_format, sent_at, offline_mode_enabled, screen_density, attribution_deeplink, display_height, ui_mode, algorithm
+  session x73: gps_adid_attempt, wait_total, language, foreground, connectivity_type, device_manufacturer, display_width, needs_response_details, cpu_type, retry_count, screen_size, screen_format, last_error, wait_time, first_error, sent_at, offline_mode_enabled, screen_density, attribution_deeplink, display_height, ui_mode, enqueue_size, algorithm
+  session x3: gps_adid_attempt, session_length, wait_total, language, foreground, device_manufacturer, display_width, time_spent, needs_response_details, cpu_type, retry_count, screen_size, screen_format, last_error, subsession_count, wait_time, first_error, sent_at, offline_mode_enabled, screen_density, attribution_deeplink, display_height, ui_mode, enqueue_size, algorithm
+  session x1: gps_adid_attempt, session_length, wait_total, language, foreground, connectivity_type, device_manufacturer, display_width, time_spent, needs_response_details, cpu_type, retry_count, screen_size, screen_format, last_error, subsession_count, wait_time, first_error, sent_at, offline_mode_enabled, screen_density, attribution_deeplink, display_height, ui_mode, enqueue_size, algorithm
+special raw values (repr proves exact characters/no escaping):
+  click:referrer (3 shown):
+    adj9_wh2.log:2263: 'utm_source=google-play&utm_medium=organic'
+    adj9_wh2.log:4604: 'utm_source=google-play&utm_medium=organic'
+    adj9_wh2.log:6952: 'utm_source=google-play&utm_medium=organic'
+  event:partner_params (3 shown):
+    adj9_wh2.log:13096: '{"content_type":"product","content_id":"[\\"PH6ZQJP526SK-NV3\\",\\"PHNI7YJ326SK-BN75\\",\\"PYYZBZJR26IY-G09\\",\\"PHU1OZ0R26SK-BN83\\",\\"PHKP7A0Y26SK-GAS\\",\\"PHNI7YJ326SK-BR4\\",\\"PLSLK0NS06SK-T03\\",\\"PHU57HYA26SK-BN83\\",\\"PHNI7YJ326SK-BK3\\",\\"PHU1OZ0R26SK-BK3\\",\\"PNQR55R126SK-MIX\\",\\"PNI21HID26SK-BR23\\",\\"PHICHECX26SK-MLJ\\",\\"PHDRMVTV26SK-TZG\\",\\"PYN1X3TO24IY-10\\"]","value":"17249.84","currency":"TRY"}'
+    adj9_wh2.log:13601: '{"productCode":"PH6ZQJP526SK-BK3","amount":"1","content_type":"product","content_id":"PH6ZQJP526SK-BK3","value":"749.99","currency":"TRY"}'
+    adj9_wh2.log:19949: '{"content_type":"product","content_id":"[\\"PH6ZQJP526SK-BK3\\",\\"PH6ZQJP526SK-NV3\\",\\"PHNI7YJ326SK-BN75\\",\\"PYYZBZJR26IY-G09\\",\\"PHU1OZ0R26SK-BN83\\",\\"PHKP7A0Y26SK-GAS\\",\\"PHNI7YJ326SK-BR4\\",\\"PLSLK0NS06SK-T03\\",\\"PHU57HYA26SK-BN83\\",\\"PHNI7YJ326SK-BK3\\",\\"PHU1OZ0R26SK-BK3\\",\\"PNQR55R126SK-MIX\\",\\"PNI21HID26SK-BR23\\",\\"PHICHECX26SK-MLJ\\",\\"PHDRMVTV26SK-TZG\\",\\"PYN1X3TO24IY-10\\"]","value":"18999.83","currency":"TRY"}'
+  offset:click:+0200 (284 shown):
+    adj9_wh2.log:2263: '+0200'
+    adj9_wh2.log:2263: '+0200'
+    adj9_wh2.log:2263: '+0200'
+  offset:event:+0200 (54 shown):
+    adj9_wh2.log:13096: '+0200'
+    adj9_wh2.log:13096: '+0200'
+    adj9_wh2.log:13601: '+0200'
+  offset:info:+0200 (36 shown):
+    adj9_wh2.log:1371708: '+0200'
+    adj9_wh2.log:1371708: '+0200'
+    adj9_wh2.log:1416666: '+0200'
+  offset:session:+0200 (308 shown):
+    adj9_wh2.log:2218: '+0200'
+    adj9_wh2.log:2218: '+0200'
+    adj9_wh2.log:2218: '+0200'
+map_toString exact unescaped reconstruction mismatches: 0
+raw UTF-8/order integrity mismatches: 0
+claim value mismatches: 0
+records with missing claim values: 0
+successful build_desc10 comparisons: 148
+total claim mismatches/events: 45
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:13093 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:13598 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:19946 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:37303 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:39513 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:39549 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:46000 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:46036 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:52426 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:52462 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:60260 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:60296 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:60332 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:145803 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:146206 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:154573 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:154976 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:216155 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:216560 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:220961 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:311508 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:634063 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:1052516 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:1060877 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:1371705 implementation support: activity_kind='info': desc10 law known for kinds: session, click, attribution (got 'info')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:1416663 implementation support: activity_kind='info': desc10 law known for kinds: session, click, attribution (got 'info')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:1440196 implementation support: activity_kind='info': desc10 law known for kinds: session, click, attribution (got 'info')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:1477276 implementation support: activity_kind='info': desc10 law known for kinds: session, click, attribution (got 'info')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:1498856 implementation support: activity_kind='info': desc10 law known for kinds: session, click, attribution (got 'info')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:1532664 implementation support: activity_kind='info': desc10 law known for kinds: session, click, attribution (got 'info')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:1597468 implementation support: activity_kind='info': desc10 law known for kinds: session, click, attribution (got 'info')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:1667411 implementation support: activity_kind='info': desc10 law known for kinds: session, click, attribution (got 'info')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:1698543 implementation support: activity_kind='info': desc10 law known for kinds: session, click, attribution (got 'info')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:1775430 implementation support: activity_kind='info': desc10 law known for kinds: session, click, attribution (got 'info')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:1826808 implementation support: activity_kind='info': desc10 law known for kinds: session, click, attribution (got 'info')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:1885428 implementation support: activity_kind='info': desc10 law known for kinds: session, click, attribution (got 'info')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:1897132 implementation support: activity_kind='info': desc10 law known for kinds: session, click, attribution (got 'info')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:2100464 implementation support: activity_kind='info': desc10 law known for kinds: session, click, attribution (got 'info')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:2366609 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:2370982 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:2502470 implementation support: activity_kind='event': desc10 law known for kinds: session, click, attribution (got 'event')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:2714833 implementation support: activity_kind='info': desc10 law known for kinds: session, click, attribution (got 'info')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:2749589 implementation support: activity_kind='info': desc10 law known for kinds: session, click, attribution (got 'info')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:2813659 implementation support: activity_kind='info': desc10 law known for kinds: session, click, attribution (got 'info')
+  MISMATCH C:\Users\Apps\Downloads\com.penti.app\adj9\device\adj9_wh2.log:2891715 implementation support: activity_kind='info': desc10 law known for kinds: session, click, attribution (got 'info')
+=== AUTHORIZATION FROM RAW nsign utf8len=419 RECORDS ===
+nsign records: 41; authorization records: 193
+hypothesis results over all pairs:
+  (a) base64(blob): 41/41 exact; failures=0
+  (b) blob + nano_out bytes (5 encodings): 0/41 exact
+  (c) sha256/HMAC-SHA256 of blob (6 variants): 0/41 exact
+  (d) decoded signature XOR blob: 41/41 are all-zero; nonzero=0
+  mint_pipeline.auth_header exact full header: 41/41 exact; mismatches=0
+auth_header base64 component exact: 41/41
+nano_out/signing second conclusion: base64 input is exactly the 192-byte blob; nano_out and signing second are not appended, hashed, or XOR-mixed in the Authorization encoding (the second may already affect blob generation).
+constant values across every authorization record in these two logs:
+  headers_id: 1 unique -> ['10']
+  adj_signing_id: 1 unique -> ['1500000']
+  native_version: 1 unique -> ['5.0.0']
+  algorithm: 1 unique -> ['adj9']
+  adj_verification: 1 unique -> ['KlcAG2cbAAsKSl1KVi0FGiJbDHMI']
+authorization mismatches/events: 0
+exact evidence samples (signature prefix only):
+  adj9_wh2.log:160953 -> adj9_wh2.log:160968: len=192, nano_out=7299139789309, second=1789130948, sig[0:24]='Cu0+tVIPcX91yJfTHqmLZFy+', xor_nonzero=0
+  adj9_wh2.log:161518 -> adj9_wh2.log:161533: len=192, nano_out=7299867336725, second=1789130949, sig[0:24]='QDjPmzAyMj9xGfedSn6LdBEn', xor_nonzero=0
+  adj9_wh2.log:216149 -> adj9_wh2.log:216164: len=192, nano_out=7338270886020, second=1789130987, sig[0:24]='Ch0YEE8dBExiAOEECRpf374p', xor_nonzero=0
+  adj9_wh2.log:216554 -> adj9_wh2.log:216569: len=192, nano_out=7352036810308, second=1789131001, sig[0:24]='fP/i6yy8wIIs2SNVPXU7oSSh', xor_nonzero=0
+
+=== CROSS-LOG AUTHORIZATION CONSTANT CROSS-CHECK ===
+headers_id: 1 unique across 201 records
+  '10': 201 record(s)
+adj_signing_id: 1 unique across 201 records
+  '1500000': 201 record(s)
+adj_verification: 1 unique across 201 records
+  'KlcAG2cbAAsKSl1KVi0FGiJbDHMI': 201 record(s)
+
+CONCLUSION: only hypothesis (a), base64(192-byte blob), matches every nsign/Authorization pair. No nano_out or signing-second mixing is present.

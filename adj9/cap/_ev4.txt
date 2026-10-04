@@ -1,0 +1,37 @@
+1205 +  0.000s nsign_in               ---                        lvl=31 len=32
+1206 +  0.863s nsign                  1c2b162f2facdfa650b82f08   len=192
+1209 +  3.368s oracle_start           ---                        len=32
+1210 +  3.370s nsign_in               ---                        lvl=31 len=32
+1211 +  4.207s nsign                  41e034462d23200a054d5a52   len=192
+1212 +  4.208s oracle_same_0          41e034462d23200a054d5a52   len=192
+1213 +  4.609s nsign_in               ---                        lvl=31 len=32
+1214 +  5.423s nsign                  48a7cf451fc7997238157386   len=192
+1215 +  5.423s oracle_same_1          48a7cf451fc7997238157386   len=192
+1216 +  5.824s nsign_in               ---                        lvl=31 len=32
+1220 +  6.635s nsign                  31fcf5036e5db7cc4d5e383c   len=192
+1221 +  6.635s oracle_same_2          31fcf5036e5db7cc4d5e383c   len=192
+1222 +  6.648s nsign_in               ---                        lvl=31 len=32
+1223 +  7.036s nsign_in               ---                        lvl=31 len=32
+1224 +  7.454s nsign                  6b6dcc317c207d15139bc3c4   len=192
+1227 +  7.830s nsign                  6b6dcc317c207d15139bc3c4   len=192
+1228 +  7.830s oracle_hflip           6b6dcc317c207d15139bc3c4  
+1229 +  8.232s nsign_in               ---                        lvl=31 len=32
+1230 +  9.057s nsign                  25ff32ac7222edc676014884   len=192
+1231 +  9.057s oracle_mapflip         25ff32ac7222edc676014884  
+1232 +  9.359s nsign_in               ---                        lvl=31 len=32
+1233 + 10.185s nsign                  7bfbff1c52ee015c60b63592   len=192
+1234 + 10.185s oracle_zero_h          7bfbff1c52ee015c60b63592   len=192
+1235 + 10.487s nsign_in               ---                        lvl=31 len=32
+1236 + 11.315s nsign                  116392577b11bcbc0ce9e673   len=192
+1237 + 11.315s oracle_empty_map       116392577b11bcbc0ce9e673   len=192
+1238 + 11.617s nsign_in               ---                        lvl=0 len=32
+1239 + 11.617s nsign                  ---                        len=-1
+1240 + 11.617s oracle_level0          FA                         len=-1
+1241 + 11.919s nsign_in               ---                        lvl=0 len=32
+1242 + 11.919s nsign                  ---                        len=-1
+1243 + 11.919s oracle_all_garbage     FA                         len=-1
+1244 + 11.919s oracle_done            ---                       
+1248 + 25.693s nsign_in               ---                        lvl=31 len=32
+1249 + 26.516s nsign                  26e4c01256451dae1b710797   len=192
+1255 + 31.197s nsign_in               ---                        lvl=31 len=32
+1256 + 32.024s nsign                  05552b7127f577d87e8ff2e4   len=192

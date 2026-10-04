@@ -1,0 +1,64 @@
+# CLASS Lcom/adjust/sdk/sig/b;
+FIELD public final synthetic Lcom/adjust/sdk/sig/d;
+
+---- METHOD public constructor <init>((Lcom/adjust/sdk/sig/d; I)V)  ----
+  iput-object            v3, v2, Lcom/adjust/sdk/sig/b;->c Lcom/adjust/sdk/sig/d;
+  invoke-direct          v2, v3, Lcom/adjust/sdk/sig/a;-><init>(Lcom/adjust/sdk/sig/d;)V
+  invoke-virtual         v3, Lcom/adjust/sdk/sig/d;->a()I
+  move-result            v3
+  if-ltz                 v4, +007h
+  if-gt                  v4, v3, +005h
+  iput                   v4, v2, Lcom/adjust/sdk/sig/a;->a I
+  return-void            
+  const-string           v0, "index: "
+  const-string           v1, ", size: "
+  invoke-static          v4, v3, v0, v1, Landroidx/compose/animation/c;->n(I I Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v3
+  invoke-static          v3, Landroidx/sqlite/driver/a;->h(Ljava/lang/String;)V
+  const/4                v3, 0
+  throw                  v3
+
+---- METHOD public final add((Ljava/lang/Object;)V)  ----
+  new-instance           v2, Ljava/lang/UnsupportedOperationException;
+  const-string           v0, "Operation is not supported for read-only collection"
+  invoke-direct          v2, v0, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v2
+
+---- METHOD public final hasPrevious(()Z)  ----
+  iget                   v0, v1, Lcom/adjust/sdk/sig/a;->a I
+  if-lez                 v0, +004h
+  const/4                v0, 1
+  return                 v0
+  const/4                v0, 0
+  return                 v0
+
+---- METHOD public final nextIndex(()I)  ----
+  iget                   v0, v1, Lcom/adjust/sdk/sig/a;->a I
+  return                 v0
+
+---- METHOD public final previous(()Ljava/lang/Object;)  ----
+  invoke-virtual         v2, Lcom/adjust/sdk/sig/b;->hasPrevious()Z
+  move-result            v0
+  if-eqz                 v0, +00fh
+  iget-object            v0, v2, Lcom/adjust/sdk/sig/b;->c Lcom/adjust/sdk/sig/d;
+  iget                   v1, v2, Lcom/adjust/sdk/sig/a;->a I
+  add-int/lit8           v1, v1, -1
+  iput                   v1, v2, Lcom/adjust/sdk/sig/a;->a I
+  invoke-interface       v0, v1, Ljava/util/List;->get(I)Ljava/lang/Object;
+  move-result-object     v0
+  return-object          v0
+  invoke-static          Lorg/junit/rules/a;->a()V
+  const/4                v0, 0
+  return-object          v0
+
+---- METHOD public final previousIndex(()I)  ----
+  iget                   v0, v1, Lcom/adjust/sdk/sig/a;->a I
+  add-int/lit8           v0, v0, -1
+  return                 v0
+
+---- METHOD public final set((Ljava/lang/Object;)V)  ----
+  new-instance           v2, Ljava/lang/UnsupportedOperationException;
+  const-string           v0, "Operation is not supported for read-only collection"
+  invoke-direct          v2, v0, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v2
+######################################################################

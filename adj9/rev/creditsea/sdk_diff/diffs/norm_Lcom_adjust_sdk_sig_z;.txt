@@ -1,0 +1,19 @@
+--- 
++++ 
+@@ -68,6 +68,2 @@
+ new-instance vX, Lcom/adjust/sdk/sig/m1;
+-invoke-interface vX, Lcom/adjust/sdk/sig/l2;->b()Ljava/lang/String;
+-move-result-object vX
+-invoke-interface vX, Lcom/adjust/sdk/sig/l2;->d()Lcom/adjust/sdk/sig/p2;
+-move-result-object vX
+ new-instance vX, Ljava/lang/StringBuilder;
+@@ -75,2 +71,4 @@
+ invoke-direct vX, vX, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
++invoke-interface vX, Lcom/adjust/sdk/sig/l2;->b()Ljava/lang/String;
++move-result-object vX
+ invoke-virtual vX, vX, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+@@ -78,2 +76,4 @@
+ invoke-virtual vX, vX, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
++invoke-interface vX, Lcom/adjust/sdk/sig/l2;->d()Lcom/adjust/sdk/sig/p2;
++move-result-object vX
+ invoke-virtual vX, vX, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;

@@ -1,0 +1,1274 @@
+--- 
++++ 
+@@ -32,3 +32,3 @@
+ FIELD executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+-FIELD private firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++FIELD private firstSessionDelayManager Lcom/adjust/sdk/P;
+ FIELD private foregroundTimer Lcom/adjust/sdk/scheduler/TimerCycle;
+@@ -93,9 +93,9 @@
+ iput-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->cachedLastMeasurementConsentTrack Ljava/lang/Boolean;
+-new-instance vX, Lcom/adjust/sdk/FirstSessionDelayManager;
+-invoke-direct vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;-><init>(Lcom/adjust/sdk/ActivityHandler;)V
+-iput-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++new-instance vX, Lcom/adjust/sdk/P;
++invoke-direct vX, vX, Lcom/adjust/sdk/P;-><init>(Lcom/adjust/sdk/ActivityHandler;)V
++iput-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+-new-instance vX, Landroidx/work/impl/utils/c;
+-const/4 vX, 2
+-invoke-direct vX, vX, vX, vX, Landroidx/work/impl/utils/c;-><init>(Ljava/lang/Object; Ljava/lang/Object; I)V
++new-instance vX, Lc4/a;
++const/16 vX, 9
++invoke-direct vX, vX, vX, vX, Lc4/a;-><init>(I Ljava/lang/Object; Ljava/lang/Object;)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -135,3 +135,3 @@
+ return-void
+----- METHOD public static synthetic L (Lcom/adjust/sdk/ActivityHandler; Z)V ----
++---- METHOD public static synthetic L (Z Lcom/adjust/sdk/ActivityHandler;)V ----
+ invoke-static vX, vX, Lcom/adjust/sdk/ActivityHandler;->lambda$trackMeasurementConsent$38(Z Lcom/adjust/sdk/ActivityHandler;)V
+@@ -153,3 +153,3 @@
+ return-void
+----- METHOD public static synthetic R (Lcom/adjust/sdk/ActivityHandler; Z)V ----
++---- METHOD public static synthetic R (Z Lcom/adjust/sdk/ActivityHandler;)V ----
+ invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->lambda$setPlayStoreKidsComplianceInDelay$50(Z)V
+@@ -159,3 +159,3 @@
+ return-void
+----- METHOD public static synthetic T (Lcom/adjust/sdk/ActivityHandler; Z)V ----
++---- METHOD public static synthetic T (Z Lcom/adjust/sdk/ActivityHandler;)V ----
+ invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->lambda$setEnabled$6(Z)V
+@@ -177,3 +177,3 @@
+ return-void
+----- METHOD public static synthetic Z (Lcom/adjust/sdk/ActivityHandler; Z)V ----
++---- METHOD public static synthetic Z (Z Lcom/adjust/sdk/ActivityHandler;)V ----
+ invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->lambda$setEnabled$5(Z)V
+@@ -183,65 +183,5 @@
+ return-void
+----- METHOD public static synthetic access$000 (Lcom/adjust/sdk/ActivityHandler; Z)V ----
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->setAskingAttributionI(Z)V
+-return-void
+----- METHOD public static synthetic access$100 (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String;)V ----
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler;->sendInstallReferrerI(Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String;)V
+-return-void
+----- METHOD public static synthetic access$1000 (Lcom/adjust/sdk/ActivityHandler;)V ----
+-invoke-direct vX, Lcom/adjust/sdk/ActivityHandler;->gotOptOutResponseI()V
+-return-void
+----- METHOD public static synthetic access$1100 (Lcom/adjust/sdk/ActivityHandler;)V ----
+-invoke-direct vX, Lcom/adjust/sdk/ActivityHandler;->foregroundTimerFiredI()V
+-return-void
+----- METHOD public static synthetic access$1200 (Lcom/adjust/sdk/ActivityHandler;)V ----
+-invoke-direct vX, Lcom/adjust/sdk/ActivityHandler;->backgroundTimerFiredI()V
+-return-void
+----- METHOD public static synthetic access$1300 (Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/ActivityState; ----
++---- METHOD public static bridge synthetic a0 (Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/ActivityState; ----
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->activityState Lcom/adjust/sdk/ActivityState;
+ return-object vX
+----- METHOD public static synthetic access$1400 (Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustAttribution; ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->attribution Lcom/adjust/sdk/AdjustAttribution;
+-return-object vX
+----- METHOD public static synthetic access$1500 (Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustThirdPartySharingResult; ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->thirdPartySharingResult Lcom/adjust/sdk/AdjustThirdPartySharingResult;
+-return-object vX
+----- METHOD public static synthetic access$1600 (Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustConfig; ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-return-object vX
+----- METHOD public static synthetic access$1700 (Lcom/adjust/sdk/ActivityHandler; Z)V ----
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->setEnabledI(Z)V
+-return-void
+----- METHOD public static synthetic access$1800 (Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/ILogger; ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->logger Lcom/adjust/sdk/ILogger;
+-return-object vX
+----- METHOD public static synthetic access$1900 (Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/DeviceInfo; ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-return-object vX
+----- METHOD public static synthetic access$200 (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/LicenseData;)V ----
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->sendLicenseVerificationDataI(Lcom/adjust/sdk/LicenseData;)V
+-return-void
+----- METHOD public static synthetic access$2000 (Lcom/adjust/sdk/ActivityHandler; Landroid/content/Intent; Landroid/net/Uri;)V ----
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler;->launchDeeplinkMain(Landroid/content/Intent; Landroid/net/Uri;)V
+-return-void
+----- METHOD public static synthetic access$300 (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/EventResponseData;)V ----
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->launchEventResponseTasksI(Lcom/adjust/sdk/EventResponseData;)V
+-return-void
+----- METHOD public static synthetic access$400 (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/SdkClickResponseData;)V ----
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->launchSdkClickResponseTasksI(Lcom/adjust/sdk/SdkClickResponseData;)V
+-return-void
+----- METHOD public static synthetic access$500 (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/SessionResponseData;)V ----
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->launchSessionResponseTasksI(Lcom/adjust/sdk/SessionResponseData;)V
+-return-void
+----- METHOD public static synthetic access$600 (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/AttributionResponseData;)V ----
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->launchAttributionResponseTasksI(Lcom/adjust/sdk/AttributionResponseData;)V
+-return-void
+----- METHOD public static synthetic access$700 (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/PurchaseVerificationResponseData;)V ----
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->launchPurchaseVerificationResponseTasksI(Lcom/adjust/sdk/PurchaseVerificationResponseData;)V
+-return-void
+----- METHOD public static synthetic access$800 (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/ThirdPartySharingResponseData;)V ----
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->launchThirdPartySharingResponseTasksI(Lcom/adjust/sdk/ThirdPartySharingResponseData;)V
+-return-void
+----- METHOD public static synthetic access$900 (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/ResponseData;)V ----
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->processRemoteTriggersI(Lcom/adjust/sdk/ResponseData;)V
+-return-void
+ ---- METHOD public static synthetic b (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/OnIsEnabledListener;)V ----
+@@ -249,2 +189,5 @@
+ return-void
++---- METHOD public static bridge synthetic b0 (Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustConfig; ----
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
++return-object vX
+ ---- METHOD private backgroundTimerFiredI ()V ----
+@@ -292,5 +235,8 @@
+ return-void
+----- METHOD public static synthetic c (Lcom/adjust/sdk/ActivityHandler; Z)V ----
++---- METHOD public static synthetic c (Z Lcom/adjust/sdk/ActivityHandler;)V ----
+ invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->lambda$setOfflineMode$8(Z)V
+ return-void
++---- METHOD public static bridge synthetic c0 (Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustAttribution; ----
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->attribution Lcom/adjust/sdk/AdjustAttribution;
++return-object vX
+ ---- METHOD private canTrackMeasurementConsentI ()Z ----
+@@ -767,2 +713,22 @@
+ move-result-wide vX
++const-string "content_provider_samsung_maps"
++invoke-static vX, vX, vX, Lcom/adjust/sdk/PreinstallUtil;->hasNotBeenRead(Ljava/lang/String; J)Z
++move-result vX
++if BRANCH
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
++iget-object vX, vX, Lcom/adjust/sdk/AdjustConfig;->context Landroid/content/Context;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
++iget-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->packageName Ljava/lang/String;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->logger Lcom/adjust/sdk/ILogger;
++invoke-static vX, vX, vX, Lcom/adjust/sdk/PreinstallUtil;->getPayloadFromContentProviderSamsungMaps(Landroid/content/Context; Ljava/lang/String; Lcom/adjust/sdk/ILogger;)Ljava/lang/String;
++move-result-object vX
++if BRANCH
++invoke-virtual vX, Ljava/lang/String;->isEmpty()Z
++move-result vX
++if BRANCH
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->sdkClickHandler Lcom/adjust/sdk/ISdkClickHandler;
++invoke-interface vX, vX, vX, Lcom/adjust/sdk/ISdkClickHandler;->sendPreinstallPayload(Ljava/lang/String; Ljava/lang/String;)V
++GOTO
++invoke-static vX, vX, vX, Lcom/adjust/sdk/PreinstallUtil;->markAsRead(Ljava/lang/String; J)J
++move-result-wide vX
+ invoke-virtual vX, vX, vX, Lcom/adjust/sdk/SharedPreferencesManager;->setPreinstallPayloadReadStatus(J)V
+@@ -792,2 +758,5 @@
+ return-void
++---- METHOD public static bridge synthetic d0 (Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/DeviceInfo; ----
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
++return-object vX
+ ---- METHOD public static deleteActivityState (Landroid/content/Context;)Z ----
+@@ -846,4 +815,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->globalParameters Lcom/adjust/sdk/GlobalParameters;
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
+-invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; J)V
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
++move-object vX, vX
++invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; J)V
+ invoke-virtual vX, vX, Lcom/adjust/sdk/PackageBuilder;->buildThirdPartySharingPackage(Lcom/adjust/sdk/AdjustThirdPartySharing;)Lcom/adjust/sdk/ActivityPackage;
+@@ -855,5 +825,8 @@
+ return-void
+----- METHOD public static synthetic e (Lcom/adjust/sdk/ActivityHandler; Z)V ----
++---- METHOD public static synthetic e (Z Lcom/adjust/sdk/ActivityHandler;)V ----
+ invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->lambda$onActivityLifecycle$1(Z)V
+ return-void
++---- METHOD public static bridge synthetic e0 (Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/ILogger; ----
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->logger Lcom/adjust/sdk/ILogger;
++return-object vX
+ ---- METHOD private endI ()V ----
+@@ -873,2 +846,5 @@
+ return-void
++---- METHOD public static bridge synthetic f0 (Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustThirdPartySharingResult; ----
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->thirdPartySharingResult Lcom/adjust/sdk/AdjustThirdPartySharingResult;
++return-object vX
+ ---- METHOD private foregroundTimerFiredI ()V ----
+@@ -894,2 +870,5 @@
+ return-void
++---- METHOD public static bridge synthetic g0 (Lcom/adjust/sdk/ActivityHandler;)V ----
++invoke-direct vX, Lcom/adjust/sdk/ActivityHandler;->backgroundTimerFiredI()V
++return-void
+ ---- METHOD private gdprForgetMeI ()V ----
+@@ -918,4 +897,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->globalParameters Lcom/adjust/sdk/GlobalParameters;
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
+-invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; J)V
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
++move-object vX, vX
++invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; J)V
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->internalState Lcom/adjust/sdk/ActivityHandler$InternalState;
+@@ -1007,2 +987,5 @@
+ return-void
++---- METHOD public static bridge synthetic h0 (Lcom/adjust/sdk/ActivityHandler;)V ----
++invoke-direct vX, Lcom/adjust/sdk/ActivityHandler;->foregroundTimerFiredI()V
++return-void
+ ---- METHOD private handleAdidCallbackI ()V ----
+@@ -1059,4 +1042,5 @@
+ invoke-direct vX, vX, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$33;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$33;-><init>(Ljava/util/ArrayList; Ljava/lang/String;)V
++new-instance vX, Lcom/adjust/sdk/s;
++const/4 vX, 2
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/s;-><init>(I Ljava/lang/String; Ljava/util/ArrayList;)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+@@ -1086,4 +1070,5 @@
+ invoke-direct vX, vX, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$34;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$34;-><init>(Ljava/util/ArrayList; Ljava/lang/String;)V
++new-instance vX, Lcom/adjust/sdk/s;
++const/4 vX, 3
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/s;-><init>(I Ljava/lang/String; Ljava/util/ArrayList;)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+@@ -1150,4 +1135,5 @@
+ invoke-direct vX, vX, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$31;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$31;-><init>(Ljava/util/ArrayList; Lcom/adjust/sdk/AdjustAttribution;)V
++new-instance vX, Lcom/adjust/sdk/x;
++const/4 vX, 0
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/x;-><init>(Ljava/util/ArrayList; Lcom/adjust/sdk/AdjustAttribution; I)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+@@ -1176,4 +1162,5 @@
+ invoke-direct vX, vX, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$32;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$32;-><init>(Ljava/util/ArrayList; Lcom/adjust/sdk/AdjustAttribution;)V
++new-instance vX, Lcom/adjust/sdk/x;
++const/4 vX, 1
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/x;-><init>(Ljava/util/ArrayList; Lcom/adjust/sdk/AdjustAttribution; I)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+@@ -1228,4 +1215,5 @@
+ invoke-direct vX, vX, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$35;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$35;-><init>(Ljava/util/ArrayList; Lcom/adjust/sdk/AdjustThirdPartySharingResult;)V
++new-instance vX, Lcom/adjust/sdk/y;
++const/4 vX, 0
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/y;-><init>(Ljava/util/ArrayList; Lcom/adjust/sdk/AdjustThirdPartySharingResult; I)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+@@ -1253,2 +1241,5 @@
+ return-void
++---- METHOD public static bridge synthetic i0 (Lcom/adjust/sdk/ActivityHandler;)V ----
++invoke-direct vX, Lcom/adjust/sdk/ActivityHandler;->gotOptOutResponseI()V
++return-void
+ ---- METHOD private isEnabledI ()Z ----
+@@ -1278,7 +1269,16 @@
+ return-void
+----- METHOD public static synthetic k (Lcom/adjust/sdk/ActivityHandler; Z)V ----
++---- METHOD public static bridge synthetic j0 (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/AttributionResponseData;)V ----
++invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->launchAttributionResponseTasksI(Lcom/adjust/sdk/AttributionResponseData;)V
++return-void
++---- METHOD public static synthetic k (Z Lcom/adjust/sdk/ActivityHandler;)V ----
+ invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->lambda$onActivityLifecycle$0(Z)V
+ return-void
+----- METHOD public static synthetic l (Lcom/adjust/sdk/ActivityHandler; Z)V ----
++---- METHOD public static bridge synthetic k0 (Lcom/adjust/sdk/ActivityHandler; Landroid/content/Intent; Landroid/net/Uri;)V ----
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler;->launchDeeplinkMain(Landroid/content/Intent; Landroid/net/Uri;)V
++return-void
++---- METHOD public static synthetic l (Z Lcom/adjust/sdk/ActivityHandler;)V ----
+ invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->lambda$trackMeasurementConsent$39(Z)V
++return-void
++---- METHOD public static bridge synthetic l0 (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/EventResponseData;)V ----
++invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->launchEventResponseTasksI(Lcom/adjust/sdk/EventResponseData;)V
+ return-void
+@@ -1288,3 +1288,3 @@
+ ---- METHOD private synthetic lambda$addGlobalCallbackParameter$21 (Ljava/lang/String; Ljava/lang/String;)V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ new-instance vX, Lcom/adjust/sdk/k;
+@@ -1293,3 +1293,3 @@
+ const-string "add global callback parameter"
+-invoke-virtual vX, vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a(Ljava/lang/String; Lcom/adjust/sdk/IRunActivityHandler;)V
++invoke-virtual vX, vX, vX, Lcom/adjust/sdk/P;->b(Ljava/lang/String; Lcom/adjust/sdk/IRunActivityHandler;)V
+ return-void
+@@ -1299,3 +1299,3 @@
+ ---- METHOD private synthetic lambda$addGlobalPartnerParameter$23 (Ljava/lang/String; Ljava/lang/String;)V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ new-instance vX, Lcom/adjust/sdk/k;
+@@ -1304,7 +1304,7 @@
+ const-string "add global partner parameter"
+-invoke-virtual vX, vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a(Ljava/lang/String; Lcom/adjust/sdk/IRunActivityHandler;)V
++invoke-virtual vX, vX, vX, Lcom/adjust/sdk/P;->b(Ljava/lang/String; Lcom/adjust/sdk/IRunActivityHandler;)V
+ return-void
+ ---- METHOD private lambda$endFirstSessionDelay$48 ()V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
+-iget vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->c I
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
++iget vX, vX, Lcom/adjust/sdk/P;->c I
+ const/4 vX, 3
+@@ -1313,6 +1313,6 @@
+ const/4 vX, 4
+-iput vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->c I
+-iget-object vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a Lcom/adjust/sdk/ActivityHandler;
++iput vX, vX, Lcom/adjust/sdk/P;->c I
++iget-object vX, vX, Lcom/adjust/sdk/P;->a Lcom/adjust/sdk/ActivityHandler;
+ invoke-virtual vX, Lcom/adjust/sdk/ActivityHandler;->initI()V
+-iget-object vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->b Ljava/util/ArrayList;
++iget-object vX, vX, Lcom/adjust/sdk/P;->b Ljava/util/ArrayList;
+ invoke-virtual vX, Ljava/util/ArrayList;->size()I
+@@ -1332,3 +1332,3 @@
+ ---- METHOD private synthetic lambda$gdprForgetMe$35 ()V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ new-instance vX, Lcom/adjust/sdk/a;
+@@ -1337,3 +1337,3 @@
+ const-string "GDPR forget device"
+-invoke-virtual vX, vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
++invoke-virtual vX, vX, vX, Lcom/adjust/sdk/P;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
+ return-void
+@@ -1352,3 +1352,3 @@
+ ---- METHOD private synthetic lambda$isEnabled$11 (Lcom/adjust/sdk/OnIsEnabledListener;)V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ new-instance vX, Lcom/adjust/sdk/i;
+@@ -1357,3 +1357,3 @@
+ const-string "is SDK enabled"
+-invoke-virtual vX, vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
++invoke-virtual vX, vX, vX, Lcom/adjust/sdk/P;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
+ return-void
+@@ -1373,8 +1373,8 @@
+ invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->readEventMetadataI(Landroid/content/Context;)V
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
+-iget-object vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a Lcom/adjust/sdk/ActivityHandler;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
++iget-object vX, vX, Lcom/adjust/sdk/P;->a Lcom/adjust/sdk/ActivityHandler;
+ invoke-virtual vX, Lcom/adjust/sdk/ActivityHandler;->getActivityState()Lcom/adjust/sdk/ActivityState;
+ move-result-object vX
+-if BRANCH
+-iget-object vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a Lcom/adjust/sdk/ActivityHandler;
++iget-object vX, vX, Lcom/adjust/sdk/P;->a Lcom/adjust/sdk/ActivityHandler;
++if BRANCH
+ invoke-virtual vX, Lcom/adjust/sdk/ActivityHandler;->getAdjustConfig()Lcom/adjust/sdk/AdjustConfig;
+@@ -1384,9 +1384,8 @@
+ const/4 vX, 3
+-iput vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->c I
++iput vX, vX, Lcom/adjust/sdk/P;->c I
+ return-void
+ const/4 vX, 2
+-iput vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->c I
+-iget-object vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a Lcom/adjust/sdk/ActivityHandler;
++iput vX, vX, Lcom/adjust/sdk/P;->c I
+ invoke-virtual vX, Lcom/adjust/sdk/ActivityHandler;->initI()V
+-iget-object vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->b Ljava/util/ArrayList;
++iget-object vX, vX, Lcom/adjust/sdk/P;->b Ljava/util/ArrayList;
+ invoke-virtual vX, Ljava/util/ArrayList;->size()I
+@@ -1420,3 +1419,3 @@
+ ---- METHOD private synthetic lambda$onActivityLifecycle$1 (Z)V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ new-instance vX, Lcom/adjust/sdk/b;
+@@ -1425,3 +1424,3 @@
+ const-string "activity state"
+-invoke-virtual vX, vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
++invoke-virtual vX, vX, vX, Lcom/adjust/sdk/P;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
+ return-void
+@@ -1431,3 +1430,3 @@
+ ---- METHOD private synthetic lambda$processAndResolveDeeplink$15 (Lcom/adjust/sdk/AdjustDeeplink; J)V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ new-instance vX, Lcom/adjust/sdk/m;
+@@ -1436,6 +1435,7 @@
+ move-object vX, vX
++move-object vX, vX
+ move-wide vX, vX
+ invoke-direct/range vX ... vX, Lcom/adjust/sdk/m;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/AdjustDeeplink; J I)V
+-const-string "process and resolve deep link"
+-invoke-virtual vX, vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
++const-string/jumbo process and resolve deep link
++invoke-virtual vX, vX, vX, Lcom/adjust/sdk/P;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
+ return-void
+@@ -1445,5 +1445,6 @@
+ ---- METHOD private synthetic lambda$processDeeplink$13 (Lcom/adjust/sdk/AdjustDeeplink; J)V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ new-instance vX, Lcom/adjust/sdk/m;
+ const/4 vX, 1
++move-object vX, vX
+ move-object vX, vX
+@@ -1452,4 +1453,4 @@
+ invoke-direct/range vX ... vX, Lcom/adjust/sdk/m;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/AdjustDeeplink; J I)V
+-const-string "process deep link"
+-invoke-virtual vX, vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
++const-string/jumbo process deep link
++invoke-virtual vX, vX, vX, Lcom/adjust/sdk/P;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
+ return-void
+@@ -1459,3 +1460,3 @@
+ ---- METHOD private synthetic lambda$removeGlobalCallbackParameter$25 (Ljava/lang/String;)V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ new-instance vX, Lcom/adjust/sdk/f;
+@@ -1464,3 +1465,3 @@
+ const-string/jumbo remove global callback parameter
+-invoke-virtual vX, vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a(Ljava/lang/String; Lcom/adjust/sdk/IRunActivityHandler;)V
++invoke-virtual vX, vX, vX, Lcom/adjust/sdk/P;->b(Ljava/lang/String; Lcom/adjust/sdk/IRunActivityHandler;)V
+ return-void
+@@ -1470,3 +1471,3 @@
+ ---- METHOD private synthetic lambda$removeGlobalCallbackParameters$29 ()V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ new-instance vX, Lcom/adjust/sdk/c;
+@@ -1475,3 +1476,3 @@
+ const-string/jumbo remove global callback parameters
+-invoke-virtual vX, vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a(Ljava/lang/String; Lcom/adjust/sdk/IRunActivityHandler;)V
++invoke-virtual vX, vX, vX, Lcom/adjust/sdk/P;->b(Ljava/lang/String; Lcom/adjust/sdk/IRunActivityHandler;)V
+ return-void
+@@ -1481,3 +1482,3 @@
+ ---- METHOD private synthetic lambda$removeGlobalPartnerParameter$27 (Ljava/lang/String;)V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ new-instance vX, Lcom/adjust/sdk/f;
+@@ -1486,3 +1487,3 @@
+ const-string/jumbo remove global partner parameter
+-invoke-virtual vX, vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a(Ljava/lang/String; Lcom/adjust/sdk/IRunActivityHandler;)V
++invoke-virtual vX, vX, vX, Lcom/adjust/sdk/P;->b(Ljava/lang/String; Lcom/adjust/sdk/IRunActivityHandler;)V
+ return-void
+@@ -1492,3 +1493,3 @@
+ ---- METHOD private synthetic lambda$removeGlobalPartnerParameters$31 ()V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ new-instance vX, Lcom/adjust/sdk/c;
+@@ -1497,3 +1498,3 @@
+ const-string/jumbo remove global partner parameters
+-invoke-virtual vX, vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a(Ljava/lang/String; Lcom/adjust/sdk/IRunActivityHandler;)V
++invoke-virtual vX, vX, vX, Lcom/adjust/sdk/P;->b(Ljava/lang/String; Lcom/adjust/sdk/IRunActivityHandler;)V
+ return-void
+@@ -1503,3 +1504,3 @@
+ ---- METHOD private synthetic lambda$sendPreinstallReferrer$19 ()V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ new-instance vX, Lcom/adjust/sdk/a;
+@@ -1508,3 +1509,3 @@
+ const-string/jumbo send preinstall referrer
+-invoke-virtual vX, vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
++invoke-virtual vX, vX, vX, Lcom/adjust/sdk/P;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
+ return-void
+@@ -1514,3 +1515,3 @@
+ ---- METHOD private synthetic lambda$sendReftagReferrer$17 ()V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ new-instance vX, Lcom/adjust/sdk/a;
+@@ -1519,7 +1520,7 @@
+ const-string/jumbo send referrer
+-invoke-virtual vX, vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
++invoke-virtual vX, vX, vX, Lcom/adjust/sdk/P;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
+ return-void
+ ---- METHOD private lambda$setCoppaComplianceInDelay$49 (Z)V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
+-iget vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->c I
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
++iget vX, vX, Lcom/adjust/sdk/P;->c I
+ const/4 vX, 3
+@@ -1527,3 +1528,3 @@
+ return-void
+-iget-object vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a Lcom/adjust/sdk/ActivityHandler;
++iget-object vX, vX, Lcom/adjust/sdk/P;->a Lcom/adjust/sdk/ActivityHandler;
+ invoke-virtual vX, Lcom/adjust/sdk/ActivityHandler;->getAdjustConfig()Lcom/adjust/sdk/AdjustConfig;
+@@ -1536,3 +1537,3 @@
+ ---- METHOD private synthetic lambda$setEnabled$6 (Z)V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ if BRANCH
+@@ -1544,7 +1545,7 @@
+ invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/b;-><init>(Lcom/adjust/sdk/ActivityHandler; Z I)V
+-invoke-virtual vX, vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
++invoke-virtual vX, vX, vX, Lcom/adjust/sdk/P;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
+ return-void
+ ---- METHOD private lambda$setExternalDeviceIdInDelay$51 (Ljava/lang/String;)V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
+-iget vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->c I
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
++iget vX, vX, Lcom/adjust/sdk/P;->c I
+ const/4 vX, 3
+@@ -1552,3 +1553,3 @@
+ return-void
+-iget-object vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a Lcom/adjust/sdk/ActivityHandler;
++iget-object vX, vX, Lcom/adjust/sdk/P;->a Lcom/adjust/sdk/ActivityHandler;
+ invoke-virtual vX, Lcom/adjust/sdk/ActivityHandler;->getAdjustConfig()Lcom/adjust/sdk/AdjustConfig;
+@@ -1561,3 +1562,3 @@
+ ---- METHOD private synthetic lambda$setOfflineMode$8 (Z)V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ if BRANCH
+@@ -1569,7 +1570,7 @@
+ invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/b;-><init>(Lcom/adjust/sdk/ActivityHandler; Z I)V
+-invoke-virtual vX, vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
++invoke-virtual vX, vX, vX, Lcom/adjust/sdk/P;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
+ return-void
+ ---- METHOD private lambda$setPlayStoreKidsComplianceInDelay$50 (Z)V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
+-iget vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->c I
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
++iget vX, vX, Lcom/adjust/sdk/P;->c I
+ const/4 vX, 3
+@@ -1577,3 +1578,3 @@
+ return-void
+-iget-object vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a Lcom/adjust/sdk/ActivityHandler;
++iget-object vX, vX, Lcom/adjust/sdk/P;->a Lcom/adjust/sdk/ActivityHandler;
+ invoke-virtual vX, Lcom/adjust/sdk/ActivityHandler;->getAdjustConfig()Lcom/adjust/sdk/AdjustConfig;
+@@ -1595,3 +1596,3 @@
+ ---- METHOD private synthetic lambda$setPushToken$33 (Z Ljava/lang/String;)V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ new-instance vX, Lcom/adjust/sdk/p;
+@@ -1600,3 +1601,3 @@
+ const-string/jumbo set push token
+-invoke-virtual vX, vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
++invoke-virtual vX, vX, vX, Lcom/adjust/sdk/P;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
+ return-void
+@@ -1606,3 +1607,3 @@
+ ---- METHOD private synthetic lambda$trackAdRevenue$41 (Lcom/adjust/sdk/AdjustAdRevenue;)V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ new-instance vX, Lcom/adjust/sdk/d;
+@@ -1611,3 +1612,3 @@
+ const-string/jumbo track ad revenue
+-invoke-virtual vX, vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
++invoke-virtual vX, vX, vX, Lcom/adjust/sdk/P;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
+ return-void
+@@ -1627,3 +1628,3 @@
+ ---- METHOD private synthetic lambda$trackEvent$4 (Lcom/adjust/sdk/AdjustEvent;)V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ new-instance vX, Lcom/adjust/sdk/e;
+@@ -1632,3 +1633,3 @@
+ const-string/jumbo track event
+-invoke-virtual vX, vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
++invoke-virtual vX, vX, vX, Lcom/adjust/sdk/P;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
+ return-void
+@@ -1638,3 +1639,3 @@
+ ---- METHOD private synthetic lambda$trackMeasurementConsent$39 (Z)V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ new-instance vX, Lcom/adjust/sdk/n;
+@@ -1643,3 +1644,3 @@
+ const-string/jumbo track measurement consent
+-invoke-virtual vX, vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a(Ljava/lang/String; Lcom/adjust/sdk/IRunActivityHandler;)V
++invoke-virtual vX, vX, vX, Lcom/adjust/sdk/P;->b(Ljava/lang/String; Lcom/adjust/sdk/IRunActivityHandler;)V
+ return-void
+@@ -1649,3 +1650,3 @@
+ ---- METHOD private synthetic lambda$trackPlayStoreSubscription$43 (Lcom/adjust/sdk/AdjustPlayStoreSubscription;)V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ new-instance vX, Lcom/adjust/sdk/h;
+@@ -1654,3 +1655,3 @@
+ const-string/jumbo track play store subscription
+-invoke-virtual vX, vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
++invoke-virtual vX, vX, vX, Lcom/adjust/sdk/P;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
+ return-void
+@@ -1660,3 +1661,3 @@
+ ---- METHOD private synthetic lambda$trackThirdPartySharing$37 (Lcom/adjust/sdk/AdjustThirdPartySharing;)V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ new-instance vX, Lcom/adjust/sdk/l;
+@@ -1665,3 +1666,3 @@
+ const-string/jumbo track third party sharing
+-invoke-virtual vX, vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a(Ljava/lang/String; Lcom/adjust/sdk/IRunActivityHandler;)V
++invoke-virtual vX, vX, vX, Lcom/adjust/sdk/P;->b(Ljava/lang/String; Lcom/adjust/sdk/IRunActivityHandler;)V
+ return-void
+@@ -1671,3 +1672,3 @@
+ ---- METHOD private synthetic lambda$verifyAndTrackPlayStorePurchase$47 (Lcom/adjust/sdk/AdjustEvent; Lcom/adjust/sdk/OnPurchaseVerificationFinishedListener;)V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ new-instance vX, Lcom/adjust/sdk/q;
+@@ -1676,3 +1677,3 @@
+ const-string/jumbo verify and track play store purchase
+-invoke-virtual vX, vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
++invoke-virtual vX, vX, vX, Lcom/adjust/sdk/P;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
+ return-void
+@@ -1682,3 +1683,3 @@
+ ---- METHOD private synthetic lambda$verifyPlayStorePurchase$45 (Lcom/adjust/sdk/AdjustPlayStorePurchase; Lcom/adjust/sdk/OnPurchaseVerificationFinishedListener;)V ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ new-instance vX, Lcom/adjust/sdk/j;
+@@ -1687,3 +1688,3 @@
+ const-string/jumbo verify play store purchase
+-invoke-virtual vX, vX, vX, Lcom/adjust/sdk/FirstSessionDelayManager;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
++invoke-virtual vX, vX, vX, Lcom/adjust/sdk/P;->a(Ljava/lang/Runnable; Ljava/lang/String;)V
+ return-void
+@@ -1694,4 +1695,5 @@
+ return-void
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$48;
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler$48;-><init>(Lcom/adjust/sdk/ActivityHandler;)V
++new-instance vX, Lcom/adjust/sdk/z;
++const/4 vX, 2
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/z;-><init>(Lcom/adjust/sdk/ActivityHandler; I)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+@@ -1760,4 +1762,5 @@
+ invoke-interface vX, vX, vX, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$43;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$43;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/EventResponseData;)V
++new-instance vX, Lcom/adjust/sdk/A;
++const/4 vX, 0
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/A;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/EventResponseData; I)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+@@ -1772,4 +1775,5 @@
+ invoke-interface vX, vX, vX, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$44;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$44;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/EventResponseData;)V
++new-instance vX, Lcom/adjust/sdk/A;
++const/4 vX, 1
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/A;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/EventResponseData; I)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+@@ -1803,4 +1807,6 @@
+ move-object vX, vX
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$50;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$50;-><init>(Lcom/adjust/sdk/PurchaseVerificationResponseData; Lcom/adjust/sdk/AdjustPurchaseVerificationResult;)V
++new-instance vX, Lcom/adjust/sdk/C;
++const/16 vX, 8
++const/4 vX, 0
++invoke-direct vX, vX, vX, vX, vX, Lcom/adjust/sdk/C;-><init>(I Ljava/lang/Object; Ljava/lang/Object; Z)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+@@ -1834,4 +1840,6 @@
+ if BRANCH
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$45;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$45;-><init>(Lcom/adjust/sdk/OnDeeplinkResolvedListener; Lcom/adjust/sdk/SdkClickResponseData;)V
++new-instance vX, Lcom/adjust/sdk/C;
++const/4 vX, 7
++const/4 vX, 0
++invoke-direct vX, vX, vX, vX, vX, Lcom/adjust/sdk/C;-><init>(I Ljava/lang/Object; Ljava/lang/Object; Z)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+@@ -1849,4 +1857,5 @@
+ invoke-interface vX, vX, vX, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$46;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$46;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/SessionResponseData;)V
++new-instance vX, Lcom/adjust/sdk/B;
++const/4 vX, 0
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/B;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/SessionResponseData; I)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+@@ -1861,4 +1870,5 @@
+ invoke-interface vX, vX, vX, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$47;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$47;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/SessionResponseData;)V
++new-instance vX, Lcom/adjust/sdk/B;
++const/4 vX, 1
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/B;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/SessionResponseData; I)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+@@ -1907,4 +1917,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$14;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$14;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/ThirdPartySharingResponseData;)V
++new-instance vX, Lcom/adjust/sdk/C;
++const/4 vX, 4
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/C;-><init>(I Ljava/lang/Object; Ljava/lang/Object;)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -1940,4 +1951,5 @@
+ return-void
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$49;
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler$49;-><init>(Lcom/adjust/sdk/ActivityHandler;)V
++new-instance vX, Lcom/adjust/sdk/z;
++const/4 vX, 3
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/z;-><init>(Lcom/adjust/sdk/ActivityHandler; I)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+@@ -1947,4 +1959,10 @@
+ return-void
+----- METHOD public static synthetic n (Lcom/adjust/sdk/ActivityHandler; Z)V ----
++---- METHOD public static bridge synthetic m0 (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/PurchaseVerificationResponseData;)V ----
++invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->launchPurchaseVerificationResponseTasksI(Lcom/adjust/sdk/PurchaseVerificationResponseData;)V
++return-void
++---- METHOD public static synthetic n (Z Lcom/adjust/sdk/ActivityHandler;)V ----
+ invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->lambda$setCoppaComplianceInDelay$49(Z)V
++return-void
++---- METHOD public static bridge synthetic n0 (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/SdkClickResponseData;)V ----
++invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->launchSdkClickResponseTasksI(Lcom/adjust/sdk/SdkClickResponseData;)V
+ return-void
+@@ -1953,4 +1971,10 @@
+ return-void
+----- METHOD public static synthetic p (Lcom/adjust/sdk/ActivityHandler; Z)V ----
++---- METHOD public static bridge synthetic o0 (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/SessionResponseData;)V ----
++invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->launchSessionResponseTasksI(Lcom/adjust/sdk/SessionResponseData;)V
++return-void
++---- METHOD public static synthetic p (Z Lcom/adjust/sdk/ActivityHandler;)V ----
+ invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->lambda$setOfflineMode$7(Z)V
++return-void
++---- METHOD public static bridge synthetic p0 (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/ThirdPartySharingResponseData;)V ----
++invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->launchThirdPartySharingResponseTasksI(Lcom/adjust/sdk/ThirdPartySharingResponseData;)V
+ return-void
+@@ -2026,4 +2050,5 @@
+ move-result-object vX
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$52;
+-invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$52;-><init>(Lcom/adjust/sdk/ActivityHandler; Landroid/content/Intent; Landroid/net/Uri;)V
++new-instance vX, Lcom/adjust/sdk/D;
++const/4 vX, 0
++invoke-direct vX, vX, vX, vX, vX, Lcom/adjust/sdk/D;-><init>(Ljava/lang/Object; Ljava/lang/Object; Ljava/lang/Object; I)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+@@ -2072,9 +2097,10 @@
+ ---- METHOD private processDeeplinkI (Lcom/adjust/sdk/AdjustDeeplink; J)V ----
+-invoke-direct vX, Lcom/adjust/sdk/ActivityHandler;->isEnabledI()Z
+-move-result vX
+-if BRANCH
+-GOTO
+-if BRANCH
+-GOTO
+-invoke-virtual vX, Lcom/adjust/sdk/AdjustDeeplink;->getUrl()Landroid/net/Uri;
++move-object/from16 vX, vX
++invoke-direct/range vX, Lcom/adjust/sdk/ActivityHandler;->isEnabledI()Z
++move-result vX
++if BRANCH
++GOTO
++if BRANCH
++GOTO
++invoke-virtual/range vX, Lcom/adjust/sdk/AdjustDeeplink;->getUrl()Landroid/net/Uri;
+ move-result-object vX
+@@ -2083,3 +2109,3 @@
+ if BRANCH
+-invoke-virtual vX, Lcom/adjust/sdk/AdjustDeeplink;->getUrl()Landroid/net/Uri;
++invoke-virtual/range vX, Lcom/adjust/sdk/AdjustDeeplink;->getUrl()Landroid/net/Uri;
+ move-result-object vX
+@@ -2090,3 +2116,3 @@
+ invoke-direct vX, vX, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+-invoke-virtual vX, Lcom/adjust/sdk/AdjustDeeplink;->getUrl()Landroid/net/Uri;
++invoke-virtual/range vX, Lcom/adjust/sdk/AdjustDeeplink;->getUrl()Landroid/net/Uri;
+ move-result-object vX
+@@ -2103,3 +2129,3 @@
+ return-void
+-invoke-virtual vX, Lcom/adjust/sdk/AdjustDeeplink;->getUrl()Landroid/net/Uri;
++invoke-virtual/range vX, Lcom/adjust/sdk/AdjustDeeplink;->getUrl()Landroid/net/Uri;
+ move-result-object vX
+@@ -2108,3 +2134,3 @@
+ if BRANCH
+-invoke-virtual vX, Lcom/adjust/sdk/AdjustDeeplink;->getUrl()Landroid/net/Uri;
++invoke-virtual/range vX, Lcom/adjust/sdk/AdjustDeeplink;->getUrl()Landroid/net/Uri;
+ move-result-object vX
+@@ -2122,8 +2148,10 @@
+ if BRANCH
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$53;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$53;-><init>(Lcom/adjust/sdk/OnDeeplinkResolvedListener; Ljava/lang/String;)V
++new-instance vX, Lcom/adjust/sdk/C;
++const/16 vX, 9
++const/4 vX, 0
++invoke-direct vX, vX, vX, vX, vX, Lcom/adjust/sdk/C;-><init>(I Ljava/lang/Object; Ljava/lang/Object; Z)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+-invoke-virtual vX, Lcom/adjust/sdk/AdjustDeeplink;->getUrl()Landroid/net/Uri;
+-move-result-object vX
+-invoke-virtual vX, Lcom/adjust/sdk/AdjustDeeplink;->getReferrer()Landroid/net/Uri;
++invoke-virtual/range vX, Lcom/adjust/sdk/AdjustDeeplink;->getUrl()Landroid/net/Uri;
++move-result-object vX
++invoke-virtual/range vX, Lcom/adjust/sdk/AdjustDeeplink;->getReferrer()Landroid/net/Uri;
+ move-result-object vX
+@@ -2133,6 +2161,7 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->globalParameters Lcom/adjust/sdk/GlobalParameters;
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->internalState Lcom/adjust/sdk/ActivityHandler$InternalState;
+ move-wide/from16 vX, vX
+-invoke-static/range vX ... vX, Lcom/adjust/sdk/PackageFactory;->buildDeeplinkSdkClickPackage(Landroid/net/Uri; Landroid/net/Uri; J Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/ActivityPackage;
++move-object/from16 vX, vX
++invoke-static/range vX ... vX, Lcom/adjust/sdk/PackageFactory;->buildDeeplinkSdkClickPackage(Landroid/net/Uri; Landroid/net/Uri; J Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/ActivityPackage;
+ move-result-object vX
+@@ -2194,3 +2223,3 @@
+ move-result vX
+-if-ge vX, vX, +057h
++if-ge vX, vX, +059h
+ invoke-virtual vX, vX, Lorg/json/JSONArray;->optJSONObject(I)Lorg/json/JSONObject;
+@@ -2214,3 +2243,3 @@
+ GOTO
+-const-string "payload"
++const-string/jumbo payload
+ invoke-virtual vX, vX, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+@@ -2231,4 +2260,5 @@
+ invoke-direct vX, vX, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$51;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$51;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/AdjustRemoteTrigger;)V
++new-instance vX, Lcom/adjust/sdk/C;
++const/4 vX, 0
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/C;-><init>(I Ljava/lang/Object; Ljava/lang/Object;)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+@@ -2306,2 +2336,5 @@
+ return-void
++---- METHOD public static bridge synthetic q0 (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/ResponseData;)V ----
++invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->processRemoteTriggersI(Lcom/adjust/sdk/ResponseData;)V
++return-void
+ ---- METHOD public static queueGetAdidWithTimeout (J Lcom/adjust/sdk/OnAdidReadListener; Ljava/util/ArrayList; Landroid/content/Context;)V ----
+@@ -2313,4 +2346,5 @@
+ new-instance vX, Lcom/adjust/sdk/scheduler/TimerOnce;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$24;
+-invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$24;-><init>(Lcom/adjust/sdk/AdjustTimeoutCallback; Ljava/util/ArrayList; Landroid/content/Context;)V
++new-instance vX, Lcom/adjust/sdk/v;
++const/4 vX, 0
++invoke-direct vX, vX, vX, vX, vX, Lcom/adjust/sdk/v;-><init>(Lcom/adjust/sdk/AdjustTimeoutCallback; Ljava/util/ArrayList; Landroid/content/Context; I)V
+ const-string "Get Adid timeout timer"
+@@ -2330,4 +2364,5 @@
+ new-instance vX, Lcom/adjust/sdk/scheduler/TimerOnce;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$25;
+-invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$25;-><init>(Lcom/adjust/sdk/AdjustTimeoutCallback; Ljava/util/ArrayList; Landroid/content/Context;)V
++new-instance vX, Lcom/adjust/sdk/v;
++const/4 vX, 1
++invoke-direct vX, vX, vX, vX, vX, Lcom/adjust/sdk/v;-><init>(Lcom/adjust/sdk/AdjustTimeoutCallback; Ljava/util/ArrayList; Landroid/content/Context; I)V
+ const-string "Get Attribution timeout timer"
+@@ -2347,4 +2382,5 @@
+ new-instance vX, Lcom/adjust/sdk/scheduler/TimerOnce;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$26;
+-invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$26;-><init>(Lcom/adjust/sdk/AdjustTimeoutCallback; Ljava/util/ArrayList; Landroid/content/Context;)V
++new-instance vX, Lcom/adjust/sdk/v;
++const/4 vX, 2
++invoke-direct vX, vX, vX, vX, vX, Lcom/adjust/sdk/v;-><init>(Lcom/adjust/sdk/AdjustTimeoutCallback; Ljava/util/ArrayList; Landroid/content/Context; I)V
+ const-string "Get Third party sharing settings timeout timer"
+@@ -2359,2 +2395,5 @@
+ invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->lambda$trackAdRevenue$41(Lcom/adjust/sdk/AdjustAdRevenue;)V
++return-void
++---- METHOD public static bridge synthetic r0 (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String;)V ----
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler;->sendInstallReferrerI(Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String;)V
+ return-void
+@@ -2499,4 +2538,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$38;
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler$38;-><init>(Lcom/adjust/sdk/ActivityHandler;)V
++new-instance vX, Lcom/adjust/sdk/z;
++const/16 vX, 9
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/z;-><init>(Lcom/adjust/sdk/ActivityHandler; I)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -2505,4 +2545,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$39;
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler$39;-><init>(Lcom/adjust/sdk/ActivityHandler;)V
++new-instance vX, Lcom/adjust/sdk/z;
++const/16 vX, 10
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/z;-><init>(Lcom/adjust/sdk/ActivityHandler; I)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -2511,4 +2552,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$36;
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler$36;-><init>(Lcom/adjust/sdk/ActivityHandler;)V
++new-instance vX, Lcom/adjust/sdk/z;
++const/4 vX, 0
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/z;-><init>(Lcom/adjust/sdk/ActivityHandler; I)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -2517,4 +2559,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$40;
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler$40;-><init>(Lcom/adjust/sdk/ActivityHandler;)V
++new-instance vX, Lcom/adjust/sdk/z;
++const/16 vX, 11
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/z;-><init>(Lcom/adjust/sdk/ActivityHandler; I)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -2523,4 +2566,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$42;
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler$42;-><init>(Lcom/adjust/sdk/ActivityHandler;)V
++new-instance vX, Lcom/adjust/sdk/z;
++const/16 vX, 13
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/z;-><init>(Lcom/adjust/sdk/ActivityHandler; I)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -2529,4 +2573,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$41;
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler$41;-><init>(Lcom/adjust/sdk/ActivityHandler;)V
++new-instance vX, Lcom/adjust/sdk/z;
++const/16 vX, 12
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/z;-><init>(Lcom/adjust/sdk/ActivityHandler; I)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -2535,4 +2580,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$37;
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler$37;-><init>(Lcom/adjust/sdk/ActivityHandler;)V
++new-instance vX, Lcom/adjust/sdk/z;
++const/4 vX, 1
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/z;-><init>(Lcom/adjust/sdk/ActivityHandler; I)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -2569,2 +2615,5 @@
+ return-void
++---- METHOD public static bridge synthetic s0 (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/LicenseData;)V ----
++invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->sendLicenseVerificationDataI(Lcom/adjust/sdk/LicenseData;)V
++return-void
+ ---- METHOD private sendInstallReferrerI (Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String;)V ----
+@@ -2587,3 +2636,3 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->globalParameters Lcom/adjust/sdk/GlobalParameters;
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->internalState Lcom/adjust/sdk/ActivityHandler$InternalState;
+@@ -2591,3 +2640,3 @@
+ move-object vX, vX
+-invoke-static/range vX ... vX, Lcom/adjust/sdk/PackageFactory;->buildInstallReferrerSdkClickPackage(Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/ActivityPackage;
++invoke-static/range vX ... vX, Lcom/adjust/sdk/PackageFactory;->buildInstallReferrerSdkClickPackage(Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/ActivityPackage;
+ move-result-object vX
+@@ -2610,6 +2659,6 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->globalParameters Lcom/adjust/sdk/GlobalParameters;
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->internalState Lcom/adjust/sdk/ActivityHandler$InternalState;
+ move-object vX, vX
+-invoke-static/range vX ... vX, Lcom/adjust/sdk/PackageFactory;->buildLicenseVerificationSdkClickPackage(Lcom/adjust/sdk/LicenseData; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/ActivityPackage;
++invoke-static/range vX ... vX, Lcom/adjust/sdk/PackageFactory;->buildLicenseVerificationSdkClickPackage(Lcom/adjust/sdk/LicenseData; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/ActivityPackage;
+ move-result-object vX
+@@ -2773,4 +2822,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->globalParameters Lcom/adjust/sdk/GlobalParameters;
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
+-invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; J)V
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
++move-object vX, vX
++invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; J)V
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->internalState Lcom/adjust/sdk/ActivityHandler$InternalState;
+@@ -2941,2 +2991,5 @@
+ return-void
++---- METHOD public static bridge synthetic t0 (Z Lcom/adjust/sdk/ActivityHandler;)V ----
++invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->setAskingAttributionI(Z)V
++return-void
+ ---- METHOD private teardownActivityStateS ()V ----
+@@ -3046,4 +3099,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->globalParameters Lcom/adjust/sdk/GlobalParameters;
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
+-invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; J)V
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
++move-object vX, vX
++invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; J)V
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->internalState Lcom/adjust/sdk/ActivityHandler$InternalState;
+@@ -3096,4 +3150,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->globalParameters Lcom/adjust/sdk/GlobalParameters;
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
+-invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; J)V
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
++move-object vX, vX
++invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; J)V
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->internalState Lcom/adjust/sdk/ActivityHandler$InternalState;
+@@ -3125,4 +3180,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->globalParameters Lcom/adjust/sdk/GlobalParameters;
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
+-invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; J)V
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
++move-object vX, vX
++invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; J)V
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->internalState Lcom/adjust/sdk/ActivityHandler$InternalState;
+@@ -3170,4 +3226,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->globalParameters Lcom/adjust/sdk/GlobalParameters;
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
+-invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; J)V
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
++move-object vX, vX
++invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; J)V
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->internalState Lcom/adjust/sdk/ActivityHandler$InternalState;
+@@ -3189,4 +3246,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->globalParameters Lcom/adjust/sdk/GlobalParameters;
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
+-invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; J)V
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
++move-object vX, vX
++invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; J)V
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->internalState Lcom/adjust/sdk/ActivityHandler$InternalState;
+@@ -3206,5 +3264,6 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->globalParameters Lcom/adjust/sdk/GlobalParameters;
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
++move-object vX, vX
+ move-wide vX, vX
+-invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; J)V
++invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; J)V
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->internalState Lcom/adjust/sdk/ActivityHandler$InternalState;
+@@ -3220,2 +3279,5 @@
+ invoke-direct vX, Lcom/adjust/sdk/ActivityHandler;->lambda$gdprForgetMe$34()V
++return-void
++---- METHOD public static bridge synthetic u0 (Z Lcom/adjust/sdk/ActivityHandler;)V ----
++invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler;->setEnabledI(Z)V
+ return-void
+@@ -3287,4 +3349,5 @@
+ invoke-direct vX, vX, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$1;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$1;-><init>(Ljava/util/ArrayList; Ljava/lang/String;)V
++new-instance vX, Lcom/adjust/sdk/s;
++const/4 vX, 0
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/s;-><init>(I Ljava/lang/String; Ljava/util/ArrayList;)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+@@ -3312,4 +3375,5 @@
+ invoke-direct vX, vX, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$2;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$2;-><init>(Ljava/util/ArrayList; Ljava/lang/String;)V
++new-instance vX, Lcom/adjust/sdk/s;
++const/4 vX, 1
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/s;-><init>(I Ljava/lang/String; Ljava/util/ArrayList;)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+@@ -3349,3 +3413,3 @@
+ const-string ", except the Sdk Click Handler"
+-invoke-static vX, vX, Landroidx/compose/material/f;->j(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
++invoke-static vX, vX, LB2/a;->j(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+ move-result-object vX
+@@ -3399,4 +3463,5 @@
+ invoke-direct vX, vX, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$5;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$5;-><init>(Ljava/util/ArrayList; Lcom/adjust/sdk/AdjustThirdPartySharingResult;)V
++new-instance vX, Lcom/adjust/sdk/y;
++const/4 vX, 1
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/y;-><init>(Ljava/util/ArrayList; Lcom/adjust/sdk/AdjustThirdPartySharingResult; I)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+@@ -3483,4 +3548,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->globalParameters Lcom/adjust/sdk/GlobalParameters;
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
+-invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; J)V
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
++move-object vX, vX
++invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; J)V
+ invoke-virtual vX, vX, vX, Lcom/adjust/sdk/PackageBuilder;->buildVerificationPackage(Lcom/adjust/sdk/AdjustEvent; Lcom/adjust/sdk/OnPurchaseVerificationFinishedListener;)Lcom/adjust/sdk/ActivityPackage;
+@@ -3576,4 +3642,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->globalParameters Lcom/adjust/sdk/GlobalParameters;
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
+-invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; J)V
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
++move-object vX, vX
++invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; J)V
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->internalState Lcom/adjust/sdk/ActivityHandler$InternalState;
+@@ -3801,4 +3868,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$18;
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler$18;-><init>(Lcom/adjust/sdk/ActivityHandler;)V
++new-instance vX, Lcom/adjust/sdk/z;
++const/4 vX, 6
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/z;-><init>(Lcom/adjust/sdk/ActivityHandler; I)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -3849,4 +3917,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$17;
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler$17;-><init>(Lcom/adjust/sdk/ActivityHandler;)V
++new-instance vX, Lcom/adjust/sdk/z;
++const/4 vX, 5
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/z;-><init>(Lcom/adjust/sdk/ActivityHandler; I)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -3874,4 +3943,5 @@
+ invoke-direct vX, vX, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$19;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$19;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/OnAdidReadListener;)V
++new-instance vX, Lcom/adjust/sdk/r;
++const/4 vX, 0
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/r;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/OnAdidReadListener; I)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+@@ -3904,4 +3974,5 @@
+ invoke-direct vX, vX, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$20;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$20;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/OnAdidReadListener;)V
++new-instance vX, Lcom/adjust/sdk/r;
++const/4 vX, 1
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/r;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/OnAdidReadListener; I)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+@@ -3931,4 +4002,5 @@
+ invoke-direct vX, vX, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$21;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$21;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/OnAttributionReadListener;)V
++new-instance vX, Lcom/adjust/sdk/t;
++const/4 vX, 0
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/t;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/OnAttributionReadListener; I)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+@@ -3953,4 +4025,5 @@
+ invoke-direct vX, vX, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$22;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$22;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/OnAttributionReadListener;)V
++new-instance vX, Lcom/adjust/sdk/t;
++const/4 vX, 1
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/t;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/OnAttributionReadListener; I)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+@@ -3969,4 +4042,4 @@
+ return-object vX
+----- METHOD public getFirstSessionDelayManager ()Lcom/adjust/sdk/FirstSessionDelayManager; ----
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++---- METHOD public getFirstSessionDelayManager ()Lcom/adjust/sdk/P; ----
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->firstSessionDelayManager Lcom/adjust/sdk/P;
+ return-object vX
+@@ -3987,4 +4060,5 @@
+ invoke-direct vX, vX, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$23;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$23;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;)V
++new-instance vX, Lcom/adjust/sdk/C;
++const/4 vX, 6
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/C;-><init>(I Ljava/lang/Object; Ljava/lang/Object;)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+@@ -3998,4 +4072,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$16;
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler$16;-><init>(Lcom/adjust/sdk/ActivityHandler;)V
++new-instance vX, Lcom/adjust/sdk/z;
++const/4 vX, 4
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/z;-><init>(Lcom/adjust/sdk/ActivityHandler; I)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -4041,4 +4116,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;->preLaunchActionsArray Ljava/util/List;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$27;
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler$27;-><init>(Lcom/adjust/sdk/ActivityHandler;)V
++new-instance vX, Lcom/adjust/sdk/L;
++const/4 vX, 2
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/L;-><init>(Ljava/lang/Object; I)V
+ invoke-interface vX, vX, Ljava/util/List;->add(Ljava/lang/Object;)Z
+@@ -4062,13 +4138,13 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-invoke-virtual vX, vX, Lcom/adjust/sdk/DeviceInfo;->reloadPlayIds(Lcom/adjust/sdk/AdjustConfig;)V
++invoke-virtual vX, vX, Lcom/adjust/sdk/DeviceInfo;->reloadGoogleAdId(Lcom/adjust/sdk/AdjustConfig;)V
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-iget-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->playAdId Ljava/lang/String;
+-if BRANCH
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-invoke-static vX, Lcom/adjust/sdk/Util;->canReadPlayIds(Lcom/adjust/sdk/AdjustConfig;)Z
+-move-result vX
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->logger Lcom/adjust/sdk/ILogger;
+-if BRANCH
+-new-array vX, vX, [Ljava/lang/Object;
+-const-string "Cannot read Google Play Services Advertising ID with COPPA or play store kids app enabled"
++iget-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdId Ljava/lang/String;
++if BRANCH
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
++invoke-static vX, Lcom/adjust/sdk/Util;->isGoogleAdIdReadingEnabled(Lcom/adjust/sdk/AdjustConfig;)Z
++move-result vX
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->logger Lcom/adjust/sdk/ILogger;
++if BRANCH
++new-array vX, vX, [Ljava/lang/Object;
++const-string "Cannot read Google Advertising ID with COPPA or play store kids app enabled or reading disabled"
+ invoke-interface vX, vX, vX, Lcom/adjust/sdk/ILogger;->info(Ljava/lang/String; [Ljava/lang/Object;)V
+@@ -4076,3 +4152,3 @@
+ new-array vX, vX, [Ljava/lang/Object;
+-const-string "Unable to get Google Play Services Advertising ID at start time"
++const-string "Unable to get Google Advertising ID at start time"
+ invoke-interface vX, vX, vX, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+@@ -4082,8 +4158,8 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-invoke-static vX, Lcom/adjust/sdk/Util;->canReadNonPlayIds(Lcom/adjust/sdk/AdjustConfig;)Z
+-move-result vX
+-iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->logger Lcom/adjust/sdk/ILogger;
+-if BRANCH
+-new-array vX, vX, [Ljava/lang/Object;
+-const-string "Cannot read non Play IDs with COPPA or play store kids app enabled"
++invoke-static vX, Lcom/adjust/sdk/Util;->isAndroidIdReadingEnabled(Lcom/adjust/sdk/AdjustConfig;)Z
++move-result vX
++iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->logger Lcom/adjust/sdk/ILogger;
++if BRANCH
++new-array vX, vX, [Ljava/lang/Object;
++const-string "Cannot read Android ID with COPPA or play store kids app enabled or reading disabled"
+ invoke-interface vX, vX, vX, Lcom/adjust/sdk/ILogger;->info(Ljava/lang/String; [Ljava/lang/Object;)V
+@@ -4091,3 +4167,3 @@
+ new-array vX, vX, [Ljava/lang/Object;
+-const-string "Unable to get any Device IDs. Please check if Proguard is correctly set with Adjust SDK"
++const-string "Unable to get Android Id. Please check if Proguard is correctly set with Adjust SDK"
+ invoke-interface vX, vX, vX, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+@@ -4157,4 +4233,5 @@
+ new-instance vX, Lcom/adjust/sdk/scheduler/TimerCycle;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$28;
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler$28;-><init>(Lcom/adjust/sdk/ActivityHandler;)V
++new-instance vX, Lcom/adjust/sdk/z;
++const/4 vX, 7
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/z;-><init>(Lcom/adjust/sdk/ActivityHandler; I)V
+ sget-wide vX, Lcom/adjust/sdk/ActivityHandler;->FOREGROUND_TIMER_START J
+@@ -4162,2 +4239,3 @@
+ const-string "Foreground timer"
++move-object vX, vX
+ invoke-direct/range vX ... vX, Lcom/adjust/sdk/scheduler/TimerCycle;-><init>(Ljava/lang/Runnable; J J Ljava/lang/String;)V
+@@ -4172,4 +4250,5 @@
+ new-instance vX, Lcom/adjust/sdk/scheduler/TimerOnce;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$29;
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler$29;-><init>(Lcom/adjust/sdk/ActivityHandler;)V
++new-instance vX, Lcom/adjust/sdk/z;
++const/16 vX, 8
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/z;-><init>(Lcom/adjust/sdk/ActivityHandler; I)V
+ const-string "Background timer"
+@@ -4189,2 +4268,3 @@
+ const vX, 60000
++move-object vX, vX
+ invoke-direct/range vX ... vX, Lcom/adjust/sdk/network/ActivityPackageSender;-><init>(Ljava/util/List; Z Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; I Landroid/content/Context;)V
+@@ -4209,2 +4289,3 @@
+ const vX, 60000
++move-object vX, vX
+ invoke-direct/range vX ... vX, Lcom/adjust/sdk/network/ActivityPackageSender;-><init>(Ljava/util/List; Z Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; I Landroid/content/Context;)V
+@@ -4227,2 +4308,3 @@
+ const vX, 60000
++move-object vX, vX
+ invoke-direct/range vX ... vX, Lcom/adjust/sdk/network/ActivityPackageSender;-><init>(Ljava/util/List; Z Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; I Landroid/content/Context;)V
+@@ -4245,2 +4327,3 @@
+ const/16 vX, 30000
++move-object vX, vX
+ invoke-direct/range vX ... vX, Lcom/adjust/sdk/network/ActivityPackageSender;-><init>(Ljava/util/List; Z Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; I Landroid/content/Context;)V
+@@ -4254,4 +4337,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/AdjustConfig;->context Landroid/content/Context;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$30;
+-invoke-direct vX, vX, Lcom/adjust/sdk/ActivityHandler$30;-><init>(Lcom/adjust/sdk/ActivityHandler;)V
++new-instance vX, Lcom/adjust/sdk/w;
++const/4 vX, 0
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/w;-><init>(Ljava/lang/Object; I)V
+ invoke-direct vX, vX, vX, Lcom/adjust/sdk/InstallReferrer;-><init>(Landroid/content/Context; Lcom/adjust/sdk/InstallReferrerReadListener;)V
+@@ -4278,4 +4362,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$12;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$12;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/AttributionResponseData;)V
++new-instance vX, Lcom/adjust/sdk/C;
++const/4 vX, 2
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/C;-><init>(I Ljava/lang/Object; Ljava/lang/Object;)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -4284,4 +4369,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$9;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$9;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/EventResponseData;)V
++new-instance vX, Lcom/adjust/sdk/A;
++const/4 vX, 2
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/A;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/EventResponseData; I)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -4290,4 +4376,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$13;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$13;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/PurchaseVerificationResponseData;)V
++new-instance vX, Lcom/adjust/sdk/C;
++const/4 vX, 3
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/C;-><init>(I Ljava/lang/Object; Ljava/lang/Object;)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -4296,4 +4383,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$10;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$10;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/SdkClickResponseData;)V
++new-instance vX, Lcom/adjust/sdk/C;
++const/4 vX, 1
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/C;-><init>(I Ljava/lang/Object; Ljava/lang/Object;)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -4302,4 +4390,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$11;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$11;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/SessionResponseData;)V
++new-instance vX, Lcom/adjust/sdk/B;
++const/4 vX, 2
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/B;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/SessionResponseData; I)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -4355,2 +4444,3 @@
+ move-object vX, vX
++move-object vX, vX
+ move-wide vX, vX
+@@ -4363,2 +4453,3 @@
+ const/4 vX, 0
++move-object vX, vX
+ move-object vX, vX
+@@ -4371,4 +4462,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$15;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$15;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/ResponseData;)V
++new-instance vX, Lcom/adjust/sdk/C;
++const/4 vX, 5
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/C;-><init>(I Ljava/lang/Object; Ljava/lang/Object;)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -4497,4 +4589,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$7;
+-invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$7;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String;)V
++new-instance vX, Lcom/adjust/sdk/D;
++const/4 vX, 1
++invoke-direct vX, vX, vX, vX, vX, Lcom/adjust/sdk/D;-><init>(Ljava/lang/Object; Ljava/lang/Object; Ljava/lang/Object; I)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -4503,4 +4596,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$8;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$8;-><init>(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/LicenseData;)V
++new-instance vX, Lcom/adjust/sdk/C;
++const/16 vX, 10
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/C;-><init>(I Ljava/lang/Object; Ljava/lang/Object;)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -4523,4 +4617,4 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$6;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$6;-><init>(Lcom/adjust/sdk/ActivityHandler; Z)V
++new-instance vX, Lcom/adjust/sdk/E;
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/E;-><init>(Z Lcom/adjust/sdk/ActivityHandler;)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -4648,5 +4742,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/ActivityHandler;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+-new-instance vX, Landroidx/work/impl/utils/c;
+-const/4 vX, 1
+-invoke-direct vX, vX, vX, vX, Landroidx/work/impl/utils/c;-><init>(Ljava/lang/Object; Ljava/lang/Object; I)V
++new-instance vX, Lc4/a;
++const/16 vX, 8
++invoke-direct vX, vX, vX, vX, Lc4/a;-><init>(I Ljava/lang/Object; Ljava/lang/Object;)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -4709,4 +4803,5 @@
+ invoke-direct vX, vX, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$3;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$3;-><init>(Ljava/util/ArrayList; Lcom/adjust/sdk/AdjustAttribution;)V
++new-instance vX, Lcom/adjust/sdk/x;
++const/4 vX, 2
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/x;-><init>(Ljava/util/ArrayList; Lcom/adjust/sdk/AdjustAttribution; I)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+@@ -4734,4 +4829,5 @@
+ invoke-direct vX, vX, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+-new-instance vX, Lcom/adjust/sdk/ActivityHandler$4;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/ActivityHandler$4;-><init>(Ljava/util/ArrayList; Lcom/adjust/sdk/AdjustAttribution;)V
++new-instance vX, Lcom/adjust/sdk/x;
++const/4 vX, 3
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/x;-><init>(Ljava/util/ArrayList; Lcom/adjust/sdk/AdjustAttribution; I)V
+ invoke-virtual vX, vX, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z

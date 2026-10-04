@@ -1,0 +1,17 @@
+{
+ "mode": "read",
+ "gps": "9501a7f0-9710-4093-99ac-dabb15809b56",
+ "auid": "e4637199-7043-4033-ab10-697b809d9152",
+ "polls": [
+  [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"690b25774bd751d5baba626e74085cb5\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-15T07:17:20.0405348Z\",\"first_session_time\":\"2026-09-15T07:17:20.0405348Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+  ],
+  [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"690b25774bd751d5baba626e74085cb5\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-15T07:19:01.25237661Z\",\"first_session_time\":\"2026-09-15T07:19:01.25237661Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+  ]
+ ],
+ "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z / inst=2026-09-15T07:19:01.25237661Z",
+ "clicker_ip": "88.226.149.254"
+}

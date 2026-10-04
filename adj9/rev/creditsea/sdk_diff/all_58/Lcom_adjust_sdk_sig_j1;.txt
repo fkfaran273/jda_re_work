@@ -1,0 +1,16 @@
+# CLASS Lcom/adjust/sdk/sig/j1;
+FIELD public a Z
+FIELD public b Z
+FIELD public final c I
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/sig/i1;)V ----
+  invoke-direct          v1, Ljava/lang/Object;-><init>()V
+  iget-object            v2, v2, Lcom/adjust/sdk/sig/i1;->a Lcom/adjust/sdk/sig/l1;
+  iget-boolean           v0, v2, Lcom/adjust/sdk/sig/l1;->a Z
+  iput-boolean           v0, v1, Lcom/adjust/sdk/sig/j1;->a Z
+  iget-boolean           v0, v2, Lcom/adjust/sdk/sig/l1;->b Z
+  iput-boolean           v0, v1, Lcom/adjust/sdk/sig/j1;->b Z
+  iget                   v2, v2, Lcom/adjust/sdk/sig/l1;->c I
+  iput                   v2, v1, Lcom/adjust/sdk/sig/j1;->c I
+  return-void            
+######################################################################

@@ -1,0 +1,63 @@
+# CLASS Lcom/adjust/sdk/sig/a2;
+FIELD public final a Ljava/lang/Object;
+FIELD public final b Ljava/lang/Integer;
+
+---- METHOD public constructor <init> (Ljava/lang/Class; Ljava/lang/Integer;)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/sig/a2;->a Ljava/lang/Object;
+  iput-object            v2, v0, Lcom/adjust/sdk/sig/a2;->b Ljava/lang/Integer;
+  return-void            
+
+---- METHOD public final equals (Ljava/lang/Object;)Z ----
+  const/4                v0, 1
+  if-ne                  v4, v5, +003h
+  return                 v0
+  instance-of            v1, v5, Lcom/adjust/sdk/sig/a2;
+  const/4                v2, 0
+  if-nez                 v1, +003h
+  return                 v2
+  check-cast             v5, Lcom/adjust/sdk/sig/a2;
+  iget-object            v1, v4, Lcom/adjust/sdk/sig/a2;->a Ljava/lang/Object;
+  iget-object            v3, v5, Lcom/adjust/sdk/sig/a2;->a Ljava/lang/Object;
+  invoke-static          v1, v3, Lcom/adjust/sdk/sig/g1;->a(Ljava/lang/Object; Ljava/lang/Object;)Z
+  move-result            v1
+  if-nez                 v1, +003h
+  return                 v2
+  iget-object            v1, v4, Lcom/adjust/sdk/sig/a2;->b Ljava/lang/Integer;
+  iget-object            v5, v5, Lcom/adjust/sdk/sig/a2;->b Ljava/lang/Integer;
+  invoke-virtual         v1, v5, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+  move-result            v5
+  if-nez                 v5, +003h
+  return                 v2
+  return                 v0
+
+---- METHOD public final hashCode ()I ----
+  iget-object            v0, v2, Lcom/adjust/sdk/sig/a2;->a Ljava/lang/Object;
+  if-nez                 v0, +004h
+  const/4                v0, 0
+  goto                   +5h
+  invoke-virtual         v0, Ljava/lang/Object;->hashCode()I
+  move-result            v0
+  mul-int/lit8           v0, v0, 31
+  iget-object            v1, v2, Lcom/adjust/sdk/sig/a2;->b Ljava/lang/Integer;
+  invoke-virtual         v1, Ljava/lang/Object;->hashCode()I
+  move-result            v1
+  add-int/2addr          v1, v0
+  return                 v1
+
+---- METHOD public final toString ()Ljava/lang/String; ----
+  new-instance           v0, Ljava/lang/StringBuilder;
+  const-string           v1, "("
+  invoke-direct          v0, v1, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  iget-object            v1, v2, Lcom/adjust/sdk/sig/a2;->a Ljava/lang/Object;
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  const-string           v1, ", "
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  iget-object            v1, v2, Lcom/adjust/sdk/sig/a2;->b Ljava/lang/Integer;
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  const/16               v1, 41
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+  invoke-virtual         v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+######################################################################

@@ -1,0 +1,28 @@
+# CLASS Lcom/adjust/sdk/scheduler/TimerOnce$1;
+FIELD public final synthetic a Lcom/adjust/sdk/scheduler/TimerOnce;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/scheduler/TimerOnce;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/scheduler/TimerOnce$1;->a Lcom/adjust/sdk/scheduler/TimerOnce;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v3, Lcom/adjust/sdk/scheduler/TimerOnce$1;->a Lcom/adjust/sdk/scheduler/TimerOnce;
+  invoke-static          v0, Lcom/adjust/sdk/scheduler/TimerOnce;->access$100(Lcom/adjust/sdk/scheduler/TimerOnce;)Lcom/adjust/sdk/ILogger;
+  move-result-object     v0
+  iget-object            v1, v3, Lcom/adjust/sdk/scheduler/TimerOnce$1;->a Lcom/adjust/sdk/scheduler/TimerOnce;
+  invoke-static          v1, Lcom/adjust/sdk/scheduler/TimerOnce;->access$000(Lcom/adjust/sdk/scheduler/TimerOnce;)Ljava/lang/String;
+  move-result-object     v1
+  filled-new-array       v1, [Ljava/lang/Object;
+  move-result-object     v1
+  const-string           v2, "%s fired"
+  invoke-interface       v0, v2, v1, Lcom/adjust/sdk/ILogger;->verbose(Ljava/lang/String; [Ljava/lang/Object;)V
+  iget-object            v0, v3, Lcom/adjust/sdk/scheduler/TimerOnce$1;->a Lcom/adjust/sdk/scheduler/TimerOnce;
+  invoke-static          v0, Lcom/adjust/sdk/scheduler/TimerOnce;->access$200(Lcom/adjust/sdk/scheduler/TimerOnce;)Ljava/lang/Runnable;
+  move-result-object     v0
+  invoke-interface       v0, Ljava/lang/Runnable;->run()V
+  iget-object            v0, v3, Lcom/adjust/sdk/scheduler/TimerOnce$1;->a Lcom/adjust/sdk/scheduler/TimerOnce;
+  const/4                v1, 0
+  invoke-static          v0, v1, Lcom/adjust/sdk/scheduler/TimerOnce;->access$302(Lcom/adjust/sdk/scheduler/TimerOnce; Ljava/util/concurrent/ScheduledFuture;)Ljava/util/concurrent/ScheduledFuture;
+  return-void            
+######################################################################

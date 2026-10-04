@@ -1,0 +1,35 @@
+# CLASS Lcom/adjust/sdk/AdjustDeeplink;
+FIELD  referrer Landroid/net/Uri;
+FIELD  url Landroid/net/Uri;
+
+---- METHOD public constructor <init> (Landroid/net/Uri;)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustDeeplink;->url Landroid/net/Uri;
+  return-void            
+
+---- METHOD public getReferrer ()Landroid/net/Uri; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustDeeplink;->referrer Landroid/net/Uri;
+  return-object          v0
+
+---- METHOD public getUrl ()Landroid/net/Uri; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustDeeplink;->url Landroid/net/Uri;
+  return-object          v0
+
+---- METHOD public isValid ()Z ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustDeeplink;->url Landroid/net/Uri;
+  if-eqz                 v0, +00fh
+  invoke-virtual         v0, Landroid/net/Uri;->toString()Ljava/lang/String;
+  move-result-object     v0
+  invoke-virtual         v0, Ljava/lang/String;->isEmpty()Z
+  move-result            v0
+  if-eqz                 v0, +003h
+  goto                   +3h
+  const/4                v0, 1
+  return                 v0
+  const/4                v0, 0
+  return                 v0
+
+---- METHOD public setReferrer (Landroid/net/Uri;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustDeeplink;->referrer Landroid/net/Uri;
+  return-void            
+######################################################################

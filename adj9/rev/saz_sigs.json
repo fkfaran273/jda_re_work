@@ -1,0 +1,30 @@
+[
+ {
+  "sess": 1,
+  "path": "https://app.adjust.com/session",
+  "sig_b64": "QMgRTT9mxtofD3VyfhxE5s1jYqxb3XRxKZo988SMQaOuWQQfgYUsN1JK0QqRk7L5B6Te1pq+ltdKSmj8uG+6gaXboOKo5q+Lrm4pvjdw8w047bGpH2O4TfKLmKUgXv75iwrY3kxNTB7o93vEw9wC7YPpuD5ffEjIdbDsS5nonUQ4QQRXjhyXRVAEs8wlwwNaSqiKVLC/lRiEm5lfR88r2wMRsLKVZ5st267TQfQCKMY0unnK7uUl9r2QvMeNBNBQ",
+  "created_at": [],
+  "sent_at": []
+ },
+ {
+  "sess": 2,
+  "path": "https://app.adjust.com/sdk_click",
+  "sig_b64": "QMgRTT9mxtofD3VyfhxE5nHA4aefPU4LFNHTeGEMyDKpB3eL11iRXVuV2Kj0NjzkYNDiUEg7wU81NB+iaRZV/j7dCbTiir5VuHO/lSoZFXt9Y6tSZPL79u0ax2tG6w81eW6l44NFioqzeMvQck9j93d+bbstrawVXT2YHCym+zmPp6ux1AilRe4vGRG7l6LHBAWPJHl4E//R5UgszPxmvhRUXS20g86iXbL8J7rkeaCzLDE3Q6kyI9uRUkAyHsoU",
+  "created_at": [],
+  "sent_at": []
+ },
+ {
+  "sess": 3,
+  "path": "https://app.adjust.com/sdk_info",
+  "sig_b64": "HNKunw4Vs3sD909HfOUBIOx5B4sm8YnnKEQoYPKXnHv7EXW4M7vg6qBW0UZcBu3gn3ZI0FsCE195oNBlCLp7dvEnAElob8eD03u98sHhT3VuA+zbPezO1ro4iZ4F0gm6FvFFAa+dm5nD9iIjo71ucxuejZXhAD6cVpoLjwICPT/HNQswHCSCJ/4xn+vGBbHemMUJCQmCFRZg1pv7qhfV4vDa3PPwHzul27NGqeDQKC6JkACUlmSY33SR3nMXYHYX",
+  "created_at": [],
+  "sent_at": []
+ },
+ {
+  "sess": 4,
+  "path": "https://app.adjust.com/attribution",
+  "sig_b64": "InZVMkmf+mc5t9k+U53LIrlxEdTKvWsKYsJlREvyDUJg12/NBuPLlikXVVSNB0Awfw9FbPoXRh9MJcJxm2Kfv95/oRAjiOkt237aOPhWJbVzBfR6gpGz0lno6AkMdi/pnbFjPHLLhaulL/RCe8VQulu4SSZmYgGyTCTdYWCchWRrXPINHBYEnEsMomHEG7ZllZwCqiDTf86v2mvRe3Dnqm39V1E5QYHhkQjbQKFm8IKZ0FV5umkjXhCoKmfi4rG3",
+  "created_at": [],
+  "sent_at": []
+ }
+]

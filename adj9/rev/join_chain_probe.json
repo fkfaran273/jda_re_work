@@ -1,0 +1,465 @@
+{
+ "device_gaid_never_used": true,
+ "fresh_gaid_per_cell": true,
+ "cells": [
+  {
+   "id": "E1a",
+   "exp": "E1",
+   "variation": "session then click (baseline)",
+   "gps": "ba211761-362e-4c0a-bf0d-b6c30bceca04",
+   "auid": "c3def3e0-8724-4d6f-968a-434204268592",
+   "installed_at_stamp": "2026-09-27T18:10:01.431Z+0530",
+   "steps": [
+    [
+     "tracker_click",
+     302
+    ],
+    [
+     "session",
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"c79084c2f3c4df77dc897b5c801472c6\",\"ask_in\":2000}"
+    ],
+    [
+     "click#1",
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"c79084c2f3c4df77dc897b5c801472c6\"}"
+    ]
+   ],
+   "reftag": "cXtONnCnW6j3G",
+   "referrer": "adjust_reftag=cXtONnCnW6j3G&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+   "polls": [
+    [
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"c79084c2f3c4df77dc897b5c801472c6\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T12:41:16Z\",\"first_session_time\":\"2026-09-27T12:41:16Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+    ],
+    [
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"c79084c2f3c4df77dc897b5c801472c6\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T12:41:16Z\",\"first_session_time\":\"2026-09-27T12:41:16Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+    ],
+    [
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"c79084c2f3c4df77dc897b5c801472c6\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T12:41:16Z\",\"first_session_time\":\"2026-09-27T12:41:16Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+    ]
+   ],
+   "attribution": {
+    "network": "Organic",
+    "tracker_token": "wy7261z",
+    "tracker_name": "Organic",
+    "engagement_time": "0001-01-01T00:00:00Z",
+    "is_reattributed": false,
+    "installed_at": "2026-09-27T12:41:16Z",
+    "first_session_time": "2026-09-27T12:41:16Z",
+    "adid": "c79084c2f3c4df77dc897b5c801472c6"
+   },
+   "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z / reattr=False",
+   "secs": 558.1
+  },
+  {
+   "id": "E1b",
+   "exp": "E1",
+   "variation": "click FIRST, then session",
+   "gps": "bb34932e-cfd8-4333-b463-09bc8c0a8a11",
+   "auid": "2b426326-617d-4da3-ba1b-e3045a982250",
+   "installed_at_stamp": "2026-09-27T18:19:19.431Z+0530",
+   "steps": [
+    [
+     "tracker_click",
+     302
+    ],
+    [
+     "click#1",
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"52ffeba49dfdcd12f24b01154137a5f8\"}"
+    ],
+    [
+     "session",
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"52ffeba49dfdcd12f24b01154137a5f8\",\"ask_in\":2000}"
+    ]
+   ],
+   "reftag": "cRCq1tWf7PMQr",
+   "referrer": "adjust_reftag=cRCq1tWf7PMQr&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+   "polls": [
+    [
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"52ffeba49dfdcd12f24b01154137a5f8\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T12:54:39Z\",\"first_session_time\":\"2026-09-27T12:54:39Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+    ],
+    [
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"52ffeba49dfdcd12f24b01154137a5f8\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T12:54:39Z\",\"first_session_time\":\"2026-09-27T12:54:39Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+    ]
+   ],
+   "attribution": {
+    "network": "Organic",
+    "tracker_token": "wy7261z",
+    "tracker_name": "Organic",
+    "engagement_time": "0001-01-01T00:00:00Z",
+    "is_reattributed": false,
+    "installed_at": "2026-09-27T12:54:39Z",
+    "first_session_time": "2026-09-27T12:54:39Z",
+    "adid": "52ffeba49dfdcd12f24b01154137a5f8"
+   },
+   "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z / reattr=False",
+   "secs": 475.5
+  },
+  {
+   "id": "E1c",
+   "exp": "E1",
+   "variation": "click only, NO session at all",
+   "gps": "6acede94-fdc1-4669-b53e-ef7d0275e46f",
+   "auid": "ec83fc90-02ab-404d-9eb7-3f95eadb7cef",
+   "installed_at_stamp": "2026-09-27T18:27:15.431Z+0530",
+   "steps": [
+    [
+     "tracker_click",
+     302
+    ],
+    [
+     "click#1",
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"8d2385373c21dd782993bdc68fa206cc\"}"
+    ]
+   ],
+   "reftag": "cadF2XEuJqzGL",
+   "referrer": "adjust_reftag=cadF2XEuJqzGL&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+   "polls": [
+    [
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"8d2385373c21dd782993bdc68fa206cc\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:00:14.882322537Z\",\"first_session_time\":\"2026-09-27T13:00:14.882322537Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+    ],
+    [
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"8d2385373c21dd782993bdc68fa206cc\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:03:18.528556017Z\",\"first_session_time\":\"2026-09-27T13:03:18.528556017Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+    ],
+    [
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"8d2385373c21dd782993bdc68fa206cc\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:06:21.340369706Z\",\"first_session_time\":\"2026-09-27T13:06:21.340369706Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+    ]
+   ],
+   "attribution": {
+    "network": "Organic",
+    "tracker_token": "wy7261z",
+    "tracker_name": "Organic",
+    "engagement_time": "0001-01-01T00:00:00Z",
+    "is_reattributed": false,
+    "installed_at": "2026-09-27T13:00:14.882322537Z",
+    "first_session_time": "2026-09-27T13:00:14.882322537Z",
+    "adid": "8d2385373c21dd782993bdc68fa206cc"
+   },
+   "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z / reattr=False",
+   "secs": 526.1
+  },
+  {
+   "id": "E2b",
+   "exp": "E2",
+   "variation": "/sdk_click sent TWICE (1 dup)",
+   "gps": "060a78fb-d37d-4f15-8d42-a04f9e01d5a7",
+   "auid": "b9e27b60-d42a-493d-86b7-3c9b7ca7c469",
+   "installed_at_stamp": "2026-09-27T18:36:01.431Z+0530",
+   "steps": [
+    [
+     "tracker_click",
+     302
+    ],
+    [
+     "session",
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"ef9c8c0f3f30f700b3e7a52b9465db57\",\"ask_in\":2000}"
+    ],
+    [
+     "click#1",
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"ef9c8c0f3f30f700b3e7a52b9465db57\"}"
+    ],
+    [
+     "click#2",
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"ef9c8c0f3f30f700b3e7a52b9465db57\"}"
+    ]
+   ],
+   "reftag": "c9SoRQEqtKvAl",
+   "referrer": "adjust_reftag=c9SoRQEqtKvAl&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+   "polls": [
+    [
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"ef9c8c0f3f30f700b3e7a52b9465db57\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:10:22Z\",\"first_session_time\":\"2026-09-27T13:10:22Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+    ],
+    [
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"ef9c8c0f3f30f700b3e7a52b9465db57\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:10:22Z\",\"first_session_time\":\"2026-09-27T13:10:22Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+    ],
+    [
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"ef9c8c0f3f30f700b3e7a52b9465db57\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:10:22Z\",\"first_session_time\":\"2026-09-27T13:10:22Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+    ]
+   ],
+   "attribution": {
+    "network": "Organic",
+    "tracker_token": "wy7261z",
+    "tracker_name": "Organic",
+    "engagement_time": "0001-01-01T00:00:00Z",
+    "is_reattributed": false,
+    "installed_at": "2026-09-27T13:10:22Z",
+    "first_session_time": "2026-09-27T13:10:22Z",
+    "adid": "ef9c8c0f3f30f700b3e7a52b9465db57"
+   },
+   "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z / reattr=False",
+   "secs": 1162.7
+  },
+  {
+   "id": "E2c",
+   "exp": "E2",
+   "variation": "/sdk_click sent THREE times",
+   "gps": "572e6527-cd3e-4aa6-a0f7-ddb66f2ab510",
+   "auid": "a3fbdb02-57e9-407b-8bda-7bc273642448",
+   "installed_at_stamp": "2026-09-27T18:55:23.431Z+0530",
+   "steps": [
+    [
+     "tracker_click",
+     302
+    ],
+    [
+     "session",
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"dd65434d7ea4ae9cc53f4112bf89c3d5\",\"ask_in\":2000}"
+    ],
+    [
+     "click#1",
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"dd65434d7ea4ae9cc53f4112bf89c3d5\"}"
+    ],
+    [
+     "click#2",
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"dd65434d7ea4ae9cc53f4112bf89c3d5\"}"
+    ],
+    [
+     "click#3",
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"dd65434d7ea4ae9cc53f4112bf89c3d5\"}"
+    ]
+   ],
+   "reftag": "ctjimd8pnwhtn",
+   "referrer": "adjust_reftag=ctjimd8pnwhtn&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+   "polls": [
+    [
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"dd65434d7ea4ae9cc53f4112bf89c3d5\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:26:39Z\",\"first_session_time\":\"2026-09-27T13:26:39Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+    ],
+    [
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"dd65434d7ea4ae9cc53f4112bf89c3d5\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:26:39Z\",\"first_session_time\":\"2026-09-27T13:26:39Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+    ],
+    [
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"dd65434d7ea4ae9cc53f4112bf89c3d5\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:26:39Z\",\"first_session_time\":\"2026-09-27T13:26:39Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+    ]
+   ],
+   "attribution": {
+    "network": "Organic",
+    "tracker_token": "wy7261z",
+    "tracker_name": "Organic",
+    "engagement_time": "0001-01-01T00:00:00Z",
+    "is_reattributed": false,
+    "installed_at": "2026-09-27T13:26:39Z",
+    "first_session_time": "2026-09-27T13:26:39Z",
+    "adid": "dd65434d7ea4ae9cc53f4112bf89c3d5"
+   },
+   "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z / reattr=False",
+   "secs": 1235.1
+  },
+  {
+   "id": "E3b",
+   "exp": "E3",
+   "variation": "ALREADY-CONSUMED reftag (from the E1a cell, different adid already installed)",
+   "gps": "6d9a470c-5b84-4f0c-8978-0a797d62c17a",
+   "auid": "086912e5-62b4-4fe3-8c58-402c63941d64",
+   "installed_at_stamp": "2026-09-27T19:15:59.431Z+0530",
+   "steps": [
+    [
+     "reuse_consumed_reftag_from",
+     "ba211761-362e-4c0a-bf0d-b6c30bceca04"
+    ],
+    [
+     "session",
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"8f06594d3a5f7cb2b61d0a151e26c854\",\"ask_in\":2000}"
+    ],
+    [
+     "click#1",
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"8f06594d3a5f7cb2b61d0a151e26c854\"}"
+    ]
+   ],
+   "reftag": "cXtONnCnW6j3G",
+   "referrer": "adjust_reftag=cXtONnCnW6j3G&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+   "polls": [
+    [
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"8f06594d3a5f7cb2b61d0a151e26c854\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:49:21Z\",\"first_session_time\":\"2026-09-27T13:49:21Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+    ],
+    [
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"8f06594d3a5f7cb2b61d0a151e26c854\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:49:21Z\",\"first_session_time\":\"2026-09-27T13:49:21Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+    ]
+   ],
+   "attribution": {
+    "network": "Organic",
+    "tracker_token": "wy7261z",
+    "tracker_name": "Organic",
+    "engagement_time": "0001-01-01T00:00:00Z",
+    "is_reattributed": false,
+    "installed_at": "2026-09-27T13:49:21Z",
+    "first_session_time": "2026-09-27T13:49:21Z",
+    "adid": "8f06594d3a5f7cb2b61d0a151e26c854"
+   },
+   "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z / reattr=False",
+   "secs": 437.2
+  },
+  {
+   "id": "E3c",
+   "exp": "E3",
+   "variation": "FRESH FOREIGN reftag (real click by a throwaway adid that never installs)",
+   "gps": "3639b8c3-fbc8-4f74-b463-ecdb7e87efa1",
+   "auid": "ba57c7e1-de89-4e46-a2ff-eed9ebcecec7",
+   "installed_at_stamp": "2026-09-27T19:23:16.431Z+0530",
+   "steps": [
+    [
+     "foreign_tracker_click",
+     302,
+     "1e28972f-5ec0-41a1-86ef-d1ccf937bbfc"
+    ],
+    [
+     "session",
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"8c6bd87f6d096edd4b85667d82b903a7\",\"ask_in\":2000}"
+    ],
+    [
+     "click#1",
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"8c6bd87f6d096edd4b85667d82b903a7\"}"
+    ]
+   ],
+   "reftag": "cjmf3eqsxgTCf",
+   "referrer": "adjust_reftag=cjmf3eqsxgTCf&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+   "polls": [
+    [
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"8c6bd87f6d096edd4b85667d82b903a7\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:56:12Z\",\"first_session_time\":\"2026-09-27T13:56:12Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+    ],
+    [
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"8c6bd87f6d096edd4b85667d82b903a7\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:56:12Z\",\"first_session_time\":\"2026-09-27T13:56:12Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+    ]
+   ],
+   "attribution": {
+    "network": "Organic",
+    "tracker_token": "wy7261z",
+    "tracker_name": "Organic",
+    "engagement_time": "0001-01-01T00:00:00Z",
+    "is_reattributed": false,
+    "installed_at": "2026-09-27T13:56:12Z",
+    "first_session_time": "2026-09-27T13:56:12Z",
+    "adid": "8c6bd87f6d096edd4b85667d82b903a7"
+   },
+   "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z / reattr=False",
+   "secs": 579.9
+  },
+  {
+   "id": "E4a",
+   "exp": "E4",
+   "variation": "installed_at 30 days ago",
+   "gps": "8e4e1391-4616-4527-bb10-b7ff2447379b",
+   "auid": "d866031d-121c-4392-a264-4d3e57d6ea33",
+   "installed_at_stamp": "2026-08-28T19:33:16.431Z+0530",
+   "steps": [
+    [
+     "tracker_click",
+     302
+    ],
+    [
+     "session",
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"284895d818468b71910902d938fedbcb\",\"ask_in\":2000}"
+    ],
+    [
+     "click#1",
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"284895d818468b71910902d938fedbcb\"}"
+    ]
+   ],
+   "reftag": "cFvKqSSDiyTVM",
+   "referrer": "adjust_reftag=cFvKqSSDiyTVM&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+   "polls": [
+    [
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"284895d818468b71910902d938fedbcb\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T14:06:23Z\",\"first_session_time\":\"2026-09-27T14:06:23Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+    ],
+    [
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"284895d818468b71910902d938fedbcb\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T14:06:23Z\",\"first_session_time\":\"2026-09-27T14:06:23Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+    ]
+   ],
+   "attribution": {
+    "network": "Organic",
+    "tracker_token": "wy7261z",
+    "tracker_name": "Organic",
+    "engagement_time": "0001-01-01T00:00:00Z",
+    "is_reattributed": false,
+    "installed_at": "2026-09-27T14:06:23Z",
+    "first_session_time": "2026-09-27T14:06:23Z",
+    "adid": "284895d818468b71910902d938fedbcb"
+   },
+   "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z / reattr=False",
+   "secs": 541.3
+  },
+  {
+   "id": "E4b",
+   "exp": "E4",
+   "variation": "installed_at 24h ago",
+   "gps": "a7da783b-04d6-4607-9a50-82919dbc3f3b",
+   "auid": "3cd77531-1db0-4290-9911-7a8ab96eee80",
+   "installed_at_stamp": "2026-09-26T19:42:17.431Z+0530",
+   "steps": [
+    [
+     "tracker_click",
+     302
+    ],
+    [
+     "session",
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"88222b9bb0bc70cbac76725193aabf4e\",\"ask_in\":2000}"
+    ],
+    [
+     "click#1",
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"88222b9bb0bc70cbac76725193aabf4e\"}"
+    ]
+   ],
+   "reftag": "cAiTV4SaVz5pk",
+   "referrer": "adjust_reftag=cAiTV4SaVz5pk&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+   "polls": [
+    [
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"88222b9bb0bc70cbac76725193aabf4e\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T14:13:49Z\",\"first_session_time\":\"2026-09-27T14:13:49Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+    ],
+    [
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"88222b9bb0bc70cbac76725193aabf4e\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T14:13:49Z\",\"first_session_time\":\"2026-09-27T14:13:49Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+    ]
+   ],
+   "attribution": {
+    "network": "Organic",
+    "tracker_token": "wy7261z",
+    "tracker_name": "Organic",
+    "engagement_time": "0001-01-01T00:00:00Z",
+    "is_reattributed": false,
+    "installed_at": "2026-09-27T14:13:49Z",
+    "first_session_time": "2026-09-27T14:13:49Z",
+    "adid": "88222b9bb0bc70cbac76725193aabf4e"
+   },
+   "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z / reattr=False",
+   "secs": 382.1
+  }
+ ]
+}

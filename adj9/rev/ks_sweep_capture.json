@@ -1,0 +1,384 @@
+{
+ "targets": {
+  "623": "android.hardware.keymaster@4.1-service-qti",
+  "1244": "credstore",
+  "666": "android.hardware.gatekeeper@1.0-service-qti"
+ },
+ "events": {
+  "11561": [],
+  "623": [
+   {
+    "t": "sym",
+    "name": "SHA256_Update",
+    "mod": "libcrypto.so",
+    "addr": "0x751f5977f4"
+   },
+   {
+    "t": "sym",
+    "name": "SHA256_Final",
+    "mod": "libcrypto.so",
+    "addr": "0x751f597914"
+   },
+   {
+    "t": "sym",
+    "name": "HMAC_CTX_new",
+    "mod": "libcrypto.so",
+    "addr": "0x751f58bfe4"
+   },
+   {
+    "t": "sym",
+    "name": "EVP_DigestSignFinal",
+    "mod": "libcrypto.so",
+    "addr": "0x751f520e94"
+   },
+   {
+    "t": "sym",
+    "name": "EVP_DigestFinal_ex",
+    "mod": "libcrypto.so",
+    "addr": "0x751f5826a8"
+   },
+   {
+    "t": "sym",
+    "name": "EVP_DigestUpdate",
+    "mod": "libcrypto.so",
+    "addr": "0x751f582688"
+   },
+   {
+    "t": "sym",
+    "name": "HMAC_Final",
+    "mod": "libcrypto.so",
+    "addr": "0x751f58be54"
+   },
+   {
+    "t": "sym",
+    "name": "EVP_DigestSignInit",
+    "mod": "libcrypto.so",
+    "addr": "0x751f520cf4"
+   },
+   {
+    "t": "sym",
+    "name": "SHA256_Init",
+    "mod": "libcrypto.so",
+    "addr": "0x751f59779c"
+   },
+   {
+    "t": "sym",
+    "name": "HMAC",
+    "mod": "libcrypto.so",
+    "addr": "0x751f58ba84"
+   },
+   {
+    "t": "sym",
+    "name": "EVP_DigestInit_ex",
+    "mod": "libcrypto.so",
+    "addr": "0x751f582578"
+   },
+   {
+    "t": "sym",
+    "name": "HMAC_Update",
+    "mod": "libcrypto.so",
+    "addr": "0x751f58be34"
+   },
+   {
+    "t": "sym",
+    "name": "HMAC_Init_ex",
+    "mod": "libcrypto.so",
+    "addr": "0x751f58bb6c"
+   },
+   {
+    "t": "sym",
+    "name": "HMAC_CTX_free",
+    "mod": "libcrypto.so",
+    "addr": "0x751f58c020"
+   },
+   {
+    "t": "sym",
+    "name": "EVP_DigestSignUpdate",
+    "mod": "libcrypto.so",
+    "addr": "0x751f520e04"
+   },
+   {
+    "t": "hooked",
+    "name": "HMAC_Init_ex",
+    "mod": "libcrypto.so"
+   },
+   {
+    "t": "hooked",
+    "name": "HMAC_Update",
+    "mod": "libcrypto.so"
+   },
+   {
+    "t": "hooked",
+    "name": "HMAC_Final",
+    "mod": "libcrypto.so"
+   },
+   {
+    "t": "hooked",
+    "name": "HMAC",
+    "mod": "libcrypto.so"
+   },
+   {
+    "t": "hooked",
+    "name": "EVP_DigestUpdate",
+    "mod": "libcrypto.so"
+   },
+   {
+    "t": "ready",
+    "pid": 623,
+    "mods": 15
+   }
+  ],
+  "1244": [
+   {
+    "t": "sym",
+    "name": "EVP_DigestUpdate",
+    "mod": "libcrypto.so",
+    "addr": "0x7691fb75dc"
+   },
+   {
+    "t": "sym",
+    "name": "SHA256_Init",
+    "mod": "libcrypto.so",
+    "addr": "0x7691fd1194"
+   },
+   {
+    "t": "sym",
+    "name": "HMAC_CTX_free",
+    "mod": "libcrypto.so",
+    "addr": "0x7691fc4604"
+   },
+   {
+    "t": "sym",
+    "name": "EVP_DigestSignInit",
+    "mod": "libcrypto.so",
+    "addr": "0x7691f4d3c4"
+   },
+   {
+    "t": "sym",
+    "name": "HMAC_CTX_new",
+    "mod": "libcrypto.so",
+    "addr": "0x7691fc45c0"
+   },
+   {
+    "t": "sym",
+    "name": "EVP_DigestSignFinal",
+    "mod": "libcrypto.so",
+    "addr": "0x7691f4d58c"
+   },
+   {
+    "t": "sym",
+    "name": "SHA256_Final",
+    "mod": "libcrypto.so",
+    "addr": "0x7691fd1318"
+   },
+   {
+    "t": "sym",
+    "name": "HMAC",
+    "mod": "libcrypto.so",
+    "addr": "0x7691fc4028"
+   },
+   {
+    "t": "sym",
+    "name": "EVP_DigestFinal_ex",
+    "mod": "libcrypto.so",
+    "addr": "0x7691fb7604"
+   },
+   {
+    "t": "sym",
+    "name": "HMAC_Final",
+    "mod": "libcrypto.so",
+    "addr": "0x7691fc4420"
+   },
+   {
+    "t": "sym",
+    "name": "EVP_DigestSignUpdate",
+    "mod": "libcrypto.so",
+    "addr": "0x7691f4d4e4"
+   },
+   {
+    "t": "sym",
+    "name": "HMAC_Update",
+    "mod": "libcrypto.so",
+    "addr": "0x7691fc43f8"
+   },
+   {
+    "t": "sym",
+    "name": "EVP_DigestInit_ex",
+    "mod": "libcrypto.so",
+    "addr": "0x7691fb74bc"
+   },
+   {
+    "t": "sym",
+    "name": "SHA256_Update",
+    "mod": "libcrypto.so",
+    "addr": "0x7691fd11fc"
+   },
+   {
+    "t": "sym",
+    "name": "HMAC_Init_ex",
+    "mod": "libcrypto.so",
+    "addr": "0x7691fc411c"
+   },
+   {
+    "t": "hooked",
+    "name": "HMAC_Init_ex",
+    "mod": "libcrypto.so"
+   },
+   {
+    "t": "hooked",
+    "name": "HMAC_Update",
+    "mod": "libcrypto.so"
+   },
+   {
+    "t": "hooked",
+    "name": "HMAC_Final",
+    "mod": "libcrypto.so"
+   },
+   {
+    "t": "hooked",
+    "name": "HMAC",
+    "mod": "libcrypto.so"
+   },
+   {
+    "t": "hooked",
+    "name": "EVP_DigestUpdate",
+    "mod": "libcrypto.so"
+   },
+   {
+    "t": "ready",
+    "pid": 1244,
+    "mods": 15
+   }
+  ],
+  "666": [
+   {
+    "t": "sym",
+    "name": "SHA256_Update",
+    "mod": "libcrypto.so",
+    "addr": "0x7111fc97f4"
+   },
+   {
+    "t": "sym",
+    "name": "SHA256_Final",
+    "mod": "libcrypto.so",
+    "addr": "0x7111fc9914"
+   },
+   {
+    "t": "sym",
+    "name": "HMAC_CTX_new",
+    "mod": "libcrypto.so",
+    "addr": "0x7111fbdfe4"
+   },
+   {
+    "t": "sym",
+    "name": "EVP_DigestSignFinal",
+    "mod": "libcrypto.so",
+    "addr": "0x7111f52e94"
+   },
+   {
+    "t": "sym",
+    "name": "EVP_DigestFinal_ex",
+    "mod": "libcrypto.so",
+    "addr": "0x7111fb46a8"
+   },
+   {
+    "t": "sym",
+    "name": "EVP_DigestUpdate",
+    "mod": "libcrypto.so",
+    "addr": "0x7111fb4688"
+   },
+   {
+    "t": "sym",
+    "name": "HMAC_Final",
+    "mod": "libcrypto.so",
+    "addr": "0x7111fbde54"
+   },
+   {
+    "t": "sym",
+    "name": "EVP_DigestSignInit",
+    "mod": "libcrypto.so",
+    "addr": "0x7111f52cf4"
+   },
+   {
+    "t": "sym",
+    "name": "SHA256_Init",
+    "mod": "libcrypto.so",
+    "addr": "0x7111fc979c"
+   },
+   {
+    "t": "sym",
+    "name": "HMAC",
+    "mod": "libcrypto.so",
+    "addr": "0x7111fbda84"
+   },
+   {
+    "t": "sym",
+    "name": "EVP_DigestInit_ex",
+    "mod": "libcrypto.so",
+    "addr": "0x7111fb4578"
+   },
+   {
+    "t": "sym",
+    "name": "HMAC_Update",
+    "mod": "libcrypto.so",
+    "addr": "0x7111fbde34"
+   },
+   {
+    "t": "sym",
+    "name": "HMAC_Init_ex",
+    "mod": "libcrypto.so",
+    "addr": "0x7111fbdb6c"
+   },
+   {
+    "t": "sym",
+    "name": "HMAC_CTX_free",
+    "mod": "libcrypto.so",
+    "addr": "0x7111fbe020"
+   },
+   {
+    "t": "sym",
+    "name": "EVP_DigestSignUpdate",
+    "mod": "libcrypto.so",
+    "addr": "0x7111f52e04"
+   },
+   {
+    "t": "hooked",
+    "name": "HMAC_Init_ex",
+    "mod": "libcrypto.so"
+   },
+   {
+    "t": "hooked",
+    "name": "HMAC_Update",
+    "mod": "libcrypto.so"
+   },
+   {
+    "t": "hooked",
+    "name": "HMAC_Final",
+    "mod": "libcrypto.so"
+   },
+   {
+    "t": "hooked",
+    "name": "HMAC",
+    "mod": "libcrypto.so"
+   },
+   {
+    "t": "hooked",
+    "name": "EVP_DigestUpdate",
+    "mod": "libcrypto.so"
+   },
+   {
+    "t": "ready",
+    "pid": 666,
+    "mods": 15
+   }
+  ]
+ },
+ "app": [],
+ "pids": {
+  "11561": "keystore2",
+  "623": "android.hardware.keymaster@4.1-service-qti",
+  "1244": "credstore",
+  "11567": "TrickyStore",
+  "666": "android.hardware.gatekeeper@1.0-service-qti"
+ }
+}

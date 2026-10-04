@@ -1,0 +1,41 @@
+# CLASS Lcom/adjust/sdk/sig/a;
+FIELD public a I
+FIELD public final synthetic b Lcom/adjust/sdk/sig/d;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/sig/d;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/sig/a;->b Lcom/adjust/sdk/sig/d;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final hasNext ()Z ----
+  iget                   v0, v2, Lcom/adjust/sdk/sig/a;->a I
+  iget-object            v1, v2, Lcom/adjust/sdk/sig/a;->b Lcom/adjust/sdk/sig/d;
+  invoke-virtual         v1, Lcom/adjust/sdk/sig/d;->a()I
+  move-result            v1
+  if-ge                  v0, v1, +004h
+  const/4                v0, 1
+  return                 v0
+  const/4                v0, 0
+  return                 v0
+
+---- METHOD public final next ()Ljava/lang/Object; ----
+  invoke-virtual         v3, Lcom/adjust/sdk/sig/a;->hasNext()Z
+  move-result            v0
+  if-eqz                 v0, +00fh
+  iget-object            v0, v3, Lcom/adjust/sdk/sig/a;->b Lcom/adjust/sdk/sig/d;
+  iget                   v1, v3, Lcom/adjust/sdk/sig/a;->a I
+  add-int/lit8           v2, v1, 1
+  iput                   v2, v3, Lcom/adjust/sdk/sig/a;->a I
+  invoke-interface       v0, v1, Ljava/util/List;->get(I)Ljava/lang/Object;
+  move-result-object     v0
+  return-object          v0
+  invoke-static          Lorg/junit/rules/a;->a()V
+  const/4                v0, 0
+  return-object          v0
+
+---- METHOD public final remove ()V ----
+  new-instance           v0, Ljava/lang/UnsupportedOperationException;
+  const-string           v1, "Operation is not supported for read-only collection"
+  invoke-direct          v0, v1, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v0
+######################################################################

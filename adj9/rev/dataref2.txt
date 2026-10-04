@@ -1,0 +1,27 @@
+disassembling .text ...
+327541 instructions
+
+=== xrefs to 0x1536d2  64-hex blob @.data (32B hex-decoded?) : 0 ===
+
+=== xrefs to 0x3620  .rodata+0xc0  0123456789abcdef fedcba9876543210 : 1 ===
+  0x12e5f4  [ON nSign path]
+
+=== xrefs to 0x3640  .rodata+0xe0  f0e1d2c3 9979825a a1ebd96e dcbc1b8f : 1 ===
+  0x12e5f8  [ON nSign path]
+
+=== xrefs to 0x3660  .rodata+0x100 'SHA-256' : 0 ===
+
+=== xrefs to 0x3678  .rodata+0x118 'ro.arch' : 0 ===
+
+=== xrefs to 0x3690  .rodata+0x130 'exynos9810' : 0 ===
+
+=== branches (bl/b) into 0x9e400..0x9ea00 ===
+  -> 0x9e528 : 1 call/jmp site(s), 1 on nSign path  e.g. ['0x9e384']
+  -> 0x9e548 : 1 call/jmp site(s), 1 on nSign path  e.g. ['0xbb54']
+  -> 0x9e62c : 5 call/jmp site(s), 0 on nSign path  e.g. ['0x9e6f0', '0x9e718', '0x9e730', '0x9e740', '0x9e750']
+  -> 0x9e754 : 1 call/jmp site(s), 0 on nSign path  e.g. ['0x9e6d4']
+  -> 0x9e774 : 1 call/jmp site(s), 1 on nSign path  e.g. ['0xcf44']
+  -> 0x9e834 : 6 call/jmp site(s), 5 on nSign path  e.g. ['0x9e8a0', '0x9e8b8', '0x9e8cc', '0x9e8e4', '0x9e900', '0x9e908']
+  -> 0x9e92c : 2 call/jmp site(s), 1 on nSign path  e.g. ['0x23a28', '0x98c5c']
+  -> 0x9e9ac : 2 call/jmp site(s), 2 on nSign path  e.g. ['0x9e9fc', '0x9ea04']
+  -> 0x9e9ec : 1 call/jmp site(s), 1 on nSign path  e.g. ['0x9e9cc']

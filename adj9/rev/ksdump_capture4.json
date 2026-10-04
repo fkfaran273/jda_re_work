@@ -1,0 +1,30 @@
+[
+ {
+  "t": "sym",
+  "name": "AES_gcm_decrypt",
+  "addr": null
+ },
+ {
+  "t": "sym",
+  "name": "AES_gcm_encrypt",
+  "addr": null
+ },
+ {
+  "t": "sym",
+  "name": "HKDFExpand",
+  "addr": null
+ },
+ {
+  "t": "sym",
+  "name": "HKDFExtract",
+  "addr": null
+ },
+ {
+  "t": "sym",
+  "name": "ECDHComputeKey",
+  "addr": null
+ },
+ {
+  "t": "ready"
+ }
+]

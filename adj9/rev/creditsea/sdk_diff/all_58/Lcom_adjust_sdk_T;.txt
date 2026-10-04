@@ -1,0 +1,30 @@
+# CLASS Lcom/adjust/sdk/t;
+FIELD public final synthetic a I
+FIELD public final synthetic b Lcom/adjust/sdk/OnAttributionReadListener;
+FIELD public final synthetic c Lcom/adjust/sdk/ActivityHandler;
+
+---- METHOD public synthetic constructor <init> (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/OnAttributionReadListener; I)V ----
+  iput                   v3, v0, Lcom/adjust/sdk/t;->a I
+  iput-object            v1, v0, Lcom/adjust/sdk/t;->c Lcom/adjust/sdk/ActivityHandler;
+  iput-object            v2, v0, Lcom/adjust/sdk/t;->b Lcom/adjust/sdk/OnAttributionReadListener;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget                   v0, v2, Lcom/adjust/sdk/t;->a I
+  packed-switch          v0, +000001ch
+  iget-object            v0, v2, Lcom/adjust/sdk/t;->c Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->c0(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustAttribution;
+  move-result-object     v0
+  iget-object            v1, v2, Lcom/adjust/sdk/t;->b Lcom/adjust/sdk/OnAttributionReadListener;
+  invoke-interface       v1, v0, Lcom/adjust/sdk/OnAttributionReadListener;->onAttributionRead(Lcom/adjust/sdk/AdjustAttribution;)V
+  return-void            
+  iget-object            v0, v2, Lcom/adjust/sdk/t;->c Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->c0(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustAttribution;
+  move-result-object     v0
+  iget-object            v1, v2, Lcom/adjust/sdk/t;->b Lcom/adjust/sdk/OnAttributionReadListener;
+  invoke-interface       v1, v0, Lcom/adjust/sdk/OnAttributionReadListener;->onAttributionRead(Lcom/adjust/sdk/AdjustAttribution;)V
+  return-void            
+  nop                    
+  packed-switch-payload  0
+######################################################################

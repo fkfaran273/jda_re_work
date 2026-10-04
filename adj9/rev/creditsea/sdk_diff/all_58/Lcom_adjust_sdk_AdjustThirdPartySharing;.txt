@@ -1,0 +1,77 @@
+# CLASS Lcom/adjust/sdk/AdjustThirdPartySharing;
+FIELD  granularOptions Ljava/util/Map;
+FIELD  isEnabled Ljava/lang/Boolean;
+FIELD  partnerSharingSettings Ljava/util/Map;
+
+---- METHOD public constructor <init> (Ljava/lang/Boolean;)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustThirdPartySharing;->isEnabled Ljava/lang/Boolean;
+  new-instance           v1, Ljava/util/HashMap;
+  invoke-direct          v1, Ljava/util/HashMap;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustThirdPartySharing;->granularOptions Ljava/util/Map;
+  new-instance           v1, Ljava/util/HashMap;
+  invoke-direct          v1, Ljava/util/HashMap;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustThirdPartySharing;->partnerSharingSettings Ljava/util/Map;
+  return-void            
+
+---- METHOD public addGranularOption (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V ----
+  if-eqz                 v3, +01fh
+  if-eqz                 v4, +01dh
+  if-nez                 v5, +003h
+  goto                   +19h
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustThirdPartySharing;->granularOptions Ljava/util/Map;
+  invoke-interface       v0, v3, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/util/Map;
+  if-nez                 v0, +00ch
+  new-instance           v0, Ljava/util/HashMap;
+  invoke-direct          v0, Ljava/util/HashMap;-><init>()V
+  iget-object            v1, v2, Lcom/adjust/sdk/AdjustThirdPartySharing;->granularOptions Ljava/util/Map;
+  invoke-interface       v1, v3, v0, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  invoke-interface       v0, v4, v5, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  return-void            
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  const/4                v4, 0
+  new-array              v4, v4, [Ljava/lang/Object;
+  const-string           v5, "Cannot add granular option with any null value"
+  invoke-interface       v3, v5, v4, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD public addPartnerSharingSetting (Ljava/lang/String; Ljava/lang/String; Z)V ----
+  if-eqz                 v3, +021h
+  if-nez                 v4, +003h
+  goto                   +1dh
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustThirdPartySharing;->partnerSharingSettings Ljava/util/Map;
+  invoke-interface       v0, v3, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/util/Map;
+  if-nez                 v0, +00ch
+  new-instance           v0, Ljava/util/HashMap;
+  invoke-direct          v0, Ljava/util/HashMap;-><init>()V
+  iget-object            v1, v2, Lcom/adjust/sdk/AdjustThirdPartySharing;->partnerSharingSettings Ljava/util/Map;
+  invoke-interface       v1, v3, v0, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  invoke-static          v5, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object     v3
+  invoke-interface       v0, v4, v3, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  return-void            
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  const/4                v4, 0
+  new-array              v4, v4, [Ljava/lang/Object;
+  const-string           v5, "Cannot add partner sharing setting with any null value"
+  invoke-interface       v3, v5, v4, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD public getEnabled ()Ljava/lang/Boolean; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustThirdPartySharing;->isEnabled Ljava/lang/Boolean;
+  return-object          v0
+
+---- METHOD public getGranularOptions ()Ljava/util/Map; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustThirdPartySharing;->granularOptions Ljava/util/Map;
+  return-object          v0
+
+---- METHOD public getPartnerSharingSettings ()Ljava/util/Map; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustThirdPartySharing;->partnerSharingSettings Ljava/util/Map;
+  return-object          v0
+######################################################################

@@ -1,0 +1,44 @@
+# CLASS Lcom/adjust/sdk/SdkClickHandler$1;
+FIELD public final synthetic a Lcom/adjust/sdk/ActivityPackage;
+FIELD public final synthetic b Lcom/adjust/sdk/SdkClickHandler;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/SdkClickHandler; Lcom/adjust/sdk/ActivityPackage;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/SdkClickHandler$1;->b Lcom/adjust/sdk/SdkClickHandler;
+  iput-object            v2, v0, Lcom/adjust/sdk/SdkClickHandler$1;->a Lcom/adjust/sdk/ActivityPackage;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v3, Lcom/adjust/sdk/SdkClickHandler$1;->b Lcom/adjust/sdk/SdkClickHandler;
+  invoke-static          v0, Lcom/adjust/sdk/SdkClickHandler;->access$000(Lcom/adjust/sdk/SdkClickHandler;)Ljava/util/List;
+  move-result-object     v0
+  iget-object            v1, v3, Lcom/adjust/sdk/SdkClickHandler$1;->a Lcom/adjust/sdk/ActivityPackage;
+  invoke-interface       v0, v1, Ljava/util/List;->add(Ljava/lang/Object;)Z
+  iget-object            v0, v3, Lcom/adjust/sdk/SdkClickHandler$1;->b Lcom/adjust/sdk/SdkClickHandler;
+  invoke-static          v0, Lcom/adjust/sdk/SdkClickHandler;->access$100(Lcom/adjust/sdk/SdkClickHandler;)Lcom/adjust/sdk/ILogger;
+  move-result-object     v0
+  iget-object            v1, v3, Lcom/adjust/sdk/SdkClickHandler$1;->b Lcom/adjust/sdk/SdkClickHandler;
+  invoke-static          v1, Lcom/adjust/sdk/SdkClickHandler;->access$000(Lcom/adjust/sdk/SdkClickHandler;)Ljava/util/List;
+  move-result-object     v1
+  invoke-interface       v1, Ljava/util/List;->size()I
+  move-result            v1
+  invoke-static          v1, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v1
+  filled-new-array       v1, [Ljava/lang/Object;
+  move-result-object     v1
+  const-string           v2, "Added sdk_click %d"
+  invoke-interface       v0, v2, v1, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+  iget-object            v0, v3, Lcom/adjust/sdk/SdkClickHandler$1;->b Lcom/adjust/sdk/SdkClickHandler;
+  invoke-static          v0, Lcom/adjust/sdk/SdkClickHandler;->access$100(Lcom/adjust/sdk/SdkClickHandler;)Lcom/adjust/sdk/ILogger;
+  move-result-object     v0
+  iget-object            v1, v3, Lcom/adjust/sdk/SdkClickHandler$1;->a Lcom/adjust/sdk/ActivityPackage;
+  invoke-virtual         v1, Lcom/adjust/sdk/ActivityPackage;->getExtendedString()Ljava/lang/String;
+  move-result-object     v1
+  filled-new-array       v1, [Ljava/lang/Object;
+  move-result-object     v1
+  const-string           v2, "%s"
+  invoke-interface       v0, v2, v1, Lcom/adjust/sdk/ILogger;->verbose(Ljava/lang/String; [Ljava/lang/Object;)V
+  iget-object            v0, v3, Lcom/adjust/sdk/SdkClickHandler$1;->b Lcom/adjust/sdk/SdkClickHandler;
+  invoke-static          v0, Lcom/adjust/sdk/SdkClickHandler;->access$200(Lcom/adjust/sdk/SdkClickHandler;)V
+  return-void            
+######################################################################

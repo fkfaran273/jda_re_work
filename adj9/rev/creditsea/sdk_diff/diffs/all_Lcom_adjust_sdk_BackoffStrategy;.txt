@@ -1,0 +1,25 @@
+--- 
++++ 
+@@ -27,2 +27,3 @@
+ const-wide/32 vX, 86400000
++move-object vX, vX
+ invoke-direct/range vX ... vX, Lcom/adjust/sdk/BackoffStrategy;-><init>(Ljava/lang/String; I I J J D D)V
+@@ -34,4 +35,6 @@
+ const/4 vX, 1
++const/16 vX, 1
+ const-wide/16 vX, 200
+ const-wide/32 vX, 3600000
++move-object vX, vX
+ invoke-direct/range vX ... vX, Lcom/adjust/sdk/BackoffStrategy;-><init>(Ljava/lang/String; I I J J D D)V
+@@ -46,2 +49,3 @@
+ const-wide/16 vX, 1000
++move-object vX, vX
+ invoke-direct/range vX ... vX, Lcom/adjust/sdk/BackoffStrategy;-><init>(Ljava/lang/String; I I J J D D)V
+@@ -49,3 +53,2 @@
+ new-instance vX, Lcom/adjust/sdk/BackoffStrategy;
+-const-wide/high16 vX, 4607182418800017408
+ const-wide/high16 vX, 4607182418800017408
+@@ -56,2 +59,3 @@
+ const-wide/16 vX, 1000
++move-object vX, vX
+ invoke-direct/range vX ... vX, Lcom/adjust/sdk/BackoffStrategy;-><init>(Ljava/lang/String; I I J J D D)V

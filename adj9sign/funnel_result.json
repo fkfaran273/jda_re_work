@@ -1,0 +1,23 @@
+{
+ "gaid": "9b9f265c-f930-4ee5-9094-29bdh759620e",
+ "android_uuid": "2470e87e-af76-45ad-96e6-4e211fc8f27d",
+ "profile": "moto_g64",
+ "click": {
+  "http": 302,
+  "referrer": "adjust_reftag=cFbXBbgR1RqY6&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic"
+ },
+ "session": {
+  "http": 200,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"068922c9197da15e4fe2543affb8e1e9\",\"ask_in\":5000}"
+ },
+ "sdk_click": {
+  "http": 200,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"068922c9197da15e4fe2543affb8e1e9\"}"
+ },
+ "attribution": {
+  "http": 200,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"068922c9197da15e4fe2543affb8e1e9\",\"attribution\":{\"tracker_token\":\"24xxe7sm\",\"tracker_name\":\"VKM Digital Yeni::AH::vkm_0929::penti_generic\",\"network\":\"VKM Digital Yeni\",\"campaign\":\"AH\",\"adgroup\":\"vkm_0929\",\"creative\":\"penti_generic\",\"engagement_time\":\"2026-09-29T06:11:53Z\",\"installed_at\":\"2026-09-28T18:55:11Z\",\"first_session_time\":\"2026-09-29T06:12:08Z\",\"is_reattributed\":true,\"is_redownload_install\":false}}"
+ },
+ "verdict": "NON-ORGANIC",
+ "elapsed_s": 68.9
+}

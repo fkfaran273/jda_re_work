@@ -1,0 +1,66 @@
+[
+ {
+  "i": 0,
+  "verdict": "exact",
+  "owner": 0,
+  "log": "adj9_wh2.log",
+  "nsign_ts": 1789239391129,
+  "blob16": "1fcd5ee71c45f3d8"
+ },
+ {
+  "i": 1,
+  "verdict": "exact",
+  "owner": 1,
+  "log": "adj9_wh2.log",
+  "nsign_ts": 1789239530976,
+  "blob16": "5b71ec7c58382294"
+ },
+ {
+  "i": 2,
+  "verdict": "body-hits-row-None",
+  "owner": null,
+  "log": "adj9_wh4.log",
+  "nsign_ts": 1789240076148,
+  "blob16": "211c2cd4236fbed8"
+ },
+ {
+  "i": 3,
+  "verdict": "body-hits-row-None",
+  "owner": null,
+  "log": "adj9_wh4.log",
+  "nsign_ts": 1789240076576,
+  "blob16": "380195de2110d57b"
+ },
+ {
+  "i": 4,
+  "verdict": "exact",
+  "owner": 4,
+  "log": "adj9_wh4.log",
+  "nsign_ts": 1789240076148,
+  "blob16": "211c2cd4236fbed8"
+ },
+ {
+  "i": 5,
+  "verdict": "exact",
+  "owner": 5,
+  "log": "adj9_wh4.log",
+  "nsign_ts": 1789240229308,
+  "blob16": "505f30c74f92913e"
+ },
+ {
+  "i": 6,
+  "verdict": "exact",
+  "owner": 6,
+  "log": "adj9_wh4.log",
+  "nsign_ts": 1789240340851,
+  "blob16": "61c5008a6fe93390"
+ },
+ {
+  "i": 7,
+  "verdict": "exact",
+  "owner": 7,
+  "log": "adj9_wh4.log",
+  "nsign_ts": 1789240514238,
+  "blob16": "5595c3c431567e63"
+ }
+]

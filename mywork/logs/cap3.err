@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\Apps\Downloads\com.penti.app\mywork\capture_rows.py", line 78, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "C:\Users\Apps\Downloads\com.penti.app\mywork\capture_rows.py", line 42, in main
+    pid = dev.spawn([PKG])
+  File "C:\Users\Apps\AppData\Roaming\Python\Python314\site-packages\frida\__init__.py", line 632, in spawn
+    return _invoke(self._impl.spawn, (program, options, ))
+  File "C:\Users\Apps\AppData\Roaming\Python\Python314\site-packages\frida\__init__.py", line 226, in _invoke
+    raise error
+frida.ServerNotRunningError: unable to connect to remote frida-server

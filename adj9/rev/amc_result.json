@@ -1,0 +1,17 @@
+{
+ "phases": {
+  "gaid_set": {
+   "ok": true,
+   "detail": "e7262a88-b19a-41ec-a76c-7f122fc266f2 -> e7262a88-b19a-41ec-a76c-7f122fc266f2"
+  },
+  "click": {
+   "ok": true,
+   "detail": "http=302 ref=adjust_reftag=cHCdCD4NlqGez&utm_source=VKM+Digital+Yeni&utm_"
+  },
+  "identity": {
+   "ok": false,
+   "detail": "ActivityState carries fresh GAID"
+  }
+ },
+ "bracket": []
+}

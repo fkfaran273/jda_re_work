@@ -1,0 +1,16 @@
+POST https://firebaseremoteconfig.googleapis.com/v1/projects/782059328469/namespaces/firebase:fetch HTTP/1.1
+X-Goog-Api-Key: AIzaSyCCph6LMoM7BHei90FyU-_r1uUM20w7TZA
+X-Android-Package: com.penti.app
+X-Android-Cert: FAD0F10D60F93C17937B2F1EB6C09691AE7D74BD
+X-Google-GFE-Can-Retry: yes
+X-Goog-Firebase-Installations-Auth: eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6NzgyMDU5MzI4NDY5OmFuZHJvaWQ6N2NjYzg3NzhjMjdhYTRlZGQyMjM1YyIsImV4cCI6MTc4OTk5MzM4NiwiZmlkIjoiZnk2RUxjWUZUR2E3SEZRempJenVZWiIsInByb2plY3ROdW1iZXIiOjc4MjA1OTMyODQ2OX0.AB2LPV8wRQIhAP2c5-hvhP-ZmwcfB2zTuwzxcIiAd6N4pR8NAqCZH5QXAiBG2aXtdYT-3TxDIl-Urr28v1j-PFPGykfZVlgtB4iruQ
+Content-Type: application/json
+Accept: application/json
+X-Firebase-RC-Fetch-Type: BASE/1
+Content-Length: 693
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)
+Host: firebaseremoteconfig.googleapis.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+
+{"appVersion":"3.13.9","firstOpenTime":"2026-09-14T13:00:00.000Z","timeZone":"Asia\/Kolkata","appInstanceIdToken":"eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6NzgyMDU5MzI4NDY5OmFuZHJvaWQ6N2NjYzg3NzhjMjdhYTRlZGQyMjM1YyIsImV4cCI6MTc4OTk5MzM4NiwiZmlkIjoiZnk2RUxjWUZUR2E3SEZRempJenVZWiIsInByb2plY3ROdW1iZXIiOjc4MjA1OTMyODQ2OX0.AB2LPV8wRQIhAP2c5-hvhP-ZmwcfB2zTuwzxcIiAd6N4pR8NAqCZH5QXAiBG2aXtdYT-3TxDIl-Urr28v1j-PFPGykfZVlgtB4iruQ","languageCode":"tr","appBuild":"31309","appInstanceId":"fy6ELcYFTGa7HFQzjIzuYZ","countryCode":"","analyticsUserProperties":{},"appId":"1:782059328469:android:7ccc8778c27aa4edd2235c","platformVersion":"31","sdkVersion":"23.0.1","packageName":"com.penti.app"}

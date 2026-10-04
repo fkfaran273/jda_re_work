@@ -1,0 +1,20 @@
+# CLASS Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler$1;
+FIELD public final synthetic a Ljava/lang/String;
+
+---- METHOD public constructor <init> (Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler$1;->a Ljava/lang/String;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final rejectedExecution (Ljava/lang/Runnable; Ljava/util/concurrent/ThreadPoolExecutor;)V ----
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  invoke-virtual         v2, Ljava/lang/Object;->toString()Ljava/lang/String;
+  move-result-object     v2
+  iget-object            v0, v1, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler$1;->a Ljava/lang/String;
+  filled-new-array       v2, v0, [Ljava/lang/Object;
+  move-result-object     v2
+  const-string           v0, "Runnable [%s] rejected from [%s] "
+  invoke-interface       v3, v0, v2, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+######################################################################

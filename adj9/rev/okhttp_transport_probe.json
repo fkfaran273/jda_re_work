@@ -1,0 +1,83 @@
+{
+ "tls": {
+  "record_len": 517,
+  "ciphers_exact": false,
+  "ciphers_ours": [
+   "1301",
+   "1302",
+   "1303",
+   "c02b",
+   "c02c",
+   "cca9",
+   "c02f",
+   "c030",
+   "cca8",
+   "c013",
+   "c014",
+   "009c",
+   "009d",
+   "002f",
+   "0035"
+  ],
+  "groups_exact": true,
+  "groups_ours": [
+   "001d",
+   "0017",
+   "0018"
+  ],
+  "sigalgs_exact": true,
+  "sigalgs_ours": [
+   "0x0403",
+   "0x0804",
+   "0x0401",
+   "0x0503",
+   "0x0805",
+   "0x0501",
+   "0x0806",
+   "0x0601",
+   "0x0201"
+  ],
+  "exts_exact": true,
+  "exts_ours": [
+   "server_name",
+   "extended_master_secret",
+   "renegotiation_info",
+   "supported_groups",
+   "ec_point_formats",
+   "session_ticket_v2",
+   "alpn",
+   "status_request",
+   "signature_algorithms",
+   "key_share",
+   "psk_key_exchange_modes",
+   "supported_versions",
+   "padding"
+  ],
+  "alpn_exact": true,
+  "alpn_ours": [
+   "http/1.1"
+  ],
+  "versions_exact": true,
+  "key_share_ours": [
+   "0x001d x25519 (len=32)"
+  ],
+  "grease_ours": false,
+  "padding_ext": true,
+  "no_mlkem": true,
+  "status_request": true,
+  "no_post_handshake_auth": true,
+  "elements_matched": "5/6"
+ },
+ "headers": [
+  "POST /session HTTP/1.1",
+  "Client-SDK: android5.7.0",
+  "Authorization: Signature signature=\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"",
+  "Content-Type: application/x-www-form-urlencoded",
+  "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)",
+  "Host: app.adjust.com",
+  "Connection: Keep-Alive",
+  "Accept-Encoding: gzip",
+  "Content-Length: 22",
+  "app_token=jut9tib0eeps"
+ ]
+}

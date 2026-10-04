@@ -1,0 +1,8 @@
+# CLASS Lcom/adjust/sdk/sig/d3;
+
+---- METHOD public static a (Ljava/lang/String;)[B ----
+  sget-object            v0, Lcom/adjust/sdk/sig/j;->a Ljava/nio/charset/Charset;
+  invoke-virtual         v1, v0, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
+  move-result-object     v1
+  return-object          v1
+######################################################################

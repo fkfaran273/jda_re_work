@@ -1,0 +1,18 @@
+
+=== callers of SetByteArrayRegion wrapper (0x9e778) on nSign path: 0 ===
+
+=== callers of NewByteArray wrapper (0x9e54c) on nSign path: 0 ===
+
+.rodata @ 0x3560 size 0x150
+
+=== refs to 0x1536d2  64-hex blob (32 bytes if hex-decoded) ===
+  (none)
+
+=== refs to 0x3620  .rodata+0xc0  0123456789abcdef fedcba9876543210 ===
+  (none)
+
+=== refs to 0x3640  .rodata+0xe0  f0e1d2c3 9979825a a1ebd96e dcbc1b8f ===
+  (none)
+
+=== refs to 0x3660  .rodata+0x100 'SHA-256' ===
+  (none)

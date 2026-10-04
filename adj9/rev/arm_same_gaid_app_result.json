@@ -1,0 +1,17 @@
+{
+ "control": "same GAID + same click, APP sent the session",
+ "gps": "f47c7f00-a155-4cb1-8a90-d9ef0cde2753",
+ "python_adid": "1b1e651e2cfbccad432af0d916be7095",
+ "verdict": {
+  "tracker_token": "wy7261z",
+  "tracker_name": "Organic",
+  "network": "Organic",
+  "engagement_time": "0001-01-01T00:00:00Z",
+  "installed_at": "2026-09-24T10:02:48Z",
+  "first_session_time": "2026-09-24T10:02:48Z",
+  "is_reattributed": false,
+  "is_redownload_install": false
+ },
+ "JOINED": false,
+ "CASE": "A: click record never qualifying for anyone"
+}

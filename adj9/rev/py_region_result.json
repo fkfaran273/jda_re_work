@@ -1,0 +1,122 @@
+[
+ {
+  "arm": "CONTROL genuine (k=48)",
+  "http": 400,
+  "verdict": "RECOGNIZED"
+ },
+ {
+  "arm": "CONTROL ours (k=0)",
+  "http": 200,
+  "verdict": "not"
+ },
+ {
+  "arm": "genuine prefix  4",
+  "http": 200,
+  "verdict": "not"
+ },
+ {
+  "arm": "genuine prefix  8",
+  "http": 200,
+  "verdict": "not"
+ },
+ {
+  "arm": "genuine prefix 12",
+  "http": 200,
+  "verdict": "not"
+ },
+ {
+  "arm": "genuine prefix 16",
+  "http": 200,
+  "verdict": "not"
+ },
+ {
+  "arm": "genuine prefix 20",
+  "http": 200,
+  "verdict": "not"
+ },
+ {
+  "arm": "genuine prefix 24",
+  "http": 200,
+  "verdict": "not"
+ },
+ {
+  "arm": "genuine prefix 28",
+  "http": 200,
+  "verdict": "not"
+ },
+ {
+  "arm": "genuine prefix 32",
+  "http": 200,
+  "verdict": "not"
+ },
+ {
+  "arm": "genuine prefix 36",
+  "http": 200,
+  "verdict": "not"
+ },
+ {
+  "arm": "genuine prefix 40",
+  "http": 200,
+  "verdict": "not"
+ },
+ {
+  "arm": "genuine prefix 44",
+  "http": 200,
+  "verdict": "not"
+ },
+ {
+  "arm": "genuine suffix 44",
+  "http": 400,
+  "verdict": "RECOGNIZED"
+ },
+ {
+  "arm": "genuine suffix 40",
+  "http": 200,
+  "verdict": "not"
+ },
+ {
+  "arm": "genuine suffix 36",
+  "http": 200,
+  "verdict": "not"
+ },
+ {
+  "arm": "genuine suffix 32",
+  "http": 200,
+  "verdict": "not"
+ },
+ {
+  "arm": "genuine suffix 28",
+  "http": 200,
+  "verdict": "not"
+ },
+ {
+  "arm": "genuine suffix 24",
+  "http": 200,
+  "verdict": "not"
+ },
+ {
+  "arm": "genuine suffix 20",
+  "http": 200,
+  "verdict": "not"
+ },
+ {
+  "arm": "genuine suffix 16",
+  "http": 200,
+  "verdict": "not"
+ },
+ {
+  "arm": "genuine suffix 12",
+  "http": 200,
+  "verdict": "not"
+ },
+ {
+  "arm": "genuine suffix  8",
+  "http": 200,
+  "verdict": "not"
+ },
+ {
+  "arm": "genuine suffix  4",
+  "http": 200,
+  "verdict": "not"
+ }
+]

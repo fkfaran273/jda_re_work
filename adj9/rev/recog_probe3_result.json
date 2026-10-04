@@ -1,0 +1,92 @@
+[
+ {
+  "label": "CONTROL verbatim",
+  "http": 400,
+  "verdict": "RECOGNIZED(400)"
+ },
+ {
+  "label": "initiated_by=backend->sdk",
+  "http": 200,
+  "verdict": "not-recognized(200)"
+ },
+ {
+  "label": "gps_adid_attempt=1->2",
+  "http": 400,
+  "verdict": "RECOGNIZED(400)"
+ },
+ {
+  "label": "api_level=31->30",
+  "http": 200,
+  "verdict": "not-recognized(200)"
+ },
+ {
+  "label": "app_version->3.13.8",
+  "http": 200,
+  "verdict": "not-recognized(200)"
+ },
+ {
+  "label": "os_version=12->11",
+  "http": 200,
+  "verdict": "not-recognized(200)"
+ },
+ {
+  "label": "created_at +1ms",
+  "http": 200,
+  "verdict": "not-recognized(200)"
+ },
+ {
+  "label": "sent_at +1ms",
+  "http": 400,
+  "verdict": "RECOGNIZED(400)"
+ },
+ {
+  "label": "device_type=phone->tablet",
+  "http": 200,
+  "verdict": "not-recognized(200)"
+ },
+ {
+  "label": "foreground=1->0",
+  "http": 400,
+  "verdict": "RECOGNIZED(400)"
+ },
+ {
+  "label": "offline_mode_enabled=0->1",
+  "http": 400,
+  "verdict": "RECOGNIZED(400)"
+ },
+ {
+  "label": "needs_response_details=1->0",
+  "http": 400,
+  "verdict": "RECOGNIZED(400)"
+ },
+ {
+  "label": "attribution_deeplink=1->0",
+  "http": 400,
+  "verdict": "RECOGNIZED(400)"
+ },
+ {
+  "label": "environment->sandbox",
+  "http": 200,
+  "verdict": "not-recognized(200)"
+ },
+ {
+  "label": "ui_mode=1->0",
+  "http": 400,
+  "verdict": "RECOGNIZED(400)"
+ },
+ {
+  "label": "gps_adid_src=service->tracker",
+  "http": 200,
+  "verdict": "not-recognized(200)"
+ },
+ {
+  "label": "tracking_enabled=1->0",
+  "http": 200,
+  "verdict": "not-recognized(200)"
+ },
+ {
+  "label": "CONTROL verbatim (repeat)",
+  "http": 400,
+  "verdict": "RECOGNIZED(400)"
+ }
+]

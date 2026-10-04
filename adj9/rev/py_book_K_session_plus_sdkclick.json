@@ -1,0 +1,60 @@
+{
+ "label": "K_session_plus_sdkclick",
+ "gps": "cd43e025-1219-4e02-9177-c19f9bc23870",
+ "auid": "1671098a-f211-4831-b91d-c4a590abb4f0",
+ "marker": "cline_book_K",
+ "session": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"a5f0ac638b5a3fd3fcd0a77057adb946\",\"ask_in\":2000}"
+ ],
+ "sdk_click": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"a5f0ac638b5a3fd3fcd0a77057adb946\"}"
+ ],
+ "reads": [
+  {
+   "http": 200,
+   "attr": {
+    "tracker_token": "wy7261z",
+    "tracker_name": "Organic",
+    "network": "Organic",
+    "engagement_time": "0001-01-01T00:00:00Z",
+    "installed_at": "2026-09-19T07:28:57Z",
+    "first_session_time": "2026-09-19T07:28:57Z",
+    "is_reattributed": false,
+    "is_redownload_install": false
+   },
+   "raw": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"a5f0ac638b5a3fd3fcd0a77057adb946\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-19T07:28:57Z\",\"first_session_time\":\"2026-09-19T07:28:57Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+  },
+  {
+   "http": 200,
+   "attr": {
+    "tracker_token": "wy7261z",
+    "tracker_name": "Organic",
+    "network": "Organic",
+    "engagement_time": "0001-01-01T00:00:00Z",
+    "installed_at": "2026-09-19T07:28:57Z",
+    "first_session_time": "2026-09-19T07:28:57Z",
+    "is_reattributed": false,
+    "is_redownload_install": false
+   },
+   "raw": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"a5f0ac638b5a3fd3fcd0a77057adb946\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-19T07:28:57Z\",\"first_session_time\":\"2026-09-19T07:28:57Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+  },
+  {
+   "http": 200,
+   "attr": {
+    "tracker_token": "wy7261z",
+    "tracker_name": "Organic",
+    "network": "Organic",
+    "engagement_time": "0001-01-01T00:00:00Z",
+    "installed_at": "2026-09-19T07:28:57Z",
+    "first_session_time": "2026-09-19T07:28:57Z",
+    "is_reattributed": false,
+    "is_redownload_install": false
+   },
+   "raw": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"a5f0ac638b5a3fd3fcd0a77057adb946\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-19T07:28:57Z\",\"first_session_time\":\"2026-09-19T07:28:57Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+  }
+ ],
+ "click_http": 302,
+ "referrer": "adjust_reftag=ckj05DX2ZFMEp&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=cline_book_K"
+}

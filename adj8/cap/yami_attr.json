@@ -1,0 +1,31 @@
+{
+ "params": {
+  "gps_adid_attempt": "1",
+  "api_level": "35",
+  "app_version": "2.60.92",
+  "app_token": "ag7cwhs46ghs",
+  "external_device_id": "9ff107d3a5de9de1",
+  "created_at": "2026-09-23T13:32:27.758Z+0530",
+  "device_type": "phone",
+  "gps_adid": "793327c6-f9ff-45fa-bea3-1a67bf691667",
+  "foreground": "1",
+  "google_app_set_id": "dcc9fc46-cfd0-19c3-ae30-4e429d95a982",
+  "device_name": "RMX2161",
+  "needs_response_details": "1",
+  "gps_adid_src": "service",
+  "initiated_by": "backend",
+  "os_version": "15",
+  "android_uuid": "2de5984c-f315-44ff-97e3-ad7c752f7ac3",
+  "sent_at": "2026-09-23T13:32:27.775Z+0530",
+  "offline_mode_enabled": "0",
+  "environment": "production",
+  "attribution_deeplink": "1",
+  "package_name": "com.grad.def",
+  "os_name": "android",
+  "ui_mode": "1",
+  "tracking_enabled": "1"
+ },
+ "captured_resp": "{\"app_token\":\"ag7cwhs46ghs\",\"adid\":\"e9f6e50f1cb189a7f5a4515dac539d2d\",\"attribution\":{\"tracker_token\":\"1zgami81\",\"tracker_name\":\"Mobavenue::Yami-mobavenue-IN-260408-custom1\",\"network\":\"Mobavenue\",\"campaign\":\"Yami-mobavenue-IN-260408-custom1\",\"engagement_time\":\"2026-09-23T08:00:24Z\",\"installed_at\":\"2026-09-23T08:02:25Z\",\"first_session_time\":\"2026-09-23T08:02:25Z\",\"is_reattributed\":false,\"is_redownlo",
+ "client_sdk": "android5.6.1",
+ "ua": "Dalvik/2.1.0 (Linux; U; Android 15; RMX2161 Build/BP1A.250405.007.D1)"
+}

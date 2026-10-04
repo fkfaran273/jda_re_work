@@ -1,0 +1,66 @@
+--- 
++++ 
+@@ -22,5 +22,5 @@
+ return-void
++new-instance vX, Ljava/lang/IllegalArgumentException;
+ const-string/jumbo sign: Empty input parameters
+-invoke-static vX, Lokhttp3/a;->s(Ljava/lang/String;)V
+-const/4 vX, 0
++invoke-direct vX, vX, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+ throw vX
+@@ -106,17 +106,17 @@
+ return-object vX
+-invoke-static vX, Lokhttp3/a;->s(Ljava/lang/String;)V
+-const/4 vX, 0
+-return-object vX
+-invoke-static vX, Lokhttp3/a;->s(Ljava/lang/String;)V
+-const/4 vX, 0
+-return-object vX
+-invoke-static vX, Lokhttp3/a;->s(Ljava/lang/String;)V
+-const/4 vX, 0
+-return-object vX
+-invoke-static vX, Lokhttp3/a;->s(Ljava/lang/String;)V
+-const/4 vX, 0
+-return-object vX
+-invoke-static vX, Lokhttp3/a;->s(Ljava/lang/String;)V
+-const/4 vX, 0
+-return-object vX
++new-instance vX, Ljava/lang/IllegalArgumentException;
++invoke-direct vX, vX, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
++throw vX
++new-instance vX, Ljava/lang/IllegalArgumentException;
++invoke-direct vX, vX, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
++throw vX
++new-instance vX, Ljava/lang/IllegalArgumentException;
++invoke-direct vX, vX, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
++throw vX
++new-instance vX, Ljava/lang/IllegalArgumentException;
++invoke-direct vX, vX, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
++throw vX
++new-instance vX, Ljava/lang/IllegalArgumentException;
++invoke-direct vX, vX, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
++throw vX
+ ---- METHOD public final a ()V ----
+@@ -148,6 +148,9 @@
+ const-string " is null"
+-invoke-static vX, vX, vX, Ld;->k(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+-move-result-object vX
+-invoke-static vX, Lokhttp3/a;->r(Ljava/lang/Object;)V
+-return-void
++invoke-static vX, vX, vX, LB2/a;->D(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
++move-result-object vX
++new-instance vX, Ljava/lang/IllegalArgumentException;
++invoke-virtual vX, Ljava/lang/Object;->toString()Ljava/lang/String;
++move-result-object vX
++invoke-direct vX, vX, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
++throw vX
+ iget-object vX, vX, Lcom/adjust/sdk/sig/u2;->e Ljava/util/Map;
+@@ -252,5 +255,6 @@
+ throw vX
++new-instance vX, Ljava/lang/IllegalArgumentException;
+ const-string/jumbo sign: Returned a null signature. Exiting...
+-invoke-static vX, Lokhttp3/a;->s(Ljava/lang/String;)V
+-return-void
++invoke-direct vX, vX, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
++throw vX
+ new-instance vX, Lcom/adjust/sdk/sig/b2;

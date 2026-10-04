@@ -1,0 +1,8 @@
+# CLASS Lcom/adjust/sdk/network/c;
+
+---- METHOD public final generateHttpsURLConnection (Ljava/net/URL;)Ljavax/net/ssl/HttpsURLConnection; ----
+  invoke-virtual         v1, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
+  move-result-object     v1
+  check-cast             v1, Ljavax/net/ssl/HttpsURLConnection;
+  return-object          v1
+######################################################################

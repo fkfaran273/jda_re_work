@@ -1,0 +1,14 @@
+{
+ "click_id": "58714599-480f-4e95-94fd-f97dfa02aa90",
+ "gaid": "9e41c368-4269-49d2-81c8-9d985c6d8eae",
+ "verdict": {
+  "tracker_token": "wy7261z",
+  "tracker_name": "Organic",
+  "network": "Organic",
+  "engagement_time": "0001-01-01T00:00:00Z",
+  "installed_at": "2026-09-16T11:15:21Z",
+  "first_session_time": "2026-09-16T11:15:21Z",
+  "is_reattributed": false,
+  "is_redownload_install": false
+ }
+}

@@ -1,0 +1,23 @@
+# CLASS Lcom/adjust/sdk/ISdkClickHandler;
+
+---- METHOD public abstract init (Lcom/adjust/sdk/IActivityHandler; Z Lcom/adjust/sdk/network/IActivityPackageSender;)V ----
+  (no code)
+
+---- METHOD public abstract pauseSending ()V ----
+  (no code)
+
+---- METHOD public abstract resumeSending ()V ----
+  (no code)
+
+---- METHOD public abstract sendPreinstallPayload (Ljava/lang/String; Ljava/lang/String;)V ----
+  (no code)
+
+---- METHOD public abstract sendReftagReferrers ()V ----
+  (no code)
+
+---- METHOD public abstract sendSdkClick (Lcom/adjust/sdk/ActivityPackage;)V ----
+  (no code)
+
+---- METHOD public abstract teardown ()V ----
+  (no code)
+######################################################################

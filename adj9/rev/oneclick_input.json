@@ -1,0 +1,53 @@
+{
+ "_comment": "EDIT THIS FILE, then run:  python oneclick.py   (add --dry to test offline without sending anything)",
+ "link": "https://app.adjust.com/1sd1lk6a?campaign=AH&adgroup=vkm_0926_36&creative=penti_generic&click_id=8e39efb6-5260-435d-9d08-2e81b3817698&idfa=8e39efb6-5260-435d-9d08-2e81b3817698&install_callback=http%3A%2F%2Fec2-13-126-162-113.ap-south-1.compute.amazonaws.com%2Fapi%2Ftrack%2Fv1%2Fpostback%3Fclick_id%3D8e39efb6-5260-435d-9d08-2e81b3817698%26p_sub1%3Dadjust%26advertising_id%3Dvkmdigital%26offer_id%3Dpntvkmdup1mmp&event_callback_bfi71x=http%3A%2F%2Fec2-13-126-162-113.ap-south-1.compute.amazonaws.com%2Fapi%2Ftrack%2Fv1%2Fevents%3Fclick_id%3D8e39efb6-5260-435d-9d08-2e81b3817698%26goal%3Dbfi71x%26p_sub1%3Dadjust%26advertising_id%3Dvkmdigital%26offer_id%3Dpntvkmdup1mmp",
+
+ "referrer": "",
+ "_referrer_note": "leave empty to fire a fresh click; paste a referrer (adjust_reftag=...) to skip the click and use that one instead",
+
+ "gps": "",
+ "_gps_note": "leave empty for a fresh GAID; paste a uuid to pin one (use this if the click was already made)",
+
+ "device": {
+  "kernel": "16",
+  "locale": {"country": "TR", "language": "tr"},
+  "timezone": "+0200",
+  "local_tz": "EET",
+  "local_tz_name": "Europe/Istanbul",
+  "device_type": "phone",
+  "mnc": "01",
+  "mcc": "286",
+  "os_version": "16",
+  "sdk": "36",
+  "build": "BP2A.250605.031.A2",
+  "os_incremental": "13578606",
+  "model": "Pixel 7 Pro",
+  "name": "cheetah",
+  "device": "cheetah",
+  "brand": "google",
+  "manufacturer": "Google",
+  "mainboard": "cheetah",
+  "fingerprint": "google/cheetah/cheetah:16/BP2A.250605.031.A2/13578606:user/release-keys",
+  "cpu_abi": "arm64-v8a",
+  "cpu_core": "7",
+  "display_metrics": {
+   "ypx": "1440",
+   "xpx": "3120",
+   "density_dpi": "xxxhdpi",
+   "screen_layout_format": "long",
+   "screen_layout_name": "large",
+   "screen_layout_size": 3,
+   "aspect_ratio": "19:9"
+  },
+  "network": "WiFi",
+  "network_band": "LTE",
+  "carrier": "Turkcell",
+  "country": "Turkey",
+  "User-Agent": "Mozilla/5.0 (Linux; Android 16; Pixel 7 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.7977.42 Mobile Safari/537.36",
+  "adid": "8e39efb6-5260-435d-9d08-2e81b3817698",
+  "device_id": "8e39efb6-5260-435d-9d08-2e81b3817698",
+  "android_id": "c33d5133dde76c25",
+  "serial": "acd8c9be2174c1b2",
+  "imei": "350385853056886"
+ }
+}

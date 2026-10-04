@@ -1,0 +1,29 @@
+# CLASS Lcom/adjust/sdk/AdjustTestOptions;
+FIELD public allowUrlStrategyFallback Ljava/lang/Boolean;
+FIELD public basePath Ljava/lang/String;
+FIELD public baseUrl Ljava/lang/String;
+FIELD public context Landroid/content/Context;
+FIELD public gdprPath Ljava/lang/String;
+FIELD public gdprUrl Ljava/lang/String;
+FIELD public ignoreSystemLifecycleBootstrap Ljava/lang/Boolean;
+FIELD public noBackoffWait Ljava/lang/Boolean;
+FIELD public purchaseVerificationPath Ljava/lang/String;
+FIELD public purchaseVerificationUrl Ljava/lang/String;
+FIELD public sessionIntervalInMilliseconds Ljava/lang/Long;
+FIELD public subscriptionPath Ljava/lang/String;
+FIELD public subscriptionUrl Ljava/lang/String;
+FIELD public subsessionIntervalInMilliseconds Ljava/lang/Long;
+FIELD public teardown Ljava/lang/Boolean;
+FIELD public timerIntervalInMilliseconds Ljava/lang/Long;
+FIELD public timerStartInMilliseconds Ljava/lang/Long;
+FIELD public tryInstallReferrer Ljava/lang/Boolean;
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v2, Ljava/lang/Object;-><init>()V
+  sget-object            v0, Ljava/lang/Boolean;->FALSE Ljava/lang/Boolean;
+  iput-object            v0, v2, Lcom/adjust/sdk/AdjustTestOptions;->tryInstallReferrer Ljava/lang/Boolean;
+  sget-object            v1, Ljava/lang/Boolean;->TRUE Ljava/lang/Boolean;
+  iput-object            v1, v2, Lcom/adjust/sdk/AdjustTestOptions;->ignoreSystemLifecycleBootstrap Ljava/lang/Boolean;
+  iput-object            v0, v2, Lcom/adjust/sdk/AdjustTestOptions;->allowUrlStrategyFallback Ljava/lang/Boolean;
+  return-void            
+######################################################################

@@ -1,0 +1,321 @@
+{
+ "reqs": [
+  {
+   "method": "POST",
+   "path": "/session",
+   "auth": "Signature signature=\"Wo90Yg1hYAJM5uMAHv7uOm8LFyYnye1O59KLjHOIPGf4Ww9EA4U40YIv999smas/GVelFMRQ4d4HvW8yxvNOgyv2gh3M+vdODSxOZYETf9ze71ovekneSxPpjmbLQuMmpWLRosz8Ej+ffI7Py33UhGjtmnm++FxxsSu00XVpzTkBGSY4QChVBtVAYk1UP2YTLmjKJhymOIu0s/7kAFrUcb6vefL0QD0eW5emawwMXWjx8yIYkoOUp0AXQK8UXzJr\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nContent-Type: application/x-www-form-urlencoded\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\nContent-Length: 1027\n\nstore_name_from_system=com.android.vending&gps_adid_attempt=1&api_level=31&hardware_name=S2SE32.28-28-4&app_version=3.13.9&app_token=jut9tib0eeps&installed_at=2026-09-14T16%3A53%3A09.829Z%2B0530&created_at=2026-09-14T17%3A39%3A01.526Z%2B0530&wait_total=0.0&device_type=phone&language=tr&gps_adid=9abd2f3e-cd24-47a9-a028-c17a138effcf&foreground=1&connectivity_type=1&device_manufacturer=motorola&display_width=1080&device_name=moto+g42&needs_response_details=1&os_build=S2SE32.28-28-4&updated_at=2026-09-14T16%3A53%3A09.829Z%2B0530&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&screen_format=long&last_error=0&gps_adid_src=service&wait_time=0.0&os_version=12&first_error=0&android_uuid=0ac8ea63-b876-46a4-8b79-4527c3049762&sent_at=2026-09-14T17%3A39%3A01.552Z%2B0530&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&session_count=1&display_height=2237&package_name=com.penti.app&initiating_package_name=com.android.vending&os_name=android&ui_mode=1&enqueue_size=0&tracking_enabled=1"
+  },
+  {
+   "method": "POST",
+   "path": "/sdk_click",
+   "auth": "Signature signature=\"Wo90Yg1hYAJM5uMAHv7uOsloiRFHMQx9ws2NK4fZxsNkQCX8PmbjPAzFBXrCNEJzdV1tl4PY5ijnZzFUD0l2H67tY/MZ4CIkyo46eHnMEeR3Rp+Sa5aQ2wtjJ1A89sG6yL2Vs8GVQ8Pv5RXLyNYt9PI6lKSezyFipJPrlevFx/HZNbTDkN2DD6SqXEGKdL0sm+6UThRErj7cQKpM40lcTc0lgbkExM5EY3IHAselBV8mfjqDQ5d+k2l1qkuwjhO1\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nContent-Type: application/x-www-form-urlencoded\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\nContent-Length: 1284\n\napi_level=31&hardware_name=S2SE32.28-28-4&app_version=3.13.9&app_token=jut9tib0eeps&installed_at=2026-09-14T16%3A53%3A09.829Z%2B0530&device_type=phone&language=tr&gps_adid=9abd2f3e-cd24-47a9-a028-c17a138effcf&source=install_referrer&foreground=1&connectivity_type=1&os_build=S2SE32.28-28-4&click_time=2026-09-14T16%3A48%3A18.000Z%2B0530&cpu_type=arm64-v8a&install_version=3.13.9&screen_size=normal&gps_adid_src=service&subsession_count=1&sent_at=2026-09-14T17%3A39%3A01.650Z%2B0530&offline_mode_enabled=0&screen_density=high&session_count=1&ui_mode=1&gps_adid_attempt=1&session_length=0&created_at=2026-09-14T17%3A39%3A01.597Z%2B0530&referrer_api=google&device_manufacturer=motorola&display_width=1080&time_spent=0&device_name=moto+g42&needs_response_details=1&updated_at=2026-09-14T16%3A53%3A09.829Z%2B0530&screen_format=long&click_time_server=2026-09-14T16%3A48%3A17.000Z%2B0530&os_version=12&google_play_instant=0&install_begin_time_server=2026-09-14T16%3A53%3A01.000Z%2B0530&android_uuid=0ac8ea63-b876-46a4-8b79-4527c3049762&referrer=utm_source%3D%28not%2520set%29%26utm_medium%3D%28not%2520set%29&environment=production&attribution_deeplink=1&install_begin_time=2026-09-14T16%3A53%3A02.000Z%2B0530&display_height=2237&package_name=com.penti.app&os_name=android&tracking_enabled=1"
+  },
+  {
+   "method": "GET",
+   "path": "/attribution?initiated_by=backend&gps_adid_attempt=1&api_level=31&app_version=3.13.9&app_token=jut9tib0eeps&os_version=12&created_at=2026-09-14T17%3A39%3A08.195Z%2B0530&device_type=phone&gps_adid=9abd2f3e-cd24-47a9-a028-c17a138effcf&foreground=1&android_uuid=0ac8ea63-b876-46a4-8b79-4527c3049762&sent_at=2026-09-14T17%3A39%3A08.243Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=com.penti.app&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1",
+   "auth": "Signature signature=\"E284JTI0ylwh4al/YJ70BgiH8oALFymArBwORXHQmu2u0oWOAQTkzCyrw9/UVJ21pVeGAJ5QeG6Ur1DzRlnYfY3Wv1R505u2qi7OYiRC1J050Xv6cY6/4D1twWKfGHs7G1eUS4rPSzcxvTAkwMjSrgEujPD7u+AV7iexH7MnnFEyw5H4xZIWGGM1K+eWSXoJNDtaIxjS0WX9WRJY06O5u1lGVpHykFT3RiS9ieRBRHcORdTo4SxBmIjPRP/8NwPB\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\n\n"
+  },
+  {
+   "method": "POST",
+   "path": "/session",
+   "auth": "Signature signature=\"bsEQXFuS+V8sV/CKWKwJzm0j59mXxmN909esw8JI0TjEXZkul5Ik+mafLjFRukBEZkkM3s7Z1YL4u9lyYVbIRM3nuqbQPzPl6rL2nzX0FxJgzXuACL+uN+jO4Sv97/xDS6RsdmNjvDQusccL+wZFVf0SPI12bovd/hIv6NPiFUJa4J5c+Rgu4HHNqjd+Gk2xIZxIEc7EL/+Sj1znSWyLupZv8bH/ad7jkomLzeWgVSIbRJnIqK7x6L9QeGy3wVDV\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nContent-Type: application/x-www-form-urlencoded\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\nContent-Length: 1027\n\nstore_name_from_system=com.android.vending&gps_adid_attempt=1&api_level=31&hardware_name=S2SE32.28-28-4&app_version=3.13.9&app_token=jut9tib0eeps&installed_at=2026-09-14T17%3A52%3A12.431Z%2B0530&created_at=2026-09-14T17%3A53%3A07.753Z%2B0530&wait_total=0.0&device_type=phone&language=tr&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&foreground=1&connectivity_type=1&device_manufacturer=motorola&display_width=1080&device_name=moto+g42&needs_response_details=1&os_build=S2SE32.28-28-4&updated_at=2026-09-14T17%3A52%3A12.431Z%2B0530&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&screen_format=long&last_error=0&gps_adid_src=service&wait_time=0.0&os_version=12&first_error=0&android_uuid=073ccff9-c71c-4987-a914-167666ff7c26&sent_at=2026-09-14T17%3A53%3A07.808Z%2B0530&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&session_count=1&display_height=2237&package_name=com.penti.app&initiating_package_name=com.android.vending&os_name=android&ui_mode=1&enqueue_size=0&tracking_enabled=1"
+  },
+  {
+   "method": "POST",
+   "path": "/sdk_click",
+   "auth": "Signature signature=\"UNl8GGrdP7s5/lDRJy7W30tw9hoHs2oAY8NBvNsbbgSCjdtyu3E82fXSD2UzAMHre7560BVEzJ+CBzyvQOC2oZ1LnddtEnfynpsChDRGh/UZU5QmnNrePzW1a4j1PWglFxJhOmtSEkGDZvdYrXXjwFvLdjS0XvoIfErUdOHRurPk6biw8fEaBCAFpD5KBKFIGnJA2d2t8UYmKztQIM2/2RehdH7Li3/ydI6bHZdhpnO4QeQOzlXfO4vaCZegXpUl\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nContent-Type: application/x-www-form-urlencoded\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\nContent-Length: 1284\n\napi_level=31&hardware_name=S2SE32.28-28-4&app_version=3.13.9&app_token=jut9tib0eeps&installed_at=2026-09-14T17%3A52%3A12.431Z%2B0530&device_type=phone&language=tr&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&source=install_referrer&foreground=1&connectivity_type=1&os_build=S2SE32.28-28-4&click_time=2026-09-14T17%3A48%3A35.000Z%2B0530&cpu_type=arm64-v8a&install_version=3.13.9&screen_size=normal&gps_adid_src=service&subsession_count=1&sent_at=2026-09-14T17%3A53%3A07.871Z%2B0530&offline_mode_enabled=0&screen_density=high&session_count=1&ui_mode=1&gps_adid_attempt=1&session_length=0&created_at=2026-09-14T17%3A53%3A07.846Z%2B0530&referrer_api=google&device_manufacturer=motorola&display_width=1080&time_spent=0&device_name=moto+g42&needs_response_details=1&updated_at=2026-09-14T17%3A52%3A12.431Z%2B0530&screen_format=long&click_time_server=2026-09-14T17%3A48%3A33.000Z%2B0530&os_version=12&google_play_instant=0&install_begin_time_server=2026-09-14T17%3A52%3A03.000Z%2B0530&android_uuid=073ccff9-c71c-4987-a914-167666ff7c26&referrer=utm_source%3D%28not%2520set%29%26utm_medium%3D%28not%2520set%29&environment=production&attribution_deeplink=1&install_begin_time=2026-09-14T17%3A52%3A05.000Z%2B0530&display_height=2237&package_name=com.penti.app&os_name=android&tracking_enabled=1"
+  },
+  {
+   "method": "GET",
+   "path": "/attribution?initiated_by=backend&gps_adid_attempt=1&api_level=31&app_version=3.13.9&app_token=jut9tib0eeps&os_version=12&created_at=2026-09-14T17%3A53%3A11.322Z%2B0530&device_type=phone&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&foreground=1&android_uuid=073ccff9-c71c-4987-a914-167666ff7c26&sent_at=2026-09-14T17%3A53%3A11.358Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=com.penti.app&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1",
+   "auth": "Signature signature=\"BxhPOnI9n7IC0bnZUYA8S5mHKuT72q8zJMjO/pIu+u6639nju9aQmRexD5LD3NGnLKNKNWWz1tLpk/RMrCfIxUQ7pInepTw86B9kYLxb7kIS22eBXVVUPW+1j5YLOFLLVA9EGf/lo8gSoYqSOm/Ko1GPgMEtdsErHpoOCVUQd0Dr/jTNkZO3f6WWAHC5hkboXLirUxlaDoGia3w2AaJIBKaJXCit2YnvH20QELboGkUQAsBGoJpjyfYg0OnSMWh3\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\n\n"
+  },
+  {
+   "method": "POST",
+   "path": "/session",
+   "auth": "Signature signature=\"I0m2HHXPyj8YH2iDU52/nZl5PpIC8BT0uErxRIpzcEJgQtMXQYvpahvSCLAQ0LsD1cygY3OY65dJFhT5JauPI2fgTUVPoMkqBjyOadTzB3NTqxMi6RCkdXjpbpQF48kVoAUnuj/F2dKJRVl2e0QwROW0t5cvriuA8Px9HIJ/N8frWlMyKnbqQouOha1ctXM8DbTk1gioVX2gPu6cQkBvxq8ZkgEWhNyEIvvf98RVig4Waq/Pez9qrwqigfC3ZlZS\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nContent-Type: application/x-www-form-urlencoded\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\nContent-Length: 1027\n\nstore_name_from_system=com.android.vending&gps_adid_attempt=1&api_level=31&hardware_name=S2SE32.28-28-4&app_version=3.13.9&app_token=jut9tib0eeps&installed_at=2026-09-14T17%3A52%3A12.431Z%2B0530&created_at=2026-09-14T21%3A02%3A38.859Z%2B0530&wait_total=0.0&device_type=phone&language=tr&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&foreground=1&connectivity_type=1&device_manufacturer=motorola&display_width=1080&device_name=moto+g42&needs_response_details=1&os_build=S2SE32.28-28-4&updated_at=2026-09-14T17%3A52%3A12.431Z%2B0530&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&screen_format=long&last_error=0&gps_adid_src=service&wait_time=0.0&os_version=12&first_error=0&android_uuid=33b31aeb-955c-48fb-acde-fd657450a57a&sent_at=2026-09-14T21%3A02%3A38.903Z%2B0530&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&session_count=1&display_height=2237&package_name=com.penti.app&initiating_package_name=com.android.vending&os_name=android&ui_mode=1&enqueue_size=0&tracking_enabled=1"
+  },
+  {
+   "method": "POST",
+   "path": "/sdk_click",
+   "auth": "Signature signature=\"LkU8K1FR0sxPINA0JgeASh2+l1AkpXed+scF5JAYaEMe7tI4H4YbxH/jxZ9GhmT7+3E+faQMFlM0aUKLStmz3zb+bDytwGRdMgKCW2aO2sjBvuDk8jVjRGDsbVip8eJZWEQUyuALCnjk4Q9sfncziU3kQFzLAG7ucDDjWmvpd2hktPCSrJkK2he5eoEtK7OLWdVb9GKnPlgvfUvMxeUkh8vBT4lLXgRWmVuBrdY4p9yF/xAc59TA8k51g6CSUr/U\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nContent-Type: application/x-www-form-urlencoded\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\nContent-Length: 1284\n\napi_level=31&hardware_name=S2SE32.28-28-4&app_version=3.13.9&app_token=jut9tib0eeps&installed_at=2026-09-14T17%3A52%3A12.431Z%2B0530&device_type=phone&language=tr&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&source=install_referrer&foreground=1&connectivity_type=1&os_build=S2SE32.28-28-4&click_time=2026-09-14T17%3A48%3A35.000Z%2B0530&cpu_type=arm64-v8a&install_version=3.13.9&screen_size=normal&gps_adid_src=service&subsession_count=1&sent_at=2026-09-14T21%3A02%3A38.923Z%2B0530&offline_mode_enabled=0&screen_density=high&session_count=1&ui_mode=1&gps_adid_attempt=1&session_length=0&created_at=2026-09-14T21%3A02%3A38.907Z%2B0530&referrer_api=google&device_manufacturer=motorola&display_width=1080&time_spent=0&device_name=moto+g42&needs_response_details=1&updated_at=2026-09-14T17%3A52%3A12.431Z%2B0530&screen_format=long&click_time_server=2026-09-14T17%3A48%3A33.000Z%2B0530&os_version=12&google_play_instant=0&install_begin_time_server=2026-09-14T17%3A52%3A03.000Z%2B0530&android_uuid=33b31aeb-955c-48fb-acde-fd657450a57a&referrer=utm_source%3D%28not%2520set%29%26utm_medium%3D%28not%2520set%29&environment=production&attribution_deeplink=1&install_begin_time=2026-09-14T17%3A52%3A05.000Z%2B0530&display_height=2237&package_name=com.penti.app&os_name=android&tracking_enabled=1"
+  },
+  {
+   "method": "GET",
+   "path": "/attribution?initiated_by=sdk&gps_adid_attempt=1&api_level=31&app_version=3.13.9&app_token=jut9tib0eeps&os_version=12&created_at=2026-09-14T21%3A02%3A40.226Z%2B0530&device_type=phone&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&foreground=1&android_uuid=33b31aeb-955c-48fb-acde-fd657450a57a&sent_at=2026-09-14T21%3A02%3A40.250Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=com.penti.app&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1",
+   "auth": "Signature signature=\"LkU8K1FR0sxPINA0JgeASiPWRXR/l2GfrusEHkk4y1R0DotzjkhhKXpjtmeGBezU3BVxkFqv1LnSVnDoMJrymE8a1WiHw/MotaewIqmEuBMEKoW0kIhPBEGCxBDMgniBOCdfqXAHaTiNasHsMQ8pasZLwFENU+kNl7CQINLJ/UEstn8BEsMIZbjYANqP2WwQUWlnWqRqCkBp1cDVEiqt5hzNzTSh8CpkWQ+YY5BJYu9Pn1LjPeyU338zxLI7jRa9\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\n\n"
+  },
+  {
+   "method": "POST",
+   "path": "/sdk_click",
+   "auth": "Signature signature=\"JsT/dHJxX8sEM9dsfBOPEVlnJaz8wD96jEPqvWI1Aojxkd5qcICeclCGltvgcRvZvA2Bq+SBx3ZbZpycyul16ezGZiPD+nRl47NfjsO31fOBMfnvVwXJEnvlKfikogBs31HUuh5uuw35xNHVWwveVH9T53tqdyo0v2RD1knw+qoDOqsX1fN5dQi8x7b5GITUgs4F83xg1l7Izfky58swht4Ug3sJr+EX+Iw4eaoH0TEgKl3mHtcwLLoVkBA4sig0\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nContent-Type: application/x-www-form-urlencoded\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\nContent-Length: 1284\n\napi_level=31&hardware_name=S2SE32.28-28-4&app_version=3.13.9&app_token=jut9tib0eeps&installed_at=2026-09-14T17%3A52%3A12.431Z%2B0530&device_type=phone&language=tr&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&source=install_referrer&foreground=1&connectivity_type=1&os_build=S2SE32.28-28-4&click_time=2026-09-14T17%3A48%3A35.000Z%2B0530&cpu_type=arm64-v8a&install_version=3.13.9&screen_size=normal&gps_adid_src=service&subsession_count=1&sent_at=2026-09-14T21%3A59%3A55.208Z%2B0530&offline_mode_enabled=0&screen_density=high&session_count=1&ui_mode=1&gps_adid_attempt=1&session_length=0&created_at=2026-09-14T21%3A59%3A55.185Z%2B0530&referrer_api=google&device_manufacturer=motorola&display_width=1080&time_spent=0&device_name=moto+g42&needs_response_details=1&updated_at=2026-09-14T17%3A52%3A12.431Z%2B0530&screen_format=long&click_time_server=2026-09-14T17%3A48%3A33.000Z%2B0530&os_version=12&google_play_instant=0&install_begin_time_server=2026-09-14T17%3A52%3A03.000Z%2B0530&android_uuid=a002e665-f30a-47a9-a8fb-d45b693151e2&referrer=utm_source%3D%28not%2520set%29%26utm_medium%3D%28not%2520set%29&environment=production&attribution_deeplink=1&install_begin_time=2026-09-14T17%3A52%3A05.000Z%2B0530&display_height=2237&package_name=com.penti.app&os_name=android&tracking_enabled=1"
+  },
+  {
+   "method": "POST",
+   "path": "/session",
+   "auth": "Signature signature=\"ZxzDACzB4UEh0QZyVWNlCHMQN3MXSMydAgHjECgXshi6y7+owt7uRhE6C9ei5hqrv9g20P2ODG53titqCoSwUQ79WVPEWuxIoub3t5sy3Eqj/RxEuAZIOmPa3Hgxt5jiPuh6CuqXSdD8Pi6fXa8aGt52naXiM94wJoR48iB1NEbM9GlSmZZofssAXOPse21pcJCu3PPomKW0nW5Z9Xpek7mIm7OS6mjE0pS/NgXcIockem8av8V7tDRrU2jvQcu5\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nContent-Type: application/x-www-form-urlencoded\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\nContent-Length: 1027\n\nstore_name_from_system=com.android.vending&gps_adid_attempt=1&api_level=31&hardware_name=S2SE32.28-28-4&app_version=3.13.9&app_token=jut9tib0eeps&installed_at=2026-09-14T17%3A52%3A12.431Z%2B0530&created_at=2026-09-14T21%3A59%3A55.110Z%2B0530&wait_total=0.0&device_type=phone&language=tr&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&foreground=1&connectivity_type=1&device_manufacturer=motorola&display_width=1080&device_name=moto+g42&needs_response_details=1&os_build=S2SE32.28-28-4&updated_at=2026-09-14T17%3A52%3A12.431Z%2B0530&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&screen_format=long&last_error=0&gps_adid_src=service&wait_time=0.0&os_version=12&first_error=0&android_uuid=a002e665-f30a-47a9-a8fb-d45b693151e2&sent_at=2026-09-14T21%3A59%3A55.171Z%2B0530&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&session_count=1&display_height=2237&package_name=com.penti.app&initiating_package_name=com.android.vending&os_name=android&ui_mode=1&enqueue_size=0&tracking_enabled=1"
+  },
+  {
+   "method": "GET",
+   "path": "/attribution?initiated_by=sdk&gps_adid_attempt=1&api_level=31&app_version=3.13.9&app_token=jut9tib0eeps&os_version=12&created_at=2026-09-14T22%3A00%3A02.763Z%2B0530&device_type=phone&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&foreground=1&android_uuid=a002e665-f30a-47a9-a8fb-d45b693151e2&sent_at=2026-09-14T22%3A00%3A02.779Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=com.penti.app&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1",
+   "auth": "Signature signature=\"czp/GEPZg2w7aqQyN3xkFq8C6/Y15mtCPqlI3jelZEBpRzIPkRUt/mgHWcuHLDUi5ePXQ7f1f+A0jyBFO5Hs2/eJVjM//M1cEbn2q+QvGWONJwWgkbp2P0Bd8i65vSCOhcLF3JhnTgKcDxUG2cCH0VjLvycLYQAlcZ/OtB+VhtkrVfpRBce5fsDIUxj0tTLGcsHNJoaggYVIckHpuBd+eI6nQTetI7hCL2AISlk1srbOfXeKDsqaFQaZwGVP/Cb1\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\n\n"
+  },
+  {
+   "method": "POST",
+   "path": "/session",
+   "auth": "Signature signature=\"DOuCeg9LnFcc2ramLaYsffaYi5thgw9pcwgG6Vn8CVV+Mz1knBfeDqQ60Xow9XeaPH2XyoIUPd4yicXW5t0OIB39v9eBT6tr47nNLrFvtHGb2BfDQkgdZnfl7fTpdI/HNpyXkrX8cKcsQ78WuF9z5fmJyIRQ0RVfLW4Dk2lwQ/LOoIadk4LSTU+jw0atBi3NNRF9Q7+HKHiy+x/rFWjkv1O06rGGAb2uEbBvL/ggnrzoaEOUMefc3BHfE+hynasO\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nContent-Type: application/x-www-form-urlencoded\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\nContent-Length: 1027\n\nstore_name_from_system=com.android.vending&gps_adid_attempt=1&api_level=31&hardware_name=S2SE32.28-28-4&app_version=3.13.9&app_token=jut9tib0eeps&installed_at=2026-09-14T17%3A52%3A12.431Z%2B0530&created_at=2026-09-14T22%3A04%3A25.678Z%2B0530&wait_total=0.0&device_type=phone&language=tr&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&foreground=1&connectivity_type=1&device_manufacturer=motorola&display_width=1080&device_name=moto+g42&needs_response_details=1&os_build=S2SE32.28-28-4&updated_at=2026-09-14T17%3A52%3A12.431Z%2B0530&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&screen_format=long&last_error=0&gps_adid_src=service&wait_time=0.0&os_version=12&first_error=0&android_uuid=0f90bdaf-6e22-4865-a3f6-6e37de8cb552&sent_at=2026-09-14T22%3A04%3A25.698Z%2B0530&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&session_count=1&display_height=2237&package_name=com.penti.app&initiating_package_name=com.android.vending&os_name=android&ui_mode=1&enqueue_size=0&tracking_enabled=1"
+  },
+  {
+   "method": "POST",
+   "path": "/sdk_click",
+   "auth": "Signature signature=\"DOuCeg9LnFcc2ramLaYsfWc2edkY0dR88tHPjP5P7Dm4LKjuDzh7ALaf1rM8Xc/O56CTKEY8v3NLYG+mCzdZuHzpmGAshyF4VNtZlSYocjHNUjMYjpo0QsHl/zRpQU67QsaRdinWU2ufnlYPy80EiJoTIMeYUuG8chAZEf4xa0W2yH/0fv/JlsEAF72B94Z+3WopwazuPR3tSs90Q5k4hZ5vBqtQ2un3zFWwx/ZXhullmgTNb5dnrmuotFI+djK3\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nContent-Type: application/x-www-form-urlencoded\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\nContent-Length: 1284\n\napi_level=31&hardware_name=S2SE32.28-28-4&app_version=3.13.9&app_token=jut9tib0eeps&installed_at=2026-09-14T17%3A52%3A12.431Z%2B0530&device_type=phone&language=tr&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&source=install_referrer&foreground=1&connectivity_type=1&os_build=S2SE32.28-28-4&click_time=2026-09-14T17%3A48%3A35.000Z%2B0530&cpu_type=arm64-v8a&install_version=3.13.9&screen_size=normal&gps_adid_src=service&subsession_count=1&sent_at=2026-09-14T22%3A04%3A25.807Z%2B0530&offline_mode_enabled=0&screen_density=high&session_count=1&ui_mode=1&gps_adid_attempt=1&session_length=0&created_at=2026-09-14T22%3A04%3A25.775Z%2B0530&referrer_api=google&device_manufacturer=motorola&display_width=1080&time_spent=0&device_name=moto+g42&needs_response_details=1&updated_at=2026-09-14T17%3A52%3A12.431Z%2B0530&screen_format=long&click_time_server=2026-09-14T17%3A48%3A33.000Z%2B0530&os_version=12&google_play_instant=0&install_begin_time_server=2026-09-14T17%3A52%3A03.000Z%2B0530&android_uuid=0f90bdaf-6e22-4865-a3f6-6e37de8cb552&referrer=utm_source%3D%28not%2520set%29%26utm_medium%3D%28not%2520set%29&environment=production&attribution_deeplink=1&install_begin_time=2026-09-14T17%3A52%3A05.000Z%2B0530&display_height=2237&package_name=com.penti.app&os_name=android&tracking_enabled=1"
+  },
+  {
+   "method": "GET",
+   "path": "/attribution?initiated_by=sdk&gps_adid_attempt=1&api_level=31&app_version=3.13.9&app_token=jut9tib0eeps&os_version=12&created_at=2026-09-14T22%3A04%3A27.021Z%2B0530&device_type=phone&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&foreground=1&android_uuid=0f90bdaf-6e22-4865-a3f6-6e37de8cb552&sent_at=2026-09-14T22%3A04%3A27.036Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=com.penti.app&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1",
+   "auth": "Signature signature=\"Tz/3OVzysuMgzbXZH8OiTB0ndJzHcwpfVpkGzPM71nezaB0O2rJkM94oT6GzyUT7Cil4WwxhqdYuk/4tvjsX+3vDfqoLt3XRbfEHqvpmWugcmv9eonA5fWlAqMGsNOuXvkLHrj2o6BHDRxxoictDFaA/QE+WoubPMfPNgk3Ie74Mjsju25l+7JpPC+hxGsVcnVmuFE48JujvLAjdJFp9DLtpTS1GLUrBj+UaBeWe6UMzGtZC5y56A5cFsXcf2Z92\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\n\n"
+  },
+  {
+   "method": "POST",
+   "path": "/event",
+   "auth": "Signature signature=\"Il5KmW9nA5119juBMTcf/oWO80HI06qi7D3qlxqzI5KmMoAmaeiWNcybvvOVo5rf0PXRmlM5b/HYtzQp83HxxIUTO1ruQPFk87GNAFVKGf210KYM87ScpMGmlzgsqgglN2sEbzSz3jzUZq89FNnf/YMCMyPV8I0O3wwg2Zy2G40VJzY7tZGxVUKiFUzMUkhLf3HLh05REGDK3pvMffVg3jOyYXWHQK0GaVYEYyaCR8cScU/vadMY9pl5N19hxUWZ\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nContent-Type: application/x-www-form-urlencoded\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\nContent-Length: 1020\n\ngps_adid_attempt=1&api_level=31&hardware_name=S2SE32.28-28-4&partner_params=%7B%22content_type%22%3A%22product%22%2C%22value%22%3A%220.0%22%7D&app_version=3.13.9&app_token=jut9tib0eeps&event_count=1&session_length=1667&created_at=2026-09-14T22%3A32%3A12.984Z%2B0530&wait_total=0.0&device_type=phone&language=tr&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&foreground=1&connectivity_type=1&device_manufacturer=motorola&display_width=1080&event_token=p90b20&time_spent=1667&device_name=moto+g42&needs_response_details=1&os_build=S2SE32.28-28-4&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&screen_format=long&last_error=0&gps_adid_src=service&seq=1&subsession_count=1&wait_time=0.0&os_version=12&first_error=0&android_uuid=0f90bdaf-6e22-4865-a3f6-6e37de8cb552&sent_at=2026-09-14T22%3A32%3A13.127Z%2B0530&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&session_count=1&display_height=2237&package_name=com.penti.app&os_name=android&ui_mode=1&enqueue_size=0&tracking_enabled=1"
+  },
+  {
+   "method": "POST",
+   "path": "/session",
+   "auth": "Signature signature=\"U04w6ANySulMnSo7al+9o/s33iUrT1w+eWi6qi8I3/6WQVtK8B0uUWomYDD+mCNgn4ruX069v6w1KVyYha07czDnuxhYmNvagxqPfoPRjy3huAQztGyyrXKwdEQtzf9oB7nNs0Jd071SIV1TknoTausHur+4gS+TugIb7XZQDO9KH+jtEf6gHlwQtsWhBXppGHIPw2nwA1srZQirnxfLelSyxY69xkLT5WtqGV4cVAbIPFw/oQCWXLbyEGUqQkSG\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nContent-Type: application/x-www-form-urlencoded\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\nContent-Length: 1027\n\nstore_name_from_system=com.android.vending&gps_adid_attempt=1&api_level=31&hardware_name=S2SE32.28-28-4&app_version=3.13.9&app_token=jut9tib0eeps&installed_at=2026-09-14T17%3A52%3A12.431Z%2B0530&created_at=2026-09-14T23%3A44%3A34.057Z%2B0530&wait_total=0.0&device_type=phone&language=tr&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&foreground=1&connectivity_type=1&device_manufacturer=motorola&display_width=1080&device_name=moto+g42&needs_response_details=1&os_build=S2SE32.28-28-4&updated_at=2026-09-14T17%3A52%3A12.431Z%2B0530&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&screen_format=long&last_error=0&gps_adid_src=service&wait_time=0.0&os_version=12&first_error=0&android_uuid=7ba51fce-9d49-46ec-94d3-924e8a0ff269&sent_at=2026-09-14T23%3A44%3A34.087Z%2B0530&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&session_count=1&display_height=2237&package_name=com.penti.app&initiating_package_name=com.android.vending&os_name=android&ui_mode=1&enqueue_size=0&tracking_enabled=1"
+  },
+  {
+   "method": "POST",
+   "path": "/sdk_click",
+   "auth": "Signature signature=\"J0Wt2wF9csZ2Dl9fd3xy5Pi0nMC6Pn+La2svuOPjJG1JWzyD2FtTSDt3769GNN/TzXheFSYtKHEGKNqNR4Ti0MHuSe8Ggp9WQHEH23cgYtZmsIwiaNbaBx4KaRJ5xK0HIPid6SKOpTaYxbPXftsOhIF6u4/egLC78LOg9RUdFrnt0hZMavS9ZYNCYZP8D8f/qgtTRM5EABOPPQnU6z8qtNWw/t8aYrrqjpyIbUG2xcTJTnQdc9KD9Q8bdf8KZMmm\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nContent-Type: application/x-www-form-urlencoded\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\nContent-Length: 1284\n\napi_level=31&hardware_name=S2SE32.28-28-4&app_version=3.13.9&app_token=jut9tib0eeps&installed_at=2026-09-14T17%3A52%3A12.431Z%2B0530&device_type=phone&language=tr&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&source=install_referrer&foreground=1&connectivity_type=1&os_build=S2SE32.28-28-4&click_time=2026-09-14T17%3A48%3A35.000Z%2B0530&cpu_type=arm64-v8a&install_version=3.13.9&screen_size=normal&gps_adid_src=service&subsession_count=1&sent_at=2026-09-14T23%3A44%3A35.951Z%2B0530&offline_mode_enabled=0&screen_density=high&session_count=1&ui_mode=1&gps_adid_attempt=1&session_length=0&created_at=2026-09-14T23%3A44%3A35.931Z%2B0530&referrer_api=google&device_manufacturer=motorola&display_width=1080&time_spent=0&device_name=moto+g42&needs_response_details=1&updated_at=2026-09-14T17%3A52%3A12.431Z%2B0530&screen_format=long&click_time_server=2026-09-14T17%3A48%3A33.000Z%2B0530&os_version=12&google_play_instant=0&install_begin_time_server=2026-09-14T17%3A52%3A03.000Z%2B0530&android_uuid=7ba51fce-9d49-46ec-94d3-924e8a0ff269&referrer=utm_source%3D%28not%2520set%29%26utm_medium%3D%28not%2520set%29&environment=production&attribution_deeplink=1&install_begin_time=2026-09-14T17%3A52%3A05.000Z%2B0530&display_height=2237&package_name=com.penti.app&os_name=android&tracking_enabled=1"
+  },
+  {
+   "method": "GET",
+   "path": "/attribution?initiated_by=backend&gps_adid_attempt=1&api_level=31&app_version=3.13.9&app_token=jut9tib0eeps&os_version=12&created_at=2026-09-14T23%3A44%3A40.543Z%2B0530&device_type=phone&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&foreground=1&android_uuid=7ba51fce-9d49-46ec-94d3-924e8a0ff269&sent_at=2026-09-14T23%3A44%3A40.579Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=com.penti.app&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1",
+   "auth": "Signature signature=\"RCjEnTxu/xAGgYBKI5/67AJfeo3v055bcMrkbabrODaQn5+nZ0Jz/sFC0ptFJA1dZUXIzf/Qd0Oq7VxcfQoqMwL+/n8IaqOb9ZD4fGMhy6Z/LuMa4PLn1sW4K6tRUllA++Bzj7PcR/k/1wflVskKC9klYfBSyniJQaIYP/2m3sYJd8pU1JjGpbGvQPHaboRN9nh9YFatKrlNiAaCCKFB6QfwfsqZWznknxAZDg8NvbxMdfRhnPX6w0UP6mcHy0lf\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\n\n"
+  },
+  {
+   "method": "POST",
+   "path": "/session",
+   "auth": "Signature signature=\"anW38HgQu1sTgAwhALx+hxzn2ZzEd1AX81Bo8VtjWVy4ocxhcVCjnqoUlU9yG4HYGe3CUi1mMVPQDlcWPbzyLc9sNbPdFLF1f0aVB4l9QBVr4PUkPfBgg5uvuqsnN4qnkXWPq0gEAcUN5rj9YKLzZERJqZVyQXjoiTkajJAC3cHSsxsEsiWLrZak3eu43+n5WhBz3WMr+zxCe/pY1BLyb8Zd5tUQ5ufnYL7gvOulUoywWN8aAwKDdszKKNsSBeh5\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nContent-Type: application/x-www-form-urlencoded\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\nContent-Length: 1027\n\nstore_name_from_system=com.android.vending&gps_adid_attempt=1&api_level=31&hardware_name=S2SE32.28-28-4&app_version=3.13.9&app_token=jut9tib0eeps&installed_at=2026-09-14T17%3A52%3A12.431Z%2B0530&created_at=2026-09-15T00%3A41%3A33.763Z%2B0530&wait_total=0.0&device_type=phone&language=tr&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&foreground=1&connectivity_type=1&device_manufacturer=motorola&display_width=1080&device_name=moto+g42&needs_response_details=1&os_build=S2SE32.28-28-4&updated_at=2026-09-14T17%3A52%3A12.431Z%2B0530&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&screen_format=long&last_error=0&gps_adid_src=service&wait_time=0.0&os_version=12&first_error=0&android_uuid=82e1b24a-97e5-469c-b31e-3ae552e15362&sent_at=2026-09-15T00%3A41%3A33.782Z%2B0530&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&session_count=1&display_height=2237&package_name=com.penti.app&initiating_package_name=com.android.vending&os_name=android&ui_mode=1&enqueue_size=0&tracking_enabled=1"
+  },
+  {
+   "method": "POST",
+   "path": "/sdk_click",
+   "auth": "Signature signature=\"ZmPwW2rFjzpvJlhzO42FvKcGQ7O4F08HjPp+FCDcJZ5RyklwdUU2MT8/KBFyfbJrMDOp3zTk6I7xpoJW4Hb10eIg9+W0y4eJWRhS3bx5T657a90Vo5+oe299964SbqunkFZCD1xoeIDw4orcyHsbYQSfqabUxOQb99STFyljsAnh1wUKPuOvFlcFM4IKPddaqWJ/z8NtqwXaQFMnpBBjBPocXpWnE6CocVjHsMp98j7N7DlI/RmwhqywvI20+UEb\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nContent-Type: application/x-www-form-urlencoded\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\nContent-Length: 1284\n\napi_level=31&hardware_name=S2SE32.28-28-4&app_version=3.13.9&app_token=jut9tib0eeps&installed_at=2026-09-14T17%3A52%3A12.431Z%2B0530&device_type=phone&language=tr&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&source=install_referrer&foreground=1&connectivity_type=1&os_build=S2SE32.28-28-4&click_time=2026-09-14T17%3A48%3A35.000Z%2B0530&cpu_type=arm64-v8a&install_version=3.13.9&screen_size=normal&gps_adid_src=service&subsession_count=1&sent_at=2026-09-15T00%3A41%3A33.864Z%2B0530&offline_mode_enabled=0&screen_density=high&session_count=1&ui_mode=1&gps_adid_attempt=1&session_length=0&created_at=2026-09-15T00%3A41%3A33.821Z%2B0530&referrer_api=google&device_manufacturer=motorola&display_width=1080&time_spent=0&device_name=moto+g42&needs_response_details=1&updated_at=2026-09-14T17%3A52%3A12.431Z%2B0530&screen_format=long&click_time_server=2026-09-14T17%3A48%3A33.000Z%2B0530&os_version=12&google_play_instant=0&install_begin_time_server=2026-09-14T17%3A52%3A03.000Z%2B0530&android_uuid=82e1b24a-97e5-469c-b31e-3ae552e15362&referrer=utm_source%3D%28not%2520set%29%26utm_medium%3D%28not%2520set%29&environment=production&attribution_deeplink=1&install_begin_time=2026-09-14T17%3A52%3A05.000Z%2B0530&display_height=2237&package_name=com.penti.app&os_name=android&tracking_enabled=1"
+  },
+  {
+   "method": "GET",
+   "path": "/attribution?initiated_by=sdk&gps_adid_attempt=1&api_level=31&app_version=3.13.9&app_token=jut9tib0eeps&os_version=12&created_at=2026-09-15T00%3A41%3A35.359Z%2B0530&device_type=phone&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&foreground=1&android_uuid=82e1b24a-97e5-469c-b31e-3ae552e15362&sent_at=2026-09-15T00%3A41%3A35.369Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=com.penti.app&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1",
+   "auth": "Signature signature=\"ZmPwW2rFjzpvJlhzO42FvKdwIinzKYgr2R2S9z2IIo9cF+0UYmzWTOFI3/ADZwXZ/hM7ZVoGBWjRMluciN448DRv+e1ekQYhhq2i9EdMyXveoWh4Lk75sUmXFtUYFeBqtRorevYHSZcEWq4tzH5uXYozVehgSbwsfpesgGLdZkcaSMv2FmNBVXh+MgW/xYiQMPhr4gicNGCPRuwqPV9bcH2c3X2zrHPPVoL7208sfX4X9Yb6+i1nUQVOo8uiAuT7\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\n\n"
+  },
+  {
+   "method": "POST",
+   "path": "/event",
+   "auth": "Signature signature=\"fsVj21w87OtK6bLjCWettQNeZcBFRZME9GIEG5hK1pQ6Dy+OB37C05WIpDpHwqhBFKA0Cx+F4qq2pRG1ek5luBdD2k7xAsFgwKwvT5MZFcL5HFkVmgLjRsNZdiqhm8R7eg+eSV8ITYM66R08qLhZuFDY00bprcF9+gJF7v9h2TJnl8Q3luj5rMD5KINke0ZCMsTlezlkym7iiChPGg0Wev1QG6fJSZLs7LiRiM5+AnDNyNVpWZfZDyivAJeqI0yV\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nContent-Type: application/x-www-form-urlencoded\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\nContent-Length: 1164\n\ngps_adid_attempt=1&api_level=31&hardware_name=S2SE32.28-28-4&partner_params=%7B%22productCode%22%3A%22PL5ZH35G26IY-MIX%22%2C%22amount%22%3A%221%22%2C%22content_type%22%3A%22product%22%2C%22content_id%22%3A%22PL5ZH35G26IY-MIX%22%2C%22value%22%3A%22999.99%22%2C%22currency%22%3A%22TRY%22%7D&app_version=3.13.9&app_token=jut9tib0eeps&event_count=1&session_length=145&created_at=2026-09-15T00%3A43%3A58.642Z%2B0530&wait_total=0.0&device_type=phone&language=tr&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&foreground=1&connectivity_type=1&device_manufacturer=motorola&display_width=1080&event_token=29ah7d&time_spent=145&device_name=moto+g42&needs_response_details=1&os_build=S2SE32.28-28-4&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&screen_format=long&last_error=0&gps_adid_src=service&seq=1&subsession_count=1&wait_time=0.0&os_version=12&first_error=0&android_uuid=82e1b24a-97e5-469c-b31e-3ae552e15362&sent_at=2026-09-15T00%3A43%3A58.901Z%2B0530&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&session_count=1&display_height=2237&package_name=com.penti.app&os_name=android&ui_mode=1&enqueue_size=0&tracking_enabled=1"
+  },
+  {
+   "method": "POST",
+   "path": "/session",
+   "auth": "Signature signature=\"csSCp2AwQ35RCNOZTJypJv3hBNvog5QTQb6pA2GBzC5Siyu9DfrJzK/2/vX33xFmK9KamlDxSWmeZxpUxwakUFVGHa0QhidwK+HQiADTCa1E8Jv4pkX2ZZGt04zeWBCw1eWXFniN+GXkr9DWBHSYFjYaP0mwU/e4xKeg5OSMAxnnf6ZxOCcadN5p1Z/9J2MhbhJR1lmng+d9Tb0QYCuLeTKvy8PqEWWPD+AfC4o3ZfTRV/2cetEgknmTJBD9SNzA\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nContent-Type: application/x-www-form-urlencoded\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\nContent-Length: 1027\n\nstore_name_from_system=com.android.vending&gps_adid_attempt=1&api_level=31&hardware_name=S2SE32.28-28-4&app_version=3.13.9&app_token=jut9tib0eeps&installed_at=2026-09-14T17%3A52%3A12.431Z%2B0530&created_at=2026-09-15T00%3A44%3A57.466Z%2B0530&wait_total=0.0&device_type=phone&language=tr&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&foreground=1&connectivity_type=1&device_manufacturer=motorola&display_width=1080&device_name=moto+g42&needs_response_details=1&os_build=S2SE32.28-28-4&updated_at=2026-09-14T17%3A52%3A12.431Z%2B0530&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&screen_format=long&last_error=0&gps_adid_src=service&wait_time=0.0&os_version=12&first_error=0&android_uuid=5d6a20ae-161c-405d-b477-4cdbf3fb3c79&sent_at=2026-09-15T00%3A44%3A57.487Z%2B0530&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&session_count=1&display_height=2237&package_name=com.penti.app&initiating_package_name=com.android.vending&os_name=android&ui_mode=1&enqueue_size=0&tracking_enabled=1"
+  },
+  {
+   "method": "POST",
+   "path": "/sdk_click",
+   "auth": "Signature signature=\"Wk7OkG5d/4Z1pr/GRBq8uEp860WAXENwaTXmmbTl+wENnXLM2cTYxZyXYMFVOXJRyO5OG43FHNzxnP7b+MyZmVM+D4bzRdU01H3bw/1JEGGSWkorbapmOUxFIz1Fzx0meVxR6bPM64ungs879YDO1QhfITwyZRfbGFSU7lniTCEh17tmplen5VQdynwTc6vLEKu+49poUQLZmgZSdfO/dOyNkJ3ql6WGL4vniFoMfG0T0N8knB/uDB4VZRMSYl5t\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nContent-Type: application/x-www-form-urlencoded\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\nContent-Length: 1284\n\napi_level=31&hardware_name=S2SE32.28-28-4&app_version=3.13.9&app_token=jut9tib0eeps&installed_at=2026-09-14T17%3A52%3A12.431Z%2B0530&device_type=phone&language=tr&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&source=install_referrer&foreground=1&connectivity_type=1&os_build=S2SE32.28-28-4&click_time=2026-09-14T17%3A48%3A35.000Z%2B0530&cpu_type=arm64-v8a&install_version=3.13.9&screen_size=normal&gps_adid_src=service&subsession_count=1&sent_at=2026-09-15T00%3A44%3A57.618Z%2B0530&offline_mode_enabled=0&screen_density=high&session_count=1&ui_mode=1&gps_adid_attempt=1&session_length=0&created_at=2026-09-15T00%3A44%3A57.588Z%2B0530&referrer_api=google&device_manufacturer=motorola&display_width=1080&time_spent=0&device_name=moto+g42&needs_response_details=1&updated_at=2026-09-14T17%3A52%3A12.431Z%2B0530&screen_format=long&click_time_server=2026-09-14T17%3A48%3A33.000Z%2B0530&os_version=12&google_play_instant=0&install_begin_time_server=2026-09-14T17%3A52%3A03.000Z%2B0530&android_uuid=5d6a20ae-161c-405d-b477-4cdbf3fb3c79&referrer=utm_source%3D%28not%2520set%29%26utm_medium%3D%28not%2520set%29&environment=production&attribution_deeplink=1&install_begin_time=2026-09-14T17%3A52%3A05.000Z%2B0530&display_height=2237&package_name=com.penti.app&os_name=android&tracking_enabled=1"
+  },
+  {
+   "method": "GET",
+   "path": "/attribution?initiated_by=sdk&gps_adid_attempt=1&api_level=31&app_version=3.13.9&app_token=jut9tib0eeps&os_version=12&created_at=2026-09-15T00%3A44%3A59.066Z%2B0530&device_type=phone&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&foreground=1&android_uuid=5d6a20ae-161c-405d-b477-4cdbf3fb3c79&sent_at=2026-09-15T00%3A44%3A59.089Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=com.penti.app&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1",
+   "auth": "Signature signature=\"Wk7OkG5d/4Z1pr/GRBq8uBK2v5GPMOFwYFAJbpCqsH5HBC7uAgfi1yIWXa9R+fR5l5pt3tnucUxgjHPMkAJmibjBHAhzDxOQkhY+r5vvXJhsNqI9ajo0JWQtHTZbA3p7KwAFjZw6IYcOPYtjnIT3qt9yQRtvNQ+Rk3RGNMayEngJJQ4Efq9bcztnwt1r+FFZlPiEzBJYjnle/T/m3wB8uq6ITt7arHUoazuAhsUlDlSytY1pc9oWqM5HxPEx5ndS\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\n\n"
+  },
+  {
+   "method": "POST",
+   "path": "/session",
+   "auth": "Signature signature=\"FwMovAv0ZDFpUdzpXb2V95wKVIwedS72Y0m1jNxYroDNJWYbL94+nJX5gGtfCbNPQVStqHeCfdtm1ehfrM/Z7+wp8TkvztEIS/SEL/lU285AE+g1kAm50elDfwRWDKmgFuDSqVwq67R3Ubb3eW1+scF0bpmO2sMMV8jlbCER6eoiIBzo43/rBnzvo0bbrKLD7hgPl7Xizu53tT3LsGYLp7Qv7Op8l3xd2QCjc+oVcc0AgWK4jLmshaJQHF0axw5V\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nContent-Type: application/x-www-form-urlencoded\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\nContent-Length: 1027\n\nstore_name_from_system=com.android.vending&gps_adid_attempt=1&api_level=31&hardware_name=S2SE32.28-28-4&app_version=3.13.9&app_token=jut9tib0eeps&installed_at=2026-09-14T17%3A52%3A12.431Z%2B0530&created_at=2026-09-15T00%3A49%3A27.489Z%2B0530&wait_total=0.0&device_type=phone&language=tr&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&foreground=1&connectivity_type=1&device_manufacturer=motorola&display_width=1080&device_name=moto+g42&needs_response_details=1&os_build=S2SE32.28-28-4&updated_at=2026-09-14T17%3A52%3A12.431Z%2B0530&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&screen_format=long&last_error=0&gps_adid_src=service&wait_time=0.0&os_version=12&first_error=0&android_uuid=3f1ce354-0104-40f2-aed0-1f7282b75127&sent_at=2026-09-15T00%3A49%3A27.533Z%2B0530&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&session_count=1&display_height=2237&package_name=com.penti.app&initiating_package_name=com.android.vending&os_name=android&ui_mode=1&enqueue_size=0&tracking_enabled=1"
+  },
+  {
+   "method": "POST",
+   "path": "/sdk_click",
+   "auth": "Signature signature=\"aF6U2EPfNehd9eQlNerfNnUTyMG8oHwQToSuO/+zmVkRu4yDj18VHe1PXQzoGEoylTO73CFsN8KxYA01jL6XRues0l4nCfJKmAha8NDjP04jQ/MFKyeT+AFHtxH6hbbIeFbEkN0tQEdhRQdQW/fteum/FSQT/LBqgJDEQpno7SqVPHea+viXreEbUFEaf0MxNzIcGcnH5v/wOPfqGq8bEUXP/mn+opCghed7J8xvH7LzBhl2Px4Z/93DCVW18Dub\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nContent-Type: application/x-www-form-urlencoded\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\nContent-Length: 1284\n\napi_level=31&hardware_name=S2SE32.28-28-4&app_version=3.13.9&app_token=jut9tib0eeps&installed_at=2026-09-14T17%3A52%3A12.431Z%2B0530&device_type=phone&language=tr&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&source=install_referrer&foreground=1&connectivity_type=1&os_build=S2SE32.28-28-4&click_time=2026-09-14T17%3A48%3A35.000Z%2B0530&cpu_type=arm64-v8a&install_version=3.13.9&screen_size=normal&gps_adid_src=service&subsession_count=1&sent_at=2026-09-15T00%3A49%3A27.582Z%2B0530&offline_mode_enabled=0&screen_density=high&session_count=1&ui_mode=1&gps_adid_attempt=1&session_length=0&created_at=2026-09-15T00%3A49%3A27.550Z%2B0530&referrer_api=google&device_manufacturer=motorola&display_width=1080&time_spent=0&device_name=moto+g42&needs_response_details=1&updated_at=2026-09-14T17%3A52%3A12.431Z%2B0530&screen_format=long&click_time_server=2026-09-14T17%3A48%3A33.000Z%2B0530&os_version=12&google_play_instant=0&install_begin_time_server=2026-09-14T17%3A52%3A03.000Z%2B0530&android_uuid=3f1ce354-0104-40f2-aed0-1f7282b75127&referrer=utm_source%3D%28not%2520set%29%26utm_medium%3D%28not%2520set%29&environment=production&attribution_deeplink=1&install_begin_time=2026-09-14T17%3A52%3A05.000Z%2B0530&display_height=2237&package_name=com.penti.app&os_name=android&tracking_enabled=1"
+  },
+  {
+   "method": "GET",
+   "path": "/attribution?initiated_by=backend&gps_adid_attempt=1&api_level=31&app_version=3.13.9&app_token=jut9tib0eeps&os_version=12&created_at=2026-09-15T00%3A49%3A34.197Z%2B0530&device_type=phone&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&foreground=1&android_uuid=3f1ce354-0104-40f2-aed0-1f7282b75127&sent_at=2026-09-15T00%3A49%3A34.230Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=com.penti.app&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1",
+   "auth": "Signature signature=\"BQDupAjxvFIF8wn4WSa8zvflKGSpToc4eUU4Vo5IAeHoheoZ1a0Fgsw7/IInVpfDkze76LyMof0eF+QxvYXfPu/jaN1EF2bkjGskEeMXw4ztyeViRW4mdCV52Lte2R4HjruuAHtxix5vUThDwhT/ycmvl3U9SyWpm9w9pOK6eJ/6hOx6iZKLZ4R+yGx0COCjNF2RcmD6xgCFbsznyrwFZW0Sr+fokZXyL/O62AhVv+8duxnJxmisFDoZYTmOFePu\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\n\n"
+  },
+  {
+   "method": "POST",
+   "path": "/session",
+   "auth": "Signature signature=\"Fdcpq2hifQUbza9eDso/Q5zE2JtxK5cv8miXc7bBnB2ZOP0WLLCmgePLkgAgftltlxDWYOsF5lYeUUDdLetsAgbHMX0V1Ilo9zFqy25yAL4UzBvw0GkSS316cDeBQ//RZWh3+BfEzfxluAQavEY0Zik8cmQSaw1EvjxSLLwvXctUCZnSH6VEp30wmSwexjfmFmJwk+mSW8V7349zB3amcX2CpwPDiaHBf0iwbQ0NYamSxY02v0x3/jh7/YlOcUAa\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nContent-Type: application/x-www-form-urlencoded\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\nContent-Length: 1027\n\nstore_name_from_system=com.android.vending&gps_adid_attempt=1&api_level=31&hardware_name=S2SE32.28-28-4&app_version=3.13.9&app_token=jut9tib0eeps&installed_at=2026-09-14T17%3A52%3A12.431Z%2B0530&created_at=2026-09-15T00%3A52%3A04.141Z%2B0530&wait_total=0.0&device_type=phone&language=tr&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&foreground=1&connectivity_type=1&device_manufacturer=motorola&display_width=1080&device_name=moto+g42&needs_response_details=1&os_build=S2SE32.28-28-4&updated_at=2026-09-14T17%3A52%3A12.431Z%2B0530&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&screen_format=long&last_error=0&gps_adid_src=service&wait_time=0.0&os_version=12&first_error=0&android_uuid=4444dd1b-199e-4f24-8078-6a51eb35a468&sent_at=2026-09-15T00%3A52%3A04.176Z%2B0530&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&session_count=1&display_height=2237&package_name=com.penti.app&initiating_package_name=com.android.vending&os_name=android&ui_mode=1&enqueue_size=0&tracking_enabled=1"
+  },
+  {
+   "method": "POST",
+   "path": "/sdk_click",
+   "auth": "Signature signature=\"ZD/lIWfujYA0cC9vUtBbXKQTb9N5zmUtQtyK2UakU2pCcumDnE2Sml42y/hqfkbml5w+d7ZRoVKJJeNYmCrjkBRsIG8U/c9JZyBk1yVGLoSNPlHTPQZiufgOnUDsWrdPYooJZ0eWx6kcEHsrqcYD5L6K+sy2ZeJyrcpbaTjTcTQWGEVzoO75b2hIJ3hgf0tu6hb8OiquwczUbTzdSFnFyHjnFNeq00UKugcEUM+NPNbt0bbYaQUQyvs7R1jNfju1\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nContent-Type: application/x-www-form-urlencoded\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\nContent-Length: 1284\n\napi_level=31&hardware_name=S2SE32.28-28-4&app_version=3.13.9&app_token=jut9tib0eeps&installed_at=2026-09-14T17%3A52%3A12.431Z%2B0530&device_type=phone&language=tr&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&source=install_referrer&foreground=1&connectivity_type=1&os_build=S2SE32.28-28-4&click_time=2026-09-14T17%3A48%3A35.000Z%2B0530&cpu_type=arm64-v8a&install_version=3.13.9&screen_size=normal&gps_adid_src=service&subsession_count=1&sent_at=2026-09-15T00%3A52%3A04.290Z%2B0530&offline_mode_enabled=0&screen_density=high&session_count=1&ui_mode=1&gps_adid_attempt=1&session_length=0&created_at=2026-09-15T00%3A52%3A04.267Z%2B0530&referrer_api=google&device_manufacturer=motorola&display_width=1080&time_spent=0&device_name=moto+g42&needs_response_details=1&updated_at=2026-09-14T17%3A52%3A12.431Z%2B0530&screen_format=long&click_time_server=2026-09-14T17%3A48%3A33.000Z%2B0530&os_version=12&google_play_instant=0&install_begin_time_server=2026-09-14T17%3A52%3A03.000Z%2B0530&android_uuid=4444dd1b-199e-4f24-8078-6a51eb35a468&referrer=utm_source%3D%28not%2520set%29%26utm_medium%3D%28not%2520set%29&environment=production&attribution_deeplink=1&install_begin_time=2026-09-14T17%3A52%3A05.000Z%2B0530&display_height=2237&package_name=com.penti.app&os_name=android&tracking_enabled=1"
+  },
+  {
+   "method": "GET",
+   "path": "/attribution?initiated_by=sdk&gps_adid_attempt=1&api_level=31&app_version=3.13.9&app_token=jut9tib0eeps&os_version=12&created_at=2026-09-15T00%3A52%3A05.449Z%2B0530&device_type=phone&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&foreground=1&android_uuid=4444dd1b-199e-4f24-8078-6a51eb35a468&sent_at=2026-09-15T00%3A52%3A05.456Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=com.penti.app&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1",
+   "auth": "Signature signature=\"JKCJ6SRigbUzJJV+JSaQhH7bdnLIjEz3eUS3g/g1SEd5dCryJdQTOXLpyxxuOe+wl87W8/2AQP12la1CM9ynvrion13kzl15VA5yHP+Bi+y54k2sWb/Wq3pX8M18mn8Xt1LxwQZge2mPzt6HC8rhBTBt5k6Z8fL16TO7BpwW+gGXhyHlxmAbacfQElZs0g5fzc8b+LL7M9yXYIeZ+MqEI6Xl8T6FFNxO+n/uAskvzkUkbXJXcu5iLdwIES7uQtLT\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\n\n"
+  },
+  {
+   "method": "POST",
+   "path": "/session",
+   "auth": "Signature signature=\"aOpBDz1rHD4QcXCeAzE5wwc6e9nydT1poUqaaPLiCwTSMLQE4jyPuojxJTdeRtobaJxPhNrcZ6oib1bglLp7rc+MuYtnj/h5ahIeOdV825qBFz2M910kQdhrOBfSUix9YzTtuqQvAE0qO/Cf4V2rBE8ujaz5i2dIoH4XCOcUmOXoHBB0on7sM+srVtcRnLQ01RTL7xBumFKFVuDU/nYYJ8J0XHZNqmrVX6RFMJyQBg2qtn+R96BkUObabY/8wa/W\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nContent-Type: application/x-www-form-urlencoded\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\nContent-Length: 1027\n\nstore_name_from_system=com.android.vending&gps_adid_attempt=1&api_level=31&hardware_name=S2SE32.28-28-4&app_version=3.13.9&app_token=jut9tib0eeps&installed_at=2026-09-14T17%3A52%3A12.431Z%2B0530&created_at=2026-09-15T17%3A51%3A48.133Z%2B0530&wait_total=0.0&device_type=phone&language=tr&gps_adid=0e789180-17da-440b-b1c3-0349d40e0e93&foreground=1&connectivity_type=1&device_manufacturer=motorola&display_width=1080&device_name=moto+g42&needs_response_details=1&os_build=S2SE32.28-28-4&updated_at=2026-09-14T17%3A52%3A12.431Z%2B0530&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&screen_format=long&last_error=0&gps_adid_src=service&wait_time=0.0&os_version=12&first_error=0&android_uuid=0fed724a-ae9b-4f9f-b089-ac56747bcafa&sent_at=2026-09-15T17%3A51%3A48.172Z%2B0530&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&session_count=1&display_height=2237&package_name=com.penti.app&initiating_package_name=com.android.vending&os_name=android&ui_mode=1&enqueue_size=0&tracking_enabled=1"
+  },
+  {
+   "method": "POST",
+   "path": "/sdk_click",
+   "auth": "Signature signature=\"Z09S6gPuhN4/xhF7Wd4DAb1ajim3US3PR5RHjDAhFzcEble0h+QNauLRtQy3K/nMjAm533uT3Qc/lXYd/s2qxWS7gmy7NBCUH32pIsvTuzF8szL4OeydpQezS/597wC5rXftwpPOiXN6GWw9ZY1WpoNQGyN+4WbDol0PHeJjkXPwuh2AZVhXsRA2QfMq3ldUJK69dXB1sHWE51SzFvdVMQwF6+gq2o7o1c2stTGuzmiFadR1R2+oDST5VvL7DLj3\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nContent-Type: application/x-www-form-urlencoded\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\nContent-Length: 1284\n\napi_level=31&hardware_name=S2SE32.28-28-4&app_version=3.13.9&app_token=jut9tib0eeps&installed_at=2026-09-14T17%3A52%3A12.431Z%2B0530&device_type=phone&language=tr&gps_adid=0e789180-17da-440b-b1c3-0349d40e0e93&source=install_referrer&foreground=1&connectivity_type=1&os_build=S2SE32.28-28-4&click_time=2026-09-14T17%3A48%3A35.000Z%2B0530&cpu_type=arm64-v8a&install_version=3.13.9&screen_size=normal&gps_adid_src=service&subsession_count=1&sent_at=2026-09-15T17%3A51%3A48.233Z%2B0530&offline_mode_enabled=0&screen_density=high&session_count=1&ui_mode=1&gps_adid_attempt=1&session_length=0&created_at=2026-09-15T17%3A51%3A48.214Z%2B0530&referrer_api=google&device_manufacturer=motorola&display_width=1080&time_spent=0&device_name=moto+g42&needs_response_details=1&updated_at=2026-09-14T17%3A52%3A12.431Z%2B0530&screen_format=long&click_time_server=2026-09-14T17%3A48%3A33.000Z%2B0530&os_version=12&google_play_instant=0&install_begin_time_server=2026-09-14T17%3A52%3A03.000Z%2B0530&android_uuid=0fed724a-ae9b-4f9f-b089-ac56747bcafa&referrer=utm_source%3D%28not%2520set%29%26utm_medium%3D%28not%2520set%29&environment=production&attribution_deeplink=1&install_begin_time=2026-09-14T17%3A52%3A05.000Z%2B0530&display_height=2237&package_name=com.penti.app&os_name=android&tracking_enabled=1"
+  },
+  {
+   "method": "GET",
+   "path": "/attribution?initiated_by=backend&gps_adid_attempt=1&api_level=31&app_version=3.13.9&app_token=jut9tib0eeps&os_version=12&created_at=2026-09-15T17%3A51%3A54.783Z%2B0530&device_type=phone&gps_adid=0e789180-17da-440b-b1c3-0349d40e0e93&foreground=1&android_uuid=0fed724a-ae9b-4f9f-b089-ac56747bcafa&sent_at=2026-09-15T17%3A51%3A54.810Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=com.penti.app&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1",
+   "auth": "Signature signature=\"GMgExEym+nEx9s5XRGQc/ybMFZ5puKOomdICtaU/dcBbXd0IdmniEh3dTf/nE3o63zGJHedTNylR5SXfelpERTCSlyjfQUvS2uB0ftxM0T2JvIk1xtzecFk7PCarYLgr2g055vmQqHsJO2JVv3Gw2l0szaYGADaM8Fj+WPUqn3BlNk3wgFztbw8IXk3bnObUAwBrYvpmH8iPi/4Nd5amEqbte4ePbqYnUuxQM3REdL5v2xiVOK9wcviiSCHGAkd1\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\nHost: app.adjust.com\nConnection: Keep-Alive\nAccept-Encoding: gzip\n\n"
+  }
+ ],
+ "rsps": [
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "400",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "400",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "400",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "400",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "400",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "400",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  },
+  {
+   "code": "200",
+   "body": ""
+  }
+ ]
+}

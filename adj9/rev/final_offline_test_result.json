@@ -1,0 +1,76 @@
+{
+ "claims": [
+  "store_name_from_system",
+  "gps_adid_attempt",
+  "api_level",
+  "hardware_name",
+  "app_version",
+  "app_token",
+  "installed_at",
+  "created_at",
+  "wait_total",
+  "device_type",
+  "language",
+  "gps_adid",
+  "foreground",
+  "connectivity_type",
+  "device_manufacturer",
+  "display_width",
+  "device_name",
+  "needs_response_details",
+  "os_build",
+  "updated_at",
+  "cpu_type",
+  "retry_count",
+  "screen_size",
+  "screen_format",
+  "last_error",
+  "gps_adid_src",
+  "wait_time",
+  "os_version",
+  "first_error",
+  "android_uuid",
+  "sent_at",
+  "offline_mode_enabled",
+  "environment",
+  "screen_density",
+  "attribution_deeplink",
+  "session_count",
+  "display_height",
+  "package_name",
+  "initiating_package_name",
+  "os_name",
+  "ui_mode",
+  "enqueue_size",
+  "tracking_enabled",
+  "adj_verification",
+  "algorithm"
+ ],
+ "status": "exit-clean",
+ "runs": [
+  {
+   "label": "V1 consistent (crafted blob)",
+   "http": 200,
+   "tag": "not-recognized",
+   "expect": "400"
+  },
+  {
+   "label": "V2 query missing hardware_name",
+   "http": 200,
+   "tag": "not-recognized",
+   "expect": "200"
+  },
+  {
+   "label": "V3 query extra session_length",
+   "http": 200,
+   "tag": "not-recognized",
+   "expect": "200"
+  },
+  {
+   "label": "V4 verbatim genuine (control)",
+   "http": 200,
+   "tag": "not-recognized",
+   "expect": "400"
+  }
+ ]
+}

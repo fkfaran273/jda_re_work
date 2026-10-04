@@ -1,0 +1,274 @@
+# CLASS Lcom/adjust/sdk/PurchaseVerificationHandler;
+FIELD private static final MILLISECONDS_TO_SECONDS_DIVISOR D
+FIELD private static final SCHEDULED_EXECUTOR_SOURCE Ljava/lang/String;
+FIELD private activityHandlerWeakRef Ljava/lang/ref/WeakReference;
+FIELD private activityPackageSender Lcom/adjust/sdk/network/IActivityPackageSender;
+FIELD private isSendingPurchaseVerificationPackage Z
+FIELD private lastPackageRetryInMilli J
+FIELD private logger Lcom/adjust/sdk/ILogger;
+FIELD private packageQueue Ljava/util/List;
+FIELD private paused Z
+FIELD private scheduler Lcom/adjust/sdk/scheduler/ThreadScheduler;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/IActivityHandler; Z Lcom/adjust/sdk/network/IActivityPackageSender;)V ----
+  invoke-direct          v2, Ljava/lang/Object;-><init>()V
+  const-wide/16          v0, 0
+  iput-wide              v0, v2, Lcom/adjust/sdk/PurchaseVerificationHandler;->lastPackageRetryInMilli J
+  invoke-virtual         v2, v3, v4, v5, Lcom/adjust/sdk/PurchaseVerificationHandler;->init(Lcom/adjust/sdk/IActivityHandler; Z Lcom/adjust/sdk/network/IActivityPackageSender;)V
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  iput-object            v3, v2, Lcom/adjust/sdk/PurchaseVerificationHandler;->logger Lcom/adjust/sdk/ILogger;
+  new-instance           v3, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;
+  const-string           v4, "PurchaseVerificationHandler"
+  invoke-direct          v3, v4, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;-><init>(Ljava/lang/String;)V
+  iput-object            v3, v2, Lcom/adjust/sdk/PurchaseVerificationHandler;->scheduler Lcom/adjust/sdk/scheduler/ThreadScheduler;
+  return-void            
+
+---- METHOD public static bridge synthetic a (Lcom/adjust/sdk/PurchaseVerificationHandler;)V ----
+  const-wide/16          v0, 0
+  iput-wide              v0, v2, Lcom/adjust/sdk/PurchaseVerificationHandler;->lastPackageRetryInMilli J
+  return-void            
+
+---- METHOD public static bridge synthetic b (Lcom/adjust/sdk/PurchaseVerificationHandler;)V ----
+  invoke-direct          v0, Lcom/adjust/sdk/PurchaseVerificationHandler;->sendNextPurchaseVerificationPackage()V
+  return-void            
+
+---- METHOD public static bridge synthetic c (Lcom/adjust/sdk/PurchaseVerificationHandler;)V ----
+  invoke-direct          v0, Lcom/adjust/sdk/PurchaseVerificationHandler;->sendNextPurchaseVerificationPackageI()V
+  return-void            
+
+---- METHOD public static bridge synthetic d (Lcom/adjust/sdk/PurchaseVerificationHandler; Lcom/adjust/sdk/ActivityPackage;)V ----
+  invoke-direct          v0, v1, Lcom/adjust/sdk/PurchaseVerificationHandler;->sendPurchaseVerificationPackageI(Lcom/adjust/sdk/ActivityPackage;)V
+  return-void            
+
+---- METHOD private sendNextPurchaseVerificationPackage ()V ----
+  iget-object            v0, v3, Lcom/adjust/sdk/PurchaseVerificationHandler;->scheduler Lcom/adjust/sdk/scheduler/ThreadScheduler;
+  new-instance           v1, Lcom/adjust/sdk/X;
+  const/4                v2, 0
+  invoke-direct          v1, v3, v2, Lcom/adjust/sdk/X;-><init>(Lcom/adjust/sdk/PurchaseVerificationHandler; I)V
+  invoke-interface       v0, v1, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+  return-void            
+
+---- METHOD private sendNextPurchaseVerificationPackageI ()V ----
+  iget-object            v0, v6, Lcom/adjust/sdk/PurchaseVerificationHandler;->activityHandlerWeakRef Ljava/lang/ref/WeakReference;
+  invoke-virtual         v0, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v0, Lcom/adjust/sdk/IActivityHandler;->getActivityState()Lcom/adjust/sdk/ActivityState;
+  move-result-object     v1
+  if-nez                 v1, +003h
+  goto                   +9h
+  iget-object            v1, v6, Lcom/adjust/sdk/PurchaseVerificationHandler;->packageQueue Ljava/util/List;
+  invoke-interface       v1, Ljava/util/List;->isEmpty()Z
+  move-result            v1
+  if-eqz                 v1, +003h
+  return-void            
+  invoke-interface       v0, Lcom/adjust/sdk/IActivityHandler;->getActivityState()Lcom/adjust/sdk/ActivityState;
+  move-result-object     v0
+  iget-boolean           v0, v0, Lcom/adjust/sdk/ActivityState;->isGdprForgotten Z
+  const/4                v1, 0
+  if-eqz                 v0, +00dh
+  iget-object            v0, v6, Lcom/adjust/sdk/PurchaseVerificationHandler;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v1, v1, [Ljava/lang/Object;
+  const-string/jumbo     v2, purchase_verification request won't be sent for GDPR forgotten user
+  invoke-interface       v0, v2, v1, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  iget-boolean           v0, v6, Lcom/adjust/sdk/PurchaseVerificationHandler;->paused Z
+  if-eqz                 v0, +00ch
+  iget-object            v0, v6, Lcom/adjust/sdk/PurchaseVerificationHandler;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v1, v1, [Ljava/lang/Object;
+  const-string           v2, "PurchaseVerificationHandler is paused"
+  invoke-interface       v0, v2, v1, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  iget-boolean           v0, v6, Lcom/adjust/sdk/PurchaseVerificationHandler;->isSendingPurchaseVerificationPackage Z
+  if-eqz                 v0, +00ch
+  iget-object            v0, v6, Lcom/adjust/sdk/PurchaseVerificationHandler;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v1, v1, [Ljava/lang/Object;
+  const-string           v2, "PurchaseVerificationHandler is is already sending a package"
+  invoke-interface       v0, v2, v1, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  invoke-direct          v6, Lcom/adjust/sdk/PurchaseVerificationHandler;->waitTime()J
+  move-result-wide       v2
+  const-wide/16          v4, 0
+  cmp-long               v0, v2, v4
+  if-lez                 v0, +00eh
+  new-instance           v0, Lcom/adjust/sdk/X;
+  const/4                v1, 1
+  invoke-direct          v0, v6, v1, Lcom/adjust/sdk/X;-><init>(Lcom/adjust/sdk/PurchaseVerificationHandler; I)V
+  iget-object            v1, v6, Lcom/adjust/sdk/PurchaseVerificationHandler;->scheduler Lcom/adjust/sdk/scheduler/ThreadScheduler;
+  invoke-interface       v1, v0, v2, v3, Lcom/adjust/sdk/scheduler/ThreadScheduler;->schedule(Ljava/lang/Runnable; J)V
+  return-void            
+  iget-object            v0, v6, Lcom/adjust/sdk/PurchaseVerificationHandler;->packageQueue Ljava/util/List;
+  invoke-interface       v0, v1, Ljava/util/List;->get(I)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Lcom/adjust/sdk/ActivityPackage;
+  const/4                v1, 1
+  iput-boolean           v1, v6, Lcom/adjust/sdk/PurchaseVerificationHandler;->isSendingPurchaseVerificationPackage Z
+  invoke-direct          v6, v0, Lcom/adjust/sdk/PurchaseVerificationHandler;->sendPurchaseVerificationPackageSync(Lcom/adjust/sdk/ActivityPackage;)V
+  return-void            
+
+---- METHOD private sendPurchaseVerificationPackageI (Lcom/adjust/sdk/ActivityPackage;)V ----
+  iget-object            v0, v3, Lcom/adjust/sdk/PurchaseVerificationHandler;->packageQueue Ljava/util/List;
+  invoke-interface       v0, v4, Ljava/util/List;->add(Ljava/lang/Object;)Z
+  iget-object            v0, v3, Lcom/adjust/sdk/PurchaseVerificationHandler;->logger Lcom/adjust/sdk/ILogger;
+  iget-object            v1, v3, Lcom/adjust/sdk/PurchaseVerificationHandler;->packageQueue Ljava/util/List;
+  invoke-interface       v1, Ljava/util/List;->size()I
+  move-result            v1
+  invoke-static          v1, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v1
+  filled-new-array       v1, [Ljava/lang/Object;
+  move-result-object     v1
+  const-string           v2, "Added purchase_verification %d"
+  invoke-interface       v0, v2, v1, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+  iget-object            v0, v3, Lcom/adjust/sdk/PurchaseVerificationHandler;->logger Lcom/adjust/sdk/ILogger;
+  invoke-virtual         v4, Lcom/adjust/sdk/ActivityPackage;->getExtendedString()Ljava/lang/String;
+  move-result-object     v4
+  filled-new-array       v4, [Ljava/lang/Object;
+  move-result-object     v4
+  const-string           v1, "%s"
+  invoke-interface       v0, v1, v4, Lcom/adjust/sdk/ILogger;->verbose(Ljava/lang/String; [Ljava/lang/Object;)V
+  invoke-direct          v3, Lcom/adjust/sdk/PurchaseVerificationHandler;->sendNextPurchaseVerificationPackage()V
+  return-void            
+
+---- METHOD private sendPurchaseVerificationPackageSync (Lcom/adjust/sdk/ActivityPackage;)V ----
+  iget-object            v0, v6, Lcom/adjust/sdk/PurchaseVerificationHandler;->activityHandlerWeakRef Ljava/lang/ref/WeakReference;
+  invoke-virtual         v0, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Lcom/adjust/sdk/IActivityHandler;
+  iget-object            v1, v6, Lcom/adjust/sdk/PurchaseVerificationHandler;->activityPackageSender Lcom/adjust/sdk/network/IActivityPackageSender;
+  const/4                v2, 0
+  invoke-interface       v1, v7, v2, Lcom/adjust/sdk/network/IActivityPackageSender;->sendActivityPackageSync(Lcom/adjust/sdk/ActivityPackage; Ljava/util/Map;)Lcom/adjust/sdk/ResponseData;
+  move-result-object     v7
+  instance-of            v1, v7, Lcom/adjust/sdk/PurchaseVerificationResponseData;
+  if-nez                 v1, +003h
+  goto                   +1bh
+  const/4                v1, 0
+  iput-boolean           v1, v6, Lcom/adjust/sdk/PurchaseVerificationHandler;->isSendingPurchaseVerificationPackage Z
+  move-object            v2, v7
+  check-cast             v2, Lcom/adjust/sdk/PurchaseVerificationResponseData;
+  iget-object            v3, v2, Lcom/adjust/sdk/ResponseData;->jsonResponse Lorg/json/JSONObject;
+  if-nez                 v3, +010h
+  iget-object            v7, v6, Lcom/adjust/sdk/PurchaseVerificationHandler;->logger Lcom/adjust/sdk/ILogger;
+  iget-object            v3, v2, Lcom/adjust/sdk/ResponseData;->message Ljava/lang/String;
+  filled-new-array       v3, [Ljava/lang/Object;
+  move-result-object     v3
+  const-string           v4, "Could not get purchase_verification JSON response with message: %s"
+  invoke-interface       v7, v4, v3, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  goto                   +39h
+  if-nez                 v0, +003h
+  return-void            
+  iget-object            v3, v2, Lcom/adjust/sdk/ResponseData;->trackingState Lcom/adjust/sdk/TrackingState;
+  sget-object            v4, Lcom/adjust/sdk/TrackingState;->OPTED_OUT Lcom/adjust/sdk/TrackingState;
+  if-ne                  v3, v4, +006h
+  invoke-interface       v0, Lcom/adjust/sdk/IActivityHandler;->gotOptOutResponse()V
+  return-void            
+  iget-boolean           v3, v2, Lcom/adjust/sdk/ResponseData;->willRetry Z
+  const-wide/16          v4, 0
+  if-eqz                 v3, +025h
+  iget-object            v0, v7, Lcom/adjust/sdk/ResponseData;->retryIn Ljava/lang/Long;
+  if-eqz                 v0, +01dh
+  invoke-virtual         v0, Ljava/lang/Long;->longValue()J
+  move-result-wide       v0
+  cmp-long               v0, v0, v4
+  if-lez                 v0, +015h
+  iget-object            v7, v7, Lcom/adjust/sdk/ResponseData;->retryIn Ljava/lang/Long;
+  invoke-virtual         v7, Ljava/lang/Long;->longValue()J
+  move-result-wide       v0
+  iput-wide              v0, v6, Lcom/adjust/sdk/PurchaseVerificationHandler;->lastPackageRetryInMilli J
+  iget-object            v0, v6, Lcom/adjust/sdk/PurchaseVerificationHandler;->logger Lcom/adjust/sdk/ILogger;
+  filled-new-array       v7, [Ljava/lang/Object;
+  move-result-object     v7
+  const-string           v1, "Retrying purchase_verification package with retry in %d ms"
+  invoke-interface       v0, v1, v7, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  invoke-direct          v6, Lcom/adjust/sdk/PurchaseVerificationHandler;->sendNextPurchaseVerificationPackage()V
+  return-void            
+  iput-wide              v4, v6, Lcom/adjust/sdk/PurchaseVerificationHandler;->lastPackageRetryInMilli J
+  iget-object            v7, v6, Lcom/adjust/sdk/PurchaseVerificationHandler;->packageQueue Ljava/util/List;
+  invoke-interface       v7, Ljava/util/List;->isEmpty()Z
+  move-result            v7
+  if-nez                 v7, +007h
+  iget-object            v7, v6, Lcom/adjust/sdk/PurchaseVerificationHandler;->packageQueue Ljava/util/List;
+  invoke-interface       v7, v1, Ljava/util/List;->remove(I)Ljava/lang/Object;
+  invoke-interface       v0, v2, Lcom/adjust/sdk/IActivityHandler;->finishedTrackingActivity(Lcom/adjust/sdk/ResponseData;)V
+  invoke-direct          v6, Lcom/adjust/sdk/PurchaseVerificationHandler;->sendNextPurchaseVerificationPackage()V
+  return-void            
+
+---- METHOD private waitTime ()J ----
+  iget-wide              v0, v5, Lcom/adjust/sdk/PurchaseVerificationHandler;->lastPackageRetryInMilli J
+  const-wide/16          v2, 0
+  cmp-long               v4, v0, v2
+  if-lez                 v4, +014h
+  iget-object            v2, v5, Lcom/adjust/sdk/PurchaseVerificationHandler;->logger Lcom/adjust/sdk/ILogger;
+  invoke-static          v0, v1, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v0
+  filled-new-array       v0, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v1, "Waiting for %d ms before retrying purchase_verification with retry_in"
+  invoke-interface       v2, v1, v0, Lcom/adjust/sdk/ILogger;->verbose(Ljava/lang/String; [Ljava/lang/Object;)V
+  iget-wide              v0, v5, Lcom/adjust/sdk/PurchaseVerificationHandler;->lastPackageRetryInMilli J
+  return-wide            v0
+  return-wide            v2
+
+---- METHOD public init (Lcom/adjust/sdk/IActivityHandler; Z Lcom/adjust/sdk/network/IActivityPackageSender;)V ----
+  xor-int/lit8           v2, v2, 1
+  iput-boolean           v2, v0, Lcom/adjust/sdk/PurchaseVerificationHandler;->paused Z
+  new-instance           v2, Ljava/util/ArrayList;
+  invoke-direct          v2, Ljava/util/ArrayList;-><init>()V
+  iput-object            v2, v0, Lcom/adjust/sdk/PurchaseVerificationHandler;->packageQueue Ljava/util/List;
+  new-instance           v2, Ljava/lang/ref/WeakReference;
+  invoke-direct          v2, v1, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+  iput-object            v2, v0, Lcom/adjust/sdk/PurchaseVerificationHandler;->activityHandlerWeakRef Ljava/lang/ref/WeakReference;
+  iput-object            v3, v0, Lcom/adjust/sdk/PurchaseVerificationHandler;->activityPackageSender Lcom/adjust/sdk/network/IActivityPackageSender;
+  const/4                v1, 0
+  iput-boolean           v1, v0, Lcom/adjust/sdk/PurchaseVerificationHandler;->isSendingPurchaseVerificationPackage Z
+  const-wide/16          v1, 0
+  iput-wide              v1, v0, Lcom/adjust/sdk/PurchaseVerificationHandler;->lastPackageRetryInMilli J
+  return-void            
+
+---- METHOD public pauseSending ()V ----
+  const/4                v0, 1
+  iput-boolean           v0, v2, Lcom/adjust/sdk/PurchaseVerificationHandler;->paused Z
+  const/4                v0, 0
+  iput-boolean           v0, v2, Lcom/adjust/sdk/PurchaseVerificationHandler;->isSendingPurchaseVerificationPackage Z
+  const-wide/16          v0, 0
+  iput-wide              v0, v2, Lcom/adjust/sdk/PurchaseVerificationHandler;->lastPackageRetryInMilli J
+  return-void            
+
+---- METHOD public resumeSending ()V ----
+  const/4                v0, 0
+  iput-boolean           v0, v1, Lcom/adjust/sdk/PurchaseVerificationHandler;->paused Z
+  invoke-direct          v1, Lcom/adjust/sdk/PurchaseVerificationHandler;->sendNextPurchaseVerificationPackage()V
+  return-void            
+
+---- METHOD public sendPurchaseVerificationPackage (Lcom/adjust/sdk/ActivityPackage;)V ----
+  iget-object            v0, v3, Lcom/adjust/sdk/PurchaseVerificationHandler;->scheduler Lcom/adjust/sdk/scheduler/ThreadScheduler;
+  new-instance           v1, Lcom/adjust/sdk/C;
+  const/16               v2, 20
+  invoke-direct          v1, v2, v3, v4, Lcom/adjust/sdk/C;-><init>(I Ljava/lang/Object; Ljava/lang/Object;)V
+  invoke-interface       v0, v1, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+  return-void            
+
+---- METHOD public teardown ()V ----
+  iget-object            v0, v4, Lcom/adjust/sdk/PurchaseVerificationHandler;->logger Lcom/adjust/sdk/ILogger;
+  const/4                v1, 0
+  new-array              v2, v1, [Ljava/lang/Object;
+  const-string           v3, "PurchaseVerificationHandler teardown"
+  invoke-interface       v0, v3, v2, Lcom/adjust/sdk/ILogger;->verbose(Ljava/lang/String; [Ljava/lang/Object;)V
+  iget-object            v0, v4, Lcom/adjust/sdk/PurchaseVerificationHandler;->scheduler Lcom/adjust/sdk/scheduler/ThreadScheduler;
+  if-eqz                 v0, +005h
+  invoke-interface       v0, Lcom/adjust/sdk/scheduler/ThreadExecutor;->teardown()V
+  iget-object            v0, v4, Lcom/adjust/sdk/PurchaseVerificationHandler;->packageQueue Ljava/util/List;
+  if-eqz                 v0, +005h
+  invoke-interface       v0, Ljava/util/List;->clear()V
+  iget-object            v0, v4, Lcom/adjust/sdk/PurchaseVerificationHandler;->activityHandlerWeakRef Ljava/lang/ref/WeakReference;
+  if-eqz                 v0, +005h
+  invoke-virtual         v0, Ljava/lang/ref/Reference;->clear()V
+  const/4                v0, 0
+  iput-object            v0, v4, Lcom/adjust/sdk/PurchaseVerificationHandler;->logger Lcom/adjust/sdk/ILogger;
+  iput-object            v0, v4, Lcom/adjust/sdk/PurchaseVerificationHandler;->packageQueue Ljava/util/List;
+  iput-object            v0, v4, Lcom/adjust/sdk/PurchaseVerificationHandler;->scheduler Lcom/adjust/sdk/scheduler/ThreadScheduler;
+  iput-boolean           v1, v4, Lcom/adjust/sdk/PurchaseVerificationHandler;->isSendingPurchaseVerificationPackage Z
+  const-wide/16          v0, 0
+  iput-wide              v0, v4, Lcom/adjust/sdk/PurchaseVerificationHandler;->lastPackageRetryInMilli J
+  return-void            
+######################################################################

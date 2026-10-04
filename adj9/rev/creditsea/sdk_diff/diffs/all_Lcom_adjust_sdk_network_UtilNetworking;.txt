@@ -1,0 +1,15 @@
+--- 
++++ 
+@@ -4,8 +4,8 @@
+ ---- METHOD public static createDefaultConnectionOptions ()Lcom/adjust/sdk/network/UtilNetworking$IConnectionOptions; ----
+-new-instance vX, Lcom/adjust/sdk/network/UtilNetworking$1;
+-invoke-direct vX, Lcom/adjust/sdk/network/UtilNetworking$1;-><init>()V
++new-instance vX, Lcom/adjust/sdk/network/b;
++invoke-direct vX, Ljava/lang/Object;-><init>()V
+ return-object vX
+ ---- METHOD public static createDefaultHttpsURLConnectionProvider ()Lcom/adjust/sdk/network/UtilNetworking$IHttpsURLConnectionProvider; ----
+-new-instance vX, Lcom/adjust/sdk/network/UtilNetworking$2;
+-invoke-direct vX, Lcom/adjust/sdk/network/UtilNetworking$2;-><init>()V
++new-instance vX, Lcom/adjust/sdk/network/c;
++invoke-direct vX, Ljava/lang/Object;-><init>()V
+ return-object vX

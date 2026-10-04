@@ -1,0 +1,121 @@
+# CLASS Lcom/adjust/sdk/StoreInfoUtil;
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public static getInitiatingPackageName (Landroid/content/Context;)Ljava/lang/String; ----
+  invoke-virtual         v3, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+  move-result-object     v0
+  invoke-virtual         v3, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+  move-result-object     v3
+  sget                   v1, Landroid/os/Build$VERSION;->SDK_INT I
+  const/16               v2, 30
+  if-lt                  v1, v2, +00bh
+  invoke-static          v0, v3, Landroidx/media3/exoplayer/source/chunk/a;->j(Landroid/content/pm/PackageManager; Ljava/lang/String;)Landroid/content/pm/InstallSourceInfo;
+  move-result-object     v3
+  invoke-static          v3, Landroidx/media3/exoplayer/source/chunk/a;->B(Landroid/content/pm/InstallSourceInfo;)Ljava/lang/String;
+  move-result-object     v3
+  return-object          v3
+  const/4                v3, 0
+  return-object          v3
+
+---- METHOD public static getIsSystemApp (Landroid/content/Context;)Ljava/lang/Boolean; ----
+  const/4                v0, 0
+  invoke-virtual         v3, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+  move-result-object     v1
+  invoke-virtual         v3, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+  move-result-object     v3
+  const/4                v2, 0
+  invoke-virtual         v1, v3, v2, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String; I)Landroid/content/pm/ApplicationInfo;
+  move-result-object     v3
+  iget                   v3, v3, Landroid/content/pm/ApplicationInfo;->flags I
+  and-int/lit8           v3, v3, 1
+  if-eqz                 v3, +005h
+  sget-object            v3, Ljava/lang/Boolean;->TRUE Ljava/lang/Boolean;
+  return-object          v3
+  return-object          v0
+
+---- METHOD public static getIsUpdatedSystemApp (Landroid/content/Context;)Ljava/lang/Boolean; ----
+  const/4                v0, 0
+  invoke-virtual         v3, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+  move-result-object     v1
+  invoke-virtual         v3, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+  move-result-object     v3
+  const/4                v2, 0
+  invoke-virtual         v1, v3, v2, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String; I)Landroid/content/pm/ApplicationInfo;
+  move-result-object     v3
+  iget                   v3, v3, Landroid/content/pm/ApplicationInfo;->flags I
+  and-int/lit16          v3, v3, 128
+  if-eqz                 v3, +005h
+  sget-object            v3, Ljava/lang/Boolean;->TRUE Ljava/lang/Boolean;
+  return-object          v3
+  return-object          v0
+
+---- METHOD public static getOriginatingPackageName (Landroid/content/Context;)Ljava/lang/String; ----
+  invoke-virtual         v3, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+  move-result-object     v0
+  invoke-virtual         v3, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+  move-result-object     v3
+  sget                   v1, Landroid/os/Build$VERSION;->SDK_INT I
+  const/16               v2, 30
+  if-lt                  v1, v2, +00bh
+  invoke-static          v0, v3, Landroidx/media3/exoplayer/source/chunk/a;->j(Landroid/content/pm/PackageManager; Ljava/lang/String;)Landroid/content/pm/InstallSourceInfo;
+  move-result-object     v3
+  invoke-static          v3, Landroidx/media3/exoplayer/source/chunk/a;->p(Landroid/content/pm/InstallSourceInfo;)Ljava/lang/String;
+  move-result-object     v3
+  return-object          v3
+  const/4                v3, 0
+  return-object          v3
+
+---- METHOD public static getStoreIdFromSystem (Landroid/content/Context;)Ljava/lang/String; ----
+  invoke-virtual         v3, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+  move-result-object     v0
+  invoke-virtual         v3, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+  move-result-object     v3
+  sget                   v1, Landroid/os/Build$VERSION;->SDK_INT I
+  const/16               v2, 30
+  if-lt                  v1, v2, +00bh
+  invoke-static          v0, v3, Landroidx/media3/exoplayer/source/chunk/a;->j(Landroid/content/pm/PackageManager; Ljava/lang/String;)Landroid/content/pm/InstallSourceInfo;
+  move-result-object     v3
+  invoke-static          v3, Landroidx/media3/exoplayer/source/chunk/a;->z(Landroid/content/pm/InstallSourceInfo;)Ljava/lang/String;
+  move-result-object     v3
+  return-object          v3
+  invoke-virtual         v0, v3, Landroid/content/pm/PackageManager;->getInstallerPackageName(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v3
+  return-object          v3
+  const/4                v3, 0
+  return-object          v3
+
+---- METHOD public static getStoreInfoFromClient (Lcom/adjust/sdk/AdjustConfig; Landroid/content/Context;)Lcom/adjust/sdk/AdjustStoreInfo; ----
+  invoke-virtual         v3, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+  move-result-object     v0
+  invoke-virtual         v3, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+  move-result-object     v3
+  const/16               v1, 128
+  invoke-virtual         v0, v3, v1, Landroid/content/pm/PackageManager;->getApplicationInfo(Ljava/lang/String; I)Landroid/content/pm/ApplicationInfo;
+  move-result-object     v3
+  iget-object            v3, v3, Landroid/content/pm/ApplicationInfo;->metaData Landroid/os/Bundle;
+  if-nez                 v3, +005h
+  iget-object            v2, v2, Lcom/adjust/sdk/AdjustConfig;->storeInfo Lcom/adjust/sdk/AdjustStoreInfo;
+  return-object          v2
+  const-string           v0, "ADJUST_STORE_NAME"
+  invoke-virtual         v3, v0, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v0
+  if-eqz                 v0, +018h
+  invoke-virtual         v0, Ljava/lang/String;->isEmpty()Z
+  move-result            v1
+  if-eqz                 v1, +003h
+  goto                   +10h
+  const-string           v1, "ADJUST_STORE_APP_ID"
+  invoke-virtual         v3, v1, Landroid/os/BaseBundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v3
+  new-instance           v1, Lcom/adjust/sdk/AdjustStoreInfo;
+  invoke-direct          v1, v0, Lcom/adjust/sdk/AdjustStoreInfo;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v1, v3, Lcom/adjust/sdk/AdjustStoreInfo;->setStoreAppId(Ljava/lang/String;)V
+  return-object          v1
+  iget-object            v2, v2, Lcom/adjust/sdk/AdjustConfig;->storeInfo Lcom/adjust/sdk/AdjustStoreInfo;
+  return-object          v2
+  iget-object            v2, v2, Lcom/adjust/sdk/AdjustConfig;->storeInfo Lcom/adjust/sdk/AdjustStoreInfo;
+  return-object          v2
+######################################################################

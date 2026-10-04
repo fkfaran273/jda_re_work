@@ -1,0 +1,184 @@
+# CLASS Lcom/adjust/sdk/AdjustLinkResolution;
+FIELD private static bridge executor Ljava/util/concurrent/ExecutorService;
+FIELD private static final expectedUrlHostSuffixArray [Ljava/lang/String;
+FIELD private static final maxRecursions I
+
+---- METHOD static constructor <clinit> ()V ----
+  const-string           v5, "adjust.world"
+  const-string           v6, "adjust.io"
+  const-string           v0, "adjust.com"
+  const-string           v1, "adj.st"
+  const-string           v2, "go.link"
+  const-string           v3, "adjust.net.in"
+  const-string           v4, "adjust.cn"
+  filled-new-array/range v0 ... v6, [Ljava/lang/String;
+  move-result-object     v0
+  sput-object            v0, Lcom/adjust/sdk/AdjustLinkResolution;->expectedUrlHostSuffixArray [Ljava/lang/String;
+  return-void            
+
+---- METHOD private constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public static synthetic access$000 (Ljava/net/URL; I Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;)V ----
+  invoke-static          v0, v1, v2, Lcom/adjust/sdk/AdjustLinkResolution;->requestAndResolve(Ljava/net/URL; I Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;)V
+  return-void            
+
+---- METHOD private static convertToHttps (Ljava/net/URL;)Ljava/net/URL; ----
+  const-string           v0, "https:"
+  if-nez                 v4, +003h
+  return-object          v4
+  invoke-virtual         v4, Ljava/net/URL;->toExternalForm()Ljava/lang/String;
+  move-result-object     v1
+  if-nez                 v1, +003h
+  goto                   +19h
+  const-string           v2, "http:"
+  invoke-virtual         v1, v2, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  goto                   +10h
+  new-instance           v2, Ljava/net/URL;
+  const/4                v3, 5
+  invoke-virtual         v1, v3, Ljava/lang/String;->substring(I)Ljava/lang/String;
+  move-result-object     v1
+  invoke-virtual         v0, v1, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v0
+  invoke-direct          v2, v0, Ljava/net/URL;-><init>(Ljava/lang/String;)V
+  return-object          v2
+  return-object          v4
+
+---- METHOD private static convertToUri (Ljava/net/URL;)Landroid/net/Uri; ----
+  if-nez                 v0, +004h
+  const/4                v0, 0
+  return-object          v0
+  invoke-virtual         v0, Ljava/net/URL;->toString()Ljava/lang/String;
+  move-result-object     v0
+  invoke-static          v0, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD private static isTerminalUrl (Ljava/lang/String;)Z ----
+  sget-object            v0, Lcom/adjust/sdk/AdjustLinkResolution;->expectedUrlHostSuffixArray [Ljava/lang/String;
+  invoke-static          v1, v0, Lcom/adjust/sdk/AdjustLinkResolution;->urlMatchesSuffix(Ljava/lang/String; [Ljava/lang/String;)Z
+  move-result            v1
+  return                 v1
+
+---- METHOD private static requestAndResolve (Ljava/net/URL; I Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;)V ----
+  invoke-static          v4, Lcom/adjust/sdk/AdjustLinkResolution;->convertToHttps(Ljava/net/URL;)Ljava/net/URL;
+  move-result-object     v4
+  const/4                v0, 0
+  invoke-virtual         v4, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
+  move-result-object     v1
+  invoke-static          v1, Lcom/google/firebase/perf/network/FirebasePerfUrlConnection;->instrument(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v1
+  check-cast             v1, Ljava/net/URLConnection;
+  check-cast             v1, Ljava/net/HttpURLConnection;
+  const/4                v2, 0
+  invoke-virtual         v1, v2, Ljava/net/HttpURLConnection;->setInstanceFollowRedirects(Z)V
+  invoke-virtual         v1, Ljava/net/URLConnection;->connect()V
+  const-string           v2, "Location"
+  invoke-virtual         v1, v2, Ljava/net/URLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v2
+  if-eqz                 v2, +008h
+  new-instance           v3, Ljava/net/URL;
+  invoke-direct          v3, v2, Ljava/net/URL;-><init>(Ljava/lang/String;)V
+  move-object            v0, v3
+  invoke-virtual         v1, Ljava/net/HttpURLConnection;->disconnect()V
+  add-int/lit8           v5, v5, 1
+  invoke-static          v0, v4, v5, v6, Lcom/adjust/sdk/AdjustLinkResolution;->resolveLink(Ljava/net/URL; Ljava/net/URL; I Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;)V
+  return-void            
+  move-object            v1, v0
+  if-eqz                 v1, +005h
+  invoke-virtual         v1, Ljava/net/HttpURLConnection;->disconnect()V
+  add-int/lit8           v5, v5, 1
+  invoke-static          v0, v4, v5, v6, Lcom/adjust/sdk/AdjustLinkResolution;->resolveLink(Ljava/net/URL; Ljava/net/URL; I Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;)V
+  return-void            
+
+---- METHOD public static resolveLink (Ljava/lang/String; [Ljava/lang/String; Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;)V ----
+  if-nez                 v4, +003h
+  return-void            
+  const/4                v0, 0
+  if-nez                 v2, +006h
+  invoke-interface       v4, v0, Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;->resolvedLinkCallback(Landroid/net/Uri;)V
+  return-void            
+  new-instance           v1, Ljava/net/URL;
+  invoke-direct          v1, v2, Ljava/net/URL;-><init>(Ljava/lang/String;)V
+  goto                   +2h
+  move-object            v1, v0
+  if-nez                 v1, +006h
+  invoke-interface       v4, v0, Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;->resolvedLinkCallback(Landroid/net/Uri;)V
+  return-void            
+  invoke-virtual         v1, Ljava/net/URL;->getHost()Ljava/lang/String;
+  move-result-object     v2
+  invoke-static          v2, v3, Lcom/adjust/sdk/AdjustLinkResolution;->urlMatchesSuffix(Ljava/lang/String; [Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +00ah
+  invoke-static          v1, Lcom/adjust/sdk/AdjustLinkResolution;->convertToUri(Ljava/net/URL;)Landroid/net/Uri;
+  move-result-object     v2
+  invoke-interface       v4, v2, Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;->resolvedLinkCallback(Landroid/net/Uri;)V
+  return-void            
+  sget-object            v2, Lcom/adjust/sdk/AdjustLinkResolution;->executor Ljava/util/concurrent/ExecutorService;
+  if-nez                 v2, +016h
+  sget-object            v2, Lcom/adjust/sdk/AdjustLinkResolution;->expectedUrlHostSuffixArray [Ljava/lang/String;
+  monitor-enter          v2
+  sget-object            v3, Lcom/adjust/sdk/AdjustLinkResolution;->executor Ljava/util/concurrent/ExecutorService;
+  if-nez                 v3, +00bh
+  invoke-static          Ljava/util/concurrent/Executors;->newSingleThreadExecutor()Ljava/util/concurrent/ExecutorService;
+  move-result-object     v3
+  sput-object            v3, Lcom/adjust/sdk/AdjustLinkResolution;->executor Ljava/util/concurrent/ExecutorService;
+  goto                   +3h
+  move-exception         v3
+  goto                   +3h
+  monitor-exit           v2
+  goto                   +3h
+  monitor-exit           v2
+  throw                  v3
+  sget-object            v2, Lcom/adjust/sdk/AdjustLinkResolution;->executor Ljava/util/concurrent/ExecutorService;
+  new-instance           v3, Lcom/adjust/sdk/AdjustLinkResolution$1;
+  invoke-direct          v3, v1, v4, Lcom/adjust/sdk/AdjustLinkResolution$1;-><init>(Ljava/net/URL; Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;)V
+  invoke-interface       v2, v3, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+  return-void            
+
+---- METHOD private static resolveLink (Ljava/net/URL; Ljava/net/URL; I Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;)V ----
+  if-nez                 v0, +00ah
+  invoke-static          v1, Lcom/adjust/sdk/AdjustLinkResolution;->convertToUri(Ljava/net/URL;)Landroid/net/Uri;
+  move-result-object     v0
+  invoke-interface       v3, v0, Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;->resolvedLinkCallback(Landroid/net/Uri;)V
+  return-void            
+  invoke-virtual         v0, Ljava/net/URL;->getHost()Ljava/lang/String;
+  move-result-object     v1
+  invoke-static          v1, Lcom/adjust/sdk/AdjustLinkResolution;->isTerminalUrl(Ljava/lang/String;)Z
+  move-result            v1
+  if-eqz                 v1, +00ah
+  invoke-static          v0, Lcom/adjust/sdk/AdjustLinkResolution;->convertToUri(Ljava/net/URL;)Landroid/net/Uri;
+  move-result-object     v0
+  invoke-interface       v3, v0, Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;->resolvedLinkCallback(Landroid/net/Uri;)V
+  return-void            
+  const/16               v1, 10
+  if-le                  v2, v1, +00ah
+  invoke-static          v0, Lcom/adjust/sdk/AdjustLinkResolution;->convertToUri(Ljava/net/URL;)Landroid/net/Uri;
+  move-result-object     v0
+  invoke-interface       v3, v0, Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;->resolvedLinkCallback(Landroid/net/Uri;)V
+  return-void            
+  invoke-static          v0, v2, v3, Lcom/adjust/sdk/AdjustLinkResolution;->requestAndResolve(Ljava/net/URL; I Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;)V
+  return-void            
+
+---- METHOD private static urlMatchesSuffix (Ljava/lang/String; [Ljava/lang/String;)Z ----
+  const/4                v0, 0
+  if-nez                 v4, +003h
+  return                 v0
+  if-nez                 v5, +003h
+  return                 v0
+  array-length           v1, v5
+  move                   v2, v0
+  if-ge                  v2, v1, +00fh
+  aget-object            v3, v5, v2
+  invoke-virtual         v4, v3, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+  move-result            v3
+  if-eqz                 v3, +004h
+  const/4                v4, 1
+  return                 v4
+  add-int/lit8           v2, v2, 1
+  goto                   -eh
+  return                 v0
+######################################################################

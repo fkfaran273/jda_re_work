@@ -1,0 +1,267 @@
+{
+ "param_counts": {
+  "device": {
+   "session": 43,
+   "sdk_click": 47,
+   "attribution": 22
+  },
+  "python": {
+   "session": 45,
+   "sdk_click": 49,
+   "attribution": 22
+  }
+ },
+ "claim_lengths": {
+  "device_from_saz": {
+   "session": 360,
+   "click": 391,
+   "attribution": 246
+  },
+  "python_redmi": {
+   "session": 355,
+   "click": 386,
+   "attribution": 248
+  },
+  "corrected_device": {
+   "session": 360,
+   "click": 391,
+   "attribution": 246
+  }
+ },
+ "diffs": {
+  "session": {
+   "device_only": {},
+   "python_only": {
+    "mcc": "405",
+    "mnc": "908"
+   },
+   "same_name_different_value": {
+    "api_level": {
+     "device": "31",
+     "python": "35"
+    },
+    "created_at": {
+     "device": "2026-09-14T17:53:07.753Z+0530",
+     "python": "2026-09-14T17:53:07.928Z+0530"
+    },
+    "device_manufacturer": {
+     "device": "motorola",
+     "python": "Redmi"
+    },
+    "device_name": {
+     "device": "moto g42",
+     "python": "2406ERN9CI"
+    },
+    "display_height": {
+     "device": "2237",
+     "python": "1080"
+    },
+    "display_width": {
+     "device": "1080",
+     "python": "2312"
+    },
+    "hardware_name": {
+     "device": "S2SE32.28-28-4",
+     "python": "breeze"
+    },
+    "language": {
+     "device": "tr",
+     "python": "en"
+    },
+    "os_build": {
+     "device": "S2SE32.28-28-4",
+     "python": "AQ3A.240912.001"
+    },
+    "os_version": {
+     "device": "12",
+     "python": "15"
+    },
+    "screen_density": {
+     "device": "high",
+     "python": "xxhigh"
+    },
+    "sent_at": {
+     "device": "2026-09-14T17:53:07.808Z+0530",
+     "python": "2026-09-14T17:53:07.942Z+0530"
+    }
+   },
+   "counts": {
+    "device": 43,
+    "python": 45,
+    "device_only": 0,
+    "python_only": 2,
+    "same_name_different_value": 12
+   }
+  },
+  "sdk_click": {
+   "device_only": {},
+   "python_only": {
+    "mcc": "405",
+    "mnc": "908"
+   },
+   "same_name_different_value": {
+    "api_level": {
+     "device": "31",
+     "python": "35"
+    },
+    "created_at": {
+     "device": "2026-09-14T17:53:07.846Z+0530",
+     "python": "2026-09-14T17:53:07.961Z+0530"
+    },
+    "device_manufacturer": {
+     "device": "motorola",
+     "python": "Redmi"
+    },
+    "device_name": {
+     "device": "moto g42",
+     "python": "2406ERN9CI"
+    },
+    "display_height": {
+     "device": "2237",
+     "python": "1080"
+    },
+    "display_width": {
+     "device": "1080",
+     "python": "2312"
+    },
+    "hardware_name": {
+     "device": "S2SE32.28-28-4",
+     "python": "breeze"
+    },
+    "language": {
+     "device": "tr",
+     "python": "en"
+    },
+    "os_build": {
+     "device": "S2SE32.28-28-4",
+     "python": "AQ3A.240912.001"
+    },
+    "os_version": {
+     "device": "12",
+     "python": "15"
+    },
+    "screen_density": {
+     "device": "high",
+     "python": "xxhigh"
+    },
+    "sent_at": {
+     "device": "2026-09-14T17:53:07.871Z+0530",
+     "python": "2026-09-14T17:53:07.970Z+0530"
+    },
+    "updated_at": {
+     "device": "2026-09-14T17:52:12.431Z+0530",
+     "python": "2026-09-08T14:00:02.774Z+0530"
+    }
+   },
+   "counts": {
+    "device": 47,
+    "python": 49,
+    "device_only": 0,
+    "python_only": 2,
+    "same_name_different_value": 13
+   }
+  },
+  "attribution": {
+   "device_only": {},
+   "python_only": {},
+   "same_name_different_value": {
+    "api_level": {
+     "device": "31",
+     "python": "35"
+    },
+    "created_at": {
+     "device": "2026-09-14T17:53:11.322Z+0530",
+     "python": "2026-09-14T17:53:11.666Z+0530"
+    },
+    "device_name": {
+     "device": "moto g42",
+     "python": "2406ERN9CI"
+    },
+    "os_version": {
+     "device": "12",
+     "python": "15"
+    },
+    "sent_at": {
+     "device": "2026-09-14T17:53:11.358Z+0530",
+     "python": "2026-09-14T17:53:11.696Z+0530"
+    }
+   },
+   "counts": {
+    "device": 22,
+    "python": 22,
+    "device_only": 0,
+    "python_only": 0,
+    "same_name_different_value": 5
+   }
+  }
+ },
+ "session_claim_key_length_delta": [
+  {
+   "key": "device_name",
+   "device_len": 8,
+   "python_len": 10,
+   "delta": 2
+  },
+  {
+   "key": "hardware_name",
+   "device_len": 14,
+   "python_len": 6,
+   "delta": -8
+  },
+  {
+   "key": "os_build",
+   "device_len": 14,
+   "python_len": 15,
+   "delta": 1
+  }
+ ],
+ "session_claim_total": {
+  "device_unpadded": 360,
+  "python_unpadded": 355,
+  "gap": -5
+ },
+ "corrected_profile_verification": {
+  "session": {
+   "claim_unpadded": 360,
+   "claim_padded": 360,
+   "n_params": 43
+  },
+  "click": {
+   "claim_unpadded": 391,
+   "claim_padded": 392,
+   "n_params": 47
+  },
+  "attribution": {
+   "claim_unpadded": 246,
+   "claim_padded": 248,
+   "n_params": 22
+  },
+  "session_keys_match_device": true,
+  "session_mcc_mnc_present": [
+   false,
+   false
+  ],
+  "session_claim_values": {
+   "device_name": {
+    "device": "moto g42",
+    "corrected": "moto g42"
+   },
+   "hardware_name": {
+    "device": "S2SE32.28-28-4",
+    "corrected": "S2SE32.28-28-4"
+   },
+   "os_build": {
+    "device": "S2SE32.28-28-4",
+    "corrected": "S2SE32.28-28-4"
+   },
+   "api_level": {
+    "device": "31",
+    "corrected": "31"
+   },
+   "os_version": {
+    "device": "12",
+    "corrected": "12"
+   }
+  }
+ }
+}

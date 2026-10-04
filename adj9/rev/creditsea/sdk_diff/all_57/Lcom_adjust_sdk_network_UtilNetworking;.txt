@@ -1,0 +1,74 @@
+# CLASS Lcom/adjust/sdk/network/UtilNetworking;
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public static createDefaultConnectionOptions ()Lcom/adjust/sdk/network/UtilNetworking$IConnectionOptions; ----
+  new-instance           v0, Lcom/adjust/sdk/network/UtilNetworking$1;
+  invoke-direct          v0, Lcom/adjust/sdk/network/UtilNetworking$1;-><init>()V
+  return-object          v0
+
+---- METHOD public static createDefaultHttpsURLConnectionProvider ()Lcom/adjust/sdk/network/UtilNetworking$IHttpsURLConnectionProvider; ----
+  new-instance           v0, Lcom/adjust/sdk/network/UtilNetworking$2;
+  invoke-direct          v0, Lcom/adjust/sdk/network/UtilNetworking$2;-><init>()V
+  return-object          v0
+
+---- METHOD public static extractJsonInt (Lorg/json/JSONObject; Ljava/lang/String;)I ----
+  invoke-virtual         v0, v1, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
+  move-result-object     v0
+  instance-of            v1, v0, Ljava/lang/Integer;
+  if-eqz                 v1, +009h
+  check-cast             v0, Ljava/lang/Integer;
+  invoke-virtual         v0, Ljava/lang/Integer;->intValue()I
+  move-result            v0
+  return                 v0
+  const/4                v0, -1
+  return                 v0
+
+---- METHOD public static extractJsonLong (Lorg/json/JSONObject; Ljava/lang/String;)Ljava/lang/Long; ----
+  invoke-virtual         v0, v1, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
+  move-result-object     v0
+  instance-of            v1, v0, Ljava/lang/Long;
+  if-eqz                 v1, +005h
+  check-cast             v0, Ljava/lang/Long;
+  return-object          v0
+  instance-of            v1, v0, Ljava/lang/Number;
+  if-eqz                 v1, +00dh
+  check-cast             v0, Ljava/lang/Number;
+  invoke-virtual         v0, Ljava/lang/Number;->longValue()J
+  move-result-wide       v0
+  invoke-static          v0, v1, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v0
+  return-object          v0
+  instance-of            v1, v0, Ljava/lang/String;
+  if-eqz                 v1, +00eh
+  check-cast             v0, Ljava/lang/String;
+  invoke-static          v0, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
+  move-result-wide       v0
+  double-to-long         v0, v0
+  invoke-static          v0, v1, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v0
+  return-object          v0
+  const/4                v0, 0
+  return-object          v0
+
+---- METHOD public static extractJsonString (Lorg/json/JSONObject; Ljava/lang/String;)Ljava/lang/String; ----
+  invoke-virtual         v0, v1, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
+  move-result-object     v0
+  instance-of            v1, v0, Ljava/lang/String;
+  if-eqz                 v1, +005h
+  check-cast             v0, Ljava/lang/String;
+  return-object          v0
+  if-eqz                 v0, +007h
+  invoke-virtual         v0, Ljava/lang/Object;->toString()Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+  const/4                v0, 0
+  return-object          v0
+
+---- METHOD private static getLogger ()Lcom/adjust/sdk/ILogger; ----
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v0
+  return-object          v0
+######################################################################

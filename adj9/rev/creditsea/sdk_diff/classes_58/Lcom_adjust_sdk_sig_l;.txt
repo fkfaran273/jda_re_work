@@ -1,0 +1,462 @@
+# CLASS Lcom/adjust/sdk/sig/l;
+
+---- METHOD public static a((Ljava/lang/String;)Ljava/lang/String;)  ----
+  invoke-virtual         v10, Ljava/lang/String;->hashCode()I
+  move-result            v0
+  const-string           v1, "Int"
+  const-string           v2, "Float"
+  const-string           v3, "Short"
+  const-string           v4, "Char"
+  const-string           v5, "Boolean"
+  const-string           v6, "Byte"
+  const-string           v7, "Long"
+  const-string           v8, "Double"
+  const-string           v9, "Companion"
+  sparse-switch          v0, +000032eh
+  packed-switch          v0, +00003d9h
+  packed-switch          v0, +00003eeh
+  packed-switch          v0, +00003f5h
+  goto/16                +31eh
+  const-string           v0, "kotlin.jvm.functions.Function9"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +314h
+  const-string           v10, "Function9"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.functions.Function8"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +307h
+  const-string           v10, "Function8"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.functions.Function7"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +2fah
+  const-string           v10, "Function7"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.functions.Function6"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +2edh
+  const-string           v10, "Function6"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.functions.Function5"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +2e0h
+  const-string           v10, "Function5"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.functions.Function4"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +2d3h
+  const-string           v10, "Function4"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.functions.Function3"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +2c6h
+  const-string           v10, "Function3"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.functions.Function2"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +2b9h
+  const-string           v10, "Function2"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.functions.Function1"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +2ach
+  const-string           v10, "Function1"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.functions.Function0"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +29fh
+  const-string           v10, "Function0"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.functions.Function22"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +292h
+  const-string           v10, "Function22"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.functions.Function21"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +285h
+  const-string           v10, "Function21"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.functions.Function20"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +278h
+  const-string           v10, "Function20"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.functions.Function19"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +26bh
+  const-string           v10, "Function19"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.functions.Function18"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +25eh
+  const-string           v10, "Function18"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.functions.Function17"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +251h
+  const-string           v10, "Function17"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.functions.Function16"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +244h
+  const-string           v10, "Function16"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.functions.Function15"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +237h
+  const-string           v10, "Function15"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.functions.Function14"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +22ah
+  const-string           v10, "Function14"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.functions.Function13"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +21dh
+  const-string           v10, "Function13"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.functions.Function12"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +210h
+  const-string           v10, "Function12"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.functions.Function11"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +203h
+  const-string           v10, "Function11"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.functions.Function10"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +1f6h
+  const-string           v10, "Function10"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.internal.IntCompanionObject"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +1e9h
+  return-object          v9
+  const-string           v0, "java.lang.Throwable"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +1deh
+  const-string           v10, "Throwable"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.internal.BooleanCompanionObject"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +1d1h
+  return-object          v9
+  const-string           v0, "java.lang.Iterable"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +1c6h
+  const-string           v10, "Iterable"
+  return-object          v10
+  const-string           v0, "java.lang.String"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +1b9h
+  const-string           v10, "String"
+  return-object          v10
+  const-string           v0, "java.lang.Object"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +1ach
+  const-string           v10, "Any"
+  return-object          v10
+  const-string           v0, "java.lang.Number"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +19fh
+  const-string           v10, "Number"
+  return-object          v10
+  const-string           v0, "java.lang.Double"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +192h
+  return-object          v8
+  const-string           v0, "kotlin.jvm.internal.StringCompanionObject"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +187h
+  return-object          v9
+  const-string           v0, "java.util.ListIterator"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +17ch
+  const-string           v10, "ListIterator"
+  return-object          v10
+  const-string           v0, "java.util.Iterator"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +16fh
+  const-string           v10, "Iterator"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.internal.FloatCompanionObject"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +162h
+  return-object          v9
+  const-string           v0, "java.lang.Long"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +157h
+  return-object          v7
+  const-string           v0, "java.lang.Enum"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +14ch
+  const-string           v10, "Enum"
+  return-object          v10
+  const-string           v0, "java.lang.Byte"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +13fh
+  return-object          v6
+  const-string           v0, "java.lang.Boolean"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +134h
+  return-object          v5
+  const-string           v0, "kotlin.jvm.internal.EnumCompanionObject"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +129h
+  return-object          v9
+  const-string           v0, "java.lang.Character"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +11eh
+  return-object          v4
+  const-string/jumbo     v0, short
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +112h
+  return-object          v3
+  const-string           v0, "float"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +107h
+  return-object          v2
+  const-string           v0, "kotlin.jvm.internal.ShortCompanionObject"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +0fch
+  return-object          v9
+  const-string           v0, "java.util.List"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +0f1h
+  const-string           v10, "List"
+  return-object          v10
+  const-string           v0, "boolean"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +0e4h
+  return-object          v5
+  const-string           v0, "long"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +0d9h
+  return-object          v7
+  const-string           v0, "char"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +0ceh
+  return-object          v4
+  const-string           v0, "byte"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +0c3h
+  return-object          v6
+  const-string           v0, "int"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +0b8h
+  return-object          v1
+  const-string           v0, "java.util.Map$Entry"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +0adh
+  const-string           v10, "Entry"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.internal.LongCompanionObject"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +0a0h
+  return-object          v9
+  const-string           v0, "kotlin.jvm.internal.CharCompanionObject"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +095h
+  return-object          v9
+  const-string           v0, "java.lang.Short"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +08ah
+  return-object          v3
+  const-string           v0, "java.lang.Float"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +07fh
+  return-object          v2
+  const-string           v0, "java.util.Collection"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +074h
+  const-string           v10, "Collection"
+  return-object          v10
+  const-string           v0, "java.lang.CharSequence"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  goto/16                +067h
+  const-string           v10, "CharSequence"
+  return-object          v10
+  const-string           v0, "kotlin.jvm.internal.ByteCompanionObject"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +003h
+  goto                   +5ah
+  return-object          v9
+  const-string           v0, "double"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +003h
+  goto                   +50h
+  return-object          v8
+  const-string           v0, "java.util.Set"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +003h
+  goto                   +46h
+  const-string           v10, "Set"
+  return-object          v10
+  const-string           v0, "java.util.Map"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +003h
+  goto                   +3ah
+  const-string           v10, "Map"
+  return-object          v10
+  const-string           v0, "java.lang.Comparable"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +003h
+  goto                   +2eh
+  const-string           v10, "Comparable"
+  return-object          v10
+  const-string           v0, "java.lang.annotation.Annotation"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +003h
+  goto                   +22h
+  const-string           v10, "Annotation"
+  return-object          v10
+  const-string           v0, "java.lang.Cloneable"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +003h
+  goto                   +16h
+  const-string           v10, "Cloneable"
+  return-object          v10
+  const-string           v0, "java.lang.Integer"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +003h
+  goto                   +ah
+  return-object          v1
+  const-string           v0, "kotlin.jvm.internal.DoubleCompanionObject"
+  invoke-virtual         v10, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v10
+  if-nez                 v10, +004h
+  const/4                v10, 0
+  return-object          v10
+  return-object          v9
+  nop                    
+  sparse-switch-payload  -7ae0c43d -7a988a96 -793eea9d -75fda146 -5dab6ad2 -52743c64 -5274255e -4f08842f -46781814 -3f507f75 -2906f7a2 -1f76ce78 -1ec16c58 -eb0f022 -c5a9408 -9d7d2b6 197ef 2e6108 2e9356 32c67c 3db6c28 3ec5a5e 49a71c6 5d0225c 685847c 9415455 d7b22d3 148d6054 17c0bc5c 17c1f055 17c521d0 1cc457e6 1dcad22e 226988ec 23b44f83 2d605225 3ec1b19d 3f697993 473e3665 4c0855c6 52797ada 612cf26c 6fe35bb3
+  packed-switch-payload  -6bf3d83c -6bf3d83b -6bf3d83a -6bf3d839 -6bf3d838 -6bf3d837 -6bf3d836 -6bf3d835 -6bf3d834 -6bf3d833
+  packed-switch-payload  -6bf3d81d -6bf3d81c -6bf3d81b
+  packed-switch-payload  4c695eb 4c695ec 4c695ed 4c695ee 4c695ef 4c695f0 4c695f1 4c695f2 4c695f3 4c695f4
+######################################################################

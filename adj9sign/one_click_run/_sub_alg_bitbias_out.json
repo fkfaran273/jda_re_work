@@ -1,0 +1,107 @@
+{
+ "obs_ones_per_bit": [
+  56,
+  56,
+  58,
+  58,
+  52,
+  55,
+  57,
+  53,
+  48,
+  60,
+  50,
+  61,
+  57,
+  77,
+  47,
+  52,
+  62,
+  59,
+  60,
+  46,
+  51,
+  60,
+  54,
+  61,
+  53,
+  71,
+  48,
+  44,
+  60,
+  52,
+  56
+ ],
+ "joint_b13_b25": 49,
+ "exp_joint": 48.8125,
+ "within_header_bit13_patterns": {
+  "(0, 1, 1, 1)": 5,
+  "(1, 0, 1, 1)": 4,
+  "(1, 0, 0, 1)": 1,
+  "(1, 1, 0, 0)": 4,
+  "(1, 1, 1, 1)": 6,
+  "(0, 0, 0, 0)": 2,
+  "(1, 1, 1, 0)": 2,
+  "(1, 0, 1, 0)": 1,
+  "(0, 1, 0, 1)": 1,
+  "(1, 1, 0, 1)": 2
+ },
+ "synthetic": {
+  "uniform/direct": {
+   "bit13_mean": 55.7,
+   "bit13_min": 41,
+   "bit13_max": 71,
+   "maxz_mean": 2.31,
+   "maxz_p95": 3.2126980205784315
+  },
+  "uniform/pair": {
+   "bit13_mean": 55.9,
+   "bit13_min": 43,
+   "bit13_max": 74,
+   "maxz_mean": 2.28,
+   "maxz_p95": 3.2126980205784315
+  },
+  "rand3_direct/direct": {
+   "bit13_mean": 55.5,
+   "bit13_min": 41,
+   "bit13_max": 69,
+   "maxz_mean": 2.3,
+   "maxz_p95": 3.2126980205784315
+  },
+  "rand3_direct/pair": {
+   "bit13_mean": 56.1,
+   "bit13_min": 40,
+   "bit13_max": 72,
+   "maxz_mean": 2.32,
+   "maxz_p95": 3.2126980205784315
+  },
+  "minstd_direct/direct": {
+   "bit13_mean": 56.0,
+   "bit13_min": 40,
+   "bit13_max": 70,
+   "maxz_mean": 2.38,
+   "maxz_p95": 3.2126980205784315
+  },
+  "minstd_direct/pair": {
+   "bit13_mean": 56.2,
+   "bit13_min": 42,
+   "bit13_max": 68,
+   "maxz_mean": 2.34,
+   "maxz_p95": 3.2126980205784315
+  },
+  "lrand48_direct/direct": {
+   "bit13_mean": 55.7,
+   "bit13_min": 40,
+   "bit13_max": 75,
+   "maxz_mean": 2.38,
+   "maxz_p95": 3.2126980205784315
+  },
+  "lrand48_direct/pair": {
+   "bit13_mean": 56.1,
+   "bit13_min": 45,
+   "bit13_max": 68,
+   "maxz_mean": 2.32,
+   "maxz_p95": 3.2126980205784315
+  }
+ }
+}

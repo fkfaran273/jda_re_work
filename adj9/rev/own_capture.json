@@ -1,0 +1,9 @@
+{
+ "canonical": [],
+ "header": [
+  "Signature signature=\"DjoFQUy5+PwyvySfZD3YnesNOG1ZZVwQxYqzZaF25pY9rtMyxcbVQsHKAtQZh/RR34E9TSnTw2BOuevEEeYH4vkgYVObxy/ClCJLCJKjcrNb4ptfYpCg6MBcvXNhWne4Y8wlXgxe+CGfkb2Qq9UcoKBnofnDQ1rOA6fCq+uBaEfqSsp/MknZt5xeUo5jamp0IHZ6kvLasszpklAgnA2/wy0CMavXwHJUaJpttJ9PUhjeS1/xyzNjQfegrWPfVqos\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\""
+ ],
+ "nSign": [
+  "DjoFQUy5+PwyvySfZD3YnesNOG1ZZVwQxYqzZaF25pY9rtMyxcbVQsHKAtQZh/RR34E9TSnTw2BOuevEEeYH4vkgYVObxy/ClCJLCJKjcrNb4ptfYpCg6MBcvXNhWne4Y8wlXgxe+CGfkb2Qq9UcoKBnofnDQ1rOA6fCq+uBaEfqSsp/MknZt5xeUo5jamp0IHZ6kvLasszpklAgnA2/wy0CMavXwHJUaJpttJ9PUhjeS1/xyzNjQfegrWPfVqos"
+ ]
+}

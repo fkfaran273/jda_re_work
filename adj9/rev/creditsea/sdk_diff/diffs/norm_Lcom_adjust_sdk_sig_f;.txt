@@ -1,0 +1,13 @@
+--- 
++++ 
+@@ -26,7 +26,7 @@
+ iput vX, vX, Lcom/adjust/sdk/sig/f;->b I
++new-instance vX, Ljava/util/NoSuchElementException;
+ invoke-virtual vX, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+ move-result-object vX
+-invoke-static vX, Landroidx/sqlite/driver/a;->l(Ljava/lang/String;)V
+-const/4 vX, 0
+-return-object vX
++invoke-direct vX, vX, Ljava/util/NoSuchElementException;-><init>(Ljava/lang/String;)V
++throw vX
+ ---- METHOD public final remove(()V) ----

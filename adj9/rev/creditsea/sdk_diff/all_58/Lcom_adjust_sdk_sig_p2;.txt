@@ -1,0 +1,24 @@
+# CLASS Lcom/adjust/sdk/sig/p2;
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final hashCode ()I ----
+  invoke-virtual         v1, Lcom/adjust/sdk/sig/p2;->toString()Ljava/lang/String;
+  move-result-object     v0
+  invoke-virtual         v0, Ljava/lang/String;->hashCode()I
+  move-result            v0
+  return                 v0
+
+---- METHOD public final toString ()Ljava/lang/String; ----
+  invoke-virtual         v2, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+  move-result-object     v0
+  sget-object            v1, Lcom/adjust/sdk/sig/h2;->a Lcom/adjust/sdk/sig/i2;
+  invoke-virtual         v1, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+  new-instance           v1, Lcom/adjust/sdk/sig/m;
+  invoke-direct          v1, v0, Lcom/adjust/sdk/sig/m;-><init>(Ljava/lang/Class;)V
+  invoke-virtual         v1, Lcom/adjust/sdk/sig/m;->a()Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+######################################################################

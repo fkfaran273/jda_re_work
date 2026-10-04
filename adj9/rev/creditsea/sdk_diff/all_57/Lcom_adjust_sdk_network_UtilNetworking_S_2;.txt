@@ -1,0 +1,15 @@
+# CLASS Lcom/adjust/sdk/network/UtilNetworking$2;
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final generateHttpsURLConnection (Ljava/net/URL;)Ljavax/net/ssl/HttpsURLConnection; ----
+  invoke-virtual         v1, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
+  move-result-object     v1
+  invoke-static          v1, Lcom/google/firebase/perf/network/FirebasePerfUrlConnection;->instrument(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v1
+  check-cast             v1, Ljava/net/URLConnection;
+  check-cast             v1, Ljavax/net/ssl/HttpsURLConnection;
+  return-object          v1
+######################################################################

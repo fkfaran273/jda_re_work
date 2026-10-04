@@ -1,0 +1,7 @@
+--- 
++++ 
+@@ -26,3 +26,3 @@
+ move-result-object vX
+-sget-object vX, Lcom/adjust/sdk/ResponseData$1;->a [I
++sget-object vX, Lcom/adjust/sdk/Y;->a [I
+ invoke-virtual vX, Ljava/lang/Enum;->ordinal()I

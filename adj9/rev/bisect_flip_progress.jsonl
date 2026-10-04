@@ -1,0 +1,63 @@
+
+{"w": -1, "kind": "ctrl", "st": 200, "v": "TRUE"}
+
+{"w": 0, "kind": "hdr_byte", "st": 200, "v": "Organic"}
+{"w": 1, "kind": "hdr_byte", "st": 200, "v": "Organic"}
+{"w": 2, "kind": "hdr_byte", "st": 200, "v": "Organic"}
+{"w": 3, "kind": "hdr_byte", "st": 200, "v": "Organic"}
+{"w": 4, "kind": "hdr_byte", "st": 200, "v": "Organic"}
+{"w": 5, "kind": "hdr_byte", "st": 200, "v": "Organic"}
+{"w": 6, "kind": "hdr_byte", "st": 200, "v": "Organic"}
+{"w": 7, "kind": "hdr_byte", "st": 200, "v": "Organic"}
+{"w": 8, "kind": "hdr_byte", "st": 200, "v": "Organic"}
+{"w": 9, "kind": "hdr_byte", "st": 200, "v": "Organic"}
+{"w": 10, "kind": "hdr_byte", "st": 200, "v": "Organic"}
+{"w": 11, "kind": "hdr_byte", "st": 200, "v": "Organic"}
+{"w": 12, "kind": "hdr_byte", "st": 200, "v": "Organic"}
+{"w": 13, "kind": "hdr_byte", "st": 200, "v": "Organic"}
+{"w": 14, "kind": "hdr_byte", "st": 200, "v": "Organic"}
+{"w": 15, "kind": "hdr_byte", "st": 200, "v": "Organic"}
+{"w": 0, "off": 16, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 1, "off": 20, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 2, "off": 24, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 3, "off": 28, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 4, "off": 32, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 5, "off": 36, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 6, "off": 40, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 7, "off": 44, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 8, "off": 48, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 9, "off": 52, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 10, "off": 56, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 11, "off": 60, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 12, "off": 64, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 13, "off": 68, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 14, "off": 72, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 15, "off": 76, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 16, "off": 80, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 17, "off": 84, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 18, "off": 88, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 19, "off": 92, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 20, "off": 96, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 21, "off": 100, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 22, "off": 104, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 23, "off": 108, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 24, "off": 112, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 25, "off": 116, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 26, "off": 120, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 27, "off": 124, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 28, "off": 128, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 29, "off": 132, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 30, "off": 136, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 31, "off": 140, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 32, "off": 144, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 33, "off": 148, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 34, "off": 152, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 35, "off": 156, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 36, "off": 160, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 37, "off": 164, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 38, "off": 168, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 39, "off": 172, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 40, "off": 176, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 41, "off": 180, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 42, "off": 184, "kind": "body_dw", "st": 200, "v": "Organic"}
+{"w": 43, "off": 188, "kind": "body_dw", "st": 200, "v": "Organic"}

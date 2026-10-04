@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -222,5 +222,5 @@
+ ---- METHOD public final toString ()Ljava/lang/String; ----
+-new-instance vX, La2/a;
+-const/16 vX, 24
+-invoke-direct vX, vX, vX, La2/a;-><init>(Ljava/lang/Object; I)V
++new-instance vX, LS8/c;
++const/16 vX, 18
++invoke-direct vX, vX, vX, LS8/c;-><init>(Ljava/lang/Object; I)V
+ const-string "["

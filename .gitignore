@@ -1,0 +1,128 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Environment/secrets
+.env
+.env.*
+!.env.example
+
+# Django
+db.sqlite3
+media/
+staticfiles/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+
+# Android
+.gradle/
+build/
+*/build/
+local.properties
+
+# Android Studio
+.idea/
+*.iml
+
+# Kotlin
+.kotlin/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# APK files
+*.apk
+*.aab
+
+# Android build output
+build/
+*/build/
+app/build/
+
+# Smali / decompiled code
+smali/
+smali_classes*/
+**/smali/
+**/smali_classes*/
+
+# Decompiled Java source
+jadx/
+jadx-out/
+decompiled/
+**/decompiled/
+*.java
+
+# DEX files
+*.dex
+
+# Android generated files
+*.class
+*.jar
+*.aar
+
+# APKTool output
+original/
+unknown/
+lib/
+assets/
+res/
+.h
+.m
+.xml
+# Generated snapshot/output files
+adj9/device/ctxsnap10_out/
+
+# Optional: ignore all binary dumps
+*.bin
+.properties
+.kotlin_builtins
+extracted/base/META-INF/*.kotlin_module
+extracted/
+
+# Large generated/debug artifacts
+adj7_work/
+adj8/work/
+adj9/device/
+adj9/rev/fill_runs/
+adj9/rev/java_src/
+adj9/rev/_bdbg5_wirelog*
+block32_work/
+unicorn_work/
+slice_work/
+
+# Specific large generated files
+dj7s4_mwtrace.txt
+
+# Generated / temporary work
+adj7_work/
+adj8/work/
+adj9/device/
+adj9/rev/fill_runs/
+adj9/rev/java_src/
+block32_work/
+unicorn_work/
+slice_work/
+
+# Generated trace files
+*_mwtrace.txt

@@ -1,0 +1,17 @@
+# CLASS Lcom/adjust/sdk/AdjustInstance$8$1;
+FIELD public final synthetic a Ljava/lang/String;
+FIELD public final synthetic b Lcom/adjust/sdk/AdjustInstance$8;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/AdjustInstance$8; Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustInstance$8$1;->b Lcom/adjust/sdk/AdjustInstance$8;
+  iput-object            v2, v0, Lcom/adjust/sdk/AdjustInstance$8$1;->a Ljava/lang/String;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance$8$1;->b Lcom/adjust/sdk/AdjustInstance$8;
+  iget-object            v0, v0, Lcom/adjust/sdk/AdjustInstance$8;->b Lcom/adjust/sdk/OnAdidReadListener;
+  iget-object            v1, v2, Lcom/adjust/sdk/AdjustInstance$8$1;->a Ljava/lang/String;
+  invoke-interface       v0, v1, Lcom/adjust/sdk/OnAdidReadListener;->onAdidRead(Ljava/lang/String;)V
+  return-void            
+######################################################################

@@ -1,0 +1,5 @@
+# CLASS Lcom/adjust/sdk/OnDeferredDeeplinkResponseListener;
+
+---- METHOD public abstract launchReceivedDeeplink (Landroid/net/Uri;)Z ----
+  (no code)
+######################################################################

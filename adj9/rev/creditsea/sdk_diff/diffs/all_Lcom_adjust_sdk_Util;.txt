@@ -1,0 +1,211 @@
+--- 
++++ 
+@@ -4,3 +4,3 @@
+ FIELD private static final fieldReadErrorMessage Ljava/lang/String;
+-FIELD private static bridge playAdIdScheduler Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;
++FIELD private static bridge googleAdIdScheduler Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;
+ ---- METHOD static constructor <clinit> ()V ----
+@@ -15,3 +15,3 @@
+ const/4 vX, 0
+-sput-object vX, Lcom/adjust/sdk/Util;->playAdIdScheduler Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;
++sput-object vX, Lcom/adjust/sdk/Util;->googleAdIdScheduler Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;
+ return-void
+@@ -20,3 +20,3 @@
+ return-void
+----- METHOD public static synthetic access$000 (Landroid/content/Context;)Ljava/lang/String; ----
++---- METHOD public static bridge synthetic a (Landroid/content/Context;)Ljava/lang/String; ----
+ invoke-static vX, Lcom/adjust/sdk/Util;->getGoogleAdId(Landroid/content/Context;)Ljava/lang/String;
+@@ -122,36 +122,2 @@
+ return-object vX
+----- METHOD public static canReadAppSetId (Lcom/adjust/sdk/AdjustConfig;)Z ----
+-iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isAppSetIdReadingEnabled Z
+-if BRANCH
+-const/4 vX, 0
+-return vX
+-invoke-static vX, Lcom/adjust/sdk/Util;->canReadPlayIds(Lcom/adjust/sdk/AdjustConfig;)Z
+-move-result vX
+-return vX
+----- METHOD public static canReadFbId (Lcom/adjust/sdk/AdjustConfig;)Z ----
+-iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isFbIdReadingEnabled Z
+-if BRANCH
+-const/4 vX, 0
+-return vX
+-invoke-static vX, Lcom/adjust/sdk/Util;->canReadNonPlayIds(Lcom/adjust/sdk/AdjustConfig;)Z
+-move-result vX
+-return vX
+----- METHOD public static canReadNonPlayIds (Lcom/adjust/sdk/AdjustConfig;)Z ----
+-iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->coppaComplianceEnabled Z
+-if BRANCH
+-iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->playStoreKidsComplianceEnabled Z
+-if BRANCH
+-const/4 vX, 1
+-return vX
+-const/4 vX, 0
+-return vX
+----- METHOD public static canReadPlayIds (Lcom/adjust/sdk/AdjustConfig;)Z ----
+-iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->coppaComplianceEnabled Z
+-if BRANCH
+-iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->playStoreKidsComplianceEnabled Z
+-if BRANCH
+-const/4 vX, 1
+-return vX
+-const/4 vX, 0
+-return vX
+ ---- METHOD public static checkPermission (Landroid/content/Context; Ljava/lang/String;)Z ----
+@@ -184,3 +150,3 @@
+ const-string/jumbo x
+-invoke-static vX, vX, vX, Ld;->p(Ljava/lang/StringBuilder; Ljava/lang/String; I)Ljava/lang/String;
++invoke-static vX, vX, vX, LB2/a;->o(Ljava/lang/StringBuilder; I Ljava/lang/String;)Ljava/lang/String;
+ move-result-object vX
+@@ -270,5 +236,5 @@
+ ---- METHOD public static getAdvertisingInfoObject (Landroid/content/Context; J)Ljava/lang/Object; ----
+-new-instance vX, Lcom/adjust/sdk/Util$1;
+-invoke-direct vX, vX, Lcom/adjust/sdk/Util$1;-><init>(Landroid/content/Context;)V
+-invoke-static vX, vX, vX, vX, Lcom/adjust/sdk/Util;->runSyncInPlayAdIdSchedulerWithTimeout(Landroid/content/Context; Ljava/util/concurrent/Callable; J)Ljava/lang/Object;
++new-instance vX, Lcom/adjust/sdk/b0;
++invoke-direct vX, vX, Lcom/adjust/sdk/b0;-><init>(Landroid/content/Context;)V
++invoke-static vX, vX, vX, vX, Lcom/adjust/sdk/Util;->runSyncInGoogleAdIdSchedulerWithTimeout(Landroid/content/Context; Ljava/util/concurrent/Callable; J)Ljava/lang/Object;
+ move-result-object vX
+@@ -304,8 +270,17 @@
+ const-wide/16 vX, 1000
+-invoke-static vX, vX, vX, vX, Lcom/adjust/sdk/Util;->getPlayAdId(Landroid/content/Context; Ljava/lang/Object; J)Ljava/lang/String;
+-move-result-object vX
++invoke-static vX, vX, vX, vX, Lcom/adjust/sdk/Util;->getGoogleAdId(Landroid/content/Context; Ljava/lang/Object; J)Ljava/lang/String;
++move-result-object vX
++return-object vX
++---- METHOD public static getGoogleAdId (Landroid/content/Context; Ljava/lang/Object; J)Ljava/lang/String; ----
++new-instance vX, Lcom/adjust/sdk/c0;
++const/4 vX, 0
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/c0;-><init>(Landroid/content/Context; I Ljava/lang/Object;)V
++invoke-static vX, vX, vX, vX, Lcom/adjust/sdk/Util;->runSyncInGoogleAdIdSchedulerWithTimeout(Landroid/content/Context; Ljava/util/concurrent/Callable; J)Ljava/lang/Object;
++move-result-object vX
++check-cast vX, Ljava/lang/String;
+ return-object vX
+ ---- METHOD public static getGoogleAdId (Landroid/content/Context; Lcom/adjust/sdk/OnGoogleAdIdReadListener;)V ----
+-new-instance vX, Lcom/adjust/sdk/Util$4;
+-invoke-direct vX, vX, Lcom/adjust/sdk/Util$4;-><init>(Lcom/adjust/sdk/OnGoogleAdIdReadListener;)V
++new-instance vX, Lcom/adjust/sdk/I;
++const/4 vX, 2
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/I;-><init>(Ljava/lang/Object; I)V
+ filled-new-array vX, [Landroid/content/Context;
+@@ -330,9 +305,2 @@
+ move-result-object vX
+-return-object vX
+----- METHOD public static getPlayAdId (Landroid/content/Context; Ljava/lang/Object; J)Ljava/lang/String; ----
+-new-instance vX, Lcom/adjust/sdk/Util$2;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/Util$2;-><init>(Landroid/content/Context; Ljava/lang/Object;)V
+-invoke-static vX, vX, vX, vX, Lcom/adjust/sdk/Util;->runSyncInPlayAdIdSchedulerWithTimeout(Landroid/content/Context; Ljava/util/concurrent/Callable; J)Ljava/lang/Object;
+-move-result-object vX
+-check-cast vX, Ljava/lang/String;
+ return-object vX
+@@ -414,3 +382,3 @@
+ ---- METHOD public static getSdkVersion ()Ljava/lang/String; ----
+-const-string "android5.7.0"
++const-string "android5.8.0"
+ return-object vX
+@@ -536,2 +504,32 @@
+ return vX
++---- METHOD public static isAndroidIdReadingEnabled (Lcom/adjust/sdk/AdjustConfig;)Z ----
++iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->coppaComplianceEnabled Z
++if BRANCH
++iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->playStoreKidsComplianceEnabled Z
++if BRANCH
++GOTO
++iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isAndroidIdReadingEnabled Z
++return vX
++const/4 vX, 0
++return vX
++---- METHOD public static isAppSetIdReadingEnabled (Lcom/adjust/sdk/AdjustConfig;)Z ----
++iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->coppaComplianceEnabled Z
++if BRANCH
++iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->playStoreKidsComplianceEnabled Z
++if BRANCH
++GOTO
++iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isAppSetIdReadingEnabled Z
++return vX
++const/4 vX, 0
++return vX
++---- METHOD public static isDeviceIdsFromPluginsReadingEnabled (Lcom/adjust/sdk/AdjustConfig;)Z ----
++iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->coppaComplianceEnabled Z
++if BRANCH
++iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->playStoreKidsComplianceEnabled Z
++if BRANCH
++GOTO
++iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isDeviceIdsFromPluginsReadingEnabled Z
++return vX
++const/4 vX, 0
++return vX
+ ---- METHOD public static isEnabledFromActivityStateFile (Landroid/content/Context;)Z ----
+@@ -763,2 +761,40 @@
+ return vX
++---- METHOD public static isFbIdReadingEnabled (Lcom/adjust/sdk/AdjustConfig;)Z ----
++iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->coppaComplianceEnabled Z
++if BRANCH
++iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->playStoreKidsComplianceEnabled Z
++if BRANCH
++GOTO
++iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isFbIdReadingEnabled Z
++return vX
++const/4 vX, 0
++return vX
++---- METHOD public static isFireAdIdReadingEnabled (Lcom/adjust/sdk/AdjustConfig;)Z ----
++iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->coppaComplianceEnabled Z
++if BRANCH
++iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->playStoreKidsComplianceEnabled Z
++if BRANCH
++GOTO
++iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isFireAdIdReadingEnabled Z
++return vX
++const/4 vX, 0
++return vX
++---- METHOD public static isGoogleAdIdReadingEnabled (Lcom/adjust/sdk/AdjustConfig;)Z ----
++iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->coppaComplianceEnabled Z
++if BRANCH
++iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->playStoreKidsComplianceEnabled Z
++if BRANCH
++GOTO
++iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isGoogleAdIdReadingEnabled Z
++return vX
++const/4 vX, 0
++return vX
++---- METHOD public static isGoogleAdIdTrackingEnabled (Landroid/content/Context; Ljava/lang/Object; J)Ljava/lang/Boolean; ----
++new-instance vX, Lcom/adjust/sdk/c0;
++const/4 vX, 1
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/c0;-><init>(Landroid/content/Context; I Ljava/lang/Object;)V
++invoke-static vX, vX, vX, vX, Lcom/adjust/sdk/Util;->runSyncInGoogleAdIdSchedulerWithTimeout(Landroid/content/Context; Ljava/util/concurrent/Callable; J)Ljava/lang/Object;
++move-result-object vX
++check-cast vX, Ljava/lang/Boolean;
++return-object vX
+ ---- METHOD public static isGooglePlayGamesForPC (Landroid/content/Context;)Z ----
+@@ -770,9 +806,2 @@
+ return vX
+----- METHOD public static isPlayTrackingEnabled (Landroid/content/Context; Ljava/lang/Object; J)Ljava/lang/Boolean; ----
+-new-instance vX, Lcom/adjust/sdk/Util$3;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/Util$3;-><init>(Landroid/content/Context; Ljava/lang/Object;)V
+-invoke-static vX, vX, vX, vX, Lcom/adjust/sdk/Util;->runSyncInPlayAdIdSchedulerWithTimeout(Landroid/content/Context; Ljava/util/concurrent/Callable; J)Ljava/lang/Object;
+-move-result-object vX
+-check-cast vX, Ljava/lang/Boolean;
+-return-object vX
+ ---- METHOD public static isUrlFilteredOut (Landroid/net/Uri;)Z ----
+@@ -1102,4 +1131,4 @@
+ return vX
+----- METHOD private static runSyncInPlayAdIdSchedulerWithTimeout (Landroid/content/Context; Ljava/util/concurrent/Callable; J)Ljava/lang/Object; ----
+-sget-object vX, Lcom/adjust/sdk/Util;->playAdIdScheduler Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;
++---- METHOD private static runSyncInGoogleAdIdSchedulerWithTimeout (Landroid/content/Context; Ljava/util/concurrent/Callable; J)Ljava/lang/Object; ----
++sget-object vX, Lcom/adjust/sdk/Util;->googleAdIdScheduler Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;
+ if BRANCH
+@@ -1107,3 +1136,3 @@
+ monitor-enter vX
+-sget-object vX, Lcom/adjust/sdk/Util;->playAdIdScheduler Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;
++sget-object vX, Lcom/adjust/sdk/Util;->googleAdIdScheduler Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;
+ if BRANCH
+@@ -1113,3 +1142,3 @@
+ invoke-direct vX, vX, vX, Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;-><init>(Ljava/lang/String; Z)V
+-sput-object vX, Lcom/adjust/sdk/Util;->playAdIdScheduler Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;
++sput-object vX, Lcom/adjust/sdk/Util;->googleAdIdScheduler Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;
+ GOTO
+@@ -1121,3 +1150,3 @@
+ throw vX
+-sget-object vX, Lcom/adjust/sdk/Util;->playAdIdScheduler Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;
++sget-object vX, Lcom/adjust/sdk/Util;->googleAdIdScheduler Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;
+ const-wide/16 vX, 0

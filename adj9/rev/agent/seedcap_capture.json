@@ -1,0 +1,47 @@
+{
+ "stream": [
+  {
+   "type": "base",
+   "base": "0x6daec40000",
+   "size": 1400832,
+   "t": 1790268849231
+  },
+  {
+   "type": "native_ready",
+   "base": "0x6daec40000",
+   "t": 1790268849250
+  }
+ ],
+ "runs": [
+  {
+   "i": 0,
+   "ok": false,
+   "authorization": null,
+   "seeds_u32": [],
+   "desc10": [],
+   "blob_b64": null,
+   "blob_hex": null,
+   "events": []
+  },
+  {
+   "i": 1,
+   "ok": false,
+   "authorization": null,
+   "seeds_u32": [],
+   "desc10": [],
+   "blob_b64": null,
+   "blob_hex": null,
+   "events": []
+  },
+  {
+   "i": 2,
+   "ok": false,
+   "authorization": null,
+   "seeds_u32": [],
+   "desc10": [],
+   "blob_b64": null,
+   "blob_hex": null,
+   "events": []
+  }
+ ]
+}

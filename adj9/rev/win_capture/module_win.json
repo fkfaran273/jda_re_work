@@ -1,0 +1,17 @@
+{
+ "gps": "7cc81be0-60a0-4342-a878-eb5ee4f2634a",
+ "old_gaid": "7759b5ed-ef83-4b29-8220-21686aa5df40",
+ "verdict": {
+  "tracker_token": "24pxw9rl",
+  "tracker_name": "VKM Digital Yeni::AH::vkm_0926_36::penti_generic",
+  "network": "VKM Digital Yeni",
+  "campaign": "AH",
+  "adgroup": "vkm_0926_36",
+  "creative": "penti_generic",
+  "engagement_time": "2026-09-25T13:05:01Z",
+  "installed_at": "2026-09-25T13:05:08Z",
+  "first_session_time": "2026-09-25T13:05:08Z",
+  "is_reattributed": false,
+  "is_redownload_install": false
+ }
+}

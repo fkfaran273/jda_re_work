@@ -1,0 +1,23 @@
+# CLASS Lcom/adjust/sdk/scheduler/AsyncTaskExecutor$1;
+FIELD public final synthetic a [Ljava/lang/Object;
+FIELD public final synthetic b Landroid/os/Handler;
+FIELD public final synthetic c Lcom/adjust/sdk/scheduler/AsyncTaskExecutor;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/scheduler/AsyncTaskExecutor; [Ljava/lang/Object; Landroid/os/Handler;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/scheduler/AsyncTaskExecutor$1;->c Lcom/adjust/sdk/scheduler/AsyncTaskExecutor;
+  iput-object            v2, v0, Lcom/adjust/sdk/scheduler/AsyncTaskExecutor$1;->a [Ljava/lang/Object;
+  iput-object            v3, v0, Lcom/adjust/sdk/scheduler/AsyncTaskExecutor$1;->b Landroid/os/Handler;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v3, Lcom/adjust/sdk/scheduler/AsyncTaskExecutor$1;->c Lcom/adjust/sdk/scheduler/AsyncTaskExecutor;
+  iget-object            v1, v3, Lcom/adjust/sdk/scheduler/AsyncTaskExecutor$1;->a [Ljava/lang/Object;
+  invoke-virtual         v0, v1, Lcom/adjust/sdk/scheduler/AsyncTaskExecutor;->doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  iget-object            v1, v3, Lcom/adjust/sdk/scheduler/AsyncTaskExecutor$1;->b Landroid/os/Handler;
+  new-instance           v2, Lcom/adjust/sdk/scheduler/AsyncTaskExecutor$1$1;
+  invoke-direct          v2, v3, v0, Lcom/adjust/sdk/scheduler/AsyncTaskExecutor$1$1;-><init>(Lcom/adjust/sdk/scheduler/AsyncTaskExecutor$1; Ljava/lang/Object;)V
+  invoke-virtual         v1, v2, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+  return-void            
+######################################################################

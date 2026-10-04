@@ -1,0 +1,57 @@
+# CLASS Lcom/adjust/sdk/u;
+FIELD public final synthetic a I
+FIELD public final synthetic b Ljava/lang/Object;
+
+---- METHOD public synthetic constructor <init> (Ljava/lang/Object; I)V ----
+  iput                   v2, v0, Lcom/adjust/sdk/u;->a I
+  iput-object            v1, v0, Lcom/adjust/sdk/u;->b Ljava/lang/Object;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget                   v0, v3, Lcom/adjust/sdk/u;->a I
+  packed-switch          v0, +0000056h
+  iget-object            v0, v3, Lcom/adjust/sdk/u;->b Ljava/lang/Object;
+  check-cast             v0, Lcom/adjust/sdk/SdkClickHandler;
+  invoke-static          v0, Lcom/adjust/sdk/SdkClickHandler;->e(Lcom/adjust/sdk/SdkClickHandler;)V
+  return-void            
+  iget-object            v0, v3, Lcom/adjust/sdk/u;->b Ljava/lang/Object;
+  check-cast             v0, Lcom/adjust/sdk/InstallReferrer;
+  invoke-virtual         v0, Lcom/adjust/sdk/InstallReferrer;->startConnection()V
+  return-void            
+  iget-object            v0, v3, Lcom/adjust/sdk/u;->b Ljava/lang/Object;
+  check-cast             v0, Lcom/adjust/sdk/v;
+  iget-object            v1, v0, Lcom/adjust/sdk/v;->b Lcom/adjust/sdk/AdjustTimeoutCallback;
+  invoke-virtual         v1, Lcom/adjust/sdk/AdjustTimeoutCallback;->getOnThirdPartySharingSettingsReadListener()Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;
+  move-result-object     v1
+  const/4                v2, 0
+  if-eqz                 v1, +005h
+  invoke-interface       v1, v2, Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;->onThirdPartySharingSettingsRead(Lcom/adjust/sdk/AdjustThirdPartySharingResult;)V
+  iget-object            v0, v0, Lcom/adjust/sdk/v;->b Lcom/adjust/sdk/AdjustTimeoutCallback;
+  invoke-virtual         v0, v2, Lcom/adjust/sdk/AdjustTimeoutCallback;->setOnThirdPartySharingSettingsReadListener(Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;)V
+  return-void            
+  iget-object            v0, v3, Lcom/adjust/sdk/u;->b Ljava/lang/Object;
+  check-cast             v0, Lcom/adjust/sdk/v;
+  iget-object            v1, v0, Lcom/adjust/sdk/v;->b Lcom/adjust/sdk/AdjustTimeoutCallback;
+  invoke-virtual         v1, Lcom/adjust/sdk/AdjustTimeoutCallback;->getOnAttributionReadListener()Lcom/adjust/sdk/OnAttributionReadListener;
+  move-result-object     v1
+  const/4                v2, 0
+  if-eqz                 v1, +005h
+  invoke-interface       v1, v2, Lcom/adjust/sdk/OnAttributionReadListener;->onAttributionRead(Lcom/adjust/sdk/AdjustAttribution;)V
+  iget-object            v0, v0, Lcom/adjust/sdk/v;->b Lcom/adjust/sdk/AdjustTimeoutCallback;
+  invoke-virtual         v0, v2, Lcom/adjust/sdk/AdjustTimeoutCallback;->setOnAttributionReadListener(Lcom/adjust/sdk/OnAttributionReadListener;)V
+  return-void            
+  iget-object            v0, v3, Lcom/adjust/sdk/u;->b Ljava/lang/Object;
+  check-cast             v0, Lcom/adjust/sdk/v;
+  iget-object            v1, v0, Lcom/adjust/sdk/v;->b Lcom/adjust/sdk/AdjustTimeoutCallback;
+  invoke-virtual         v1, Lcom/adjust/sdk/AdjustTimeoutCallback;->getOnAdidReadListener()Lcom/adjust/sdk/OnAdidReadListener;
+  move-result-object     v1
+  const/4                v2, 0
+  if-eqz                 v1, +005h
+  invoke-interface       v1, v2, Lcom/adjust/sdk/OnAdidReadListener;->onAdidRead(Ljava/lang/String;)V
+  iget-object            v0, v0, Lcom/adjust/sdk/v;->b Lcom/adjust/sdk/AdjustTimeoutCallback;
+  invoke-virtual         v0, v2, Lcom/adjust/sdk/AdjustTimeoutCallback;->setOnAdidReadListener(Lcom/adjust/sdk/OnAdidReadListener;)V
+  return-void            
+  nop                    
+  packed-switch-payload  0 1 2 3
+######################################################################

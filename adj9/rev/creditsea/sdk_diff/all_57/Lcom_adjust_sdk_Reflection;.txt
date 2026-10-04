@@ -1,0 +1,361 @@
+# CLASS Lcom/adjust/sdk/Reflection;
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public static createDefaultInstance (Ljava/lang/Class;)Ljava/lang/Object; ----
+  const/4                v0, 0
+  invoke-virtual         v1, v0, Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+  move-result-object     v1
+  invoke-virtual         v1, v0, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v1
+  return-object          v1
+  return-object          v0
+
+---- METHOD public static createDefaultInstance (Ljava/lang/String;)Ljava/lang/Object; ----
+  invoke-static          v0, Lcom/adjust/sdk/Reflection;->forName(Ljava/lang/String;)Ljava/lang/Class;
+  move-result-object     v0
+  if-nez                 v0, +004h
+  const/4                v0, 0
+  return-object          v0
+  invoke-static          v0, Lcom/adjust/sdk/Reflection;->createDefaultInstance(Ljava/lang/Class;)Ljava/lang/Object;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public static varargs createInstance (Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object; ----
+  invoke-static          v0, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+  move-result-object     v0
+  invoke-virtual         v0, v1, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+  move-result-object     v0
+  invoke-virtual         v0, v2, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  return-object          v0
+  const/4                v0, 0
+  return-object          v0
+
+---- METHOD public static forName (Ljava/lang/String;)Ljava/lang/Class; ----
+  invoke-static          v0, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+  move-result-object     v0
+  return-object          v0
+  const/4                v0, 0
+  return-object          v0
+
+---- METHOD public static getAdvertisingInfoObject (Landroid/content/Context;)Ljava/lang/Object; ----
+  const-class            v0, Landroid/content/Context;
+  filled-new-array       v0, [Ljava/lang/Class;
+  move-result-object     v0
+  filled-new-array       v3, [Ljava/lang/Object;
+  move-result-object     v3
+  const-string           v1, "com.google.android.gms.ads.identifier.AdvertisingIdClient"
+  const-string           v2, "getAdvertisingIdInfo"
+  invoke-static          v1, v2, v0, v3, Lcom/adjust/sdk/Reflection;->invokeStaticMethod(Ljava/lang/String; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v3
+  return-object          v3
+
+---- METHOD public static getAppSetId (Landroid/content/Context;)Ljava/lang/String; ----
+  const/4                v0, 0
+  const-string           v1, "com.google.android.gms.appset.AppSet"
+  const-string           v2, "getClient"
+  const-class            v3, Landroid/content/Context;
+  filled-new-array       v3, [Ljava/lang/Class;
+  move-result-object     v3
+  filled-new-array       v7, [Ljava/lang/Object;
+  move-result-object     v7
+  invoke-static          v1, v2, v3, v7, Lcom/adjust/sdk/Reflection;->invokeStaticMethod(Ljava/lang/String; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v7
+  const-string           v1, "getAppSetIdInfo"
+  const/4                v2, 0
+  new-array              v3, v2, [Ljava/lang/Object;
+  invoke-static          v7, v1, v0, v3, Lcom/adjust/sdk/Reflection;->invokeInstanceMethod(Ljava/lang/Object; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v7
+  const-string           v1, "com.google.android.gms.tasks.Tasks"
+  const-string           v3, "await"
+  const-string           v4, "com.google.android.gms.tasks.Task"
+  invoke-static          v4, Lcom/adjust/sdk/Reflection;->forName(Ljava/lang/String;)Ljava/lang/Class;
+  move-result-object     v4
+  sget-object            v5, Ljava/lang/Long;->TYPE Ljava/lang/Class;
+  const-class            v6, Ljava/util/concurrent/TimeUnit;
+  filled-new-array       v4, v5, v6, [Ljava/lang/Class;
+  move-result-object     v4
+  const-wide/16          v5, 1
+  invoke-static          v5, v6, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v5
+  sget-object            v6, Ljava/util/concurrent/TimeUnit;->SECONDS Ljava/util/concurrent/TimeUnit;
+  filled-new-array       v7, v5, v6, [Ljava/lang/Object;
+  move-result-object     v7
+  invoke-static          v1, v3, v4, v7, Lcom/adjust/sdk/Reflection;->invokeStaticMethod(Ljava/lang/String; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v7
+  const-string           v1, "getId"
+  new-array              v2, v2, [Ljava/lang/Object;
+  invoke-static          v7, v1, v0, v2, Lcom/adjust/sdk/Reflection;->invokeInstanceMethod(Ljava/lang/Object; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v7
+  check-cast             v7, Ljava/lang/String;
+  return-object          v7
+  return-object          v0
+
+---- METHOD public static getHuaweiAdsReferrer (Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Lcom/adjust/sdk/ReferrerDetails; ----
+  const-string           v0, "com.adjust.sdk.huawei.Util"
+  const-string           v1, "getHuaweiAdsInstallReferrerDetails"
+  const-class            v2, Landroid/content/Context;
+  const-class            v3, Lcom/adjust/sdk/ILogger;
+  filled-new-array       v2, v3, [Ljava/lang/Class;
+  move-result-object     v2
+  filled-new-array       v4, v5, [Ljava/lang/Object;
+  move-result-object     v4
+  invoke-static          v0, v1, v2, v4, Lcom/adjust/sdk/Reflection;->invokeStaticMethod(Ljava/lang/String; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v4
+  check-cast             v4, Lcom/adjust/sdk/ReferrerDetails;
+  return-object          v4
+  const/4                v4, 0
+  return-object          v4
+
+---- METHOD public static getHuaweiAppGalleryReferrer (Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Lcom/adjust/sdk/ReferrerDetails; ----
+  const-string           v0, "com.adjust.sdk.huawei.Util"
+  const-string           v1, "getHuaweiAppGalleryInstallReferrerDetails"
+  const-class            v2, Landroid/content/Context;
+  const-class            v3, Lcom/adjust/sdk/ILogger;
+  filled-new-array       v2, v3, [Ljava/lang/Class;
+  move-result-object     v2
+  filled-new-array       v4, v5, [Ljava/lang/Object;
+  move-result-object     v4
+  invoke-static          v0, v1, v2, v4, Lcom/adjust/sdk/Reflection;->invokeStaticMethod(Ljava/lang/String; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v4
+  check-cast             v4, Lcom/adjust/sdk/ReferrerDetails;
+  return-object          v4
+  const/4                v4, 0
+  return-object          v4
+
+---- METHOD public static getImeiParameters (Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Ljava/util/Map; ----
+  const-string           v0, "com.adjust.sdk.imei.Util"
+  const-string           v1, "getImeiParameters"
+  const-class            v2, Landroid/content/Context;
+  const-class            v3, Lcom/adjust/sdk/ILogger;
+  filled-new-array       v2, v3, [Ljava/lang/Class;
+  move-result-object     v2
+  filled-new-array       v4, v5, [Ljava/lang/Object;
+  move-result-object     v4
+  invoke-static          v0, v1, v2, v4, Lcom/adjust/sdk/Reflection;->invokeStaticMethod(Ljava/lang/String; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v4
+  const-class            v5, Ljava/util/Map;
+  if-eqz                 v4, +00bh
+  invoke-virtual         v5, v4, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
+  move-result            v5
+  if-eqz                 v5, +005h
+  check-cast             v4, Ljava/util/Map;
+  return-object          v4
+  const/4                v4, 0
+  return-object          v4
+
+---- METHOD public static getLicenseRequiredData (Landroid/content/Context; Lcom/adjust/sdk/ILogger; J)Lcom/adjust/sdk/LicenseData; ----
+  const-string           v0, "com.adjust.sdk.google.lvl.Util"
+  const-string           v1, "getLicenseRequiredData"
+  const-class            v2, Landroid/content/Context;
+  const-class            v3, Lcom/adjust/sdk/ILogger;
+  sget-object            v4, Ljava/lang/Long;->TYPE Ljava/lang/Class;
+  filled-new-array       v2, v3, v4, [Ljava/lang/Class;
+  move-result-object     v2
+  invoke-static          v7, v8, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v7
+  filled-new-array       v5, v6, v7, [Ljava/lang/Object;
+  move-result-object     v5
+  invoke-static          v0, v1, v2, v5, Lcom/adjust/sdk/Reflection;->invokeStaticMethod(Ljava/lang/String; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v5
+  check-cast             v5, Lcom/adjust/sdk/LicenseData;
+  return-object          v5
+  const/4                v5, 0
+  return-object          v5
+
+---- METHOD public static getMetaReferrer (Landroid/content/Context; Ljava/lang/String; Lcom/adjust/sdk/ILogger;)Lcom/adjust/sdk/ReferrerDetails; ----
+  const-string           v0, "com.adjust.sdk.meta.Util"
+  const-string           v1, "getMetaInstallReferrerDetails"
+  const-class            v2, Landroid/content/Context;
+  const-class            v3, Ljava/lang/String;
+  const-class            v4, Lcom/adjust/sdk/ILogger;
+  filled-new-array       v2, v3, v4, [Ljava/lang/Class;
+  move-result-object     v2
+  filled-new-array       v5, v6, v7, [Ljava/lang/Object;
+  move-result-object     v5
+  invoke-static          v0, v1, v2, v5, Lcom/adjust/sdk/Reflection;->invokeStaticMethod(Ljava/lang/String; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v5
+  check-cast             v5, Lcom/adjust/sdk/ReferrerDetails;
+  return-object          v5
+  const/4                v5, 0
+  return-object          v5
+
+---- METHOD public static getOaidParameters (Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Ljava/util/Map; ----
+  const-string           v0, "com.adjust.sdk.oaid.Util"
+  const-string           v1, "getOaidParameters"
+  const-class            v2, Landroid/content/Context;
+  const-class            v3, Lcom/adjust/sdk/ILogger;
+  filled-new-array       v2, v3, [Ljava/lang/Class;
+  move-result-object     v2
+  filled-new-array       v4, v5, [Ljava/lang/Object;
+  move-result-object     v4
+  invoke-static          v0, v1, v2, v4, Lcom/adjust/sdk/Reflection;->invokeStaticMethod(Ljava/lang/String; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v4
+  const-class            v5, Ljava/util/Map;
+  if-eqz                 v4, +00bh
+  invoke-virtual         v5, v4, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
+  move-result            v5
+  if-eqz                 v5, +005h
+  check-cast             v4, Ljava/util/Map;
+  return-object          v4
+  const/4                v4, 0
+  return-object          v4
+
+---- METHOD public static getPlayAdId (Landroid/content/Context; Ljava/lang/Object;)Ljava/lang/String; ----
+  const/4                v2, 0
+  const-string           v0, "getId"
+  const/4                v1, 0
+  new-array              v1, v1, [Ljava/lang/Object;
+  invoke-static          v3, v0, v2, v1, Lcom/adjust/sdk/Reflection;->invokeInstanceMethod(Ljava/lang/Object; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v3
+  check-cast             v3, Ljava/lang/String;
+  return-object          v3
+  return-object          v2
+
+---- METHOD public static getSamsungCloudDevGoogleAdId (Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Ljava/lang/String; ----
+  const-string           v0, "com.adjust.sdk.samsung.clouddev.Util"
+  const-string           v1, "getGoogleAdIdInCloudEnvironment"
+  const-class            v2, Landroid/content/Context;
+  const-class            v3, Lcom/adjust/sdk/ILogger;
+  filled-new-array       v2, v3, [Ljava/lang/Class;
+  move-result-object     v2
+  filled-new-array       v4, v5, [Ljava/lang/Object;
+  move-result-object     v4
+  invoke-static          v0, v1, v2, v4, Lcom/adjust/sdk/Reflection;->invokeStaticMethod(Ljava/lang/String; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v4
+  check-cast             v4, Ljava/lang/String;
+  return-object          v4
+  const/4                v4, 0
+  return-object          v4
+
+---- METHOD public static getSamsungReferrer (Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Lcom/adjust/sdk/ReferrerDetails; ----
+  const-string           v0, "com.adjust.sdk.samsung.Util"
+  const-string           v1, "getSamsungInstallReferrerDetails"
+  const-class            v2, Landroid/content/Context;
+  const-class            v3, Lcom/adjust/sdk/ILogger;
+  filled-new-array       v2, v3, [Ljava/lang/Class;
+  move-result-object     v2
+  filled-new-array       v4, v5, [Ljava/lang/Object;
+  move-result-object     v4
+  invoke-static          v0, v1, v2, v4, Lcom/adjust/sdk/Reflection;->invokeStaticMethod(Ljava/lang/String; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v4
+  check-cast             v4, Lcom/adjust/sdk/ReferrerDetails;
+  return-object          v4
+  const/4                v4, 0
+  return-object          v4
+
+---- METHOD public static getVivoReferrer (Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Lcom/adjust/sdk/ReferrerDetails; ----
+  const-string           v0, "com.adjust.sdk.vivo.Util"
+  const-string           v1, "getVivoInstallReferrerDetails"
+  const-class            v2, Landroid/content/Context;
+  const-class            v3, Lcom/adjust/sdk/ILogger;
+  filled-new-array       v2, v3, [Ljava/lang/Class;
+  move-result-object     v2
+  filled-new-array       v4, v5, [Ljava/lang/Object;
+  move-result-object     v4
+  invoke-static          v0, v1, v2, v4, Lcom/adjust/sdk/Reflection;->invokeStaticMethod(Ljava/lang/String; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v4
+  check-cast             v4, Lcom/adjust/sdk/ReferrerDetails;
+  return-object          v4
+  const/4                v4, 0
+  return-object          v4
+
+---- METHOD public static getXiaomiReferrer (Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Lcom/adjust/sdk/ReferrerDetails; ----
+  const-string           v0, "com.adjust.sdk.xiaomi.Util"
+  const-string           v1, "getXiaomiInstallReferrerDetails"
+  const-class            v2, Landroid/content/Context;
+  const-class            v3, Lcom/adjust/sdk/ILogger;
+  filled-new-array       v2, v3, [Ljava/lang/Class;
+  move-result-object     v2
+  filled-new-array       v4, v5, [Ljava/lang/Object;
+  move-result-object     v4
+  invoke-static          v0, v1, v2, v4, Lcom/adjust/sdk/Reflection;->invokeStaticMethod(Ljava/lang/String; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v4
+  check-cast             v4, Lcom/adjust/sdk/ReferrerDetails;
+  return-object          v4
+  const/4                v4, 0
+  return-object          v4
+
+---- METHOD public static varargs invokeInstanceMethod (Ljava/lang/Object; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object; ----
+  invoke-virtual         v1, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+  move-result-object     v0
+  invoke-static          v0, v2, v1, v3, v4, Lcom/adjust/sdk/Reflection;->invokeMethod(Ljava/lang/Class; Ljava/lang/String; Ljava/lang/Object; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v1
+  return-object          v1
+
+---- METHOD public static varargs invokeMethod (Ljava/lang/Class; Ljava/lang/String; Ljava/lang/Object; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object; ----
+  invoke-virtual         v0, v1, v3, Ljava/lang/Class;->getMethod(Ljava/lang/String; [Ljava/lang/Class;)Ljava/lang/reflect/Method;
+  move-result-object     v0
+  if-nez                 v0, +004h
+  const/4                v0, 0
+  return-object          v0
+  invoke-virtual         v0, v2, v4, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object; [Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public static varargs invokeStaticMethod (Ljava/lang/String; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object; ----
+  invoke-static          v1, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+  move-result-object     v1
+  const/4                v0, 0
+  invoke-static          v1, v2, v0, v3, v4, Lcom/adjust/sdk/Reflection;->invokeMethod(Ljava/lang/Class; Ljava/lang/String; Ljava/lang/Object; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v1
+  return-object          v1
+
+---- METHOD public static isAppRunningInSamsungCloudEnvironment (Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Z ----
+  const-string           v0, "com.adjust.sdk.samsung.clouddev.Util"
+  const-string           v1, "isAppRunningInCloudEnvironment"
+  const-class            v2, Landroid/content/Context;
+  const-class            v3, Lcom/adjust/sdk/ILogger;
+  filled-new-array       v2, v3, [Ljava/lang/Class;
+  move-result-object     v2
+  filled-new-array       v4, v5, [Ljava/lang/Object;
+  move-result-object     v4
+  invoke-static          v0, v1, v2, v4, Lcom/adjust/sdk/Reflection;->invokeStaticMethod(Ljava/lang/String; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v4
+  check-cast             v4, Ljava/lang/Boolean;
+  invoke-virtual         v4, Ljava/lang/Boolean;->booleanValue()Z
+  move-result            v4
+  return                 v4
+  const/4                v4, 0
+  return                 v4
+
+---- METHOD public static isPlayTrackingEnabled (Landroid/content/Context; Ljava/lang/Object;)Ljava/lang/Boolean; ----
+  const/4                v2, 0
+  const-string           v0, "isLimitAdTrackingEnabled"
+  const/4                v1, 0
+  new-array              v1, v1, [Ljava/lang/Object;
+  invoke-static          v3, v0, v2, v1, Lcom/adjust/sdk/Reflection;->invokeInstanceMethod(Ljava/lang/Object; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v3
+  check-cast             v3, Ljava/lang/Boolean;
+  if-nez                 v3, +003h
+  return-object          v2
+  invoke-virtual         v3, Ljava/lang/Boolean;->booleanValue()Z
+  move-result            v3
+  xor-int/lit8           v3, v3, 1
+  invoke-static          v3, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object     v2
+  return-object          v2
+
+---- METHOD public static readField (Ljava/lang/String; Ljava/lang/String;)Ljava/lang/Object; ----
+  const/4                v0, 0
+  invoke-static          v1, v2, v0, Lcom/adjust/sdk/Reflection;->readField(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v1
+  return-object          v1
+
+---- METHOD public static readField (Ljava/lang/String; Ljava/lang/String; Ljava/lang/Object;)Ljava/lang/Object; ----
+  invoke-static          v1, Lcom/adjust/sdk/Reflection;->forName(Ljava/lang/String;)Ljava/lang/Class;
+  move-result-object     v1
+  const/4                v0, 0
+  if-nez                 v1, +003h
+  return-object          v0
+  invoke-virtual         v1, v2, Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+  move-result-object     v1
+  if-nez                 v1, +003h
+  return-object          v0
+  invoke-virtual         v1, v3, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v1
+  return-object          v1
+######################################################################

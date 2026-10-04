@@ -1,0 +1,23 @@
+# CLASS Lcom/adjust/sdk/ActivityHandler$41;
+FIELD public final synthetic a Lcom/adjust/sdk/ActivityHandler;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/ActivityHandler;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/ActivityHandler$41;->a Lcom/adjust/sdk/ActivityHandler;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v3, Lcom/adjust/sdk/ActivityHandler$41;->a Lcom/adjust/sdk/ActivityHandler;
+  invoke-virtual         v0, Lcom/adjust/sdk/ActivityHandler;->getContext()Landroid/content/Context;
+  move-result-object     v0
+  iget-object            v1, v3, Lcom/adjust/sdk/ActivityHandler$41;->a Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v1, Lcom/adjust/sdk/ActivityHandler;->access$1800(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/ILogger;
+  move-result-object     v1
+  invoke-static          v0, v1, Lcom/adjust/sdk/Reflection;->getXiaomiReferrer(Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Lcom/adjust/sdk/ReferrerDetails;
+  move-result-object     v0
+  if-eqz                 v0, +00ah
+  iget-object            v1, v3, Lcom/adjust/sdk/ActivityHandler$41;->a Lcom/adjust/sdk/ActivityHandler;
+  const-string/jumbo     v2, xiaomi
+  invoke-virtual         v1, v0, v2, Lcom/adjust/sdk/ActivityHandler;->sendInstallReferrer(Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String;)V
+  return-void            
+######################################################################

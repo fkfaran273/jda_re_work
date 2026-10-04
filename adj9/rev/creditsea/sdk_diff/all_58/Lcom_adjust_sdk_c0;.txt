@@ -1,0 +1,28 @@
+# CLASS Lcom/adjust/sdk/c0;
+FIELD public final synthetic a I
+FIELD public final synthetic b Landroid/content/Context;
+FIELD public final synthetic c Ljava/lang/Object;
+
+---- METHOD public synthetic constructor <init> (Landroid/content/Context; I Ljava/lang/Object;)V ----
+  iput                   v2, v0, Lcom/adjust/sdk/c0;->a I
+  iput-object            v1, v0, Lcom/adjust/sdk/c0;->b Landroid/content/Context;
+  iput-object            v3, v0, Lcom/adjust/sdk/c0;->c Ljava/lang/Object;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final call ()Ljava/lang/Object; ----
+  iget                   v0, v2, Lcom/adjust/sdk/c0;->a I
+  packed-switch          v0, +0000016h
+  iget-object            v0, v2, Lcom/adjust/sdk/c0;->b Landroid/content/Context;
+  iget-object            v1, v2, Lcom/adjust/sdk/c0;->c Ljava/lang/Object;
+  invoke-static          v0, v1, Lcom/adjust/sdk/Reflection;->isGoogleAdIdTrackingEnabled(Landroid/content/Context; Ljava/lang/Object;)Ljava/lang/Boolean;
+  move-result-object     v0
+  return-object          v0
+  iget-object            v0, v2, Lcom/adjust/sdk/c0;->b Landroid/content/Context;
+  iget-object            v1, v2, Lcom/adjust/sdk/c0;->c Ljava/lang/Object;
+  invoke-static          v0, v1, Lcom/adjust/sdk/Reflection;->getGoogleAdId(Landroid/content/Context; Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+  nop                    
+  packed-switch-payload  0
+######################################################################

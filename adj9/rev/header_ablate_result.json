@@ -1,0 +1,198 @@
+[
+ {
+  "arm": "H0",
+  "drop": [],
+  "over": {},
+  "gps": "ba56a4f7-f205-4827-b7e5-8cfe5843680c",
+  "click_http": 302,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"331c7a76abdf032e20abdd880d07dfe5\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"331c7a76abdf032e20abdd880d07dfe5\"}"
+  ],
+  "verdict": "click=200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"331c7a76abdf032e20abdd880d07dfe5\"}"
+ },
+ {
+  "arm": "H1",
+  "drop": [
+   "Client-SDK"
+  ],
+  "over": {},
+  "gps": "debf414e-4822-4c33-8661-afffa2fdc1f5",
+  "click_http": 302,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"a942baad43223cd086b4c56f60f4be95\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   400,
+   "{\"error\":\"SDK click failed (unsupported sdk)\"}"
+  ],
+  "verdict": "click=400 {\"error\":\"SDK click failed (unsupported sdk)\"}"
+ },
+ {
+  "arm": "H10",
+  "drop": [],
+  "over": {
+   "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148"
+  },
+  "gps": "631fd217-f7e4-4085-98cd-7db8f1867155",
+  "click_http": 302,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"e62968f741e3d63d28b4a0d84ce0b779\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"e62968f741e3d63d28b4a0d84ce0b779\"}"
+  ],
+  "verdict": "click=200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"e62968f741e3d63d28b4a0d84ce0b779\"}"
+ },
+ {
+  "arm": "H2",
+  "drop": [
+   "User-Agent"
+  ],
+  "over": {},
+  "gps": "a5f17287-b299-444b-b2e8-751500d62a2e",
+  "click_http": 302,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"cd963fa67efe244c8f313585129e6d4d\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"cd963fa67efe244c8f313585129e6d4d\"}"
+  ],
+  "verdict": "click=200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"cd963fa67efe244c8f313585129e6d4d\"}"
+ },
+ {
+  "arm": "H3",
+  "drop": [
+   "Content-Type"
+  ],
+  "over": {},
+  "gps": "560c78d9-35d3-421c-bc05-fcbc4466caa2",
+  "click_http": 302,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"661b0678da7b0136f4ea1775ca305c04\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   404,
+   "{\"error\":\"SDK click failed (failed to get app token)\"}"
+  ],
+  "verdict": "click=404 {\"error\":\"SDK click failed (failed to get app token)\"}"
+ },
+ {
+  "arm": "H4",
+  "drop": [
+   "Host"
+  ],
+  "over": {},
+  "gps": "c37b748d-1458-4fb8-90e7-d23095abf123",
+  "click_http": 302,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"9866a08e9910a4abe60b14b83a137b76\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   400,
+   "400 Bad Request: missing required Host header"
+  ],
+  "verdict": "click=400 400 Bad Request: missing required Host header"
+ },
+ {
+  "arm": "H5",
+  "drop": [
+   "Connection"
+  ],
+  "over": {},
+  "gps": "c32f46ea-befa-4339-be79-385c627dcfbe",
+  "click_http": 302,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f5fc614353cb00d6ac2a3e36a2df24a0\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f5fc614353cb00d6ac2a3e36a2df24a0\"}"
+  ],
+  "verdict": "click=200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"f5fc614353cb00d6ac2a3e36a2df24a0\"}"
+ },
+ {
+  "arm": "H6",
+  "drop": [
+   "Accept-Encoding"
+  ],
+  "over": {},
+  "gps": "913e1698-e340-4f6e-9638-13aa2c4ea769",
+  "click_http": 302,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"a8da605fe0dcabfa6a324c69785e03ca\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"a8da605fe0dcabfa6a324c69785e03ca\"}"
+  ],
+  "verdict": "click=200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"a8da605fe0dcabfa6a324c69785e03ca\"}"
+ },
+ {
+  "arm": "H7",
+  "drop": [],
+  "over": {
+   "Accept-Encoding": "identity"
+  },
+  "gps": "99493f81-8478-4cea-bca2-fe2f4688e747",
+  "click_http": 302,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"062fc4d83500b08376dfc13e1b0a1862\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"062fc4d83500b08376dfc13e1b0a1862\"}"
+  ],
+  "verdict": "click=200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"062fc4d83500b08376dfc13e1b0a1862\"}"
+ },
+ {
+  "arm": "H8",
+  "drop": [
+   "Authorization"
+  ],
+  "over": {},
+  "gps": "43d01435-dacf-4557-85e8-33399325e89e",
+  "click_http": 302,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f1d4fe6fb756adecb1e5d825d71776ce\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f1d4fe6fb756adecb1e5d825d71776ce\"}"
+  ],
+  "verdict": "click=200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"f1d4fe6fb756adecb1e5d825d71776ce\"}"
+ },
+ {
+  "arm": "H9",
+  "drop": [],
+  "over": {
+   "X-Adjust-Debug": "1"
+  },
+  "gps": "208be295-087b-4542-896f-08f362b8dba8",
+  "click_http": 302,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"35baa98a0df46084ee91a71157bee13c\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"35baa98a0df46084ee91a71157bee13c\"}"
+  ],
+  "verdict": "click=200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"35baa98a0df46084ee91a71157bee13c\"}"
+ }
+]

@@ -1,0 +1,63 @@
+# CLASS Lcom/adjust/sdk/GlobalParameters;
+FIELD  callbackParameters Ljava/util/Map;
+FIELD  partnerParameters Ljava/util/Map;
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public deepCopy ()Lcom/adjust/sdk/GlobalParameters; ----
+  new-instance           v0, Lcom/adjust/sdk/GlobalParameters;
+  invoke-direct          v0, Lcom/adjust/sdk/GlobalParameters;-><init>()V
+  iget-object            v1, v3, Lcom/adjust/sdk/GlobalParameters;->callbackParameters Ljava/util/Map;
+  if-eqz                 v1, +00bh
+  new-instance           v1, Ljava/util/HashMap;
+  iget-object            v2, v3, Lcom/adjust/sdk/GlobalParameters;->callbackParameters Ljava/util/Map;
+  invoke-direct          v1, v2, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
+  iput-object            v1, v0, Lcom/adjust/sdk/GlobalParameters;->callbackParameters Ljava/util/Map;
+  iget-object            v1, v3, Lcom/adjust/sdk/GlobalParameters;->partnerParameters Ljava/util/Map;
+  if-eqz                 v1, +00bh
+  new-instance           v1, Ljava/util/HashMap;
+  iget-object            v2, v3, Lcom/adjust/sdk/GlobalParameters;->partnerParameters Ljava/util/Map;
+  invoke-direct          v1, v2, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
+  iput-object            v1, v0, Lcom/adjust/sdk/GlobalParameters;->partnerParameters Ljava/util/Map;
+  return-object          v0
+
+---- METHOD public equals (Ljava/lang/Object;)Z ----
+  const/4                v0, 1
+  if-ne                  v5, v4, +003h
+  return                 v0
+  const/4                v1, 0
+  if-nez                 v5, +003h
+  return                 v1
+  invoke-virtual         v4, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+  move-result-object     v2
+  invoke-virtual         v5, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+  move-result-object     v3
+  if-eq                  v2, v3, +003h
+  return                 v1
+  check-cast             v5, Lcom/adjust/sdk/GlobalParameters;
+  iget-object            v2, v4, Lcom/adjust/sdk/GlobalParameters;->callbackParameters Ljava/util/Map;
+  iget-object            v3, v5, Lcom/adjust/sdk/GlobalParameters;->callbackParameters Ljava/util/Map;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalObject(Ljava/lang/Object; Ljava/lang/Object;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v4, Lcom/adjust/sdk/GlobalParameters;->partnerParameters Ljava/util/Map;
+  iget-object            v5, v5, Lcom/adjust/sdk/GlobalParameters;->partnerParameters Ljava/util/Map;
+  invoke-static          v2, v5, Lcom/adjust/sdk/Util;->equalObject(Ljava/lang/Object; Ljava/lang/Object;)Z
+  move-result            v5
+  if-nez                 v5, +003h
+  return                 v1
+  return                 v0
+
+---- METHOD public hashCode ()I ----
+  iget-object            v0, v2, Lcom/adjust/sdk/GlobalParameters;->callbackParameters Ljava/util/Map;
+  const/16               v1, 17
+  invoke-static          v0, v1, Lcom/adjust/sdk/Util;->hashObject(Ljava/lang/Object; I)I
+  move-result            v0
+  iget-object            v1, v2, Lcom/adjust/sdk/GlobalParameters;->partnerParameters Ljava/util/Map;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashObject(Ljava/lang/Object; I)I
+  move-result            v0
+  return                 v0
+######################################################################

@@ -1,0 +1,1146 @@
+# CLASS Lcom/adjust/sdk/ActivityState;
+FIELD private static final EVENT_DEDUPLICATION_IDS_MAX_SIZE I
+FIELD private static final serialPersistentFields [Ljava/io/ObjectStreamField;
+FIELD private static final serialVersionUID J
+FIELD protected adid Ljava/lang/String;
+FIELD protected askingAttribution Z
+FIELD protected clickTime J
+FIELD protected clickTimeHuawei J
+FIELD protected clickTimeMeta J
+FIELD protected clickTimeSamsung J
+FIELD protected clickTimeServer J
+FIELD protected clickTimeServerXiaomi J
+FIELD protected clickTimeVivo J
+FIELD protected clickTimeXiaomi J
+FIELD protected enabled Z
+FIELD protected eventCount I
+FIELD protected eventDeduplicationIdsMaxSize I
+FIELD protected googlePlayInstant Ljava/lang/Boolean;
+FIELD protected installBegin J
+FIELD protected installBeginHuawei J
+FIELD protected installBeginSamsung J
+FIELD protected installBeginServer J
+FIELD protected installBeginServerXiaomi J
+FIELD protected installBeginVivo J
+FIELD protected installBeginXiaomi J
+FIELD protected installReferrer Ljava/lang/String;
+FIELD protected installReferrerHuawei Ljava/lang/String;
+FIELD protected installReferrerHuaweiAppGallery Ljava/lang/String;
+FIELD protected installReferrerMeta Ljava/lang/String;
+FIELD protected installReferrerSamsung Ljava/lang/String;
+FIELD protected installReferrerVivo Ljava/lang/String;
+FIELD protected installReferrerXiaomi Ljava/lang/String;
+FIELD protected installVersion Ljava/lang/String;
+FIELD protected installVersionVivo Ljava/lang/String;
+FIELD protected installVersionXiaomi Ljava/lang/String;
+FIELD protected isClickMeta Ljava/lang/Boolean;
+FIELD protected isGdprForgotten Z
+FIELD protected isThirdPartySharingDisabledForCoppa Z
+FIELD protected lastActivity J
+FIELD protected lastInterval J
+FIELD private varargs logger Lcom/adjust/sdk/ILogger;
+FIELD protected orderIds Ljava/util/LinkedList;
+FIELD protected pushToken Ljava/lang/String;
+FIELD protected sessionCount I
+FIELD protected sessionLength J
+FIELD protected subsessionCount I
+FIELD protected timeSpent J
+FIELD protected uuid Ljava/lang/String;
+
+---- METHOD static constructor <clinit> ()V ----
+  new-instance           v1, Ljava/io/ObjectStreamField;
+  const-string/jumbo     v0, uuid
+  const-class            v2, Ljava/lang/String;
+  invoke-direct          v1, v0, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v0, Ljava/io/ObjectStreamField;
+  const-string           v3, "enabled"
+  sget-object            v4, Ljava/lang/Boolean;->TYPE Ljava/lang/Class;
+  invoke-direct          v0, v3, v4, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v3, Ljava/io/ObjectStreamField;
+  const-string           v5, "isGdprForgotten"
+  invoke-direct          v3, v5, v4, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v5, Ljava/io/ObjectStreamField;
+  const-string           v6, "askingAttribution"
+  invoke-direct          v5, v6, v4, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  move-object            v6, v5
+  new-instance           v5, Ljava/io/ObjectStreamField;
+  const-string           v7, "eventCount"
+  sget-object            v8, Ljava/lang/Integer;->TYPE Ljava/lang/Class;
+  invoke-direct          v5, v7, v8, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  move-object            v7, v6
+  new-instance           v6, Ljava/io/ObjectStreamField;
+  const-string/jumbo     v9, sessionCount
+  invoke-direct          v6, v9, v8, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  move-object            v9, v7
+  new-instance           v7, Ljava/io/ObjectStreamField;
+  const-string/jumbo     v10, subsessionCount
+  invoke-direct          v7, v10, v8, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v8, Ljava/io/ObjectStreamField;
+  const-string/jumbo     v10, sessionLength
+  sget-object            v11, Ljava/lang/Long;->TYPE Ljava/lang/Class;
+  invoke-direct          v8, v10, v11, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  move-object            v10, v9
+  new-instance           v9, Ljava/io/ObjectStreamField;
+  const-string/jumbo     v12, timeSpent
+  invoke-direct          v9, v12, v11, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  move-object            v12, v10
+  new-instance           v10, Ljava/io/ObjectStreamField;
+  const-string           v13, "lastActivity"
+  invoke-direct          v10, v13, v11, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v13, Ljava/io/ObjectStreamField;
+  const-string           v14, "lastInterval"
+  invoke-direct          v13, v14, v11, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  move-object            v14, v12
+  new-instance           v12, Ljava/io/ObjectStreamField;
+  const-string           v15, "orderIds"
+  move-object/from16     v16, v0
+  const-class            v0, Ljava/util/LinkedList;
+  invoke-direct          v12, v15, v0, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  move-object            v0, v13
+  new-instance           v13, Ljava/io/ObjectStreamField;
+  const-string/jumbo     v15, pushToken
+  invoke-direct          v13, v15, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  move-object            v15, v14
+  new-instance           v14, Ljava/io/ObjectStreamField;
+  move-object/from16     v17, v0
+  const-string           v0, "adid"
+  invoke-direct          v14, v0, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  move-object            v0, v15
+  new-instance           v15, Ljava/io/ObjectStreamField;
+  move-object/from16     v18, v0
+  const-string           v0, "clickTime"
+  invoke-direct          v15, v0, v11, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v0, Ljava/io/ObjectStreamField;
+  move-object/from16     v19, v1
+  const-string           v1, "installBegin"
+  invoke-direct          v0, v1, v11, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v1, Ljava/io/ObjectStreamField;
+  move-object/from16     v20, v0
+  const-string           v0, "installReferrer"
+  invoke-direct          v1, v0, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v0, Ljava/io/ObjectStreamField;
+  move-object/from16     v21, v1
+  const-string           v1, "googlePlayInstant"
+  move-object/from16     v22, v3
+  const-class            v3, Ljava/lang/Boolean;
+  invoke-direct          v0, v1, v3, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v1, Ljava/io/ObjectStreamField;
+  move-object/from16     v23, v0
+  const-string           v0, "clickTimeServer"
+  invoke-direct          v1, v0, v11, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v0, Ljava/io/ObjectStreamField;
+  move-object/from16     v24, v1
+  const-string           v1, "installBeginServer"
+  invoke-direct          v0, v1, v11, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v1, Ljava/io/ObjectStreamField;
+  move-object/from16     v25, v0
+  const-string           v0, "installVersion"
+  invoke-direct          v1, v0, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v0, Ljava/io/ObjectStreamField;
+  move-object/from16     v26, v1
+  const-string           v1, "clickTimeHuawei"
+  invoke-direct          v0, v1, v11, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v1, Ljava/io/ObjectStreamField;
+  move-object/from16     v27, v0
+  const-string           v0, "installBeginHuawei"
+  invoke-direct          v1, v0, v11, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v0, Ljava/io/ObjectStreamField;
+  move-object/from16     v28, v1
+  const-string           v1, "installReferrerHuawei"
+  invoke-direct          v0, v1, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v1, Ljava/io/ObjectStreamField;
+  move-object/from16     v29, v0
+  const-string           v0, "installReferrerHuaweiAppGallery"
+  invoke-direct          v1, v0, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v0, Ljava/io/ObjectStreamField;
+  move-object/from16     v30, v1
+  const-string           v1, "isThirdPartySharingDisabledForCoppa"
+  invoke-direct          v0, v1, v4, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v1, Ljava/io/ObjectStreamField;
+  const-string           v4, "clickTimeXiaomi"
+  invoke-direct          v1, v4, v11, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v4, Ljava/io/ObjectStreamField;
+  move-object/from16     v31, v0
+  const-string           v0, "installBeginXiaomi"
+  invoke-direct          v4, v0, v11, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v0, Ljava/io/ObjectStreamField;
+  move-object/from16     v32, v1
+  const-string           v1, "installReferrerXiaomi"
+  invoke-direct          v0, v1, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v1, Ljava/io/ObjectStreamField;
+  move-object/from16     v33, v0
+  const-string           v0, "clickTimeServerXiaomi"
+  invoke-direct          v1, v0, v11, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v0, Ljava/io/ObjectStreamField;
+  move-object/from16     v34, v1
+  const-string           v1, "installBeginServerXiaomi"
+  invoke-direct          v0, v1, v11, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v1, Ljava/io/ObjectStreamField;
+  move-object/from16     v35, v0
+  const-string           v0, "installVersionXiaomi"
+  invoke-direct          v1, v0, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v0, Ljava/io/ObjectStreamField;
+  move-object/from16     v36, v1
+  const-string           v1, "clickTimeSamsung"
+  invoke-direct          v0, v1, v11, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v1, Ljava/io/ObjectStreamField;
+  move-object/from16     v37, v0
+  const-string           v0, "installBeginSamsung"
+  invoke-direct          v1, v0, v11, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v0, Ljava/io/ObjectStreamField;
+  move-object/from16     v38, v1
+  const-string           v1, "installReferrerSamsung"
+  invoke-direct          v0, v1, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v1, Ljava/io/ObjectStreamField;
+  move-object/from16     v39, v0
+  const-string           v0, "clickTimeVivo"
+  invoke-direct          v1, v0, v11, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v0, Ljava/io/ObjectStreamField;
+  move-object/from16     v40, v1
+  const-string           v1, "installBeginVivo"
+  invoke-direct          v0, v1, v11, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v1, Ljava/io/ObjectStreamField;
+  move-object/from16     v41, v0
+  const-string           v0, "installReferrerVivo"
+  invoke-direct          v1, v0, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v0, Ljava/io/ObjectStreamField;
+  move-object/from16     v42, v1
+  const-string           v1, "installVersionVivo"
+  invoke-direct          v0, v1, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v1, Ljava/io/ObjectStreamField;
+  move-object/from16     v43, v0
+  const-string           v0, "installReferrerMeta"
+  invoke-direct          v1, v0, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v0, Ljava/io/ObjectStreamField;
+  const-string           v2, "clickTimeMeta"
+  invoke-direct          v0, v2, v11, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v2, Ljava/io/ObjectStreamField;
+  const-string           v11, "isClickMeta"
+  invoke-direct          v2, v11, v3, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  move-object/from16     v3, v42
+  move-object/from16     v42, v2
+  move-object/from16     v2, v16
+  move-object/from16     v16, v20
+  move-object/from16     v20, v25
+  move-object/from16     v25, v30
+  move-object/from16     v30, v34
+  move-object/from16     v34, v38
+  move-object/from16     v38, v3
+  move-object/from16     v3, v28
+  move-object/from16     v28, v4
+  move-object/from16     v4, v18
+  move-object/from16     v18, v23
+  move-object/from16     v23, v3
+  move-object/from16     v11, v17
+  move-object/from16     v17, v21
+  move-object/from16     v3, v22
+  move-object/from16     v21, v26
+  move-object/from16     v22, v27
+  move-object/from16     v26, v31
+  move-object/from16     v27, v32
+  move-object/from16     v31, v35
+  move-object/from16     v32, v36
+  move-object/from16     v35, v39
+  move-object/from16     v36, v40
+  move-object/from16     v39, v43
+  move-object/from16     v40, v1
+  move-object/from16     v1, v19
+  move-object/from16     v19, v24
+  move-object/from16     v24, v29
+  move-object/from16     v29, v33
+  move-object/from16     v33, v37
+  move-object/from16     v37, v41
+  move-object/from16     v41, v0
+  filled-new-array/range v1 ... v42, [Ljava/io/ObjectStreamField;
+  move-result-object     v0
+  sput-object            v0, Lcom/adjust/sdk/ActivityState;->serialPersistentFields [Ljava/io/ObjectStreamField;
+  return-void            
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v3, Ljava/lang/Object;-><init>()V
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v0
+  iput-object            v0, v3, Lcom/adjust/sdk/ActivityState;->logger Lcom/adjust/sdk/ILogger;
+  invoke-static          Lcom/adjust/sdk/Util;->createUuid()Ljava/lang/String;
+  move-result-object     v0
+  iput-object            v0, v3, Lcom/adjust/sdk/ActivityState;->uuid Ljava/lang/String;
+  const/4                v0, 1
+  iput-boolean           v0, v3, Lcom/adjust/sdk/ActivityState;->enabled Z
+  const/4                v0, 0
+  iput-boolean           v0, v3, Lcom/adjust/sdk/ActivityState;->isGdprForgotten Z
+  iput-boolean           v0, v3, Lcom/adjust/sdk/ActivityState;->isThirdPartySharingDisabledForCoppa Z
+  iput-boolean           v0, v3, Lcom/adjust/sdk/ActivityState;->askingAttribution Z
+  iput                   v0, v3, Lcom/adjust/sdk/ActivityState;->eventCount I
+  iput                   v0, v3, Lcom/adjust/sdk/ActivityState;->sessionCount I
+  const/4                v0, -1
+  iput                   v0, v3, Lcom/adjust/sdk/ActivityState;->subsessionCount I
+  const-wide/16          v0, -1
+  iput-wide              v0, v3, Lcom/adjust/sdk/ActivityState;->sessionLength J
+  iput-wide              v0, v3, Lcom/adjust/sdk/ActivityState;->timeSpent J
+  iput-wide              v0, v3, Lcom/adjust/sdk/ActivityState;->lastActivity J
+  iput-wide              v0, v3, Lcom/adjust/sdk/ActivityState;->lastInterval J
+  const/4                v0, 0
+  iput-object            v0, v3, Lcom/adjust/sdk/ActivityState;->orderIds Ljava/util/LinkedList;
+  iput-object            v0, v3, Lcom/adjust/sdk/ActivityState;->pushToken Ljava/lang/String;
+  iput-object            v0, v3, Lcom/adjust/sdk/ActivityState;->adid Ljava/lang/String;
+  const-wide/16          v1, 0
+  iput-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->clickTime J
+  iput-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->installBegin J
+  iput-object            v0, v3, Lcom/adjust/sdk/ActivityState;->installReferrer Ljava/lang/String;
+  iput-object            v0, v3, Lcom/adjust/sdk/ActivityState;->googlePlayInstant Ljava/lang/Boolean;
+  iput-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->clickTimeServer J
+  iput-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->installBeginServer J
+  iput-object            v0, v3, Lcom/adjust/sdk/ActivityState;->installVersion Ljava/lang/String;
+  iput-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->clickTimeHuawei J
+  iput-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->installBeginHuawei J
+  iput-object            v0, v3, Lcom/adjust/sdk/ActivityState;->installReferrerHuawei Ljava/lang/String;
+  iput-object            v0, v3, Lcom/adjust/sdk/ActivityState;->installReferrerHuaweiAppGallery Ljava/lang/String;
+  iput-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->clickTimeXiaomi J
+  iput-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->installBeginXiaomi J
+  iput-object            v0, v3, Lcom/adjust/sdk/ActivityState;->installReferrerXiaomi Ljava/lang/String;
+  iput-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->clickTimeServerXiaomi J
+  iput-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->installBeginServerXiaomi J
+  iput-object            v0, v3, Lcom/adjust/sdk/ActivityState;->installVersionXiaomi Ljava/lang/String;
+  iput-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->clickTimeSamsung J
+  iput-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->installBeginSamsung J
+  iput-object            v0, v3, Lcom/adjust/sdk/ActivityState;->installReferrerSamsung Ljava/lang/String;
+  iput-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->clickTimeVivo J
+  iput-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->installBeginVivo J
+  iput-object            v0, v3, Lcom/adjust/sdk/ActivityState;->installReferrerVivo Ljava/lang/String;
+  iput-object            v0, v3, Lcom/adjust/sdk/ActivityState;->installVersionVivo Ljava/lang/String;
+  iput-object            v0, v3, Lcom/adjust/sdk/ActivityState;->installReferrerMeta Ljava/lang/String;
+  iput-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->clickTimeMeta J
+  iput-object            v0, v3, Lcom/adjust/sdk/ActivityState;->isClickMeta Ljava/lang/Boolean;
+  const/16               v0, 10
+  iput                   v0, v3, Lcom/adjust/sdk/ActivityState;->eventDeduplicationIdsMaxSize I
+  return-void            
+
+---- METHOD private readObject (Ljava/io/ObjectInputStream;)V ----
+  invoke-virtual         v7, Ljava/io/ObjectInputStream;->readFields()Ljava/io/ObjectInputStream$GetField;
+  move-result-object     v7
+  const-string           v0, "eventCount"
+  const/4                v1, 0
+  invoke-static          v7, v0, v1, Lcom/adjust/sdk/Util;->readIntField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; I)I
+  move-result            v0
+  iput                   v0, v6, Lcom/adjust/sdk/ActivityState;->eventCount I
+  const-string/jumbo     v0, sessionCount
+  invoke-static          v7, v0, v1, Lcom/adjust/sdk/Util;->readIntField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; I)I
+  move-result            v0
+  iput                   v0, v6, Lcom/adjust/sdk/ActivityState;->sessionCount I
+  const-string/jumbo     v0, subsessionCount
+  const/4                v2, -1
+  invoke-static          v7, v0, v2, Lcom/adjust/sdk/Util;->readIntField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; I)I
+  move-result            v0
+  iput                   v0, v6, Lcom/adjust/sdk/ActivityState;->subsessionCount I
+  const-string/jumbo     v0, sessionLength
+  const-wide/16          v2, -1
+  invoke-static          v7, v0, v2, v3, Lcom/adjust/sdk/Util;->readLongField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; J)J
+  move-result-wide       v4
+  iput-wide              v4, v6, Lcom/adjust/sdk/ActivityState;->sessionLength J
+  const-string/jumbo     v0, timeSpent
+  invoke-static          v7, v0, v2, v3, Lcom/adjust/sdk/Util;->readLongField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; J)J
+  move-result-wide       v4
+  iput-wide              v4, v6, Lcom/adjust/sdk/ActivityState;->timeSpent J
+  const-string           v0, "lastActivity"
+  invoke-static          v7, v0, v2, v3, Lcom/adjust/sdk/Util;->readLongField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; J)J
+  move-result-wide       v4
+  iput-wide              v4, v6, Lcom/adjust/sdk/ActivityState;->lastActivity J
+  const-string           v0, "lastInterval"
+  invoke-static          v7, v0, v2, v3, Lcom/adjust/sdk/Util;->readLongField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; J)J
+  move-result-wide       v4
+  iput-wide              v4, v6, Lcom/adjust/sdk/ActivityState;->lastInterval J
+  const-string/jumbo     v0, uuid
+  const/4                v4, 0
+  invoke-static          v7, v0, v4, Lcom/adjust/sdk/Util;->readStringField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v0
+  iput-object            v0, v6, Lcom/adjust/sdk/ActivityState;->uuid Ljava/lang/String;
+  const-string           v0, "enabled"
+  const/4                v5, 1
+  invoke-static          v7, v0, v5, Lcom/adjust/sdk/Util;->readBooleanField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Z)Z
+  move-result            v0
+  iput-boolean           v0, v6, Lcom/adjust/sdk/ActivityState;->enabled Z
+  const-string           v0, "isGdprForgotten"
+  invoke-static          v7, v0, v1, Lcom/adjust/sdk/Util;->readBooleanField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Z)Z
+  move-result            v0
+  iput-boolean           v0, v6, Lcom/adjust/sdk/ActivityState;->isGdprForgotten Z
+  const-string           v0, "isThirdPartySharingDisabledForCoppa"
+  invoke-static          v7, v0, v1, Lcom/adjust/sdk/Util;->readBooleanField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Z)Z
+  move-result            v0
+  iput-boolean           v0, v6, Lcom/adjust/sdk/ActivityState;->isThirdPartySharingDisabledForCoppa Z
+  const-string           v0, "askingAttribution"
+  invoke-static          v7, v0, v1, Lcom/adjust/sdk/Util;->readBooleanField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Z)Z
+  move-result            v0
+  iput-boolean           v0, v6, Lcom/adjust/sdk/ActivityState;->askingAttribution Z
+  const-string           v0, "orderIds"
+  invoke-static          v7, v0, v4, Lcom/adjust/sdk/Util;->readObjectField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/util/LinkedList;
+  iput-object            v0, v6, Lcom/adjust/sdk/ActivityState;->orderIds Ljava/util/LinkedList;
+  const-string/jumbo     v0, pushToken
+  invoke-static          v7, v0, v4, Lcom/adjust/sdk/Util;->readStringField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v0
+  iput-object            v0, v6, Lcom/adjust/sdk/ActivityState;->pushToken Ljava/lang/String;
+  const-string           v0, "adid"
+  invoke-static          v7, v0, v4, Lcom/adjust/sdk/Util;->readStringField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v0
+  iput-object            v0, v6, Lcom/adjust/sdk/ActivityState;->adid Ljava/lang/String;
+  const-string           v0, "clickTime"
+  invoke-static          v7, v0, v2, v3, Lcom/adjust/sdk/Util;->readLongField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; J)J
+  move-result-wide       v0
+  iput-wide              v0, v6, Lcom/adjust/sdk/ActivityState;->clickTime J
+  const-string           v0, "installBegin"
+  invoke-static          v7, v0, v2, v3, Lcom/adjust/sdk/Util;->readLongField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; J)J
+  move-result-wide       v0
+  iput-wide              v0, v6, Lcom/adjust/sdk/ActivityState;->installBegin J
+  const-string           v0, "installReferrer"
+  invoke-static          v7, v0, v4, Lcom/adjust/sdk/Util;->readStringField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v0
+  iput-object            v0, v6, Lcom/adjust/sdk/ActivityState;->installReferrer Ljava/lang/String;
+  const-string           v0, "googlePlayInstant"
+  invoke-static          v7, v0, v4, Lcom/adjust/sdk/Util;->readObjectField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/Boolean;
+  iput-object            v0, v6, Lcom/adjust/sdk/ActivityState;->googlePlayInstant Ljava/lang/Boolean;
+  const-string           v0, "clickTimeServer"
+  invoke-static          v7, v0, v2, v3, Lcom/adjust/sdk/Util;->readLongField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; J)J
+  move-result-wide       v0
+  iput-wide              v0, v6, Lcom/adjust/sdk/ActivityState;->clickTimeServer J
+  const-string           v0, "installBeginServer"
+  invoke-static          v7, v0, v2, v3, Lcom/adjust/sdk/Util;->readLongField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; J)J
+  move-result-wide       v0
+  iput-wide              v0, v6, Lcom/adjust/sdk/ActivityState;->installBeginServer J
+  const-string           v0, "installVersion"
+  invoke-static          v7, v0, v4, Lcom/adjust/sdk/Util;->readStringField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v0
+  iput-object            v0, v6, Lcom/adjust/sdk/ActivityState;->installVersion Ljava/lang/String;
+  const-string           v0, "clickTimeHuawei"
+  invoke-static          v7, v0, v2, v3, Lcom/adjust/sdk/Util;->readLongField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; J)J
+  move-result-wide       v0
+  iput-wide              v0, v6, Lcom/adjust/sdk/ActivityState;->clickTimeHuawei J
+  const-string           v0, "installBeginHuawei"
+  invoke-static          v7, v0, v2, v3, Lcom/adjust/sdk/Util;->readLongField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; J)J
+  move-result-wide       v0
+  iput-wide              v0, v6, Lcom/adjust/sdk/ActivityState;->installBeginHuawei J
+  const-string           v0, "installReferrerHuawei"
+  invoke-static          v7, v0, v4, Lcom/adjust/sdk/Util;->readStringField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v0
+  iput-object            v0, v6, Lcom/adjust/sdk/ActivityState;->installReferrerHuawei Ljava/lang/String;
+  const-string           v0, "installReferrerHuaweiAppGallery"
+  invoke-static          v7, v0, v4, Lcom/adjust/sdk/Util;->readStringField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v0
+  iput-object            v0, v6, Lcom/adjust/sdk/ActivityState;->installReferrerHuaweiAppGallery Ljava/lang/String;
+  const-string           v0, "clickTimeXiaomi"
+  invoke-static          v7, v0, v2, v3, Lcom/adjust/sdk/Util;->readLongField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; J)J
+  move-result-wide       v0
+  iput-wide              v0, v6, Lcom/adjust/sdk/ActivityState;->clickTimeXiaomi J
+  const-string           v0, "installBeginXiaomi"
+  invoke-static          v7, v0, v2, v3, Lcom/adjust/sdk/Util;->readLongField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; J)J
+  move-result-wide       v0
+  iput-wide              v0, v6, Lcom/adjust/sdk/ActivityState;->installBeginXiaomi J
+  const-string           v0, "installReferrerXiaomi"
+  invoke-static          v7, v0, v4, Lcom/adjust/sdk/Util;->readStringField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v0
+  iput-object            v0, v6, Lcom/adjust/sdk/ActivityState;->installReferrerXiaomi Ljava/lang/String;
+  const-string           v0, "clickTimeServerXiaomi"
+  invoke-static          v7, v0, v2, v3, Lcom/adjust/sdk/Util;->readLongField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; J)J
+  move-result-wide       v0
+  iput-wide              v0, v6, Lcom/adjust/sdk/ActivityState;->clickTimeServerXiaomi J
+  const-string           v0, "installBeginServerXiaomi"
+  invoke-static          v7, v0, v2, v3, Lcom/adjust/sdk/Util;->readLongField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; J)J
+  move-result-wide       v0
+  iput-wide              v0, v6, Lcom/adjust/sdk/ActivityState;->installBeginServerXiaomi J
+  const-string           v0, "installVersionXiaomi"
+  invoke-static          v7, v0, v4, Lcom/adjust/sdk/Util;->readStringField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v0
+  iput-object            v0, v6, Lcom/adjust/sdk/ActivityState;->installVersionXiaomi Ljava/lang/String;
+  const-string           v0, "clickTimeSamsung"
+  invoke-static          v7, v0, v2, v3, Lcom/adjust/sdk/Util;->readLongField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; J)J
+  move-result-wide       v0
+  iput-wide              v0, v6, Lcom/adjust/sdk/ActivityState;->clickTimeSamsung J
+  const-string           v0, "installBeginSamsung"
+  invoke-static          v7, v0, v2, v3, Lcom/adjust/sdk/Util;->readLongField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; J)J
+  move-result-wide       v0
+  iput-wide              v0, v6, Lcom/adjust/sdk/ActivityState;->installBeginSamsung J
+  const-string           v0, "installReferrerSamsung"
+  invoke-static          v7, v0, v4, Lcom/adjust/sdk/Util;->readStringField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v0
+  iput-object            v0, v6, Lcom/adjust/sdk/ActivityState;->installReferrerSamsung Ljava/lang/String;
+  const-string           v0, "clickTimeVivo"
+  invoke-static          v7, v0, v2, v3, Lcom/adjust/sdk/Util;->readLongField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; J)J
+  move-result-wide       v0
+  iput-wide              v0, v6, Lcom/adjust/sdk/ActivityState;->clickTimeVivo J
+  const-string           v0, "installBeginVivo"
+  invoke-static          v7, v0, v2, v3, Lcom/adjust/sdk/Util;->readLongField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; J)J
+  move-result-wide       v0
+  iput-wide              v0, v6, Lcom/adjust/sdk/ActivityState;->installBeginVivo J
+  const-string           v0, "installReferrerVivo"
+  invoke-static          v7, v0, v4, Lcom/adjust/sdk/Util;->readStringField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v0
+  iput-object            v0, v6, Lcom/adjust/sdk/ActivityState;->installReferrerVivo Ljava/lang/String;
+  const-string           v0, "installVersionVivo"
+  invoke-static          v7, v0, v4, Lcom/adjust/sdk/Util;->readStringField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v0
+  iput-object            v0, v6, Lcom/adjust/sdk/ActivityState;->installVersionVivo Ljava/lang/String;
+  const-string           v0, "installReferrerMeta"
+  invoke-static          v7, v0, v4, Lcom/adjust/sdk/Util;->readStringField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v0
+  iput-object            v0, v6, Lcom/adjust/sdk/ActivityState;->installReferrerMeta Ljava/lang/String;
+  const-string           v0, "clickTimeMeta"
+  invoke-static          v7, v0, v2, v3, Lcom/adjust/sdk/Util;->readLongField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; J)J
+  move-result-wide       v0
+  iput-wide              v0, v6, Lcom/adjust/sdk/ActivityState;->clickTimeMeta J
+  const-string           v0, "isClickMeta"
+  invoke-static          v7, v0, v4, Lcom/adjust/sdk/Util;->readObjectField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v7
+  check-cast             v7, Ljava/lang/Boolean;
+  iput-object            v7, v6, Lcom/adjust/sdk/ActivityState;->isClickMeta Ljava/lang/Boolean;
+  iget-object            v7, v6, Lcom/adjust/sdk/ActivityState;->uuid Ljava/lang/String;
+  if-nez                 v7, +008h
+  invoke-static          Lcom/adjust/sdk/Util;->createUuid()Ljava/lang/String;
+  move-result-object     v7
+  iput-object            v7, v6, Lcom/adjust/sdk/ActivityState;->uuid Ljava/lang/String;
+  const/16               v7, 10
+  iput                   v7, v6, Lcom/adjust/sdk/ActivityState;->eventDeduplicationIdsMaxSize I
+  return-void            
+
+---- METHOD private static stamp (J)Ljava/lang/String; ----
+  invoke-static          Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
+  move-result-object     v0
+  invoke-virtual         v0, v1, v2, Ljava/util/Calendar;->setTimeInMillis(J)V
+  const/16               v1, 11
+  invoke-static          v1, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v1
+  const/16               v2, 12
+  invoke-static          v2, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v2
+  const/16               v0, 13
+  invoke-static          v0, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v0
+  filled-new-array       v1, v2, v0, [Ljava/lang/Object;
+  move-result-object     v1
+  const-string           v2, "%02d:%02d:%02d"
+  invoke-static          v2, v1, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v1
+  return-object          v1
+
+---- METHOD private writeObject (Ljava/io/ObjectOutputStream;)V ----
+  invoke-virtual         v1, Ljava/io/ObjectOutputStream;->defaultWriteObject()V
+  return-void            
+
+---- METHOD public addDeduplicationId (Ljava/lang/String;)V ----
+  iget                   v0, v2, Lcom/adjust/sdk/ActivityState;->eventDeduplicationIdsMaxSize I
+  if-nez                 v0, +003h
+  return-void            
+  iget-object            v0, v2, Lcom/adjust/sdk/ActivityState;->orderIds Ljava/util/LinkedList;
+  if-nez                 v0, +00ah
+  new-instance           v0, Ljava/util/LinkedList;
+  invoke-direct          v0, Ljava/util/LinkedList;-><init>()V
+  iput-object            v0, v2, Lcom/adjust/sdk/ActivityState;->orderIds Ljava/util/LinkedList;
+  goto                   +11h
+  iget-object            v0, v2, Lcom/adjust/sdk/ActivityState;->orderIds Ljava/util/LinkedList;
+  invoke-virtual         v0, Ljava/util/LinkedList;->size()I
+  move-result            v0
+  iget                   v1, v2, Lcom/adjust/sdk/ActivityState;->eventDeduplicationIdsMaxSize I
+  if-lt                  v0, v1, +008h
+  iget-object            v0, v2, Lcom/adjust/sdk/ActivityState;->orderIds Ljava/util/LinkedList;
+  invoke-virtual         v0, Ljava/util/LinkedList;->removeLast()Ljava/lang/Object;
+  goto                   -fh
+  iget-object            v0, v2, Lcom/adjust/sdk/ActivityState;->orderIds Ljava/util/LinkedList;
+  invoke-virtual         v0, v3, Ljava/util/LinkedList;->addFirst(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD public equals (Ljava/lang/Object;)Z ----
+  const/4                v0, 1
+  if-ne                  v6, v5, +003h
+  return                 v0
+  const/4                v1, 0
+  if-nez                 v6, +003h
+  return                 v1
+  invoke-virtual         v5, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+  move-result-object     v2
+  invoke-virtual         v6, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+  move-result-object     v3
+  if-eq                  v2, v3, +003h
+  return                 v1
+  check-cast             v6, Lcom/adjust/sdk/ActivityState;
+  iget-object            v2, v5, Lcom/adjust/sdk/ActivityState;->uuid Ljava/lang/String;
+  iget-object            v3, v6, Lcom/adjust/sdk/ActivityState;->uuid Ljava/lang/String;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-boolean           v2, v5, Lcom/adjust/sdk/ActivityState;->enabled Z
+  invoke-static          v2, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object     v2
+  iget-boolean           v3, v6, Lcom/adjust/sdk/ActivityState;->enabled Z
+  invoke-static          v3, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalBoolean(Ljava/lang/Boolean; Ljava/lang/Boolean;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-boolean           v2, v5, Lcom/adjust/sdk/ActivityState;->isGdprForgotten Z
+  invoke-static          v2, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object     v2
+  iget-boolean           v3, v6, Lcom/adjust/sdk/ActivityState;->isGdprForgotten Z
+  invoke-static          v3, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalBoolean(Ljava/lang/Boolean; Ljava/lang/Boolean;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-boolean           v2, v5, Lcom/adjust/sdk/ActivityState;->isThirdPartySharingDisabledForCoppa Z
+  invoke-static          v2, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object     v2
+  iget-boolean           v3, v6, Lcom/adjust/sdk/ActivityState;->isThirdPartySharingDisabledForCoppa Z
+  invoke-static          v3, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalBoolean(Ljava/lang/Boolean; Ljava/lang/Boolean;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-boolean           v2, v5, Lcom/adjust/sdk/ActivityState;->askingAttribution Z
+  invoke-static          v2, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object     v2
+  iget-boolean           v3, v6, Lcom/adjust/sdk/ActivityState;->askingAttribution Z
+  invoke-static          v3, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalBoolean(Ljava/lang/Boolean; Ljava/lang/Boolean;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget                   v2, v5, Lcom/adjust/sdk/ActivityState;->eventCount I
+  invoke-static          v2, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v2
+  iget                   v3, v6, Lcom/adjust/sdk/ActivityState;->eventCount I
+  invoke-static          v3, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalInt(Ljava/lang/Integer; Ljava/lang/Integer;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget                   v2, v5, Lcom/adjust/sdk/ActivityState;->sessionCount I
+  invoke-static          v2, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v2
+  iget                   v3, v6, Lcom/adjust/sdk/ActivityState;->sessionCount I
+  invoke-static          v3, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalInt(Ljava/lang/Integer; Ljava/lang/Integer;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget                   v2, v5, Lcom/adjust/sdk/ActivityState;->subsessionCount I
+  invoke-static          v2, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v2
+  iget                   v3, v6, Lcom/adjust/sdk/ActivityState;->subsessionCount I
+  invoke-static          v3, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalInt(Ljava/lang/Integer; Ljava/lang/Integer;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->sessionLength J
+  invoke-static          v2, v3, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v2
+  iget-wide              v3, v6, Lcom/adjust/sdk/ActivityState;->sessionLength J
+  invoke-static          v3, v4, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalLong(Ljava/lang/Long; Ljava/lang/Long;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->timeSpent J
+  invoke-static          v2, v3, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v2
+  iget-wide              v3, v6, Lcom/adjust/sdk/ActivityState;->timeSpent J
+  invoke-static          v3, v4, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalLong(Ljava/lang/Long; Ljava/lang/Long;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->lastInterval J
+  invoke-static          v2, v3, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v2
+  iget-wide              v3, v6, Lcom/adjust/sdk/ActivityState;->lastInterval J
+  invoke-static          v3, v4, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalLong(Ljava/lang/Long; Ljava/lang/Long;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v5, Lcom/adjust/sdk/ActivityState;->orderIds Ljava/util/LinkedList;
+  iget-object            v3, v6, Lcom/adjust/sdk/ActivityState;->orderIds Ljava/util/LinkedList;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalObject(Ljava/lang/Object; Ljava/lang/Object;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v5, Lcom/adjust/sdk/ActivityState;->pushToken Ljava/lang/String;
+  iget-object            v3, v6, Lcom/adjust/sdk/ActivityState;->pushToken Ljava/lang/String;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v5, Lcom/adjust/sdk/ActivityState;->adid Ljava/lang/String;
+  iget-object            v3, v6, Lcom/adjust/sdk/ActivityState;->adid Ljava/lang/String;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->clickTime J
+  invoke-static          v2, v3, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v2
+  iget-wide              v3, v6, Lcom/adjust/sdk/ActivityState;->clickTime J
+  invoke-static          v3, v4, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalLong(Ljava/lang/Long; Ljava/lang/Long;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->installBegin J
+  invoke-static          v2, v3, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v2
+  iget-wide              v3, v6, Lcom/adjust/sdk/ActivityState;->installBegin J
+  invoke-static          v3, v4, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalLong(Ljava/lang/Long; Ljava/lang/Long;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v5, Lcom/adjust/sdk/ActivityState;->installReferrer Ljava/lang/String;
+  iget-object            v3, v6, Lcom/adjust/sdk/ActivityState;->installReferrer Ljava/lang/String;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v5, Lcom/adjust/sdk/ActivityState;->googlePlayInstant Ljava/lang/Boolean;
+  iget-object            v3, v6, Lcom/adjust/sdk/ActivityState;->googlePlayInstant Ljava/lang/Boolean;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalBoolean(Ljava/lang/Boolean; Ljava/lang/Boolean;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->clickTimeServer J
+  invoke-static          v2, v3, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v2
+  iget-wide              v3, v6, Lcom/adjust/sdk/ActivityState;->clickTimeServer J
+  invoke-static          v3, v4, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalLong(Ljava/lang/Long; Ljava/lang/Long;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->installBeginServer J
+  invoke-static          v2, v3, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v2
+  iget-wide              v3, v6, Lcom/adjust/sdk/ActivityState;->installBeginServer J
+  invoke-static          v3, v4, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalLong(Ljava/lang/Long; Ljava/lang/Long;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v5, Lcom/adjust/sdk/ActivityState;->installVersion Ljava/lang/String;
+  iget-object            v3, v6, Lcom/adjust/sdk/ActivityState;->installVersion Ljava/lang/String;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->clickTimeHuawei J
+  invoke-static          v2, v3, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v2
+  iget-wide              v3, v6, Lcom/adjust/sdk/ActivityState;->clickTimeHuawei J
+  invoke-static          v3, v4, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalLong(Ljava/lang/Long; Ljava/lang/Long;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->installBeginHuawei J
+  invoke-static          v2, v3, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v2
+  iget-wide              v3, v6, Lcom/adjust/sdk/ActivityState;->installBeginHuawei J
+  invoke-static          v3, v4, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalLong(Ljava/lang/Long; Ljava/lang/Long;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v5, Lcom/adjust/sdk/ActivityState;->installReferrerHuawei Ljava/lang/String;
+  iget-object            v3, v6, Lcom/adjust/sdk/ActivityState;->installReferrerHuawei Ljava/lang/String;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v5, Lcom/adjust/sdk/ActivityState;->installReferrerHuaweiAppGallery Ljava/lang/String;
+  iget-object            v3, v6, Lcom/adjust/sdk/ActivityState;->installReferrerHuaweiAppGallery Ljava/lang/String;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->clickTimeXiaomi J
+  invoke-static          v2, v3, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v2
+  iget-wide              v3, v6, Lcom/adjust/sdk/ActivityState;->clickTimeXiaomi J
+  invoke-static          v3, v4, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalLong(Ljava/lang/Long; Ljava/lang/Long;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->installBeginXiaomi J
+  invoke-static          v2, v3, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v2
+  iget-wide              v3, v6, Lcom/adjust/sdk/ActivityState;->installBeginXiaomi J
+  invoke-static          v3, v4, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalLong(Ljava/lang/Long; Ljava/lang/Long;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v5, Lcom/adjust/sdk/ActivityState;->installReferrerXiaomi Ljava/lang/String;
+  iget-object            v3, v6, Lcom/adjust/sdk/ActivityState;->installReferrerXiaomi Ljava/lang/String;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->clickTimeServerXiaomi J
+  invoke-static          v2, v3, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v2
+  iget-wide              v3, v6, Lcom/adjust/sdk/ActivityState;->clickTimeServerXiaomi J
+  invoke-static          v3, v4, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalLong(Ljava/lang/Long; Ljava/lang/Long;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->installBeginServerXiaomi J
+  invoke-static          v2, v3, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v2
+  iget-wide              v3, v6, Lcom/adjust/sdk/ActivityState;->installBeginServerXiaomi J
+  invoke-static          v3, v4, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalLong(Ljava/lang/Long; Ljava/lang/Long;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v5, Lcom/adjust/sdk/ActivityState;->installVersionXiaomi Ljava/lang/String;
+  iget-object            v3, v6, Lcom/adjust/sdk/ActivityState;->installVersionXiaomi Ljava/lang/String;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->clickTimeSamsung J
+  invoke-static          v2, v3, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v2
+  iget-wide              v3, v6, Lcom/adjust/sdk/ActivityState;->clickTimeSamsung J
+  invoke-static          v3, v4, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalLong(Ljava/lang/Long; Ljava/lang/Long;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->installBeginSamsung J
+  invoke-static          v2, v3, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v2
+  iget-wide              v3, v6, Lcom/adjust/sdk/ActivityState;->installBeginSamsung J
+  invoke-static          v3, v4, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalLong(Ljava/lang/Long; Ljava/lang/Long;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v5, Lcom/adjust/sdk/ActivityState;->installReferrerSamsung Ljava/lang/String;
+  iget-object            v3, v6, Lcom/adjust/sdk/ActivityState;->installReferrerSamsung Ljava/lang/String;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->clickTimeVivo J
+  invoke-static          v2, v3, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v2
+  iget-wide              v3, v6, Lcom/adjust/sdk/ActivityState;->clickTimeVivo J
+  invoke-static          v3, v4, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalLong(Ljava/lang/Long; Ljava/lang/Long;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->installBeginVivo J
+  invoke-static          v2, v3, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v2
+  iget-wide              v3, v6, Lcom/adjust/sdk/ActivityState;->installBeginVivo J
+  invoke-static          v3, v4, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalLong(Ljava/lang/Long; Ljava/lang/Long;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v5, Lcom/adjust/sdk/ActivityState;->installReferrerVivo Ljava/lang/String;
+  iget-object            v3, v6, Lcom/adjust/sdk/ActivityState;->installReferrerVivo Ljava/lang/String;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v5, Lcom/adjust/sdk/ActivityState;->installVersionVivo Ljava/lang/String;
+  iget-object            v3, v6, Lcom/adjust/sdk/ActivityState;->installVersionVivo Ljava/lang/String;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v5, Lcom/adjust/sdk/ActivityState;->installReferrerMeta Ljava/lang/String;
+  iget-object            v3, v6, Lcom/adjust/sdk/ActivityState;->installReferrerMeta Ljava/lang/String;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->clickTimeMeta J
+  invoke-static          v2, v3, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v2
+  iget-wide              v3, v6, Lcom/adjust/sdk/ActivityState;->clickTimeMeta J
+  invoke-static          v3, v4, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalLong(Ljava/lang/Long; Ljava/lang/Long;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v5, Lcom/adjust/sdk/ActivityState;->isClickMeta Ljava/lang/Boolean;
+  iget-object            v6, v6, Lcom/adjust/sdk/ActivityState;->isClickMeta Ljava/lang/Boolean;
+  invoke-static          v2, v6, Lcom/adjust/sdk/Util;->equalBoolean(Ljava/lang/Boolean; Ljava/lang/Boolean;)Z
+  move-result            v6
+  if-nez                 v6, +003h
+  return                 v1
+  return                 v0
+
+---- METHOD public eventDeduplicationIdExists (Ljava/lang/String;)Z ----
+  iget-object            v0, v1, Lcom/adjust/sdk/ActivityState;->orderIds Ljava/util/LinkedList;
+  if-nez                 v0, +004h
+  const/4                v2, 0
+  return                 v2
+  invoke-virtual         v0, v2, Ljava/util/LinkedList;->contains(Ljava/lang/Object;)Z
+  move-result            v2
+  return                 v2
+
+---- METHOD public hashCode ()I ----
+  iget-object            v0, v3, Lcom/adjust/sdk/ActivityState;->uuid Ljava/lang/String;
+  const/16               v1, 17
+  invoke-static          v0, v1, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  iget-boolean           v1, v3, Lcom/adjust/sdk/ActivityState;->enabled Z
+  invoke-static          v1, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object     v1
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashBoolean(Ljava/lang/Boolean; I)I
+  move-result            v0
+  iget-boolean           v1, v3, Lcom/adjust/sdk/ActivityState;->isGdprForgotten Z
+  invoke-static          v1, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object     v1
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashBoolean(Ljava/lang/Boolean; I)I
+  move-result            v0
+  iget-boolean           v1, v3, Lcom/adjust/sdk/ActivityState;->isThirdPartySharingDisabledForCoppa Z
+  invoke-static          v1, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object     v1
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashBoolean(Ljava/lang/Boolean; I)I
+  move-result            v0
+  iget-boolean           v1, v3, Lcom/adjust/sdk/ActivityState;->askingAttribution Z
+  invoke-static          v1, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object     v1
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashBoolean(Ljava/lang/Boolean; I)I
+  move-result            v0
+  mul-int/lit8           v0, v0, 37
+  iget                   v1, v3, Lcom/adjust/sdk/ActivityState;->eventCount I
+  add-int/2addr          v0, v1
+  mul-int/lit8           v0, v0, 37
+  iget                   v1, v3, Lcom/adjust/sdk/ActivityState;->sessionCount I
+  add-int/2addr          v0, v1
+  mul-int/lit8           v0, v0, 37
+  iget                   v1, v3, Lcom/adjust/sdk/ActivityState;->subsessionCount I
+  add-int/2addr          v0, v1
+  iget-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->sessionLength J
+  invoke-static          v1, v2, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v1
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashLong(Ljava/lang/Long; I)I
+  move-result            v0
+  iget-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->timeSpent J
+  invoke-static          v1, v2, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v1
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashLong(Ljava/lang/Long; I)I
+  move-result            v0
+  iget-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->lastInterval J
+  invoke-static          v1, v2, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v1
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashLong(Ljava/lang/Long; I)I
+  move-result            v0
+  iget-object            v1, v3, Lcom/adjust/sdk/ActivityState;->orderIds Ljava/util/LinkedList;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashObject(Ljava/lang/Object; I)I
+  move-result            v0
+  iget-object            v1, v3, Lcom/adjust/sdk/ActivityState;->pushToken Ljava/lang/String;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  iget-object            v1, v3, Lcom/adjust/sdk/ActivityState;->adid Ljava/lang/String;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  iget-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->clickTime J
+  invoke-static          v1, v2, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v1
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashLong(Ljava/lang/Long; I)I
+  move-result            v0
+  iget-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->installBegin J
+  invoke-static          v1, v2, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v1
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashLong(Ljava/lang/Long; I)I
+  move-result            v0
+  iget-object            v1, v3, Lcom/adjust/sdk/ActivityState;->installReferrer Ljava/lang/String;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  iget-object            v1, v3, Lcom/adjust/sdk/ActivityState;->googlePlayInstant Ljava/lang/Boolean;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashBoolean(Ljava/lang/Boolean; I)I
+  move-result            v0
+  iget-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->clickTimeServer J
+  invoke-static          v1, v2, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v1
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashLong(Ljava/lang/Long; I)I
+  move-result            v0
+  iget-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->installBeginServer J
+  invoke-static          v1, v2, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v1
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashLong(Ljava/lang/Long; I)I
+  move-result            v0
+  iget-object            v1, v3, Lcom/adjust/sdk/ActivityState;->installVersion Ljava/lang/String;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  iget-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->clickTimeHuawei J
+  invoke-static          v1, v2, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v1
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashLong(Ljava/lang/Long; I)I
+  move-result            v0
+  iget-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->installBeginHuawei J
+  invoke-static          v1, v2, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v1
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashLong(Ljava/lang/Long; I)I
+  move-result            v0
+  iget-object            v1, v3, Lcom/adjust/sdk/ActivityState;->installReferrerHuawei Ljava/lang/String;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  iget-object            v1, v3, Lcom/adjust/sdk/ActivityState;->installReferrerHuaweiAppGallery Ljava/lang/String;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  iget-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->clickTimeXiaomi J
+  invoke-static          v1, v2, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v1
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashLong(Ljava/lang/Long; I)I
+  move-result            v0
+  iget-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->installBeginXiaomi J
+  invoke-static          v1, v2, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v1
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashLong(Ljava/lang/Long; I)I
+  move-result            v0
+  iget-object            v1, v3, Lcom/adjust/sdk/ActivityState;->installReferrerXiaomi Ljava/lang/String;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  iget-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->clickTimeServerXiaomi J
+  invoke-static          v1, v2, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v1
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashLong(Ljava/lang/Long; I)I
+  move-result            v0
+  iget-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->installBeginServerXiaomi J
+  invoke-static          v1, v2, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v1
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashLong(Ljava/lang/Long; I)I
+  move-result            v0
+  iget-object            v1, v3, Lcom/adjust/sdk/ActivityState;->installVersionXiaomi Ljava/lang/String;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  iget-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->clickTimeSamsung J
+  invoke-static          v1, v2, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v1
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashLong(Ljava/lang/Long; I)I
+  move-result            v0
+  iget-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->installBeginSamsung J
+  invoke-static          v1, v2, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v1
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashLong(Ljava/lang/Long; I)I
+  move-result            v0
+  iget-object            v1, v3, Lcom/adjust/sdk/ActivityState;->installReferrerSamsung Ljava/lang/String;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  iget-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->clickTimeVivo J
+  invoke-static          v1, v2, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v1
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashLong(Ljava/lang/Long; I)I
+  move-result            v0
+  iget-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->installBeginVivo J
+  invoke-static          v1, v2, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v1
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashLong(Ljava/lang/Long; I)I
+  move-result            v0
+  iget-object            v1, v3, Lcom/adjust/sdk/ActivityState;->installReferrerVivo Ljava/lang/String;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  iget-object            v1, v3, Lcom/adjust/sdk/ActivityState;->installVersionVivo Ljava/lang/String;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  iget-object            v1, v3, Lcom/adjust/sdk/ActivityState;->installReferrerMeta Ljava/lang/String;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  iget-wide              v1, v3, Lcom/adjust/sdk/ActivityState;->clickTimeMeta J
+  invoke-static          v1, v2, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v1
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashLong(Ljava/lang/Long; I)I
+  move-result            v0
+  iget-object            v1, v3, Lcom/adjust/sdk/ActivityState;->isClickMeta Ljava/lang/Boolean;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashBoolean(Ljava/lang/Boolean; I)I
+  move-result            v0
+  return                 v0
+
+---- METHOD public resetSessionAttributes (J)V ----
+  const/4                v0, 1
+  iput                   v0, v2, Lcom/adjust/sdk/ActivityState;->subsessionCount I
+  const-wide/16          v0, 0
+  iput-wide              v0, v2, Lcom/adjust/sdk/ActivityState;->sessionLength J
+  iput-wide              v0, v2, Lcom/adjust/sdk/ActivityState;->timeSpent J
+  iput-wide              v3, v2, Lcom/adjust/sdk/ActivityState;->lastActivity J
+  const-wide/16          v3, -1
+  iput-wide              v3, v2, Lcom/adjust/sdk/ActivityState;->lastInterval J
+  return-void            
+
+---- METHOD public setEventDeduplicationIdsMaxSize (Ljava/lang/Integer;)V ----
+  if-eqz                 v2, +00eh
+  invoke-virtual         v2, Ljava/lang/Integer;->intValue()I
+  move-result            v0
+  if-ltz                 v0, +008h
+  invoke-virtual         v2, Ljava/lang/Integer;->intValue()I
+  move-result            v2
+  iput                   v2, v1, Lcom/adjust/sdk/ActivityState;->eventDeduplicationIdsMaxSize I
+  return-void            
+
+---- METHOD public toString ()Ljava/lang/String; ----
+  iget                   v0, v10, Lcom/adjust/sdk/ActivityState;->eventCount I
+  invoke-static          v0, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v1
+  iget                   v0, v10, Lcom/adjust/sdk/ActivityState;->sessionCount I
+  invoke-static          v0, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v2
+  iget                   v0, v10, Lcom/adjust/sdk/ActivityState;->subsessionCount I
+  invoke-static          v0, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v3
+  iget-wide              v4, v10, Lcom/adjust/sdk/ActivityState;->sessionLength J
+  long-to-double         v4, v4
+  const-wide             v6, 4652007308841189376
+  div-double/2addr       v4, v6
+  invoke-static          v4, v5, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+  move-result-object     v4
+  iget-wide              v8, v10, Lcom/adjust/sdk/ActivityState;->timeSpent J
+  long-to-double         v8, v8
+  div-double/2addr       v8, v6
+  invoke-static          v8, v9, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+  move-result-object     v5
+  iget-wide              v6, v10, Lcom/adjust/sdk/ActivityState;->lastActivity J
+  invoke-static          v6, v7, Lcom/adjust/sdk/ActivityState;->stamp(J)Ljava/lang/String;
+  move-result-object     v6
+  iget-object            v7, v10, Lcom/adjust/sdk/ActivityState;->uuid Ljava/lang/String;
+  filled-new-array/range v1 ... v7, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v1, "ec:%d sc:%d ssc:%d sl:%.1f ts:%.1f la:%s uuid:%s"
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+######################################################################

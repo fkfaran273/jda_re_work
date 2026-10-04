@@ -1,0 +1,24 @@
+{
+ "profile": "xiaomi",
+ "gps": "015a16da-9507-4d24-96e6-09cf4a901f2f",
+ "auid": "2ac23e10-92ce-4641-8108-00c6ee7be025",
+ "reftag": "cVUSAghyXZKai",
+ "referrer": "adjust_reftag=cVUSAghyXZKai&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+ "session": [
+  400,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d3b89ee07b02c31caf442046c31e6156\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-15T06:48:28, this session: 2026-09-15T06:58:30, interval: 10m2s, min interval: 20m))\"}"
+ ],
+ "click": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d3b89ee07b02c31caf442046c31e6156\"}"
+ ],
+ "sdk_info": [
+  "SKIP",
+  "not sent (winner has no sdk_info)"
+ ],
+ "attr": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d3b89ee07b02c31caf442046c31e6156\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-15T06:48:28Z\",\"first_session_time\":\"2026-09-15T06:48:28Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ ],
+ "verdict": "Organic"
+}

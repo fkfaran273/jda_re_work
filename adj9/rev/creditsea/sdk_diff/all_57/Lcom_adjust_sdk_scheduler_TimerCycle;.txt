@@ -1,0 +1,133 @@
+# CLASS Lcom/adjust/sdk/scheduler/TimerCycle;
+FIELD private command Ljava/lang/Runnable;
+FIELD private cycleDelay J
+FIELD private initialDelay J
+FIELD private isPaused Z
+FIELD private logger Lcom/adjust/sdk/ILogger;
+FIELD private name Ljava/lang/String;
+FIELD private scheduler Lcom/adjust/sdk/scheduler/FutureScheduler;
+FIELD private waitingTask Ljava/util/concurrent/ScheduledFuture;
+
+---- METHOD public constructor <init> (Ljava/lang/Runnable; J J Ljava/lang/String;)V ----
+  invoke-direct          v2, Ljava/lang/Object;-><init>()V
+  new-instance           v0, Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;
+  const/4                v1, 1
+  invoke-direct          v0, v8, v1, Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;-><init>(Ljava/lang/String; Z)V
+  iput-object            v0, v2, Lcom/adjust/sdk/scheduler/TimerCycle;->scheduler Lcom/adjust/sdk/scheduler/FutureScheduler;
+  iput-object            v8, v2, Lcom/adjust/sdk/scheduler/TimerCycle;->name Ljava/lang/String;
+  iput-object            v3, v2, Lcom/adjust/sdk/scheduler/TimerCycle;->command Ljava/lang/Runnable;
+  iput-wide              v4, v2, Lcom/adjust/sdk/scheduler/TimerCycle;->initialDelay J
+  iput-wide              v6, v2, Lcom/adjust/sdk/scheduler/TimerCycle;->cycleDelay J
+  iput-boolean           v1, v2, Lcom/adjust/sdk/scheduler/TimerCycle;->isPaused Z
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  iput-object            v3, v2, Lcom/adjust/sdk/scheduler/TimerCycle;->logger Lcom/adjust/sdk/ILogger;
+  sget-object            v3, Lcom/adjust/sdk/Util;->SecondsDisplayFormat Ljava/text/DecimalFormat;
+  long-to-double         v6, v6
+  const-wide             v0, 4652007308841189376
+  div-double/2addr       v6, v0
+  invoke-virtual         v3, v6, v7, Ljava/text/NumberFormat;->format(D)Ljava/lang/String;
+  move-result-object     v6
+  long-to-double         v4, v4
+  div-double/2addr       v4, v0
+  invoke-virtual         v3, v4, v5, Ljava/text/NumberFormat;->format(D)Ljava/lang/String;
+  move-result-object     v3
+  iget-object            v4, v2, Lcom/adjust/sdk/scheduler/TimerCycle;->logger Lcom/adjust/sdk/ILogger;
+  filled-new-array       v8, v3, v6, [Ljava/lang/Object;
+  move-result-object     v3
+  const-string           v5, "%s configured to fire after %s seconds of starting and cycles every %s seconds"
+  invoke-interface       v4, v5, v3, Lcom/adjust/sdk/ILogger;->verbose(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD public static synthetic access$000 (Lcom/adjust/sdk/scheduler/TimerCycle;)Ljava/lang/String; ----
+  iget-object            v0, v0, Lcom/adjust/sdk/scheduler/TimerCycle;->name Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public static synthetic access$100 (Lcom/adjust/sdk/scheduler/TimerCycle;)Lcom/adjust/sdk/ILogger; ----
+  iget-object            v0, v0, Lcom/adjust/sdk/scheduler/TimerCycle;->logger Lcom/adjust/sdk/ILogger;
+  return-object          v0
+
+---- METHOD public static synthetic access$200 (Lcom/adjust/sdk/scheduler/TimerCycle;)Ljava/lang/Runnable; ----
+  iget-object            v0, v0, Lcom/adjust/sdk/scheduler/TimerCycle;->command Ljava/lang/Runnable;
+  return-object          v0
+
+---- METHOD private cancel (Z)V ----
+  iget-object            v0, v1, Lcom/adjust/sdk/scheduler/TimerCycle;->waitingTask Ljava/util/concurrent/ScheduledFuture;
+  if-eqz                 v0, +005h
+  invoke-interface       v0, v2, Ljava/util/concurrent/Future;->cancel(Z)Z
+  const/4                v2, 0
+  iput-object            v2, v1, Lcom/adjust/sdk/scheduler/TimerCycle;->waitingTask Ljava/util/concurrent/ScheduledFuture;
+  return-void            
+
+---- METHOD public start ()V ----
+  iget-boolean           v0, v9, Lcom/adjust/sdk/scheduler/TimerCycle;->isPaused Z
+  iget-object            v1, v9, Lcom/adjust/sdk/scheduler/TimerCycle;->logger Lcom/adjust/sdk/ILogger;
+  if-nez                 v0, +00eh
+  iget-object            v0, v9, Lcom/adjust/sdk/scheduler/TimerCycle;->name Ljava/lang/String;
+  filled-new-array       v0, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v2, "%s is already started"
+  invoke-interface       v1, v2, v0, Lcom/adjust/sdk/ILogger;->verbose(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  iget-object            v0, v9, Lcom/adjust/sdk/scheduler/TimerCycle;->name Ljava/lang/String;
+  filled-new-array       v0, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v2, "%s starting"
+  invoke-interface       v1, v2, v0, Lcom/adjust/sdk/ILogger;->verbose(Ljava/lang/String; [Ljava/lang/Object;)V
+  iget-object            v3, v9, Lcom/adjust/sdk/scheduler/TimerCycle;->scheduler Lcom/adjust/sdk/scheduler/FutureScheduler;
+  new-instance           v4, Lcom/adjust/sdk/scheduler/TimerCycle$1;
+  invoke-direct          v4, v9, Lcom/adjust/sdk/scheduler/TimerCycle$1;-><init>(Lcom/adjust/sdk/scheduler/TimerCycle;)V
+  iget-wide              v5, v9, Lcom/adjust/sdk/scheduler/TimerCycle;->initialDelay J
+  iget-wide              v7, v9, Lcom/adjust/sdk/scheduler/TimerCycle;->cycleDelay J
+  invoke-interface/range v3 ... v8, Lcom/adjust/sdk/scheduler/FutureScheduler;->scheduleFutureWithFixedDelay(Ljava/lang/Runnable; J J)Ljava/util/concurrent/ScheduledFuture;
+  move-result-object     v0
+  iput-object            v0, v9, Lcom/adjust/sdk/scheduler/TimerCycle;->waitingTask Ljava/util/concurrent/ScheduledFuture;
+  const/4                v0, 0
+  iput-boolean           v0, v9, Lcom/adjust/sdk/scheduler/TimerCycle;->isPaused Z
+  return-void            
+
+---- METHOD public suspend ()V ----
+  iget-boolean           v0, v5, Lcom/adjust/sdk/scheduler/TimerCycle;->isPaused Z
+  if-eqz                 v0, +010h
+  iget-object            v0, v5, Lcom/adjust/sdk/scheduler/TimerCycle;->logger Lcom/adjust/sdk/ILogger;
+  iget-object            v1, v5, Lcom/adjust/sdk/scheduler/TimerCycle;->name Ljava/lang/String;
+  filled-new-array       v1, [Ljava/lang/Object;
+  move-result-object     v1
+  const-string           v2, "%s is already suspended"
+  invoke-interface       v0, v2, v1, Lcom/adjust/sdk/ILogger;->verbose(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  iget-object            v0, v5, Lcom/adjust/sdk/scheduler/TimerCycle;->waitingTask Ljava/util/concurrent/ScheduledFuture;
+  sget-object            v1, Ljava/util/concurrent/TimeUnit;->MILLISECONDS Ljava/util/concurrent/TimeUnit;
+  invoke-interface       v0, v1, Ljava/util/concurrent/Delayed;->getDelay(Ljava/util/concurrent/TimeUnit;)J
+  move-result-wide       v0
+  iput-wide              v0, v5, Lcom/adjust/sdk/scheduler/TimerCycle;->initialDelay J
+  iget-object            v0, v5, Lcom/adjust/sdk/scheduler/TimerCycle;->waitingTask Ljava/util/concurrent/ScheduledFuture;
+  const/4                v1, 0
+  invoke-interface       v0, v1, Ljava/util/concurrent/Future;->cancel(Z)Z
+  sget-object            v0, Lcom/adjust/sdk/Util;->SecondsDisplayFormat Ljava/text/DecimalFormat;
+  iget-wide              v1, v5, Lcom/adjust/sdk/scheduler/TimerCycle;->initialDelay J
+  long-to-double         v1, v1
+  const-wide             v3, 4652007308841189376
+  div-double/2addr       v1, v3
+  invoke-virtual         v0, v1, v2, Ljava/text/NumberFormat;->format(D)Ljava/lang/String;
+  move-result-object     v0
+  iget-object            v1, v5, Lcom/adjust/sdk/scheduler/TimerCycle;->logger Lcom/adjust/sdk/ILogger;
+  iget-object            v2, v5, Lcom/adjust/sdk/scheduler/TimerCycle;->name Ljava/lang/String;
+  filled-new-array       v2, v0, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v2, "%s suspended with %s seconds left"
+  invoke-interface       v1, v2, v0, Lcom/adjust/sdk/ILogger;->verbose(Ljava/lang/String; [Ljava/lang/Object;)V
+  const/4                v0, 1
+  iput-boolean           v0, v5, Lcom/adjust/sdk/scheduler/TimerCycle;->isPaused Z
+  return-void            
+
+---- METHOD public teardown ()V ----
+  const/4                v0, 1
+  invoke-direct          v1, v0, Lcom/adjust/sdk/scheduler/TimerCycle;->cancel(Z)V
+  iget-object            v0, v1, Lcom/adjust/sdk/scheduler/TimerCycle;->scheduler Lcom/adjust/sdk/scheduler/FutureScheduler;
+  if-eqz                 v0, +005h
+  invoke-interface       v0, Lcom/adjust/sdk/scheduler/FutureScheduler;->teardown()V
+  const/4                v0, 0
+  iput-object            v0, v1, Lcom/adjust/sdk/scheduler/TimerCycle;->scheduler Lcom/adjust/sdk/scheduler/FutureScheduler;
+  return-void            
+######################################################################

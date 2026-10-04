@@ -1,0 +1,20 @@
+{
+ "old_gaid": "ebd2868a-1126-45e2-83ae-f06d25a9ac42",
+ "device_click": "302",
+ "session": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"e69766f2f8da36be9073990c819c1f3e\",\"ask_in\":2000}"
+ ],
+ "gps": "73a7c0b2-6f09-4f1d-b98d-822e48bf7e55",
+ "auid": "53fa6b58-8414-4992-a2d7-7e18885f8cb6",
+ "verdict_device_oracle": {
+  "tracker_token": "wy7261z",
+  "tracker_name": "Organic",
+  "network": "Organic",
+  "installed_at": "2026-09-22T06:29:50Z",
+  "first_session_time": "2026-09-22T06:29:50Z",
+  "is_reattributed": false,
+  "is_redownload_install": false
+ },
+ "verdict_source": "manual su cat after 120s in-script timeout (file written later)"
+}

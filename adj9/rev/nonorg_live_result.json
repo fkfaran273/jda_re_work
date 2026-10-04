@@ -1,0 +1,75 @@
+[
+ {
+  "arm": "P0",
+  "gps": "75a83b22-2518-4025-b7ca-b570f7ee2ac9",
+  "click": {
+   "http": 302,
+   "referrer": "adjust_reftag=c8ZEiiSp3dm2D&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti"
+  },
+  "session_keys": 43,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"a76f1c49060b507531246b5060d54e8c\",\"ask_in\":2000}"
+  ],
+  "click_keys": 47,
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"a76f1c49060b507531246b5060d54e8c\"}"
+  ],
+  "final": {
+   "tracker_token": "wy7261z",
+   "tracker_name": "Organic",
+   "network": "Organic",
+   "engagement_time": "0001-01-01T00:00:00Z",
+   "installed_at": "2026-09-28T16:40:44Z",
+   "first_session_time": "2026-09-28T16:40:44Z",
+   "is_reattributed": false,
+   "is_redownload_install": false
+  },
+  "verdict": "ORGANIC (Organic / wy7261z / eng=0001-01-01T00:00:00Z)"
+ },
+ {
+  "arm": "P1",
+  "gps": "4e0bc499-8c81-4fab-a1ab-10470e7b5e03",
+  "click": {
+   "http": 302,
+   "referrer": "adjust_reftag=cAbkou3DI25AV&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti"
+  },
+  "session_keys": 43,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"b990f439d49f455a5e8f79dd1433a3fd\",\"ask_in\":2000}"
+  ],
+  "final": {
+   "tracker_token": "wy7261z",
+   "tracker_name": "Organic",
+   "network": "Organic",
+   "engagement_time": "0001-01-01T00:00:00Z",
+   "installed_at": "2026-09-28T16:41:41Z",
+   "first_session_time": "2026-09-28T16:41:41Z",
+   "is_reattributed": false,
+   "is_redownload_install": false
+  },
+  "verdict": "ORGANIC (Organic / wy7261z / eng=0001-01-01T00:00:00Z)"
+ },
+ {
+  "arm": "P2",
+  "gps": "9e8a03d9-45c4-45a0-8f70-20477952173e",
+  "session_keys": 43,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"7bb65942e7d8d2142684b9816ff81371\",\"ask_in\":2000}"
+  ],
+  "final": {
+   "tracker_token": "wy7261z",
+   "tracker_name": "Organic",
+   "network": "Organic",
+   "engagement_time": "0001-01-01T00:00:00Z",
+   "installed_at": "2026-09-28T16:42:21Z",
+   "first_session_time": "2026-09-28T16:42:21Z",
+   "is_reattributed": false,
+   "is_redownload_install": false
+  },
+  "verdict": "ORGANIC (Organic / wy7261z / eng=0001-01-01T00:00:00Z)"
+ }
+]

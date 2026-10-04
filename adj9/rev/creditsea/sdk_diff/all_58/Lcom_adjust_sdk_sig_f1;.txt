@@ -1,0 +1,101 @@
+# CLASS Lcom/adjust/sdk/sig/f1;
+FIELD public final a I
+FIELD public final b I
+FIELD public final c I
+
+---- METHOD static constructor <clinit> ()V ----
+  new-instance           v0, Lcom/adjust/sdk/sig/f1;
+  const/4                v1, 1
+  const/4                v2, 0
+  invoke-direct          v0, v1, v2, Lcom/adjust/sdk/sig/f1;-><init>(I I)V
+  return-void            
+
+---- METHOD public constructor <init> (I I)V ----
+  invoke-direct          v2, Ljava/lang/Object;-><init>()V
+  iput                   v3, v2, Lcom/adjust/sdk/sig/f1;->a I
+  const/4                v0, 1
+  if-lt                  v3, v4, +003h
+  goto                   +16h
+  rem-int/lit8           v1, v4, 1
+  if-ltz                 v1, +003h
+  goto                   +3h
+  add-int/lit8           v1, v1, 1
+  rem-int/2addr          v3, v0
+  if-ltz                 v3, +003h
+  goto                   +3h
+  add-int/lit8           v3, v3, 1
+  sub-int/2addr          v1, v3
+  rem-int/2addr          v1, v0
+  if-ltz                 v1, +003h
+  goto                   +3h
+  add-int/lit8           v1, v1, 1
+  sub-int/2addr          v4, v1
+  iput                   v4, v2, Lcom/adjust/sdk/sig/f1;->b I
+  iput                   v0, v2, Lcom/adjust/sdk/sig/f1;->c I
+  return-void            
+
+---- METHOD public final equals (Ljava/lang/Object;)Z ----
+  instance-of            v0, v3, Lcom/adjust/sdk/sig/f1;
+  if-eqz                 v0, +021h
+  invoke-virtual         v2, Lcom/adjust/sdk/sig/f1;->isEmpty()Z
+  move-result            v0
+  if-eqz                 v0, +00bh
+  move-object            v0, v3
+  check-cast             v0, Lcom/adjust/sdk/sig/f1;
+  invoke-virtual         v0, Lcom/adjust/sdk/sig/f1;->isEmpty()Z
+  move-result            v0
+  if-nez                 v0, +010h
+  iget                   v0, v2, Lcom/adjust/sdk/sig/f1;->a I
+  check-cast             v3, Lcom/adjust/sdk/sig/f1;
+  iget                   v1, v3, Lcom/adjust/sdk/sig/f1;->a I
+  if-ne                  v0, v1, +00ah
+  iget                   v0, v2, Lcom/adjust/sdk/sig/f1;->b I
+  iget                   v3, v3, Lcom/adjust/sdk/sig/f1;->b I
+  if-ne                  v0, v3, +004h
+  const/4                v3, 1
+  return                 v3
+  const/4                v3, 0
+  return                 v3
+
+---- METHOD public final hashCode ()I ----
+  invoke-virtual         v2, Lcom/adjust/sdk/sig/f1;->isEmpty()Z
+  move-result            v0
+  if-eqz                 v0, +004h
+  const/4                v0, -1
+  return                 v0
+  iget                   v0, v2, Lcom/adjust/sdk/sig/f1;->a I
+  mul-int/lit8           v0, v0, 31
+  iget                   v1, v2, Lcom/adjust/sdk/sig/f1;->b I
+  add-int/2addr          v0, v1
+  return                 v0
+
+---- METHOD public final isEmpty ()Z ----
+  iget                   v0, v2, Lcom/adjust/sdk/sig/f1;->a I
+  iget                   v1, v2, Lcom/adjust/sdk/sig/f1;->b I
+  if-le                  v0, v1, +004h
+  const/4                v0, 1
+  return                 v0
+  const/4                v0, 0
+  return                 v0
+
+---- METHOD public final iterator ()Ljava/util/Iterator; ----
+  new-instance           v0, Lcom/adjust/sdk/sig/e1;
+  iget                   v1, v4, Lcom/adjust/sdk/sig/f1;->a I
+  iget                   v2, v4, Lcom/adjust/sdk/sig/f1;->b I
+  iget                   v3, v4, Lcom/adjust/sdk/sig/f1;->c I
+  invoke-direct          v0, v1, v2, v3, Lcom/adjust/sdk/sig/e1;-><init>(I I I)V
+  return-object          v0
+
+---- METHOD public final toString ()Ljava/lang/String; ----
+  new-instance           v0, Ljava/lang/StringBuilder;
+  invoke-direct          v0, Ljava/lang/StringBuilder;-><init>()V
+  iget                   v1, v2, Lcom/adjust/sdk/sig/f1;->a I
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+  const-string           v1, ".."
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  iget                   v1, v2, Lcom/adjust/sdk/sig/f1;->b I
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+  invoke-virtual         v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+######################################################################

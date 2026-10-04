@@ -1,0 +1,10 @@
+{
+ "stages": {
+  "10_envperm_drops": {
+   "n": 86400,
+   "hits": [],
+   "note": "24 envelope permutations x 4 extras x 10 bindings x pinned {mid, first}"
+  }
+ },
+ "hits": []
+}

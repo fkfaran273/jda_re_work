@@ -1,0 +1,63 @@
+# CLASS Lcom/adjust/sdk/FirstSessionDelayManager;
+FIELD public final a Lcom/adjust/sdk/ActivityHandler;
+FIELD public final b Ljava/util/ArrayList;
+FIELD public c I
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/ActivityHandler;)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/FirstSessionDelayManager;->a Lcom/adjust/sdk/ActivityHandler;
+  new-instance           v1, Ljava/util/ArrayList;
+  invoke-direct          v1, Ljava/util/ArrayList;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/FirstSessionDelayManager;->b Ljava/util/ArrayList;
+  const/4                v1, 0
+  iput                   v1, v0, Lcom/adjust/sdk/FirstSessionDelayManager;->c I
+  return-void            
+
+---- METHOD public final a (Ljava/lang/Runnable; Ljava/lang/String;)V ----
+  iget                   v0, v3, Lcom/adjust/sdk/FirstSessionDelayManager;->c I
+  const/4                v1, 3
+  if-ne                  v0, v1, +020h
+  iget-object            v0, v3, Lcom/adjust/sdk/FirstSessionDelayManager;->a Lcom/adjust/sdk/ActivityHandler;
+  invoke-virtual         v0, Lcom/adjust/sdk/ActivityHandler;->getAdjustConfig()Lcom/adjust/sdk/AdjustConfig;
+  move-result-object     v0
+  invoke-virtual         v0, Lcom/adjust/sdk/AdjustConfig;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v0
+  const-string           v1, "Enqueuing ""
+  const-string           v2, "" action to be executed after first session delay ends"
+  invoke-static          v1, v5, v2, Ld;->k(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v5
+  const/4                v1, 0
+  new-array              v1, v1, [Ljava/lang/Object;
+  invoke-interface       v0, v5, v1, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+  iget-object            v5, v3, Lcom/adjust/sdk/FirstSessionDelayManager;->b Ljava/util/ArrayList;
+  invoke-virtual         v5, v4, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+  return-void            
+  invoke-interface       v4, Ljava/lang/Runnable;->run()V
+  return-void            
+
+---- METHOD public final a (Ljava/lang/String; Lcom/adjust/sdk/IRunActivityHandler;)V ----
+  iget                   v0, v3, Lcom/adjust/sdk/FirstSessionDelayManager;->c I
+  iget-object            v1, v3, Lcom/adjust/sdk/FirstSessionDelayManager;->a Lcom/adjust/sdk/ActivityHandler;
+  const/4                v2, 3
+  if-ne                  v0, v2, +026h
+  invoke-virtual         v1, Lcom/adjust/sdk/ActivityHandler;->getAdjustConfig()Lcom/adjust/sdk/AdjustConfig;
+  move-result-object     v0
+  invoke-virtual         v0, Lcom/adjust/sdk/AdjustConfig;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v0
+  const-string           v1, "Enqueuing ""
+  const-string           v2, "" action to be executed after first session delay ends"
+  invoke-static          v1, v4, v2, Ld;->k(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v4
+  const/4                v1, 0
+  new-array              v1, v1, [Ljava/lang/Object;
+  invoke-interface       v0, v4, v1, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+  iget-object            v4, v3, Lcom/adjust/sdk/FirstSessionDelayManager;->a Lcom/adjust/sdk/ActivityHandler;
+  invoke-virtual         v4, Lcom/adjust/sdk/ActivityHandler;->getAdjustConfig()Lcom/adjust/sdk/AdjustConfig;
+  move-result-object     v4
+  iget-object            v4, v4, Lcom/adjust/sdk/AdjustConfig;->preLaunchActions Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;
+  iget-object            v4, v4, Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;->preLaunchActionsArray Ljava/util/List;
+  invoke-interface       v4, v5, Ljava/util/List;->add(Ljava/lang/Object;)Z
+  return-void            
+  invoke-interface       v5, v1, Lcom/adjust/sdk/IRunActivityHandler;->run(Lcom/adjust/sdk/ActivityHandler;)V
+  return-void            
+######################################################################

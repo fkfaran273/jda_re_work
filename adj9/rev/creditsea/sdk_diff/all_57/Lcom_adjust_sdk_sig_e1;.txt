@@ -1,0 +1,53 @@
+# CLASS Lcom/adjust/sdk/sig/e1;
+FIELD public final a I
+FIELD public final b I
+FIELD public c Z
+FIELD public d I
+
+---- METHOD public constructor <init> (I I I)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput                   v3, v0, Lcom/adjust/sdk/sig/e1;->a I
+  iput                   v2, v0, Lcom/adjust/sdk/sig/e1;->b I
+  if-lez                 v3, +005h
+  if-gt                  v1, v2, +007h
+  goto                   +3h
+  if-lt                  v1, v2, +004h
+  const/4                v3, 1
+  goto                   +2h
+  const/4                v3, 0
+  iput-boolean           v3, v0, Lcom/adjust/sdk/sig/e1;->c Z
+  if-eqz                 v3, +003h
+  goto                   +2h
+  move                   v1, v2
+  iput                   v1, v0, Lcom/adjust/sdk/sig/e1;->d I
+  return-void            
+
+---- METHOD public final hasNext ()Z ----
+  iget-boolean           v0, v1, Lcom/adjust/sdk/sig/e1;->c Z
+  return                 v0
+
+---- METHOD public final next ()Ljava/lang/Object; ----
+  iget                   v0, v2, Lcom/adjust/sdk/sig/e1;->d I
+  iget                   v1, v2, Lcom/adjust/sdk/sig/e1;->b I
+  if-ne                  v0, v1, +00fh
+  iget-boolean           v1, v2, Lcom/adjust/sdk/sig/e1;->c Z
+  if-eqz                 v1, +006h
+  const/4                v1, 0
+  iput-boolean           v1, v2, Lcom/adjust/sdk/sig/e1;->c Z
+  goto                   +bh
+  invoke-static          Lorg/junit/rules/a;->a()V
+  const/4                v0, 0
+  return-object          v0
+  iget                   v1, v2, Lcom/adjust/sdk/sig/e1;->a I
+  add-int/2addr          v1, v0
+  iput                   v1, v2, Lcom/adjust/sdk/sig/e1;->d I
+  invoke-static          v0, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public final remove ()V ----
+  new-instance           v0, Ljava/lang/UnsupportedOperationException;
+  const-string           v1, "Operation is not supported for read-only collection"
+  invoke-direct          v0, v1, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v0
+######################################################################

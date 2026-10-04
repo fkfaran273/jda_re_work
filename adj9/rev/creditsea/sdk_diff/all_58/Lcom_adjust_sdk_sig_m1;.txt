@@ -1,0 +1,39 @@
+# CLASS Lcom/adjust/sdk/sig/m1;
+FIELD public final a Ljava/lang/String;
+
+---- METHOD public constructor <init> (Ljava/lang/String; Ljava/lang/String;)V ----
+  invoke-static          v4, LB2/a;->v(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  move-result-object     v4
+  if-eqz                 v5, +024h
+  const/4                v0, 0
+  invoke-virtual         v5, Ljava/lang/String;->length()I
+  move-result            v1
+  if-ge                  v0, v1, +01dh
+  invoke-virtual         v5, v0, Ljava/lang/String;->charAt(I)C
+  move-result            v1
+  invoke-static          v1, Ljava/lang/Character;->isWhitespace(C)Z
+  move-result            v2
+  if-nez                 v2, +010h
+  invoke-static          v1, Ljava/lang/Character;->isSpaceChar(C)Z
+  move-result            v1
+  if-eqz                 v1, +003h
+  goto                   +8h
+  const-string           v0, "
+"
+  invoke-virtual         v0, v5, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v5
+  goto                   +6h
+  add-int/lit8           v0, v0, 1
+  goto                   -20h
+  const-string           v5, ""
+  invoke-virtual         v4, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual         v4, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v4
+  invoke-direct          v3, v4, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+  iput-object            v4, v3, Lcom/adjust/sdk/sig/m1;->a Ljava/lang/String;
+  return-void            
+
+---- METHOD public final getMessage ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/sig/m1;->a Ljava/lang/String;
+  return-object          v0
+######################################################################

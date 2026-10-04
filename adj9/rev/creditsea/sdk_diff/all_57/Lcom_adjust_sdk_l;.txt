@@ -1,0 +1,22 @@
+# CLASS Lcom/adjust/sdk/l;
+FIELD public final synthetic a I
+FIELD public final synthetic b Lcom/adjust/sdk/AdjustThirdPartySharing;
+
+---- METHOD public synthetic constructor <init> (Lcom/adjust/sdk/AdjustThirdPartySharing; I)V ----
+  iput                   v2, v0, Lcom/adjust/sdk/l;->a I
+  iput-object            v1, v0, Lcom/adjust/sdk/l;->b Lcom/adjust/sdk/AdjustThirdPartySharing;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run (Lcom/adjust/sdk/ActivityHandler;)V ----
+  iget                   v0, v1, Lcom/adjust/sdk/l;->a I
+  packed-switch          v0, +0000010h
+  iget-object            v0, v1, Lcom/adjust/sdk/l;->b Lcom/adjust/sdk/AdjustThirdPartySharing;
+  invoke-static          v0, v2, Lcom/adjust/sdk/AdjustInstance;->b(Lcom/adjust/sdk/AdjustThirdPartySharing; Lcom/adjust/sdk/ActivityHandler;)V
+  return-void            
+  iget-object            v0, v1, Lcom/adjust/sdk/l;->b Lcom/adjust/sdk/AdjustThirdPartySharing;
+  invoke-static          v0, v2, Lcom/adjust/sdk/ActivityHandler;->H(Lcom/adjust/sdk/AdjustThirdPartySharing; Lcom/adjust/sdk/ActivityHandler;)V
+  return-void            
+  nop                    
+  packed-switch-payload  0
+######################################################################

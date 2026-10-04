@@ -1,0 +1,258 @@
+# CLASS Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;
+
+---- METHOD private constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public static bridge synthetic a (Landroid/content/Context; Lcom/adjust/sdk/ILogger;)I ----
+  invoke-static          v0, v1, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->getConnectivityType(Landroid/content/Context; Lcom/adjust/sdk/ILogger;)I
+  move-result            v0
+  return                 v0
+
+---- METHOD public static bridge synthetic b (Lcom/adjust/sdk/AdjustConfig;)Ljava/lang/String; ----
+  invoke-static          v0, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->getFireAdvertisingId(Lcom/adjust/sdk/AdjustConfig;)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public static bridge synthetic c (Landroid/content/ContentResolver; Lcom/adjust/sdk/OnAmazonAdIdReadListener;)V ----
+  invoke-static          v0, v1, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->getFireAdvertisingIdAsync(Landroid/content/ContentResolver; Lcom/adjust/sdk/OnAmazonAdIdReadListener;)V
+  return-void            
+
+---- METHOD public static bridge synthetic d (Lcom/adjust/sdk/AdjustConfig;)Ljava/lang/Boolean; ----
+  invoke-static          v0, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->getFireTrackingEnabled(Lcom/adjust/sdk/AdjustConfig;)Ljava/lang/Boolean;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public static bridge synthetic e (Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/ILogger;)Ljava/util/Map; ----
+  invoke-static          v0, v1, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->getImeiParameters(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/ILogger;)Ljava/util/Map;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public static bridge synthetic f (Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Ljava/lang/String; ----
+  invoke-static          v0, v1, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->getMnc(Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public static bridge synthetic g (Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/ILogger;)Ljava/util/Map; ----
+  invoke-static          v0, v1, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->getOaidParameters(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/ILogger;)Ljava/util/Map;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD private static getConnectivityType (Landroid/content/Context; Lcom/adjust/sdk/ILogger;)I ----
+  const/4                v0, -1
+  const-string           v1, "connectivity"
+  invoke-virtual         v4, v1, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  move-result-object     v4
+  check-cast             v4, Landroid/net/ConnectivityManager;
+  if-nez                 v4, +003h
+  return                 v0
+  sget                   v1, Landroid/os/Build$VERSION;->SDK_INT I
+  invoke-virtual         v4, Landroid/net/ConnectivityManager;->getActiveNetwork()Landroid/net/Network;
+  move-result-object     v2
+  if-nez                 v2, +003h
+  return                 v0
+  invoke-virtual         v4, v2, Landroid/net/ConnectivityManager;->getNetworkCapabilities(Landroid/net/Network;)Landroid/net/NetworkCapabilities;
+  move-result-object     v4
+  if-nez                 v4, +003h
+  return                 v0
+  const/4                v2, 1
+  invoke-virtual         v4, v2, Landroid/net/NetworkCapabilities;->hasTransport(I)Z
+  move-result            v3
+  if-eqz                 v3, +003h
+  return                 v2
+  const/4                v2, 0
+  invoke-virtual         v4, v2, Landroid/net/NetworkCapabilities;->hasTransport(I)Z
+  move-result            v3
+  if-eqz                 v3, +003h
+  return                 v2
+  const/4                v2, 3
+  invoke-virtual         v4, v2, Landroid/net/NetworkCapabilities;->hasTransport(I)Z
+  move-result            v3
+  if-eqz                 v3, +003h
+  return                 v2
+  const/4                v2, 4
+  invoke-virtual         v4, v2, Landroid/net/NetworkCapabilities;->hasTransport(I)Z
+  move-result            v3
+  if-eqz                 v3, +003h
+  return                 v2
+  const/4                v2, 2
+  invoke-virtual         v4, v2, Landroid/net/NetworkCapabilities;->hasTransport(I)Z
+  move-result            v3
+  if-eqz                 v3, +003h
+  return                 v2
+  const/16               v2, 26
+  if-ge                  v1, v2, +003h
+  return                 v0
+  const/4                v2, 5
+  invoke-virtual         v4, v2, Landroid/net/NetworkCapabilities;->hasTransport(I)Z
+  move-result            v3
+  if-eqz                 v3, +003h
+  return                 v2
+  const/16               v2, 27
+  if-ge                  v1, v2, +003h
+  return                 v0
+  const/4                v1, 6
+  invoke-virtual         v4, v1, Landroid/net/NetworkCapabilities;->hasTransport(I)Z
+  move-result            v4
+  if-eqz                 v4, +011h
+  return                 v1
+  move-exception         v4
+  invoke-virtual         v4, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object     v4
+  filled-new-array       v4, [Ljava/lang/Object;
+  move-result-object     v4
+  const-string           v1, "Couldn't read connectivity type (%s)"
+  invoke-interface       v5, v1, v4, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v0
+
+---- METHOD private static getFireAdvertisingId (Landroid/content/ContentResolver;)Ljava/lang/String; ----
+  const/4                v0, 0
+  if-nez                 v2, +003h
+  return-object          v0
+  const-string           v1, "advertising_id"
+  invoke-static          v2, v1, Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v2
+  return-object          v2
+  return-object          v0
+
+---- METHOD private static getFireAdvertisingId (Lcom/adjust/sdk/AdjustConfig;)Ljava/lang/String; ----
+  invoke-static          v1, Lcom/adjust/sdk/Util;->isFireAdIdReadingEnabled(Lcom/adjust/sdk/AdjustConfig;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  const/4                v1, 0
+  return-object          v1
+  iget-object            v1, v1, Lcom/adjust/sdk/AdjustConfig;->context Landroid/content/Context;
+  invoke-virtual         v1, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+  move-result-object     v1
+  invoke-static          v1, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->getFireAdvertisingId(Landroid/content/ContentResolver;)Ljava/lang/String;
+  move-result-object     v1
+  return-object          v1
+
+---- METHOD private static getFireAdvertisingIdAsync (Landroid/content/ContentResolver; Lcom/adjust/sdk/OnAmazonAdIdReadListener;)V ----
+  const/4                v0, 0
+  if-nez                 v2, +00eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v2
+  new-array              v3, v0, [Ljava/lang/Object;
+  const-string           v0, "contentResolver could not be retrieved"
+  invoke-interface       v2, v0, v3, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  const-string           v1, "advertising_id"
+  invoke-static          v2, v1, Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v2
+  invoke-interface       v3, v2, Lcom/adjust/sdk/OnAmazonAdIdReadListener;->onAmazonAdIdRead(Ljava/lang/String;)V
+  return-void            
+  move-exception         v2
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  invoke-virtual         v2, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object     v2
+  new-array              v0, v0, [Ljava/lang/Object;
+  invoke-interface       v3, v2, v0, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private static getFireTrackingEnabled (Landroid/content/ContentResolver;)Ljava/lang/Boolean; ----
+  const-string           v0, "limit_ad_tracking"
+  invoke-static          v1, v0, Landroid/provider/Settings$Secure;->getInt(Landroid/content/ContentResolver; Ljava/lang/String;)I
+  move-result            v1
+  if-nez                 v1, +004h
+  const/4                v1, 1
+  goto                   +2h
+  const/4                v1, 0
+  invoke-static          v1, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object     v1
+  return-object          v1
+  const/4                v1, 0
+  return-object          v1
+
+---- METHOD private static getFireTrackingEnabled (Lcom/adjust/sdk/AdjustConfig;)Ljava/lang/Boolean; ----
+  invoke-static          v1, Lcom/adjust/sdk/Util;->isFireAdIdReadingEnabled(Lcom/adjust/sdk/AdjustConfig;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  const/4                v1, 0
+  return-object          v1
+  iget-object            v1, v1, Lcom/adjust/sdk/AdjustConfig;->context Landroid/content/Context;
+  invoke-virtual         v1, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+  move-result-object     v1
+  invoke-static          v1, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->getFireTrackingEnabled(Landroid/content/ContentResolver;)Ljava/lang/Boolean;
+  move-result-object     v1
+  return-object          v1
+
+---- METHOD private static getImeiParameters (Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/ILogger;)Ljava/util/Map; ----
+  invoke-static          v1, Lcom/adjust/sdk/Util;->isDeviceIdsFromPluginsReadingEnabled(Lcom/adjust/sdk/AdjustConfig;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  const/4                v1, 0
+  return-object          v1
+  iget-object            v1, v1, Lcom/adjust/sdk/AdjustConfig;->context Landroid/content/Context;
+  invoke-static          v1, v2, Lcom/adjust/sdk/Reflection;->getImeiParameters(Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Ljava/util/Map;
+  move-result-object     v1
+  return-object          v1
+
+---- METHOD public static getMcc (Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Ljava/lang/String; ----
+  const/4                v4, 0
+  const/4                v0, 0
+  const-string/jumbo     v1, phone
+  invoke-virtual         v3, v1, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  move-result-object     v3
+  check-cast             v3, Landroid/telephony/TelephonyManager;
+  invoke-virtual         v3, Landroid/telephony/TelephonyManager;->getNetworkOperator()Ljava/lang/String;
+  move-result-object     v3
+  invoke-static          v3, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+  move-result            v1
+  if-eqz                 v1, +00eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  const-string           v1, "Couldn't receive networkOperator string to read MCC"
+  new-array              v2, v0, [Ljava/lang/Object;
+  invoke-interface       v3, v1, v2, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-object          v4
+  const/4                v1, 3
+  invoke-virtual         v3, v0, v1, Ljava/lang/String;->substring(I I)Ljava/lang/String;
+  move-result-object     v3
+  return-object          v3
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  new-array              v0, v0, [Ljava/lang/Object;
+  const-string           v1, "Couldn't return mcc"
+  invoke-interface       v3, v1, v0, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-object          v4
+
+---- METHOD private static getMnc (Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Ljava/lang/String; ----
+  const/4                v0, 0
+  const/4                v1, 0
+  const-string/jumbo     v2, phone
+  invoke-virtual         v4, v2, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+  move-result-object     v4
+  check-cast             v4, Landroid/telephony/TelephonyManager;
+  invoke-virtual         v4, Landroid/telephony/TelephonyManager;->getNetworkOperator()Ljava/lang/String;
+  move-result-object     v4
+  invoke-static          v4, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+  move-result            v2
+  if-eqz                 v2, +00eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v4
+  const-string           v2, "Couldn't receive networkOperator string to read MNC"
+  new-array              v3, v1, [Ljava/lang/Object;
+  invoke-interface       v4, v2, v3, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-object          v0
+  const/4                v2, 3
+  invoke-virtual         v4, v2, Ljava/lang/String;->substring(I)Ljava/lang/String;
+  move-result-object     v4
+  return-object          v4
+  new-array              v4, v1, [Ljava/lang/Object;
+  const-string           v1, "Couldn't return mnc"
+  invoke-interface       v5, v1, v4, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-object          v0
+
+---- METHOD private static getOaidParameters (Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/ILogger;)Ljava/util/Map; ----
+  invoke-static          v1, Lcom/adjust/sdk/Util;->isDeviceIdsFromPluginsReadingEnabled(Lcom/adjust/sdk/AdjustConfig;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  const/4                v1, 0
+  return-object          v1
+  iget-object            v1, v1, Lcom/adjust/sdk/AdjustConfig;->context Landroid/content/Context;
+  invoke-static          v1, v2, Lcom/adjust/sdk/Reflection;->getOaidParameters(Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Ljava/util/Map;
+  move-result-object     v1
+  return-object          v1
+######################################################################

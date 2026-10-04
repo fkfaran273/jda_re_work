@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -27,5 +27,5 @@
+ return-object vX
+-invoke-static Lorg/junit/rules/a;->a()V
+-const/4 vX, 0
+-return-object vX
++new-instance vX, Ljava/util/NoSuchElementException;
++invoke-direct vX, Ljava/util/NoSuchElementException;-><init>()V
++throw vX
+ ---- METHOD public final remove ()V ----

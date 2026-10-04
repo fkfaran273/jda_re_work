@@ -1,0 +1,34 @@
+--- 
++++ 
+@@ -121,11 +121,11 @@
+ const/16 vX, 39
+-invoke-static vX, vX, vX, Lcom/google/i18n/phonenumbers/a;->k(C Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+-move-result-object vX
++invoke-static vX, vX, vX, LB2/a;->f(Ljava/lang/String; C Ljava/lang/String;)Ljava/lang/String;
++move-result-object vX
++const-string "Class '"
+ const-string "' cannot be serialized "
+ const-string " because it has property name that conflicts with JSON class discriminator '"
+-const-string "Class '"
+-invoke-static vX, vX, vX, vX, vX, Landroidx/compose/ui/graphics/g;->s(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/StringBuilder;
++invoke-static vX, vX, vX, vX, vX, Lio/flutter/plugins/googlesignin/b;->t(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/StringBuilder;
+ move-result-object vX
+ const-string "'."
+-invoke-static vX, vX, vX, Ld;->q(Ljava/lang/StringBuilder; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
++invoke-static vX, vX, vX, LB2/a;->r(Ljava/lang/StringBuilder; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+ move-result-object vX
+@@ -150,8 +150,10 @@
+ GOTO
++new-instance vX, Ljava/lang/IllegalStateException;
+ const-string "Primitives cannot be serialized polymorphically with 'type' parameter. You can use 'JsonBuilder.useArrayPolymorphism' instead"
+-invoke-static vX, Lokhttp3/a;->D(Ljava/lang/String;)V
+-return-void
++invoke-direct vX, vX, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
++throw vX
++new-instance vX, Ljava/lang/IllegalStateException;
+ const-string "Enums cannot be serialized polymorphically with 'type' parameter. You can use 'JsonBuilder.useArrayPolymorphism' instead"
+-invoke-static vX, Lokhttp3/a;->D(Ljava/lang/String;)V
+-return-void
++invoke-direct vX, vX, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
++throw vX
+ invoke-interface vX, vX, vX, Lcom/adjust/sdk/sig/r1;->a(Lcom/adjust/sdk/sig/vX; Ljava/lang/Object;)V

@@ -1,0 +1,44 @@
+[
+ {
+  "label": "1 verbatim body+query (control)",
+  "http": 400,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"ask_in\":7200000}",
+  "header": "18c804c44ca6fa7131f6ce5744641cff"
+ },
+ {
+  "label": "2 crafted header + genuine query",
+  "http": 200,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"in",
+  "header": "2a57019753dc5add03c3eb860bcdee63"
+ },
+ {
+  "label": "3 crafted hdr + pert. device_name",
+  "http": 200,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"in",
+  "header": "2a57019753dc5add03c3eb860bcdee63"
+ },
+ {
+  "label": "4 crafted hdr + extra param",
+  "http": 200,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"in",
+  "header": "2a57019753dc5add03c3eb860bcdee63"
+ },
+ {
+  "label": "5 crafted hdr + dropped ui_mode",
+  "http": 200,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"in",
+  "header": "2a57019753dc5add03c3eb860bcdee63"
+ },
+ {
+  "label": "6 crafted hdr + fresh android_uuid",
+  "http": 200,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"in",
+  "header": "2a57019753dc5add03c3eb860bcdee63"
+ },
+ {
+  "label": "7 crafted hdr + fresh created_at",
+  "http": 200,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"in",
+  "header": "2a57019753dc5add03c3eb860bcdee63"
+ }
+]

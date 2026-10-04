@@ -1,0 +1,22 @@
+# CLASS Lcom/adjust/sdk/ActivityHandler$30;
+FIELD public final synthetic a Lcom/adjust/sdk/ActivityHandler;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/ActivityHandler;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/ActivityHandler$30;->a Lcom/adjust/sdk/ActivityHandler;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final onFail (Ljava/lang/String;)V ----
+  iget-object            v0, v2, Lcom/adjust/sdk/ActivityHandler$30;->a Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->access$1800(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/ILogger;
+  move-result-object     v0
+  const/4                v1, 0
+  new-array              v1, v1, [Ljava/lang/Object;
+  invoke-interface       v0, v3, v1, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD public final onInstallReferrerRead (Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String;)V ----
+  iget-object            v0, v1, Lcom/adjust/sdk/ActivityHandler$30;->a Lcom/adjust/sdk/ActivityHandler;
+  invoke-virtual         v0, v2, v3, Lcom/adjust/sdk/ActivityHandler;->sendInstallReferrer(Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String;)V
+  return-void            
+######################################################################

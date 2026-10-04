@@ -1,0 +1,10 @@
+# CLASS Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;
+FIELD public preLaunchActionsArray Ljava/util/List;
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v1, Ljava/lang/Object;-><init>()V
+  new-instance           v0, Ljava/util/ArrayList;
+  invoke-direct          v0, Ljava/util/ArrayList;-><init>()V
+  iput-object            v0, v1, Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;->preLaunchActionsArray Ljava/util/List;
+  return-void            
+######################################################################

@@ -1,0 +1,2 @@
+@echo off
+C:\Python314\python.exe -X utf8 "C:\Users\Apps\Downloads\com.penti.app\adj9\rev\mint_run.py" > "C:\Users\Apps\Downloads\com.penti.app\adj9\rev\mint_run.log" 2> "C:\Users\Apps\Downloads\com.penti.app\adj9\rev\mint_run_err.log"

@@ -1,0 +1,38 @@
+{
+ "android-arm64 (control)": {
+  "movz_subsequence(KB[:64])": [
+   38550,
+   38550,
+   1
+  ],
+  "movz_subsequence(KB[128:192])": [
+   44694,
+   44694,
+   1
+  ],
+  "dword_imm_plain": {},
+  "dword_imm_xorCC": {},
+  "dword_imm_xorAA": {},
+  "xor_mask(KB[:16])": {},
+  "halfword_le16(KB[:32])": [],
+  "raw_dword_be(KB[:16])": []
+ },
+ "ios-device-arm64": {
+  "movz_subsequence(KB[:64])": [
+   429247,
+   429247,
+   1
+  ],
+  "movz_subsequence(KB[128:192])": [
+   35627,
+   35627,
+   1
+  ],
+  "dword_imm_plain": {},
+  "dword_imm_xorCC": {},
+  "dword_imm_xorAA": {},
+  "xor_mask(KB[:16])": {},
+  "halfword_le16(KB[:32])": [],
+  "raw_dword_be(KB[:16])": []
+ }
+}

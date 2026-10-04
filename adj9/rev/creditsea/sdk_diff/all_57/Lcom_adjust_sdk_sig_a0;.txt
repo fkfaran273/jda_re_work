@@ -1,0 +1,24 @@
+# CLASS Lcom/adjust/sdk/sig/a0;
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final equals (Ljava/lang/Object;)Z ----
+  const/4                v0, 1
+  if-ne                  v1, v2, +003h
+  return                 v0
+  instance-of            v2, v2, Lcom/adjust/sdk/sig/a0;
+  if-nez                 v2, +004h
+  const/4                v2, 0
+  return                 v2
+  return                 v0
+
+---- METHOD public final hashCode ()I ----
+  const                  v0, -861391249
+  return                 v0
+
+---- METHOD public final toString ()Ljava/lang/String; ----
+  const-string           v0, "Data(osName=android)"
+  return-object          v0
+######################################################################

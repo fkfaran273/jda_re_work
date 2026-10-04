@@ -1,0 +1,8 @@
+# CLASS Lcom/adjust/sdk/InstallReferrerReadListener;
+
+---- METHOD public abstract onFail (Ljava/lang/String;)V ----
+  (no code)
+
+---- METHOD public abstract onInstallReferrerRead (Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String;)V ----
+  (no code)
+######################################################################

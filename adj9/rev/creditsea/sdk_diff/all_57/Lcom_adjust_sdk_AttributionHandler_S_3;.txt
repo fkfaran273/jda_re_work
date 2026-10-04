@@ -1,0 +1,24 @@
+# CLASS Lcom/adjust/sdk/AttributionHandler$3;
+FIELD public final synthetic a Lcom/adjust/sdk/SessionResponseData;
+FIELD public final synthetic b Lcom/adjust/sdk/AttributionHandler;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/AttributionHandler; Lcom/adjust/sdk/SessionResponseData;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AttributionHandler$3;->b Lcom/adjust/sdk/AttributionHandler;
+  iput-object            v2, v0, Lcom/adjust/sdk/AttributionHandler$3;->a Lcom/adjust/sdk/SessionResponseData;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v3, Lcom/adjust/sdk/AttributionHandler$3;->b Lcom/adjust/sdk/AttributionHandler;
+  invoke-static          v0, Lcom/adjust/sdk/AttributionHandler;->access$300(Lcom/adjust/sdk/AttributionHandler;)Ljava/lang/ref/WeakReference;
+  move-result-object     v0
+  invoke-virtual         v0, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Lcom/adjust/sdk/IActivityHandler;
+  if-nez                 v0, +003h
+  return-void            
+  iget-object            v1, v3, Lcom/adjust/sdk/AttributionHandler$3;->b Lcom/adjust/sdk/AttributionHandler;
+  iget-object            v2, v3, Lcom/adjust/sdk/AttributionHandler$3;->a Lcom/adjust/sdk/SessionResponseData;
+  invoke-static          v1, v0, v2, Lcom/adjust/sdk/AttributionHandler;->access$400(Lcom/adjust/sdk/AttributionHandler; Lcom/adjust/sdk/IActivityHandler; Lcom/adjust/sdk/SessionResponseData;)V
+  return-void            
+######################################################################

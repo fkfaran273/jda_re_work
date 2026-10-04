@@ -1,0 +1,121 @@
+{
+ "mint": {
+  "status": "exit-clean",
+  "desc10_len": 248,
+  "unpadded": 246,
+  "equal": false,
+  "diff_dwords": [
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35,
+   36,
+   37,
+   38,
+   39,
+   40,
+   41,
+   42,
+   43,
+   44,
+   45,
+   46,
+   47
+  ],
+  "claim_keys": [
+   "adj_verification",
+   "android_uuid",
+   "api_level",
+   "app_token",
+   "app_version",
+   "created_at",
+   "device_name",
+   "device_type",
+   "environment",
+   "gps_adid",
+   "gps_adid_src",
+   "initiated_by",
+   "os_name",
+   "os_version",
+   "package_name",
+   "adj_signing_id",
+   "tracking_enabled",
+   "activity_kind",
+   "client_sdk",
+   "headers_id",
+   "native_version"
+  ]
+ },
+ "arms": [
+  {
+   "label": "A0 genuine verbatim (control)",
+   "http": 400,
+   "verdict": "RECOGNIZED(400)",
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"ask_in\":7200000}",
+   "note": "genuine blob + genuine query"
+  },
+  {
+   "label": "A1 our re-mint (law=attribution)",
+   "http": 200,
+   "verdict": "not-recognized(200)",
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-15T10:50:21Z\",\"first_session_time\":\"2026-09-15T10:50:21Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+   "note": "KEY: same claims+second, OUR bytes"
+  },
+  {
+   "label": "A2 genuine blob, 1 body bit flipped",
+   "http": 200,
+   "verdict": "not-recognized(200)",
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-15T10:50:21Z\",\"first_session_time\":\"2026-09-15T10:50:21Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+   "note": "sanity: blob bytes matter"
+  },
+  {
+   "label": "A3 our re-mint, 1 body bit flipped",
+   "http": 200,
+   "verdict": "not-recognized(200)",
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-15T10:50:21Z\",\"first_session_time\":\"2026-09-15T10:50:21Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+   "note": "does the flip hurt OUR package?"
+  },
+  {
+   "label": "A4 genuine blob, claim api_level=30",
+   "http": 200,
+   "verdict": "not-recognized(200)",
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-15T10:50:21Z\",\"first_session_time\":\"2026-09-15T10:50:21Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+   "note": "known claim sensitivity -> 200"
+  },
+  {
+   "label": "A5 genuine blob, ui_mode=0",
+   "http": 400,
+   "verdict": "RECOGNIZED(400)",
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"ask_in\":7200000}",
+   "note": "tolerated key -> still 400"
+  }
+ ]
+}

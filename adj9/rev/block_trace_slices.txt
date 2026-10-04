@@ -1,0 +1,344 @@
+# Queue/VM provenance of record[46:78)  (row 7, second=1789240512)
+
+block hex = cb6a72a2bc418622426f96c9aa0a7253dc2d70b93697d990ac6b5eeea896c60c
+full record = 0100082713711250db4cf437b6cc98b7da1af50296821afb03fad0f10d60f93c17937b2f1eb6c09691ae7d74bd04cb6a72a2bc418622426f96c9aa0a7253dc2d70b93697d990ac6b5eeea896c60c05e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855060107000000000000000000000000000000000e0e0e0e0e0e0e0e0e0e0e0e0e0e
+
+## window [2769360, 2836096], 66737 steps, 11569 bl-ops, histogram {'LENQ': 437, 'PUSH': 3405, 'POP': 4752, 'CAP_PUSH': 975, 'EMIT': 414, 'CAP_PUSH0': 375, 'CAP_SWAP': 933, 'ITERNEXT': 211, 'ISEMPTY': 8, 'MKITER': 34, 'POPS': 8, 'PUSHS': 9, 'OUTLEN': 8}
+
+## per-byte chain (EMIT <- POP <- PUSH <- register slice)
+
+### idx=1211  emit@2829360  byte=0c  emit_dword=0000000c
+  POP @2829353 -> token 3758 val=0000000c (pushed @2829336 via PUSH)
+  word W=000c0000  shift S=16  -> byte 0c   (W popped @2829324, pushed @2829284 via PUSH)
+    src dword = c60c05e3 mask=00ff0000 (popped @2829272, pushed @2829267)
+      ancestry root PUSH @2828857 via PUSH  chain=[(2828857, 'PUSH')]
+      w2    = 0000000c @2829334  lsr w2, w21, w0
+        w21   = 000c0000 @2829327  mov w21, w0
+          w0    = 000c0000 @2829324  bl #0x147734
+        w0    = 00000010 @2829330  bl #0x147734
+
+### idx=1210  emit@2829544  byte=c6  emit_dword=000000c6
+  POP @2829537 -> token 3770 val=000000c6 (pushed @2829520 via PUSH)
+  word W=c6000000  shift S=24  -> byte c6   (W popped @2829508, pushed @2829468 via PUSH)
+    src dword = c60c05e3 mask=ff000000 (popped @2829456, pushed @2829451)
+      ancestry root PUSH @2828857 via PUSH  chain=[(2828857, 'PUSH')]
+      w2    = 000000c6 @2829518  lsr w2, w21, w0
+        w21   = c6000000 @2829511  mov w21, w0
+          w0    = c6000000 @2829508  bl #0x147734
+        w0    = 00000018 @2829514  bl #0x147734
+
+### idx=1209  emit@2829807  byte=96  emit_dword=00000096
+  POP @2829800 -> token 3788 val=00000096 (pushed @2829783 via PUSH)
+  word W=00000096  shift S=0  -> byte 96   (W popped @2829771, pushed @2829731 via PUSH)
+    src dword = 5eeea896 mask=000000ff (popped @2829719, pushed @2829714)
+      ancestry root PUSH @2829672 via PUSH  chain=[(2829672, 'PUSH')]
+      w2    = 00000096 @2829781  lsr w2, w21, w0
+        w21   = 00000096 @2829774  mov w21, w0
+          w0    = 00000096 @2829771  bl #0x147734
+        w0    = 00000000 @2829776  mov x0, x19
+          x19   LEAF no-def-in-window  at=2829776
+  ! ('reg-outside-window', 'x19', 2829776)
+
+### idx=1208  emit@2829991  byte=a8  emit_dword=000000a8
+  POP @2829984 -> token 3800 val=000000a8 (pushed @2829967 via PUSH)
+  word W=0000a800  shift S=8  -> byte a8   (W popped @2829955, pushed @2829915 via PUSH)
+    src dword = 5eeea896 mask=0000ff00 (popped @2829903, pushed @2829898)
+      ancestry root PUSH @2829672 via PUSH  chain=[(2829672, 'PUSH')]
+      w2    = 000000a8 @2829965  lsr w2, w21, w0
+        w21   = 0000a800 @2829958  mov w21, w0
+          w0    = 0000a800 @2829955  bl #0x147734
+        w0    = 00000008 @2829961  bl #0x147734
+
+### idx=1207  emit@2830175  byte=ee  emit_dword=000000ee
+  POP @2830168 -> token 3812 val=000000ee (pushed @2830151 via PUSH)
+  word W=00ee0000  shift S=16  -> byte ee   (W popped @2830139, pushed @2830099 via PUSH)
+    src dword = 5eeea896 mask=00ff0000 (popped @2830087, pushed @2830082)
+      ancestry root PUSH @2829672 via PUSH  chain=[(2829672, 'PUSH')]
+      w2    = 000000ee @2830149  lsr w2, w21, w0
+        w21   = 00ee0000 @2830142  mov w21, w0
+          w0    = 00ee0000 @2830139  bl #0x147734
+        w0    = 00000010 @2830145  bl #0x147734
+
+### idx=1206  emit@2830359  byte=5e  emit_dword=0000005e
+  POP @2830352 -> token 3824 val=0000005e (pushed @2830335 via PUSH)
+  word W=5e000000  shift S=24  -> byte 5e   (W popped @2830323, pushed @2830283 via PUSH)
+    src dword = 5eeea896 mask=ff000000 (popped @2830271, pushed @2830266)
+      ancestry root PUSH @2829672 via PUSH  chain=[(2829672, 'PUSH')]
+      w2    = 0000005e @2830333  lsr w2, w21, w0
+        w21   = 5e000000 @2830326  mov w21, w0
+          w0    = 5e000000 @2830323  bl #0x147734
+        w0    = 00000018 @2830329  bl #0x147734
+
+### idx=1205  emit@2830622  byte=6b  emit_dword=0000006b
+  POP @2830615 -> token 3842 val=0000006b (pushed @2830598 via PUSH)
+  word W=0000006b  shift S=0  -> byte 6b   (W popped @2830586, pushed @2830546 via PUSH)
+    src dword = d990ac6b mask=000000ff (popped @2830534, pushed @2830529)
+      ancestry root PUSH @2830487 via PUSH  chain=[(2830487, 'PUSH')]
+      w2    = 0000006b @2830596  lsr w2, w21, w0
+        w21   = 0000006b @2830589  mov w21, w0
+          w0    = 0000006b @2830586  bl #0x147734
+        w0    = 00000000 @2830591  mov x0, x19
+          x19   LEAF no-def-in-window  at=2830591
+  ! ('reg-outside-window', 'x19', 2830591)
+
+### idx=1204  emit@2830806  byte=ac  emit_dword=000000ac
+  POP @2830799 -> token 3854 val=000000ac (pushed @2830782 via PUSH)
+  word W=0000ac00  shift S=8  -> byte ac   (W popped @2830770, pushed @2830730 via PUSH)
+    src dword = d990ac6b mask=0000ff00 (popped @2830718, pushed @2830713)
+      ancestry root PUSH @2830487 via PUSH  chain=[(2830487, 'PUSH')]
+      w2    = 000000ac @2830780  lsr w2, w21, w0
+        w21   = 0000ac00 @2830773  mov w21, w0
+          w0    = 0000ac00 @2830770  bl #0x147734
+        w0    = 00000008 @2830776  bl #0x147734
+
+### idx=1203  emit@2830990  byte=90  emit_dword=00000090
+  POP @2830983 -> token 3866 val=00000090 (pushed @2830966 via PUSH)
+  word W=00900000  shift S=16  -> byte 90   (W popped @2830954, pushed @2830914 via PUSH)
+    src dword = d990ac6b mask=00ff0000 (popped @2830902, pushed @2830897)
+      ancestry root PUSH @2830487 via PUSH  chain=[(2830487, 'PUSH')]
+      w2    = 00000090 @2830964  lsr w2, w21, w0
+        w21   = 00900000 @2830957  mov w21, w0
+          w0    = 00900000 @2830954  bl #0x147734
+        w0    = 00000010 @2830960  bl #0x147734
+
+### idx=1202  emit@2831174  byte=d9  emit_dword=000000d9
+  POP @2831167 -> token 3878 val=000000d9 (pushed @2831150 via PUSH)
+  word W=d9000000  shift S=24  -> byte d9   (W popped @2831138, pushed @2831098 via PUSH)
+    src dword = d990ac6b mask=ff000000 (popped @2831086, pushed @2831081)
+      ancestry root PUSH @2830487 via PUSH  chain=[(2830487, 'PUSH')]
+      w2    = 000000d9 @2831148  lsr w2, w21, w0
+        w21   = d9000000 @2831141  mov w21, w0
+          w0    = d9000000 @2831138  bl #0x147734
+        w0    = 00000018 @2831144  bl #0x147734
+
+### idx=1201  emit@2831437  byte=97  emit_dword=00000097
+  POP @2831430 -> token 3896 val=00000097 (pushed @2831413 via PUSH)
+  word W=00000097  shift S=0  -> byte 97   (W popped @2831401, pushed @2831361 via PUSH)
+    src dword = 70b93697 mask=000000ff (popped @2831349, pushed @2831344)
+      ancestry root PUSH @2831302 via PUSH  chain=[(2831302, 'PUSH')]
+      w2    = 00000097 @2831411  lsr w2, w21, w0
+        w21   = 00000097 @2831404  mov w21, w0
+          w0    = 00000097 @2831401  bl #0x147734
+        w0    = 00000000 @2831406  mov x0, x19
+          x19   LEAF no-def-in-window  at=2831406
+  ! ('reg-outside-window', 'x19', 2831406)
+
+### idx=1200  emit@2831621  byte=36  emit_dword=00000036
+  POP @2831614 -> token 3908 val=00000036 (pushed @2831597 via PUSH)
+  word W=00003600  shift S=8  -> byte 36   (W popped @2831585, pushed @2831545 via PUSH)
+    src dword = 70b93697 mask=0000ff00 (popped @2831533, pushed @2831528)
+      ancestry root PUSH @2831302 via PUSH  chain=[(2831302, 'PUSH')]
+      w2    = 00000036 @2831595  lsr w2, w21, w0
+        w21   = 00003600 @2831588  mov w21, w0
+          w0    = 00003600 @2831585  bl #0x147734
+        w0    = 00000008 @2831591  bl #0x147734
+
+### idx=1199  emit@2831805  byte=b9  emit_dword=000000b9
+  POP @2831798 -> token 3920 val=000000b9 (pushed @2831781 via PUSH)
+  word W=00b90000  shift S=16  -> byte b9   (W popped @2831769, pushed @2831729 via PUSH)
+    src dword = 70b93697 mask=00ff0000 (popped @2831717, pushed @2831712)
+      ancestry root PUSH @2831302 via PUSH  chain=[(2831302, 'PUSH')]
+      w2    = 000000b9 @2831779  lsr w2, w21, w0
+        w21   = 00b90000 @2831772  mov w21, w0
+          w0    = 00b90000 @2831769  bl #0x147734
+        w0    = 00000010 @2831775  bl #0x147734
+
+### idx=1198  emit@2831989  byte=70  emit_dword=00000070
+  POP @2831982 -> token 3932 val=00000070 (pushed @2831965 via PUSH)
+  word W=70000000  shift S=24  -> byte 70   (W popped @2831953, pushed @2831913 via PUSH)
+    src dword = 70b93697 mask=ff000000 (popped @2831901, pushed @2831896)
+      ancestry root PUSH @2831302 via PUSH  chain=[(2831302, 'PUSH')]
+      w2    = 00000070 @2831963  lsr w2, w21, w0
+        w21   = 70000000 @2831956  mov w21, w0
+          w0    = 70000000 @2831953  bl #0x147734
+        w0    = 00000018 @2831959  bl #0x147734
+
+### idx=1197  emit@2832252  byte=2d  emit_dword=0000002d
+  POP @2832245 -> token 3950 val=0000002d (pushed @2832228 via PUSH)
+  word W=0000002d  shift S=0  -> byte 2d   (W popped @2832216, pushed @2832176 via PUSH)
+    src dword = 7253dc2d mask=000000ff (popped @2832164, pushed @2832159)
+      ancestry root PUSH @2832117 via PUSH  chain=[(2832117, 'PUSH')]
+      w2    = 0000002d @2832226  lsr w2, w21, w0
+        w21   = 0000002d @2832219  mov w21, w0
+          w0    = 0000002d @2832216  bl #0x147734
+        w0    = 00000000 @2832221  mov x0, x19
+          x19   LEAF no-def-in-window  at=2832221
+  ! ('reg-outside-window', 'x19', 2832221)
+
+### idx=1196  emit@2832436  byte=dc  emit_dword=000000dc
+  POP @2832429 -> token 3962 val=000000dc (pushed @2832412 via PUSH)
+  word W=0000dc00  shift S=8  -> byte dc   (W popped @2832400, pushed @2832360 via PUSH)
+    src dword = 7253dc2d mask=0000ff00 (popped @2832348, pushed @2832343)
+      ancestry root PUSH @2832117 via PUSH  chain=[(2832117, 'PUSH')]
+      w2    = 000000dc @2832410  lsr w2, w21, w0
+        w21   = 0000dc00 @2832403  mov w21, w0
+          w0    = 0000dc00 @2832400  bl #0x147734
+        w0    = 00000008 @2832406  bl #0x147734
+
+### idx=1195  emit@2832620  byte=53  emit_dword=00000053
+  POP @2832613 -> token 3974 val=00000053 (pushed @2832596 via PUSH)
+  word W=00530000  shift S=16  -> byte 53   (W popped @2832584, pushed @2832544 via PUSH)
+    src dword = 7253dc2d mask=00ff0000 (popped @2832532, pushed @2832527)
+      ancestry root PUSH @2832117 via PUSH  chain=[(2832117, 'PUSH')]
+      w2    = 00000053 @2832594  lsr w2, w21, w0
+        w21   = 00530000 @2832587  mov w21, w0
+          w0    = 00530000 @2832584  bl #0x147734
+        w0    = 00000010 @2832590  bl #0x147734
+
+### idx=1194  emit@2832804  byte=72  emit_dword=00000072
+  POP @2832797 -> token 3986 val=00000072 (pushed @2832780 via PUSH)
+  word W=72000000  shift S=24  -> byte 72   (W popped @2832768, pushed @2832728 via PUSH)
+    src dword = 7253dc2d mask=ff000000 (popped @2832716, pushed @2832711)
+      ancestry root PUSH @2832117 via PUSH  chain=[(2832117, 'PUSH')]
+      w2    = 00000072 @2832778  lsr w2, w21, w0
+        w21   = 72000000 @2832771  mov w21, w0
+          w0    = 72000000 @2832768  bl #0x147734
+        w0    = 00000018 @2832774  bl #0x147734
+
+### idx=1193  emit@2833067  byte=0a  emit_dword=0000000a
+  POP @2833060 -> token 4004 val=0000000a (pushed @2833043 via PUSH)
+  word W=0000000a  shift S=0  -> byte 0a   (W popped @2833031, pushed @2832991 via PUSH)
+    src dword = 96c9aa0a mask=000000ff (popped @2832979, pushed @2832974)
+      ancestry root PUSH @2832932 via PUSH  chain=[(2832932, 'PUSH')]
+      w2    = 0000000a @2833041  lsr w2, w21, w0
+        w21   = 0000000a @2833034  mov w21, w0
+          w0    = 0000000a @2833031  bl #0x147734
+        w0    = 00000000 @2833036  mov x0, x19
+          x19   LEAF no-def-in-window  at=2833036
+  ! ('reg-outside-window', 'x19', 2833036)
+
+### idx=1192  emit@2833251  byte=aa  emit_dword=000000aa
+  POP @2833244 -> token 4016 val=000000aa (pushed @2833227 via PUSH)
+  word W=0000aa00  shift S=8  -> byte aa   (W popped @2833215, pushed @2833175 via PUSH)
+    src dword = 96c9aa0a mask=0000ff00 (popped @2833163, pushed @2833158)
+      ancestry root PUSH @2832932 via PUSH  chain=[(2832932, 'PUSH')]
+      w2    = 000000aa @2833225  lsr w2, w21, w0
+        w21   = 0000aa00 @2833218  mov w21, w0
+          w0    = 0000aa00 @2833215  bl #0x147734
+        w0    = 00000008 @2833221  bl #0x147734
+
+### idx=1191  emit@2833435  byte=c9  emit_dword=000000c9
+  POP @2833428 -> token 4028 val=000000c9 (pushed @2833411 via PUSH)
+  word W=00c90000  shift S=16  -> byte c9   (W popped @2833399, pushed @2833359 via PUSH)
+    src dword = 96c9aa0a mask=00ff0000 (popped @2833347, pushed @2833342)
+      ancestry root PUSH @2832932 via PUSH  chain=[(2832932, 'PUSH')]
+      w2    = 000000c9 @2833409  lsr w2, w21, w0
+        w21   = 00c90000 @2833402  mov w21, w0
+          w0    = 00c90000 @2833399  bl #0x147734
+        w0    = 00000010 @2833405  bl #0x147734
+
+### idx=1190  emit@2833619  byte=96  emit_dword=00000096
+  POP @2833612 -> token 4040 val=00000096 (pushed @2833595 via PUSH)
+  word W=96000000  shift S=24  -> byte 96   (W popped @2833583, pushed @2833543 via PUSH)
+    src dword = 96c9aa0a mask=ff000000 (popped @2833531, pushed @2833526)
+      ancestry root PUSH @2832932 via PUSH  chain=[(2832932, 'PUSH')]
+      w2    = 00000096 @2833593  lsr w2, w21, w0
+        w21   = 96000000 @2833586  mov w21, w0
+          w0    = 96000000 @2833583  bl #0x147734
+        w0    = 00000018 @2833589  bl #0x147734
+
+### idx=1189  emit@2833882  byte=6f  emit_dword=0000006f
+  POP @2833875 -> token 4058 val=0000006f (pushed @2833858 via PUSH)
+  word W=0000006f  shift S=0  -> byte 6f   (W popped @2833846, pushed @2833806 via PUSH)
+    src dword = 8622426f mask=000000ff (popped @2833794, pushed @2833789)
+      ancestry root PUSH @2833747 via PUSH  chain=[(2833747, 'PUSH')]
+      w2    = 0000006f @2833856  lsr w2, w21, w0
+        w21   = 0000006f @2833849  mov w21, w0
+          w0    = 0000006f @2833846  bl #0x147734
+        w0    = 00000000 @2833851  mov x0, x19
+          x19   LEAF no-def-in-window  at=2833851
+  ! ('reg-outside-window', 'x19', 2833851)
+
+### idx=1188  emit@2834066  byte=42  emit_dword=00000042
+  POP @2834059 -> token 4070 val=00000042 (pushed @2834042 via PUSH)
+  word W=00004200  shift S=8  -> byte 42   (W popped @2834030, pushed @2833990 via PUSH)
+    src dword = 8622426f mask=0000ff00 (popped @2833978, pushed @2833973)
+      ancestry root PUSH @2833747 via PUSH  chain=[(2833747, 'PUSH')]
+      w2    = 00000042 @2834040  lsr w2, w21, w0
+        w21   = 00004200 @2834033  mov w21, w0
+          w0    = 00004200 @2834030  bl #0x147734
+        w0    = 00000008 @2834036  bl #0x147734
+
+### idx=1187  emit@2834250  byte=22  emit_dword=00000022
+  POP @2834243 -> token 4082 val=00000022 (pushed @2834226 via PUSH)
+  word W=00220000  shift S=16  -> byte 22   (W popped @2834214, pushed @2834174 via PUSH)
+    src dword = 8622426f mask=00ff0000 (popped @2834162, pushed @2834157)
+      ancestry root PUSH @2833747 via PUSH  chain=[(2833747, 'PUSH')]
+      w2    = 00000022 @2834224  lsr w2, w21, w0
+        w21   = 00220000 @2834217  mov w21, w0
+          w0    = 00220000 @2834214  bl #0x147734
+        w0    = 00000010 @2834220  bl #0x147734
+
+### idx=1186  emit@2834434  byte=86  emit_dword=00000086
+  POP @2834427 -> token 4094 val=00000086 (pushed @2834410 via PUSH)
+  word W=86000000  shift S=24  -> byte 86   (W popped @2834398, pushed @2834358 via PUSH)
+    src dword = 8622426f mask=ff000000 (popped @2834346, pushed @2834341)
+      ancestry root PUSH @2833747 via PUSH  chain=[(2833747, 'PUSH')]
+      w2    = 00000086 @2834408  lsr w2, w21, w0
+        w21   = 86000000 @2834401  mov w21, w0
+          w0    = 86000000 @2834398  bl #0x147734
+        w0    = 00000018 @2834404  bl #0x147734
+
+### idx=1185  emit@2834697  byte=41  emit_dword=00000041
+  POP @2834690 -> token 4112 val=00000041 (pushed @2834673 via PUSH)
+  word W=00000041  shift S=0  -> byte 41   (W popped @2834661, pushed @2834621 via PUSH)
+    src dword = 72a2bc41 mask=000000ff (popped @2834609, pushed @2834604)
+      ancestry root PUSH @2834562 via PUSH  chain=[(2834562, 'PUSH')]
+      w2    = 00000041 @2834671  lsr w2, w21, w0
+        w21   = 00000041 @2834664  mov w21, w0
+          w0    = 00000041 @2834661  bl #0x147734
+        w0    = 00000000 @2834666  mov x0, x19
+          x19   LEAF no-def-in-window  at=2834666
+  ! ('reg-outside-window', 'x19', 2834666)
+
+### idx=1184  emit@2834881  byte=bc  emit_dword=000000bc
+  POP @2834874 -> token 4124 val=000000bc (pushed @2834857 via PUSH)
+  word W=0000bc00  shift S=8  -> byte bc   (W popped @2834845, pushed @2834805 via PUSH)
+    src dword = 72a2bc41 mask=0000ff00 (popped @2834793, pushed @2834788)
+      ancestry root PUSH @2834562 via PUSH  chain=[(2834562, 'PUSH')]
+      w2    = 000000bc @2834855  lsr w2, w21, w0
+        w21   = 0000bc00 @2834848  mov w21, w0
+          w0    = 0000bc00 @2834845  bl #0x147734
+        w0    = 00000008 @2834851  bl #0x147734
+
+### idx=1183  emit@2835065  byte=a2  emit_dword=000000a2
+  POP @2835058 -> token 4136 val=000000a2 (pushed @2835041 via PUSH)
+  word W=00a20000  shift S=16  -> byte a2   (W popped @2835029, pushed @2834989 via PUSH)
+    src dword = 72a2bc41 mask=00ff0000 (popped @2834977, pushed @2834972)
+      ancestry root PUSH @2834562 via PUSH  chain=[(2834562, 'PUSH')]
+      w2    = 000000a2 @2835039  lsr w2, w21, w0
+        w21   = 00a20000 @2835032  mov w21, w0
+          w0    = 00a20000 @2835029  bl #0x147734
+        w0    = 00000010 @2835035  bl #0x147734
+
+### idx=1182  emit@2835249  byte=72  emit_dword=00000072
+  POP @2835242 -> token 4148 val=00000072 (pushed @2835225 via PUSH)
+  word W=72000000  shift S=24  -> byte 72   (W popped @2835213, pushed @2835173 via PUSH)
+    src dword = 72a2bc41 mask=ff000000 (popped @2835161, pushed @2835156)
+      ancestry root PUSH @2834562 via PUSH  chain=[(2834562, 'PUSH')]
+      w2    = 00000072 @2835223  lsr w2, w21, w0
+        w21   = 72000000 @2835216  mov w21, w0
+          w0    = 72000000 @2835213  bl #0x147734
+        w0    = 00000018 @2835219  bl #0x147734
+
+### idx=1181  emit@2835512  byte=6a  emit_dword=0000006a
+  POP @2835505 -> token 4166 val=0000006a (pushed @2835488 via PUSH)
+  word W=0000006a  shift S=0  -> byte 6a   (W popped @2835476, pushed @2835436 via PUSH)
+    src dword = bd04cb6a mask=000000ff (popped @2835424, pushed @2835419)
+      ancestry root PUSH @2835377 via PUSH  chain=[(2835377, 'PUSH')]
+      w2    = 0000006a @2835486  lsr w2, w21, w0
+        w21   = 0000006a @2835479  mov w21, w0
+          w0    = 0000006a @2835476  bl #0x147734
+        w0    = 00000000 @2835481  mov x0, x19
+          x19   LEAF no-def-in-window  at=2835481
+  ! ('reg-outside-window', 'x19', 2835481)
+
+### idx=1180  emit@2835696  byte=cb  emit_dword=000000cb
+  POP @2835689 -> token 4178 val=000000cb (pushed @2835672 via PUSH)
+  word W=0000cb00  shift S=8  -> byte cb   (W popped @2835660, pushed @2835620 via PUSH)
+    src dword = bd04cb6a mask=0000ff00 (popped @2835608, pushed @2835603)
+      ancestry root PUSH @2835377 via PUSH  chain=[(2835377, 'PUSH')]
+      w2    = 000000cb @2835670  lsr w2, w21, w0
+        w21   = 0000cb00 @2835663  mov w21, w0
+          w0    = 0000cb00 @2835660  bl #0x147734
+        w0    = 00000008 @2835666  bl #0x147734

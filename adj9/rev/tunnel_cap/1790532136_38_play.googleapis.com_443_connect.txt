@@ -1,0 +1,4 @@
+CONNECT play.googleapis.com:443 HTTP/1.1
+Host: play.googleapis.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: okhttp/5.4.0

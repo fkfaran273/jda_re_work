@@ -1,0 +1,40 @@
+# CLASS Lcom/adjust/sdk/m;
+FIELD public final synthetic a I
+FIELD public final synthetic b Lcom/adjust/sdk/ActivityHandler;
+FIELD public final synthetic c Lcom/adjust/sdk/AdjustDeeplink;
+FIELD public final synthetic d J
+
+---- METHOD public synthetic constructor <init> (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/AdjustDeeplink; J I)V ----
+  iput                   v5, v0, Lcom/adjust/sdk/m;->a I
+  iput-object            v1, v0, Lcom/adjust/sdk/m;->b Lcom/adjust/sdk/ActivityHandler;
+  iput-object            v2, v0, Lcom/adjust/sdk/m;->c Lcom/adjust/sdk/AdjustDeeplink;
+  iput-wide              v3, v0, Lcom/adjust/sdk/m;->d J
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget                   v0, v4, Lcom/adjust/sdk/m;->a I
+  packed-switch          v0, +000002ch
+  iget-object            v0, v4, Lcom/adjust/sdk/m;->c Lcom/adjust/sdk/AdjustDeeplink;
+  iget-wide              v1, v4, Lcom/adjust/sdk/m;->d J
+  iget-object            v3, v4, Lcom/adjust/sdk/m;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v3, v0, v1, v2, Lcom/adjust/sdk/ActivityHandler;->X(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/AdjustDeeplink; J)V
+  return-void            
+  iget-object            v0, v4, Lcom/adjust/sdk/m;->c Lcom/adjust/sdk/AdjustDeeplink;
+  iget-wide              v1, v4, Lcom/adjust/sdk/m;->d J
+  iget-object            v3, v4, Lcom/adjust/sdk/m;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v3, v0, v1, v2, Lcom/adjust/sdk/ActivityHandler;->x(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/AdjustDeeplink; J)V
+  return-void            
+  iget-object            v0, v4, Lcom/adjust/sdk/m;->c Lcom/adjust/sdk/AdjustDeeplink;
+  iget-wide              v1, v4, Lcom/adjust/sdk/m;->d J
+  iget-object            v3, v4, Lcom/adjust/sdk/m;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v3, v0, v1, v2, Lcom/adjust/sdk/ActivityHandler;->A(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/AdjustDeeplink; J)V
+  return-void            
+  iget-object            v0, v4, Lcom/adjust/sdk/m;->c Lcom/adjust/sdk/AdjustDeeplink;
+  iget-wide              v1, v4, Lcom/adjust/sdk/m;->d J
+  iget-object            v3, v4, Lcom/adjust/sdk/m;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v3, v0, v1, v2, Lcom/adjust/sdk/ActivityHandler;->I(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/AdjustDeeplink; J)V
+  return-void            
+  nop                    
+  packed-switch-payload  0 1 2
+######################################################################

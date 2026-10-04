@@ -1,0 +1,27 @@
+--- 
++++ 
+@@ -348,3 +348,3 @@
+ monitor-enter vX
+-const-string "preinstall_payload_read_status"
++const-string/jumbo preinstall_payload_read_status
+ const-wide/16 vX, 0
+@@ -359,3 +359,3 @@
+ monitor-enter vX
+-const-string "preinstall_system_installer_referrer"
++const-string/jumbo preinstall_system_installer_referrer
+ invoke-direct vX, vX, Lcom/adjust/sdk/SharedPreferencesManager;->getString(Ljava/lang/String;)Ljava/lang/String;
+@@ -472,3 +472,3 @@
+ monitor-enter vX
+-const-string "preinstall_system_installer_referrer"
++const-string/jumbo preinstall_system_installer_referrer
+ invoke-direct vX, vX, Lcom/adjust/sdk/SharedPreferencesManager;->remove(Ljava/lang/String;)V
+@@ -566,3 +566,3 @@
+ monitor-enter vX
+-const-string "preinstall_system_installer_referrer"
++const-string/jumbo preinstall_system_installer_referrer
+ invoke-direct vX, vX, vX, Lcom/adjust/sdk/SharedPreferencesManager;->saveString(Ljava/lang/String; Ljava/lang/String;)V
+@@ -669,3 +669,3 @@
+ monitor-enter vX
+-const-string "preinstall_payload_read_status"
++const-string/jumbo preinstall_payload_read_status
+ invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/SharedPreferencesManager;->saveLong(Ljava/lang/String; J)V

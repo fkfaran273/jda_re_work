@@ -1,0 +1,18 @@
+# CLASS Lcom/adjust/sdk/ActivityHandler$23;
+FIELD public final synthetic a Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;
+FIELD public final synthetic b Lcom/adjust/sdk/ActivityHandler;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/ActivityHandler$23;->b Lcom/adjust/sdk/ActivityHandler;
+  iput-object            v2, v0, Lcom/adjust/sdk/ActivityHandler$23;->a Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v2, Lcom/adjust/sdk/ActivityHandler$23;->a Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;
+  iget-object            v1, v2, Lcom/adjust/sdk/ActivityHandler$23;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v1, Lcom/adjust/sdk/ActivityHandler;->access$1500(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustThirdPartySharingResult;
+  move-result-object     v1
+  invoke-interface       v0, v1, Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;->onThirdPartySharingSettingsRead(Lcom/adjust/sdk/AdjustThirdPartySharingResult;)V
+  return-void            
+######################################################################

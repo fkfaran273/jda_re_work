@@ -1,0 +1,509 @@
+# CLASS Lcom/adjust/sdk/Adjust;
+FIELD private static defaultInstance Lcom/adjust/sdk/AdjustInstance;
+
+---- METHOD private constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public static addGlobalCallbackParameter (Ljava/lang/String; Ljava/lang/String;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, v1, v2, Lcom/adjust/sdk/AdjustInstance;->addGlobalCallbackParameter(Ljava/lang/String; Ljava/lang/String;)V
+  return-void            
+
+---- METHOD public static addGlobalPartnerParameter (Ljava/lang/String; Ljava/lang/String;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, v1, v2, Lcom/adjust/sdk/AdjustInstance;->addGlobalPartnerParameter(Ljava/lang/String; Ljava/lang/String;)V
+  return-void            
+
+---- METHOD public static disable ()V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, Lcom/adjust/sdk/AdjustInstance;->disable()V
+  return-void            
+
+---- METHOD public static disableCoppaComplianceInDelay ()V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, Lcom/adjust/sdk/AdjustInstance;->disableCoppaComplianceInDelay()V
+  return-void            
+
+---- METHOD public static disablePlayStoreKidsComplianceInDelay ()V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, Lcom/adjust/sdk/AdjustInstance;->disablePlayStoreKidsComplianceInDelay()V
+  return-void            
+
+---- METHOD public static enable ()V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, Lcom/adjust/sdk/AdjustInstance;->enable()V
+  return-void            
+
+---- METHOD public static enableCoppaComplianceInDelay ()V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, Lcom/adjust/sdk/AdjustInstance;->enableCoppaComplianceInDelay()V
+  return-void            
+
+---- METHOD public static enablePlayStoreKidsComplianceInDelay ()V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, Lcom/adjust/sdk/AdjustInstance;->enablePlayStoreKidsComplianceInDelay()V
+  return-void            
+
+---- METHOD public static endFirstSessionDelay ()V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, Lcom/adjust/sdk/AdjustInstance;->endFirstSessionDelay()V
+  return-void            
+
+---- METHOD private static extractApplicationContext (Landroid/content/Context;)Landroid/content/Context; ----
+  if-nez                 v0, +004h
+  const/4                v0, 0
+  return-object          v0
+  invoke-virtual         v0, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public static gdprForgetMe (Landroid/content/Context;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-static          v1, Lcom/adjust/sdk/Adjust;->extractApplicationContext(Landroid/content/Context;)Landroid/content/Context;
+  move-result-object     v1
+  invoke-virtual         v0, v1, Lcom/adjust/sdk/AdjustInstance;->gdprForgetMe(Landroid/content/Context;)V
+  return-void            
+
+---- METHOD public static getAdid (Lcom/adjust/sdk/OnAdidReadListener;)V ----
+  if-nez                 v2, +00fh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v2
+  const/4                v0, 0
+  new-array              v0, v0, [Ljava/lang/Object;
+  const-string           v1, "Callback for getting adid can't be null"
+  invoke-interface       v2, v1, v0, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, v2, Lcom/adjust/sdk/AdjustInstance;->getAdid(Lcom/adjust/sdk/OnAdidReadListener;)V
+  return-void            
+
+---- METHOD public static getAdidWithTimeout (Landroid/content/Context; J Lcom/adjust/sdk/OnAdidReadListener;)V ----
+  const/4                v0, 0
+  if-nez                 v3, +00eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  new-array              v4, v0, [Ljava/lang/Object;
+  const-string           v5, "Context for getting adid can't be null"
+  invoke-interface       v3, v5, v4, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  const-wide/16          v1, 0
+  cmp-long               v1, v4, v1
+  if-gez                 v1, +00eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  new-array              v4, v0, [Ljava/lang/Object;
+  const-string           v5, "Timeout value for getting adid can't be negative"
+  invoke-interface       v3, v5, v4, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  if-nez                 v6, +00eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  new-array              v4, v0, [Ljava/lang/Object;
+  const-string           v5, "Callback for getting adid can't be null"
+  invoke-interface       v3, v5, v4, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-static          v3, Lcom/adjust/sdk/Adjust;->extractApplicationContext(Landroid/content/Context;)Landroid/content/Context;
+  move-result-object     v3
+  invoke-virtual         v0, v3, v4, v5, v6, Lcom/adjust/sdk/AdjustInstance;->getAdidWithTimeout(Landroid/content/Context; J Lcom/adjust/sdk/OnAdidReadListener;)V
+  return-void            
+
+---- METHOD public static getAmazonAdId (Landroid/content/Context; Lcom/adjust/sdk/OnAmazonAdIdReadListener;)V ----
+  const/4                v0, 0
+  if-nez                 v2, +00eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v1
+  new-array              v2, v0, [Ljava/lang/Object;
+  const-string           v0, "onAmazonAdIdReadListener cannot be null"
+  invoke-interface       v1, v0, v2, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  invoke-static          v1, Lcom/adjust/sdk/Adjust;->extractApplicationContext(Landroid/content/Context;)Landroid/content/Context;
+  move-result-object     v1
+  if-nez                 v1, +00eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v1
+  new-array              v2, v0, [Ljava/lang/Object;
+  const-string           v0, "getAmazonAdId: null context"
+  invoke-interface       v1, v0, v2, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, v1, v2, Lcom/adjust/sdk/AdjustInstance;->getAmazonAdId(Landroid/content/Context; Lcom/adjust/sdk/OnAmazonAdIdReadListener;)V
+  return-void            
+
+---- METHOD public static getAttribution (Lcom/adjust/sdk/OnAttributionReadListener;)V ----
+  if-nez                 v2, +00fh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v2
+  const/4                v0, 0
+  new-array              v0, v0, [Ljava/lang/Object;
+  const-string           v1, "Callback for getting attribution can't be null"
+  invoke-interface       v2, v1, v0, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, v2, Lcom/adjust/sdk/AdjustInstance;->getAttribution(Lcom/adjust/sdk/OnAttributionReadListener;)V
+  return-void            
+
+---- METHOD public static getAttributionWithTimeout (Landroid/content/Context; J Lcom/adjust/sdk/OnAttributionReadListener;)V ----
+  const/4                v0, 0
+  if-nez                 v3, +00eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  new-array              v4, v0, [Ljava/lang/Object;
+  const-string           v5, "Context for getting attribution can't be null"
+  invoke-interface       v3, v5, v4, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  const-wide/16          v1, 0
+  cmp-long               v1, v4, v1
+  if-gez                 v1, +00eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  new-array              v4, v0, [Ljava/lang/Object;
+  const-string           v5, "Timeout value for getting attribution can't be negative"
+  invoke-interface       v3, v5, v4, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  if-nez                 v6, +00eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  new-array              v4, v0, [Ljava/lang/Object;
+  const-string           v5, "Callback for getting attribution can't be null"
+  invoke-interface       v3, v5, v4, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-static          v3, Lcom/adjust/sdk/Adjust;->extractApplicationContext(Landroid/content/Context;)Landroid/content/Context;
+  move-result-object     v3
+  invoke-virtual         v0, v3, v4, v5, v6, Lcom/adjust/sdk/AdjustInstance;->getAttributionWithTimeout(Landroid/content/Context; J Lcom/adjust/sdk/OnAttributionReadListener;)V
+  return-void            
+
+---- METHOD public static synchronized getDefaultInstance ()Lcom/adjust/sdk/AdjustInstance; ----
+  const-class            v0, Lcom/adjust/sdk/Adjust;
+  monitor-enter          v0
+  sget-object            v1, Lcom/adjust/sdk/Adjust;->defaultInstance Lcom/adjust/sdk/AdjustInstance;
+  if-nez                 v1, +00ch
+  new-instance           v1, Lcom/adjust/sdk/AdjustInstance;
+  invoke-direct          v1, Lcom/adjust/sdk/AdjustInstance;-><init>()V
+  sput-object            v1, Lcom/adjust/sdk/Adjust;->defaultInstance Lcom/adjust/sdk/AdjustInstance;
+  goto                   +3h
+  move-exception         v1
+  goto                   +5h
+  sget-object            v1, Lcom/adjust/sdk/Adjust;->defaultInstance Lcom/adjust/sdk/AdjustInstance;
+  monitor-exit           v0
+  return-object          v1
+  monitor-exit           v0
+  throw                  v1
+
+---- METHOD public static getGoogleAdId (Landroid/content/Context; Lcom/adjust/sdk/OnGoogleAdIdReadListener;)V ----
+  const/4                v0, 0
+  if-nez                 v2, +00eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v1
+  new-array              v2, v0, [Ljava/lang/Object;
+  const-string           v0, "onGoogleAdIdReadListener cannot be null"
+  invoke-interface       v1, v0, v2, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  if-nez                 v1, +00eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v1
+  new-array              v2, v0, [Ljava/lang/Object;
+  const-string           v0, "getGoogleAdId: null context"
+  invoke-interface       v1, v0, v2, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  invoke-virtual         v1, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+  move-result-object     v1
+  invoke-static          v1, v2, Lcom/adjust/sdk/Util;->getGoogleAdId(Landroid/content/Context; Lcom/adjust/sdk/OnGoogleAdIdReadListener;)V
+  return-void            
+
+---- METHOD public static getGooglePlayInstallReferrer (Landroid/content/Context; Lcom/adjust/sdk/OnGooglePlayInstallReferrerReadListener;)V ----
+  const/4                v0, 0
+  if-nez                 v2, +00eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v1
+  new-array              v2, v0, [Ljava/lang/Object;
+  const-string           v0, "onGooglePlayInstallReferrerReadListener cannot be null"
+  invoke-interface       v1, v0, v2, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  if-nez                 v1, +00eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v1
+  new-array              v2, v0, [Ljava/lang/Object;
+  const-string           v0, "null context"
+  invoke-interface       v1, v0, v2, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, v1, v2, Lcom/adjust/sdk/AdjustInstance;->getGooglePlayInstallReferrer(Landroid/content/Context; Lcom/adjust/sdk/OnGooglePlayInstallReferrerReadListener;)V
+  return-void            
+
+---- METHOD public static getLastDeeplink (Landroid/content/Context; Lcom/adjust/sdk/OnLastDeeplinkReadListener;)V ----
+  const/4                v0, 0
+  if-nez                 v2, +00eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v1
+  new-array              v2, v0, [Ljava/lang/Object;
+  const-string           v0, "onLastDeeplinkReadListener cannot be null"
+  invoke-interface       v1, v0, v2, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  if-nez                 v1, +00eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v1
+  new-array              v2, v0, [Ljava/lang/Object;
+  const-string           v0, "null context"
+  invoke-interface       v1, v0, v2, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, v1, v2, Lcom/adjust/sdk/AdjustInstance;->getLastDeeplink(Landroid/content/Context; Lcom/adjust/sdk/OnLastDeeplinkReadListener;)V
+  return-void            
+
+---- METHOD public static getSdkVersion (Lcom/adjust/sdk/OnSdkVersionReadListener;)V ----
+  if-nez                 v2, +00fh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v2
+  const/4                v0, 0
+  new-array              v0, v0, [Ljava/lang/Object;
+  const-string           v1, "onSdkVersionReadListener cannot be null"
+  invoke-interface       v2, v1, v0, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, v2, Lcom/adjust/sdk/AdjustInstance;->getSdkVersion(Lcom/adjust/sdk/OnSdkVersionReadListener;)V
+  return-void            
+
+---- METHOD public static getThirdPartySharingSettingsWithTimeout (Landroid/content/Context; J Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;)V ----
+  const/4                v0, 0
+  if-nez                 v7, +00eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v4
+  new-array              v5, v0, [Ljava/lang/Object;
+  const-string           v6, "Callback for getting third party sharing settings can't be null"
+  invoke-interface       v4, v6, v5, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  const/4                v1, 0
+  if-nez                 v4, +011h
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v4
+  new-array              v5, v0, [Ljava/lang/Object;
+  const-string           v6, "Context for getting third party sharing settings can't be null"
+  invoke-interface       v4, v6, v5, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  invoke-interface       v7, v1, Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;->onThirdPartySharingSettingsRead(Lcom/adjust/sdk/AdjustThirdPartySharingResult;)V
+  return-void            
+  const-wide/16          v2, 0
+  cmp-long               v2, v5, v2
+  if-gez                 v2, +011h
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v4
+  new-array              v5, v0, [Ljava/lang/Object;
+  const-string           v6, "Timeout value for getting third party sharing settings can't be negative"
+  invoke-interface       v4, v6, v5, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  invoke-interface       v7, v1, Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;->onThirdPartySharingSettingsRead(Lcom/adjust/sdk/AdjustThirdPartySharingResult;)V
+  return-void            
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-static          v4, Lcom/adjust/sdk/Adjust;->extractApplicationContext(Landroid/content/Context;)Landroid/content/Context;
+  move-result-object     v4
+  invoke-virtual         v0, v4, v5, v6, v7, Lcom/adjust/sdk/AdjustInstance;->getThirdPartySharingSettingsWithTimeout(Landroid/content/Context; J Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;)V
+  return-void            
+
+---- METHOD public static initSdk (Lcom/adjust/sdk/AdjustConfig;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, v1, Lcom/adjust/sdk/AdjustInstance;->initSdk(Lcom/adjust/sdk/AdjustConfig;)V
+  return-void            
+
+---- METHOD public static isAdjustUninstallDetectionPayload (Ljava/util/Map;)Z ----
+  invoke-static          v0, Lcom/adjust/sdk/Util;->isAdjustUninstallDetectionPayload(Ljava/util/Map;)Z
+  move-result            v0
+  return                 v0
+
+---- METHOD public static isEnabled (Landroid/content/Context; Lcom/adjust/sdk/OnIsEnabledListener;)V ----
+  const/4                v0, 0
+  if-nez                 v1, +00eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v1
+  new-array              v2, v0, [Ljava/lang/Object;
+  const-string           v0, "null context"
+  invoke-interface       v1, v0, v2, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  if-nez                 v2, +00eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v1
+  new-array              v2, v0, [Ljava/lang/Object;
+  const-string           v0, "Callback for getting isEnabled can't be null"
+  invoke-interface       v1, v0, v2, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-static          v1, Lcom/adjust/sdk/Adjust;->extractApplicationContext(Landroid/content/Context;)Landroid/content/Context;
+  move-result-object     v1
+  invoke-virtual         v0, v1, v2, Lcom/adjust/sdk/AdjustInstance;->isEnabled(Landroid/content/Context; Lcom/adjust/sdk/OnIsEnabledListener;)V
+  return-void            
+
+---- METHOD public static onPause ()V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, Lcom/adjust/sdk/AdjustInstance;->onPause()V
+  return-void            
+
+---- METHOD public static onResume ()V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, Lcom/adjust/sdk/AdjustInstance;->onResume()V
+  return-void            
+
+---- METHOD public static processAndResolveDeeplink (Lcom/adjust/sdk/AdjustDeeplink; Landroid/content/Context; Lcom/adjust/sdk/OnDeeplinkResolvedListener;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-static          v2, Lcom/adjust/sdk/Adjust;->extractApplicationContext(Landroid/content/Context;)Landroid/content/Context;
+  move-result-object     v2
+  invoke-virtual         v0, v1, v2, v3, Lcom/adjust/sdk/AdjustInstance;->processAndResolveDeeplink(Lcom/adjust/sdk/AdjustDeeplink; Landroid/content/Context; Lcom/adjust/sdk/OnDeeplinkResolvedListener;)V
+  return-void            
+
+---- METHOD public static processDeeplink (Lcom/adjust/sdk/AdjustDeeplink; Landroid/content/Context;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-static          v2, Lcom/adjust/sdk/Adjust;->extractApplicationContext(Landroid/content/Context;)Landroid/content/Context;
+  move-result-object     v2
+  invoke-virtual         v0, v1, v2, Lcom/adjust/sdk/AdjustInstance;->processDeeplink(Lcom/adjust/sdk/AdjustDeeplink; Landroid/content/Context;)V
+  return-void            
+
+---- METHOD public static removeGlobalCallbackParameter (Ljava/lang/String;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, v1, Lcom/adjust/sdk/AdjustInstance;->removeGlobalCallbackParameter(Ljava/lang/String;)V
+  return-void            
+
+---- METHOD public static removeGlobalCallbackParameters ()V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, Lcom/adjust/sdk/AdjustInstance;->removeGlobalCallbackParameters()V
+  return-void            
+
+---- METHOD public static removeGlobalPartnerParameter (Ljava/lang/String;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, v1, Lcom/adjust/sdk/AdjustInstance;->removeGlobalPartnerParameter(Ljava/lang/String;)V
+  return-void            
+
+---- METHOD public static removeGlobalPartnerParameters ()V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, Lcom/adjust/sdk/AdjustInstance;->removeGlobalPartnerParameters()V
+  return-void            
+
+---- METHOD public static setExternalDeviceIdInDelay (Ljava/lang/String;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, v1, Lcom/adjust/sdk/AdjustInstance;->setExternalDeviceIdInDelay(Ljava/lang/String;)V
+  return-void            
+
+---- METHOD public static setPushToken (Ljava/lang/String; Landroid/content/Context;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-static          v2, Lcom/adjust/sdk/Adjust;->extractApplicationContext(Landroid/content/Context;)Landroid/content/Context;
+  move-result-object     v2
+  invoke-virtual         v0, v1, v2, Lcom/adjust/sdk/AdjustInstance;->setPushToken(Ljava/lang/String; Landroid/content/Context;)V
+  return-void            
+
+---- METHOD public static setReferrer (Ljava/lang/String; Landroid/content/Context;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-static          v2, Lcom/adjust/sdk/Adjust;->extractApplicationContext(Landroid/content/Context;)Landroid/content/Context;
+  move-result-object     v2
+  invoke-virtual         v0, v1, v2, Lcom/adjust/sdk/AdjustInstance;->sendReferrer(Ljava/lang/String; Landroid/content/Context;)V
+  return-void            
+
+---- METHOD public static setTestOptions (Lcom/adjust/sdk/AdjustTestOptions;)V ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustTestOptions;->teardown Ljava/lang/Boolean;
+  if-eqz                 v0, +017h
+  invoke-virtual         v0, Ljava/lang/Boolean;->booleanValue()Z
+  move-result            v0
+  if-eqz                 v0, +011h
+  sget-object            v0, Lcom/adjust/sdk/Adjust;->defaultInstance Lcom/adjust/sdk/AdjustInstance;
+  if-eqz                 v0, +005h
+  invoke-virtual         v0, Lcom/adjust/sdk/AdjustInstance;->teardown()V
+  const/4                v0, 0
+  sput-object            v0, Lcom/adjust/sdk/Adjust;->defaultInstance Lcom/adjust/sdk/AdjustInstance;
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustTestOptions;->context Landroid/content/Context;
+  invoke-static          v0, Lcom/adjust/sdk/AdjustFactory;->teardown(Landroid/content/Context;)V
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, v1, Lcom/adjust/sdk/AdjustInstance;->setTestOptions(Lcom/adjust/sdk/AdjustTestOptions;)V
+  return-void            
+
+---- METHOD public static switchBackToOnlineMode ()V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, Lcom/adjust/sdk/AdjustInstance;->switchBackToOnlineMode()V
+  return-void            
+
+---- METHOD public static switchToOfflineMode ()V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, Lcom/adjust/sdk/AdjustInstance;->switchToOfflineMode()V
+  return-void            
+
+---- METHOD public static trackAdRevenue (Lcom/adjust/sdk/AdjustAdRevenue;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, v1, Lcom/adjust/sdk/AdjustInstance;->trackAdRevenue(Lcom/adjust/sdk/AdjustAdRevenue;)V
+  return-void            
+
+---- METHOD public static trackEvent (Lcom/adjust/sdk/AdjustEvent;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, v1, Lcom/adjust/sdk/AdjustInstance;->trackEvent(Lcom/adjust/sdk/AdjustEvent;)V
+  return-void            
+
+---- METHOD public static trackMeasurementConsent (Z)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, v1, Lcom/adjust/sdk/AdjustInstance;->trackMeasurementConsent(Z)V
+  return-void            
+
+---- METHOD public static trackPlayStoreSubscription (Lcom/adjust/sdk/AdjustPlayStoreSubscription;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, v1, Lcom/adjust/sdk/AdjustInstance;->trackPlayStoreSubscription(Lcom/adjust/sdk/AdjustPlayStoreSubscription;)V
+  return-void            
+
+---- METHOD public static trackThirdPartySharing (Lcom/adjust/sdk/AdjustThirdPartySharing;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, v1, Lcom/adjust/sdk/AdjustInstance;->trackThirdPartySharing(Lcom/adjust/sdk/AdjustThirdPartySharing;)V
+  return-void            
+
+---- METHOD public static verifyAndTrackPlayStorePurchase (Lcom/adjust/sdk/AdjustEvent; Lcom/adjust/sdk/OnPurchaseVerificationFinishedListener;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, v1, v2, Lcom/adjust/sdk/AdjustInstance;->verifyAndTrackPlayStorePurchase(Lcom/adjust/sdk/AdjustEvent; Lcom/adjust/sdk/OnPurchaseVerificationFinishedListener;)V
+  return-void            
+
+---- METHOD public static verifyPlayStorePurchase (Lcom/adjust/sdk/AdjustPlayStorePurchase; Lcom/adjust/sdk/OnPurchaseVerificationFinishedListener;)V ----
+  if-nez                 v2, +00fh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v1
+  const/4                v2, 0
+  new-array              v2, v2, [Ljava/lang/Object;
+  const-string           v0, "Purchase verification aborted because verification callback is null"
+  invoke-interface       v1, v0, v2, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, v1, v2, Lcom/adjust/sdk/AdjustInstance;->verifyPlayStorePurchase(Lcom/adjust/sdk/AdjustPlayStorePurchase; Lcom/adjust/sdk/OnPurchaseVerificationFinishedListener;)V
+  return-void            
+######################################################################

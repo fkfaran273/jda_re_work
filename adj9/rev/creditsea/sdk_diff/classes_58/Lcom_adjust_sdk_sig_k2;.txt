@@ -1,0 +1,55 @@
+# CLASS Lcom/adjust/sdk/sig/k2;
+FIELD public static final Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+FIELD public bridge Lcom/adjust/sdk/sig/g0;
+FIELD public bridge Ljava/lang/Object;
+
+---- METHOD static constructor <clinit>(()V)  ----
+  const-class            v0, Ljava/lang/Object;
+  const-string           v1, "b"
+  const-class            v2, Lcom/adjust/sdk/sig/k2;
+  invoke-static          v2, v0, v1, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->newUpdater(Ljava/lang/Class; Ljava/lang/Class; Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+  move-result-object     v0
+  sput-object            v0, Lcom/adjust/sdk/sig/k2;->c Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+  return-void            
+
+---- METHOD public constructor <init>((Lcom/adjust/sdk/sig/g0;)V)  ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/sig/k2;->a Lcom/adjust/sdk/sig/g0;
+  sget-object            v1, Lcom/adjust/sdk/sig/l3;->a Lcom/adjust/sdk/sig/l3;
+  iput-object            v1, v0, Lcom/adjust/sdk/sig/k2;->b Ljava/lang/Object;
+  return-void            
+
+---- METHOD public final getValue(()Ljava/lang/Object;)  ----
+  iget-object            v0, v4, Lcom/adjust/sdk/sig/k2;->b Ljava/lang/Object;
+  sget-object            v1, Lcom/adjust/sdk/sig/l3;->a Lcom/adjust/sdk/sig/l3;
+  if-eq                  v0, v1, +003h
+  return-object          v0
+  iget-object            v0, v4, Lcom/adjust/sdk/sig/k2;->a Lcom/adjust/sdk/sig/g0;
+  if-eqz                 v0, +018h
+  invoke-interface       v0, Lcom/adjust/sdk/sig/g0;->a()Ljava/lang/Object;
+  move-result-object     v0
+  sget-object            v2, Lcom/adjust/sdk/sig/k2;->c Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+  invoke-virtual         v2, v4, v1, v0, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object; Ljava/lang/Object; Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +006h
+  const/4                v1, 0
+  iput-object            v1, v4, Lcom/adjust/sdk/sig/k2;->a Lcom/adjust/sdk/sig/g0;
+  return-object          v0
+  invoke-virtual         v2, v4, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v3
+  if-eq                  v3, v1, -00eh
+  iget-object            v0, v4, Lcom/adjust/sdk/sig/k2;->b Ljava/lang/Object;
+  return-object          v0
+
+---- METHOD public final toString(()Ljava/lang/String;)  ----
+  iget-object            v0, v2, Lcom/adjust/sdk/sig/k2;->b Ljava/lang/Object;
+  sget-object            v1, Lcom/adjust/sdk/sig/l3;->a Lcom/adjust/sdk/sig/l3;
+  if-eq                  v0, v1, +00bh
+  invoke-virtual         v2, Lcom/adjust/sdk/sig/k2;->getValue()Ljava/lang/Object;
+  move-result-object     v0
+  invoke-static          v0, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+  const-string           v0, "Lazy value not initialized yet."
+  return-object          v0
+######################################################################

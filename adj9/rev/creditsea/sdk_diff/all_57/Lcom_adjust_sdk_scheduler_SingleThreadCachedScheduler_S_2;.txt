@@ -1,0 +1,30 @@
+# CLASS Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler$2;
+FIELD public final synthetic a J
+FIELD public final synthetic b Ljava/lang/Runnable;
+FIELD public final synthetic c Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler; J Ljava/lang/Runnable;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler$2;->c Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;
+  iput-wide              v2, v0, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler$2;->a J
+  iput-object            v4, v0, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler$2;->b Ljava/lang/Runnable;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-wide              v0, v3, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler$2;->a J
+  invoke-static          v0, v1, Ljava/lang/Thread;->sleep(J)V
+  goto                   +13h
+  move-exception         v0
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v1
+  invoke-virtual         v0, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object     v0
+  filled-new-array       v0, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v2, "Sleep delay exception: %s"
+  invoke-interface       v1, v2, v0, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+  iget-object            v0, v3, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler$2;->c Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;
+  iget-object            v1, v3, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler$2;->b Ljava/lang/Runnable;
+  invoke-virtual         v0, v1, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->submit(Ljava/lang/Runnable;)V
+  return-void            
+######################################################################

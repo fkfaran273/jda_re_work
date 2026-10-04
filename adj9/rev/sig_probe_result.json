@@ -1,0 +1,80 @@
+{
+ "unit": 1,
+ "gps": "d016e7e4-fb1c-4d0a-b619-db01f6a6a262",
+ "auid": "073ccff9-c71c-4987-a914-167666ff7c26",
+ "crafted_header_equals_genuine": true,
+ "runs": [
+  {
+   "tag": "A",
+   "label": "A  verbatim genuine",
+   "http": 400,
+   "verdict": "HTTP 400 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"ask_in\":7"
+  },
+  {
+   "tag": "C",
+   "label": "C  crafted blob same claims",
+   "http": 200,
+   "verdict": "wy7261z / eng=0001-01-01T00:00:00Z"
+  },
+  {
+   "tag": "A",
+   "label": "A  verbatim genuine",
+   "http": 400,
+   "verdict": "HTTP 400 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"ask_in\":7"
+  },
+  {
+   "tag": "D",
+   "label": "D  genuine hdr + crafted body",
+   "http": 200,
+   "verdict": "wy7261z / eng=0001-01-01T00:00:00Z"
+  },
+  {
+   "tag": "A",
+   "label": "A  verbatim genuine",
+   "http": 400,
+   "verdict": "HTTP 400 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"ask_in\":7"
+  },
+  {
+   "tag": "E",
+   "label": "E  crafted hdr + genuine body",
+   "http": 400,
+   "verdict": "HTTP 400 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"ask_in\":7"
+  },
+  {
+   "tag": "A",
+   "label": "A  verbatim genuine",
+   "http": 400,
+   "verdict": "HTTP 400 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"ask_in\":7"
+  },
+  {
+   "tag": "F",
+   "label": "F  genuine + body[0] bit flip",
+   "http": 200,
+   "verdict": "wy7261z / eng=0001-01-01T00:00:00Z"
+  },
+  {
+   "tag": "A",
+   "label": "A  verbatim genuine",
+   "http": 400,
+   "verdict": "HTTP 400 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"ask_in\":7"
+  },
+  {
+   "tag": "G",
+   "label": "G  genuine + hdr[0] bit flip",
+   "http": 200,
+   "verdict": "wy7261z / eng=0001-01-01T00:00:00Z"
+  },
+  {
+   "tag": "A",
+   "label": "A  verbatim genuine",
+   "http": 400,
+   "verdict": "HTTP 400 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"ask_in\":7"
+  },
+  {
+   "tag": "B",
+   "label": "B  verbatim + fresh auid",
+   "http": 200,
+   "verdict": "wy7261z / eng=0001-01-01T00:00:00Z"
+  }
+ ]
+}

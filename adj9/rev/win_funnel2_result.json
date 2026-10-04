@@ -1,0 +1,30 @@
+{
+ "log": [
+  "gps=6a3435f4-0089-463b-ae1e-4acab897f30a",
+  "click 302 referrer=adjust_reftag=cXs2XW1xp5jIY&utm_source=VKM+Digital+Yeni&utm_",
+  "signed session     sec=1790625288 S=3dd3f899 st=exit-clean 192B",
+  "SESSION 200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"09a2a55c94d3afd660986efa9bfce23a\",\"ask_in\":2000}",
+  "signed click       sec=1790625303 S=aa80c237 st=exit-clean 192B",
+  "SDK_CLICK 200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"09a2a55c94d3afd660986efa9bfce23a\"}",
+  "signed attribution sec=1790625320 S=bb4acd35 st=exit-clean 192B",
+  "ATTRIBUTION 200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"09a2a55c94d3afd660986efa9bfce23a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"in"
+ ],
+ "gps": "6a3435f4-0089-463b-ae1e-4acab897f30a",
+ "click": {
+  "http": 302,
+  "referrer": "adjust_reftag=cXs2XW1xp5jIY&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0929&utm_term=penti_generic"
+ },
+ "session": {
+  "http": 200,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"09a2a55c94d3afd660986efa9bfce23a\",\"ask_in\":2000}"
+ },
+ "sdk_click": {
+  "http": 200,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"09a2a55c94d3afd660986efa9bfce23a\"}"
+ },
+ "attribution": {
+  "http": 200,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"09a2a55c94d3afd660986efa9bfce23a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-28T19:55:05Z\",\"first_session_time\":\"2026-09-28T19:55:05Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ "verdict": "Organic"
+}

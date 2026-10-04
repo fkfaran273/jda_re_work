@@ -1,0 +1,10 @@
+# CLASS Lcom/adjust/sdk/AdjustInstance$6;
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run (Lcom/adjust/sdk/ActivityHandler;)V ----
+  invoke-virtual         v1, Lcom/adjust/sdk/ActivityHandler;->removeGlobalCallbackParametersI()V
+  return-void            
+######################################################################

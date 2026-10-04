@@ -1,0 +1,120 @@
+# CLASS Lcom/adjust/sdk/sig/m2;
+FIELD public final Lcom/adjust/sdk/sig/l2;
+FIELD public final Ljava/lang/String;
+FIELD public final Ljava/util/Set;
+
+---- METHOD public constructor <init>((Lcom/adjust/sdk/sig/l2;)V)  ----
+  invoke-direct          v4, Ljava/lang/Object;-><init>()V
+  iput-object            v5, v4, Lcom/adjust/sdk/sig/m2;->a Lcom/adjust/sdk/sig/l2;
+  new-instance           v0, Ljava/lang/StringBuilder;
+  invoke-direct          v0, Ljava/lang/StringBuilder;-><init>()V
+  invoke-interface       v5, Lcom/adjust/sdk/sig/l2;->b()Ljava/lang/String;
+  move-result-object     v1
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  const/16               v1, 63
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+  invoke-virtual         v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v0
+  iput-object            v0, v4, Lcom/adjust/sdk/sig/m2;->b Ljava/lang/String;
+  instance-of            v0, v5, Lcom/adjust/sdk/sig/h;
+  if-eqz                 v0, +009h
+  check-cast             v5, Lcom/adjust/sdk/sig/h;
+  invoke-interface       v5, Lcom/adjust/sdk/sig/h;->c()Ljava/util/Set;
+  move-result-object     v5
+  goto                   +1ch
+  new-instance           v0, Ljava/util/HashSet;
+  invoke-interface       v5, Lcom/adjust/sdk/sig/l2;->e()I
+  move-result            v1
+  invoke-direct          v0, v1, Ljava/util/HashSet;-><init>(I)V
+  invoke-interface       v5, Lcom/adjust/sdk/sig/l2;->e()I
+  move-result            v1
+  const/4                v2, 0
+  if-ge                  v2, v1, +00ch
+  invoke-interface       v5, v2, Lcom/adjust/sdk/sig/l2;->a(I)Ljava/lang/String;
+  move-result-object     v3
+  invoke-virtual         v0, v3, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
+  add-int/lit8           v2, v2, 1
+  goto                   -bh
+  move-object            v5, v0
+  iput-object            v5, v4, Lcom/adjust/sdk/sig/m2;->c Ljava/util/Set;
+  return-void            
+
+---- METHOD public final a((I)Ljava/lang/String;)  ----
+  iget-object            v0, v1, Lcom/adjust/sdk/sig/m2;->a Lcom/adjust/sdk/sig/l2;
+  invoke-interface       v0, v2, Lcom/adjust/sdk/sig/l2;->a(I)Ljava/lang/String;
+  move-result-object     v2
+  return-object          v2
+
+---- METHOD public final a(()Z)  ----
+  iget-object            v0, v1, Lcom/adjust/sdk/sig/m2;->a Lcom/adjust/sdk/sig/l2;
+  invoke-interface       v0, Lcom/adjust/sdk/sig/l2;->a()Z
+  move-result            v0
+  return                 v0
+
+---- METHOD public final b((I)Lcom/adjust/sdk/sig/l2;)  ----
+  iget-object            v0, v1, Lcom/adjust/sdk/sig/m2;->a Lcom/adjust/sdk/sig/l2;
+  invoke-interface       v0, v2, Lcom/adjust/sdk/sig/l2;->b(I)Lcom/adjust/sdk/sig/l2;
+  move-result-object     v2
+  return-object          v2
+
+---- METHOD public final b(()Ljava/lang/String;)  ----
+  iget-object            v0, v1, Lcom/adjust/sdk/sig/m2;->b Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public final c(()Ljava/util/Set;)  ----
+  iget-object            v0, v1, Lcom/adjust/sdk/sig/m2;->c Ljava/util/Set;
+  return-object          v0
+
+---- METHOD public final d(()Lcom/adjust/sdk/sig/p2;)  ----
+  iget-object            v0, v1, Lcom/adjust/sdk/sig/m2;->a Lcom/adjust/sdk/sig/l2;
+  invoke-interface       v0, Lcom/adjust/sdk/sig/l2;->d()Lcom/adjust/sdk/sig/p2;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public final e(()I)  ----
+  iget-object            v0, v1, Lcom/adjust/sdk/sig/m2;->a Lcom/adjust/sdk/sig/l2;
+  invoke-interface       v0, Lcom/adjust/sdk/sig/l2;->e()I
+  move-result            v0
+  return                 v0
+
+---- METHOD public final equals((Ljava/lang/Object;)Z)  ----
+  const/4                v0, 1
+  if-ne                  v3, v4, +003h
+  return                 v0
+  instance-of            v1, v4, Lcom/adjust/sdk/sig/m2;
+  const/4                v2, 0
+  if-nez                 v1, +003h
+  return                 v2
+  iget-object            v1, v3, Lcom/adjust/sdk/sig/m2;->a Lcom/adjust/sdk/sig/l2;
+  check-cast             v4, Lcom/adjust/sdk/sig/m2;
+  iget-object            v4, v4, Lcom/adjust/sdk/sig/m2;->a Lcom/adjust/sdk/sig/l2;
+  invoke-static          v1, v4, Lcom/adjust/sdk/sig/g1;->a(Ljava/lang/Object; Ljava/lang/Object;)Z
+  move-result            v4
+  if-nez                 v4, +003h
+  return                 v2
+  return                 v0
+
+---- METHOD public final getAnnotations(()Ljava/util/List;)  ----
+  iget-object            v0, v1, Lcom/adjust/sdk/sig/m2;->a Lcom/adjust/sdk/sig/l2;
+  invoke-interface       v0, Lcom/adjust/sdk/sig/l2;->getAnnotations()Ljava/util/List;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public final hashCode(()I)  ----
+  iget-object            v0, v1, Lcom/adjust/sdk/sig/m2;->a Lcom/adjust/sdk/sig/l2;
+  invoke-virtual         v0, Ljava/lang/Object;->hashCode()I
+  move-result            v0
+  mul-int/lit8           v0, v0, 31
+  return                 v0
+
+---- METHOD public final toString(()Ljava/lang/String;)  ----
+  new-instance           v0, Ljava/lang/StringBuilder;
+  invoke-direct          v0, Ljava/lang/StringBuilder;-><init>()V
+  iget-object            v1, v2, Lcom/adjust/sdk/sig/m2;->a Lcom/adjust/sdk/sig/l2;
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  const/16               v1, 63
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+  invoke-virtual         v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+######################################################################

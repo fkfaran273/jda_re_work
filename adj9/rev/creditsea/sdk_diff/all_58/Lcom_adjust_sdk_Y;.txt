@@ -1,0 +1,64 @@
+# CLASS Lcom/adjust/sdk/y;
+FIELD public final synthetic a I
+FIELD public final synthetic b Ljava/util/ArrayList;
+FIELD public final synthetic c Lcom/adjust/sdk/AdjustThirdPartySharingResult;
+
+---- METHOD public synthetic constructor <init> (Ljava/util/ArrayList; Lcom/adjust/sdk/AdjustThirdPartySharingResult; I)V ----
+  iput                   v3, v0, Lcom/adjust/sdk/y;->a I
+  iput-object            v1, v0, Lcom/adjust/sdk/y;->b Ljava/util/ArrayList;
+  iput-object            v2, v0, Lcom/adjust/sdk/y;->c Lcom/adjust/sdk/AdjustThirdPartySharingResult;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget                   v0, v6, Lcom/adjust/sdk/y;->a I
+  packed-switch          v0, +000005eh
+  iget-object            v0, v6, Lcom/adjust/sdk/y;->b Ljava/util/ArrayList;
+  invoke-virtual         v0, Ljava/util/ArrayList;->size()I
+  move-result            v1
+  const/4                v2, 0
+  if-ge                  v2, v1, +025h
+  invoke-virtual         v0, v2, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+  move-result-object     v3
+  add-int/lit8           v2, v2, 1
+  check-cast             v3, Lcom/adjust/sdk/AdjustTimeoutCallback;
+  if-eqz                 v3, -00ah
+  invoke-virtual         v3, Lcom/adjust/sdk/AdjustTimeoutCallback;->getTimeoutTimer()Lcom/adjust/sdk/scheduler/TimerOnce;
+  move-result-object     v4
+  if-eqz                 v4, +005h
+  invoke-virtual         v4, Lcom/adjust/sdk/scheduler/TimerOnce;->cancel()V
+  invoke-virtual         v3, Lcom/adjust/sdk/AdjustTimeoutCallback;->getOnThirdPartySharingSettingsReadListener()Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;
+  move-result-object     v4
+  if-eqz                 v4, +007h
+  iget-object            v5, v6, Lcom/adjust/sdk/y;->c Lcom/adjust/sdk/AdjustThirdPartySharingResult;
+  invoke-interface       v4, v5, Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;->onThirdPartySharingSettingsRead(Lcom/adjust/sdk/AdjustThirdPartySharingResult;)V
+  const/4                v4, 0
+  invoke-virtual         v3, v4, Lcom/adjust/sdk/AdjustTimeoutCallback;->setOnThirdPartySharingSettingsReadListener(Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;)V
+  goto                   -24h
+  return-void            
+  iget-object            v0, v6, Lcom/adjust/sdk/y;->b Ljava/util/ArrayList;
+  invoke-virtual         v0, Ljava/util/ArrayList;->size()I
+  move-result            v1
+  const/4                v2, 0
+  if-ge                  v2, v1, +025h
+  invoke-virtual         v0, v2, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+  move-result-object     v3
+  add-int/lit8           v2, v2, 1
+  check-cast             v3, Lcom/adjust/sdk/AdjustTimeoutCallback;
+  if-eqz                 v3, -00ah
+  invoke-virtual         v3, Lcom/adjust/sdk/AdjustTimeoutCallback;->getTimeoutTimer()Lcom/adjust/sdk/scheduler/TimerOnce;
+  move-result-object     v4
+  if-eqz                 v4, +005h
+  invoke-virtual         v4, Lcom/adjust/sdk/scheduler/TimerOnce;->cancel()V
+  invoke-virtual         v3, Lcom/adjust/sdk/AdjustTimeoutCallback;->getOnThirdPartySharingSettingsReadListener()Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;
+  move-result-object     v4
+  if-eqz                 v4, +007h
+  iget-object            v5, v6, Lcom/adjust/sdk/y;->c Lcom/adjust/sdk/AdjustThirdPartySharingResult;
+  invoke-interface       v4, v5, Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;->onThirdPartySharingSettingsRead(Lcom/adjust/sdk/AdjustThirdPartySharingResult;)V
+  const/4                v4, 0
+  invoke-virtual         v3, v4, Lcom/adjust/sdk/AdjustTimeoutCallback;->setOnThirdPartySharingSettingsReadListener(Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;)V
+  goto                   -24h
+  return-void            
+  nop                    
+  packed-switch-payload  0
+######################################################################

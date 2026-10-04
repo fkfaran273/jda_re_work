@@ -1,0 +1,61 @@
+--- 
++++ 
+@@ -13,2 +13,3 @@
+ new-instance vX, Ljava/util/concurrent/ThreadPoolExecutor;
++sget-object vX, Ljava/util/concurrent/TimeUnit;->SECONDS Ljava/util/concurrent/TimeUnit;
+ new-instance vX, Ljava/util/concurrent/SynchronousQueue;
+@@ -17,8 +18,9 @@
+ invoke-direct vX, vX, Lcom/adjust/sdk/scheduler/ThreadFactoryWrapper;-><init>(Ljava/lang/String;)V
+-new-instance vX, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler$1;
+-invoke-direct vX, vX, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler$1;-><init>(Ljava/lang/String;)V
+-const vX, 2147483647
++new-instance vX, Lt3/a;
++const/4 vX, 0
++invoke-direct vX, vX, vX, Lt3/a;-><init>(Ljava/lang/String; I)V
+ const-wide/16 vX, 60
+ const/4 vX, 0
+-sget-object vX, Ljava/util/concurrent/TimeUnit;->SECONDS Ljava/util/concurrent/TimeUnit;
++const vX, 2147483647
++move-object vX, vX
+ invoke-direct/range vX ... vX, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(I I J Ljava/util/concurrent/TimeUnit; Ljava/util/concurrent/BlockingQueue; Ljava/util/concurrent/ThreadFactory; Ljava/util/concurrent/RejectedExecutionHandler;)V
+@@ -26,18 +28,21 @@
+ return-void
+----- METHOD public static synthetic access$000 (Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler; Ljava/lang/Runnable;)V ----
++---- METHOD public static bridge synthetic a (Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;)Z ----
++iget-boolean vX, vX, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->isTeardown Z
++return vX
++---- METHOD public static bridge synthetic b (Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;)Ljava/util/List; ----
++iget-object vX, vX, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->queue Ljava/util/List;
++return-object vX
++---- METHOD public static bridge synthetic c (Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;)V ----
++const/4 vX, 0
++iput-boolean vX, vX, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->isThreadProcessing Z
++return-void
++---- METHOD public static bridge synthetic d (Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler; Ljava/lang/Runnable;)V ----
+ invoke-direct vX, vX, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->tryExecuteRunnable(Ljava/lang/Runnable;)V
+ return-void
+----- METHOD public static synthetic access$100 (Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;)Ljava/util/List; ----
+-iget-object vX, vX, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->queue Ljava/util/List;
+-return-object vX
+----- METHOD public static synthetic access$200 (Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;)Z ----
+-iget-boolean vX, vX, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->isTeardown Z
+-return vX
+----- METHOD public static synthetic access$302 (Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler; Z)Z ----
+-iput-boolean vX, vX, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->isThreadProcessing Z
+-return vX
+ ---- METHOD private processQueue (Ljava/lang/Runnable;)V ----
+ iget-object vX, vX, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->threadPoolExecutor Ljava/util/concurrent/ThreadPoolExecutor;
+-new-instance vX, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler$3;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler$3;-><init>(Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler; Ljava/lang/Runnable;)V
++new-instance vX, LH/i;
++const/16 vX, 16
++const/4 vX, 0
++invoke-direct vX, vX, vX, vX, vX, LH/i;-><init>(I Ljava/lang/Object; Ljava/lang/Object; Z)V
+ invoke-virtual vX, vX, Ljava/util/concurrent/AbstractExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
+@@ -70,4 +75,4 @@
+ iget-object vX, vX, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->threadPoolExecutor Ljava/util/concurrent/ThreadPoolExecutor;
+-new-instance vX, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler$2;
+-invoke-direct vX, vX, vX, vX, vX, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler$2;-><init>(Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler; J Ljava/lang/Runnable;)V
++new-instance vX, Lio/sentry/android/core/x;
++invoke-direct vX, vX, vX, vX, vX, Lio/sentry/android/core/x;-><init>(Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler; J Ljava/lang/Runnable;)V
+ invoke-virtual vX, vX, Ljava/util/concurrent/AbstractExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;

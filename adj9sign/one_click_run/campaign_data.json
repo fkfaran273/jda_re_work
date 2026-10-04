@@ -1,0 +1,19 @@
+{
+  "cert_sha1": "fad0f10d60f93c17937b2f1eb6c09691ae7d74bd",
+  "app_token": "jut9tib0eeps",
+  "package_name": "com.penti.app",
+  "client_sdk": "android5.7.0",
+  "adj_signing_id": "1500000",
+  "headers_id": "10",
+  "native_version": "5.0.0",
+  "adj_verification": "KlcAG2cbAAsKSl1KVi0FGiJbDHMI",
+  "algorithm": "adj9",
+  "sdk_version": "5.7.0",
+  "click_link": "https://app.adjust.com/1sd1lk6a?campaign=AH&adgroup=vkm_0930&creative=penti_generic&click_id={gaid}&idfa={gaid}&gps_adid={gaid}",
+  "head_phase": "2b",
+  "call_delays_seconds": [
+    15,
+    15,
+    15
+  ]
+}

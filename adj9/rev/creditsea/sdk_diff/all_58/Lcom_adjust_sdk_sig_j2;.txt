@@ -1,0 +1,40 @@
+# CLASS Lcom/adjust/sdk/sig/j2;
+FIELD public final a Ljava/lang/Throwable;
+
+---- METHOD public constructor <init> (Ljava/lang/Throwable;)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/sig/j2;->a Ljava/lang/Throwable;
+  return-void            
+
+---- METHOD public final equals (Ljava/lang/Object;)Z ----
+  instance-of            v0, v2, Lcom/adjust/sdk/sig/j2;
+  if-eqz                 v0, +010h
+  iget-object            v0, v1, Lcom/adjust/sdk/sig/j2;->a Ljava/lang/Throwable;
+  check-cast             v2, Lcom/adjust/sdk/sig/j2;
+  iget-object            v2, v2, Lcom/adjust/sdk/sig/j2;->a Ljava/lang/Throwable;
+  invoke-virtual         v0, v2, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+  move-result            v2
+  if-eqz                 v2, +004h
+  const/4                v2, 1
+  return                 v2
+  const/4                v2, 0
+  return                 v2
+
+---- METHOD public final hashCode ()I ----
+  iget-object            v0, v1, Lcom/adjust/sdk/sig/j2;->a Ljava/lang/Throwable;
+  invoke-virtual         v0, Ljava/lang/Object;->hashCode()I
+  move-result            v0
+  return                 v0
+
+---- METHOD public final toString ()Ljava/lang/String; ----
+  new-instance           v0, Ljava/lang/StringBuilder;
+  const-string           v1, "Failure("
+  invoke-direct          v0, v1, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  iget-object            v1, v2, Lcom/adjust/sdk/sig/j2;->a Ljava/lang/Throwable;
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  const/16               v1, 41
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+  invoke-virtual         v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+######################################################################

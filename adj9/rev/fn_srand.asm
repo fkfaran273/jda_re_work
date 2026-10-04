@@ -1,0 +1,134 @@
+FDE function: 0x12cad4 .. 0x12cce8 size 0x214
+0x12cad4  movk     x9, #0xe104, lsl #48
+0x12cad8  str      w8, [x23]
+0x12cadc  b        #0x12c978
+0x12cae0  sub      x4, x29, #0x20
+0x12cae4  mov      x0, x23
+0x12cae8  ldr      x1, [sp, #0x30]
+0x12caec  nop      
+0x12caf0  adr      x3, #0x12c654
+0x12caf4  ldur     x2, [x29, #-0x28]
+0x12caf8  bl       #0x12aa48   ; -> None
+0x12cafc  ldr      w8, [x23]
+0x12cb00  cmp      w8, #0
+0x12cb04  mov      x8, #0x2807
+0x12cb08  movk     x8, #0xc9ce, lsl #16
+0x12cb0c  movk     x8, #0x58a8, lsl #32
+0x12cb10  movk     x8, #0x4339, lsl #48
+0x12cb14  csel     x9, x20, x8, eq
+0x12cb18  b        #0x12c978
+0x12cb1c  ldur     x8, [x29, #-0x20]
+0x12cb20  mov      w1, #1
+0x12cb24  add      x0, x8, #1
+0x12cb28  bl       #0x148b90   ; -> calloc
+0x12cb2c  cmp      x0, #0
+0x12cb30  stur     x0, [x29, #-0x10]
+0x12cb34  csel     x9, x24, x25, eq
+0x12cb38  b        #0x12c978
+0x12cb3c  ldr      x8, [sp, #8]
+0x12cb40  ldr      x8, [x8, #0x28]
+0x12cb44  ldur     x9, [x29, #-8]
+0x12cb48  cmp      x8, x9
+0x12cb4c  b.ne     #0x12cb70
+0x12cb50  ldp      x20, x19, [sp, #0xb0]
+0x12cb54  ldp      x22, x21, [sp, #0xa0]
+0x12cb58  ldp      x24, x23, [sp, #0x90]
+0x12cb5c  ldp      x26, x25, [sp, #0x80]
+0x12cb60  ldp      x28, x27, [sp, #0x70]
+0x12cb64  ldp      x29, x30, [sp, #0x60]
+0x12cb68  add      sp, sp, #0xc0
+0x12cb6c  ret      
+0x12cb70  bl       #0x148a10   ; -> __stack_chk_fail
+0x12cb74  stp      x29, x30, [sp, #-0x60]!
+0x12cb78  stp      x28, x27, [sp, #0x10]
+0x12cb7c  stp      x26, x25, [sp, #0x20]
+0x12cb80  stp      x24, x23, [sp, #0x30]
+0x12cb84  stp      x22, x21, [sp, #0x40]
+0x12cb88  stp      x20, x19, [sp, #0x50]
+0x12cb8c  mov      x29, sp
+0x12cb90  sub      sp, sp, #0x250
+0x12cb94  stp      x0, x1, [sp, #0x78]
+0x12cb98  mrs      x8, tpidr_el0
+0x12cb9c  str      x8, [sp, #0x38]
+0x12cba0  sub      x0, x29, #0x40
+0x12cba4  ldr      x8, [x8, #0x28]
+0x12cba8  mov      x19, x2
+0x12cbac  stur     x8, [x29, #-0x10]
+0x12cbb0  stp      xzr, xzr, [x29, #-0x20]
+0x12cbb4  stp      xzr, xzr, [x29, #-0x30]
+0x12cbb8  stur     wzr, [x29, #-0x34]
+0x12cbbc  bl       #0x148d20   ; -> time
+0x12cbc0  bl       #0x148d30   ; -> srand
+0x12cbc4  add      x8, x19, #0x20
+0x12cbc8  add      x2, x19, #0x50
+0x12cbcc  sub      x0, x29, #0x18
+0x12cbd0  mov      w1, #0x90
+0x12cbd4  str      x8, [sp, #0x58]
+0x12cbd8  bl       #0x147d3c   ; -> None
+0x12cbdc  str      x0, [sp, #0x60]
+0x12cbe0  add      x10, x19, #0x30
+0x12cbe4  add      x9, x19, #0xf0
+0x12cbe8  ldur     w8, [x29, #-0x18]
+0x12cbec  mov      x6, #0xc59
+0x12cbf0  movk     x6, #0x6b1, lsl #16
+0x12cbf4  stp      x9, x10, [sp, #0x48]
+0x12cbf8  add      x9, x19, #0x100
+0x12cbfc  mov      x10, #0xf039
+0x12cc00  cmp      w8, #0
+0x12cc04  movk     x10, #0x4336, lsl #16
+0x12cc08  movk     x6, #0xace6, lsl #32
+0x12cc0c  str      x9, [sp, #0x40]
+0x12cc10  mov      x9, #0xde08
+0x12cc14  movk     x9, #0xc909, lsl #16
+0x12cc18  movk     x10, #0xfc62, lsl #32
+0x12cc1c  movk     x9, #0x3343, lsl #32
+0x12cc20  movk     x10, #0xd078, lsl #48
+0x12cc24  movk     x9, #0xa7a4, lsl #48
+0x12cc28  movk     x6, #0x316a, lsl #48
+0x12cc2c  csel     x8, x10, x9, eq
+0x12cc30  stp      x19, x8, [sp, #0x88]
+0x12cc34  stp      x9, x8, [x29, #-0x68]
+0x12cc38  ldur     x8, [x29, #-0x48]
+0x12cc3c  mov      x25, x5
+0x12cc40  mov      x19, x28
+0x12cc44  mov      x28, x26
+0x12cc48  mov      x22, x21
+0x12cc4c  stp      x8, x7, [x29, #-0x78]
+0x12cc50  mov      x8, #0x47de
+0x12cc54  movk     x8, #0xf36d, lsl #16
+0x12cc58  mov      x20, x27
+0x12cc5c  movk     x8, #0xe159, lsl #32
+0x12cc60  stp      x3, x4, [x29, #-0x88]
+0x12cc64  movk     x8, #0x8b44, lsl #48
+0x12cc68  stp      x1, x2, [x29, #-0x98]
+0x12cc6c  cmp      x6, x8
+0x12cc70  stp      x17, x30, [x29, #-0xa8]
+0x12cc74  stp      x15, x16, [x29, #-0xb8]
+0x12cc78  stp      x13, x14, [x29, #-0xc8]
+0x12cc7c  stur     x12, [x29, #-0xd0]
+0x12cc80  stp      x11, x10, [x29, #-0x58]
+0x12cc84  b.eq     #0x12d744
+0x12cc88  mov      x8, #0x70c6
+0x12cc8c  mov      x0, x6
+0x12cc90  movk     x8, #0x8723, lsl #16
+0x12cc94  movk     x8, #0x9926, lsl #32
+0x12cc98  movk     x8, #0x99f3, lsl #48
+0x12cc9c  cmp      x6, x8
+0x12cca0  b.eq     #0x12daec
+0x12cca4  mov      x8, #0x3f0f
+0x12cca8  movk     x8, #0x7643, lsl #16
+0x12ccac  movk     x8, #0xf97a, lsl #32
+0x12ccb0  movk     x8, #0x9e6d, lsl #48
+0x12ccb4  cmp      x0, x8
+0x12ccb8  b.eq     #0x12d264
+0x12ccbc  mov      x8, #0x33c
+0x12ccc0  movk     x8, #0x58ee, lsl #16
+0x12ccc4  movk     x8, #0x22f3, lsl #32
+0x12ccc8  movk     x8, #0xa520, lsl #48
+0x12cccc  cmp      x0, x8
+0x12ccd0  b.eq     #0x12d1a0
+0x12ccd4  mov      x8, #0xde08
+0x12ccd8  movk     x8, #0xc909, lsl #16
+0x12ccdc  movk     x8, #0x3343, lsl #32
+0x12cce0  movk     x8, #0xa7a4, lsl #48
+0x12cce4  cmp      x0, x8

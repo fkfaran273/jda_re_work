@@ -1,0 +1,27 @@
+{
+ "gps": "d016e7e4-fb1c-4d0a-b619-db01f6a6a262",
+ "runs": [
+  {
+   "tag": "attempt1 real creative",
+   "creative": "penti_generic",
+   "click_http": 302,
+   "referrer": "adjust_reftag=cYSGT8JtP0ABu&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+   "click_epoch": 1789467236,
+   "auid": "1e66d33b-d9be-410c-bdab-f123ec764833",
+   "attribution": "{\"tracker_token\":\"24pxw9rl\",\"tracker_name\":\"VKM Digital Yeni::AH::vkm_0926_36::penti_generic\",\"network\":\"VKM Digital Yeni\",\"campaign\":\"AH\",\"adgroup\":\"vkm_0926_36\",\"creative\":\"penti_generic\",\"engagement_time\":\"2026-09-14T10:25:58Z\",\"installed_at\":\"2026-09-14T12:23:08Z\",\"first_session_time\":\"2026-09-14T12:23:08Z\",\"is_reattributed\":false,\"is_redownload_install\":false}t\u0000\u0010VKM Digital Yenit\u00000VKM Digital Yeni::AH::vkm_0926_36::penti_generict\u0000\b24pxw9rlx"
+  },
+  {
+   "tag": "attempt2 marker creative",
+   "creative": "cline_probe",
+   "click_http": 302,
+   "referrer": "adjust_reftag=c0Gf2NInO0yJj&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=cline_probe",
+   "click_epoch": 1789467277,
+   "auid": "82a07985-440b-4cd5-a427-cda0dc7c4845",
+   "attribution": "{\"tracker_token\":\"24pxw9rl\",\"tracker_name\":\"VKM Digital Yeni::AH::vkm_0926_36::penti_generic\",\"network\":\"VKM Digital Yeni\",\"campaign\":\"AH\",\"adgroup\":\"vkm_0926_36\",\"creative\":\"penti_generic\",\"engagement_time\":\"2026-09-14T10:25:58Z\",\"installed_at\":\"2026-09-14T12:23:08Z\",\"first_session_time\":\"2026-09-14T12:23:08Z\",\"is_reattributed\":false,\"is_redownload_install\":false}t\u0000\u0010VKM Digital Yenit\u00000VKM Digital Yeni::AH::vkm_0926_36::penti_generict\u0000\b24pxw9rlx"
+  }
+ ],
+ "pre": {
+  "auid": "7aeed4a8-5f4b-43e6-b204-0869a1f8594a",
+  "attribution": "{\"tracker_token\":\"24pxw9rl\",\"tracker_name\":\"VKM Digital Yeni::AH::vkm_0926_36::penti_generic\",\"network\":\"VKM Digital Yeni\",\"campaign\":\"AH\",\"adgroup\":\"vkm_0926_36\",\"creative\":\"penti_generic\",\"engagement_time\":\"2026-09-14T10:25:58Z\",\"installed_at\":\"2026-09-14T12:23:08Z\",\"first_session_time\":\"2026-09-14T12:23:08Z\",\"is_reattributed\":false,\"is_redownload_install\":false}t\u0000\u0010VKM Digital Yenit\u00000VKM Digital Yeni::AH::vkm_0926_36::penti_generict\u0000\b24pxw9rlx"
+ }
+}

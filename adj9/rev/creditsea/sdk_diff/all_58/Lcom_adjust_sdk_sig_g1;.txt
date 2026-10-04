@@ -1,0 +1,36 @@
+# CLASS Lcom/adjust/sdk/sig/g1;
+
+---- METHOD public static a (Ljava/lang/RuntimeException; Ljava/lang/String;)Ljava/lang/Throwable; ----
+  invoke-virtual         v5, Ljava/lang/Throwable;->getStackTrace()[Ljava/lang/StackTraceElement;
+  move-result-object     v0
+  array-length           v1, v0
+  const/4                v2, -1
+  const/4                v3, 0
+  if-ge                  v3, v1, +012h
+  aget-object            v4, v0, v3
+  invoke-virtual         v4, Ljava/lang/StackTraceElement;->getClassName()Ljava/lang/String;
+  move-result-object     v4
+  invoke-virtual         v6, v4, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v4
+  if-eqz                 v4, +003h
+  move                   v2, v3
+  add-int/lit8           v3, v3, 1
+  goto                   -11h
+  add-int/lit8           v2, v2, 1
+  invoke-static          v0, v2, v1, Ljava/util/Arrays;->copyOfRange([Ljava/lang/Object; I I)[Ljava/lang/Object;
+  move-result-object     v6
+  check-cast             v6, [Ljava/lang/StackTraceElement;
+  invoke-virtual         v5, v6, Ljava/lang/Throwable;->setStackTrace([Ljava/lang/StackTraceElement;)V
+  return-object          v5
+
+---- METHOD public static a (Ljava/lang/Object; Ljava/lang/Object;)Z ----
+  if-nez                 v0, +008h
+  if-nez                 v1, +004h
+  const/4                v0, 1
+  return                 v0
+  const/4                v0, 0
+  return                 v0
+  invoke-virtual         v0, v1, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  return                 v0
+######################################################################

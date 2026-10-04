@@ -1,0 +1,34 @@
+# CLASS Lcom/adjust/sdk/AdjustRemoteTrigger;
+FIELD private final label Ljava/lang/String;
+FIELD private final payload Lorg/json/JSONObject;
+
+---- METHOD public constructor <init> (Ljava/lang/String; Lorg/json/JSONObject;)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustRemoteTrigger;->label Ljava/lang/String;
+  iput-object            v2, v0, Lcom/adjust/sdk/AdjustRemoteTrigger;->payload Lorg/json/JSONObject;
+  return-void            
+
+---- METHOD public getLabel ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustRemoteTrigger;->label Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getPayload ()Lorg/json/JSONObject; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustRemoteTrigger;->payload Lorg/json/JSONObject;
+  return-object          v0
+
+---- METHOD public toString ()Ljava/lang/String; ----
+  new-instance           v0, Ljava/lang/StringBuilder;
+  const-string           v1, "AdjustRemoteTrigger{label='"
+  invoke-direct          v0, v1, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  iget-object            v1, v2, Lcom/adjust/sdk/AdjustRemoteTrigger;->label Ljava/lang/String;
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  const-string           v1, "', payload="
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  iget-object            v1, v2, Lcom/adjust/sdk/AdjustRemoteTrigger;->payload Lorg/json/JSONObject;
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  const/16               v1, 125
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+  invoke-virtual         v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+######################################################################

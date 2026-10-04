@@ -1,0 +1,23 @@
+# CLASS Lcom/adjust/sdk/IAttributionHandler;
+
+---- METHOD public abstract checkSdkClickResponse (Lcom/adjust/sdk/SdkClickResponseData;)V ----
+  (no code)
+
+---- METHOD public abstract checkSessionResponse (Lcom/adjust/sdk/SessionResponseData;)V ----
+  (no code)
+
+---- METHOD public abstract getAttribution ()V ----
+  (no code)
+
+---- METHOD public abstract init (Lcom/adjust/sdk/IActivityHandler; Z Lcom/adjust/sdk/network/IActivityPackageSender;)V ----
+  (no code)
+
+---- METHOD public abstract pauseSending ()V ----
+  (no code)
+
+---- METHOD public abstract resumeSending ()V ----
+  (no code)
+
+---- METHOD public abstract teardown ()V ----
+  (no code)
+######################################################################

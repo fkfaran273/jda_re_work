@@ -1,0 +1,242 @@
+[
+ {
+  "sig": 0,
+  "hyp": "penti_law",
+  "len": 378,
+  "exact": false,
+  "block": false,
+  "ndiff": 143
+ },
+ {
+  "sig": 0,
+  "hyp": "ro_vals",
+  "len": 366,
+  "exact": false,
+  "block": false,
+  "ndiff": 144
+ },
+ {
+  "sig": 0,
+  "hyp": "ro_vals_x2",
+  "len": 732,
+  "exact": false,
+  "block": false,
+  "ndiff": 143
+ },
+ {
+  "sig": 0,
+  "hyp": "ro_kv_eq",
+  "len": 687,
+  "exact": false,
+  "block": false,
+  "ndiff": 144
+ },
+ {
+  "sig": 0,
+  "hyp": "ro_kv_amp",
+  "len": 712,
+  "exact": false,
+  "block": false,
+  "ndiff": 143
+ },
+ {
+  "sig": 0,
+  "hyp": "ro_kv_1_2",
+  "len": 711,
+  "exact": false,
+  "block": false,
+  "ndiff": 142
+ },
+ {
+  "sig": 0,
+  "hyp": "ro_kv_concat",
+  "len": 662,
+  "exact": false,
+  "block": false,
+  "ndiff": 144
+ },
+ {
+  "sig": 0,
+  "hyp": "ro_vals_plus_digest",
+  "len": 366,
+  "exact": false,
+  "block": false,
+  "ndiff": 144
+ },
+ {
+  "sig": 0,
+  "hyp": "sorted_vals_subset",
+  "len": 471,
+  "exact": false,
+  "block": false,
+  "ndiff": 144
+ },
+ {
+  "sig": 0,
+  "hyp": "ro_vals_pinned",
+  "len": 373,
+  "exact": false,
+  "block": false,
+  "ndiff": 144
+ },
+ {
+  "sig": 1,
+  "hyp": "penti_law",
+  "len": 391,
+  "exact": false,
+  "block": false,
+  "ndiff": 144
+ },
+ {
+  "sig": 1,
+  "hyp": "ro_vals",
+  "len": 502,
+  "exact": false,
+  "block": false,
+  "ndiff": 144
+ },
+ {
+  "sig": 1,
+  "hyp": "ro_vals_x2",
+  "len": 1004,
+  "exact": false,
+  "block": false,
+  "ndiff": 142
+ },
+ {
+  "sig": 1,
+  "hyp": "ro_kv_eq",
+  "len": 958,
+  "exact": false,
+  "block": false,
+  "ndiff": 143
+ },
+ {
+  "sig": 1,
+  "hyp": "ro_kv_amp",
+  "len": 993,
+  "exact": false,
+  "block": false,
+  "ndiff": 143
+ },
+ {
+  "sig": 1,
+  "hyp": "ro_kv_1_2",
+  "len": 992,
+  "exact": false,
+  "block": false,
+  "ndiff": 144
+ },
+ {
+  "sig": 1,
+  "hyp": "ro_kv_concat",
+  "len": 923,
+  "exact": false,
+  "block": false,
+  "ndiff": 144
+ },
+ {
+  "sig": 1,
+  "hyp": "ro_vals_plus_digest",
+  "len": 502,
+  "exact": false,
+  "block": false,
+  "ndiff": 144
+ },
+ {
+  "sig": 1,
+  "hyp": "sorted_vals_subset",
+  "len": 597,
+  "exact": false,
+  "block": false,
+  "ndiff": 142
+ },
+ {
+  "sig": 1,
+  "hyp": "ro_vals_pinned",
+  "len": 509,
+  "exact": false,
+  "block": false,
+  "ndiff": 144
+ },
+ {
+  "sig": 2,
+  "hyp": "penti_law",
+  "len": 264,
+  "exact": true,
+  "block": true,
+  "ndiff": 0
+ },
+ {
+  "sig": 2,
+  "hyp": "ro_vals",
+  "len": 250,
+  "exact": false,
+  "block": false,
+  "ndiff": 144
+ },
+ {
+  "sig": 2,
+  "hyp": "ro_vals_x2",
+  "len": 500,
+  "exact": false,
+  "block": false,
+  "ndiff": 144
+ },
+ {
+  "sig": 2,
+  "hyp": "ro_kv_eq",
+  "len": 468,
+  "exact": false,
+  "block": false,
+  "ndiff": 144
+ },
+ {
+  "sig": 2,
+  "hyp": "ro_kv_amp",
+  "len": 486,
+  "exact": false,
+  "block": false,
+  "ndiff": 143
+ },
+ {
+  "sig": 2,
+  "hyp": "ro_kv_1_2",
+  "len": 485,
+  "exact": false,
+  "block": false,
+  "ndiff": 144
+ },
+ {
+  "sig": 2,
+  "hyp": "ro_kv_concat",
+  "len": 450,
+  "exact": false,
+  "block": false,
+  "ndiff": 143
+ },
+ {
+  "sig": 2,
+  "hyp": "ro_vals_plus_digest",
+  "len": 250,
+  "exact": false,
+  "block": false,
+  "ndiff": 144
+ },
+ {
+  "sig": 2,
+  "hyp": "sorted_vals_subset",
+  "len": 303,
+  "exact": false,
+  "block": false,
+  "ndiff": 144
+ },
+ {
+  "sig": 2,
+  "hyp": "ro_vals_pinned",
+  "len": 257,
+  "exact": false,
+  "block": false,
+  "ndiff": 143
+ }
+]

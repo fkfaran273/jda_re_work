@@ -1,0 +1,24 @@
+# CLASS Lcom/adjust/sdk/AdjustPurchaseVerificationResult;
+FIELD private final code I
+FIELD private final message Ljava/lang/String;
+FIELD private final verificationStatus Ljava/lang/String;
+
+---- METHOD public constructor <init> (Ljava/lang/String; I Ljava/lang/String;)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustPurchaseVerificationResult;->verificationStatus Ljava/lang/String;
+  iput                   v2, v0, Lcom/adjust/sdk/AdjustPurchaseVerificationResult;->code I
+  iput-object            v3, v0, Lcom/adjust/sdk/AdjustPurchaseVerificationResult;->message Ljava/lang/String;
+  return-void            
+
+---- METHOD public getCode ()I ----
+  iget                   v0, v1, Lcom/adjust/sdk/AdjustPurchaseVerificationResult;->code I
+  return                 v0
+
+---- METHOD public getMessage ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustPurchaseVerificationResult;->message Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getVerificationStatus ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustPurchaseVerificationResult;->verificationStatus Ljava/lang/String;
+  return-object          v0
+######################################################################

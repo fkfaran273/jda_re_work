@@ -1,0 +1,179 @@
+# CLASS Lcom/adjust/sdk/sig/z;
+FIELD public static final Lcom/adjust/sdk/sig/z;
+FIELD public static final Lcom/adjust/sdk/sig/d2;
+
+---- METHOD static constructor <clinit>(()V)  ----
+  new-instance           v0, Lcom/adjust/sdk/sig/z;
+  invoke-direct          v0, Lcom/adjust/sdk/sig/z;-><init>()V
+  sput-object            v0, Lcom/adjust/sdk/sig/z;->a Lcom/adjust/sdk/sig/z;
+  new-instance           v1, Lcom/adjust/sdk/sig/d2;
+  invoke-direct          v1, v0, Lcom/adjust/sdk/sig/d2;-><init>(Lcom/adjust/sdk/sig/z;)V
+  iget-object            v0, v1, Lcom/adjust/sdk/sig/d2;->c [Ljava/lang/String;
+  iget                   v2, v1, Lcom/adjust/sdk/sig/d2;->b I
+  const/4                v3, 1
+  add-int/2addr          v2, v3
+  iput                   v2, v1, Lcom/adjust/sdk/sig/d2;->b I
+  const-string           v4, "os_name"
+  aput-object            v4, v0, v2
+  iget-object            v0, v1, Lcom/adjust/sdk/sig/d2;->e [Z
+  aput-boolean           v3, v0, v2
+  iget-object            v0, v1, Lcom/adjust/sdk/sig/d2;->d [Ljava/util/List;
+  const/4                v3, 0
+  aput-object            v3, v0, v2
+  if-nez                 v2, +01dh
+  new-instance           v0, Ljava/util/HashMap;
+  invoke-direct          v0, Ljava/util/HashMap;-><init>()V
+  iget-object            v2, v1, Lcom/adjust/sdk/sig/d2;->c [Ljava/lang/String;
+  array-length           v2, v2
+  const/4                v3, 0
+  if-ge                  v3, v2, +010h
+  iget-object            v4, v1, Lcom/adjust/sdk/sig/d2;->c [Ljava/lang/String;
+  aget-object            v4, v4, v3
+  invoke-static          v3, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v5
+  invoke-virtual         v0, v4, v5, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  add-int/lit8           v3, v3, 1
+  goto                   -fh
+  iput-object            v0, v1, Lcom/adjust/sdk/sig/d2;->f Ljava/util/Map;
+  sput-object            v1, Lcom/adjust/sdk/sig/z;->b Lcom/adjust/sdk/sig/d2;
+  return-void            
+
+---- METHOD public constructor <init>(()V)  ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final a(()Lcom/adjust/sdk/sig/l2;)  ----
+  sget-object            v0, Lcom/adjust/sdk/sig/z;->b Lcom/adjust/sdk/sig/d2;
+  return-object          v0
+
+---- METHOD public final a((Lcom/adjust/sdk/sig/v2; Ljava/lang/Object;)V)  ----
+  check-cast             v10, Lcom/adjust/sdk/sig/a0;
+  sget-object            v10, Lcom/adjust/sdk/sig/z;->b Lcom/adjust/sdk/sig/d2;
+  sget-object            v0, Lcom/adjust/sdk/sig/e3;->a Lcom/adjust/sdk/sig/e3;
+  sget-object            v1, Lcom/adjust/sdk/sig/f3;->a Lcom/adjust/sdk/sig/f3;
+  const/4                v2, 0
+  if-eq                  v0, v1, +050h
+  sget-object            v1, Lcom/adjust/sdk/sig/g3;->a Lcom/adjust/sdk/sig/g3;
+  if-eq                  v0, v1, +005h
+  sget-object            v1, Lcom/adjust/sdk/sig/p3;->c Lcom/adjust/sdk/sig/p3;
+  goto                   +4ah
+  invoke-virtual         v10, v2, Lcom/adjust/sdk/sig/d2;->b(I)Lcom/adjust/sdk/sig/l2;
+  move-result-object     v1
+  invoke-static          v1, Lcom/adjust/sdk/sig/q3;->a(Lcom/adjust/sdk/sig/l2;)Lcom/adjust/sdk/sig/l2;
+  move-result-object     v1
+  invoke-interface       v1, Lcom/adjust/sdk/sig/l2;->d()Lcom/adjust/sdk/sig/p2;
+  move-result-object     v3
+  instance-of            v4, v3, Lcom/adjust/sdk/sig/f2;
+  if-nez                 v4, +036h
+  sget-object            v4, Lcom/adjust/sdk/sig/o2;->a Lcom/adjust/sdk/sig/o2;
+  invoke-static          v3, v4, Lcom/adjust/sdk/sig/g1;->a(Ljava/lang/Object; Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +003h
+  goto                   +2ch
+  new-instance           v9, Lcom/adjust/sdk/sig/m1;
+  invoke-interface       v1, Lcom/adjust/sdk/sig/l2;->b()Ljava/lang/String;
+  move-result-object     v10
+  invoke-interface       v1, Lcom/adjust/sdk/sig/l2;->d()Lcom/adjust/sdk/sig/p2;
+  move-result-object     v0
+  new-instance           v1, Ljava/lang/StringBuilder;
+  const-string           v2, "Value of type '"
+  invoke-direct          v1, v2, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v1, v10, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  const-string           v10, "' can't be used in JSON as a key in the map. It should have either primitive or enum kind, but its kind is '"
+  invoke-virtual         v1, v10, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual         v1, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  const/16               v10, 39
+  invoke-virtual         v1, v10, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+  invoke-virtual         v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v10
+  const-string           v0, "Use 'allowStructuredMapKeys = true' in 'Json {}' builder to convert such maps to [key1, value1, key2, value2,...] arrays."
+  invoke-direct          v9, v10, v0, Lcom/adjust/sdk/sig/m1;-><init>(Ljava/lang/String; Ljava/lang/String;)V
+  throw                  v9
+  sget-object            v1, Lcom/adjust/sdk/sig/p3;->e Lcom/adjust/sdk/sig/p3;
+  goto                   +3h
+  sget-object            v1, Lcom/adjust/sdk/sig/p3;->d Lcom/adjust/sdk/sig/p3;
+  iget-char              v3, v1, Lcom/adjust/sdk/sig/p3;->a C
+  iget-object            v4, v9, Lcom/adjust/sdk/sig/v2;->a Lcom/adjust/sdk/sig/x;
+  invoke-virtual         v4, v3, Lcom/adjust/sdk/sig/x;->a(C)V
+  iget-object            v3, v9, Lcom/adjust/sdk/sig/v2;->a Lcom/adjust/sdk/sig/x;
+  const/4                v4, 1
+  iput-boolean           v4, v3, Lcom/adjust/sdk/sig/x;->b Z
+  iget-object            v5, v9, Lcom/adjust/sdk/sig/v2;->f Ljava/lang/String;
+  const/16               v6, 58
+  if-eqz                 v5, +01bh
+  iget-object            v7, v9, Lcom/adjust/sdk/sig/v2;->g Ljava/lang/String;
+  if-nez                 v7, +004h
+  const-string           v7, "com.adjust.sdk.sig.755f89ae93acbe52c30f8a09"
+  invoke-virtual         v3, Lcom/adjust/sdk/sig/x;->a()V
+  invoke-virtual         v9, v5, Lcom/adjust/sdk/sig/v2;->a(Ljava/lang/String;)V
+  iget-object            v3, v9, Lcom/adjust/sdk/sig/v2;->a Lcom/adjust/sdk/sig/x;
+  invoke-virtual         v3, v6, Lcom/adjust/sdk/sig/x;->a(C)V
+  invoke-virtual         v9, v7, Lcom/adjust/sdk/sig/v2;->a(Ljava/lang/String;)V
+  const/4                v3, 0
+  iput-object            v3, v9, Lcom/adjust/sdk/sig/v2;->f Ljava/lang/String;
+  iput-object            v3, v9, Lcom/adjust/sdk/sig/v2;->g Ljava/lang/String;
+  iget-object            v3, v9, Lcom/adjust/sdk/sig/v2;->c Lcom/adjust/sdk/sig/p3;
+  if-ne                  v3, v1, +003h
+  goto                   +19h
+  iget-object            v3, v9, Lcom/adjust/sdk/sig/v2;->d [Lcom/adjust/sdk/sig/v2;
+  invoke-virtual         v1, Ljava/lang/Enum;->ordinal()I
+  move-result            v5
+  aget-object            v3, v3, v5
+  if-eqz                 v3, +004h
+  move-object            v9, v3
+  goto                   +dh
+  new-instance           v3, Lcom/adjust/sdk/sig/v2;
+  iget-object            v5, v9, Lcom/adjust/sdk/sig/v2;->a Lcom/adjust/sdk/sig/x;
+  iget-object            v7, v9, Lcom/adjust/sdk/sig/v2;->b Lcom/adjust/sdk/sig/i1;
+  iget-object            v9, v9, Lcom/adjust/sdk/sig/v2;->d [Lcom/adjust/sdk/sig/v2;
+  invoke-direct          v3, v5, v7, v1, v9, Lcom/adjust/sdk/sig/v2;-><init>(Lcom/adjust/sdk/sig/x; Lcom/adjust/sdk/sig/i1; Lcom/adjust/sdk/sig/p3; [Lcom/adjust/sdk/sig/v2;)V
+  goto                   -dh
+  iget-object            v1, v9, Lcom/adjust/sdk/sig/v2;->e Lcom/adjust/sdk/sig/l1;
+  iget-boolean           v1, v1, Lcom/adjust/sdk/sig/l1;->a Z
+  if-eqz                 v1, +058h
+  sget-object            v1, Lcom/adjust/sdk/sig/x2;->a Lcom/adjust/sdk/sig/x2;
+  iget-object            v3, v9, Lcom/adjust/sdk/sig/v2;->c Lcom/adjust/sdk/sig/p3;
+  invoke-virtual         v3, Ljava/lang/Enum;->ordinal()I
+  move-result            v3
+  const/16               v5, 44
+  if-eq                  v3, v4, +039h
+  const/4                v4, 2
+  if-eq                  v3, v4, +023h
+  const/4                v4, 3
+  if-eq                  v3, v4, +041h
+  iget-object            v3, v9, Lcom/adjust/sdk/sig/v2;->a Lcom/adjust/sdk/sig/x;
+  iget-boolean           v4, v3, Lcom/adjust/sdk/sig/x;->b Z
+  if-nez                 v4, +005h
+  invoke-virtual         v3, v5, Lcom/adjust/sdk/sig/x;->a(C)V
+  iget-object            v3, v9, Lcom/adjust/sdk/sig/v2;->a Lcom/adjust/sdk/sig/x;
+  invoke-virtual         v3, Lcom/adjust/sdk/sig/x;->a()V
+  invoke-static          v0, v0, Lcom/adjust/sdk/sig/g1;->a(Ljava/lang/Object; Ljava/lang/Object;)Z
+  iget-object            v10, v10, Lcom/adjust/sdk/sig/d2;->c [Ljava/lang/String;
+  aget-object            v10, v10, v2
+  invoke-virtual         v9, v10, Lcom/adjust/sdk/sig/v2;->a(Ljava/lang/String;)V
+  iget-object            v10, v9, Lcom/adjust/sdk/sig/v2;->a Lcom/adjust/sdk/sig/x;
+  invoke-virtual         v10, v6, Lcom/adjust/sdk/sig/x;->a(C)V
+  goto                   +22h
+  iget-object            v10, v9, Lcom/adjust/sdk/sig/v2;->a Lcom/adjust/sdk/sig/x;
+  iget-boolean           v0, v10, Lcom/adjust/sdk/sig/x;->b Z
+  if-nez                 v0, +00bh
+  invoke-virtual         v10, v5, Lcom/adjust/sdk/sig/x;->a(C)V
+  iget-object            v10, v9, Lcom/adjust/sdk/sig/v2;->a Lcom/adjust/sdk/sig/x;
+  invoke-virtual         v10, Lcom/adjust/sdk/sig/x;->a()V
+  goto                   +13h
+  invoke-virtual         v10, Lcom/adjust/sdk/sig/x;->a()V
+  goto                   +fh
+  iget-object            v10, v9, Lcom/adjust/sdk/sig/v2;->a Lcom/adjust/sdk/sig/x;
+  iget-boolean           v0, v10, Lcom/adjust/sdk/sig/x;->b Z
+  if-nez                 v0, +005h
+  invoke-virtual         v10, v5, Lcom/adjust/sdk/sig/x;->a(C)V
+  iget-object            v10, v9, Lcom/adjust/sdk/sig/v2;->a Lcom/adjust/sdk/sig/x;
+  invoke-virtual         v10, Lcom/adjust/sdk/sig/x;->a()V
+  const-string           v10, "android"
+  invoke-virtual         v9, v1, v10, Lcom/adjust/sdk/sig/v2;->a(Lcom/adjust/sdk/sig/r1; Ljava/lang/Object;)V
+  iget-object            v10, v9, Lcom/adjust/sdk/sig/v2;->a Lcom/adjust/sdk/sig/x;
+  iput-boolean           v2, v10, Lcom/adjust/sdk/sig/x;->b Z
+  iget-object            v9, v9, Lcom/adjust/sdk/sig/v2;->c Lcom/adjust/sdk/sig/p3;
+  iget-char              v9, v9, Lcom/adjust/sdk/sig/p3;->b C
+  invoke-virtual         v10, v9, Lcom/adjust/sdk/sig/x;->a(C)V
+  return-void            

@@ -1,0 +1,10 @@
+{
+ "identity": "gps=94ebc9a2-63ed-4bc0-b7d4-0fab1d798b31 auid=4277ceea-3495-47af-9ca0-4837040a1b96",
+ "ip_check": "103.28.252.151",
+ "click": "302 reftag=adjust_reftag=c2aVuxWlZIETB&utm_source=VKM+Digital",
+ "session/mint": "exit-clean #10=360B blob=192B",
+ "session/send": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"d9a377db0da052c2be8d8d84593369ec\",\"ask_in\":2000}",
+ "sdk_click/send": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"d9a377db0da052c2be8d8d84593369ec\"}",
+ "gaid_set": "8f62c35f-24f0-4297-9463-1050c01e0585 -> 94ebc9a2-63ed-4bc0-b7d4-0fab1d798b31",
+ "verdict": "none"
+}

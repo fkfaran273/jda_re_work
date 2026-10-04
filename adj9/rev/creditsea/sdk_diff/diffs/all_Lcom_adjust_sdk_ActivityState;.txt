@@ -1,0 +1,145 @@
+--- 
++++ 
+@@ -49,2 +49,3 @@
+ new-instance vX, Ljava/io/ObjectStreamField;
++move-object vX, vX
+ const-string/jumbo uuid
+@@ -53,6 +54,8 @@
+ new-instance vX, Ljava/io/ObjectStreamField;
++move-object vX, vX
++sget-object vX, Ljava/lang/Boolean;->TYPE Ljava/lang/Class;
+ const-string "enabled"
+-sget-object vX, Ljava/lang/Boolean;->TYPE Ljava/lang/Class;
+-invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-new-instance vX, Ljava/io/ObjectStreamField;
++invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
++new-instance vX, Ljava/io/ObjectStreamField;
++move-object vX, vX
+ const-string "isGdprForgotten"
+@@ -60,15 +63,16 @@
+ new-instance vX, Ljava/io/ObjectStreamField;
++move-object vX, vX
+ const-string "askingAttribution"
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object vX, vX
+-new-instance vX, Ljava/io/ObjectStreamField;
++new-instance vX, Ljava/io/ObjectStreamField;
++move-object vX, vX
++sget-object vX, Ljava/lang/Integer;->TYPE Ljava/lang/Class;
+ const-string "eventCount"
+-sget-object vX, Ljava/lang/Integer;->TYPE Ljava/lang/Class;
+-invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object vX, vX
+-new-instance vX, Ljava/io/ObjectStreamField;
++invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
++new-instance vX, Ljava/io/ObjectStreamField;
++move-object vX, vX
+ const-string/jumbo sessionCount
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object vX, vX
+-new-instance vX, Ljava/io/ObjectStreamField;
++new-instance vX, Ljava/io/ObjectStreamField;
++move-object vX, vX
+ const-string/jumbo subsessionCount
+@@ -76,11 +80,12 @@
+ new-instance vX, Ljava/io/ObjectStreamField;
++move-object vX, vX
++sget-object vX, Ljava/lang/Long;->TYPE Ljava/lang/Class;
+ const-string/jumbo sessionLength
+-sget-object vX, Ljava/lang/Long;->TYPE Ljava/lang/Class;
+-invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object vX, vX
+-new-instance vX, Ljava/io/ObjectStreamField;
++invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
++new-instance vX, Ljava/io/ObjectStreamField;
++move-object vX, vX
+ const-string/jumbo timeSpent
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object vX, vX
+-new-instance vX, Ljava/io/ObjectStreamField;
++new-instance vX, Ljava/io/ObjectStreamField;
++move-object vX, vX
+ const-string "lastActivity"
+@@ -88,6 +93,8 @@
+ new-instance vX, Ljava/io/ObjectStreamField;
++move-object vX, vX
+ const-string "lastInterval"
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object vX, vX
+-new-instance vX, Ljava/io/ObjectStreamField;
++new-instance vX, Ljava/io/ObjectStreamField;
++move-object vX, vX
++move-object/from16 vX, vX
+ const-string "orderIds"
+@@ -96,8 +103,10 @@
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object vX, vX
+-new-instance vX, Ljava/io/ObjectStreamField;
++new-instance vX, Ljava/io/ObjectStreamField;
++move-object vX, vX
+ const-string/jumbo pushToken
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object vX, vX
+-new-instance vX, Ljava/io/ObjectStreamField;
++new-instance vX, Ljava/io/ObjectStreamField;
++move-object/from16 vX, vX
++move-object/from16 vX, vX
++move-object vX, vX
+ move-object/from16 vX, vX
+@@ -105,4 +114,6 @@
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object vX, vX
+-new-instance vX, Ljava/io/ObjectStreamField;
++new-instance vX, Ljava/io/ObjectStreamField;
++move-object/from16 vX, vX
++move-object/from16 vX, vX
++move-object vX, vX
+ move-object/from16 vX, vX
+@@ -112,2 +123,5 @@
+ move-object/from16 vX, vX
++move-object/from16 vX, vX
++move-object vX, vX
++move-object/from16 vX, vX
+ const-string "installBegin"
+@@ -157,2 +171,3 @@
+ new-instance vX, Ljava/io/ObjectStreamField;
++move-object/from16 vX, vX
+ const-string "clickTimeXiaomi"
+@@ -212,2 +227,3 @@
+ new-instance vX, Ljava/io/ObjectStreamField;
++move-object/from16 vX, vX
+ const-string "clickTimeMeta"
+@@ -215,32 +231,5 @@
+ new-instance vX, Ljava/io/ObjectStreamField;
++move-object/from16 vX, vX
+ const-string "isClickMeta"
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+ move-object/from16 vX, vX

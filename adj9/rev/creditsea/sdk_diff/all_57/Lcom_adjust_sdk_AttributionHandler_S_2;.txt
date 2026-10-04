@@ -1,0 +1,17 @@
+# CLASS Lcom/adjust/sdk/AttributionHandler$2;
+FIELD public final synthetic a Lcom/adjust/sdk/AttributionHandler;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/AttributionHandler;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AttributionHandler$2;->a Lcom/adjust/sdk/AttributionHandler;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v3, Lcom/adjust/sdk/AttributionHandler$2;->a Lcom/adjust/sdk/AttributionHandler;
+  const-string/jumbo     v1, sdk
+  invoke-static          v0, v1, Lcom/adjust/sdk/AttributionHandler;->access$102(Lcom/adjust/sdk/AttributionHandler; Ljava/lang/String;)Ljava/lang/String;
+  iget-object            v0, v3, Lcom/adjust/sdk/AttributionHandler$2;->a Lcom/adjust/sdk/AttributionHandler;
+  const-wide/16          v1, 0
+  invoke-static          v0, v1, v2, Lcom/adjust/sdk/AttributionHandler;->access$200(Lcom/adjust/sdk/AttributionHandler; J)V
+  return-void            
+######################################################################

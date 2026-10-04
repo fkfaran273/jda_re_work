@@ -1,0 +1,17 @@
+{
+ "gps": "e7262a88-b19a-41ec-a76c-7f122fc266f2",
+ "auid": "dd73c232-3e08-42e7-8dca-d3cdcecba7c6",
+ "url": "https://app.adjust.com/attribution?gps_adid=e7262a88-b19a-41ec-a76c-7f122fc266f2&android_uuid=dd73c232-3e08-42e7-8dca-d3cdcecba7c6&gps_adid_src=service&gps_adid_attempt=1&api_level=31&app_version=3.13.9&app_token=jut9tib0eeps&os_name=android&os_version=12&device_name=moto+g42&device_type=phone&environment=production&package_name=com.penti.app&created_at=2026-09-17T17%3A04%3A14.525Z%2B0530&sent_at=2026-09-17T17%3A04%3A14.525Z%2B0530&installed_at=2026-09-14T17%3A52%3A12.431Z%2B0530&updated_at=2026-09-14T17%3A52%3A12.431Z%2B0530&session_count=1&tracking_enabled=1&initiated_by=backend&needs_response_details=1&attribution_deeplink=1&offline_mode_enabled=0&device_manufacturer=motorola&hardware_name=S2SE32.28-28-4&os_build=S2SE32.28-28-4&language=tr&cpu_type=arm64-v8a&display_width=1080&display_height=2237&screen_size=normal&screen_format=long&screen_density=high&connectivity_type=1&ui_mode=1&foreground=1&initiating_package_name=com.android.vending&store_name_from_system=com.android.vending",
+ "runs": [
+  {
+   "label": "M1 minted blob verbatim",
+   "http": 200,
+   "verdict": "wy7261z / eng=0001-01-01T00:00:00Z"
+  },
+  {
+   "label": "M2 minted blob verbatim",
+   "http": 200,
+   "verdict": "wy7261z / eng=0001-01-01T00:00:00Z"
+  }
+ ]
+}

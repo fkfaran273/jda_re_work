@@ -1,0 +1,4 @@
+total 192B blobs: 30
+
+pairwise common-prefix (bytes) vs time delta (ms):
+  cp= 16 dt=    376ms  cap\oracle_run4.log  cap\oracle_run4.log

@@ -1,0 +1,5 @@
+# CLASS Lcom/adjust/sdk/OnPurchaseVerificationFinishedListener;
+
+---- METHOD public abstract onVerificationFinished (Lcom/adjust/sdk/AdjustPurchaseVerificationResult;)V ----
+  (no code)
+######################################################################

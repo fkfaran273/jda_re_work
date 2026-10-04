@@ -1,0 +1,17 @@
+{
+ "gps": "8b517171-7b3b-4299-8e70-ae053824e63d",
+ "auid": "5fd242af-469a-44a1-91a8-3447d7c1ef95",
+ "referrer": "adjust_reftag=cDio4ZXu5ibgl&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+ "click": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f6f0e80555415c6db4defe00ead91fdc\"}"
+ ],
+ "session": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f6f0e80555415c6db4defe00ead91fdc\",\"ask_in\":2000}"
+ ],
+ "attr": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f6f0e80555415c6db4defe00ead91fdc\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-14T05:01:23Z\",\"first_session_time\":\"2026-09-14T05:01:23Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ ]
+}

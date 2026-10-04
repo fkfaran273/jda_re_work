@@ -1,0 +1,1223 @@
+{
+ "session": "pid 12438 / vm_full.json / vm_mem (aligned)",
+ "rounds": [
+  {
+   "ctx": 475981013712,
+   "writer": 470747738808,
+   "node_pass0": 474101043920,
+   "node_pass1": 474101104048,
+   "hits": [
+    {
+     "kind": "emit",
+     "last_j": 35,
+     "last_v": 879089205,
+     "sink": 474369892960
+    },
+    {
+     "kind": "emit",
+     "last_j": 4,
+     "last_v": 2927457469,
+     "sink": 474370215568
+    },
+    {
+     "kind": "emit",
+     "last_j": 3,
+     "last_v": 0,
+     "sink": 474370216576
+    },
+    {
+     "kind": "emit",
+     "last_j": 7,
+     "last_v": 2010891900,
+     "sink": 474370215040
+    },
+    {
+     "kind": "emit",
+     "last_j": 0,
+     "last_v": 1498553629,
+     "sink": 474370216816
+    },
+    {
+     "kind": "emit",
+     "last_j": 0,
+     "last_v": 360,
+     "sink": 474370216096
+    },
+    {
+     "kind": "emit",
+     "last_j": 89,
+     "last_v": 774909488,
+     "sink": 474370195936
+    },
+    {
+     "kind": "emit",
+     "last_j": 0,
+     "last_v": 0,
+     "sink": 474370214944
+    },
+    {
+     "kind": "emit",
+     "last_j": 0,
+     "last_v": 0,
+     "sink": 474370214944
+    },
+    {
+     "kind": "empty",
+     "sink": 474369897424,
+     "carry_j": 0,
+     "carry_v": 0
+    },
+    {
+     "kind": "empty",
+     "sink": 474369897424,
+     "carry_j": 0,
+     "carry_v": 0
+    }
+   ],
+   "descs": [
+    {
+     "build_idx": 0,
+     "len_dw": 36,
+     "tag": 0,
+     "w0": 144,
+     "last_j": 35,
+     "last_v": 879089205,
+     "sink": 474369892960,
+     "note": "core record, 144 B @struct+0x50; only dword35 live-known",
+     "data_hex": null,
+     "unknown_dwords": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+     ]
+    },
+    {
+     "build_idx": 9,
+     "len_dw": 5,
+     "tag": 0,
+     "w0": 20,
+     "last_j": 4,
+     "last_v": 2927457469,
+     "sink": 474370215568,
+     "note": "SHA-1(cert DER) \u2014 constant, byte-verified",
+     "data_hex": "fad0f10d60f93c17937b2f1eb6c09691ae7d74bd",
+     "unknown_dwords": null
+    },
+    {
+     "build_idx": 8,
+     "len_dw": 4,
+     "tag": 0,
+     "w0": 16,
+     "last_j": 3,
+     "last_v": 0,
+     "sink": 474370216576,
+     "note": "16 B; dword3 = 0 (NOT the digest prefix \u2014 refutes the slice-26 same-base reading); dwords 0-2 unknown",
+     "data_hex": null,
+     "unknown_dwords": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "build_idx": 4,
+     "len_dw": 8,
+     "tag": 0,
+     "w0": 32,
+     "last_j": 7,
+     "last_v": 2010891900,
+     "sink": 474370215040,
+     "note": "H = TEE-HMAC (arg3), 32 B; dword7 = BE of H bytes[28:32]; H itself not present in any aligned-session dump",
+     "data_hex": null,
+     "unknown_dwords": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ]
+    },
+    {
+     "build_idx": 2,
+     "len_dw": 1,
+     "tag": 0,
+     "w0": 4,
+     "last_j": 0,
+     "last_v": 1498553629,
+     "sink": 474370216816,
+     "note": "u32 @struct+0x20 (per-signing value)",
+     "data_hex": "59521d1d",
+     "unknown_dwords": null
+    },
+    {
+     "build_idx": 7,
+     "len_dw": 1,
+     "tag": 0,
+     "w0": 4,
+     "last_j": 0,
+     "last_v": 360,
+     "sink": 474370216096,
+     "note": "u32 @struct+0x128 = byte-len of #10 = raw w0 word of #10",
+     "data_hex": "00000168",
+     "unknown_dwords": null
+    },
+    {
+     "build_idx": 10,
+     "len_dw": 90,
+     "tag": 0,
+     "w0": 360,
+     "last_j": 89,
+     "last_v": 774909488,
+     "sink": 474370195936,
+     "note": "packed fetch-claim strings @struct+0x130 (len u32 @struct+0x128 = 360 B); content = BE view of the pack; workhorse loop re-fetches the same claims (90 fetches, hardcoded order)",
+     "data_hex": null,
+     "unknown_dwords": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89
+     ]
+    },
+    {
+     "build_idx": 5,
+     "len_dw": 1,
+     "tag": 0,
+     "w0": 4,
+     "last_j": 0,
+     "last_v": 0,
+     "sink": 474370214944,
+     "note": "proven constant 0 (slice 27)",
+     "data_hex": "00000000",
+     "unknown_dwords": null
+    },
+    {
+     "build_idx": 6,
+     "len_dw": 1,
+     "tag": 0,
+     "w0": 4,
+     "last_j": 0,
+     "last_v": 0,
+     "sink": 474370214944,
+     "note": "proven constant 0 (slice 27)",
+     "data_hex": "00000000",
+     "unknown_dwords": null
+    },
+    {
+     "build_idx": 1,
+     "len_dw": 0,
+     "tag": 0,
+     "w0": 0,
+     "last_j": null,
+     "last_v": null,
+     "sink": 474369897424,
+     "note": "empty {0, NULL} (proven slice 27); order of the pair unobservable",
+     "data_hex": "",
+     "unknown_dwords": null
+    },
+    {
+     "build_idx": 3,
+     "len_dw": 0,
+     "tag": 0,
+     "w0": 0,
+     "last_j": null,
+     "last_v": null,
+     "sink": 474369897424,
+     "note": "empty {0, NULL} (proven slice 27); order of the pair unobservable",
+     "data_hex": "",
+     "unknown_dwords": null
+    }
+   ],
+   "total_input_dwords": 147,
+   "round": "A",
+   "entry_x2": 11,
+   "vm_record_consistent": true,
+   "record_crosscheck": [
+    {
+     "hit_i": 0,
+     "record_n": 2,
+     "expected": {
+      "x1": 475981013712,
+      "x2": 11,
+      "x3": 474101043920
+     },
+     "got": {
+      "x1": 475981013712,
+      "x2": 11,
+      "x3": 474101043920
+     },
+     "match": {
+      "x1": true,
+      "x2": true,
+      "x3": true
+     }
+    },
+    {
+     "hit_i": 1,
+     "record_n": 3,
+     "expected": {
+      "x1": 474369892960,
+      "x2": 35,
+      "x3": 879089205
+     },
+     "got": {
+      "x1": 474369892960,
+      "x2": 35,
+      "x3": 879089205
+     },
+     "match": {
+      "x1": true,
+      "x2": true,
+      "x3": true
+     }
+    },
+    {
+     "hit_i": 2,
+     "record_n": 4,
+     "expected": {
+      "x1": 474370215568,
+      "x2": 4,
+      "x3": 2927457469
+     },
+     "got": {
+      "x1": 474370215568,
+      "x2": 4,
+      "x3": 2927457469
+     },
+     "match": {
+      "x1": true,
+      "x2": true,
+      "x3": true
+     }
+    },
+    {
+     "hit_i": 3,
+     "record_n": 5,
+     "expected": {
+      "x1": 474370216576,
+      "x2": 3,
+      "x3": 0
+     },
+     "got": {
+      "x1": 474370216576,
+      "x2": 3,
+      "x3": 0
+     },
+     "match": {
+      "x1": true,
+      "x2": true,
+      "x3": true
+     }
+    },
+    {
+     "hit_i": 4,
+     "record_n": 6,
+     "expected": {
+      "x1": 474370215040,
+      "x2": 7,
+      "x3": 2010891900
+     },
+     "got": {
+      "x1": 474370215040,
+      "x2": 7,
+      "x3": 2010891900
+     },
+     "match": {
+      "x1": true,
+      "x2": true,
+      "x3": true
+     }
+    },
+    {
+     "hit_i": 5,
+     "record_n": 7,
+     "expected": {
+      "x1": 474370216816,
+      "x2": 0,
+      "x3": 1498553629
+     },
+     "got": {
+      "x1": 474370216816,
+      "x2": 0,
+      "x3": 1498553629
+     },
+     "match": {
+      "x1": true,
+      "x2": true,
+      "x3": true
+     }
+    },
+    {
+     "hit_i": 6,
+     "record_n": 8,
+     "expected": {
+      "x1": 474370216096,
+      "x2": 0,
+      "x3": 360
+     },
+     "got": {
+      "x1": 474370216096,
+      "x2": 0,
+      "x3": 360
+     },
+     "match": {
+      "x1": true,
+      "x2": true,
+      "x3": true
+     }
+    },
+    {
+     "hit_i": 7,
+     "record_n": 9,
+     "expected": {
+      "x1": 474370195936,
+      "x2": 89,
+      "x3": 774909488
+     },
+     "got": {
+      "x1": 474370195936,
+      "x2": 89,
+      "x3": 774909488
+     },
+     "match": {
+      "x1": true,
+      "x2": true,
+      "x3": true
+     }
+    },
+    {
+     "hit_i": 8,
+     "record_n": 10,
+     "expected": {
+      "x1": 474370214944,
+      "x2": 0,
+      "x3": 0
+     },
+     "got": {
+      "x1": 474370214944,
+      "x2": 0,
+      "x3": 0
+     },
+     "match": {
+      "x1": true,
+      "x2": true,
+      "x3": true
+     }
+    },
+    {
+     "hit_i": 9,
+     "record_n": 11,
+     "expected": {
+      "x1": 474370214944,
+      "x2": 0,
+      "x3": 0
+     },
+     "got": {
+      "x1": 474370214944,
+      "x2": 0,
+      "x3": 0
+     },
+     "match": {
+      "x1": true,
+      "x2": true,
+      "x3": true
+     }
+    },
+    {
+     "hit_i": 10,
+     "record_n": 12,
+     "expected": {
+      "x1": 474369897424,
+      "x2": 0,
+      "x3": 0
+     },
+     "got": {
+      "x1": 474369897424,
+      "x2": 0,
+      "x3": 0
+     },
+     "match": {
+      "x1": true,
+      "x2": true,
+      "x3": true
+     }
+    },
+    {
+     "hit_i": 11,
+     "record_n": 13,
+     "expected": {
+      "x1": 474369897424,
+      "x2": 0,
+      "x3": 0
+     },
+     "got": {
+      "x1": 474369897424,
+      "x2": 0,
+      "x3": 0
+     },
+     "match": {
+      "x1": true,
+      "x2": true,
+      "x3": true
+     }
+    }
+   ],
+   "all_records_match": true,
+   "independent_checks": {
+    "len#0 static 36 == live": true,
+    "len#9 static 5 == live": true,
+    "val#9 == SHA-1 dword4 (independent)": true,
+    "len#8 static 4 == live": true,
+    "len#4 static 8 == live": true,
+    "val#5 == 0 (slice 27)": true,
+    "val#6 == 0 (slice 27)": true,
+    "val#7 == w0(#10)": true,
+    "w0(#10) == 4*len+tag self-consistent": true,
+    "#1/#3 empty, no emits": true
+   },
+   "all_checks_pass": true
+  },
+  {
+   "ctx": 475981048560,
+   "writer": 470750956968,
+   "node_pass0": 474101115888,
+   "node_pass1": 474101115792,
+   "hits": [
+    {
+     "kind": "emit",
+     "last_j": 35,
+     "last_v": 207341246,
+     "sink": 474370269808
+    },
+    {
+     "kind": "emit",
+     "last_j": 4,
+     "last_v": 2927457469,
+     "sink": 474370270192
+    },
+    {
+     "kind": "emit",
+     "last_j": 3,
+     "last_v": 0,
+     "sink": 474370270144
+    },
+    {
+     "kind": "emit",
+     "last_j": 7,
+     "last_v": 400650887,
+     "sink": 474370271008
+    },
+    {
+     "kind": "emit",
+     "last_j": 0,
+     "last_v": 5768162,
+     "sink": 474370269856
+    },
+    {
+     "kind": "emit",
+     "last_j": 0,
+     "last_v": 387,
+     "sink": 474370270288
+    },
+    {
+     "kind": "emit",
+     "last_j": 96,
+     "last_v": 808333312,
+     "sink": 474370270960
+    },
+    {
+     "kind": "emit",
+     "last_j": 0,
+     "last_v": 0,
+     "sink": 474370269952
+    },
+    {
+     "kind": "emit",
+     "last_j": 0,
+     "last_v": 0,
+     "sink": 474370269952
+    },
+    {
+     "kind": "empty",
+     "sink": 474370327216,
+     "carry_j": 0,
+     "carry_v": 0
+    },
+    {
+     "kind": "empty",
+     "sink": 474370327216,
+     "carry_j": 0,
+     "carry_v": 0
+    }
+   ],
+   "descs": [
+    {
+     "build_idx": 0,
+     "len_dw": 36,
+     "tag": 0,
+     "w0": 144,
+     "last_j": 35,
+     "last_v": 207341246,
+     "sink": 474370269808,
+     "note": "core record, 144 B @struct+0x50; only dword35 live-known",
+     "data_hex": null,
+     "unknown_dwords": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35
+     ]
+    },
+    {
+     "build_idx": 9,
+     "len_dw": 5,
+     "tag": 0,
+     "w0": 20,
+     "last_j": 4,
+     "last_v": 2927457469,
+     "sink": 474370270192,
+     "note": "SHA-1(cert DER) \u2014 constant, byte-verified",
+     "data_hex": "fad0f10d60f93c17937b2f1eb6c09691ae7d74bd",
+     "unknown_dwords": null
+    },
+    {
+     "build_idx": 8,
+     "len_dw": 4,
+     "tag": 0,
+     "w0": 16,
+     "last_j": 3,
+     "last_v": 0,
+     "sink": 474370270144,
+     "note": "16 B; dword3 = 0 (NOT the digest prefix \u2014 refutes the slice-26 same-base reading); dwords 0-2 unknown",
+     "data_hex": null,
+     "unknown_dwords": [
+      0,
+      1,
+      2
+     ]
+    },
+    {
+     "build_idx": 4,
+     "len_dw": 8,
+     "tag": 0,
+     "w0": 32,
+     "last_j": 7,
+     "last_v": 400650887,
+     "sink": 474370271008,
+     "note": "H = TEE-HMAC (arg3), 32 B; dword7 = BE of H bytes[28:32]; H itself not present in any aligned-session dump",
+     "data_hex": null,
+     "unknown_dwords": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ]
+    },
+    {
+     "build_idx": 2,
+     "len_dw": 1,
+     "tag": 0,
+     "w0": 4,
+     "last_j": 0,
+     "last_v": 5768162,
+     "sink": 474370269856,
+     "note": "u32 @struct+0x20 (per-signing value)",
+     "data_hex": "005803e2",
+     "unknown_dwords": null
+    },
+    {
+     "build_idx": 7,
+     "len_dw": 1,
+     "tag": 0,
+     "w0": 4,
+     "last_j": 0,
+     "last_v": 387,
+     "sink": 474370270288,
+     "note": "u32 @struct+0x128 = byte-len of #10 = raw w0 word of #10",
+     "data_hex": "00000183",
+     "unknown_dwords": null
+    },
+    {
+     "build_idx": 10,
+     "len_dw": 96,
+     "tag": 3,
+     "w0": 387,
+     "last_j": 96,
+     "last_v": 808333312,
+     "sink": 474370270960,
+     "note": "packed fetch-claim strings @struct+0x130 (len u32 @struct+0x128 = 387 B); content = BE view of the pack; workhorse loop re-fetches the same claims (90 fetches, hardcoded order)",
+     "data_hex": null,
+     "unknown_dwords": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95
+     ]
+    },
+    {
+     "build_idx": 5,
+     "len_dw": 1,
+     "tag": 0,
+     "w0": 4,
+     "last_j": 0,
+     "last_v": 0,
+     "sink": 474370269952,
+     "note": "proven constant 0 (slice 27)",
+     "data_hex": "00000000",
+     "unknown_dwords": null
+    },
+    {
+     "build_idx": 6,
+     "len_dw": 1,
+     "tag": 0,
+     "w0": 4,
+     "last_j": 0,
+     "last_v": 0,
+     "sink": 474370269952,
+     "note": "proven constant 0 (slice 27)",
+     "data_hex": "00000000",
+     "unknown_dwords": null
+    },
+    {
+     "build_idx": 1,
+     "len_dw": 0,
+     "tag": 0,
+     "w0": 0,
+     "last_j": null,
+     "last_v": null,
+     "sink": 474370327216,
+     "note": "empty {0, NULL} (proven slice 27); order of the pair unobservable",
+     "data_hex": "",
+     "unknown_dwords": null
+    },
+    {
+     "build_idx": 3,
+     "len_dw": 0,
+     "tag": 0,
+     "w0": 0,
+     "last_j": null,
+     "last_v": null,
+     "sink": 474370327216,
+     "note": "empty {0, NULL} (proven slice 27); order of the pair unobservable",
+     "data_hex": "",
+     "unknown_dwords": null
+    }
+   ],
+   "total_input_dwords": 154,
+   "round": "B",
+   "entry_x2": 11,
+   "vm_record_consistent": true,
+   "record_crosscheck": [
+    {
+     "hit_i": 0,
+     "record_n": 105,
+     "expected": {
+      "x1": 475981048560,
+      "x2": 11,
+      "x3": 474101115888
+     },
+     "got": {
+      "x1": 475981048560,
+      "x2": 11,
+      "x3": 474101115888
+     },
+     "match": {
+      "x1": true,
+      "x2": true,
+      "x3": true
+     }
+    },
+    {
+     "hit_i": 1,
+     "record_n": 106,
+     "expected": {
+      "x1": 474370269808,
+      "x2": 35,
+      "x3": 207341246
+     },
+     "got": {
+      "x1": 474370269808,
+      "x2": 35,
+      "x3": 207341246
+     },
+     "match": {
+      "x1": true,
+      "x2": true,
+      "x3": true
+     }
+    },
+    {
+     "hit_i": 2,
+     "record_n": 107,
+     "expected": {
+      "x1": 474370270192,
+      "x2": 4,
+      "x3": 2927457469
+     },
+     "got": {
+      "x1": 474370270192,
+      "x2": 4,
+      "x3": 2927457469
+     },
+     "match": {
+      "x1": true,
+      "x2": true,
+      "x3": true
+     }
+    },
+    {
+     "hit_i": 3,
+     "record_n": 108,
+     "expected": {
+      "x1": 474370270144,
+      "x2": 3,
+      "x3": 0
+     },
+     "got": {
+      "x1": 474370270144,
+      "x2": 3,
+      "x3": 0
+     },
+     "match": {
+      "x1": true,
+      "x2": true,
+      "x3": true
+     }
+    },
+    {
+     "hit_i": 4,
+     "record_n": 109,
+     "expected": {
+      "x1": 474370271008,
+      "x2": 7,
+      "x3": 400650887
+     },
+     "got": {
+      "x1": 474370271008,
+      "x2": 7,
+      "x3": 400650887
+     },
+     "match": {
+      "x1": true,
+      "x2": true,
+      "x3": true
+     }
+    },
+    {
+     "hit_i": 5,
+     "record_n": 110,
+     "expected": {
+      "x1": 474370269856,
+      "x2": 0,
+      "x3": 5768162
+     },
+     "got": {
+      "x1": 474370269856,
+      "x2": 0,
+      "x3": 5768162
+     },
+     "match": {
+      "x1": true,
+      "x2": true,
+      "x3": true
+     }
+    },
+    {
+     "hit_i": 6,
+     "record_n": 111,
+     "expected": {
+      "x1": 474370270288,
+      "x2": 0,
+      "x3": 387
+     },
+     "got": {
+      "x1": 474370270288,
+      "x2": 0,
+      "x3": 387
+     },
+     "match": {
+      "x1": true,
+      "x2": true,
+      "x3": true
+     }
+    },
+    {
+     "hit_i": 7,
+     "record_n": 112,
+     "expected": {
+      "x1": 474370270960,
+      "x2": 96,
+      "x3": null
+     },
+     "got": {
+      "x1": 474370270960,
+      "x2": 96,
+      "x3": 808333312
+     },
+     "match": {
+      "x1": true,
+      "x2": true,
+      "x3": "N/A(unknown value)"
+     }
+    },
+    {
+     "hit_i": 8,
+     "record_n": 113,
+     "expected": {
+      "x1": 474370269952,
+      "x2": 0,
+      "x3": 0
+     },
+     "got": {
+      "x1": 474370269952,
+      "x2": 0,
+      "x3": 0
+     },
+     "match": {
+      "x1": true,
+      "x2": true,
+      "x3": true
+     }
+    },
+    {
+     "hit_i": 9,
+     "record_n": 114,
+     "expected": {
+      "x1": 474370269952,
+      "x2": 0,
+      "x3": 0
+     },
+     "got": {
+      "x1": 474370269952,
+      "x2": 0,
+      "x3": 0
+     },
+     "match": {
+      "x1": true,
+      "x2": true,
+      "x3": true
+     }
+    },
+    {
+     "hit_i": 10,
+     "record_n": 115,
+     "expected": {
+      "x1": 474370327216,
+      "x2": 0,
+      "x3": 0
+     },
+     "got": {
+      "x1": 474370327216,
+      "x2": 0,
+      "x3": 0
+     },
+     "match": {
+      "x1": true,
+      "x2": true,
+      "x3": true
+     }
+    },
+    {
+     "hit_i": 11,
+     "record_n": 116,
+     "expected": {
+      "x1": 474370327216,
+      "x2": 0,
+      "x3": 0
+     },
+     "got": {
+      "x1": 474370327216,
+      "x2": 0,
+      "x3": 0
+     },
+     "match": {
+      "x1": true,
+      "x2": true,
+      "x3": true
+     }
+    }
+   ],
+   "all_records_match": true,
+   "independent_checks": {
+    "len#0 static 36 == live": true,
+    "len#9 static 5 == live": true,
+    "val#9 == SHA-1 dword4 (independent)": true,
+    "len#8 static 4 == live": true,
+    "len#4 static 8 == live": true,
+    "val#5 == 0 (slice 27)": true,
+    "val#6 == 0 (slice 27)": true,
+    "val#7 == w0(#10)": true,
+    "w0(#10) == 4*len+tag self-consistent": true,
+    "#1/#3 empty, no emits": true
+   },
+   "all_checks_pass": true
+  }
+ ],
+ "vm_mem_H_hits": [],
+ "vm_mem_sha1_hits": [],
+ "vm_mem_struct_extraction": [],
+ "st_out": {
+  "file": "C:\\Users\\Apps\\Downloads\\com.penti.app\\adj9\\device\\st_out\\st23.bin",
+  "va_range": [
+   "0x6ef91c2000",
+   "0x6ef9282000"
+  ],
+  "sha1_copy_va": "0x6ef927ca40",
+  "sha1_desc_nodes": [
+   {
+    "node_va": "0x6ef9277cf8",
+    "data_ptr": "0x6fe66a96e0"
+   }
+  ],
+  "note": "stack dump of the adj9-oracle thread (snap2.sh: [stack_end-0xC0000, stack_end)); contains the SHA-1 desc node {w0=0x14, ptr}; live master struct NOT in this dump (struct+0x128/+0x130 zero at the stale stack copy)."
+ }
+}

@@ -1,0 +1,5 @@
+# CLASS Lcom/adjust/sdk/OnAttributionChangedListener;
+
+---- METHOD public abstract onAttributionChanged (Lcom/adjust/sdk/AdjustAttribution;)V ----
+  (no code)
+######################################################################

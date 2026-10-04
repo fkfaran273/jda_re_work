@@ -1,0 +1,18 @@
+--- 
++++ 
+@@ -6,4 +6,5 @@
+ invoke-direct vX, vX, Lcom/adjust/sdk/scheduler/ThreadFactoryWrapper;-><init>(Ljava/lang/String;)V
+-new-instance vX, Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler$1;
+-invoke-direct vX, vX, Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler$1;-><init>(Ljava/lang/String;)V
++new-instance vX, Lt3/a;
++const/4 vX, 1
++invoke-direct vX, vX, vX, Lt3/a;-><init>(Ljava/lang/String; I)V
+ const/4 vX, 1
+@@ -38,4 +39,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;->scheduledThreadPoolExecutor Ljava/util/concurrent/ScheduledThreadPoolExecutor;
+-new-instance vX, Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler$2;
+-invoke-direct vX, vX, Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler$2;-><init>(Ljava/util/concurrent/Callable;)V
++new-instance vX, LG/b;
++const/4 vX, 2
++invoke-direct vX, vX, vX, LG/b;-><init>(Ljava/lang/Object; I)V
+ sget-object vX, Ljava/util/concurrent/TimeUnit;->MILLISECONDS Ljava/util/concurrent/TimeUnit;

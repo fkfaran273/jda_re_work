@@ -1,0 +1,15 @@
+# CLASS Lcom/adjust/sdk/SystemLifecycle$SystemLifecycleCache;
+FIELD public bridge foregroundOrElseBackgroundCache Ljava/lang/Boolean;
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v1, Ljava/lang/Object;-><init>()V
+  const/4                v0, 0
+  iput-object            v0, v1, Lcom/adjust/sdk/SystemLifecycle$SystemLifecycleCache;->foregroundOrElseBackgroundCache Ljava/lang/Boolean;
+  return-void            
+
+---- METHOD public onActivityLifecycle (Z)V ----
+  invoke-static          v1, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object     v1
+  iput-object            v1, v0, Lcom/adjust/sdk/SystemLifecycle$SystemLifecycleCache;->foregroundOrElseBackgroundCache Ljava/lang/Boolean;
+  return-void            
+######################################################################

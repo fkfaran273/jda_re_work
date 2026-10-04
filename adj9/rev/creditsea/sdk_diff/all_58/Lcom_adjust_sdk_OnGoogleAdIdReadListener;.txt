@@ -1,0 +1,5 @@
+# CLASS Lcom/adjust/sdk/OnGoogleAdIdReadListener;
+
+---- METHOD public abstract onGoogleAdIdRead (Ljava/lang/String;)V ----
+  (no code)
+######################################################################

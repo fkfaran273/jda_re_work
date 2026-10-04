@@ -1,0 +1,7 @@
+# CLASS Lcom/adjust/sdk/meta/R$string;
+FIELD public static app_name I
+
+---- METHOD private constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+######################################################################

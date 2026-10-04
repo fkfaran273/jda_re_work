@@ -1,0 +1,21 @@
+{
+    "app_name": "Penti",
+    "package_name": "com.penti.app",
+    "app_size": 23,
+    "app_version_name": "3.13.9",
+    "app_version_code": "31309",
+    "tracker": "adjust",
+    "adjust": {
+        "app_token": "jut9tib0eeps",
+        "sdk": "android5.7.0",
+        "adj_port": "60515",
+        "server": "adj_t3"
+    },
+    "supported_os": "8.0",
+    "retention": {"1": 25, "2": 25, "3": 24, "4": 24, "5": 23, "6": 22, "7": 20},
+    "cert_sha1": "fad0f10d60f93c17937b2f1eb6c09691ae7d74bd",
+    "adj_verification": "KlcAG2cbAAsKSl1KVi0FGiJbDHMI",
+    "click_link": "https://app.adjust.com/1sd1lk6a?campaign=AH&adgroup=vkm_0926_36&creative=penti_generic&click_id={click_id}&idfa={sub3}&install_callback=http%3A%2F%2Fec2-13-126-162-113.ap-south-1.compute.amazonaws.com%2Fapi%2Ftrack%2Fv1%2Fpostback%3Fclick_id%3D{click_id}%26p_sub1%3Dadjust%26advertising_id%3Dvkmdigital%26offer_id%3Dpntvkmdup1mmp&event_callback_bfi71x=http%3A%2F%2Fec2-13-126-162-113.ap-south-1.compute.amazonaws.com%2Fapi%2Ftrack%2Fv1%2Fevents%3Fclick_id%3D{click_id}%26goal%3Dbfi71x%26p_sub1%3Dadjust%26advertising_id%3Dvkmdigital%26offer_id%3Dpntvkmdup1mmp",
+    "_note": "AutoLabs-style campaign: click_link is their original_link verbatim, {click_id}/{sub3} macros. The tool appends gps_adid= because their template carries the id only as idfa= -- the reason their installs went Organic.",
+    "poll_delays": [3, 8, 20]
+}

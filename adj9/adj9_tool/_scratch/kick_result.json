@@ -1,0 +1,48 @@
+{
+ "steps": [
+  {
+   "name": "initial",
+   "c": false,
+   "haveAppSigner": false
+  },
+  {
+   "name": "onResume",
+   "err": null,
+   "c": false
+  },
+  {
+   "name": "after300ms",
+   "c": false
+  },
+  {
+   "name": "nlh.nOnResume",
+   "err": null,
+   "c": false
+  },
+  {
+   "name": "nlh_after400ms",
+   "c": false
+  },
+  {
+   "name": "nlh.a()",
+   "err": null,
+   "c": false
+  },
+  {
+   "name": "nlh_a_after200ms",
+   "c": false
+  },
+  {
+   "name": "t1.b(ctx)",
+   "err": null,
+   "c": false
+  },
+  {
+   "name": "final",
+   "c": false
+  }
+ ],
+ "haveNlh": true,
+ "haveT1": true,
+ "ok": true
+}

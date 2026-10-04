@@ -1,0 +1,10 @@
+POST https://api-p1.penti.com.tr/authorizationserver/oauth/token HTTP/1.1
+X-Client-Request-Id: e8b557a8
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 77
+Host: api-p1.penti.com.tr
+Connection: Keep-Alive
+Accept-Encoding: gzip
+User-Agent: okhttp/5.3.2
+
+client_id=mobile_anonymous&client_secret=secret&grant_type=client_credentials

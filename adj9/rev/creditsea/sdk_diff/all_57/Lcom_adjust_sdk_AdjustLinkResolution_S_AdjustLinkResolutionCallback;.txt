@@ -1,0 +1,5 @@
+# CLASS Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;
+
+---- METHOD public abstract resolvedLinkCallback (Landroid/net/Uri;)V ----
+  (no code)
+######################################################################

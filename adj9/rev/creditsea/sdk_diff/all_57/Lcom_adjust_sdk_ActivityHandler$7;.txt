@@ -1,0 +1,19 @@
+# CLASS Lcom/adjust/sdk/ActivityHandler$7;
+FIELD public final synthetic a Lcom/adjust/sdk/ReferrerDetails;
+FIELD public final synthetic b Ljava/lang/String;
+FIELD public final synthetic c Lcom/adjust/sdk/ActivityHandler;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/ActivityHandler$7;->c Lcom/adjust/sdk/ActivityHandler;
+  iput-object            v2, v0, Lcom/adjust/sdk/ActivityHandler$7;->a Lcom/adjust/sdk/ReferrerDetails;
+  iput-object            v3, v0, Lcom/adjust/sdk/ActivityHandler$7;->b Ljava/lang/String;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v3, Lcom/adjust/sdk/ActivityHandler$7;->c Lcom/adjust/sdk/ActivityHandler;
+  iget-object            v1, v3, Lcom/adjust/sdk/ActivityHandler$7;->a Lcom/adjust/sdk/ReferrerDetails;
+  iget-object            v2, v3, Lcom/adjust/sdk/ActivityHandler$7;->b Ljava/lang/String;
+  invoke-static          v0, v1, v2, Lcom/adjust/sdk/ActivityHandler;->access$100(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String;)V
+  return-void            
+######################################################################

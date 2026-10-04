@@ -1,0 +1,86 @@
+SetByteArrayRegion site 0x9e880; enclosing function entry ~0x9e778
+
+=== function body (entry..site+96B) ===
+  0x9e778: stp      x29, x30, [sp, #0x20]
+  0x9e77c: stp      x28, x27, [sp, #0x30]
+  0x9e780: stp      x26, x25, [sp, #0x40]
+  0x9e784: stp      x24, x23, [sp, #0x50]
+  0x9e788: stp      x22, x21, [sp, #0x60]
+  0x9e78c: stp      x20, x19, [sp, #0x70]
+  0x9e790: add      x29, sp, #0x20
+  0x9e794: mov      x26, #0x53ed
+  0x9e798: mov      x27, #0xe00d
+  0x9e79c: movk     x26, #0x62b, lsl #16
+  0x9e7a0: movk     x27, #0x9449, lsl #16
+  0x9e7a4: movk     x26, #0x46aa, lsl #32
+  0x9e7a8: movk     x27, #0xff6a, lsl #32
+  0x9e7ac: cmp      x2, #0
+  0x9e7b0: movk     x26, #0xf035, lsl #48
+  0x9e7b4: movk     x27, #0x9edd, lsl #48
+  0x9e7b8: mov      x25, #0xbf4c
+  0x9e7bc: csel     x8, x27, x26, eq
+  0x9e7c0: mov      x19, #0x714a
+  0x9e7c4: mov      x20, #0x112b
+  0x9e7c8: mov      x21, #0xb523
+  0x9e7cc: mov      x24, #0x981a
+  0x9e7d0: movk     x25, #0x8546, lsl #16
+  0x9e7d4: stp      x8, x0, [sp]
+  0x9e7d8: mov      x8, #0x714a
+  0x9e7dc: movk     x19, #0xd0ed, lsl #16
+  0x9e7e0: movk     x20, #0xfee2, lsl #16
+  0x9e7e4: movk     x21, #0x67d9, lsl #16
+  0x9e7e8: movk     x24, #0xe27, lsl #16
+  0x9e7ec: movk     x8, #0xd0ed, lsl #16
+  0x9e7f0: movk     x25, #0xb627, lsl #32
+  0x9e7f4: movk     x19, #0x2c16, lsl #32
+  0x9e7f8: movk     x20, #0x932f, lsl #32
+  0x9e7fc: movk     x21, #0x2835, lsl #32
+  0x9e800: movk     x24, #0xe399, lsl #32
+  0x9e804: movk     x8, #0x2c16, lsl #32
+  0x9e808: stur     x5, [x29, #-8]  <== writes ENV BUF ptr [x29,-8]
+  0x9e80c: stur     w4, [x29, #-0xc]  <== writes ENV LEN [x29,-0xc]
+  0x9e810: mov      x22, x2
+  0x9e814: str      w3, [sp, #0x10]
+  0x9e818: mov      x23, x1
+  0x9e81c: movk     x25, #0xca30, lsl #48
+  0x9e820: movk     x19, #0x6a3c, lsl #48
+  0x9e824: movk     x20, #0xad56, lsl #48
+  0x9e828: movk     x21, #0x6f95, lsl #48
+  0x9e82c: movk     x24, #0x2bc3, lsl #48
+  0x9e830: movk     x8, #0x6a3c, lsl #48
+  0x9e834: cmp      x8, x27
+  0x9e838: b.eq     #0x9e8a4
+  0x9e83c: cmp      x8, x20
+  0x9e840: b.eq     #0x9e8bc
+  0x9e844: cmp      x8, x25
+  0x9e848: b.eq     #0x9e90c
+  0x9e84c: cmp      x8, x21
+  0x9e850: b.eq     #0x9e8d0
+  0x9e854: cmp      x8, x24
+  0x9e858: b.eq     #0x9e8e8
+  0x9e85c: cmp      x8, x19
+  0x9e860: b.eq     #0x9e904
+  0x9e864: cmp      x8, x26
+  0x9e868: b.ne     #0x9e834
+  0x9e86c: ldr      x8, [x23]
+  0x9e870: mov      x0, x23
+  0x9e874: mov      x1, x22
+  0x9e878: ldr      w2, [sp, #0x10]
+  0x9e87c: ldur     w3, [x29, #-0xc]
+  0x9e880: ldr      x8, [x8, #0x680]  <<<<< OUTPUT WRITE
+  0x9e884: ldur     x4, [x29, #-8]
+  0x9e888: blr      x8  <<< indirect call
+  0x9e88c: mov      x0, x23  [not on nSign path]
+  0x9e890: mov      x1, xzr  [not on nSign path]
+  0x9e894: bl       #0x9afa4  [not on nSign path]
+  0x9e898: tst      w0, #1  [not on nSign path]
+  0x9e89c: csel     x8, x21, x20, ne  [not on nSign path]
+  0x9e8a0: b        #0x9e834  [not on nSign path]
+  0x9e8a4: mov      x8, #0x981a
+  0x9e8a8: mov      w28, #3
+  0x9e8ac: movk     x8, #0xe27, lsl #16
+  0x9e8b0: movk     x8, #0xe399, lsl #32
+  0x9e8b4: movk     x8, #0x2bc3, lsl #48
+
+NewByteArray wrapper entry ~0x9e54c
+callers of NewByteArray wrapper on nSign path: []

@@ -1,0 +1,18 @@
+# CLASS Lcom/adjust/sdk/sig/i;
+FIELD public static final Lcom/adjust/sdk/sig/i;
+FIELD public final Lcom/adjust/sdk/sig/e;
+FIELD public I
+
+---- METHOD static constructor <clinit>(()V)  ----
+  new-instance           v0, Lcom/adjust/sdk/sig/i;
+  invoke-direct          v0, Lcom/adjust/sdk/sig/i;-><init>()V
+  sput-object            v0, Lcom/adjust/sdk/sig/i;->c Lcom/adjust/sdk/sig/i;
+  return-void            
+
+---- METHOD public constructor <init>(()V)  ----
+  invoke-direct          v1, Ljava/lang/Object;-><init>()V
+  new-instance           v0, Lcom/adjust/sdk/sig/e;
+  invoke-direct          v0, Lcom/adjust/sdk/sig/e;-><init>()V
+  iput-object            v0, v1, Lcom/adjust/sdk/sig/i;->a Lcom/adjust/sdk/sig/e;
+  return-void            
+######################################################################

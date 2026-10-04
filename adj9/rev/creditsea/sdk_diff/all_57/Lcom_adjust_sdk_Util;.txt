@@ -1,0 +1,1254 @@
+# CLASS Lcom/adjust/sdk/Util;
+FIELD private static final DATE_FORMAT Ljava/lang/String;
+FIELD public static final SecondsDisplayFormat Ljava/text/DecimalFormat;
+FIELD public static final dateFormatter Ljava/text/SimpleDateFormat;
+FIELD private static final fieldReadErrorMessage Ljava/lang/String;
+FIELD private static bridge playAdIdScheduler Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;
+
+---- METHOD static constructor <clinit> ()V ----
+  invoke-static          Lcom/adjust/sdk/Util;->newLocalDecimalFormat()Ljava/text/DecimalFormat;
+  move-result-object     v0
+  sput-object            v0, Lcom/adjust/sdk/Util;->SecondsDisplayFormat Ljava/text/DecimalFormat;
+  new-instance           v0, Ljava/text/SimpleDateFormat;
+  sget-object            v1, Ljava/util/Locale;->US Ljava/util/Locale;
+  const-string/jumbo     v2, yyyy-MM-dd'T'HH:mm:ss.SSS'Z'Z
+  invoke-direct          v0, v2, v1, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String; Ljava/util/Locale;)V
+  sput-object            v0, Lcom/adjust/sdk/Util;->dateFormatter Ljava/text/SimpleDateFormat;
+  const/4                v0, 0
+  sput-object            v0, Lcom/adjust/sdk/Util;->playAdIdScheduler Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;
+  return-void            
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public static synthetic access$000 (Landroid/content/Context;)Ljava/lang/String; ----
+  invoke-static          v0, Lcom/adjust/sdk/Util;->getGoogleAdId(Landroid/content/Context;)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public static attributionFromJson (Lorg/json/JSONObject; Ljava/lang/String;)Lcom/adjust/sdk/AdjustAttribution; ----
+  if-nez                 v12, +004h
+  const/4                v12, 0
+  return-object          v12
+  new-instance           v0, Lcom/adjust/sdk/AdjustAttribution;
+  invoke-direct          v0, Lcom/adjust/sdk/AdjustAttribution;-><init>()V
+  invoke-virtual         v12, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+  move-result-object     v1
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustAttribution;->jsonResponse Ljava/lang/String;
+  const-string/jumbo     v1, unity
+  invoke-virtual         v1, v13, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v13
+  const-string           v1, "fb_install_referrer"
+  const-string           v2, "cost_currency"
+  const-string           v3, "cost_amount"
+  const-string           v4, "cost_type"
+  const-string           v5, "click_label"
+  const-string           v6, "creative"
+  const-string           v7, "adgroup"
+  const-string           v8, "campaign"
+  const-string           v9, "network"
+  const-string/jumbo     v10, tracker_name
+  const-string/jumbo     v11, tracker_token
+  if-eqz                 v13, +04dh
+  const-string           v13, ""
+  invoke-virtual         v12, v11, v13, Lorg/json/JSONObject;->optString(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v11
+  iput-object            v11, v0, Lcom/adjust/sdk/AdjustAttribution;->trackerToken Ljava/lang/String;
+  invoke-virtual         v12, v10, v13, Lorg/json/JSONObject;->optString(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v10
+  iput-object            v10, v0, Lcom/adjust/sdk/AdjustAttribution;->trackerName Ljava/lang/String;
+  invoke-virtual         v12, v9, v13, Lorg/json/JSONObject;->optString(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v9
+  iput-object            v9, v0, Lcom/adjust/sdk/AdjustAttribution;->network Ljava/lang/String;
+  invoke-virtual         v12, v8, v13, Lorg/json/JSONObject;->optString(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v8
+  iput-object            v8, v0, Lcom/adjust/sdk/AdjustAttribution;->campaign Ljava/lang/String;
+  invoke-virtual         v12, v7, v13, Lorg/json/JSONObject;->optString(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v7
+  iput-object            v7, v0, Lcom/adjust/sdk/AdjustAttribution;->adgroup Ljava/lang/String;
+  invoke-virtual         v12, v6, v13, Lorg/json/JSONObject;->optString(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v6
+  iput-object            v6, v0, Lcom/adjust/sdk/AdjustAttribution;->creative Ljava/lang/String;
+  invoke-virtual         v12, v5, v13, Lorg/json/JSONObject;->optString(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v5
+  iput-object            v5, v0, Lcom/adjust/sdk/AdjustAttribution;->clickLabel Ljava/lang/String;
+  invoke-virtual         v12, v4, v13, Lorg/json/JSONObject;->optString(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v4
+  iput-object            v4, v0, Lcom/adjust/sdk/AdjustAttribution;->costType Ljava/lang/String;
+  const-wide/16          v4, 0
+  invoke-virtual         v12, v3, v4, v5, Lorg/json/JSONObject;->optDouble(Ljava/lang/String; D)D
+  move-result-wide       v3
+  invoke-static          v3, v4, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+  move-result-object     v3
+  iput-object            v3, v0, Lcom/adjust/sdk/AdjustAttribution;->costAmount Ljava/lang/Double;
+  invoke-virtual         v12, v2, v13, Lorg/json/JSONObject;->optString(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v2
+  iput-object            v2, v0, Lcom/adjust/sdk/AdjustAttribution;->costCurrency Ljava/lang/String;
+  invoke-virtual         v12, v1, v13, Lorg/json/JSONObject;->optString(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v12
+  iput-object            v12, v0, Lcom/adjust/sdk/AdjustAttribution;->fbInstallReferrer Ljava/lang/String;
+  return-object          v0
+  invoke-virtual         v12, v11, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v13
+  iput-object            v13, v0, Lcom/adjust/sdk/AdjustAttribution;->trackerToken Ljava/lang/String;
+  invoke-virtual         v12, v10, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v13
+  iput-object            v13, v0, Lcom/adjust/sdk/AdjustAttribution;->trackerName Ljava/lang/String;
+  invoke-virtual         v12, v9, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v13
+  iput-object            v13, v0, Lcom/adjust/sdk/AdjustAttribution;->network Ljava/lang/String;
+  invoke-virtual         v12, v8, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v13
+  iput-object            v13, v0, Lcom/adjust/sdk/AdjustAttribution;->campaign Ljava/lang/String;
+  invoke-virtual         v12, v7, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v13
+  iput-object            v13, v0, Lcom/adjust/sdk/AdjustAttribution;->adgroup Ljava/lang/String;
+  invoke-virtual         v12, v6, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v13
+  iput-object            v13, v0, Lcom/adjust/sdk/AdjustAttribution;->creative Ljava/lang/String;
+  invoke-virtual         v12, v5, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v13
+  iput-object            v13, v0, Lcom/adjust/sdk/AdjustAttribution;->clickLabel Ljava/lang/String;
+  invoke-virtual         v12, v4, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v13
+  iput-object            v13, v0, Lcom/adjust/sdk/AdjustAttribution;->costType Ljava/lang/String;
+  invoke-virtual         v12, v3, Lorg/json/JSONObject;->optDouble(Ljava/lang/String;)D
+  move-result-wide       v3
+  invoke-static          v3, v4, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+  move-result-object     v13
+  iput-object            v13, v0, Lcom/adjust/sdk/AdjustAttribution;->costAmount Ljava/lang/Double;
+  invoke-virtual         v12, v2, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v13
+  iput-object            v13, v0, Lcom/adjust/sdk/AdjustAttribution;->costCurrency Ljava/lang/String;
+  invoke-virtual         v12, v1, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v12
+  iput-object            v12, v0, Lcom/adjust/sdk/AdjustAttribution;->fbInstallReferrer Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public static canReadAppSetId (Lcom/adjust/sdk/AdjustConfig;)Z ----
+  iget-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isAppSetIdReadingEnabled Z
+  if-nez                 v0, +004h
+  const/4                v1, 0
+  return                 v1
+  invoke-static          v1, Lcom/adjust/sdk/Util;->canReadPlayIds(Lcom/adjust/sdk/AdjustConfig;)Z
+  move-result            v1
+  return                 v1
+
+---- METHOD public static canReadFbId (Lcom/adjust/sdk/AdjustConfig;)Z ----
+  iget-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isFbIdReadingEnabled Z
+  if-nez                 v0, +004h
+  const/4                v1, 0
+  return                 v1
+  invoke-static          v1, Lcom/adjust/sdk/Util;->canReadNonPlayIds(Lcom/adjust/sdk/AdjustConfig;)Z
+  move-result            v1
+  return                 v1
+
+---- METHOD public static canReadNonPlayIds (Lcom/adjust/sdk/AdjustConfig;)Z ----
+  iget-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->coppaComplianceEnabled Z
+  if-nez                 v0, +008h
+  iget-boolean           v1, v1, Lcom/adjust/sdk/AdjustConfig;->playStoreKidsComplianceEnabled Z
+  if-nez                 v1, +004h
+  const/4                v1, 1
+  return                 v1
+  const/4                v1, 0
+  return                 v1
+
+---- METHOD public static canReadPlayIds (Lcom/adjust/sdk/AdjustConfig;)Z ----
+  iget-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->coppaComplianceEnabled Z
+  if-nez                 v0, +008h
+  iget-boolean           v1, v1, Lcom/adjust/sdk/AdjustConfig;->playStoreKidsComplianceEnabled Z
+  if-nez                 v1, +004h
+  const/4                v1, 1
+  return                 v1
+  const/4                v1, 0
+  return                 v1
+
+---- METHOD public static checkPermission (Landroid/content/Context; Ljava/lang/String;)Z ----
+  const/4                v0, 0
+  invoke-virtual         v2, v3, Landroid/content/Context;->checkCallingOrSelfPermission(Ljava/lang/String;)I
+  move-result            v2
+  if-nez                 v2, +004h
+  const/4                v2, 1
+  return                 v2
+  return                 v0
+  move-exception         v2
+  invoke-static          Lcom/adjust/sdk/Util;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v1
+  invoke-virtual         v2, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object     v2
+  filled-new-array       v3, v2, [Ljava/lang/Object;
+  move-result-object     v2
+  const-string           v3, "Unable to check permission '%s' with message (%s)"
+  invoke-interface       v1, v3, v2, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v0
+
+---- METHOD public static convertToHex ([B)Ljava/lang/String; ----
+  new-instance           v0, Ljava/math/BigInteger;
+  const/4                v1, 1
+  invoke-direct          v0, v1, v4, Ljava/math/BigInteger;-><init>(I [B)V
+  new-instance           v2, Ljava/lang/StringBuilder;
+  const-string           v3, "%0"
+  invoke-direct          v2, v3, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  array-length           v4, v4
+  shl-int/2addr          v4, v1
+  const-string/jumbo     v1, x
+  invoke-static          v2, v1, v4, Ld;->p(Ljava/lang/StringBuilder; Ljava/lang/String; I)Ljava/lang/String;
+  move-result-object     v4
+  filled-new-array       v0, [Ljava/lang/Object;
+  move-result-object     v0
+  invoke-static          v4, v0, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v4
+  return-object          v4
+
+---- METHOD public static createUuid ()Ljava/lang/String; ----
+  invoke-static          Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
+  move-result-object     v0
+  invoke-virtual         v0, Ljava/util/UUID;->toString()Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public static equalBoolean (Ljava/lang/Boolean; Ljava/lang/Boolean;)Z ----
+  invoke-static          v0, v1, Lcom/adjust/sdk/Util;->equalObject(Ljava/lang/Object; Ljava/lang/Object;)Z
+  move-result            v0
+  return                 v0
+
+---- METHOD public static equalEnum (Ljava/lang/Enum; Ljava/lang/Enum;)Z ----
+  invoke-static          v0, v1, Lcom/adjust/sdk/Util;->equalObject(Ljava/lang/Object; Ljava/lang/Object;)Z
+  move-result            v0
+  return                 v0
+
+---- METHOD public static equalInt (Ljava/lang/Integer; Ljava/lang/Integer;)Z ----
+  invoke-static          v0, v1, Lcom/adjust/sdk/Util;->equalObject(Ljava/lang/Object; Ljava/lang/Object;)Z
+  move-result            v0
+  return                 v0
+
+---- METHOD public static equalLong (Ljava/lang/Long; Ljava/lang/Long;)Z ----
+  invoke-static          v0, v1, Lcom/adjust/sdk/Util;->equalObject(Ljava/lang/Object; Ljava/lang/Object;)Z
+  move-result            v0
+  return                 v0
+
+---- METHOD public static equalObject (Ljava/lang/Object; Ljava/lang/Object;)Z ----
+  if-eqz                 v0, +00ah
+  if-nez                 v1, +003h
+  goto                   +6h
+  invoke-virtual         v0, v1, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  return                 v0
+  if-nez                 v0, +006h
+  if-nez                 v1, +004h
+  const/4                v0, 1
+  return                 v0
+  const/4                v0, 0
+  return                 v0
+
+---- METHOD public static equalString (Ljava/lang/String; Ljava/lang/String;)Z ----
+  invoke-static          v0, v1, Lcom/adjust/sdk/Util;->equalObject(Ljava/lang/Object; Ljava/lang/Object;)Z
+  move-result            v0
+  return                 v0
+
+---- METHOD public static equalsDouble (Ljava/lang/Double; Ljava/lang/Double;)Z ----
+  const/4                v0, 0
+  const/4                v1, 1
+  if-eqz                 v4, +01bh
+  if-nez                 v5, +003h
+  goto                   +17h
+  invoke-virtual         v4, Ljava/lang/Double;->doubleValue()D
+  move-result-wide       v2
+  invoke-static          v2, v3, Ljava/lang/Double;->doubleToLongBits(D)J
+  move-result-wide       v2
+  invoke-virtual         v5, Ljava/lang/Double;->doubleValue()D
+  move-result-wide       v4
+  invoke-static          v4, v5, Ljava/lang/Double;->doubleToLongBits(D)J
+  move-result-wide       v4
+  cmp-long               v4, v2, v4
+  if-nez                 v4, +003h
+  return                 v1
+  return                 v0
+  if-nez                 v4, +005h
+  if-nez                 v5, +003h
+  return                 v1
+  return                 v0
+
+---- METHOD public static varargs formatString (Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String; ----
+  sget-object            v0, Ljava/util/Locale;->US Ljava/util/Locale;
+  invoke-static          v0, v1, v2, Ljava/lang/String;->format(Ljava/util/Locale; Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v1
+  return-object          v1
+
+---- METHOD public static getAdidFromActivityStateFile (Landroid/content/Context;)Ljava/lang/String; ----
+  const-string           v0, "Activity state"
+  const-class            v1, Lcom/adjust/sdk/ActivityState;
+  const-string           v2, "AdjustIoActivityState"
+  invoke-static          v3, v2, v0, v1, Lcom/adjust/sdk/Util;->readObject(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/Class;)Ljava/lang/Object;
+  move-result-object     v3
+  check-cast             v3, Lcom/adjust/sdk/ActivityState;
+  if-nez                 v3, +004h
+  const/4                v3, 0
+  return-object          v3
+  iget-object            v3, v3, Lcom/adjust/sdk/ActivityState;->adid Ljava/lang/String;
+  return-object          v3
+
+---- METHOD public static getAdvertisingInfoObject (Landroid/content/Context; J)Ljava/lang/Object; ----
+  new-instance           v0, Lcom/adjust/sdk/Util$1;
+  invoke-direct          v0, v1, Lcom/adjust/sdk/Util$1;-><init>(Landroid/content/Context;)V
+  invoke-static          v1, v0, v2, v3, Lcom/adjust/sdk/Util;->runSyncInPlayAdIdSchedulerWithTimeout(Landroid/content/Context; Ljava/util/concurrent/Callable; J)Ljava/lang/Object;
+  move-result-object     v1
+  return-object          v1
+
+---- METHOD public static getAndroidId (Landroid/content/Context;)Ljava/lang/String; ----
+  invoke-static          v0, Lcom/adjust/sdk/AndroidIdUtil;->getAndroidId(Landroid/content/Context;)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public static getAttributionFromAttributionFile (Landroid/content/Context;)Lcom/adjust/sdk/AdjustAttribution; ----
+  const-string           v0, "Attribution"
+  const-class            v1, Lcom/adjust/sdk/AdjustAttribution;
+  const-string           v2, "AdjustAttribution"
+  invoke-static          v3, v2, v0, v1, Lcom/adjust/sdk/Util;->readObject(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/Class;)Ljava/lang/Object;
+  move-result-object     v3
+  check-cast             v3, Lcom/adjust/sdk/AdjustAttribution;
+  return-object          v3
+
+---- METHOD public static getCpuAbi ()Ljava/lang/String; ----
+  const/4                v0, 0
+  return-object          v0
+
+---- METHOD private static getGoogleAdId (Landroid/content/Context;)Ljava/lang/String; ----
+  const-wide/16          v0, 11000
+  invoke-static          v3, v0, v1, Lcom/adjust/sdk/GooglePlayServicesClient;->getGooglePlayServicesInfo(Landroid/content/Context; J)Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesInfo;
+  move-result-object     v2
+  if-eqz                 v2, +007h
+  invoke-virtual         v2, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesInfo;->getGpsAdid()Ljava/lang/String;
+  move-result-object     v2
+  goto                   +2h
+  const/4                v2, 0
+  if-nez                 v2, +00eh
+  invoke-static          v3, v0, v1, Lcom/adjust/sdk/Util;->getAdvertisingInfoObject(Landroid/content/Context; J)Ljava/lang/Object;
+  move-result-object     v0
+  if-eqz                 v0, +008h
+  const-wide/16          v1, 1000
+  invoke-static          v3, v0, v1, v2, Lcom/adjust/sdk/Util;->getPlayAdId(Landroid/content/Context; Ljava/lang/Object; J)Ljava/lang/String;
+  move-result-object     v2
+  return-object          v2
+
+---- METHOD public static getGoogleAdId (Landroid/content/Context; Lcom/adjust/sdk/OnGoogleAdIdReadListener;)V ----
+  new-instance           v0, Lcom/adjust/sdk/Util$4;
+  invoke-direct          v0, v2, Lcom/adjust/sdk/Util$4;-><init>(Lcom/adjust/sdk/OnGoogleAdIdReadListener;)V
+  filled-new-array       v1, [Landroid/content/Context;
+  move-result-object     v1
+  invoke-virtual         v0, v1, Lcom/adjust/sdk/scheduler/AsyncTaskExecutor;->execute([Ljava/lang/Object;)Lcom/adjust/sdk/scheduler/AsyncTaskExecutor;
+  return-void            
+
+---- METHOD public static getLocale (Landroid/content/res/Configuration;)Ljava/util/Locale; ----
+  invoke-virtual         v1, Landroid/content/res/Configuration;->getLocales()Landroid/os/LocaleList;
+  move-result-object     v1
+  if-eqz                 v1, +00eh
+  invoke-virtual         v1, Landroid/os/LocaleList;->isEmpty()Z
+  move-result            v0
+  if-nez                 v0, +008h
+  const/4                v0, 0
+  invoke-virtual         v1, v0, Landroid/os/LocaleList;->get(I)Ljava/util/Locale;
+  move-result-object     v1
+  return-object          v1
+  const/4                v1, 0
+  return-object          v1
+
+---- METHOD private static getLogger ()Lcom/adjust/sdk/ILogger; ----
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public static getPlayAdId (Landroid/content/Context; Ljava/lang/Object; J)Ljava/lang/String; ----
+  new-instance           v0, Lcom/adjust/sdk/Util$2;
+  invoke-direct          v0, v1, v2, Lcom/adjust/sdk/Util$2;-><init>(Landroid/content/Context; Ljava/lang/Object;)V
+  invoke-static          v1, v0, v3, v4, Lcom/adjust/sdk/Util;->runSyncInPlayAdIdSchedulerWithTimeout(Landroid/content/Context; Ljava/util/concurrent/Callable; J)Ljava/lang/Object;
+  move-result-object     v1
+  check-cast             v1, Ljava/lang/String;
+  return-object          v1
+
+---- METHOD public static getReasonString (Ljava/lang/String; Ljava/lang/Throwable;)Ljava/lang/String; ----
+  if-eqz                 v1, +00dh
+  filled-new-array       v0, v1, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v1, "%s: %s"
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+  filled-new-array       v0, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v1, "%s"
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public static getRootCause (Ljava/lang/Exception;)Ljava/lang/String; ----
+  invoke-static          v2, Lcom/adjust/sdk/Util;->hasRootCause(Ljava/lang/Exception;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  const/4                v2, 0
+  return-object          v2
+  new-instance           v0, Ljava/io/StringWriter;
+  invoke-direct          v0, Ljava/io/StringWriter;-><init>()V
+  new-instance           v1, Ljava/io/PrintWriter;
+  invoke-direct          v1, v0, Ljava/io/PrintWriter;-><init>(Ljava/io/Writer;)V
+  invoke-virtual         v2, v1, Ljava/lang/Throwable;->printStackTrace(Ljava/io/PrintWriter;)V
+  invoke-virtual         v0, Ljava/io/StringWriter;->toString()Ljava/lang/String;
+  move-result-object     v2
+  const-string           v0, "Caused by:"
+  invoke-virtual         v2, v0, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
+  move-result            v0
+  const-string           v1, "
+"
+  invoke-virtual         v2, v1, v0, Ljava/lang/String;->indexOf(Ljava/lang/String; I)I
+  move-result            v1
+  invoke-virtual         v2, v0, v1, Ljava/lang/String;->substring(I I)Ljava/lang/String;
+  move-result-object     v2
+  return-object          v2
+
+---- METHOD private static getSdkPrefix (Ljava/lang/String;)Ljava/lang/String; ----
+  const/4                v0, 0
+  if-nez                 v3, +003h
+  return-object          v0
+  const-string           v1, "@"
+  invoke-virtual         v3, v1, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return-object          v0
+  invoke-virtual         v3, v1, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+  move-result-object     v3
+  if-nez                 v3, +003h
+  return-object          v0
+  array-length           v1, v3
+  const/4                v2, 2
+  if-eq                  v1, v2, +003h
+  return-object          v0
+  const/4                v0, 0
+  aget-object            v3, v3, v0
+  return-object          v3
+
+---- METHOD public static getSdkPrefixPlatform (Ljava/lang/String;)Ljava/lang/String; ----
+  invoke-static          v3, Lcom/adjust/sdk/Util;->getSdkPrefix(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v3
+  const/4                v0, 0
+  if-nez                 v3, +003h
+  return-object          v0
+  const-string           v1, "\d+"
+  const/4                v2, 2
+  invoke-virtual         v3, v1, v2, Ljava/lang/String;->split(Ljava/lang/String; I)[Ljava/lang/String;
+  move-result-object     v3
+  if-nez                 v3, +003h
+  return-object          v0
+  array-length           v1, v3
+  if-nez                 v1, +003h
+  return-object          v0
+  const/4                v0, 0
+  aget-object            v3, v3, v0
+  return-object          v3
+
+---- METHOD public static getSdkVersion ()Ljava/lang/String; ----
+  const-string           v0, "android5.7.0"
+  return-object          v0
+
+---- METHOD public static getSupportedAbis ()[Ljava/lang/String; ----
+  sget-object            v0, Landroid/os/Build;->SUPPORTED_ABIS [Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public static getWaitingTime (I Lcom/adjust/sdk/BackoffStrategy;)J ----
+  iget                   v0, v5, Lcom/adjust/sdk/BackoffStrategy;->minRetries I
+  if-ge                  v4, v0, +005h
+  const-wide/16          v4, 0
+  return-wide            v4
+  sub-int/2addr          v4, v0
+  int-to-double          v0, v4
+  const-wide/high16      v2, 4611686018427387904
+  invoke-static          v2, v3, v0, v1, Ljava/lang/Math;->pow(D D)D
+  move-result-wide       v0
+  double-to-long         v0, v0
+  iget-wide              v2, v5, Lcom/adjust/sdk/BackoffStrategy;->milliSecondMultiplier J
+  mul-long/2addr         v0, v2
+  iget-wide              v2, v5, Lcom/adjust/sdk/BackoffStrategy;->maxWait J
+  invoke-static          v0, v1, v2, v3, Ljava/lang/Math;->min(J J)J
+  move-result-wide       v0
+  iget-wide              v2, v5, Lcom/adjust/sdk/BackoffStrategy;->minRange D
+  iget-wide              v4, v5, Lcom/adjust/sdk/BackoffStrategy;->maxRange D
+  invoke-static          v2, v3, v4, v5, Lcom/adjust/sdk/Util;->randomInRange(D D)D
+  move-result-wide       v4
+  long-to-double         v0, v0
+  mul-double/2addr       v0, v4
+  double-to-long         v4, v0
+  return-wide            v4
+
+---- METHOD public static hasRootCause (Ljava/lang/Exception;)Z ----
+  new-instance           v0, Ljava/io/StringWriter;
+  invoke-direct          v0, Ljava/io/StringWriter;-><init>()V
+  new-instance           v1, Ljava/io/PrintWriter;
+  invoke-direct          v1, v0, Ljava/io/PrintWriter;-><init>(Ljava/io/Writer;)V
+  invoke-virtual         v2, v1, Ljava/lang/Throwable;->printStackTrace(Ljava/io/PrintWriter;)V
+  invoke-virtual         v0, Ljava/io/StringWriter;->toString()Ljava/lang/String;
+  move-result-object     v2
+  const-string           v0, "Caused by:"
+  invoke-virtual         v2, v0, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+  move-result            v2
+  return                 v2
+
+---- METHOD public static hash (Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; ----
+  const-string           v0, "UTF-8"
+  invoke-virtual         v2, v0, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
+  move-result-object     v2
+  invoke-static          v3, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
+  move-result-object     v3
+  array-length           v0, v2
+  const/4                v1, 0
+  invoke-virtual         v3, v2, v1, v0, Ljava/security/MessageDigest;->update([B I I)V
+  invoke-virtual         v3, Ljava/security/MessageDigest;->digest()[B
+  move-result-object     v2
+  invoke-static          v2, Lcom/adjust/sdk/Util;->convertToHex([B)Ljava/lang/String;
+  move-result-object     v2
+  return-object          v2
+  const/4                v2, 0
+  return-object          v2
+
+---- METHOD public static hashBoolean (Ljava/lang/Boolean; I)I ----
+  mul-int/lit8           v1, v1, 37
+  if-nez                 v0, +003h
+  return                 v1
+  invoke-virtual         v0, Ljava/lang/Boolean;->hashCode()I
+  move-result            v0
+  add-int/2addr          v0, v1
+  return                 v0
+
+---- METHOD public static hashDouble (Ljava/lang/Double; I)I ----
+  mul-int/lit8           v1, v1, 37
+  if-nez                 v0, +003h
+  return                 v1
+  invoke-virtual         v0, Ljava/lang/Double;->hashCode()I
+  move-result            v0
+  add-int/2addr          v0, v1
+  return                 v0
+
+---- METHOD public static hashEnum (Ljava/lang/Enum; I)I ----
+  mul-int/lit8           v1, v1, 37
+  if-nez                 v0, +003h
+  return                 v1
+  invoke-virtual         v0, Ljava/lang/Enum;->hashCode()I
+  move-result            v0
+  add-int/2addr          v0, v1
+  return                 v0
+
+---- METHOD public static hashLong (Ljava/lang/Long; I)I ----
+  mul-int/lit8           v1, v1, 37
+  if-nez                 v0, +003h
+  return                 v1
+  invoke-virtual         v0, Ljava/lang/Long;->hashCode()I
+  move-result            v0
+  add-int/2addr          v0, v1
+  return                 v0
+
+---- METHOD public static hashObject (Ljava/lang/Object; I)I ----
+  mul-int/lit8           v1, v1, 37
+  if-nez                 v0, +003h
+  return                 v1
+  invoke-virtual         v0, Ljava/lang/Object;->hashCode()I
+  move-result            v0
+  add-int/2addr          v0, v1
+  return                 v0
+
+---- METHOD public static hashString (Ljava/lang/String; I)I ----
+  mul-int/lit8           v1, v1, 37
+  if-nez                 v0, +003h
+  return                 v1
+  invoke-virtual         v0, Ljava/lang/String;->hashCode()I
+  move-result            v0
+  add-int/2addr          v0, v1
+  return                 v0
+
+---- METHOD public static isAdjustUninstallDetectionPayload (Ljava/util/Map;)Z ----
+  const/4                v0, 0
+  if-nez                 v3, +003h
+  return                 v0
+  invoke-interface       v3, Ljava/util/Map;->size()I
+  move-result            v1
+  const/4                v2, 1
+  if-ne                  v1, v2, +012h
+  const-string           v1, "adjust_purpose"
+  invoke-interface       v3, v1, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v3
+  const-string/jumbo     v1, uninstall detection
+  invoke-static          v3, v1, Ljava/util/Objects;->equals(Ljava/lang/Object; Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +003h
+  return                 v2
+  return                 v0
+
+---- METHOD public static isEnabledFromActivityStateFile (Landroid/content/Context;)Z ----
+  const-string           v0, "Activity state"
+  const-class            v1, Lcom/adjust/sdk/ActivityState;
+  const-string           v2, "AdjustIoActivityState"
+  invoke-static          v3, v2, v0, v1, Lcom/adjust/sdk/Util;->readObject(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/Class;)Ljava/lang/Object;
+  move-result-object     v3
+  check-cast             v3, Lcom/adjust/sdk/ActivityState;
+  if-nez                 v3, +004h
+  const/4                v3, 1
+  return                 v3
+  iget-boolean           v3, v3, Lcom/adjust/sdk/ActivityState;->enabled Z
+  return                 v3
+
+---- METHOD private static isEqualGoogleReferrerDetails (Lcom/adjust/sdk/ReferrerDetails; Lcom/adjust/sdk/ActivityState;)Z ----
+  iget-wide              v0, v4, Lcom/adjust/sdk/ReferrerDetails;->referrerClickTimestampSeconds J
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->clickTime J
+  cmp-long               v0, v0, v2
+  if-nez                 v0, +03ah
+  iget-wide              v0, v4, Lcom/adjust/sdk/ReferrerDetails;->installBeginTimestampSeconds J
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->installBegin J
+  cmp-long               v0, v0, v2
+  if-nez                 v0, +032h
+  iget-wide              v0, v4, Lcom/adjust/sdk/ReferrerDetails;->referrerClickTimestampServerSeconds J
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->clickTimeServer J
+  cmp-long               v0, v0, v2
+  if-nez                 v0, +02ah
+  iget-wide              v0, v4, Lcom/adjust/sdk/ReferrerDetails;->installBeginTimestampServerSeconds J
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->installBeginServer J
+  cmp-long               v0, v0, v2
+  if-nez                 v0, +022h
+  iget-object            v0, v4, Lcom/adjust/sdk/ReferrerDetails;->installReferrer Ljava/lang/String;
+  iget-object            v1, v5, Lcom/adjust/sdk/ActivityState;->installReferrer Ljava/lang/String;
+  invoke-static          v0, v1, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v0
+  if-eqz                 v0, +018h
+  iget-object            v0, v4, Lcom/adjust/sdk/ReferrerDetails;->installVersion Ljava/lang/String;
+  iget-object            v1, v5, Lcom/adjust/sdk/ActivityState;->installVersion Ljava/lang/String;
+  invoke-static          v0, v1, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v0
+  if-eqz                 v0, +00eh
+  iget-object            v4, v4, Lcom/adjust/sdk/ReferrerDetails;->googlePlayInstant Ljava/lang/Boolean;
+  iget-object            v5, v5, Lcom/adjust/sdk/ActivityState;->googlePlayInstant Ljava/lang/Boolean;
+  invoke-static          v4, v5, Lcom/adjust/sdk/Util;->equalBoolean(Ljava/lang/Boolean; Ljava/lang/Boolean;)Z
+  move-result            v4
+  if-eqz                 v4, +004h
+  const/4                v4, 1
+  return                 v4
+  const/4                v4, 0
+  return                 v4
+
+---- METHOD private static isEqualHuaweiReferrerAdsDetails (Lcom/adjust/sdk/ReferrerDetails; Lcom/adjust/sdk/ActivityState;)Z ----
+  iget-wide              v0, v4, Lcom/adjust/sdk/ReferrerDetails;->referrerClickTimestampSeconds J
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->clickTimeHuawei J
+  cmp-long               v0, v0, v2
+  if-nez                 v0, +016h
+  iget-wide              v0, v4, Lcom/adjust/sdk/ReferrerDetails;->installBeginTimestampSeconds J
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->installBeginHuawei J
+  cmp-long               v0, v0, v2
+  if-nez                 v0, +00eh
+  iget-object            v4, v4, Lcom/adjust/sdk/ReferrerDetails;->installReferrer Ljava/lang/String;
+  iget-object            v5, v5, Lcom/adjust/sdk/ActivityState;->installReferrerHuawei Ljava/lang/String;
+  invoke-static          v4, v5, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v4
+  if-eqz                 v4, +004h
+  const/4                v4, 1
+  return                 v4
+  const/4                v4, 0
+  return                 v4
+
+---- METHOD private static isEqualHuaweiReferrerAppGalleryDetails (Lcom/adjust/sdk/ReferrerDetails; Lcom/adjust/sdk/ActivityState;)Z ----
+  iget-wide              v0, v4, Lcom/adjust/sdk/ReferrerDetails;->referrerClickTimestampSeconds J
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->clickTimeHuawei J
+  cmp-long               v0, v0, v2
+  if-nez                 v0, +016h
+  iget-wide              v0, v4, Lcom/adjust/sdk/ReferrerDetails;->installBeginTimestampSeconds J
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->installBeginHuawei J
+  cmp-long               v0, v0, v2
+  if-nez                 v0, +00eh
+  iget-object            v4, v4, Lcom/adjust/sdk/ReferrerDetails;->installReferrer Ljava/lang/String;
+  iget-object            v5, v5, Lcom/adjust/sdk/ActivityState;->installReferrerHuaweiAppGallery Ljava/lang/String;
+  invoke-static          v4, v5, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v4
+  if-eqz                 v4, +004h
+  const/4                v4, 1
+  return                 v4
+  const/4                v4, 0
+  return                 v4
+
+---- METHOD private static isEqualMetaReferrerDetails (Lcom/adjust/sdk/ReferrerDetails; Lcom/adjust/sdk/ActivityState;)Z ----
+  iget-wide              v0, v4, Lcom/adjust/sdk/ReferrerDetails;->referrerClickTimestampSeconds J
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->clickTimeMeta J
+  cmp-long               v0, v0, v2
+  if-nez                 v0, +018h
+  iget-object            v0, v4, Lcom/adjust/sdk/ReferrerDetails;->installReferrer Ljava/lang/String;
+  iget-object            v1, v5, Lcom/adjust/sdk/ActivityState;->installReferrerMeta Ljava/lang/String;
+  invoke-static          v0, v1, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v0
+  if-eqz                 v0, +00eh
+  iget-object            v4, v4, Lcom/adjust/sdk/ReferrerDetails;->isClick Ljava/lang/Boolean;
+  iget-object            v5, v5, Lcom/adjust/sdk/ActivityState;->isClickMeta Ljava/lang/Boolean;
+  invoke-static          v4, v5, Lcom/adjust/sdk/Util;->equalBoolean(Ljava/lang/Boolean; Ljava/lang/Boolean;)Z
+  move-result            v4
+  if-eqz                 v4, +004h
+  const/4                v4, 1
+  return                 v4
+  const/4                v4, 0
+  return                 v4
+
+---- METHOD public static isEqualReferrerDetails (Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String; Lcom/adjust/sdk/ActivityState;)Z ----
+  const-string           v0, "google"
+  invoke-virtual         v2, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-eqz                 v0, +007h
+  invoke-static          v1, v3, Lcom/adjust/sdk/Util;->isEqualGoogleReferrerDetails(Lcom/adjust/sdk/ReferrerDetails; Lcom/adjust/sdk/ActivityState;)Z
+  move-result            v1
+  return                 v1
+  const-string           v0, "huawei_ads"
+  invoke-virtual         v2, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-eqz                 v0, +007h
+  invoke-static          v1, v3, Lcom/adjust/sdk/Util;->isEqualHuaweiReferrerAdsDetails(Lcom/adjust/sdk/ReferrerDetails; Lcom/adjust/sdk/ActivityState;)Z
+  move-result            v1
+  return                 v1
+  const-string           v0, "huawei_app_gallery"
+  invoke-virtual         v2, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-eqz                 v0, +007h
+  invoke-static          v1, v3, Lcom/adjust/sdk/Util;->isEqualHuaweiReferrerAppGalleryDetails(Lcom/adjust/sdk/ReferrerDetails; Lcom/adjust/sdk/ActivityState;)Z
+  move-result            v1
+  return                 v1
+  const-string/jumbo     v0, samsung
+  invoke-virtual         v2, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-eqz                 v0, +007h
+  invoke-static          v1, v3, Lcom/adjust/sdk/Util;->isEqualSamsungReferrerDetails(Lcom/adjust/sdk/ReferrerDetails; Lcom/adjust/sdk/ActivityState;)Z
+  move-result            v1
+  return                 v1
+  const-string/jumbo     v0, xiaomi
+  invoke-virtual         v2, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-eqz                 v0, +007h
+  invoke-static          v1, v3, Lcom/adjust/sdk/Util;->isEqualXiaomiReferrerDetails(Lcom/adjust/sdk/ReferrerDetails; Lcom/adjust/sdk/ActivityState;)Z
+  move-result            v1
+  return                 v1
+  const-string/jumbo     v0, vivo
+  invoke-virtual         v2, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-eqz                 v0, +007h
+  invoke-static          v1, v3, Lcom/adjust/sdk/Util;->isEqualVivoReferrerDetails(Lcom/adjust/sdk/ReferrerDetails; Lcom/adjust/sdk/ActivityState;)Z
+  move-result            v1
+  return                 v1
+  const-string           v0, "meta"
+  invoke-virtual         v2, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v2
+  if-eqz                 v2, +007h
+  invoke-static          v1, v3, Lcom/adjust/sdk/Util;->isEqualMetaReferrerDetails(Lcom/adjust/sdk/ReferrerDetails; Lcom/adjust/sdk/ActivityState;)Z
+  move-result            v1
+  return                 v1
+  const/4                v1, 0
+  return                 v1
+
+---- METHOD private static isEqualSamsungReferrerDetails (Lcom/adjust/sdk/ReferrerDetails; Lcom/adjust/sdk/ActivityState;)Z ----
+  iget-wide              v0, v4, Lcom/adjust/sdk/ReferrerDetails;->referrerClickTimestampSeconds J
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->clickTimeSamsung J
+  cmp-long               v0, v0, v2
+  if-nez                 v0, +016h
+  iget-wide              v0, v4, Lcom/adjust/sdk/ReferrerDetails;->installBeginTimestampSeconds J
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->installBeginSamsung J
+  cmp-long               v0, v0, v2
+  if-nez                 v0, +00eh
+  iget-object            v4, v4, Lcom/adjust/sdk/ReferrerDetails;->installReferrer Ljava/lang/String;
+  iget-object            v5, v5, Lcom/adjust/sdk/ActivityState;->installReferrerSamsung Ljava/lang/String;
+  invoke-static          v4, v5, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v4
+  if-eqz                 v4, +004h
+  const/4                v4, 1
+  return                 v4
+  const/4                v4, 0
+  return                 v4
+
+---- METHOD private static isEqualVivoReferrerDetails (Lcom/adjust/sdk/ReferrerDetails; Lcom/adjust/sdk/ActivityState;)Z ----
+  iget-wide              v0, v4, Lcom/adjust/sdk/ReferrerDetails;->referrerClickTimestampSeconds J
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->clickTimeVivo J
+  cmp-long               v0, v0, v2
+  if-nez                 v0, +020h
+  iget-wide              v0, v4, Lcom/adjust/sdk/ReferrerDetails;->installBeginTimestampSeconds J
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->installBeginVivo J
+  cmp-long               v0, v0, v2
+  if-nez                 v0, +018h
+  iget-object            v0, v4, Lcom/adjust/sdk/ReferrerDetails;->installReferrer Ljava/lang/String;
+  iget-object            v1, v5, Lcom/adjust/sdk/ActivityState;->installReferrerVivo Ljava/lang/String;
+  invoke-static          v0, v1, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v0
+  if-eqz                 v0, +00eh
+  iget-object            v4, v4, Lcom/adjust/sdk/ReferrerDetails;->installVersion Ljava/lang/String;
+  iget-object            v5, v5, Lcom/adjust/sdk/ActivityState;->installVersionVivo Ljava/lang/String;
+  invoke-static          v4, v5, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v4
+  if-eqz                 v4, +004h
+  const/4                v4, 1
+  return                 v4
+  const/4                v4, 0
+  return                 v4
+
+---- METHOD private static isEqualXiaomiReferrerDetails (Lcom/adjust/sdk/ReferrerDetails; Lcom/adjust/sdk/ActivityState;)Z ----
+  iget-wide              v0, v4, Lcom/adjust/sdk/ReferrerDetails;->referrerClickTimestampSeconds J
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->clickTimeXiaomi J
+  cmp-long               v0, v0, v2
+  if-nez                 v0, +030h
+  iget-wide              v0, v4, Lcom/adjust/sdk/ReferrerDetails;->installBeginTimestampSeconds J
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->installBeginXiaomi J
+  cmp-long               v0, v0, v2
+  if-nez                 v0, +028h
+  iget-wide              v0, v4, Lcom/adjust/sdk/ReferrerDetails;->referrerClickTimestampServerSeconds J
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->clickTimeServerXiaomi J
+  cmp-long               v0, v0, v2
+  if-nez                 v0, +020h
+  iget-wide              v0, v4, Lcom/adjust/sdk/ReferrerDetails;->installBeginTimestampServerSeconds J
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityState;->installBeginServerXiaomi J
+  cmp-long               v0, v0, v2
+  if-nez                 v0, +018h
+  iget-object            v0, v4, Lcom/adjust/sdk/ReferrerDetails;->installReferrer Ljava/lang/String;
+  iget-object            v1, v5, Lcom/adjust/sdk/ActivityState;->installReferrerXiaomi Ljava/lang/String;
+  invoke-static          v0, v1, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v0
+  if-eqz                 v0, +00eh
+  iget-object            v4, v4, Lcom/adjust/sdk/ReferrerDetails;->installVersion Ljava/lang/String;
+  iget-object            v5, v5, Lcom/adjust/sdk/ActivityState;->installVersionXiaomi Ljava/lang/String;
+  invoke-static          v4, v5, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v4
+  if-eqz                 v4, +004h
+  const/4                v4, 1
+  return                 v4
+  const/4                v4, 0
+  return                 v4
+
+---- METHOD public static isGooglePlayGamesForPC (Landroid/content/Context;)Z ----
+  invoke-virtual         v1, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+  move-result-object     v1
+  const-string           v0, "com.google.android.play.feature.HPE_EXPERIENCE"
+  invoke-virtual         v1, v0, Landroid/content/pm/PackageManager;->hasSystemFeature(Ljava/lang/String;)Z
+  move-result            v1
+  return                 v1
+
+---- METHOD public static isPlayTrackingEnabled (Landroid/content/Context; Ljava/lang/Object; J)Ljava/lang/Boolean; ----
+  new-instance           v0, Lcom/adjust/sdk/Util$3;
+  invoke-direct          v0, v1, v2, Lcom/adjust/sdk/Util$3;-><init>(Landroid/content/Context; Ljava/lang/Object;)V
+  invoke-static          v1, v0, v3, v4, Lcom/adjust/sdk/Util;->runSyncInPlayAdIdSchedulerWithTimeout(Landroid/content/Context; Ljava/util/concurrent/Callable; J)Ljava/lang/Object;
+  move-result-object     v1
+  check-cast             v1, Ljava/lang/Boolean;
+  return-object          v1
+
+---- METHOD public static isUrlFilteredOut (Landroid/net/Uri;)Z ----
+  const/4                v0, 1
+  if-nez                 v2, +003h
+  return                 v0
+  invoke-virtual         v2, Landroid/net/Uri;->toString()Ljava/lang/String;
+  move-result-object     v2
+  if-eqz                 v2, +014h
+  invoke-virtual         v2, Ljava/lang/String;->length()I
+  move-result            v1
+  if-nez                 v1, +003h
+  goto                   +ch
+  const-string           v1, "^(fb|vk)[0-9]{5,}[^:]*://authorize.*access_token=.*"
+  invoke-virtual         v2, v1, Ljava/lang/String;->matches(Ljava/lang/String;)Z
+  move-result            v2
+  if-eqz                 v2, +003h
+  return                 v0
+  const/4                v2, 0
+  return                 v2
+  return                 v0
+
+---- METHOD public static isUrlWithTrackerQueryParam (Landroid/net/Uri;)Z ----
+  const-string           v0, "adj_t"
+  invoke-virtual         v2, v0, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v0
+  const/4                v1, 1
+  if-eqz                 v0, +003h
+  return                 v1
+  const-string           v0, "adjust_t"
+  invoke-virtual         v2, v0, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v2
+  if-eqz                 v2, +003h
+  return                 v1
+  const/4                v2, 0
+  return                 v2
+
+---- METHOD public static isValidParameter (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Z ----
+  const/4                v0, 0
+  if-nez                 v2, +010h
+  invoke-static          Lcom/adjust/sdk/Util;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v2
+  filled-new-array       v4, v3, [Ljava/lang/Object;
+  move-result-object     v3
+  const-string           v4, "%s parameter %s is missing"
+  invoke-interface       v2, v4, v3, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v0
+  const-string           v1, ""
+  invoke-virtual         v2, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v2
+  if-eqz                 v2, +010h
+  invoke-static          Lcom/adjust/sdk/Util;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v2
+  filled-new-array       v4, v3, [Ljava/lang/Object;
+  move-result-object     v3
+  const-string           v4, "%s parameter %s is empty"
+  invoke-interface       v2, v4, v3, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v0
+  const/4                v2, 1
+  return                 v2
+
+---- METHOD public static mergeParameters (Ljava/util/Map; Ljava/util/Map; Ljava/lang/String;)Ljava/util/Map; ----
+  if-nez                 v4, +003h
+  return-object          v5
+  if-nez                 v5, +003h
+  return-object          v4
+  new-instance           v0, Ljava/util/HashMap;
+  invoke-direct          v0, v4, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
+  invoke-static          Lcom/adjust/sdk/Util;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v4
+  invoke-interface       v5, Ljava/util/Map;->entrySet()Ljava/util/Set;
+  move-result-object     v5
+  invoke-interface       v5, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+  move-result-object     v5
+  invoke-interface       v5, Ljava/util/Iterator;->hasNext()Z
+  move-result            v1
+  if-eqz                 v1, +02eh
+  invoke-interface       v5, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v1
+  check-cast             v1, Ljava/util/Map$Entry;
+  invoke-interface       v1, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  invoke-interface       v1, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+  move-result-object     v3
+  check-cast             v3, Ljava/lang/String;
+  invoke-virtual         v0, v2, v3, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  if-eqz                 v2, -01eh
+  invoke-interface       v1, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+  move-result-object     v3
+  invoke-interface       v1, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+  move-result-object     v1
+  filled-new-array       v3, v2, v6, v1, [Ljava/lang/Object;
+  move-result-object     v1
+  const-string           v2, "Key %s with value %s from %s parameter was replaced by value %s"
+  invoke-interface       v4, v2, v1, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+  goto                   -31h
+  return-object          v0
+
+---- METHOD private static newLocalDecimalFormat ()Ljava/text/DecimalFormat; ----
+  new-instance           v0, Ljava/text/DecimalFormatSymbols;
+  sget-object            v1, Ljava/util/Locale;->US Ljava/util/Locale;
+  invoke-direct          v0, v1, Ljava/text/DecimalFormatSymbols;-><init>(Ljava/util/Locale;)V
+  new-instance           v1, Ljava/text/DecimalFormat;
+  const-string           v2, "0.0"
+  invoke-direct          v1, v2, v0, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String; Ljava/text/DecimalFormatSymbols;)V
+  return-object          v1
+
+---- METHOD public static quote (Ljava/lang/String;)Ljava/lang/String; ----
+  if-nez                 v1, +004h
+  const/4                v1, 0
+  return-object          v1
+  const-string           v0, "\s"
+  invoke-static          v0, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+  move-result-object     v0
+  invoke-virtual         v0, v1, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+  move-result-object     v0
+  invoke-virtual         v0, Ljava/util/regex/Matcher;->find()Z
+  move-result            v0
+  if-nez                 v0, +003h
+  return-object          v1
+  filled-new-array       v1, [Ljava/lang/Object;
+  move-result-object     v1
+  const-string           v0, "'%s'"
+  invoke-static          v0, v1, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v1
+  return-object          v1
+
+---- METHOD private static randomInRange (D D)D ----
+  new-instance           v0, Ljava/util/Random;
+  invoke-direct          v0, Ljava/util/Random;-><init>()V
+  sub-double/2addr       v4, v2
+  invoke-virtual         v0, Ljava/util/Random;->nextDouble()D
+  move-result-wide       v0
+  mul-double/2addr       v0, v4
+  add-double/2addr       v0, v2
+  return-wide            v0
+
+---- METHOD public static readBooleanField (Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Z)Z ----
+  invoke-virtual         v1, v2, v3, Ljava/io/ObjectInputStream$GetField;->get(Ljava/lang/String; Z)Z
+  move-result            v1
+  return                 v1
+  move-exception         v1
+  invoke-static          Lcom/adjust/sdk/Util;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v0
+  invoke-virtual         v1, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object     v1
+  filled-new-array       v2, v1, [Ljava/lang/Object;
+  move-result-object     v1
+  const-string           v2, "Unable to read '%s' field in migration device with message (%s)"
+  invoke-interface       v0, v2, v1, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v3
+
+---- METHOD public static readDoubleField (Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; D)D ----
+  invoke-virtual         v1, v2, v3, v4, Ljava/io/ObjectInputStream$GetField;->get(Ljava/lang/String; D)D
+  move-result-wide       v1
+  return-wide            v1
+  move-exception         v1
+  invoke-static          Lcom/adjust/sdk/Util;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v0
+  invoke-virtual         v1, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object     v1
+  filled-new-array       v2, v1, [Ljava/lang/Object;
+  move-result-object     v1
+  const-string           v2, "Unable to read '%s' field in migration device with message (%s)"
+  invoke-interface       v0, v2, v1, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-wide            v3
+
+---- METHOD public static readIntField (Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; I)I ----
+  invoke-virtual         v1, v2, v3, Ljava/io/ObjectInputStream$GetField;->get(Ljava/lang/String; I)I
+  move-result            v1
+  return                 v1
+  move-exception         v1
+  invoke-static          Lcom/adjust/sdk/Util;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v0
+  invoke-virtual         v1, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object     v1
+  filled-new-array       v2, v1, [Ljava/lang/Object;
+  move-result-object     v1
+  const-string           v2, "Unable to read '%s' field in migration device with message (%s)"
+  invoke-interface       v0, v2, v1, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v3
+
+---- METHOD public static readLongField (Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; J)J ----
+  invoke-virtual         v1, v2, v3, v4, Ljava/io/ObjectInputStream$GetField;->get(Ljava/lang/String; J)J
+  move-result-wide       v1
+  return-wide            v1
+  move-exception         v1
+  invoke-static          Lcom/adjust/sdk/Util;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v0
+  invoke-virtual         v1, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object     v1
+  filled-new-array       v2, v1, [Ljava/lang/Object;
+  move-result-object     v1
+  const-string           v2, "Unable to read '%s' field in migration device with message (%s)"
+  invoke-interface       v0, v2, v1, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-wide            v3
+
+---- METHOD public static readObject (Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Ljava/lang/Class;)Ljava/lang/Object; ----
+  const/4                v0, 0
+  invoke-virtual         v3, v4, Landroid/content/Context;->openFileInput(Ljava/lang/String;)Ljava/io/FileInputStream;
+  move-result-object     v3
+  new-instance           v4, Ljava/io/BufferedInputStream;
+  invoke-direct          v4, v3, Ljava/io/BufferedInputStream;-><init>(Ljava/io/InputStream;)V
+  new-instance           v3, Lcom/adjust/sdk/ObjectInputFilterStream;
+  invoke-direct          v3, v4, Lcom/adjust/sdk/ObjectInputFilterStream;-><init>(Ljava/io/InputStream;)V
+  invoke-virtual         v3, Ljava/io/ObjectInputStream;->readObject()Ljava/lang/Object;
+  move-result-object     v4
+  invoke-virtual         v6, v4, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  invoke-static          Lcom/adjust/sdk/Util;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v4
+  const-string           v6, "Read %s: %s"
+  filled-new-array       v5, v0, [Ljava/lang/Object;
+  move-result-object     v1
+  invoke-interface       v4, v6, v1, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+  goto/16                +084h
+  move-exception         v4
+  goto                   +7h
+  move-exception         v4
+  goto                   +21h
+  move-exception         v4
+  goto                   +31h
+  move-exception         v4
+  goto                   +41h
+  invoke-static          Lcom/adjust/sdk/Util;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v6
+  const-string           v1, "Failed to read %s object (%s)"
+  invoke-virtual         v4, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object     v4
+  filled-new-array       v5, v4, [Ljava/lang/Object;
+  move-result-object     v4
+  invoke-interface       v6, v1, v4, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  goto/16                +069h
+  move-exception         v4
+  move-object            v2, v0
+  move-object            v0, v3
+  move-object            v3, v2
+  goto                   +3fh
+  move-object            v2, v0
+  move-object            v0, v3
+  move-object            v3, v2
+  goto                   +4fh
+  invoke-static          Lcom/adjust/sdk/Util;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v6
+  const-string           v1, "Failed to cast %s object (%s)"
+  invoke-virtual         v4, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object     v4
+  filled-new-array       v5, v4, [Ljava/lang/Object;
+  move-result-object     v4
+  invoke-interface       v6, v1, v4, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  goto                   +4dh
+  invoke-static          Lcom/adjust/sdk/Util;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v6
+  const-string           v1, "Failed to validate %s class (%s)"
+  invoke-virtual         v4, Ljava/io/InvalidClassException;->getMessage()Ljava/lang/String;
+  move-result-object     v4
+  filled-new-array       v5, v4, [Ljava/lang/Object;
+  move-result-object     v4
+  invoke-interface       v6, v1, v4, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  goto                   +3bh
+  invoke-static          Lcom/adjust/sdk/Util;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v6
+  const-string           v1, "Failed to find %s class (%s)"
+  invoke-virtual         v4, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object     v4
+  filled-new-array       v5, v4, [Ljava/lang/Object;
+  move-result-object     v4
+  invoke-interface       v6, v1, v4, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  goto                   +29h
+  move-exception         v3
+  goto                   +7h
+  move-exception         v4
+  move-object            v3, v0
+  move-object            v2, v0
+  move-object            v0, v3
+  move-object            v3, v4
+  move-object            v4, v2
+  invoke-static          Lcom/adjust/sdk/Util;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v6
+  filled-new-array       v5, v3, [Ljava/lang/Object;
+  move-result-object     v3
+  const-string           v1, "Failed to open %s file for reading (%s)"
+  invoke-interface       v6, v1, v3, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  move-object            v3, v4
+  goto                   +12h
+  move-object            v3, v0
+  move-object            v4, v0
+  move-object            v0, v3
+  invoke-static          Lcom/adjust/sdk/Util;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  filled-new-array       v5, [Ljava/lang/Object;
+  move-result-object     v6
+  const-string           v1, "%s file not found"
+  invoke-interface       v3, v1, v6, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+  goto                   -12h
+  if-eqz                 v3, +014h
+  invoke-interface       v3, Ljava/io/Closeable;->close()V
+  goto                   +fh
+  move-exception         v3
+  invoke-static          Lcom/adjust/sdk/Util;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v4
+  filled-new-array       v5, v3, [Ljava/lang/Object;
+  move-result-object     v3
+  const-string           v5, "Failed to close %s file for reading (%s)"
+  invoke-interface       v4, v5, v3, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-object          v0
+
+---- METHOD public static readObjectField (Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/Object;)Ljava/lang/Object; ----
+  invoke-virtual         v1, v2, v3, Ljava/io/ObjectInputStream$GetField;->get(Ljava/lang/String; Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v1
+  return-object          v1
+  move-exception         v1
+  invoke-static          Lcom/adjust/sdk/Util;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v0
+  invoke-virtual         v1, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object     v1
+  filled-new-array       v2, v1, [Ljava/lang/Object;
+  move-result-object     v1
+  const-string           v2, "Unable to read '%s' field in migration device with message (%s)"
+  invoke-interface       v0, v2, v1, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-object          v3
+
+---- METHOD public static readStringField (Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String; ----
+  invoke-static          v0, v1, v2, Lcom/adjust/sdk/Util;->readObjectField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public static resolveContentProvider (Landroid/content/Context; Ljava/lang/String;)Z ----
+  const/4                v0, 0
+  invoke-virtual         v1, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+  move-result-object     v1
+  invoke-virtual         v1, v2, v0, Landroid/content/pm/PackageManager;->resolveContentProvider(Ljava/lang/String; I)Landroid/content/pm/ProviderInfo;
+  move-result-object     v1
+  if-eqz                 v1, +004h
+  const/4                v1, 1
+  return                 v1
+  return                 v0
+
+---- METHOD private static runSyncInPlayAdIdSchedulerWithTimeout (Landroid/content/Context; Ljava/util/concurrent/Callable; J)Ljava/lang/Object; ----
+  sget-object            v3, Lcom/adjust/sdk/Util;->playAdIdScheduler Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;
+  if-nez                 v3, +01ah
+  const-class            v3, Lcom/adjust/sdk/Util;
+  monitor-enter          v3
+  sget-object            v0, Lcom/adjust/sdk/Util;->playAdIdScheduler Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;
+  if-nez                 v0, +00fh
+  new-instance           v0, Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;
+  const-string           v1, "PlayAdIdLibrary"
+  const/4                v2, 1
+  invoke-direct          v0, v1, v2, Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;-><init>(Ljava/lang/String; Z)V
+  sput-object            v0, Lcom/adjust/sdk/Util;->playAdIdScheduler Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;
+  goto                   +3h
+  move-exception         v4
+  goto                   +3h
+  monitor-exit           v3
+  goto                   +3h
+  monitor-exit           v3
+  throw                  v4
+  sget-object            v3, Lcom/adjust/sdk/Util;->playAdIdScheduler Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;
+  const-wide/16          v0, 0
+  invoke-virtual         v3, v4, v0, v1, Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;->scheduleFutureWithReturn(Ljava/util/concurrent/Callable; J)Ljava/util/concurrent/ScheduledFuture;
+  move-result-object     v3
+  sget-object            v4, Ljava/util/concurrent/TimeUnit;->MILLISECONDS Ljava/util/concurrent/TimeUnit;
+  invoke-interface       v3, v5, v6, v4, Ljava/util/concurrent/Future;->get(J Ljava/util/concurrent/TimeUnit;)Ljava/lang/Object;
+  move-result-object     v3
+  return-object          v3
+  const/4                v3, 0
+  return-object          v3
+
+---- METHOD public static writeObject (Ljava/lang/Object; Landroid/content/Context; Ljava/lang/String; Ljava/lang/String;)V ----
+  const/4                v0, 0
+  invoke-virtual         v2, v3, v0, Landroid/content/Context;->openFileOutput(Ljava/lang/String; I)Ljava/io/FileOutputStream;
+  move-result-object     v2
+  new-instance           v3, Ljava/io/BufferedOutputStream;
+  invoke-direct          v3, v2, Ljava/io/BufferedOutputStream;-><init>(Ljava/io/OutputStream;)V
+  new-instance           v2, Ljava/io/ObjectOutputStream;
+  invoke-direct          v2, v3, Ljava/io/ObjectOutputStream;-><init>(Ljava/io/OutputStream;)V
+  invoke-virtual         v2, v1, Ljava/io/ObjectOutputStream;->writeObject(Ljava/lang/Object;)V
+  invoke-static          Lcom/adjust/sdk/Util;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  const-string           v0, "Wrote %s: %s"
+  filled-new-array       v4, v1, [Ljava/lang/Object;
+  move-result-object     v1
+  invoke-interface       v3, v0, v1, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+  goto                   +24h
+  move-exception         v1
+  goto                   +13h
+  invoke-static          Lcom/adjust/sdk/Util;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v1
+  const-string           v3, "Failed to serialize %s"
+  filled-new-array       v4, [Ljava/lang/Object;
+  move-result-object     v0
+  invoke-interface       v1, v3, v0, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  goto                   +14h
+  move-exception         v1
+  goto                   +4h
+  move-exception         v1
+  const/4                v2, 0
+  move-object            v3, v2
+  invoke-static          Lcom/adjust/sdk/Util;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v2
+  filled-new-array       v4, v1, [Ljava/lang/Object;
+  move-result-object     v1
+  const-string           v0, "Failed to open %s for writing (%s)"
+  invoke-interface       v2, v0, v1, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  move-object            v2, v3
+  if-eqz                 v2, +014h
+  invoke-interface       v2, Ljava/io/Closeable;->close()V
+  goto                   +fh
+  move-exception         v1
+  invoke-static          Lcom/adjust/sdk/Util;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v2
+  filled-new-array       v4, v1, [Ljava/lang/Object;
+  move-result-object     v1
+  const-string           v3, "Failed to close %s file for writing (%s)"
+  invoke-interface       v2, v3, v1, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+######################################################################

@@ -1,0 +1,16 @@
+# CLASS Lcom/adjust/sdk/AdjustInstance$2;
+FIELD public final synthetic a Ljava/lang/String;
+FIELD public final synthetic b Ljava/lang/String;
+
+---- METHOD public constructor <init> (Ljava/lang/String; Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustInstance$2;->a Ljava/lang/String;
+  iput-object            v2, v0, Lcom/adjust/sdk/AdjustInstance$2;->b Ljava/lang/String;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run (Lcom/adjust/sdk/ActivityHandler;)V ----
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance$2;->a Ljava/lang/String;
+  iget-object            v1, v2, Lcom/adjust/sdk/AdjustInstance$2;->b Ljava/lang/String;
+  invoke-virtual         v3, v0, v1, Lcom/adjust/sdk/ActivityHandler;->addGlobalCallbackParameterI(Ljava/lang/String; Ljava/lang/String;)V
+  return-void            
+######################################################################

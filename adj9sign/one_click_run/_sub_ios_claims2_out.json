@@ -1,0 +1,49 @@
+{
+ "stage_a": {
+  "n_laws": 45,
+  "hits": []
+ },
+ "stage_b": {
+  "n": 10485760,
+  "hits": []
+ },
+ "stage_c": {
+  "n": 4194304,
+  "hits": []
+ },
+ "stage_d": {
+  "n": 25165824,
+  "hits": []
+ },
+ "stage_fg": {
+  "n": 12582912,
+  "hits": []
+ },
+ "stage_e": {
+  "n_partial": "killed after ~55 min (space overlaps stage F/G); its unique full-membership cells re-run exactly in stage_e_exact",
+  "stage_e_exact": {
+   "n": 27,
+   "hits": []
+  }
+ },
+ "stage_h": {
+  "n": 432,
+  "hits": []
+ },
+ "stage_json": {
+  "n": 144,
+  "hits": [],
+  "note": "compact/sorted JSON dict + JSON array forms, envelope inside/outside"
+ },
+ "stage_derived": {
+  "n": 2880,
+  "hits": [],
+  "note": "sha256/sha1/md5 hex+b64 of idfv/idfa/adid/primary_dedupe_token (5 value normalisations x 6 sources), injected under 8 plausible key names, profile+tail positions"
+ },
+ "stage_serial": {
+  "n": 960,
+  "hits": [],
+  "note": "k=v / k=v& / k=v; / k:v / val& / val| / len-prefixed(2B BE-LE,4B BE) x sorted/wire-order x os_name x endpoint x adj_verification x frames"
+ },
+ "oracle_validation": "android gold block reproduction via this harness: 9/9"
+}

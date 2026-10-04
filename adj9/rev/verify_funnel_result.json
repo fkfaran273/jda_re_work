@@ -1,0 +1,25 @@
+{
+ "referrer": "adjust_reftag=cJz9TORUGJDwi&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+ "reftag": "cJz9TORUGJDwi",
+ "session": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"a442555a267b122ab5441d2e60e40903\",\"ask_in\":2000}"
+ ],
+ "sdk_click": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"a442555a267b122ab5441d2e60e40903\"}"
+ ],
+ "gps": "ebd2868a-1126-45e2-83ae-f06d25a9ac42",
+ "auid": "1c3d8523-dcef-412b-b257-aa04190c6f3f",
+ "old_gaid": "94ebc9a2-63ed-4bc0-b7d4-0fab1d798b31",
+ "verdict_device_oracle": {
+  "tracker_token": "wy7261z",
+  "tracker_name": "Organic",
+  "network": "Organic",
+  "installed_at": "2026-09-22T06:22:32Z",
+  "first_session_time": "2026-09-22T06:22:32Z",
+  "is_reattributed": false,
+  "is_redownload_install": false
+ },
+ "verdict_source": "manual su cat after in-script regex missed (java-serialized wrapper)"
+}

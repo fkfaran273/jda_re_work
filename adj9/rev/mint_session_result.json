@@ -1,0 +1,29 @@
+{
+ "gps": "527214b0-7a67-429f-a6ca-fe67ef83c9bb",
+ "auid": "21450c4e-9ead-4b25-8a28-a6a81d13536c",
+ "creative": "cline_mintsess",
+ "referrer": "adjust_reftag=cqHetpjVuW9BL&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=cline_mintsess",
+ "mint": {
+  "blob_hex": "186b2ceb5a1d15b15a6e55b6606862242f7befe7cd8998f8dc262f652acece73234f05662a83f7147bda02cb59a82da07b71090d70056e54e2f283ad436505451bc8aefb05d8946d8fd4fde7a45e7f0410b9bc2a6d637a398dd6caabecc49c10d61ff0abc102277fd5de2736f4594ad094363c24e4d5a8152277374b5c9eece31e63e67fb34904d05b9d2c79492e073f101b768e1c304ed5a05c060f2488bf848e2df8b1d01441811399df5ac01991f26ae7cf755a3e35a20bfb8be6657ee9dd",
+  "auth": "Signature signature=\"GGss61odFbFablW2YGhiJC977+fNiZj43CYvZSrOznMjTwVmKoP3FHvaAstZqC2ge3EJDXAFblTi8oOtQ2UFRRvIrvsF2JRtj9T956RefwQQubwqbWN6OY3WyqvsxJwQ1h/wq8ECJ3/V3ic29FlK0JQ2PCTk1agVInc3S1ye7OMeY+Z/s0kE0FudLHlJLgc/EBt2jhwwTtWgXAYPJIi/hI4t+LHQFEGBE5nfWsAZkfJq5891Wj41ogv7i+Zlfund\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"",
+  "stamp": "2026-09-19T11:30:01.491Z+0530",
+  "gps_in_map": "527214b0-7a67-429f-a6ca-fe67ef83c9bb",
+  "keys": 46
+ },
+ "session": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"e895f8a75d7aed6b3a3a42655ee34c84\",\"ask_in\":2000}\r\n"
+ ],
+ "arms": [
+  {
+   "http": 200,
+   "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z / inst=2026-09-19T06:00:35Z",
+   "raw": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"e895f8a75d7aed6b3a3a42655ee34c84\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-19T06:00:35Z\",\"first_session_time\":\"2026-09-19T06:00:35Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}\r\n"
+  },
+  {
+   "http": 200,
+   "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z / inst=2026-09-19T06:00:35Z",
+   "raw": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"e895f8a75d7aed6b3a3a42655ee34c84\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-19T06:00:35Z\",\"first_session_time\":\"2026-09-19T06:00:35Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}\r\n"
+  }
+ ]
+}

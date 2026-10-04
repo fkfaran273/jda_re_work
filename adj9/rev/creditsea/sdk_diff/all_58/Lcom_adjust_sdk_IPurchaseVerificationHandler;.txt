@@ -1,0 +1,17 @@
+# CLASS Lcom/adjust/sdk/IPurchaseVerificationHandler;
+
+---- METHOD public abstract init (Lcom/adjust/sdk/IActivityHandler; Z Lcom/adjust/sdk/network/IActivityPackageSender;)V ----
+  (no code)
+
+---- METHOD public abstract pauseSending ()V ----
+  (no code)
+
+---- METHOD public abstract resumeSending ()V ----
+  (no code)
+
+---- METHOD public abstract sendPurchaseVerificationPackage (Lcom/adjust/sdk/ActivityPackage;)V ----
+  (no code)
+
+---- METHOD public abstract teardown ()V ----
+  (no code)
+######################################################################

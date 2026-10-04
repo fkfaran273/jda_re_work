@@ -1,0 +1,119 @@
+# CLASS Lcom/adjust/sdk/sig/n;
+FIELD public static final [Ljava/lang/Object;
+
+---- METHOD static constructor <clinit>(()V)  ----
+  const/4                v0, 0
+  new-array              v0, v0, [Ljava/lang/Object;
+  sput-object            v0, Lcom/adjust/sdk/sig/n;->a [Ljava/lang/Object;
+  return-void            
+
+---- METHOD public static final a((Ljava/util/Collection;)[Ljava/lang/Object;)  ----
+  invoke-interface       v4, Ljava/util/Collection;->size()I
+  move-result            v0
+  if-nez                 v0, +005h
+  sget-object            v4, Lcom/adjust/sdk/sig/n;->a [Ljava/lang/Object;
+  return-object          v4
+  invoke-interface       v4, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
+  move-result-object     v4
+  invoke-interface       v4, Ljava/util/Iterator;->hasNext()Z
+  move-result            v1
+  if-nez                 v1, +005h
+  sget-object            v4, Lcom/adjust/sdk/sig/n;->a [Ljava/lang/Object;
+  return-object          v4
+  new-array              v0, v0, [Ljava/lang/Object;
+  const/4                v1, 0
+  add-int/lit8           v2, v1, 1
+  invoke-interface       v4, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v3
+  aput-object            v3, v0, v1
+  array-length           v1, v0
+  if-lt                  v2, v1, +023h
+  invoke-interface       v4, Ljava/util/Iterator;->hasNext()Z
+  move-result            v1
+  if-nez                 v1, +003h
+  return-object          v0
+  mul-int/lit8           v1, v2, 3
+  add-int/lit8           v1, v1, 1
+  ushr-int/lit8          v1, v1, 1
+  if-gt                  v1, v2, +00eh
+  const                  v1, 2147483645
+  if-ge                  v2, v1, +003h
+  goto                   +7h
+  new-instance           v4, Ljava/lang/OutOfMemoryError;
+  invoke-direct          v4, Ljava/lang/OutOfMemoryError;-><init>()V
+  throw                  v4
+  invoke-static          v0, v1, Ljava/util/Arrays;->copyOf([Ljava/lang/Object; I)[Ljava/lang/Object;
+  move-result-object     v0
+  move                   v1, v2
+  goto                   -2bh
+  invoke-interface       v4, Ljava/util/Iterator;->hasNext()Z
+  move-result            v1
+  if-nez                 v1, -006h
+  invoke-static          v0, v2, Ljava/util/Arrays;->copyOf([Ljava/lang/Object; I)[Ljava/lang/Object;
+  move-result-object     v4
+  return-object          v4
+
+---- METHOD public static final a((Ljava/util/Collection; [Ljava/lang/Object;)[Ljava/lang/Object;)  ----
+  invoke-interface       v5, Ljava/util/Collection;->size()I
+  move-result            v0
+  const/4                v1, 0
+  const/4                v2, 0
+  if-nez                 v0, +008h
+  array-length           v5, v6
+  if-lez                 v5, +014h
+  aput-object            v1, v6, v2
+  return-object          v6
+  invoke-interface       v5, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
+  move-result-object     v5
+  invoke-interface       v5, Ljava/util/Iterator;->hasNext()Z
+  move-result            v3
+  if-nez                 v3, +008h
+  array-length           v5, v6
+  if-lez                 v5, +004h
+  aput-object            v1, v6, v2
+  return-object          v6
+  array-length           v3, v6
+  if-gt                  v0, v3, +004h
+  move-object            v0, v6
+  goto                   +fh
+  invoke-virtual         v6, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+  move-result-object     v3
+  invoke-virtual         v3, Ljava/lang/Class;->getComponentType()Ljava/lang/Class;
+  move-result-object     v3
+  invoke-static          v3, v0, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class; I)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, [Ljava/lang/Object;
+  add-int/lit8           v3, v2, 1
+  invoke-interface       v5, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v4
+  aput-object            v4, v0, v2
+  array-length           v2, v0
+  if-lt                  v3, v2, +023h
+  invoke-interface       v5, Ljava/util/Iterator;->hasNext()Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return-object          v0
+  mul-int/lit8           v2, v3, 3
+  add-int/lit8           v2, v2, 1
+  ushr-int/lit8          v2, v2, 1
+  if-gt                  v2, v3, +00eh
+  const                  v2, 2147483645
+  if-ge                  v3, v2, +003h
+  goto                   +7h
+  new-instance           v5, Ljava/lang/OutOfMemoryError;
+  invoke-direct          v5, Ljava/lang/OutOfMemoryError;-><init>()V
+  throw                  v5
+  invoke-static          v0, v2, Ljava/util/Arrays;->copyOf([Ljava/lang/Object; I)[Ljava/lang/Object;
+  move-result-object     v0
+  move                   v2, v3
+  goto                   -2bh
+  invoke-interface       v5, Ljava/util/Iterator;->hasNext()Z
+  move-result            v2
+  if-nez                 v2, -006h
+  if-ne                  v0, v6, +005h
+  aput-object            v1, v6, v3
+  return-object          v6
+  invoke-static          v0, v3, Ljava/util/Arrays;->copyOf([Ljava/lang/Object; I)[Ljava/lang/Object;
+  move-result-object     v5
+  return-object          v5
+######################################################################

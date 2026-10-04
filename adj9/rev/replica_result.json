@@ -1,0 +1,59 @@
+{
+ "when": "2026-09-17 00:19:33",
+ "arms": {
+  "R_replica_captured_inputs": {
+   "gps": "56ccc797-f8d2-4243-8594-27b97a7aa257",
+   "auid": "1904d6d0-4442-472c-bdd5-a0faf9266584",
+   "creative": "rep_ac74",
+   "session": [
+    200,
+    "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"5cab90b5cb68d26140ce89e938ecfaf6\",\"ask_in\":2000}"
+   ],
+   "click": [
+    200,
+    "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"5cab90b5cb68d26140ce89e938ecfaf6\"}"
+   ],
+   "attrs": [
+    [
+     200,
+     "wy7261z|Organic|eng=0001-01-01T00:00:00Z"
+    ],
+    [
+     200,
+     "wy7261z|Organic|eng=0001-01-01T00:00:00Z"
+    ],
+    [
+     200,
+     "wy7261z|Organic|eng=0001-01-01T00:00:00Z"
+    ]
+   ]
+  },
+  "S_control_fresh_inputs": {
+   "gps": "2d9a2569-3f78-451b-8e02-b3f9649cc3f2",
+   "auid": "01825eda-3c04-4ae3-be53-357a5670922c",
+   "creative": "ctl_9d10",
+   "session": [
+    200,
+    "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"99a8f32b3912e60880838e4900613897\",\"ask_in\":2000}"
+   ],
+   "click": [
+    200,
+    "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"99a8f32b3912e60880838e4900613897\"}"
+   ],
+   "attrs": [
+    [
+     200,
+     "wy7261z|Organic|eng=0001-01-01T00:00:00Z"
+    ],
+    [
+     200,
+     "wy7261z|Organic|eng=0001-01-01T00:00:00Z"
+    ],
+    [
+     200,
+     "wy7261z|Organic|eng=0001-01-01T00:00:00Z"
+    ]
+   ]
+  }
+ }
+}

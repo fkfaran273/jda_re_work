@@ -1,0 +1,201 @@
+# CLASS Lcom/adjust/sdk/Logger;
+FIELD private static formatErrorMessage Ljava/lang/String;
+FIELD private isProductionEnvironment Z
+FIELD private logLevel Lcom/adjust/sdk/LogLevel;
+FIELD private logLevelLocked Z
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v2, Ljava/lang/Object;-><init>()V
+  const/4                v0, 0
+  iput-boolean           v0, v2, Lcom/adjust/sdk/Logger;->isProductionEnvironment Z
+  iput-boolean           v0, v2, Lcom/adjust/sdk/Logger;->logLevelLocked Z
+  sget-object            v1, Lcom/adjust/sdk/LogLevel;->INFO Lcom/adjust/sdk/LogLevel;
+  invoke-virtual         v2, v1, v0, Lcom/adjust/sdk/Logger;->setLogLevel(Lcom/adjust/sdk/LogLevel; Z)V
+  return-void            
+
+---- METHOD public varargs Assert (Ljava/lang/String; [Ljava/lang/Object;)V ----
+  const-string           v0, "Adjust"
+  iget-boolean           v1, v3, Lcom/adjust/sdk/Logger;->isProductionEnvironment Z
+  if-eqz                 v1, +003h
+  goto                   +21h
+  iget-object            v1, v3, Lcom/adjust/sdk/Logger;->logLevel Lcom/adjust/sdk/LogLevel;
+  iget                   v1, v1, Lcom/adjust/sdk/LogLevel;->androidLogLevel I
+  const/4                v2, 7
+  if-gt                  v1, v2, +01bh
+  invoke-static          v4, v5, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v1
+  invoke-static          v2, v0, v1, Landroid/util/Log;->println(I Ljava/lang/String; Ljava/lang/String;)I
+  return-void            
+  sget-object            v1, Lcom/adjust/sdk/Logger;->formatErrorMessage Ljava/lang/String;
+  invoke-static          v5, Ljava/util/Arrays;->toString([Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v5
+  filled-new-array       v4, v5, [Ljava/lang/Object;
+  move-result-object     v4
+  invoke-static          v1, v4, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v4
+  invoke-static          v0, v4, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String;)I
+  return-void            
+
+---- METHOD public varargs debug (Ljava/lang/String; [Ljava/lang/Object;)V ----
+  const-string           v0, "Adjust"
+  iget-boolean           v1, v3, Lcom/adjust/sdk/Logger;->isProductionEnvironment Z
+  if-eqz                 v1, +003h
+  goto                   +21h
+  iget-object            v1, v3, Lcom/adjust/sdk/Logger;->logLevel Lcom/adjust/sdk/LogLevel;
+  iget                   v1, v1, Lcom/adjust/sdk/LogLevel;->androidLogLevel I
+  const/4                v2, 3
+  if-gt                  v1, v2, +01bh
+  invoke-static          v4, v5, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v1
+  invoke-static          v0, v1, Landroid/util/Log;->d(Ljava/lang/String; Ljava/lang/String;)I
+  return-void            
+  sget-object            v1, Lcom/adjust/sdk/Logger;->formatErrorMessage Ljava/lang/String;
+  invoke-static          v5, Ljava/util/Arrays;->toString([Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v5
+  filled-new-array       v4, v5, [Ljava/lang/Object;
+  move-result-object     v4
+  invoke-static          v1, v4, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v4
+  invoke-static          v0, v4, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String;)I
+  return-void            
+
+---- METHOD public varargs error (Ljava/lang/String; [Ljava/lang/Object;)V ----
+  const-string           v0, "Adjust"
+  iget-boolean           v1, v3, Lcom/adjust/sdk/Logger;->isProductionEnvironment Z
+  if-eqz                 v1, +003h
+  goto                   +21h
+  iget-object            v1, v3, Lcom/adjust/sdk/Logger;->logLevel Lcom/adjust/sdk/LogLevel;
+  iget                   v1, v1, Lcom/adjust/sdk/LogLevel;->androidLogLevel I
+  const/4                v2, 6
+  if-gt                  v1, v2, +01bh
+  invoke-static          v4, v5, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v1
+  invoke-static          v0, v1, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String;)I
+  return-void            
+  sget-object            v1, Lcom/adjust/sdk/Logger;->formatErrorMessage Ljava/lang/String;
+  invoke-static          v5, Ljava/util/Arrays;->toString([Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v5
+  filled-new-array       v4, v5, [Ljava/lang/Object;
+  move-result-object     v4
+  invoke-static          v1, v4, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v4
+  invoke-static          v0, v4, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String;)I
+  return-void            
+
+---- METHOD public varargs info (Ljava/lang/String; [Ljava/lang/Object;)V ----
+  const-string           v0, "Adjust"
+  iget-boolean           v1, v3, Lcom/adjust/sdk/Logger;->isProductionEnvironment Z
+  if-eqz                 v1, +003h
+  goto                   +21h
+  iget-object            v1, v3, Lcom/adjust/sdk/Logger;->logLevel Lcom/adjust/sdk/LogLevel;
+  iget                   v1, v1, Lcom/adjust/sdk/LogLevel;->androidLogLevel I
+  const/4                v2, 4
+  if-gt                  v1, v2, +01bh
+  invoke-static          v4, v5, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v1
+  invoke-static          v0, v1, Landroid/util/Log;->i(Ljava/lang/String; Ljava/lang/String;)I
+  return-void            
+  sget-object            v1, Lcom/adjust/sdk/Logger;->formatErrorMessage Ljava/lang/String;
+  invoke-static          v5, Ljava/util/Arrays;->toString([Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v5
+  filled-new-array       v4, v5, [Ljava/lang/Object;
+  move-result-object     v4
+  invoke-static          v1, v4, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v4
+  invoke-static          v0, v4, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String;)I
+  return-void            
+
+---- METHOD public lockLogLevel ()V ----
+  const/4                v0, 1
+  iput-boolean           v0, v1, Lcom/adjust/sdk/Logger;->logLevelLocked Z
+  return-void            
+
+---- METHOD public setLogLevel (Lcom/adjust/sdk/LogLevel; Z)V ----
+  iget-boolean           v0, v1, Lcom/adjust/sdk/Logger;->logLevelLocked Z
+  if-eqz                 v0, +003h
+  return-void            
+  iput-object            v2, v1, Lcom/adjust/sdk/Logger;->logLevel Lcom/adjust/sdk/LogLevel;
+  iput-boolean           v3, v1, Lcom/adjust/sdk/Logger;->isProductionEnvironment Z
+  return-void            
+
+---- METHOD public setLogLevelString (Ljava/lang/String; Z)V ----
+  if-eqz                 v2, +019h
+  sget-object            v0, Ljava/util/Locale;->US Ljava/util/Locale;
+  invoke-virtual         v2, v0, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
+  move-result-object     v0
+  invoke-static          v0, Lcom/adjust/sdk/LogLevel;->valueOf(Ljava/lang/String;)Lcom/adjust/sdk/LogLevel;
+  move-result-object     v0
+  invoke-virtual         v1, v0, v3, Lcom/adjust/sdk/Logger;->setLogLevel(Lcom/adjust/sdk/LogLevel; Z)V
+  return-void            
+  filled-new-array       v2, [Ljava/lang/Object;
+  move-result-object     v2
+  const-string           v3, "Malformed logLevel '%s', falling back to 'info'"
+  invoke-virtual         v1, v3, v2, Lcom/adjust/sdk/Logger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD public varargs verbose (Ljava/lang/String; [Ljava/lang/Object;)V ----
+  const-string           v0, "Adjust"
+  iget-boolean           v1, v3, Lcom/adjust/sdk/Logger;->isProductionEnvironment Z
+  if-eqz                 v1, +003h
+  goto                   +21h
+  iget-object            v1, v3, Lcom/adjust/sdk/Logger;->logLevel Lcom/adjust/sdk/LogLevel;
+  iget                   v1, v1, Lcom/adjust/sdk/LogLevel;->androidLogLevel I
+  const/4                v2, 2
+  if-gt                  v1, v2, +01bh
+  invoke-static          v4, v5, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v1
+  invoke-static          v0, v1, Landroid/util/Log;->v(Ljava/lang/String; Ljava/lang/String;)I
+  return-void            
+  sget-object            v1, Lcom/adjust/sdk/Logger;->formatErrorMessage Ljava/lang/String;
+  invoke-static          v5, Ljava/util/Arrays;->toString([Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v5
+  filled-new-array       v4, v5, [Ljava/lang/Object;
+  move-result-object     v4
+  invoke-static          v1, v4, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v4
+  invoke-static          v0, v4, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String;)I
+  return-void            
+
+---- METHOD public varargs warn (Ljava/lang/String; [Ljava/lang/Object;)V ----
+  const-string           v0, "Adjust"
+  iget-boolean           v1, v3, Lcom/adjust/sdk/Logger;->isProductionEnvironment Z
+  if-eqz                 v1, +003h
+  goto                   +21h
+  iget-object            v1, v3, Lcom/adjust/sdk/Logger;->logLevel Lcom/adjust/sdk/LogLevel;
+  iget                   v1, v1, Lcom/adjust/sdk/LogLevel;->androidLogLevel I
+  const/4                v2, 5
+  if-gt                  v1, v2, +01bh
+  invoke-static          v4, v5, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v1
+  invoke-static          v0, v1, Landroid/util/Log;->w(Ljava/lang/String; Ljava/lang/String;)I
+  return-void            
+  sget-object            v1, Lcom/adjust/sdk/Logger;->formatErrorMessage Ljava/lang/String;
+  invoke-static          v5, Ljava/util/Arrays;->toString([Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v5
+  filled-new-array       v4, v5, [Ljava/lang/Object;
+  move-result-object     v4
+  invoke-static          v1, v4, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v4
+  invoke-static          v0, v4, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String;)I
+  return-void            
+
+---- METHOD public varargs warnInProduction (Ljava/lang/String; [Ljava/lang/Object;)V ----
+  const-string           v0, "Adjust"
+  iget-object            v1, v3, Lcom/adjust/sdk/Logger;->logLevel Lcom/adjust/sdk/LogLevel;
+  iget                   v1, v1, Lcom/adjust/sdk/LogLevel;->androidLogLevel I
+  const/4                v2, 5
+  if-gt                  v1, v2, +01bh
+  invoke-static          v4, v5, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v1
+  invoke-static          v0, v1, Landroid/util/Log;->w(Ljava/lang/String; Ljava/lang/String;)I
+  return-void            
+  sget-object            v1, Lcom/adjust/sdk/Logger;->formatErrorMessage Ljava/lang/String;
+  invoke-static          v5, Ljava/util/Arrays;->toString([Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v5
+  filled-new-array       v4, v5, [Ljava/lang/Object;
+  move-result-object     v4
+  invoke-static          v1, v4, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v4
+  invoke-static          v0, v4, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String;)I
+  return-void            
+######################################################################

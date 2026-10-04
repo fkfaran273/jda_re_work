@@ -1,0 +1,167 @@
+# CLASS Lcom/adjust/sdk/IActivityHandler;
+
+---- METHOD public abstract addGlobalCallbackParameter (Ljava/lang/String; Ljava/lang/String;)V ----
+  (no code)
+
+---- METHOD public abstract addGlobalPartnerParameter (Ljava/lang/String; Ljava/lang/String;)V ----
+  (no code)
+
+---- METHOD public abstract endFirstSessionDelay ()V ----
+  (no code)
+
+---- METHOD public abstract finishedTrackingActivity (Lcom/adjust/sdk/ResponseData;)V ----
+  (no code)
+
+---- METHOD public abstract gdprForgetMe ()V ----
+  (no code)
+
+---- METHOD public abstract getActivityState ()Lcom/adjust/sdk/ActivityState; ----
+  (no code)
+
+---- METHOD public abstract getAdid (Lcom/adjust/sdk/OnAdidReadListener;)V ----
+  (no code)
+
+---- METHOD public abstract getAdidWithTimeout (J Lcom/adjust/sdk/OnAdidReadListener;)V ----
+  (no code)
+
+---- METHOD public abstract getAdjustConfig ()Lcom/adjust/sdk/AdjustConfig; ----
+  (no code)
+
+---- METHOD public abstract getAttribution (Lcom/adjust/sdk/OnAttributionReadListener;)V ----
+  (no code)
+
+---- METHOD public abstract getAttributionWithTimeout (J Lcom/adjust/sdk/OnAttributionReadListener;)V ----
+  (no code)
+
+---- METHOD public abstract getContext ()Landroid/content/Context; ----
+  (no code)
+
+---- METHOD public abstract getDeviceInfo ()Lcom/adjust/sdk/DeviceInfo; ----
+  (no code)
+
+---- METHOD public abstract getFirstSessionDelayManager ()Lcom/adjust/sdk/P; ----
+  (no code)
+
+---- METHOD public abstract getGlobalParameters ()Lcom/adjust/sdk/GlobalParameters; ----
+  (no code)
+
+---- METHOD public abstract getInternalState ()Lcom/adjust/sdk/ActivityHandler$InternalState; ----
+  (no code)
+
+---- METHOD public abstract getThirdPartySharingSettingsWithTimeout (J Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;)V ----
+  (no code)
+
+---- METHOD public abstract gotOptOutResponse ()V ----
+  (no code)
+
+---- METHOD public abstract init (Lcom/adjust/sdk/AdjustConfig;)V ----
+  (no code)
+
+---- METHOD public abstract isEnabled (Lcom/adjust/sdk/OnIsEnabledListener;)V ----
+  (no code)
+
+---- METHOD public abstract isEnabled ()Z ----
+  (no code)
+
+---- METHOD public abstract launchAttributionResponseTasks (Lcom/adjust/sdk/AttributionResponseData;)V ----
+  (no code)
+
+---- METHOD public abstract launchEventResponseTasks (Lcom/adjust/sdk/EventResponseData;)V ----
+  (no code)
+
+---- METHOD public abstract launchPurchaseVerificationResponseTasks (Lcom/adjust/sdk/PurchaseVerificationResponseData;)V ----
+  (no code)
+
+---- METHOD public abstract launchSdkClickResponseTasks (Lcom/adjust/sdk/SdkClickResponseData;)V ----
+  (no code)
+
+---- METHOD public abstract launchSessionResponseTasks (Lcom/adjust/sdk/SessionResponseData;)V ----
+  (no code)
+
+---- METHOD public abstract onPause ()V ----
+  (no code)
+
+---- METHOD public abstract onResume ()V ----
+  (no code)
+
+---- METHOD public abstract processAndResolveDeeplink (Lcom/adjust/sdk/AdjustDeeplink; J Lcom/adjust/sdk/OnDeeplinkResolvedListener;)V ----
+  (no code)
+
+---- METHOD public abstract processDeeplink (Lcom/adjust/sdk/AdjustDeeplink; J)V ----
+  (no code)
+
+---- METHOD public abstract processRemoteTriggers (Lcom/adjust/sdk/ResponseData;)V ----
+  (no code)
+
+---- METHOD public abstract removeGlobalCallbackParameter (Ljava/lang/String;)V ----
+  (no code)
+
+---- METHOD public abstract removeGlobalCallbackParameters ()V ----
+  (no code)
+
+---- METHOD public abstract removeGlobalPartnerParameter (Ljava/lang/String;)V ----
+  (no code)
+
+---- METHOD public abstract removeGlobalPartnerParameters ()V ----
+  (no code)
+
+---- METHOD public abstract sendInstallReferrer (Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String;)V ----
+  (no code)
+
+---- METHOD public abstract sendLicenseVerificationData (Lcom/adjust/sdk/LicenseData;)V ----
+  (no code)
+
+---- METHOD public abstract sendPreinstallReferrer ()V ----
+  (no code)
+
+---- METHOD public abstract sendReftagReferrer ()V ----
+  (no code)
+
+---- METHOD public abstract setAskingAttribution (Z)V ----
+  (no code)
+
+---- METHOD public abstract setCoppaComplianceInDelay (Z)V ----
+  (no code)
+
+---- METHOD public abstract setEnabled (Z)V ----
+  (no code)
+
+---- METHOD public abstract setExternalDeviceIdInDelay (Ljava/lang/String;)V ----
+  (no code)
+
+---- METHOD public abstract setOfflineMode (Z)V ----
+  (no code)
+
+---- METHOD public abstract setPlayStoreKidsComplianceInDelay (Z)V ----
+  (no code)
+
+---- METHOD public abstract setPushToken (Ljava/lang/String; Z)V ----
+  (no code)
+
+---- METHOD public abstract teardown ()V ----
+  (no code)
+
+---- METHOD public abstract trackAdRevenue (Lcom/adjust/sdk/AdjustAdRevenue;)V ----
+  (no code)
+
+---- METHOD public abstract trackEvent (Lcom/adjust/sdk/AdjustEvent;)V ----
+  (no code)
+
+---- METHOD public abstract trackMeasurementConsent (Z)V ----
+  (no code)
+
+---- METHOD public abstract trackPlayStoreSubscription (Lcom/adjust/sdk/AdjustPlayStoreSubscription;)V ----
+  (no code)
+
+---- METHOD public abstract trackThirdPartySharing (Lcom/adjust/sdk/AdjustThirdPartySharing;)V ----
+  (no code)
+
+---- METHOD public abstract updateAttributionI (Lcom/adjust/sdk/AdjustAttribution;)Z ----
+  (no code)
+
+---- METHOD public abstract verifyAndTrackPlayStorePurchase (Lcom/adjust/sdk/AdjustEvent; Lcom/adjust/sdk/OnPurchaseVerificationFinishedListener;)V ----
+  (no code)
+
+---- METHOD public abstract verifyPlayStorePurchase (Lcom/adjust/sdk/AdjustPlayStorePurchase; Lcom/adjust/sdk/OnPurchaseVerificationFinishedListener;)V ----
+  (no code)
+######################################################################

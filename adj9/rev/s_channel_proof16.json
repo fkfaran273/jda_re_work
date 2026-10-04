@@ -1,0 +1,18 @@
+{
+ "gps": "5510c4c5-0e6b-43b1-9cf9-da35ece80a54",
+ "verdict": {
+  "tracker_token": "24pxw9rl",
+  "tracker_name": "VKM Digital Yeni::AH::vkm_0926_36::penti_generic",
+  "network": "VKM Digital Yeni",
+  "campaign": "AH",
+  "adgroup": "vkm_0926_36",
+  "creative": "penti_generic",
+  "engagement_time": "2026-09-27T09:06:52Z",
+  "installed_at": "2026-09-27T09:06:58Z",
+  "first_session_time": "2026-09-27T09:06:58Z",
+  "is_reattributed": false,
+  "is_redownload_install": false
+ },
+ "S_values": [],
+ "logcat_ADJ9S": "--------- beginning of main\r\n09-27 14:36:56.459 12178 12178 I ADJ9S   : oracle_native loaded\r\n09-27 14:36:58.150 12178 12428 I ADJ9S   : do_arm scan: total=2714 signer=12 libp=/data/app/~~lZlbQ9093r5yh4l_UNcgrQ==/com.penti.app-rMPPsNGeevOXTkZZSRwbfA==/split_config.arm64_v8a.apk\r\n09-27 14:36:58.150 12178 12428 I ADJ9S   : arming GOT hooks (lib=/data/app/~~lZlbQ9093r5yh4l_UNcgrQ==/com.penti.app-rMPPsNGeevOXTkZZSRwbfA==/split_config.arm64_v8a.apk)\r\n09-27 14:36:58.167 12178 12428 I ADJ9S   : nativeArm -> 0 (poll done)\r\n"
+}

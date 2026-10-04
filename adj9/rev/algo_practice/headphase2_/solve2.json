@@ -1,0 +1,92 @@
+[
+ {
+  "urandom": "11223344",
+  "seed": 2355713116,
+  "head": "4828f9aeab994c869e40af37097ddbbb",
+  "sels": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "urandom": "deadbeef",
+  "seed": 3236921747,
+  "head": "dd9ae371d7ffa9d89e53a3bdefc5d84e",
+  "sels": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "urandom": "a5a5a5a5",
+  "seed": 3634413439,
+  "head": "730a893ebb2ac03fd76b081fb998aecc",
+  "sels": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "urandom": "01020304",
+  "seed": 4270308254,
+  "head": "8bb4a93fe385ab12baecc323efbafe44",
+  "sels": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "urandom": "00000001",
+  "seed": 2065742714,
+  "head": "7be7ad06f9036706babfe5e220c7fd7e",
+  "sels": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ },
+ {
+  "urandom": "7fffffff",
+  "seed": 370675294,
+  "head": "f267b31311be7e9adbbd9d43b09c15bb",
+  "sels": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null
+  ]
+ }
+]

@@ -1,0 +1,12 @@
+{
+ "arm": "python",
+ "gps_adid": "b4d29f7e-f974-4b50-a777-69ca14ca9529",
+ "verdict": {
+  "token": "wy7261z",
+  "network": "Organic",
+  "engagement_time": "0001-01-01T00:00:00Z",
+  "installed_at": "2026-09-24T15:15:34Z",
+  "organic": true,
+  "verdict": "ORGANIC"
+ }
+}

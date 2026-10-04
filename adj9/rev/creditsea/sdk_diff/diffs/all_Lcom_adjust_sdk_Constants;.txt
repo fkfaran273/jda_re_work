@@ -1,0 +1,13 @@
+--- 
++++ 
+@@ -21,2 +21,3 @@
+ FIELD public static final CONTENT_PROVIDER_NO_PERMISSION Ljava/lang/String;
++FIELD public static final CONTENT_PROVIDER_SAMSUNG_MAPS Ljava/lang/String;
+ FIELD public static final DEEPLINK Ljava/lang/String;
+@@ -63,2 +64,6 @@
+ FIELD public static final REFTAG Ljava/lang/String;
++FIELD public static final SAMSUNG_PREINSTALL_APP_TRACKING_ID Ljava/lang/String;
++FIELD public static final SAMSUNG_PREINSTALL_CONTENT_URI_AUTHORITY Ljava/lang/String;
++FIELD public static final SAMSUNG_PREINSTALL_CONTENT_URI_PATH Ljava/lang/String;
++FIELD public static final SAMSUNG_PREINSTALL_PAYLOAD_PROVIDER Ljava/lang/String;
+ FIELD public static final SCHEME Ljava/lang/String;

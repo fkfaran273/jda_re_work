@@ -1,0 +1,168 @@
+
+########## Lcom/adjust/sdk/sig/t1; ##########
+
+----- method <init> ()V flags=public constructor
+  invoke-direct v0, Ljava/lang/Object;-><init>()V
+
+----- method a (Landroid/content/Context;)V flags=public final
+  const-string v0, "AndroidKeyStore"
+  invoke-static v0, Ljava/security/KeyStore;->getInstance(Ljava/lang/String;)Ljava/security/KeyStore;
+  invoke-virtual v0, v1, Ljava/security/KeyStore;->load(Ljava/security/KeyStore$LoadStoreParameter;)V
+  const-string v1, "key2"
+  invoke-virtual v0, v1, Ljava/security/KeyStore;->deleteEntry(Ljava/lang/String;)V
+  const-string v0, "adjust_keys"
+  invoke-virtual v3, v0, v1, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String; I)Landroid/content/SharedPreferences;
+  invoke-interface v3, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+  const-string v0, "encrypted_key"
+  invoke-interface v3, v0, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+  invoke-interface v3, Landroid/content/SharedPreferences$Editor;->apply()V
+
+----- method a (Landroid/content/Context; [B)[B flags=public final
+  const-string v4, "HmacSHA256"
+  invoke-static v4, Ljavax/crypto/Mac;->getInstance(Ljava/lang/String;)Ljavax/crypto/Mac;
+  const-string v0, "AndroidKeyStore"
+  invoke-static v0, Ljava/security/KeyStore;->getInstance(Ljava/lang/String;)Ljava/security/KeyStore;
+  invoke-virtual v0, v1, Ljava/security/KeyStore;->load(Ljava/security/KeyStore$LoadStoreParameter;)V
+  const-string v2, "key2"
+  invoke-virtual v0, v2, v1, Ljava/security/KeyStore;->getKey(Ljava/lang/String; [C)Ljava/security/Key;
+  invoke-virtual v4, v0, Ljavax/crypto/Mac;->init(Ljava/security/Key;)V
+  invoke-virtual v4, v5, Ljavax/crypto/Mac;->update([B)V
+  invoke-virtual v4, Ljavax/crypto/Mac;->doFinal()[B
+
+----- method b (Landroid/content/Context;)V flags=public final
+  const-string v4, "AndroidKeyStore"
+  invoke-static v4, Ljava/security/KeyStore;->getInstance(Ljava/lang/String;)Ljava/security/KeyStore;
+  invoke-virtual v0, v1, Ljava/security/KeyStore;->load(Ljava/security/KeyStore$LoadStoreParameter;)V
+  const-string v1, "key2"
+  invoke-virtual v0, v1, Ljava/security/KeyStore;->containsAlias(Ljava/lang/String;)Z
+  const-string v0, "HmacSHA256"
+  invoke-static v0, v4, Ljavax/crypto/KeyGenerator;->getInstance(Ljava/lang/String; Ljava/lang/String;)Ljavax/crypto/KeyGenerator;
+  new-instance v0, Landroid/security/keystore/KeyGenParameterSpec$Builder;
+  invoke-direct v0, v1, v2, Landroid/security/keystore/KeyGenParameterSpec$Builder;-><init>(Ljava/lang/String; I)V
+  invoke-virtual v0, Landroid/security/keystore/KeyGenParameterSpec$Builder;->build()Landroid/security/keystore/KeyGenParameterSpec;
+  invoke-virtual v4, v0, Ljavax/crypto/KeyGenerator;->init(Ljava/security/spec/AlgorithmParameterSpec;)V
+  invoke-virtual v4, Ljavax/crypto/KeyGenerator;->generateKey()Ljavax/crypto/SecretKey;
+
+########## Lcom/adjust/sdk/sig/u2; ##########
+
+----- method <init> (Landroid/content/Context; Lcom/adjust/sdk/sig/t1; Lcom/adjust/sdk/sig/NativeLibHelper; Ljava/util/Map; Ljava/util/Map; Ljava/util/Map;)V flags=public constructor
+  invoke-direct v0, Ljava/lang/Object;-><init>()V
+  invoke-interface v4, Ljava/util/Map;->isEmpty()Z
+  invoke-direct v1, v4, Lcom/adjust/sdk/sig/x1;-><init>(Ljava/util/Map;)V
+  const-string/jumbo v1, sign: Empty input parameters
+  invoke-static v1, Lokhttp3/a;->g(Ljava/lang/String;)V
+
+----- method a (Ljava/util/LinkedHashMap; [B)Ljava/lang/String; flags=public static
+  invoke-static v2, v1, Landroid/util/Base64;->encodeToString([B I)Ljava/lang/String;
+  const-string v3, "adj_signing_id"
+  invoke-virtual v0, v3, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  const-string v5, "Required value was null."
+  const-string v6, "headers_id"
+  invoke-virtual v0, v6, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  const-string v8, "algorithm"
+  invoke-virtual v0, v8, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  const-string v10, "native_version"
+  invoke-virtual v0, v10, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  const-string v12, "adj_verification"
+  invoke-virtual v0, v12, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  const-string/jumbo v13, signature
+  invoke-static v2, v1, Ljava/util/Arrays;->copyOf([Ljava/lang/Object; I)[Ljava/lang/Object;
+  const-string v13, "%s="%s""
+  invoke-static v5, v13, v2, Ljava/lang/String;->format(Ljava/util/Locale; Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  invoke-static v2, v1, Ljava/util/Arrays;->copyOf([Ljava/lang/Object; I)[Ljava/lang/Object;
+  invoke-static v5, v13, v2, Ljava/lang/String;->format(Ljava/util/Locale; Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  invoke-static v2, v1, Ljava/util/Arrays;->copyOf([Ljava/lang/Object; I)[Ljava/lang/Object;
+  invoke-static v5, v13, v2, Ljava/lang/String;->format(Ljava/util/Locale; Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  invoke-static v2, v1, Ljava/util/Arrays;->copyOf([Ljava/lang/Object; I)[Ljava/lang/Object;
+  invoke-static v5, v13, v2, Ljava/lang/String;->format(Ljava/util/Locale; Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  invoke-static v2, v1, Ljava/util/Arrays;->copyOf([Ljava/lang/Object; I)[Ljava/lang/Object;
+  invoke-static v5, v13, v2, Ljava/lang/String;->format(Ljava/util/Locale; Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  invoke-static v0, v1, Ljava/util/Arrays;->copyOf([Ljava/lang/Object; I)[Ljava/lang/Object;
+  invoke-static v5, v13, v0, Ljava/lang/String;->format(Ljava/util/Locale; Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  invoke-static v0, v1, Ljava/util/Arrays;->copyOf([Ljava/lang/Object; I)[Ljava/lang/Object;
+  const-string v1, "Signature %s,%s,%s,%s,%s,%s"
+  invoke-static v5, v1, v0, Ljava/lang/String;->format(Ljava/util/Locale; Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  invoke-static v5, Lokhttp3/a;->g(Ljava/lang/String;)V
+  invoke-static v5, Lokhttp3/a;->g(Ljava/lang/String;)V
+  invoke-static v5, Lokhttp3/a;->g(Ljava/lang/String;)V
+  invoke-static v5, Lokhttp3/a;->g(Ljava/lang/String;)V
+  invoke-static v5, Lokhttp3/a;->g(Ljava/lang/String;)V
+
+----- method a ()V flags=public final
+  const-string v1, "Signature execution begin: "
+  invoke-virtual v0, v1, Lcom/adjust/sdk/sig/x1;->a(Ljava/lang/String;)V
+  invoke-direct v1, v0, Ljava/util/LinkedHashMap;-><init>(Ljava/util/Map;)V
+  const-string v0, "activity_kind"
+  const-string v2, "client_sdk"
+  invoke-direct v2, v0, Lcom/adjust/sdk/sig/f;-><init>([Ljava/lang/Object;)V
+  invoke-interface v2, Ljava/util/Iterator;->hasNext()Z
+  invoke-interface v2, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  invoke-interface v3, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  invoke-interface v1, v0, v3, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  const-string/jumbo v1, sign: 
+  const-string v2, " is null"
+  invoke-static v1, v0, v2, Ld;->k(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  invoke-static v0, Lokhttp3/a;->q(Ljava/lang/Object;)V
+  const-string v2, "a"
+  invoke-interface v0, v2, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  const-string v2, "b"
+  invoke-virtual v2, v0, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+  invoke-direct v0, Lcom/adjust/sdk/sig/a0;-><init>()V
+  invoke-static v0, Lcom/adjust/sdk/sig/o3;->a(Lcom/adjust/sdk/sig/a0;)Ljava/lang/String;
+  const-string v2, "adj_verification"
+  invoke-interface v1, v2, v0, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  const-string v2, "Signing all the parameters begin: "
+  invoke-virtual v0, v2, Lcom/adjust/sdk/sig/x1;->a(Ljava/lang/String;)V
+  const-string v4, "SignerInstance"
+  invoke-virtual v5, v0, Lcom/adjust/sdk/sig/t1;->b(Landroid/content/Context;)V
+  invoke-virtual v1, Ljava/lang/Object;->toString()Ljava/lang/String;
+  invoke-static v6, Lcom/adjust/sdk/sig/d3;->a(Ljava/lang/String;)[B
+  invoke-virtual v5, v0, v6, Lcom/adjust/sdk/sig/t1;->a(Landroid/content/Context; [B)[B
+  instance-of v6, v5, Ljava/security/UnrecoverableKeyException;
+  instance-of v6, v5, Ljava/security/InvalidKeyException;
+  const-string/jumbo v1, sign: Received an Exception: 
+  invoke-direct v0, v1, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual v5, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  invoke-virtual v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  invoke-static v4, v0, v5, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Throwable;)I
+  const-string/jumbo v7, sign: Received a retriable exception: 
+  invoke-direct v6, v7, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual v5, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  invoke-virtual v6, v7, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual v6, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  invoke-static v4, v6, v5, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Throwable;)I
+  const-string/jumbo v6, sign: Attempting retry #
+  invoke-direct v5, v6, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual v5, v3, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+  invoke-virtual v5, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  invoke-static v4, v5, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String;)I
+  invoke-virtual v4, v0, Lcom/adjust/sdk/sig/t1;->a(Landroid/content/Context;)V
+  const-string/jumbo v1, sign: API is less than JellyBean-4-18
+  invoke-direct v0, v1, Lcom/adjust/sdk/sig/b2;-><init>(Ljava/lang/String;)V
+  const-string v3, "Calling native begin: "
+  invoke-virtual v2, v3, Lcom/adjust/sdk/sig/x1;->a(Ljava/lang/String;)V
+  invoke-virtual v2, v3, v1, v0, v5, Lcom/adjust/sdk/sig/NativeLibHelper;->a(Landroid/content/Context; Ljava/util/LinkedHashMap; [B I)[B
+  const-string v3, "Calling native end: "
+  invoke-virtual v2, v3, Lcom/adjust/sdk/sig/x1;->a(Ljava/lang/String;)V
+  const-string v3, "Signing all the parameters end: "
+  invoke-virtual v2, v3, Lcom/adjust/sdk/sig/x1;->a(Ljava/lang/String;)V
+  invoke-static v1, v0, Lcom/adjust/sdk/sig/u2;->a(Ljava/util/LinkedHashMap; [B)Ljava/lang/String;
+  const-string v2, "authorization"
+  invoke-interface v1, v2, v0, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  const-string/jumbo v1, sign: Signature generation failed. Exiting...
+  invoke-static v4, v1, v0, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Throwable;)I
+  const-string/jumbo v0, sign: Returned a null signature. Exiting...
+  invoke-static v0, Lokhttp3/a;->g(Ljava/lang/String;)V
+  const-string/jumbo v1, sign: Reached maximum retries
+  invoke-direct v0, v1, Lcom/adjust/sdk/sig/b2;-><init>(Ljava/lang/String;)V
+  invoke-interface v0, v1, Ljava/util/Map;->putAll(Ljava/util/Map;)V
+  const-string v0, "network_payload"
+  const-string v1, "endpoint"
+  invoke-direct v1, v0, Lcom/adjust/sdk/sig/f;-><init>([Ljava/lang/Object;)V
+  invoke-interface v1, Ljava/util/Iterator;->hasNext()Z
+  invoke-interface v1, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  invoke-interface v2, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  invoke-interface v3, v0, v2, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  const-string v1, "Signature execution end: "
+  invoke-virtual v0, v1, Lcom/adjust/sdk/sig/x1;->a(Ljava/lang/String;)V

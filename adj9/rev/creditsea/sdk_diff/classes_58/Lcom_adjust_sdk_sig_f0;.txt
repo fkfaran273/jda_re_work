@@ -1,0 +1,86 @@
+# CLASS Lcom/adjust/sdk/sig/f0;
+FIELD public final [Ljava/lang/Enum;
+
+---- METHOD public constructor <init>(([Ljava/lang/Enum;)V)  ----
+  invoke-direct          v0, Lcom/adjust/sdk/sig/d;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/sig/f0;->a [Ljava/lang/Enum;
+  return-void            
+
+---- METHOD public final a(()I)  ----
+  iget-object            v0, v1, Lcom/adjust/sdk/sig/f0;->a [Ljava/lang/Enum;
+  array-length           v0, v0
+  return                 v0
+
+---- METHOD public final contains((Ljava/lang/Object;)Z)  ----
+  instance-of            v0, v5, Ljava/lang/Enum;
+  const/4                v1, 0
+  if-nez                 v0, +003h
+  return                 v1
+  check-cast             v5, Ljava/lang/Enum;
+  iget-object            v0, v4, Lcom/adjust/sdk/sig/f0;->a [Ljava/lang/Enum;
+  invoke-virtual         v5, Ljava/lang/Enum;->ordinal()I
+  move-result            v2
+  if-ltz                 v2, +008h
+  array-length           v3, v0
+  if-ge                  v2, v3, +005h
+  aget-object            v0, v0, v2
+  goto                   +2h
+  const/4                v0, 0
+  if-ne                  v0, v5, +004h
+  const/4                v5, 1
+  return                 v5
+  return                 v1
+
+---- METHOD public final get((I)Ljava/lang/Object;)  ----
+  iget-object            v0, v4, Lcom/adjust/sdk/sig/f0;->a [Ljava/lang/Enum;
+  array-length           v1, v0
+  if-ltz                 v5, +007h
+  if-ge                  v5, v1, +005h
+  aget-object            v5, v0, v5
+  return-object          v5
+  new-instance           v0, Ljava/lang/IndexOutOfBoundsException;
+  const-string           v2, "index: "
+  const-string           v3, ", size: "
+  invoke-static          v2, v5, v1, v3, LB2/a;->g(Ljava/lang/String; I I Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v5
+  invoke-direct          v0, v5, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+  throw                  v0
+
+---- METHOD public final indexOf((Ljava/lang/Object;)I)  ----
+  instance-of            v0, v5, Ljava/lang/Enum;
+  const/4                v1, -1
+  if-nez                 v0, +003h
+  return                 v1
+  check-cast             v5, Ljava/lang/Enum;
+  invoke-virtual         v5, Ljava/lang/Enum;->ordinal()I
+  move-result            v0
+  iget-object            v2, v4, Lcom/adjust/sdk/sig/f0;->a [Ljava/lang/Enum;
+  if-ltz                 v0, +008h
+  array-length           v3, v2
+  if-ge                  v0, v3, +005h
+  aget-object            v2, v2, v0
+  goto                   +2h
+  const/4                v2, 0
+  if-ne                  v2, v5, +003h
+  return                 v0
+  return                 v1
+
+---- METHOD public final lastIndexOf((Ljava/lang/Object;)I)  ----
+  instance-of            v0, v5, Ljava/lang/Enum;
+  const/4                v1, -1
+  if-nez                 v0, +003h
+  return                 v1
+  check-cast             v5, Ljava/lang/Enum;
+  invoke-virtual         v5, Ljava/lang/Enum;->ordinal()I
+  move-result            v0
+  iget-object            v2, v4, Lcom/adjust/sdk/sig/f0;->a [Ljava/lang/Enum;
+  if-ltz                 v0, +008h
+  array-length           v3, v2
+  if-ge                  v0, v3, +005h
+  aget-object            v2, v2, v0
+  goto                   +2h
+  const/4                v2, 0
+  if-ne                  v2, v5, +003h
+  return                 v0
+  return                 v1
+######################################################################

@@ -1,0 +1,11 @@
+POST https://app.adjust.com/session HTTP/1.1
+Client-SDK: android5.7.0
+Authorization: Signature signature="bsEQXFuS+V8sV/CKWKwJzm0j59mXxmN909esw8JI0TjEXZkul5Ik+mafLjFRukBEZkkM3s7Z1YL4u9lyYVbIRM3nuqbQPzPl6rL2nzX0FxJgzXuACL+uN+jO4Sv97/xDS6RsdmNjvDQusccL+wZFVf0SPI12bovd/hIv6NPiFUJa4J5c+Rgu4HHNqjd+Gk2xIZxIEc7EL/+Sj1znSWyLupZv8bH/ad7jkomLzeWgVSIbRJnIqK7x6L9QeGy3wVDV",adj_signing_id="1500000",algorithm="adj9",headers_id="10",native_version="5.0.0",adj_verification="KlcAG2cbAAsKSl1KVi0FGiJbDHMI"
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)
+Host: app.adjust.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 1027
+
+store_name_from_system=com.android.vending&gps_adid_attempt=1&api_level=31&hardware_name=S2SE32.28-28-4&app_version=3.13.9&app_token=jut9tib0eeps&installed_at=2026-09-14T17%3A52%3A12.431Z%2B0530&created_at=2026-09-14T17%3A53%3A07.753Z%2B0530&wait_total=0.0&device_type=phone&language=tr&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&foreground=1&connectivity_type=1&device_manufacturer=motorola&display_width=1080&device_name=moto+g42&needs_response_details=1&os_build=S2SE32.28-28-4&updated_at=2026-09-14T17%3A52%3A12.431Z%2B0530&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&screen_format=long&last_error=0&gps_adid_src=service&wait_time=0.0&os_version=12&first_error=0&android_uuid=073ccff9-c71c-4987-a914-167666ff7c26&sent_at=2026-09-14T17%3A53%3A07.808Z%2B0530&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&session_count=1&display_height=2237&package_name=com.penti.app&initiating_package_name=com.android.vending&os_name=android&ui_mode=1&enqueue_size=0&tracking_enabled=1

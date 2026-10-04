@@ -1,0 +1,293 @@
+{
+ "module": "whiten_inverse validation",
+ "round_trip": {
+  "n": 1000,
+  "failures": 0,
+  "ok": true
+ },
+ "gold_vectors": [
+  {
+   "idx": 0,
+   "app": "creditsea",
+   "kind": "session",
+   "S": 3409741912,
+   "second": 1790694158,
+   "head": [
+    43
+   ],
+   "mint_byte_exact": true,
+   "header_law_ok": true,
+   "digest_ok": true,
+   "record_rebuild_ok": true,
+   "cert_sha1_match": true,
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": true,
+    "zero14_at_114_127": true,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "cert_sha1_hex": "06f5ffcee0541608765407ab9e0180e7b1b7e7d0",
+   "S_field_hex": "cb3c8858",
+   "d0_head_hex": "23b75fdbf8734613e1bb5aa3fd0b36da",
+   "ok": true
+  },
+  {
+   "idx": 1,
+   "app": "creditsea",
+   "kind": "click",
+   "S": 2096874977,
+   "second": 1790694159,
+   "head": [
+    43
+   ],
+   "mint_byte_exact": true,
+   "header_law_ok": true,
+   "digest_ok": true,
+   "record_rebuild_ok": true,
+   "cert_sha1_match": true,
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": true,
+    "zero14_at_114_127": true,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "cert_sha1_hex": "06f5ffcee0541608765407ab9e0180e7b1b7e7d0",
+   "S_field_hex": "7cfbc5e1",
+   "d0_head_hex": "872d0561da4bacb5739f3463eb49328d",
+   "ok": true
+  },
+  {
+   "idx": 2,
+   "app": "creditsea",
+   "kind": "attribution",
+   "S": 1354972299,
+   "second": 1790694166,
+   "head": [
+    43
+   ],
+   "mint_byte_exact": true,
+   "header_law_ok": true,
+   "digest_ok": true,
+   "record_rebuild_ok": true,
+   "cert_sha1_match": true,
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": true,
+    "zero14_at_114_127": true,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "cert_sha1_hex": "06f5ffcee0541608765407ab9e0180e7b1b7e7d0",
+   "S_field_hex": "50c33c8b",
+   "d0_head_hex": "75afde75d404aa6da01cea27e056503c",
+   "ok": true
+  },
+  {
+   "idx": 3,
+   "app": "penti",
+   "kind": "session",
+   "S": 2848944211,
+   "second": 1790341508,
+   "head": [
+    43
+   ],
+   "mint_byte_exact": true,
+   "header_law_ok": true,
+   "digest_ok": true,
+   "record_rebuild_ok": true,
+   "cert_sha1_match": true,
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": true,
+    "zero14_at_114_127": true,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "cert_sha1_hex": "fad0f10d60f93c17937b2f1eb6c09691ae7d74bd",
+   "S_field_hex": "a9cf7053",
+   "d0_head_hex": "9e7f83cdbfbdd231ee419c5da02d8737",
+   "ok": true
+  },
+  {
+   "idx": 4,
+   "app": "penti",
+   "kind": "click",
+   "S": 3290869532,
+   "second": 1790341509,
+   "head": [
+    43
+   ],
+   "mint_byte_exact": true,
+   "header_law_ok": true,
+   "digest_ok": true,
+   "record_rebuild_ok": true,
+   "cert_sha1_match": true,
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": true,
+    "zero14_at_114_127": true,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "cert_sha1_hex": "fad0f10d60f93c17937b2f1eb6c09691ae7d74bd",
+   "S_field_hex": "c426af1c",
+   "d0_head_hex": "8d1a93efeff4e52b993023ff5fe4258f",
+   "ok": true
+  },
+  {
+   "idx": 5,
+   "app": "penti",
+   "kind": "session",
+   "S": 2771381211,
+   "second": 1790341510,
+   "head": [
+    43,
+    72
+   ],
+   "mint_byte_exact": true,
+   "header_law_ok": true,
+   "digest_ok": true,
+   "record_rebuild_ok": true,
+   "cert_sha1_match": true,
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": true,
+    "zero14_at_114_127": true,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "cert_sha1_hex": "fad0f10d60f93c17937b2f1eb6c09691ae7d74bd",
+   "S_field_hex": "a52febdb",
+   "d0_head_hex": "c9eaebf976be1db9a3c0dedd60a45580",
+   "ok": true
+  },
+  {
+   "idx": 6,
+   "app": "penti",
+   "kind": "click",
+   "S": 2161973750,
+   "second": 1790341511,
+   "head": [
+    43,
+    72
+   ],
+   "mint_byte_exact": true,
+   "header_law_ok": true,
+   "digest_ok": true,
+   "record_rebuild_ok": true,
+   "cert_sha1_match": true,
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": true,
+    "zero14_at_114_127": true,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "cert_sha1_hex": "fad0f10d60f93c17937b2f1eb6c09691ae7d74bd",
+   "S_field_hex": "80dd19f6",
+   "d0_head_hex": "7c0f16bdf580fe40ffbdd814d9e91740",
+   "ok": true
+  },
+  {
+   "idx": 7,
+   "app": "penti",
+   "kind": "attribution",
+   "S": 2820583385,
+   "second": 1790341512,
+   "head": [
+    43,
+    72
+   ],
+   "mint_byte_exact": true,
+   "header_law_ok": true,
+   "digest_ok": true,
+   "record_rebuild_ok": true,
+   "cert_sha1_match": true,
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": true,
+    "zero14_at_114_127": true,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "cert_sha1_hex": "fad0f10d60f93c17937b2f1eb6c09691ae7d74bd",
+   "S_field_hex": "a81eafd9",
+   "d0_head_hex": "db59d7f63c55085aa493a55a09937b3f",
+   "ok": true
+  },
+  {
+   "idx": 8,
+   "app": "penti",
+   "kind": "attribution",
+   "S": 1854755305,
+   "second": 1790341513,
+   "head": [
+    43
+   ],
+   "mint_byte_exact": true,
+   "header_law_ok": true,
+   "digest_ok": true,
+   "record_rebuild_ok": true,
+   "cert_sha1_match": true,
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": true,
+    "zero14_at_114_127": true,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "cert_sha1_hex": "fad0f10d60f93c17937b2f1eb6c09691ae7d74bd",
+   "S_field_hex": "6e8d51e9",
+   "d0_head_hex": "f3bcaef7e77772d23b52258f6c0ffbd4",
+   "ok": true
+  }
+ ],
+ "gold_all_ok": true
+}

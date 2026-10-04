@@ -1,0 +1,148 @@
+--- 
++++ 
+@@ -18,4 +18,5 @@
+ new-instance vX, Lcom/adjust/sdk/scheduler/TimerOnce;
+-new-instance vX, Lcom/adjust/sdk/AttributionHandler$1;
+-invoke-direct vX, vX, Lcom/adjust/sdk/AttributionHandler$1;-><init>(Lcom/adjust/sdk/AttributionHandler;)V
++new-instance vX, Lcom/adjust/sdk/O;
++const/4 vX, 0
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/O;-><init>(Lcom/adjust/sdk/AttributionHandler; I)V
+ const-string "Attribution timer"
+@@ -25,25 +26,8 @@
+ return-void
+----- METHOD public static synthetic access$000 (Lcom/adjust/sdk/AttributionHandler;)V ----
+-invoke-direct vX, Lcom/adjust/sdk/AttributionHandler;->sendAttributionRequest()V
+-return-void
+----- METHOD public static synthetic access$102 (Lcom/adjust/sdk/AttributionHandler; Ljava/lang/String;)Ljava/lang/String; ----
++---- METHOD public static bridge synthetic a (Lcom/adjust/sdk/AttributionHandler;)Ljava/lang/ref/WeakReference; ----
++iget-object vX, vX, Lcom/adjust/sdk/AttributionHandler;->activityHandlerWeakRef Ljava/lang/ref/WeakReference;
++return-object vX
++---- METHOD public static bridge synthetic b (Lcom/adjust/sdk/AttributionHandler;)V ----
++const-string/jumbo sdk
+ iput-object vX, vX, Lcom/adjust/sdk/AttributionHandler;->lastInitiatedBy Ljava/lang/String;
+-return-object vX
+----- METHOD public static synthetic access$200 (Lcom/adjust/sdk/AttributionHandler; J)V ----
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/AttributionHandler;->getAttributionI(J)V
+-return-void
+----- METHOD public static synthetic access$300 (Lcom/adjust/sdk/AttributionHandler;)Ljava/lang/ref/WeakReference; ----
+-iget-object vX, vX, Lcom/adjust/sdk/AttributionHandler;->activityHandlerWeakRef Ljava/lang/ref/WeakReference;
+-return-object vX
+----- METHOD public static synthetic access$400 (Lcom/adjust/sdk/AttributionHandler; Lcom/adjust/sdk/IActivityHandler; Lcom/adjust/sdk/SessionResponseData;)V ----
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/AttributionHandler;->checkSessionResponseI(Lcom/adjust/sdk/IActivityHandler; Lcom/adjust/sdk/SessionResponseData;)V
+-return-void
+----- METHOD public static synthetic access$500 (Lcom/adjust/sdk/AttributionHandler; Lcom/adjust/sdk/IActivityHandler; Lcom/adjust/sdk/SdkClickResponseData;)V ----
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/AttributionHandler;->checkSdkClickResponseI(Lcom/adjust/sdk/IActivityHandler; Lcom/adjust/sdk/SdkClickResponseData;)V
+-return-void
+----- METHOD public static synthetic access$600 (Lcom/adjust/sdk/AttributionHandler; Lcom/adjust/sdk/IActivityHandler; Lcom/adjust/sdk/AttributionResponseData;)V ----
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/AttributionHandler;->checkAttributionResponseI(Lcom/adjust/sdk/IActivityHandler; Lcom/adjust/sdk/AttributionResponseData;)V
+-return-void
+----- METHOD public static synthetic access$700 (Lcom/adjust/sdk/AttributionHandler;)V ----
+-invoke-direct vX, Lcom/adjust/sdk/AttributionHandler;->sendAttributionRequestI()V
+ return-void
+@@ -56,19 +40,15 @@
+ check-cast vX, Lcom/adjust/sdk/IActivityHandler;
++new-instance vX, Lcom/adjust/sdk/PackageBuilder;
++invoke-interface vX, Lcom/adjust/sdk/IActivityHandler;->getAdjustConfig()Lcom/adjust/sdk/AdjustConfig;
++move-result-object vX
++invoke-interface vX, Lcom/adjust/sdk/IActivityHandler;->getDeviceInfo()Lcom/adjust/sdk/DeviceInfo;
++move-result-object vX
++invoke-interface vX, Lcom/adjust/sdk/IActivityHandler;->getActivityState()Lcom/adjust/sdk/ActivityState;
++move-result-object vX
++invoke-interface vX, Lcom/adjust/sdk/IActivityHandler;->getGlobalParameters()Lcom/adjust/sdk/GlobalParameters;
++move-result-object vX
++invoke-interface vX, Lcom/adjust/sdk/IActivityHandler;->getFirstSessionDelayManager()Lcom/adjust/sdk/P;
++move-result-object vX
+ move-object vX, vX
+-new-instance vX, Lcom/adjust/sdk/PackageBuilder;
+-move-object vX, vX
+-invoke-interface vX, Lcom/adjust/sdk/IActivityHandler;->getAdjustConfig()Lcom/adjust/sdk/AdjustConfig;
+-move-result-object vX
+-move-object vX, vX
+-invoke-interface vX, Lcom/adjust/sdk/IActivityHandler;->getDeviceInfo()Lcom/adjust/sdk/DeviceInfo;
+-move-result-object vX
+-move-object vX, vX
+-invoke-interface vX, Lcom/adjust/sdk/IActivityHandler;->getActivityState()Lcom/adjust/sdk/ActivityState;
+-move-result-object vX
+-move-object vX, vX
+-invoke-interface vX, Lcom/adjust/sdk/IActivityHandler;->getGlobalParameters()Lcom/adjust/sdk/GlobalParameters;
+-move-result-object vX
+-invoke-interface vX, Lcom/adjust/sdk/IActivityHandler;->getFirstSessionDelayManager()Lcom/adjust/sdk/FirstSessionDelayManager;
+-move-result-object vX
+-invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; J)V
++invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; J)V
+ iput-object vX, vX, Lcom/adjust/sdk/PackageBuilder;->internalState Lcom/adjust/sdk/ActivityHandler$InternalState;
+@@ -80,2 +60,5 @@
+ return-object vX
++---- METHOD public static bridge synthetic c (Lcom/adjust/sdk/AttributionHandler; Lcom/adjust/sdk/IActivityHandler; Lcom/adjust/sdk/AttributionResponseData;)V ----
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/AttributionHandler;->checkAttributionResponseI(Lcom/adjust/sdk/IActivityHandler; Lcom/adjust/sdk/AttributionResponseData;)V
++return-void
+ ---- METHOD private checkAttributionI (Lcom/adjust/sdk/IActivityHandler; Lcom/adjust/sdk/ResponseData;)V ----
+@@ -149,2 +132,15 @@
+ return-void
++---- METHOD public static bridge synthetic d (Lcom/adjust/sdk/AttributionHandler; Lcom/adjust/sdk/IActivityHandler; Lcom/adjust/sdk/SdkClickResponseData;)V ----
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/AttributionHandler;->checkSdkClickResponseI(Lcom/adjust/sdk/IActivityHandler; Lcom/adjust/sdk/SdkClickResponseData;)V
++return-void
++---- METHOD public static bridge synthetic e (Lcom/adjust/sdk/AttributionHandler; Lcom/adjust/sdk/IActivityHandler; Lcom/adjust/sdk/SessionResponseData;)V ----
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/AttributionHandler;->checkSessionResponseI(Lcom/adjust/sdk/IActivityHandler; Lcom/adjust/sdk/SessionResponseData;)V
++return-void
++---- METHOD public static bridge synthetic f (Lcom/adjust/sdk/AttributionHandler;)V ----
++const-wide/16 vX, 0
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/AttributionHandler;->getAttributionI(J)V
++return-void
++---- METHOD public static bridge synthetic g (Lcom/adjust/sdk/AttributionHandler;)V ----
++invoke-direct vX, Lcom/adjust/sdk/AttributionHandler;->sendAttributionRequest()V
++return-void
+ ---- METHOD private getAttributionI (J)V ----
+@@ -173,6 +169,10 @@
+ return-void
++---- METHOD public static bridge synthetic h (Lcom/adjust/sdk/AttributionHandler;)V ----
++invoke-direct vX, Lcom/adjust/sdk/AttributionHandler;->sendAttributionRequestI()V
++return-void
+ ---- METHOD private sendAttributionRequest ()V ----
+ iget-object vX, vX, Lcom/adjust/sdk/AttributionHandler;->scheduler Lcom/adjust/sdk/scheduler/ThreadScheduler;
+-new-instance vX, Lcom/adjust/sdk/AttributionHandler$6;
+-invoke-direct vX, vX, Lcom/adjust/sdk/AttributionHandler$6;-><init>(Lcom/adjust/sdk/AttributionHandler;)V
++new-instance vX, Lcom/adjust/sdk/O;
++const/4 vX, 2
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/O;-><init>(Lcom/adjust/sdk/AttributionHandler; I)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -218,4 +218,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/AttributionHandler;->scheduler Lcom/adjust/sdk/scheduler/ThreadScheduler;
+-new-instance vX, Lcom/adjust/sdk/AttributionHandler$5;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/AttributionHandler$5;-><init>(Lcom/adjust/sdk/AttributionHandler; Lcom/adjust/sdk/AttributionResponseData;)V
++new-instance vX, Lcom/adjust/sdk/C;
++const/16 vX, 16
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/C;-><init>(I Ljava/lang/Object; Ljava/lang/Object;)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -224,4 +225,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/AttributionHandler;->scheduler Lcom/adjust/sdk/scheduler/ThreadScheduler;
+-new-instance vX, Lcom/adjust/sdk/AttributionHandler$4;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/AttributionHandler$4;-><init>(Lcom/adjust/sdk/AttributionHandler; Lcom/adjust/sdk/SdkClickResponseData;)V
++new-instance vX, Lcom/adjust/sdk/C;
++const/16 vX, 15
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/C;-><init>(I Ljava/lang/Object; Ljava/lang/Object;)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -230,4 +232,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/AttributionHandler;->scheduler Lcom/adjust/sdk/scheduler/ThreadScheduler;
+-new-instance vX, Lcom/adjust/sdk/AttributionHandler$3;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/AttributionHandler$3;-><init>(Lcom/adjust/sdk/AttributionHandler; Lcom/adjust/sdk/SessionResponseData;)V
++new-instance vX, Lcom/adjust/sdk/C;
++const/16 vX, 14
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/C;-><init>(I Ljava/lang/Object; Ljava/lang/Object;)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -236,4 +239,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/AttributionHandler;->scheduler Lcom/adjust/sdk/scheduler/ThreadScheduler;
+-new-instance vX, Lcom/adjust/sdk/AttributionHandler$2;
+-invoke-direct vX, vX, Lcom/adjust/sdk/AttributionHandler$2;-><init>(Lcom/adjust/sdk/AttributionHandler;)V
++new-instance vX, Lcom/adjust/sdk/O;
++const/4 vX, 1
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/O;-><init>(Lcom/adjust/sdk/AttributionHandler; I)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -250,4 +254,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/AttributionHandler;->scheduler Lcom/adjust/sdk/scheduler/ThreadScheduler;
+-new-instance vX, Lcom/adjust/sdk/AttributionHandler$7;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/AttributionHandler$7;-><init>(Lcom/adjust/sdk/AttributionHandler; Lcom/adjust/sdk/ResponseData;)V
++new-instance vX, Lcom/adjust/sdk/C;
++const/16 vX, 17
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/C;-><init>(I Ljava/lang/Object; Ljava/lang/Object;)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V

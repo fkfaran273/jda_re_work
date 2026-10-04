@@ -1,0 +1,245 @@
+--- 
++++ 
+@@ -3,2 +3,3 @@
+ FIELD private static final CONTENT_PROVIDER_INTENT_ACTION_BITMASK J
++FIELD private static final CONTENT_PROVIDER_MAPS_BITMASK J
+ FIELD private static final CONTENT_PROVIDER_NO_PERMISSION_BITMASK J
+@@ -28,2 +29,57 @@
+ return-object vX
++---- METHOD public static getPayloadFromContentProviderSamsungMaps (Landroid/content/Context; Ljava/lang/String; Lcom/adjust/sdk/ILogger;)Ljava/lang/String; ----
++const-string "com.samsung.android.mapsagent.providers.apptracking"
++invoke-static vX, vX, Lcom/adjust/sdk/Util;->resolveContentProvider(Landroid/content/Context; Ljava/lang/String;)Z
++move-result vX
++const/4 vX, 0
++if BRANCH
++return-object vX
++invoke-static vX, vX, vX, Lcom/adjust/sdk/PreinstallUtil;->getSamsungMapsAppTrackingInfo(Landroid/content/Context; Ljava/lang/String; Lcom/adjust/sdk/ILogger;)Lorg/json/JSONObject;
++move-result-object vX
++if BRANCH
++invoke-virtual vX, Lorg/json/JSONObject;->length()I
++move-result vX
++if BRANCH
++GOTO
++const-string "RESULT"
++const-string "false"
++invoke-virtual vX, vX, vX, Lorg/json/JSONObject;->optString(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
++move-result-object vX
++invoke-static vX, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
++move-result vX
++if BRANCH
++return-object vX
++invoke-virtual vX, Lorg/json/JSONObject;->toString()Ljava/lang/String;
++move-result-object vX
++sget-object vX, Ljava/nio/charset/StandardCharsets;->UTF_8 Ljava/nio/charset/Charset;
++invoke-virtual vX, vX, Ljava/lang/String;->getBytes(Ljava/nio/charset/Charset;)[B
++move-result-object vX
++const/4 vX, 2
++invoke-static vX, vX, Landroid/util/Base64;->encodeToString([B I)Ljava/lang/String;
++move-result-object vX
++if BRANCH
++invoke-virtual vX, Ljava/lang/String;->isEmpty()Z
++move-result vX
++if BRANCH
++GOTO
++new-instance vX, Lorg/json/JSONObject;
++invoke-direct vX, Lorg/json/JSONObject;-><init>()V
++const-string/jumbo provider
++const-string/jumbo samsung_maps
++invoke-virtual vX, vX, vX, Lorg/json/JSONObject;->put(Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
++const-string "details"
++invoke-virtual vX, vX, vX, Lorg/json/JSONObject;->put(Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
++invoke-virtual vX, Lorg/json/JSONObject;->toString()Ljava/lang/String;
++move-result-object vX
++return-object vX
++move-exception vX
++GOTO
++return-object vX
++invoke-virtual vX, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
++move-result-object vX
++filled-new-array vX, [Ljava/lang/Object;
++move-result-object vX
++const-string "Samsung MAPS Exception during payload json object creation from content provider Samsung maps [%s]"
++invoke-interface vX, vX, vX, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
++return-object vX
+ ---- METHOD public static getPayloadFromFileSystem (Ljava/lang/String; Ljava/lang/String; Lcom/adjust/sdk/ILogger;)Ljava/lang/String; ----
+@@ -54,3 +110,3 @@
+ const-string "adjust.preinstall."
+-invoke-static vX, vX, Ld;->j(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
++invoke-static vX, vX, Lio/flutter/plugins/googlesignin/b;->o(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+ move-result-object vX
+@@ -103,3 +159,3 @@
+ const-string "adjust.preinstall."
+-invoke-static vX, vX, Ld;->j(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
++invoke-static vX, vX, Lio/flutter/plugins/googlesignin/b;->o(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+ move-result-object vX
+@@ -118,4 +174,77 @@
+ return-object vX
++---- METHOD private static getSamsungMapsAppTrackingInfo (Landroid/content/Context; Ljava/lang/String; Lcom/adjust/sdk/ILogger;)Lorg/json/JSONObject; ----
++const/4 vX, 0
++const-string "content://%s/%s"
++const-string "com.samsung.android.mapsagent.providers.apptracking"
++const-string "info"
++filled-new-array vX, vX, [Ljava/lang/Object;
++move-result-object vX
++invoke-static vX, vX, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
++move-result-object vX
++invoke-static vX, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
++move-result-object vX
++invoke-virtual vX, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
++move-result-object vX
++const-string "ADJUSTSS0001"
++filled-new-array vX, [Ljava/lang/String;
++move-result-object vX
++const/4 vX, 0
++const/4 vX, 0
++move-object vX, vX
++invoke-virtual/range vX ... vX, Landroid/content/ContentResolver;->query(Landroid/net/Uri; [Ljava/lang/String; Ljava/lang/String; [Ljava/lang/String; Ljava/lang/String;)Landroid/database/Cursor;
++move-result-object vX
++if BRANCH
++if BRANCH
++invoke-interface vX, Landroid/database/Cursor;->close()V
++return-object vX
++invoke-interface vX, Landroid/database/Cursor;->moveToFirst()Z
++move-result vX
++if BRANCH
++invoke-interface vX, Landroid/database/Cursor;->close()V
++invoke-interface vX, Landroid/database/Cursor;->close()V
++return-object vX
++move-exception vX
++move-object vX, vX
++GOTO
++move-exception vX
++GOTO
++new-instance vX, Lorg/json/JSONObject;
++invoke-direct vX, Lorg/json/JSONObject;-><init>()V
++const/4 vX, 0
++invoke-interface vX, Landroid/database/Cursor;->getColumnCount()I
++move-result vX
++if-ge vX, vX, +010h
++invoke-interface vX, vX, Landroid/database/Cursor;->getColumnName(I)Ljava/lang/String;
++move-result-object vX
++invoke-interface vX, vX, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
++move-result-object vX
++invoke-virtual vX, vX, vX, Lorg/json/JSONObject;->put(Ljava/lang/String; Ljava/lang/Object;)Lorg/json/JSONObject;
++add-int/lit8 vX, vX, 1
++GOTO
++invoke-interface vX, Landroid/database/Cursor;->close()V
++invoke-virtual vX, Lorg/json/JSONObject;->length()I
++move-result vX
++if BRANCH
++invoke-interface vX, Landroid/database/Cursor;->close()V
++return-object vX
++invoke-interface vX, Landroid/database/Cursor;->close()V
++return-object vX
++move-exception vX
++GOTO
++move-exception vX
++move-object vX, vX
++const-string "Samsung MAPS Exception read content provider error [%s]"
++invoke-virtual vX, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
++move-result-object vX
++filled-new-array vX, [Ljava/lang/Object;
++move-result-object vX
++invoke-interface vX, vX, vX, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
++if BRANCH
++invoke-interface vX, Landroid/database/Cursor;->close()V
++return-object vX
++if BRANCH
++invoke-interface vX, Landroid/database/Cursor;->close()V
++throw vX
+ ---- METHOD public static hasAllLocationsBeenRead (J)Z ----
+-const-wide/16 vX, 255
++const-wide/16 vX, 511
+ and-long/2addr vX, vX
+@@ -129,7 +258,7 @@
+ invoke-virtual vX, Ljava/lang/Object;->getClass()Ljava/lang/Class;
++const/4 vX, 1
++const/4 vX, 0
++const/4 vX, -1
+ invoke-virtual vX, Ljava/lang/String;->hashCode()I
+ move-result vX
+-const/4 vX, 1
+-const/4 vX, 0
+-const/4 vX, -1
+ sparse-switch
+@@ -141,5 +270,12 @@
+ GOTO
++const/16 vX, 8
++GOTO
++const-string "file_system"
++invoke-virtual vX, vX, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
++move-result vX
++if BRANCH
++GOTO
+ const/4 vX, 7
+ GOTO
+-const-string "file_system"
++const-string "content_provider_samsung_maps"
+ invoke-virtual vX, vX, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+@@ -205,2 +341,8 @@
+ return vX
++const-wide/16 vX, 256
++and-long vX, vX, vX
++cmp-long vX, vX, vX
++if BRANCH
++return vX
++return vX
+ const-wide/16 vX, 1
+@@ -241,9 +383,9 @@
+ return vX
+-sparse-switch-payload -699c520f -5ed1be77 -2e9d0509 -1c9d9e5f -1bef2359 -5ae72bd 7a809652 7bfe6bc5
+-packed-switch-payload 0 1 2 3 4 5 6 7
++sparse-switch-payload -699c520f -5ed1be77 -2e9d0509 -1c9d9e5f -1bef2359 -5ae72bd 6be02404 7a809652 7bfe6bc5
++packed-switch-payload 0 1 2 3 4 5 6 7 8
+ ---- METHOD public static markAsRead (Ljava/lang/String; J)J ----
+ invoke-virtual vX, Ljava/lang/Object;->getClass()Ljava/lang/Class;
++const/4 vX, -1
+ invoke-virtual vX, Ljava/lang/String;->hashCode()I
+ move-result vX
+-const/4 vX, -1
+ sparse-switch
+@@ -255,5 +397,12 @@
+ GOTO
++const/16 vX, 8
++GOTO
++const-string "file_system"
++invoke-virtual vX, vX, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
++move-result vX
++if BRANCH
++GOTO
+ const/4 vX, 7
+ GOTO
+-const-string "file_system"
++const-string "content_provider_samsung_maps"
+ invoke-virtual vX, vX, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+@@ -312,2 +461,4 @@
+ GOTO
++const-wide/16 vX, 256
++GOTO
+ const-wide/16 vX, 1
+@@ -324,4 +475,5 @@
+ GOTO
+-sparse-switch-payload -699c520f -5ed1be77 -2e9d0509 -1c9d9e5f -1bef2359 -5ae72bd 7a809652 7bfe6bc5
+-packed-switch-payload 0 1 2 3 4 5 6 7
++nop
++sparse-switch-payload -699c520f -5ed1be77 -2e9d0509 -1c9d9e5f -1bef2359 -5ae72bd 6be02404 7a809652 7bfe6bc5
++packed-switch-payload 0 1 2 3 4 5 6 7 8
+ ---- METHOD private static readContentProvider (Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Lcom/adjust/sdk/ILogger;)Ljava/lang/String; ----
+@@ -335,3 +487,3 @@
+ move-result-object vX
+-const-string "package_name=?"
++const-string/jumbo package_name=?
+ filled-new-array vX, [Ljava/lang/String;
+@@ -348,3 +500,2 @@
+ move-exception vX
+-move-object vX, vX
+ GOTO
+@@ -380,5 +531,5 @@
+ invoke-direct vX, vX, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+-invoke-static Landroidx/media3/exoplayer/video/i;->g()Landroid/content/pm/PackageManager$ResolveInfoFlags;
+-move-result-object vX
+-invoke-static vX, vX, vX, Landroidx/media3/exoplayer/video/i;->l(Landroid/content/pm/PackageManager; Landroid/content/Intent; Landroid/content/pm/PackageManager$ResolveInfoFlags;)Ljava/util/List;
++invoke-static Lcom/adjust/sdk/W;->f()Landroid/content/pm/PackageManager$ResolveInfoFlags;
++move-result-object vX
++invoke-static vX, vX, vX, Lcom/adjust/sdk/W;->n(Landroid/content/pm/PackageManager; Landroid/content/Intent; Landroid/content/pm/PackageManager$ResolveInfoFlags;)Ljava/util/List;
+ move-result-object vX

@@ -1,0 +1,38 @@
+{
+ "session": {
+  "form": "store_name_from_system=com.android.vending&gps_adid_attempt=1&api_level=30&hardware_name=DN2101_11_A.20&app_version=3.12.1&app_token=jut9tib0eeps&installed_at=2026-09-08T14%3A00%3A02.774Z%2B0530&created_at=2026-09-08T14%3A05%3A22.928Z%2B0530&wait_total=0.0&device_type=phone&language=tr&gps_adid=1a89cb29-3590-418c-ae2b-122bbd93e38f&foreground=1&connectivity_type=1&mcc=405&device_manufacturer=OnePlus&display_width=1080&device_name=DN2101&needs_response_details=1&os_build=RP1A.200720.011&updated_at=2026-09-08T14%3A00%3A02.774Z%2B0530&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&screen_format=long&last_error=0&gps_adid_src=service&mnc=872&wait_time=0.0&os_version=11&first_error=0&android_uuid=117d0470-c64e-4530-af62-48049861d40a&sent_at=2026-09-08T14%3A05%3A22.942Z%2B0530&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&session_count=1&display_height=2293&package_name=com.penti.app&initiating_package_name=com.android.vending&os_name=android&ui_mode=1&enqueue_size=0&tracking_enabled=1",
+  "sig_hex": "40c8114d3f66c6da1f0f75727e1c44e6cd6362ac5bdd7471299a3df3c48c41a3ae59041f81852c37524ad10a9193b2f907a4ded69abe96d74a4a68fcb86fba81a5dba0e2a8e6af8bae6e29be3770f30d38edb1a91f63b84df28b98a5205efef98b0ad8de4c4d4c1ee8f77bc4c3dc02ed83e9b83e5f7c48c875b0ec4b99e89d44384104578e1c97455004b3cc25c3035a4aa88a54b0bf9518849b995f47cf2bdb0311b0b295679b2ddbaed341f40228c634ba79caeee525f6bd90bcc78d04d050",
+  "path": "https://app.adjust.com/session",
+  "seed": 2240766567,
+  "head_hex": "59e56f79a883bc737b894d158aef9ab0",
+  "cert_hex": "fad0f10d60f93c17937b2f1eb6c09691ae7d74bd",
+  "block_hex": "87054a5c105113393605f7465dd7c5e55347ba94147dd59ff7258fdae2677dcf"
+ },
+ "click": {
+  "form": "api_level=30&hardware_name=DN2101_11_A.20&app_version=3.12.1&app_token=jut9tib0eeps&installed_at=2026-09-08T14%3A00%3A02.774Z%2B0530&device_type=phone&language=tr&gps_adid=1a89cb29-3590-418c-ae2b-122bbd93e38f&source=install_referrer&foreground=1&connectivity_type=1&mcc=405&os_build=RP1A.200720.011&click_time=2026-09-08T13%3A59%3A47.000Z%2B0530&cpu_type=arm64-v8a&install_version=3.12.1&screen_size=normal&gps_adid_src=service&subsession_count=1&sent_at=2026-09-08T14%3A05%3A22.970Z%2B0530&offline_mode_enabled=0&screen_density=high&session_count=1&ui_mode=1&gps_adid_attempt=1&session_length=0&created_at=2026-09-08T14%3A05%3A22.961Z%2B0530&referrer_api=google&device_manufacturer=OnePlus&display_width=1080&time_spent=0&device_name=DN2101&needs_response_details=1&updated_at=2026-09-08T14%3A00%3A02.774Z%2B0530&screen_format=long&mnc=872&click_time_server=2026-09-08T13%3A59%3A48.000Z%2B0530&os_version=11&google_play_instant=0&install_begin_time_server=2026-09-08T13%3A59%3A53.000Z%2B0530&android_uuid=117d0470-c64e-4530-af62-48049861d40a&referrer=utm_source%3D%28not%2520set%29%26utm_medium%3D%28not%2520set%29&environment=production&attribution_deeplink=1&install_begin_time=2026-09-08T13%3A59%3A52.000Z%2B0530&display_height=2293&package_name=com.penti.app&os_name=android&tracking_enabled=1",
+  "sig_hex": "40c8114d3f66c6da1f0f75727e1c44e671c0e1a79f3d4e0b14d1d378610cc832a907778bd758915d5b95d8a8f4363ce460d0e250483bc14f35341fa2691655fe3edd09b4e28abe55b873bf952a19157b7d63ab5264f2fbf6ed1ac76b46eb0f35796ea5e383458a8ab378cbd0724f63f7777e6dbb2dadac155d3d981c2ca6fb398fa7abb1d408a545ee2f1911bb97a2c704058f24797813ffd1e5482cccfc66be14545d2db483cea25db2fc27bae479a0b32c313743a93223db915240321eca14",
+  "path": "https://app.adjust.com/sdk_click",
+  "seed": 18006545,
+  "head_hex": "514ce9fed7377984474dffffc1367d0f",
+  "cert_hex": "fad0f10d60f93c17937b2f1eb6c09691ae7d74bd",
+  "block_hex": "aa1e893b53a689a8951d4177cc73b4a6906fc3a6506f03913fca6c784a5abda1"
+ },
+ "info": {
+  "form": "gps_adid_attempt=1&wait_time=0.0&app_token=jut9tib0eeps&created_at=2026-09-08T14%3A05%3A25.550Z%2B0530&wait_total=0.0&first_error=0&gps_adid=1a89cb29-3590-418c-ae2b-122bbd93e38f&source=push&foreground=1&android_uuid=117d0470-c64e-4530-af62-48049861d40a&sent_at=2026-09-08T14%3A05%3A25.665Z%2B0530&offline_mode_enabled=0&environment=production&needs_response_details=1&attribution_deeplink=1&retry_count=0&last_error=0&gps_adid_src=service&push_token=emsp6HGsRJWM9avd-xXS5Y%3AAPA91bFZPSOQh57RUHzVJjWwt16UALPH7mcy5IDUxdXiiXolDNry5NinRRdk5W0lLI2BnNyusb7DHeBhAbtTbHpYy4ziep7JUo2wuTgHkAR7Go4gFoVLKWI&enqueue_size=1&tracking_enabled=1",
+  "sig_hex": "1cd2ae9f0e15b37b03f74f477ce50120ec79078b26f189e728442860f2979c7bfb1175b833bbe0eaa056d1465c06ede09f7648d05b02135f79a0d06508ba7b76f1270049686fc783d37bbdf2c1e14f756e03ecdb3decced6ba38899e05d209ba16f14501af9d9b99c3f62223a3bd6e731b9e8d95e1003e9c569a0b8f02023d3fc7350b301c248227fe319febc605b1de98c509090982151660d69bfbaa17d5e2f0dadcf3f01f3ba5dbb346a9e0d0282e89900094966498df7491de7317607617",
+  "path": "https://app.adjust.com/sdk_info",
+  "seed": 1974590400,
+  "head_hex": "78494a3abcb38ba77d2e4f5db9d48bdd",
+  "cert_hex": "fad0f10d60f93c17937b2f1eb6c09691ae7d74bd",
+  "block_hex": "88b55c990316bbd3214ee7b3c8082135d793ddadf08731394212a253ae4aefc5"
+ },
+ "attribution": {
+  "form": "",
+  "sig_hex": "22765532499ffa6739b7d93e539dcb22b97111d4cabd6b0a62c265444bf20d4260d76fcd06e3cb96291755548d0740307f0f456cfa17461f4c25c2719b629fbfde7fa1102388e92ddb7eda38f85625b57305f47a8291b3d259e8e8090c762fe99db1633c72cb85aba52ff4427bc550ba5bb84926666201b24c24dd61609c85646b5cf20d1c16049c4b0ca261c41bb665959c02aa20d37fceafda6bd17b70e7aa6dfd5751394181e19108db40a166f08299d05579ba69235e10a82a67e2e2b1b7",
+  "path": "https://app.adjust.com/attribution?gps_adid_attempt=1&api_level=30&app_version=3.12.1&app_token=jut9tib0eeps&created_at=2026-09-08T14%3A05%3A27.666Z%2B0530&device_type=phone&gps_adid=1a89cb29-3590-418c-ae2b-122bbd93e38f&foreground=1&device_name=DN2101&needs_response_details=1&gps_adid_src=service&push_token=emsp6HGsRJWM9avd-xXS5Y%3AAPA91bFZPSOQh57RUHzVJjWwt16UALPH7mcy5IDUxdXiiXolDNry5NinRRdk5W0lLI2BnNyusb7DHeBhAbtTbHpYy4ziep7JUo2wuTgHkAR7Go4gFoVLKWI&initiated_by=backend&os_version=11&android_uuid=117d0470-c64e-4530-af62-48049861d40a&sent_at=2026-09-08T14%3A05%3A27.696Z%2B0530&offline_mode_enabled=0&environment=production&attribution_deeplink=1&package_name=com.penti.app&os_name=android&ui_mode=1&tracking_enabled=1",
+  "seed": 1945472720,
+  "head_hex": "677a5c71c69674bfee58d5534fb481b2",
+  "cert_hex": "fad0f10d60f93c17937b2f1eb6c09691ae7d74bd",
+  "block_hex": "e761a97f653d013622f265199cae93919962d37c314b8f659fcbd992ff7e78cd"
+ }
+}

@@ -1,0 +1,27 @@
+# CLASS Lcom/adjust/sdk/meta/MetaInstallReferrerDetails;
+FIELD public actualTimestampInSec J
+FIELD public installReferrer Ljava/lang/String;
+FIELD public isClick Z
+
+---- METHOD public constructor <init> (Ljava/lang/String; J Z)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/meta/MetaInstallReferrerDetails;->installReferrer Ljava/lang/String;
+  iput-wide              v2, v0, Lcom/adjust/sdk/meta/MetaInstallReferrerDetails;->actualTimestampInSec J
+  iput-boolean           v4, v0, Lcom/adjust/sdk/meta/MetaInstallReferrerDetails;->isClick Z
+  return-void            
+
+---- METHOD public toString ()Ljava/lang/String; ----
+  iget-object            v0, v3, Lcom/adjust/sdk/meta/MetaInstallReferrerDetails;->installReferrer Ljava/lang/String;
+  iget-wide              v1, v3, Lcom/adjust/sdk/meta/MetaInstallReferrerDetails;->actualTimestampInSec J
+  invoke-static          v1, v2, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v1
+  iget-boolean           v2, v3, Lcom/adjust/sdk/meta/MetaInstallReferrerDetails;->isClick Z
+  invoke-static          v2, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object     v2
+  filled-new-array       v0, v1, v2, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v1, " installReferrer : %s actualTimestampInSec : %d isClick : %b"
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+######################################################################

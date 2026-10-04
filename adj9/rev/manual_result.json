@@ -1,0 +1,20 @@
+{
+ "click_url": "http://ec2-13-126-162-113.ap-south-1.compute.amazonaws.com/api/track/v1/postback?click_id={click_id}",
+ "click/firing": "marker=mytest",
+ "click/result": "http=302 reftag=adjust_reftag=ctoKqx10V7nab&utm_source=VKM+Digital+Yeni&utm_",
+ "gaid": "9031fb3f-3975-4f23-bf4d-959f1f79476c",
+ "auid": "c8770861-b371-422f-b47b-a09a97921d78",
+ "reftag": "adjust_reftag=ctoKqx10V7nab&utm_source=VKM+Digital+Yeni&utm_campaign=A",
+ "device": "Pixel 8 / Android 16 / api 36",
+ "session/mint": "exit-clean #10=352B blob=192B",
+ "session/send": "400 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"52f4b940c93ab144732d9072d23b6e8d\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-21T17:26:56, this session: 2026-09-21T17:",
+ "sdk_click/send": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"52f4b940c93ab144732d9072d23b6e8d\"}",
+ "attribution/0": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"52f4b940c93ab144732d9072d23b6e8d\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-21T12:41:35Z\",\"first_session_time\":\"202",
+ "attribution/1": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"52f4b940c93ab144732d9072d23b6e8d\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-21T12:41:35Z\",\"first_session_time\":\"202",
+ "attribution/2": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"52f4b940c93ab144732d9072d23b6e8d\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-21T12:41:35Z\",\"first_session_time\":\"202",
+ "attribution/3": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"52f4b940c93ab144732d9072d23b6e8d\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-21T12:41:35Z\",\"first_session_time\":\"202",
+ "attribution/4": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"52f4b940c93ab144732d9072d23b6e8d\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-21T12:41:35Z\",\"first_session_time\":\"202",
+ "RESULT": "Organic/fallback (expected for crafted polls \u2014 see WALL_A_SLICE_91/97 on why only the device can read a booked verdict)",
+ "gps": "9031fb3f-3975-4f23-bf4d-959f1f79476c",
+ "referrer": "adjust_reftag=ctoKqx10V7nab&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_cont"
+}

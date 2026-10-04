@@ -1,0 +1,28 @@
+--- 
++++ 
+@@ -25,5 +25,5 @@
+ iput-object vX, vX, Lcom/adjust/sdk/sig/d2;->f Ljava/util/Map;
+-new-instance vX, Lcom/adjust/sdk/sig/r3;
+-const/4 vX, 0
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/sig/r3;-><init>(Lcom/adjust/sdk/sig/d2; I)V
++new-instance vX, Lcom/adjust/sdk/sig/r;
++const/4 vX, 0
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/sig/r;-><init>(Lcom/adjust/sdk/sig/d2; I)V
+ invoke-static vX, Lcom/adjust/sdk/sig/vX;->a(Lcom/adjust/sdk/sig/g0;)Lcom/adjust/sdk/sig/u1;
+@@ -31,5 +31,5 @@
+ iput-object vX, vX, Lcom/adjust/sdk/sig/d2;->g Lcom/adjust/sdk/sig/u1;
+-new-instance vX, Lcom/adjust/sdk/sig/r3;
+-const/4 vX, 1
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/sig/r3;-><init>(Lcom/adjust/sdk/sig/d2; I)V
++new-instance vX, Lcom/adjust/sdk/sig/r;
++const/4 vX, 1
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/sig/r;-><init>(Lcom/adjust/sdk/sig/d2; I)V
+ invoke-static vX, Lcom/adjust/sdk/sig/vX;->a(Lcom/adjust/sdk/sig/g0;)Lcom/adjust/sdk/sig/u1;
+@@ -37,5 +37,5 @@
+ iput-object vX, vX, Lcom/adjust/sdk/sig/d2;->h Lcom/adjust/sdk/sig/u1;
+-new-instance vX, Lcom/adjust/sdk/sig/r3;
++new-instance vX, Lcom/adjust/sdk/sig/r;
+ const/4 vX, 2
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/sig/r3;-><init>(Lcom/adjust/sdk/sig/d2; I)V
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/sig/r;-><init>(Lcom/adjust/sdk/sig/d2; I)V
+ invoke-static vX, Lcom/adjust/sdk/sig/vX;->a(Lcom/adjust/sdk/sig/g0;)Lcom/adjust/sdk/sig/u1;

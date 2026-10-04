@@ -1,0 +1,227 @@
+{
+  "offline_only": true,
+  "hmac_or_keystore_key_used": false,
+  "input": "C:\\Users\\Apps\\Downloads\\com.penti.app\\adj9\\rev\\saz_blobs.json",
+  "f_lift_validation": {
+    "count": 22,
+    "exact": 22,
+    "all_exact": true,
+    "results": [
+      {
+        "set": "lift",
+        "file": "lift_V+0.json",
+        "V": 1789006848,
+        "pid": 12345,
+        "exact": true
+      },
+      {
+        "set": "lift",
+        "file": "lift_V+1.json",
+        "V": 1789006849,
+        "pid": 12345,
+        "exact": true
+      },
+      {
+        "set": "lift",
+        "file": "lift_V+2.json",
+        "V": 1789006850,
+        "pid": 12345,
+        "exact": true
+      },
+      {
+        "set": "lift",
+        "file": "lift_V+3.json",
+        "V": 1789006851,
+        "pid": 12345,
+        "exact": true
+      },
+      {
+        "set": "lift",
+        "file": "lift_V+100.json",
+        "V": 1789007332,
+        "pid": 12345,
+        "exact": true
+      },
+      {
+        "set": "lift",
+        "file": "lift_V+100000.json",
+        "V": 1789694880,
+        "pid": 12345,
+        "exact": true
+      },
+      {
+        "set": "lift",
+        "file": "lift2_V0.json",
+        "V": 1789006848,
+        "pid": 12345,
+        "exact": true
+      },
+      {
+        "set": "lift",
+        "file": "lift_pidtid.json",
+        "V": 1789006848,
+        "pid": 12346,
+        "exact": true
+      },
+      {
+        "set": "fit",
+        "file": "fit_pidonly.json",
+        "V": 1789006848,
+        "pid": 12346,
+        "exact": true
+      },
+      {
+        "set": "fit",
+        "file": "fit_pidtid2.json",
+        "V": 1789006848,
+        "pid": 70000,
+        "exact": true
+      },
+      {
+        "set": "fit",
+        "file": "fit_tidonly.json",
+        "V": 1789006848,
+        "pid": 12345,
+        "exact": true
+      },
+      {
+        "set": "fit",
+        "file": "fit_u500002.json",
+        "V": 1789006850,
+        "pid": 12345,
+        "exact": true
+      },
+      {
+        "set": "fit",
+        "file": "fit_u500003.json",
+        "V": 1789006851,
+        "pid": 12345,
+        "exact": true
+      },
+      {
+        "set": "fit",
+        "file": "fit_u500004.json",
+        "V": 1789006852,
+        "pid": 12345,
+        "exact": true
+      },
+      {
+        "set": "fit",
+        "file": "fit_u500005.json",
+        "V": 1789006853,
+        "pid": 12345,
+        "exact": true
+      },
+      {
+        "set": "fit",
+        "file": "fit_u500006.json",
+        "V": 1789006854,
+        "pid": 12345,
+        "exact": true
+      },
+      {
+        "set": "fit",
+        "file": "fit_u500007.json",
+        "V": 1789006855,
+        "pid": 12345,
+        "exact": true
+      },
+      {
+        "set": "fit",
+        "file": "fit_u500008.json",
+        "V": 1789006856,
+        "pid": 12345,
+        "exact": true
+      },
+      {
+        "set": "fit",
+        "file": "fit_u500016.json",
+        "V": 1789006864,
+        "pid": 12345,
+        "exact": true
+      },
+      {
+        "set": "fit",
+        "file": "fit_u500100.json",
+        "V": 1789007332,
+        "pid": 12345,
+        "exact": true
+      },
+      {
+        "set": "fit",
+        "file": "fit_u600000.json",
+        "V": 1789694880,
+        "pid": 12345,
+        "exact": true
+      },
+      {
+        "set": "fit",
+        "file": "validate_base.json",
+        "V": 1789006848,
+        "pid": 12345,
+        "exact": true
+      }
+    ]
+  },
+  "fin_vm2_pipeline": "complete; each run below exits cleanly and exactly reproduces its own deterministic remint",
+  "generated": [
+    {
+      "session": 1,
+      "path": "/session",
+      "signing_second": 1789388588,
+      "chosen_V": 1789265260,
+      "chosen_usec": 123456,
+      "chosen_pid_low16": 26530,
+      "historical_V": null,
+      "historical_pid_low16": null,
+      "status": "exit-clean",
+      "steps": 10519758,
+      "generated_blob_hex": "6ec1105c5b92f95f2c57f08a58ac09cebc0f7944bb507e59d20121bec74288ad92b3a2fd8602edb5bd038f584c63a0133ceb51c6875815465a5eee7bf9320116e1c731536169dcd7d3c02aa604a643ab7e05ff27c7f3fa743d0d7957b8700ea74669ca8ade06107fa71f4b65c41cfd089aee6f509ad648bd2eadace9ffd64e15e459a7455e55148909b56a7e35b3b8a4b3524271ff474f78f8fb827539cf9d0e397ff2f54e395332617fc0a46e6ba1417bc626693d9d63e236c39e8311028283",
+      "generated_body_hex": "bc0f7944bb507e59d20121bec74288ad92b3a2fd8602edb5bd038f584c63a0133ceb51c6875815465a5eee7bf9320116e1c731536169dcd7d3c02aa604a643ab7e05ff27c7f3fa743d0d7957b8700ea74669ca8ade06107fa71f4b65c41cfd089aee6f509ad648bd2eadace9ffd64e15e459a7455e55148909b56a7e35b3b8a4b3524271ff474f78f8fb827539cf9d0e397ff2f54e395332617fc0a46e6ba1417bc626693d9d63e236c39e8311028283",
+      "header_exact": true,
+      "body_exact": false,
+      "body_bytes_differing": 176,
+      "unexplained_historical_bytes": 176,
+      "why_not_byte_exact": "The wire carries no fill-instant microseconds or pid; F's 180-byte region avalanches from those values. They are neither keystore material nor a secret and may be chosen for a new signature."
+    },
+    {
+      "session": 2,
+      "path": "/sdk_click",
+      "signing_second": 1789388589,
+      "chosen_V": 1789162346,
+      "chosen_usec": 234567,
+      "chosen_pid_low16": 26530,
+      "historical_V": null,
+      "historical_pid_low16": null,
+      "status": "exit-clean",
+      "steps": 10535599,
+      "generated_blob_hex": "50d97c186add3fbb39fe50d1272ed6df27004707c8ef15a232d3b49830bec59c77c968073cd1621ce3724fedcbc36cf6e215a257f8c110865c2f99299f191b9afe765428c267ab6c485f627e18f5d72109fc6c3bf6ea4ccafec6c8eb1a7fa451110e7c0190c08f8a33b6ed580e4d081b7fdbab33f795da0930d1f2bdf7b73ffb00824e7436bcccb1d6fee9628dde65d27d5b6ee5e55ff6cfb2b8b87fb76a012602a17ecc18b3c2ea4843d3a13b319c61d4523c71d8bcd9e837b827a115c10c80",
+      "generated_body_hex": "27004707c8ef15a232d3b49830bec59c77c968073cd1621ce3724fedcbc36cf6e215a257f8c110865c2f99299f191b9afe765428c267ab6c485f627e18f5d72109fc6c3bf6ea4ccafec6c8eb1a7fa451110e7c0190c08f8a33b6ed580e4d081b7fdbab33f795da0930d1f2bdf7b73ffb00824e7436bcccb1d6fee9628dde65d27d5b6ee5e55ff6cfb2b8b87fb76a012602a17ecc18b3c2ea4843d3a13b319c61d4523c71d8bcd9e837b827a115c10c80",
+      "header_exact": true,
+      "body_exact": false,
+      "body_bytes_differing": 174,
+      "unexplained_historical_bytes": 176,
+      "why_not_byte_exact": "The wire carries no fill-instant microseconds or pid; F's 180-byte region avalanches from those values. They are neither keystore material nor a secret and may be chosen for a new signature."
+    },
+    {
+      "session": 3,
+      "path": "/attribution",
+      "signing_second": 1789388591,
+      "chosen_V": 1789043041,
+      "chosen_usec": 345678,
+      "chosen_pid_low16": 26530,
+      "historical_V": null,
+      "historical_pid_low16": null,
+      "status": "exit-clean",
+      "steps": 9912330,
+      "generated_blob_hex": "07184f3a723d9fb202d1b9d951803c4ba3e7fe69e172a90967f4ffc197318c40fe814edf385f582709c03af338bedd04c93c052591b555d4ae90480762e00abdf4fa1d2a4e0546dfbce11e057f6cdcd5277d71499cac7dd1df1b313ac5cce54fbe90bbab7705053d852dc75bb11095f6e5b6fe29f20eac4144e25e36011a67929925b0918b7e6cfd04e8bca9292345d0930dc734c8073c05f798e074096f65f0ef40dea460a16ef1660b4af7388bc5793e13753aefb577e0cf6666f636908efb",
+      "generated_body_hex": "a3e7fe69e172a90967f4ffc197318c40fe814edf385f582709c03af338bedd04c93c052591b555d4ae90480762e00abdf4fa1d2a4e0546dfbce11e057f6cdcd5277d71499cac7dd1df1b313ac5cce54fbe90bbab7705053d852dc75bb11095f6e5b6fe29f20eac4144e25e36011a67929925b0918b7e6cfd04e8bca9292345d0930dc734c8073c05f798e074096f65f0ef40dea460a16ef1660b4af7388bc5793e13753aefb577e0cf6666f636908efb",
+      "header_exact": true,
+      "body_exact": false,
+      "body_bytes_differing": 176,
+      "unexplained_historical_bytes": 176,
+      "why_not_byte_exact": "The wire carries no fill-instant microseconds or pid; F's 180-byte region avalanches from those values. They are neither keystore material nor a secret and may be chosen for a new signature."
+    }
+  ],
+  "conclusion": "Forgeable in pure Python, not key-bound. Exact historical SAZ reminting is underdetermined by the wire alone by 176 body bytes because historical V/pid were not transmitted."
+}

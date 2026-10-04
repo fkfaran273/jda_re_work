@@ -1,0 +1,30 @@
+# CLASS Lcom/adjust/sdk/Util$4;
+FIELD public final synthetic a Lcom/adjust/sdk/OnGoogleAdIdReadListener;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/OnGoogleAdIdReadListener;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/Util$4;->a Lcom/adjust/sdk/OnGoogleAdIdReadListener;
+  invoke-direct          v0, Lcom/adjust/sdk/scheduler/AsyncTaskExecutor;-><init>()V
+  return-void            
+
+---- METHOD public final doInBackground ([Ljava/lang/Object;)Ljava/lang/Object; ----
+  check-cast             v4, [Landroid/content/Context;
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v0
+  const/4                v1, 0
+  aget-object            v4, v4, v1
+  invoke-static          v4, Lcom/adjust/sdk/Util;->access$000(Landroid/content/Context;)Ljava/lang/String;
+  move-result-object     v4
+  const-string           v2, "GoogleAdId read "
+  invoke-static          v2, v4, Ld;->j(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v2
+  new-array              v1, v1, [Ljava/lang/Object;
+  invoke-interface       v0, v2, v1, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-object          v4
+
+---- METHOD public final onPostExecute (Ljava/lang/Object;)V ----
+  check-cast             v2, Ljava/lang/String;
+  iget-object            v0, v1, Lcom/adjust/sdk/Util$4;->a Lcom/adjust/sdk/OnGoogleAdIdReadListener;
+  if-eqz                 v0, +005h
+  invoke-interface       v0, v2, Lcom/adjust/sdk/OnGoogleAdIdReadListener;->onGoogleAdIdRead(Ljava/lang/String;)V
+  return-void            
+######################################################################

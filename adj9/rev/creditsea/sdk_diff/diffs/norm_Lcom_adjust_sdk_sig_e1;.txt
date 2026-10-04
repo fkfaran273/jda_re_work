@@ -1,0 +1,16 @@
+--- 
++++ 
+@@ -27,3 +27,3 @@
+ iget vX, vX, Lcom/adjust/sdk/sig/e1;->b I
+-if-ne vX, vX, +00fh
++if-ne vX, vX, +010h
+ iget-boolean vX, vX, Lcom/adjust/sdk/sig/e1;->c Z
+@@ -33,5 +33,5 @@
+ GOTO
+-invoke-static Lorg/junit/rules/a;->a()V
+-const/4 vX, 0
+-return-object vX
++new-instance vX, Ljava/util/NoSuchElementException;
++invoke-direct vX, Ljava/util/NoSuchElementException;-><init>()V
++throw vX
+ iget vX, vX, Lcom/adjust/sdk/sig/e1;->a I

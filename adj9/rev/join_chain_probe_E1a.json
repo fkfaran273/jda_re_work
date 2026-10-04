@@ -1,0 +1,58 @@
+{
+ "device_gaid_never_used": true,
+ "fresh_gaid_per_cell": true,
+ "cells": [
+  {
+   "id": "E1a",
+   "exp": "E1",
+   "variation": "session then click (baseline)",
+   "gps": "2883d227-496a-44fe-8f74-41aba0d478ea",
+   "auid": "95a1fa2a-d716-4a98-8af9-7a3dd8e2025f",
+   "installed_at_stamp": "2026-09-27T18:02:01.431Z+0530",
+   "steps": [
+    [
+     "tracker_click",
+     302
+    ],
+    [
+     "session",
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d004f209a60de9a51066683a96159775\",\"ask_in\":2000}"
+    ],
+    [
+     "click#1",
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d004f209a60de9a51066683a96159775\"}"
+    ]
+   ],
+   "reftag": "cZMoMfKf4BtEk",
+   "referrer": "adjust_reftag=cZMoMfKf4BtEk&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+   "polls": [
+    [
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d004f209a60de9a51066683a96159775\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T12:33:34Z\",\"first_session_time\":\"2026-09-27T12:33:34Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+    ],
+    [
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d004f209a60de9a51066683a96159775\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T12:33:34Z\",\"first_session_time\":\"2026-09-27T12:33:34Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+    ],
+    [
+     200,
+     "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d004f209a60de9a51066683a96159775\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T12:33:34Z\",\"first_session_time\":\"2026-09-27T12:33:34Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+    ]
+   ],
+   "attribution": {
+    "network": "Organic",
+    "tracker_token": "wy7261z",
+    "tracker_name": "Organic",
+    "engagement_time": "0001-01-01T00:00:00Z",
+    "is_reattributed": false,
+    "installed_at": "2026-09-27T12:33:34Z",
+    "first_session_time": "2026-09-27T12:33:34Z",
+    "adid": "d004f209a60de9a51066683a96159775"
+   },
+   "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z / reattr=False",
+   "secs": 438.2
+  }
+ ]
+}

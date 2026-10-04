@@ -1,0 +1,37 @@
+{
+ "name": "GF",
+ "desc": "cell D with 1 body bit flipped (negative ref)",
+ "raw_request": "GET /attribution?initiated_by=backend&gps_adid_attempt=1&api_level=31&app_version=3.13.9&app_token=jut9tib0eeps&os_version=12&created_at=2026-09-26T15%3A20%3A29.783Z%2B0530&device_type=phone&gps_adid=6c0c0f13-13b7-402c-8a43-0c92cb0968ab&foreground=1&android_uuid=447502a7-2df9-495f-accc-b92c3a21ed61&sent_at=2026-09-26T15%3A20%3A29.810Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=com.penti.app&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1 HTTP/1.1\r\nClient-SDK: android5.7.0\r\nAuthorization: Signature signature=\"b3CBUTzUcxkVxtWkPNzc654p7ig5o6R2YIovWcp+AxvHKzkrdYUWBOcnIrO6SZKXIzKhbTa2jvsWaR5mM9rz+DwDLggmxDb44vOH802slIUZzSNEYbkRouFiYWbR4aZCjvbVh3QPovIR2FlP+WsjwT1J5EXQNB/ayawDP49dGUkus4SyjynfbX1/jKWL7O/akwTHXhy509KVKqOjRWwNHFePyXEzS9HVnA8UsrmdfeYeA4KvfW7AHUtLrhCOOC/D\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\r\nHost: app.adjust.com\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\n\r\n",
+ "path": "/attribution?initiated_by=backend&gps_adid_attempt=1&api_level=31&app_version=3.13.9&app_token=jut9tib0eeps&os_version=12&created_at=2026-09-26T15%3A20%3A29.783Z%2B0530&device_type=phone&gps_adid=6c0c0f13-13b7-402c-8a43-0c92cb0968ab&foreground=1&android_uuid=447502a7-2df9-495f-accc-b92c3a21ed61&sent_at=2026-09-26T15%3A20%3A29.810Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=com.penti.app&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1",
+ "blob_hex": "6f7081513cd4731915c6d5a43cdcdceb9e29ee2839a3a476608a2f59ca7e031bc72b392b75851604e72722b3ba4992972332a16d36b68efb16691e6633daf3f83c032e0826c436f8e2f387f34dac948519cd234461b911a2e1626166d1e1a6428ef6d587740fa2f211d8594ff96b23c13d49e445d0341fdac9ac033f8f5d19492eb384b28f29df6d7d7f8ca58becefda9304c75e1cb9d3d2952aa3a3456c0d1c578fc971334bd1d59c0f14b2b99d7de61e0382af7d6ec01d4b4bae108e382fc3",
+ "auth": "Signature signature=\"b3CBUTzUcxkVxtWkPNzc654p7ig5o6R2YIovWcp+AxvHKzkrdYUWBOcnIrO6SZKXIzKhbTa2jvsWaR5mM9rz+DwDLggmxDb44vOH802slIUZzSNEYbkRouFiYWbR4aZCjvbVh3QPovIR2FlP+WsjwT1J5EXQNB/ayawDP49dGUkus4SyjynfbX1/jKWL7O/akwTHXhy509KVKqOjRWwNHFePyXEzS9HVnA8UsrmdfeYeA4KvfW7AHUtLrhCOOC/D\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"",
+ "params": {
+  "initiated_by": "backend",
+  "gps_adid_attempt": "1",
+  "api_level": "31",
+  "app_version": "3.13.9",
+  "app_token": "jut9tib0eeps",
+  "os_version": "12",
+  "created_at": "2026-09-26T15:20:29.783Z+0530",
+  "device_type": "phone",
+  "gps_adid": "6c0c0f13-13b7-402c-8a43-0c92cb0968ab",
+  "foreground": "1",
+  "android_uuid": "447502a7-2df9-495f-accc-b92c3a21ed61",
+  "sent_at": "2026-09-26T15:20:29.810Z+0530",
+  "offline_mode_enabled": "0",
+  "device_name": "moto g42",
+  "environment": "production",
+  "needs_response_details": "1",
+  "attribution_deeplink": "1",
+  "package_name": "com.penti.app",
+  "os_name": "android",
+  "ui_mode": "1",
+  "gps_adid_src": "service",
+  "tracking_enabled": "1"
+ },
+ "flip_offset": 191,
+ "checks": {
+  "ok": true,
+  "note": "byte-identical to D except 1 bit at offset 191"
+ }
+}

@@ -1,0 +1,284 @@
+{
+ "arms": {
+  "openssl": {
+   "gps": "b97793e5-974e-4710-a7ea-5a5dd95034c2",
+   "auid": "b646309c-bf06-4c0a-ba6a-41079ac00a01",
+   "reftag": "cOPl2KR6oU6Kn",
+   "session": [
+    200,
+    "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"7d62a9a69418cee045aef7086c797dc0\",\"ask_in\":2000}"
+   ],
+   "sdk_click": [
+    200,
+    "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"7d62a9a69418cee045aef7086c797dc0\"}"
+   ],
+   "verdicts": [
+    {
+     "round": 1,
+     "status": 200,
+     "token": "wy7261z",
+     "network": "Organic",
+     "engagement_time": "0001-01-01T00:00:00Z",
+     "joined": false,
+     "installed_at": "2026-09-24T10:45:06Z"
+    },
+    {
+     "round": 2,
+     "status": 200,
+     "token": "wy7261z",
+     "network": "Organic",
+     "engagement_time": "0001-01-01T00:00:00Z",
+     "joined": false,
+     "installed_at": "2026-09-24T10:45:06Z"
+    },
+    {
+     "round": 3,
+     "status": 200,
+     "token": "wy7261z",
+     "network": "Organic",
+     "engagement_time": "0001-01-01T00:00:00Z",
+     "joined": false,
+     "installed_at": "2026-09-24T10:45:06Z"
+    }
+   ],
+   "JOINED": false
+  },
+  "chrome_android": {
+   "gps": "fa461bfe-8b01-4eea-a882-a3c0b36dbff4",
+   "auid": "e6966b49-3f3f-49f9-9e4b-f037d901d3b5",
+   "reftag": "cuSoqE0WcSNGg",
+   "session": [
+    200,
+    "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2ad9930631ed1f15c5fc969a9a0be9dc\",\"ask_in\":2000}"
+   ],
+   "sdk_click": [
+    200,
+    "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2ad9930631ed1f15c5fc969a9a0be9dc\"}"
+   ],
+   "verdicts": [
+    {
+     "round": 1,
+     "status": 200,
+     "token": "wy7261z",
+     "network": "Organic",
+     "engagement_time": "0001-01-01T00:00:00Z",
+     "joined": false,
+     "installed_at": "2026-09-24T10:47:00Z"
+    },
+    {
+     "round": 2,
+     "status": 200,
+     "token": "wy7261z",
+     "network": "Organic",
+     "engagement_time": "0001-01-01T00:00:00Z",
+     "joined": false,
+     "installed_at": "2026-09-24T10:47:00Z"
+    },
+    {
+     "round": 3,
+     "status": 200,
+     "token": "wy7261z",
+     "network": "Organic",
+     "engagement_time": "0001-01-01T00:00:00Z",
+     "joined": false,
+     "installed_at": "2026-09-24T10:47:00Z"
+    }
+   ],
+   "JOINED": false
+  },
+  "conscrypt": {
+   "gps": "ac8d3fcc-f16b-4f12-bde9-1d244ded2138",
+   "auid": "5e2aed85-7190-4138-bee5-a7158dd26741",
+   "reftag": "cp7wa70uRA33i",
+   "session": [
+    200,
+    "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"9ef35881970d601985464d56e94a99a2\",\"ask_in\":2000}"
+   ],
+   "sdk_click": [
+    200,
+    "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"9ef35881970d601985464d56e94a99a2\"}"
+   ],
+   "verdicts": [
+    {
+     "round": 1,
+     "status": 200,
+     "token": "wy7261z",
+     "network": "Organic",
+     "engagement_time": "0001-01-01T00:00:00Z",
+     "joined": false,
+     "installed_at": "2026-09-24T10:48:51Z"
+    },
+    {
+     "round": 2,
+     "status": 200,
+     "token": "wy7261z",
+     "network": "Organic",
+     "engagement_time": "0001-01-01T00:00:00Z",
+     "joined": false,
+     "installed_at": "2026-09-24T10:48:51Z"
+    },
+    {
+     "round": 3,
+     "status": 200,
+     "token": "wy7261z",
+     "network": "Organic",
+     "engagement_time": "0001-01-01T00:00:00Z",
+     "joined": false,
+     "installed_at": "2026-09-24T10:48:51Z"
+    }
+   ],
+   "JOINED": false
+  }
+ },
+ "note": "transport-fingerprint isolation; see docstring",
+ "request_log": [
+  {
+   "arm": "chrome_android",
+   "what": "preflight tls.peet.ws",
+   "status": 200,
+   "ja3": "771,4865-4866-4867-49195-49199-49196-49200-52393-52392-49171-49172-156-157-47-53,16-18-23-51-35-27-43-65281-45-17513-5-65037-11-10-13-0-21,29-23-24,0",
+   "ja3_hash": "7558526a842f5a2b23aed64d967ed3e6",
+   "akamai": "1:65536;2:0;4:6291456;6:262144|15663105|0|m,a,s,p",
+   "http_version": "h2",
+   "peet": "96b72764e015fb524fd8d005deb7209d",
+   "t": "2026-09-24T10:40:51.049544+00:00"
+  },
+  {
+   "arm": "conscrypt",
+   "what": "preflight tls.peet.ws",
+   "status": 200,
+   "ja3": "771,4866-4867-4865-49196-49200-49195-49199-52393-52392-159-158-49188-49192-49187-49191-49162-49172-49161-49171-51-57-47-53-10,0-23-65281-10-11-35-16-51-43-13-45-21,29-23-24-25-256-257,0",
+   "ja3_hash": "8783ea04baa4c30d16d7360891388e35",
+   "akamai": "4:16777216|16711680|0|m,p,a,s",
+   "http_version": "h2",
+   "peet": "9452d7593162cca89ff848746b647ab4",
+   "t": "2026-09-24T10:40:51.833810+00:00"
+  },
+  {
+   "arm": "openssl",
+   "what": "click",
+   "status": "302?",
+   "reftag": "adjust_reftag=cOPl2KR6oU6Kn&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_cont",
+   "t": "2026-09-24T10:40:52.349103+00:00"
+  },
+  {
+   "arm": "chrome_android",
+   "what": "click",
+   "status": "302?",
+   "reftag": "adjust_reftag=cuSoqE0WcSNGg&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_cont",
+   "t": "2026-09-24T10:40:55.239197+00:00"
+  },
+  {
+   "arm": "conscrypt",
+   "what": "click",
+   "status": "302?",
+   "reftag": "adjust_reftag=cp7wa70uRA33i&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_cont",
+   "t": "2026-09-24T10:40:57.782553+00:00"
+  },
+  {
+   "arm": "openssl",
+   "what": "POST session",
+   "status": 200,
+   "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"7d62a9a69418cee045aef7086c797dc0\",\"ask_in\":2000}",
+   "t": "2026-09-24T10:45:05.936766+00:00"
+  },
+  {
+   "arm": "openssl",
+   "what": "POST sdk_click",
+   "status": 200,
+   "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"7d62a9a69418cee045aef7086c797dc0\"}",
+   "t": "2026-09-24T10:46:02.616468+00:00"
+  },
+  {
+   "arm": "chrome_android",
+   "what": "POST session",
+   "status": 200,
+   "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2ad9930631ed1f15c5fc969a9a0be9dc\",\"ask_in\":2000}",
+   "t": "2026-09-24T10:46:59.812181+00:00"
+  },
+  {
+   "arm": "chrome_android",
+   "what": "POST sdk_click",
+   "status": 200,
+   "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2ad9930631ed1f15c5fc969a9a0be9dc\"}",
+   "t": "2026-09-24T10:47:58.981855+00:00"
+  },
+  {
+   "arm": "conscrypt",
+   "what": "POST session",
+   "status": 200,
+   "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"9ef35881970d601985464d56e94a99a2\",\"ask_in\":2000}",
+   "t": "2026-09-24T10:48:51.334496+00:00"
+  },
+  {
+   "arm": "conscrypt",
+   "what": "POST sdk_click",
+   "status": 200,
+   "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"9ef35881970d601985464d56e94a99a2\"}",
+   "t": "2026-09-24T10:49:43.365389+00:00"
+  },
+  {
+   "arm": "openssl",
+   "what": "GET attribution",
+   "status": 200,
+   "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"7d62a9a69418cee045aef7086c797dc0\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-24T10:45:06Z\",\"first_session_time\":\"2026-09-24T10:45:06Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+   "t": "2026-09-24T10:50:21.150139+00:00"
+  },
+  {
+   "arm": "chrome_android",
+   "what": "GET attribution",
+   "status": 200,
+   "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2ad9930631ed1f15c5fc969a9a0be9dc\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-24T10:47:00Z\",\"first_session_time\":\"2026-09-24T10:47:00Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+   "t": "2026-09-24T10:50:49.634824+00:00"
+  },
+  {
+   "arm": "conscrypt",
+   "what": "GET attribution",
+   "status": 200,
+   "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"9ef35881970d601985464d56e94a99a2\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-24T10:48:51Z\",\"first_session_time\":\"2026-09-24T10:48:51Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+   "t": "2026-09-24T10:51:38.986528+00:00"
+  },
+  {
+   "arm": "openssl",
+   "what": "GET attribution",
+   "status": 200,
+   "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"7d62a9a69418cee045aef7086c797dc0\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-24T10:45:06Z\",\"first_session_time\":\"2026-09-24T10:45:06Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+   "t": "2026-09-24T10:52:27.696712+00:00"
+  },
+  {
+   "arm": "chrome_android",
+   "what": "GET attribution",
+   "status": 200,
+   "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2ad9930631ed1f15c5fc969a9a0be9dc\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-24T10:47:00Z\",\"first_session_time\":\"2026-09-24T10:47:00Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+   "t": "2026-09-24T10:53:13.253311+00:00"
+  },
+  {
+   "arm": "conscrypt",
+   "what": "GET attribution",
+   "status": 200,
+   "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"9ef35881970d601985464d56e94a99a2\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-24T10:48:51Z\",\"first_session_time\":\"2026-09-24T10:48:51Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+   "t": "2026-09-24T10:53:55.736091+00:00"
+  },
+  {
+   "arm": "openssl",
+   "what": "GET attribution",
+   "status": 200,
+   "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"7d62a9a69418cee045aef7086c797dc0\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-24T10:45:06Z\",\"first_session_time\":\"2026-09-24T10:45:06Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+   "t": "2026-09-24T10:55:05.015473+00:00"
+  },
+  {
+   "arm": "chrome_android",
+   "what": "GET attribution",
+   "status": 200,
+   "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2ad9930631ed1f15c5fc969a9a0be9dc\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-24T10:47:00Z\",\"first_session_time\":\"2026-09-24T10:47:00Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+   "t": "2026-09-24T10:55:48.157528+00:00"
+  },
+  {
+   "arm": "conscrypt",
+   "what": "GET attribution",
+   "status": 200,
+   "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"9ef35881970d601985464d56e94a99a2\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-24T10:48:51Z\",\"first_session_time\":\"2026-09-24T10:48:51Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+   "t": "2026-09-24T10:56:35.621196+00:00"
+  }
+ ]
+}

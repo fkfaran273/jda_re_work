@@ -1,0 +1,14 @@
+[
+ {
+  "arm": "GENUINE-ORACLE",
+  "http": 200,
+  "tracker_token": "24xg6t54",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"9423ba56b92ee5e4c440bd2c638441e0\",\"attribution\":{\"tracker_token\":\"24xg6t54\",\"tracker_name\":\"VKM Digital Yeni::AH::vkm_0926_36::cline_1p8t3\",\"network\":\"VKM Digital Yeni\",\"campaign\":\"AH\",\"adgroup\":\"vkm_0926_36\",\"creative\":\"cline_1p8t3\",\"engagement_time\":\"2026-09-24T17:03:18Z\",\"installed_at\":\"2026-09-24T17:03:30Z\",\"first_session_time\":\"2026-09-24T17:03:30Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "arm": "FLIP-ORACLE",
+  "http": 200,
+  "tracker_token": "wy7261z",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"9423ba56b92ee5e4c440bd2c638441e0\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-24T17:03:30Z\",\"first_session_time\":\"2026-09-24T17:03:30Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ }
+]

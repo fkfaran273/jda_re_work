@@ -1,0 +1,160 @@
+{
+ "identity": {
+  "gps_adid": "0e789180-17da-440b-b1c3-0349d40e0e93",
+  "second": 1789474915,
+  "params": 22,
+  "desc10_padded": 248,
+  "desc10_unpadded": 246
+ },
+ "mint": {
+  "A1p": {
+   "status": "exit-clean",
+   "V": "0xa1a1f00d",
+   "pid": 12345,
+   "blob_len": 192,
+   "header_ok": true,
+   "laws": {
+    "L1_tile_Rrep": true,
+    "L1_hits": [
+     [
+      0,
+      34116
+     ],
+     [
+      2,
+      34116
+     ],
+     [
+      4,
+      34116
+     ],
+     [
+      6,
+      34116
+     ],
+     [
+      8,
+      34116
+     ],
+     [
+      10,
+      34116
+     ],
+     [
+      12,
+      34116
+     ],
+     [
+      14,
+      34116
+     ]
+    ],
+    "L2_d4_6_hi_eq_R": true,
+    "L3_X_eq_U3": true
+   },
+   "vs_genuine_diff_dwords": 44,
+   "note": "faithful F.region, arbitrary V, plausible pid"
+  },
+  "A1pp": {
+   "status": "exit-clean",
+   "V": "0x6aa50d63",
+   "pid": 12345,
+   "blob_len": 192,
+   "header_ok": true,
+   "laws": {
+    "L1_tile_Rrep": true,
+    "L1_hits": [
+     [
+      0,
+      27123
+     ],
+     [
+      2,
+      27123
+     ],
+     [
+      4,
+      27123
+     ],
+     [
+      6,
+      27123
+     ],
+     [
+      8,
+      27123
+     ],
+     [
+      10,
+      27123
+     ],
+     [
+      12,
+      27123
+     ],
+     [
+      14,
+      27123
+     ]
+    ],
+    "L2_d4_6_hi_eq_R": true,
+    "L3_X_eq_U3": true
+   },
+   "vs_genuine_diff_dwords": 44,
+   "note": "faithful F.region, fill_model V"
+  },
+  "A6": {
+   "status": "exit-clean",
+   "V": "0xa1a1f00d",
+   "pid": 12345,
+   "blob_len": 192,
+   "header_ok": true,
+   "laws": {
+    "L1_tile_Rrep": false,
+    "L1_hits": [],
+    "L2_d4_6_hi_eq_R": false,
+    "L3_X_eq_U3": false
+   },
+   "vs_genuine_diff_dwords": 44,
+   "note": "A1p region with d0 tile law deliberately broken"
+  }
+ },
+ "A2_flip_of_A1p_last_dword": 204,
+ "arms": [
+  {
+   "label": "A0 genuine verbatim (control)",
+   "http": 400,
+   "verdict": "RECOGNIZED(400)",
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"ask_in\":7200000}",
+   "note": "genuine blob + genuine query (expect 400)"
+  },
+  {
+   "label": "A1p mint F region V=fresh pid=12345",
+   "http": 200,
+   "verdict": "not-recognized(200)",
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-15T10:50:21Z\",\"first_session_time\":\"2026-09-15T10:50:21Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+   "note": "KEY: faithful F.region, same claims+second"
+  },
+  {
+   "label": "A1pp mint F region V=make_V(sec,usec)",
+   "http": 200,
+   "verdict": "not-recognized(200)",
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-15T10:50:21Z\",\"first_session_time\":\"2026-09-15T10:50:21Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+   "note": "KEY: faithful F.region, fill_model V"
+  },
+  {
+   "label": "A2 1-bit flip of A1p (control)",
+   "http": 200,
+   "verdict": "not-recognized(200)",
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-15T10:50:21Z\",\"first_session_time\":\"2026-09-15T10:50:21Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+   "note": "sanity: blob bytes matter (expect 200)"
+  },
+  {
+   "label": "A6 A1p with L1 broken (U2^U0 off)",
+   "http": 200,
+   "verdict": "not-recognized(200)",
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-15T10:50:21Z\",\"first_session_time\":\"2026-09-15T10:50:21Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+   "note": "isolates: does server check region laws?"
+  }
+ ]
+}

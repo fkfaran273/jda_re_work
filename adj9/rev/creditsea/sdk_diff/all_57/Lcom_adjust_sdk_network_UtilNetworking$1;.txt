@@ -1,0 +1,13 @@
+# CLASS Lcom/adjust/sdk/network/UtilNetworking$1;
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final applyConnectionOptions (Ljavax/net/ssl/HttpsURLConnection; Ljava/lang/String; I)V ----
+  const-string           v0, "Client-SDK"
+  invoke-virtual         v2, v0, v3, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+  invoke-virtual         v2, v4, Ljava/net/URLConnection;->setConnectTimeout(I)V
+  invoke-virtual         v2, v4, Ljava/net/URLConnection;->setReadTimeout(I)V
+  return-void            
+######################################################################

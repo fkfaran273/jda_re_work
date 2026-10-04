@@ -1,0 +1,5 @@
+# CLASS Lcom/adjust/sdk/network/UtilNetworking$IHttpsURLConnectionProvider;
+
+---- METHOD public abstract generateHttpsURLConnection (Ljava/net/URL;)Ljavax/net/ssl/HttpsURLConnection; ----
+  (no code)
+######################################################################

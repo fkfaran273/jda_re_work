@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+content-type: application/json; charset=utf-8
+date: Mon, 14 Sep 2026 12:23:11 GMT
+content-length: 452
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-robots-tag: noindex
+
+{"app_token":"jut9tib0eeps","adid":"2fedfd3dfcc48e92aae70f3fd2e1608a","attribution":{"tracker_token":"24pxw9rl","tracker_name":"VKM Digital Yeni::AH::vkm_0926_36::penti_generic","network":"VKM Digital Yeni","campaign":"AH","adgroup":"vkm_0926_36","creative":"penti_generic","engagement_time":"2026-09-14T10:25:58Z","installed_at":"2026-09-14T12:23:08Z","first_session_time":"2026-09-14T12:23:08Z","is_reattributed":false,"is_redownload_install":false}}

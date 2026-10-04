@@ -1,0 +1,43 @@
+[
+ {
+  "t": "sym",
+  "name": "AES_gcm_decrypt",
+  "addr": "0x7f22f1d1b8",
+  "mod": "libkeystore2_crypto.so"
+ },
+ {
+  "t": "sym",
+  "name": "AES_gcm_encrypt",
+  "addr": "0x7f22f1d1b0",
+  "mod": "libkeystore2_crypto.so"
+ },
+ {
+  "t": "sym",
+  "name": "HKDFExpand",
+  "addr": "0x7f22f1d1d8",
+  "mod": "libkeystore2_crypto.so"
+ },
+ {
+  "t": "sym",
+  "name": "HKDFExtract",
+  "addr": "0x7f22f1d1d0",
+  "mod": "libkeystore2_crypto.so"
+ },
+ {
+  "t": "sym",
+  "name": "ECDHComputeKey",
+  "addr": "0x7f22f1d1e0",
+  "mod": "libkeystore2_crypto.so"
+ },
+ {
+  "t": "hooked",
+  "name": "AES_gcm_decrypt"
+ },
+ {
+  "t": "hooked",
+  "name": "AES_gcm_encrypt"
+ },
+ {
+  "t": "ready"
+ }
+]

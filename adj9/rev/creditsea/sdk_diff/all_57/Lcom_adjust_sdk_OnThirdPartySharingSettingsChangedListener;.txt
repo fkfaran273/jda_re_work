@@ -1,0 +1,5 @@
+# CLASS Lcom/adjust/sdk/OnThirdPartySharingSettingsChangedListener;
+
+---- METHOD public abstract onThirdPartySharingSettingsChanged (Lcom/adjust/sdk/AdjustThirdPartySharingResult;)V ----
+  (no code)
+######################################################################

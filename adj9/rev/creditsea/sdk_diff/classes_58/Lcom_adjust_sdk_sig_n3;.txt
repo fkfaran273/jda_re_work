@@ -1,0 +1,36 @@
+# CLASS Lcom/adjust/sdk/sig/n3;
+FIELD public Lcom/adjust/sdk/sig/g0;
+FIELD public Ljava/lang/Object;
+
+---- METHOD public constructor <init>((Lcom/adjust/sdk/sig/g0;)V)  ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/sig/n3;->a Lcom/adjust/sdk/sig/g0;
+  sget-object            v1, Lcom/adjust/sdk/sig/l3;->a Lcom/adjust/sdk/sig/l3;
+  iput-object            v1, v0, Lcom/adjust/sdk/sig/n3;->b Ljava/lang/Object;
+  return-void            
+
+---- METHOD public final getValue(()Ljava/lang/Object;)  ----
+  iget-object            v0, v2, Lcom/adjust/sdk/sig/n3;->b Ljava/lang/Object;
+  sget-object            v1, Lcom/adjust/sdk/sig/l3;->a Lcom/adjust/sdk/sig/l3;
+  if-ne                  v0, v1, +00dh
+  iget-object            v0, v2, Lcom/adjust/sdk/sig/n3;->a Lcom/adjust/sdk/sig/g0;
+  invoke-interface       v0, Lcom/adjust/sdk/sig/g0;->a()Ljava/lang/Object;
+  move-result-object     v0
+  iput-object            v0, v2, Lcom/adjust/sdk/sig/n3;->b Ljava/lang/Object;
+  const/4                v0, 0
+  iput-object            v0, v2, Lcom/adjust/sdk/sig/n3;->a Lcom/adjust/sdk/sig/g0;
+  iget-object            v0, v2, Lcom/adjust/sdk/sig/n3;->b Ljava/lang/Object;
+  return-object          v0
+
+---- METHOD public final toString(()Ljava/lang/String;)  ----
+  iget-object            v0, v2, Lcom/adjust/sdk/sig/n3;->b Ljava/lang/Object;
+  sget-object            v1, Lcom/adjust/sdk/sig/l3;->a Lcom/adjust/sdk/sig/l3;
+  if-eq                  v0, v1, +00bh
+  invoke-virtual         v2, Lcom/adjust/sdk/sig/n3;->getValue()Ljava/lang/Object;
+  move-result-object     v0
+  invoke-static          v0, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+  const-string           v0, "Lazy value not initialized yet."
+  return-object          v0
+######################################################################

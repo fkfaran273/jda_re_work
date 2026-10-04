@@ -1,0 +1,296 @@
+--- 
++++ 
+@@ -3,2 +3,3 @@
+ FIELD androidId Ljava/lang/String;
++FIELD private androidIdReadOnce Z
+ FIELD apiLevel Ljava/lang/String;
+@@ -20,2 +21,6 @@
+ FIELD fireTrackingEnabled Ljava/lang/Boolean;
++FIELD googleAdId Ljava/lang/String;
++FIELD googleAdIdReadAttempt I
++FIELD private googleAdIdReadOnce Z
++FIELD googleAdIdSource Ljava/lang/String;
+ FIELD hardwareName Ljava/lang/String;
+@@ -30,3 +35,2 @@
+ FIELD mnc Ljava/lang/String;
+-FIELD private nonGoogleIdsReadOnce Z
+ FIELD oaidParameters Ljava/util/Map;
+@@ -37,6 +41,2 @@
+ FIELD packageName Ljava/lang/String;
+-FIELD playAdId Ljava/lang/String;
+-FIELD playAdIdAttempt I
+-FIELD playAdIdSource Ljava/lang/String;
+-FIELD private playIdsReadOnce Z
+ FIELD screenDensity Ljava/lang/String;
+@@ -50,6 +50,6 @@
+ const/4 vX, -1
+-iput vX, vX, Lcom/adjust/sdk/DeviceInfo;->playAdIdAttempt I
+-const/4 vX, 0
+-iput-boolean vX, vX, Lcom/adjust/sdk/DeviceInfo;->nonGoogleIdsReadOnce Z
+-iput-boolean vX, vX, Lcom/adjust/sdk/DeviceInfo;->playIdsReadOnce Z
++iput vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdIdReadAttempt I
++const/4 vX, 0
++iput-boolean vX, vX, Lcom/adjust/sdk/DeviceInfo;->androidIdReadOnce Z
++iput-boolean vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdIdReadOnce Z
+ iput-boolean vX, vX, Lcom/adjust/sdk/DeviceInfo;->otherDeviceIdsParamsReadOnce Z
+@@ -119,3 +119,3 @@
+ iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->clientSdk Ljava/lang/String;
+-invoke-static vX, Lcom/adjust/sdk/Util;->canReadFbId(Lcom/adjust/sdk/AdjustConfig;)Z
++invoke-static vX, Lcom/adjust/sdk/Util;->isFbIdReadingEnabled(Lcom/adjust/sdk/AdjustConfig;)Z
+ move-result vX
+@@ -143,3 +143,3 @@
+ iput vX, vX, Lcom/adjust/sdk/DeviceInfo;->uiMode I
+-invoke-static vX, Lcom/adjust/sdk/Util;->canReadAppSetId(Lcom/adjust/sdk/AdjustConfig;)Z
++invoke-static vX, Lcom/adjust/sdk/Util;->isAppSetIdReadingEnabled(Lcom/adjust/sdk/AdjustConfig;)Z
+ move-result vX
+@@ -215,3 +215,3 @@
+ ---- METHOD private getClientSdk (Ljava/lang/String;)Ljava/lang/String; ----
+-const-string "android5.7.0"
++const-string "android5.8.0"
+ if BRANCH
+@@ -241,3 +241,3 @@
+ if BRANCH
+-const-string "pc"
++const-string/jumbo pc
+ return-object vX
+@@ -262,3 +262,3 @@
+ return-object vX
+-const-string "phone"
++const-string/jumbo phone
+ return-object vX
+@@ -290,6 +290,6 @@
+ move-result-object vX
+-invoke-static vX, Landroidx/compose/ui/text/font/b;->i(Landroid/content/pm/PackageInfo;)Landroid/content/pm/SigningInfo;
+-move-result-object vX
+-if BRANCH
+-invoke-static vX, Landroidx/credentials/provider/a;->v(Landroid/content/pm/SigningInfo;)[Landroid/content/pm/Signature;
++invoke-static vX, Lco/hyperverge/hypersnapsdk/utils/a;->b(Landroid/content/pm/PackageInfo;)Landroid/content/pm/SigningInfo;
++move-result-object vX
++if BRANCH
++invoke-static vX, Lco/hyperverge/hypersnapsdk/utils/a;->A(Landroid/content/pm/SigningInfo;)[Landroid/content/pm/Signature;
+ move-result-object vX
+@@ -317,3 +317,3 @@
+ if BRANCH
+-GOTO
++return-object vX
+ invoke-virtual vX, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+@@ -323,4 +323,4 @@
+ move-result-object vX
+-new-array vX, vX, [Ljava/lang/String;
+-aput-object vX, vX, vX
++filled-new-array vX, [Ljava/lang/String;
++move-result-object vX
+ const/4 vX, 0
+@@ -331,3 +331,3 @@
+ if BRANCH
+-GOTO
++return-object vX
+ invoke-interface vX, Landroid/database/Cursor;->moveToFirst()Z
+@@ -345,3 +345,3 @@
+ ---- METHOD public static getFireAdvertisingIdBypassConditions (Landroid/content/ContentResolver; Lcom/adjust/sdk/OnAmazonAdIdReadListener;)V ----
+-invoke-static vX, vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->access$600(Landroid/content/ContentResolver; Lcom/adjust/sdk/OnAmazonAdIdReadListener;)V
++invoke-static vX, vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->c(Landroid/content/ContentResolver; Lcom/adjust/sdk/OnAmazonAdIdReadListener;)V
+ return-void
+@@ -430,8 +430,8 @@
+ return-object vX
+----- METHOD public reloadNonPlayIds (Lcom/adjust/sdk/AdjustConfig;)V ----
+-invoke-static vX, Lcom/adjust/sdk/Util;->canReadNonPlayIds(Lcom/adjust/sdk/AdjustConfig;)Z
+-move-result vX
+-if BRANCH
+-GOTO
+-iget-boolean vX, vX, Lcom/adjust/sdk/DeviceInfo;->nonGoogleIdsReadOnce Z
++---- METHOD public readAndroidId (Lcom/adjust/sdk/AdjustConfig;)V ----
++invoke-static vX, Lcom/adjust/sdk/Util;->isAndroidIdReadingEnabled(Lcom/adjust/sdk/AdjustConfig;)Z
++move-result vX
++if BRANCH
++GOTO
++iget-boolean vX, vX, Lcom/adjust/sdk/DeviceInfo;->androidIdReadOnce Z
+ if BRANCH
+@@ -443,57 +443,24 @@
+ const/4 vX, 1
+-iput-boolean vX, vX, Lcom/adjust/sdk/DeviceInfo;->nonGoogleIdsReadOnce Z
+-return-void
+----- METHOD public reloadOtherDeviceInfoParams (Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/ILogger;)V ----
++iput-boolean vX, vX, Lcom/adjust/sdk/DeviceInfo;->androidIdReadOnce Z
++return-void
++---- METHOD public reloadGoogleAdId (Lcom/adjust/sdk/AdjustConfig;)V ----
++iget-boolean vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdIdReadOnce Z
++const/4 vX, -1
++const/4 vX, 0
++if BRANCH
+ iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isDeviceIdsReadingOnceEnabled Z
+ if BRANCH
+-iget-boolean vX, vX, Lcom/adjust/sdk/DeviceInfo;->otherDeviceIdsParamsReadOnce Z
+-if BRANCH
+-return-void
+-invoke-static vX, vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->access$000(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/ILogger;)Ljava/util/Map;
+-move-result-object vX
+-iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->imeiParameters Ljava/util/Map;
+-invoke-static vX, vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->access$100(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/ILogger;)Ljava/util/Map;
+-move-result-object vX
+-iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->oaidParameters Ljava/util/Map;
+-invoke-static vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->access$200(Lcom/adjust/sdk/AdjustConfig;)Ljava/lang/String;
+-move-result-object vX
+-iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->fireAdId Ljava/lang/String;
+-invoke-static vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->access$300(Lcom/adjust/sdk/AdjustConfig;)Ljava/lang/Boolean;
+-move-result-object vX
+-iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->fireTrackingEnabled Ljava/lang/Boolean;
+-iget-object vX, vX, Lcom/adjust/sdk/AdjustConfig;->context Landroid/content/Context;
+-invoke-static vX, vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->access$400(Landroid/content/Context; Lcom/adjust/sdk/ILogger;)I
+-move-result vX
+-iput vX, vX, Lcom/adjust/sdk/DeviceInfo;->connectivityType I
+-iget-object vX, vX, Lcom/adjust/sdk/AdjustConfig;->context Landroid/content/Context;
+-invoke-static vX, vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->getMcc(Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Ljava/lang/String;
+-move-result-object vX
+-iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->mcc Ljava/lang/String;
+-iget-object vX, vX, Lcom/adjust/sdk/AdjustConfig;->context Landroid/content/Context;
+-invoke-static vX, vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->access$500(Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Ljava/lang/String;
+-move-result-object vX
+-iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->mnc Ljava/lang/String;
+-const/4 vX, 1
+-iput-boolean vX, vX, Lcom/adjust/sdk/DeviceInfo;->otherDeviceIdsParamsReadOnce Z
+-return-void
+----- METHOD public reloadPlayIds (Lcom/adjust/sdk/AdjustConfig;)V ----
+-iget-boolean vX, vX, Lcom/adjust/sdk/DeviceInfo;->playIdsReadOnce Z
+-const/4 vX, -1
+-const/4 vX, 0
+-if BRANCH
+-iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isDeviceIdsReadingOnceEnabled Z
+-if BRANCH
+-invoke-static vX, Lcom/adjust/sdk/Util;->canReadPlayIds(Lcom/adjust/sdk/AdjustConfig;)Z
+-move-result vX
+-if BRANCH
+-iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->playAdId Ljava/lang/String;
++invoke-static vX, Lcom/adjust/sdk/Util;->isGoogleAdIdReadingEnabled(Lcom/adjust/sdk/AdjustConfig;)Z
++move-result vX
++if BRANCH
++iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdId Ljava/lang/String;
+ iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->isTrackingEnabled Ljava/lang/Boolean;
+-iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->playAdIdSource Ljava/lang/String;
+-iput vX, vX, Lcom/adjust/sdk/DeviceInfo;->playAdIdAttempt I
+-return-void
+-iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->playAdId Ljava/lang/String;
++iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdIdSource Ljava/lang/String;
++iput vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdIdReadAttempt I
++return-void
++iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdId Ljava/lang/String;
+ iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->isTrackingEnabled Ljava/lang/Boolean;
+-iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->playAdIdSource Ljava/lang/String;
+-iput vX, vX, Lcom/adjust/sdk/DeviceInfo;->playAdIdAttempt I
+-invoke-static vX, Lcom/adjust/sdk/Util;->canReadPlayIds(Lcom/adjust/sdk/AdjustConfig;)Z
++iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdIdSource Ljava/lang/String;
++iput vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdIdReadAttempt I
++invoke-static vX, Lcom/adjust/sdk/Util;->isGoogleAdIdReadingEnabled(Lcom/adjust/sdk/AdjustConfig;)Z
+ move-result vX
+@@ -510,7 +477,7 @@
+ move-result-object vX
+-iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->playAdId Ljava/lang/String;
++iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdId Ljava/lang/String;
+ const-string/jumbo samsung_cloud_sdk
+-iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->playAdIdSource Ljava/lang/String;
+-iput-boolean vX, vX, Lcom/adjust/sdk/DeviceInfo;->playIdsReadOnce Z
+-iget-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->playAdId Ljava/lang/String;
++iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdIdSource Ljava/lang/String;
++iput-boolean vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdIdReadOnce Z
++iget-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdId Ljava/lang/String;
+ iget-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->isTrackingEnabled Ljava/lang/Boolean;
+@@ -523,3 +490,3 @@
+ move-result-object vX
+-iget-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->playAdId Ljava/lang/String;
++iget-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdId Ljava/lang/String;
+ if BRANCH
+@@ -527,4 +494,4 @@
+ move-result-object vX
+-iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->playAdId Ljava/lang/String;
+-iput-boolean vX, vX, Lcom/adjust/sdk/DeviceInfo;->playIdsReadOnce Z
++iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdId Ljava/lang/String;
++iput-boolean vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdIdReadOnce Z
+ iget-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->isTrackingEnabled Ljava/lang/Boolean;
+@@ -534,3 +501,3 @@
+ iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->isTrackingEnabled Ljava/lang/Boolean;
+-iget-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->playAdId Ljava/lang/String;
++iget-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdId Ljava/lang/String;
+ if BRANCH
+@@ -539,4 +506,4 @@
+ const-string/jumbo service
+-iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->playAdIdSource Ljava/lang/String;
+-iput vX, vX, Lcom/adjust/sdk/DeviceInfo;->playAdIdAttempt I
++iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdIdSource Ljava/lang/String;
++iput vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdIdReadAttempt I
+ GOTO
+@@ -551,15 +518,15 @@
+ GOTO
+-iget-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->playAdId Ljava/lang/String;
++iget-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdId Ljava/lang/String;
+ const-wide/16 vX, 1000
+ if BRANCH
+-invoke-static vX, vX, vX, vX, Lcom/adjust/sdk/Util;->getPlayAdId(Landroid/content/Context; Ljava/lang/Object; J)Ljava/lang/String;
+-move-result-object vX
+-iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->playAdId Ljava/lang/String;
+-iput-boolean vX, vX, Lcom/adjust/sdk/DeviceInfo;->playIdsReadOnce Z
++invoke-static vX, vX, vX, vX, Lcom/adjust/sdk/Util;->getGoogleAdId(Landroid/content/Context; Ljava/lang/Object; J)Ljava/lang/String;
++move-result-object vX
++iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdId Ljava/lang/String;
++iput-boolean vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdIdReadOnce Z
+ iget-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->isTrackingEnabled Ljava/lang/Boolean;
+ if BRANCH
+-invoke-static vX, vX, vX, vX, Lcom/adjust/sdk/Util;->isPlayTrackingEnabled(Landroid/content/Context; Ljava/lang/Object; J)Ljava/lang/Boolean;
++invoke-static vX, vX, vX, vX, Lcom/adjust/sdk/Util;->isGoogleAdIdTrackingEnabled(Landroid/content/Context; Ljava/lang/Object; J)Ljava/lang/Boolean;
+ move-result-object vX
+ iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->isTrackingEnabled Ljava/lang/Boolean;
+-iget-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->playAdId Ljava/lang/String;
++iget-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdId Ljava/lang/String;
+ if BRANCH
+@@ -568,4 +535,4 @@
+ const-string "library"
+-iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->playAdIdSource Ljava/lang/String;
+-iput vX, vX, Lcom/adjust/sdk/DeviceInfo;->playAdIdAttempt I
++iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdIdSource Ljava/lang/String;
++iput vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdIdReadAttempt I
+ return-void
+@@ -573,6 +540,6 @@
+ GOTO
+-iget-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->playAdId Ljava/lang/String;
+-if BRANCH
+-iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->playAdId Ljava/lang/String;
+-iput-boolean vX, vX, Lcom/adjust/sdk/DeviceInfo;->playIdsReadOnce Z
++iget-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdId Ljava/lang/String;
++if BRANCH
++iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdId Ljava/lang/String;
++iput-boolean vX, vX, Lcom/adjust/sdk/DeviceInfo;->googleAdIdReadOnce Z
+ iget-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->isTrackingEnabled Ljava/lang/Boolean;
+@@ -581 +548,34 @@
+ return-void
++---- METHOD public reloadOtherDeviceInfoParams (Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/ILogger;)V ----
++iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isDeviceIdsReadingOnceEnabled Z
++if BRANCH
++iget-boolean vX, vX, Lcom/adjust/sdk/DeviceInfo;->otherDeviceIdsParamsReadOnce Z
++if BRANCH
++return-void
++invoke-static vX, vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->e(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/ILogger;)Ljava/util/Map;
++move-result-object vX
++iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->imeiParameters Ljava/util/Map;
++invoke-static vX, vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->g(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/ILogger;)Ljava/util/Map;
++move-result-object vX
++iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->oaidParameters Ljava/util/Map;
++invoke-static vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->b(Lcom/adjust/sdk/AdjustConfig;)Ljava/lang/String;
++move-result-object vX
++iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->fireAdId Ljava/lang/String;
++invoke-static vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->d(Lcom/adjust/sdk/AdjustConfig;)Ljava/lang/Boolean;
++move-result-object vX
++iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->fireTrackingEnabled Ljava/lang/Boolean;
++iget-object vX, vX, Lcom/adjust/sdk/AdjustConfig;->context Landroid/content/Context;
++invoke-static vX, vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->a(Landroid/content/Context; Lcom/adjust/sdk/ILogger;)I
++move-result vX
++iput vX, vX, Lcom/adjust/sdk/DeviceInfo;->connectivityType I
++iget-object vX, vX, Lcom/adjust/sdk/AdjustConfig;->context Landroid/content/Context;
++invoke-static vX, vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->getMcc(Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Ljava/lang/String;
++move-result-object vX
++iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->mcc Ljava/lang/String;
++iget-object vX, vX, Lcom/adjust/sdk/AdjustConfig;->context Landroid/content/Context;
++invoke-static vX, vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->f(Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Ljava/lang/String;
++move-result-object vX
++iput-object vX, vX, Lcom/adjust/sdk/DeviceInfo;->mnc Ljava/lang/String;
++const/4 vX, 1
++iput-boolean vX, vX, Lcom/adjust/sdk/DeviceInfo;->otherDeviceIdsParamsReadOnce Z
++return-void

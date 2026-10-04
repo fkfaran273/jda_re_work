@@ -1,0 +1,14 @@
+[map] kind=session sdk=android5.7.0 keys=43 marker=f44b8d77-4c68-4990-9d02-7b1c821a42ce
+[prep] frida-server up
+[prep] spawned pid=22204
+[prep] resumed, waiting for native hooks + ART
+[fold] {"type": "base", "base": "0x7184247000", "t": 1790496285688}
+[fold] installed=True base=0x7184247000
+[mint] health={"loaderFound": true, "err": null, "lastActKeys": null}
+[fold] sign_row #1 sec=1790496285 S=0x5611b0f3 d10=360B head=22 25 2e
+[fold] sign_row #2 sec=1790496286 S=0x46b169fa d10=387B head=22 25 2e
+[mint] no live Signer yet — mint() will try $new()+onResume
+[mint] signing OUR fixed map ...
+[mint] result ok=False err=rpc: script has been destroyed guardC=None auth=0B nSignBlob=NONE canon=None
+[pair] 0 new rows; paired=False (sign_id=None sec=None)
+[save] C:\Users\Apps\Downloads\com.penti.app\mywork\artifacts\paired_mint.json (2573 bytes on disk)

@@ -1,0 +1,3 @@
+# CLASS Lcom/adjust/sdk/sig/r2;
+FIELD public static final synthetic a I
+######################################################################

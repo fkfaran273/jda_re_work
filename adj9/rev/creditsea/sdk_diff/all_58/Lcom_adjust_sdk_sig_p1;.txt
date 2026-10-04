@@ -1,0 +1,80 @@
+# CLASS Lcom/adjust/sdk/sig/p1;
+
+---- METHOD public static final a (Lcom/adjust/sdk/sig/m;)Ljava/lang/Class; ----
+  iget-object            v2, v2, Lcom/adjust/sdk/sig/m;->a Ljava/lang/Class;
+  invoke-virtual         v2, Ljava/lang/Class;->isPrimitive()Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +079h
+  invoke-virtual         v2, Ljava/lang/Class;->getName()Ljava/lang/String;
+  move-result-object     v0
+  invoke-virtual         v0, Ljava/lang/String;->hashCode()I
+  move-result            v1
+  sparse-switch          v1, +0000074h
+  goto/16                +06ch
+  const-string/jumbo     v1, short
+  invoke-virtual         v0, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +61h
+  const-class            v2, Ljava/lang/Short;
+  return-object          v2
+  const-string           v1, "float"
+  invoke-virtual         v0, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +55h
+  const-class            v2, Ljava/lang/Float;
+  return-object          v2
+  const-string           v1, "boolean"
+  invoke-virtual         v0, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +49h
+  const-class            v2, Ljava/lang/Boolean;
+  return-object          v2
+  const-string/jumbo     v1, void
+  invoke-virtual         v0, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +3ch
+  const-class            v2, Ljava/lang/Void;
+  return-object          v2
+  const-string           v1, "long"
+  invoke-virtual         v0, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +30h
+  const-class            v2, Ljava/lang/Long;
+  return-object          v2
+  const-string           v1, "char"
+  invoke-virtual         v0, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +24h
+  const-class            v2, Ljava/lang/Character;
+  return-object          v2
+  const-string           v1, "byte"
+  invoke-virtual         v0, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +18h
+  const-class            v2, Ljava/lang/Byte;
+  return-object          v2
+  const-string           v1, "int"
+  invoke-virtual         v0, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +ch
+  const-class            v2, Ljava/lang/Integer;
+  return-object          v2
+  const-string           v1, "double"
+  invoke-virtual         v0, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  return-object          v2
+  const-class            v2, Ljava/lang/Double;
+  return-object          v2
+  nop                    
+  sparse-switch-payload  -4f08842f 197ef 2e6108 2e9356 32c67c 375194 3db6c28 5d0225c 685847c
+######################################################################

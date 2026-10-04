@@ -1,0 +1,50 @@
+{
+ "arm": "transport2 (device click + device egress + PYTHON mint)",
+ "gps": "ce1e4f52-4450-432f-a4dd-03ff538e4574",
+ "click": "302",
+ "session": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"80c0ca4924e44341695541541da7e4cf\",\"ask_in\":2000}\r\n"
+ ],
+ "auid": "a31a3417-e8cf-4867-9960-8b986e63c535",
+ "sdk_click": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"80c0ca4924e44341695541541da7e4cf\"}\r\n"
+ ],
+ "verdicts": [
+  {
+   "status": 200,
+   "token": "wy7261z",
+   "network": "Organic",
+   "engagement_time": "0001-01-01T00:00:00Z",
+   "joined": false,
+   "installed_at": "2026-09-25T04:43:39Z"
+  },
+  {
+   "status": 200,
+   "token": "wy7261z",
+   "network": "Organic",
+   "engagement_time": "0001-01-01T00:00:00Z",
+   "joined": false,
+   "installed_at": "2026-09-25T04:43:39Z"
+  },
+  {
+   "status": 200,
+   "token": "wy7261z",
+   "network": "Organic",
+   "engagement_time": "0001-01-01T00:00:00Z",
+   "joined": false,
+   "installed_at": "2026-09-25T04:43:39Z"
+  },
+  {
+   "status": 200,
+   "token": "wy7261z",
+   "network": "Organic",
+   "engagement_time": "0001-01-01T00:00:00Z",
+   "joined": false,
+   "installed_at": "2026-09-25T04:43:39Z"
+  }
+ ],
+ "JOINED": false,
+ "CONCLUSION": "Byte-exact adj9 signature (session 360B, click 387B == real capture), correct tz +0530, app_version 3.14.0, real Google Play referrer, fresh GAID, device click + device egress transport => STILL Organic (token=wy7261z, network=Organic, eng=zero) on all 4 polls. The signed payload and all its fields are ruled out as the discriminator. The gate is server-side (anti-fraud / install-legitimacy signal NOT present in the adj9 signed request), e.g. Google Play Install Referrer API attestation, Play install state, app-signing-certificate / package-manager provenance, or device attestation the SDK collects outside the adj9 blob."
+}

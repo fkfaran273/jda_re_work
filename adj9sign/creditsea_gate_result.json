@@ -1,0 +1,5 @@
+{
+ "http": 200,
+ "body": "{\"app_token\":\"i2n2e5kmcpvk\",\"adid\":\"068922c9197da15e4fe2543affb8e1e9\"}",
+ "verdict": "GATE ABSENT (200 despite corrupt signature)"
+}

@@ -1,0 +1,32 @@
+# CLASS Lcom/adjust/sdk/ActivityHandler$44;
+FIELD public final synthetic a Lcom/adjust/sdk/EventResponseData;
+FIELD public final synthetic b Lcom/adjust/sdk/ActivityHandler;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/EventResponseData;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/ActivityHandler$44;->b Lcom/adjust/sdk/ActivityHandler;
+  iput-object            v2, v0, Lcom/adjust/sdk/ActivityHandler$44;->a Lcom/adjust/sdk/EventResponseData;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v2, Lcom/adjust/sdk/ActivityHandler$44;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->access$1600(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustConfig;
+  move-result-object     v0
+  if-nez                 v0, +003h
+  goto                   +bh
+  iget-object            v0, v2, Lcom/adjust/sdk/ActivityHandler$44;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->access$1600(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustConfig;
+  move-result-object     v0
+  iget-object            v0, v0, Lcom/adjust/sdk/AdjustConfig;->onEventTrackingFailedListener Lcom/adjust/sdk/OnEventTrackingFailedListener;
+  if-nez                 v0, +003h
+  return-void            
+  iget-object            v0, v2, Lcom/adjust/sdk/ActivityHandler$44;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->access$1600(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustConfig;
+  move-result-object     v0
+  iget-object            v0, v0, Lcom/adjust/sdk/AdjustConfig;->onEventTrackingFailedListener Lcom/adjust/sdk/OnEventTrackingFailedListener;
+  iget-object            v1, v2, Lcom/adjust/sdk/ActivityHandler$44;->a Lcom/adjust/sdk/EventResponseData;
+  invoke-virtual         v1, Lcom/adjust/sdk/EventResponseData;->getFailureResponseData()Lcom/adjust/sdk/AdjustEventFailure;
+  move-result-object     v1
+  invoke-interface       v0, v1, Lcom/adjust/sdk/OnEventTrackingFailedListener;->onEventTrackingFailed(Lcom/adjust/sdk/AdjustEventFailure;)V
+  return-void            
+######################################################################

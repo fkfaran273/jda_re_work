@@ -1,0 +1,6 @@
+# CLASS Lcom/adjust/sdk/sig/n1;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/sig/l1;)V ----
+  invoke-direct          v0, v1, Lcom/adjust/sdk/sig/i1;-><init>(Lcom/adjust/sdk/sig/l1;)V
+  return-void            
+######################################################################

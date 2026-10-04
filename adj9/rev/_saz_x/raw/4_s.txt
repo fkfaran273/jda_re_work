@@ -1,0 +1,25 @@
+HTTP/1.1 200
+Date: Mon, 14 Sep 2026 12:23:12 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline';img-src 'self' data:; script-src 'self' 'unsafe-inline'
+Vary: Origin,Accept-Encoding,User-Agent,Access-Control-Request-Method,Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Set-Cookie: JSESSIONID=01A5B1813F2CB0C478DF99466DAB16C7.api-6898bf56b4-7nmjd; Path=/authorizationserver; Secure; HttpOnly; SameSite=Strict
+Set-Cookie: ROUTE=.api-6898bf56b4-7nmjd; Path=/; Secure; HttpOnly; SameSite=None
+X-SAP-Pad: 39851028
+X-MServer: 1201
+X-Origin-Server: MNCDN
+Server: MNCDN-10141
+x-edge-location: SG-378
+X-MNRequest-Id: f8b8b29ed796bcd3a381b7824af14797
+Cache-Control: no-cache, no-store
+X-Cache-Status: Edge : ,
+Content-Length: 1201
+
+{"access_token":"eyJ4NXQjUzI1NiI6IkE4bC1yU3l3Nlh3SUZZWm92MnRxRzdkNmxodGkyLWdsZ3BpZnhJc1dzeFUiLCJraWQiOiI3IiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJtb2JpbGVfYW5vbnltb3VzIiwiYXVkIjoibW9iaWxlX2Fub255bW91cyIsInJlYWRfdXNlcl9yb2xlcyI6ZmFsc2UsIm5iZiI6MTc4OTM4ODU5Miwicm9sZXMiOlsiUk9MRV9UUlVTVEVEX0NMSUVOVCJdLCJpc3MiOiJodHRwczovL2FwaS1wMS5wZW50aS5jb20udHIvYXV0aG9yaXphdGlvbnNlcnZlciIsImV4cCI6MTc4OTQzMTc5MiwiaWF0IjoxNzg5Mzg4NTkyLCJqdGkiOiJhOGNlYWQ0Yi02NWI2LTQ0ZDAtYTFkZS1mMTJjOWZhNTBkMmIifQ.dqMTyTlRJKIP6O_VGqIy0HSDYTgO50JCPfGJ8B17D9Jt8y-Y-jLE9iVhoCWVa6F6ZfTK411_ta8LXCWPj_vZOLFx1JhLLVLQbylQk6U4ggniNHrrLYtdGiZ0qEYnWWGRAX31qzBtCXYhvVAZ5O2R-3ZgjgCJl6TbSos5RNf982R4Qlc40-vbhBeeVYyavSShb4CQg2Mw850UHyT-jIzvKhu9TG_x_Tg1wcXcw3o8dK-bhnPFDi1kZl_EQIawlZ7-RfCyOhsSoYZ3sCgls3-BZBt6dPu8C44_BqSRvp50yRqWyv_kCr3vHB5iQf9o7a8IZvpmEJhQbIKShZgcGdgCWoo21rhaiNzHokmkg-aljZHzhGDdp5c7zMDVFYix3wkjkLdFscy0tYmh5sstNpOQ9AugfaVvbn5oAJBc6Asfbr8Epwb8ZL_W4Z6-BYROJDa0sHosrU7IpiJ3d2aqPPdTK_DG5JGlRI0zw0SqTcv_tuaCandHMpCfpgYgWBLRJmg2s9mIyvc5bUrGVMOE8uq-WR-oURjish9sXYBMUeTeplbULcXGsfAlbegRjVSTPdFLVQBrBypwZZfHrkJADMGv6noqk5bylWFipUr-9aImpkuQvQyL6ACsTLL8NpqHB8SZZSaC7uxOIr66SBz_tXqZ7DHRPjoYO8IO-tT78fi1F0E","token_type":"Bearer","expires_in":43199}

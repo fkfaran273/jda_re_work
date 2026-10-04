@@ -1,0 +1,19 @@
+# CLASS Lcom/adjust/sdk/ActivityHandler$20;
+FIELD public final synthetic a Lcom/adjust/sdk/OnAdidReadListener;
+FIELD public final synthetic b Lcom/adjust/sdk/ActivityHandler;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/OnAdidReadListener;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/ActivityHandler$20;->b Lcom/adjust/sdk/ActivityHandler;
+  iput-object            v2, v0, Lcom/adjust/sdk/ActivityHandler$20;->a Lcom/adjust/sdk/OnAdidReadListener;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v2, Lcom/adjust/sdk/ActivityHandler$20;->a Lcom/adjust/sdk/OnAdidReadListener;
+  iget-object            v1, v2, Lcom/adjust/sdk/ActivityHandler$20;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v1, Lcom/adjust/sdk/ActivityHandler;->access$1300(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/ActivityState;
+  move-result-object     v1
+  iget-object            v1, v1, Lcom/adjust/sdk/ActivityState;->adid Ljava/lang/String;
+  invoke-interface       v0, v1, Lcom/adjust/sdk/OnAdidReadListener;->onAdidRead(Ljava/lang/String;)V
+  return-void            
+######################################################################

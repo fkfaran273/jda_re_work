@@ -1,0 +1,37 @@
+--- 
++++ 
+@@ -1,3 +1,33 @@
+----- METHOD private constructor <init>(()V) ----
++FIELD public final synthetic I
++FIELD public final synthetic Lcom/adjust/sdk/sig/d2;
++---- METHOD public synthetic constructor <init>((Lcom/adjust/sdk/sig/d2; I)V) ----
++iput vX, vX, Lcom/adjust/sdk/sig/r;->a I
++iput-object vX, vX, Lcom/adjust/sdk/sig/r;->b Lcom/adjust/sdk/sig/d2;
+ invoke-direct vX, Ljava/lang/Object;-><init>()V
+ return-void
++---- METHOD public a(()Ljava/lang/Object;) ----
++iget vX, vX, Lcom/adjust/sdk/sig/r;->a I
++packed-switch
++iget-object vX, vX, Lcom/adjust/sdk/sig/r;->b Lcom/adjust/sdk/sig/d2;
++invoke-static vX, Lcom/adjust/sdk/sig/d2;->a(Lcom/adjust/sdk/sig/d2;)I
++move-result vX
++invoke-static vX, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
++move-result-object vX
++return-object vX
++iget-object vX, vX, Lcom/adjust/sdk/sig/r;->b Lcom/adjust/sdk/sig/d2;
++invoke-static vX, Lcom/adjust/sdk/sig/d2;->c(Lcom/adjust/sdk/sig/d2;)[Lcom/adjust/sdk/sig/l2;
++move-result-object vX
++return-object vX
++iget-object vX, vX, Lcom/adjust/sdk/sig/r;->b Lcom/adjust/sdk/sig/d2;
++invoke-static vX, Lcom/adjust/sdk/sig/d2;->b(Lcom/adjust/sdk/sig/d2;)[Lcom/adjust/sdk/sig/r1;
++move-result-object vX
++return-object vX
++packed-switch-payload 0 1
++---- METHOD public a((Ljava/lang/Object;)Ljava/lang/Object;) ----
++check-cast vX, Ljava/lang/Integer;
++invoke-virtual vX, Ljava/lang/Integer;->intValue()I
++move-result vX
++iget-object vX, vX, Lcom/adjust/sdk/sig/r;->b Lcom/adjust/sdk/sig/d2;
++invoke-static vX, vX, Lcom/adjust/sdk/sig/e2;->a(Lcom/adjust/sdk/sig/l2; I)Ljava/lang/CharSequence;
++move-result-object vX
++return-object vX

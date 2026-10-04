@@ -1,0 +1,9 @@
+--- 
++++ 
+@@ -27,4 +27,4 @@
+ invoke-virtual vX, vX, Ljava/lang/Thread;->setDaemon(Z)V
+-new-instance vX, Lcom/adjust/sdk/scheduler/ThreadFactoryWrapper$1;
+-invoke-direct vX, Lcom/adjust/sdk/scheduler/ThreadFactoryWrapper$1;-><init>()V
++new-instance vX, Lt3/b;
++invoke-direct vX, Ljava/lang/Object;-><init>()V
+ invoke-virtual vX, vX, Ljava/lang/Thread;->setUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V

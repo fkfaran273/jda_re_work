@@ -1,0 +1,59 @@
+{
+ "when": "2026-09-17 00:19:33",
+ "arms": {
+  "A_same_blob_everywhere": {
+   "gps": "38da35a8-1203-4cc4-8d64-a7d148f9f92d",
+   "auid": "86baa885-415d-4d39-876a-bd8d31eef69d",
+   "creative": "const_A_b808",
+   "session": [
+    200,
+    "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2e9d0330c52e8951d66386382549d080\",\"ask_in\":2000}"
+   ],
+   "click": [
+    200,
+    "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2e9d0330c52e8951d66386382549d080\"}"
+   ],
+   "attrs": [
+    [
+     200,
+     "wy7261z|Organic|eng=0001-01-01T00:00:00Z"
+    ],
+    [
+     200,
+     "wy7261z|Organic|eng=0001-01-01T00:00:00Z"
+    ],
+    [
+     200,
+     "wy7261z|Organic|eng=0001-01-01T00:00:00Z"
+    ]
+   ]
+  },
+  "B_fresh_blob_per_call": {
+   "gps": "da060e41-5c87-43d3-a634-60f3550f348f",
+   "auid": "f3dc7d4e-6456-4286-ae0f-05d910d8c352",
+   "creative": "const_B_9413",
+   "session": [
+    200,
+    "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f6e2a7dc53a72bda1f42ee332e9fe9bc\",\"ask_in\":2000}"
+   ],
+   "click": [
+    200,
+    "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f6e2a7dc53a72bda1f42ee332e9fe9bc\"}"
+   ],
+   "attrs": [
+    [
+     200,
+     "wy7261z|Organic|eng=0001-01-01T00:00:00Z"
+    ],
+    [
+     200,
+     "wy7261z|Organic|eng=0001-01-01T00:00:00Z"
+    ],
+    [
+     200,
+     "wy7261z|Organic|eng=0001-01-01T00:00:00Z"
+    ]
+   ]
+  }
+ }
+}

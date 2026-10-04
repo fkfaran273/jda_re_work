@@ -1,0 +1,1 @@
+intent://ride/home?adj_t=23kcsfku&adj_adgroup=NN102_DNGT&adj_fallback=https://be.com.vn/&adjust_reftag=czL3hav2D4ffW#Intent;scheme=xyz.be.customer;package=xyz.be.customer;S.market_referrer=adjust_reftag%3DczL3hav2D4ffW;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dxyz.be.customer%26referrer%3Dadjust_reftag%253DczL3hav2D4ffW;end

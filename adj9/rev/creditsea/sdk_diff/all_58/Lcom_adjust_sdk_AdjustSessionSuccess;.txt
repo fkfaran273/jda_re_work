@@ -1,0 +1,22 @@
+# CLASS Lcom/adjust/sdk/AdjustSessionSuccess;
+FIELD public adid Ljava/lang/String;
+FIELD public jsonResponse Lorg/json/JSONObject;
+FIELD public message Ljava/lang/String;
+FIELD public timestamp Ljava/lang/String;
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public toString ()Ljava/lang/String; ----
+  iget-object            v0, v4, Lcom/adjust/sdk/AdjustSessionSuccess;->message Ljava/lang/String;
+  iget-object            v1, v4, Lcom/adjust/sdk/AdjustSessionSuccess;->timestamp Ljava/lang/String;
+  iget-object            v2, v4, Lcom/adjust/sdk/AdjustSessionSuccess;->adid Ljava/lang/String;
+  iget-object            v3, v4, Lcom/adjust/sdk/AdjustSessionSuccess;->jsonResponse Lorg/json/JSONObject;
+  filled-new-array       v0, v1, v2, v3, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v1, "Session Success msg:%s time:%s adid:%s json:%s"
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+######################################################################

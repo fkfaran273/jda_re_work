@@ -1,0 +1,129 @@
+ts=1789072138363 kind=session nsign_gets=0
+   keys: 
+
+ts=1789072139086 kind=click nsign_gets=0
+   keys: 
+
+ts=1789072292974 kind=session nsign_gets=0
+   keys: 
+
+ts=1789072293701 kind=click nsign_gets=0
+   keys: 
+
+ts=1789099853014 kind=session nsign_gets=0
+   keys: 
+
+ts=1789099853749 kind=click nsign_gets=0
+   keys: 
+
+ts=1789100427946 kind=session nsign_gets=0
+   keys: 
+
+ts=1789100428695 kind=click nsign_gets=0
+   keys: 
+
+ts=1789100655061 kind=event nsign_gets=0
+   keys: 
+
+ts=1789100672012 kind=event nsign_gets=0
+   keys: 
+
+ts=1789100833392 kind=session nsign_gets=0
+   keys: 
+
+ts=1789100834174 kind=click nsign_gets=0
+   keys: 
+
+ts=1789100925630 kind=event nsign_gets=0
+   keys: 
+
+ts=1789101006689 kind=session nsign_gets=0
+   keys: 
+
+ts=1789101007462 kind=click nsign_gets=0
+   keys: 
+
+ts=1789101326981 kind=session nsign_gets=0
+   keys: 
+
+ts=1789101327716 kind=click nsign_gets=0
+   keys: 
+
+ts=1789101622974 kind=session nsign_gets=0
+   keys: 
+
+ts=1789101623704 kind=click nsign_gets=0
+   keys: 
+
+ts=1789101667229 kind=session nsign_gets=0
+   keys: 
+
+ts=1789101667965 kind=click nsign_gets=0
+   keys: 
+
+ts=1789101731337 kind=event nsign_gets=0
+   keys: 
+
+ts=1789101885659 kind=session nsign_gets=0
+   keys: 
+
+ts=1789101886427 kind=click nsign_gets=0
+   keys: 
+
+ts=1789101918279 kind=event nsign_gets=0
+   keys: 
+
+ts=1789101924392 kind=event nsign_gets=0
+   keys: 
+
+ts=1789102328437 kind=session nsign_gets=0
+   keys: 
+
+ts=1789102329195 kind=click nsign_gets=0
+   keys: 
+
+ts=1789102352742 kind=event nsign_gets=0
+   keys: 
+
+ts=1789102357696 kind=event nsign_gets=0
+   keys: 
+
+ts=1789102513058 kind=session nsign_gets=0
+   keys: 
+
+ts=1789102513801 kind=click nsign_gets=0
+   keys: 
+
+ts=1789102532118 kind=event nsign_gets=0
+   keys: 
+
+ts=1789102598413 kind=event nsign_gets=0
+   keys: 
+
+ts=1789123782170 kind=session nsign_gets=0
+   keys: 
+
+ts=1789123783900 kind=click nsign_gets=0
+   keys: 
+
+ts=1789123925087 kind=event nsign_gets=0
+   keys: 
+
+ts=1789123938951 kind=event nsign_gets=0
+   keys: 
+
+ts=1789126525528 kind=event nsign_gets=0
+   keys: 
+
+ts=1789127589792 kind=session nsign_gets=858
+   keys: environment=production | app_version=3.13.9 | android_id=null | fire_adid=null | client_sdk=android5.7.0 | os_version=12 | api_level=31 | adj_verification=KlcAG2cbAAsKSl1KVi0FGiJbDHMI | android_uuid=4371f3f1-394c-41ab-9540-e9e29c5ed2ba | api_level=31 | app_token=jut9tib0eeps | app_version=3.13.9 | created_at=2026-09-11T13:53:08.980Z+0200 | device_name=moto g42 | device_type=phone | environment=production | gps_adid=f476b3d4-e0b1-4707-bc43-6153d17f7f8c | gps_adid_src=service | hardware_name=S2SE32.28-28-4 | initiating_package_name=com.android.vending | installed_at=2026-09-08T12:20:49.782Z+0200 | os_build=S2SE32.28-28-4 | os_name=android | os_version=12 | package_name=com.penti.app | push_token=ccTe6WrIQi-w7FyC0SgpNj:APA91bElXabQJyYI6cCc1J4BFW6Kk8MXn77mYA5jY1W3iFLtxleGp3XZu2KLFp46DYmFT7rlRX2XUKJ5BAWRDgp8e9LoerdbLranchHL983jBw-l_kKgvNw | session_count=1 | store_name_from_system=com.android.vending | tracking_enabled=1 | updated_at=2026-09-10T07:26:18.015Z+0200 | activity_kind=session | client_sdk=android5.7.0 | adj_verification=KlcAG2cbAAsKSl1KVi0FGiJbDHMI | android_uuid=4371f3f1-394c-41ab-9540-e9e29c5ed2ba | api_level=31 | app_token=jut9tib0eeps | app_version=3.13.9 | created_at=2026-09-11T13:53:08.980Z+0200 | device_name=moto g42 | device_type=phone | environment=production | gps_adid=f476b3d4-e0b1-4707-bc43-6153d17f7f8c | gps_adid_src=service | hardware_name=S2SE32.28-28-4 | initiating_package_name=com.android.vending | installed_at=2026-09-08T12:20:49.782Z+0200 | os_build=S2SE32.28-28-4 | os_name=android | os_version=12 | package_name=com.penti.app | push_token=ccTe6WrIQi-w7FyC0SgpNj:APA91bElXabQJyYI6cCc1J4BFW6Kk8MXn77mYA5jY1W3iFLtxleGp3XZu2KLFp46DYmFT7rlRX2XUKJ5BAWRDgp8e9LoerdbLranchHL983jBw-l_kKgvNw | session_count=1 | store_name_from_system=com.android.vending | tracking_enabled=1 | updated_at=2026-09-10T07:26:18.015Z+0200 | activity_kind=session | client_sdk=android5.7.0
+
+ts=1789127590556 kind=click nsign_gets=897
+   keys: environment=production | app_version=3.13.9 | android_id=null | fire_adid=null | client_sdk=android5.7.0 | os_version=12 | api_level=31 | adj_verification=KlcAG2cbAAsKSl1KVi0FGiJbDHMI | android_uuid=4371f3f1-394c-41ab-9540-e9e29c5ed2ba | api_level=31 | app_token=jut9tib0eeps | app_version=3.13.9 | created_at=2026-09-11T13:53:09.065Z+0200 | device_name=moto g42 | device_type=phone | environment=production | environment=production | google_play_instant=0 | gps_adid=f476b3d4-e0b1-4707-bc43-6153d17f7f8c | gps_adid_src=service | app_version=3.13.9 | hardware_name=S2SE32.28-28-4 | android_id=null | installed_at=2026-09-08T12:20:49.782Z+0200 | fire_adid=null | os_build=S2SE32.28-28-4 | os_name=android | os_version=12 | package_name=com.penti.app | push_token=ccTe6WrIQi-w7FyC0SgpNj:APA91bElXabQJyYI6cCc1J4BFW6Kk8MXn77mYA5jY1W3iFLtxleGp3XZu2KLFp46DYmFT7rlRX2XUKJ5BAWRDgp8e9LoerdbLranchHL983jBw-l_kKgvNw | referrer=utm_source=google-play&utm_medium=organic | referrer_api=google | session_count=1 | session_length=0 | source=install_referrer | subsession_count=1 | time_spent=0 | tracking_enabled=1 | updated_at=2026-09-10T07:26:18.015Z+0200 | activity_kind=click | client_sdk=android5.7.0 | adj_verification=KlcAG2cbAAsKSl1KVi0FGiJbDHMI | android_uuid=4371f3f1-394c-41ab-9540-e9e29c5ed2ba | api_level=31 | app_token=jut9tib0eeps | app_version=3.13.9 | created_at=2026-09-11T13:53:09.065Z+0200 | device_name=moto g42 | device_type=phone | environment=production | google_play_instant=0 | gps_adid=f476b3d4-e0b1-4707-bc43-6153d17f7f8c | gps_adid_src=service | hardware_name=S2SE32.28-28-4 | installed_at=2026-09-08T12:20:49.782Z+0200 | os_build=S2SE32.28-28-4 | os_name=android | os_version=12 | package_name=com.penti.app | push_token=ccTe6WrIQi-w7FyC0SgpNj:APA91bElXabQJyYI6cCc1J4BFW6Kk8MXn77mYA5jY1W3iFLtxleGp3XZu2KLFp46DYmFT7rlRX2XUKJ5BAWRDgp8e9LoerdbLranchHL983jBw-l_kKgvNw | referrer=utm_source=google-play&utm_medium=organic | referrer_api=google | session_count=1 | session_length=0 | source=install_referrer | subsession_count=1 | time_spent=0 | tracking_enabled=1 | updated_at=2026-09-10T07:26:18.015Z+0200 | activity_kind=click | client_sdk=android5.7.0 | client_sdk=android5.7.0
+
+ts=1789127637982 kind=event nsign_gets=88
+   keys: environment=production | app_version=3.13.9 | android_id=null | fire_adid=null | client_sdk=android5.7.0 | os_version=12 | api_level=31 | adj_verification=KlcAG2cbAAsKSl1KVi0FGiJbDHMI | android_uuid=4371f3f1-394c-41ab-9540-e9e29c5ed2ba | api_level=31 | app_token=jut9tib0eeps | app_version=3.13.9 | created_at=2026-09-11T13:53:56.879Z+0200 | device_name=moto g42 | device_type=phone | environment=production | event_count=1 | event_token=29ah7d | gps_adid=f476b3d4-e0b1-4707-bc43-6153d17f7f8c | gps_adid_src=service | hardware_name=S2SE32.28-28-4 | os_build=S2SE32.28-28-4 | os_name=android | os_version=12 | package_name=com.penti.app | partner_params={"productCode":"PH2F5LUZ26SK-BK3","amount":"1","content_type":"product","content_id":"PH2F5LUZ26SK-BK3","value":"1274.99","currency":"TRY"} | push_token=ccTe6WrIQi-w7FyC0SgpNj:APA91bElXabQJyYI6cCc1J4BFW6Kk8MXn77mYA5jY1W3iFLtxleGp3XZu2KLFp46DYmFT7rlRX2XUKJ5BAWRDgp8e9LoerdbLranchHL983jBw-l_kKgvNw | seq=21 | session_count=1 | session_length=48 | subsession_count=1 | time_spent=48 | tracking_enabled=1 | activity_kind=event | client_sdk=android5.7.0 | adj_verification=KlcAG2cbAAsKSl1KVi0FGiJbDHMI | android_uuid=4371f3f1-394c-41ab-9540-e9e29c5ed2ba | api_level=31 | app_token=jut9tib0eeps | app_version=3.13.9 | created_at=2026-09-11T13:53:56.879Z+0200 | device_name=moto g42 | device_type=phone | environment=production | event_count=1 | event_token=29ah7d | gps_adid=f476b3d4-e0b1-4707-bc43-6153d17f7f8c | gps_adid_src=service | hardware_name=S2SE32.28-28-4 | os_build=S2SE32.28-28-4 | os_name=android | os_version=12 | package_name=com.penti.app | partner_params={"productCode":"PH2F5LUZ26SK-BK3","amount":"1","content_type":"product","content_id":"PH2F5LUZ26SK-BK3","value":"1274.99","currency":"TRY"} | push_token=ccTe6WrIQi-w7FyC0SgpNj:APA91bElXabQJyYI6cCc1J4BFW6Kk8MXn77mYA5jY1W3iFLtxleGp3XZu2KLFp46DYmFT7rlRX2XUKJ5BAWRDgp8e9LoerdbLranchHL983jBw-l_kKgvNw | seq=21 | session_count=1 | session_length=48 | subsession_count=1 | time_spent=48 | tracking_enabled=1 | activity_kind=event | client_sdk=android5.7.0
+
+ts=1789127648980 kind=event nsign_gets=88
+   keys: environment=production | app_version=3.13.9 | android_id=null | fire_adid=null | client_sdk=android5.7.0 | os_version=12 | api_level=31 | adj_verification=KlcAG2cbAAsKSl1KVi0FGiJbDHMI | android_uuid=4371f3f1-394c-41ab-9540-e9e29c5ed2ba | api_level=31 | app_token=jut9tib0eeps | app_version=3.13.9 | created_at=2026-09-11T13:54:07.927Z+0200 | device_name=moto g42 | device_type=phone | environment=production | event_count=2 | event_token=p90b20 | gps_adid=f476b3d4-e0b1-4707-bc43-6153d17f7f8c | gps_adid_src=service | hardware_name=S2SE32.28-28-4 | os_build=S2SE32.28-28-4 | os_name=android | os_version=12 | package_name=com.penti.app | partner_params={"content_type":"product","content_id":"[\"PH2F5LUZ26SK-BK3\",\"PHSHE9XF26IY-BK3\",\"PYWW3KMC23IY-SEF\",\"PNPL1GCB26IY-B32\",\"PN19D1A626SK-PP1\",\"PH6ZQJP526SK-BK3\",\"PH6ZQJP526SK-NV3\",\"PHNI7YJ326SK-BN75\",\"PYYZBZJR26IY-G09\",\"PHU1OZ0R26SK-BN83\",\"PHKP7A0Y26SK-GAS\",\"PHNI7YJ326SK-BR4\",\"PLS...(533) | push_token=ccTe6WrIQi-w7FyC0SgpNj:APA91bElXabQJyYI6cCc1J4BFW6Kk8MXn77mYA5jY1W3iFLtxleGp3XZu2KLFp46DYmFT7rlRX2XUKJ5BAWRDgp8e9LoerdbLranchHL983jBw-l_kKgvNw | seq=22 | session_count=1 | session_length=59 | subsession_count=1 | time_spent=59 | tracking_enabled=1 | activity_kind=event | client_sdk=android5.7.0 | adj_verification=KlcAG2cbAAsKSl1KVi0FGiJbDHMI | android_uuid=4371f3f1-394c-41ab-9540-e9e29c5ed2ba | api_level=31 | app_token=jut9tib0eeps | app_version=3.13.9 | created_at=2026-09-11T13:54:07.927Z+0200 | device_name=moto g42 | device_type=phone | environment=production | event_count=2 | event_token=p90b20 | gps_adid=f476b3d4-e0b1-4707-bc43-6153d17f7f8c | gps_adid_src=service | hardware_name=S2SE32.28-28-4 | os_build=S2SE32.28-28-4 | os_name=android | os_version=12 | package_name=com.penti.app | partner_params={"content_type":"product","content_id":"[\"PH2F5LUZ26SK-BK3\",\"PHSHE9XF26IY-BK3\",\"PYWW3KMC23IY-SEF\",\"PNPL1GCB26IY-B32\",\"PN19D1A626SK-PP1\",\"PH6ZQJP526SK-BK3\",\"PH6ZQJP526SK-NV3\",\"PHNI7YJ326SK-BN75\",\"PYYZBZJR26IY-G09\",\"PHU1OZ0R26SK-BN83\",\"PHKP7A0Y26SK-GAS\",\"PHNI7YJ326SK-BR4\",\"PLS...(533) | push_token=ccTe6WrIQi-w7FyC0SgpNj:APA91bElXabQJyYI6cCc1J4BFW6Kk8MXn77mYA5jY1W3iFLtxleGp3XZu2KLFp46DYmFT7rlRX2XUKJ5BAWRDgp8e9LoerdbLranchHL983jBw-l_kKgvNw | seq=22 | session_count=1 | session_length=59 | subsession_count=1 | time_spent=59 | tracking_enabled=1 | activity_kind=event | client_sdk=android5.7.0
+

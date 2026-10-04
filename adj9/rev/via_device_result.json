@@ -1,0 +1,12 @@
+{
+ "gps": "800045f4-a7e7-48de-a175-c1afa272eb96",
+ "auid": "57107026-d3f1-4dfb-b6ce-fc9e219b2a9d",
+ "session": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"a8caa2edee9b3b46e8e76b1dc783537e\",\"ask_in\":2000}\r\n"
+ ],
+ "attr": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"a8caa2edee9b3b46e8e76b1dc783537e\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-17T12:24:36Z\",\"first_session_time\":\"2026-09-17T12:24:36Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}\r\n"
+ ]
+}

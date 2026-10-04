@@ -1,0 +1,29 @@
+{
+ "device_adid": null,
+ "device_model": null,
+ "runs": [
+  {
+   "label": "B fresh id (control)",
+   "gaid": "b37e29f9-18ae-4873-8169-b5176ee72361",
+   "gaid_readback": "b37e29f9-18ae-4873-8169-b5176ee72361",
+   "creative": "cline_nf3_b",
+   "click_http": 302,
+   "referrer": "adjust_reftag=cnN2E1UM6eqP1&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=cline_nf3_b",
+   "verdict": {
+    "tracker_token": "24erbvhn",
+    "tracker_name": "VKM Digital Yeni::AH::vkm_0926_36::cline_nf3_b",
+    "network": "VKM Digital Yeni",
+    "campaign": "AH",
+    "adgroup": "vkm_0926_36",
+    "creative": "cline_nf3_b",
+    "engagement_time": "2026-09-25T13:21:27Z",
+    "installed_at": "2026-09-25T13:21:34Z",
+    "first_session_time": "2026-09-25T13:21:34Z",
+    "is_reattributed": false,
+    "is_redownload_install": false
+   },
+   "app_install_referrer": "utm_source=google-play&utm_medium=organicppppppppppppt",
+   "non_organic_marker_joined": true
+  }
+ ]
+}

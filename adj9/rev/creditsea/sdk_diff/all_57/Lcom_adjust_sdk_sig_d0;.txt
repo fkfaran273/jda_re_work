@@ -1,0 +1,95 @@
+# CLASS Lcom/adjust/sdk/sig/d0;
+FIELD public static final a Lcom/adjust/sdk/sig/d0;
+
+---- METHOD static constructor <clinit> ()V ----
+  new-instance           v0, Lcom/adjust/sdk/sig/d0;
+  invoke-direct          v0, Lcom/adjust/sdk/sig/d0;-><init>()V
+  sput-object            v0, Lcom/adjust/sdk/sig/d0;->a Lcom/adjust/sdk/sig/d0;
+  return-void            
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final clear ()V ----
+  new-instance           v0, Ljava/lang/UnsupportedOperationException;
+  const-string           v1, "Operation is not supported for read-only collection"
+  invoke-direct          v0, v1, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v0
+
+---- METHOD public final containsKey (Ljava/lang/Object;)Z ----
+  const/4                v1, 0
+  return                 v1
+
+---- METHOD public final bridge containsValue (Ljava/lang/Object;)Z ----
+  const/4                v1, 0
+  return                 v1
+
+---- METHOD public final bridge entrySet ()Ljava/util/Set; ----
+  sget-object            v0, Lcom/adjust/sdk/sig/e0;->a Lcom/adjust/sdk/sig/e0;
+  return-object          v0
+
+---- METHOD public final equals (Ljava/lang/Object;)Z ----
+  instance-of            v0, v2, Ljava/util/Map;
+  if-eqz                 v0, +00ch
+  check-cast             v2, Ljava/util/Map;
+  invoke-interface       v2, Ljava/util/Map;->isEmpty()Z
+  move-result            v2
+  if-eqz                 v2, +004h
+  const/4                v2, 1
+  return                 v2
+  const/4                v2, 0
+  return                 v2
+
+---- METHOD public final bridge synthetic get (Ljava/lang/Object;)Ljava/lang/Object; ----
+  const/4                v1, 0
+  return-object          v1
+
+---- METHOD public final hashCode ()I ----
+  const/4                v0, 0
+  return                 v0
+
+---- METHOD public final isEmpty ()Z ----
+  const/4                v0, 1
+  return                 v0
+
+---- METHOD public final bridge keySet ()Ljava/util/Set; ----
+  sget-object            v0, Lcom/adjust/sdk/sig/e0;->a Lcom/adjust/sdk/sig/e0;
+  return-object          v0
+
+---- METHOD public final bridge synthetic put (Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object; ----
+  new-instance           v1, Ljava/lang/UnsupportedOperationException;
+  const-string           v2, "Operation is not supported for read-only collection"
+  invoke-direct          v1, v2, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v1
+
+---- METHOD public final putAll (Ljava/util/Map;)V ----
+  new-instance           v2, Ljava/lang/UnsupportedOperationException;
+  const-string           v0, "Operation is not supported for read-only collection"
+  invoke-direct          v2, v0, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v2
+
+---- METHOD public final remove (Ljava/lang/Object;)Ljava/lang/Object; ----
+  new-instance           v2, Ljava/lang/UnsupportedOperationException;
+  const-string           v0, "Operation is not supported for read-only collection"
+  invoke-direct          v2, v0, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v2
+
+---- METHOD public final remove (Ljava/lang/Object; Ljava/lang/Object;)Z ----
+  new-instance           v1, Ljava/lang/UnsupportedOperationException;
+  const-string           v2, "Operation is not supported for read-only collection"
+  invoke-direct          v1, v2, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v1
+
+---- METHOD public final bridge size ()I ----
+  const/4                v0, 0
+  return                 v0
+
+---- METHOD public final toString ()Ljava/lang/String; ----
+  const-string/jumbo     v0, {}
+  return-object          v0
+
+---- METHOD public final bridge values ()Ljava/util/Collection; ----
+  sget-object            v0, Lcom/adjust/sdk/sig/c0;->a Lcom/adjust/sdk/sig/c0;
+  return-object          v0
+######################################################################

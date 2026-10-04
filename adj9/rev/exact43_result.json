@@ -1,0 +1,7 @@
+{
+ "identity": "gps=06265bde-a989-4d5d-8150-123ac6b73e8d auid=bf18dd73-f3f1-41d9-98c3-a00f8dd9200c",
+ "mint": "exit-clean #10=360B blob=192B",
+ "params": "43 keys (device-exact order)",
+ "session": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"72e484ef9032560209c317344b390613\",\"ask_in\":2000}",
+ "attribution": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"72e484ef9032560209c317344b390613\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-22T08:20:59Z\",\"first_session_time\":\"2026-09-22T08:20:59Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+}

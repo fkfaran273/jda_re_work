@@ -1,0 +1,15 @@
+event: filters
+data: [{"value":"archived:yes","label":"Include archived repos","count":68645,"exhaustive":false,"kind":"utility"},{"value":"fork:yes","label":"Include forked repos","count":282,"exhaustive":false,"kind":"utility"}]
+
+event: progress
+data: {"done":false,"matchCount":0,"durationMs":218,"skipped":[{"reason":"repository-fork","title":"282 forked","message":"By default we exclude forked repositories. Include them with `fork:yes` in your query.","severity":"info","suggested":{"title":"include forked","queryExpression":"fork:yes"}},{"reason":"excluded-archive","title":"68k archived","message":"By default we exclude archived repositories. Include them with `archived:yes` in your query.","severity":"info","suggested":{"title":"include archived","queryExpression":"archived:yes"}}],"trace":"https://console.cloud.google.com/traces/list?tid=aa8d20885577a9e72868441104e0b5dd\u0026authuser=0\u0026project=src-c4cd661e8a76d6b51c26"}
+
+event: filters
+data: [{"value":"archived:yes","label":"Include archived repos","count":68645,"exhaustive":true,"kind":"utility"},{"value":"fork:yes","label":"Include forked repos","count":282,"exhaustive":true,"kind":"utility"}]
+
+event: progress
+data: {"done":true,"matchCount":0,"durationMs":1731,"skipped":[{"reason":"repository-fork","title":"282 forked","message":"By default we exclude forked repositories. Include them with `fork:yes` in your query.","severity":"info","suggested":{"title":"include forked","queryExpression":"fork:yes"}},{"reason":"excluded-archive","title":"68k archived","message":"By default we exclude archived repositories. Include them with `archived:yes` in your query.","severity":"info","suggested":{"title":"include archived","queryExpression":"archived:yes"}}],"trace":"https://console.cloud.google.com/traces/list?tid=aa8d20885577a9e72868441104e0b5dd\u0026authuser=0\u0026project=src-c4cd661e8a76d6b51c26"}
+
+event: done
+data: {}
+

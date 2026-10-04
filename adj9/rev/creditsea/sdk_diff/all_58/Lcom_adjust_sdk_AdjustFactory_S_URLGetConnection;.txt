@@ -1,0 +1,10 @@
+# CLASS Lcom/adjust/sdk/AdjustFactory$URLGetConnection;
+FIELD  httpsURLConnection Ljavax/net/ssl/HttpsURLConnection;
+FIELD  url Ljava/net/URL;
+
+---- METHOD public constructor <init> (Ljavax/net/ssl/HttpsURLConnection; Ljava/net/URL;)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustFactory$URLGetConnection;->httpsURLConnection Ljavax/net/ssl/HttpsURLConnection;
+  iput-object            v2, v0, Lcom/adjust/sdk/AdjustFactory$URLGetConnection;->url Ljava/net/URL;
+  return-void            
+######################################################################

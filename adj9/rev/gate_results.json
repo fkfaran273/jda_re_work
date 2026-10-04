@@ -1,0 +1,22 @@
+[
+ {
+  "arm": "G0_replay_freshGAID",
+  "gps": "3830d364-1f09-4a82-a0e1-fa382077948c",
+  "adid": null,
+  "verdict": "ORGANIC (Organic / wy7261z)"
+ },
+ {
+  "arm": "G1_synthetic_ourclick",
+  "gps": "4ccdfd53-1e14-4cb3-aa49-bb44edc2a536",
+  "adid": "6bd88e508e259593885fca4eb1efa697",
+  "click_http": 302,
+  "referrer": "adjust_reftag=cOolMpg4hmmjD&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+  "verdict": "ORGANIC (Organic / wy7261z)"
+ },
+ {
+  "arm": "G2_no_click",
+  "gps": "16afbab1-ae64-4e41-8dd2-46e198b560e4",
+  "adid": "584849671ff9454a53ae4062d4e24368",
+  "verdict": "ORGANIC (Organic / wy7261z)"
+ }
+]

@@ -1,0 +1,33 @@
+# CLASS Lcom/adjust/sdk/AttributionHandler$7;
+FIELD public final synthetic a Lcom/adjust/sdk/ResponseData;
+FIELD public final synthetic b Lcom/adjust/sdk/AttributionHandler;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/AttributionHandler; Lcom/adjust/sdk/ResponseData;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AttributionHandler$7;->b Lcom/adjust/sdk/AttributionHandler;
+  iput-object            v2, v0, Lcom/adjust/sdk/AttributionHandler$7;->a Lcom/adjust/sdk/ResponseData;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v4, Lcom/adjust/sdk/AttributionHandler$7;->b Lcom/adjust/sdk/AttributionHandler;
+  invoke-static          v0, Lcom/adjust/sdk/AttributionHandler;->access$300(Lcom/adjust/sdk/AttributionHandler;)Ljava/lang/ref/WeakReference;
+  move-result-object     v0
+  invoke-virtual         v0, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Lcom/adjust/sdk/IActivityHandler;
+  if-nez                 v0, +003h
+  goto                   +11h
+  iget-object            v1, v4, Lcom/adjust/sdk/AttributionHandler$7;->a Lcom/adjust/sdk/ResponseData;
+  iget-object            v2, v1, Lcom/adjust/sdk/ResponseData;->trackingState Lcom/adjust/sdk/TrackingState;
+  sget-object            v3, Lcom/adjust/sdk/TrackingState;->OPTED_OUT Lcom/adjust/sdk/TrackingState;
+  if-ne                  v2, v3, +006h
+  invoke-interface       v0, Lcom/adjust/sdk/IActivityHandler;->gotOptOutResponse()V
+  return-void            
+  instance-of            v2, v1, Lcom/adjust/sdk/AttributionResponseData;
+  if-nez                 v2, +003h
+  return-void            
+  iget-object            v2, v4, Lcom/adjust/sdk/AttributionHandler$7;->b Lcom/adjust/sdk/AttributionHandler;
+  check-cast             v1, Lcom/adjust/sdk/AttributionResponseData;
+  invoke-static          v2, v0, v1, Lcom/adjust/sdk/AttributionHandler;->access$600(Lcom/adjust/sdk/AttributionHandler; Lcom/adjust/sdk/IActivityHandler; Lcom/adjust/sdk/AttributionResponseData;)V
+  return-void            
+######################################################################

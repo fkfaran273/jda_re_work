@@ -1,0 +1,25 @@
+{
+ "tag": "root",
+ "ts": 1790356534.7857702,
+ "method": "GET",
+ "url": "https://app.adjust.com/",
+ "path": "/",
+ "host": "app.adjust.com",
+ "http_version": "HTTP/1.1",
+ "headers": [
+  [
+   "Host",
+   "app.adjust.com"
+  ],
+  [
+   "User-Agent",
+   "curl/7.73.0"
+  ],
+  [
+   "Accept",
+   "*/*"
+  ]
+ ],
+ "body_len": 0,
+ "params": []
+}

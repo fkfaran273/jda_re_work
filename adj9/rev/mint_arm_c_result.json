@@ -1,0 +1,18 @@
+{
+ "gps": "9590ffcc-c0a0-48b8-9e66-3f3aaee1080f",
+ "transport": "device",
+ "session": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"99f59e87db1ed167a670344781b59a80\",\"ask_in\":2000}\r\n"
+ ],
+ "verdict": {
+  "tracker_token": "wy7261z",
+  "tracker_name": "Organic",
+  "network": "Organic",
+  "engagement_time": "0001-01-01T00:00:00Z",
+  "installed_at": "2026-09-25T08:36:02Z",
+  "first_session_time": "2026-09-25T08:36:02Z",
+  "is_reattributed": false,
+  "is_redownload_install": false
+ }
+}

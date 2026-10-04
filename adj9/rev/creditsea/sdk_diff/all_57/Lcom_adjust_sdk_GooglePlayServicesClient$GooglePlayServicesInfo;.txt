@@ -1,0 +1,18 @@
+# CLASS Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesInfo;
+FIELD private final gpsAdid Ljava/lang/String;
+FIELD private final trackingEnabled Ljava/lang/Boolean;
+
+---- METHOD public constructor <init> (Ljava/lang/String; Ljava/lang/Boolean;)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesInfo;->gpsAdid Ljava/lang/String;
+  iput-object            v2, v0, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesInfo;->trackingEnabled Ljava/lang/Boolean;
+  return-void            
+
+---- METHOD public getGpsAdid ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesInfo;->gpsAdid Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public isTrackingEnabled ()Ljava/lang/Boolean; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesInfo;->trackingEnabled Ljava/lang/Boolean;
+  return-object          v0
+######################################################################

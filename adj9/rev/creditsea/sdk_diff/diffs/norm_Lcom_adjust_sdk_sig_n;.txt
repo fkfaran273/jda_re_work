@@ -1,0 +1,40 @@
+--- 
++++ 
+@@ -26,3 +26,3 @@
+ array-length vX, vX
+-if-lt vX, vX, +022h
++if-lt vX, vX, +023h
+ invoke-interface vX, Ljava/util/Iterator;->hasNext()Z
+@@ -34,3 +34,3 @@
+ ushr-int/lit8 vX, vX, 1
+-if-gt vX, vX, +00dh
++if-gt vX, vX, +00eh
+ const vX, 2147483645
+@@ -38,5 +38,5 @@
+ GOTO
+-invoke-static Landroidx/sqlite/driver/a;->k()V
+-const/4 vX, 0
+-return-object vX
++new-instance vX, Ljava/lang/OutOfMemoryError;
++invoke-direct vX, Ljava/lang/OutOfMemoryError;-><init>()V
++throw vX
+ invoke-static vX, vX, Ljava/util/Arrays;->copyOf([Ljava/lang/Object; I)[Ljava/lang/Object;
+@@ -86,3 +86,3 @@
+ array-length vX, vX
+-if-lt vX, vX, +022h
++if-lt vX, vX, +023h
+ invoke-interface vX, Ljava/util/Iterator;->hasNext()Z
+@@ -94,3 +94,3 @@
+ ushr-int/lit8 vX, vX, 1
+-if-gt vX, vX, +00dh
++if-gt vX, vX, +00eh
+ const vX, 2147483645
+@@ -98,5 +98,5 @@
+ GOTO
+-invoke-static Landroidx/sqlite/driver/a;->k()V
+-const/4 vX, 0
+-return-object vX
++new-instance vX, Ljava/lang/OutOfMemoryError;
++invoke-direct vX, Ljava/lang/OutOfMemoryError;-><init>()V
++throw vX
+ invoke-static vX, vX, Ljava/util/Arrays;->copyOf([Ljava/lang/Object; I)[Ljava/lang/Object;

@@ -1,0 +1,30 @@
+{
+ "device_auids": [
+  "41ca78c9-f652-4555-a546-dbe7999efbec"
+ ],
+ "device_adids": [],
+ "stored_attribution": "{\"tracker_token\":\"24pxw9rl\",\"tracker_name\":\"VKM Digital Yeni::AH::vkm_0926_36::penti_generic\",\"network\":\"VKM Digital Yeni\",\"campaign\":\"AH\",\"adgroup\":\"vkm_0926_36\",\"creative\":\"penti_generic\",\"engagement_time\":\"2026-09-14T10:25:58Z\",\"installed_at\":\"2026-09-14T12:23:08Z\",\"first_session_time\":\"2026-09-14T12:23:08Z\",\"is_reattributed\":false,\"is_redownload_install\":false}t\u0000\u0010VKM Digital Yenit\u00000VKM Digital Yeni::AH::vkm_0926_36::penti_generict\u0000\b24pxw9rlx",
+ "runs": [
+  {
+   "label": "device auid (41ca78c9)",
+   "auid": "41ca78c9-f652-4555-a546-dbe7999efbec",
+   "http": 200,
+   "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z / inst=2026-09-14T12:23:08Z",
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-14T12:23:08Z\",\"first_session_time\":\"2026-09-14T12:23:08Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+  },
+  {
+   "label": "fresh auid",
+   "auid": "ec3abda1-41d2-43e7-9678-37b0da4e4327",
+   "http": 200,
+   "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z / inst=2026-09-14T12:23:08Z",
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-14T12:23:08Z\",\"first_session_time\":\"2026-09-14T12:23:08Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+  },
+  {
+   "label": "auid 7ba51fce (VKM live)",
+   "auid": "7ba51fce-9d49-46ec-94d3-924e8a0ff269",
+   "http": 200,
+   "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z / inst=2026-09-14T12:23:08Z",
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-14T12:23:08Z\",\"first_session_time\":\"2026-09-14T12:23:08Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+# CLASS Lcom/adjust/sdk/sig/t1;
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final a (Landroid/content/Context;)V ----
+  const-string           v0, "AndroidKeyStore"
+  invoke-static          v0, Ljava/security/KeyStore;->getInstance(Ljava/lang/String;)Ljava/security/KeyStore;
+  move-result-object     v0
+  const/4                v1, 0
+  invoke-virtual         v0, v1, Ljava/security/KeyStore;->load(Ljava/security/KeyStore$LoadStoreParameter;)V
+  const-string           v1, "key2"
+  invoke-virtual         v0, v1, Ljava/security/KeyStore;->deleteEntry(Ljava/lang/String;)V
+  const-string           v0, "adjust_keys"
+  const/4                v1, 0
+  invoke-virtual         v3, v0, v1, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String; I)Landroid/content/SharedPreferences;
+  move-result-object     v3
+  invoke-interface       v3, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+  move-result-object     v3
+  const-string           v0, "encrypted_key"
+  invoke-interface       v3, v0, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+  move-result-object     v3
+  invoke-interface       v3, Landroid/content/SharedPreferences$Editor;->apply()V
+  return-void            
+
+---- METHOD public final a (Landroid/content/Context; [B)[B ----
+  const-string           v4, "HmacSHA256"
+  invoke-static          v4, Ljavax/crypto/Mac;->getInstance(Ljava/lang/String;)Ljavax/crypto/Mac;
+  move-result-object     v4
+  const-string           v0, "AndroidKeyStore"
+  invoke-static          v0, Ljava/security/KeyStore;->getInstance(Ljava/lang/String;)Ljava/security/KeyStore;
+  move-result-object     v0
+  const/4                v1, 0
+  invoke-virtual         v0, v1, Ljava/security/KeyStore;->load(Ljava/security/KeyStore$LoadStoreParameter;)V
+  const-string           v2, "key2"
+  invoke-virtual         v0, v2, v1, Ljava/security/KeyStore;->getKey(Ljava/lang/String; [C)Ljava/security/Key;
+  move-result-object     v0
+  invoke-virtual         v4, v0, Ljavax/crypto/Mac;->init(Ljava/security/Key;)V
+  invoke-virtual         v4, v5, Ljavax/crypto/Mac;->update([B)V
+  invoke-virtual         v4, Ljavax/crypto/Mac;->doFinal()[B
+  move-result-object     v4
+  return-object          v4
+
+---- METHOD public final b (Landroid/content/Context;)V ----
+  const-string           v4, "AndroidKeyStore"
+  invoke-static          v4, Ljava/security/KeyStore;->getInstance(Ljava/lang/String;)Ljava/security/KeyStore;
+  move-result-object     v0
+  const/4                v1, 0
+  invoke-virtual         v0, v1, Ljava/security/KeyStore;->load(Ljava/security/KeyStore$LoadStoreParameter;)V
+  const-string           v1, "key2"
+  invoke-virtual         v0, v1, Ljava/security/KeyStore;->containsAlias(Ljava/lang/String;)Z
+  move-result            v0
+  if-eqz                 v0, +003h
+  return-void            
+  const-string           v0, "HmacSHA256"
+  invoke-static          v0, v4, Ljavax/crypto/KeyGenerator;->getInstance(Ljava/lang/String; Ljava/lang/String;)Ljavax/crypto/KeyGenerator;
+  move-result-object     v4
+  new-instance           v0, Landroid/security/keystore/KeyGenParameterSpec$Builder;
+  const/4                v2, 4
+  invoke-direct          v0, v1, v2, Landroid/security/keystore/KeyGenParameterSpec$Builder;-><init>(Ljava/lang/String; I)V
+  invoke-virtual         v0, Landroid/security/keystore/KeyGenParameterSpec$Builder;->build()Landroid/security/keystore/KeyGenParameterSpec;
+  move-result-object     v0
+  invoke-virtual         v4, v0, Ljavax/crypto/KeyGenerator;->init(Ljava/security/spec/AlgorithmParameterSpec;)V
+  invoke-virtual         v4, Ljavax/crypto/KeyGenerator;->generateKey()Ljavax/crypto/SecretKey;
+  return-void            
+######################################################################

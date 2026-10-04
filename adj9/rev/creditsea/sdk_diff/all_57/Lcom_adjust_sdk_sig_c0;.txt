@@ -1,0 +1,168 @@
+# CLASS Lcom/adjust/sdk/sig/c0;
+FIELD public static final a Lcom/adjust/sdk/sig/c0;
+
+---- METHOD static constructor <clinit> ()V ----
+  new-instance           v0, Lcom/adjust/sdk/sig/c0;
+  invoke-direct          v0, Lcom/adjust/sdk/sig/c0;-><init>()V
+  sput-object            v0, Lcom/adjust/sdk/sig/c0;->a Lcom/adjust/sdk/sig/c0;
+  return-void            
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final bridge synthetic add (I Ljava/lang/Object;)V ----
+  new-instance           v1, Ljava/lang/UnsupportedOperationException;
+  const-string           v2, "Operation is not supported for read-only collection"
+  invoke-direct          v1, v2, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v1
+
+---- METHOD public final bridge synthetic add (Ljava/lang/Object;)Z ----
+  new-instance           v2, Ljava/lang/UnsupportedOperationException;
+  const-string           v0, "Operation is not supported for read-only collection"
+  invoke-direct          v2, v0, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v2
+
+---- METHOD public final addAll (I Ljava/util/Collection;)Z ----
+  new-instance           v1, Ljava/lang/UnsupportedOperationException;
+  const-string           v2, "Operation is not supported for read-only collection"
+  invoke-direct          v1, v2, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v1
+
+---- METHOD public final addAll (Ljava/util/Collection;)Z ----
+  new-instance           v2, Ljava/lang/UnsupportedOperationException;
+  const-string           v0, "Operation is not supported for read-only collection"
+  invoke-direct          v2, v0, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v2
+
+---- METHOD public final clear ()V ----
+  new-instance           v0, Ljava/lang/UnsupportedOperationException;
+  const-string           v1, "Operation is not supported for read-only collection"
+  invoke-direct          v0, v1, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v0
+
+---- METHOD public final bridge contains (Ljava/lang/Object;)Z ----
+  const/4                v1, 0
+  return                 v1
+
+---- METHOD public final containsAll (Ljava/util/Collection;)Z ----
+  invoke-interface       v1, Ljava/util/Collection;->isEmpty()Z
+  move-result            v1
+  return                 v1
+
+---- METHOD public final equals (Ljava/lang/Object;)Z ----
+  instance-of            v0, v2, Ljava/util/List;
+  if-eqz                 v0, +00ch
+  check-cast             v2, Ljava/util/List;
+  invoke-interface       v2, Ljava/util/List;->isEmpty()Z
+  move-result            v2
+  if-eqz                 v2, +004h
+  const/4                v2, 1
+  return                 v2
+  const/4                v2, 0
+  return                 v2
+
+---- METHOD public final get (I)Ljava/lang/Object; ----
+  new-instance           v0, Ljava/lang/IndexOutOfBoundsException;
+  const-string           v1, "Empty list doesn't contain element at index "
+  const/16               v2, 46
+  invoke-static          v1, v4, v2, Landroidx/compose/animation/c;->q(Ljava/lang/String; I C)Ljava/lang/String;
+  move-result-object     v4
+  invoke-direct          v0, v4, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+  throw                  v0
+
+---- METHOD public final hashCode ()I ----
+  const/4                v0, 1
+  return                 v0
+
+---- METHOD public final bridge indexOf (Ljava/lang/Object;)I ----
+  const/4                v1, -1
+  return                 v1
+
+---- METHOD public final isEmpty ()Z ----
+  const/4                v0, 1
+  return                 v0
+
+---- METHOD public final iterator ()Ljava/util/Iterator; ----
+  sget-object            v0, Lcom/adjust/sdk/sig/b0;->a Lcom/adjust/sdk/sig/b0;
+  return-object          v0
+
+---- METHOD public final bridge lastIndexOf (Ljava/lang/Object;)I ----
+  const/4                v1, -1
+  return                 v1
+
+---- METHOD public final listIterator ()Ljava/util/ListIterator; ----
+  sget-object            v0, Lcom/adjust/sdk/sig/b0;->a Lcom/adjust/sdk/sig/b0;
+  return-object          v0
+
+---- METHOD public final listIterator (I)Ljava/util/ListIterator; ----
+  if-nez                 v2, +005h
+  sget-object            v2, Lcom/adjust/sdk/sig/b0;->a Lcom/adjust/sdk/sig/b0;
+  return-object          v2
+  const-string           v0, "Index: "
+  invoke-static          v2, v0, Ld;->g(I Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v2
+  invoke-static          v2, Landroidx/sqlite/driver/a;->h(Ljava/lang/String;)V
+  const/4                v2, 0
+  return-object          v2
+
+---- METHOD public final bridge synthetic remove (I)Ljava/lang/Object; ----
+  new-instance           v2, Ljava/lang/UnsupportedOperationException;
+  const-string           v0, "Operation is not supported for read-only collection"
+  invoke-direct          v2, v0, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v2
+
+---- METHOD public final remove (Ljava/lang/Object;)Z ----
+  new-instance           v2, Ljava/lang/UnsupportedOperationException;
+  const-string           v0, "Operation is not supported for read-only collection"
+  invoke-direct          v2, v0, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v2
+
+---- METHOD public final removeAll (Ljava/util/Collection;)Z ----
+  new-instance           v2, Ljava/lang/UnsupportedOperationException;
+  const-string           v0, "Operation is not supported for read-only collection"
+  invoke-direct          v2, v0, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v2
+
+---- METHOD public final retainAll (Ljava/util/Collection;)Z ----
+  new-instance           v2, Ljava/lang/UnsupportedOperationException;
+  const-string           v0, "Operation is not supported for read-only collection"
+  invoke-direct          v2, v0, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v2
+
+---- METHOD public final bridge synthetic set (I Ljava/lang/Object;)Ljava/lang/Object; ----
+  new-instance           v1, Ljava/lang/UnsupportedOperationException;
+  const-string           v2, "Operation is not supported for read-only collection"
+  invoke-direct          v1, v2, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v1
+
+---- METHOD public final bridge size ()I ----
+  const/4                v0, 0
+  return                 v0
+
+---- METHOD public final subList (I I)Ljava/util/List; ----
+  if-nez                 v3, +005h
+  if-nez                 v4, +003h
+  return-object          v2
+  const-string           v0, "fromIndex: "
+  const-string           v1, ", toIndex: "
+  invoke-static          v3, v4, v0, v1, Landroidx/compose/animation/c;->n(I I Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v3
+  invoke-static          v3, Landroidx/sqlite/driver/a;->h(Ljava/lang/String;)V
+  const/4                v3, 0
+  return-object          v3
+
+---- METHOD public final toArray ()[Ljava/lang/Object; ----
+  invoke-static          v1, Lcom/adjust/sdk/sig/n;->a(Ljava/util/Collection;)[Ljava/lang/Object;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public final toArray ([Ljava/lang/Object;)[Ljava/lang/Object; ----
+  invoke-static          v0, v1, Lcom/adjust/sdk/sig/n;->a(Ljava/util/Collection; [Ljava/lang/Object;)[Ljava/lang/Object;
+  move-result-object     v1
+  return-object          v1
+
+---- METHOD public final toString ()Ljava/lang/String; ----
+  const-string           v0, "[]"
+  return-object          v0
+######################################################################

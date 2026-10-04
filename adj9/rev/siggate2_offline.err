@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "C:\Users\Apps\Downloads\com.penti.app\adj9\rev\siggate2_offline.py", line 99, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\Apps\Downloads\com.penti.app\adj9\rev\siggate2_offline.py", line 78, in main
+    laws = M.region_laws(d0b, d4b)
+  File "C:\Users\Apps\Downloads\com.penti.app\adj9\rev\mint_pipeline.py", line 364, in region_laws
+    d0 = struct.unpack(">36I", d0b)
+struct.error: unpack requires a buffer of 144 bytes

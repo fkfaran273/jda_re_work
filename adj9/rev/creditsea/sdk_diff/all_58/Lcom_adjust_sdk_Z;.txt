@@ -1,0 +1,144 @@
+# CLASS Lcom/adjust/sdk/z;
+FIELD public final synthetic a I
+FIELD public final synthetic b Lcom/adjust/sdk/ActivityHandler;
+
+---- METHOD public synthetic constructor <init> (Lcom/adjust/sdk/ActivityHandler; I)V ----
+  iput                   v2, v0, Lcom/adjust/sdk/z;->a I
+  iput-object            v1, v0, Lcom/adjust/sdk/z;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget                   v0, v5, Lcom/adjust/sdk/z;->a I
+  packed-switch          v0, +0000104h
+  iget-object            v0, v5, Lcom/adjust/sdk/z;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-virtual         v0, Lcom/adjust/sdk/ActivityHandler;->getContext()Landroid/content/Context;
+  move-result-object     v1
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->e0(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/ILogger;
+  move-result-object     v2
+  invoke-static          v1, v2, Lcom/adjust/sdk/Reflection;->getVivoReferrer(Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Lcom/adjust/sdk/ReferrerDetails;
+  move-result-object     v1
+  if-eqz                 v1, +008h
+  const-string/jumbo     v2, vivo
+  invoke-virtual         v0, v1, v2, Lcom/adjust/sdk/ActivityHandler;->sendInstallReferrer(Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String;)V
+  return-void            
+  iget-object            v0, v5, Lcom/adjust/sdk/z;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-virtual         v0, Lcom/adjust/sdk/ActivityHandler;->getContext()Landroid/content/Context;
+  move-result-object     v1
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->e0(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/ILogger;
+  move-result-object     v2
+  invoke-static          v1, v2, Lcom/adjust/sdk/Reflection;->getXiaomiReferrer(Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Lcom/adjust/sdk/ReferrerDetails;
+  move-result-object     v1
+  if-eqz                 v1, +008h
+  const-string/jumbo     v2, xiaomi
+  invoke-virtual         v0, v1, v2, Lcom/adjust/sdk/ActivityHandler;->sendInstallReferrer(Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String;)V
+  return-void            
+  iget-object            v0, v5, Lcom/adjust/sdk/z;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-virtual         v0, Lcom/adjust/sdk/ActivityHandler;->getContext()Landroid/content/Context;
+  move-result-object     v1
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->e0(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/ILogger;
+  move-result-object     v2
+  invoke-static          v1, v2, Lcom/adjust/sdk/Reflection;->getSamsungReferrer(Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Lcom/adjust/sdk/ReferrerDetails;
+  move-result-object     v1
+  if-eqz                 v1, +008h
+  const-string/jumbo     v2, samsung
+  invoke-virtual         v0, v1, v2, Lcom/adjust/sdk/ActivityHandler;->sendInstallReferrer(Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String;)V
+  return-void            
+  iget-object            v0, v5, Lcom/adjust/sdk/z;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-virtual         v0, Lcom/adjust/sdk/ActivityHandler;->getContext()Landroid/content/Context;
+  move-result-object     v1
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->e0(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/ILogger;
+  move-result-object     v2
+  invoke-static          v1, v2, Lcom/adjust/sdk/Reflection;->getHuaweiAppGalleryReferrer(Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Lcom/adjust/sdk/ReferrerDetails;
+  move-result-object     v1
+  if-eqz                 v1, +007h
+  const-string           v2, "huawei_app_gallery"
+  invoke-virtual         v0, v1, v2, Lcom/adjust/sdk/ActivityHandler;->sendInstallReferrer(Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String;)V
+  return-void            
+  iget-object            v0, v5, Lcom/adjust/sdk/z;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-virtual         v0, Lcom/adjust/sdk/ActivityHandler;->getContext()Landroid/content/Context;
+  move-result-object     v1
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->e0(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/ILogger;
+  move-result-object     v2
+  invoke-static          v1, v2, Lcom/adjust/sdk/Reflection;->getHuaweiAdsReferrer(Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Lcom/adjust/sdk/ReferrerDetails;
+  move-result-object     v1
+  if-eqz                 v1, +007h
+  const-string           v2, "huawei_ads"
+  invoke-virtual         v0, v1, v2, Lcom/adjust/sdk/ActivityHandler;->sendInstallReferrer(Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String;)V
+  return-void            
+  iget-object            v0, v5, Lcom/adjust/sdk/z;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-virtual         v0, Lcom/adjust/sdk/ActivityHandler;->backgroundTimerFired()V
+  return-void            
+  iget-object            v0, v5, Lcom/adjust/sdk/z;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-virtual         v0, Lcom/adjust/sdk/ActivityHandler;->foregroundTimerFired()V
+  return-void            
+  iget-object            v0, v5, Lcom/adjust/sdk/z;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->g0(Lcom/adjust/sdk/ActivityHandler;)V
+  return-void            
+  iget-object            v0, v5, Lcom/adjust/sdk/z;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->h0(Lcom/adjust/sdk/ActivityHandler;)V
+  return-void            
+  iget-object            v0, v5, Lcom/adjust/sdk/z;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->i0(Lcom/adjust/sdk/ActivityHandler;)V
+  return-void            
+  iget-object            v0, v5, Lcom/adjust/sdk/z;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->b0(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustConfig;
+  move-result-object     v1
+  if-nez                 v1, +003h
+  goto                   +dh
+  iget-object            v1, v1, Lcom/adjust/sdk/AdjustConfig;->onThirdPartySharingSettingsChangedListener Lcom/adjust/sdk/OnThirdPartySharingSettingsChangedListener;
+  if-nez                 v1, +003h
+  goto                   +8h
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->f0(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustThirdPartySharingResult;
+  move-result-object     v0
+  invoke-interface       v1, v0, Lcom/adjust/sdk/OnThirdPartySharingSettingsChangedListener;->onThirdPartySharingSettingsChanged(Lcom/adjust/sdk/AdjustThirdPartySharingResult;)V
+  return-void            
+  iget-object            v0, v5, Lcom/adjust/sdk/z;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->b0(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustConfig;
+  move-result-object     v1
+  if-nez                 v1, +003h
+  goto                   +dh
+  iget-object            v1, v1, Lcom/adjust/sdk/AdjustConfig;->onAttributionChangedListener Lcom/adjust/sdk/OnAttributionChangedListener;
+  if-nez                 v1, +003h
+  goto                   +8h
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->c0(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustAttribution;
+  move-result-object     v0
+  invoke-interface       v1, v0, Lcom/adjust/sdk/OnAttributionChangedListener;->onAttributionChanged(Lcom/adjust/sdk/AdjustAttribution;)V
+  return-void            
+  iget-object            v0, v5, Lcom/adjust/sdk/z;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-virtual         v0, Lcom/adjust/sdk/ActivityHandler;->getContext()Landroid/content/Context;
+  move-result-object     v1
+  invoke-static          v1, Lcom/adjust/sdk/SharedPreferencesManager;->getDefaultInstance(Landroid/content/Context;)Lcom/adjust/sdk/SharedPreferencesManager;
+  move-result-object     v1
+  invoke-virtual         v1, Lcom/adjust/sdk/SharedPreferencesManager;->getLicenseVerificationTracked()Z
+  move-result            v1
+  if-eqz                 v1, +003h
+  goto                   +18h
+  invoke-virtual         v0, Lcom/adjust/sdk/ActivityHandler;->getContext()Landroid/content/Context;
+  move-result-object     v1
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->e0(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/ILogger;
+  move-result-object     v2
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->d0(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/DeviceInfo;
+  move-result-object     v3
+  iget-wide              v3, v3, Lcom/adjust/sdk/DeviceInfo;->appInstallTime J
+  invoke-static          v1, v2, v3, v4, Lcom/adjust/sdk/Reflection;->getLicenseRequiredData(Landroid/content/Context; Lcom/adjust/sdk/ILogger; J)Lcom/adjust/sdk/LicenseData;
+  move-result-object     v1
+  if-eqz                 v1, +005h
+  invoke-virtual         v0, v1, Lcom/adjust/sdk/ActivityHandler;->sendLicenseVerificationData(Lcom/adjust/sdk/LicenseData;)V
+  return-void            
+  iget-object            v0, v5, Lcom/adjust/sdk/z;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-virtual         v0, Lcom/adjust/sdk/ActivityHandler;->getContext()Landroid/content/Context;
+  move-result-object     v1
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->b0(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustConfig;
+  move-result-object     v2
+  iget-object            v2, v2, Lcom/adjust/sdk/AdjustConfig;->fbAppId Ljava/lang/String;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->e0(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  invoke-static          v1, v2, v3, Lcom/adjust/sdk/Reflection;->getMetaReferrer(Landroid/content/Context; Ljava/lang/String; Lcom/adjust/sdk/ILogger;)Lcom/adjust/sdk/ReferrerDetails;
+  move-result-object     v1
+  if-eqz                 v1, +007h
+  const-string           v2, "meta"
+  invoke-virtual         v0, v1, v2, Lcom/adjust/sdk/ActivityHandler;->sendInstallReferrer(Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String;)V
+  return-void            
+  nop                    
+  packed-switch-payload  0 1 2 3 4 5 6 7 8 9 a b c

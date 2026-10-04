@@ -1,0 +1,6 @@
+dir.system = /system/lib64
+[vendor]
+dir.vendor = /vendor/lib64
+[system]
+dir.system = /system/lib64
+namespace.default.search.paths = /system/lib64

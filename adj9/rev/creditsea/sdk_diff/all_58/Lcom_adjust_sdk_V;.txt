@@ -1,0 +1,92 @@
+# CLASS Lcom/adjust/sdk/v;
+FIELD public final synthetic a I
+FIELD public final synthetic b Lcom/adjust/sdk/AdjustTimeoutCallback;
+FIELD public final synthetic c Ljava/util/ArrayList;
+FIELD public final synthetic d Landroid/content/Context;
+
+---- METHOD public synthetic constructor <init> (Lcom/adjust/sdk/AdjustTimeoutCallback; Ljava/util/ArrayList; Landroid/content/Context; I)V ----
+  iput                   v4, v0, Lcom/adjust/sdk/v;->a I
+  iput-object            v1, v0, Lcom/adjust/sdk/v;->b Lcom/adjust/sdk/AdjustTimeoutCallback;
+  iput-object            v2, v0, Lcom/adjust/sdk/v;->c Ljava/util/ArrayList;
+  iput-object            v3, v0, Lcom/adjust/sdk/v;->d Landroid/content/Context;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget                   v0, v3, Lcom/adjust/sdk/v;->a I
+  packed-switch          v0, +0000088h
+  iget-object            v0, v3, Lcom/adjust/sdk/v;->b Lcom/adjust/sdk/AdjustTimeoutCallback;
+  invoke-virtual         v0, Lcom/adjust/sdk/AdjustTimeoutCallback;->getOnThirdPartySharingSettingsReadListener()Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;
+  move-result-object     v0
+  if-eqz                 v0, +025h
+  iget-object            v0, v3, Lcom/adjust/sdk/v;->c Ljava/util/ArrayList;
+  monitor-enter          v0
+  iget-object            v1, v3, Lcom/adjust/sdk/v;->c Ljava/util/ArrayList;
+  iget-object            v2, v3, Lcom/adjust/sdk/v;->b Lcom/adjust/sdk/AdjustTimeoutCallback;
+  invoke-virtual         v1, v2, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
+  monitor-exit           v0
+  new-instance           v0, Landroid/os/Handler;
+  iget-object            v1, v3, Lcom/adjust/sdk/v;->d Landroid/content/Context;
+  invoke-virtual         v1, Landroid/content/Context;->getMainLooper()Landroid/os/Looper;
+  move-result-object     v1
+  invoke-direct          v0, v1, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+  new-instance           v1, Lcom/adjust/sdk/u;
+  const/4                v2, 2
+  invoke-direct          v1, v3, v2, Lcom/adjust/sdk/u;-><init>(Ljava/lang/Object; I)V
+  invoke-virtual         v0, v1, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+  goto                   +4h
+  move-exception         v1
+  monitor-exit           v0
+  throw                  v1
+  return-void            
+  iget-object            v0, v3, Lcom/adjust/sdk/v;->b Lcom/adjust/sdk/AdjustTimeoutCallback;
+  invoke-virtual         v0, Lcom/adjust/sdk/AdjustTimeoutCallback;->getOnAttributionReadListener()Lcom/adjust/sdk/OnAttributionReadListener;
+  move-result-object     v0
+  if-eqz                 v0, +025h
+  iget-object            v0, v3, Lcom/adjust/sdk/v;->c Ljava/util/ArrayList;
+  monitor-enter          v0
+  iget-object            v1, v3, Lcom/adjust/sdk/v;->c Ljava/util/ArrayList;
+  iget-object            v2, v3, Lcom/adjust/sdk/v;->b Lcom/adjust/sdk/AdjustTimeoutCallback;
+  invoke-virtual         v1, v2, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
+  monitor-exit           v0
+  new-instance           v0, Landroid/os/Handler;
+  iget-object            v1, v3, Lcom/adjust/sdk/v;->d Landroid/content/Context;
+  invoke-virtual         v1, Landroid/content/Context;->getMainLooper()Landroid/os/Looper;
+  move-result-object     v1
+  invoke-direct          v0, v1, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+  new-instance           v1, Lcom/adjust/sdk/u;
+  const/4                v2, 1
+  invoke-direct          v1, v3, v2, Lcom/adjust/sdk/u;-><init>(Ljava/lang/Object; I)V
+  invoke-virtual         v0, v1, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+  goto                   +4h
+  move-exception         v1
+  monitor-exit           v0
+  throw                  v1
+  return-void            
+  iget-object            v0, v3, Lcom/adjust/sdk/v;->b Lcom/adjust/sdk/AdjustTimeoutCallback;
+  invoke-virtual         v0, Lcom/adjust/sdk/AdjustTimeoutCallback;->getOnAdidReadListener()Lcom/adjust/sdk/OnAdidReadListener;
+  move-result-object     v0
+  if-eqz                 v0, +025h
+  iget-object            v0, v3, Lcom/adjust/sdk/v;->c Ljava/util/ArrayList;
+  monitor-enter          v0
+  iget-object            v1, v3, Lcom/adjust/sdk/v;->c Ljava/util/ArrayList;
+  iget-object            v2, v3, Lcom/adjust/sdk/v;->b Lcom/adjust/sdk/AdjustTimeoutCallback;
+  invoke-virtual         v1, v2, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
+  monitor-exit           v0
+  new-instance           v0, Landroid/os/Handler;
+  iget-object            v1, v3, Lcom/adjust/sdk/v;->d Landroid/content/Context;
+  invoke-virtual         v1, Landroid/content/Context;->getMainLooper()Landroid/os/Looper;
+  move-result-object     v1
+  invoke-direct          v0, v1, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+  new-instance           v1, Lcom/adjust/sdk/u;
+  const/4                v2, 0
+  invoke-direct          v1, v3, v2, Lcom/adjust/sdk/u;-><init>(Ljava/lang/Object; I)V
+  invoke-virtual         v0, v1, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+  goto                   +4h
+  move-exception         v1
+  monitor-exit           v0
+  throw                  v1
+  return-void            
+  nop                    
+  packed-switch-payload  0 1
+######################################################################

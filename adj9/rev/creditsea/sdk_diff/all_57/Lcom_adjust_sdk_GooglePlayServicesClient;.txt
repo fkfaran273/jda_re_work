@@ -1,0 +1,54 @@
+# CLASS Lcom/adjust/sdk/GooglePlayServicesClient;
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public static getGooglePlayServicesInfo (Landroid/content/Context; J)Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesInfo; ----
+  invoke-static          Landroid/os/Looper;->myLooper()Landroid/os/Looper;
+  move-result-object     v0
+  invoke-static          Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+  move-result-object     v1
+  if-eq                  v0, v1, +04dh
+  invoke-virtual         v3, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+  move-result-object     v0
+  const-string           v1, "com.android.vending"
+  const/4                v2, 0
+  invoke-virtual         v0, v1, v2, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+  new-instance           v0, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesConnection;
+  invoke-direct          v0, v4, v5, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesConnection;-><init>(J)V
+  new-instance           v4, Landroid/content/Intent;
+  const-string           v5, "com.google.android.gms.ads.identifier.service.START"
+  invoke-direct          v4, v5, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+  const-string           v5, "com.google.android.gms"
+  invoke-virtual         v4, v5, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+  const/4                v5, 1
+  invoke-virtual         v3, v4, v0, v5, Landroid/content/Context;->bindService(Landroid/content/Intent; Landroid/content/ServiceConnection; I)Z
+  move-result            v4
+  if-eqz                 v4, +024h
+  new-instance           v4, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesInterface;
+  invoke-virtual         v0, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesConnection;->a()Landroid/os/IBinder;
+  move-result-object     v5
+  invoke-direct          v4, v5, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesInterface;-><init>(Landroid/os/IBinder;)V
+  new-instance           v5, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesInfo;
+  invoke-virtual         v4, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesInterface;->a()Ljava/lang/String;
+  move-result-object     v1
+  invoke-virtual         v4, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesInterface;->b()Ljava/lang/Boolean;
+  move-result-object     v4
+  invoke-direct          v5, v1, v4, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesInfo;-><init>(Ljava/lang/String; Ljava/lang/Boolean;)V
+  invoke-virtual         v3, v0, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
+  return-object          v5
+  move-exception         v4
+  goto                   +3h
+  move-exception         v4
+  throw                  v4
+  invoke-virtual         v3, v0, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
+  throw                  v4
+  const-string           v3, "Google Play connection failed"
+  invoke-static          v3, Lokhttp3/a;->z(Ljava/lang/String;)V
+  const/4                v3, 0
+  return-object          v3
+  const-string           v3, "Google Play Services info can't be accessed from the main thread"
+  invoke-static          v3, Lokhttp3/a;->D(Ljava/lang/String;)V
+  goto                   -7h
+######################################################################

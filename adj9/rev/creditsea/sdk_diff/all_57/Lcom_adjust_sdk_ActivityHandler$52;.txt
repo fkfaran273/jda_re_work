@@ -1,0 +1,39 @@
+# CLASS Lcom/adjust/sdk/ActivityHandler$52;
+FIELD public final synthetic a Landroid/net/Uri;
+FIELD public final synthetic b Landroid/content/Intent;
+FIELD public final synthetic c Lcom/adjust/sdk/ActivityHandler;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/ActivityHandler; Landroid/content/Intent; Landroid/net/Uri;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/ActivityHandler$52;->c Lcom/adjust/sdk/ActivityHandler;
+  iput-object            v3, v0, Lcom/adjust/sdk/ActivityHandler$52;->a Landroid/net/Uri;
+  iput-object            v2, v0, Lcom/adjust/sdk/ActivityHandler$52;->b Landroid/content/Intent;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v3, Lcom/adjust/sdk/ActivityHandler$52;->c Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->access$1600(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustConfig;
+  move-result-object     v0
+  if-nez                 v0, +003h
+  goto                   +26h
+  iget-object            v0, v3, Lcom/adjust/sdk/ActivityHandler$52;->c Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->access$1600(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustConfig;
+  move-result-object     v0
+  iget-object            v0, v0, Lcom/adjust/sdk/AdjustConfig;->onDeferredDeeplinkResponseListener Lcom/adjust/sdk/OnDeferredDeeplinkResponseListener;
+  if-eqz                 v0, +011h
+  iget-object            v0, v3, Lcom/adjust/sdk/ActivityHandler$52;->c Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->access$1600(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustConfig;
+  move-result-object     v0
+  iget-object            v0, v0, Lcom/adjust/sdk/AdjustConfig;->onDeferredDeeplinkResponseListener Lcom/adjust/sdk/OnDeferredDeeplinkResponseListener;
+  iget-object            v1, v3, Lcom/adjust/sdk/ActivityHandler$52;->a Landroid/net/Uri;
+  invoke-interface       v0, v1, Lcom/adjust/sdk/OnDeferredDeeplinkResponseListener;->launchReceivedDeeplink(Landroid/net/Uri;)Z
+  move-result            v0
+  goto                   +2h
+  const/4                v0, 1
+  if-eqz                 v0, +00bh
+  iget-object            v0, v3, Lcom/adjust/sdk/ActivityHandler$52;->c Lcom/adjust/sdk/ActivityHandler;
+  iget-object            v1, v3, Lcom/adjust/sdk/ActivityHandler$52;->b Landroid/content/Intent;
+  iget-object            v2, v3, Lcom/adjust/sdk/ActivityHandler$52;->a Landroid/net/Uri;
+  invoke-static          v0, v1, v2, Lcom/adjust/sdk/ActivityHandler;->access$2000(Lcom/adjust/sdk/ActivityHandler; Landroid/content/Intent; Landroid/net/Uri;)V
+  return-void            
+######################################################################

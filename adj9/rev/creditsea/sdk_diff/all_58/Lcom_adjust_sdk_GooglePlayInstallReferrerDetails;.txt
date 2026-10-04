@@ -1,0 +1,52 @@
+# CLASS Lcom/adjust/sdk/GooglePlayInstallReferrerDetails;
+FIELD public googlePlayInstant Ljava/lang/Boolean;
+FIELD public installBeginTimestampSeconds J
+FIELD public installBeginTimestampServerSeconds J
+FIELD public installReferrer Ljava/lang/String;
+FIELD public installVersion Ljava/lang/String;
+FIELD public referrerClickTimestampSeconds J
+FIELD public referrerClickTimestampServerSeconds J
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/ReferrerDetails;)V ----
+  invoke-direct          v2, Ljava/lang/Object;-><init>()V
+  if-nez                 v3, +003h
+  return-void            
+  iget-object            v0, v3, Lcom/adjust/sdk/ReferrerDetails;->installReferrer Ljava/lang/String;
+  iput-object            v0, v2, Lcom/adjust/sdk/GooglePlayInstallReferrerDetails;->installReferrer Ljava/lang/String;
+  iget-wide              v0, v3, Lcom/adjust/sdk/ReferrerDetails;->referrerClickTimestampSeconds J
+  iput-wide              v0, v2, Lcom/adjust/sdk/GooglePlayInstallReferrerDetails;->referrerClickTimestampSeconds J
+  iget-wide              v0, v3, Lcom/adjust/sdk/ReferrerDetails;->installBeginTimestampSeconds J
+  iput-wide              v0, v2, Lcom/adjust/sdk/GooglePlayInstallReferrerDetails;->installBeginTimestampSeconds J
+  iget-wide              v0, v3, Lcom/adjust/sdk/ReferrerDetails;->referrerClickTimestampServerSeconds J
+  iput-wide              v0, v2, Lcom/adjust/sdk/GooglePlayInstallReferrerDetails;->referrerClickTimestampServerSeconds J
+  iget-wide              v0, v3, Lcom/adjust/sdk/ReferrerDetails;->installBeginTimestampServerSeconds J
+  iput-wide              v0, v2, Lcom/adjust/sdk/GooglePlayInstallReferrerDetails;->installBeginTimestampServerSeconds J
+  iget-object            v0, v3, Lcom/adjust/sdk/ReferrerDetails;->installVersion Ljava/lang/String;
+  iput-object            v0, v2, Lcom/adjust/sdk/GooglePlayInstallReferrerDetails;->installVersion Ljava/lang/String;
+  iget-object            v3, v3, Lcom/adjust/sdk/ReferrerDetails;->googlePlayInstant Ljava/lang/Boolean;
+  iput-object            v3, v2, Lcom/adjust/sdk/GooglePlayInstallReferrerDetails;->googlePlayInstant Ljava/lang/Boolean;
+  return-void            
+
+---- METHOD public toString ()Ljava/lang/String; ----
+  iget-object            v0, v7, Lcom/adjust/sdk/GooglePlayInstallReferrerDetails;->installReferrer Ljava/lang/String;
+  iget-wide              v1, v7, Lcom/adjust/sdk/GooglePlayInstallReferrerDetails;->referrerClickTimestampSeconds J
+  invoke-static          v1, v2, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v1
+  iget-wide              v2, v7, Lcom/adjust/sdk/GooglePlayInstallReferrerDetails;->installBeginTimestampSeconds J
+  invoke-static          v2, v3, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v2
+  iget-wide              v3, v7, Lcom/adjust/sdk/GooglePlayInstallReferrerDetails;->referrerClickTimestampServerSeconds J
+  invoke-static          v3, v4, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v3
+  iget-wide              v4, v7, Lcom/adjust/sdk/GooglePlayInstallReferrerDetails;->installBeginTimestampServerSeconds J
+  invoke-static          v4, v5, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v4
+  iget-object            v5, v7, Lcom/adjust/sdk/GooglePlayInstallReferrerDetails;->installVersion Ljava/lang/String;
+  iget-object            v6, v7, Lcom/adjust/sdk/GooglePlayInstallReferrerDetails;->googlePlayInstant Ljava/lang/Boolean;
+  filled-new-array/range v0 ... v6, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v1, " installReferrer : %s referrerClickTimestampSeconds : %d installBeginTimestampSeconds : %d referrerClickTimestampServerSeconds : %d installBeginTimestampServerSeconds : %d installVersion : %s googlePlayInstant : %s"
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+######################################################################

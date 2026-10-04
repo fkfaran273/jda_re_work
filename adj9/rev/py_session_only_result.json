@@ -1,0 +1,13 @@
+{
+ "identity": "gps=77726e61-8bab-4fa1-86e8-5ba760d7ee8f marker=cline_sess_h",
+ "gaid": "readback 77726e61-8bab-4fa1-86e8-5ba760d7ee8f OK",
+ "click": "http=302 at 2026-09-19T11:12:56.000Z+0530 reftag=adjust_reftag=cuNBjRRMcC1iA&utm_source=VKM+D",
+ "session": "exit-clean #10=360B  CTIT=+10.6s",
+ "session/send": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"cdc047e3616471ee30d44df1a7c746b6\",\"ask_in\":2000}",
+ "sdk_click": "SKIPPED by design (the app never sends the tracker's reftag)",
+ "attribution/0": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"cdc047e3616471ee30d44df1a7c746b6\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"in",
+ "attribution/1": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"cdc047e3616471ee30d44df1a7c746b6\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"in",
+ "gps": "77726e61-8bab-4fa1-86e8-5ba760d7ee8f",
+ "marker": "cline_sess_h",
+ "installed_iso": "2026-09-19T11:13:06.000Z+0530"
+}

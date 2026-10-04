@@ -1,0 +1,52 @@
+{
+ "device_adid": "9501a7f0-9710-4093-99ac-dabb15809b56",
+ "device_model": null,
+ "runs": [
+  {
+   "label": "A existing device-data id",
+   "gaid": "9501a7f0-9710-4093-99ac-dabb15809b56",
+   "gaid_readback": "9501a7f0-9710-4093-99ac-dabb15809b56",
+   "creative": "cline_fw_a",
+   "click_http": 302,
+   "referrer": "adjust_reftag=cmNEwSf3qXWBc&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=cline_fw_a",
+   "verdict": {
+    "tracker_token": "24w42y0e",
+    "tracker_name": "VKM Digital Yeni::AH::vkm_0926_36::cline_fw_a",
+    "network": "VKM Digital Yeni",
+    "campaign": "AH",
+    "adgroup": "vkm_0926_36",
+    "creative": "cline_fw_a",
+    "engagement_time": "2026-09-15T10:29:47Z",
+    "installed_at": "2026-09-15T10:29:54Z",
+    "first_session_time": "2026-09-15T10:29:54Z",
+    "is_reattributed": false,
+    "is_redownload_install": false
+   },
+   "app_install_referrer": "utm_source=(not%20set)&utm_medium=(not%20set)ppppppt",
+   "non_organic_marker_joined": true
+  },
+  {
+   "label": "B fresh id (control)",
+   "gaid": "1d5c0a58-89d9-4116-8c1a-5022d90b319d",
+   "gaid_readback": "1d5c0a58-89d9-4116-8c1a-5022d90b319d",
+   "creative": "cline_fw_b",
+   "click_http": 302,
+   "referrer": "adjust_reftag=csnoDZ7meGW6q&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=cline_fw_b",
+   "verdict": {
+    "tracker_token": "24lp4oje",
+    "tracker_name": "VKM Digital Yeni::AH::vkm_0926_36::cline_fw_b",
+    "network": "VKM Digital Yeni",
+    "campaign": "AH",
+    "adgroup": "vkm_0926_36",
+    "creative": "cline_fw_b",
+    "engagement_time": "2026-09-15T10:30:11Z",
+    "installed_at": "2026-09-15T10:30:18Z",
+    "first_session_time": "2026-09-15T10:30:18Z",
+    "is_reattributed": false,
+    "is_redownload_install": false
+   },
+   "app_install_referrer": "utm_source=(not%20set)&utm_medium=(not%20set)ppppppt",
+   "non_organic_marker_joined": true
+  }
+ ]
+}

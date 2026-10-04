@@ -1,0 +1,40 @@
+# CLASS Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesConnection;
+FIELD public final a J
+FIELD public b Z
+FIELD public final c Ljava/util/concurrent/LinkedBlockingQueue;
+
+---- METHOD public constructor <init> (J)V ----
+  invoke-direct          v2, Ljava/lang/Object;-><init>()V
+  const/4                v0, 0
+  iput-boolean           v0, v2, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesConnection;->b Z
+  new-instance           v0, Ljava/util/concurrent/LinkedBlockingQueue;
+  const/4                v1, 1
+  invoke-direct          v0, v1, Ljava/util/concurrent/LinkedBlockingQueue;-><init>(I)V
+  iput-object            v0, v2, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesConnection;->c Ljava/util/concurrent/LinkedBlockingQueue;
+  iput-wide              v3, v2, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesConnection;->a J
+  return-void            
+
+---- METHOD public final a ()Landroid/os/IBinder; ----
+  iget-boolean           v0, v4, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesConnection;->b Z
+  if-nez                 v0, +012h
+  const/4                v0, 1
+  iput-boolean           v0, v4, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesConnection;->b Z
+  iget-object            v0, v4, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesConnection;->c Ljava/util/concurrent/LinkedBlockingQueue;
+  iget-wide              v1, v4, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesConnection;->a J
+  sget-object            v3, Ljava/util/concurrent/TimeUnit;->MILLISECONDS Ljava/util/concurrent/TimeUnit;
+  invoke-virtual         v0, v1, v2, v3, Ljava/util/concurrent/LinkedBlockingQueue;->poll(J Ljava/util/concurrent/TimeUnit;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Landroid/os/IBinder;
+  return-object          v0
+  invoke-static          Lio/grpc/internal/b;->a()V
+  const/4                v0, 0
+  return-object          v0
+
+---- METHOD public final onServiceConnected (Landroid/content/ComponentName; Landroid/os/IBinder;)V ----
+  iget-object            v1, v0, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesConnection;->c Ljava/util/concurrent/LinkedBlockingQueue;
+  invoke-virtual         v1, v2, Ljava/util/concurrent/LinkedBlockingQueue;->put(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD public final onServiceDisconnected (Landroid/content/ComponentName;)V ----
+  return-void            
+######################################################################

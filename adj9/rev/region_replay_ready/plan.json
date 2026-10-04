@@ -1,0 +1,52 @@
+{
+ "rounds": [
+  {
+   "round": 1,
+   "second": 1790416230,
+   "dir": "C:\\Users\\Apps\\Downloads\\com.penti.app\\adj9\\rev\\region_replay_ready\\round1",
+   "order": [
+    "G0",
+    "GF",
+    "A",
+    "C",
+    "B",
+    "D"
+   ]
+  }
+ ],
+ "summary": {
+  "round1": {
+   "variants": {
+    "A": {
+     "desc": "orig_id+CAPTURED_region",
+     "ok": true
+    },
+    "B": {
+     "desc": "fresh_id+CAPTURED_region",
+     "ok": true
+    },
+    "C": {
+     "desc": "orig_id+FRESH_region",
+     "ok": true
+    },
+    "D": {
+     "desc": "fresh_id+FRESH_region",
+     "ok": true
+    }
+   },
+   "controls": {
+    "G0": "verbatim genuine (control)",
+    "GF": "cell D with 1 body bit flipped (negative ref)"
+   }
+  }
+ },
+ "order": "G0,GF,A,C,B,D",
+ "head": [
+  34,
+  46
+ ],
+ "pid": 26530,
+ "tid": 26593,
+ "captured_row": 0,
+ "mode": "send"
+}

@@ -1,0 +1,128 @@
+# CLASS Lcom/adjust/sdk/AdjustPlayStoreSubscription;
+FIELD private static logger Lcom/adjust/sdk/ILogger;
+FIELD private callbackParameters Ljava/util/Map;
+FIELD private currency Ljava/lang/String;
+FIELD private orderId Ljava/lang/String;
+FIELD private partnerParameters Ljava/util/Map;
+FIELD private price J
+FIELD private purchaseTime J
+FIELD private purchaseToken Ljava/lang/String;
+FIELD private signature Ljava/lang/String;
+FIELD private sku Ljava/lang/String;
+
+---- METHOD static constructor <clinit> ()V ----
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v0
+  sput-object            v0, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->logger Lcom/adjust/sdk/ILogger;
+  return-void            
+
+---- METHOD public constructor <init> (J Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-wide              v1, v0, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->price J
+  iput-object            v3, v0, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->currency Ljava/lang/String;
+  iput-object            v4, v0, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->sku Ljava/lang/String;
+  iput-object            v5, v0, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->orderId Ljava/lang/String;
+  iput-object            v6, v0, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->signature Ljava/lang/String;
+  iput-object            v7, v0, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->purchaseToken Ljava/lang/String;
+  const-wide/16          v1, -1
+  iput-wide              v1, v0, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->purchaseTime J
+  return-void            
+
+---- METHOD public addCallbackParameter (Ljava/lang/String; Ljava/lang/String;)V ----
+  const-string           v0, "key"
+  const-string           v1, "Callback"
+  invoke-static          v3, v0, v1, Lcom/adjust/sdk/Util;->isValidParameter(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +2bh
+  const-string/jumbo     v0, value
+  invoke-static          v4, v0, v1, Lcom/adjust/sdk/Util;->isValidParameter(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +21h
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->callbackParameters Ljava/util/Map;
+  if-nez                 v0, +009h
+  new-instance           v0, Ljava/util/LinkedHashMap;
+  invoke-direct          v0, Ljava/util/LinkedHashMap;-><init>()V
+  iput-object            v0, v2, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->callbackParameters Ljava/util/Map;
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->callbackParameters Ljava/util/Map;
+  invoke-interface       v0, v3, v4, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v4
+  check-cast             v4, Ljava/lang/String;
+  if-eqz                 v4, +00dh
+  sget-object            v4, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->logger Lcom/adjust/sdk/ILogger;
+  filled-new-array       v3, [Ljava/lang/Object;
+  move-result-object     v3
+  const-string           v0, "Key %s was overwritten"
+  invoke-interface       v4, v0, v3, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD public addPartnerParameter (Ljava/lang/String; Ljava/lang/String;)V ----
+  const-string           v0, "key"
+  const-string           v1, "Partner"
+  invoke-static          v3, v0, v1, Lcom/adjust/sdk/Util;->isValidParameter(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +2bh
+  const-string/jumbo     v0, value
+  invoke-static          v4, v0, v1, Lcom/adjust/sdk/Util;->isValidParameter(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +21h
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->partnerParameters Ljava/util/Map;
+  if-nez                 v0, +009h
+  new-instance           v0, Ljava/util/LinkedHashMap;
+  invoke-direct          v0, Ljava/util/LinkedHashMap;-><init>()V
+  iput-object            v0, v2, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->partnerParameters Ljava/util/Map;
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->partnerParameters Ljava/util/Map;
+  invoke-interface       v0, v3, v4, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v4
+  check-cast             v4, Ljava/lang/String;
+  if-eqz                 v4, +00dh
+  sget-object            v4, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->logger Lcom/adjust/sdk/ILogger;
+  filled-new-array       v3, [Ljava/lang/Object;
+  move-result-object     v3
+  const-string           v0, "Key %s was overwritten"
+  invoke-interface       v4, v0, v3, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD public getCallbackParameters ()Ljava/util/Map; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->callbackParameters Ljava/util/Map;
+  return-object          v0
+
+---- METHOD public getCurrency ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->currency Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getOrderId ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->orderId Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getPartnerParameters ()Ljava/util/Map; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->partnerParameters Ljava/util/Map;
+  return-object          v0
+
+---- METHOD public getPrice ()J ----
+  iget-wide              v0, v2, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->price J
+  return-wide            v0
+
+---- METHOD public getPurchaseTime ()J ----
+  iget-wide              v0, v2, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->purchaseTime J
+  return-wide            v0
+
+---- METHOD public getPurchaseToken ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->purchaseToken Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getSignature ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->signature Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getSku ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->sku Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public setPurchaseTime (J)V ----
+  iput-wide              v1, v0, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->purchaseTime J
+  return-void            
+######################################################################

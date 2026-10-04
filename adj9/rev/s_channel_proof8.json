@@ -1,0 +1,14 @@
+{
+ "gps": "6cc5b9a3-cdd8-41cd-89d0-889341e9d695",
+ "verdict": {
+  "tracker_token": "wy7261z",
+  "tracker_name": "Organic",
+  "network": "Organic",
+  "engagement_time": "0001-01-01T00:00:00Z",
+  "installed_at": "2026-09-27T08:05:19Z",
+  "first_session_time": "2026-09-27T08:05:19Z",
+  "is_reattributed": false,
+  "is_redownload_install": false
+ },
+ "S_values": []
+}

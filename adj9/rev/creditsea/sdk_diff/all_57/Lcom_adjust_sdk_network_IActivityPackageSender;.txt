@@ -1,0 +1,8 @@
+# CLASS Lcom/adjust/sdk/network/IActivityPackageSender;
+
+---- METHOD public abstract sendActivityPackage (Lcom/adjust/sdk/ActivityPackage; Ljava/util/Map; Lcom/adjust/sdk/network/IActivityPackageSender$ResponseDataCallbackSubscriber;)V ----
+  (no code)
+
+---- METHOD public abstract sendActivityPackageSync (Lcom/adjust/sdk/ActivityPackage; Ljava/util/Map;)Lcom/adjust/sdk/ResponseData; ----
+  (no code)
+######################################################################

@@ -1,0 +1,197 @@
+{
+ "S0_H_00100400": [
+  "maps_live.txt:00041000",
+  "maps.txt:00041000",
+  "maps2.txt:00041000",
+  "maps_23802.txt:00041000",
+  "maps.txt:00041000",
+  "det3.log:00100400",
+  "dl2.log:00100400",
+  "fin_descs.json:00100400",
+  "fz3_maps.txt:00041000",
+  "fz4_maps_r1.txt:00041000",
+  "fz4_maps_r2.txt:00041000",
+  "fz6_maps_r1.txt:00041000",
+  "fz6_maps_r2.txt:00041000",
+  "fz7_maps_r1.txt:00041000",
+  "fz7_maps_r2.txt:00041000",
+  "fz8_maps_r1.txt:00041000",
+  "fz8_maps_r2.txt:00041000",
+  "fz8_maps_r3.txt:00041000",
+  "fz8_maps_r4.txt:00041000",
+  "fz9_maps_r1.txt:00041000",
+  "fz9_maps_r2.txt:00041000",
+  "fz9_maps_r3.txt:00041000",
+  "fz9_maps_r4.txt:00041000",
+  "h_test.log:00100400",
+  "mvc.log:00100400",
+  "pa.log:00100400",
+  "rand_hunt.log:00100400",
+  "vmb2.log:00100400",
+  "WALL_A_SLICE_92.md:00100400",
+  "WALL_A_SLICE_98.md:00100400"
+ ],
+ "S0_A_13271271": [
+  "whcap_hits7.json:13271271",
+  "det3.log:13271271",
+  "dl2.log:13271271",
+  "fin_descs.json:13271271",
+  "mvc.log:13271271",
+  "pa.log:13271271",
+  "pv_run.log:13271271",
+  "rand_hunt.log:13271271",
+  "s8_run.log:13271271",
+  "vd014.log:13271271",
+  "vmb.log:13271271",
+  "WALL_A_SLICE_84.md:13271271"
+ ],
+ "S0_B_db50f44c": [
+  "whcap_hits7.json:db50f44c",
+  "det3.log:db50f44c",
+  "dl2.log:db50f44c",
+  "fin_descs.json:db50f44c",
+  "mvc.log:db50f44c",
+  "pa.log:db50f44c",
+  "pv_run.log:db50f44c",
+  "rand_hunt.log:db50f44c",
+  "s8_run.log:db50f44c",
+  "vd014.log:db50f44c",
+  "vmb.log:db50f44c",
+  "WALL_A_SLICE_84.md:db50f44c",
+  "WALL_A_SLICE_85.md:db50f44c"
+ ],
+ "S0_B_b63798cc": [
+  "whcap_hits7.json:b63798cc",
+  "det3.log:b63798cc",
+  "dl2.log:b63798cc",
+  "dp2.log:b63798cc",
+  "fin_descs.json:b63798cc",
+  "mvc.log:b63798cc",
+  "pa.log:b63798cc",
+  "pv_run.log:b63798cc",
+  "rand_hunt.log:b63798cc",
+  "s8_run.log:b63798cc",
+  "vd014.log:b63798cc",
+  "vmb.log:b63798cc",
+  "WALL_A_SLICE_84.md:b63798cc",
+  "WALL_A_SLICE_85.md:b63798cc"
+ ],
+ "S0_B_dab7f51a": [
+  "whcap_hits7.json:dab7f51a",
+  "det3.log:dab7f51a",
+  "dl2.log:dab7f51a",
+  "dp2.log:dab7f51a",
+  "fin_descs.json:dab7f51a",
+  "mvc.log:dab7f51a",
+  "pa.log:dab7f51a",
+  "pv_run.log:dab7f51a",
+  "rand_hunt.log:dab7f51a",
+  "s8_run.log:dab7f51a",
+  "vd014.log:dab7f51a",
+  "vmb.log:dab7f51a",
+  "WALL_A_SLICE_84.md:dab7f51a",
+  "WALL_A_SLICE_85.md:dab7f51a"
+ ],
+ "S0_B_b7d0992b": [
+  "whcap_hits7.json:b7d0992b",
+  "det3.log:b7d0992b",
+  "dl2.log:b7d0992b",
+  "fin_descs.json:b7d0992b",
+  "mvc.log:b7d0992b",
+  "pa.log:b7d0992b",
+  "pv_run.log:b7d0992b",
+  "rand_hunt.log:b7d0992b",
+  "s8_run.log:b7d0992b",
+  "vd014.log:b7d0992b",
+  "vmb.log:b7d0992b",
+  "WALL_A_SLICE_84.md:b7d0992b",
+  "WALL_A_SLICE_85.md:b7d0992b"
+ ],
+ "S1_A_aa447d3c": [
+  "whcap_hits7.json:aa447d3c",
+  "det3.log:aa447d3c",
+  "rand_hunt.log:aa447d3c",
+  "vd014.log:aa447d3c"
+ ],
+ "S1_B_2ec65f51": [
+  "whcap_hits7.json:2ec65f51",
+  "det3.log:2ec65f51",
+  "rand_hunt.log:2ec65f51",
+  "vd014.log:2ec65f51"
+ ],
+ "S1_B_efdf3cd8": [
+  "whcap_hits7.json:efdf3cd8",
+  "det3.log:efdf3cd8",
+  "rand_hunt.log:efdf3cd8",
+  "vd014.log:efdf3cd8"
+ ],
+ "S2_A_f1a55b5b": [
+  "whcap_hits7.json:f1a55b5b",
+  "det3.log:f1a55b5b",
+  "rand_hunt.log:f1a55b5b",
+  "vd014.log:f1a55b5b"
+ ],
+ "S2_A_9949bda6": [
+  "whcap_hits7.json:9949bda6",
+  "det3.log:9949bda6",
+  "rand_hunt.log:9949bda6",
+  "vd014.log:9949bda6"
+ ],
+ "S2_B_13227bce": [
+  "whcap_hits7.json:13227bce",
+  "det3.log:13227bce",
+  "rand_hunt.log:13227bce",
+  "vd014.log:13227bce"
+ ],
+ "S2_B_21426d41": [
+  "whcap_hits7.json:21426d41",
+  "det3.log:21426d41",
+  "rand_hunt.log:21426d41",
+  "vd014.log:21426d41"
+ ],
+ "S2_B_337d5f21": [
+  "whcap_hits7.json:337d5f21",
+  "det3.log:337d5f21",
+  "rand_hunt.log:337d5f21",
+  "vd014.log:337d5f21"
+ ],
+ "S0_2_fb1a8296": [
+  "whcap_hits7.json:fb1a8296",
+  "adj9_material.json:fb1a8296",
+  "dl2.log:fb1a8296",
+  "dp2.log:fb1a8296",
+  "fin_descs.json:fb1a8296",
+  "muse_spark_2026-09-15.md:fb1a8296",
+  "pa.log:fb1a8296",
+  "rand_hunt.log:fb1a8296",
+  "sl.log:fb1a8296",
+  "taint44_out.json:96821afb",
+  "vmb.log:fb1a8296",
+  "WALL_A_SLICE_88.md:fb1a8296",
+  "WALL_A_SLICE_97.md:fb1a8296"
+ ],
+ "S1_2_7c933329": [
+  "whcap_hits7.json:7c933329",
+  "rand_hunt.log:7c933329"
+ ],
+ "S2_2_4bce691e": [
+  "whcap_hits7.json:4bce691e",
+  "rand_hunt.log:4bce691e"
+ ],
+ "S2_B_011d4d1e": [
+  "det3.log:011d4d1e",
+  "rand_hunt.log:011d4d1e",
+  "vd014.log:011d4d1e"
+ ],
+ "S0_H_04144000": [
+  "det3.log:04144000",
+  "dl2.log:04144000",
+  "fin_descs.json:04144000",
+  "h_test.log:04144000",
+  "mvc.log:04144000",
+  "pa.log:04144000",
+  "rand_hunt.log:04144000",
+  "vmb2.log:04144000",
+  "WALL_A_SLICE_98.md:04144000"
+ ]
+}

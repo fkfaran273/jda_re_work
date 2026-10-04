@@ -1,0 +1,30 @@
+# CLASS Lcom/adjust/sdk/AdjustInstance$13;
+FIELD public final synthetic a Landroid/content/Context;
+FIELD public final synthetic b Lcom/adjust/sdk/OnLastDeeplinkReadListener;
+FIELD public final synthetic c Lcom/adjust/sdk/AdjustInstance;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/AdjustInstance; Landroid/content/Context; Lcom/adjust/sdk/OnLastDeeplinkReadListener;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustInstance$13;->c Lcom/adjust/sdk/AdjustInstance;
+  iput-object            v2, v0, Lcom/adjust/sdk/AdjustInstance$13;->a Landroid/content/Context;
+  iput-object            v3, v0, Lcom/adjust/sdk/AdjustInstance$13;->b Lcom/adjust/sdk/OnLastDeeplinkReadListener;
+  invoke-direct          v0, Lcom/adjust/sdk/scheduler/AsyncTaskExecutor;-><init>()V
+  return-void            
+
+---- METHOD public final doInBackground ([Ljava/lang/Object;)Ljava/lang/Object; ----
+  check-cast             v2, [Ljava/lang/Void;
+  iget-object            v2, v1, Lcom/adjust/sdk/AdjustInstance$13;->c Lcom/adjust/sdk/AdjustInstance;
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustInstance$13;->a Landroid/content/Context;
+  invoke-static          v2, v0, Lcom/adjust/sdk/AdjustInstance;->access$300(Lcom/adjust/sdk/AdjustInstance; Landroid/content/Context;)Ljava/lang/String;
+  move-result-object     v2
+  invoke-static          v2, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+  move-result-object     v2
+  return-object          v2
+  const/4                v2, 0
+  return-object          v2
+
+---- METHOD public final onPostExecute (Ljava/lang/Object;)V ----
+  check-cast             v2, Landroid/net/Uri;
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustInstance$13;->b Lcom/adjust/sdk/OnLastDeeplinkReadListener;
+  invoke-interface       v0, v2, Lcom/adjust/sdk/OnLastDeeplinkReadListener;->onLastDeeplinkRead(Landroid/net/Uri;)V
+  return-void            
+######################################################################

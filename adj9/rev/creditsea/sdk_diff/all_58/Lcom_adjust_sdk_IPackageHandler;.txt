@@ -1,0 +1,23 @@
+# CLASS Lcom/adjust/sdk/IPackageHandler;
+
+---- METHOD public abstract addPackage (Lcom/adjust/sdk/ActivityPackage;)V ----
+  (no code)
+
+---- METHOD public abstract flush ()V ----
+  (no code)
+
+---- METHOD public abstract init (Lcom/adjust/sdk/IActivityHandler; Landroid/content/Context; Z Lcom/adjust/sdk/network/IActivityPackageSender;)V ----
+  (no code)
+
+---- METHOD public abstract pauseSending ()V ----
+  (no code)
+
+---- METHOD public abstract resumeSending ()V ----
+  (no code)
+
+---- METHOD public abstract sendFirstPackage ()V ----
+  (no code)
+
+---- METHOD public abstract teardown ()V ----
+  (no code)
+######################################################################

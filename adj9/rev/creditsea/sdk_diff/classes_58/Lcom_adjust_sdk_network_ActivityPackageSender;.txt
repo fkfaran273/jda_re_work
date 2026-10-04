@@ -1,0 +1,921 @@
+# CLASS Lcom/adjust/sdk/network/ActivityPackageSender;
+FIELD private Ljava/lang/String;
+FIELD private Ljava/lang/String;
+FIELD private Lcom/adjust/sdk/network/UtilNetworking$IConnectionOptions;
+FIELD private I
+FIELD private Landroid/content/Context;
+FIELD private Lcom/adjust/sdk/scheduler/ThreadExecutor;
+FIELD private Ljava/lang/String;
+FIELD private Lcom/adjust/sdk/network/UtilNetworking$IHttpsURLConnectionProvider;
+FIELD private Lcom/adjust/sdk/ILogger;
+FIELD private Ljava/lang/String;
+FIELD private Ljava/lang/String;
+FIELD private Lcom/adjust/sdk/network/UrlStrategy;
+
+---- METHOD public constructor <init>((Ljava/util/List; Z Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; I Landroid/content/Context;)V)  ----
+  invoke-direct          v5, Ljava/lang/Object;-><init>()V
+  iput-object            v8, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->basePath Ljava/lang/String;
+  iput-object            v9, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->gdprPath Ljava/lang/String;
+  iput-object            v10, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->subscriptionPath Ljava/lang/String;
+  iput-object            v11, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->purchaseVerificationPath Ljava/lang/String;
+  iput-object            v12, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->clientSdk Ljava/lang/String;
+  iput                   v13, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->connectionTimeout I
+  iput-object            v14, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->context Landroid/content/Context;
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v0
+  iput-object            v0, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
+  new-instance           v0, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;
+  const-string           v1, "ActivityPackageSender"
+  invoke-direct          v0, v1, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;-><init>(Ljava/lang/String;)V
+  iput-object            v0, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+  new-instance           v0, Lcom/adjust/sdk/network/UrlStrategy;
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getBaseUrl()Ljava/lang/String;
+  move-result-object     v1
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getGdprUrl()Ljava/lang/String;
+  move-result-object     v2
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getSubscriptionUrl()Ljava/lang/String;
+  move-result-object     v3
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getPurchaseVerificationUrl()Ljava/lang/String;
+  move-result-object     v4
+  move-object            v8, v0
+  move-object            v9, v1
+  move-object            v10, v2
+  move-object            v11, v3
+  move-object            v12, v4
+  move-object            v13, v6
+  move                   v14, v7
+  invoke-direct/range    v8 ... v14, Lcom/adjust/sdk/network/UrlStrategy;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/util/List; Z)V
+  iput-object            v0, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->urlStrategy Lcom/adjust/sdk/network/UrlStrategy;
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getHttpsURLConnectionProvider()Lcom/adjust/sdk/network/UtilNetworking$IHttpsURLConnectionProvider;
+  move-result-object     v0
+  iput-object            v0, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->httpsURLConnectionProvider Lcom/adjust/sdk/network/UtilNetworking$IHttpsURLConnectionProvider;
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getConnectionOptions()Lcom/adjust/sdk/network/UtilNetworking$IConnectionOptions;
+  move-result-object     v0
+  iput-object            v0, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->connectionOptions Lcom/adjust/sdk/network/UtilNetworking$IConnectionOptions;
+  return-void            
+
+---- METHOD private configConnectionForGET((Ljavax/net/ssl/HttpsURLConnection;)Ljava/io/DataOutputStream;)  ----
+  const-string           v0, "GET"
+  invoke-virtual         v2, v0, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
+  const/4                v2, 0
+  return-object          v2
+
+---- METHOD private configConnectionForPOST((Ljavax/net/ssl/HttpsURLConnection; Ljava/util/Map; Ljava/util/Map; Ljava/util/Map;)Ljava/io/DataOutputStream;)  ----
+  const-string           v0, "POST"
+  invoke-virtual         v2, v0, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
+  const/4                v0, 0
+  invoke-virtual         v2, v0, Ljava/net/URLConnection;->setUseCaches(Z)V
+  const/4                v0, 1
+  invoke-virtual         v2, v0, Ljava/net/URLConnection;->setDoInput(Z)V
+  invoke-virtual         v2, v0, Ljava/net/URLConnection;->setDoOutput(Z)V
+  invoke-direct          v1, v3, v4, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->generatePOSTBodyString(Ljava/util/Map; Ljava/util/Map; Ljava/util/Map;)Ljava/lang/String;
+  move-result-object     v3
+  if-nez                 v3, +004h
+  const/4                v2, 0
+  return-object          v2
+  new-instance           v4, Ljava/io/DataOutputStream;
+  invoke-virtual         v2, Ljava/net/URLConnection;->getOutputStream()Ljava/io/OutputStream;
+  move-result-object     v2
+  invoke-direct          v4, v2, Ljava/io/DataOutputStream;-><init>(Ljava/io/OutputStream;)V
+  invoke-virtual         v4, v3, Ljava/io/DataOutputStream;->writeBytes(Ljava/lang/String;)V
+  return-object          v4
+
+---- METHOD private errorMessage((Ljava/lang/Throwable; Ljava/lang/String; Lcom/adjust/sdk/ActivityPackage;)Ljava/lang/String;)  ----
+  invoke-virtual         v3, Lcom/adjust/sdk/ActivityPackage;->getFailureMessage()Ljava/lang/String;
+  move-result-object     v3
+  invoke-static          v2, v1, Lcom/adjust/sdk/Util;->getReasonString(Ljava/lang/String; Ljava/lang/Throwable;)Ljava/lang/String;
+  move-result-object     v1
+  filled-new-array       v3, v1, [Ljava/lang/Object;
+  move-result-object     v1
+  const-string           v2, "%s. (%s)"
+  invoke-static          v2, v1, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v1
+  return-object          v1
+
+---- METHOD private static extractAuthorizationHeader((Ljava/util/Map;)Ljava/lang/String;)  ----
+  const-string           v0, "authorization"
+  invoke-interface       v1, v0, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v1
+  check-cast             v1, Ljava/lang/String;
+  return-object          v1
+
+---- METHOD private static extractTargetUrl((Ljava/util/Map; Lcom/adjust/sdk/ActivityKind; Lcom/adjust/sdk/network/UrlStrategy;)Ljava/lang/String;)  ----
+  const-string           v0, "endpoint"
+  invoke-interface       v1, v0, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v1
+  check-cast             v1, Ljava/lang/String;
+  if-eqz                 v1, +003h
+  return-object          v1
+  invoke-virtual         v3, v2, Lcom/adjust/sdk/network/UrlStrategy;->targetUrlByActivityKind(Lcom/adjust/sdk/ActivityKind;)Ljava/lang/String;
+  move-result-object     v1
+  return-object          v1
+
+---- METHOD private generatePOSTBodyString((Ljava/util/Map; Ljava/util/Map; Ljava/util/Map;)Ljava/lang/String;)  ----
+  new-instance           v0, Ljava/lang/StringBuilder;
+  invoke-direct          v0, Ljava/lang/StringBuilder;-><init>()V
+  if-eqz                 v5, +00ch
+  invoke-interface       v5, Ljava/util/Map;->isEmpty()Z
+  move-result            v1
+  if-nez                 v1, +006h
+  invoke-direct          v2, v5, v0, Lcom/adjust/sdk/network/ActivityPackageSender;->injectParametersToPOSTStringBuilder(Ljava/util/Map; Ljava/lang/StringBuilder;)V
+  goto                   +17h
+  if-eqz                 v3, +00bh
+  invoke-interface       v3, Ljava/util/Map;->isEmpty()Z
+  move-result            v5
+  if-nez                 v5, +005h
+  invoke-direct          v2, v3, v0, Lcom/adjust/sdk/network/ActivityPackageSender;->injectParametersToPOSTStringBuilder(Ljava/util/Map; Ljava/lang/StringBuilder;)V
+  if-eqz                 v4, +00bh
+  invoke-interface       v4, Ljava/util/Map;->isEmpty()Z
+  move-result            v3
+  if-nez                 v3, +005h
+  invoke-direct          v2, v4, v0, Lcom/adjust/sdk/network/ActivityPackageSender;->injectParametersToPOSTStringBuilder(Ljava/util/Map; Ljava/lang/StringBuilder;)V
+  invoke-virtual         v0, Ljava/lang/StringBuilder;->length()I
+  move-result            v3
+  if-lez                 v3, +019h
+  invoke-virtual         v0, Ljava/lang/StringBuilder;->length()I
+  move-result            v3
+  add-int/lit8           v3, v3, -1
+  invoke-virtual         v0, v3, Ljava/lang/StringBuilder;->charAt(I)C
+  move-result            v3
+  const/16               v4, 38
+  if-ne                  v3, v4, +00bh
+  invoke-virtual         v0, Ljava/lang/StringBuilder;->length()I
+  move-result            v3
+  add-int/lit8           v3, v3, -1
+  invoke-virtual         v0, v3, Ljava/lang/StringBuilder;->deleteCharAt(I)Ljava/lang/StringBuilder;
+  invoke-virtual         v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v3
+  return-object          v3
+
+---- METHOD private generateUrlStringForGET((Lcom/adjust/sdk/ActivityKind; Ljava/lang/String; Ljava/util/Map; Ljava/util/Map; Ljava/util/Map;)Ljava/lang/String;)  ----
+  iget-object            v0, v2, Lcom/adjust/sdk/network/ActivityPackageSender;->urlStrategy Lcom/adjust/sdk/network/UrlStrategy;
+  invoke-static          v7, v3, v0, Lcom/adjust/sdk/network/ActivityPackageSender;->extractTargetUrl(Ljava/util/Map; Lcom/adjust/sdk/ActivityKind; Lcom/adjust/sdk/network/UrlStrategy;)Ljava/lang/String;
+  move-result-object     v0
+  invoke-direct          v2, v3, v0, Lcom/adjust/sdk/network/ActivityPackageSender;->urlWithExtraPathByActivityKind(Lcom/adjust/sdk/ActivityKind; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v3
+  new-instance           v0, Ljava/net/URL;
+  invoke-direct          v0, v3, Ljava/net/URL;-><init>(Ljava/lang/String;)V
+  new-instance           v3, Landroid/net/Uri$Builder;
+  invoke-direct          v3, Landroid/net/Uri$Builder;-><init>()V
+  invoke-virtual         v0, Ljava/net/URL;->getProtocol()Ljava/lang/String;
+  move-result-object     v1
+  invoke-virtual         v3, v1, Landroid/net/Uri$Builder;->scheme(Ljava/lang/String;)Landroid/net/Uri$Builder;
+  invoke-virtual         v0, Ljava/net/URL;->getAuthority()Ljava/lang/String;
+  move-result-object     v1
+  invoke-virtual         v3, v1, Landroid/net/Uri$Builder;->encodedAuthority(Ljava/lang/String;)Landroid/net/Uri$Builder;
+  invoke-virtual         v0, Ljava/net/URL;->getPath()Ljava/lang/String;
+  move-result-object     v0
+  invoke-virtual         v3, v0, Landroid/net/Uri$Builder;->path(Ljava/lang/String;)Landroid/net/Uri$Builder;
+  invoke-virtual         v3, v4, Landroid/net/Uri$Builder;->appendPath(Ljava/lang/String;)Landroid/net/Uri$Builder;
+  iget-object            v4, v2, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
+  invoke-virtual         v3, Landroid/net/Uri$Builder;->toString()Ljava/lang/String;
+  move-result-object     v0
+  filled-new-array       v0, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v1, "Making request to url: %s"
+  invoke-interface       v4, v1, v0, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+  if-eqz                 v7, +02ch
+  invoke-interface       v7, Ljava/util/Map;->isEmpty()Z
+  move-result            v4
+  if-nez                 v4, +026h
+  invoke-interface       v7, Ljava/util/Map;->entrySet()Ljava/util/Set;
+  move-result-object     v4
+  invoke-interface       v4, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+  move-result-object     v4
+  invoke-interface       v4, Ljava/util/Iterator;->hasNext()Z
+  move-result            v5
+  if-eqz                 v5, +064h
+  invoke-interface       v4, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v5
+  check-cast             v5, Ljava/util/Map$Entry;
+  invoke-interface       v5, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+  move-result-object     v6
+  check-cast             v6, Ljava/lang/String;
+  invoke-interface       v5, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+  move-result-object     v5
+  check-cast             v5, Ljava/lang/String;
+  invoke-virtual         v3, v6, v5, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String; Ljava/lang/String;)Landroid/net/Uri$Builder;
+  goto                   -1bh
+  if-eqz                 v5, +026h
+  invoke-interface       v5, Ljava/util/Map;->entrySet()Ljava/util/Set;
+  move-result-object     v4
+  invoke-interface       v4, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+  move-result-object     v4
+  invoke-interface       v4, Ljava/util/Iterator;->hasNext()Z
+  move-result            v5
+  if-eqz                 v5, +018h
+  invoke-interface       v4, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v5
+  check-cast             v5, Ljava/util/Map$Entry;
+  invoke-interface       v5, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+  move-result-object     v7
+  check-cast             v7, Ljava/lang/String;
+  invoke-interface       v5, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+  move-result-object     v5
+  check-cast             v5, Ljava/lang/String;
+  invoke-virtual         v3, v7, v5, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String; Ljava/lang/String;)Landroid/net/Uri$Builder;
+  goto                   -1bh
+  if-eqz                 v6, +026h
+  invoke-interface       v6, Ljava/util/Map;->entrySet()Ljava/util/Set;
+  move-result-object     v4
+  invoke-interface       v4, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+  move-result-object     v4
+  invoke-interface       v4, Ljava/util/Iterator;->hasNext()Z
+  move-result            v5
+  if-eqz                 v5, +018h
+  invoke-interface       v4, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v5
+  check-cast             v5, Ljava/util/Map$Entry;
+  invoke-interface       v5, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+  move-result-object     v6
+  check-cast             v6, Ljava/lang/String;
+  invoke-interface       v5, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+  move-result-object     v5
+  check-cast             v5, Ljava/lang/String;
+  invoke-virtual         v3, v6, v5, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String; Ljava/lang/String;)Landroid/net/Uri$Builder;
+  goto                   -1bh
+  invoke-virtual         v3, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
+  move-result-object     v3
+  invoke-virtual         v3, Landroid/net/Uri;->toString()Ljava/lang/String;
+  move-result-object     v3
+  return-object          v3
+
+---- METHOD private generateUrlStringForPOST((Lcom/adjust/sdk/ActivityKind; Ljava/lang/String; Ljava/util/Map;)Ljava/lang/String;)  ----
+  iget-object            v0, v1, Lcom/adjust/sdk/network/ActivityPackageSender;->urlStrategy Lcom/adjust/sdk/network/UrlStrategy;
+  invoke-static          v4, v2, v0, Lcom/adjust/sdk/network/ActivityPackageSender;->extractTargetUrl(Ljava/util/Map; Lcom/adjust/sdk/ActivityKind; Lcom/adjust/sdk/network/UrlStrategy;)Ljava/lang/String;
+  move-result-object     v4
+  invoke-direct          v1, v2, v4, Lcom/adjust/sdk/network/ActivityPackageSender;->urlWithExtraPathByActivityKind(Lcom/adjust/sdk/ActivityKind; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v2
+  filled-new-array       v2, v3, [Ljava/lang/Object;
+  move-result-object     v2
+  const-string           v3, "%s%s"
+  invoke-static          v3, v2, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v2
+  iget-object            v3, v1, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
+  filled-new-array       v2, [Ljava/lang/Object;
+  move-result-object     v4
+  const-string           v0, "Making request to url : %s"
+  invoke-interface       v3, v0, v4, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-object          v2
+
+---- METHOD private injectParametersToPOSTStringBuilder((Ljava/util/Map; Ljava/lang/StringBuilder;)V)  ----
+  if-eqz                 v5, +040h
+  invoke-interface       v5, Ljava/util/Map;->isEmpty()Z
+  move-result            v0
+  if-eqz                 v0, +003h
+  goto                   +38h
+  invoke-interface       v5, Ljava/util/Map;->entrySet()Ljava/util/Set;
+  move-result-object     v5
+  invoke-interface       v5, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+  move-result-object     v5
+  invoke-interface       v5, Ljava/util/Iterator;->hasNext()Z
+  move-result            v0
+  if-eqz                 v0, +02bh
+  invoke-interface       v5, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/util/Map$Entry;
+  invoke-interface       v0, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+  move-result-object     v1
+  check-cast             v1, Ljava/lang/String;
+  const-string           v2, "UTF-8"
+  invoke-static          v1, v2, Ljava/net/URLEncoder;->encode(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v1
+  invoke-interface       v0, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  if-eqz                 v0, +007h
+  invoke-static          v0, v2, Ljava/net/URLEncoder;->encode(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v0
+  goto                   +3h
+  const-string           v0, ""
+  const-string           v2, "="
+  const-string           v3, "&"
+  invoke-static          v6, v1, v2, v0, v3, Lco/hyperverge/encoder/a;->y(Ljava/lang/StringBuilder; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V
+  goto                   -2eh
+  return-void            
+
+---- METHOD private localError((Ljava/lang/Throwable; Ljava/lang/String; Lcom/adjust/sdk/ResponseData; I)V)  ----
+  iget-object            v0, v5, Lcom/adjust/sdk/ResponseData;->activityPackage Lcom/adjust/sdk/ActivityPackage;
+  invoke-direct          v2, v3, v4, v0, Lcom/adjust/sdk/network/ActivityPackageSender;->errorMessage(Ljava/lang/Throwable; Ljava/lang/String; Lcom/adjust/sdk/ActivityPackage;)Ljava/lang/String;
+  move-result-object     v3
+  iget-object            v4, v2, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
+  const/4                v0, 0
+  new-array              v1, v0, [Ljava/lang/Object;
+  invoke-interface       v4, v3, v1, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  iput-object            v3, v5, Lcom/adjust/sdk/ResponseData;->message Ljava/lang/String;
+  iput-boolean           v0, v5, Lcom/adjust/sdk/ResponseData;->willRetry Z
+  iget-object            v3, v5, Lcom/adjust/sdk/ResponseData;->activityPackage Lcom/adjust/sdk/ActivityPackage;
+  invoke-virtual         v3, v6, Lcom/adjust/sdk/ActivityPackage;->addError(I)V
+  return-void            
+
+---- METHOD private parseResponse((Lcom/adjust/sdk/ResponseData; Ljava/lang/String;)V)  ----
+  invoke-virtual         v5, Ljava/lang/String;->length()I
+  move-result            v0
+  const/4                v1, 0
+  if-nez                 v0, +00ch
+  iget-object            v4, v3, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v5, v1, [Ljava/lang/Object;
+  const-string           v0, "Empty response string"
+  invoke-interface       v4, v0, v5, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  new-instance           v0, Lorg/json/JSONObject;
+  invoke-direct          v0, v5, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+  goto                   +12h
+  move-exception         v5
+  iget-object            v0, v4, Lcom/adjust/sdk/ResponseData;->activityPackage Lcom/adjust/sdk/ActivityPackage;
+  const-string           v2, "Failed to parse JSON response"
+  invoke-direct          v3, v5, v2, v0, Lcom/adjust/sdk/network/ActivityPackageSender;->errorMessage(Ljava/lang/Throwable; Ljava/lang/String; Lcom/adjust/sdk/ActivityPackage;)Ljava/lang/String;
+  move-result-object     v5
+  iget-object            v0, v3, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v1, v1, [Ljava/lang/Object;
+  invoke-interface       v0, v5, v1, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  const/4                v0, 0
+  if-nez                 v0, +003h
+  return-void            
+  iput-object            v0, v4, Lcom/adjust/sdk/ResponseData;->jsonResponse Lorg/json/JSONObject;
+  const-string           v5, "message"
+  invoke-static          v0, v5, Lcom/adjust/sdk/network/UtilNetworking;->extractJsonString(Lorg/json/JSONObject; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v5
+  iput-object            v5, v4, Lcom/adjust/sdk/ResponseData;->message Ljava/lang/String;
+  const-string           v5, "adid"
+  invoke-static          v0, v5, Lcom/adjust/sdk/network/UtilNetworking;->extractJsonString(Lorg/json/JSONObject; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v5
+  iput-object            v5, v4, Lcom/adjust/sdk/ResponseData;->adid Ljava/lang/String;
+  const-string/jumbo     v5, timestamp
+  invoke-static          v0, v5, Lcom/adjust/sdk/network/UtilNetworking;->extractJsonString(Lorg/json/JSONObject; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v5
+  iput-object            v5, v4, Lcom/adjust/sdk/ResponseData;->timestamp Ljava/lang/String;
+  const-string/jumbo     v5, tracking_state
+  invoke-static          v0, v5, Lcom/adjust/sdk/network/UtilNetworking;->extractJsonString(Lorg/json/JSONObject; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v5
+  if-eqz                 v5, +00eh
+  const-string           v1, "opted_out"
+  invoke-virtual         v5, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v5
+  if-eqz                 v5, +006h
+  sget-object            v5, Lcom/adjust/sdk/TrackingState;->OPTED_OUT Lcom/adjust/sdk/TrackingState;
+  iput-object            v5, v4, Lcom/adjust/sdk/ResponseData;->trackingState Lcom/adjust/sdk/TrackingState;
+  const-string           v5, "ask_in"
+  invoke-static          v0, v5, Lcom/adjust/sdk/network/UtilNetworking;->extractJsonLong(Lorg/json/JSONObject; Ljava/lang/String;)Ljava/lang/Long;
+  move-result-object     v5
+  iput-object            v5, v4, Lcom/adjust/sdk/ResponseData;->askIn Ljava/lang/Long;
+  const-string/jumbo     v5, retry_in
+  invoke-static          v0, v5, Lcom/adjust/sdk/network/UtilNetworking;->extractJsonLong(Lorg/json/JSONObject; Ljava/lang/String;)Ljava/lang/Long;
+  move-result-object     v5
+  iput-object            v5, v4, Lcom/adjust/sdk/ResponseData;->retryIn Ljava/lang/Long;
+  const-string           v5, "continue_in"
+  invoke-static          v0, v5, Lcom/adjust/sdk/network/UtilNetworking;->extractJsonLong(Lorg/json/JSONObject; Ljava/lang/String;)Ljava/lang/Long;
+  move-result-object     v5
+  iput-object            v5, v4, Lcom/adjust/sdk/ResponseData;->continueIn Ljava/lang/Long;
+  const-string           v5, "attribution"
+  invoke-virtual         v0, v5, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+  move-result-object     v5
+  iget-object            v1, v3, Lcom/adjust/sdk/network/ActivityPackageSender;->clientSdk Ljava/lang/String;
+  invoke-static          v1, Lcom/adjust/sdk/Util;->getSdkPrefixPlatform(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v1
+  invoke-static          v5, v1, Lcom/adjust/sdk/Util;->attributionFromJson(Lorg/json/JSONObject; Ljava/lang/String;)Lcom/adjust/sdk/AdjustAttribution;
+  move-result-object     v5
+  iput-object            v5, v4, Lcom/adjust/sdk/ResponseData;->attribution Lcom/adjust/sdk/AdjustAttribution;
+  const-string/jumbo     v5, resolved_click_url
+  invoke-static          v0, v5, Lcom/adjust/sdk/network/UtilNetworking;->extractJsonString(Lorg/json/JSONObject; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v5
+  iput-object            v5, v4, Lcom/adjust/sdk/ResponseData;->resolvedDeeplink Ljava/lang/String;
+  const-string           v5, "control_params"
+  invoke-virtual         v0, v5, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+  move-result-object     v5
+  iput-object            v5, v4, Lcom/adjust/sdk/ResponseData;->controlParams Lorg/json/JSONObject;
+  return-void            
+
+---- METHOD private remoteError((Ljava/lang/Throwable; Ljava/lang/String; Lcom/adjust/sdk/ResponseData; Ljava/lang/Integer;)V)  ----
+  new-instance           v0, Ljava/lang/StringBuilder;
+  invoke-direct          v0, Ljava/lang/StringBuilder;-><init>()V
+  iget-object            v1, v5, Lcom/adjust/sdk/ResponseData;->activityPackage Lcom/adjust/sdk/ActivityPackage;
+  invoke-direct          v2, v3, v4, v1, Lcom/adjust/sdk/network/ActivityPackageSender;->errorMessage(Ljava/lang/Throwable; Ljava/lang/String; Lcom/adjust/sdk/ActivityPackage;)Ljava/lang/String;
+  move-result-object     v3
+  const-string           v4, " Will retry later"
+  invoke-static          v0, v3, v4, LB2/a;->r(Ljava/lang/StringBuilder; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v3
+  iget-object            v4, v2, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
+  const/4                v0, 0
+  new-array              v0, v0, [Ljava/lang/Object;
+  invoke-interface       v4, v3, v0, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  iput-object            v3, v5, Lcom/adjust/sdk/ResponseData;->message Ljava/lang/String;
+  const/4                v3, 1
+  iput-boolean           v3, v5, Lcom/adjust/sdk/ResponseData;->willRetry Z
+  iget-object            v3, v5, Lcom/adjust/sdk/ResponseData;->activityPackage Lcom/adjust/sdk/ActivityPackage;
+  invoke-virtual         v6, Ljava/lang/Integer;->intValue()I
+  move-result            v4
+  invoke-virtual         v3, v4, Lcom/adjust/sdk/ActivityPackage;->addError(I)V
+  return-void            
+
+---- METHOD private shouldRetryToSendWithUrlStrategy((Lcom/adjust/sdk/ResponseData;)Z)  ----
+  iget-object            v0, v4, Lcom/adjust/sdk/ResponseData;->jsonResponse Lorg/json/JSONObject;
+  const/4                v1, 0
+  if-eqz                 v0, +011h
+  iget-object            v4, v3, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v0, v1, [Ljava/lang/Object;
+  const-string           v2, "Will not retry with current url strategy, already got a valid json response"
+  invoke-interface       v4, v2, v0, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+  iget-object            v4, v3, Lcom/adjust/sdk/network/ActivityPackageSender;->urlStrategy Lcom/adjust/sdk/network/UrlStrategy;
+  invoke-virtual         v4, Lcom/adjust/sdk/network/UrlStrategy;->resetAfterSuccess()V
+  return                 v1
+  iget-object            v0, v3, Lcom/adjust/sdk/network/ActivityPackageSender;->urlStrategy Lcom/adjust/sdk/network/UrlStrategy;
+  iget-object            v4, v4, Lcom/adjust/sdk/ResponseData;->activityKind Lcom/adjust/sdk/ActivityKind;
+  invoke-virtual         v0, v4, Lcom/adjust/sdk/network/UrlStrategy;->shouldRetryAfterFailure(Lcom/adjust/sdk/ActivityKind;)Z
+  move-result            v4
+  iget-object            v0, v3, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
+  if-eqz                 v4, +00bh
+  new-array              v4, v1, [Ljava/lang/Object;
+  const-string           v1, "Failed with current url strategy, but it will retry with new"
+  invoke-interface       v0, v1, v4, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  const/4                v4, 1
+  return                 v4
+  new-array              v4, v1, [Ljava/lang/Object;
+  const-string           v2, "Failed with current url strategy and it will not retry"
+  invoke-interface       v0, v2, v4, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v1
+
+---- METHOD private signParameters((Lcom/adjust/sdk/ActivityPackage; Ljava/util/Map;)Ljava/util/Map;)  ----
+  new-instance           v0, Ljava/util/HashMap;
+  invoke-virtual         v6, Lcom/adjust/sdk/ActivityPackage;->getParameters()Ljava/util/Map;
+  move-result-object     v1
+  invoke-direct          v0, v1, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
+  if-eqz                 v7, +005h
+  invoke-virtual         v0, v7, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
+  new-instance           v7, Ljava/util/HashMap;
+  invoke-direct          v7, Ljava/util/HashMap;-><init>()V
+  invoke-virtual         v6, Lcom/adjust/sdk/ActivityPackage;->getClientSdk()Ljava/lang/String;
+  move-result-object     v1
+  const-string           v2, "client_sdk"
+  invoke-virtual         v7, v2, v1, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  invoke-virtual         v6, Lcom/adjust/sdk/ActivityPackage;->getActivityKind()Lcom/adjust/sdk/ActivityKind;
+  move-result-object     v1
+  invoke-virtual         v1, Lcom/adjust/sdk/ActivityKind;->toString()Ljava/lang/String;
+  move-result-object     v1
+  const-string           v2, "activity_kind"
+  invoke-virtual         v7, v2, v1, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  iget-object            v1, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->urlStrategy Lcom/adjust/sdk/network/UrlStrategy;
+  invoke-virtual         v6, Lcom/adjust/sdk/ActivityPackage;->getActivityKind()Lcom/adjust/sdk/ActivityKind;
+  move-result-object     v6
+  invoke-virtual         v1, v6, Lcom/adjust/sdk/network/UrlStrategy;->targetUrlByActivityKind(Lcom/adjust/sdk/ActivityKind;)Ljava/lang/String;
+  move-result-object     v6
+  const-string           v1, "endpoint"
+  invoke-virtual         v7, v1, v6, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  iget-object            v6, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->context Landroid/content/Context;
+  invoke-static          v6, Lcom/adjust/sdk/SharedPreferencesManager;->getDefaultInstance(Landroid/content/Context;)Lcom/adjust/sdk/SharedPreferencesManager;
+  move-result-object     v6
+  invoke-virtual         v6, Lcom/adjust/sdk/SharedPreferencesManager;->getControlParamsJson()Lorg/json/JSONObject;
+  move-result-object     v6
+  if-eqz                 v6, +02fh
+  invoke-virtual         v6, Lorg/json/JSONObject;->keys()Ljava/util/Iterator;
+  move-result-object     v1
+  invoke-interface       v1, Ljava/util/Iterator;->hasNext()Z
+  move-result            v2
+  if-eqz                 v2, +025h
+  invoke-interface       v1, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  invoke-virtual         v6, v2, Lorg/json/JSONObject;->get(Ljava/lang/String;)Ljava/lang/Object;
+  move-result-object     v3
+  instance-of            v3, v3, Ljava/lang/String;
+  if-eqz                 v3, -012h
+  invoke-virtual         v6, v2, Lorg/json/JSONObject;->get(Ljava/lang/String;)Ljava/lang/Object;
+  move-result-object     v3
+  check-cast             v3, Ljava/lang/String;
+  invoke-virtual         v7, v2, v3, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  goto                   -1dh
+  iget-object            v2, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
+  const/4                v3, 0
+  new-array              v3, v3, [Ljava/lang/Object;
+  const-string           v4, "JSONException while iterating control params"
+  invoke-interface       v2, v4, v3, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  goto                   -28h
+  iget-object            v6, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->context Landroid/content/Context;
+  iget-object            v1, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
+  invoke-static          v0, v7, v6, v1, Lcom/adjust/sdk/AdjustSigner;->sign(Ljava/util/Map; Ljava/util/Map; Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Ljava/util/Map;
+  move-result-object     v6
+  return-object          v6
+
+---- METHOD private tryToGetResponse((Lcom/adjust/sdk/ResponseData;)V)  ----
+  const-string           v0, "Flushing and closing connection output stream"
+  const/4                v1, 0
+  const/4                v2, 0
+  iget-object            v3, v14, Lcom/adjust/sdk/ResponseData;->signedParameters Ljava/util/Map;
+  invoke-static          v3, Lcom/adjust/sdk/network/ActivityPackageSender;->extractAuthorizationHeader(Ljava/util/Map;)Ljava/lang/String;
+  move-result-object     v3
+  iget-object            v4, v13, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
+  const-string           v5, "authorizationHeader: %s"
+  filled-new-array       v3, [Ljava/lang/Object;
+  move-result-object     v6
+  invoke-interface       v4, v5, v6, Lcom/adjust/sdk/ILogger;->verbose(Ljava/lang/String; [Ljava/lang/Object;)V
+  iget-object            v4, v14, Lcom/adjust/sdk/ResponseData;->activityPackage Lcom/adjust/sdk/ActivityPackage;
+  invoke-virtual         v4, Lcom/adjust/sdk/ActivityPackage;->getActivityKind()Lcom/adjust/sdk/ActivityKind;
+  move-result-object     v4
+  sget-object            v5, Lcom/adjust/sdk/ActivityKind;->ATTRIBUTION Lcom/adjust/sdk/ActivityKind;
+  const/4                v6, 1
+  if-ne                  v4, v5, +004h
+  move                   v4, v6
+  goto                   +2h
+  move                   v4, v1
+  iget-object            v5, v14, Lcom/adjust/sdk/ResponseData;->activityPackage Lcom/adjust/sdk/ActivityPackage;
+  if-eqz                 v4, +031h
+  invoke-virtual         v5, Lcom/adjust/sdk/ActivityPackage;->getActivityKind()Lcom/adjust/sdk/ActivityKind;
+  move-result-object     v8
+  iget-object            v5, v14, Lcom/adjust/sdk/ResponseData;->activityPackage Lcom/adjust/sdk/ActivityPackage;
+  invoke-virtual         v5, Lcom/adjust/sdk/ActivityPackage;->getPath()Ljava/lang/String;
+  move-result-object     v9
+  iget-object            v5, v14, Lcom/adjust/sdk/ResponseData;->activityPackage Lcom/adjust/sdk/ActivityPackage;
+  invoke-virtual         v5, Lcom/adjust/sdk/ActivityPackage;->getParameters()Ljava/util/Map;
+  move-result-object     v10
+  iget-object            v11, v14, Lcom/adjust/sdk/ResponseData;->sendingParameters Ljava/util/Map;
+  iget-object            v12, v14, Lcom/adjust/sdk/ResponseData;->signedParameters Ljava/util/Map;
+  move-object            v7, v13
+  invoke-direct/range    v7 ... v12, Lcom/adjust/sdk/network/ActivityPackageSender;->generateUrlStringForGET(Lcom/adjust/sdk/ActivityKind; Ljava/lang/String; Ljava/util/Map; Ljava/util/Map; Ljava/util/Map;)Ljava/lang/String;
+  move-result-object     v5
+  goto                   +26h
+  move-exception         v3
+  goto/16                +0a9h
+  move-exception         v3
+  goto/16                +0cah
+  move-exception         v3
+  goto/16                +0ech
+  move-exception         v3
+  goto/16                +10eh
+  move-exception         v3
+  goto/16                +12eh
+  move-exception         v3
+  goto/16                +14ah
+  move-exception         v3
+  goto/16                +166h
+  invoke-virtual         v5, Lcom/adjust/sdk/ActivityPackage;->getActivityKind()Lcom/adjust/sdk/ActivityKind;
+  move-result-object     v5
+  iget-object            v7, v14, Lcom/adjust/sdk/ResponseData;->activityPackage Lcom/adjust/sdk/ActivityPackage;
+  invoke-virtual         v7, Lcom/adjust/sdk/ActivityPackage;->getPath()Ljava/lang/String;
+  move-result-object     v7
+  iget-object            v8, v14, Lcom/adjust/sdk/ResponseData;->signedParameters Ljava/util/Map;
+  invoke-direct          v13, v5, v7, v8, Lcom/adjust/sdk/network/ActivityPackageSender;->generateUrlStringForPOST(Lcom/adjust/sdk/ActivityKind; Ljava/lang/String; Ljava/util/Map;)Ljava/lang/String;
+  move-result-object     v5
+  new-instance           v7, Ljava/net/URL;
+  invoke-direct          v7, v5, Ljava/net/URL;-><init>(Ljava/lang/String;)V
+  iget-object            v5, v13, Lcom/adjust/sdk/network/ActivityPackageSender;->httpsURLConnectionProvider Lcom/adjust/sdk/network/UtilNetworking$IHttpsURLConnectionProvider;
+  invoke-interface       v5, v7, Lcom/adjust/sdk/network/UtilNetworking$IHttpsURLConnectionProvider;->generateHttpsURLConnection(Ljava/net/URL;)Ljavax/net/ssl/HttpsURLConnection;
+  move-result-object     v5
+  iget-object            v7, v13, Lcom/adjust/sdk/network/ActivityPackageSender;->connectionOptions Lcom/adjust/sdk/network/UtilNetworking$IConnectionOptions;
+  iget-object            v8, v13, Lcom/adjust/sdk/network/ActivityPackageSender;->clientSdk Ljava/lang/String;
+  iget                   v9, v13, Lcom/adjust/sdk/network/ActivityPackageSender;->connectionTimeout I
+  invoke-interface       v7, v5, v8, v9, Lcom/adjust/sdk/network/UtilNetworking$IConnectionOptions;->applyConnectionOptions(Ljavax/net/ssl/HttpsURLConnection; Ljava/lang/String; I)V
+  if-eqz                 v3, +007h
+  const-string           v7, "Authorization"
+  invoke-virtual         v5, v7, v3, Ljava/net/URLConnection;->setRequestProperty(Ljava/lang/String; Ljava/lang/String;)V
+  if-eqz                 v4, +007h
+  invoke-direct          v13, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->configConnectionForGET(Ljavax/net/ssl/HttpsURLConnection;)Ljava/io/DataOutputStream;
+  move-result-object     v2
+  goto                   +fh
+  iget-object            v3, v14, Lcom/adjust/sdk/ResponseData;->activityPackage Lcom/adjust/sdk/ActivityPackage;
+  invoke-virtual         v3, Lcom/adjust/sdk/ActivityPackage;->getParameters()Ljava/util/Map;
+  move-result-object     v3
+  iget-object            v4, v14, Lcom/adjust/sdk/ResponseData;->sendingParameters Ljava/util/Map;
+  iget-object            v7, v14, Lcom/adjust/sdk/ResponseData;->signedParameters Ljava/util/Map;
+  invoke-direct          v13, v5, v3, v4, v7, Lcom/adjust/sdk/network/ActivityPackageSender;->configConnectionForPOST(Ljavax/net/ssl/HttpsURLConnection; Ljava/util/Map; Ljava/util/Map; Ljava/util/Map;)Ljava/io/DataOutputStream;
+  move-result-object     v2
+  invoke-virtual         v13, v5, v14, Lcom/adjust/sdk/network/ActivityPackageSender;->readConnectionResponse(Ljavax/net/ssl/HttpsURLConnection; Lcom/adjust/sdk/ResponseData;)Ljava/lang/Integer;
+  move-result-object     v3
+  iget-object            v4, v14, Lcom/adjust/sdk/ResponseData;->jsonResponse Lorg/json/JSONObject;
+  if-eqz                 v4, +012h
+  iget-object            v4, v14, Lcom/adjust/sdk/ResponseData;->retryIn Ljava/lang/Long;
+  if-nez                 v4, +00eh
+  if-eqz                 v3, +00ch
+  invoke-virtual         v3, Ljava/lang/Integer;->intValue()I
+  move-result            v3
+  const/16               v4, 200
+  if-ne                  v3, v4, +004h
+  move                   v3, v6
+  goto                   +2h
+  move                   v3, v1
+  iput-boolean           v3, v14, Lcom/adjust/sdk/ResponseData;->success Z
+  iget-object            v3, v14, Lcom/adjust/sdk/ResponseData;->jsonResponse Lorg/json/JSONObject;
+  if-eqz                 v3, +008h
+  iget-object            v4, v14, Lcom/adjust/sdk/ResponseData;->retryIn Ljava/lang/Long;
+  if-eqz                 v4, +003h
+  goto                   +2h
+  move                   v6, v1
+  iput-boolean           v6, v14, Lcom/adjust/sdk/ResponseData;->willRetry Z
+  if-nez                 v3, +00ah
+  iget-object            v3, v14, Lcom/adjust/sdk/ResponseData;->activityPackage Lcom/adjust/sdk/ActivityPackage;
+  const/16               v4, 1000
+  invoke-virtual         v3, v4, Lcom/adjust/sdk/ActivityPackage;->addError(I)V
+  goto                   +ch
+  iget-object            v3, v14, Lcom/adjust/sdk/ResponseData;->retryIn Ljava/lang/Long;
+  if-eqz                 v3, +009h
+  iget-object            v3, v14, Lcom/adjust/sdk/ResponseData;->activityPackage Lcom/adjust/sdk/ActivityPackage;
+  const/16               v4, 1001
+  invoke-virtual         v3, v4, Lcom/adjust/sdk/ActivityPackage;->addError(I)V
+  if-eqz                 v2, +106h
+  invoke-virtual         v2, Ljava/io/DataOutputStream;->flush()V
+  invoke-virtual         v2, Ljava/io/OutputStream;->close()V
+  return-void            
+  move-exception         v2
+  iget-object            v14, v14, Lcom/adjust/sdk/ResponseData;->activityPackage Lcom/adjust/sdk/ActivityPackage;
+  invoke-direct          v13, v2, v0, v14, Lcom/adjust/sdk/network/ActivityPackageSender;->errorMessage(Ljava/lang/Throwable; Ljava/lang/String; Lcom/adjust/sdk/ActivityPackage;)Ljava/lang/String;
+  move-result-object     v14
+  iget-object            v0, v13, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v1, v1, [Ljava/lang/Object;
+  invoke-interface       v0, v14, v1, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  goto/16                +0efh
+  const-string           v4, "Sending SDK package"
+  const/16               v5, 1100
+  invoke-direct          v13, v3, v4, v14, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->localError(Ljava/lang/Throwable; Ljava/lang/String; Lcom/adjust/sdk/ResponseData; I)V
+  if-eqz                 v2, +0e6h
+  invoke-virtual         v2, Ljava/io/DataOutputStream;->flush()V
+  invoke-virtual         v2, Ljava/io/OutputStream;->close()V
+  goto/16                +0deh
+  move-exception         v2
+  iget-object            v14, v14, Lcom/adjust/sdk/ResponseData;->activityPackage Lcom/adjust/sdk/ActivityPackage;
+  invoke-direct          v13, v2, v0, v14, Lcom/adjust/sdk/network/ActivityPackageSender;->errorMessage(Ljava/lang/Throwable; Ljava/lang/String; Lcom/adjust/sdk/ActivityPackage;)Ljava/lang/String;
+  move-result-object     v14
+  iget-object            v0, v13, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v1, v1, [Ljava/lang/Object;
+  invoke-interface       v0, v14, v1, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  goto/16                +0ceh
+  move-exception         v3
+  goto/16                +0cch
+  const-string           v4, "Request failed"
+  const/16               v5, 1007
+  invoke-static          v5, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v5
+  invoke-direct          v13, v3, v4, v14, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->remoteError(Ljava/lang/Throwable; Ljava/lang/String; Lcom/adjust/sdk/ResponseData; Ljava/lang/Integer;)V
+  if-eqz                 v2, +0beh
+  invoke-virtual         v2, Ljava/io/DataOutputStream;->flush()V
+  invoke-virtual         v2, Ljava/io/OutputStream;->close()V
+  goto/16                +0b6h
+  move-exception         v2
+  iget-object            v14, v14, Lcom/adjust/sdk/ResponseData;->activityPackage Lcom/adjust/sdk/ActivityPackage;
+  invoke-direct          v13, v2, v0, v14, Lcom/adjust/sdk/network/ActivityPackageSender;->errorMessage(Ljava/lang/Throwable; Ljava/lang/String; Lcom/adjust/sdk/ActivityPackage;)Ljava/lang/String;
+  move-result-object     v14
+  iget-object            v0, v13, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v1, v1, [Ljava/lang/Object;
+  invoke-interface       v0, v14, v1, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  goto/16                +0a6h
+  const-string           v4, "Certificate failed"
+  const/16               v5, 1006
+  invoke-static          v5, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v5
+  invoke-direct          v13, v3, v4, v14, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->remoteError(Ljava/lang/Throwable; Ljava/lang/String; Lcom/adjust/sdk/ResponseData; Ljava/lang/Integer;)V
+  if-eqz                 v2, +099h
+  invoke-virtual         v2, Ljava/io/DataOutputStream;->flush()V
+  invoke-virtual         v2, Ljava/io/OutputStream;->close()V
+  goto/16                +091h
+  move-exception         v2
+  iget-object            v14, v14, Lcom/adjust/sdk/ResponseData;->activityPackage Lcom/adjust/sdk/ActivityPackage;
+  invoke-direct          v13, v2, v0, v14, Lcom/adjust/sdk/network/ActivityPackageSender;->errorMessage(Ljava/lang/Throwable; Ljava/lang/String; Lcom/adjust/sdk/ActivityPackage;)Ljava/lang/String;
+  move-result-object     v14
+  iget-object            v0, v13, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v1, v1, [Ljava/lang/Object;
+  invoke-interface       v0, v14, v1, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  goto/16                +081h
+  const-string           v4, "Request timed out"
+  const/16               v5, 1005
+  invoke-static          v5, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v5
+  invoke-direct          v13, v3, v4, v14, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->remoteError(Ljava/lang/Throwable; Ljava/lang/String; Lcom/adjust/sdk/ResponseData; Ljava/lang/Integer;)V
+  if-eqz                 v2, +074h
+  invoke-virtual         v2, Ljava/io/DataOutputStream;->flush()V
+  invoke-virtual         v2, Ljava/io/OutputStream;->close()V
+  goto                   +6ch
+  move-exception         v2
+  iget-object            v14, v14, Lcom/adjust/sdk/ResponseData;->activityPackage Lcom/adjust/sdk/ActivityPackage;
+  invoke-direct          v13, v2, v0, v14, Lcom/adjust/sdk/network/ActivityPackageSender;->errorMessage(Ljava/lang/Throwable; Ljava/lang/String; Lcom/adjust/sdk/ActivityPackage;)Ljava/lang/String;
+  move-result-object     v14
+  iget-object            v0, v13, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v1, v1, [Ljava/lang/Object;
+  invoke-interface       v0, v14, v1, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  goto                   +5dh
+  const-string           v4, "Protocol Error"
+  const/16               v5, 1004
+  invoke-direct          v13, v3, v4, v14, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->localError(Ljava/lang/Throwable; Ljava/lang/String; Lcom/adjust/sdk/ResponseData; I)V
+  if-eqz                 v2, +055h
+  invoke-virtual         v2, Ljava/io/DataOutputStream;->flush()V
+  invoke-virtual         v2, Ljava/io/OutputStream;->close()V
+  goto                   +4dh
+  move-exception         v2
+  iget-object            v14, v14, Lcom/adjust/sdk/ResponseData;->activityPackage Lcom/adjust/sdk/ActivityPackage;
+  invoke-direct          v13, v2, v0, v14, Lcom/adjust/sdk/network/ActivityPackageSender;->errorMessage(Ljava/lang/Throwable; Ljava/lang/String; Lcom/adjust/sdk/ActivityPackage;)Ljava/lang/String;
+  move-result-object     v14
+  iget-object            v0, v13, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v1, v1, [Ljava/lang/Object;
+  invoke-interface       v0, v14, v1, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  goto                   +3eh
+  const-string           v4, "Malformed URL"
+  const/16               v5, 1003
+  invoke-direct          v13, v3, v4, v14, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->localError(Ljava/lang/Throwable; Ljava/lang/String; Lcom/adjust/sdk/ResponseData; I)V
+  if-eqz                 v2, +036h
+  invoke-virtual         v2, Ljava/io/DataOutputStream;->flush()V
+  invoke-virtual         v2, Ljava/io/OutputStream;->close()V
+  goto                   +2eh
+  move-exception         v2
+  iget-object            v14, v14, Lcom/adjust/sdk/ResponseData;->activityPackage Lcom/adjust/sdk/ActivityPackage;
+  invoke-direct          v13, v2, v0, v14, Lcom/adjust/sdk/network/ActivityPackageSender;->errorMessage(Ljava/lang/Throwable; Ljava/lang/String; Lcom/adjust/sdk/ActivityPackage;)Ljava/lang/String;
+  move-result-object     v14
+  iget-object            v0, v13, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v1, v1, [Ljava/lang/Object;
+  invoke-interface       v0, v14, v1, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  goto                   +1fh
+  const-string           v4, "Failed to encode parameters"
+  const/16               v5, 1002
+  invoke-direct          v13, v3, v4, v14, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->localError(Ljava/lang/Throwable; Ljava/lang/String; Lcom/adjust/sdk/ResponseData; I)V
+  if-eqz                 v2, +017h
+  invoke-virtual         v2, Ljava/io/DataOutputStream;->flush()V
+  invoke-virtual         v2, Ljava/io/OutputStream;->close()V
+  goto                   +fh
+  move-exception         v2
+  iget-object            v14, v14, Lcom/adjust/sdk/ResponseData;->activityPackage Lcom/adjust/sdk/ActivityPackage;
+  invoke-direct          v13, v2, v0, v14, Lcom/adjust/sdk/network/ActivityPackageSender;->errorMessage(Ljava/lang/Throwable; Ljava/lang/String; Lcom/adjust/sdk/ActivityPackage;)Ljava/lang/String;
+  move-result-object     v14
+  iget-object            v0, v13, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v1, v1, [Ljava/lang/Object;
+  invoke-interface       v0, v14, v1, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  if-eqz                 v2, +017h
+  invoke-virtual         v2, Ljava/io/DataOutputStream;->flush()V
+  invoke-virtual         v2, Ljava/io/OutputStream;->close()V
+  goto                   +fh
+  move-exception         v2
+  iget-object            v14, v14, Lcom/adjust/sdk/ResponseData;->activityPackage Lcom/adjust/sdk/ActivityPackage;
+  invoke-direct          v13, v2, v0, v14, Lcom/adjust/sdk/network/ActivityPackageSender;->errorMessage(Ljava/lang/Throwable; Ljava/lang/String; Lcom/adjust/sdk/ActivityPackage;)Ljava/lang/String;
+  move-result-object     v14
+  iget-object            v0, v13, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v1, v1, [Ljava/lang/Object;
+  invoke-interface       v0, v14, v1, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  throw                  v3
+
+---- METHOD private updateSendingParameters((Ljava/util/Map;)Ljava/util/Map;)  ----
+  if-nez                 v4, +007h
+  new-instance           v4, Ljava/util/HashMap;
+  invoke-direct          v4, Ljava/util/HashMap;-><init>()V
+  invoke-static          Ljava/lang/System;->currentTimeMillis()J
+  move-result-wide       v0
+  sget-object            v2, Lcom/adjust/sdk/Util;->dateFormatter Ljava/text/SimpleDateFormat;
+  invoke-static          v0, v1, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v0
+  invoke-virtual         v2, v0, Ljava/text/Format;->format(Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v0
+  const-string/jumbo     v1, sent_at
+  invoke-static          v4, v1, v0, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+  return-object          v4
+
+---- METHOD private urlWithExtraPathByActivityKind((Lcom/adjust/sdk/ActivityKind; Ljava/lang/String;)Ljava/lang/String;)  ----
+  sget-object            v0, Lcom/adjust/sdk/ActivityKind;->GDPR Lcom/adjust/sdk/ActivityKind;
+  if-ne                  v2, v0, +014h
+  iget-object            v2, v1, Lcom/adjust/sdk/network/ActivityPackageSender;->gdprPath Ljava/lang/String;
+  if-eqz                 v2, +04eh
+  invoke-static          v3, LB2/a;->v(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  move-result-object     v2
+  iget-object            v3, v1, Lcom/adjust/sdk/network/ActivityPackageSender;->gdprPath Ljava/lang/String;
+  invoke-virtual         v2, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual         v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v2
+  return-object          v2
+  sget-object            v0, Lcom/adjust/sdk/ActivityKind;->SUBSCRIPTION Lcom/adjust/sdk/ActivityKind;
+  if-ne                  v2, v0, +014h
+  iget-object            v2, v1, Lcom/adjust/sdk/network/ActivityPackageSender;->subscriptionPath Ljava/lang/String;
+  if-eqz                 v2, +038h
+  invoke-static          v3, LB2/a;->v(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  move-result-object     v2
+  iget-object            v3, v1, Lcom/adjust/sdk/network/ActivityPackageSender;->subscriptionPath Ljava/lang/String;
+  invoke-virtual         v2, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual         v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v2
+  return-object          v2
+  sget-object            v0, Lcom/adjust/sdk/ActivityKind;->PURCHASE_VERIFICATION Lcom/adjust/sdk/ActivityKind;
+  if-ne                  v2, v0, +014h
+  iget-object            v2, v1, Lcom/adjust/sdk/network/ActivityPackageSender;->purchaseVerificationPath Ljava/lang/String;
+  if-eqz                 v2, +022h
+  invoke-static          v3, LB2/a;->v(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  move-result-object     v2
+  iget-object            v3, v1, Lcom/adjust/sdk/network/ActivityPackageSender;->purchaseVerificationPath Ljava/lang/String;
+  invoke-virtual         v2, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual         v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v2
+  return-object          v2
+  iget-object            v2, v1, Lcom/adjust/sdk/network/ActivityPackageSender;->basePath Ljava/lang/String;
+  if-eqz                 v2, +010h
+  invoke-static          v3, LB2/a;->v(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  move-result-object     v2
+  iget-object            v3, v1, Lcom/adjust/sdk/network/ActivityPackageSender;->basePath Ljava/lang/String;
+  invoke-virtual         v2, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual         v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v2
+  return-object          v2
+  return-object          v3
+
+---- METHOD public readConnectionResponse((Ljavax/net/ssl/HttpsURLConnection; Lcom/adjust/sdk/ResponseData;)Ljava/lang/Integer;)  ----
+  new-instance           v0, Ljava/lang/StringBuilder;
+  invoke-direct          v0, Ljava/lang/StringBuilder;-><init>()V
+  const/4                v1, 0
+  const/4                v2, 0
+  invoke-virtual         v7, Ljava/net/URLConnection;->connect()V
+  invoke-virtual         v7, Ljava/net/HttpURLConnection;->getResponseCode()I
+  move-result            v3
+  invoke-static          v3, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v2
+  const/16               v4, 400
+  if-lt                  v3, v4, +00ch
+  invoke-virtual         v7, Ljava/net/HttpURLConnection;->getErrorStream()Ljava/io/InputStream;
+  move-result-object     v3
+  goto                   +ah
+  move-exception         v8
+  goto/16                +092h
+  move-exception         v3
+  goto                   +19h
+  invoke-virtual         v7, Ljava/net/URLConnection;->getInputStream()Ljava/io/InputStream;
+  move-result-object     v3
+  new-instance           v4, Ljava/io/InputStreamReader;
+  invoke-direct          v4, v3, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;)V
+  new-instance           v3, Ljava/io/BufferedReader;
+  invoke-direct          v3, v4, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
+  invoke-virtual         v3, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
+  move-result-object     v4
+  if-eqz                 v4, +017h
+  invoke-virtual         v0, v4, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  goto                   -9h
+  const-string           v4, "Connecting and reading response"
+  iget-object            v5, v8, Lcom/adjust/sdk/ResponseData;->activityPackage Lcom/adjust/sdk/ActivityPackage;
+  invoke-direct          v6, v3, v4, v5, Lcom/adjust/sdk/network/ActivityPackageSender;->errorMessage(Ljava/lang/Throwable; Ljava/lang/String; Lcom/adjust/sdk/ActivityPackage;)Ljava/lang/String;
+  move-result-object     v3
+  iget-object            v4, v6, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v5, v1, [Ljava/lang/Object;
+  invoke-interface       v4, v3, v5, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  if-eqz                 v7, +005h
+  invoke-virtual         v7, Ljava/net/HttpURLConnection;->disconnect()V
+  invoke-virtual         v0, Ljava/lang/StringBuilder;->length()I
+  move-result            v7
+  if-nez                 v7, +00ch
+  iget-object            v7, v6, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v8, v1, [Ljava/lang/Object;
+  const-string           v0, "Empty response string buffer"
+  invoke-interface       v7, v0, v8, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-object          v2
+  invoke-virtual         v2, Ljava/lang/Integer;->intValue()I
+  move-result            v7
+  iget-object            v3, v6, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
+  const/16               v4, 429
+  if-ne                  v7, v4, +00ah
+  new-array              v7, v1, [Ljava/lang/Object;
+  const-string           v8, "Too frequent requests to the endpoint (429)"
+  invoke-interface       v3, v8, v7, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-object          v2
+  invoke-virtual         v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v7
+  filled-new-array       v7, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v1, "Response string: %s"
+  invoke-interface       v3, v1, v0, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+  invoke-direct          v6, v8, v7, Lcom/adjust/sdk/network/ActivityPackageSender;->parseResponse(Lcom/adjust/sdk/ResponseData; Ljava/lang/String;)V
+  iget-object            v7, v8, Lcom/adjust/sdk/ResponseData;->controlParams Lorg/json/JSONObject;
+  if-eqz                 v7, +00dh
+  iget-object            v7, v6, Lcom/adjust/sdk/network/ActivityPackageSender;->context Landroid/content/Context;
+  invoke-static          v7, Lcom/adjust/sdk/SharedPreferencesManager;->getDefaultInstance(Landroid/content/Context;)Lcom/adjust/sdk/SharedPreferencesManager;
+  move-result-object     v7
+  iget-object            v0, v8, Lcom/adjust/sdk/ResponseData;->controlParams Lorg/json/JSONObject;
+  invoke-virtual         v7, v0, Lcom/adjust/sdk/SharedPreferencesManager;->saveControlParams(Lorg/json/JSONObject;)V
+  iget-object            v7, v8, Lcom/adjust/sdk/ResponseData;->message Ljava/lang/String;
+  if-nez                 v7, +003h
+  goto                   +1ch
+  invoke-virtual         v2, Ljava/lang/Integer;->intValue()I
+  move-result            v8
+  iget-object            v0, v6, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
+  const/16               v1, 200
+  const-string           v3, "Response message: %s"
+  if-ne                  v8, v1, +00ah
+  filled-new-array       v7, [Ljava/lang/Object;
+  move-result-object     v7
+  invoke-interface       v0, v3, v7, Lcom/adjust/sdk/ILogger;->info(Ljava/lang/String; [Ljava/lang/Object;)V
+  goto                   +8h
+  filled-new-array       v7, [Ljava/lang/Object;
+  move-result-object     v7
+  invoke-interface       v0, v3, v7, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-object          v2
+  if-eqz                 v7, +005h
+  invoke-virtual         v7, Ljava/net/HttpURLConnection;->disconnect()V
+  throw                  v8
+
+---- METHOD public sendActivityPackage((Lcom/adjust/sdk/ActivityPackage; Ljava/util/Map; Lcom/adjust/sdk/network/IActivityPackageSender$ResponseDataCallbackSubscriber;)V)  ----
+  iget-object            v0, v2, Lcom/adjust/sdk/network/ActivityPackageSender;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+  new-instance           v1, Lcom/adjust/sdk/network/a;
+  invoke-direct          v1, v2, v5, v3, v4, Lcom/adjust/sdk/network/a;-><init>(Lcom/adjust/sdk/network/ActivityPackageSender; Lcom/adjust/sdk/network/IActivityPackageSender$ResponseDataCallbackSubscriber; Lcom/adjust/sdk/ActivityPackage; Ljava/util/Map;)V
+  invoke-interface       v0, v1, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+  return-void            
+
+---- METHOD public sendActivityPackageSync((Lcom/adjust/sdk/ActivityPackage; Ljava/util/Map;)Lcom/adjust/sdk/ResponseData;)  ----
+  invoke-direct          v2, v4, Lcom/adjust/sdk/network/ActivityPackageSender;->updateSendingParameters(Ljava/util/Map;)Ljava/util/Map;
+  move-result-object     v0
+  invoke-direct          v2, v3, v0, Lcom/adjust/sdk/network/ActivityPackageSender;->signParameters(Lcom/adjust/sdk/ActivityPackage; Ljava/util/Map;)Ljava/util/Map;
+  move-result-object     v1
+  invoke-static          v3, v0, v1, Lcom/adjust/sdk/ResponseData;->buildResponseData(Lcom/adjust/sdk/ActivityPackage; Ljava/util/Map; Ljava/util/Map;)Lcom/adjust/sdk/ResponseData;
+  move-result-object     v0
+  invoke-direct          v2, v0, Lcom/adjust/sdk/network/ActivityPackageSender;->tryToGetResponse(Lcom/adjust/sdk/ResponseData;)V
+  invoke-direct          v2, v0, Lcom/adjust/sdk/network/ActivityPackageSender;->shouldRetryToSendWithUrlStrategy(Lcom/adjust/sdk/ResponseData;)Z
+  move-result            v1
+  if-nez                 v1, -013h
+  return-object          v0
+######################################################################

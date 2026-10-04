@@ -1,0 +1,149 @@
+[
+ {
+  "label": "R_real_gaid",
+  "gps": "e53f99b7-dbe3-4e87-825f-9ac8a9321ae2",
+  "auid": "d52b83de-1e74-403b-9d4e-cb56272b0c72",
+  "marker": "cline_dev_R",
+  "pre": {
+   "http": 200,
+   "attr": {
+    "tracker_token": "wy7261z",
+    "tracker_name": "Organic",
+    "network": "Organic",
+    "engagement_time": "0001-01-01T00:00:00Z",
+    "installed_at": "2026-09-19T07:45:10.657240478Z",
+    "first_session_time": "2026-09-19T07:45:10.657240478Z",
+    "is_reattributed": false,
+    "is_redownload_install": false
+   },
+   "raw": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"b46e1e86b6900592dbcf702f3473e10e\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-19T07:45:10.657240478Z\",\"first_session_time\":\"2026-09-19T07:45:10.657240478Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+  },
+  "click": "adjust_reftag=caqYoINlmNv2Y&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"b46e1e86b6900592dbcf702f3473e10e\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"b46e1e86b6900592dbcf702f3473e10e\"}"
+  ],
+  "reads": [
+   {
+    "http": 200,
+    "attr": {
+     "tracker_token": "wy7261z",
+     "tracker_name": "Organic",
+     "network": "Organic",
+     "engagement_time": "0001-01-01T00:00:00Z",
+     "installed_at": "2026-09-19T07:46:03Z",
+     "first_session_time": "2026-09-19T07:46:03Z",
+     "is_reattributed": false,
+     "is_redownload_install": false
+    },
+    "raw": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"b46e1e86b6900592dbcf702f3473e10e\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-19T07:46:03Z\",\"first_session_time\":\"2026-09-19T07:46:03Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "http": 200,
+    "attr": {
+     "tracker_token": "wy7261z",
+     "tracker_name": "Organic",
+     "network": "Organic",
+     "engagement_time": "0001-01-01T00:00:00Z",
+     "installed_at": "2026-09-19T07:46:03Z",
+     "first_session_time": "2026-09-19T07:46:03Z",
+     "is_reattributed": false,
+     "is_redownload_install": false
+    },
+    "raw": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"b46e1e86b6900592dbcf702f3473e10e\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-19T07:46:03Z\",\"first_session_time\":\"2026-09-19T07:46:03Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "http": 200,
+    "attr": {
+     "tracker_token": "wy7261z",
+     "tracker_name": "Organic",
+     "network": "Organic",
+     "engagement_time": "0001-01-01T00:00:00Z",
+     "installed_at": "2026-09-19T07:46:03Z",
+     "first_session_time": "2026-09-19T07:46:03Z",
+     "is_reattributed": false,
+     "is_redownload_install": false
+    },
+    "raw": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"b46e1e86b6900592dbcf702f3473e10e\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-19T07:46:03Z\",\"first_session_time\":\"2026-09-19T07:46:03Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   }
+  ]
+ },
+ {
+  "label": "F_fresh_gaid",
+  "gps": "e200501e-e2c0-4b8a-b8b2-3a48e25838d1",
+  "auid": "20292462-00bf-4b77-bf7b-5cad012c7f51",
+  "marker": "cline_dev_F",
+  "pre": {
+   "http": 200,
+   "attr": {
+    "tracker_token": "wy7261z",
+    "tracker_name": "Organic",
+    "network": "Organic",
+    "engagement_time": "0001-01-01T00:00:00Z",
+    "installed_at": "2026-09-19T07:50:14.986120822Z",
+    "first_session_time": "2026-09-19T07:50:14.986120822Z",
+    "is_reattributed": false,
+    "is_redownload_install": false
+   },
+   "raw": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d5e452843549143ef386d9549858a177\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-19T07:50:14.986120822Z\",\"first_session_time\":\"2026-09-19T07:50:14.986120822Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+  },
+  "click": "adjust_reftag=cf1opa6JgynWz&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=cline_dev_F",
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d5e452843549143ef386d9549858a177\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d5e452843549143ef386d9549858a177\"}"
+  ],
+  "reads": [
+   {
+    "http": 200,
+    "attr": {
+     "tracker_token": "wy7261z",
+     "tracker_name": "Organic",
+     "network": "Organic",
+     "engagement_time": "0001-01-01T00:00:00Z",
+     "installed_at": "2026-09-19T07:50:56Z",
+     "first_session_time": "2026-09-19T07:50:56Z",
+     "is_reattributed": false,
+     "is_redownload_install": false
+    },
+    "raw": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d5e452843549143ef386d9549858a177\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-19T07:50:56Z\",\"first_session_time\":\"2026-09-19T07:50:56Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "http": 200,
+    "attr": {
+     "tracker_token": "wy7261z",
+     "tracker_name": "Organic",
+     "network": "Organic",
+     "engagement_time": "0001-01-01T00:00:00Z",
+     "installed_at": "2026-09-19T07:50:56Z",
+     "first_session_time": "2026-09-19T07:50:56Z",
+     "is_reattributed": false,
+     "is_redownload_install": false
+    },
+    "raw": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d5e452843549143ef386d9549858a177\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-19T07:50:56Z\",\"first_session_time\":\"2026-09-19T07:50:56Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "http": 200,
+    "attr": {
+     "tracker_token": "wy7261z",
+     "tracker_name": "Organic",
+     "network": "Organic",
+     "engagement_time": "0001-01-01T00:00:00Z",
+     "installed_at": "2026-09-19T07:50:56Z",
+     "first_session_time": "2026-09-19T07:50:56Z",
+     "is_reattributed": false,
+     "is_redownload_install": false
+    },
+    "raw": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d5e452843549143ef386d9549858a177\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-19T07:50:56Z\",\"first_session_time\":\"2026-09-19T07:50:56Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   }
+  ],
+  "click_http": 302
+ }
+]

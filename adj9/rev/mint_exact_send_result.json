@@ -1,0 +1,23 @@
+[
+ {
+  "label": "M1 exact map (first-wins)",
+  "keys": 43,
+  "http": "200",
+  "tag": "not-recognized",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"655d34665a29b0f5f71b8e548b159c41\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_ti"
+ },
+ {
+  "label": "M2 exact map (last-wins)",
+  "keys": 43,
+  "http": "200",
+  "tag": "not-recognized",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"655d34665a29b0f5f71b8e548b159c41\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_ti"
+ },
+ {
+  "label": "M3 map minus hardware_name",
+  "keys": 42,
+  "http": "200",
+  "tag": "not-recognized",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"655d34665a29b0f5f71b8e548b159c41\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_ti"
+ }
+]

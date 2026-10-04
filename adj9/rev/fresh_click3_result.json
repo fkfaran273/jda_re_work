@@ -1,0 +1,20 @@
+{
+ "gps": "9b9f265c-f930-4ee5-9094-29bd9259620e",
+ "reftag": "adjust_reftag=cmiLczaCze9NP&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+ "t_click": 1790621694,
+ "skeys": 43,
+ "ckeys": 47,
+ "session": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"068922c9197da15e4fe2543affb8e1e9\",\"ask_in\":2000}"
+ ],
+ "sdk_click": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"068922c9197da15e4fe2543affb8e1e9\"}"
+ ],
+ "last": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"068922c9197da15e4fe2543affb8e1e9\",\"attribution\":{\"tracker_token\":\"24pxw9rl\",\"tracker_name\":\"VKM Digital Yeni::AH::vkm_0926_36::penti_generic\",\"network\":\"VKM Digital Yeni\",\"campaign\":\"AH\",\"adgroup\":\"vkm_0926_36\",\"creative\":\"penti_generic\",\"engagement_time\":\"2026-09-28T18:47:34Z\",\"installed_at\":\"2026-09-28T18:55:11Z\",\"first_session_time\":\"2026-09-28T18:55:11Z\",\"is"
+ ],
+ "verdict": "*** NON-ORGANIC: VKM Digital Yeni / 24pxw9rl ***"
+}

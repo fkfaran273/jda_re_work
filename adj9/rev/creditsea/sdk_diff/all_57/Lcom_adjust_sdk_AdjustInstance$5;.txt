@@ -1,0 +1,13 @@
+# CLASS Lcom/adjust/sdk/AdjustInstance$5;
+FIELD public final synthetic a Ljava/lang/String;
+
+---- METHOD public constructor <init> (Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustInstance$5;->a Ljava/lang/String;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run (Lcom/adjust/sdk/ActivityHandler;)V ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustInstance$5;->a Ljava/lang/String;
+  invoke-virtual         v2, v0, Lcom/adjust/sdk/ActivityHandler;->removeGlobalPartnerParameterI(Ljava/lang/String;)V
+  return-void            
+######################################################################

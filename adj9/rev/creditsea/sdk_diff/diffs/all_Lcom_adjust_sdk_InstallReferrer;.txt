@@ -1,0 +1,62 @@
+--- 
++++ 
+@@ -30,4 +30,5 @@
+ new-instance vX, Lcom/adjust/sdk/scheduler/TimerOnce;
+-new-instance vX, Lcom/adjust/sdk/InstallReferrer$1;
+-invoke-direct vX, vX, Lcom/adjust/sdk/InstallReferrer$1;-><init>(Lcom/adjust/sdk/InstallReferrer;)V
++new-instance vX, Lcom/adjust/sdk/u;
++const/4 vX, 3
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/u;-><init>(Ljava/lang/Object; I)V
+ const-string "InstallReferrer"
+@@ -40,9 +41,8 @@
+ return-void
+----- METHOD public static synthetic access$000 (Lcom/adjust/sdk/InstallReferrer; Ljava/lang/Object; Ljava/lang/reflect/Method; [Ljava/lang/Object;)Ljava/lang/Object; ----
++---- METHOD public static bridge synthetic a (Lcom/adjust/sdk/InstallReferrer;)Lcom/adjust/sdk/InstallReferrerReadListener; ----
++iget-object vX, vX, Lcom/adjust/sdk/InstallReferrer;->referrerCallback Lcom/adjust/sdk/InstallReferrerReadListener;
++return-object vX
++---- METHOD public static bridge synthetic b (Lcom/adjust/sdk/InstallReferrer; Ljava/lang/Object; Ljava/lang/reflect/Method; [Ljava/lang/Object;)V ----
+ invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/InstallReferrer;->invokeI(Ljava/lang/Object; Ljava/lang/reflect/Method; [Ljava/lang/Object;)Ljava/lang/Object;
+-move-result-object vX
+-return-object vX
+----- METHOD public static synthetic access$100 (Lcom/adjust/sdk/InstallReferrer;)Lcom/adjust/sdk/InstallReferrerReadListener; ----
+-iget-object vX, vX, Lcom/adjust/sdk/InstallReferrer;->referrerCallback Lcom/adjust/sdk/InstallReferrerReadListener;
+-return-object vX
++return-void
+ ---- METHOD private closeReferrerClient ()V ----
+@@ -405,3 +405,3 @@
+ const/4 vX, 0
+-if-eq vX, vX, +0b9h
++if-eq vX, vX, +0bah
+ if BRANCH
+@@ -414,3 +414,3 @@
+ iget-object vX, vX, Lcom/adjust/sdk/InstallReferrer;->referrerCallback Lcom/adjust/sdk/InstallReferrerReadListener;
+-invoke-static vX, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
++invoke-static/range vX, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+ move-result-object vX
+@@ -437,3 +437,3 @@
+ GOTO
+-invoke-direct vX, Lcom/adjust/sdk/InstallReferrer;->getInstallReferrer()Ljava/lang/Object;
++invoke-direct/range vX, Lcom/adjust/sdk/InstallReferrer;->getInstallReferrer()Ljava/lang/Object;
+ move-result-object vX
+@@ -478,2 +478,3 @@
+ const/16 vX, 0
++move-object vX, vX
+ invoke-direct/range vX ... vX, Lcom/adjust/sdk/ReferrerDetails;-><init>(Ljava/lang/String; J J J J Ljava/lang/String; Ljava/lang/Boolean; Ljava/lang/Boolean;)V
+@@ -485,3 +486,3 @@
+ invoke-virtual vX, vX, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+-invoke-direct vX, Lcom/adjust/sdk/InstallReferrer;->closeReferrerClient()V
++invoke-direct/range vX, Lcom/adjust/sdk/InstallReferrer;->closeReferrerClient()V
+ return-void
+@@ -606,4 +607,10 @@
+ iget-object vX, vX, Lcom/adjust/sdk/InstallReferrer;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+-new-instance vX, Lcom/adjust/sdk/InstallReferrer$2;
+-invoke-direct vX, vX, vX, vX, vX, Lcom/adjust/sdk/InstallReferrer$2;-><init>(Lcom/adjust/sdk/InstallReferrer; Ljava/lang/Object; Ljava/lang/reflect/Method; [Ljava/lang/Object;)V
++new-instance vX, Lcom/adjust/sdk/T;
++const/4 vX, 0
++move-object vX, vX
++move-object vX, vX
++move-object vX, vX
++move-object vX, vX
++move-object vX, vX
++invoke-direct/range vX ... vX, Lcom/adjust/sdk/T;-><init>(I Ljava/lang/Object; Ljava/lang/Object; Ljava/lang/Object; Ljava/lang/Object;)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V

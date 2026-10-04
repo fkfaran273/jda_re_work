@@ -1,0 +1,8 @@
+========================================================================
+PAIRED DIFF  kind=session sdk=android5.7.0 second=1790490115 seed=0xd124f72b
+  blob=192B  captured head=2b 22 25 2e
+========================================================================
+P0   PASS  d2=2bf724d1 expected=2bf724d1
+P1   PASS  hdr=4d33f8646b7011120733b7eb71908d0b
+P2   PASS  status=exit-clean stream=0x5500000000 match=48/48 diff=[]
+P3   PASS  law=360B cap=360B(unpadded 360B)

@@ -1,0 +1,364 @@
+# CLASS Lcom/adjust/sdk/network/UrlStrategy;
+FIELD private static final BASE_URL_IO Ljava/lang/String;
+FIELD private static final GDPR_URL_IO Ljava/lang/String;
+FIELD private static final PURCHASE_VERIFICATION_URL_IO Ljava/lang/String;
+FIELD private static final SUBSCRIPTION_URL_IO Ljava/lang/String;
+FIELD final baseUrlChoicesList Ljava/util/List;
+FIELD private final baseUrlOverwrite Ljava/lang/String;
+FIELD  choiceIndex I
+FIELD final gdprUrlChoicesList Ljava/util/List;
+FIELD private final gdprUrlOverwrite Ljava/lang/String;
+FIELD final purchaseVerificationUrlChoicesList Ljava/util/List;
+FIELD private final purchaseVerificationUrlOverwrite Ljava/lang/String;
+FIELD  startingChoiceIndex I
+FIELD final subscriptionUrlChoicesList Ljava/util/List;
+FIELD private final subscriptionUrlOverwrite Ljava/lang/String;
+FIELD private final urlStrategyDomains Ljava/util/List;
+FIELD private final useSubdomains Z
+FIELD  wasLastAttemptSuccess Z
+FIELD  wasLastAttemptWithOverwrittenUrl Z
+
+---- METHOD public constructor <init> (Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/util/List; Z)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v5, v0, Lcom/adjust/sdk/network/UrlStrategy;->urlStrategyDomains Ljava/util/List;
+  iput-boolean           v6, v0, Lcom/adjust/sdk/network/UrlStrategy;->useSubdomains Z
+  iput-object            v1, v0, Lcom/adjust/sdk/network/UrlStrategy;->baseUrlOverwrite Ljava/lang/String;
+  iput-object            v2, v0, Lcom/adjust/sdk/network/UrlStrategy;->gdprUrlOverwrite Ljava/lang/String;
+  iput-object            v3, v0, Lcom/adjust/sdk/network/UrlStrategy;->subscriptionUrlOverwrite Ljava/lang/String;
+  iput-object            v4, v0, Lcom/adjust/sdk/network/UrlStrategy;->purchaseVerificationUrlOverwrite Ljava/lang/String;
+  invoke-direct          v0, Lcom/adjust/sdk/network/UrlStrategy;->baseUrlChoices()Ljava/util/List;
+  move-result-object     v1
+  iput-object            v1, v0, Lcom/adjust/sdk/network/UrlStrategy;->baseUrlChoicesList Ljava/util/List;
+  invoke-direct          v0, Lcom/adjust/sdk/network/UrlStrategy;->gdprUrlChoices()Ljava/util/List;
+  move-result-object     v1
+  iput-object            v1, v0, Lcom/adjust/sdk/network/UrlStrategy;->gdprUrlChoicesList Ljava/util/List;
+  invoke-direct          v0, Lcom/adjust/sdk/network/UrlStrategy;->subscriptionUrlChoices()Ljava/util/List;
+  move-result-object     v1
+  iput-object            v1, v0, Lcom/adjust/sdk/network/UrlStrategy;->subscriptionUrlChoicesList Ljava/util/List;
+  invoke-direct          v0, Lcom/adjust/sdk/network/UrlStrategy;->purchaseVerificationUrlChoices()Ljava/util/List;
+  move-result-object     v1
+  iput-object            v1, v0, Lcom/adjust/sdk/network/UrlStrategy;->purchaseVerificationUrlChoicesList Ljava/util/List;
+  const/4                v1, 0
+  iput-boolean           v1, v0, Lcom/adjust/sdk/network/UrlStrategy;->wasLastAttemptSuccess Z
+  iput                   v1, v0, Lcom/adjust/sdk/network/UrlStrategy;->choiceIndex I
+  iput                   v1, v0, Lcom/adjust/sdk/network/UrlStrategy;->startingChoiceIndex I
+  iput-boolean           v1, v0, Lcom/adjust/sdk/network/UrlStrategy;->wasLastAttemptWithOverwrittenUrl Z
+  return-void            
+
+---- METHOD private baseUrlChoices ()Ljava/util/List; ----
+  iget-object            v0, v5, Lcom/adjust/sdk/network/UrlStrategy;->urlStrategyDomains Ljava/util/List;
+  if-eqz                 v0, +061h
+  invoke-interface       v0, Ljava/util/List;->isEmpty()Z
+  move-result            v0
+  if-eqz                 v0, +003h
+  goto                   +59h
+  iget-boolean           v0, v5, Lcom/adjust/sdk/network/UrlStrategy;->useSubdomains Z
+  if-eqz                 v0, +02ch
+  new-instance           v0, Ljava/util/ArrayList;
+  invoke-direct          v0, Ljava/util/ArrayList;-><init>()V
+  iget-object            v1, v5, Lcom/adjust/sdk/network/UrlStrategy;->urlStrategyDomains Ljava/util/List;
+  invoke-interface       v1, Ljava/util/List;->iterator()Ljava/util/Iterator;
+  move-result-object     v1
+  invoke-interface       v1, Ljava/util/Iterator;->hasNext()Z
+  move-result            v2
+  if-eqz                 v2, +01ah
+  invoke-interface       v1, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  new-instance           v3, Ljava/lang/StringBuilder;
+  const-string           v4, "https://app."
+  invoke-direct          v3, v4, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v3, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual         v3, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v2
+  invoke-virtual         v0, v2, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+  goto                   -1dh
+  return-object          v0
+  new-instance           v0, Ljava/util/ArrayList;
+  invoke-direct          v0, Ljava/util/ArrayList;-><init>()V
+  iget-object            v1, v5, Lcom/adjust/sdk/network/UrlStrategy;->urlStrategyDomains Ljava/util/List;
+  invoke-interface       v1, Ljava/util/List;->iterator()Ljava/util/Iterator;
+  move-result-object     v1
+  invoke-interface       v1, Ljava/util/Iterator;->hasNext()Z
+  move-result            v2
+  if-eqz                 v2, +01ah
+  invoke-interface       v1, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  new-instance           v3, Ljava/lang/StringBuilder;
+  const-string           v4, "https://"
+  invoke-direct          v3, v4, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v3, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual         v3, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v2
+  invoke-virtual         v0, v2, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+  goto                   -1dh
+  return-object          v0
+  const-string           v0, "https://app.adjust.com"
+  const-string           v1, "https://app.adjust.io"
+  filled-new-array       v0, v1, [Ljava/lang/String;
+  move-result-object     v0
+  invoke-static          v0, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD private gdprUrlChoices ()Ljava/util/List; ----
+  iget-object            v0, v5, Lcom/adjust/sdk/network/UrlStrategy;->urlStrategyDomains Ljava/util/List;
+  if-eqz                 v0, +059h
+  invoke-interface       v0, Ljava/util/List;->isEmpty()Z
+  move-result            v0
+  if-eqz                 v0, +003h
+  goto                   +51h
+  new-instance           v0, Ljava/util/ArrayList;
+  invoke-direct          v0, Ljava/util/ArrayList;-><init>()V
+  iget-boolean           v1, v5, Lcom/adjust/sdk/network/UrlStrategy;->useSubdomains Z
+  iget-object            v2, v5, Lcom/adjust/sdk/network/UrlStrategy;->urlStrategyDomains Ljava/util/List;
+  if-eqz                 v1, +024h
+  invoke-interface       v2, Ljava/util/List;->iterator()Ljava/util/Iterator;
+  move-result-object     v1
+  invoke-interface       v1, Ljava/util/Iterator;->hasNext()Z
+  move-result            v2
+  if-eqz                 v2, +03ch
+  invoke-interface       v1, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  new-instance           v3, Ljava/lang/StringBuilder;
+  const-string           v4, "https://gdpr."
+  invoke-direct          v3, v4, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v3, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual         v3, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v2
+  invoke-virtual         v0, v2, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+  goto                   -1dh
+  invoke-interface       v2, Ljava/util/List;->iterator()Ljava/util/Iterator;
+  move-result-object     v1
+  invoke-interface       v1, Ljava/util/Iterator;->hasNext()Z
+  move-result            v2
+  if-eqz                 v2, +01ah
+  invoke-interface       v1, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  new-instance           v3, Ljava/lang/StringBuilder;
+  const-string           v4, "https://"
+  invoke-direct          v3, v4, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v3, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual         v3, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v2
+  invoke-virtual         v0, v2, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+  goto                   -1dh
+  return-object          v0
+  const-string           v0, "https://gdpr.adjust.com"
+  const-string           v1, "https://gdpr.adjust.io"
+  filled-new-array       v0, v1, [Ljava/lang/String;
+  move-result-object     v0
+  invoke-static          v0, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD private purchaseVerificationUrlChoices ()Ljava/util/List; ----
+  iget-object            v0, v5, Lcom/adjust/sdk/network/UrlStrategy;->urlStrategyDomains Ljava/util/List;
+  if-eqz                 v0, +059h
+  invoke-interface       v0, Ljava/util/List;->isEmpty()Z
+  move-result            v0
+  if-eqz                 v0, +003h
+  goto                   +51h
+  new-instance           v0, Ljava/util/ArrayList;
+  invoke-direct          v0, Ljava/util/ArrayList;-><init>()V
+  iget-boolean           v1, v5, Lcom/adjust/sdk/network/UrlStrategy;->useSubdomains Z
+  iget-object            v2, v5, Lcom/adjust/sdk/network/UrlStrategy;->urlStrategyDomains Ljava/util/List;
+  if-eqz                 v1, +024h
+  invoke-interface       v2, Ljava/util/List;->iterator()Ljava/util/Iterator;
+  move-result-object     v1
+  invoke-interface       v1, Ljava/util/Iterator;->hasNext()Z
+  move-result            v2
+  if-eqz                 v2, +03ch
+  invoke-interface       v1, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  new-instance           v3, Ljava/lang/StringBuilder;
+  const-string           v4, "https://ssrv."
+  invoke-direct          v3, v4, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v3, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual         v3, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v2
+  invoke-virtual         v0, v2, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+  goto                   -1dh
+  invoke-interface       v2, Ljava/util/List;->iterator()Ljava/util/Iterator;
+  move-result-object     v1
+  invoke-interface       v1, Ljava/util/Iterator;->hasNext()Z
+  move-result            v2
+  if-eqz                 v2, +01ah
+  invoke-interface       v1, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  new-instance           v3, Ljava/lang/StringBuilder;
+  const-string           v4, "https://"
+  invoke-direct          v3, v4, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v3, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual         v3, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v2
+  invoke-virtual         v0, v2, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+  goto                   -1dh
+  return-object          v0
+  const-string           v0, "https://ssrv.adjust.com"
+  const-string           v1, "https://ssrv.adjust.io"
+  filled-new-array       v0, v1, [Ljava/lang/String;
+  move-result-object     v0
+  invoke-static          v0, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD private subscriptionUrlChoices ()Ljava/util/List; ----
+  iget-object            v0, v5, Lcom/adjust/sdk/network/UrlStrategy;->urlStrategyDomains Ljava/util/List;
+  if-eqz                 v0, +059h
+  invoke-interface       v0, Ljava/util/List;->isEmpty()Z
+  move-result            v0
+  if-eqz                 v0, +003h
+  goto                   +51h
+  new-instance           v0, Ljava/util/ArrayList;
+  invoke-direct          v0, Ljava/util/ArrayList;-><init>()V
+  iget-boolean           v1, v5, Lcom/adjust/sdk/network/UrlStrategy;->useSubdomains Z
+  iget-object            v2, v5, Lcom/adjust/sdk/network/UrlStrategy;->urlStrategyDomains Ljava/util/List;
+  if-eqz                 v1, +024h
+  invoke-interface       v2, Ljava/util/List;->iterator()Ljava/util/Iterator;
+  move-result-object     v1
+  invoke-interface       v1, Ljava/util/Iterator;->hasNext()Z
+  move-result            v2
+  if-eqz                 v2, +03ch
+  invoke-interface       v1, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  new-instance           v3, Ljava/lang/StringBuilder;
+  const-string           v4, "https://subscription."
+  invoke-direct          v3, v4, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v3, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual         v3, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v2
+  invoke-virtual         v0, v2, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+  goto                   -1dh
+  invoke-interface       v2, Ljava/util/List;->iterator()Ljava/util/Iterator;
+  move-result-object     v1
+  invoke-interface       v1, Ljava/util/Iterator;->hasNext()Z
+  move-result            v2
+  if-eqz                 v2, +01ah
+  invoke-interface       v1, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  new-instance           v3, Ljava/lang/StringBuilder;
+  const-string           v4, "https://"
+  invoke-direct          v3, v4, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v3, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual         v3, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v2
+  invoke-virtual         v0, v2, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+  goto                   -1dh
+  return-object          v0
+  const-string           v0, "https://subscription.adjust.com"
+  const-string           v1, "https://subscription.adjust.io"
+  filled-new-array       v0, v1, [Ljava/lang/String;
+  move-result-object     v0
+  invoke-static          v0, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public resetAfterSuccess ()V ----
+  iget                   v0, v1, Lcom/adjust/sdk/network/UrlStrategy;->choiceIndex I
+  iput                   v0, v1, Lcom/adjust/sdk/network/UrlStrategy;->startingChoiceIndex I
+  const/4                v0, 1
+  iput-boolean           v0, v1, Lcom/adjust/sdk/network/UrlStrategy;->wasLastAttemptSuccess Z
+  return-void            
+
+---- METHOD public shouldRetryAfterFailure (Lcom/adjust/sdk/ActivityKind;)Z ----
+  const/4                v0, 0
+  iput-boolean           v0, v3, Lcom/adjust/sdk/network/UrlStrategy;->wasLastAttemptSuccess Z
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->isAllowUrlStrategyFallback()Z
+  move-result            v1
+  if-eqz                 v1, +007h
+  iget-boolean           v1, v3, Lcom/adjust/sdk/network/UrlStrategy;->wasLastAttemptWithOverwrittenUrl Z
+  if-eqz                 v1, +003h
+  return                 v0
+  sget-object            v1, Lcom/adjust/sdk/ActivityKind;->GDPR Lcom/adjust/sdk/ActivityKind;
+  if-ne                  v4, v1, +009h
+  iget-object            v4, v3, Lcom/adjust/sdk/network/UrlStrategy;->gdprUrlChoicesList Ljava/util/List;
+  invoke-interface       v4, Ljava/util/List;->size()I
+  move-result            v4
+  goto                   +1dh
+  sget-object            v1, Lcom/adjust/sdk/ActivityKind;->SUBSCRIPTION Lcom/adjust/sdk/ActivityKind;
+  if-ne                  v4, v1, +009h
+  iget-object            v4, v3, Lcom/adjust/sdk/network/UrlStrategy;->subscriptionUrlChoicesList Ljava/util/List;
+  invoke-interface       v4, Ljava/util/List;->size()I
+  move-result            v4
+  goto                   +12h
+  sget-object            v1, Lcom/adjust/sdk/ActivityKind;->PURCHASE_VERIFICATION Lcom/adjust/sdk/ActivityKind;
+  if-ne                  v4, v1, +009h
+  iget-object            v4, v3, Lcom/adjust/sdk/network/UrlStrategy;->purchaseVerificationUrlChoicesList Ljava/util/List;
+  invoke-interface       v4, Ljava/util/List;->size()I
+  move-result            v4
+  goto                   +7h
+  iget-object            v4, v3, Lcom/adjust/sdk/network/UrlStrategy;->baseUrlChoicesList Ljava/util/List;
+  invoke-interface       v4, Ljava/util/List;->size()I
+  move-result            v4
+  iget                   v1, v3, Lcom/adjust/sdk/network/UrlStrategy;->choiceIndex I
+  const/4                v2, 1
+  add-int/2addr          v1, v2
+  rem-int/2addr          v1, v4
+  iput                   v1, v3, Lcom/adjust/sdk/network/UrlStrategy;->choiceIndex I
+  iget                   v4, v3, Lcom/adjust/sdk/network/UrlStrategy;->startingChoiceIndex I
+  if-eq                  v1, v4, +003h
+  return                 v2
+  return                 v0
+
+---- METHOD public targetUrlByActivityKind (Lcom/adjust/sdk/ActivityKind;)Ljava/lang/String; ----
+  sget-object            v0, Lcom/adjust/sdk/ActivityKind;->GDPR Lcom/adjust/sdk/ActivityKind;
+  const/4                v1, 0
+  const/4                v2, 1
+  if-ne                  v4, v0, +016h
+  iget-object            v4, v3, Lcom/adjust/sdk/network/UrlStrategy;->gdprUrlOverwrite Ljava/lang/String;
+  if-eqz                 v4, +005h
+  iput-boolean           v2, v3, Lcom/adjust/sdk/network/UrlStrategy;->wasLastAttemptWithOverwrittenUrl Z
+  return-object          v4
+  iput-boolean           v1, v3, Lcom/adjust/sdk/network/UrlStrategy;->wasLastAttemptWithOverwrittenUrl Z
+  iget-object            v4, v3, Lcom/adjust/sdk/network/UrlStrategy;->gdprUrlChoicesList Ljava/util/List;
+  iget                   v0, v3, Lcom/adjust/sdk/network/UrlStrategy;->choiceIndex I
+  invoke-interface       v4, v0, Ljava/util/List;->get(I)Ljava/lang/Object;
+  move-result-object     v4
+  check-cast             v4, Ljava/lang/String;
+  return-object          v4
+  sget-object            v0, Lcom/adjust/sdk/ActivityKind;->SUBSCRIPTION Lcom/adjust/sdk/ActivityKind;
+  if-ne                  v4, v0, +016h
+  iget-object            v4, v3, Lcom/adjust/sdk/network/UrlStrategy;->subscriptionUrlOverwrite Ljava/lang/String;
+  if-eqz                 v4, +005h
+  iput-boolean           v2, v3, Lcom/adjust/sdk/network/UrlStrategy;->wasLastAttemptWithOverwrittenUrl Z
+  return-object          v4
+  iput-boolean           v1, v3, Lcom/adjust/sdk/network/UrlStrategy;->wasLastAttemptWithOverwrittenUrl Z
+  iget-object            v4, v3, Lcom/adjust/sdk/network/UrlStrategy;->subscriptionUrlChoicesList Ljava/util/List;
+  iget                   v0, v3, Lcom/adjust/sdk/network/UrlStrategy;->choiceIndex I
+  invoke-interface       v4, v0, Ljava/util/List;->get(I)Ljava/lang/Object;
+  move-result-object     v4
+  check-cast             v4, Ljava/lang/String;
+  return-object          v4
+  sget-object            v0, Lcom/adjust/sdk/ActivityKind;->PURCHASE_VERIFICATION Lcom/adjust/sdk/ActivityKind;
+  if-ne                  v4, v0, +016h
+  iget-object            v4, v3, Lcom/adjust/sdk/network/UrlStrategy;->purchaseVerificationUrlOverwrite Ljava/lang/String;
+  if-eqz                 v4, +005h
+  iput-boolean           v2, v3, Lcom/adjust/sdk/network/UrlStrategy;->wasLastAttemptWithOverwrittenUrl Z
+  return-object          v4
+  iput-boolean           v1, v3, Lcom/adjust/sdk/network/UrlStrategy;->wasLastAttemptWithOverwrittenUrl Z
+  iget-object            v4, v3, Lcom/adjust/sdk/network/UrlStrategy;->purchaseVerificationUrlChoicesList Ljava/util/List;
+  iget                   v0, v3, Lcom/adjust/sdk/network/UrlStrategy;->choiceIndex I
+  invoke-interface       v4, v0, Ljava/util/List;->get(I)Ljava/lang/Object;
+  move-result-object     v4
+  check-cast             v4, Ljava/lang/String;
+  return-object          v4
+  iget-object            v4, v3, Lcom/adjust/sdk/network/UrlStrategy;->baseUrlOverwrite Ljava/lang/String;
+  if-eqz                 v4, +005h
+  iput-boolean           v2, v3, Lcom/adjust/sdk/network/UrlStrategy;->wasLastAttemptWithOverwrittenUrl Z
+  return-object          v4
+  iput-boolean           v1, v3, Lcom/adjust/sdk/network/UrlStrategy;->wasLastAttemptWithOverwrittenUrl Z
+  iget-object            v4, v3, Lcom/adjust/sdk/network/UrlStrategy;->baseUrlChoicesList Ljava/util/List;
+  iget                   v0, v3, Lcom/adjust/sdk/network/UrlStrategy;->choiceIndex I
+  invoke-interface       v4, v0, Ljava/util/List;->get(I)Ljava/lang/Object;
+  move-result-object     v4
+  check-cast             v4, Ljava/lang/String;
+  return-object          v4
+######################################################################

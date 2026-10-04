@@ -1,0 +1,4 @@
+CONNECT app.adjust.com:443 HTTP/1.1
+Host: app.adjust.com:443
+User-Agent: curl/7.73.0
+Proxy-Connection: Keep-Alive

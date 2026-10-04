@@ -1,0 +1,27 @@
+# CLASS Lcom/adjust/sdk/scheduler/RunnableWrapper;
+FIELD private runnable Ljava/lang/Runnable;
+
+---- METHOD public constructor <init> (Ljava/lang/Runnable;)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/scheduler/RunnableWrapper;->runnable Ljava/lang/Runnable;
+  return-void            
+
+---- METHOD public run ()V ----
+  iget-object            v0, v3, Lcom/adjust/sdk/scheduler/RunnableWrapper;->runnable Ljava/lang/Runnable;
+  invoke-interface       v0, Ljava/lang/Runnable;->run()V
+  return-void            
+  move-exception         v0
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v1
+  invoke-virtual         v0, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object     v2
+  invoke-virtual         v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+  move-result-object     v0
+  invoke-virtual         v0, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
+  move-result-object     v0
+  filled-new-array       v2, v0, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v2, "Runnable error [%s] of type [%s]"
+  invoke-interface       v1, v2, v0, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+######################################################################

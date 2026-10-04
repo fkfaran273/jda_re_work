@@ -1,0 +1,26 @@
+# CLASS Lcom/adjust/sdk/e;
+FIELD public final synthetic a I
+FIELD public final synthetic b Lcom/adjust/sdk/ActivityHandler;
+FIELD public final synthetic c Lcom/adjust/sdk/AdjustEvent;
+
+---- METHOD public synthetic constructor <init> (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/AdjustEvent; I)V ----
+  iput                   v3, v0, Lcom/adjust/sdk/e;->a I
+  iput-object            v1, v0, Lcom/adjust/sdk/e;->b Lcom/adjust/sdk/ActivityHandler;
+  iput-object            v2, v0, Lcom/adjust/sdk/e;->c Lcom/adjust/sdk/AdjustEvent;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget                   v0, v2, Lcom/adjust/sdk/e;->a I
+  packed-switch          v0, +0000014h
+  iget-object            v0, v2, Lcom/adjust/sdk/e;->b Lcom/adjust/sdk/ActivityHandler;
+  iget-object            v1, v2, Lcom/adjust/sdk/e;->c Lcom/adjust/sdk/AdjustEvent;
+  invoke-static          v0, v1, Lcom/adjust/sdk/ActivityHandler;->N(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/AdjustEvent;)V
+  return-void            
+  iget-object            v0, v2, Lcom/adjust/sdk/e;->b Lcom/adjust/sdk/ActivityHandler;
+  iget-object            v1, v2, Lcom/adjust/sdk/e;->c Lcom/adjust/sdk/AdjustEvent;
+  invoke-static          v0, v1, Lcom/adjust/sdk/ActivityHandler;->v(Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/AdjustEvent;)V
+  return-void            
+  nop                    
+  packed-switch-payload  0
+######################################################################

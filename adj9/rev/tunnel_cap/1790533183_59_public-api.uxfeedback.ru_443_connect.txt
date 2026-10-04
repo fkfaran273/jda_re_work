@@ -1,0 +1,4 @@
+CONNECT public-api.uxfeedback.ru:443 HTTP/1.1
+Host: public-api.uxfeedback.ru:443
+Proxy-Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)

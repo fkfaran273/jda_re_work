@@ -1,0 +1,108 @@
+{
+ "ones_per_bit": [
+  56,
+  56,
+  58,
+  58,
+  52,
+  55,
+  57,
+  53,
+  48,
+  60,
+  50,
+  61,
+  57,
+  77,
+  47,
+  52,
+  62,
+  59,
+  60,
+  46,
+  51,
+  60,
+  54,
+  61,
+  53,
+  71,
+  48,
+  44,
+  60,
+  52,
+  56
+ ],
+ "strongly_biased_bits_gt2.5sigma": [
+  [
+   13,
+   77,
+   3.9686269665968856
+  ],
+  [
+   25,
+   71,
+   2.834733547569204
+  ]
+ ],
+ "byte_high_bit": {
+  "leading_set": 0,
+  "leading_total": 112,
+  "trailing_set": 166,
+  "trailing_total": 336
+ },
+ "ascii_hexdigit_bytes": 34,
+ "sum32_value_counts_top": [
+  [
+   1537135372,
+   1
+  ],
+  [
+   1760560503,
+   1
+  ],
+  [
+   4255211134,
+   1
+  ]
+ ],
+ "simple_equalities": {
+  "w2==w0+w1": 0,
+  "w2==w0^w1": 0,
+  "w2==w0-w1": 0,
+  "w3==w0^w1^w2": 0,
+  "w3==w0+w1+w2": 0,
+  "w1==w0+w2": 0
+ },
+ "checksum_matches": {
+  "sum32_be12": 0,
+  "xor12": 0,
+  "crc32_be": 0,
+  "adler32_be": 0,
+  "fnv1a_be": 0,
+  "fnv1_be": 0,
+  "xor_w012": 0,
+  "sum_w012": 0,
+  "crc32_le": 0,
+  "fnv1a_le": 0,
+  "sum32_le": 0
+ },
+ "correlations": {
+  "w0~second": -0.007,
+  "w0~w1": -0.222,
+  "w0~w2": 0.25,
+  "w0~w3": 0.208,
+  "w0~second_low16": -0.496,
+  "w1~second": -0.284,
+  "w1~w2": 0.185,
+  "w1~w3": 0.228,
+  "w1~second_low16": 0.124,
+  "w2~second": 0.023,
+  "w2~w3": 0.171,
+  "w2~second_low16": 0.156,
+  "w3~second": -0.303,
+  "w3~second_low16": 0.15
+ },
+ "consec_second_hamming_mean": 61.96,
+ "consec_second_hamming_expected_uniform": 64.0,
+ "consec_second_word_delta_min_overall": 4288633
+}

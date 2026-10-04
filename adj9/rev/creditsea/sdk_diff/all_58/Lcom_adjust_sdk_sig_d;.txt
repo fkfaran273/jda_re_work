@@ -1,0 +1,260 @@
+# CLASS Lcom/adjust/sdk/sig/d;
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public static final a (Lcom/adjust/sdk/sig/d; Ljava/lang/Object;)Ljava/lang/CharSequence; ----
+  if-ne                  v1, v0, +005h
+  const-string           v0, "(this Collection)"
+  return-object          v0
+  invoke-static          v1, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public abstract a ()I ----
+  (no code)
+
+---- METHOD public final add (I Ljava/lang/Object;)V ----
+  new-instance           v1, Ljava/lang/UnsupportedOperationException;
+  const-string           v2, "Operation is not supported for read-only collection"
+  invoke-direct          v1, v2, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v1
+
+---- METHOD public final add (Ljava/lang/Object;)Z ----
+  new-instance           v2, Ljava/lang/UnsupportedOperationException;
+  const-string           v0, "Operation is not supported for read-only collection"
+  invoke-direct          v2, v0, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v2
+
+---- METHOD public final addAll (I Ljava/util/Collection;)Z ----
+  new-instance           v1, Ljava/lang/UnsupportedOperationException;
+  const-string           v2, "Operation is not supported for read-only collection"
+  invoke-direct          v1, v2, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v1
+
+---- METHOD public final addAll (Ljava/util/Collection;)Z ----
+  new-instance           v2, Ljava/lang/UnsupportedOperationException;
+  const-string           v0, "Operation is not supported for read-only collection"
+  invoke-direct          v2, v0, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v2
+
+---- METHOD public final clear ()V ----
+  new-instance           v0, Ljava/lang/UnsupportedOperationException;
+  const-string           v1, "Operation is not supported for read-only collection"
+  invoke-direct          v0, v1, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v0
+
+---- METHOD public contains (Ljava/lang/Object;)Z ----
+  invoke-interface       v3, Ljava/util/Collection;->isEmpty()Z
+  move-result            v0
+  const/4                v1, 0
+  if-eqz                 v0, +003h
+  return                 v1
+  invoke-interface       v3, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+  move-result-object     v0
+  invoke-interface       v0, Ljava/util/Iterator;->hasNext()Z
+  move-result            v2
+  if-eqz                 v2, +00eh
+  invoke-interface       v0, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v2
+  invoke-static          v2, v4, Lcom/adjust/sdk/sig/g1;->a(Ljava/lang/Object; Ljava/lang/Object;)Z
+  move-result            v2
+  if-eqz                 v2, -00eh
+  const/4                v4, 1
+  return                 v4
+  return                 v1
+
+---- METHOD public final containsAll (Ljava/util/Collection;)Z ----
+  invoke-interface       v3, Ljava/util/Collection;->isEmpty()Z
+  move-result            v0
+  const/4                v1, 1
+  if-eqz                 v0, +003h
+  return                 v1
+  invoke-interface       v3, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+  move-result-object     v3
+  invoke-interface       v3, Ljava/util/Iterator;->hasNext()Z
+  move-result            v0
+  if-eqz                 v0, +00eh
+  invoke-interface       v3, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v0
+  invoke-virtual         v2, v0, Lcom/adjust/sdk/sig/d;->contains(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, -00eh
+  const/4                v3, 0
+  return                 v3
+  return                 v1
+
+---- METHOD public final equals (Ljava/lang/Object;)Z ----
+  const/4                v0, 1
+  if-ne                  v6, v5, +003h
+  return                 v0
+  instance-of            v1, v6, Ljava/util/List;
+  const/4                v2, 0
+  if-nez                 v1, +003h
+  return                 v2
+  check-cast             v6, Ljava/util/Collection;
+  invoke-interface       v5, Ljava/util/Collection;->size()I
+  move-result            v1
+  invoke-interface       v6, Ljava/util/Collection;->size()I
+  move-result            v3
+  if-eq                  v1, v3, +003h
+  return                 v2
+  invoke-interface       v6, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
+  move-result-object     v6
+  invoke-interface       v5, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
+  move-result-object     v1
+  invoke-interface       v1, Ljava/util/Iterator;->hasNext()Z
+  move-result            v3
+  if-eqz                 v3, +011h
+  invoke-interface       v1, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v3
+  invoke-interface       v6, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v4
+  invoke-static          v3, v4, Lcom/adjust/sdk/sig/g1;->a(Ljava/lang/Object; Ljava/lang/Object;)Z
+  move-result            v3
+  if-nez                 v3, -012h
+  return                 v2
+  return                 v0
+
+---- METHOD public final hashCode ()I ----
+  invoke-interface       v3, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
+  move-result-object     v0
+  const/4                v1, 1
+  invoke-interface       v0, Ljava/util/Iterator;->hasNext()Z
+  move-result            v2
+  if-eqz                 v2, +012h
+  invoke-interface       v0, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v2
+  mul-int/lit8           v1, v1, 31
+  if-eqz                 v2, +007h
+  invoke-virtual         v2, Ljava/lang/Object;->hashCode()I
+  move-result            v2
+  goto                   +2h
+  const/4                v2, 0
+  add-int/2addr          v1, v2
+  goto                   -15h
+  return                 v1
+
+---- METHOD public indexOf (Ljava/lang/Object;)I ----
+  invoke-interface       v3, Ljava/util/List;->iterator()Ljava/util/Iterator;
+  move-result-object     v0
+  const/4                v1, 0
+  invoke-interface       v0, Ljava/util/Iterator;->hasNext()Z
+  move-result            v2
+  if-eqz                 v2, +010h
+  invoke-interface       v0, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v2
+  invoke-static          v2, v4, Lcom/adjust/sdk/sig/g1;->a(Ljava/lang/Object; Ljava/lang/Object;)Z
+  move-result            v2
+  if-eqz                 v2, +003h
+  return                 v1
+  add-int/lit8           v1, v1, 1
+  goto                   -13h
+  const/4                v4, -1
+  return                 v4
+
+---- METHOD public final isEmpty ()Z ----
+  invoke-virtual         v1, Lcom/adjust/sdk/sig/d;->a()I
+  move-result            v0
+  if-nez                 v0, +004h
+  const/4                v0, 1
+  return                 v0
+  const/4                v0, 0
+  return                 v0
+
+---- METHOD public final iterator ()Ljava/util/Iterator; ----
+  new-instance           v0, Lcom/adjust/sdk/sig/a;
+  invoke-direct          v0, v1, Lcom/adjust/sdk/sig/a;-><init>(Lcom/adjust/sdk/sig/d;)V
+  return-object          v0
+
+---- METHOD public lastIndexOf (Ljava/lang/Object;)I ----
+  invoke-interface       v2, Ljava/util/List;->size()I
+  move-result            v0
+  invoke-interface       v2, v0, Ljava/util/List;->listIterator(I)Ljava/util/ListIterator;
+  move-result-object     v0
+  invoke-interface       v0, Ljava/util/ListIterator;->hasPrevious()Z
+  move-result            v1
+  if-eqz                 v1, +011h
+  invoke-interface       v0, Ljava/util/ListIterator;->previous()Ljava/lang/Object;
+  move-result-object     v1
+  invoke-static          v1, v3, Lcom/adjust/sdk/sig/g1;->a(Ljava/lang/Object; Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, -00eh
+  invoke-interface       v0, Ljava/util/ListIterator;->nextIndex()I
+  move-result            v3
+  return                 v3
+  const/4                v3, -1
+  return                 v3
+
+---- METHOD public final listIterator ()Ljava/util/ListIterator; ----
+  new-instance           v0, Lcom/adjust/sdk/sig/b;
+  const/4                v1, 0
+  invoke-direct          v0, v2, v1, Lcom/adjust/sdk/sig/b;-><init>(Lcom/adjust/sdk/sig/d; I)V
+  return-object          v0
+
+---- METHOD public final listIterator (I)Ljava/util/ListIterator; ----
+  new-instance           v0, Lcom/adjust/sdk/sig/b;
+  invoke-direct          v0, v1, v2, Lcom/adjust/sdk/sig/b;-><init>(Lcom/adjust/sdk/sig/d; I)V
+  return-object          v0
+
+---- METHOD public final remove (I)Ljava/lang/Object; ----
+  new-instance           v2, Ljava/lang/UnsupportedOperationException;
+  const-string           v0, "Operation is not supported for read-only collection"
+  invoke-direct          v2, v0, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v2
+
+---- METHOD public final remove (Ljava/lang/Object;)Z ----
+  new-instance           v2, Ljava/lang/UnsupportedOperationException;
+  const-string           v0, "Operation is not supported for read-only collection"
+  invoke-direct          v2, v0, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v2
+
+---- METHOD public final removeAll (Ljava/util/Collection;)Z ----
+  new-instance           v2, Ljava/lang/UnsupportedOperationException;
+  const-string           v0, "Operation is not supported for read-only collection"
+  invoke-direct          v2, v0, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v2
+
+---- METHOD public final retainAll (Ljava/util/Collection;)Z ----
+  new-instance           v2, Ljava/lang/UnsupportedOperationException;
+  const-string           v0, "Operation is not supported for read-only collection"
+  invoke-direct          v2, v0, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v2
+
+---- METHOD public final set (I Ljava/lang/Object;)Ljava/lang/Object; ----
+  new-instance           v1, Ljava/lang/UnsupportedOperationException;
+  const-string           v2, "Operation is not supported for read-only collection"
+  invoke-direct          v1, v2, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v1
+
+---- METHOD public final bridge size ()I ----
+  invoke-virtual         v1, Lcom/adjust/sdk/sig/d;->a()I
+  move-result            v0
+  return                 v0
+
+---- METHOD public subList (I I)Ljava/util/List; ----
+  new-instance           v0, Lcom/adjust/sdk/sig/c;
+  invoke-direct          v0, v1, v2, v3, Lcom/adjust/sdk/sig/c;-><init>(Lcom/adjust/sdk/sig/d; I I)V
+  return-object          v0
+
+---- METHOD public final toArray ()[Ljava/lang/Object; ----
+  invoke-static          v1, Lcom/adjust/sdk/sig/n;->a(Ljava/util/Collection;)[Ljava/lang/Object;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public final toArray ([Ljava/lang/Object;)[Ljava/lang/Object; ----
+  invoke-static          v0, v1, Lcom/adjust/sdk/sig/n;->a(Ljava/util/Collection; [Ljava/lang/Object;)[Ljava/lang/Object;
+  move-result-object     v1
+  return-object          v1
+
+---- METHOD public final toString ()Ljava/lang/String; ----
+  new-instance           v0, LS8/c;
+  const/16               v1, 18
+  invoke-direct          v0, v3, v1, LS8/c;-><init>(Ljava/lang/Object; I)V
+  const-string           v1, "["
+  const-string           v2, "]"
+  invoke-static          v3, v1, v2, v0, Lcom/adjust/sdk/sig/o;->a(Ljava/lang/Iterable; Ljava/lang/String; Ljava/lang/String; Lcom/adjust/sdk/sig/r0;)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+######################################################################

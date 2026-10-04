@@ -1,0 +1,45 @@
+{
+ "_comment": "Corrected moto g42 device profile. Use as FC.DEV (the adj9_full_chain DEV dict) and FC.UA. No mcc/mnc. This is the same shape the winning device sent; it reproduces the device's exact param set via dev_from_json-equivalent fields (see PARAM_DIFF.md for wiring).",
+ "DEV": {
+  "api_level": "31",
+  "os_version": "12",
+  "device_name": "moto g42",
+  "device_manufacturer": "motorola",
+  "hardware_name": "S2SE32.28-28-4",
+  "os_build": "S2SE32.28-28-4",
+  "app_version": "3.14.0",
+  "install_version": "3.14.0",
+  "language": "tr",
+  "display_width": "1080",
+  "display_height": "2237",
+  "screen_density": "high",
+  "no_sim": true
+ },
+ "UA": "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)",
+ "OFF_MINUTES": 330,
+ "OFF_LABEL": "+0530",
+ "ADD_IDFA": false,
+ "device_json_fields": {
+  "sdk": "31",
+  "os_version": "12",
+  "model": "moto g42",
+  "brand": "motorola",
+  "mainboard": "S2SE32.28-28-4",
+  "build": "S2SE32.28-28-4",
+  "locale.language": "tr",
+  "display_metrics.xpx": "1080",
+  "display_metrics.ypx": "2237",
+  "display_metrics.density_dpi": "hdpi"
+ },
+ "time_shape": {
+  "click_time": "2026-09-14T17:48:35.000Z+0530",
+  "install_begin_time": "2026-09-14T17:52:05.000Z+0530",
+  "installed_at": "2026-09-14T17:52:12.431Z+0530",
+  "created_at": "2026-09-14T17:53:07.753Z+0530"
+ },
+ "ctit": {
+  "click_to_install_seconds": 217.431,
+  "click_to_install_begin_seconds": 210.0,
+  "note": "CTIT = installed_at - click_time = 217.431 s (3.62 min)"
+ }
+}

@@ -1,0 +1,111 @@
+# CLASS Lcom/adjust/sdk/SystemLifecycle;
+FIELD private static bridge instance Lcom/adjust/sdk/SystemLifecycle;
+FIELD private application Landroid/app/Application;
+FIELD private bridge callback Lcom/adjust/sdk/SystemLifecycle$SystemLifecycleCallback;
+FIELD private final callbackCache Lcom/adjust/sdk/SystemLifecycle$SystemLifecycleCache;
+FIELD public final logMessageList Ljava/util/concurrent/CopyOnWriteArrayList;
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v1, Ljava/lang/Object;-><init>()V
+  const/4                v0, 0
+  iput-object            v0, v1, Lcom/adjust/sdk/SystemLifecycle;->application Landroid/app/Application;
+  new-instance           v0, Lcom/adjust/sdk/SystemLifecycle$SystemLifecycleCache;
+  invoke-direct          v0, Lcom/adjust/sdk/SystemLifecycle$SystemLifecycleCache;-><init>()V
+  iput-object            v0, v1, Lcom/adjust/sdk/SystemLifecycle;->callbackCache Lcom/adjust/sdk/SystemLifecycle$SystemLifecycleCache;
+  iput-object            v0, v1, Lcom/adjust/sdk/SystemLifecycle;->callback Lcom/adjust/sdk/SystemLifecycle$SystemLifecycleCallback;
+  new-instance           v0, Ljava/util/concurrent/CopyOnWriteArrayList;
+  invoke-direct          v0, Ljava/util/concurrent/CopyOnWriteArrayList;-><init>()V
+  iput-object            v0, v1, Lcom/adjust/sdk/SystemLifecycle;->logMessageList Ljava/util/concurrent/CopyOnWriteArrayList;
+  return-void            
+
+---- METHOD public static getSingletonInstance ()Lcom/adjust/sdk/SystemLifecycle; ----
+  sget-object            v0, Lcom/adjust/sdk/SystemLifecycle;->instance Lcom/adjust/sdk/SystemLifecycle;
+  if-nez                 v0, +017h
+  const-class            v1, Lcom/adjust/sdk/SystemLifecycle;
+  monitor-enter          v1
+  sget-object            v0, Lcom/adjust/sdk/SystemLifecycle;->instance Lcom/adjust/sdk/SystemLifecycle;
+  if-nez                 v0, +00ch
+  new-instance           v0, Lcom/adjust/sdk/SystemLifecycle;
+  invoke-direct          v0, Lcom/adjust/sdk/SystemLifecycle;-><init>()V
+  sput-object            v0, Lcom/adjust/sdk/SystemLifecycle;->instance Lcom/adjust/sdk/SystemLifecycle;
+  goto                   +3h
+  move-exception         v0
+  goto                   +3h
+  monitor-exit           v1
+  return-object          v0
+  monitor-exit           v1
+  throw                  v0
+  return-object          v0
+
+---- METHOD public foregroundOrElseBackgroundCached ()Ljava/lang/Boolean; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/SystemLifecycle;->callbackCache Lcom/adjust/sdk/SystemLifecycle$SystemLifecycleCache;
+  iget-object            v0, v0, Lcom/adjust/sdk/SystemLifecycle$SystemLifecycleCache;->foregroundOrElseBackgroundCache Ljava/lang/Boolean;
+  return-object          v0
+
+---- METHOD public onActivityCreated (Landroid/app/Activity; Landroid/os/Bundle;)V ----
+  return-void            
+
+---- METHOD public onActivityDestroyed (Landroid/app/Activity;)V ----
+  return-void            
+
+---- METHOD public onActivityPaused (Landroid/app/Activity;)V ----
+  iget-object            v2, v1, Lcom/adjust/sdk/SystemLifecycle;->callback Lcom/adjust/sdk/SystemLifecycle$SystemLifecycleCallback;
+  const/4                v0, 0
+  invoke-interface       v2, v0, Lcom/adjust/sdk/SystemLifecycle$SystemLifecycleCallback;->onActivityLifecycle(Z)V
+  return-void            
+
+---- METHOD public onActivityResumed (Landroid/app/Activity;)V ----
+  iget-object            v2, v1, Lcom/adjust/sdk/SystemLifecycle;->callback Lcom/adjust/sdk/SystemLifecycle$SystemLifecycleCallback;
+  const/4                v0, 1
+  invoke-interface       v2, v0, Lcom/adjust/sdk/SystemLifecycle$SystemLifecycleCallback;->onActivityLifecycle(Z)V
+  return-void            
+
+---- METHOD public onActivitySaveInstanceState (Landroid/app/Activity; Landroid/os/Bundle;)V ----
+  return-void            
+
+---- METHOD public onActivityStarted (Landroid/app/Activity;)V ----
+  return-void            
+
+---- METHOD public onActivityStopped (Landroid/app/Activity;)V ----
+  return-void            
+
+---- METHOD public overwriteCallback (Lcom/adjust/sdk/SystemLifecycle$SystemLifecycleCallback;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/SystemLifecycle;->callback Lcom/adjust/sdk/SystemLifecycle$SystemLifecycleCallback;
+  return-void            
+
+---- METHOD public synchronized registerActivityLifecycleCallbacks (Landroid/content/Context;)V ----
+  monitor-enter          v2
+  iget-object            v0, v2, Lcom/adjust/sdk/SystemLifecycle;->application Landroid/app/Application;
+  if-eqz                 v0, +00dh
+  iget-object            v3, v2, Lcom/adjust/sdk/SystemLifecycle;->logMessageList Ljava/util/concurrent/CopyOnWriteArrayList;
+  const-string           v0, "Cannot register activity lifecycle callbacks more than once"
+  invoke-virtual         v3, v0, Ljava/util/concurrent/CopyOnWriteArrayList;->add(Ljava/lang/Object;)Z
+  monitor-exit           v2
+  return-void            
+  move-exception         v3
+  goto                   +2bh
+  if-nez                 v3, +00bh
+  iget-object            v3, v2, Lcom/adjust/sdk/SystemLifecycle;->logMessageList Ljava/util/concurrent/CopyOnWriteArrayList;
+  const-string           v0, "Cannot register activity lifecycle callbacks without context"
+  invoke-virtual         v3, v0, Ljava/util/concurrent/CopyOnWriteArrayList;->add(Ljava/lang/Object;)Z
+  monitor-exit           v2
+  return-void            
+  invoke-virtual         v3, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+  move-result-object     v3
+  instance-of            v0, v3, Landroid/app/Application;
+  iget-object            v1, v2, Lcom/adjust/sdk/SystemLifecycle;->logMessageList Ljava/util/concurrent/CopyOnWriteArrayList;
+  if-nez                 v0, +009h
+  const-string           v3, "Cannot register activity lifecycle callbacks without application context as Application"
+  invoke-virtual         v1, v3, Ljava/util/concurrent/CopyOnWriteArrayList;->add(Ljava/lang/Object;)Z
+  monitor-exit           v2
+  return-void            
+  const-string           v0, "Registering activity lifecycle callbacks"
+  invoke-virtual         v1, v0, Ljava/util/concurrent/CopyOnWriteArrayList;->add(Ljava/lang/Object;)Z
+  check-cast             v3, Landroid/app/Application;
+  iput-object            v3, v2, Lcom/adjust/sdk/SystemLifecycle;->application Landroid/app/Application;
+  invoke-virtual         v3, v2, Landroid/app/Application;->registerActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
+  monitor-exit           v2
+  return-void            
+  monitor-exit           v2
+  throw                  v3
+######################################################################

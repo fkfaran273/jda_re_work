@@ -1,0 +1,15 @@
+{
+ "attribution": {
+  "engagement_time": "0001-01-01T00:00:00Z",
+  "first_session_time": "2026-09-25T10:37:52Z",
+  "installed_at": "2026-09-25T10:37:52Z",
+  "is_reattributed": false,
+  "is_redownload_install": false,
+  "network": "Organic",
+  "tracker_name": "Organic",
+  "tracker_token": "wy7261z"
+ },
+ "gps_adid": "cc87d5c7-46cf-47db-8209-b138c922aca7",
+ "initiated_by": "backend",
+ "referrer": "adjust_reftag=c7w5NwISPb8wo&utm_source=VKM Digital Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic"
+}

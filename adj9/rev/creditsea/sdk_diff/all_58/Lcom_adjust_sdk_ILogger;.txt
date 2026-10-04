@@ -1,0 +1,32 @@
+# CLASS Lcom/adjust/sdk/ILogger;
+
+---- METHOD public varargs abstract Assert (Ljava/lang/String; [Ljava/lang/Object;)V ----
+  (no code)
+
+---- METHOD public varargs abstract debug (Ljava/lang/String; [Ljava/lang/Object;)V ----
+  (no code)
+
+---- METHOD public varargs abstract error (Ljava/lang/String; [Ljava/lang/Object;)V ----
+  (no code)
+
+---- METHOD public varargs abstract info (Ljava/lang/String; [Ljava/lang/Object;)V ----
+  (no code)
+
+---- METHOD public abstract lockLogLevel ()V ----
+  (no code)
+
+---- METHOD public abstract setLogLevel (Lcom/adjust/sdk/LogLevel; Z)V ----
+  (no code)
+
+---- METHOD public abstract setLogLevelString (Ljava/lang/String; Z)V ----
+  (no code)
+
+---- METHOD public varargs abstract verbose (Ljava/lang/String; [Ljava/lang/Object;)V ----
+  (no code)
+
+---- METHOD public varargs abstract warn (Ljava/lang/String; [Ljava/lang/Object;)V ----
+  (no code)
+
+---- METHOD public varargs abstract warnInProduction (Ljava/lang/String; [Ljava/lang/Object;)V ----
+  (no code)
+######################################################################

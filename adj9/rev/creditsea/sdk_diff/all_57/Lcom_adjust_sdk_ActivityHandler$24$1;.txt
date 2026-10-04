@@ -1,0 +1,21 @@
+# CLASS Lcom/adjust/sdk/ActivityHandler$24$1;
+FIELD public final synthetic a Lcom/adjust/sdk/ActivityHandler$24;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/ActivityHandler$24;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/ActivityHandler$24$1;->a Lcom/adjust/sdk/ActivityHandler$24;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v2, Lcom/adjust/sdk/ActivityHandler$24$1;->a Lcom/adjust/sdk/ActivityHandler$24;
+  iget-object            v0, v0, Lcom/adjust/sdk/ActivityHandler$24;->a Lcom/adjust/sdk/AdjustTimeoutCallback;
+  invoke-virtual         v0, Lcom/adjust/sdk/AdjustTimeoutCallback;->getOnAdidReadListener()Lcom/adjust/sdk/OnAdidReadListener;
+  move-result-object     v0
+  const/4                v1, 0
+  if-eqz                 v0, +005h
+  invoke-interface       v0, v1, Lcom/adjust/sdk/OnAdidReadListener;->onAdidRead(Ljava/lang/String;)V
+  iget-object            v0, v2, Lcom/adjust/sdk/ActivityHandler$24$1;->a Lcom/adjust/sdk/ActivityHandler$24;
+  iget-object            v0, v0, Lcom/adjust/sdk/ActivityHandler$24;->a Lcom/adjust/sdk/AdjustTimeoutCallback;
+  invoke-virtual         v0, v1, Lcom/adjust/sdk/AdjustTimeoutCallback;->setOnAdidReadListener(Lcom/adjust/sdk/OnAdidReadListener;)V
+  return-void            
+######################################################################

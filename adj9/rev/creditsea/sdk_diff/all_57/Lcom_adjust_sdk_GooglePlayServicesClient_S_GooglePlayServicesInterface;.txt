@@ -1,0 +1,63 @@
+# CLASS Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesInterface;
+FIELD public final a Landroid/os/IBinder;
+
+---- METHOD public constructor <init> (Landroid/os/IBinder;)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesInterface;->a Landroid/os/IBinder;
+  return-void            
+
+---- METHOD public final a ()Ljava/lang/String; ----
+  invoke-static          Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+  move-result-object     v0
+  invoke-static          Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+  move-result-object     v1
+  const-string           v2, "com.google.android.gms.ads.identifier.internal.IAdvertisingIdService"
+  invoke-virtual         v0, v2, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
+  iget-object            v2, v5, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesInterface;->a Landroid/os/IBinder;
+  const/4                v3, 1
+  const/4                v4, 0
+  invoke-interface       v2, v3, v0, v1, v4, Landroid/os/IBinder;->transact(I Landroid/os/Parcel; Landroid/os/Parcel; I)Z
+  invoke-virtual         v1, Landroid/os/Parcel;->readException()V
+  invoke-virtual         v1, Landroid/os/Parcel;->readString()Ljava/lang/String;
+  move-result-object     v2
+  invoke-virtual         v1, Landroid/os/Parcel;->recycle()V
+  invoke-virtual         v0, Landroid/os/Parcel;->recycle()V
+  return-object          v2
+  move-exception         v2
+  invoke-virtual         v1, Landroid/os/Parcel;->recycle()V
+  invoke-virtual         v0, Landroid/os/Parcel;->recycle()V
+  throw                  v2
+
+---- METHOD public final asBinder ()Landroid/os/IBinder; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesInterface;->a Landroid/os/IBinder;
+  return-object          v0
+
+---- METHOD public final b ()Ljava/lang/Boolean; ----
+  invoke-static          Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+  move-result-object     v0
+  invoke-static          Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
+  move-result-object     v1
+  const-string           v2, "com.google.android.gms.ads.identifier.internal.IAdvertisingIdService"
+  invoke-virtual         v0, v2, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
+  const/4                v2, 1
+  invoke-virtual         v0, v2, Landroid/os/Parcel;->writeInt(I)V
+  iget-object            v3, v6, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesInterface;->a Landroid/os/IBinder;
+  const/4                v4, 2
+  const/4                v5, 0
+  invoke-interface       v3, v4, v0, v1, v5, Landroid/os/IBinder;->transact(I Landroid/os/Parcel; Landroid/os/Parcel; I)Z
+  invoke-virtual         v1, Landroid/os/Parcel;->readException()V
+  invoke-virtual         v1, Landroid/os/Parcel;->readInt()I
+  move-result            v3
+  if-eqz                 v3, +003h
+  move                   v5, v2
+  invoke-virtual         v1, Landroid/os/Parcel;->recycle()V
+  invoke-virtual         v0, Landroid/os/Parcel;->recycle()V
+  xor-int/lit8           v0, v5, 1
+  invoke-static          v0, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object     v0
+  return-object          v0
+  move-exception         v2
+  invoke-virtual         v1, Landroid/os/Parcel;->recycle()V
+  invoke-virtual         v0, Landroid/os/Parcel;->recycle()V
+  throw                  v2
+######################################################################

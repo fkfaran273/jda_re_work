@@ -1,0 +1,1 @@
+"C:\Users\Apps\.workbuddy-ai\binaries\python\envs\default\Scripts\python.exe" -X utf8 "C:\Users\Apps\Downloads\com.penti.app\adj9\rev\oracle_run.py" mint > "C:\Users\Apps\Downloads\com.penti.app\adj9\rev\oracle_run.log" 2> "C:\Users\Apps\Downloads\com.penti.app\adj9\rev\oracle_run_err.log"

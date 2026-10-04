@@ -1,0 +1,86 @@
+# CLASS Lcom/adjust/sdk/sig/g;
+FIELD public static final I
+
+---- METHOD static constructor <clinit>(()V)  ----
+  const/4                v0, 0
+  const-string           v1, "kotlinx.serialization.json.pool.size"
+  invoke-static          v1, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v1
+  if-eqz                 v1, +062h
+  invoke-virtual         v1, Ljava/lang/String;->length()I
+  move-result            v2
+  if-nez                 v2, +004h
+  goto/16                +05ah
+  const/4                v3, 0
+  invoke-virtual         v1, v3, Ljava/lang/String;->charAt(I)C
+  move-result            v4
+  const/16               v5, 48
+  const                  v6, -2147483647
+  if-ge                  v4, v5, +016h
+  const/4                v5, 1
+  if-ne                  v2, v5, +003h
+  goto                   +49h
+  const/16               v7, 43
+  if-eq                  v4, v7, +00bh
+  const/16               v6, 45
+  if-eq                  v4, v6, +003h
+  goto                   +40h
+  const/high16           v6, -2147483648
+  move                   v4, v5
+  goto                   +6h
+  move                   v4, v5
+  move                   v5, v3
+  goto                   +3h
+  move                   v4, v3
+  move                   v5, v4
+  const                  v7, -59652323
+  move                   v8, v7
+  if-ge                  v4, v2, +025h
+  invoke-virtual         v1, v4, Ljava/lang/String;->charAt(I)C
+  move-result            v9
+  const/16               v10, 10
+  invoke-static          v9, v10, Ljava/lang/Character;->digit(I I)I
+  move-result            v9
+  if-gez                 v9, +003h
+  goto                   +24h
+  if-ge                  v3, v8, +00bh
+  if-ne                  v8, v7, +021h
+  div-int/lit8           v8, v6, 10
+  if-ge                  v3, v8, +005h
+  goto                   +1bh
+  move-exception         v1
+  goto                   +1bh
+  mul-int/lit8           v3, v3, 10
+  add-int                v10, v6, v9
+  if-ge                  v3, v10, +003h
+  goto                   +12h
+  sub-int/2addr          v3, v9
+  add-int/lit8           v4, v4, 1
+  goto                   -24h
+  if-eqz                 v5, +007h
+  invoke-static          v3, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v1
+  goto                   +fh
+  neg-int                v1, v3
+  invoke-static          v1, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v1
+  goto                   +9h
+  move-object            v1, v0
+  goto                   +7h
+  new-instance           v2, Lcom/adjust/sdk/sig/j2;
+  invoke-direct          v2, v1, Lcom/adjust/sdk/sig/j2;-><init>(Ljava/lang/Throwable;)V
+  move-object            v1, v2
+  nop                    
+  instance-of            v2, v1, Lcom/adjust/sdk/sig/j2;
+  if-eqz                 v2, +003h
+  goto                   +2h
+  move-object            v0, v1
+  check-cast             v0, Ljava/lang/Integer;
+  if-eqz                 v0, +007h
+  invoke-virtual         v0, Ljava/lang/Integer;->intValue()I
+  move-result            v0
+  goto                   +3h
+  const/high16           v0, 2097152
+  sput                   v0, Lcom/adjust/sdk/sig/g;->a I
+  return-void            
+######################################################################

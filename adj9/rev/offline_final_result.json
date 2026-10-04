@@ -1,0 +1,70 @@
+{
+ "date": "2026-09-28T00:38:34",
+ "transport": "okhttp_transport.OkHttpTransport (tls_client okhttp4_android_12, force_http1, OkHttp header order, %20 FormBody encoding)",
+ "fingerprint": {
+  "tls_hello": "517B padded Conscrypt, 13/13 exts, 16/17 ciphers (0xc00a missing), 3/3 groups, 9/9 sigalgs, ALPN http/1.1 only",
+  "headers": "byte-exact OkHttp order/casing"
+ },
+ "phase2_offline": {
+  "ctit_s": 210.0,
+  "creative": "pyokhttp_t1",
+  "gps_adid": "ec1c91d3-16e9-490f-9a61-8d829aec1c76",
+  "android_uuid": "b591768f-4116-4942-af98-3cf3821c266d",
+  "gaid_old": "7b7d27d7-b344-4ed2-9ae9-531f6a51ce52",
+  "gaid_readback": "ec1c91d3-16e9-490f-9a61-8d829aec1c76",
+  "click": {
+   "status": 302,
+   "referrer": "adjust_reftag%3DcpP6CAx2Vcghs%26utm_source%3DVKM%2BDigital%2BYeni%26utm_campaign%3DAH%26utm_content%3Dvkm_0926_36%26utm_term%3Dpyokhttp_t1"
+  },
+  "session": {
+   "status": 200,
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d209b076a57ccbb0b4d818050ed4cd8c\",\"ask_in\":2000}",
+   "second": 1790536336,
+   "blob_hex": "58205de91e196324404965967b19cd1c9c2f49494fdbf3e7cb1fe4b9e37a95117b7970dd0dfa5a2575781adba6b354c412b7f61dd7ee9b4bad0b7204f73f4eeef18c38f098234d1eae8c8da4395f503c4465ba94cecac8b94f6b0867c21b87ea1a527963f79130e9c1d24d3c5667e18dc6d9938216815945590b0575e3bf8e414682040cf95a0c6edd7e7637e389957a99404724d899a0bccdec3f7cb235f1110537cf6f328af031ffb2d4fa9832f83004ebb15dd7643da9e5dd532916057b56"
+  },
+  "sdk_click": {
+   "status": 200,
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d209b076a57ccbb0b4d818050ed4cd8c\"}",
+   "second": 1790536358,
+   "blob_hex": "620145b171cf9d4a68fba5a2410c68726e24096f02c9a3e81484149e968ba7a4063009d81c0f78c5772fdcea0f115a5a230a4f3d88d71eb6ac3a0758b93d5145bb29342291d0b432971da6db30af4365e36768b53c3c7a4c2c6ad8bb718937ee06e27cce11c6747dcefd59c8a15db889235dd2fa2921ad1d43b977193ec1fe634af0284956df4b15ec4dfacc425c505ca9009f88b2498fa4d9a2d6e04672248fe2c0ea45e6eee43b5bec389e0c0d8b4567b1b3f2fb7226a903aff26c4cbebc22"
+  },
+  "app_verdict": {
+   "tracker_token": "wy7261z",
+   "tracker_name": "Organic",
+   "network": "Organic",
+   "engagement_time": "0001-01-01T00:00:00Z",
+   "installed_at": "2026-09-27T19:12:37Z",
+   "first_session_time": "2026-09-27T19:12:37Z",
+   "is_reattributed": false,
+   "is_redownload_install": false
+  },
+  "python_attribution": {
+   "status": 200,
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d209b076a57ccbb0b4d818050ed4cd8c\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T19:12:37Z\",\"first_session_time\":\"2026-09-27T19:12:37Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+  },
+  "verdict": "Organic",
+  "run_log": "offline_final_run.log"
+ },
+ "phase1_blob_replay": {
+  "body_source": "transport/fp_session_body.txt (captured)",
+  "body_len": 1029,
+  "session": {
+   "status": 200,
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d3a205a1c77e219be02d5bbf2d814d51\",\"ask_in\":5000}"
+  },
+  "attribution": {
+   "status": 200,
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d3a205a1c77e219be02d5bbf2d814d51\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-25T13:05:08Z\",\"first_session_time\":\"2026-09-25T13:05:08Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+  },
+  "verdict": {
+   "tracker_token": "wy7261z",
+   "network": "Organic",
+   "engagement_time": "0001-01-01T00:00:00Z"
+  },
+  "recognition_signals": [
+   "ask_in=5000"
+  ],
+  "recognized": true
+ },
+ "conclusion": "Transport fingerprint matched (517-B padded Conscrypt hello, byte-exact OkHttp header block, %20 FormBody, one keep-alive connection). Phase 1: genuine blob replay accepted (200 ask_in=5000, stored verdict read back). Phase 2: fully offline booking with fresh GMS GAID + Python click + Python mint through the matched transport created the install (adid assigned, ask_in=2000, sdk_click bound to same adid) but the device oracle verdict is Organic. The TLS/HTTP fingerprint is NOT the booking gate."
+}

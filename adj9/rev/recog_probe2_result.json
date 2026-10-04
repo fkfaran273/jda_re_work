@@ -1,0 +1,37 @@
+[
+ {
+  "label": "A verbatim blob + genuine query",
+  "http": 400,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"ask_in\":7200000}"
+ },
+ {
+  "label": "B verbatim blob + pert device_name",
+  "http": 200,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_ti"
+ },
+ {
+  "label": "C verbatim blob + extra param",
+  "http": 200,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_ti"
+ },
+ {
+  "label": "D verbatim blob + dropped ui_mode",
+  "http": 400,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"ask_in\":7200000}"
+ },
+ {
+  "label": "E verbatim blob + fresh android_uuid",
+  "http": 200,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_ti"
+ },
+ {
+  "label": "F verbatim blob + fresh gps_adid",
+  "http": 200,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_ti"
+ },
+ {
+  "label": "G verbatim blob + NO Authorization",
+  "http": 200,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_ti"
+ }
+]

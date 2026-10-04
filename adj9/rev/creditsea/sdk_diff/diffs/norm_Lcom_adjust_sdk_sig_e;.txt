@@ -1,0 +1,175 @@
+--- 
++++ 
+@@ -55,5 +55,6 @@
+ return-void
++new-instance vX, Ljava/lang/IllegalStateException;
+ const-string "Deque is too big."
+-invoke-static vX, Lokhttp3/a;->D(Ljava/lang/String;)V
+-return-void
++invoke-direct vX, vX, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
++throw vX
+ ---- METHOD public final a((I Ljava/util/Collection;)V) ----
+@@ -178,8 +179,9 @@
+ return-void
++new-instance vX, Ljava/lang/IndexOutOfBoundsException;
+ const-string "index: "
+ const-string ", size: "
+-invoke-static vX, vX, vX, vX, Landroidx/compose/animation/c;->n(I I Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+-move-result-object vX
+-invoke-static vX, Landroidx/sqlite/driver/a;->h(Ljava/lang/String;)V
+-return-void
++invoke-static vX, vX, vX, vX, LB2/a;->g(Ljava/lang/String; I I Ljava/lang/String;)Ljava/lang/String;
++move-result-object vX
++invoke-direct vX, vX, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
++throw vX
+ ---- METHOD public final add((Ljava/lang/Object;)Z) ----
+@@ -191,3 +193,3 @@
+ if BRANCH
+-if-gt vX, vX, +0d9h
++if-gt vX, vX, +0dbh
+ invoke-interface vX, Ljava/util/Collection;->isEmpty()Z
+@@ -224,7 +226,7 @@
+ shr-int/2addr vX, vX
+-if-ge vX, vX, +055h
++if-ge vX, vX, +057h
+ iget vX, vX, Lcom/adjust/sdk/sig/e;->a I
+ sub-int vX, vX, vX
+-iget-object vX, vX, Lcom/adjust/sdk/sig/e;->b [Ljava/lang/Object;
+-if-lt vX, vX, +027h
++if-lt vX, vX, +029h
++iget-object vX, vX, Lcom/adjust/sdk/sig/e;->b [Ljava/lang/Object;
+ if BRANCH
+@@ -250,2 +252,3 @@
+ GOTO
++iget-object vX, vX, Lcom/adjust/sdk/sig/e;->b [Ljava/lang/Object;
+ array-length vX, vX
+@@ -318,9 +321,9 @@
+ return vX
++new-instance vX, Ljava/lang/IndexOutOfBoundsException;
+ const-string "index: "
+ const-string ", size: "
+-invoke-static vX, vX, vX, vX, Landroidx/compose/animation/c;->n(I I Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+-move-result-object vX
+-invoke-static vX, Landroidx/sqlite/driver/a;->h(Ljava/lang/String;)V
+-const/4 vX, 0
+-return vX
++invoke-static vX, vX, vX, vX, LB2/a;->g(Ljava/lang/String; I I Ljava/lang/String;)Ljava/lang/String;
++move-result-object vX
++invoke-direct vX, vX, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
++throw vX
+ ---- METHOD public final addAll((Ljava/util/Collection;)Z) ----
+@@ -515,27 +518,27 @@
+ return-object vX
++new-instance vX, Ljava/lang/IndexOutOfBoundsException;
+ const-string "index: "
+ const-string ", size: "
+-invoke-static vX, vX, vX, vX, Landroidx/compose/animation/c;->n(I I Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+-move-result-object vX
+-invoke-static vX, Landroidx/sqlite/driver/a;->h(Ljava/lang/String;)V
+-const/4 vX, 0
++invoke-static vX, vX, vX, vX, LB2/a;->g(Ljava/lang/String; I I Ljava/lang/String;)Ljava/lang/String;
++move-result-object vX
++invoke-direct vX, vX, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
++throw vX
++---- METHOD public final get((I)Ljava/lang/Object;) ----
++iget vX, vX, Lcom/adjust/sdk/sig/e;->c I
++if BRANCH
++if-ge vX, vX, +00eh
++iget-object vX, vX, Lcom/adjust/sdk/sig/e;->b [Ljava/lang/Object;
++iget vX, vX, Lcom/adjust/sdk/sig/e;->a I
++add-int/2addr vX, vX
++invoke-virtual vX, vX, Lcom/adjust/sdk/sig/e;->c(I)I
++move-result vX
++aget-object vX, vX, vX
+ return-object vX
+----- METHOD public final get((I)Ljava/lang/Object;) ----
+-iget vX, vX, Lcom/adjust/sdk/sig/e;->c I
+-if BRANCH
+-if-ge vX, vX, +00eh
+-iget-object vX, vX, Lcom/adjust/sdk/sig/e;->b [Ljava/lang/Object;
+-iget vX, vX, Lcom/adjust/sdk/sig/e;->a I
+-add-int/2addr vX, vX
+-invoke-virtual vX, vX, Lcom/adjust/sdk/sig/e;->c(I)I
+-move-result vX
+-aget-object vX, vX, vX
+-return-object vX
++new-instance vX, Ljava/lang/IndexOutOfBoundsException;
+ const-string "index: "
+ const-string ", size: "
+-invoke-static vX, vX, vX, vX, Landroidx/compose/animation/c;->n(I I Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+-move-result-object vX
+-invoke-static vX, Landroidx/sqlite/driver/a;->h(Ljava/lang/String;)V
+-const/4 vX, 0
+-return-object vX
++invoke-static vX, vX, vX, vX, LB2/a;->g(Ljava/lang/String; I I Ljava/lang/String;)Ljava/lang/String;
++move-result-object vX
++invoke-direct vX, vX, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
++throw vX
+ ---- METHOD public final indexOf((Ljava/lang/Object;)I) ----
+@@ -772,6 +775,6 @@
+ return-object vX
++new-instance vX, Ljava/util/NoSuchElementException;
+ const-string "ArrayDeque is empty."
+-invoke-static vX, Landroidx/sqlite/driver/a;->l(Ljava/lang/String;)V
+-const/4 vX, 0
+-return-object vX
++invoke-direct vX, vX, Ljava/util/NoSuchElementException;-><init>(Ljava/lang/String;)V
++throw vX
+ ---- METHOD public final removeLast(()Ljava/lang/Object;) ----
+@@ -798,6 +801,6 @@
+ return-object vX
++new-instance vX, Ljava/util/NoSuchElementException;
+ const-string "ArrayDeque is empty."
+-invoke-static vX, Landroidx/sqlite/driver/a;->l(Ljava/lang/String;)V
+-const/4 vX, 0
+-return-object vX
++invoke-direct vX, vX, Ljava/util/NoSuchElementException;-><init>(Ljava/lang/String;)V
++throw vX
+ ---- METHOD public final removeRange((I I)V) ----
+@@ -806,3 +809,3 @@
+ if BRANCH
+-if-gt vX, vX, +0d4h
++if-gt vX, vX, +0d6h
+ if-gt vX, vX, +0c8h
+@@ -919,13 +922,18 @@
+ return-void
++new-instance vX, Ljava/lang/IllegalArgumentException;
+ const-string " > toIndex: "
+-invoke-static vX, vX, vX, vX, Landroidx/compose/animation/c;->n(I I Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+-move-result-object vX
+-invoke-static vX, Lokhttp3/a;->s(Ljava/lang/String;)V
+-return-void
++invoke-static vX, vX, vX, vX, LB2/a;->g(Ljava/lang/String; I I Ljava/lang/String;)Ljava/lang/String;
++move-result-object vX
++invoke-direct vX, vX, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
++throw vX
++new-instance vX, Ljava/lang/IndexOutOfBoundsException;
+ const-string ", toIndex: "
+ const-string ", size: "
+-invoke-static vX, vX, vX, vX, vX, Ld;->s(I I Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/StringBuilder;
+-move-result-object vX
+-invoke-static vX, vX, Lkotlin/text/b;->a(Ljava/lang/StringBuilder; I)V
+-return-void
++invoke-static vX, vX, vX, vX, vX, Lio/flutter/plugins/googlesignin/b;->s(Ljava/lang/String; I I Ljava/lang/String; Ljava/lang/String;)Ljava/lang/StringBuilder;
++move-result-object vX
++invoke-virtual vX, vX, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
++invoke-virtual vX, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
++move-result-object vX
++invoke-direct vX, vX, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
++throw vX
+ ---- METHOD public final retainAll((Ljava/util/Collection;)Z) ----
+@@ -1030,9 +1038,9 @@
+ return-object vX
++new-instance vX, Ljava/lang/IndexOutOfBoundsException;
+ const-string "index: "
+ const-string ", size: "
+-invoke-static vX, vX, vX, vX, Landroidx/compose/animation/c;->n(I I Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+-move-result-object vX
+-invoke-static vX, Landroidx/sqlite/driver/a;->h(Ljava/lang/String;)V
+-const/4 vX, 0
+-return-object vX
++invoke-static vX, vX, vX, vX, LB2/a;->g(Ljava/lang/String; I I Ljava/lang/String;)Ljava/lang/String;
++move-result-object vX
++invoke-direct vX, vX, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
++throw vX
+ ---- METHOD public final size(()I) ----

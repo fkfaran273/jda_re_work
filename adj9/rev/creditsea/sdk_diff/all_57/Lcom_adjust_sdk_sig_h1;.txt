@@ -1,0 +1,11 @@
+# CLASS Lcom/adjust/sdk/sig/h1;
+
+---- METHOD public constructor <init> ()V ----
+  new-instance           v0, Lcom/adjust/sdk/sig/l1;
+  const/4                v1, 1
+  const/4                v2, 3
+  const/4                v3, 0
+  invoke-direct          v0, v3, v1, v2, Lcom/adjust/sdk/sig/l1;-><init>(Z Z I)V
+  invoke-direct          v4, v0, Lcom/adjust/sdk/sig/i1;-><init>(Lcom/adjust/sdk/sig/l1;)V
+  return-void            
+######################################################################

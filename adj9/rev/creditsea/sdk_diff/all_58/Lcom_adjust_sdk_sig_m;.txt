@@ -1,0 +1,241 @@
+# CLASS Lcom/adjust/sdk/sig/m;
+FIELD public final a Ljava/lang/Class;
+
+---- METHOD static constructor <clinit> ()V ----
+  const-class            v21, Lcom/adjust/sdk/sig/t0;
+  const-class            v22, Lcom/adjust/sdk/sig/u0;
+  const-class            v0, Lcom/adjust/sdk/sig/g0;
+  const-class            v1, Lcom/adjust/sdk/sig/r0;
+  const-class            v2, Lcom/adjust/sdk/sig/v0;
+  const-class            v3, Lcom/adjust/sdk/sig/w0;
+  const-class            v4, Lcom/adjust/sdk/sig/x0;
+  const-class            v5, Lcom/adjust/sdk/sig/y0;
+  const-class            v6, Lcom/adjust/sdk/sig/z0;
+  const-class            v7, Lcom/adjust/sdk/sig/a1;
+  const-class            v8, Lcom/adjust/sdk/sig/b1;
+  const-class            v9, Lcom/adjust/sdk/sig/c1;
+  const-class            v10, Lcom/adjust/sdk/sig/h0;
+  const-class            v11, Lcom/adjust/sdk/sig/i0;
+  const-class            v12, Lcom/adjust/sdk/sig/j0;
+  const-class            v13, Lcom/adjust/sdk/sig/k0;
+  const-class            v14, Lcom/adjust/sdk/sig/l0;
+  const-class            v15, Lcom/adjust/sdk/sig/m0;
+  const-class            v16, Lcom/adjust/sdk/sig/n0;
+  const-class            v17, Lcom/adjust/sdk/sig/o0;
+  const-class            v18, Lcom/adjust/sdk/sig/p0;
+  const-class            v19, Lcom/adjust/sdk/sig/q0;
+  const-class            v20, Lcom/adjust/sdk/sig/s0;
+  filled-new-array/range v0 ... v22, [Ljava/lang/Class;
+  move-result-object     v0
+  invoke-static          v0, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+  move-result-object     v0
+  new-instance           v1, Ljava/util/ArrayList;
+  invoke-interface       v0, Ljava/util/Collection;->size()I
+  move-result            v2
+  invoke-direct          v1, v2, Ljava/util/ArrayList;-><init>(I)V
+  invoke-interface       v0, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+  move-result-object     v0
+  const/4                v2, 0
+  move                   v3, v2
+  invoke-interface       v0, Ljava/util/Iterator;->hasNext()Z
+  move-result            v4
+  if-eqz                 v4, +022h
+  invoke-interface       v0, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v4
+  add-int/lit8           v5, v3, 1
+  if-ltz                 v3, +012h
+  check-cast             v4, Ljava/lang/Class;
+  invoke-static          v3, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v3
+  new-instance           v6, Lcom/adjust/sdk/sig/a2;
+  invoke-direct          v6, v4, v3, Lcom/adjust/sdk/sig/a2;-><init>(Ljava/lang/Class; Ljava/lang/Integer;)V
+  invoke-virtual         v1, v6, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+  move                   v3, v5
+  goto                   -1dh
+  new-instance           v0, Ljava/lang/ArithmeticException;
+  const-string           v1, "Index overflow has happened."
+  invoke-direct          v0, v1, Ljava/lang/ArithmeticException;-><init>(Ljava/lang/String;)V
+  throw                  v0
+  invoke-virtual         v1, Ljava/util/ArrayList;->size()I
+  move-result            v0
+  if-eqz                 v0, +04ah
+  const/4                v3, 1
+  if-eq                  v0, v3, +03ah
+  new-instance           v0, Ljava/util/LinkedHashMap;
+  invoke-virtual         v1, Ljava/util/ArrayList;->size()I
+  move-result            v3
+  if-gez                 v3, +003h
+  goto                   +17h
+  const/4                v4, 3
+  if-ge                  v3, v4, +005h
+  add-int/lit8           v3, v3, 1
+  goto                   +11h
+  const/high16           v4, 1073741824
+  if-ge                  v3, v4, +00bh
+  int-to-float           v3, v3
+  const/high16           v4, 1061158912
+  div-float/2addr        v3, v4
+  const/high16           v4, 1065353216
+  add-float/2addr        v3, v4
+  float-to-int           v3, v3
+  goto                   +4h
+  const                  v3, 2147483647
+  invoke-direct          v0, v3, Ljava/util/LinkedHashMap;-><init>(I)V
+  invoke-virtual         v1, Ljava/util/ArrayList;->size()I
+  move-result            v3
+  if-ge                  v2, v3, +01fh
+  invoke-virtual         v1, v2, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+  move-result-object     v4
+  add-int/lit8           v2, v2, 1
+  check-cast             v4, Lcom/adjust/sdk/sig/a2;
+  iget-object            v5, v4, Lcom/adjust/sdk/sig/a2;->a Ljava/lang/Object;
+  iget-object            v4, v4, Lcom/adjust/sdk/sig/a2;->b Ljava/lang/Integer;
+  invoke-interface       v0, v5, v4, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  goto                   -11h
+  invoke-virtual         v1, v2, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Lcom/adjust/sdk/sig/a2;
+  iget-object            v1, v0, Lcom/adjust/sdk/sig/a2;->a Ljava/lang/Object;
+  iget-object            v0, v0, Lcom/adjust/sdk/sig/a2;->b Ljava/lang/Integer;
+  invoke-static          v1, v0, Ljava/util/Collections;->singletonMap(Ljava/lang/Object; Ljava/lang/Object;)Ljava/util/Map;
+  return-void            
+
+---- METHOD public constructor <init> (Ljava/lang/Class;)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/sig/m;->a Ljava/lang/Class;
+  return-void            
+
+---- METHOD public final a ()Ljava/lang/String; ----
+  iget-object            v0, v6, Lcom/adjust/sdk/sig/m;->a Ljava/lang/Class;
+  invoke-virtual         v0, Ljava/lang/Class;->isAnonymousClass()Z
+  move-result            v1
+  const/4                v2, 0
+  if-eqz                 v1, +003h
+  return-object          v2
+  invoke-virtual         v0, Ljava/lang/Class;->isLocalClass()Z
+  move-result            v1
+  if-eqz                 v1, +078h
+  invoke-virtual         v0, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+  move-result-object     v1
+  invoke-virtual         v0, Ljava/lang/Class;->getEnclosingMethod()Ljava/lang/reflect/Method;
+  move-result-object     v2
+  const/4                v3, -1
+  const/4                v4, 0
+  const/16               v5, 36
+  if-eqz                 v2, +02ah
+  new-instance           v0, Ljava/lang/StringBuilder;
+  invoke-direct          v0, Ljava/lang/StringBuilder;-><init>()V
+  invoke-virtual         v2, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
+  move-result-object     v2
+  invoke-virtual         v0, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual         v0, v5, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+  invoke-virtual         v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v0
+  invoke-virtual         v1, v0, v4, Ljava/lang/String;->indexOf(Ljava/lang/String; I)I
+  move-result            v2
+  if-ne                  v2, v3, +003h
+  goto                   +43h
+  invoke-virtual         v0, Ljava/lang/String;->length()I
+  move-result            v0
+  add-int/2addr          v0, v2
+  invoke-virtual         v1, Ljava/lang/String;->length()I
+  move-result            v2
+  invoke-virtual         v1, v0, v2, Ljava/lang/String;->substring(I I)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+  invoke-virtual         v0, Ljava/lang/Class;->getEnclosingConstructor()Ljava/lang/reflect/Constructor;
+  move-result-object     v0
+  if-eqz                 v0, +02ah
+  new-instance           v2, Ljava/lang/StringBuilder;
+  invoke-direct          v2, Ljava/lang/StringBuilder;-><init>()V
+  invoke-virtual         v0, Ljava/lang/reflect/Constructor;->getName()Ljava/lang/String;
+  move-result-object     v0
+  invoke-virtual         v2, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual         v2, v5, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+  invoke-virtual         v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v0
+  invoke-virtual         v1, v0, v4, Ljava/lang/String;->indexOf(Ljava/lang/String; I)I
+  move-result            v2
+  if-ne                  v2, v3, +003h
+  goto                   +15h
+  invoke-virtual         v0, Ljava/lang/String;->length()I
+  move-result            v0
+  add-int/2addr          v0, v2
+  invoke-virtual         v1, Ljava/lang/String;->length()I
+  move-result            v2
+  invoke-virtual         v1, v0, v2, Ljava/lang/String;->substring(I I)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+  invoke-virtual         v1, v5, v4, Ljava/lang/String;->indexOf(I I)I
+  move-result            v0
+  if-ne                  v0, v3, +003h
+  return-object          v1
+  add-int/lit8           v0, v0, 1
+  invoke-virtual         v1, Ljava/lang/String;->length()I
+  move-result            v2
+  invoke-virtual         v1, v0, v2, Ljava/lang/String;->substring(I I)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+  invoke-virtual         v0, Ljava/lang/Class;->isArray()Z
+  move-result            v1
+  if-eqz                 v1, +020h
+  invoke-virtual         v0, Ljava/lang/Class;->getComponentType()Ljava/lang/Class;
+  move-result-object     v0
+  invoke-virtual         v0, Ljava/lang/Class;->isPrimitive()Z
+  move-result            v1
+  const-string           v3, "Array"
+  if-eqz                 v1, +010h
+  invoke-virtual         v0, Ljava/lang/Class;->getName()Ljava/lang/String;
+  move-result-object     v0
+  invoke-static          v0, Lcom/adjust/sdk/sig/l;->a(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v0
+  if-eqz                 v0, +006h
+  invoke-virtual         v0, v3, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v2
+  if-nez                 v2, +003h
+  return-object          v3
+  return-object          v2
+  invoke-virtual         v0, Ljava/lang/Class;->getName()Ljava/lang/String;
+  move-result-object     v1
+  invoke-static          v1, Lcom/adjust/sdk/sig/l;->a(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v1
+  if-nez                 v1, +007h
+  invoke-virtual         v0, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+  return-object          v1
+
+---- METHOD public final equals (Ljava/lang/Object;)Z ----
+  instance-of            v0, v2, Lcom/adjust/sdk/sig/m;
+  if-eqz                 v0, +014h
+  invoke-static          v1, Lcom/adjust/sdk/sig/p1;->a(Lcom/adjust/sdk/sig/m;)Ljava/lang/Class;
+  move-result-object     v0
+  check-cast             v2, Lcom/adjust/sdk/sig/m;
+  invoke-static          v2, Lcom/adjust/sdk/sig/p1;->a(Lcom/adjust/sdk/sig/m;)Ljava/lang/Class;
+  move-result-object     v2
+  invoke-virtual         v0, v2, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+  move-result            v2
+  if-eqz                 v2, +004h
+  const/4                v2, 1
+  return                 v2
+  const/4                v2, 0
+  return                 v2
+
+---- METHOD public final hashCode ()I ----
+  invoke-static          v1, Lcom/adjust/sdk/sig/p1;->a(Lcom/adjust/sdk/sig/m;)Ljava/lang/Class;
+  move-result-object     v0
+  invoke-virtual         v0, Ljava/lang/Object;->hashCode()I
+  move-result            v0
+  return                 v0
+
+---- METHOD public final toString ()Ljava/lang/String; ----
+  new-instance           v0, Ljava/lang/StringBuilder;
+  invoke-direct          v0, Ljava/lang/StringBuilder;-><init>()V
+  iget-object            v1, v2, Lcom/adjust/sdk/sig/m;->a Ljava/lang/Class;
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  const-string           v1, " (Kotlin reflection is not available)"
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual         v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+######################################################################

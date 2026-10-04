@@ -1,0 +1,209 @@
+blk 0x100094 (34 insns, 27 real)
+   100094: sub      sp, sp, #0x160
+   100098: stp      x29, x30, [sp, #0x100]
+   10009c: stp      x28, x27, [sp, #0x110]
+   1000a0: stp      x26, x25, [sp, #0x120]
+   1000a4: stp      x24, x23, [sp, #0x130]
+   1000a8: stp      x22, x21, [sp, #0x140]
+   1000ac: stp      x20, x19, [sp, #0x150]
+   1000b0: add      x29, sp, #0x100
+   1000b4: stp      x3, x4, [x29, #-0x58]
+   1000bc: stp      x5, x6, [x29, #-0x48]
+   1000c0: add      x10, sp, #0x20
+   1000c4: stur     x7, [x29, #-0x38]
+   1000c8: sub      x11, x29, #0x58
+   1000cc: stp      q0, q1, [sp, #0x20]
+   1000d4: stp      q2, q3, [sp, #0x40]
+   1000dc: stp      q4, q5, [sp, #0x60]
+   1000e4: stp      q6, q7, [sp, #0x80]
+   1000e8: mrs      x25, tpidr_el0
+   1000ec: ldr      x8, [x25, #0x28]
+   1000f8: add      x10, x10, #0x80
+   100100: stur     x8, [x29, #-0x10]
+   100104: add      x8, x11, #0x28
+   100108: add      x11, x29, #0x60
+   10010c: stp      x10, x9, [x29, #-0x20]
+   100110: stp      x11, x8, [x29, #-0x30]
+   100114: cmp      x23, x26
+   100118: b.eq     #0x100228
+blk 0x10011c (2 insns, 2 real)
+   10011c: ldursw   x8, [x29, #-0x18]
+   100120: tbz      w8, #0x1f, #0x100140
+blk 0x100124 (4 insns, 4 real)
+   100124: add      w9, w8, #8
+   100128: cmn      w8, #8
+   10012c: stur     w9, [x29, #-0x18]
+   100130: b.hi     #0x100140
+blk 0x100134 (3 insns, 3 real)
+   100134: ldur     x9, [x29, #-0x28]
+   100138: add      x8, x9, x8
+   10013c: b        #0x10014c
+blk 0x100140 (11 insns, 10 real)
+   100140: ldur     x8, [x29, #-0x30]
+   100144: add      x9, x8, #8
+   100148: stur     x9, [x29, #-0x30]
+   10014c: ldr      x27, [x8]
+   100150: add      x9, x20, x23, lsl #3
+   100158: add      x28, x9, #0x20
+   10015c: ldr      w8, [x27]
+   100160: lsr      x21, x8, #2
+   100164: cmp      x21, x22
+   100168: b.eq     #0x100198
+blk 0x10014c (8 insns, 7 real)
+   10014c: ldr      x27, [x8]
+   100150: add      x9, x20, x23, lsl #3
+   100158: add      x28, x9, #0x20
+   10015c: ldr      w8, [x27]
+   100160: lsr      x21, x8, #2
+   100164: cmp      x21, x22
+   100168: b.eq     #0x100198
+blk 0x10016c (10 insns, 10 real)
+   10016c: ldr      x8, [x27, #8]
+   100170: mov      x0, x19
+   100174: ldr      x1, [x28]
+   100178: mov      w2, w22
+   10017c: ldr      w8, [x8, x22, lsl #2]
+   100180: rev      w3, w8
+   100184: bl       #0x146ed8
+   100188: ldr      w8, [x19]
+   10018c: add      x22, x22, #1
+   100190: cbz      w8, #0x100164
+blk 0x100194 (1 insns, 1 real)
+   100194: b        #0x100318
+blk 0x100198 (4 insns, 4 real)
+   100198: ldr      w8, [x27]
+   10019c: and      w10, w8, #3
+   1001a0: cmp      w10, #2
+   1001a4: b.hs     #0x1001c8
+blk 0x1001a8 (2 insns, 2 real)
+   1001a8: cmp      w10, #1
+   1001ac: b.ne     #0x100218
+blk 0x1001b0 (6 insns, 6 real)
+   1001b0: sub      w8, w8, #1
+   1001b4: ldr      x9, [x27, #8]
+   1001b8: ldr      x1, [x28]
+   1001bc: ldrb     w8, [x9, w8, uxtw]
+   1001c0: lsl      w3, w8, #0x18
+   1001c4: b        #0x10020c
+blk 0x1001c8 (4 insns, 4 real)
+   1001c8: ldr      x1, [x28]
+   1001cc: cmp      w10, #3
+   1001d0: ldr      x9, [x27, #8]
+   1001d4: b.ne     #0x1001fc
+blk 0x1001d8 (9 insns, 9 real)
+   1001d8: sub      w8, w8, #3
+   1001dc: add      x8, x9, x8
+   1001e0: ldrb     w9, [x8]
+   1001e4: ldrb     w10, [x8, #1]
+   1001e8: ldrb     w8, [x8, #2]
+   1001ec: lsl      w9, w9, #0x18
+   1001f0: orr      w9, w9, w10, lsl #16
+   1001f4: orr      w3, w9, w8, lsl #8
+   1001f8: b        #0x10020c
+blk 0x1001fc (10 insns, 10 real)
+   1001fc: sub      w8, w8, #2
+   100200: ldrh     w8, [x9, w8, uxtw]
+   100204: rev      w8, w8
+   100208: and      w3, w8, #0xffff0000
+   10020c: mov      x0, x19
+   100210: mov      w2, w21
+   100214: bl       #0x146ed8
+   100218: ldr      w8, [x19]
+   10021c: add      x23, x23, #1
+   100220: cbz      w8, #0x100114
+blk 0x10020c (6 insns, 6 real)
+   10020c: mov      x0, x19
+   100210: mov      w2, w21
+   100214: bl       #0x146ed8
+   100218: ldr      w8, [x19]
+   10021c: add      x23, x23, #1
+   100220: cbz      w8, #0x100114
+blk 0x100218 (3 insns, 3 real)
+   100218: ldr      w8, [x19]
+   10021c: add      x23, x23, #1
+   100220: cbz      w8, #0x100114
+blk 0x100224 (1 insns, 1 real)
+   100224: b        #0x100318
+blk 0x100228 (6 insns, 6 real)
+   100228: ldr      x1, [x20]
+   10022c: mov      x0, x19
+   100230: mov      w2, #0x19
+   100234: bl       #0x147630
+   100238: ldr      w8, [x19]
+   10023c: cbnz     w8, #0x100318
+blk 0x100240 (6 insns, 6 real)
+   100240: ldr      x1, [x20]
+   100244: mov      x0, x19
+   100248: mov      w2, wzr
+   10024c: bl       #0x147630
+   100250: ldr      w8, [x19]
+   100254: cbnz     w8, #0x100318
+blk 0x100258 (5 insns, 5 real)
+   100258: ldr      x1, [x20]
+   10025c: mov      x0, x19
+   100260: bl       #0x147734
+   100264: ldr      w8, [x19]
+   100268: cbnz     w8, #0x100318
+blk 0x10026c (6 insns, 5 real)
+   100270: ldr      x1, [x20]
+   100274: mov      x0, x19
+   100278: bl       #0x147734
+   10027c: ldr      w8, [x19]
+   100280: cbnz     w8, #0x100318
+blk 0x100284 (8 insns, 7 real)
+   100288: mov      w3, w0
+   10028c: mov      x0, x19
+   100290: mov      w2, w21
+   100294: ldr      x1, [x26, #8]!
+   100298: bl       #0x146ed8
+   10029c: ldr      w8, [x19]
+   1002a0: cbnz     w8, #0x100318
+blk 0x1002a4 (6 insns, 6 real)
+   1002a4: ldr      x1, [x20]
+   1002a8: mov      x0, x19
+   1002ac: mov      w2, wzr
+   1002b0: bl       #0x147630
+   1002b4: ldr      w8, [x19]
+   1002b8: cbnz     w8, #0x100318
+blk 0x1002bc (5 insns, 5 real)
+   1002bc: ldr      x1, [x20]
+   1002c0: mov      x0, x19
+   1002c4: bl       #0x147734
+   1002c8: ldr      w8, [x19]
+   1002cc: cbnz     w8, #0x100318
+blk 0x1002d0 (10 insns, 10 real)
+   1002d0: add      x8, x20, w0, uxtw #3
+   1002d4: ldr      x21, [x20]
+   1002d8: ldr      x0, [x8, #0x20]
+   1002dc: bl       #0x1472e8
+   1002e0: mov      w2, w0
+   1002e4: mov      x0, x19
+   1002e8: mov      x1, x21
+   1002ec: bl       #0x147630
+   1002f0: ldr      w8, [x19]
+   1002f4: cbnz     w8, #0x100318
+blk 0x1002f8 (8 insns, 7 real)
+   1002fc: mov      x0, x19
+   100300: mov      w2, #0x11
+   100304: ldr      x1, [x8, #0x18]!
+   100308: str      x8, [sp, #0x18]
+   10030c: bl       #0x146470
+   100310: ldr      w8, [x19]
+   100314: cbz      w8, #0x10034c
+blk 0x100318 (5 insns, 5 real)
+   100318: mov      sp, x24
+   10031c: ldr      x8, [x25, #0x28]
+   100320: ldur     x9, [x29, #-0x10]
+   100324: cmp      x8, x9
+   100328: b.ne     #0x12aa44
+blk 0x10032c (8 insns, 8 real)
+   10032c: ldp      x20, x19, [sp, #0x150]
+   100330: ldp      x22, x21, [sp, #0x140]
+   100334: ldp      x24, x23, [sp, #0x130]
+   100338: ldp      x26, x25, [sp, #0x120]
+   10033c: ldp      x28, x27, [sp, #0x110]
+   100340: ldp      x29, x30, [sp, #0x100]
+   100344: add      sp, sp, #0x160
+   100348: ret      
+blk 0x12aa44 (1 insns, 1 real)
+   12aa44: bl       #0x148a10

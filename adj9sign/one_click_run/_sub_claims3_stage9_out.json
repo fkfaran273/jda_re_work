@@ -1,0 +1,10 @@
+{
+ "stages": {
+  "9_timestamps": {
+   "n": 34560,
+   "hits": [],
+   "note": "canonical UTC / epoch timestamp substitutions x 6 laws x 2 bindings"
+  }
+ },
+ "hits": []
+}

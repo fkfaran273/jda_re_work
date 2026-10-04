@@ -1,0 +1,366 @@
+[
+ {
+  "word": 0,
+  "kind": "HDR",
+  "cap": "4efd72e6",
+  "emu": "4efd72e6",
+  "match": true
+ },
+ {
+  "word": 1,
+  "kind": "HDR",
+  "cap": "33bbc54a",
+  "emu": "33bbc54a",
+  "match": true
+ },
+ {
+  "word": 2,
+  "kind": "HDR",
+  "cap": "45c8e70f",
+  "emu": "45c8e70f",
+  "match": true
+ },
+ {
+  "word": 3,
+  "kind": "HDR",
+  "cap": "10e63a5c",
+  "emu": "10e63a5c",
+  "match": true
+ },
+ {
+  "word": 4,
+  "kind": "body",
+  "cap": "bbe319d2",
+  "emu": "15a7feb8",
+  "match": false
+ },
+ {
+  "word": 5,
+  "kind": "body",
+  "cap": "2a9a217d",
+  "emu": "b1b2e3c1",
+  "match": false
+ },
+ {
+  "word": 6,
+  "kind": "body",
+  "cap": "9e8d71ef",
+  "emu": "8a764b09",
+  "match": false
+ },
+ {
+  "word": 7,
+  "kind": "body",
+  "cap": "c606cb02",
+  "emu": "97566906",
+  "match": false
+ },
+ {
+  "word": 8,
+  "kind": "body",
+  "cap": "237694ec",
+  "emu": "bba9f71d",
+  "match": false
+ },
+ {
+  "word": 9,
+  "kind": "body",
+  "cap": "316d52a4",
+  "emu": "530a111a",
+  "match": false
+ },
+ {
+  "word": 10,
+  "kind": "body",
+  "cap": "b6b15268",
+  "emu": "46278ec0",
+  "match": false
+ },
+ {
+  "word": 11,
+  "kind": "body",
+  "cap": "c001ecfe",
+  "emu": "642b8bb4",
+  "match": false
+ },
+ {
+  "word": 12,
+  "kind": "body",
+  "cap": "571dc8d8",
+  "emu": "6ee0a05f",
+  "match": false
+ },
+ {
+  "word": 13,
+  "kind": "body",
+  "cap": "7bbd7c6f",
+  "emu": "e8553d60",
+  "match": false
+ },
+ {
+  "word": 14,
+  "kind": "body",
+  "cap": "73422a36",
+  "emu": "026883ab",
+  "match": false
+ },
+ {
+  "word": 15,
+  "kind": "body",
+  "cap": "b0f76c50",
+  "emu": "7d7edf0a",
+  "match": false
+ },
+ {
+  "word": 16,
+  "kind": "body",
+  "cap": "d563d8fa",
+  "emu": "cd9c355b",
+  "match": false
+ },
+ {
+  "word": 17,
+  "kind": "body",
+  "cap": "74f3d861",
+  "emu": "029c5039",
+  "match": false
+ },
+ {
+  "word": 18,
+  "kind": "body",
+  "cap": "35214747",
+  "emu": "b68b6903",
+  "match": false
+ },
+ {
+  "word": 19,
+  "kind": "body",
+  "cap": "47dfaaa3",
+  "emu": "f6ca10db",
+  "match": false
+ },
+ {
+  "word": 20,
+  "kind": "body",
+  "cap": "3c869c65",
+  "emu": "5eb082dd",
+  "match": false
+ },
+ {
+  "word": 21,
+  "kind": "body",
+  "cap": "07d0d1aa",
+  "emu": "27718f67",
+  "match": false
+ },
+ {
+  "word": 22,
+  "kind": "body",
+  "cap": "c7280c83",
+  "emu": "4133036a",
+  "match": false
+ },
+ {
+  "word": 23,
+  "kind": "body",
+  "cap": "0272b39f",
+  "emu": "f73b5e09",
+  "match": false
+ },
+ {
+  "word": 24,
+  "kind": "body",
+  "cap": "d02ebd3a",
+  "emu": "7a72344a",
+  "match": false
+ },
+ {
+  "word": 25,
+  "kind": "body",
+  "cap": "9a8fddfd",
+  "emu": "67be1098",
+  "match": false
+ },
+ {
+  "word": 26,
+  "kind": "body",
+  "cap": "161be9fd",
+  "emu": "6ca80390",
+  "match": false
+ },
+ {
+  "word": 27,
+  "kind": "body",
+  "cap": "a7d5ef6c",
+  "emu": "b763d382",
+  "match": false
+ },
+ {
+  "word": 28,
+  "kind": "body",
+  "cap": "d86d8a2b",
+  "emu": "7ced48f5",
+  "match": false
+ },
+ {
+  "word": 29,
+  "kind": "body",
+  "cap": "857e191e",
+  "emu": "98d786dc",
+  "match": false
+ },
+ {
+  "word": 30,
+  "kind": "body",
+  "cap": "8cde1872",
+  "emu": "fd3efe24",
+  "match": false
+ },
+ {
+  "word": 31,
+  "kind": "body",
+  "cap": "0417d008",
+  "emu": "38c9562a",
+  "match": false
+ },
+ {
+  "word": 32,
+  "kind": "body",
+  "cap": "a9ab3f21",
+  "emu": "1fb756dd",
+  "match": false
+ },
+ {
+  "word": 33,
+  "kind": "body",
+  "cap": "9ed080b2",
+  "emu": "653f0d2f",
+  "match": false
+ },
+ {
+  "word": 34,
+  "kind": "body",
+  "cap": "2e7b2b02",
+  "emu": "5c0ed73d",
+  "match": false
+ },
+ {
+  "word": 35,
+  "kind": "body",
+  "cap": "cc60629d",
+  "emu": "ab36076a",
+  "match": false
+ },
+ {
+  "word": 36,
+  "kind": "body",
+  "cap": "8dedd466",
+  "emu": "79678962",
+  "match": false
+ },
+ {
+  "word": 37,
+  "kind": "body",
+  "cap": "ea525ea7",
+  "emu": "a457d6ff",
+  "match": false
+ },
+ {
+  "word": 38,
+  "kind": "body",
+  "cap": "6e1a6cda",
+  "emu": "c34abe77",
+  "match": false
+ },
+ {
+  "word": 39,
+  "kind": "body",
+  "cap": "259ad3c3",
+  "emu": "9b926280",
+  "match": false
+ },
+ {
+  "word": 40,
+  "kind": "body",
+  "cap": "f01ed694",
+  "emu": "5b300e72",
+  "match": false
+ },
+ {
+  "word": 41,
+  "kind": "body",
+  "cap": "4ab5a553",
+  "emu": "c612f863",
+  "match": false
+ },
+ {
+  "word": 42,
+  "kind": "body",
+  "cap": "4fab9d4b",
+  "emu": "e276d3c0",
+  "match": false
+ },
+ {
+  "word": 43,
+  "kind": "body",
+  "cap": "308b9ddc",
+  "emu": "baf4eb69",
+  "match": false
+ },
+ {
+  "word": 44,
+  "kind": "body",
+  "cap": "26b2b7a0",
+  "emu": "1be6e03a",
+  "match": false
+ },
+ {
+  "word": 45,
+  "kind": "body",
+  "cap": "c16460cc",
+  "emu": "aa78db70",
+  "match": false
+ },
+ {
+  "word": 46,
+  "kind": "body",
+  "cap": "32568abd",
+  "emu": "11c098ca",
+  "match": false
+ },
+ {
+  "word": 47,
+  "kind": "body",
+  "cap": "3b0c3eee",
+  "emu": "f3dbac7c",
+  "match": false
+ },
+ {
+  "word": 48,
+  "kind": "body",
+  "cap": "--",
+  "emu": "f24c5891",
+  "match": false
+ },
+ {
+  "word": 49,
+  "kind": "body",
+  "cap": "--",
+  "emu": "13bda8e4",
+  "match": false
+ },
+ {
+  "word": 50,
+  "kind": "body",
+  "cap": "--",
+  "emu": "ce33a8e1",
+  "match": false
+ },
+ {
+  "word": 51,
+  "kind": "body",
+  "cap": "--",
+  "emu": "14729081",
+  "match": false
+ }
+]

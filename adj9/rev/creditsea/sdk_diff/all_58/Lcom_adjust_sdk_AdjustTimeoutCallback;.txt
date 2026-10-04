@@ -1,0 +1,53 @@
+# CLASS Lcom/adjust/sdk/AdjustTimeoutCallback;
+FIELD private onAdidReadListener Lcom/adjust/sdk/OnAdidReadListener;
+FIELD private onAttributionReadListener Lcom/adjust/sdk/OnAttributionReadListener;
+FIELD private onThirdPartySharingSettingsReadListener Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;
+FIELD private timeoutTimer Lcom/adjust/sdk/scheduler/TimerOnce;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/OnAdidReadListener;)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustTimeoutCallback;->onAdidReadListener Lcom/adjust/sdk/OnAdidReadListener;
+  return-void            
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/OnAttributionReadListener;)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustTimeoutCallback;->onAttributionReadListener Lcom/adjust/sdk/OnAttributionReadListener;
+  return-void            
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustTimeoutCallback;->onThirdPartySharingSettingsReadListener Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;
+  return-void            
+
+---- METHOD public getOnAdidReadListener ()Lcom/adjust/sdk/OnAdidReadListener; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustTimeoutCallback;->onAdidReadListener Lcom/adjust/sdk/OnAdidReadListener;
+  return-object          v0
+
+---- METHOD public getOnAttributionReadListener ()Lcom/adjust/sdk/OnAttributionReadListener; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustTimeoutCallback;->onAttributionReadListener Lcom/adjust/sdk/OnAttributionReadListener;
+  return-object          v0
+
+---- METHOD public getOnThirdPartySharingSettingsReadListener ()Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustTimeoutCallback;->onThirdPartySharingSettingsReadListener Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;
+  return-object          v0
+
+---- METHOD public getTimeoutTimer ()Lcom/adjust/sdk/scheduler/TimerOnce; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustTimeoutCallback;->timeoutTimer Lcom/adjust/sdk/scheduler/TimerOnce;
+  return-object          v0
+
+---- METHOD public setOnAdidReadListener (Lcom/adjust/sdk/OnAdidReadListener;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustTimeoutCallback;->onAdidReadListener Lcom/adjust/sdk/OnAdidReadListener;
+  return-void            
+
+---- METHOD public setOnAttributionReadListener (Lcom/adjust/sdk/OnAttributionReadListener;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustTimeoutCallback;->onAttributionReadListener Lcom/adjust/sdk/OnAttributionReadListener;
+  return-void            
+
+---- METHOD public setOnThirdPartySharingSettingsReadListener (Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustTimeoutCallback;->onThirdPartySharingSettingsReadListener Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;
+  return-void            
+
+---- METHOD public setTimer (Lcom/adjust/sdk/scheduler/TimerOnce;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustTimeoutCallback;->timeoutTimer Lcom/adjust/sdk/scheduler/TimerOnce;
+  return-void            
+######################################################################

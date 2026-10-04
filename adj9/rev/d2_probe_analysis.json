@@ -1,0 +1,131 @@
+{
+ "affine_law": {
+  "model": "word_i = A_i*d2 + C_i (mod 2^32), A_i from +1 probe",
+  "n_body_words_dep": 40,
+  "predict_xor2_add_delta": "0/40",
+  "predict_xor2^31_add_delta": "0/40",
+  "predict_d2_zero_word": "0/40",
+  "predict_d2_ffff_word": "0/40",
+  "affine_holds": false
+ },
+ "avalanche": {
+  "d2_xor1": {
+   "n_moved": 40,
+   "word_range": [
+    8,
+    47
+   ],
+   "xor_hw_min": 11,
+   "xor_hw_max": 22,
+   "xor_hw_mean": 16.2,
+   "all_44_from_word4": false,
+   "all_40_from_word8": true
+  },
+  "d2_xor2": {
+   "n_moved": 40,
+   "word_range": [
+    8,
+    47
+   ],
+   "xor_hw_min": 11,
+   "xor_hw_max": 21,
+   "xor_hw_mean": 16.6,
+   "all_44_from_word4": false,
+   "all_40_from_word8": true
+  },
+  "d2_xor80000000": {
+   "n_moved": 40,
+   "word_range": [
+    8,
+    47
+   ],
+   "xor_hw_min": 9,
+   "xor_hw_max": 22,
+   "xor_hw_mean": 15.9,
+   "all_44_from_word4": false,
+   "all_40_from_word8": true
+  },
+  "d2_plus1": {
+   "n_moved": 40,
+   "word_range": [
+    8,
+    47
+   ],
+   "xor_hw_min": 11,
+   "xor_hw_max": 22,
+   "xor_hw_mean": 16.2,
+   "all_44_from_word4": false,
+   "all_40_from_word8": true
+  },
+  "d2_zero": {
+   "n_moved": 40,
+   "word_range": [
+    8,
+    47
+   ],
+   "xor_hw_min": 8,
+   "xor_hw_max": 21,
+   "xor_hw_mean": 15.7,
+   "all_44_from_word4": false,
+   "all_40_from_word8": true
+  },
+  "d2_ffffffff": {
+   "n_moved": 40,
+   "word_range": [
+    8,
+    47
+   ],
+   "xor_hw_min": 9,
+   "xor_hw_max": 22,
+   "xor_hw_mean": 16.0,
+   "all_44_from_word4": false,
+   "all_40_from_word8": true
+  },
+  "d4_4_xor80000000": {
+   "n_moved": 44,
+   "word_range": [
+    4,
+    47
+   ],
+   "xor_hw_min": 11,
+   "xor_hw_max": 23,
+   "xor_hw_mean": 16.7,
+   "all_44_from_word4": true,
+   "all_40_from_word8": false
+  },
+  "d4_4_xor00010000": {
+   "n_moved": 44,
+   "word_range": [
+    4,
+    47
+   ],
+   "xor_hw_min": 11,
+   "xor_hw_max": 23,
+   "xor_hw_mean": 16.7,
+   "all_44_from_word4": true,
+   "all_40_from_word8": false
+  }
+ },
+ "summary": {
+  "d4_4_bit0": "no-op (0/44 body words move)",
+  "d4_4_bit16_bit31": "full body (44 words, 4-47) move",
+  "d4_4_lowhalf_invisible": true,
+  "d4_4_moving_probes_share_words": 48,
+  "xor1_equals_plus1": true
+ },
+ "dependency_map": {
+  "d2": {
+   "words": "8-47 (40 words)",
+   "words_4_7": "no",
+   "behavior": "full avalanche: ANY single-bit or multi-bit change moves all 40 words; xor hw ~16/32 (random-like)"
+  },
+  "d4_0": {
+   "words": "none",
+   "behavior": "dead input: bit0/16/31 flips move nothing (also full-invert, prior dep_probe)"
+  },
+  "d4_4": {
+   "words": "4-47 (44 words) via bits 16-31 only",
+   "behavior": "bit0 (low half) no-op; bit16 and bit31 flips move the whole body incl. words 4-7"
+  }
+ }
+}

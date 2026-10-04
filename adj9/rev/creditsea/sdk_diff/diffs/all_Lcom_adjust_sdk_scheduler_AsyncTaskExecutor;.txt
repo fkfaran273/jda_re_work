@@ -1,0 +1,10 @@
+--- 
++++ 
+@@ -13,4 +13,5 @@
+ move-result-object vX
+-new-instance vX, Lcom/adjust/sdk/scheduler/AsyncTaskExecutor$1;
+-invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/scheduler/AsyncTaskExecutor$1;-><init>(Lcom/adjust/sdk/scheduler/AsyncTaskExecutor; [Ljava/lang/Object; Landroid/os/Handler;)V
++new-instance vX, LL6/c;
++const/16 vX, 8
++invoke-direct vX, vX, vX, vX, vX, LL6/c;-><init>(Ljava/lang/Object; Ljava/lang/Object; Ljava/lang/Object; I)V
+ invoke-interface vX, vX, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V

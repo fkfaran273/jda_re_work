@@ -1,0 +1,32 @@
+[
+ {
+  "tag": "A",
+  "status": 200,
+  "verdict": "PASS(recognized)",
+  "note": "ask_in=5000 adid=f680309ed01474098a68d0f0bce44e04",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"ask_in\":5000}",
+  "waited_s": 630.0,
+  "gps_adid": "363e5b78-8670-4c50-8348-9f87c604111b",
+  "transport": "A"
+ },
+ {
+  "tag": "D",
+  "status": 400,
+  "verdict": "OTHER",
+  "note": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Las",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:54:47, this session: 2026-09-27T14:54:54, interval: 7s, min interval: 20m))\"}n",
+  "waited_s": 0.0,
+  "gps_adid": "363e5b78-8670-4c50-8348-9f87c604111b",
+  "transport": "D"
+ },
+ {
+  "tag": "FLIP",
+  "status": 200,
+  "verdict": "PASS(recognized)",
+  "note": "ask_in=5000 adid=f680309ed01474098a68d0f0bce44e04",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"ask_in\":5000}",
+  "waited_s": 1260.0,
+  "gps_adid": "363e5b78-8670-4c50-8348-9f87c604111b",
+  "transport": "E"
+ }
+]

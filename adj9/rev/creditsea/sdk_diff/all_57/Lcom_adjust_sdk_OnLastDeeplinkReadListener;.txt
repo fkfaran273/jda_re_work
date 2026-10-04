@@ -1,0 +1,5 @@
+# CLASS Lcom/adjust/sdk/OnLastDeeplinkReadListener;
+
+---- METHOD public abstract onLastDeeplinkRead (Landroid/net/Uri;)V ----
+  (no code)
+######################################################################

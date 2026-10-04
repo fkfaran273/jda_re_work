@@ -1,0 +1,41 @@
+REGION-PROVENANCE 2x2 — READY-TO-SEND PLAN (nothing was sent)
+======================================================================
+sign second : 1790416230
+endpoint    : GET https://app.adjust.com/attribution
+User-Agent  : Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)
+d0 head     : [34, 46]   pid=26530 tid=26593
+
+CELLS (all share the sign second; header is identical across A-D):
+  A  orig_id+CAPTURED_region      gps_adid=0e789180-17da-440b-b1c3-0349d40e0e93  ok=True
+  B  fresh_id+CAPTURED_region     gps_adid=6c0c0f13-13b7-402c-8a43-0c92cb0968ab  ok=True
+  C  orig_id+FRESH_region         gps_adid=0e789180-17da-440b-b1c3-0349d40e0e93  ok=True
+  D  fresh_id+FRESH_region        gps_adid=6c0c0f13-13b7-402c-8a43-0c92cb0968ab  ok=True
+  G0  verbatim-genuine control  (recognition positive reference)
+  GF  cell D with 1 body bit flipped at offset 191 (bit-flip negative reference)
+
+SCORING — bit-flip-relative, never the 400/200 gloss:
+  RECOGNIZED       = HTTP 400 + {"ask_in":...} and NO "attribution" key
+  NOT_RECOGNIZED   = HTTP 200 + attribution.network == "Organic"
+  A/B/C/D count as recognized only if the class matches G0 AND
+  diverges from GF in the SAME window.
+  400/ask_in is a 2-hour poll backoff on an already-attributed record;
+  it is evidence of recognition, NOT of a new booking.
+
+READING THE 2x2 (G0=RECOGNIZED, GF=NOT_RECOGNIZED assumed):
+  A rec, C org  -> region provenance IS a gate (never-seen region refused)
+  A org, C org  -> not provenance; the fill/seed algebra is the whole gate
+  A rec, C rec  -> region fully synthesizable; the gate is elsewhere
+  B vs A        -> does region provenance depend on device identity
+  D vs C        -> same question on the fresh-identity side
+
+FILES:
+  G0.http.txt   exact request bytes as FC.send() lays them out
+  GF.http.txt   exact request bytes as FC.send() lays them out
+  A.http.txt   exact request bytes as FC.send() lays them out
+  B.http.txt   exact request bytes as FC.send() lays them out
+  C.http.txt   exact request bytes as FC.send() lays them out
+  D.http.txt   exact request bytes as FC.send() lays them out
+  A.json        params / blob / claims / all self-checks
+  manifest.json  identities, both regions, cross-cell diffs
+
+SEND WITH:  python region_replay_2x2.py --send --confirm SEND-REGION-REPLAY-2X2

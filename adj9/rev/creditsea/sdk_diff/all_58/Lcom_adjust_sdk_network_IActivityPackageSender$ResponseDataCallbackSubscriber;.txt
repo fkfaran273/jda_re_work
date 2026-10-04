@@ -1,0 +1,5 @@
+# CLASS Lcom/adjust/sdk/network/IActivityPackageSender$ResponseDataCallbackSubscriber;
+
+---- METHOD public abstract onResponseDataCallback (Lcom/adjust/sdk/ResponseData;)V ----
+  (no code)
+######################################################################

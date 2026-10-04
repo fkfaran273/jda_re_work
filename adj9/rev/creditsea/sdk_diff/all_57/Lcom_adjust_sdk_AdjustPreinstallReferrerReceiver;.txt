@@ -1,0 +1,19 @@
+# CLASS Lcom/adjust/sdk/AdjustPreinstallReferrerReceiver;
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Landroid/content/BroadcastReceiver;-><init>()V
+  return-void            
+
+---- METHOD public onReceive (Landroid/content/Context; Landroid/content/Intent;)V ----
+  if-nez                 v3, +003h
+  goto                   +9h
+  const-string           v0, "com.attribution.EXTRA_SYSTEM_INSTALLER_REFERRER"
+  invoke-virtual         v3, v0, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v3
+  if-nez                 v3, +003h
+  return-void            
+  invoke-static          Lcom/adjust/sdk/Adjust;->getDefaultInstance()Lcom/adjust/sdk/AdjustInstance;
+  move-result-object     v0
+  invoke-virtual         v0, v3, v2, Lcom/adjust/sdk/AdjustInstance;->sendPreinstallReferrer(Ljava/lang/String; Landroid/content/Context;)V
+  return-void            
+######################################################################

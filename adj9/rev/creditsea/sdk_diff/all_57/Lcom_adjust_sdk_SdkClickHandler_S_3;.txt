@@ -1,0 +1,39 @@
+# CLASS Lcom/adjust/sdk/SdkClickHandler$3;
+FIELD public final synthetic a Ljava/lang/String;
+FIELD public final synthetic b Ljava/lang/String;
+FIELD public final synthetic c Lcom/adjust/sdk/SdkClickHandler;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/SdkClickHandler; Ljava/lang/String; Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/SdkClickHandler$3;->c Lcom/adjust/sdk/SdkClickHandler;
+  iput-object            v2, v0, Lcom/adjust/sdk/SdkClickHandler$3;->a Ljava/lang/String;
+  iput-object            v3, v0, Lcom/adjust/sdk/SdkClickHandler$3;->b Ljava/lang/String;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v8, Lcom/adjust/sdk/SdkClickHandler$3;->c Lcom/adjust/sdk/SdkClickHandler;
+  invoke-static          v0, Lcom/adjust/sdk/SdkClickHandler;->access$300(Lcom/adjust/sdk/SdkClickHandler;)Ljava/lang/ref/WeakReference;
+  move-result-object     v0
+  invoke-virtual         v0, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Lcom/adjust/sdk/IActivityHandler;
+  if-nez                 v0, +003h
+  return-void            
+  iget-object            v1, v8, Lcom/adjust/sdk/SdkClickHandler$3;->a Ljava/lang/String;
+  iget-object            v2, v8, Lcom/adjust/sdk/SdkClickHandler$3;->b Ljava/lang/String;
+  invoke-interface       v0, Lcom/adjust/sdk/IActivityHandler;->getActivityState()Lcom/adjust/sdk/ActivityState;
+  move-result-object     v3
+  invoke-interface       v0, Lcom/adjust/sdk/IActivityHandler;->getAdjustConfig()Lcom/adjust/sdk/AdjustConfig;
+  move-result-object     v4
+  invoke-interface       v0, Lcom/adjust/sdk/IActivityHandler;->getDeviceInfo()Lcom/adjust/sdk/DeviceInfo;
+  move-result-object     v5
+  invoke-interface       v0, Lcom/adjust/sdk/IActivityHandler;->getGlobalParameters()Lcom/adjust/sdk/GlobalParameters;
+  move-result-object     v6
+  invoke-interface       v0, Lcom/adjust/sdk/IActivityHandler;->getFirstSessionDelayManager()Lcom/adjust/sdk/FirstSessionDelayManager;
+  move-result-object     v7
+  invoke-static/range    v1 ... v7, Lcom/adjust/sdk/PackageFactory;->buildPreinstallSdkClickPackage(Ljava/lang/String; Ljava/lang/String; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager;)Lcom/adjust/sdk/ActivityPackage;
+  move-result-object     v0
+  iget-object            v1, v8, Lcom/adjust/sdk/SdkClickHandler$3;->c Lcom/adjust/sdk/SdkClickHandler;
+  invoke-virtual         v1, v0, Lcom/adjust/sdk/SdkClickHandler;->sendSdkClick(Lcom/adjust/sdk/ActivityPackage;)V
+  return-void            
+######################################################################

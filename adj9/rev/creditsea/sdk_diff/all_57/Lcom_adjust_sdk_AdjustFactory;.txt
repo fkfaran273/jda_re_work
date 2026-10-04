@@ -1,0 +1,322 @@
+# CLASS Lcom/adjust/sdk/AdjustFactory;
+FIELD private static activityHandler Lcom/adjust/sdk/IActivityHandler;
+FIELD private static allowUrlStrategyFallback Z
+FIELD private static attributionHandler Lcom/adjust/sdk/IAttributionHandler;
+FIELD private static baseUrl Ljava/lang/String;
+FIELD private static connectionOptions Lcom/adjust/sdk/network/UtilNetworking$IConnectionOptions;
+FIELD private static gdprUrl Ljava/lang/String;
+FIELD private static httpsURLConnectionProvider Lcom/adjust/sdk/network/UtilNetworking$IHttpsURLConnectionProvider;
+FIELD private static ignoreSystemLifecycleBootstrap Z
+FIELD private static installSessionBackoffStrategy Lcom/adjust/sdk/BackoffStrategy;
+FIELD private static logger Lcom/adjust/sdk/ILogger;
+FIELD private static packageHandler Lcom/adjust/sdk/IPackageHandler;
+FIELD private static packageHandlerBackoffStrategy Lcom/adjust/sdk/BackoffStrategy;
+FIELD private static purchaseVerificationHandler Lcom/adjust/sdk/IPurchaseVerificationHandler;
+FIELD private static purchaseVerificationUrl Ljava/lang/String;
+FIELD private static sdkClickBackoffStrategy Lcom/adjust/sdk/BackoffStrategy;
+FIELD private static sdkClickHandler Lcom/adjust/sdk/ISdkClickHandler;
+FIELD private static sessionInterval J
+FIELD private static subscriptionUrl Ljava/lang/String;
+FIELD private static subsessionInterval J
+FIELD private static timerInterval J
+FIELD private static timerStart J
+FIELD private static tryInstallReferrer Z
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD private static byte2HexFormatted ([B)Ljava/lang/String; ----
+  new-instance           v0, Ljava/lang/StringBuilder;
+  array-length           v1, v6
+  const/4                v2, 2
+  mul-int/2addr          v1, v2
+  invoke-direct          v0, v1, Ljava/lang/StringBuilder;-><init>(I)V
+  const/4                v1, 0
+  array-length           v3, v6
+  if-ge                  v1, v3, +027h
+  aget-byte              v3, v6, v1
+  invoke-static          v3, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+  move-result-object     v3
+  invoke-virtual         v3, Ljava/lang/String;->length()I
+  move-result            v4
+  const/4                v5, 1
+  if-ne                  v4, v5, +008h
+  const-string           v5, "0"
+  invoke-virtual         v5, v3, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v3
+  if-le                  v4, v2, +008h
+  add-int/lit8           v5, v4, -2
+  invoke-virtual         v3, v5, v4, Ljava/lang/String;->substring(I I)Ljava/lang/String;
+  move-result-object     v3
+  invoke-virtual         v3, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
+  move-result-object     v3
+  invoke-virtual         v0, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  add-int/lit8           v1, v1, 1
+  goto                   -27h
+  invoke-virtual         v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v6
+  return-object          v6
+
+---- METHOD public static getActivityHandler (Lcom/adjust/sdk/AdjustConfig;)Lcom/adjust/sdk/IActivityHandler; ----
+  sget-object            v0, Lcom/adjust/sdk/AdjustFactory;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  if-nez                 v0, +007h
+  invoke-static          v1, Lcom/adjust/sdk/ActivityHandler;->getInstance(Lcom/adjust/sdk/AdjustConfig;)Lcom/adjust/sdk/ActivityHandler;
+  move-result-object     v1
+  return-object          v1
+  invoke-interface       v0, v1, Lcom/adjust/sdk/IActivityHandler;->init(Lcom/adjust/sdk/AdjustConfig;)V
+  sget-object            v1, Lcom/adjust/sdk/AdjustFactory;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  return-object          v1
+
+---- METHOD public static getAttributionHandler (Lcom/adjust/sdk/IActivityHandler; Z Lcom/adjust/sdk/network/IActivityPackageSender;)Lcom/adjust/sdk/IAttributionHandler; ----
+  sget-object            v0, Lcom/adjust/sdk/AdjustFactory;->attributionHandler Lcom/adjust/sdk/IAttributionHandler;
+  if-nez                 v0, +008h
+  new-instance           v0, Lcom/adjust/sdk/AttributionHandler;
+  invoke-direct          v0, v1, v2, v3, Lcom/adjust/sdk/AttributionHandler;-><init>(Lcom/adjust/sdk/IActivityHandler; Z Lcom/adjust/sdk/network/IActivityPackageSender;)V
+  return-object          v0
+  invoke-interface       v0, v1, v2, v3, Lcom/adjust/sdk/IAttributionHandler;->init(Lcom/adjust/sdk/IActivityHandler; Z Lcom/adjust/sdk/network/IActivityPackageSender;)V
+  sget-object            v1, Lcom/adjust/sdk/AdjustFactory;->attributionHandler Lcom/adjust/sdk/IAttributionHandler;
+  return-object          v1
+
+---- METHOD public static getBaseUrl ()Ljava/lang/String; ----
+  sget-object            v0, Lcom/adjust/sdk/AdjustFactory;->baseUrl Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public static getConnectionOptions ()Lcom/adjust/sdk/network/UtilNetworking$IConnectionOptions; ----
+  sget-object            v0, Lcom/adjust/sdk/AdjustFactory;->connectionOptions Lcom/adjust/sdk/network/UtilNetworking$IConnectionOptions;
+  if-nez                 v0, +006h
+  invoke-static          Lcom/adjust/sdk/network/UtilNetworking;->createDefaultConnectionOptions()Lcom/adjust/sdk/network/UtilNetworking$IConnectionOptions;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public static getGdprUrl ()Ljava/lang/String; ----
+  sget-object            v0, Lcom/adjust/sdk/AdjustFactory;->gdprUrl Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public static getHttpsURLConnectionProvider ()Lcom/adjust/sdk/network/UtilNetworking$IHttpsURLConnectionProvider; ----
+  sget-object            v0, Lcom/adjust/sdk/AdjustFactory;->httpsURLConnectionProvider Lcom/adjust/sdk/network/UtilNetworking$IHttpsURLConnectionProvider;
+  if-nez                 v0, +006h
+  invoke-static          Lcom/adjust/sdk/network/UtilNetworking;->createDefaultHttpsURLConnectionProvider()Lcom/adjust/sdk/network/UtilNetworking$IHttpsURLConnectionProvider;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public static getInstallSessionBackoffStrategy ()Lcom/adjust/sdk/BackoffStrategy; ----
+  sget-object            v0, Lcom/adjust/sdk/AdjustFactory;->installSessionBackoffStrategy Lcom/adjust/sdk/BackoffStrategy;
+  if-nez                 v0, +004h
+  sget-object            v0, Lcom/adjust/sdk/BackoffStrategy;->SHORT_WAIT Lcom/adjust/sdk/BackoffStrategy;
+  return-object          v0
+
+---- METHOD public static getLogger ()Lcom/adjust/sdk/ILogger; ----
+  sget-object            v0, Lcom/adjust/sdk/AdjustFactory;->logger Lcom/adjust/sdk/ILogger;
+  if-nez                 v0, +009h
+  new-instance           v0, Lcom/adjust/sdk/Logger;
+  invoke-direct          v0, Lcom/adjust/sdk/Logger;-><init>()V
+  sput-object            v0, Lcom/adjust/sdk/AdjustFactory;->logger Lcom/adjust/sdk/ILogger;
+  sget-object            v0, Lcom/adjust/sdk/AdjustFactory;->logger Lcom/adjust/sdk/ILogger;
+  return-object          v0
+
+---- METHOD public static getPackageHandler (Lcom/adjust/sdk/IActivityHandler; Landroid/content/Context; Z Lcom/adjust/sdk/network/IActivityPackageSender;)Lcom/adjust/sdk/IPackageHandler; ----
+  sget-object            v0, Lcom/adjust/sdk/AdjustFactory;->packageHandler Lcom/adjust/sdk/IPackageHandler;
+  if-nez                 v0, +008h
+  new-instance           v0, Lcom/adjust/sdk/PackageHandler;
+  invoke-direct          v0, v1, v2, v3, v4, Lcom/adjust/sdk/PackageHandler;-><init>(Lcom/adjust/sdk/IActivityHandler; Landroid/content/Context; Z Lcom/adjust/sdk/network/IActivityPackageSender;)V
+  return-object          v0
+  invoke-interface       v0, v1, v2, v3, v4, Lcom/adjust/sdk/IPackageHandler;->init(Lcom/adjust/sdk/IActivityHandler; Landroid/content/Context; Z Lcom/adjust/sdk/network/IActivityPackageSender;)V
+  sget-object            v1, Lcom/adjust/sdk/AdjustFactory;->packageHandler Lcom/adjust/sdk/IPackageHandler;
+  return-object          v1
+
+---- METHOD public static getPackageHandlerBackoffStrategy ()Lcom/adjust/sdk/BackoffStrategy; ----
+  sget-object            v0, Lcom/adjust/sdk/AdjustFactory;->packageHandlerBackoffStrategy Lcom/adjust/sdk/BackoffStrategy;
+  if-nez                 v0, +004h
+  sget-object            v0, Lcom/adjust/sdk/BackoffStrategy;->LONG_WAIT Lcom/adjust/sdk/BackoffStrategy;
+  return-object          v0
+
+---- METHOD public static getPurchaseVerificationHandler (Lcom/adjust/sdk/IActivityHandler; Z Lcom/adjust/sdk/network/IActivityPackageSender;)Lcom/adjust/sdk/IPurchaseVerificationHandler; ----
+  sget-object            v0, Lcom/adjust/sdk/AdjustFactory;->purchaseVerificationHandler Lcom/adjust/sdk/IPurchaseVerificationHandler;
+  if-nez                 v0, +008h
+  new-instance           v0, Lcom/adjust/sdk/PurchaseVerificationHandler;
+  invoke-direct          v0, v1, v2, v3, Lcom/adjust/sdk/PurchaseVerificationHandler;-><init>(Lcom/adjust/sdk/IActivityHandler; Z Lcom/adjust/sdk/network/IActivityPackageSender;)V
+  return-object          v0
+  invoke-interface       v0, v1, v2, v3, Lcom/adjust/sdk/IPurchaseVerificationHandler;->init(Lcom/adjust/sdk/IActivityHandler; Z Lcom/adjust/sdk/network/IActivityPackageSender;)V
+  sget-object            v1, Lcom/adjust/sdk/AdjustFactory;->purchaseVerificationHandler Lcom/adjust/sdk/IPurchaseVerificationHandler;
+  return-object          v1
+
+---- METHOD public static getPurchaseVerificationUrl ()Ljava/lang/String; ----
+  sget-object            v0, Lcom/adjust/sdk/AdjustFactory;->purchaseVerificationUrl Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public static getSdkClickBackoffStrategy ()Lcom/adjust/sdk/BackoffStrategy; ----
+  sget-object            v0, Lcom/adjust/sdk/AdjustFactory;->sdkClickBackoffStrategy Lcom/adjust/sdk/BackoffStrategy;
+  if-nez                 v0, +004h
+  sget-object            v0, Lcom/adjust/sdk/BackoffStrategy;->SHORT_WAIT Lcom/adjust/sdk/BackoffStrategy;
+  return-object          v0
+
+---- METHOD public static getSdkClickHandler (Lcom/adjust/sdk/IActivityHandler; Z Lcom/adjust/sdk/network/IActivityPackageSender;)Lcom/adjust/sdk/ISdkClickHandler; ----
+  sget-object            v0, Lcom/adjust/sdk/AdjustFactory;->sdkClickHandler Lcom/adjust/sdk/ISdkClickHandler;
+  if-nez                 v0, +008h
+  new-instance           v0, Lcom/adjust/sdk/SdkClickHandler;
+  invoke-direct          v0, v1, v2, v3, Lcom/adjust/sdk/SdkClickHandler;-><init>(Lcom/adjust/sdk/IActivityHandler; Z Lcom/adjust/sdk/network/IActivityPackageSender;)V
+  return-object          v0
+  invoke-interface       v0, v1, v2, v3, Lcom/adjust/sdk/ISdkClickHandler;->init(Lcom/adjust/sdk/IActivityHandler; Z Lcom/adjust/sdk/network/IActivityPackageSender;)V
+  sget-object            v1, Lcom/adjust/sdk/AdjustFactory;->sdkClickHandler Lcom/adjust/sdk/ISdkClickHandler;
+  return-object          v1
+
+---- METHOD public static getSessionInterval ()J ----
+  sget-wide              v0, Lcom/adjust/sdk/AdjustFactory;->sessionInterval J
+  const-wide/16          v2, -1
+  cmp-long               v2, v0, v2
+  if-nez                 v2, +005h
+  const-wide/32          v0, 1800000
+  return-wide            v0
+
+---- METHOD public static getSubscriptionUrl ()Ljava/lang/String; ----
+  sget-object            v0, Lcom/adjust/sdk/AdjustFactory;->subscriptionUrl Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public static getSubsessionInterval ()J ----
+  sget-wide              v0, Lcom/adjust/sdk/AdjustFactory;->subsessionInterval J
+  const-wide/16          v2, -1
+  cmp-long               v2, v0, v2
+  if-nez                 v2, +004h
+  const-wide/16          v0, 1000
+  return-wide            v0
+
+---- METHOD public static getTimerInterval ()J ----
+  sget-wide              v0, Lcom/adjust/sdk/AdjustFactory;->timerInterval J
+  const-wide/16          v2, -1
+  cmp-long               v2, v0, v2
+  if-nez                 v2, +005h
+  const-wide/32          v0, 60000
+  return-wide            v0
+
+---- METHOD public static getTimerStart ()J ----
+  sget-wide              v0, Lcom/adjust/sdk/AdjustFactory;->timerStart J
+  const-wide/16          v2, -1
+  cmp-long               v2, v0, v2
+  if-nez                 v2, +005h
+  const-wide/32          v0, 60000
+  return-wide            v0
+
+---- METHOD public static getTryInstallReferrer ()Z ----
+  sget-boolean           v0, Lcom/adjust/sdk/AdjustFactory;->tryInstallReferrer Z
+  return                 v0
+
+---- METHOD public static isAllowUrlStrategyFallback ()Z ----
+  sget-boolean           v0, Lcom/adjust/sdk/AdjustFactory;->allowUrlStrategyFallback Z
+  return                 v0
+
+---- METHOD public static isSystemLifecycleBootstrapIgnored ()Z ----
+  sget-boolean           v0, Lcom/adjust/sdk/AdjustFactory;->ignoreSystemLifecycleBootstrap Z
+  return                 v0
+
+---- METHOD public static setActivityHandler (Lcom/adjust/sdk/IActivityHandler;)V ----
+  sput-object            v0, Lcom/adjust/sdk/AdjustFactory;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  return-void            
+
+---- METHOD public static setAllowUrlStrategyFallback (Z)V ----
+  sput-boolean           v0, Lcom/adjust/sdk/AdjustFactory;->allowUrlStrategyFallback Z
+  return-void            
+
+---- METHOD public static setAttributionHandler (Lcom/adjust/sdk/IAttributionHandler;)V ----
+  sput-object            v0, Lcom/adjust/sdk/AdjustFactory;->attributionHandler Lcom/adjust/sdk/IAttributionHandler;
+  return-void            
+
+---- METHOD public static setBaseUrl (Ljava/lang/String;)V ----
+  sput-object            v0, Lcom/adjust/sdk/AdjustFactory;->baseUrl Ljava/lang/String;
+  return-void            
+
+---- METHOD public static setConnectionOptions (Lcom/adjust/sdk/network/UtilNetworking$IConnectionOptions;)V ----
+  sput-object            v0, Lcom/adjust/sdk/AdjustFactory;->connectionOptions Lcom/adjust/sdk/network/UtilNetworking$IConnectionOptions;
+  return-void            
+
+---- METHOD public static setGdprUrl (Ljava/lang/String;)V ----
+  sput-object            v0, Lcom/adjust/sdk/AdjustFactory;->gdprUrl Ljava/lang/String;
+  return-void            
+
+---- METHOD public static setHttpsURLConnectionProvider (Lcom/adjust/sdk/network/UtilNetworking$IHttpsURLConnectionProvider;)V ----
+  sput-object            v0, Lcom/adjust/sdk/AdjustFactory;->httpsURLConnectionProvider Lcom/adjust/sdk/network/UtilNetworking$IHttpsURLConnectionProvider;
+  return-void            
+
+---- METHOD public static setIgnoreSystemLifecycleBootstrap (Z)V ----
+  sput-boolean           v0, Lcom/adjust/sdk/AdjustFactory;->ignoreSystemLifecycleBootstrap Z
+  return-void            
+
+---- METHOD public static setLogger (Lcom/adjust/sdk/ILogger;)V ----
+  sput-object            v0, Lcom/adjust/sdk/AdjustFactory;->logger Lcom/adjust/sdk/ILogger;
+  return-void            
+
+---- METHOD public static setPackageHandler (Lcom/adjust/sdk/IPackageHandler;)V ----
+  sput-object            v0, Lcom/adjust/sdk/AdjustFactory;->packageHandler Lcom/adjust/sdk/IPackageHandler;
+  return-void            
+
+---- METHOD public static setPackageHandlerBackoffStrategy (Lcom/adjust/sdk/BackoffStrategy;)V ----
+  sput-object            v0, Lcom/adjust/sdk/AdjustFactory;->packageHandlerBackoffStrategy Lcom/adjust/sdk/BackoffStrategy;
+  return-void            
+
+---- METHOD public static setPurchaseVerificationUrl (Ljava/lang/String;)V ----
+  sput-object            v0, Lcom/adjust/sdk/AdjustFactory;->purchaseVerificationUrl Ljava/lang/String;
+  return-void            
+
+---- METHOD public static setSdkClickBackoffStrategy (Lcom/adjust/sdk/BackoffStrategy;)V ----
+  sput-object            v0, Lcom/adjust/sdk/AdjustFactory;->sdkClickBackoffStrategy Lcom/adjust/sdk/BackoffStrategy;
+  return-void            
+
+---- METHOD public static setSdkClickHandler (Lcom/adjust/sdk/ISdkClickHandler;)V ----
+  sput-object            v0, Lcom/adjust/sdk/AdjustFactory;->sdkClickHandler Lcom/adjust/sdk/ISdkClickHandler;
+  return-void            
+
+---- METHOD public static setSessionInterval (J)V ----
+  sput-wide              v0, Lcom/adjust/sdk/AdjustFactory;->sessionInterval J
+  return-void            
+
+---- METHOD public static setSubscriptionUrl (Ljava/lang/String;)V ----
+  sput-object            v0, Lcom/adjust/sdk/AdjustFactory;->subscriptionUrl Ljava/lang/String;
+  return-void            
+
+---- METHOD public static setSubsessionInterval (J)V ----
+  sput-wide              v0, Lcom/adjust/sdk/AdjustFactory;->subsessionInterval J
+  return-void            
+
+---- METHOD public static setTimerInterval (J)V ----
+  sput-wide              v0, Lcom/adjust/sdk/AdjustFactory;->timerInterval J
+  return-void            
+
+---- METHOD public static setTimerStart (J)V ----
+  sput-wide              v0, Lcom/adjust/sdk/AdjustFactory;->timerStart J
+  return-void            
+
+---- METHOD public static setTryInstallReferrer (Z)V ----
+  sput-boolean           v0, Lcom/adjust/sdk/AdjustFactory;->tryInstallReferrer Z
+  return-void            
+
+---- METHOD public static teardown (Landroid/content/Context;)V ----
+  if-eqz                 v2, +008h
+  invoke-static          v2, Lcom/adjust/sdk/ActivityHandler;->deleteState(Landroid/content/Context;)V
+  invoke-static          v2, Lcom/adjust/sdk/PackageHandler;->deleteState(Landroid/content/Context;)V
+  const/4                v2, 0
+  sput-object            v2, Lcom/adjust/sdk/AdjustFactory;->packageHandler Lcom/adjust/sdk/IPackageHandler;
+  sput-object            v2, Lcom/adjust/sdk/AdjustFactory;->attributionHandler Lcom/adjust/sdk/IAttributionHandler;
+  sput-object            v2, Lcom/adjust/sdk/AdjustFactory;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  sput-object            v2, Lcom/adjust/sdk/AdjustFactory;->logger Lcom/adjust/sdk/ILogger;
+  sput-object            v2, Lcom/adjust/sdk/AdjustFactory;->sdkClickHandler Lcom/adjust/sdk/ISdkClickHandler;
+  const-wide/16          v0, -1
+  sput-wide              v0, Lcom/adjust/sdk/AdjustFactory;->timerInterval J
+  sput-wide              v0, Lcom/adjust/sdk/AdjustFactory;->timerStart J
+  sput-wide              v0, Lcom/adjust/sdk/AdjustFactory;->sessionInterval J
+  sput-wide              v0, Lcom/adjust/sdk/AdjustFactory;->subsessionInterval J
+  sput-object            v2, Lcom/adjust/sdk/AdjustFactory;->sdkClickBackoffStrategy Lcom/adjust/sdk/BackoffStrategy;
+  sput-object            v2, Lcom/adjust/sdk/AdjustFactory;->packageHandlerBackoffStrategy Lcom/adjust/sdk/BackoffStrategy;
+  const-string           v0, "https://app.adjust.com"
+  sput-object            v0, Lcom/adjust/sdk/AdjustFactory;->baseUrl Ljava/lang/String;
+  const-string           v0, "https://gdpr.adjust.com"
+  sput-object            v0, Lcom/adjust/sdk/AdjustFactory;->gdprUrl Ljava/lang/String;
+  const-string           v0, "https://subscription.adjust.com"
+  sput-object            v0, Lcom/adjust/sdk/AdjustFactory;->subscriptionUrl Ljava/lang/String;
+  const-string           v0, "https://ssrv.adjust.com"
+  sput-object            v0, Lcom/adjust/sdk/AdjustFactory;->purchaseVerificationUrl Ljava/lang/String;
+  sput-object            v2, Lcom/adjust/sdk/AdjustFactory;->connectionOptions Lcom/adjust/sdk/network/UtilNetworking$IConnectionOptions;
+  sput-object            v2, Lcom/adjust/sdk/AdjustFactory;->httpsURLConnectionProvider Lcom/adjust/sdk/network/UtilNetworking$IHttpsURLConnectionProvider;
+  const/4                v2, 1
+  sput-boolean           v2, Lcom/adjust/sdk/AdjustFactory;->tryInstallReferrer Z
+  return-void            
+######################################################################

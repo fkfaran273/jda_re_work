@@ -1,0 +1,26 @@
+# CLASS Lcom/adjust/sdk/k;
+FIELD public final synthetic a I
+FIELD public final synthetic b Ljava/lang/String;
+FIELD public final synthetic c Ljava/lang/String;
+
+---- METHOD public synthetic constructor <init> (Ljava/lang/String; Ljava/lang/String; I)V ----
+  iput                   v3, v0, Lcom/adjust/sdk/k;->a I
+  iput-object            v1, v0, Lcom/adjust/sdk/k;->b Ljava/lang/String;
+  iput-object            v2, v0, Lcom/adjust/sdk/k;->c Ljava/lang/String;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run (Lcom/adjust/sdk/ActivityHandler;)V ----
+  iget                   v0, v2, Lcom/adjust/sdk/k;->a I
+  packed-switch          v0, +0000014h
+  iget-object            v0, v2, Lcom/adjust/sdk/k;->b Ljava/lang/String;
+  iget-object            v1, v2, Lcom/adjust/sdk/k;->c Ljava/lang/String;
+  invoke-static          v0, v1, v3, Lcom/adjust/sdk/ActivityHandler;->t(Ljava/lang/String; Ljava/lang/String; Lcom/adjust/sdk/ActivityHandler;)V
+  return-void            
+  iget-object            v0, v2, Lcom/adjust/sdk/k;->b Ljava/lang/String;
+  iget-object            v1, v2, Lcom/adjust/sdk/k;->c Ljava/lang/String;
+  invoke-static          v0, v1, v3, Lcom/adjust/sdk/ActivityHandler;->z(Ljava/lang/String; Ljava/lang/String; Lcom/adjust/sdk/ActivityHandler;)V
+  return-void            
+  nop                    
+  packed-switch-payload  0
+######################################################################

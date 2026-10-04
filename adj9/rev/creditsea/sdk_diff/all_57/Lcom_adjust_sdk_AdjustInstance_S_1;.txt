@@ -1,0 +1,26 @@
+# CLASS Lcom/adjust/sdk/AdjustInstance$1;
+FIELD public final synthetic a Lcom/adjust/sdk/OnIsEnabledListener;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/OnIsEnabledListener;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustInstance$1;->a Lcom/adjust/sdk/OnIsEnabledListener;
+  invoke-direct          v0, Lcom/adjust/sdk/scheduler/AsyncTaskExecutor;-><init>()V
+  return-void            
+
+---- METHOD public final doInBackground ([Ljava/lang/Object;)Ljava/lang/Object; ----
+  check-cast             v2, [Landroid/content/Context;
+  const/4                v0, 0
+  aget-object            v2, v2, v0
+  invoke-static          v2, Lcom/adjust/sdk/Util;->isEnabledFromActivityStateFile(Landroid/content/Context;)Z
+  move-result            v2
+  invoke-static          v2, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object     v2
+  return-object          v2
+
+---- METHOD public final onPostExecute (Ljava/lang/Object;)V ----
+  check-cast             v2, Ljava/lang/Boolean;
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustInstance$1;->a Lcom/adjust/sdk/OnIsEnabledListener;
+  invoke-virtual         v2, Ljava/lang/Boolean;->booleanValue()Z
+  move-result            v2
+  invoke-interface       v0, v2, Lcom/adjust/sdk/OnIsEnabledListener;->onIsEnabledRead(Z)V
+  return-void            
+######################################################################

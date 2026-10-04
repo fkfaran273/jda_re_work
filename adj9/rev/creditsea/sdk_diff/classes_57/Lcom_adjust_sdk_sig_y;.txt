@@ -1,0 +1,13 @@
+# CLASS Lcom/adjust/sdk/sig/y;
+
+---- METHOD public static final a((Lcom/adjust/sdk/sig/l2;)Lcom/adjust/sdk/sig/m;)  ----
+  instance-of            v0, v1, Lcom/adjust/sdk/sig/m2;
+  if-eqz                 v0, +00bh
+  check-cast             v1, Lcom/adjust/sdk/sig/m2;
+  iget-object            v1, v1, Lcom/adjust/sdk/sig/m2;->a Lcom/adjust/sdk/sig/l2;
+  invoke-static          v1, Lcom/adjust/sdk/sig/y;->a(Lcom/adjust/sdk/sig/l2;)Lcom/adjust/sdk/sig/m;
+  move-result-object     v1
+  return-object          v1
+  const/4                v1, 0
+  return-object          v1
+######################################################################

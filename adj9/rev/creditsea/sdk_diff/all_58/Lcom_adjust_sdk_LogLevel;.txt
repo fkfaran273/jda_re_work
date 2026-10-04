@@ -1,0 +1,89 @@
+# CLASS Lcom/adjust/sdk/LogLevel;
+FIELD private static final synthetic $VALUES [Lcom/adjust/sdk/LogLevel;
+FIELD public static final enum ASSERT Lcom/adjust/sdk/LogLevel;
+FIELD public static final enum DEBUG Lcom/adjust/sdk/LogLevel;
+FIELD public static final enum ERROR Lcom/adjust/sdk/LogLevel;
+FIELD public static final enum INFO Lcom/adjust/sdk/LogLevel;
+FIELD public static final enum SUPPRESS Lcom/adjust/sdk/LogLevel;
+FIELD public static final enum VERBOSE Lcom/adjust/sdk/LogLevel;
+FIELD public static final enum WARN Lcom/adjust/sdk/LogLevel;
+FIELD final androidLogLevel I
+
+---- METHOD private static synthetic $values ()[Lcom/adjust/sdk/LogLevel; ----
+  sget-object            v0, Lcom/adjust/sdk/LogLevel;->VERBOSE Lcom/adjust/sdk/LogLevel;
+  sget-object            v1, Lcom/adjust/sdk/LogLevel;->DEBUG Lcom/adjust/sdk/LogLevel;
+  sget-object            v2, Lcom/adjust/sdk/LogLevel;->INFO Lcom/adjust/sdk/LogLevel;
+  sget-object            v3, Lcom/adjust/sdk/LogLevel;->WARN Lcom/adjust/sdk/LogLevel;
+  sget-object            v4, Lcom/adjust/sdk/LogLevel;->ERROR Lcom/adjust/sdk/LogLevel;
+  sget-object            v5, Lcom/adjust/sdk/LogLevel;->ASSERT Lcom/adjust/sdk/LogLevel;
+  sget-object            v6, Lcom/adjust/sdk/LogLevel;->SUPPRESS Lcom/adjust/sdk/LogLevel;
+  filled-new-array/range v0 ... v6, [Lcom/adjust/sdk/LogLevel;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD static constructor <clinit> ()V ----
+  new-instance           v0, Lcom/adjust/sdk/LogLevel;
+  const-string           v1, "VERBOSE"
+  const/4                v2, 0
+  const/4                v3, 2
+  invoke-direct          v0, v1, v2, v3, Lcom/adjust/sdk/LogLevel;-><init>(Ljava/lang/String; I I)V
+  sput-object            v0, Lcom/adjust/sdk/LogLevel;->VERBOSE Lcom/adjust/sdk/LogLevel;
+  new-instance           v0, Lcom/adjust/sdk/LogLevel;
+  const-string           v1, "DEBUG"
+  const/4                v2, 1
+  const/4                v4, 3
+  invoke-direct          v0, v1, v2, v4, Lcom/adjust/sdk/LogLevel;-><init>(Ljava/lang/String; I I)V
+  sput-object            v0, Lcom/adjust/sdk/LogLevel;->DEBUG Lcom/adjust/sdk/LogLevel;
+  new-instance           v0, Lcom/adjust/sdk/LogLevel;
+  const-string           v1, "INFO"
+  const/4                v2, 4
+  invoke-direct          v0, v1, v3, v2, Lcom/adjust/sdk/LogLevel;-><init>(Ljava/lang/String; I I)V
+  sput-object            v0, Lcom/adjust/sdk/LogLevel;->INFO Lcom/adjust/sdk/LogLevel;
+  new-instance           v0, Lcom/adjust/sdk/LogLevel;
+  const-string           v1, "WARN"
+  const/4                v3, 5
+  invoke-direct          v0, v1, v4, v3, Lcom/adjust/sdk/LogLevel;-><init>(Ljava/lang/String; I I)V
+  sput-object            v0, Lcom/adjust/sdk/LogLevel;->WARN Lcom/adjust/sdk/LogLevel;
+  new-instance           v0, Lcom/adjust/sdk/LogLevel;
+  const-string           v1, "ERROR"
+  const/4                v4, 6
+  invoke-direct          v0, v1, v2, v4, Lcom/adjust/sdk/LogLevel;-><init>(Ljava/lang/String; I I)V
+  sput-object            v0, Lcom/adjust/sdk/LogLevel;->ERROR Lcom/adjust/sdk/LogLevel;
+  new-instance           v0, Lcom/adjust/sdk/LogLevel;
+  const-string           v1, "ASSERT"
+  const/4                v2, 7
+  invoke-direct          v0, v1, v3, v2, Lcom/adjust/sdk/LogLevel;-><init>(Ljava/lang/String; I I)V
+  sput-object            v0, Lcom/adjust/sdk/LogLevel;->ASSERT Lcom/adjust/sdk/LogLevel;
+  new-instance           v0, Lcom/adjust/sdk/LogLevel;
+  const-string           v1, "SUPPRESS"
+  const/16               v2, 8
+  invoke-direct          v0, v1, v4, v2, Lcom/adjust/sdk/LogLevel;-><init>(Ljava/lang/String; I I)V
+  sput-object            v0, Lcom/adjust/sdk/LogLevel;->SUPPRESS Lcom/adjust/sdk/LogLevel;
+  invoke-static          Lcom/adjust/sdk/LogLevel;->$values()[Lcom/adjust/sdk/LogLevel;
+  move-result-object     v0
+  sput-object            v0, Lcom/adjust/sdk/LogLevel;->$VALUES [Lcom/adjust/sdk/LogLevel;
+  return-void            
+
+---- METHOD private constructor <init> (Ljava/lang/String; I I)V ----
+  invoke-direct          v0, v1, v2, Ljava/lang/Enum;-><init>(Ljava/lang/String; I)V
+  iput                   v3, v0, Lcom/adjust/sdk/LogLevel;->androidLogLevel I
+  return-void            
+
+---- METHOD public static valueOf (Ljava/lang/String;)Lcom/adjust/sdk/LogLevel; ----
+  const-class            v0, Lcom/adjust/sdk/LogLevel;
+  invoke-static          v0, v1, Ljava/lang/Enum;->valueOf(Ljava/lang/Class; Ljava/lang/String;)Ljava/lang/Enum;
+  move-result-object     v1
+  check-cast             v1, Lcom/adjust/sdk/LogLevel;
+  return-object          v1
+
+---- METHOD public static values ()[Lcom/adjust/sdk/LogLevel; ----
+  sget-object            v0, Lcom/adjust/sdk/LogLevel;->$VALUES [Lcom/adjust/sdk/LogLevel;
+  invoke-virtual         v0, [Lcom/adjust/sdk/LogLevel;->clone()Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, [Lcom/adjust/sdk/LogLevel;
+  return-object          v0
+
+---- METHOD public getAndroidLogLevel ()I ----
+  iget                   v0, v1, Lcom/adjust/sdk/LogLevel;->androidLogLevel I
+  return                 v0
+######################################################################

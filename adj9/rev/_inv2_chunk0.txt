@@ -1,0 +1,1378 @@
+chunk 0 events: 35984..39278 (n=3296)
+E pc=0x1199a8 abs=1132 pre=00 -> a7   taps[0]: 
+E pc=0x1199a8 abs=1131 pre=00 -> be   taps[0]: 
+E pc=0x1199a8 abs=1130 pre=00 -> da   taps[0]: 
+E pc=0x1199a8 abs=1129 pre=00 -> 58   taps[0]: 
+E pc=0x1199a8 abs=1128 pre=00 -> b9   taps[0]: 
+E pc=0x1199a8 abs=1127 pre=00 -> f9   taps[0]: 
+E pc=0x1199a8 abs=1126 pre=00 -> 7b   taps[0]: 
+E pc=0x1199a8 abs=1125 pre=00 -> 1a   taps[0]: 
+E pc=0x1199a8 abs=1124 pre=00 -> 63   taps[0]: 
+E pc=0x1199a8 abs=1123 pre=00 -> 7e   taps[0]: 
+E pc=0x1199a8 abs=1122 pre=00 -> 56   taps[0]: 
+E pc=0x1199a8 abs=1121 pre=00 -> 31   taps[0]: 
+E pc=0x1199a8 abs=1120 pre=00 -> c4   taps[0]: 
+E pc=0x1199a8 abs=1119 pre=00 -> c3   taps[0]: 
+E pc=0x1199a8 abs=1118 pre=00 -> 95   taps[0]: 
+E pc=0x1199a8 abs=1117 pre=00 -> 55   taps[0]: 
+E pc=0x119ba4 abs=1133 pre=00 -> 90   taps[0]: 
+E pc=0x11c934 abs=1116 pre=00 -> cc   taps[0]: 
+E pc=0x11c934 abs=1115 pre=00 -> 74   taps[0]: 
+E pc=0x11c934 abs=1114 pre=00 -> cc   taps[0]: 
+E pc=0x11c934 abs=1113 pre=00 -> a3   taps[0]: 
+E pc=0x11c934 abs=1112 pre=00 -> 5c   taps[0]: 
+E pc=0x11c934 abs=1111 pre=00 -> aa   taps[0]: 
+E pc=0x11c934 abs=1110 pre=00 -> 01   taps[0]: 
+E pc=0x11c934 abs=1109 pre=00 -> 0d   taps[0]: 
+E pc=0x11c934 abs=1108 pre=00 -> f3   taps[0]: 
+E pc=0x11c934 abs=1107 pre=00 -> c9   taps[0]: 
+E pc=0x11c934 abs=1106 pre=00 -> c7   taps[0]: 
+E pc=0x11c934 abs=1105 pre=00 -> e2   taps[0]: 
+E pc=0x11c934 abs=1104 pre=00 -> e8   taps[0]: 
+E pc=0x11c934 abs=1103 pre=00 -> 07   taps[0]: 
+E pc=0x11c934 abs=1102 pre=00 -> 8b   taps[0]: 
+E pc=0x11c934 abs=1101 pre=00 -> 20   taps[0]: 
+E pc=0x11c934 abs=1100 pre=00 -> a7   taps[0]: 
+E pc=0x11c934 abs=1099 pre=00 -> 59   taps[0]: 
+E pc=0x11c934 abs=1098 pre=00 -> 6e   taps[0]: 
+E pc=0x11c934 abs=1097 pre=00 -> c6   taps[0]: 
+E pc=0x11c934 abs=1096 pre=00 -> 2a   taps[0]: 
+E pc=0x11c934 abs=1095 pre=00 -> ef   taps[0]: 
+E pc=0x11c934 abs=1094 pre=00 -> 1c   taps[0]: 
+E pc=0x11c934 abs=1093 pre=00 -> 54   taps[0]: 
+E pc=0x11c934 abs=1092 pre=00 -> cb   taps[0]: 
+E pc=0x11c934 abs=1091 pre=00 -> 05   taps[0]: 
+E pc=0x11c934 abs=1090 pre=00 -> 2c   taps[0]: 
+E pc=0x11c934 abs=1089 pre=00 -> 8d   taps[0]: 
+E pc=0x11c934 abs=1088 pre=00 -> 1e   taps[0]: 
+E pc=0x11c934 abs=1087 pre=00 -> aa   taps[0]: 
+E pc=0x11c934 abs=1086 pre=00 -> ff   taps[0]: 
+E pc=0x11c934 abs=1085 pre=00 -> fd   taps[0]: 
+E pc=0x11c934 abs=1084 pre=00 -> c5   taps[0]: 
+E pc=0x11c934 abs=1083 pre=00 -> 8b   taps[0]: 
+E pc=0x11c934 abs=1082 pre=00 -> 98   taps[0]: 
+E pc=0x11c934 abs=1081 pre=00 -> fb   taps[0]: 
+E pc=0x11c934 abs=1080 pre=00 -> fa   taps[0]: 
+E pc=0x11c934 abs=1079 pre=00 -> 36   taps[0]: 
+E pc=0x11c934 abs=1078 pre=00 -> 93   taps[0]: 
+E pc=0x11c934 abs=1077 pre=00 -> ba   taps[0]: 
+E pc=0x11c934 abs=1076 pre=00 -> 4e   taps[0]: 
+E pc=0x11c934 abs=1075 pre=00 -> 9b   taps[0]: 
+E pc=0x11c934 abs=1074 pre=00 -> 19   taps[0]: 
+E pc=0x11c934 abs=1073 pre=00 -> 97   taps[0]: 
+E pc=0x11c934 abs=1072 pre=00 -> 34   taps[0]: 
+E pc=0x11c934 abs=1071 pre=00 -> 8e   taps[0]: 
+E pc=0x11c934 abs=1070 pre=00 -> 75   taps[0]: 
+E pc=0x11c934 abs=1069 pre=00 -> 82   taps[0]: 
+E pc=0x11c934 abs=1068 pre=00 -> d8   taps[0]: 
+E pc=0x11c934 abs=1067 pre=00 -> e3   taps[0]: 
+E pc=0x11c934 abs=1066 pre=00 -> 27   taps[0]: 
+E pc=0x11c934 abs=1065 pre=00 -> c7   taps[0]: 
+E pc=0x11c934 abs=1064 pre=00 -> b4   taps[0]: 
+E pc=0x11c934 abs=1063 pre=00 -> bf   taps[0]: 
+E pc=0x11c934 abs=1062 pre=00 -> 65   taps[0]: 
+E pc=0x11c934 abs=1061 pre=00 -> 8c   taps[0]: 
+E pc=0x11c934 abs=1060 pre=00 -> 80   taps[0]: 
+E pc=0x11c934 abs=1059 pre=00 -> fa   taps[0]: 
+E pc=0x11c934 abs=1058 pre=00 -> 86   taps[0]: 
+E pc=0x11c934 abs=1057 pre=00 -> 25   taps[0]: 
+E pc=0x11c934 abs=1056 pre=00 -> 7e   taps[0]: 
+E pc=0x11c934 abs=1055 pre=00 -> b7   taps[0]: 
+E pc=0x11c934 abs=1054 pre=00 -> 42   taps[0]: 
+E pc=0x11c934 abs=1053 pre=00 -> 19   taps[0]: 
+E pc=0x11c934 abs=1052 pre=00 -> 6a   taps[0]: 
+E pc=0x11c934 abs=1051 pre=00 -> e8   taps[0]: 
+E pc=0x11c934 abs=1050 pre=00 -> 5e   taps[0]: 
+E pc=0x11c934 abs=1049 pre=00 -> 14   taps[0]: 
+E pc=0x11c934 abs=1048 pre=00 -> e1   taps[0]: 
+E pc=0x11c934 abs=1047 pre=00 -> f8   taps[0]: 
+E pc=0x11c934 abs=1046 pre=00 -> df   taps[0]: 
+E pc=0x11c934 abs=1045 pre=00 -> 78   taps[0]: 
+E pc=0x11c934 abs=1044 pre=00 -> 2f   taps[0]: 
+E pc=0x11c934 abs=1043 pre=00 -> 40   taps[0]: 
+E pc=0x11c934 abs=1042 pre=00 -> 39   taps[0]: 
+E pc=0x11c934 abs=1041 pre=00 -> 40   taps[0]: 
+E pc=0x11c934 abs=1040 pre=00 -> 7b   taps[0]: 
+E pc=0x11c934 abs=1039 pre=00 -> d3   taps[0]: 
+E pc=0x11c934 abs=1038 pre=00 -> 3b   taps[0]: 
+E pc=0x11c934 abs=1037 pre=00 -> e2   taps[0]: 
+E pc=0x11c934 abs=1036 pre=00 -> 39   taps[0]: 
+E pc=0x11c934 abs=1035 pre=00 -> 09   taps[0]: 
+E pc=0x11c934 abs=1034 pre=00 -> 17   taps[0]: 
+E pc=0x11c934 abs=1033 pre=00 -> 1e   taps[0]: 
+E pc=0x11c934 abs=1032 pre=00 -> 61   taps[0]: 
+E pc=0x11c934 abs=1031 pre=00 -> 10   taps[0]: 
+E pc=0x11c934 abs=1030 pre=00 -> b6   taps[0]: 
+E pc=0x11c934 abs=1029 pre=00 -> fc   taps[0]: 
+E pc=0x11c934 abs=1028 pre=00 -> ab   taps[0]: 
+E pc=0x11c934 abs=1027 pre=00 -> 18   taps[0]: 
+E pc=0x11c934 abs=1026 pre=00 -> 91   taps[0]: 
+E pc=0x11c934 abs=1025 pre=00 -> 69   taps[0]: 
+E pc=0x11c934 abs=1024 pre=00 -> 0b   taps[0]: 
+E pc=0x11c934 abs=1023 pre=00 -> cd   taps[0]: 
+E pc=0x11c934 abs=1022 pre=00 -> 69   taps[0]: 
+E pc=0x11c934 abs=1021 pre=00 -> 9a   taps[0]: 
+E pc=0x11c934 abs=1020 pre=00 -> de   taps[0]: 
+E pc=0x11c934 abs=1019 pre=00 -> 45   taps[0]: 
+E pc=0x11c934 abs=1018 pre=00 -> d4   taps[0]: 
+E pc=0x11c934 abs=1017 pre=00 -> 39   taps[0]: 
+E pc=0x11c934 abs=1016 pre=00 -> 9b   taps[0]: 
+E pc=0x11c934 abs=1015 pre=00 -> ed   taps[0]: 
+E pc=0x11c934 abs=1014 pre=00 -> b3   taps[0]: 
+E pc=0x11c934 abs=1013 pre=00 -> 6d   taps[0]: 
+E pc=0x11c934 abs=1012 pre=00 -> 01   taps[0]: 
+E pc=0x11c934 abs=1011 pre=00 -> c6   taps[0]: 
+E pc=0x11c934 abs=1010 pre=00 -> 57   taps[0]: 
+E pc=0x11c934 abs=1009 pre=00 -> f7   taps[0]: 
+E pc=0x11c934 abs=1008 pre=00 -> c8   taps[0]: 
+E pc=0x11c934 abs=1007 pre=00 -> 83   taps[0]: 
+E pc=0x11c934 abs=1006 pre=00 -> 71   taps[0]: 
+E pc=0x11c934 abs=1005 pre=00 -> de   taps[0]: 
+E pc=0x11c934 abs=1004 pre=00 -> 0d   taps[0]: 
+E pc=0x11c934 abs=1003 pre=00 -> 4c   taps[0]: 
+E pc=0x11c934 abs=1002 pre=00 -> f4   taps[0]: 
+E pc=0x11c934 abs=1001 pre=00 -> b7   taps[0]: 
+E pc=0x11c934 abs=1000 pre=00 -> 9f   taps[0]: 
+E pc=0x11c934 abs=999 pre=00 -> 5d   taps[0]: 
+E pc=0x11c934 abs=998 pre=00 -> 72   taps[0]: 
+E pc=0x11c934 abs=997 pre=00 -> c0   taps[0]: 
+E pc=0x11c934 abs=996 pre=00 -> f5   taps[0]: 
+E pc=0x11c934 abs=995 pre=00 -> 80   taps[0]: 
+E pc=0x11c934 abs=994 pre=00 -> ad   taps[0]: 
+E pc=0x11c934 abs=993 pre=00 -> a6   taps[0]: 
+E pc=0x11c934 abs=992 pre=00 -> 36   taps[0]: 
+E pc=0x11c934 abs=991 pre=00 -> 07   taps[0]: 
+E pc=0x11c934 abs=990 pre=00 -> 65   taps[0]: 
+E pc=0x11c934 abs=989 pre=00 -> ca   taps[0]: 
+E pc=0x11c934 abs=988 pre=00 -> 10   taps[0]: 
+E pc=0x11c934 abs=987 pre=00 -> fd   taps[0]: 
+E pc=0x11c934 abs=986 pre=00 -> 32   taps[0]: 
+E pc=0x11c934 abs=985 pre=00 -> 01   taps[0]: 
+E pc=0x11c934 abs=984 pre=00 -> cf   taps[0]: 
+E pc=0x11c934 abs=983 pre=00 -> 7e   taps[0]: 
+E pc=0x11c934 abs=982 pre=00 -> b1   taps[0]: 
+E pc=0x11c934 abs=981 pre=00 -> cf   taps[0]: 
+E pc=0x11c934 abs=980 pre=00 -> 9c   taps[0]: 
+E pc=0x11c934 abs=979 pre=00 -> 10   taps[0]: 
+E pc=0x11c934 abs=978 pre=00 -> 73   taps[0]: 
+E pc=0x11c934 abs=977 pre=00 -> 7c   taps[0]: 
+E pc=0x11c934 abs=976 pre=00 -> 50   taps[0]: 
+E pc=0x11c934 abs=975 pre=00 -> e9   taps[0]: 
+E pc=0x11c934 abs=974 pre=00 -> a5   taps[0]: 
+E pc=0x11c934 abs=973 pre=00 -> e4   taps[0]: 
+E pc=0x11c934 abs=972 pre=00 -> c7   taps[0]: 
+E pc=0x11c934 abs=971 pre=00 -> 44   taps[0]: 
+E pc=0x11c934 abs=970 pre=00 -> d3   taps[0]: 
+E pc=0x11c934 abs=969 pre=00 -> 22   taps[0]: 
+E pc=0x11c934 abs=968 pre=00 -> 3f   taps[0]: 
+E pc=0x11c934 abs=967 pre=00 -> 88   taps[0]: 
+E pc=0x11c934 abs=966 pre=00 -> 8a   taps[0]: 
+E pc=0x11c934 abs=965 pre=00 -> 33   taps[0]: 
+E pc=0x11c934 abs=964 pre=00 -> 96   taps[0]: 
+E pc=0x11c934 abs=963 pre=00 -> d2   taps[0]: 
+E pc=0x11c934 abs=962 pre=00 -> 9d   taps[0]: 
+E pc=0x11c934 abs=961 pre=00 -> 39   taps[0]: 
+E pc=0x11c934 abs=960 pre=00 -> 58   taps[0]: 
+E pc=0x11c934 abs=959 pre=00 -> c5   taps[0]: 
+E pc=0x11c934 abs=958 pre=00 -> e0   taps[0]: 
+E pc=0x11c934 abs=957 pre=00 -> ea   taps[0]: 
+E pc=0x11c934 abs=956 pre=00 -> 8a   taps[0]: 
+E pc=0x11c934 abs=955 pre=00 -> d6   taps[0]: 
+E pc=0x11c934 abs=954 pre=00 -> d6   taps[0]: 
+E pc=0x11c934 abs=953 pre=00 -> 9b   taps[0]: 
+E pc=0x11c934 abs=952 pre=00 -> 06   taps[0]: 
+E pc=0x11c934 abs=951 pre=00 -> 3b   taps[0]: 
+E pc=0x11c934 abs=950 pre=00 -> 97   taps[0]: 
+E pc=0x11c934 abs=949 pre=00 -> e6   taps[0]: 
+E pc=0x11c934 abs=948 pre=00 -> 99   taps[0]: 
+E pc=0x11c934 abs=947 pre=00 -> ac   taps[0]: 
+E pc=0x11c934 abs=946 pre=00 -> 83   taps[0]: 
+E pc=0x11c934 abs=945 pre=00 -> cd   taps[0]: 
+E pc=0x11c934 abs=944 pre=00 -> a5   taps[0]: 
+E pc=0x11c934 abs=943 pre=00 -> a6   taps[0]: 
+E pc=0x11c934 abs=942 pre=00 -> 27   taps[0]: 
+E pc=0x11c934 abs=941 pre=00 -> a4   taps[0]: 
+E pc=0x11c934 abs=940 pre=00 -> ad   taps[0]: 
+E pc=0x11c934 abs=939 pre=00 -> 99   taps[0]: 
+E pc=0x11c934 abs=938 pre=00 -> 0c   taps[0]: 
+E pc=0x11c934 abs=937 pre=00 -> 44   taps[0]: 
+E pc=0x11c934 abs=936 pre=00 -> fc   taps[0]: 
+E pc=0x11c934 abs=935 pre=00 -> 0f   taps[0]: 
+E pc=0x11c934 abs=934 pre=00 -> 42   taps[0]: 
+E pc=0x11c934 abs=933 pre=00 -> 5f   taps[0]: 
+E pc=0x11c934 abs=932 pre=00 -> 9b   taps[0]: 
+E pc=0x11c934 abs=931 pre=00 -> 42   taps[0]: 
+E pc=0x11c934 abs=930 pre=00 -> 28   taps[0]: 
+E pc=0x11c934 abs=929 pre=00 -> 86   taps[0]: 
+E pc=0x11c934 abs=928 pre=00 -> c6   taps[0]: 
+E pc=0x11c934 abs=927 pre=00 -> 29   taps[0]: 
+E pc=0x11c934 abs=926 pre=00 -> 0c   taps[0]: 
+E pc=0x11c934 abs=925 pre=00 -> 61   taps[0]: 
+E pc=0x11c934 abs=924 pre=00 -> d9   taps[0]: 
+E pc=0x11c934 abs=923 pre=00 -> b8   taps[0]: 
+E pc=0x11c934 abs=922 pre=00 -> 14   taps[0]: 
+E pc=0x11c934 abs=921 pre=00 -> 28   taps[0]: 
+E pc=0x11c934 abs=920 pre=00 -> ca   taps[0]: 
+E pc=0x11c934 abs=919 pre=00 -> c2   taps[0]: 
+E pc=0x11c934 abs=918 pre=00 -> 41   taps[0]: 
+E pc=0x11c934 abs=917 pre=00 -> 7e   taps[0]: 
+E pc=0x11c934 abs=916 pre=00 -> 69   taps[0]: 
+E pc=0x11c934 abs=915 pre=00 -> 5f   taps[0]: 
+E pc=0x11c934 abs=914 pre=00 -> f1   taps[0]: 
+E pc=0x11c934 abs=913 pre=00 -> 3c   taps[0]: 
+E pc=0x11c934 abs=912 pre=00 -> 27   taps[0]: 
+E pc=0x11c934 abs=911 pre=00 -> e7   taps[0]: 
+E pc=0x11c934 abs=910 pre=00 -> 6c   taps[0]: 
+E pc=0x11c934 abs=909 pre=00 -> 6d   taps[0]: 
+E pc=0x11c934 abs=908 pre=00 -> 04   taps[0]: 
+E pc=0x11c934 abs=907 pre=00 -> c3   taps[0]: 
+E pc=0x11c934 abs=906 pre=00 -> 1b   taps[0]: 
+E pc=0x11c934 abs=905 pre=00 -> 4e   taps[0]: 
+E pc=0x11c934 abs=904 pre=00 -> 32   taps[0]: 
+E pc=0x11c934 abs=903 pre=00 -> 18   taps[0]: 
+E pc=0x11c934 abs=902 pre=00 -> 3f   taps[0]: 
+E pc=0x11c934 abs=901 pre=00 -> 8c   taps[0]: 
+E pc=0x11c934 abs=900 pre=00 -> 08   taps[0]: 
+E pc=0x11c934 abs=899 pre=00 -> 3e   taps[0]: 
+E pc=0x11c934 abs=898 pre=00 -> 71   taps[0]: 
+E pc=0x11c934 abs=897 pre=00 -> b2   taps[0]: 
+E pc=0x11c934 abs=896 pre=00 -> a2   taps[0]: 
+E pc=0x11c934 abs=895 pre=00 -> 7c   taps[0]: 
+E pc=0x11c934 abs=894 pre=00 -> 8f   taps[0]: 
+E pc=0x11c934 abs=893 pre=00 -> 9e   taps[0]: 
+E pc=0x11c934 abs=892 pre=9b -> 46   taps[0]: 
+E pc=0x11c934 abs=891 pre=c0 -> 2f   taps[0]: 
+E pc=0x11c934 abs=890 pre=d3 -> 00   taps[0]: 
+E pc=0x11c934 abs=889 pre=a2 -> 03   taps[0]: 
+E pc=0x11c934 abs=888 pre=07 -> f6   taps[0]: 
+E pc=0x11c934 abs=887 pre=a9 -> c8   taps[0]: 
+E pc=0x11c934 abs=886 pre=21 -> e5   taps[0]: 
+E pc=0x11c934 abs=885 pre=c8 -> 17   taps[0]: 
+E pc=0x11c934 abs=884 pre=c1 -> 1b   taps[0]: 
+E pc=0x11c934 abs=883 pre=4c -> ed   taps[0]: 
+E pc=0x11c934 abs=882 pre=50 -> c8   taps[0]: 
+E pc=0x11c934 abs=881 pre=5d -> 04   taps[0]: 
+E pc=0x11c934 abs=880 pre=0e -> 88   taps[0]: 
+E pc=0x11c934 abs=879 pre=1e -> 36   taps[0]: 
+E pc=0x11c934 abs=878 pre=bb -> fc   taps[0]: 
+E pc=0x11c934 abs=877 pre=ad -> 43   taps[0]: 
+E pc=0x10a228 abs=1134 pre=01 -> 54   taps[3]: 513:00->00000090,497:00->00000055,514:00->00000001
+E pc=0x10a228 abs=1135 pre=00 -> 95   taps[2]: 498:00->00000095,515:00->00000000
+E pc=0x10a228 abs=1136 pre=08 -> cb   taps[2]: 499:00->000000c3,516:00->00000008
+E pc=0x10a228 abs=1137 pre=27 -> e3   taps[2]: 500:00->000000c4,517:00->00000027
+E pc=0x10a228 abs=1138 pre=13 -> 22   taps[2]: 501:00->00000031,518:00->00000013
+E pc=0x10a228 abs=1139 pre=71 -> 27   taps[2]: 502:00->00000056,519:00->00000071
+E pc=0x10a228 abs=1140 pre=12 -> 6c   taps[2]: 503:00->0000007e,520:00->00000012
+E pc=0x10a228 abs=1141 pre=50 -> 33   taps[2]: 504:00->00000063,521:00->00000050
+E pc=0x10a228 abs=1142 pre=db -> c1   taps[2]: 505:00->0000001a,522:00->000000db
+E pc=0x10a228 abs=1143 pre=4c -> 37   taps[2]: 506:00->0000007b,523:00->0000004c
+E pc=0x10a228 abs=1144 pre=f4 -> 0d   taps[2]: 507:00->000000f9,524:00->000000f4
+E pc=0x10a228 abs=1145 pre=37 -> 8e   taps[2]: 508:00->000000b9,525:00->00000037
+E pc=0x10a228 abs=1146 pre=b6 -> ee   taps[2]: 509:00->00000058,526:00->000000b6
+E pc=0x10a228 abs=1147 pre=cc -> 16   taps[2]: 510:00->000000da,527:00->000000cc
+E pc=0x10a228 abs=1148 pre=98 -> 26   taps[2]: 511:00->000000be,528:00->00000098
+E pc=0x10a228 abs=1149 pre=b7 -> 10   taps[2]: 512:00->000000a7,529:00->000000b7
+E pc=0x111c68 abs=1134 pre=54 -> 42   taps[2]: 514:00->00000054,257:32->00000043
+E pc=0x111c68 abs=1135 pre=95 -> 3c   taps[2]: 515:00->00000095,258:2d->000000fc
+E pc=0x111c68 abs=1136 pre=cb -> a8   taps[2]: 516:00->000000cb,259:34->00000036
+E pc=0x111c68 abs=1137 pre=e3 -> 3e   taps[2]: 517:00->000000e3,260:2e->00000088
+E pc=0x111c68 abs=1138 pre=22 -> 73   taps[2]: 518:00->00000022,261:72->00000004
+E pc=0x111c68 abs=1139 pre=27 -> ba   taps[2]: 519:00->00000027,262:2e->000000c8
+E pc=0x111c68 abs=1140 pre=6c -> d4   taps[2]: 520:00->0000006c,263:64->000000ed
+E pc=0x111c68 abs=1141 pre=33 -> 7d   taps[2]: 521:00->00000033,264:32->0000001b
+E pc=0x111c68 abs=1142 pre=c1 -> 83   taps[2]: 522:00->000000c1,265:2d->00000017
+E pc=0x111c68 abs=1143 pre=37 -> 87   taps[2]: 523:00->00000037,266:30->000000e5
+E pc=0x111c68 abs=1144 pre=0d -> 90   taps[2]: 524:00->0000000d,267:32->000000c8
+E pc=0x111c68 abs=1145 pre=8e -> 2d   taps[2]: 525:00->0000008e,268:3a->000000f6
+E pc=0x111c68 abs=1146 pre=ee -> b8   taps[2]: 526:00->000000ee,269:37->00000003
+E pc=0x111c68 abs=1147 pre=16 -> 43   taps[2]: 527:00->00000016,270:2b->00000000
+E pc=0x111c68 abs=1148 pre=26 -> 5c   taps[2]: 528:00->00000026,271:30->0000002f
+E pc=0x111c68 abs=1149 pre=10 -> 03   taps[2]: 529:00->00000010,272:45->00000046
+E pc=0x10c3b4 abs=624 pre=02 -> 2e   taps[0]: 
+E pc=0x10c3b4 abs=626 pre=f1 -> 3e   taps[0]: 
+E pc=0x10c3b4 abs=636 pre=97 -> 23   taps[0]: 
+E pc=0x10c3b4 abs=638 pre=96 -> d7   taps[0]: 
+E pc=0x10c3b4 abs=672 pre=1f -> 96   taps[0]: 
+E pc=0x10c3b4 abs=706 pre=6f -> a9   taps[0]: 
+E pc=0x10c3b4 abs=876 pre=c1 -> 43   taps[0]: 
+E pc=0x10c3b4 abs=647 pre=06 -> f7   taps[0]: 
+E pc=0x10c3b4 abs=667 pre=2f -> 64   taps[0]: 
+E pc=0x10c3b4 abs=735 pre=31 -> 15   taps[0]: 
+E pc=0x10c3b4 abs=771 pre=32 -> c5   taps[0]: 
+E pc=0x10c3b4 abs=782 pre=70 -> 67   taps[0]: 
+E pc=0x10c3b4 abs=869 pre=f0 -> 14   taps[0]: 
+E pc=0x10c3b4 abs=640 pre=98 -> 28   taps[0]: 
+E pc=0x10c3b4 abs=674 pre=e0 -> c3   taps[0]: 
+E pc=0x10c3b4 abs=716 pre=47 -> 9a   taps[0]: 
+E pc=0x10c3b4 abs=846 pre=0f -> ad   taps[0]: 
+E pc=0x10c3b4 abs=677 pre=44 -> 52   taps[0]: 
+E pc=0x10c3b4 abs=693 pre=0d -> 07   taps[0]: 
+E pc=0x10c3b4 abs=837 pre=80 -> 34   taps[0]: 
+E pc=0x10c3b4 abs=736 pre=32 -> da   taps[0]: 
+E pc=0x10c3b4 abs=770 pre=30 -> 7f   taps[0]: 
+E pc=0x10c3b4 abs=785 pre=30 -> 1c   taps[0]: 
+E pc=0x10c3b4 abs=868 pre=69 -> 3d   taps[0]: 
+E pc=0x10c3b4 abs=623 pre=b7 -> 22   taps[0]: 
+E pc=0x10c3b4 abs=627 pre=3c -> 3a   taps[0]: 
+E pc=0x10c3b4 abs=631 pre=6a -> 32   taps[0]: 
+E pc=0x10c3b4 abs=651 pre=00 -> 27   taps[0]: 
+E pc=0x10c3b4 abs=655 pre=0e -> c6   taps[0]: 
+E pc=0x10c3b4 abs=723 pre=66 -> 66   taps[0]: 
+E pc=0x10c3b4 abs=791 pre=31 -> f9   taps[0]: 
+E pc=0x10c3b4 abs=850 pre=b8 -> 8c   taps[0]: 
+E pc=0x10c3b4 abs=673 pre=19 -> 4d   taps[0]: 
+E pc=0x10c3b4 abs=713 pre=00 -> 1f   taps[0]: 
+E pc=0x10c3b4 abs=849 pre=de -> 3c   taps[0]: 
+E pc=0x10c3b4 abs=676 pre=59 -> cf   taps[0]: 
+E pc=0x10c3b4 abs=710 pre=52 -> 9e   taps[0]: 
+E pc=0x10c3b4 abs=856 pre=ff -> bc   taps[0]: 
+E pc=0x10c3b4 abs=659 pre=a7 -> a2   taps[0]: 
+E pc=0x10c3b4 abs=727 pre=63 -> 57   taps[0]: 
+E pc=0x10c3b4 abs=811 pre=00 -> fb   taps[0]: 
+E pc=0x10c3b4 abs=838 pre=03 -> 60   taps[0]: 
+E pc=0x10c3b4 abs=733 pre=62 -> 04   taps[0]: 
+E pc=0x10c3b4 abs=765 pre=72 -> 35   taps[0]: 
+E pc=0x10c3b4 abs=792 pre=36 -> 37   taps[0]: 
+E pc=0x10c3b4 abs=851 pre=55 -> db   taps[0]: 
+E pc=0x10c3b4 abs=670 pre=a2 -> 92   taps[0]: 
+E pc=0x10c3b4 abs=704 pre=fc -> b8   taps[0]: 
+E pc=0x10c3b4 abs=866 pre=8b -> b3   taps[0]: 
+E pc=0x10c3b4 abs=625 pre=fb -> a7   taps[0]: 
+E pc=0x10c3b4 abs=633 pre=6f -> ab   taps[0]: 
+E pc=0x10c3b4 abs=641 pre=9a -> af   taps[0]: 
+E pc=0x10c3b4 abs=681 pre=50 -> be   taps[0]: 
+E pc=0x10c3b4 abs=689 pre=b9 -> 4e   taps[0]: 
+E pc=0x10c3b4 abs=825 pre=00 -> 1e   taps[0]: 
+E pc=0x10c3b4 abs=700 pre=b6 -> d1   taps[0]: 
+E pc=0x10c3b4 abs=830 pre=00 -> 6b   taps[0]: 
+E pc=0x10c3b4 abs=725 pre=65 -> 10   taps[0]: 
+E pc=0x10c3b4 abs=805 pre=80 -> 39   taps[0]: 
+E pc=0x10c3b4 abs=832 pre=00 -> 33   taps[0]: 
+E pc=0x10c3b4 abs=731 pre=33 -> ca   taps[0]: 
+E pc=0x10c3b4 abs=799 pre=73 -> 62   taps[0]: 
+E pc=0x10c3b4 abs=826 pre=00 -> e8   taps[0]: 
+E pc=0x10c3b4 abs=697 pre=bd -> 7c   taps[0]: 
+E pc=0x10c3b4 abs=833 pre=00 -> 1d   taps[0]: 
+E pc=0x10c3b4 abs=724 pre=2d -> d0   taps[0]: 
+E pc=0x10c3b4 abs=790 pre=64 -> 86   taps[0]: 
+E pc=0x10c3b4 abs=845 pre=fa -> b4   taps[0]: 
+E pc=0x10c3b4 abs=680 pre=a2 -> b7   taps[0]: 
+E pc=0x10c3b4 abs=698 pre=13 -> b6   taps[0]: 
+E pc=0x10c3b4 abs=836 pre=18 -> 5b   taps[0]: 
+E pc=0x10c3b4 abs=719 pre=56 -> ff   taps[0]: 
+E pc=0x10c3b4 abs=787 pre=2e -> 71   taps[0]: 
+E pc=0x10c3b4 abs=862 pre=b6 -> f4   taps[0]: 
+E pc=0x10c3b4 abs=629 pre=96 -> 65   taps[0]: 
+E pc=0x10c3b4 abs=645 pre=a4 -> f8   taps[0]: 
+E pc=0x10c3b4 abs=661 pre=0b -> 61   taps[0]: 
+E pc=0x10c3b4 abs=741 pre=36 -> e9   taps[0]: 
+E pc=0x10c3b4 abs=757 pre=37 -> 91   taps[0]: 
+E pc=0x10c3b4 abs=752 pre=31 -> b9   taps[0]: 
+E pc=0x10c3b4 abs=779 pre=6e -> 5e   taps[0]: 
+E pc=0x10c3b4 abs=806 pre=00 -> 03   taps[0]: 
+E pc=0x10c3b4 abs=829 pre=00 -> 25   taps[0]: 
+E pc=0x10c3b4 abs=728 pre=37 -> 2a   taps[0]: 
+E pc=0x10c3b4 abs=810 pre=00 -> 2f   taps[0]: 
+E pc=0x10c3b4 abs=841 pre=e0 -> d3   taps[0]: 
+E pc=0x10c3b4 abs=748 pre=74 -> 87   taps[0]: 
+E pc=0x10c3b4 abs=750 pre=62 -> 59   taps[0]: 
+E pc=0x10c3b4 abs=773 pre=37 -> 13   taps[0]: 
+E pc=0x10c3b4 abs=800 pre=6e -> 38   taps[0]: 
+E pc=0x10c3b4 abs=827 pre=00 -> de   taps[0]: 
+E pc=0x10c3b4 abs=694 pre=17 -> 6e   taps[0]: 
+E pc=0x10c3b4 abs=840 pre=7e -> ec   taps[0]: 
+E pc=0x10c3b4 abs=739 pre=31 -> 6d   taps[0]: 
+E pc=0x10c3b4 abs=775 pre=30 -> ed   taps[0]: 
+E pc=0x10c3b4 abs=802 pre=35 -> 80   taps[0]: 
+E pc=0x10c3b4 abs=817 pre=00 -> 49   taps[0]: 
+E pc=0x10c3b4 abs=708 pre=9b -> 0e   taps[0]: 
+E pc=0x10c3b4 abs=870 pre=e5 -> cc   taps[0]: 
+E pc=0x10c3b4 abs=637 pre=6b -> 9f   taps[0]: 
+E pc=0x10c3b4 abs=669 pre=bc -> 51   taps[0]: 
+E pc=0x10c3b4 abs=701 pre=da -> 06   taps[0]: 
+E pc=0x10c3b4 abs=861 pre=a5 -> d9   taps[0]: 
+E pc=0x10c3b4 abs=632 pre=41 -> 7e   taps[0]: 
+E pc=0x10c3b4 abs=650 pre=00 -> f1   taps[0]: 
+E pc=0x10c3b4 abs=660 pre=2f -> 99   taps[0]: 
+E pc=0x10c3b4 abs=726 pre=39 -> ac   taps[0]: 
+E pc=0x10c3b4 abs=808 pre=00 -> bf   taps[0]: 
+E pc=0x10c3b4 abs=835 pre=00 -> a3   taps[0]: 
+E pc=0x10c3b4 abs=718 pre=53 -> ba   taps[0]: 
+E pc=0x10c3b4 abs=784 pre=70 -> 5f   taps[0]: 
+E pc=0x10c3b4 abs=875 pre=14 -> ee   taps[0]: 
+E pc=0x10c3b4 abs=646 pre=78 -> 81   taps[0]: 
+E pc=0x10c3b4 abs=664 pre=09 -> a4   taps[0]: 
+E pc=0x10c3b4 abs=746 pre=6e -> aa   taps[0]: 
+E pc=0x10c3b4 abs=756 pre=64 -> 42   taps[0]: 
+E pc=0x10c3b4 abs=767 pre=64 -> 1a   taps[0]: 
+E pc=0x10c3b4 abs=794 pre=30 -> c0   taps[0]: 
+E pc=0x10c3b4 abs=857 pre=a9 -> 9b   taps[0]: 
+E pc=0x10c3b4 abs=668 pre=da -> 40   taps[0]: 
+E pc=0x10c3b4 abs=734 pre=70 -> f6   taps[0]: 
+E pc=0x10c3b4 abs=768 pre=32 -> 89   taps[0]: 
+E pc=0x10c3b4 abs=795 pre=36 -> b1   taps[0]: 
+E pc=0x10c3b4 abs=854 pre=5c -> 4b   taps[0]: 
+E pc=0x10c3b4 abs=653 pre=0e -> e2   taps[0]: 
+E pc=0x10c3b4 abs=717 pre=41 -> 85   taps[0]: 
+E pc=0x10c3b4 abs=781 pre=63 -> b5   taps[0]: 
+E pc=0x10c3b4 abs=872 pre=16 -> 5a   taps[0]: 
+E pc=0x10c3b4 abs=643 pre=27 -> 12   taps[0]: 
+E pc=0x10c3b4 abs=679 pre=be -> d5   taps[0]: 
+E pc=0x10c3b4 abs=699 pre=db -> 7a   taps[0]: 
+E pc=0x10c3b4 abs=831 pre=00 -> e0   taps[0]: 
+E pc=0x10c3b4 abs=730 pre=36 -> 69   taps[0]: 
+E pc=0x10c3b4 abs=804 pre=2e -> fc   taps[0]: 
+E pc=0x10c3b4 abs=815 pre=00 -> 70   taps[0]: 
+E pc=0x10c3b4 abs=714 pre=00 -> 19   taps[0]: 
+E pc=0x10c3b4 abs=852 pre=8e -> c1   taps[0]: 
+E pc=0x10c3b4 abs=671 pre=e6 -> 76   taps[0]: 
+E pc=0x10c3b4 abs=707 pre=ae -> e4   taps[0]: 
+E pc=0x10c3b4 abs=871 pre=ee -> 78   taps[0]: 
+E pc=0x10c3b4 abs=642 pre=99 -> 0c   taps[0]: 
+E pc=0x10c3b4 abs=684 pre=58 -> 20   taps[0]: 
+E pc=0x10c3b4 abs=686 pre=22 -> d6   taps[0]: 
+E pc=0x10c3b4 abs=816 pre=00 -> 7b   taps[0]: 
+E pc=0x10c3b4 abs=715 pre=4b -> 0d   taps[0]: 
+E pc=0x10c3b4 abs=847 pre=2d -> cd   taps[0]: 
+E pc=0x10c3b4 abs=682 pre=41 -> 72   taps[0]: 
+E pc=0x10c3b4 abs=692 pre=0c -> f5   taps[0]: 
+E pc=0x10c3b4 abs=822 pre=00 -> 88   taps[0]: 
+E pc=0x10c3b4 abs=685 pre=a2 -> 5c   taps[0]: 
+E pc=0x10c3b4 abs=813 pre=00 -> ef   taps[0]: 
+E pc=0x10c3b4 abs=712 pre=00 -> 6c   taps[0]: 
+E pc=0x10c3b4 abs=858 pre=0f -> 00   taps[0]: 
+E pc=0x10c3b4 abs=665 pre=b3 -> 24   taps[0]: 
+E pc=0x10c3b4 abs=737 pre=2d -> c7   taps[0]: 
+E pc=0x10c3b4 abs=777 pre=32 -> 8b   taps[0]: 
+E pc=0x10c3b4 abs=812 pre=00 -> 5d   taps[0]: 
+E pc=0x10c3b4 abs=839 pre=9e -> 02   taps[0]: 
+E pc=0x10c3b4 abs=738 pre=31 -> c8   taps[0]: 
+E pc=0x10c3b4 abs=780 pre=69 -> 8e   taps[0]: 
+E pc=0x10c3b4 abs=807 pre=00 -> a1   taps[0]: 
+E pc=0x10c3b4 abs=834 pre=00 -> 56   taps[0]: 
+E pc=0x10c3b4 abs=721 pre=44 -> 16   taps[0]: 
+E pc=0x10c3b4 abs=793 pre=2d -> c4   taps[0]: 
+E pc=0x10c3b4 abs=860 pre=35 -> 8a   taps[0]: 
+E pc=0x10c3b4 abs=663 pre=da -> b0   taps[0]: 
+E pc=0x10c3b4 abs=747 pre=6f -> a6   taps[0]: 
+E pc=0x10c3b4 abs=751 pre=2d -> 46   taps[0]: 
+E pc=0x10c3b4 abs=778 pre=38 -> 0b   taps[0]: 
+E pc=0x10c3b4 abs=809 pre=00 -> 30   taps[0]: 
+E pc=0x10c3b4 abs=844 pre=ee -> cb   taps[0]: 
+E pc=0x10c3b4 abs=743 pre=30 -> 8f   taps[0]: 
+E pc=0x10c3b4 abs=763 pre=34 -> 4c   taps[0]: 
+E pc=0x10c3b4 abs=758 pre=73 -> f2   taps[0]: 
+E pc=0x10c3b4 abs=749 pre=66 -> 98   taps[0]: 
+E pc=0x10c3b4 abs=776 pre=45 -> 41   taps[0]: 
+E pc=0x10c3b4 abs=803 pre=30 -> 1b   taps[0]: 
+E pc=0x10c3b4 abs=814 pre=00 -> 2d   taps[0]: 
+E pc=0x10c3b4 abs=709 pre=95 -> 3f   taps[0]: 
+E pc=0x10c3b4 abs=853 pre=ad -> ce   taps[0]: 
+E pc=0x10c3b4 abs=656 pre=c4 -> 73   taps[0]: 
+E pc=0x10c3b4 abs=722 pre=64 -> 18   taps[0]: 
+E pc=0x10c3b4 abs=796 pre=2e -> 2c   taps[0]: 
+E pc=0x10c3b4 abs=855 pre=6c -> d2   taps[0]: 
+E pc=0x10c3b4 abs=658 pre=b9 -> 6a   taps[0]: 
+E pc=0x10c3b4 abs=732 pre=74 -> fd   taps[0]: 
+E pc=0x10c3b4 abs=798 pre=30 -> 9d   taps[0]: 
+E pc=0x10c3b4 abs=821 pre=80 -> bd   taps[0]: 
+E pc=0x10c3b4 abs=688 pre=53 -> 4f   taps[0]: 
+E pc=0x10c3b4 abs=818 pre=00 -> f3   taps[0]: 
+E pc=0x10c3b4 abs=705 pre=fb -> 75   taps[0]: 
+E pc=0x10c3b4 abs=873 pre=bb -> e5   taps[0]: 
+E pc=0x10c3b4 abs=652 pre=0e -> 95   taps[0]: 
+E pc=0x10c3b4 abs=654 pre=0e -> a8   taps[0]: 
+E pc=0x10c3b4 abs=720 pre=47 -> ae   taps[0]: 
+E pc=0x10c3b4 abs=786 pre=31 -> 53   taps[0]: 
+E pc=0x10c3b4 abs=865 pre=17 -> ea   taps[0]: 
+E pc=0x10c3b4 abs=628 pre=2f -> 90   taps[0]: 
+E pc=0x10c3b4 abs=630 pre=74 -> 54   taps[0]: 
+E pc=0x10c3b4 abs=648 pre=00 -> fa   taps[0]: 
+E pc=0x10c3b4 abs=666 pre=8e -> 8d   taps[0]: 
+E pc=0x10c3b4 abs=740 pre=3a -> a0   taps[0]: 
+E pc=0x10c3b4 abs=774 pre=2b -> bb   taps[0]: 
+E pc=0x10c3b4 abs=797 pre=5a -> b2   taps[0]: 
+E pc=0x10c3b4 abs=824 pre=00 -> 4a   taps[0]: 
+E pc=0x10c3b4 abs=691 pre=ee -> 0f   taps[0]: 
+E pc=0x10c3b4 abs=823 pre=00 -> 21   taps[0]: 
+E pc=0x10c3b4 abs=690 pre=90 -> 3b   taps[0]: 
+E pc=0x10c3b4 abs=828 pre=00 -> df   taps[0]: 
+E pc=0x10c3b4 abs=695 pre=1e -> 83   taps[0]: 
+E pc=0x10c3b4 abs=843 pre=fc -> 48   taps[0]: 
+E pc=0x10c3b4 abs=742 pre=2b -> e3   taps[0]: 
+E pc=0x10c3b4 abs=760 pre=32 -> 68   taps[0]: 
+E pc=0x10c3b4 abs=755 pre=36 -> 11   taps[0]: 
+E pc=0x10c3b4 abs=766 pre=2e -> d4   taps[0]: 
+E pc=0x10c3b4 abs=789 pre=2e -> 97   taps[0]: 
+E pc=0x10c3b4 abs=848 pre=f5 -> 44   taps[0]: 
+E pc=0x10c3b4 abs=683 pre=5d -> e7   taps[0]: 
+E pc=0x10c3b4 abs=687 pre=c9 -> 79   taps[0]: 
+E pc=0x10c3b4 abs=819 pre=00 -> e1   taps[0]: 
+E pc=0x10c3b4 abs=702 pre=1a -> 84   taps[0]: 
+E pc=0x10c3b4 abs=864 pre=02 -> 58   taps[0]: 
+E pc=0x10c3b4 abs=635 pre=2d -> fe   taps[0]: 
+E pc=0x10c3b4 abs=639 pre=e3 -> 9c   taps[0]: 
+E pc=0x10c3b4 abs=675 pre=e5 -> 50   taps[0]: 
+E pc=0x10c3b4 abs=711 pre=00 -> eb   taps[0]: 
+E pc=0x10c3b4 abs=859 pre=f4 -> 7d   taps[0]: 
+E pc=0x10c3b4 abs=662 pre=e1 -> f0   taps[0]: 
+E pc=0x10c3b4 abs=744 pre=6f -> 74   taps[0]: 
+E pc=0x10c3b4 abs=762 pre=2d -> 08   taps[0]: 
+E pc=0x10c3b4 abs=761 pre=32 -> 31   taps[0]: 
+E pc=0x10c3b4 abs=764 pre=2e -> 26   taps[0]: 
+E pc=0x10c3b4 abs=759 pre=69 -> 2b   taps[0]: 
+E pc=0x10c3b4 abs=754 pre=63 -> c2   taps[0]: 
+E pc=0x10c3b4 abs=769 pre=2d -> 77   taps[0]: 
+E pc=0x10c3b4 abs=788 pre=72 -> 09   taps[0]: 
+E pc=0x10c3b4 abs=863 pre=f1 -> dc   taps[0]: 
+E pc=0x10c3b4 abs=634 pre=0a -> 82   taps[0]: 
+E pc=0x10c3b4 abs=644 pre=64 -> a5   taps[0]: 
+E pc=0x10c3b4 abs=678 pre=c5 -> 47   taps[0]: 
+E pc=0x10c3b4 abs=696 pre=91 -> e6   taps[0]: 
+E pc=0x10c3b4 abs=842 pre=14 -> 94   taps[0]: 
+E pc=0x10c3b4 abs=745 pre=32 -> 45   taps[0]: 
+E pc=0x10c3b4 abs=753 pre=30 -> 0a   taps[0]: 
+E pc=0x10c3b4 abs=772 pre=3a -> dd   taps[0]: 
+E pc=0x10c3b4 abs=783 pre=69 -> 6f   taps[0]: 
+E pc=0x10c3b4 abs=874 pre=bc -> 01   taps[0]: 
+E pc=0x10c3b4 abs=649 pre=00 -> c9   taps[0]: 
+E pc=0x10c3b4 abs=657 pre=63 -> 63   taps[0]: 
+E pc=0x10c3b4 abs=729 pre=66 -> 05   taps[0]: 
+E pc=0x10c3b4 abs=801 pre=72 -> d8   taps[0]: 
+E pc=0x10c3b4 abs=820 pre=18 -> 93   taps[0]: 
+E pc=0x10c3b4 abs=703 pre=b0 -> 55   taps[0]: 
+E pc=0x10c3b4 abs=867 pre=22 -> 17   taps[0]: 
+E pc=0x10c3b4 abs=622 pre=37 -> 29   taps[0]: 
+E pc=0x10c4d8 abs=621 pre=50 -> 36   taps[0]: 
+E pc=0x111f70 abs=1134 pre=42 -> 2c   taps[2]: 514:00->00000042,67:91->00000079
+E pc=0x111f70 abs=1135 pre=3c -> eb   taps[2]: 515:00->0000003c,61:10->000000be
+E pc=0x111f70 abs=1136 pre=a8 -> c2   taps[2]: 516:00->000000a8,169:64->00000097
+E pc=0x111f70 abs=1137 pre=3e -> b2   taps[2]: 517:00->0000003e,63:08->000000e7
+E pc=0x111f70 abs=1138 pre=73 -> 8f   taps[2]: 518:00->00000073,116:63->000000da
+E pc=0x111f70 abs=1139 pre=ba -> f4   taps[2]: 519:00->000000ba,187:00->000000a1
+E pc=0x111f70 abs=1140 pre=d4 -> 48   taps[2]: 520:00->000000d4,213:41->0000001d
+E pc=0x111f70 abs=1141 pre=7d -> ff   taps[2]: 521:00->0000007d,126:63->000000aa
+E pc=0x111f70 abs=1142 pre=83 -> ec   taps[2]: 522:00->00000083,132:6d->000000b9
+E pc=0x111f70 abs=1143 pre=87 -> 17   taps[2]: 523:00->00000087,136:67->00000042
+E pc=0x111f70 abs=1144 pre=90 -> 60   taps[2]: 524:00->00000090,145:2e->00000035
+E pc=0x111f70 abs=1145 pre=2d -> d8   taps[2]: 525:00->0000002d,46:4c->0000008d
+E pc=0x111f70 abs=1146 pre=b8 -> 6c   taps[2]: 526:00->000000b8,185:00->00000039
+E pc=0x111f70 abs=1147 pre=43 -> 1a   taps[2]: 527:00->00000043,68:bd->0000004f
+E pc=0x111f70 abs=1148 pre=5c -> 4a   taps[2]: 528:00->0000005c,93:30->0000001f
+E pc=0x111f70 abs=1149 pre=03 -> 7b   taps[2]: 529:00->00000003,4:3f->0000002e
+E pc=0x10daa0 abs=1135 pre=eb -> f4   taps[2]: 515:00->000000eb,519:00->000000f4
+E pc=0x10dc08 abs=1139 pre=f4 -> 17   taps[1]: 523:00->00000017
+E pc=0x10dd70 abs=1143 pre=17 -> 1a   taps[1]: 527:00->0000001a
+E pc=0x10de2c abs=1147 pre=1a -> eb   taps[0]: 
+E pc=0x10e040 abs=1136 pre=c2 -> 60   taps[2]: 516:00->000000c2,524:00->00000060
+E pc=0x10e0fc abs=1144 pre=60 -> c2   taps[0]: 
+E pc=0x10e310 abs=1140 pre=48 -> 4a   taps[2]: 520:00->00000048,528:00->0000004a
+E pc=0x10e3cc abs=1148 pre=4a -> 48   taps[0]: 
+E pc=0x10e5e0 abs=1137 pre=b2 -> 7b   taps[2]: 517:00->000000b2,529:00->0000007b
+E pc=0x10e748 abs=1149 pre=7b -> d8   taps[1]: 525:00->000000d8
+E pc=0x10e8b0 abs=1145 pre=d8 -> ff   taps[1]: 521:00->000000ff
+E pc=0x10c4d8 abs=1141 pre=ff -> b2   taps[0]: 
+E pc=0x10d0ec abs=1134 pre=2c -> 44   taps[7]: 514:00->0000002c,515:00->000000f4,516:00->00000060,517:00->0000007b,514:00->0000002c,515:00->000000f4,514:00->0000002c
+E pc=0x110e30 abs=1135 pre=f4 -> 04   taps[3]: 516:00->00000060,515:00->000000f4,515:00->000000f4
+E pc=0x10a5fc abs=1136 pre=60 -> 95   taps[3]: 517:00->0000007b,516:00->00000060,516:00->00000060
+E pc=0x10fbf4 abs=1137 pre=7b -> 16   taps[2]: 517:00->0000007b,517:00->0000007b
+E pc=0x10d0ec abs=1138 pre=8f -> c4   taps[7]: 518:00->0000008f,519:00->00000017,520:00->0000004a,521:00->000000b2,518:00->0000008f,519:00->00000017,518:00->0000008f
+E pc=0x110e30 abs=1139 pre=17 -> cd   taps[3]: 520:00->0000004a,519:00->00000017,519:00->00000017
+E pc=0x10a5fc abs=1140 pre=4a -> c1   taps[3]: 521:00->000000b2,520:00->0000004a,520:00->0000004a
+E pc=0x10fbf4 abs=1141 pre=b2 -> a8   taps[2]: 521:00->000000b2,521:00->000000b2
+E pc=0x10d0ec abs=1142 pre=ec -> d0   taps[7]: 522:00->000000ec,523:00->0000001a,524:00->000000c2,525:00->000000ff,522:00->000000ec,523:00->0000001a,522:00->000000ec
+E pc=0x110e30 abs=1143 pre=1a -> 7a   taps[3]: 524:00->000000c2,523:00->0000001a,523:00->0000001a
+E pc=0x10a5fc abs=1144 pre=c2 -> 73   taps[3]: 525:00->000000ff,524:00->000000c2,524:00->000000c2
+E pc=0x10fbf4 abs=1145 pre=ff -> 12   taps[2]: 525:00->000000ff,525:00->000000ff
+E pc=0x10d0ec abs=1146 pre=6c -> 6e   taps[7]: 526:00->0000006c,527:00->000000eb,528:00->00000048,529:00->000000d8,526:00->0000006c,527:00->000000eb,526:00->0000006c
+E pc=0x110e30 abs=1147 pre=eb -> a1   taps[3]: 528:00->00000048,527:00->000000eb,527:00->000000eb
+E pc=0x10a5fc abs=1148 pre=48 -> 64   taps[3]: 529:00->000000d8,528:00->00000048,528:00->00000048
+E pc=0x10fbf4 abs=1149 pre=d8 -> bc   taps[2]: 529:00->000000d8,529:00->000000d8
+E pc=0x111c68 abs=1134 pre=44 -> 8f   taps[2]: 514:00->00000044,273:32->0000009e
+E pc=0x111c68 abs=1135 pre=04 -> de   taps[2]: 515:00->00000004,274:38->0000008f
+E pc=0x111c68 abs=1136 pre=95 -> bc   taps[2]: 516:00->00000095,275:6e->0000007c
+E pc=0x111c68 abs=1137 pre=16 -> e1   taps[2]: 517:00->00000016,276:69->000000a2
+E pc=0x111c68 abs=1138 pre=c4 -> 23   taps[2]: 518:00->000000c4,277:63->000000b2
+E pc=0x111c68 abs=1139 pre=cd -> e9   taps[2]: 519:00->000000cd,278:70->00000071
+E pc=0x111c68 abs=1140 pre=c1 -> aa   taps[2]: 520:00->000000c1,279:69->0000003e
+E pc=0x111c68 abs=1141 pre=a8 -> f5   taps[2]: 521:00->000000a8,280:70->00000008
+E pc=0x111c68 abs=1142 pre=d0 -> 09   taps[2]: 522:00->000000d0,281:30->0000008c
+E pc=0x111c68 abs=1143 pre=7a -> 10   taps[2]: 523:00->0000007a,282:31->0000003f
+E pc=0x111c68 abs=1144 pre=73 -> 3e   taps[2]: 524:00->00000073,283:2e->00000018
+E pc=0x111c68 abs=1145 pre=12 -> 75   taps[2]: 525:00->00000012,284:72->00000032
+E pc=0x111c68 abs=1146 pre=6e -> 75   taps[2]: 526:00->0000006e,285:2e->0000004e
+E pc=0x111c68 abs=1147 pre=a1 -> ef   taps[2]: 527:00->000000a1,286:64->0000001b
+E pc=0x111c68 abs=1148 pre=64 -> f2   taps[2]: 528:00->00000064,287:31->000000c3
+E pc=0x111c68 abs=1149 pre=bc -> ed   taps[2]: 529:00->000000bc,288:36->00000004
+E pc=0x111f70 abs=1134 pre=8f -> 73   taps[2]: 514:00->0000008f,144:53->00000026
+E pc=0x111f70 abs=1135 pre=de -> 1d   taps[2]: 515:00->000000de,223:63->00000048
+E pc=0x111f70 abs=1136 pre=bc -> 65   taps[2]: 516:00->000000bc,189:0d->00000030
+E pc=0x111f70 abs=1137 pre=e1 -> f8   taps[2]: 517:00->000000e1,226:36->000000ad
+E pc=0x111f70 abs=1138 pre=23 -> 26   taps[2]: 518:00->00000023,36:1a->00000073
+E pc=0x111f70 abs=1139 pre=e9 -> 1e   taps[2]: 519:00->000000e9,234:31->0000004b
+E pc=0x111f70 abs=1140 pre=aa -> ac   taps[2]: 520:00->000000aa,171:2e->000000f9
+E pc=0x111f70 abs=1141 pre=f5 -> e6   taps[2]: 521:00->000000f5,246:62->000000b3
+E pc=0x111f70 abs=1142 pre=09 -> 01   taps[2]: 522:00->00000009,10:53->00000054
+E pc=0x111f70 abs=1143 pre=10 -> ca   taps[2]: 523:00->00000010,17:bc->0000009f
+E pc=0x111f70 abs=1144 pre=3e -> b2   taps[2]: 524:00->0000003e,63:08->000000e7
+E pc=0x111f70 abs=1145 pre=75 -> 9d   taps[2]: 525:00->00000075,118:36->000000c8
+E pc=0x111f70 abs=1146 pre=75 -> 9d   taps[2]: 526:00->00000075,118:36->000000c8
+E pc=0x111f70 abs=1147 pre=ef -> df   taps[2]: 527:00->000000ef,240:6f->0000008a
+E pc=0x111f70 abs=1148 pre=f2 -> 89   taps[2]: 528:00->000000f2,243:6f->000000dc
+E pc=0x111f70 abs=1149 pre=ed -> 55   taps[2]: 529:00->000000ed,238:2b->00000000
+E pc=0x10daa0 abs=1135 pre=1d -> 1e   taps[2]: 515:00->0000001d,519:00->0000001e
+E pc=0x10dc08 abs=1139 pre=1e -> ca   taps[1]: 523:00->000000ca
+E pc=0x10dd70 abs=1143 pre=ca -> df   taps[1]: 527:00->000000df
+E pc=0x10de2c abs=1147 pre=df -> 1d   taps[0]: 
+E pc=0x10e040 abs=1136 pre=65 -> b2   taps[2]: 516:00->00000065,524:00->000000b2
+E pc=0x10e0fc abs=1144 pre=b2 -> 65   taps[0]: 
+E pc=0x10e310 abs=1140 pre=ac -> 89   taps[2]: 520:00->000000ac,528:00->00000089
+E pc=0x10e3cc abs=1148 pre=89 -> ac   taps[0]: 
+E pc=0x10e5e0 abs=1137 pre=f8 -> 55   taps[2]: 517:00->000000f8,529:00->00000055
+E pc=0x10e748 abs=1149 pre=55 -> 9d   taps[1]: 525:00->0000009d
+E pc=0x10e8b0 abs=1145 pre=9d -> e6   taps[1]: 521:00->000000e6
+E pc=0x10c4d8 abs=1141 pre=e6 -> f8   taps[0]: 
+E pc=0x10d0ec abs=1134 pre=73 -> 23   taps[7]: 514:00->00000073,515:00->0000001e,516:00->000000b2,517:00->00000055,514:00->00000073,515:00->0000001e,514:00->00000073
+E pc=0x110e30 abs=1135 pre=1e -> d7   taps[3]: 516:00->000000b2,515:00->0000001e,515:00->0000001e
+E pc=0x10a5fc abs=1136 pre=b2 -> ed   taps[3]: 517:00->00000055,516:00->000000b2,516:00->000000b2
+E pc=0x10fbf4 abs=1137 pre=55 -> 93   taps[2]: 517:00->00000055,517:00->00000055
+E pc=0x10d0ec abs=1138 pre=26 -> 78   taps[7]: 518:00->00000026,519:00->000000ca,520:00->00000089,521:00->000000f8,518:00->00000026,519:00->000000ca,518:00->00000026
+E pc=0x110e30 abs=1139 pre=ca -> d1   taps[3]: 520:00->00000089,519:00->000000ca,519:00->000000ca
+E pc=0x10a5fc abs=1140 pre=89 -> f6   taps[3]: 521:00->000000f8,520:00->00000089,520:00->00000089
+E pc=0x10fbf4 abs=1141 pre=f8 -> c2   taps[2]: 521:00->000000f8,521:00->000000f8
+E pc=0x10d0ec abs=1142 pre=01 -> fb   taps[7]: 522:00->00000001,523:00->000000df,524:00->00000065,525:00->000000e6,522:00->00000001,523:00->000000df,522:00->00000001
+E pc=0x110e30 abs=1143 pre=df -> ed   taps[3]: 524:00->00000065,523:00->000000df,523:00->000000df
+E pc=0x10a5fc abs=1144 pre=65 -> 25   taps[3]: 525:00->000000e6,524:00->00000065,524:00->00000065
+E pc=0x10fbf4 abs=1145 pre=e6 -> 6e   taps[2]: 525:00->000000e6,525:00->000000e6
+E pc=0x10d0ec abs=1146 pre=9d -> 37   taps[7]: 526:00->0000009d,527:00->0000001d,528:00->000000ac,529:00->0000009d,526:00->0000009d,527:00->0000001d,526:00->0000009d
+E pc=0x110e30 abs=1147 pre=1d -> d5   taps[3]: 528:00->000000ac,527:00->0000001d,527:00->0000001d
+E pc=0x10a5fc abs=1148 pre=ac -> 7f   taps[3]: 529:00->0000009d,528:00->000000ac,528:00->000000ac
+E pc=0x10fbf4 abs=1149 pre=9d -> 2c   taps[2]: 529:00->0000009d,529:00->0000009d
+E pc=0x111c68 abs=1134 pre=23 -> 1b   taps[2]: 514:00->00000023,289:2d->0000006d
+E pc=0x111c68 abs=1135 pre=d7 -> ee   taps[2]: 515:00->000000d7,290:30->0000006c
+E pc=0x111c68 abs=1136 pre=ed -> 5f   taps[2]: 516:00->000000ed,291:36->000000e7
+E pc=0x111c68 abs=1137 pre=93 -> e1   taps[2]: 517:00->00000093,292:2e->00000027
+E pc=0x111c68 abs=1138 pre=78 -> 11   taps[2]: 518:00->00000078,293:5a->0000003c
+E pc=0x111c68 abs=1139 pre=d1 -> 75   taps[2]: 519:00->000000d1,294:30->000000f1
+E pc=0x111c68 abs=1140 pre=f6 -> fc   taps[2]: 520:00->000000f6,295:73->0000005f
+E pc=0x111c68 abs=1141 pre=c2 -> fe   taps[2]: 521:00->000000c2,296:6e->00000069
+E pc=0x111c68 abs=1142 pre=fb -> d0   taps[2]: 522:00->000000fb,297:72->0000007e
+E pc=0x111c68 abs=1143 pre=ed -> f9   taps[2]: 523:00->000000ed,298:35->00000041
+E pc=0x111c68 abs=1144 pre=25 -> b2   taps[2]: 524:00->00000025,299:30->000000c2
+E pc=0x111c68 abs=1145 pre=6e -> f1   taps[2]: 525:00->0000006e,300:2e->000000ca
+E pc=0x111c68 abs=1146 pre=37 -> 4a   taps[2]: 526:00->00000037,301:00->00000028
+E pc=0x111c68 abs=1147 pre=d5 -> 94   taps[2]: 527:00->000000d5,302:00->00000014
+E pc=0x111c68 abs=1148 pre=7f -> 92   taps[2]: 528:00->0000007f,303:00->000000b8
+E pc=0x111c68 abs=1149 pre=2c -> a0   taps[2]: 529:00->0000002c,304:00->000000d9
+E pc=0x111f70 abs=1134 pre=1b -> af   taps[2]: 514:00->0000001b,28:f5->000000fa
+E pc=0x111f70 abs=1135 pre=ee -> 28   taps[2]: 515:00->000000ee,239:30->0000007d
+E pc=0x111f70 abs=1136 pre=5f -> cf   taps[2]: 516:00->0000005f,96:2d->0000009a
+E pc=0x111f70 abs=1137 pre=e1 -> f8   taps[2]: 517:00->000000e1,226:36->000000ad
+E pc=0x111f70 abs=1138 pre=11 -> 82   taps[2]: 518:00->00000011,18:bd->000000d7
+E pc=0x111f70 abs=1139 pre=75 -> 9d   taps[2]: 519:00->00000075,118:36->000000c8
+E pc=0x111f70 abs=1140 pre=fc -> b0   taps[2]: 520:00->000000fc,253:37->000000e5
+E pc=0x111f70 abs=1141 pre=fe -> bb   taps[2]: 521:00->000000fe,255:69->000000ee
+E pc=0x111f70 abs=1142 pre=d0 -> 70   taps[2]: 522:00->000000d0,209:00->00000025
+E pc=0x111f70 abs=1143 pre=f9 -> 99   taps[2]: 523:00->000000f9,250:63->000000cc
+E pc=0x111f70 abs=1144 pre=b2 -> 37   taps[2]: 524:00->000000b2,179:24->00000062
+E pc=0x111f70 abs=1145 pre=f1 -> a1   taps[2]: 525:00->000000f1,242:6e->000000f4
+E pc=0x111f70 abs=1146 pre=4a -> d6   taps[2]: 526:00->0000004a,75:40->00000083
+E pc=0x111f70 abs=1147 pre=94 -> 22   taps[2]: 527:00->00000094,149:32->00000077
+E pc=0x111f70 abs=1148 pre=92 -> 4f   taps[2]: 528:00->00000092,147:61->0000001a
+E pc=0x111f70 abs=1149 pre=a0 -> e0   taps[2]: 529:00->000000a0,161:39->000000b5
+E pc=0x10daa0 abs=1135 pre=28 -> 9d   taps[2]: 515:00->00000028,519:00->0000009d
+E pc=0x10dc08 abs=1139 pre=9d -> 99   taps[1]: 523:00->00000099
+E pc=0x10dd70 abs=1143 pre=99 -> 22   taps[1]: 527:00->00000022
+E pc=0x10de2c abs=1147 pre=22 -> 28   taps[0]: 
+E pc=0x10e040 abs=1136 pre=cf -> 37   taps[2]: 516:00->000000cf,524:00->00000037
+E pc=0x10e0fc abs=1144 pre=37 -> cf   taps[0]: 
+E pc=0x10e310 abs=1140 pre=b0 -> 4f   taps[2]: 520:00->000000b0,528:00->0000004f
+E pc=0x10e3cc abs=1148 pre=4f -> b0   taps[0]: 
+E pc=0x10e5e0 abs=1137 pre=f8 -> e0   taps[2]: 517:00->000000f8,529:00->000000e0
+E pc=0x10e748 abs=1149 pre=e0 -> a1   taps[1]: 525:00->000000a1
+E pc=0x10e8b0 abs=1145 pre=a1 -> bb   taps[1]: 521:00->000000bb
+E pc=0x10c4d8 abs=1141 pre=bb -> f8   taps[0]: 
+E pc=0x10d0ec abs=1134 pre=af -> 2e   taps[7]: 514:00->000000af,515:00->0000009d,516:00->00000037,517:00->000000e0,514:00->000000af,515:00->0000009d,514:00->000000af
+E pc=0x110e30 abs=1135 pre=9d -> 37   taps[3]: 516:00->00000037,515:00->0000009d,515:00->0000009d
+E pc=0x10a5fc abs=1136 pre=37 -> 67   taps[3]: 517:00->000000e0,516:00->00000037,516:00->00000037
+E pc=0x10fbf4 abs=1137 pre=e0 -> 9b   taps[2]: 517:00->000000e0,517:00->000000e0
+E pc=0x10d0ec abs=1138 pre=82 -> 18   taps[7]: 518:00->00000082,519:00->00000099,520:00->0000004f,521:00->000000f8,518:00->00000082,519:00->00000099,518:00->00000082
+E pc=0x110e30 abs=1139 pre=99 -> 82   taps[3]: 520:00->0000004f,519:00->00000099,519:00->00000099
+E pc=0x10a5fc abs=1140 pre=4f -> 96   taps[3]: 521:00->000000f8,520:00->0000004f,520:00->0000004f
+E pc=0x10fbf4 abs=1141 pre=f8 -> a0   taps[2]: 521:00->000000f8,521:00->000000f8
+E pc=0x10d0ec abs=1142 pre=70 -> f2   taps[7]: 522:00->00000070,523:00->00000022,524:00->000000cf,525:00->000000bb,522:00->00000070,523:00->00000022,522:00->00000070
+E pc=0x110e30 abs=1143 pre=22 -> c5   taps[3]: 524:00->000000cf,523:00->00000022,523:00->00000022
+E pc=0x10a5fc abs=1144 pre=cf -> 01   taps[3]: 525:00->000000bb,524:00->000000cf,524:00->000000cf
+E pc=0x10fbf4 abs=1145 pre=bb -> 10   taps[2]: 525:00->000000bb,525:00->000000bb
+E pc=0x10d0ec abs=1146 pre=d6 -> de   taps[7]: 526:00->000000d6,527:00->00000028,528:00->000000b0,529:00->000000a1,526:00->000000d6,527:00->00000028,526:00->000000d6
+E pc=0x110e30 abs=1147 pre=28 -> ec   taps[3]: 528:00->000000b0,527:00->00000028,527:00->00000028
+E pc=0x10a5fc abs=1148 pre=b0 -> 7d   taps[3]: 529:00->000000a1,528:00->000000b0,528:00->000000b0
+E pc=0x10fbf4 abs=1149 pre=a1 -> a0   taps[2]: 529:00->000000a1,529:00->000000a1
+E pc=0x111c68 abs=1134 pre=2e -> 1a   taps[2]: 514:00->0000002e,305:00->00000061
+E pc=0x111c68 abs=1135 pre=37 -> 6e   taps[2]: 515:00->00000037,306:00->0000000c
+E pc=0x111c68 abs=1136 pre=67 -> 1b   taps[2]: 516:00->00000067,307:00->00000029
+E pc=0x111c68 abs=1137 pre=9b -> 08   taps[2]: 517:00->0000009b,308:00->000000c6
+E pc=0x111c68 abs=1138 pre=18 -> cb   taps[2]: 518:00->00000018,309:00->00000086
+E pc=0x111c68 abs=1139 pre=82 -> ff   taps[2]: 519:00->00000082,310:00->00000028
+E pc=0x111c68 abs=1140 pre=96 -> 81   taps[2]: 520:00->00000096,311:00->00000042
+E pc=0x111c68 abs=1141 pre=a0 -> 6e   taps[2]: 521:00->000000a0,312:00->0000009b
+E pc=0x111c68 abs=1142 pre=f2 -> f8   taps[2]: 522:00->000000f2,313:00->0000005f
+E pc=0x111c68 abs=1143 pre=c5 -> d2   taps[2]: 523:00->000000c5,314:00->00000042
+E pc=0x111c68 abs=1144 pre=01 -> 5b   taps[2]: 524:00->00000001,315:00->0000000f
+E pc=0x111c68 abs=1145 pre=10 -> b9   taps[2]: 525:00->00000010,316:00->000000fc
+E pc=0x111c68 abs=1146 pre=de -> cf   taps[2]: 526:00->000000de,317:00->00000044
+E pc=0x111c68 abs=1147 pre=ec -> b5   taps[2]: 527:00->000000ec,318:00->0000000c
+E pc=0x111c68 abs=1148 pre=7d -> b1   taps[2]: 528:00->0000007d,319:00->00000099
+E pc=0x111c68 abs=1149 pre=a0 -> 58   taps[2]: 529:00->000000a0,320:00->000000ad
+E pc=0x111f70 abs=1134 pre=1a -> a2   taps[2]: 514:00->0000001a,27:98->000000f7
+E pc=0x111f70 abs=1135 pre=6e -> 9f   taps[2]: 515:00->0000006e,111:30->000000ca
+E pc=0x111f70 abs=1136 pre=1b -> af   taps[2]: 516:00->0000001b,28:f5->000000fa
+E pc=0x111f70 abs=1137 pre=08 -> 30   taps[2]: 517:00->00000008,9:52->00000065
+E pc=0x111f70 abs=1138 pre=cb -> 1f   taps[2]: 518:00->000000cb,204:9b->0000004a
+E pc=0x111f70 abs=1139 pre=ff -> 16   taps[2]: 519:00->000000ff,256:32->00000043
+E pc=0x111f70 abs=1140 pre=81 -> 0c   taps[2]: 520:00->00000081,130:38->00000059
+E pc=0x111f70 abs=1141 pre=6e -> 9f   taps[2]: 521:00->0000006e,111:30->000000ca
+E pc=0x111f70 abs=1142 pre=f8 -> 41   taps[2]: 522:00->000000f8,249:30->00000014
+E pc=0x111f70 abs=1143 pre=d2 -> b5   taps[2]: 523:00->000000d2,211:4b->000000e0
+E pc=0x111f70 abs=1144 pre=5b -> 39   taps[2]: 524:00->0000005b,92:66->0000006c
+E pc=0x111f70 abs=1145 pre=b9 -> 56   taps[2]: 525:00->000000b9,186:00->00000003
+E pc=0x111f70 abs=1146 pre=cf -> 8a   taps[2]: 526:00->000000cf,208:00->000000df
+E pc=0x111f70 abs=1147 pre=b5 -> d5   taps[2]: 527:00->000000b5,182:1b->00000080
+E pc=0x111f70 abs=1148 pre=b1 -> c8   taps[2]: 528:00->000000b1,178:c8->0000009d
+E pc=0x111f70 abs=1149 pre=58 -> 6a   taps[2]: 529:00->00000058,89:62->0000003f
+E pc=0x10daa0 abs=1135 pre=9f -> 16   taps[2]: 515:00->0000009f,519:00->00000016
+E pc=0x10dc08 abs=1139 pre=16 -> b5   taps[1]: 523:00->000000b5
+E pc=0x10dd70 abs=1143 pre=b5 -> d5   taps[1]: 527:00->000000d5
+E pc=0x10de2c abs=1147 pre=d5 -> 9f   taps[0]: 
+E pc=0x10e040 abs=1136 pre=af -> 39   taps[2]: 516:00->000000af,524:00->00000039
+E pc=0x10e0fc abs=1144 pre=39 -> af   taps[0]: 
+E pc=0x10e310 abs=1140 pre=0c -> c8   taps[2]: 520:00->0000000c,528:00->000000c8
+E pc=0x10e3cc abs=1148 pre=c8 -> 0c   taps[0]: 
+E pc=0x10e5e0 abs=1137 pre=30 -> 6a   taps[2]: 517:00->00000030,529:00->0000006a
+E pc=0x10e748 abs=1149 pre=6a -> 56   taps[1]: 525:00->00000056
+E pc=0x10e8b0 abs=1145 pre=56 -> 9f   taps[1]: 521:00->0000009f
+E pc=0x10c4d8 abs=1141 pre=9f -> 30   taps[0]: 
+E pc=0x10d0ec abs=1134 pre=a2 -> 36   taps[7]: 514:00->000000a2,515:00->00000016,516:00->00000039,517:00->0000006a,514:00->000000a2,515:00->00000016,514:00->000000a2
+E pc=0x110e30 abs=1135 pre=16 -> af   taps[3]: 516:00->00000039,515:00->00000016,515:00->00000016
+E pc=0x10a5fc abs=1136 pre=39 -> 78   taps[3]: 517:00->0000006a,516:00->00000039,516:00->00000039
+E pc=0x10fbf4 abs=1137 pre=6a -> 06   taps[2]: 517:00->0000006a,517:00->0000006a
+E pc=0x10d0ec abs=1138 pre=1f -> 02   taps[7]: 518:00->0000001f,519:00->000000b5,520:00->000000c8,521:00->00000030,518:00->0000001f,519:00->000000b5,518:00->0000001f
+E pc=0x110e30 abs=1139 pre=b5 -> 1d   taps[3]: 520:00->000000c8,519:00->000000b5,519:00->000000b5
+E pc=0x10a5fc abs=1140 pre=c8 -> 71   taps[3]: 521:00->00000030,520:00->000000c8,520:00->000000c8
+E pc=0x10fbf4 abs=1141 pre=30 -> 3c   taps[2]: 521:00->00000030,521:00->00000030
+E pc=0x10d0ec abs=1142 pre=41 -> d6   taps[7]: 522:00->00000041,523:00->000000d5,524:00->000000af,525:00->0000009f,522:00->00000041,523:00->000000d5,522:00->00000041
+E pc=0x110e30 abs=1143 pre=d5 -> 85   taps[3]: 524:00->000000af,523:00->000000d5,523:00->000000d5
+E pc=0x10a5fc abs=1144 pre=af -> 6b   taps[3]: 525:00->0000009f,524:00->000000af,524:00->000000af
+E pc=0x10fbf4 abs=1145 pre=9f -> 9c   taps[2]: 525:00->0000009f,525:00->0000009f
+E pc=0x10d0ec abs=1146 pre=8a -> ef   taps[7]: 526:00->0000008a,527:00->0000009f,528:00->0000000c,529:00->00000056,526:00->0000008a,527:00->0000009f,526:00->0000008a
+E pc=0x110e30 abs=1147 pre=9f -> ed   taps[3]: 528:00->0000000c,527:00->0000009f,527:00->0000009f
+E pc=0x10a5fc abs=1148 pre=0c -> f7   taps[3]: 529:00->00000056,528:00->0000000c,528:00->0000000c
+E pc=0x10fbf4 abs=1149 pre=56 -> ba   taps[2]: 529:00->00000056,529:00->00000056
+E pc=0x111c68 abs=1134 pre=36 -> c7   taps[2]: 514:00->00000036,321:00->000000a4
+E pc=0x111c68 abs=1135 pre=af -> dd   taps[2]: 515:00->000000af,322:00->00000027
+E pc=0x111c68 abs=1136 pre=78 -> 8b   taps[2]: 516:00->00000078,323:00->000000a6
+E pc=0x111c68 abs=1137 pre=06 -> f6   taps[2]: 517:00->00000006,324:00->000000a5
+E pc=0x111c68 abs=1138 pre=02 -> 9a   taps[2]: 518:00->00000002,325:00->000000cd
+E pc=0x111c68 abs=1139 pre=1d -> cb   taps[2]: 519:00->0000001d,326:00->00000083
+E pc=0x111c68 abs=1140 pre=71 -> 88   taps[2]: 520:00->00000071,327:a2->000000ac
+E pc=0x111c68 abs=1141 pre=3c -> f0   taps[2]: 521:00->0000003c,328:22->00000099
+E pc=0x111c68 abs=1142 pre=d6 -> 65   taps[2]: 522:00->000000d6,329:c9->000000e6
+E pc=0x111c68 abs=1143 pre=85 -> 47   taps[2]: 523:00->00000085,330:53->00000097
+E pc=0x111c68 abs=1144 pre=6b -> 05   taps[2]: 524:00->0000006b,331:b9->0000003b
+E pc=0x111c68 abs=1145 pre=9c -> cf   taps[2]: 525:00->0000009c,332:90->00000006
+E pc=0x111c68 abs=1146 pre=ef -> 21   taps[2]: 526:00->000000ef,333:ee->0000009b
+E pc=0x111c68 abs=1147 pre=ed -> 6e   taps[2]: 527:00->000000ed,334:0c->000000d6
+E pc=0x111c68 abs=1148 pre=f7 -> 74   taps[2]: 528:00->000000f7,335:90->000000d6
+E pc=0x111c68 abs=1149 pre=ba -> 65   taps[2]: 529:00->000000ba,336:24->0000008a
+E pc=0x111f70 abs=1134 pre=c7 -> c6   taps[2]: 514:00->000000c7,200:fc->00000093
+E pc=0x111f70 abs=1135 pre=dd -> c1   taps[2]: 515:00->000000dd,222:39->00000094
+E pc=0x111f70 abs=1136 pre=8b -> 3d   taps[2]: 516:00->0000008b,140:30->00000068
+E pc=0x111f70 abs=1137 pre=f6 -> 42   taps[2]: 517:00->000000f6,247:2d->00000017
+E pc=0x111f70 abs=1138 pre=9a -> b8   taps[2]: 518:00->0000009a,155:6d->000000ed
+E pc=0x111f70 abs=1139 pre=cb -> 1f   taps[2]: 519:00->000000cb,204:9b->0000004a
+E pc=0x111f70 abs=1140 pre=88 -> c4   taps[2]: 520:00->00000088,137:36->00000091
+E pc=0x111f70 abs=1141 pre=f0 -> 8c   taps[2]: 521:00->000000f0,241:32->000000d9
+E pc=0x111f70 abs=1142 pre=65 -> 4d   taps[2]: 522:00->00000065,102:65->00000018
+E pc=0x111f70 abs=1143 pre=47 -> a0   taps[2]: 523:00->00000047,72:00->000000f5
+E pc=0x111f70 abs=1144 pre=05 -> 6b   taps[2]: 524:00->00000005,6:45->0000003e
+E pc=0x111f70 abs=1145 pre=cf -> 8a   taps[2]: 525:00->000000cf,208:00->000000df
+E pc=0x111f70 abs=1146 pre=21 -> fd   taps[2]: 526:00->00000021,34:4c->000000a8
+E pc=0x111f70 abs=1147 pre=6e -> 9f   taps[2]: 527:00->0000006e,111:30->000000ca
+E pc=0x111f70 abs=1148 pre=74 -> 92   taps[2]: 528:00->00000074,117:6e->000000c7
+E pc=0x111f70 abs=1149 pre=65 -> 4d   taps[2]: 529:00->00000065,102:65->00000018
+E pc=0x10daa0 abs=1135 pre=c1 -> 1f   taps[2]: 515:00->000000c1,519:00->0000001f
+E pc=0x10dc08 abs=1139 pre=1f -> a0   taps[1]: 523:00->000000a0
+E pc=0x10dd70 abs=1143 pre=a0 -> 9f   taps[1]: 527:00->0000009f
+E pc=0x10de2c abs=1147 pre=9f -> c1   taps[0]: 
+E pc=0x10e040 abs=1136 pre=3d -> 6b   taps[2]: 516:00->0000003d,524:00->0000006b
+E pc=0x10e0fc abs=1144 pre=6b -> 3d   taps[0]: 
+E pc=0x10e310 abs=1140 pre=c4 -> 92   taps[2]: 520:00->000000c4,528:00->00000092
+E pc=0x10e3cc abs=1148 pre=92 -> c4   taps[0]: 
+E pc=0x10e5e0 abs=1137 pre=42 -> 4d   taps[2]: 517:00->00000042,529:00->0000004d
+E pc=0x10e748 abs=1149 pre=4d -> 8a   taps[1]: 525:00->0000008a
+E pc=0x10e8b0 abs=1145 pre=8a -> 8c   taps[1]: 521:00->0000008c
+E pc=0x10c4d8 abs=1141 pre=8c -> 42   taps[0]: 
+E pc=0x10d0ec abs=1134 pre=c6 -> 90   taps[7]: 514:00->000000c6,515:00->0000001f,516:00->0000006b,517:00->0000004d,514:00->000000c6,515:00->0000001f,514:00->000000c6
+E pc=0x110e30 abs=1135 pre=1f -> 08   taps[3]: 516:00->0000006b,515:00->0000001f,515:00->0000001f
+E pc=0x10a5fc abs=1136 pre=6b -> d8   taps[3]: 517:00->0000004d,516:00->0000006b,516:00->0000006b
+E pc=0x10fbf4 abs=1137 pre=4d -> bf   taps[2]: 517:00->0000004d,517:00->0000004d
+E pc=0x10d0ec abs=1138 pre=b8 -> 40   taps[7]: 518:00->000000b8,519:00->000000a0,520:00->00000092,521:00->00000042,518:00->000000b8,519:00->000000a0,518:00->000000b8
+E pc=0x110e30 abs=1139 pre=a0 -> 0c   taps[3]: 520:00->00000092,519:00->000000a0,519:00->000000a0
+E pc=0x10a5fc abs=1140 pre=92 -> e1   taps[3]: 521:00->00000042,520:00->00000092,520:00->00000092
+E pc=0x10fbf4 abs=1141 pre=42 -> 65   taps[2]: 521:00->00000042,521:00->00000042
+E pc=0x10d0ec abs=1142 pre=4d -> 91   taps[7]: 522:00->0000004d,523:00->0000009f,524:00->0000003d,525:00->0000008c,522:00->0000004d,523:00->0000009f,522:00->0000004d
+E pc=0x110e30 abs=1143 pre=9f -> a3   taps[3]: 524:00->0000003d,523:00->0000009f,523:00->0000009f
+E pc=0x10a5fc abs=1144 pre=3d -> 27   taps[3]: 525:00->0000008c,524:00->0000003d,524:00->0000003d
+E pc=0x10fbf4 abs=1145 pre=8c -> 76   taps[2]: 525:00->0000008c,525:00->0000008c
+E pc=0x10d0ec abs=1146 pre=fd -> f7   taps[7]: 526:00->000000fd,527:00->000000c1,528:00->000000c4,529:00->0000008a,526:00->000000fd,527:00->000000c1,526:00->000000fd
+E pc=0x110e30 abs=1147 pre=c1 -> b9   taps[3]: 528:00->000000c4,527:00->000000c1,527:00->000000c1
+E pc=0x10a5fc abs=1148 pre=c4 -> 2a   taps[3]: 529:00->0000008a,528:00->000000c4,528:00->000000c4
+E pc=0x10fbf4 abs=1149 pre=8a -> 16   taps[2]: 529:00->0000008a,529:00->0000008a
+E pc=0x111c68 abs=1134 pre=90 -> 2f   taps[2]: 514:00->00000090,337:c4->000000ea
+E pc=0x111c68 abs=1135 pre=08 -> bd   taps[2]: 515:00->00000008,338:63->000000e0
+E pc=0x111c68 abs=1136 pre=d8 -> 48   taps[2]: 516:00->000000d8,339:b9->000000c5
+E pc=0x111c68 abs=1137 pre=bf -> b2   taps[2]: 517:00->000000bf,340:a7->00000058
+E pc=0x111c68 abs=1138 pre=40 -> 2c   taps[2]: 518:00->00000040,341:27->00000039
+E pc=0x111c68 abs=1139 pre=0c -> c4   taps[2]: 519:00->0000000c,342:50->0000009d
+E pc=0x111c68 abs=1140 pre=e1 -> 66   taps[2]: 520:00->000000e1,343:37->000000d2
+E pc=0x111c68 abs=1141 pre=65 -> a6   taps[2]: 521:00->00000065,344:b7->00000096
+E pc=0x111c68 abs=1142 pre=91 -> f7   taps[2]: 522:00->00000091,345:02->00000033
+E pc=0x111c68 abs=1143 pre=a3 -> 7c   taps[2]: 523:00->000000a3,346:fb->0000008a
+E pc=0x111c68 abs=1144 pre=27 -> fa   taps[2]: 524:00->00000027,347:f1->00000088
+E pc=0x111c68 abs=1145 pre=76 -> 1c   taps[2]: 525:00->00000076,348:3c->0000003f
+E pc=0x111c68 abs=1146 pre=f7 -> 80   taps[2]: 526:00->000000f7,349:2f->00000022
+E pc=0x111c68 abs=1147 pre=b9 -> 3f   taps[2]: 527:00->000000b9,350:96->000000d3
+E pc=0x111c68 abs=1148 pre=2a -> 3b   taps[2]: 528:00->0000002a,351:74->00000044
+E pc=0x111c68 abs=1149 pre=16 -> 84   taps[2]: 529:00->00000016,352:6a->000000c7
+E pc=0x111f70 abs=1134 pre=2f -> 15   taps[2]: 514:00->0000002f,48:1a->00000040
+E pc=0x111f70 abs=1135 pre=bd -> 7a   taps[2]: 515:00->000000bd,190:17->0000002f
+E pc=0x111f70 abs=1136 pre=48 -> 52   taps[2]: 516:00->00000048,73:00->00000007
+E pc=0x111f70 abs=1137 pre=b2 -> 37   taps[2]: 517:00->000000b2,179:24->00000062
+E pc=0x111f70 abs=1138 pre=2c -> 71   taps[2]: 518:00->0000002c,45:2b->00000024
+E pc=0x111f70 abs=1139 pre=c4 -> 1c   taps[2]: 519:00->000000c4,197:da->00000049
+E pc=0x111f70 abs=1140 pre=66 -> 33   taps[2]: 520:00->00000066,103:2e->00000066
+E pc=0x111f70 abs=1141 pre=a6 -> 24   taps[2]: 521:00->000000a6,167:65->00000071
+E pc=0x111f70 abs=1142 pre=f7 -> 68   taps[2]: 522:00->000000f7,248:31->0000003d
+E pc=0x111f70 abs=1143 pre=7c -> 10   taps[2]: 523:00->0000007c,125:66->00000045
+E pc=0x111f70 abs=1144 pre=fa -> 2d   taps[2]: 524:00->000000fa,251:36->00000078
+E pc=0x111f70 abs=1145 pre=1c -> 9c   taps[2]: 525:00->0000001c,29:2b->000000c9
+E pc=0x111f70 abs=1146 pre=80 -> cd   taps[2]: 526:00->00000080,129:33->00000098
+E pc=0x111f70 abs=1147 pre=3f -> 75   taps[2]: 527:00->0000003f,64:0d->00000020
+E pc=0x111f70 abs=1148 pre=3b -> e2   taps[2]: 528:00->0000003b,60:1a->000000b7
+E pc=0x111f70 abs=1149 pre=84 -> 5f   taps[2]: 529:00->00000084,133:64->0000000a
+E pc=0x10daa0 abs=1135 pre=7a -> 1c   taps[2]: 515:00->0000007a,519:00->0000001c
+E pc=0x10dc08 abs=1139 pre=1c -> 10   taps[1]: 523:00->00000010
+E pc=0x10dd70 abs=1143 pre=10 -> 75   taps[1]: 527:00->00000075
+E pc=0x10de2c abs=1147 pre=75 -> 7a   taps[0]: 
+E pc=0x10e040 abs=1136 pre=52 -> 2d   taps[2]: 516:00->00000052,524:00->0000002d
+E pc=0x10e0fc abs=1144 pre=2d -> 52   taps[0]: 
+E pc=0x10e310 abs=1140 pre=33 -> e2   taps[2]: 520:00->00000033,528:00->000000e2
+E pc=0x10e3cc abs=1148 pre=e2 -> 33   taps[0]: 
+E pc=0x10e5e0 abs=1137 pre=37 -> 5f   taps[2]: 517:00->00000037,529:00->0000005f
+E pc=0x10e748 abs=1149 pre=5f -> 9c   taps[1]: 525:00->0000009c
+E pc=0x10e8b0 abs=1145 pre=9c -> 24   taps[1]: 521:00->00000024
+E pc=0x10c4d8 abs=1141 pre=24 -> 37   taps[0]: 
+E pc=0x10d0ec abs=1134 pre=15 -> 7c   taps[7]: 514:00->00000015,515:00->0000001c,516:00->0000002d,517:00->0000005f,514:00->00000015,515:00->0000001c,514:00->00000015
+E pc=0x110e30 abs=1135 pre=1c -> 05   taps[3]: 516:00->0000002d,515:00->0000001c,515:00->0000001c
+E pc=0x10a5fc abs=1136 pre=2d -> b2   taps[3]: 517:00->0000005f,516:00->0000002d,516:00->0000002d
+E pc=0x10fbf4 abs=1137 pre=5f -> b0   taps[2]: 517:00->0000005f,517:00->0000005f
+E pc=0x10d0ec abs=1138 pre=71 -> 07   taps[7]: 518:00->00000071,519:00->00000010,520:00->000000e2,521:00->00000037,518:00->00000071,519:00->00000010,518:00->00000071
+E pc=0x110e30 abs=1139 pre=10 -> 5b   taps[3]: 520:00->000000e2,519:00->00000010,519:00->00000010
+E pc=0x10a5fc abs=1140 pre=e2 -> e7   taps[3]: 521:00->00000037,520:00->000000e2,520:00->000000e2
+E pc=0x10fbf4 abs=1141 pre=37 -> 0f   taps[2]: 521:00->00000037,521:00->00000037
+E pc=0x10d0ec abs=1142 pre=68 -> 39   taps[7]: 522:00->00000068,523:00->00000075,524:00->00000052,525:00->00000024,522:00->00000068,523:00->00000075,522:00->00000068
+E pc=0x110e30 abs=1143 pre=75 -> 50   taps[3]: 524:00->00000052,523:00->00000075,523:00->00000075
+E pc=0x10a5fc abs=1144 pre=52 -> d5   taps[3]: 525:00->00000024,524:00->00000052,524:00->00000052
+E pc=0x10fbf4 abs=1145 pre=24 -> d7   taps[2]: 525:00->00000024,525:00->00000024
+E pc=0x10d0ec abs=1146 pre=cd -> a0   taps[7]: 526:00->000000cd,527:00->0000007a,528:00->00000033,529:00->0000009c,526:00->000000cd,527:00->0000007a,526:00->000000cd
+E pc=0x110e30 abs=1147 pre=7a -> f0   taps[3]: 528:00->00000033,527:00->0000007a,527:00->0000007a
+E pc=0x10a5fc abs=1148 pre=33 -> 6e   taps[3]: 529:00->0000009c,528:00->00000033,528:00->00000033
+E pc=0x10fbf4 abs=1149 pre=9c -> 26   taps[2]: 529:00->0000009c,529:00->0000009c
+E pc=0x111c68 abs=1134 pre=7c -> cd   taps[2]: 514:00->0000007c,353:41->000000e4
+E pc=0x111c68 abs=1135 pre=05 -> f5   taps[2]: 515:00->00000005,354:6f->000000a5
+E pc=0x111c68 abs=1136 pre=b2 -> 0e   taps[2]: 516:00->000000b2,355:0a->000000e9
+E pc=0x111c68 abs=1137 pre=b0 -> b5   taps[2]: 517:00->000000b0,356:2d->00000050
+E pc=0x111c68 abs=1138 pre=07 -> 2e   taps[2]: 518:00->00000007,357:97->0000007c
+E pc=0x111c68 abs=1139 pre=5b -> 7d   taps[2]: 519:00->0000005b,358:6b->00000073
+E pc=0x111c68 abs=1140 pre=e7 -> a2   taps[2]: 520:00->000000e7,359:96->00000010
+E pc=0x111c68 abs=1141 pre=0f -> c6   taps[2]: 521:00->0000000f,360:e3->0000009c
+E pc=0x111c68 abs=1142 pre=39 -> a3   taps[2]: 522:00->00000039,361:98->000000cf
+E pc=0x111c68 abs=1143 pre=50 -> b4   taps[2]: 523:00->00000050,362:9a->000000b1
+E pc=0x111c68 abs=1144 pre=d5 -> fe   taps[2]: 524:00->000000d5,363:99->0000007e
+E pc=0x111c68 abs=1145 pre=d7 -> 4d   taps[2]: 525:00->000000d7,364:27->000000cf
+E pc=0x111c68 abs=1146 pre=a0 -> f4   taps[2]: 526:00->000000a0,365:64->00000001
+E pc=0x111c68 abs=1147 pre=f0 -> 97   taps[2]: 527:00->000000f0,366:a4->00000032
+E pc=0x111c68 abs=1148 pre=6e -> c6   taps[2]: 528:00->0000006e,367:78->000000fd
+E pc=0x111c68 abs=1149 pre=26 -> 63   taps[2]: 529:00->00000026,368:06->00000010
+E pc=0x111f70 abs=1134 pre=cd -> bd   taps[2]: 514:00->000000cd,206:52->000000e8
+E pc=0x111f70 abs=1135 pre=f5 -> e6   taps[2]: 515:00->000000f5,246:62->000000b3
+E pc=0x111f70 abs=1136 pre=0e -> ab   taps[2]: 516:00->0000000e,15:b0->000000fe
+E pc=0x111f70 abs=1137 pre=b5 -> d5   taps[2]: 517:00->000000b5,182:1b->00000080
+E pc=0x111f70 abs=1138 pre=2e -> 31   taps[2]: 518:00->0000002e,47:cc->00000064
+E pc=0x111f70 abs=1139 pre=7d -> ff   taps[2]: 519:00->0000007d,126:63->000000aa
+E pc=0x111f70 abs=1140 pre=a2 -> 3a   taps[2]: 520:00->000000a2,163:32->0000006f
+E pc=0x111f70 abs=1141 pre=c6 -> b4   taps[2]: 521:00->000000c6,199:b0->000000e1
+E pc=0x111f70 abs=1142 pre=a3 -> 0a   taps[2]: 522:00->000000a3,164:38->0000005f
+E pc=0x111f70 abs=1143 pre=b4 -> 8d   taps[2]: 523:00->000000b4,181:4c->000000d8
+E pc=0x111f70 abs=1144 pre=fe -> bb   taps[2]: 524:00->000000fe,255:69->000000ee
+E pc=0x111f70 abs=1145 pre=4d -> e3   taps[2]: 525:00->0000004d,78:b1->000000b6
+E pc=0x111f70 abs=1146 pre=f4 -> bf   taps[2]: 526:00->000000f4,245:66->000000ea
+E pc=0x111f70 abs=1147 pre=97 -> 88   taps[2]: 527:00->00000097,152:70->000000dd
+E pc=0x111f70 abs=1148 pre=c6 -> b4   taps[2]: 528:00->000000c6,199:b0->000000e1
+E pc=0x111f70 abs=1149 pre=63 -> fb   taps[2]: 529:00->00000063,100:75->000000ae
+E pc=0x10daa0 abs=1135 pre=e6 -> ff   taps[2]: 515:00->000000e6,519:00->000000ff
+E pc=0x10dc08 abs=1139 pre=ff -> 8d   taps[1]: 523:00->0000008d
+E pc=0x10dd70 abs=1143 pre=8d -> 88   taps[1]: 527:00->00000088
+E pc=0x10de2c abs=1147 pre=88 -> e6   taps[0]: 
+E pc=0x10e040 abs=1136 pre=ab -> bb   taps[2]: 516:00->000000ab,524:00->000000bb
+E pc=0x10e0fc abs=1144 pre=bb -> ab   taps[0]: 
+E pc=0x10e310 abs=1140 pre=3a -> b4   taps[2]: 520:00->0000003a,528:00->000000b4
+E pc=0x10e3cc abs=1148 pre=b4 -> 3a   taps[0]: 
+E pc=0x10e5e0 abs=1137 pre=d5 -> fb   taps[2]: 517:00->000000d5,529:00->000000fb
+E pc=0x10e748 abs=1149 pre=fb -> e3   taps[1]: 525:00->000000e3
+E pc=0x10e8b0 abs=1145 pre=e3 -> b4   taps[1]: 521:00->000000b4
+E pc=0x10c4d8 abs=1141 pre=b4 -> d5   taps[0]: 
+E pc=0x10d0ec abs=1134 pre=bd -> 3b   taps[7]: 514:00->000000bd,515:00->000000ff,516:00->000000bb,517:00->000000fb,514:00->000000bd,515:00->000000ff,514:00->000000bd
+E pc=0x110e30 abs=1135 pre=ff -> 75   taps[3]: 516:00->000000bb,515:00->000000ff,515:00->000000ff
+E pc=0x10a5fc abs=1136 pre=bb -> 39   taps[3]: 517:00->000000fb,516:00->000000bb,516:00->000000bb
+E pc=0x10fbf4 abs=1137 pre=fb -> 75   taps[2]: 517:00->000000fb,517:00->000000fb
+E pc=0x10d0ec abs=1138 pre=31 -> 8f   taps[7]: 518:00->00000031,519:00->0000008d,520:00->000000b4,521:00->000000d5,518:00->00000031,519:00->0000008d,518:00->00000031
+E pc=0x110e30 abs=1139 pre=8d -> 22   taps[3]: 520:00->000000b4,519:00->0000008d,519:00->0000008d
+E pc=0x10a5fc abs=1140 pre=b4 -> ab   taps[3]: 521:00->000000d5,520:00->000000b4,520:00->000000b4
+E pc=0x10fbf4 abs=1141 pre=d5 -> db   taps[2]: 521:00->000000d5,521:00->000000d5
+E pc=0x10d0ec abs=1142 pre=0a -> 88   taps[7]: 522:00->0000000a,523:00->00000088,524:00->000000ab,525:00->000000b4,522:00->0000000a,523:00->00000088,522:00->0000000a
+E pc=0x110e30 abs=1143 pre=88 -> 53   taps[3]: 524:00->000000ab,523:00->00000088,523:00->00000088
+E pc=0x10a5fc abs=1144 pre=ab -> 08   taps[3]: 525:00->000000b4,524:00->000000ab,524:00->000000ab
+E pc=0x10fbf4 abs=1145 pre=b4 -> 4e   taps[2]: 525:00->000000b4,525:00->000000b4
+E pc=0x10d0ec abs=1146 pre=bf -> 8d   taps[7]: 526:00->000000bf,527:00->000000e6,528:00->0000003a,529:00->000000e3,526:00->000000bf,527:00->000000e6,526:00->000000bf
+E pc=0x110e30 abs=1147 pre=e6 -> c5   taps[3]: 528:00->0000003a,527:00->000000e6,527:00->000000e6
+E pc=0x10a5fc abs=1148 pre=3a -> 13   taps[3]: 529:00->000000e3,528:00->0000003a,528:00->0000003a
+E pc=0x10fbf4 abs=1149 pre=e3 -> db   taps[2]: 529:00->000000e3,529:00->000000e3
+E pc=0x111c68 abs=1134 pre=3b -> a4   taps[2]: 514:00->0000003b,369:00->000000ca
+E pc=0x111c68 abs=1135 pre=75 -> 45   taps[2]: 515:00->00000075,370:00->00000065
+E pc=0x111c68 abs=1136 pre=39 -> 6b   taps[2]: 516:00->00000039,371:00->00000007
+E pc=0x111c68 abs=1137 pre=75 -> 16   taps[2]: 517:00->00000075,372:00->00000036
+E pc=0x111c68 abs=1138 pre=8f -> 7c   taps[2]: 518:00->0000008f,373:0e->000000a6
+E pc=0x111c68 abs=1139 pre=22 -> da   taps[2]: 519:00->00000022,374:0e->000000ad
+E pc=0x111c68 abs=1140 pre=ab -> 7e   taps[2]: 520:00->000000ab,375:0e->00000080
+E pc=0x111c68 abs=1141 pre=db -> 7b   taps[2]: 521:00->000000db,376:0e->000000f5
+E pc=0x111c68 abs=1142 pre=88 -> 1d   taps[2]: 522:00->00000088,377:00->000000c0
+E pc=0x111c68 abs=1143 pre=53 -> 74   taps[2]: 523:00->00000053,378:00->00000072
+E pc=0x111c68 abs=1144 pre=08 -> 00   taps[2]: 524:00->00000008,379:00->0000005d
+E pc=0x111c68 abs=1145 pre=4e -> 84   taps[2]: 525:00->0000004e,380:00->0000009f
+E pc=0x111c68 abs=1146 pre=8d -> 6f   taps[2]: 526:00->0000008d,381:00->000000b7
+E pc=0x111c68 abs=1147 pre=c5 -> 64   taps[2]: 527:00->000000c5,382:00->000000f4
+E pc=0x111c68 abs=1148 pre=13 -> 0a   taps[2]: 528:00->00000013,383:00->0000004c
+E pc=0x111c68 abs=1149 pre=db -> 83   taps[2]: 529:00->000000db,384:00->0000000d
+E pc=0x111f70 abs=1134 pre=a4 -> 49   taps[2]: 514:00->000000a4,165:35->0000001c
+E pc=0x111f70 abs=1135 pre=45 -> 6e   taps[2]: 515:00->00000045,70:bf->0000003b
+E pc=0x111f70 abs=1136 pre=6b -> 7f   taps[2]: 516:00->0000006b,108:35->0000002a
+E pc=0x111f70 abs=1137 pre=16 -> 47   taps[2]: 517:00->00000016,23:63->00000012
+E pc=0x111f70 abs=1138 pre=7c -> 10   taps[2]: 518:00->0000007c,125:66->00000045
+E pc=0x111f70 abs=1139 pre=da -> 57   taps[2]: 519:00->000000da,219:66->00000002
+E pc=0x111f70 abs=1140 pre=7e -> f3   taps[2]: 520:00->0000007e,127:76->000000a6
+E pc=0x111f70 abs=1141 pre=7b -> 21   taps[2]: 521:00->0000007b,124:33->00000074
+E pc=0x111f70 abs=1142 pre=1d -> a4   taps[2]: 522:00->0000001d,30:4c->000000f1
+E pc=0x111f70 abs=1143 pre=74 -> 92   taps[2]: 523:00->00000074,117:6e->000000c7
+E pc=0x111f70 abs=1144 pre=00 -> 63   taps[2]: 524:00->00000000,1:19->00000036
+E pc=0x111f70 abs=1145 pre=84 -> 5f   taps[2]: 525:00->00000084,133:64->0000000a
+E pc=0x111f70 abs=1146 pre=6f -> a8   taps[2]: 526:00->0000006f,112:74->000000fd
+E pc=0x111f70 abs=1147 pre=64 -> 43   taps[2]: 527:00->00000064,101:69->00000016
+E pc=0x111f70 abs=1148 pre=0a -> 67   taps[2]: 528:00->0000000a,11:54->00000032
+E pc=0x111f70 abs=1149 pre=83 -> ec   taps[2]: 529:00->00000083,132:6d->000000b9
+E pc=0x10daa0 abs=1135 pre=6e -> 57   taps[2]: 515:00->0000006e,519:00->00000057
+E pc=0x10dc08 abs=1139 pre=57 -> 92   taps[1]: 523:00->00000092
+E pc=0x10dd70 abs=1143 pre=92 -> 43   taps[1]: 527:00->00000043
+E pc=0x10de2c abs=1147 pre=43 -> 6e   taps[0]: 
+E pc=0x10e040 abs=1136 pre=7f -> 63   taps[2]: 516:00->0000007f,524:00->00000063
+E pc=0x10e0fc abs=1144 pre=63 -> 7f   taps[0]: 
+E pc=0x10e310 abs=1140 pre=f3 -> 67   taps[2]: 520:00->000000f3,528:00->00000067
+E pc=0x10e3cc abs=1148 pre=67 -> f3   taps[0]: 
+E pc=0x10e5e0 abs=1137 pre=47 -> ec   taps[2]: 517:00->00000047,529:00->000000ec
+E pc=0x10e748 abs=1149 pre=ec -> 5f   taps[1]: 525:00->0000005f
+E pc=0x10e8b0 abs=1145 pre=5f -> 21   taps[1]: 521:00->00000021
+E pc=0x10c4d8 abs=1141 pre=21 -> 47   taps[0]: 
+E pc=0x10d0ec abs=1134 pre=49 -> e4   taps[7]: 514:00->00000049,515:00->00000057,516:00->00000063,517:00->000000ec,514:00->00000049,515:00->00000057,514:00->00000049
+E pc=0x110e30 abs=1135 pre=57 -> ae   taps[3]: 516:00->00000063,515:00->00000057,515:00->00000057
+E pc=0x10a5fc abs=1136 pre=63 -> f7   taps[3]: 517:00->000000ec,516:00->00000063,516:00->00000063
+E pc=0x10fbf4 abs=1137 pre=ec -> 2c   taps[2]: 517:00->000000ec,517:00->000000ec
+E pc=0x10d0ec abs=1138 pre=10 -> ad   taps[7]: 518:00->00000010,519:00->00000092,520:00->00000067,521:00->00000047,518:00->00000010,519:00->00000092,518:00->00000010
+E pc=0x110e30 abs=1139 pre=92 -> c1   taps[3]: 520:00->00000067,519:00->00000092,519:00->00000092
+E pc=0x10a5fc abs=1140 pre=67 -> 85   taps[3]: 521:00->00000047,520:00->00000067,520:00->00000067
+E pc=0x10fbf4 abs=1141 pre=47 -> 4b   taps[2]: 521:00->00000047,521:00->00000047
+E pc=0x10d0ec abs=1142 pre=a4 -> c8   taps[7]: 522:00->000000a4,523:00->00000043,524:00->0000007f,525:00->00000021,522:00->000000a4,523:00->00000043,522:00->000000a4
+E pc=0x110e30 abs=1143 pre=43 -> 82   taps[3]: 524:00->0000007f,523:00->00000043,523:00->00000043
+E pc=0x10a5fc abs=1144 pre=7f -> 7a   taps[3]: 525:00->00000021,524:00->0000007f,524:00->0000007f
+E pc=0x10fbf4 abs=1145 pre=21 -> 89   taps[2]: 525:00->00000021,525:00->00000021
+E pc=0x10d0ec abs=1146 pre=a8 -> 55   taps[7]: 526:00->000000a8,527:00->0000006e,528:00->000000f3,529:00->0000005f,526:00->000000a8,527:00->0000006e,526:00->000000a8
+E pc=0x110e30 abs=1147 pre=6e -> 25   taps[3]: 528:00->000000f3,527:00->0000006e,527:00->0000006e
+E pc=0x10a5fc abs=1148 pre=f3 -> da   taps[3]: 529:00->0000005f,528:00->000000f3,528:00->000000f3
+E pc=0x10fbf4 abs=1149 pre=5f -> c0   taps[2]: 529:00->0000005f,529:00->0000005f
+E pc=0x111c68 abs=1134 pre=e4 -> 6f   taps[2]: 514:00->000000e4,385:00->000000de
+E pc=0x111c68 abs=1135 pre=ae -> 8a   taps[2]: 515:00->000000ae,386:00->00000071
+E pc=0x111c68 abs=1136 pre=f7 -> 21   taps[2]: 516:00->000000f7,387:00->00000083
+E pc=0x111c68 abs=1137 pre=2c -> b1   taps[2]: 517:00->0000002c,388:00->000000c8
+E pc=0x111c68 abs=1138 pre=ad -> 0f   taps[2]: 518:00->000000ad,389:00->000000f7
+E pc=0x111c68 abs=1139 pre=c1 -> c3   taps[2]: 519:00->000000c1,390:00->00000057
+E pc=0x111c68 abs=1140 pre=85 -> 16   taps[2]: 520:00->00000085,391:00->000000c6
+E pc=0x111c68 abs=1141 pre=4b -> 1f   taps[2]: 521:00->0000004b,392:00->00000001
+E pc=0x111c68 abs=1142 pre=c8 -> f0   taps[2]: 522:00->000000c8,393:00->0000006d
+E pc=0x111c68 abs=1143 pre=82 -> 64   taps[2]: 523:00->00000082,394:00->000000b3
+E pc=0x111c68 abs=1144 pre=7a -> c2   taps[2]: 524:00->0000007a,395:00->000000ed
+E pc=0x111c68 abs=1145 pre=89 -> 47   taps[2]: 525:00->00000089,396:00->0000009b
+E pc=0x111c68 abs=1146 pre=55 -> 39   taps[2]: 526:00->00000055,397:00->00000039
+E pc=0x111c68 abs=1147 pre=25 -> a4   taps[2]: 527:00->00000025,398:00->000000d4
+E pc=0x111c68 abs=1148 pre=da -> ca   taps[2]: 528:00->000000da,399:00->00000045
+E pc=0x111c68 abs=1149 pre=c0 -> 4b   taps[2]: 529:00->000000c0,400:00->000000de
+E pc=0x111f70 abs=1134 pre=6f -> a8   taps[2]: 514:00->0000006f,112:74->000000fd
+E pc=0x111f70 abs=1135 pre=8a -> 7e   taps[2]: 515:00->0000008a,139:31->0000002b
+E pc=0x111f70 abs=1136 pre=21 -> fd   taps[2]: 516:00->00000021,34:4c->000000a8
+E pc=0x111f70 abs=1137 pre=b1 -> c8   taps[2]: 517:00->000000b1,178:c8->0000009d
+E pc=0x111f70 abs=1138 pre=0f -> 76   taps[2]: 518:00->0000000f,16:47->00000023
+E pc=0x111f70 abs=1139 pre=c3 -> 2e   taps[2]: 519:00->000000c3,196:b6->0000007b
+E pc=0x111f70 abs=1140 pre=16 -> 47   taps[2]: 520:00->00000016,23:63->00000012
+E pc=0x111f70 abs=1141 pre=1f -> c0   taps[2]: 521:00->0000001f,32:1a->00000095
+E pc=0x111f70 abs=1142 pre=f0 -> 8c   taps[2]: 522:00->000000f0,241:32->000000d9
+E pc=0x111f70 abs=1143 pre=64 -> 43   taps[2]: 523:00->00000064,101:69->00000016
+E pc=0x111f70 abs=1144 pre=c2 -> 25   taps[2]: 524:00->000000c2,195:db->00000070
+E pc=0x111f70 abs=1145 pre=47 -> a0   taps[2]: 525:00->00000047,72:00->000000f5
+E pc=0x111f70 abs=1146 pre=39 -> 12   taps[2]: 526:00->00000039,58:4c->00000047
+E pc=0x111f70 abs=1147 pre=a4 -> 49   taps[2]: 527:00->000000a4,165:35->0000001c
+E pc=0x111f70 abs=1148 pre=ca -> 74   taps[2]: 528:00->000000ca,203:ae->00000021
+E pc=0x111f70 abs=1149 pre=4b -> b3   taps[2]: 529:00->0000004b,76:05->000000e6
+E pc=0x10daa0 abs=1135 pre=7e -> 2e   taps[2]: 515:00->0000007e,519:00->0000002e
+E pc=0x10dc08 abs=1139 pre=2e -> 43   taps[1]: 523:00->00000043
+E pc=0x10dd70 abs=1143 pre=43 -> 49   taps[1]: 527:00->00000049
+E pc=0x10de2c abs=1147 pre=49 -> 7e   taps[0]: 
+E pc=0x10e040 abs=1136 pre=fd -> 25   taps[2]: 516:00->000000fd,524:00->00000025
+E pc=0x10e0fc abs=1144 pre=25 -> fd   taps[0]: 
+E pc=0x10e310 abs=1140 pre=47 -> 74   taps[2]: 520:00->00000047,528:00->00000074
+E pc=0x10e3cc abs=1148 pre=74 -> 47   taps[0]: 
+E pc=0x10e5e0 abs=1137 pre=c8 -> b3   taps[2]: 517:00->000000c8,529:00->000000b3
+E pc=0x10e748 abs=1149 pre=b3 -> a0   taps[1]: 525:00->000000a0
+E pc=0x10e8b0 abs=1145 pre=a0 -> c0   taps[1]: 521:00->000000c0
+E pc=0x10c4d8 abs=1141 pre=c0 -> c8   taps[0]: 
+E pc=0x10d0ec abs=1134 pre=a8 -> af   taps[7]: 514:00->000000a8,515:00->0000002e,516:00->00000025,517:00->000000b3,514:00->000000a8,515:00->0000002e,514:00->000000a8
+E pc=0x110e30 abs=1135 pre=2e -> 28   taps[3]: 516:00->00000025,515:00->0000002e,515:00->0000002e
+E pc=0x10a5fc abs=1136 pre=25 -> 02   taps[3]: 517:00->000000b3,516:00->00000025,516:00->00000025
+E pc=0x10fbf4 abs=1137 pre=b3 -> 95   taps[2]: 517:00->000000b3,517:00->000000b3
+E pc=0x10d0ec abs=1138 pre=76 -> 95   taps[7]: 518:00->00000076,519:00->00000043,520:00->00000074,521:00->000000c8,518:00->00000076,519:00->00000043,518:00->00000076
+E pc=0x110e30 abs=1139 pre=43 -> a4   taps[3]: 520:00->00000074,519:00->00000043,519:00->00000043
+E pc=0x10a5fc abs=1140 pre=74 -> 9e   taps[3]: 521:00->000000c8,520:00->00000074,520:00->00000074
+E pc=0x10fbf4 abs=1141 pre=c8 -> 26   taps[2]: 521:00->000000c8,521:00->000000c8
+E pc=0x10d0ec abs=1142 pre=8c -> e5   taps[7]: 522:00->0000008c,523:00->00000049,524:00->000000fd,525:00->000000c0,522:00->0000008c,523:00->00000049,522:00->0000008c
+E pc=0x110e30 abs=1143 pre=49 -> c2   taps[3]: 524:00->000000fd,523:00->00000049,523:00->00000049
+E pc=0x10a5fc abs=1144 pre=fd -> 7f   taps[3]: 525:00->000000c0,524:00->000000fd,524:00->000000fd
+E pc=0x10fbf4 abs=1145 pre=c0 -> a0   taps[2]: 525:00->000000c0,525:00->000000c0
+E pc=0x10d0ec abs=1146 pre=12 -> 41   taps[7]: 526:00->00000012,527:00->0000007e,528:00->00000047,529:00->000000a0,526:00->00000012,527:00->0000007e,526:00->00000012
+E pc=0x110e30 abs=1147 pre=7e -> 87   taps[3]: 528:00->00000047,527:00->0000007e,527:00->0000007e
+E pc=0x10a5fc abs=1148 pre=47 -> 19   taps[3]: 529:00->000000a0,528:00->00000047,528:00->00000047
+E pc=0x10fbf4 abs=1149 pre=a0 -> 54   taps[2]: 529:00->000000a0,529:00->000000a0
+E pc=0x111c68 abs=1134 pre=af -> 60   taps[2]: 514:00->000000af,401:00->0000009a
+E pc=0x111c68 abs=1135 pre=28 -> 14   taps[2]: 515:00->00000028,402:00->00000069
+E pc=0x111c68 abs=1136 pre=02 -> 9a   taps[2]: 516:00->00000002,403:00->000000cd
+E pc=0x111c68 abs=1137 pre=95 -> cb   taps[2]: 517:00->00000095,404:00->0000000b
+E pc=0x111c68 abs=1138 pre=95 -> a9   taps[2]: 518:00->00000095,405:00->00000069
+E pc=0x111c68 abs=1139 pre=a4 -> 60   taps[2]: 519:00->000000a4,406:00->00000091
+E pc=0x111c68 abs=1140 pre=9e -> d3   taps[2]: 520:00->0000009e,407:00->00000018
+E pc=0x111c68 abs=1141 pre=26 -> d8   taps[2]: 521:00->00000026,408:00->000000ab
+E pc=0x111c68 abs=1142 pre=e5 -> 4c   taps[2]: 522:00->000000e5,409:00->000000fc
+E pc=0x111c68 abs=1143 pre=c2 -> 21   taps[2]: 523:00->000000c2,410:00->000000b6
+E pc=0x111c68 abs=1144 pre=7f -> 3a   taps[2]: 524:00->0000007f,411:00->00000010
+E pc=0x111c68 abs=1145 pre=a0 -> 94   taps[2]: 525:00->000000a0,412:00->00000061
+E pc=0x111c68 abs=1146 pre=41 -> 0a   taps[2]: 526:00->00000041,413:00->0000001e
+E pc=0x111c68 abs=1147 pre=87 -> c5   taps[2]: 527:00->00000087,414:00->00000017
+E pc=0x111c68 abs=1148 pre=19 -> 45   taps[2]: 528:00->00000019,415:00->00000009
+E pc=0x111c68 abs=1149 pre=54 -> 38   taps[2]: 529:00->00000054,416:00->00000039
+E pc=0x111f70 abs=1134 pre=60 -> d0   taps[2]: 514:00->00000060,97:63->00000085
+E pc=0x111f70 abs=1135 pre=14 -> fa   taps[2]: 515:00->00000014,21:50->000000af
+E pc=0x111f70 abs=1136 pre=9a -> b8   taps[2]: 516:00->0000009a,155:6d->000000ed
+E pc=0x111f70 abs=1137 pre=cb -> 1f   taps[2]: 517:00->000000cb,204:9b->0000004a
+E pc=0x111f70 abs=1138 pre=a9 -> d3   taps[2]: 518:00->000000a9,170:64->00000086
+E pc=0x111f70 abs=1139 pre=60 -> d0   taps[2]: 519:00->00000060,97:63->00000085
+E pc=0x111f70 abs=1140 pre=d3 -> 66   taps[2]: 520:00->000000d3,212:47->00000033
+E pc=0x111f70 abs=1141 pre=d8 -> 61   taps[2]: 521:00->000000d8,217:44->00000034
+E pc=0x111f70 abs=1142 pre=4c -> 29   taps[2]: 522:00->0000004c,77:52->0000007c
+E pc=0x111f70 abs=1143 pre=21 -> fd   taps[2]: 523:00->00000021,34:4c->000000a8
+E pc=0x111f70 abs=1144 pre=3a -> 80   taps[2]: 524:00->0000003a,59:cc->000000d5
+E pc=0x111f70 abs=1145 pre=94 -> 22   taps[2]: 525:00->00000094,149:32->00000077
+E pc=0x111f70 abs=1146 pre=0a -> 67   taps[2]: 526:00->0000000a,11:54->00000032
+E pc=0x111f70 abs=1147 pre=c5 -> a6   taps[2]: 527:00->000000c5,198:1a->000000f3
+E pc=0x111f70 abs=1148 pre=45 -> 6e   taps[2]: 528:00->00000045,70:bf->0000003b
+E pc=0x111f70 abs=1149 pre=38 -> 07   taps[2]: 529:00->00000038,57:2b->00000052
+E pc=0x10daa0 abs=1135 pre=fa -> d0   taps[2]: 515:00->000000fa,519:00->000000d0
+E pc=0x10dc08 abs=1139 pre=d0 -> fd   taps[1]: 523:00->000000fd
+E pc=0x10dd70 abs=1143 pre=fd -> a6   taps[1]: 527:00->000000a6
+E pc=0x10de2c abs=1147 pre=a6 -> fa   taps[0]: 
+E pc=0x10e040 abs=1136 pre=b8 -> 80   taps[2]: 516:00->000000b8,524:00->00000080
+E pc=0x10e0fc abs=1144 pre=80 -> b8   taps[0]: 
+E pc=0x10e310 abs=1140 pre=66 -> 6e   taps[2]: 520:00->00000066,528:00->0000006e
+E pc=0x10e3cc abs=1148 pre=6e -> 66   taps[0]: 
+E pc=0x10e5e0 abs=1137 pre=1f -> 07   taps[2]: 517:00->0000001f,529:00->00000007
+E pc=0x10e748 abs=1149 pre=07 -> 22   taps[1]: 525:00->00000022
+E pc=0x10e8b0 abs=1145 pre=22 -> 61   taps[1]: 521:00->00000061
+E pc=0x10c4d8 abs=1141 pre=61 -> 1f   taps[0]: 
+E pc=0x10d0ec abs=1134 pre=d0 -> 57   taps[7]: 514:00->000000d0,515:00->000000d0,516:00->00000080,517:00->00000007,514:00->000000d0,515:00->000000d0,514:00->000000d0
+E pc=0x110e30 abs=1135 pre=d0 -> f7   taps[3]: 516:00->00000080,515:00->000000d0,515:00->000000d0
+E pc=0x10a5fc abs=1136 pre=80 -> 12   taps[3]: 517:00->00000007,516:00->00000080,516:00->00000080
+E pc=0x10fbf4 abs=1137 pre=07 -> 35   taps[2]: 517:00->00000007,517:00->00000007
+E pc=0x10d0ec abs=1138 pre=d3 -> d0   taps[7]: 518:00->000000d3,519:00->000000fd,520:00->0000006e,521:00->0000001f,518:00->000000d3,519:00->000000fd,518:00->000000d3
+E pc=0x110e30 abs=1139 pre=fd -> 9f   taps[3]: 520:00->0000006e,519:00->000000fd,519:00->000000fd
+E pc=0x10a5fc abs=1140 pre=6e -> d3   taps[3]: 521:00->0000001f,520:00->0000006e,520:00->0000006e
+E pc=0x10fbf4 abs=1141 pre=1f -> c3   taps[2]: 521:00->0000001f,521:00->0000001f
+E pc=0x10d0ec abs=1142 pre=29 -> 7a   taps[7]: 522:00->00000029,523:00->000000a6,524:00->000000b8,525:00->00000061,522:00->00000029,523:00->000000a6,522:00->00000029
+E pc=0x110e30 abs=1143 pre=a6 -> cc   taps[3]: 524:00->000000b8,523:00->000000a6,523:00->000000a6
+E pc=0x10a5fc abs=1144 pre=b8 -> 47   taps[3]: 525:00->00000061,524:00->000000b8,524:00->000000b8
+E pc=0x10fbf4 abs=1145 pre=61 -> a7   taps[2]: 525:00->00000061,525:00->00000061
+E pc=0x10d0ec abs=1146 pre=67 -> 9f   taps[7]: 526:00->00000067,527:00->000000fa,528:00->00000066,529:00->00000022,526:00->00000067,527:00->000000fa,526:00->00000067
+E pc=0x110e30 abs=1147 pre=fa -> 00   taps[3]: 528:00->00000066,527:00->000000fa,527:00->000000fa
+E pc=0x10a5fc abs=1148 pre=66 -> 37   taps[3]: 529:00->00000022,528:00->00000066,528:00->00000066
+E pc=0x10fbf4 abs=1149 pre=22 -> 71   taps[2]: 529:00->00000022,529:00->00000022
+E pc=0x111c68 abs=1134 pre=57 -> e0   taps[2]: 514:00->00000057,417:00->000000e2
+E pc=0x111c68 abs=1135 pre=f7 -> 99   taps[2]: 515:00->000000f7,418:00->0000003b
+E pc=0x111c68 abs=1136 pre=12 -> 94   taps[2]: 516:00->00000012,419:00->000000d3
+E pc=0x111c68 abs=1137 pre=35 -> 1b   taps[2]: 517:00->00000035,420:00->0000007b
+E pc=0x111c68 abs=1138 pre=d0 -> c5   taps[2]: 518:00->000000d0,421:00->00000040
+E pc=0x111c68 abs=1139 pre=9f -> f3   taps[2]: 519:00->0000009f,422:00->00000039
+E pc=0x111c68 abs=1140 pre=d3 -> c6   taps[2]: 520:00->000000d3,423:00->00000040
+E pc=0x111c68 abs=1141 pre=c3 -> b9   taps[2]: 521:00->000000c3,424:00->0000002f
+E pc=0x111c68 abs=1142 pre=7a -> 57   taps[2]: 522:00->0000007a,425:00->00000078
+E pc=0x111c68 abs=1143 pre=cc -> 46   taps[2]: 523:00->000000cc,426:00->000000df
+E pc=0x111c68 abs=1144 pre=47 -> ea   taps[2]: 524:00->00000047,427:00->000000f8
+E pc=0x111c68 abs=1145 pre=a7 -> 13   taps[2]: 525:00->000000a7,428:00->000000e1
+E pc=0x111c68 abs=1146 pre=9f -> de   taps[2]: 526:00->0000009f,429:00->00000014
+E pc=0x111c68 abs=1147 pre=00 -> 0b   taps[2]: 527:00->00000000,430:00->0000005e
+E pc=0x111c68 abs=1148 pre=37 -> 8a   taps[2]: 528:00->00000037,431:00->000000e8
+E pc=0x111c68 abs=1149 pre=71 -> 4e   taps[2]: 529:00->00000071,432:00->0000006a
+E pc=0x111f70 abs=1134 pre=e0 -> e1   taps[2]: 514:00->000000e0,225:66->000000b4
+E pc=0x111f70 abs=1135 pre=99 -> ee   taps[2]: 515:00->00000099,154:30->000000bb
+E pc=0x111f70 abs=1136 pre=94 -> 22   taps[2]: 516:00->00000094,149:32->00000077
+E pc=0x111f70 abs=1137 pre=1b -> af   taps[2]: 517:00->0000001b,28:f5->000000fa
+E pc=0x111f70 abs=1138 pre=c5 -> a6   taps[2]: 518:00->000000c5,198:1a->000000f3
+E pc=0x111f70 abs=1139 pre=f3 -> 0d   taps[2]: 519:00->000000f3,244:74->00000058
+E pc=0x111f70 abs=1140 pre=c6 -> b4   taps[2]: 520:00->000000c6,199:b0->000000e1
+E pc=0x111f70 abs=1141 pre=b9 -> 56   taps[2]: 521:00->000000b9,186:00->00000003
+E pc=0x111f70 abs=1142 pre=57 -> 5b   taps[2]: 522:00->00000057,88:46->0000000e
+E pc=0x111f70 abs=1143 pre=46 -> 5a   taps[2]: 523:00->00000046,71:00->0000000f
+E pc=0x111f70 abs=1144 pre=ea -> 87   taps[2]: 524:00->000000ea,235:31->000000d2
+E pc=0x111f70 abs=1145 pre=13 -> 7d   taps[2]: 525:00->00000013,20:4f->00000028
+E pc=0x111f70 abs=1146 pre=de -> 1d   taps[2]: 526:00->000000de,223:63->00000048
+E pc=0x111f70 abs=1147 pre=0b -> 2b   taps[2]: 527:00->0000000b,12:ae->0000007e
+E pc=0x111f70 abs=1148 pre=8a -> 7e   taps[2]: 528:00->0000008a,139:31->0000002b
+E pc=0x111f70 abs=1149 pre=4e -> 2f   taps[2]: 529:00->0000004e,79:80->0000007a
+E pc=0x10daa0 abs=1135 pre=ee -> 0d   taps[2]: 515:00->000000ee,519:00->0000000d
+E pc=0x10dc08 abs=1139 pre=0d -> 5a   taps[1]: 523:00->0000005a
+E pc=0x10dd70 abs=1143 pre=5a -> 2b   taps[1]: 527:00->0000002b
+E pc=0x10de2c abs=1147 pre=2b -> ee   taps[0]: 
+E pc=0x10e040 abs=1136 pre=22 -> 87   taps[2]: 516:00->00000022,524:00->00000087
+E pc=0x10e0fc abs=1144 pre=87 -> 22   taps[0]: 
+E pc=0x10e310 abs=1140 pre=b4 -> 7e   taps[2]: 520:00->000000b4,528:00->0000007e
+E pc=0x10e3cc abs=1148 pre=7e -> b4   taps[0]: 
+E pc=0x10e5e0 abs=1137 pre=af -> 2f   taps[2]: 517:00->000000af,529:00->0000002f
+E pc=0x10e748 abs=1149 pre=2f -> 7d   taps[1]: 525:00->0000007d
+E pc=0x10e8b0 abs=1145 pre=7d -> 56   taps[1]: 521:00->00000056
+E pc=0x10c4d8 abs=1141 pre=56 -> af   taps[0]: 
+E pc=0x10d0ec abs=1134 pre=e1 -> 66   taps[7]: 514:00->000000e1,515:00->0000000d,516:00->00000087,517:00->0000002f,514:00->000000e1,515:00->0000000d,514:00->000000e1
+E pc=0x110e30 abs=1135 pre=0d -> 46   taps[3]: 516:00->00000087,515:00->0000000d,515:00->0000000d
+E pc=0x10a5fc abs=1136 pre=87 -> 88   taps[3]: 517:00->0000002f,516:00->00000087,516:00->00000087
+E pc=0x10fbf4 abs=1137 pre=2f -> ec   taps[2]: 517:00->0000002f,517:00->0000002f
+E pc=0x10d0ec abs=1138 pre=a6 -> 68   taps[7]: 518:00->000000a6,519:00->0000005a,520:00->0000007e,521:00->000000af,518:00->000000a6,519:00->0000005a,518:00->000000a6
+E pc=0x110e30 abs=1139 pre=5a -> 3f   taps[3]: 520:00->0000007e,519:00->0000005a,519:00->0000005a
+E pc=0x10a5fc abs=1140 pre=7e -> ea   taps[3]: 521:00->000000af,520:00->0000007e,520:00->0000007e
+E pc=0x10fbf4 abs=1141 pre=af -> 90   taps[2]: 521:00->000000af,521:00->000000af
+E pc=0x10d0ec abs=1142 pre=5b -> bf   taps[7]: 522:00->0000005b,523:00->0000002b,524:00->00000022,525:00->00000056,522:00->0000005b,523:00->0000002b,522:00->0000005b
+E pc=0x110e30 abs=1143 pre=2b -> 3d   taps[3]: 524:00->00000022,523:00->0000002b,523:00->0000002b
+E pc=0x10a5fc abs=1144 pre=22 -> ce   taps[3]: 525:00->00000056,524:00->00000022,524:00->00000022
+E pc=0x10fbf4 abs=1145 pre=56 -> 48   taps[2]: 525:00->00000056,525:00->00000056
+E pc=0x10d0ec abs=1146 pre=1d -> da   taps[7]: 526:00->0000001d,527:00->000000ee,528:00->000000b4,529:00->0000007d,526:00->0000001d,527:00->000000ee,526:00->0000001d
+E pc=0x110e30 abs=1147 pre=ee -> 60   taps[3]: 528:00->000000b4,527:00->000000ee,527:00->000000ee
+E pc=0x10a5fc abs=1148 pre=b4 -> 07   taps[3]: 529:00->0000007d,528:00->000000b4,528:00->000000b4
+E pc=0x10fbf4 abs=1149 pre=7d -> 87   taps[2]: 529:00->0000007d,529:00->0000007d
+E pc=0x111c68 abs=1134 pre=66 -> 2a   taps[2]: 514:00->00000066,433:00->00000019
+E pc=0x111c68 abs=1135 pre=46 -> 51   taps[2]: 515:00->00000046,434:00->00000042
+E pc=0x111c68 abs=1136 pre=88 -> 6a   taps[2]: 516:00->00000088,435:00->000000b7
+E pc=0x111c68 abs=1137 pre=ec -> c7   taps[2]: 517:00->000000ec,436:00->0000007e
+E pc=0x111c68 abs=1138 pre=68 -> 18   taps[2]: 518:00->00000068,437:00->00000025
+E pc=0x111c68 abs=1139 pre=3f -> ec   taps[2]: 519:00->0000003f,438:00->00000086
+E pc=0x111c68 abs=1140 pre=ea -> 45   taps[2]: 520:00->000000ea,439:00->000000fa
+E pc=0x111c68 abs=1141 pre=90 -> 45   taps[2]: 521:00->00000090,440:00->00000080
+E pc=0x111c68 abs=1142 pre=bf -> 66   taps[2]: 522:00->000000bf,441:00->0000008c
+E pc=0x111c68 abs=1143 pre=3d -> 0d   taps[2]: 523:00->0000003d,442:00->00000065
+E pc=0x111c68 abs=1144 pre=ce -> 24   taps[2]: 524:00->000000ce,443:00->000000bf
+E pc=0x111c68 abs=1145 pre=48 -> a9   taps[2]: 525:00->00000048,444:00->000000b4
+E pc=0x111c68 abs=1146 pre=da -> 48   taps[2]: 526:00->000000da,445:00->000000c7
+E pc=0x111c68 abs=1147 pre=60 -> 12   taps[2]: 527:00->00000060,446:00->00000027
+E pc=0x111c68 abs=1148 pre=07 -> b1   taps[2]: 528:00->00000007,447:00->000000e3
+E pc=0x111c68 abs=1149 pre=87 -> 0a   taps[2]: 529:00->00000087,448:00->000000d8
+E pc=0x111f70 abs=1134 pre=2a -> e5   taps[2]: 514:00->0000002a,43:cc->000000b0
+E pc=0x111f70 abs=1135 pre=51 -> d1   taps[2]: 515:00->00000051,82:68->00000084
+E pc=0x111f70 abs=1136 pre=6a -> 02   taps[2]: 516:00->0000006a,107:32->00000057
+E pc=0x111f70 abs=1137 pre=c7 -> c6   taps[2]: 517:00->000000c7,200:fc->00000093
+E pc=0x111f70 abs=1138 pre=18 -> ad   taps[2]: 518:00->00000018,25:12->000000f8
+E pc=0x111f70 abs=1139 pre=ec -> ce   taps[2]: 519:00->000000ec,237:36->0000009b
+E pc=0x111f70 abs=1140 pre=45 -> 6e   taps[2]: 520:00->00000045,70:bf->0000003b
+E pc=0x111f70 abs=1141 pre=45 -> 6e   taps[2]: 521:00->00000045,70:bf->0000003b
+E pc=0x111f70 abs=1142 pre=66 -> 33   taps[2]: 522:00->00000066,103:2e->00000066
+E pc=0x111f70 abs=1143 pre=0d -> d7   taps[2]: 523:00->0000000d,14:b0->00000082
+E pc=0x111f70 abs=1144 pre=24 -> 36   taps[2]: 524:00->00000024,37:2b->00000063
+E pc=0x111f70 abs=1145 pre=a9 -> d3   taps[2]: 525:00->000000a9,170:64->00000086
+E pc=0x111f70 abs=1146 pre=48 -> 52   taps[2]: 526:00->00000048,73:00->00000007
+E pc=0x111f70 abs=1147 pre=12 -> c9   taps[2]: 527:00->00000012,19:51->0000009c
+E pc=0x111f70 abs=1148 pre=b1 -> c8   taps[2]: 528:00->000000b1,178:c8->0000009d
+E pc=0x111f70 abs=1149 pre=0a -> 67   taps[2]: 529:00->0000000a,11:54->00000032
+E pc=0x10daa0 abs=1135 pre=d1 -> ce   taps[2]: 515:00->000000d1,519:00->000000ce
+E pc=0x10dc08 abs=1139 pre=ce -> d7   taps[1]: 523:00->000000d7
+E pc=0x10dd70 abs=1143 pre=d7 -> c9   taps[1]: 527:00->000000c9
+E pc=0x10de2c abs=1147 pre=c9 -> d1   taps[0]: 
+E pc=0x10e040 abs=1136 pre=02 -> 36   taps[2]: 516:00->00000002,524:00->00000036
+E pc=0x10e0fc abs=1144 pre=36 -> 02   taps[0]: 
+E pc=0x10e310 abs=1140 pre=6e -> c8   taps[2]: 520:00->0000006e,528:00->000000c8
+E pc=0x10e3cc abs=1148 pre=c8 -> 6e   taps[0]: 
+E pc=0x10e5e0 abs=1137 pre=c6 -> 67   taps[2]: 517:00->000000c6,529:00->00000067
+E pc=0x10e748 abs=1149 pre=67 -> d3   taps[1]: 525:00->000000d3
+E pc=0x10e8b0 abs=1145 pre=d3 -> 6e   taps[1]: 521:00->0000006e
+E pc=0x10c4d8 abs=1141 pre=6e -> c6   taps[0]: 
+E pc=0x10d0ec abs=1134 pre=e5 -> c9   taps[7]: 514:00->000000e5,515:00->000000ce,516:00->00000036,517:00->00000067,514:00->000000e5,515:00->000000ce,514:00->000000e5
+E pc=0x110e30 abs=1135 pre=ce -> 5f   taps[3]: 516:00->00000036,515:00->000000ce,515:00->000000ce
+E pc=0x10a5fc abs=1136 pre=36 -> ee   taps[3]: 517:00->00000067,516:00->00000036,516:00->00000036
+E pc=0x10fbf4 abs=1137 pre=67 -> 02   taps[2]: 517:00->00000067,517:00->00000067
+E pc=0x10d0ec abs=1138 pre=ad -> 2d   taps[7]: 518:00->000000ad,519:00->000000d7,520:00->000000c8,521:00->000000c6,518:00->000000ad,519:00->000000d7,518:00->000000ad
+E pc=0x110e30 abs=1139 pre=d7 -> 9d   taps[3]: 520:00->000000c8,519:00->000000d7,519:00->000000d7
+E pc=0x10a5fc abs=1140 pre=c8 -> a0   taps[3]: 521:00->000000c6,520:00->000000c8,520:00->000000c8
+E pc=0x10fbf4 abs=1141 pre=c6 -> 64   taps[2]: 521:00->000000c6,521:00->000000c6
+E pc=0x10d0ec abs=1142 pre=33 -> 4a   taps[7]: 522:00->00000033,523:00->000000c9,524:00->00000002,525:00->0000006e,522:00->00000033,523:00->000000c9,522:00->00000033
+E pc=0x110e30 abs=1143 pre=c9 -> d2   taps[3]: 524:00->00000002,523:00->000000c9,523:00->000000c9
+E pc=0x10a5fc abs=1144 pre=02 -> 4c   taps[3]: 525:00->0000006e,524:00->00000002,524:00->00000002
+E pc=0x10fbf4 abs=1145 pre=6e -> 42   taps[2]: 525:00->0000006e,525:00->0000006e
+E pc=0x10d0ec abs=1146 pre=52 -> 71   taps[7]: 526:00->00000052,527:00->000000d1,528:00->0000006e,529:00->000000d3,526:00->00000052,527:00->000000d1,526:00->00000052
+E pc=0x110e30 abs=1147 pre=d1 -> 8a   taps[3]: 528:00->0000006e,527:00->000000d1,527:00->000000d1
+E pc=0x10a5fc abs=1148 pre=6e -> 31   taps[3]: 529:00->000000d3,528:00->0000006e,528:00->0000006e
+E pc=0x10fbf4 abs=1149 pre=d3 -> f4   taps[2]: 529:00->000000d3,529:00->000000d3
+E pc=0x111c68 abs=1134 pre=c9 -> 1e   taps[2]: 514:00->000000c9,449:00->00000082
+E pc=0x111c68 abs=1135 pre=5f -> 7f   taps[2]: 515:00->0000005f,450:00->00000075
+E pc=0x111c68 abs=1136 pre=ee -> 35   taps[2]: 516:00->000000ee,451:00->0000008e
+E pc=0x111c68 abs=1137 pre=02 -> 63   taps[2]: 517:00->00000002,452:00->00000034
+E pc=0x111c68 abs=1138 pre=2d -> ef   taps[2]: 518:00->0000002d,453:00->00000097
+E pc=0x111c68 abs=1139 pre=9d -> d1   taps[2]: 519:00->0000009d,454:00->00000019
+E pc=0x111c68 abs=1140 pre=a0 -> 6e   taps[2]: 520:00->000000a0,455:00->0000009b
+E pc=0x111c68 abs=1141 pre=64 -> 7f   taps[2]: 521:00->00000064,456:00->0000004e
+E pc=0x111c68 abs=1142 pre=4a -> a5   taps[2]: 522:00->0000004a,457:00->000000ba
+E pc=0x111c68 abs=1143 pre=d2 -> 14   taps[2]: 523:00->000000d2,458:00->00000093
+E pc=0x111c68 abs=1144 pre=4c -> 2f   taps[2]: 524:00->0000004c,459:00->00000036
+E pc=0x111c68 abs=1145 pre=42 -> ed   taps[2]: 525:00->00000042,460:00->000000fa
+E pc=0x111c68 abs=1146 pre=71 -> df   taps[2]: 526:00->00000071,461:00->000000fb
+E pc=0x111c68 abs=1147 pre=8a -> 47   taps[2]: 527:00->0000008a,462:00->00000098
+E pc=0x111c68 abs=1148 pre=31 -> ef   taps[2]: 528:00->00000031,463:00->0000008b
+E pc=0x111c68 abs=1149 pre=f4 -> 64   taps[2]: 529:00->000000f4,464:00->000000c5
+E pc=0x111f70 abs=1134 pre=1e -> 72   taps[2]: 514:00->0000001e,31:cc->00000027
+E pc=0x111f70 abs=1135 pre=7f -> d2   taps[2]: 515:00->0000007f,128:53->00000087
+E pc=0x111f70 abs=1136 pre=35 -> 96   taps[2]: 516:00->00000035,54:4c->000000c3
+E pc=0x111f70 abs=1137 pre=63 -> fb   taps[2]: 517:00->00000063,100:75->000000ae
+E pc=0x111f70 abs=1138 pre=ef -> df   taps[2]: 518:00->000000ef,240:6f->0000008a
+E pc=0x111f70 abs=1139 pre=d1 -> 3e   taps[2]: 519:00->000000d1,210:00->0000006b
+E pc=0x111f70 abs=1140 pre=6e -> 9f   taps[2]: 520:00->0000006e,111:30->000000ca
+E pc=0x111f70 abs=1141 pre=7f -> d2   taps[2]: 521:00->0000007f,128:53->00000087
+E pc=0x111f70 abs=1142 pre=a5 -> 06   taps[2]: 522:00->000000a5,166:32->00000053
+E pc=0x111f70 abs=1143 pre=14 -> fa   taps[2]: 523:00->00000014,21:50->000000af
+E pc=0x111f70 abs=1144 pre=2f -> 15   taps[2]: 524:00->0000002f,48:1a->00000040
+E pc=0x111f70 abs=1145 pre=ed -> 55   taps[2]: 525:00->000000ed,238:2b->00000000
+E pc=0x111f70 abs=1146 pre=df -> 9e   taps[2]: 526:00->000000df,224:37->000000cb
+E pc=0x111f70 abs=1147 pre=47 -> a0   taps[2]: 527:00->00000047,72:00->000000f5
+E pc=0x111f70 abs=1148 pre=ef -> df   taps[2]: 528:00->000000ef,240:6f->0000008a
+E pc=0x111f70 abs=1149 pre=64 -> 43   taps[2]: 529:00->00000064,101:69->00000016
+E pc=0x10daa0 abs=1135 pre=d2 -> 3e   taps[2]: 515:00->000000d2,519:00->0000003e
+E pc=0x10dc08 abs=1139 pre=3e -> fa   taps[1]: 523:00->000000fa
+E pc=0x10dd70 abs=1143 pre=fa -> a0   taps[1]: 527:00->000000a0
+E pc=0x10de2c abs=1147 pre=a0 -> d2   taps[0]: 
+E pc=0x10e040 abs=1136 pre=96 -> 15   taps[2]: 516:00->00000096,524:00->00000015
+E pc=0x10e0fc abs=1144 pre=15 -> 96   taps[0]: 
+E pc=0x10e310 abs=1140 pre=9f -> df   taps[2]: 520:00->0000009f,528:00->000000df
+E pc=0x10e3cc abs=1148 pre=df -> 9f   taps[0]: 
+E pc=0x10e5e0 abs=1137 pre=fb -> 43   taps[2]: 517:00->000000fb,529:00->00000043
+E pc=0x10e748 abs=1149 pre=43 -> 55   taps[1]: 525:00->00000055
+E pc=0x10e8b0 abs=1145 pre=55 -> d2   taps[1]: 521:00->000000d2
+E pc=0x10c4d8 abs=1141 pre=d2 -> fb   taps[0]: 
+E pc=0x10d0ec abs=1134 pre=72 -> f0   taps[7]: 514:00->00000072,515:00->0000003e,516:00->00000015,517:00->00000043,514:00->00000072,515:00->0000003e,514:00->00000072
+E pc=0x110e30 abs=1135 pre=3e -> 72   taps[3]: 516:00->00000015,515:00->0000003e,515:00->0000003e
+E pc=0x10a5fc abs=1136 pre=15 -> a3   taps[3]: 517:00->00000043,516:00->00000015,516:00->00000015
+E pc=0x10fbf4 abs=1137 pre=43 -> 3b   taps[2]: 517:00->00000043,517:00->00000043
+E pc=0x10d0ec abs=1138 pre=df -> 94   taps[7]: 518:00->000000df,519:00->000000fa,520:00->000000df,521:00->000000fb,518:00->000000df,519:00->000000fa,518:00->000000df
+E pc=0x110e30 abs=1139 pre=fa -> b1   taps[3]: 520:00->000000df,519:00->000000fa,519:00->000000fa
+E pc=0x10a5fc abs=1140 pre=df -> 96   taps[3]: 521:00->000000fb,520:00->000000df,520:00->000000df
+E pc=0x10fbf4 abs=1141 pre=fb -> b2   taps[2]: 521:00->000000fb,521:00->000000fb
+E pc=0x10d0ec abs=1142 pre=06 -> b3   taps[7]: 522:00->00000006,523:00->000000a0,524:00->00000096,525:00->000000d2,522:00->00000006,523:00->000000a0,522:00->00000006
+E pc=0x110e30 abs=1143 pre=a0 -> 2e   taps[3]: 524:00->00000096,523:00->000000a0,523:00->000000a0
+E pc=0x10a5fc abs=1144 pre=96 -> fc   taps[3]: 525:00->000000d2,524:00->00000096,524:00->00000096
+E pc=0x10fbf4 abs=1145 pre=d2 -> 83   taps[2]: 525:00->000000d2,525:00->000000d2
+E pc=0x10d0ec abs=1146 pre=9e -> 80   taps[7]: 526:00->0000009e,527:00->000000d2,528:00->0000009f,529:00->00000055,526:00->0000009e,527:00->000000d2,526:00->0000009e
+E pc=0x110e30 abs=1147 pre=d2 -> ce   taps[3]: 528:00->0000009f,527:00->000000d2,527:00->000000d2
+E pc=0x10a5fc abs=1148 pre=9f -> 96   taps[3]: 529:00->00000055,528:00->0000009f,528:00->0000009f
+E pc=0x10fbf4 abs=1149 pre=55 -> 5e   taps[2]: 529:00->00000055,529:00->00000055
+E pc=0x111c68 abs=1134 pre=f0 -> 58   taps[2]: 514:00->000000f0,465:00->000000fd
+E pc=0x111c68 abs=1135 pre=72 -> d8   taps[2]: 515:00->00000072,466:00->000000ff
+E pc=0x111c68 abs=1136 pre=a3 -> 5c   taps[2]: 516:00->000000a3,467:00->000000aa
+E pc=0x111c68 abs=1137 pre=3b -> 70   taps[2]: 517:00->0000003b,468:00->0000001e
+E pc=0x111c68 abs=1138 pre=94 -> 4c   taps[2]: 518:00->00000094,469:00->0000008d
+E pc=0x111c68 abs=1139 pre=b1 -> c8   taps[2]: 519:00->000000b1,470:00->0000002c
+E pc=0x111c68 abs=1140 pre=96 -> c6   taps[2]: 520:00->00000096,471:00->00000005
+E pc=0x111c68 abs=1141 pre=b2 -> 2c   taps[2]: 521:00->000000b2,472:00->000000cb
+E pc=0x111c68 abs=1142 pre=b3 -> b2   taps[2]: 522:00->000000b3,473:00->00000054
+E pc=0x111c68 abs=1143 pre=2e -> 67   taps[2]: 523:00->0000002e,474:00->0000001c
+E pc=0x111c68 abs=1144 pre=fc -> 46   taps[2]: 524:00->000000fc,475:00->000000ef
+E pc=0x111c68 abs=1145 pre=83 -> fc   taps[2]: 525:00->00000083,476:00->0000002a
+E pc=0x111c68 abs=1146 pre=80 -> 13   taps[2]: 526:00->00000080,477:00->000000c6
+E pc=0x111c68 abs=1147 pre=ce -> f5   taps[2]: 527:00->000000ce,478:00->0000006e
+E pc=0x111c68 abs=1148 pre=96 -> 9a   taps[2]: 528:00->00000096,479:00->00000059
+E pc=0x111c68 abs=1149 pre=5e -> ac   taps[2]: 529:00->0000005e,480:00->000000a7
+E pc=0x111f70 abs=1134 pre=58 -> 6a   taps[2]: 514:00->00000058,89:62->0000003f
+E pc=0x111f70 abs=1135 pre=d8 -> 61   taps[2]: 515:00->000000d8,217:44->00000034
+E pc=0x111f70 abs=1136 pre=5c -> 4a   taps[2]: 516:00->0000005c,93:30->0000001f
+E pc=0x111f70 abs=1137 pre=70 -> 51   taps[2]: 517:00->00000070,113:34->00000004
+E pc=0x111f70 abs=1138 pre=4c -> 29   taps[2]: 518:00->0000004c,77:52->0000007c
+E pc=0x111f70 abs=1139 pre=c8 -> e8   taps[2]: 519:00->000000c8,201:fb->000000bd
+E pc=0x111f70 abs=1140 pre=c6 -> b4   taps[2]: 520:00->000000c6,199:b0->000000e1
+E pc=0x111f70 abs=1141 pre=2c -> 71   taps[2]: 521:00->0000002c,45:2b->00000024
+E pc=0x111f70 abs=1142 pre=b2 -> 37   taps[2]: 522:00->000000b2,179:24->00000062
+E pc=0x111f70 abs=1143 pre=67 -> 85   taps[2]: 523:00->00000067,104:39->000000d0
+E pc=0x111f70 abs=1144 pre=46 -> 5a   taps[2]: 524:00->00000046,71:00->0000000f
+E pc=0x111f70 abs=1145 pre=fc -> b0   taps[2]: 525:00->000000fc,253:37->000000e5
+E pc=0x111f70 abs=1146 pre=13 -> 7d   taps[2]: 526:00->00000013,20:4f->00000028
+E pc=0x111f70 abs=1147 pre=f5 -> e6   taps[2]: 527:00->000000f5,246:62->000000b3
+E pc=0x111f70 abs=1148 pre=9a -> b8   taps[2]: 528:00->0000009a,155:6d->000000ed
+E pc=0x111f70 abs=1149 pre=ac -> 91   taps[2]: 529:00->000000ac,173:30->000000c4
+E pc=0x10daa0 abs=1135 pre=61 -> e8   taps[2]: 515:00->00000061,519:00->000000e8
+E pc=0x10dc08 abs=1139 pre=e8 -> 85   taps[1]: 523:00->00000085
+E pc=0x10dd70 abs=1143 pre=85 -> e6   taps[1]: 527:00->000000e6
+E pc=0x10de2c abs=1147 pre=e6 -> 61   taps[0]: 
+E pc=0x10e040 abs=1136 pre=4a -> 5a   taps[2]: 516:00->0000004a,524:00->0000005a
+E pc=0x10e0fc abs=1144 pre=5a -> 4a   taps[0]: 
+E pc=0x10e310 abs=1140 pre=b4 -> b8   taps[2]: 520:00->000000b4,528:00->000000b8
+E pc=0x10e3cc abs=1148 pre=b8 -> b4   taps[0]: 
+E pc=0x10e5e0 abs=1137 pre=51 -> 91   taps[2]: 517:00->00000051,529:00->00000091
+E pc=0x10e748 abs=1149 pre=91 -> b0   taps[1]: 525:00->000000b0
+E pc=0x10e8b0 abs=1145 pre=b0 -> 71   taps[1]: 521:00->00000071
+E pc=0x10c4d8 abs=1141 pre=71 -> 51   taps[0]: 
+E pc=0x111c68 abs=1134 pre=6a -> 1f   taps[2]: 514:00->0000006a,481:00->00000020
+E pc=0x111c68 abs=1135 pre=e8 -> 36   taps[2]: 515:00->000000e8,482:00->0000008b
+E pc=0x111c68 abs=1136 pre=5a -> 08   taps[2]: 516:00->0000005a,483:00->00000007
+E pc=0x111c68 abs=1137 pre=91 -> 2c   taps[2]: 517:00->00000091,484:00->000000e8
+E pc=0x111c68 abs=1138 pre=29 -> 9e   taps[2]: 518:00->00000029,485:00->000000e2
+E pc=0x111c68 abs=1139 pre=85 -> 17   taps[2]: 519:00->00000085,486:00->000000c7
+E pc=0x111c68 abs=1140 pre=b8 -> 24   taps[2]: 520:00->000000b8,487:00->000000c9
+E pc=0x111c68 abs=1141 pre=51 -> f7   taps[2]: 521:00->00000051,488:00->000000f3
+E pc=0x111c68 abs=1142 pre=37 -> 6f   taps[2]: 522:00->00000037,489:00->0000000d
+E pc=0x111c68 abs=1143 pre=e6 -> b2   taps[2]: 523:00->000000e6,490:00->00000001
+E pc=0x111c68 abs=1144 pre=4a -> b5   taps[2]: 524:00->0000004a,491:00->000000aa
+E pc=0x111c68 abs=1145 pre=71 -> 78   taps[2]: 525:00->00000071,492:00->0000005c
+E pc=0x111c68 abs=1146 pre=7d -> 8b   taps[2]: 526:00->0000007d,493:00->000000a3
+E pc=0x111c68 abs=1147 pre=61 -> f8   taps[2]: 527:00->00000061,494:00->000000cc
+E pc=0x111c68 abs=1148 pre=b4 -> 95   taps[2]: 528:00->000000b4,495:00->00000074
+E pc=0x111c68 abs=1149 pre=b0 -> 29   taps[2]: 529:00->000000b0,496:00->000000cc
+E pc=0x109f9c abs=1117 pre=55 -> 1f   taps[1]: 514:00->0000001f
+E pc=0x109f9c abs=1118 pre=95 -> 36   taps[1]: 515:00->00000036
+E pc=0x109f9c abs=1119 pre=c3 -> 08   taps[1]: 516:00->00000008
+E pc=0x109f9c abs=1120 pre=c4 -> 2c   taps[1]: 517:00->0000002c
+E pc=0x109f9c abs=1121 pre=31 -> 9e   taps[1]: 518:00->0000009e
+E pc=0x109f9c abs=1122 pre=56 -> 17   taps[1]: 519:00->00000017
+E pc=0x109f9c abs=1123 pre=7e -> 24   taps[1]: 520:00->00000024
+E pc=0x109f9c abs=1124 pre=63 -> f7   taps[1]: 521:00->000000f7

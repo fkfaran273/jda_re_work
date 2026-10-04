@@ -1,0 +1,560 @@
+[
+ {
+  "name": "width 1080->1081",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": [
+   [
+    96,
+    1080,
+    1081
+   ]
+  ]
+ },
+ {
+  "name": "height 2400->2401",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": [
+   [
+    100,
+    2400,
+    2401
+   ]
+  ]
+ },
+ {
+  "name": "package other",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": []
+ },
+ {
+  "name": "hmac[0]^1",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": []
+ },
+ {
+  "name": "cert_sha1 vary",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": []
+ },
+ {
+  "name": "cert vary",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": []
+ },
+ {
+  "name": "sec +1",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": []
+ },
+ {
+  "name": "nsec +1ms",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": [
+   [
+    1816,
+    1424500163,
+    124265923
+   ],
+   [
+    1820,
+    1146956155,
+    1146959970
+   ],
+   [
+    1928,
+    1424500163,
+    124265923
+   ],
+   [
+    1932,
+    1146956155,
+    1146959970
+   ]
+  ]
+ },
+ {
+  "name": "nsec +1ns",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": [
+   [
+    1816,
+    1424500163,
+    1440884163
+   ],
+   [
+    1928,
+    1424500163,
+    1440884163
+   ]
+  ]
+ },
+ {
+  "name": "usec +1",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": []
+ },
+ {
+  "name": "tid +1",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": []
+ },
+ {
+  "name": "pid +1",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": []
+ },
+ {
+  "name": "tls +0x1000",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": [
+   [
+    712,
+    286261248,
+    286265344
+   ],
+   [
+    1920,
+    286261248,
+    286265344
+   ],
+   [
+    2096,
+    286261248,
+    286265344
+   ]
+  ]
+ },
+ {
+  "name": "guard ^0xff",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": [
+   [
+    1936,
+    1432778632,
+    1432778615
+   ],
+   [
+    1944,
+    1432778632,
+    1432778615
+   ]
+  ]
+ },
+ {
+  "name": "srand 2",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": []
+ },
+ {
+  "name": "environment val",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": [
+   [
+    176,
+    0,
+    2987881749
+   ],
+   [
+    180,
+    0,
+    1988812744
+   ],
+   [
+    200,
+    0,
+    1397076
+   ],
+   [
+    208,
+    0,
+    1045616
+   ],
+   [
+    212,
+    0,
+    768
+   ],
+   [
+    216,
+    0,
+    1587783498
+   ],
+   [
+    220,
+    0,
+    4196311119
+   ],
+   [
+    228,
+    0,
+    2
+   ],
+   [
+    232,
+    0,
+    1047696
+   ],
+   [
+    236,
+    0,
+    768
+   ],
+   [
+    240,
+    0,
+    1306204
+   ],
+   [
+    248,
+    0,
+    121665553
+   ],
+   [
+    252,
+    0,
+    4154222509
+   ],
+   [
+    256,
+    0,
+    3184058186
+   ],
+   [
+    260,
+    0,
+    3369405675
+   ],
+   [
+    264,
+    0,
+    4284790732
+   ],
+   [
+    268,
+    0,
+    2403201598
+   ],
+   [
+    288,
+    0,
+    3601177119
+   ],
+   [
+    292,
+    0,
+    4128360581
+   ],
+   [
+    296,
+    0,
+    344245045
+   ],
+   [
+    300,
+    0,
+    3016496819
+   ],
+   [
+    304,
+    0,
+    4055402361
+   ],
+   [
+    308,
+    0,
+    246428536
+   ],
+   [
+    312,
+    0,
+    1397076
+   ],
+   [
+    336,
+    0,
+    286261248
+   ],
+   [
+    340,
+    0,
+    1
+   ],
+   [
+    368,
+    0,
+    3178126766
+   ],
+   [
+    372,
+    0,
+    686844586
+   ],
+   [
+    376,
+    0,
+    1048064
+   ],
+   [
+    380,
+    0,
+    768
+   ],
+   [
+    384,
+    0,
+    1047952
+   ],
+   [
+    388,
+    0,
+    768
+   ],
+   [
+    392,
+    0,
+    1047920
+   ],
+   [
+    396,
+    0,
+    768
+   ],
+   [
+    400,
+    0,
+    4294967264
+   ],
+   [
+    404,
+    0,
+    4294967168
+   ],
+   [
+    1840,
+    641300,
+    1789240512
+   ],
+   [
+    1844,
+    0,
+    503000000
+   ],
+   [
+    1856,
+    3229646323,
+    1432778632
+   ],
+   [
+    1860,
+    386161304,
+    287454020
+   ],
+   [
+    1864,
+    4248887227,
+    0
+   ],
+   [
+    1868,
+    480307904,
+    1087196160
+   ],
+   [
+    1880,
+    1047804,
+    1047168
+   ],
+   [
+    1888,
+    1626793178,
+    56724
+   ],
+   [
+    1892,
+    2302718138,
+    0
+   ],
+   [
+    1896,
+    3309330313,
+    937516461
+   ],
+   [
+    1900,
+    2489803335,
+    740957004
+   ],
+   [
+    1904,
+    4096,
+    1047808
+   ],
+   [
+    1908,
+    1024,
+    768
+   ],
+   [
+    1932,
+    1146956155,
+    0
+   ]
+  ]
+ },
+ {
+  "name": "app_version val",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": []
+ },
+ {
+  "name": "android_id non-null",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": [
+   [
+    0,
+    1568,
+    1632
+   ],
+   [
+    8,
+    1296,
+    1360
+   ],
+   [
+    16,
+    1888,
+    1952
+   ],
+   [
+    24,
+    1360,
+    1424
+   ],
+   [
+    32,
+    1424,
+    1488
+   ],
+   [
+    40,
+    1488,
+    1552
+   ],
+   [
+    48,
+    1696,
+    1760
+   ],
+   [
+    56,
+    1824,
+    1888
+   ],
+   [
+    64,
+    2016,
+    2080
+   ],
+   [
+    72,
+    1232,
+    1296
+   ],
+   [
+    80,
+    1952,
+    2016
+   ],
+   [
+    88,
+    1632,
+    1696
+   ],
+   [
+    104,
+    2080,
+    2144
+   ],
+   [
+    1784,
+    2496,
+    2560
+   ]
+  ]
+ },
+ {
+  "name": "client_sdk val",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": []
+ },
+ {
+  "name": "secret_id val",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": []
+ },
+ {
+  "name": "prop[0]:ro.product.manufacturer",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": []
+ },
+ {
+  "name": "prop[1]:ro.product.model",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": []
+ },
+ {
+  "name": "prop[2]:ro.product.device",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": []
+ },
+ {
+  "name": "prop[3]:ro.product.name",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": []
+ },
+ {
+  "name": "prop[4]:ro.build.fingerprint",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": []
+ },
+ {
+  "name": "prop[5]:ro.build.version.release",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": []
+ },
+ {
+  "name": "prop[6]:ro.build.version.sdk",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": []
+ },
+ {
+  "name": "prop[7]:ro.build.display.id",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": []
+ },
+ {
+  "name": "prop[8]:ro.build.tags",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": []
+ },
+ {
+  "name": "prop[9]:ro.build.type",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": []
+ },
+ {
+  "name": "prop[10]:ro.hardware",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": []
+ },
+ {
+  "name": "prop[11]:ro.board.platform",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": []
+ },
+ {
+  "name": "prop[12]:ro.crypto.state",
+  "stopped": "Invalid memory read (UC_ERR_READ_UNMAPPED) pc=0x8d364",
+  "diffs": []
+ }
+]

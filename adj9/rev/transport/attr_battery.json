@@ -1,0 +1,582 @@
+[
+ {
+  "variant": "Q1",
+  "desc": "task query + transport_session.json auth",
+  "path": "/attribution?gps_adid=363e5b78-8670-4c50-8348-9f87c604111b&activity_kind=attribution&initiated_by=sdk",
+  "auth_sha": "len=407",
+  "rows": [
+   {
+    "tag": "A",
+    "label": "python http.client (CPython/OpenSSL)",
+    "probe": "GET",
+    "status": 404,
+    "verdict": "PASS(recognized)",
+    "note": "ask_in=2592000000 adid=?",
+    "body": "{\"error\":\"Attribution request failed (failed to get app token)\",\"ask_in\":2592000000}"
+   },
+   {
+    "tag": "B131",
+    "label": "curl_cffi impersonate=chrome131",
+    "probe": "GET",
+    "status": 404,
+    "verdict": "PASS(recognized)",
+    "note": "ask_in=2592000000 adid=?",
+    "body": "{\"error\":\"Attribution request failed (failed to get app token)\",\"ask_in\":2592000000}"
+   },
+   {
+    "tag": "B131a",
+    "label": "curl_cffi impersonate=chrome131_android",
+    "probe": "GET",
+    "status": 404,
+    "verdict": "PASS(recognized)",
+    "note": "ask_in=2592000000 adid=?",
+    "body": "{\"error\":\"Attribution request failed (failed to get app token)\",\"ask_in\":2592000000}"
+   },
+   {
+    "tag": "B124",
+    "label": "curl_cffi impersonate=chrome124",
+    "probe": "GET",
+    "status": 404,
+    "verdict": "PASS(recognized)",
+    "note": "ask_in=2592000000 adid=?",
+    "body": "{\"error\":\"Attribution request failed (failed to get app token)\",\"ask_in\":2592000000}"
+   },
+   {
+    "tag": "B119",
+    "label": "curl_cffi impersonate=chrome119",
+    "probe": "GET",
+    "status": 404,
+    "verdict": "PASS(recognized)",
+    "note": "ask_in=2592000000 adid=?",
+    "body": "{\"error\":\"Attribution request failed (failed to get app token)\",\"ask_in\":2592000000}"
+   },
+   {
+    "tag": "Cok11",
+    "label": "tls_client okhttp4_android_11",
+    "probe": "GET",
+    "status": 404,
+    "verdict": "PASS(recognized)",
+    "note": "ask_in=2592000000 adid=?",
+    "body": "{\"error\":\"Attribution request failed (failed to get app token)\",\"ask_in\":2592000000}"
+   },
+   {
+    "tag": "Cok12",
+    "label": "tls_client okhttp4_android_12",
+    "probe": "GET",
+    "status": 404,
+    "verdict": "PASS(recognized)",
+    "note": "ask_in=2592000000 adid=?",
+    "body": "{\"error\":\"Attribution request failed (failed to get app token)\",\"ask_in\":2592000000}"
+   },
+   {
+    "tag": "Cok13",
+    "label": "tls_client okhttp4_android_13",
+    "probe": "GET",
+    "status": 404,
+    "verdict": "PASS(recognized)",
+    "note": "ask_in=2592000000 adid=?",
+    "body": "{\"error\":\"Attribution request failed (failed to get app token)\",\"ask_in\":2592000000}"
+   },
+   {
+    "tag": "C120",
+    "label": "tls_client chrome_120",
+    "probe": "GET",
+    "status": 404,
+    "verdict": "PASS(recognized)",
+    "note": "ask_in=2592000000 adid=?",
+    "body": "{\"error\":\"Attribution request failed (failed to get app token)\",\"ask_in\":2592000000}"
+   },
+   {
+    "tag": "D",
+    "label": "device curl (phone IP + BoringSSL)",
+    "probe": "GET",
+    "status": 404,
+    "verdict": "PASS(recognized)",
+    "note": "ask_in=2592000000 adid=?",
+    "body": "{\"error\":\"Attribution request failed (failed to get app token)\",\"ask_in\":2592000000}"
+   },
+   {
+    "tag": "XJSON",
+    "label": "python http.client | transport_session.json pairing",
+    "probe": "GET",
+    "status": 404,
+    "verdict": "PASS(recognized)",
+    "note": "ask_in=2592000000 adid=?",
+    "body": "{\"error\":\"Attribution request failed (failed to get app token)\",\"ask_in\":2592000000}"
+   },
+   {
+    "tag": "XJSONa",
+    "label": "curl_cffi chrome131 | transport_session.json pairing",
+    "probe": "GET",
+    "status": 404,
+    "verdict": "PASS(recognized)",
+    "note": "ask_in=2592000000 adid=?",
+    "body": "{\"error\":\"Attribution request failed (failed to get app token)\",\"ask_in\":2592000000}"
+   }
+  ]
+ },
+ {
+  "variant": "Q2",
+  "desc": "KNOWN-GOOD: full genuine attribution query + its own genuine blob (row 5)",
+  "path": "/attribution?initiated_by=backend&gps_adid_attempt=1&api_level=31&app_version=3.14.0&app_token=jut9tib0eeps&os_version=12&created_at=2026-09-27T19%3A24%3A51.522Z%2B0530&device_type=phone&gps_adid=363e5b78-8670-4c50-8348-9f87c604111b&foreground=1&android_uuid=906ddeb2-2898-490a-afc7-74622c49134c&sent_at=2026-09-27T19%3A24%3A51.550Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=com.penti.app&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1",
+  "auth_sha": "len=407",
+  "rows": [
+   {
+    "tag": "A",
+    "label": "python http.client (CPython/OpenSSL)",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "B131",
+    "label": "curl_cffi impersonate=chrome131",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "B131a",
+    "label": "curl_cffi impersonate=chrome131_android",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "B124",
+    "label": "curl_cffi impersonate=chrome124",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "B119",
+    "label": "curl_cffi impersonate=chrome119",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "Cok11",
+    "label": "tls_client okhttp4_android_11",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "Cok12",
+    "label": "tls_client okhttp4_android_12",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "Cok13",
+    "label": "tls_client okhttp4_android_13",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "C120",
+    "label": "tls_client chrome_120",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "D",
+    "label": "device curl (phone IP + BoringSSL)",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "XJSON",
+    "label": "python http.client | transport_session.json pairing",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "XJSONa",
+    "label": "curl_cffi chrome131 | transport_session.json pairing",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   }
+  ]
+ },
+ {
+  "variant": "Q3",
+  "desc": "genuine attribution query + SESSION blob",
+  "path": "/attribution?initiated_by=backend&gps_adid_attempt=1&api_level=31&app_version=3.14.0&app_token=jut9tib0eeps&os_version=12&created_at=2026-09-27T19%3A24%3A51.522Z%2B0530&device_type=phone&gps_adid=363e5b78-8670-4c50-8348-9f87c604111b&foreground=1&android_uuid=906ddeb2-2898-490a-afc7-74622c49134c&sent_at=2026-09-27T19%3A24%3A51.550Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=com.penti.app&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1",
+  "auth_sha": "len=407",
+  "rows": [
+   {
+    "tag": "A",
+    "label": "python http.client (CPython/OpenSSL)",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "B131",
+    "label": "curl_cffi impersonate=chrome131",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "B131a",
+    "label": "curl_cffi impersonate=chrome131_android",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "B124",
+    "label": "curl_cffi impersonate=chrome124",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "B119",
+    "label": "curl_cffi impersonate=chrome119",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "Cok11",
+    "label": "tls_client okhttp4_android_11",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "Cok12",
+    "label": "tls_client okhttp4_android_12",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "Cok13",
+    "label": "tls_client okhttp4_android_13",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "C120",
+    "label": "tls_client chrome_120",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "D",
+    "label": "device curl (phone IP + BoringSSL)",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "XJSON",
+    "label": "python http.client | transport_session.json pairing",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "XJSONa",
+    "label": "curl_cffi chrome131 | transport_session.json pairing",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   }
+  ]
+ },
+ {
+  "variant": "Q4",
+  "desc": "CONTROL genuine query + blob byte0 bit0 flipped",
+  "path": "/attribution?initiated_by=backend&gps_adid_attempt=1&api_level=31&app_version=3.14.0&app_token=jut9tib0eeps&os_version=12&created_at=2026-09-27T19%3A24%3A51.522Z%2B0530&device_type=phone&gps_adid=363e5b78-8670-4c50-8348-9f87c604111b&foreground=1&android_uuid=906ddeb2-2898-490a-afc7-74622c49134c&sent_at=2026-09-27T19%3A24%3A51.550Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=com.penti.app&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1",
+  "auth_sha": "len=407",
+  "rows": [
+   {
+    "tag": "A",
+    "label": "python http.client (CPython/OpenSSL)",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "B131",
+    "label": "curl_cffi impersonate=chrome131",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "B131a",
+    "label": "curl_cffi impersonate=chrome131_android",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "B124",
+    "label": "curl_cffi impersonate=chrome124",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "B119",
+    "label": "curl_cffi impersonate=chrome119",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "Cok11",
+    "label": "tls_client okhttp4_android_11",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "Cok12",
+    "label": "tls_client okhttp4_android_12",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "Cok13",
+    "label": "tls_client okhttp4_android_13",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "C120",
+    "label": "tls_client chrome_120",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "D",
+    "label": "device curl (phone IP + BoringSSL)",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "XJSON",
+    "label": "python http.client | transport_session.json pairing",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "XJSONa",
+    "label": "curl_cffi chrome131 | transport_session.json pairing",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   }
+  ]
+ },
+ {
+  "variant": "Q5",
+  "desc": "CONTROL genuine query, NO Authorization header",
+  "path": "/attribution?initiated_by=backend&gps_adid_attempt=1&api_level=31&app_version=3.14.0&app_token=jut9tib0eeps&os_version=12&created_at=2026-09-27T19%3A24%3A51.522Z%2B0530&device_type=phone&gps_adid=363e5b78-8670-4c50-8348-9f87c604111b&foreground=1&android_uuid=906ddeb2-2898-490a-afc7-74622c49134c&sent_at=2026-09-27T19%3A24%3A51.550Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=com.penti.app&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1",
+  "auth_sha": "len=0",
+  "rows": [
+   {
+    "tag": "A",
+    "label": "python http.client (CPython/OpenSSL)",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "B131",
+    "label": "curl_cffi impersonate=chrome131",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "B131a",
+    "label": "curl_cffi impersonate=chrome131_android",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "B124",
+    "label": "curl_cffi impersonate=chrome124",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "B119",
+    "label": "curl_cffi impersonate=chrome119",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "Cok11",
+    "label": "tls_client okhttp4_android_11",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "Cok12",
+    "label": "tls_client okhttp4_android_12",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "Cok13",
+    "label": "tls_client okhttp4_android_13",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "C120",
+    "label": "tls_client chrome_120",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "D",
+    "label": "device curl (phone IP + BoringSSL)",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "XJSON",
+    "label": "python http.client | transport_session.json pairing",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   },
+   {
+    "tag": "XJSONa",
+    "label": "curl_cffi chrome131 | transport_session.json pairing",
+    "probe": "GET",
+    "status": 200,
+    "verdict": "FAIL(Organic)",
+    "note": "tracker=Organic network=Organic eng=0001-01-01T00:00:00",
+    "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+   }
+  ]
+ }
+]

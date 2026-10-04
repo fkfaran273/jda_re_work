@@ -1,0 +1,14 @@
+# CLASS Lcom/adjust/sdk/meta/MetaInstallReferrerResult;
+FIELD public error Ljava/lang/String;
+FIELD public metaInstallReferrerDetails Lcom/adjust/sdk/meta/MetaInstallReferrerDetails;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/meta/MetaInstallReferrerDetails;)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/meta/MetaInstallReferrerResult;->metaInstallReferrerDetails Lcom/adjust/sdk/meta/MetaInstallReferrerDetails;
+  return-void            
+
+---- METHOD public constructor <init> (Ljava/lang/String;)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/meta/MetaInstallReferrerResult;->error Ljava/lang/String;
+  return-void            
+######################################################################

@@ -1,0 +1,7 @@
+{
+ "gaid": "2ef6fcda-fd67-4113-a1ef-7886bfccba25",
+ "reftag": "cF87hOzpBM2Yw",
+ "session": "{\"app_token\":\"i2n2e5kmcpvk\",\"adid\":\"f1379dc02d15f250b2aecd3d07b2a351\",\"ask_in\":2000}",
+ "click": "{\"app_token\":\"i2n2e5kmcpvk\",\"adid\":\"f1379dc02d15f250b2aecd3d07b2a351\"}",
+ "attribution": "{\"app_token\":\"i2n2e5kmcpvk\",\"adid\":\"f1379dc02d15f250b2aecd3d07b2a351\",\"attribution\":{\"tracker_token\":\"221wahrq\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-30T05:08:32Z\",\"first_session_time\":\"2026-09-30T05:08:32Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+}

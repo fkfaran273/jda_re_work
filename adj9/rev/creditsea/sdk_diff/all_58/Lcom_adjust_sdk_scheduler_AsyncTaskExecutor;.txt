@@ -1,0 +1,29 @@
+# CLASS Lcom/adjust/sdk/scheduler/AsyncTaskExecutor;
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public abstract doInBackground ([Ljava/lang/Object;)Ljava/lang/Object; ----
+  (no code)
+
+---- METHOD public final varargs execute ([Ljava/lang/Object;)Lcom/adjust/sdk/scheduler/AsyncTaskExecutor; ----
+  invoke-virtual         v4, Lcom/adjust/sdk/scheduler/AsyncTaskExecutor;->onPreExecute()V
+  new-instance           v0, Landroid/os/Handler;
+  invoke-static          Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+  move-result-object     v1
+  invoke-direct          v0, v1, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+  invoke-static          Ljava/util/concurrent/Executors;->newSingleThreadExecutor()Ljava/util/concurrent/ExecutorService;
+  move-result-object     v1
+  new-instance           v2, LL6/c;
+  const/16               v3, 8
+  invoke-direct          v2, v4, v5, v0, v3, LL6/c;-><init>(Ljava/lang/Object; Ljava/lang/Object; Ljava/lang/Object; I)V
+  invoke-interface       v1, v2, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+  return-object          v4
+
+---- METHOD public onPostExecute (Ljava/lang/Object;)V ----
+  return-void            
+
+---- METHOD public onPreExecute ()V ----
+  return-void            
+######################################################################

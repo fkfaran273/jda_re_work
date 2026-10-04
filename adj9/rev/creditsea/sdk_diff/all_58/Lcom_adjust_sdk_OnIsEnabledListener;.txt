@@ -1,0 +1,5 @@
+# CLASS Lcom/adjust/sdk/OnIsEnabledListener;
+
+---- METHOD public abstract onIsEnabledRead (Z)V ----
+  (no code)
+######################################################################

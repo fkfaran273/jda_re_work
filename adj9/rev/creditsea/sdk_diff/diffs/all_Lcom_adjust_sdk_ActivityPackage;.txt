@@ -1,0 +1,77 @@
+--- 
++++ 
+@@ -27,3 +27,3 @@
+ new-instance vX, Ljava/io/ObjectStreamField;
+-const-string "path"
++const-string/jumbo path
+ const-class vX, Ljava/lang/String;
+@@ -33,8 +33,6 @@
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object vX, vX
+-new-instance vX, Ljava/io/ObjectStreamField;
+-const-string "parameters"
++new-instance vX, Ljava/io/ObjectStreamField;
++const-string/jumbo parameters
+ const-class vX, Ljava/util/Map;
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object vX, vX
+ new-instance vX, Ljava/io/ObjectStreamField;
+@@ -43,3 +41,2 @@
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object vX, vX
+ new-instance vX, Ljava/io/ObjectStreamField;
+@@ -47,3 +44,2 @@
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object vX, vX
+ new-instance vX, Ljava/io/ObjectStreamField;
+@@ -51,9 +47,8 @@
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object vX, vX
+-new-instance vX, Ljava/io/ObjectStreamField;
+-const-string "partnerParameters"
+-invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-new-instance vX, Ljava/io/ObjectStreamField;
++new-instance vX, Ljava/io/ObjectStreamField;
++const-string/jumbo partnerParameters
++invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
++new-instance vX, Ljava/io/ObjectStreamField;
++sget-object vX, Ljava/lang/Integer;->TYPE Ljava/lang/Class;
+ const-string/jumbo retryCount
+-sget-object vX, Ljava/lang/Integer;->TYPE Ljava/lang/Class;
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+@@ -62,3 +57,2 @@
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object vX, vX
+ new-instance vX, Ljava/io/ObjectStreamField;
+@@ -70,2 +64,11 @@
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
++move-object vX, vX
++move-object vX, vX
++move-object vX, vX
++move-object vX, vX
++move-object vX, vX
++move-object vX, vX
++move-object vX, vX
++move-object vX, vX
++move-object vX, vX
+ filled-new-array/range vX ... vX, [Ljava/io/ObjectStreamField;
+@@ -82,3 +85,3 @@
+ move-result-object vX
+-const-string "path"
++const-string/jumbo path
+ const/4 vX, 0
+@@ -91,3 +94,3 @@
+ iput-object vX, vX, Lcom/adjust/sdk/ActivityPackage;->clientSdk Ljava/lang/String;
+-const-string "parameters"
++const-string/jumbo parameters
+ invoke-static vX, vX, vX, Lcom/adjust/sdk/Util;->readObjectField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/Object;)Ljava/lang/Object;
+@@ -111,3 +114,3 @@
+ iput-object vX, vX, Lcom/adjust/sdk/ActivityPackage;->callbackParameters Ljava/util/Map;
+-const-string "partnerParameters"
++const-string/jumbo partnerParameters
+ invoke-static vX, vX, vX, Lcom/adjust/sdk/Util;->readObjectField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/Object;)Ljava/lang/Object;
+@@ -116,3 +119,3 @@
+ iput-object vX, vX, Lcom/adjust/sdk/ActivityPackage;->partnerParameters Ljava/util/Map;
+-const-string "errorCount"
++const-string/jumbo retryCount
+ const/4 vX, 0

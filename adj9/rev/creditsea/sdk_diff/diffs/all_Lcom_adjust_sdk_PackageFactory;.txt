@@ -1,0 +1,104 @@
+--- 
++++ 
+@@ -4,3 +4,3 @@
+ return-void
+----- METHOD public static buildDeeplinkSdkClickPackage (Landroid/net/Uri; Landroid/net/Uri; J Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/ActivityPackage; ----
++---- METHOD public static buildDeeplinkSdkClickPackage (Landroid/net/Uri; Landroid/net/Uri; J Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/ActivityPackage; ----
+ const/4 vX, 0
+@@ -73,3 +73,3 @@
+ move-object/from16 vX, vX
+-invoke-static/range vX ... vX, Lcom/adjust/sdk/PackageFactory;->queryStringClickPackageBuilder(Ljava/util/List; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/PackageBuilder;
++invoke-static/range vX ... vX, Lcom/adjust/sdk/PackageFactory;->queryStringClickPackageBuilder(Ljava/util/List; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/PackageBuilder;
+ move-result-object vX
+@@ -80,2 +80,3 @@
+ iput-object vX, vX, Lcom/adjust/sdk/PackageBuilder;->deeplink Ljava/lang/String;
++move-wide vX, vX
+ iput-wide vX, vX, Lcom/adjust/sdk/PackageBuilder;->clickTimeInMilliseconds J
+@@ -90,3 +91,4 @@
+ return-object vX
+----- METHOD public static buildInstallReferrerSdkClickPackage (Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/ActivityPackage; ----
++---- METHOD public static buildInstallReferrerSdkClickPackage (Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/ActivityPackage; ----
++move-object vX, vX
+ invoke-static Ljava/lang/System;->currentTimeMillis()J
+@@ -99,3 +101,5 @@
+ move-object vX, vX
+-invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; J)V
++move-object/from16 vX, vX
++invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; J)V
++move-object/from16 vX, vX
+ iput-object vX, vX, Lcom/adjust/sdk/PackageBuilder;->internalState Lcom/adjust/sdk/ActivityHandler$InternalState;
+@@ -117,2 +121,3 @@
+ iput-object vX, vX, Lcom/adjust/sdk/PackageBuilder;->isClick Ljava/lang/Boolean;
++move-object vX, vX
+ iput-object vX, vX, Lcom/adjust/sdk/PackageBuilder;->referrerApi Ljava/lang/String;
+@@ -122,3 +127,3 @@
+ return-object vX
+----- METHOD public static buildLicenseVerificationSdkClickPackage (Lcom/adjust/sdk/LicenseData; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/ActivityPackage; ----
++---- METHOD public static buildLicenseVerificationSdkClickPackage (Lcom/adjust/sdk/LicenseData; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/ActivityPackage; ----
+ invoke-static Ljava/lang/System;->currentTimeMillis()J
+@@ -131,3 +136,4 @@
+ move-object vX, vX
+-invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; J)V
++move-object vX, vX
++invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; J)V
+ iput-object vX, vX, Lcom/adjust/sdk/PackageBuilder;->internalState Lcom/adjust/sdk/ActivityHandler$InternalState;
+@@ -138,3 +144,3 @@
+ return-object vX
+----- METHOD public static buildPreinstallSdkClickPackage (Ljava/lang/String; Ljava/lang/String; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager;)Lcom/adjust/sdk/ActivityPackage; ----
++---- METHOD public static buildPreinstallSdkClickPackage (Ljava/lang/String; Ljava/lang/String; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P;)Lcom/adjust/sdk/ActivityPackage; ----
+ if BRANCH
+@@ -152,12 +158,14 @@
+ move-object vX, vX
+-invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; J)V
++move-object vX, vX
++invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; J)V
+ iput-object vX, vX, Lcom/adjust/sdk/PackageBuilder;->preinstallPayload Ljava/lang/String;
+ iput-object vX, vX, Lcom/adjust/sdk/PackageBuilder;->preinstallLocation Ljava/lang/String;
+-const-string "preinstall"
+-invoke-virtual vX, vX, Lcom/adjust/sdk/PackageBuilder;->buildClickPackage(Ljava/lang/String;)Lcom/adjust/sdk/ActivityPackage;
+-move-result-object vX
+-return-object vX
+-const/4 vX, 0
+-return-object vX
+----- METHOD public static buildReftagSdkClickPackage (Ljava/lang/String; J Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/ActivityPackage; ----
++const-string/jumbo preinstall
++invoke-virtual vX, vX, Lcom/adjust/sdk/PackageBuilder;->buildClickPackage(Ljava/lang/String;)Lcom/adjust/sdk/ActivityPackage;
++move-result-object vX
++return-object vX
++const/4 vX, 0
++return-object vX
++---- METHOD public static buildReftagSdkClickPackage (Ljava/lang/String; J Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/ActivityPackage; ----
++move-object vX, vX
+ const-string "malformed"
+@@ -222,8 +230,8 @@
+ move-object vX, vX
+-move-object vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-invoke-static/range vX ... vX, Lcom/adjust/sdk/PackageFactory;->queryStringClickPackageBuilder(Ljava/util/List; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/PackageBuilder;
++move-object/from16 vX, vX
++move-object/from16 vX, vX
++move-object/from16 vX, vX
++move-object/from16 vX, vX
++move-object/from16 vX, vX
++invoke-static/range vX ... vX, Lcom/adjust/sdk/PackageFactory;->queryStringClickPackageBuilder(Ljava/util/List; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/PackageBuilder;
+ move-result-object vX
+@@ -232,2 +240,3 @@
+ iput-object vX, vX, Lcom/adjust/sdk/PackageBuilder;->referrer Ljava/lang/String;
++move-wide vX, vX
+ iput-wide vX, vX, Lcom/adjust/sdk/PackageBuilder;->clickTimeInMilliseconds J
+@@ -239,3 +248,4 @@
+ return-object vX
+----- METHOD private static queryStringClickPackageBuilder (Ljava/util/List; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/PackageBuilder; ----
++---- METHOD private static queryStringClickPackageBuilder (Ljava/util/List; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/PackageBuilder; ----
++move-object vX, vX
+ if BRANCH
+@@ -276,4 +286,4 @@
+ move-object/from16 vX, vX
+-invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; J)V
+-move-object vX, vX
++move-object/from16 vX, vX
++invoke-direct/range vX ... vX, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; J)V
+ move-object/from16 vX, vX

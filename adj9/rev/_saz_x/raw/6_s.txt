@@ -1,0 +1,30 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Date: Mon, 14 Sep 2026 12:23:45 GMT
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Content-Length: 315
+
+{
+  "nextRequestWaitMillis": "30000",
+  "logResponseDetails": [
+    {
+      "logRequestIndex": 0,
+      "responseAction": "DELETE_REQUEST"
+    },
+    {
+      "logRequestIndex": 1,
+      "responseAction": "DELETE_REQUEST"
+    },
+    {
+      "logRequestIndex": 2,
+      "responseAction": "DELETE_REQUEST"
+    }
+  ]
+}

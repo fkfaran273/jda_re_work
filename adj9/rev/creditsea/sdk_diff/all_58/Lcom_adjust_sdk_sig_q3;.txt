@@ -1,0 +1,21 @@
+# CLASS Lcom/adjust/sdk/sig/q3;
+
+---- METHOD public static final a (Lcom/adjust/sdk/sig/l2;)Lcom/adjust/sdk/sig/l2; ----
+  invoke-interface       v2, Lcom/adjust/sdk/sig/l2;->d()Lcom/adjust/sdk/sig/p2;
+  move-result-object     v0
+  sget-object            v1, Lcom/adjust/sdk/sig/n2;->a Lcom/adjust/sdk/sig/n2;
+  invoke-static          v0, v1, Lcom/adjust/sdk/sig/g1;->a(Ljava/lang/Object; Ljava/lang/Object;)Z
+  move-result            v0
+  if-eqz                 v0, +006h
+  invoke-static          v2, Lcom/adjust/sdk/sig/y;->a(Lcom/adjust/sdk/sig/l2;)Lcom/adjust/sdk/sig/m;
+  return-object          v2
+  invoke-interface       v2, Lcom/adjust/sdk/sig/l2;->a()Z
+  move-result            v0
+  if-eqz                 v0, +00bh
+  const/4                v0, 0
+  invoke-interface       v2, v0, Lcom/adjust/sdk/sig/l2;->b(I)Lcom/adjust/sdk/sig/l2;
+  move-result-object     v2
+  invoke-static          v2, Lcom/adjust/sdk/sig/q3;->a(Lcom/adjust/sdk/sig/l2;)Lcom/adjust/sdk/sig/l2;
+  move-result-object     v2
+  return-object          v2
+######################################################################

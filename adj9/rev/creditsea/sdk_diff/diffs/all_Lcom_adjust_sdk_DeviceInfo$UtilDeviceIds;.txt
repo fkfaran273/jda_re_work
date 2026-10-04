@@ -1,0 +1,132 @@
+--- 
++++ 
+@@ -3,3 +3,18 @@
+ return-void
+----- METHOD public static synthetic access$000 (Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/ILogger;)Ljava/util/Map; ----
++---- METHOD public static bridge synthetic a (Landroid/content/Context; Lcom/adjust/sdk/ILogger;)I ----
++invoke-static vX, vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->getConnectivityType(Landroid/content/Context; Lcom/adjust/sdk/ILogger;)I
++move-result vX
++return vX
++---- METHOD public static bridge synthetic b (Lcom/adjust/sdk/AdjustConfig;)Ljava/lang/String; ----
++invoke-static vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->getFireAdvertisingId(Lcom/adjust/sdk/AdjustConfig;)Ljava/lang/String;
++move-result-object vX
++return-object vX
++---- METHOD public static bridge synthetic c (Landroid/content/ContentResolver; Lcom/adjust/sdk/OnAmazonAdIdReadListener;)V ----
++invoke-static vX, vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->getFireAdvertisingIdAsync(Landroid/content/ContentResolver; Lcom/adjust/sdk/OnAmazonAdIdReadListener;)V
++return-void
++---- METHOD public static bridge synthetic d (Lcom/adjust/sdk/AdjustConfig;)Ljava/lang/Boolean; ----
++invoke-static vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->getFireTrackingEnabled(Lcom/adjust/sdk/AdjustConfig;)Ljava/lang/Boolean;
++move-result-object vX
++return-object vX
++---- METHOD public static bridge synthetic e (Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/ILogger;)Ljava/util/Map; ----
+ invoke-static vX, vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->getImeiParameters(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/ILogger;)Ljava/util/Map;
+@@ -7,3 +22,7 @@
+ return-object vX
+----- METHOD public static synthetic access$100 (Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/ILogger;)Ljava/util/Map; ----
++---- METHOD public static bridge synthetic f (Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Ljava/lang/String; ----
++invoke-static vX, vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->getMnc(Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Ljava/lang/String;
++move-result-object vX
++return-object vX
++---- METHOD public static bridge synthetic g (Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/ILogger;)Ljava/util/Map; ----
+ invoke-static vX, vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->getOaidParameters(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/ILogger;)Ljava/util/Map;
+@@ -11,21 +30,2 @@
+ return-object vX
+----- METHOD public static synthetic access$200 (Lcom/adjust/sdk/AdjustConfig;)Ljava/lang/String; ----
+-invoke-static vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->getFireAdvertisingId(Lcom/adjust/sdk/AdjustConfig;)Ljava/lang/String;
+-move-result-object vX
+-return-object vX
+----- METHOD public static synthetic access$300 (Lcom/adjust/sdk/AdjustConfig;)Ljava/lang/Boolean; ----
+-invoke-static vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->getFireTrackingEnabled(Lcom/adjust/sdk/AdjustConfig;)Ljava/lang/Boolean;
+-move-result-object vX
+-return-object vX
+----- METHOD public static synthetic access$400 (Landroid/content/Context; Lcom/adjust/sdk/ILogger;)I ----
+-invoke-static vX, vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->getConnectivityType(Landroid/content/Context; Lcom/adjust/sdk/ILogger;)I
+-move-result vX
+-return vX
+----- METHOD public static synthetic access$500 (Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Ljava/lang/String; ----
+-invoke-static vX, vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->getMnc(Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Ljava/lang/String;
+-move-result-object vX
+-return-object vX
+----- METHOD public static synthetic access$600 (Landroid/content/ContentResolver; Lcom/adjust/sdk/OnAmazonAdIdReadListener;)V ----
+-invoke-static vX, vX, Lcom/adjust/sdk/DeviceInfo$UtilDeviceIds;->getFireAdvertisingIdAsync(Landroid/content/ContentResolver; Lcom/adjust/sdk/OnAmazonAdIdReadListener;)V
+-return-void
+ ---- METHOD private static getConnectivityType (Landroid/content/Context; Lcom/adjust/sdk/ILogger;)I ----
+@@ -106,7 +106,7 @@
+ ---- METHOD private static getFireAdvertisingId (Lcom/adjust/sdk/AdjustConfig;)Ljava/lang/String; ----
+-iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->coppaComplianceEnabled Z
+-if BRANCH
+-iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->playStoreKidsComplianceEnabled Z
+-if BRANCH
+-GOTO
++invoke-static vX, Lcom/adjust/sdk/Util;->isFireAdIdReadingEnabled(Lcom/adjust/sdk/AdjustConfig;)Z
++move-result vX
++if BRANCH
++const/4 vX, 0
++return-object vX
+ iget-object vX, vX, Lcom/adjust/sdk/AdjustConfig;->context Landroid/content/Context;
+@@ -116,4 +116,2 @@
+ move-result-object vX
+-return-object vX
+-const/4 vX, 0
+ return-object vX
+@@ -155,7 +153,7 @@
+ ---- METHOD private static getFireTrackingEnabled (Lcom/adjust/sdk/AdjustConfig;)Ljava/lang/Boolean; ----
+-iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->coppaComplianceEnabled Z
+-if BRANCH
+-iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->playStoreKidsComplianceEnabled Z
+-if BRANCH
+-GOTO
++invoke-static vX, Lcom/adjust/sdk/Util;->isFireAdIdReadingEnabled(Lcom/adjust/sdk/AdjustConfig;)Z
++move-result vX
++if BRANCH
++const/4 vX, 0
++return-object vX
+ iget-object vX, vX, Lcom/adjust/sdk/AdjustConfig;->context Landroid/content/Context;
+@@ -166,10 +164,8 @@
+ return-object vX
+-const/4 vX, 0
+-return-object vX
+ ---- METHOD private static getImeiParameters (Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/ILogger;)Ljava/util/Map; ----
+-iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->coppaComplianceEnabled Z
+-if BRANCH
+-iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->playStoreKidsComplianceEnabled Z
+-if BRANCH
+-GOTO
++invoke-static vX, Lcom/adjust/sdk/Util;->isDeviceIdsFromPluginsReadingEnabled(Lcom/adjust/sdk/AdjustConfig;)Z
++move-result vX
++if BRANCH
++const/4 vX, 0
++return-object vX
+ iget-object vX, vX, Lcom/adjust/sdk/AdjustConfig;->context Landroid/content/Context;
+@@ -178,4 +174,2 @@
+ return-object vX
+-const/4 vX, 0
+-return-object vX
+ ---- METHOD public static getMcc (Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Ljava/lang/String; ----
+@@ -183,3 +177,3 @@
+ const/4 vX, 0
+-const-string "phone"
++const-string/jumbo phone
+ invoke-virtual vX, vX, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+@@ -211,3 +205,3 @@
+ const/4 vX, 0
+-const-string "phone"
++const-string/jumbo phone
+ invoke-virtual vX, vX, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+@@ -235,7 +229,7 @@
+ ---- METHOD private static getOaidParameters (Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/ILogger;)Ljava/util/Map; ----
+-iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->coppaComplianceEnabled Z
+-if BRANCH
+-iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->playStoreKidsComplianceEnabled Z
+-if BRANCH
+-GOTO
++invoke-static vX, Lcom/adjust/sdk/Util;->isDeviceIdsFromPluginsReadingEnabled(Lcom/adjust/sdk/AdjustConfig;)Z
++move-result vX
++if BRANCH
++const/4 vX, 0
++return-object vX
+ iget-object vX, vX, Lcom/adjust/sdk/AdjustConfig;->context Landroid/content/Context;
+@@ -244,3 +238 @@
+ return-object vX
+-const/4 vX, 0
+-return-object vX

@@ -1,0 +1,48 @@
+# CLASS Lcom/adjust/sdk/sig/o;
+
+---- METHOD public static a (Ljava/lang/Iterable; Ljava/lang/String; Ljava/lang/String; Lcom/adjust/sdk/sig/r0;)Ljava/lang/String; ----
+  new-instance           v0, Ljava/lang/StringBuilder;
+  invoke-direct          v0, Ljava/lang/StringBuilder;-><init>()V
+  invoke-virtual         v0, v5, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+  invoke-interface       v4, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+  move-result-object     v4
+  const/4                v5, 0
+  invoke-interface       v4, Ljava/util/Iterator;->hasNext()Z
+  move-result            v1
+  if-eqz                 v1, +03eh
+  invoke-interface       v4, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v1
+  const/4                v2, 1
+  add-int/2addr          v5, v2
+  if-le                  v5, v2, +007h
+  const-string           v3, ", "
+  invoke-virtual         v0, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+  if-eqz                 v7, +00ch
+  invoke-interface       v7, v1, Lcom/adjust/sdk/sig/r0;->a(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v1
+  check-cast             v1, Ljava/lang/CharSequence;
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+  goto                   -1eh
+  if-nez                 v1, +003h
+  goto                   +3h
+  instance-of            v2, v1, Ljava/lang/CharSequence;
+  if-eqz                 v2, +008h
+  check-cast             v1, Ljava/lang/CharSequence;
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+  goto                   -2bh
+  instance-of            v2, v1, Ljava/lang/Character;
+  if-eqz                 v2, +00ch
+  check-cast             v1, Ljava/lang/Character;
+  invoke-virtual         v1, Ljava/lang/Character;->charValue()C
+  move-result            v1
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(C)Ljava/lang/Appendable;
+  goto                   -39h
+  invoke-virtual         v1, Ljava/lang/Object;->toString()Ljava/lang/String;
+  move-result-object     v1
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+  goto                   -41h
+  invoke-virtual         v0, v6, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+  invoke-virtual         v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v4
+  return-object          v4
+######################################################################

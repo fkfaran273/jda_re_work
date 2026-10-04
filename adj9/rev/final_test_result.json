@@ -1,0 +1,17 @@
+{
+ "gps": "7b9bcd33-797d-4b68-948e-b902a73a44d8",
+ "second": 1790596879,
+ "blob_hex": "7df037f11e16745b06aa4c342d68477892f97c48befa1c6bf8a578c298eff982577e918301529b4240456b64ee87c0d01e3b4d18f71341974d63a606fdef3671af2b8bac9e8e04d6efc6c6ea6cec507ab1cba8c9a4b7bef76ff0c1942eeb4cc524a8c23f5f3212f017fea28ef34b9c1e921a0fe56713c9f6425e8b09b81ca3ff36dbad0835d35808697e193681e6fe3985dccc30ce956ce8f030fc29f905860cc84cb6474ba2d7d98ef4c1215c825be02d60254a5cb47076eb6d2075fc949ba8",
+ "session": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"31d5c6774099a7df20f5d9fe13319fef\",\"ask_in\":2000}"
+ ],
+ "click": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"31d5c6774099a7df20f5d9fe13319fef\"}"
+ ],
+ "attribution": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"31d5c6774099a7df20f5d9fe13319fef\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-28T12:02:06Z\",\"first_session_time\":\"2026-09-28T12:02:06Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ ]
+}

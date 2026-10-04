@@ -1,0 +1,113 @@
+{
+ "kernel": "16",
+ "locale": {
+  "country": "IN",
+  "language": "en"
+ },
+ "ram": {
+  "available": "11085",
+  "shown": "12288"
+ },
+ "os_incremental": "S928USQU4CYI9",
+ "bluetooth": "3.0",
+ "hardware": "",
+ "imei": "866212510036076",
+ "cpu_core": "7",
+ "private_ip": "10.0.213.226",
+ "device_type": "phone",
+ "timezone": "+0530",
+ "serial": "2045787d83ee6ea3",
+ "mnc": "56",
+ "android_id": "e3d3324eece03d90",
+ "cpu_arch": "aarch64",
+ "display_metrics": {
+  "ypx": "1080",
+  "screen_layout_name": "large",
+  "screen_layout_format": "long",
+  "xpx": "2340",
+  "ydp": 451.694,
+  "xdp": 452.174,
+  "aspect_ratio": "14:6",
+  "density_dpi": "xxhdpi",
+  "screen_layout_size": 3
+ },
+ "last_rebooted_at": 1791016742307,
+ "network_band": "LTE",
+ "cpu_abi2": "",
+ "User-Agent": "Mozilla/5.0 (Linux; Android 16; SM-S928U Build/BP2A.250605.031.A3; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/153.0.8010.36 Mobile Safari/537.36",
+ "cpu_frequency": {
+  "max": "2265.0",
+  "min": "364.0"
+ },
+ "os_version": "16",
+ "build": "BP2A.250605.031.A3",
+ "gpu": {
+  "version": "ARM",
+  "vendor": "ARM",
+  "name": "Immortalis-G925",
+  "opengl_version": "262400"
+ },
+ "build_prop": {
+  "dalvik_vm_isa_x86_features": "",
+  "dalvik_vm_isa_x86_variant": "",
+  "dalvik_vm_isa_arm_variant": "",
+  "dalvik_vm_isa_arm64_features": "default",
+  "dalvik_vm_isa_arm64_variant": "kryo300",
+  "dalvik_vm_isa_arm_features": "",
+  "ro_build_user": "dpi"
+ },
+ "manufacturer": "samsung",
+ "subAgent": "w77le91flo6o902n18",
+ "local_tz": "IST",
+ "product": "e3qsqw",
+ "brand": "samsung",
+ "screen_size": "5.7",
+ "mcc": "405",
+ "device_id": "a6f6194e-1197-4633-b226-a7e02a9610c8",
+ "mac": "b3:9c:b9:5c:77:40",
+ "adid": "a6f6194e-1197-4633-b226-a7e02a9610c8",
+ "apps_count": {
+  "user_apps": 74,
+  "sideloaded_apps": 18,
+  "stock_apps": 240
+ },
+ "fingerprint": "samsung/e3qsqw/e3q:16/BP2A.250605.031.A3/S928USQU4CYI9:user/release-keys",
+ "device": "e3q",
+ "sensors": {
+  "magnetometer": {
+   "vendor": "akm",
+   "name": "AK09918 Magnetometer"
+  },
+  "gyroscope": {
+   "vendor": "STMicro",
+   "name": "lsm6dsv LSM6DSO Gyroscope Non-wakeup"
+  },
+  "accelerometer": {
+   "vendor": "STMicro",
+   "name": "lsm6dsv LSM6DSV Accelerometer Non-wakeup"
+  }
+ },
+ "sdk": "36",
+ "name": "e3q",
+ "currency": {
+  "code": "INR",
+  "name": "Indian Rupee"
+ },
+ "mainboard": "pineapple",
+ "country": "India",
+ "local_timezone": "Indian Standard Time",
+ "processor": "AArch64 Processor rev 4 (aarch64)",
+ "network": "WiFi",
+ "carrier": "AirTel",
+ "os_codename": "REL",
+ "cpu_abi": "arm64-v8a",
+ "internal_memory": {
+  "available": "461.16 GB",
+  "shown": "512 GB"
+ },
+ "model": "SM-S928U",
+ "local_tz_name": "Asia/Kolkata",
+ "resolution": "1080x2340",
+ "display": "BP2A.250605.031.A3.S928USQU4CYI9",
+ "dpi": "450"
+}

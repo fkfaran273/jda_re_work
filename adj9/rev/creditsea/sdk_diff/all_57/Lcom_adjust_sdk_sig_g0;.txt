@@ -1,0 +1,5 @@
+# CLASS Lcom/adjust/sdk/sig/g0;
+
+---- METHOD public abstract a ()Ljava/lang/Object; ----
+  (no code)
+######################################################################

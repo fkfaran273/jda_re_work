@@ -1,0 +1,23 @@
+# CLASS Lcom/adjust/sdk/sig/k3;
+
+---- METHOD public static a((Ljava/util/Map;)Ljava/util/Map;)  ----
+  instance-of            v0, v1, Lcom/adjust/sdk/sig/q1;
+  if-nez                 v0, +003h
+  return-object          v1
+  invoke-virtual         v1, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+  move-result-object     v1
+  invoke-virtual         v1, Ljava/lang/Class;->getName()Ljava/lang/String;
+  move-result-object     v1
+  const-string           v0, " cannot be cast to kotlin.collections.MutableMap"
+  invoke-virtual         v1, v0, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v1
+  new-instance           v0, Ljava/lang/ClassCastException;
+  invoke-direct          v0, v1, Ljava/lang/ClassCastException;-><init>(Ljava/lang/String;)V
+  const-class            v1, Lcom/adjust/sdk/sig/k3;
+  invoke-virtual         v1, Ljava/lang/Class;->getName()Ljava/lang/String;
+  move-result-object     v1
+  invoke-static          v0, v1, Lcom/adjust/sdk/sig/g1;->a(Ljava/lang/RuntimeException; Ljava/lang/String;)Ljava/lang/Throwable;
+  move-result-object     v1
+  check-cast             v1, Ljava/lang/ClassCastException;
+  throw                  v1
+######################################################################

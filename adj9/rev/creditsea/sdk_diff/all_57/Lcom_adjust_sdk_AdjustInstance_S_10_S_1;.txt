@@ -1,0 +1,17 @@
+# CLASS Lcom/adjust/sdk/AdjustInstance$10$1;
+FIELD public final synthetic a Lcom/adjust/sdk/AdjustThirdPartySharingResult;
+FIELD public final synthetic b Lcom/adjust/sdk/AdjustInstance$10;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/AdjustInstance$10; Lcom/adjust/sdk/AdjustThirdPartySharingResult;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustInstance$10$1;->b Lcom/adjust/sdk/AdjustInstance$10;
+  iput-object            v2, v0, Lcom/adjust/sdk/AdjustInstance$10$1;->a Lcom/adjust/sdk/AdjustThirdPartySharingResult;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance$10$1;->b Lcom/adjust/sdk/AdjustInstance$10;
+  iget-object            v0, v0, Lcom/adjust/sdk/AdjustInstance$10;->b Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;
+  iget-object            v1, v2, Lcom/adjust/sdk/AdjustInstance$10$1;->a Lcom/adjust/sdk/AdjustThirdPartySharingResult;
+  invoke-interface       v0, v1, Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;->onThirdPartySharingSettingsRead(Lcom/adjust/sdk/AdjustThirdPartySharingResult;)V
+  return-void            
+######################################################################

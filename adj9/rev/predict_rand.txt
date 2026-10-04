@@ -1,0 +1,5 @@
+blobs with timestamps: 30
+
+
+=== summary: (prng, extractor) -> number of blobs matched >=8B ===
+  NONE

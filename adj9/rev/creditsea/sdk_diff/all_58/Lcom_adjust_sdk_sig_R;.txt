@@ -1,0 +1,38 @@
+# CLASS Lcom/adjust/sdk/sig/r;
+FIELD public final synthetic a I
+FIELD public final synthetic b Lcom/adjust/sdk/sig/d2;
+
+---- METHOD public synthetic constructor <init> (Lcom/adjust/sdk/sig/d2; I)V ----
+  iput                   v2, v0, Lcom/adjust/sdk/sig/r;->a I
+  iput-object            v1, v0, Lcom/adjust/sdk/sig/r;->b Lcom/adjust/sdk/sig/d2;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public a ()Ljava/lang/Object; ----
+  iget                   v0, v1, Lcom/adjust/sdk/sig/r;->a I
+  packed-switch          v0, +000001ch
+  iget-object            v0, v1, Lcom/adjust/sdk/sig/r;->b Lcom/adjust/sdk/sig/d2;
+  invoke-static          v0, Lcom/adjust/sdk/sig/d2;->a(Lcom/adjust/sdk/sig/d2;)I
+  move-result            v0
+  invoke-static          v0, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v0
+  return-object          v0
+  iget-object            v0, v1, Lcom/adjust/sdk/sig/r;->b Lcom/adjust/sdk/sig/d2;
+  invoke-static          v0, Lcom/adjust/sdk/sig/d2;->c(Lcom/adjust/sdk/sig/d2;)[Lcom/adjust/sdk/sig/l2;
+  move-result-object     v0
+  return-object          v0
+  iget-object            v0, v1, Lcom/adjust/sdk/sig/r;->b Lcom/adjust/sdk/sig/d2;
+  invoke-static          v0, Lcom/adjust/sdk/sig/d2;->b(Lcom/adjust/sdk/sig/d2;)[Lcom/adjust/sdk/sig/r1;
+  move-result-object     v0
+  return-object          v0
+  packed-switch-payload  0 1
+
+---- METHOD public a (Ljava/lang/Object;)Ljava/lang/Object; ----
+  check-cast             v2, Ljava/lang/Integer;
+  invoke-virtual         v2, Ljava/lang/Integer;->intValue()I
+  move-result            v2
+  iget-object            v0, v1, Lcom/adjust/sdk/sig/r;->b Lcom/adjust/sdk/sig/d2;
+  invoke-static          v0, v2, Lcom/adjust/sdk/sig/e2;->a(Lcom/adjust/sdk/sig/l2; I)Ljava/lang/CharSequence;
+  move-result-object     v2
+  return-object          v2
+######################################################################

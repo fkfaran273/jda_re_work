@@ -1,0 +1,167 @@
+# CLASS Lcom/adjust/sdk/AdjustAdRevenue;
+FIELD private static final logger Lcom/adjust/sdk/ILogger;
+FIELD  adImpressionsCount Ljava/lang/Integer;
+FIELD  adRevenueNetwork Ljava/lang/String;
+FIELD  adRevenuePlacement Ljava/lang/String;
+FIELD  adRevenueUnit Ljava/lang/String;
+FIELD  callbackParameters Ljava/util/Map;
+FIELD  currency Ljava/lang/String;
+FIELD  partnerParameters Ljava/util/Map;
+FIELD  revenue Ljava/lang/Double;
+FIELD  source Ljava/lang/String;
+
+---- METHOD static constructor <clinit> ()V ----
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v0
+  sput-object            v0, Lcom/adjust/sdk/AdjustAdRevenue;->logger Lcom/adjust/sdk/ILogger;
+  return-void            
+
+---- METHOD public constructor <init> (Ljava/lang/String;)V ----
+  invoke-direct          v1, Ljava/lang/Object;-><init>()V
+  invoke-direct          v1, v2, Lcom/adjust/sdk/AdjustAdRevenue;->isValidSource(Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  return-void            
+  iput-object            v2, v1, Lcom/adjust/sdk/AdjustAdRevenue;->source Ljava/lang/String;
+  return-void            
+
+---- METHOD private isValidSource (Ljava/lang/String;)Z ----
+  const/4                v0, 0
+  if-nez                 v4, +00ch
+  sget-object            v4, Lcom/adjust/sdk/AdjustAdRevenue;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v1, v0, [Ljava/lang/Object;
+  const-string           v2, "Missing source"
+  invoke-interface       v4, v2, v1, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v0
+  invoke-virtual         v4, Ljava/lang/String;->isEmpty()Z
+  move-result            v4
+  if-eqz                 v4, +00ch
+  sget-object            v4, Lcom/adjust/sdk/AdjustAdRevenue;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v1, v0, [Ljava/lang/Object;
+  const-string           v2, "Source can't be empty"
+  invoke-interface       v4, v2, v1, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v0
+  const/4                v4, 1
+  return                 v4
+
+---- METHOD public addCallbackParameter (Ljava/lang/String; Ljava/lang/String;)V ----
+  const-string           v0, "key"
+  const-string           v1, "Callback"
+  invoke-static          v3, v0, v1, Lcom/adjust/sdk/Util;->isValidParameter(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +2bh
+  const-string/jumbo     v0, value
+  invoke-static          v4, v0, v1, Lcom/adjust/sdk/Util;->isValidParameter(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +21h
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustAdRevenue;->callbackParameters Ljava/util/Map;
+  if-nez                 v0, +009h
+  new-instance           v0, Ljava/util/LinkedHashMap;
+  invoke-direct          v0, Ljava/util/LinkedHashMap;-><init>()V
+  iput-object            v0, v2, Lcom/adjust/sdk/AdjustAdRevenue;->callbackParameters Ljava/util/Map;
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustAdRevenue;->callbackParameters Ljava/util/Map;
+  invoke-interface       v0, v3, v4, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v4
+  check-cast             v4, Ljava/lang/String;
+  if-eqz                 v4, +00dh
+  sget-object            v4, Lcom/adjust/sdk/AdjustAdRevenue;->logger Lcom/adjust/sdk/ILogger;
+  filled-new-array       v3, [Ljava/lang/Object;
+  move-result-object     v3
+  const-string           v0, "Key %s was overwritten"
+  invoke-interface       v4, v0, v3, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD public addPartnerParameter (Ljava/lang/String; Ljava/lang/String;)V ----
+  const-string           v0, "key"
+  const-string           v1, "Partner"
+  invoke-static          v3, v0, v1, Lcom/adjust/sdk/Util;->isValidParameter(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +2bh
+  const-string/jumbo     v0, value
+  invoke-static          v4, v0, v1, Lcom/adjust/sdk/Util;->isValidParameter(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +21h
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustAdRevenue;->partnerParameters Ljava/util/Map;
+  if-nez                 v0, +009h
+  new-instance           v0, Ljava/util/LinkedHashMap;
+  invoke-direct          v0, Ljava/util/LinkedHashMap;-><init>()V
+  iput-object            v0, v2, Lcom/adjust/sdk/AdjustAdRevenue;->partnerParameters Ljava/util/Map;
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustAdRevenue;->partnerParameters Ljava/util/Map;
+  invoke-interface       v0, v3, v4, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v4
+  check-cast             v4, Ljava/lang/String;
+  if-eqz                 v4, +00dh
+  sget-object            v4, Lcom/adjust/sdk/AdjustAdRevenue;->logger Lcom/adjust/sdk/ILogger;
+  filled-new-array       v3, [Ljava/lang/Object;
+  move-result-object     v3
+  const-string           v0, "Key %s was overwritten"
+  invoke-interface       v4, v0, v3, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD public getAdImpressionsCount ()Ljava/lang/Integer; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustAdRevenue;->adImpressionsCount Ljava/lang/Integer;
+  return-object          v0
+
+---- METHOD public getAdRevenueNetwork ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustAdRevenue;->adRevenueNetwork Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getAdRevenuePlacement ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustAdRevenue;->adRevenuePlacement Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getAdRevenueUnit ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustAdRevenue;->adRevenueUnit Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getCallbackParameters ()Ljava/util/Map; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustAdRevenue;->callbackParameters Ljava/util/Map;
+  return-object          v0
+
+---- METHOD public getCurrency ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustAdRevenue;->currency Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getPartnerParameters ()Ljava/util/Map; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustAdRevenue;->partnerParameters Ljava/util/Map;
+  return-object          v0
+
+---- METHOD public getRevenue ()Ljava/lang/Double; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustAdRevenue;->revenue Ljava/lang/Double;
+  return-object          v0
+
+---- METHOD public getSource ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustAdRevenue;->source Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public isValid ()Z ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustAdRevenue;->source Ljava/lang/String;
+  invoke-direct          v1, v0, Lcom/adjust/sdk/AdjustAdRevenue;->isValidSource(Ljava/lang/String;)Z
+  move-result            v0
+  return                 v0
+
+---- METHOD public setAdImpressionsCount (Ljava/lang/Integer;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustAdRevenue;->adImpressionsCount Ljava/lang/Integer;
+  return-void            
+
+---- METHOD public setAdRevenueNetwork (Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustAdRevenue;->adRevenueNetwork Ljava/lang/String;
+  return-void            
+
+---- METHOD public setAdRevenuePlacement (Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustAdRevenue;->adRevenuePlacement Ljava/lang/String;
+  return-void            
+
+---- METHOD public setAdRevenueUnit (Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustAdRevenue;->adRevenueUnit Ljava/lang/String;
+  return-void            
+
+---- METHOD public setRevenue (Ljava/lang/Double; Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustAdRevenue;->revenue Ljava/lang/Double;
+  iput-object            v2, v0, Lcom/adjust/sdk/AdjustAdRevenue;->currency Ljava/lang/String;
+  return-void            
+######################################################################

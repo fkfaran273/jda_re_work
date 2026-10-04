@@ -1,0 +1,33 @@
+# CLASS Lcom/adjust/sdk/flutter/AdjustUtils;
+FIELD private static numberFormat Ljava/text/NumberFormat;
+
+---- METHOD static constructor <clinit> ()V ----
+  invoke-static          Ljava/text/NumberFormat;->getInstance()Ljava/text/NumberFormat;
+  move-result-object     v0
+  sput-object            v0, Lcom/adjust/sdk/flutter/AdjustUtils;->numberFormat Ljava/text/NumberFormat;
+  return-void            
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public static isNumber (Ljava/lang/String;)Z ----
+  const/4                v0, 0
+  if-nez                 v3, +003h
+  return                 v0
+  invoke-virtual         v3, Ljava/lang/String;->length()I
+  move-result            v1
+  if-nez                 v1, +003h
+  return                 v0
+  new-instance           v1, Ljava/text/ParsePosition;
+  invoke-direct          v1, v0, Ljava/text/ParsePosition;-><init>(I)V
+  sget-object            v2, Lcom/adjust/sdk/flutter/AdjustUtils;->numberFormat Ljava/text/NumberFormat;
+  invoke-virtual         v2, v3, v1, Ljava/text/NumberFormat;->parse(Ljava/lang/String; Ljava/text/ParsePosition;)Ljava/lang/Number;
+  invoke-virtual         v3, Ljava/lang/String;->length()I
+  move-result            v3
+  invoke-virtual         v1, Ljava/text/ParsePosition;->getIndex()I
+  move-result            v1
+  if-ne                  v3, v1, +003h
+  const/4                v0, 1
+  return                 v0
+######################################################################

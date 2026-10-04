@@ -1,0 +1,59 @@
+# CLASS Lcom/adjust/sdk/sig/g2;
+
+---- METHOD public constructor <init>(()V)  ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final a((I)Ljava/lang/String;)  ----
+  new-instance           v2, Ljava/lang/IllegalStateException;
+  const-string           v0, "Primitive descriptor kotlin.String does not have elements"
+  invoke-direct          v2, v0, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+  throw                  v2
+
+---- METHOD public final b((I)Lcom/adjust/sdk/sig/l2;)  ----
+  new-instance           v2, Ljava/lang/IllegalStateException;
+  const-string           v0, "Primitive descriptor kotlin.String does not have elements"
+  invoke-direct          v2, v0, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+  throw                  v2
+
+---- METHOD public final b(()Ljava/lang/String;)  ----
+  const-string           v0, "kotlin.String"
+  return-object          v0
+
+---- METHOD public final d(()Lcom/adjust/sdk/sig/p2;)  ----
+  sget-object            v0, Lcom/adjust/sdk/sig/f2;->a Lcom/adjust/sdk/sig/f2;
+  return-object          v0
+
+---- METHOD public final e(()I)  ----
+  const/4                v0, 0
+  return                 v0
+
+---- METHOD public final equals((Ljava/lang/Object;)Z)  ----
+  const/4                v0, 1
+  if-ne                  v1, v2, +003h
+  return                 v0
+  instance-of            v2, v2, Lcom/adjust/sdk/sig/g2;
+  if-nez                 v2, +004h
+  const/4                v2, 0
+  return                 v2
+  return                 v0
+
+---- METHOD public final hashCode(()I)  ----
+  sget-object            v0, Lcom/adjust/sdk/sig/h2;->a Lcom/adjust/sdk/sig/i2;
+  invoke-virtual         v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+  new-instance           v0, Lcom/adjust/sdk/sig/m;
+  const-class            v1, Lcom/adjust/sdk/sig/f2;
+  invoke-direct          v0, v1, Lcom/adjust/sdk/sig/m;-><init>(Ljava/lang/Class;)V
+  invoke-virtual         v0, Lcom/adjust/sdk/sig/m;->a()Ljava/lang/String;
+  move-result-object     v0
+  invoke-virtual         v0, Ljava/lang/String;->hashCode()I
+  move-result            v0
+  mul-int/lit8           v0, v0, 31
+  const                  v1, 366142910
+  add-int/2addr          v0, v1
+  return                 v0
+
+---- METHOD public final toString(()Ljava/lang/String;)  ----
+  const-string           v0, "PrimitiveDescriptor(kotlin.String)"
+  return-object          v0
+######################################################################

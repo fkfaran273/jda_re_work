@@ -1,0 +1,81 @@
+HTTP/1.1 200 OK
+ETag: etag-782059328469-firebase-fetch--1621822632
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Date: Mon, 14 Sep 2026 12:23:12 GMT
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Content-Length: 13448
+
+{
+  "entries": {
+    "and_active_play_integrity_api": "false",
+    "and_checkout_payment_credit_card_logo_visible": "true",
+    "and_checkout_payment_hepsipay_logo_visible": "true",
+    "and_checkout_payment_worldpay_logo_visible": "true",
+    "and_d1_front_url": "https://accstorefront.crvezxiupm-pentigiyi1-d1-public.model-t.cc.commerce.ondemand.com",
+    "and_d1_spki_backup_pins": "sha256/lBWfKgkULzZeWvDWW1AxLRWaIymkgicBhWWMgIMU67A=,sha256/8kGWrpQHhmc0jwLo43RYo6bmqtHgsNxhARjM5yFCe/w=",
+    "and_d1_url": "api-d1.penti.com.tr",
+    "and_d1_x509_certificate": "-----BEGIN CERTIFICATE-----\nMIIGuDCCBaCgAwIBAgIIZOD2UShWISQwDQYJKoZIhvcNAQELBQAwgcYxCzAJBgNV\nBAYTAlVTMRAwDgYDVQQIEwdBcml6b25hMRMwEQYDVQQHEwpTY290dHNkYWxlMSUw\nIwYDVQQKExxTdGFyZmllbGQgVGVjaG5vbG9naWVzLCBJbmMuMTMwMQYDVQQLEypo\ndHRwOi8vY2VydHMuc3RhcmZpZWxkdGVjaC5jb20vcmVwb3NpdG9yeS8xNDAyBgNV\nBAMTK1N0YXJmaWVsZCBTZWN1cmUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5IC0gRzIw\nHhcNMjYwNDA2MTEyMjM4WhcNMjYxMDIxMTEyMjM4WjAZMRcwFQYDVQQDDA4qLnBl\nbnRpLmNvbS50cjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOpko+70\nNuFD5fzTs/DxjCIhqYcsan+Hhj7YSUSK7/EtKel2nTyR/gyX0IQ2GbC5q5yQ+8JR\nbySX+RqYFnxzW4/OEEDs8tLljt/74ujEqI8+EvCBEVcpfUaY8gh048gRRrQTsY85\njYsa8lpFs55R0rQuaF2uJUZ26y+Sv7yjdJtdNr0/lyBkONiaEPJNWizuCTicVY3G\nnbccoY2l8/d9iZYP/v8IciUCfaoqHA5niKEh3OUnagPllMvMPxx0Csg/Psw0H1aA\nca8W22vg1arAoDG9QNDAHYG5AalBT1y+EHdsMdKTqq2DBkbv86b2y6SJIBAAFafC\nDGRUkeNJA5EjLxUCAwEAAaOCA1QwggNQMAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYw\nFAYIKwYBBQUHAwEGCCsGAQUFBwMCMA4GA1UdDwEB/wQEAwIFoDA9BgNVHR8ENjA0\nMDKgMKAuhixodHRwOi8vY3JsLnN0YXJmaWVsZHRlY2guY29tL3NmaWcyczEtOTQx\nLmNybDBjBgNVHSAEXDBaMAgGBmeBDAECATBOBgtghkgBhv1uAQcXATA/MD0GCCsG\nAQUFBwIBFjFodHRwOi8vY2VydGlmaWNhdGVzLnN0YXJmaWVsZHRlY2guY29tL3Jl\ncG9zaXRvcnkvMIGCBggrBgEFBQcBAQR2MHQwKgYIKwYBBQUHMAGGHmh0dHA6Ly9v\nY3NwLnN0YXJmaWVsZHRlY2guY29tLzBGBggrBgEFBQcwAoY6aHR0cDovL2NlcnRp\nZmljYXRlcy5zdGFyZmllbGR0ZWNoLmNvbS9yZXBvc2l0b3J5L3NmaWcyLmNydDAf\nBgNVHSMEGDAWgBQlRYFoUCY4PTstLL7Natm2PbNmYzAnBgNVHREEIDAegg4qLnBl\nbnRpLmNvbS50coIMcGVudGkuY29tLnRyMB0GA1UdDgQWBBS2Rw2CWXKELEM52gZR\nFhLcX9XoITCCAX0GCisGAQQB1nkCBAIEggFtBIIBaQFnAHYA1219ENGn9XfCx+lf\n1wC/+YLJM1pl4dCzAXMXwMjFaXcAAAGdYofGgAAABAMARzBFAiEAuQVZy0hCl2Dd\nEBSKbw8qPMEKj+ivqy0Hq1of3gK+CV8CICwn9A3cwlz3yezvCV+jiGxZ5BTPHCqq\ng9WWlSebQMxDAHUAwjF+V0UZo0XufzjespBB68fCIVoiv3/Vta12mtkOUs0AAAGd\nYofHoQAABAMARjBEAiAY4G1x1qYRXU/P00jY6CrdmQKcoF/YARg6g9WxdQI/OwIg\nA5cisXwerCm/oNr6DWIBeGEvGKkGPgZm9OFxV5UqShUAdgDLOPcViXyEoURfW8Hd\n+8lu8ppZzUcKaQWFsMsUwxRY5wAAAZ1ih8hUAAAEAwBHMEUCIQC0MpzRNExZ2ZhW\neFdvq6NrP8Z8UYArguMT5mkATqUNdAIgD3fKLdQ+XHmCjOJQ58lIrLrvswIkZ519\nZAKJcgNbySAwDQYJKoZIhvcNAQELBQADggEBAKULTyozzTsrLcJcdCxcTjo0NQtl\n6veAq12xjPhLw4NljO4/8qR7L7qQGu4ivFvCYOsq5/Coj7ijs3PopwmD+n324uod\neCwrvemrXspA1J6gOjEAvWSf7ch4n07r+uNoj+cDQ6ZfxJ3PMJlvGdrAkpnjQcPv\nVabooI00vw03ldB+F9CMO2p1HFHxy2I6vdVmm2804iKgCQ7YoQ8WxFCchNfyZncx\n26XWGRBC6jNhdnhOUD+bnLJcnAEP3Ns/aK4eXZawmeajRnXIIsbJBlY/RMNiK5GM\nQ/1qZimnkIf9TPSrL78R5w50fMJ7DIFCyFvvDFmJy+UK5SH3+La8sNT1xrg=\n-----END CERTIFICATE-----",
+    "and_enabled_buy_in_store": "false",
+    "and_enabled_payment_completed_survey": "true",
+    "and_enabled_payment_completed_survey_percentage": "1",
+    "and_force_update_client_version_staleness_days": "5",
+    "and_force_update_is_active": "true",
+    "and_force_update_priority": "3",
+    "and_internal_bug_report_tools_enabled": "true",
+    "and_login_active_social_media_logins": "false",
+    "and_login_facebook_id_active": "false",
+    "and_login_google_id_active": "false",
+    "and_network_nonfatal_4xx_enabled": "true",
+    "and_network_request_queue_enabled": "true",
+    "and_p1_front_url": "https://www.penti.com",
+    "and_p1_spki_backup_pins": "",
+    "and_p1_url": "api-p1.penti.com.tr",
+    "and_p1_x509_certificate": "-----BEGIN CERTIFICATE-----\nMIIGuDCCBaCgAwIBAgIIZOD2UShWISQwDQYJKoZIhvcNAQELBQAwgcYxCzAJBgNV\nBAYTAlVTMRAwDgYDVQQIEwdBcml6b25hMRMwEQYDVQQHEwpTY290dHNkYWxlMSUw\nIwYDVQQKExxTdGFyZmllbGQgVGVjaG5vbG9naWVzLCBJbmMuMTMwMQYDVQQLEypo\ndHRwOi8vY2VydHMuc3RhcmZpZWxkdGVjaC5jb20vcmVwb3NpdG9yeS8xNDAyBgNV\nBAMTK1N0YXJmaWVsZCBTZWN1cmUgQ2VydGlmaWNhdGUgQXV0aG9yaXR5IC0gRzIw\nHhcNMjYwNDA2MTEyMjM4WhcNMjYxMDIxMTEyMjM4WjAZMRcwFQYDVQQDDA4qLnBl\nbnRpLmNvbS50cjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOpko+70\nNuFD5fzTs/DxjCIhqYcsan+Hhj7YSUSK7/EtKel2nTyR/gyX0IQ2GbC5q5yQ+8JR\nbySX+RqYFnxzW4/OEEDs8tLljt/74ujEqI8+EvCBEVcpfUaY8gh048gRRrQTsY85\njYsa8lpFs55R0rQuaF2uJUZ26y+Sv7yjdJtdNr0/lyBkONiaEPJNWizuCTicVY3G\nnbccoY2l8/d9iZYP/v8IciUCfaoqHA5niKEh3OUnagPllMvMPxx0Csg/Psw0H1aA\nca8W22vg1arAoDG9QNDAHYG5AalBT1y+EHdsMdKTqq2DBkbv86b2y6SJIBAAFafC\nDGRUkeNJA5EjLxUCAwEAAaOCA1QwggNQMAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYw\nFAYIKwYBBQUHAwEGCCsGAQUFBwMCMA4GA1UdDwEB/wQEAwIFoDA9BgNVHR8ENjA0\nMDKgMKAuhixodHRwOi8vY3JsLnN0YXJmaWVsZHRlY2guY29tL3NmaWcyczEtOTQx\nLmNybDBjBgNVHSAEXDBaMAgGBmeBDAECATBOBgtghkgBhv1uAQcXATA/MD0GCCsG\nAQUFBwIBFjFodHRwOi8vY2VydGlmaWNhdGVzLnN0YXJmaWVsZHRlY2guY29tL3Jl\ncG9zaXRvcnkvMIGCBggrBgEFBQcBAQR2MHQwKgYIKwYBBQUHMAGGHmh0dHA6Ly9v\nY3NwLnN0YXJmaWVsZHRlY2guY29tLzBGBggrBgEFBQcwAoY6aHR0cDovL2NlcnRp\nZmljYXRlcy5zdGFyZmllbGR0ZWNoLmNvbS9yZXBvc2l0b3J5L3NmaWcyLmNydDAf\nBgNVHSMEGDAWgBQlRYFoUCY4PTstLL7Natm2PbNmYzAnBgNVHREEIDAegg4qLnBl\nbnRpLmNvbS50coIMcGVudGkuY29tLnRyMB0GA1UdDgQWBBS2Rw2CWXKELEM52gZR\nFhLcX9XoITCCAX0GCisGAQQB1nkCBAIEggFtBIIBaQFnAHYA1219ENGn9XfCx+lf\n1wC/+YLJM1pl4dCzAXMXwMjFaXcAAAGdYofGgAAABAMARzBFAiEAuQVZy0hCl2Dd\nEBSKbw8qPMEKj+ivqy0Hq1of3gK+CV8CICwn9A3cwlz3yezvCV+jiGxZ5BTPHCqq\ng9WWlSebQMxDAHUAwjF+V0UZo0XufzjespBB68fCIVoiv3/Vta12mtkOUs0AAAGd\nYofHoQAABAMARjBEAiAY4G1x1qYRXU/P00jY6CrdmQKcoF/YARg6g9WxdQI/OwIg\nA5cisXwerCm/oNr6DWIBeGEvGKkGPgZm9OFxV5UqShUAdgDLOPcViXyEoURfW8Hd\n+8lu8ppZzUcKaQWFsMsUwxRY5wAAAZ1ih8hUAAAEAwBHMEUCIQC0MpzRNExZ2ZhW\neFdvq6NrP8Z8UYArguMT5mkATqUNdAIgD3fKLdQ+XHmCjOJQ58lIrLrvswIkZ519\nZAKJcgNbySAwDQYJKoZIhvcNAQELBQADggEBAKULTyozzTsrLcJcdCxcTjo0NQtl\n6veAq12xjPhLw4NljO4/8qR7L7qQGu4ivFvCYOsq5/Coj7ijs3PopwmD+n324uod\neCwrvemrXspA1J6gOjEAvWSf7ch4n07r+uNoj+cDQ6ZfxJ3PMJlvGdrAkpnjQcPv\nVabooI00vw03ldB+F9CMO2p1HFHxy2I6vdVmm2804iKgCQ7YoQ8WxFCchNfyZncx\n26XWGRBC6jNhdnhOUD+bnLJcnAEP3Ns/aK4eXZawmeajRnXIIsbJBlY/RMNiK5GM\nQ/1qZimnkIf9TPSrL78R5w50fMJ7DIFCyFvvDFmJy+UK5SH3+La8sNT1xrg=\n-----END CERTIFICATE-----",
+    "and_payment_completed_survey_url": "https://surveys.hotjar.com/6a76306e-e085-4f68-b099-366fc0fb3fd1",
+    "and_personalized_discount_banner_active": "true",
+    "and_quin_ai_active": "false",
+    "and_s1_front_url": "https://accstorefront.crvezxiupm-pentigiyi1-s1-public.model-t.cc.commerce.ondemand.com",
+    "and_s1_spki_backup_pins": "sha256/7iWVnWcejOciz31l5BLoyXzM+2APPjEeePmFvLq33vg=",
+    "and_s1_url": "accstorefront.crvezxiupm-pentigiyi1-s1-public.model-t.cc.commerce.ondemand.com",
+    "and_s1_x509_certificate": "-----BEGIN CERTIFICATE-----\nMIIGozCCBYugAwIBAgISBsCNDTgTA7rMCDn6yfPXHgg+MA0GCSqGSIb3DQEBCwUA\nMDMxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MQwwCgYDVQQD\nEwNSMTIwHhcNMjYwMTI3MDU0ODEwWhcNMjYwNDI3MDU0ODA5WjBLMUkwRwYDVQQD\nDEAqLmU4ZTY3YWEwOTZlYjdjYWI0ZmNhYmE5ZTlkNWI1Lm1vZGVsLXQuY2MuY29t\nbWVyY2Uub25kZW1hbmQuY29tMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKC\nAgEA3e/ZV9G+rFl6lGisg153Ma2IC7LVByAc494OElYJXcumbXAl4ACFb8Lyfe1u\notZejo508WbVk+URDc0loInaf5ZuArlgA9yX4SV4zNYbib2XRpDIGgCBT8cx1f8p\nW4z/twv1Ana8to9UhRno9vhc1AsDOqkbuHdp2leR9gr5SY/LcPiK/c6Pp0Kb6H3i\nljLbSMpzmKVRACWiKoUgffHMjDl7/79B/LJjKnCPQ4o04ap2j4xgZ8HX/sVYBFq1\nNfIIn1se6WQm/Z20laoEJz7WjwMT91p5HBXmMyQtfSIu+H+N37Kf8m1z91pR/2WE\n8rPD216/wA7nTpAOFvcDlqfUWWcOIJJPp80/HO79atmVEyYJDD+UbfIAj25oHv71\nY/yblthSJOEEBDnlM//Qidz6ctPHj1efI8F0QUPgq5IZZ4i54JVls4I2LNcqcnRI\nIGOMSJhY/7rC3A79fyBuAFx+XFpDw3VKYQgh9ufHjunMxtdPhUTvXd7PLidraq/2\nMlX0hqmT2gMggopB+I843ivCD5/dfvKHjGWZtQgzsy97LE/kOdDvVDtTrL3gk1v7\nL+q4q31bwE1xcTMp5jSivuoSV9Eui+NE7kgJ76c8DsTsgFTCKYoRx9Etg0q22jRU\n1yMIKo3gAYRguNFxhVZ+/AZ+nhbUrj/2MaBJGXW+MT9/ElUCAwEAAaOCApcwggKT\nMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIw\nDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQU2HBi+bKflm5EBf19gIK1BbX5AJ8wHwYD\nVR0jBBgwFoAUALUp8i2ObzHom0yteD763OkM0dIwMwYIKwYBBQUHAQEEJzAlMCMG\nCCsGAQUFBzAChhdodHRwOi8vcjEyLmkubGVuY3Iub3JnLzCBkQYDVR0RBIGJMIGG\ngkIqLmNydmV6eGl1cG0tcGVudGlnaXlpMS1zMS1wdWJsaWMubW9kZWwtdC5jYy5j\nb21tZXJjZS5vbmRlbWFuZC5jb22CQCouZThlNjdhYTA5NmViN2NhYjRmY2FiYTll\nOWQ1YjUubW9kZWwtdC5jYy5jb21tZXJjZS5vbmRlbWFuZC5jb20wEwYDVR0gBAww\nCjAIBgZngQwBAgEwLgYDVR0fBCcwJTAjoCGgH4YdaHR0cDovL3IxMi5jLmxlbmNy\nLm9yZy82My5jcmwwggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdgAWgy2r8KklDw/w\nOqVF/8i/yCPQh0v2BCkn+OcfMxP1+gAAAZv+NFGmAAAEAwBHMEUCIQDTxrHW6r+p\nT7Y2B7ehs4sbH5yTbtbuCZjH3BNNqR1uLQIgfBKd1W/RvkM6oGKiZWyo90VVAhyc\ni2iWlPL4yA/jhzQAdgCWl2S/VViXrfdDh2g3CEJ36fA61fak8zZuRqQ/D8qpxgAA\nAZv+NFHlAAAEAwBHMEUCIE+sllcz/5EYg4PZnrFm2hb+h2lPY9D+GRexUhIPIbJC\nAiEAuDRKqvzRL3q3T168uWErrsjZqixkXyro+LJ3QCXa2zkwDQYJKoZIhvcNAQEL\nBQADggEBADkPec8rQGUyEpu7NzdUSYzgh6p4CbQHAWuAx6YgeFQ0si/UWhnqXXGc\ndYBC0ffh6RBgJsYvpwzxFpVj2B95+Jlb5+CO46az/9Wk/352fYLAZ8QjmvzIGpPc\nDErGLcv4RDUT2pFWEv6SmWHWpNdBG/btnA8xWUVUhqxVEVf9+183vv6oXtCLTBB+\nkZWDz9QcmkdxrxO5MNqH44AQieP9KHZgPWagUfDEQFw7a5/npv9823fs9s2FQW/r\naZdVwO6puQ038fUxFP/G+B+YTdEJQy39r+wtRhRcOef8TevP6mMFMZYpSm5l5S8i\nNz5zSl/pUHbZ7Kxe6p7A63NNbToNt44=\n-----END CERTIFICATE-----",
+    "and_show_delivery_type_component": "false",
+    "and_tiktok_sdk_active": "false",
+    "and_zuzzuu_game_playing_limit": "3",
+    "and_zuzzuu_game_playing_limit_login_only": "1",
+    "and_zuzzuu_game_url": "",
+    "and_zuzzuu_game_url_login_only": "",
+    "checkout_error_message_for_cart": "",
+    "en_checkout_error_message_for_cart": "",
+    "ios_enabled_payment_completed_survey_percentage": "10",
+    "ios_force_update_current_version": "2.29.0",
+    "ios_force_update_is_required": "true",
+    "ios_network_nonfatal_4xx_enabled": "true",
+    "ios_p1_x509_certificate": "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",
+    "ios_payment_completed_survey_url": "https://surveys.hotjar.com/5e16fa45-889c-4977-8232-24bb27febd14",
+    "ios_personalized_discount_banner_active": "true",
+    "ios_quin_ai_active": "false",
+    "ios_show_delivery_type_component": "false",
+    "ios_show_find_in_store_component": "true",
+    "ios_show_review_your_purchase": "true",
+    "ios_socialmedialogin_is_enabled": "false",
+    "ios_soft_update_latest_version": "2.34.0",
+    "ios_tiktok_sdk_active": "false",
+    "ios_zuzzuu_game_playing_limit": "3",
+    "ios_zuzzuu_game_url": "",
+    "ios_zuzzuu_game_url_login_only": "",
+    "link_whatsapp_support": "https://wa.me/908503330768",
+    "ms_clarity_active": "false",
+    "personaclick_algorithms": "[{\"lang\":\"tr\",\"content\":[{\"title\":\"Benzer Ürünler\",\"algorithm_key\":\"4841bfe742e1ec0c8a618832f42378c0\"}]},{\"lang\":\"en\",\"content\":[{\"title\":\"Similar Products\",\"algorithm_key\":\"4841bfe742e1ec0c8a618832f42378c0\"}]}]",
+    "personaclick_algorithms_for_carts": "[\n  {\n    \"lang\": \"tr\",\n    \"content\": [{\n      \"title\" : \"Bu Ürünleri de Beğenebilirsin\",\n      \"algorithm_key\": \"48ddfd6332491a5a4675a6a99571c92e\"\n    }\n  ]\n  },\n  {\n    \"lang\": \"en\",\n    \"content\": [\n{\n      \"title\" : \"You might also like these products\",\n      \"algorithm_key\": \"48ddfd6332491a5a4675a6a99571c92e\"\n\n}\n\n    ]\n  }\n]"
+  },
+  "appName": "com.penti.app",
+  "state": "UPDATE",
+  "templateVersion": "482"
+}

@@ -1,0 +1,15 @@
+{
+ "arm": "h1",
+ "gps": "ca36b873-74a3-4ba8-be75-eca74d4f6b19",
+ "pre_read_empty": true,
+ "click": {
+  "code": "302",
+  "reftag": "",
+  "from": "device"
+ },
+ "session": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"91a04f13f3f9fb59c54acc3120d2b168\",\"ask_in\":2000}"
+ ],
+ "verdict": null
+}

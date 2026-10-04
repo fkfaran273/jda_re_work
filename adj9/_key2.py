@@ -1,0 +1,10 @@
+"""_key2.py — the two facts the device's own attribution reveals."""
+print("1. The device GAID is f4d61949-8330-4564-a449-5a221374ef60 and its own")
+print("   reftag is cvO88KFVr7tAh -- a DIFFERENT click from the one we were")
+print("   firing (chjoE54pmg5h2 / a516fb86...).  The user clicked their own")
+print("   link, and THAT click earned Tarsan1.")
+print()
+print("2. The deeplink in the response contains:")
+print("     adjust_no_sdkclick=1")
+print("   -> Adjust told the app to SKIP the sdk_click for this click.  Our")
+print("      replay sends sdk_click anyway.")

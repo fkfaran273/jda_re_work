@@ -1,0 +1,2508 @@
+# CLASS Lcom/adjust/sdk/flutter/AdjustSdk;
+FIELD private static DIRECT_DEEPLINK_CALLBACK_NAME Ljava/lang/String;
+FIELD private static TAG Ljava/lang/String;
+FIELD private static isDeferredDeeplinkOpeningEnabled Z
+FIELD private activityPluginBinding Lv8/b;
+FIELD private applicationContext Landroid/content/Context;
+FIELD private final cachedDirectDeeplinks Ljava/util/ArrayList;
+FIELD private channel Ly8/r;
+FIELD private isSdkInitialized Z
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v1, Ljava/lang/Object;-><init>()V
+  const/4                v0, 0
+  iput-boolean           v0, v1, Lcom/adjust/sdk/flutter/AdjustSdk;->isSdkInitialized Z
+  new-instance           v0, Ljava/util/ArrayList;
+  invoke-direct          v0, Ljava/util/ArrayList;-><init>()V
+  iput-object            v0, v1, Lcom/adjust/sdk/flutter/AdjustSdk;->cachedDirectDeeplinks Ljava/util/ArrayList;
+  return-void            
+
+---- METHOD public static bridge synthetic a (Lcom/adjust/sdk/flutter/AdjustSdk;)Ly8/r; ----
+  iget-object            v0, v0, Lcom/adjust/sdk/flutter/AdjustSdk;->channel Ly8/r;
+  return-object          v0
+
+---- METHOD private addGlobalCallbackParameter (Ly8/o; Ly8/q;)V ----
+  const-string           v0, "key"
+  invoke-virtual         v5, v0, Ly8/o;->b(Ljava/lang/String;)Z
+  move-result            v1
+  const/4                v2, 0
+  if-eqz                 v1, +018h
+  const-string/jumbo     v1, value
+  invoke-virtual         v5, v1, Ly8/o;->b(Ljava/lang/String;)Z
+  move-result            v3
+  if-eqz                 v3, +00fh
+  invoke-virtual         v5, v0, Ly8/o;->a(Ljava/lang/String;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-virtual         v5, v1, Ly8/o;->a(Ljava/lang/String;)Ljava/lang/Object;
+  move-result-object     v5
+  check-cast             v5, Ljava/lang/String;
+  goto                   +3h
+  move-object            v5, v2
+  move-object            v0, v5
+  invoke-static          v0, v5, Lcom/adjust/sdk/Adjust;->addGlobalCallbackParameter(Ljava/lang/String; Ljava/lang/String;)V
+  invoke-interface       v6, v2, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private addGlobalPartnerParameter (Ly8/o; Ly8/q;)V ----
+  const-string           v0, "key"
+  invoke-virtual         v5, v0, Ly8/o;->b(Ljava/lang/String;)Z
+  move-result            v1
+  const/4                v2, 0
+  if-eqz                 v1, +018h
+  const-string/jumbo     v1, value
+  invoke-virtual         v5, v1, Ly8/o;->b(Ljava/lang/String;)Z
+  move-result            v3
+  if-eqz                 v3, +00fh
+  invoke-virtual         v5, v0, Ly8/o;->a(Ljava/lang/String;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-virtual         v5, v1, Ly8/o;->a(Ljava/lang/String;)Ljava/lang/Object;
+  move-result-object     v5
+  check-cast             v5, Ljava/lang/String;
+  goto                   +3h
+  move-object            v5, v2
+  move-object            v0, v5
+  invoke-static          v0, v5, Lcom/adjust/sdk/Adjust;->addGlobalPartnerParameter(Ljava/lang/String; Ljava/lang/String;)V
+  invoke-interface       v6, v2, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD public static bridge synthetic b (Lcom/adjust/sdk/flutter/AdjustSdk; Lcom/adjust/sdk/AdjustRemoteTrigger;)Ljava/util/HashMap; ----
+  invoke-direct          v0, v1, Lcom/adjust/sdk/flutter/AdjustSdk;->getRemoteTriggerMap(Lcom/adjust/sdk/AdjustRemoteTrigger;)Ljava/util/HashMap;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public static bridge synthetic c (Lcom/adjust/sdk/flutter/AdjustSdk; Lcom/adjust/sdk/AdjustThirdPartySharingResult;)Ljava/util/HashMap; ----
+  invoke-direct          v0, v1, Lcom/adjust/sdk/flutter/AdjustSdk;->getThirdPartySharingResultMap(Lcom/adjust/sdk/AdjustThirdPartySharingResult;)Ljava/util/HashMap;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public static bridge synthetic d ()Z ----
+  sget-boolean           v0, Lcom/adjust/sdk/flutter/AdjustSdk;->isDeferredDeeplinkOpeningEnabled Z
+  return                 v0
+
+---- METHOD private detachFromActivity ()V ----
+  iget-object            v0, v1, Lcom/adjust/sdk/flutter/AdjustSdk;->activityPluginBinding Lv8/b;
+  if-eqz                 v0, +00eh
+  check-cast             v0, Lo/d1;
+  iget-object            v0, v0, Lo/d1;->e Ljava/lang/Object;
+  check-cast             v0, Ljava/util/HashSet;
+  invoke-virtual         v0, v1, Ljava/util/HashSet;->remove(Ljava/lang/Object;)Z
+  const/4                v0, 0
+  iput-object            v0, v1, Lcom/adjust/sdk/flutter/AdjustSdk;->activityPluginBinding Lv8/b;
+  return-void            
+
+---- METHOD private disable (Ly8/q;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->disable()V
+  const/4                v0, 0
+  invoke-interface       v2, v0, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private disableCoppaComplianceInDelay (Ly8/o; Ly8/q;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->disableCoppaComplianceInDelay()V
+  return-void            
+
+---- METHOD private disablePlayStoreKidsComplianceInDelay (Ly8/o; Ly8/q;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->disablePlayStoreKidsComplianceInDelay()V
+  return-void            
+
+---- METHOD private dispatchOrCacheDirectDeeplink (Landroid/net/Uri; Landroid/net/Uri;)V ----
+  if-nez                 v3, +003h
+  return-void            
+  new-instance           v0, Ljava/util/HashMap;
+  invoke-direct          v0, Ljava/util/HashMap;-><init>()V
+  const-string           v1, "deeplink"
+  invoke-virtual         v3, Landroid/net/Uri;->toString()Ljava/lang/String;
+  move-result-object     v3
+  invoke-virtual         v0, v1, v3, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  if-eqz                 v4, +00ch
+  const-string/jumbo     v3, referrer
+  invoke-virtual         v4, Landroid/net/Uri;->toString()Ljava/lang/String;
+  move-result-object     v4
+  invoke-virtual         v0, v3, v4, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  iget-boolean           v3, v2, Lcom/adjust/sdk/flutter/AdjustSdk;->isSdkInitialized Z
+  if-eqz                 v3, +00eh
+  iget-object            v3, v2, Lcom/adjust/sdk/flutter/AdjustSdk;->channel Ly8/r;
+  if-nez                 v3, +003h
+  goto                   +8h
+  sget-object            v4, Lcom/adjust/sdk/flutter/AdjustSdk;->DIRECT_DEEPLINK_CALLBACK_NAME Ljava/lang/String;
+  const/4                v1, 0
+  invoke-virtual         v3, v4, v0, v1, Ly8/r;->a(Ljava/lang/String; Ljava/lang/Object; Ly8/q;)V
+  return-void            
+  iget-object            v3, v2, Lcom/adjust/sdk/flutter/AdjustSdk;->cachedDirectDeeplinks Ljava/util/ArrayList;
+  invoke-virtual         v3, v0, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+  return-void            
+
+---- METHOD private enable (Ly8/q;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->enable()V
+  const/4                v0, 0
+  invoke-interface       v2, v0, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private enableCoppaComplianceInDelay (Ly8/o; Ly8/q;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->enableCoppaComplianceInDelay()V
+  return-void            
+
+---- METHOD private enablePlayStoreKidsComplianceInDelay (Ly8/o; Ly8/q;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->enablePlayStoreKidsComplianceInDelay()V
+  return-void            
+
+---- METHOD private endFirstSessionDelay (Ly8/o; Ly8/q;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->endFirstSessionDelay()V
+  return-void            
+
+---- METHOD private flushCachedDirectDeeplinks ()V ----
+  iget-boolean           v0, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->isSdkInitialized Z
+  if-eqz                 v0, +02fh
+  iget-object            v0, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->channel Ly8/r;
+  if-eqz                 v0, +02bh
+  iget-object            v0, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->cachedDirectDeeplinks Ljava/util/ArrayList;
+  invoke-virtual         v0, Ljava/util/ArrayList;->isEmpty()Z
+  move-result            v0
+  if-eqz                 v0, +003h
+  goto                   +21h
+  iget-object            v0, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->cachedDirectDeeplinks Ljava/util/ArrayList;
+  invoke-virtual         v0, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+  move-result-object     v0
+  invoke-interface       v0, Ljava/util/Iterator;->hasNext()Z
+  move-result            v1
+  if-eqz                 v1, +011h
+  invoke-interface       v0, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v1
+  check-cast             v1, Ljava/util/HashMap;
+  iget-object            v2, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->channel Ly8/r;
+  sget-object            v3, Lcom/adjust/sdk/flutter/AdjustSdk;->DIRECT_DEEPLINK_CALLBACK_NAME Ljava/lang/String;
+  const/4                v4, 0
+  invoke-virtual         v2, v3, v1, v4, Ly8/r;->a(Ljava/lang/String; Ljava/lang/Object; Ly8/q;)V
+  goto                   -14h
+  iget-object            v0, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->cachedDirectDeeplinks Ljava/util/ArrayList;
+  invoke-virtual         v0, Ljava/util/ArrayList;->clear()V
+  return-void            
+
+---- METHOD private gdprForgetMe (Ly8/q;)V ----
+  iget-object            v0, v1, Lcom/adjust/sdk/flutter/AdjustSdk;->applicationContext Landroid/content/Context;
+  invoke-static          v0, Lcom/adjust/sdk/Adjust;->gdprForgetMe(Landroid/content/Context;)V
+  const/4                v0, 0
+  invoke-interface       v2, v0, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private getAdid (Ly8/q;)V ----
+  new-instance           v0, Ls3/a;
+  const/4                v1, 0
+  invoke-direct          v0, v1, v3, Ls3/a;-><init>(I Ly8/q;)V
+  invoke-static          v0, Lcom/adjust/sdk/Adjust;->getAdid(Lcom/adjust/sdk/OnAdidReadListener;)V
+  return-void            
+
+---- METHOD private getAdidWithTimeout (Ly8/o; Ly8/q;)V ----
+  iget-object            v5, v5, Ly8/o;->b Ljava/lang/Object;
+  check-cast             v5, Ljava/util/Map;
+  const/4                v0, 0
+  const-string           v1, "INVALID_ARGUMENT"
+  if-eqz                 v5, +02bh
+  const-string/jumbo     v2, timeoutInMilliseconds
+  invoke-interface       v5, v2, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v3
+  if-nez                 v3, +003h
+  goto                   +20h
+  invoke-interface       v5, v2, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v5
+  invoke-virtual         v5, Ljava/lang/Object;->toString()Ljava/lang/String;
+  move-result-object     v5
+  invoke-static          v5, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+  move-result-wide       v0
+  iget-object            v5, v4, Lcom/adjust/sdk/flutter/AdjustSdk;->applicationContext Landroid/content/Context;
+  new-instance           v2, Ls3/a;
+  const/4                v3, 1
+  invoke-direct          v2, v3, v6, Ls3/a;-><init>(I Ly8/q;)V
+  invoke-static          v5, v0, v1, v2, Lcom/adjust/sdk/Adjust;->getAdidWithTimeout(Landroid/content/Context; J Lcom/adjust/sdk/OnAdidReadListener;)V
+  return-void            
+  const-string/jumbo     v5, timeoutInMilliseconds must be a valid number
+  invoke-interface       v6, v1, v5, v0, Ly8/q;->error(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Object;)V
+  return-void            
+  const-string/jumbo     v5, timeoutInMilliseconds is required
+  invoke-interface       v6, v1, v5, v0, Ly8/q;->error(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private getAmazonAdId (Ly8/q;)V ----
+  iget-object            v0, v2, Lcom/adjust/sdk/flutter/AdjustSdk;->applicationContext Landroid/content/Context;
+  new-instance           v1, Ls3/c;
+  invoke-direct          v1, v3, Ls3/c;-><init>(Ly8/q;)V
+  invoke-static          v0, v1, Lcom/adjust/sdk/Adjust;->getAmazonAdId(Landroid/content/Context; Lcom/adjust/sdk/OnAmazonAdIdReadListener;)V
+  return-void            
+
+---- METHOD private getAppTrackingAuthorizationStatus (Ly8/o; Ly8/q;)V ----
+  const/4                v1, -1
+  invoke-static          v1, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v1
+  invoke-interface       v2, v1, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private getAttribution (Ly8/q;)V ----
+  new-instance           v0, Ls3/b;
+  const/4                v1, 0
+  invoke-direct          v0, v1, v3, Ls3/b;-><init>(I Ly8/q;)V
+  invoke-static          v0, Lcom/adjust/sdk/Adjust;->getAttribution(Lcom/adjust/sdk/OnAttributionReadListener;)V
+  return-void            
+
+---- METHOD private getAttributionWithTimeout (Ly8/o; Ly8/q;)V ----
+  iget-object            v5, v5, Ly8/o;->b Ljava/lang/Object;
+  check-cast             v5, Ljava/util/Map;
+  const/4                v0, 0
+  const-string           v1, "INVALID_ARGUMENT"
+  if-eqz                 v5, +02bh
+  const-string/jumbo     v2, timeoutInMilliseconds
+  invoke-interface       v5, v2, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v3
+  if-nez                 v3, +003h
+  goto                   +20h
+  invoke-interface       v5, v2, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v5
+  invoke-virtual         v5, Ljava/lang/Object;->toString()Ljava/lang/String;
+  move-result-object     v5
+  invoke-static          v5, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+  move-result-wide       v0
+  iget-object            v5, v4, Lcom/adjust/sdk/flutter/AdjustSdk;->applicationContext Landroid/content/Context;
+  new-instance           v2, Ls3/b;
+  const/4                v3, 1
+  invoke-direct          v2, v3, v6, Ls3/b;-><init>(I Ly8/q;)V
+  invoke-static          v5, v0, v1, v2, Lcom/adjust/sdk/Adjust;->getAttributionWithTimeout(Landroid/content/Context; J Lcom/adjust/sdk/OnAttributionReadListener;)V
+  return-void            
+  const-string/jumbo     v5, timeoutInMilliseconds must be a valid number
+  invoke-interface       v6, v1, v5, v0, Ly8/q;->error(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Object;)V
+  return-void            
+  const-string/jumbo     v5, timeoutInMilliseconds is required
+  invoke-interface       v6, v1, v5, v0, Ly8/q;->error(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private getGoogleAdId (Ly8/q;)V ----
+  iget-object            v0, v2, Lcom/adjust/sdk/flutter/AdjustSdk;->applicationContext Landroid/content/Context;
+  new-instance           v1, Lcom/dexterous/flutterlocalnotifications/e;
+  invoke-direct          v1, v3, Lcom/dexterous/flutterlocalnotifications/e;-><init>(Ly8/q;)V
+  invoke-static          v0, v1, Lcom/adjust/sdk/Adjust;->getGoogleAdId(Landroid/content/Context; Lcom/adjust/sdk/OnGoogleAdIdReadListener;)V
+  return-void            
+
+---- METHOD private getIdfa (Ly8/q;)V ----
+  const-string           v0, "Error. No getIdfa on Android platform!"
+  invoke-interface       v2, v0, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private getIdfv (Ly8/q;)V ----
+  const-string           v0, "Error. No getIdfv on Android platform!"
+  invoke-interface       v2, v0, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private getLastDeeplink (Ly8/q;)V ----
+  iget-object            v0, v2, Lcom/adjust/sdk/flutter/AdjustSdk;->applicationContext Landroid/content/Context;
+  new-instance           v1, Ls3/c;
+  invoke-direct          v1, v3, Ls3/c;-><init>(Ly8/q;)V
+  invoke-static          v0, v1, Lcom/adjust/sdk/Adjust;->getLastDeeplink(Landroid/content/Context; Lcom/adjust/sdk/OnLastDeeplinkReadListener;)V
+  return-void            
+
+---- METHOD private getRemoteTriggerMap (Lcom/adjust/sdk/AdjustRemoteTrigger;)Ljava/util/HashMap; ----
+  new-instance           v0, Ljava/util/HashMap;
+  invoke-direct          v0, Ljava/util/HashMap;-><init>()V
+  const-string/jumbo     v1, {}
+  const-string/jumbo     v2, payloadJson
+  const-string           v3, ""
+  const-string           v4, "label"
+  if-nez                 v7, +009h
+  invoke-virtual         v0, v4, v3, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  invoke-virtual         v0, v2, v1, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  return-object          v0
+  invoke-virtual         v7, Lcom/adjust/sdk/AdjustRemoteTrigger;->getLabel()Ljava/lang/String;
+  move-result-object     v5
+  if-eqz                 v5, +006h
+  invoke-virtual         v7, Lcom/adjust/sdk/AdjustRemoteTrigger;->getLabel()Ljava/lang/String;
+  move-result-object     v3
+  invoke-virtual         v0, v4, v3, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  invoke-virtual         v7, Lcom/adjust/sdk/AdjustRemoteTrigger;->getPayload()Lorg/json/JSONObject;
+  move-result-object     v3
+  if-eqz                 v3, +00ah
+  invoke-virtual         v7, Lcom/adjust/sdk/AdjustRemoteTrigger;->getPayload()Lorg/json/JSONObject;
+  move-result-object     v7
+  invoke-virtual         v7, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+  move-result-object     v1
+  invoke-virtual         v0, v2, v1, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  return-object          v0
+
+---- METHOD private getSdkVersion (Ly8/q;)V ----
+  new-instance           v0, Lcom/dexterous/flutterlocalnotifications/b;
+  invoke-direct          v0, v2, Lcom/dexterous/flutterlocalnotifications/b;-><init>(Ly8/q;)V
+  invoke-static          v0, Lcom/adjust/sdk/Adjust;->getSdkVersion(Lcom/adjust/sdk/OnSdkVersionReadListener;)V
+  return-void            
+
+---- METHOD private getThirdPartySharingResultMap (Lcom/adjust/sdk/AdjustThirdPartySharingResult;)Ljava/util/HashMap; ----
+  new-instance           v0, Ljava/util/HashMap;
+  invoke-direct          v0, Ljava/util/HashMap;-><init>()V
+  const-string/jumbo     v1, thirdPartySharingSettingsJson
+  if-eqz                 v4, +011h
+  invoke-virtual         v4, Lcom/adjust/sdk/AdjustThirdPartySharingResult;->getThirdPartySharingSettingsJson()Ljava/lang/String;
+  move-result-object     v2
+  if-nez                 v2, +003h
+  goto                   +9h
+  invoke-virtual         v4, Lcom/adjust/sdk/AdjustThirdPartySharingResult;->getThirdPartySharingSettingsJson()Ljava/lang/String;
+  move-result-object     v4
+  invoke-virtual         v0, v1, v4, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  return-object          v0
+  const-string/jumbo     v4, {}
+  invoke-virtual         v0, v1, v4, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  return-object          v0
+
+---- METHOD private getThirdPartySharingSettingsWithTimeout (Ly8/o; Ly8/q;)V ----
+  iget-object            v6, v6, Ly8/o;->b Ljava/lang/Object;
+  check-cast             v6, Ljava/util/Map;
+  const/4                v0, 0
+  const-string           v1, "INVALID_ARGUMENT"
+  if-eqz                 v6, +02ch
+  const-string/jumbo     v2, timeoutInMilliseconds
+  invoke-interface       v6, v2, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v3
+  if-nez                 v3, +003h
+  goto                   +21h
+  invoke-interface       v6, v2, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v6
+  invoke-virtual         v6, Ljava/lang/Object;->toString()Ljava/lang/String;
+  move-result-object     v6
+  invoke-static          v6, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+  move-result-wide       v0
+  iget-object            v6, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->applicationContext Landroid/content/Context;
+  new-instance           v2, Ll0/h;
+  const/4                v3, 7
+  const/4                v4, 0
+  invoke-direct          v2, v3, v5, v7, v4, Ll0/h;-><init>(I Ljava/lang/Object; Ljava/lang/Object; Z)V
+  invoke-static          v6, v0, v1, v2, Lcom/adjust/sdk/Adjust;->getThirdPartySharingSettingsWithTimeout(Landroid/content/Context; J Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;)V
+  return-void            
+  const-string/jumbo     v6, timeoutInMilliseconds must be a valid number
+  invoke-interface       v7, v1, v6, v0, Ly8/q;->error(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Object;)V
+  return-void            
+  const-string/jumbo     v6, timeoutInMilliseconds is required
+  invoke-interface       v7, v1, v6, v0, Ly8/q;->error(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private initSdk (Ly8/o; Ly8/q;)V ----
+  const-string/jumbo     v0, storeAppId
+  const-string/jumbo     v1, storeName
+  iget-object            v14, v14, Ly8/o;->b Ljava/lang/Object;
+  check-cast             v14, Ljava/util/Map;
+  if-nez                 v14, +003h
+  return-void            
+  const-string           v2, "appToken"
+  invoke-interface       v14, v2, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  const/4                v4, 0
+  if-eqz                 v3, +009h
+  invoke-interface       v14, v2, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  goto                   +2h
+  move-object            v2, v4
+  const-string           v3, "environment"
+  invoke-interface       v14, v3, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v5
+  if-eqz                 v5, +009h
+  invoke-interface       v14, v3, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v3
+  check-cast             v3, Ljava/lang/String;
+  goto                   +2h
+  move-object            v3, v4
+  const-string           v5, "logLevel"
+  invoke-interface       v14, v5, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v6
+  const/4                v7, 1
+  const-string/jumbo     v8, suppress
+  const/4                v9, 0
+  if-eqz                 v6, +012h
+  invoke-interface       v14, v5, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v6
+  check-cast             v6, Ljava/lang/String;
+  if-eqz                 v6, +00ah
+  invoke-virtual         v6, v8, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v6
+  if-eqz                 v6, +004h
+  move                   v6, v7
+  goto                   +2h
+  move                   v6, v9
+  new-instance           v10, Lcom/adjust/sdk/AdjustConfig;
+  iget-object            v11, v13, Lcom/adjust/sdk/flutter/AdjustSdk;->applicationContext Landroid/content/Context;
+  invoke-direct          v10, v11, v2, v3, v6, Lcom/adjust/sdk/AdjustConfig;-><init>(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Z)V
+  const-string/jumbo     v2, sdkPrefix
+  invoke-interface       v14, v2, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +00bh
+  invoke-interface       v14, v2, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  invoke-virtual         v10, v2, Lcom/adjust/sdk/AdjustConfig;->setSdkPrefix(Ljava/lang/String;)V
+  invoke-interface       v14, v5, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v2
+  if-eqz                 v2, +092h
+  invoke-interface       v14, v5, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  if-eqz                 v2, +08ah
+  invoke-virtual         v2, Ljava/lang/String;->hashCode()I
+  move-result            v3
+  const/4                v5, 5
+  const/4                v6, 4
+  const/4                v11, 2
+  const/4                v12, 3
+  sparse-switch          v3, +00003b5h
+  goto                   +47h
+  const-string/jumbo     v3, verbose
+  invoke-virtual         v2, v3, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v2
+  if-eqz                 v2, +03fh
+  move                   v2, v9
+  goto                   +3dh
+  const-string           v3, "error"
+  invoke-virtual         v2, v3, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v2
+  if-eqz                 v2, +035h
+  move                   v2, v12
+  goto                   +33h
+  const-string           v3, "debug"
+  invoke-virtual         v2, v3, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v2
+  if-eqz                 v2, +02bh
+  move                   v2, v7
+  goto                   +29h
+  const-string/jumbo     v3, warn
+  invoke-virtual         v2, v3, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v2
+  if-eqz                 v2, +020h
+  move                   v2, v11
+  goto                   +1eh
+  const-string           v3, "info"
+  invoke-virtual         v2, v3, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v2
+  if-eqz                 v2, +016h
+  const/4                v2, 6
+  goto                   +14h
+  const-string           v3, "assert"
+  invoke-virtual         v2, v3, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v2
+  if-eqz                 v2, +00ch
+  move                   v2, v6
+  goto                   +ah
+  invoke-virtual         v2, v8, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v2
+  if-eqz                 v2, +004h
+  move                   v2, v5
+  goto                   +2h
+  const/4                v2, -1
+  if-eqz                 v2, +030h
+  if-eq                  v2, v7, +028h
+  if-eq                  v2, v11, +020h
+  if-eq                  v2, v12, +018h
+  if-eq                  v2, v6, +010h
+  if-eq                  v2, v5, +008h
+  sget-object            v2, Lcom/adjust/sdk/LogLevel;->INFO Lcom/adjust/sdk/LogLevel;
+  invoke-virtual         v10, v2, Lcom/adjust/sdk/AdjustConfig;->setLogLevel(Lcom/adjust/sdk/LogLevel;)V
+  goto                   +24h
+  sget-object            v2, Lcom/adjust/sdk/LogLevel;->SUPPRESS Lcom/adjust/sdk/LogLevel;
+  invoke-virtual         v10, v2, Lcom/adjust/sdk/AdjustConfig;->setLogLevel(Lcom/adjust/sdk/LogLevel;)V
+  goto                   +1eh
+  sget-object            v2, Lcom/adjust/sdk/LogLevel;->ASSERT Lcom/adjust/sdk/LogLevel;
+  invoke-virtual         v10, v2, Lcom/adjust/sdk/AdjustConfig;->setLogLevel(Lcom/adjust/sdk/LogLevel;)V
+  goto                   +18h
+  sget-object            v2, Lcom/adjust/sdk/LogLevel;->ERROR Lcom/adjust/sdk/LogLevel;
+  invoke-virtual         v10, v2, Lcom/adjust/sdk/AdjustConfig;->setLogLevel(Lcom/adjust/sdk/LogLevel;)V
+  goto                   +12h
+  sget-object            v2, Lcom/adjust/sdk/LogLevel;->WARN Lcom/adjust/sdk/LogLevel;
+  invoke-virtual         v10, v2, Lcom/adjust/sdk/AdjustConfig;->setLogLevel(Lcom/adjust/sdk/LogLevel;)V
+  goto                   +ch
+  sget-object            v2, Lcom/adjust/sdk/LogLevel;->DEBUG Lcom/adjust/sdk/LogLevel;
+  invoke-virtual         v10, v2, Lcom/adjust/sdk/AdjustConfig;->setLogLevel(Lcom/adjust/sdk/LogLevel;)V
+  goto                   +6h
+  sget-object            v2, Lcom/adjust/sdk/LogLevel;->VERBOSE Lcom/adjust/sdk/LogLevel;
+  invoke-virtual         v10, v2, Lcom/adjust/sdk/AdjustConfig;->setLogLevel(Lcom/adjust/sdk/LogLevel;)V
+  const-string           v2, "isFirstSessionDelayEnabled"
+  invoke-interface       v14, v2, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +011h
+  invoke-interface       v14, v2, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  invoke-static          v2, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+  move-result            v2
+  if-eqz                 v2, +005h
+  invoke-virtual         v10, Lcom/adjust/sdk/AdjustConfig;->enableFirstSessionDelay()V
+  const-string           v2, "isCoppaComplianceEnabled"
+  invoke-interface       v14, v2, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +011h
+  invoke-interface       v14, v2, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  invoke-static          v2, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+  move-result            v2
+  if-eqz                 v2, +005h
+  invoke-virtual         v10, Lcom/adjust/sdk/AdjustConfig;->enableCoppaCompliance()V
+  const-string           v2, "isPlayStoreKidsComplianceEnabled"
+  invoke-interface       v14, v2, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +011h
+  invoke-interface       v14, v2, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  invoke-static          v2, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+  move-result            v2
+  if-eqz                 v2, +005h
+  invoke-virtual         v10, Lcom/adjust/sdk/AdjustConfig;->enablePlayStoreKidsCompliance()V
+  const-string           v2, "isDeviceIdsReadingOnceEnabled"
+  invoke-interface       v14, v2, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +011h
+  invoke-interface       v14, v2, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  invoke-static          v2, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+  move-result            v2
+  if-eqz                 v2, +005h
+  invoke-virtual         v10, Lcom/adjust/sdk/AdjustConfig;->enableDeviceIdsReadingOnce()V
+  const-string           v2, "isGoogleAdIdReadingEnabled"
+  invoke-interface       v14, v2, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +011h
+  invoke-interface       v14, v2, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  invoke-static          v2, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +005h
+  invoke-virtual         v10, Lcom/adjust/sdk/AdjustConfig;->disableGoogleAdIdReading()V
+  const-string           v2, "isAndroidIdReadingEnabled"
+  invoke-interface       v14, v2, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +011h
+  invoke-interface       v14, v2, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  invoke-static          v2, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +005h
+  invoke-virtual         v10, Lcom/adjust/sdk/AdjustConfig;->disableAndroidIdReading()V
+  const-string           v2, "isAppSetIdReadingEnabled"
+  invoke-interface       v14, v2, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +011h
+  invoke-interface       v14, v2, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  invoke-static          v2, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +005h
+  invoke-virtual         v10, Lcom/adjust/sdk/AdjustConfig;->disableAppSetIdReading()V
+  const-string           v2, "isFbIdReadingEnabled"
+  invoke-interface       v14, v2, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +011h
+  invoke-interface       v14, v2, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  invoke-static          v2, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +005h
+  invoke-virtual         v10, Lcom/adjust/sdk/AdjustConfig;->disableFbIdReading()V
+  const-string           v2, "isFireAdIdReadingEnabled"
+  invoke-interface       v14, v2, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +011h
+  invoke-interface       v14, v2, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  invoke-static          v2, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +005h
+  invoke-virtual         v10, Lcom/adjust/sdk/AdjustConfig;->disableFireAdIdReading()V
+  const-string           v2, "isDeviceIdsFromPluginsReadingEnabled"
+  invoke-interface       v14, v2, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +011h
+  invoke-interface       v14, v2, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  invoke-static          v2, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +005h
+  invoke-virtual         v10, Lcom/adjust/sdk/AdjustConfig;->disableDeviceIdsFromPluginsReading()V
+  const-string           v2, "isDeviceIdsReadingEnabled"
+  invoke-interface       v14, v2, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +011h
+  invoke-interface       v14, v2, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  invoke-static          v2, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +005h
+  invoke-virtual         v10, Lcom/adjust/sdk/AdjustConfig;->disableDeviceIdsReading()V
+  const-string           v2, "eventDeduplicationIdsMaxSize"
+  invoke-interface       v14, v2, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +012h
+  invoke-interface       v14, v2, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  invoke-static          v2, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
+  move-result-object     v2
+  invoke-virtual         v2, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+  invoke-virtual         v10, v2, Lcom/adjust/sdk/AdjustConfig;->setEventDeduplicationIdsMaxSize(Ljava/lang/Integer;)V
+  const-string/jumbo     v2, storeInfo
+  invoke-interface       v14, v2, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +038h
+  invoke-interface       v14, v2, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  new-instance           v3, Lorg/json/JSONObject;
+  invoke-direct          v3, v2, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v3, v1, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+  move-result            v2
+  if-eqz                 v2, +027h
+  invoke-virtual         v3, v1, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +021h
+  invoke-virtual         v3, v1, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v1
+  new-instance           v2, Lcom/adjust/sdk/AdjustStoreInfo;
+  invoke-direct          v2, v1, Lcom/adjust/sdk/AdjustStoreInfo;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v3, v0, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
+  move-result            v1
+  if-eqz                 v1, +00fh
+  invoke-virtual         v3, v0, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
+  move-result            v1
+  if-nez                 v1, +009h
+  invoke-virtual         v3, v0, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v0
+  invoke-virtual         v2, v0, Lcom/adjust/sdk/AdjustStoreInfo;->setStoreAppId(Ljava/lang/String;)V
+  invoke-virtual         v10, v2, Lcom/adjust/sdk/AdjustConfig;->setStoreInfo(Lcom/adjust/sdk/AdjustStoreInfo;)V
+  const-string/jumbo     v0, urlStrategyDomains
+  invoke-interface       v14, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +04ch
+  const-string/jumbo     v1, useSubdomains
+  invoke-interface       v14, v1, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v2
+  if-eqz                 v2, +043h
+  const-string           v2, "isDataResidency"
+  invoke-interface       v14, v2, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +03bh
+  invoke-interface       v14, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  new-instance           v3, Lorg/json/JSONArray;
+  invoke-direct          v3, v0, Lorg/json/JSONArray;-><init>(Ljava/lang/String;)V
+  new-instance           v0, Ljava/util/ArrayList;
+  invoke-direct          v0, Ljava/util/ArrayList;-><init>()V
+  invoke-virtual         v3, Lorg/json/JSONArray;->length()I
+  move-result            v5
+  if-ge                  v9, v5, +00eh
+  invoke-virtual         v3, v9, Lorg/json/JSONArray;->get(I)Ljava/lang/Object;
+  move-result-object     v5
+  check-cast             v5, Ljava/lang/String;
+  invoke-virtual         v0, v5, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+  add-int/lit8           v9, v9, 1
+  goto                   -11h
+  invoke-interface       v14, v1, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v1
+  check-cast             v1, Ljava/lang/String;
+  invoke-static          v1, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+  move-result            v1
+  invoke-interface       v14, v2, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v2
+  check-cast             v2, Ljava/lang/String;
+  invoke-static          v2, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+  move-result            v2
+  invoke-virtual         v10, v0, v1, v2, Lcom/adjust/sdk/AdjustConfig;->setUrlStrategy(Ljava/util/List; Z Z)V
+  const-string/jumbo     v0, processName
+  invoke-interface       v14, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +00bh
+  invoke-interface       v14, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-virtual         v10, v0, Lcom/adjust/sdk/AdjustConfig;->setProcessName(Ljava/lang/String;)V
+  const-string           v0, "defaultTracker"
+  invoke-interface       v14, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +00bh
+  invoke-interface       v14, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-virtual         v10, v0, Lcom/adjust/sdk/AdjustConfig;->setDefaultTracker(Ljava/lang/String;)V
+  const-string           v0, "externalDeviceId"
+  invoke-interface       v14, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +00bh
+  invoke-interface       v14, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-virtual         v10, v0, Lcom/adjust/sdk/AdjustConfig;->setExternalDeviceId(Ljava/lang/String;)V
+  const-string/jumbo     v0, preinstallFilePath
+  invoke-interface       v14, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +00bh
+  invoke-interface       v14, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-virtual         v10, v0, Lcom/adjust/sdk/AdjustConfig;->setPreinstallFilePath(Ljava/lang/String;)V
+  const-string           v0, "fbAppId"
+  invoke-interface       v14, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +00bh
+  invoke-interface       v14, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-virtual         v10, v0, Lcom/adjust/sdk/AdjustConfig;->setFbAppId(Ljava/lang/String;)V
+  const-string           v0, "isSendingInBackgroundEnabled"
+  invoke-interface       v14, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +011h
+  invoke-interface       v14, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-static          v0, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+  move-result            v0
+  if-eqz                 v0, +005h
+  invoke-virtual         v10, Lcom/adjust/sdk/AdjustConfig;->enableSendingInBackground()V
+  const-string           v0, "isCostDataInAttributionEnabled"
+  invoke-interface       v14, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +011h
+  invoke-interface       v14, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-static          v0, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+  move-result            v0
+  if-eqz                 v0, +005h
+  invoke-virtual         v10, Lcom/adjust/sdk/AdjustConfig;->enableCostDataInAttribution()V
+  const-string           v0, "isPreinstallTrackingEnabled"
+  invoke-interface       v14, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +011h
+  invoke-interface       v14, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-static          v0, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+  move-result            v0
+  if-eqz                 v0, +005h
+  invoke-virtual         v10, Lcom/adjust/sdk/AdjustConfig;->enablePreinstallTracking()V
+  const-string           v0, "isDeferredDeeplinkOpeningEnabled"
+  invoke-interface       v14, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +011h
+  invoke-interface       v14, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  const-string/jumbo     v1, true
+  invoke-virtual         v0, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  sput-boolean           v0, Lcom/adjust/sdk/flutter/AdjustSdk;->isDeferredDeeplinkOpeningEnabled Z
+  const-string           v0, "attributionCallback"
+  invoke-interface       v14, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +012h
+  invoke-interface       v14, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  if-eqz                 v0, +00ah
+  new-instance           v1, Ls3/d;
+  invoke-direct          v1, v13, v0, Ls3/d;-><init>(Lcom/adjust/sdk/flutter/AdjustSdk; Ljava/lang/String;)V
+  invoke-virtual         v10, v1, Lcom/adjust/sdk/AdjustConfig;->setOnAttributionChangedListener(Lcom/adjust/sdk/OnAttributionChangedListener;)V
+  const-string/jumbo     v0, sessionSuccessCallback
+  invoke-interface       v14, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +012h
+  invoke-interface       v14, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  if-eqz                 v0, +00ah
+  new-instance           v1, Ls3/e;
+  invoke-direct          v1, v13, v0, Ls3/e;-><init>(Lcom/adjust/sdk/flutter/AdjustSdk; Ljava/lang/String;)V
+  invoke-virtual         v10, v1, Lcom/adjust/sdk/AdjustConfig;->setOnSessionTrackingSucceededListener(Lcom/adjust/sdk/OnSessionTrackingSucceededListener;)V
+  const-string/jumbo     v0, sessionFailureCallback
+  invoke-interface       v14, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +012h
+  invoke-interface       v14, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  if-eqz                 v0, +00ah
+  new-instance           v1, Ls3/f;
+  invoke-direct          v1, v13, v0, Ls3/f;-><init>(Lcom/adjust/sdk/flutter/AdjustSdk; Ljava/lang/String;)V
+  invoke-virtual         v10, v1, Lcom/adjust/sdk/AdjustConfig;->setOnSessionTrackingFailedListener(Lcom/adjust/sdk/OnSessionTrackingFailedListener;)V
+  const-string           v0, "eventSuccessCallback"
+  invoke-interface       v14, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +012h
+  invoke-interface       v14, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  if-eqz                 v0, +00ah
+  new-instance           v1, Ls3/g;
+  invoke-direct          v1, v13, v0, Ls3/g;-><init>(Lcom/adjust/sdk/flutter/AdjustSdk; Ljava/lang/String;)V
+  invoke-virtual         v10, v1, Lcom/adjust/sdk/AdjustConfig;->setOnEventTrackingSucceededListener(Lcom/adjust/sdk/OnEventTrackingSucceededListener;)V
+  const-string           v0, "eventFailureCallback"
+  invoke-interface       v14, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v0
+  if-eqz                 v0, +014h
+  const-string           v0, "eventFailureCallback"
+  invoke-interface       v14, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  if-eqz                 v0, +00ah
+  new-instance           v1, Ls3/d;
+  invoke-direct          v1, v13, v0, Ls3/d;-><init>(Lcom/adjust/sdk/flutter/AdjustSdk; Ljava/lang/String;)V
+  invoke-virtual         v10, v1, Lcom/adjust/sdk/AdjustConfig;->setOnEventTrackingFailedListener(Lcom/adjust/sdk/OnEventTrackingFailedListener;)V
+  const-string           v0, "deferredDeeplinkCallback"
+  invoke-interface       v14, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v0
+  if-eqz                 v0, +014h
+  const-string           v0, "deferredDeeplinkCallback"
+  invoke-interface       v14, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  if-eqz                 v0, +00ah
+  new-instance           v1, Ls3/e;
+  invoke-direct          v1, v13, v0, Ls3/e;-><init>(Lcom/adjust/sdk/flutter/AdjustSdk; Ljava/lang/String;)V
+  invoke-virtual         v10, v1, Lcom/adjust/sdk/AdjustConfig;->setOnDeferredDeeplinkResponseListener(Lcom/adjust/sdk/OnDeferredDeeplinkResponseListener;)V
+  const-string/jumbo     v0, remoteTriggerCallback
+  invoke-interface       v14, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v0
+  if-eqz                 v0, +015h
+  const-string/jumbo     v0, remoteTriggerCallback
+  invoke-interface       v14, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  if-eqz                 v0, +00ah
+  new-instance           v1, Ls3/f;
+  invoke-direct          v1, v13, v0, Ls3/f;-><init>(Lcom/adjust/sdk/flutter/AdjustSdk; Ljava/lang/String;)V
+  invoke-virtual         v10, v1, Lcom/adjust/sdk/AdjustConfig;->setOnRemoteTriggerListener(Lcom/adjust/sdk/OnRemoteTriggerListener;)V
+  const-string/jumbo     v0, thirdPartySharingSettingsChangedCallback
+  invoke-interface       v14, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v0
+  if-eqz                 v0, +015h
+  const-string/jumbo     v0, thirdPartySharingSettingsChangedCallback
+  invoke-interface       v14, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v14
+  check-cast             v14, Ljava/lang/String;
+  if-eqz                 v14, +00ah
+  new-instance           v0, Ls3/g;
+  invoke-direct          v0, v13, v14, Ls3/g;-><init>(Lcom/adjust/sdk/flutter/AdjustSdk; Ljava/lang/String;)V
+  invoke-virtual         v10, v0, Lcom/adjust/sdk/AdjustConfig;->setOnThirdPartySharingSettingsChangedListener(Lcom/adjust/sdk/OnThirdPartySharingSettingsChangedListener;)V
+  invoke-static          v10, Lcom/adjust/sdk/Adjust;->initSdk(Lcom/adjust/sdk/AdjustConfig;)V
+  iput-boolean           v7, v13, Lcom/adjust/sdk/flutter/AdjustSdk;->isSdkInitialized Z
+  invoke-direct          v13, Lcom/adjust/sdk/flutter/AdjustSdk;->flushCachedDirectDeeplinks()V
+  invoke-interface       v15, v4, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+  nop                    
+  sparse-switch-payload  -6321594b -53ef8cba 3164ae 379286 5b09653 5c4d208 14ed7982
+
+---- METHOD private isEnabled (Ly8/q;)V ----
+  iget-object            v0, v2, Lcom/adjust/sdk/flutter/AdjustSdk;->applicationContext Landroid/content/Context;
+  new-instance           v1, Lcom/dexterous/flutterlocalnotifications/e;
+  invoke-direct          v1, v3, Lcom/dexterous/flutterlocalnotifications/e;-><init>(Ly8/q;)V
+  invoke-static          v0, v1, Lcom/adjust/sdk/Adjust;->isEnabled(Landroid/content/Context; Lcom/adjust/sdk/OnIsEnabledListener;)V
+  return-void            
+
+---- METHOD private onPause (Ly8/q;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->onPause()V
+  const/4                v0, 0
+  invoke-interface       v2, v0, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private onResume (Ly8/q;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->onResume()V
+  const/4                v0, 0
+  invoke-interface       v2, v0, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private processAndResolveDeeplink (Ly8/o; Ly8/q;)V ----
+  iget-object            v4, v4, Ly8/o;->b Ljava/lang/Object;
+  check-cast             v4, Ljava/util/Map;
+  if-nez                 v4, +003h
+  return-void            
+  const-string           v0, "deeplink"
+  invoke-interface       v4, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +028h
+  invoke-interface       v4, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  new-instance           v1, Lcom/adjust/sdk/AdjustDeeplink;
+  invoke-static          v0, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+  move-result-object     v0
+  invoke-direct          v1, v0, Lcom/adjust/sdk/AdjustDeeplink;-><init>(Landroid/net/Uri;)V
+  const-string/jumbo     v0, referrer
+  invoke-interface       v4, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v2
+  if-eqz                 v2, +011h
+  invoke-interface       v4, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v4
+  check-cast             v4, Ljava/lang/String;
+  invoke-static          v4, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+  move-result-object     v4
+  invoke-virtual         v1, v4, Lcom/adjust/sdk/AdjustDeeplink;->setReferrer(Landroid/net/Uri;)V
+  goto                   +2h
+  const/4                v1, 0
+  iget-object            v4, v3, Lcom/adjust/sdk/flutter/AdjustSdk;->applicationContext Landroid/content/Context;
+  new-instance           v0, Lcom/dexterous/flutterlocalnotifications/b;
+  invoke-direct          v0, v5, Lcom/dexterous/flutterlocalnotifications/b;-><init>(Ly8/q;)V
+  invoke-static          v1, v4, v0, Lcom/adjust/sdk/Adjust;->processAndResolveDeeplink(Lcom/adjust/sdk/AdjustDeeplink; Landroid/content/Context; Lcom/adjust/sdk/OnDeeplinkResolvedListener;)V
+  return-void            
+
+---- METHOD private processDeeplink (Ly8/o; Ly8/q;)V ----
+  iget-object            v5, v5, Ly8/o;->b Ljava/lang/Object;
+  check-cast             v5, Ljava/util/Map;
+  if-nez                 v5, +003h
+  return-void            
+  const-string           v0, "deeplink"
+  invoke-interface       v5, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  const/4                v2, 0
+  if-eqz                 v1, +028h
+  invoke-interface       v5, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  new-instance           v1, Lcom/adjust/sdk/AdjustDeeplink;
+  invoke-static          v0, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+  move-result-object     v0
+  invoke-direct          v1, v0, Lcom/adjust/sdk/AdjustDeeplink;-><init>(Landroid/net/Uri;)V
+  const-string/jumbo     v0, referrer
+  invoke-interface       v5, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +011h
+  invoke-interface       v5, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v5
+  check-cast             v5, Ljava/lang/String;
+  invoke-static          v5, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+  move-result-object     v5
+  invoke-virtual         v1, v5, Lcom/adjust/sdk/AdjustDeeplink;->setReferrer(Landroid/net/Uri;)V
+  goto                   +2h
+  move-object            v1, v2
+  iget-object            v5, v4, Lcom/adjust/sdk/flutter/AdjustSdk;->applicationContext Landroid/content/Context;
+  invoke-static          v1, v5, Lcom/adjust/sdk/Adjust;->processDeeplink(Lcom/adjust/sdk/AdjustDeeplink; Landroid/content/Context;)V
+  invoke-interface       v6, v2, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private processDeeplinkFromIntent (Landroid/content/Intent;)V ----
+  if-nez                 v2, +003h
+  return-void            
+  invoke-virtual         v2, Landroid/content/Intent;->getData()Landroid/net/Uri;
+  move-result-object     v2
+  if-nez                 v2, +003h
+  return-void            
+  const/4                v0, 0
+  invoke-direct          v1, v2, v0, Lcom/adjust/sdk/flutter/AdjustSdk;->dispatchOrCacheDirectDeeplink(Landroid/net/Uri; Landroid/net/Uri;)V
+  return-void            
+
+---- METHOD private removeGlobalCallbackParameter (Ly8/o; Ly8/q;)V ----
+  const-string           v0, "key"
+  invoke-virtual         v4, v0, Ly8/o;->b(Ljava/lang/String;)Z
+  move-result            v1
+  const/4                v2, 0
+  if-eqz                 v1, +009h
+  invoke-virtual         v4, v0, Ly8/o;->a(Ljava/lang/String;)Ljava/lang/Object;
+  move-result-object     v4
+  check-cast             v4, Ljava/lang/String;
+  goto                   +2h
+  move-object            v4, v2
+  invoke-static          v4, Lcom/adjust/sdk/Adjust;->removeGlobalCallbackParameter(Ljava/lang/String;)V
+  invoke-interface       v5, v2, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private removeGlobalCallbackParameters (Ly8/q;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->removeGlobalCallbackParameters()V
+  const/4                v0, 0
+  invoke-interface       v2, v0, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private removeGlobalPartnerParameter (Ly8/o; Ly8/q;)V ----
+  const-string           v0, "key"
+  invoke-virtual         v4, v0, Ly8/o;->b(Ljava/lang/String;)Z
+  move-result            v1
+  const/4                v2, 0
+  if-eqz                 v1, +009h
+  invoke-virtual         v4, v0, Ly8/o;->a(Ljava/lang/String;)Ljava/lang/Object;
+  move-result-object     v4
+  check-cast             v4, Ljava/lang/String;
+  goto                   +2h
+  move-object            v4, v2
+  invoke-static          v4, Lcom/adjust/sdk/Adjust;->removeGlobalPartnerParameter(Ljava/lang/String;)V
+  invoke-interface       v5, v2, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private removeGlobalPartnerParameters (Ly8/q;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->removeGlobalPartnerParameters()V
+  const/4                v0, 0
+  invoke-interface       v2, v0, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private requestAppTrackingAuthorization (Ly8/q;)V ----
+  const/4                v0, -1
+  invoke-static          v0, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v0
+  invoke-interface       v2, v0, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private setExternalDeviceIdInDelay (Ly8/o; Ly8/q;)V ----
+  iget-object            v4, v4, Ly8/o;->b Ljava/lang/Object;
+  check-cast             v4, Ljava/util/Map;
+  const-string           v0, "externalDeviceId"
+  invoke-interface       v4, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  const/4                v2, 0
+  if-eqz                 v1, +00bh
+  invoke-interface       v4, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v4
+  invoke-virtual         v4, Ljava/lang/Object;->toString()Ljava/lang/String;
+  move-result-object     v4
+  goto                   +2h
+  move-object            v4, v2
+  invoke-static          v4, Lcom/adjust/sdk/Adjust;->setExternalDeviceIdInDelay(Ljava/lang/String;)V
+  invoke-interface       v5, v2, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private setPushToken (Ly8/o; Ly8/q;)V ----
+  iget-object            v4, v4, Ly8/o;->b Ljava/lang/Object;
+  check-cast             v4, Ljava/util/Map;
+  const-string/jumbo     v0, pushToken
+  invoke-interface       v4, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  const/4                v2, 0
+  if-eqz                 v1, +00bh
+  invoke-interface       v4, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v4
+  invoke-virtual         v4, Ljava/lang/Object;->toString()Ljava/lang/String;
+  move-result-object     v4
+  goto                   +2h
+  move-object            v4, v2
+  iget-object            v0, v3, Lcom/adjust/sdk/flutter/AdjustSdk;->applicationContext Landroid/content/Context;
+  invoke-static          v4, v0, Lcom/adjust/sdk/Adjust;->setPushToken(Ljava/lang/String; Landroid/content/Context;)V
+  invoke-interface       v5, v2, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private setReferrer (Ly8/o; Ly8/q;)V ----
+  const-string/jumbo     v0, referrer
+  invoke-virtual         v4, v0, Ly8/o;->b(Ljava/lang/String;)Z
+  move-result            v1
+  const/4                v2, 0
+  if-eqz                 v1, +009h
+  invoke-virtual         v4, v0, Ly8/o;->a(Ljava/lang/String;)Ljava/lang/Object;
+  move-result-object     v4
+  check-cast             v4, Ljava/lang/String;
+  goto                   +2h
+  move-object            v4, v2
+  iget-object            v0, v3, Lcom/adjust/sdk/flutter/AdjustSdk;->applicationContext Landroid/content/Context;
+  invoke-static          v4, v0, Lcom/adjust/sdk/Adjust;->setReferrer(Ljava/lang/String; Landroid/content/Context;)V
+  invoke-interface       v5, v2, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private setTestOptions (Ly8/o; Ly8/q;)V ----
+  new-instance           v5, Lcom/adjust/sdk/AdjustTestOptions;
+  invoke-direct          v5, Lcom/adjust/sdk/AdjustTestOptions;-><init>()V
+  iget-object            v4, v4, Ly8/o;->b Ljava/lang/Object;
+  check-cast             v4, Ljava/util/Map;
+  const-string           v0, "baseUrl"
+  invoke-interface       v4, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +00ah
+  invoke-interface       v4, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  iput-object            v0, v5, Lcom/adjust/sdk/AdjustTestOptions;->baseUrl Ljava/lang/String;
+  const-string           v0, "gdprUrl"
+  invoke-interface       v4, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +00ah
+  invoke-interface       v4, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  iput-object            v0, v5, Lcom/adjust/sdk/AdjustTestOptions;->gdprUrl Ljava/lang/String;
+  const-string/jumbo     v0, subscriptionUrl
+  invoke-interface       v4, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +00ah
+  invoke-interface       v4, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  iput-object            v0, v5, Lcom/adjust/sdk/AdjustTestOptions;->subscriptionUrl Ljava/lang/String;
+  const-string/jumbo     v0, purchaseVerificationUrl
+  invoke-interface       v4, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +00ah
+  invoke-interface       v4, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  iput-object            v0, v5, Lcom/adjust/sdk/AdjustTestOptions;->purchaseVerificationUrl Ljava/lang/String;
+  const-string           v0, "basePath"
+  invoke-interface       v4, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +00ah
+  invoke-interface       v4, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  iput-object            v0, v5, Lcom/adjust/sdk/AdjustTestOptions;->basePath Ljava/lang/String;
+  const-string           v0, "gdprPath"
+  invoke-interface       v4, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +00ah
+  invoke-interface       v4, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  iput-object            v0, v5, Lcom/adjust/sdk/AdjustTestOptions;->gdprPath Ljava/lang/String;
+  const-string/jumbo     v0, subscriptionPath
+  invoke-interface       v4, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +00ah
+  invoke-interface       v4, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  iput-object            v0, v5, Lcom/adjust/sdk/AdjustTestOptions;->subscriptionPath Ljava/lang/String;
+  const-string/jumbo     v0, purchaseVerificationPath
+  invoke-interface       v4, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +00ah
+  invoke-interface       v4, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  iput-object            v0, v5, Lcom/adjust/sdk/AdjustTestOptions;->purchaseVerificationPath Ljava/lang/String;
+  const-string           v0, "noBackoffWait"
+  invoke-interface       v4, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  const-string/jumbo     v2, true
+  if-eqz                 v1, +014h
+  invoke-interface       v4, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  invoke-virtual         v0, Ljava/lang/Object;->toString()Ljava/lang/String;
+  move-result-object     v0
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  invoke-static          v0, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object     v0
+  iput-object            v0, v5, Lcom/adjust/sdk/AdjustTestOptions;->noBackoffWait Ljava/lang/Boolean;
+  const-string/jumbo     v0, teardown
+  invoke-interface       v4, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +014h
+  invoke-interface       v4, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  invoke-virtual         v0, Ljava/lang/Object;->toString()Ljava/lang/String;
+  move-result-object     v0
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  invoke-static          v0, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object     v0
+  iput-object            v0, v5, Lcom/adjust/sdk/AdjustTestOptions;->teardown Ljava/lang/Boolean;
+  const-string/jumbo     v0, tryInstallReferrer
+  invoke-interface       v4, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +014h
+  invoke-interface       v4, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  invoke-virtual         v0, Ljava/lang/Object;->toString()Ljava/lang/String;
+  move-result-object     v0
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  invoke-static          v0, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object     v0
+  iput-object            v0, v5, Lcom/adjust/sdk/AdjustTestOptions;->tryInstallReferrer Ljava/lang/Boolean;
+  const-string/jumbo     v0, timerIntervalInMilliseconds
+  invoke-interface       v4, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +014h
+  invoke-interface       v4, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  invoke-virtual         v0, Ljava/lang/Object;->toString()Ljava/lang/String;
+  move-result-object     v0
+  invoke-static          v0, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+  move-result-wide       v0
+  invoke-static          v0, v1, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v0
+  iput-object            v0, v5, Lcom/adjust/sdk/AdjustTestOptions;->timerIntervalInMilliseconds Ljava/lang/Long;
+  const-string/jumbo     v0, timerStartInMilliseconds
+  invoke-interface       v4, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +014h
+  invoke-interface       v4, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  invoke-virtual         v0, Ljava/lang/Object;->toString()Ljava/lang/String;
+  move-result-object     v0
+  invoke-static          v0, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+  move-result-wide       v0
+  invoke-static          v0, v1, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v0
+  iput-object            v0, v5, Lcom/adjust/sdk/AdjustTestOptions;->timerStartInMilliseconds Ljava/lang/Long;
+  const-string/jumbo     v0, sessionIntervalInMilliseconds
+  invoke-interface       v4, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +014h
+  invoke-interface       v4, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  invoke-virtual         v0, Ljava/lang/Object;->toString()Ljava/lang/String;
+  move-result-object     v0
+  invoke-static          v0, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+  move-result-wide       v0
+  invoke-static          v0, v1, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v0
+  iput-object            v0, v5, Lcom/adjust/sdk/AdjustTestOptions;->sessionIntervalInMilliseconds Ljava/lang/Long;
+  const-string/jumbo     v0, subsessionIntervalInMilliseconds
+  invoke-interface       v4, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +014h
+  invoke-interface       v4, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  invoke-virtual         v0, Ljava/lang/Object;->toString()Ljava/lang/String;
+  move-result-object     v0
+  invoke-static          v0, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+  move-result-wide       v0
+  invoke-static          v0, v1, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+  move-result-object     v0
+  iput-object            v0, v5, Lcom/adjust/sdk/AdjustTestOptions;->subsessionIntervalInMilliseconds Ljava/lang/Long;
+  const-string           v0, "deleteState"
+  invoke-interface       v4, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v0
+  if-eqz                 v0, +006h
+  iget-object            v0, v3, Lcom/adjust/sdk/flutter/AdjustSdk;->applicationContext Landroid/content/Context;
+  iput-object            v0, v5, Lcom/adjust/sdk/AdjustTestOptions;->context Landroid/content/Context;
+  const-string           v0, "ignoreSystemLifecycleBootstrap"
+  invoke-interface       v4, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +014h
+  invoke-interface       v4, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v4
+  invoke-virtual         v4, Ljava/lang/Object;->toString()Ljava/lang/String;
+  move-result-object     v4
+  invoke-virtual         v4, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v4
+  invoke-static          v4, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object     v4
+  iput-object            v4, v5, Lcom/adjust/sdk/AdjustTestOptions;->ignoreSystemLifecycleBootstrap Ljava/lang/Boolean;
+  invoke-static          v5, Lcom/adjust/sdk/Adjust;->setTestOptions(Lcom/adjust/sdk/AdjustTestOptions;)V
+  return-void            
+
+---- METHOD private switchBackToOnlineMode (Ly8/q;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->switchBackToOnlineMode()V
+  const/4                v0, 0
+  invoke-interface       v2, v0, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private switchToOfflineMode (Ly8/q;)V ----
+  invoke-static          Lcom/adjust/sdk/Adjust;->switchToOfflineMode()V
+  const/4                v0, 0
+  invoke-interface       v2, v0, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private trackAdRevenue (Ly8/o; Ly8/q;)V ----
+  iget-object            v9, v9, Ly8/o;->b Ljava/lang/Object;
+  check-cast             v9, Ljava/util/Map;
+  if-nez                 v9, +003h
+  return-void            
+  const-string/jumbo     v0, source
+  invoke-interface       v9, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  const/4                v2, 0
+  if-eqz                 v1, +009h
+  invoke-interface       v9, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  goto                   +2h
+  move-object            v0, v2
+  new-instance           v1, Lcom/adjust/sdk/AdjustAdRevenue;
+  invoke-direct          v1, v0, Lcom/adjust/sdk/AdjustAdRevenue;-><init>(Ljava/lang/String;)V
+  const-string/jumbo     v0, revenue
+  invoke-interface       v9, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  const-string           v4, "currency"
+  if-nez                 v3, +008h
+  invoke-interface       v9, v4, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +019h
+  invoke-interface       v9, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-static          v0, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
+  move-result-wide       v5
+  invoke-interface       v9, v4, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-static          v5, v6, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+  move-result-object     v3
+  invoke-virtual         v1, v3, v0, Lcom/adjust/sdk/AdjustAdRevenue;->setRevenue(Ljava/lang/Double; Ljava/lang/String;)V
+  const-string           v0, "adImpressionsCount"
+  invoke-interface       v9, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +013h
+  invoke-interface       v9, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-static          v0, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+  move-result            v0
+  invoke-static          v0, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v0
+  invoke-virtual         v1, v0, Lcom/adjust/sdk/AdjustAdRevenue;->setAdImpressionsCount(Ljava/lang/Integer;)V
+  const-string           v0, "adRevenueNetwork"
+  invoke-interface       v9, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +00bh
+  invoke-interface       v9, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-virtual         v1, v0, Lcom/adjust/sdk/AdjustAdRevenue;->setAdRevenueNetwork(Ljava/lang/String;)V
+  const-string           v0, "adRevenueUnit"
+  invoke-interface       v9, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +00bh
+  invoke-interface       v9, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-virtual         v1, v0, Lcom/adjust/sdk/AdjustAdRevenue;->setAdRevenueUnit(Ljava/lang/String;)V
+  const-string           v0, "adRevenuePlacement"
+  invoke-interface       v9, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +00bh
+  invoke-interface       v9, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-virtual         v1, v0, Lcom/adjust/sdk/AdjustAdRevenue;->setAdRevenuePlacement(Ljava/lang/String;)V
+  const-string           v0, "callbackParameters"
+  invoke-interface       v9, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  const/4                v4, 0
+  if-eqz                 v3, +03ah
+  invoke-interface       v9, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  new-instance           v3, Lorg/json/JSONObject;
+  invoke-direct          v3, v0, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v3, Lorg/json/JSONObject;->names()Lorg/json/JSONArray;
+  move-result-object     v0
+  move                   v5, v4
+  invoke-virtual         v0, Lorg/json/JSONArray;->length()I
+  move-result            v6
+  if-ge                  v5, v6, +024h
+  invoke-virtual         v0, v5, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
+  move-result-object     v6
+  invoke-virtual         v3, v6, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v7
+  invoke-virtual         v1, v6, v7, Lcom/adjust/sdk/AdjustAdRevenue;->addCallbackParameter(Ljava/lang/String; Ljava/lang/String;)V
+  add-int/lit8           v5, v5, 1
+  goto                   -13h
+  move-exception         v0
+  sget-object            v3, Lcom/adjust/sdk/flutter/AdjustSdk;->TAG Ljava/lang/String;
+  new-instance           v5, Ljava/lang/StringBuilder;
+  const-string           v6, "Failed to parse ad revenue callback parameter! Details: "
+  invoke-direct          v5, v6, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v5, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  invoke-virtual         v5, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v0
+  invoke-static          v3, v0, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String;)I
+  const-string/jumbo     v0, partnerParameters
+  invoke-interface       v9, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +039h
+  invoke-interface       v9, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v9
+  check-cast             v9, Ljava/lang/String;
+  new-instance           v0, Lorg/json/JSONObject;
+  invoke-direct          v0, v9, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v0, Lorg/json/JSONObject;->names()Lorg/json/JSONArray;
+  move-result-object     v9
+  invoke-virtual         v9, Lorg/json/JSONArray;->length()I
+  move-result            v3
+  if-ge                  v4, v3, +024h
+  invoke-virtual         v9, v4, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
+  move-result-object     v3
+  invoke-virtual         v0, v3, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v5
+  invoke-virtual         v1, v3, v5, Lcom/adjust/sdk/AdjustAdRevenue;->addPartnerParameter(Ljava/lang/String; Ljava/lang/String;)V
+  add-int/lit8           v4, v4, 1
+  goto                   -13h
+  move-exception         v9
+  sget-object            v0, Lcom/adjust/sdk/flutter/AdjustSdk;->TAG Ljava/lang/String;
+  new-instance           v3, Ljava/lang/StringBuilder;
+  const-string           v4, "Failed to parse ad revenue partner parameter! Details: "
+  invoke-direct          v3, v4, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v3, v9, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  invoke-virtual         v3, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v9
+  invoke-static          v0, v9, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String;)I
+  invoke-static          v1, Lcom/adjust/sdk/Adjust;->trackAdRevenue(Lcom/adjust/sdk/AdjustAdRevenue;)V
+  invoke-interface       v10, v2, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private trackAppStoreSubscription (Ly8/q;)V ----
+  const-string           v0, "Error. No trackAppStoreSubscription on Android platform!"
+  invoke-interface       v2, v0, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private trackEvent (Ly8/o; Ly8/q;)V ----
+  iget-object            v9, v9, Ly8/o;->b Ljava/lang/Object;
+  check-cast             v9, Ljava/util/Map;
+  if-nez                 v9, +003h
+  return-void            
+  const-string           v0, "eventToken"
+  invoke-interface       v9, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  const/4                v2, 0
+  if-eqz                 v1, +009h
+  invoke-interface       v9, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  goto                   +2h
+  move-object            v0, v2
+  new-instance           v1, Lcom/adjust/sdk/AdjustEvent;
+  invoke-direct          v1, v0, Lcom/adjust/sdk/AdjustEvent;-><init>(Ljava/lang/String;)V
+  const-string/jumbo     v0, revenue
+  invoke-interface       v9, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  const-string           v4, "currency"
+  if-nez                 v3, +008h
+  invoke-interface       v9, v4, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +018h
+  invoke-interface       v9, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-static          v0, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
+  move-result-wide       v5
+  goto                   +3h
+  const-wide/high16      v5, -4616189618054758400
+  invoke-interface       v9, v4, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-virtual         v1, v5, v6, v0, Lcom/adjust/sdk/AdjustEvent;->setRevenue(D Ljava/lang/String;)V
+  const-string           v0, "deduplicationId"
+  invoke-interface       v9, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +00bh
+  invoke-interface       v9, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-virtual         v1, v0, Lcom/adjust/sdk/AdjustEvent;->setDeduplicationId(Ljava/lang/String;)V
+  const-string/jumbo     v0, productId
+  invoke-interface       v9, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +00bh
+  invoke-interface       v9, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-virtual         v1, v0, Lcom/adjust/sdk/AdjustEvent;->setProductId(Ljava/lang/String;)V
+  const-string/jumbo     v0, purchaseToken
+  invoke-interface       v9, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +00bh
+  invoke-interface       v9, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-virtual         v1, v0, Lcom/adjust/sdk/AdjustEvent;->setPurchaseToken(Ljava/lang/String;)V
+  const-string           v0, "callbackId"
+  invoke-interface       v9, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +00bh
+  invoke-interface       v9, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-virtual         v1, v0, Lcom/adjust/sdk/AdjustEvent;->setCallbackId(Ljava/lang/String;)V
+  const-string           v0, "callbackParameters"
+  invoke-interface       v9, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  const/4                v4, 0
+  if-eqz                 v3, +03ah
+  invoke-interface       v9, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  new-instance           v3, Lorg/json/JSONObject;
+  invoke-direct          v3, v0, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v3, Lorg/json/JSONObject;->names()Lorg/json/JSONArray;
+  move-result-object     v0
+  move                   v5, v4
+  invoke-virtual         v0, Lorg/json/JSONArray;->length()I
+  move-result            v6
+  if-ge                  v5, v6, +024h
+  invoke-virtual         v0, v5, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
+  move-result-object     v6
+  invoke-virtual         v3, v6, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v7
+  invoke-virtual         v1, v6, v7, Lcom/adjust/sdk/AdjustEvent;->addCallbackParameter(Ljava/lang/String; Ljava/lang/String;)V
+  add-int/lit8           v5, v5, 1
+  goto                   -13h
+  move-exception         v0
+  sget-object            v3, Lcom/adjust/sdk/flutter/AdjustSdk;->TAG Ljava/lang/String;
+  new-instance           v5, Ljava/lang/StringBuilder;
+  const-string           v6, "Failed to parse event callback parameter! Details: "
+  invoke-direct          v5, v6, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v5, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  invoke-virtual         v5, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v0
+  invoke-static          v3, v0, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String;)I
+  const-string/jumbo     v0, partnerParameters
+  invoke-interface       v9, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +039h
+  invoke-interface       v9, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v9
+  check-cast             v9, Ljava/lang/String;
+  new-instance           v0, Lorg/json/JSONObject;
+  invoke-direct          v0, v9, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v0, Lorg/json/JSONObject;->names()Lorg/json/JSONArray;
+  move-result-object     v9
+  invoke-virtual         v9, Lorg/json/JSONArray;->length()I
+  move-result            v3
+  if-ge                  v4, v3, +024h
+  invoke-virtual         v9, v4, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
+  move-result-object     v3
+  invoke-virtual         v0, v3, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v5
+  invoke-virtual         v1, v3, v5, Lcom/adjust/sdk/AdjustEvent;->addPartnerParameter(Ljava/lang/String; Ljava/lang/String;)V
+  add-int/lit8           v4, v4, 1
+  goto                   -13h
+  move-exception         v9
+  sget-object            v0, Lcom/adjust/sdk/flutter/AdjustSdk;->TAG Ljava/lang/String;
+  new-instance           v3, Ljava/lang/StringBuilder;
+  const-string           v4, "Failed to parse event partner parameter! Details: "
+  invoke-direct          v3, v4, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v3, v9, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  invoke-virtual         v3, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v9
+  invoke-static          v0, v9, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String;)I
+  invoke-static          v1, Lcom/adjust/sdk/Adjust;->trackEvent(Lcom/adjust/sdk/AdjustEvent;)V
+  invoke-interface       v10, v2, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private trackMeasurementConsent (Ly8/o; Ly8/q;)V ----
+  iget-object            v4, v4, Ly8/o;->b Ljava/lang/Object;
+  check-cast             v4, Ljava/util/Map;
+  const-string           v0, "measurementConsent"
+  invoke-interface       v4, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  const/4                v2, 0
+  if-nez                 v1, +00ah
+  const-string           v4, "0"
+  const-string           v0, "Arguments null or wrong (missing argument of 'trackMeasurementConsent' method."
+  invoke-interface       v5, v4, v0, v2, Ly8/q;->error(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Object;)V
+  return-void            
+  invoke-interface       v4, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v4
+  check-cast             v4, Ljava/lang/Boolean;
+  invoke-virtual         v4, Ljava/lang/Boolean;->booleanValue()Z
+  move-result            v4
+  invoke-static          v4, Lcom/adjust/sdk/Adjust;->trackMeasurementConsent(Z)V
+  invoke-interface       v5, v2, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private trackPlayStoreSubscription (Ly8/o; Ly8/q;)V ----
+  iget-object            v12, v12, Ly8/o;->b Ljava/lang/Object;
+  check-cast             v12, Ljava/util/Map;
+  if-nez                 v12, +003h
+  return-void            
+  const-string/jumbo     v0, price
+  invoke-interface       v12, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +010h
+  invoke-interface       v12, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  invoke-virtual         v0, Ljava/lang/Object;->toString()Ljava/lang/String;
+  move-result-object     v0
+  invoke-static          v0, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+  move-result-wide       v0
+  move-wide              v3, v0
+  goto                   +4h
+  const-wide/16          v0, -1
+  goto                   -4h
+  const-string           v0, "currency"
+  invoke-interface       v12, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  const/4                v10, 0
+  if-eqz                 v1, +00ah
+  invoke-interface       v12, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  move-object            v5, v0
+  goto                   +2h
+  move-object            v5, v10
+  const-string/jumbo     v0, sku
+  invoke-interface       v12, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +00ah
+  invoke-interface       v12, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  move-object            v6, v0
+  goto                   +2h
+  move-object            v6, v10
+  const-string           v0, "orderId"
+  invoke-interface       v12, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +00ah
+  invoke-interface       v12, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  move-object            v7, v0
+  goto                   +2h
+  move-object            v7, v10
+  const-string/jumbo     v0, signature
+  invoke-interface       v12, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +00ah
+  invoke-interface       v12, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  move-object            v8, v0
+  goto                   +2h
+  move-object            v8, v10
+  const-string/jumbo     v0, purchaseToken
+  invoke-interface       v12, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +00ah
+  invoke-interface       v12, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  move-object            v9, v0
+  goto                   +2h
+  move-object            v9, v10
+  new-instance           v0, Lcom/adjust/sdk/AdjustPlayStoreSubscription;
+  move-object            v2, v0
+  invoke-direct/range    v2 ... v9, Lcom/adjust/sdk/AdjustPlayStoreSubscription;-><init>(J Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V
+  const-string/jumbo     v1, purchaseTime
+  invoke-interface       v12, v1, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v2
+  if-eqz                 v2, +011h
+  invoke-interface       v12, v1, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v1
+  invoke-virtual         v1, Ljava/lang/Object;->toString()Ljava/lang/String;
+  move-result-object     v1
+  invoke-static          v1, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+  move-result-wide       v1
+  invoke-virtual         v0, v1, v2, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->setPurchaseTime(J)V
+  const-string           v1, "callbackParameters"
+  invoke-interface       v12, v1, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v2
+  const/4                v3, 0
+  if-eqz                 v2, +03ah
+  invoke-interface       v12, v1, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v1
+  check-cast             v1, Ljava/lang/String;
+  new-instance           v2, Lorg/json/JSONObject;
+  invoke-direct          v2, v1, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v2, Lorg/json/JSONObject;->names()Lorg/json/JSONArray;
+  move-result-object     v1
+  move                   v4, v3
+  invoke-virtual         v1, Lorg/json/JSONArray;->length()I
+  move-result            v5
+  if-ge                  v4, v5, +024h
+  invoke-virtual         v1, v4, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
+  move-result-object     v5
+  invoke-virtual         v2, v5, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v6
+  invoke-virtual         v0, v5, v6, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->addCallbackParameter(Ljava/lang/String; Ljava/lang/String;)V
+  add-int/lit8           v4, v4, 1
+  goto                   -13h
+  move-exception         v1
+  sget-object            v2, Lcom/adjust/sdk/flutter/AdjustSdk;->TAG Ljava/lang/String;
+  new-instance           v4, Ljava/lang/StringBuilder;
+  const-string           v5, "Failed to parse subscription callback parameter! Details: "
+  invoke-direct          v4, v5, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v4, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  invoke-virtual         v4, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v1
+  invoke-static          v2, v1, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String;)I
+  const-string/jumbo     v1, partnerParameters
+  invoke-interface       v12, v1, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v2
+  if-eqz                 v2, +039h
+  invoke-interface       v12, v1, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v12
+  check-cast             v12, Ljava/lang/String;
+  new-instance           v1, Lorg/json/JSONObject;
+  invoke-direct          v1, v12, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v1, Lorg/json/JSONObject;->names()Lorg/json/JSONArray;
+  move-result-object     v12
+  invoke-virtual         v12, Lorg/json/JSONArray;->length()I
+  move-result            v2
+  if-ge                  v3, v2, +024h
+  invoke-virtual         v12, v3, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
+  move-result-object     v2
+  invoke-virtual         v1, v2, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v4
+  invoke-virtual         v0, v2, v4, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->addPartnerParameter(Ljava/lang/String; Ljava/lang/String;)V
+  add-int/lit8           v3, v3, 1
+  goto                   -13h
+  move-exception         v12
+  sget-object            v1, Lcom/adjust/sdk/flutter/AdjustSdk;->TAG Ljava/lang/String;
+  new-instance           v2, Ljava/lang/StringBuilder;
+  const-string           v3, "Failed to parse subscription partner parameter! Details: "
+  invoke-direct          v2, v3, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v2, v12, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  invoke-virtual         v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v12
+  invoke-static          v1, v12, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String;)I
+  invoke-static          v0, Lcom/adjust/sdk/Adjust;->trackPlayStoreSubscription(Lcom/adjust/sdk/AdjustPlayStoreSubscription;)V
+  invoke-interface       v13, v10, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private trackThirdPartySharing (Ly8/o; Ly8/q;)V ----
+  iget-object            v11, v11, Ly8/o;->b Ljava/lang/Object;
+  check-cast             v11, Ljava/util/Map;
+  if-nez                 v11, +003h
+  return-void            
+  const-string           v0, "isEnabled"
+  invoke-interface       v11, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  const/4                v2, 0
+  if-eqz                 v1, +009h
+  invoke-interface       v11, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/Boolean;
+  goto                   +2h
+  move-object            v0, v2
+  new-instance           v1, Lcom/adjust/sdk/AdjustThirdPartySharing;
+  invoke-direct          v1, v0, Lcom/adjust/sdk/AdjustThirdPartySharing;-><init>(Ljava/lang/Boolean;)V
+  const-string           v0, "granularOptions"
+  invoke-interface       v11, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  const/4                v4, 0
+  const/4                v5, -1
+  const-string           v6, "__ADJ__"
+  if-eqz                 v3, +020h
+  invoke-interface       v11, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-virtual         v0, v6, v5, Ljava/lang/String;->split(Ljava/lang/String; I)[Ljava/lang/String;
+  move-result-object     v0
+  move                   v3, v4
+  array-length           v7, v0
+  if-ge                  v3, v7, +012h
+  aget-object            v7, v0, v3
+  add-int/lit8           v8, v3, 1
+  aget-object            v8, v0, v8
+  add-int/lit8           v9, v3, 2
+  aget-object            v9, v0, v9
+  invoke-virtual         v1, v7, v8, v9, Lcom/adjust/sdk/AdjustThirdPartySharing;->addGranularOption(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V
+  add-int/lit8           v3, v3, 3
+  goto                   -12h
+  const-string/jumbo     v0, partnerSharingSettings
+  invoke-interface       v11, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +023h
+  invoke-interface       v11, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v11
+  check-cast             v11, Ljava/lang/String;
+  invoke-virtual         v11, v6, v5, Ljava/lang/String;->split(Ljava/lang/String; I)[Ljava/lang/String;
+  move-result-object     v11
+  array-length           v0, v11
+  if-ge                  v4, v0, +016h
+  aget-object            v0, v11, v4
+  add-int/lit8           v3, v4, 1
+  aget-object            v3, v11, v3
+  add-int/lit8           v5, v4, 2
+  aget-object            v5, v11, v5
+  invoke-static          v5, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+  move-result            v5
+  invoke-virtual         v1, v0, v3, v5, Lcom/adjust/sdk/AdjustThirdPartySharing;->addPartnerSharingSetting(Ljava/lang/String; Ljava/lang/String; Z)V
+  add-int/lit8           v4, v4, 3
+  goto                   -16h
+  invoke-static          v1, Lcom/adjust/sdk/Adjust;->trackThirdPartySharing(Lcom/adjust/sdk/AdjustThirdPartySharing;)V
+  invoke-interface       v12, v2, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private updateSkanConversionValue (Ly8/q;)V ----
+  const-string           v0, "Error. No updateSkanConversionValue on Android platform!"
+  invoke-interface       v2, v0, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private verifyAndTrackAppStorePurchase (Ly8/o; Ly8/q;)V ----
+  const-string           v1, "Error. No verifyAndTrackAppStorePurchase on Android platform!"
+  invoke-interface       v2, v1, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private verifyAndTrackPlayStorePurchase (Ly8/o; Ly8/q;)V ----
+  iget-object            v8, v8, Ly8/o;->b Ljava/lang/Object;
+  check-cast             v8, Ljava/util/Map;
+  if-nez                 v8, +003h
+  return-void            
+  const-string           v0, "eventToken"
+  invoke-interface       v8, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +009h
+  invoke-interface       v8, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  goto                   +2h
+  const/4                v0, 0
+  new-instance           v1, Lcom/adjust/sdk/AdjustEvent;
+  invoke-direct          v1, v0, Lcom/adjust/sdk/AdjustEvent;-><init>(Ljava/lang/String;)V
+  const-string/jumbo     v0, revenue
+  invoke-interface       v8, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v2
+  const-string           v3, "currency"
+  if-nez                 v2, +008h
+  invoke-interface       v8, v3, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v2
+  if-eqz                 v2, +018h
+  invoke-interface       v8, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-static          v0, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
+  move-result-wide       v4
+  goto                   +3h
+  const-wide/high16      v4, -4616189618054758400
+  invoke-interface       v8, v3, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-virtual         v1, v4, v5, v0, Lcom/adjust/sdk/AdjustEvent;->setRevenue(D Ljava/lang/String;)V
+  const-string           v0, "deduplicationId"
+  invoke-interface       v8, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v2
+  if-eqz                 v2, +00bh
+  invoke-interface       v8, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-virtual         v1, v0, Lcom/adjust/sdk/AdjustEvent;->setDeduplicationId(Ljava/lang/String;)V
+  const-string/jumbo     v0, productId
+  invoke-interface       v8, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v2
+  if-eqz                 v2, +00bh
+  invoke-interface       v8, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-virtual         v1, v0, Lcom/adjust/sdk/AdjustEvent;->setProductId(Ljava/lang/String;)V
+  const-string/jumbo     v0, purchaseToken
+  invoke-interface       v8, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v2
+  if-eqz                 v2, +00bh
+  invoke-interface       v8, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-virtual         v1, v0, Lcom/adjust/sdk/AdjustEvent;->setPurchaseToken(Ljava/lang/String;)V
+  const-string           v0, "callbackId"
+  invoke-interface       v8, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v2
+  if-eqz                 v2, +00bh
+  invoke-interface       v8, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  invoke-virtual         v1, v0, Lcom/adjust/sdk/AdjustEvent;->setCallbackId(Ljava/lang/String;)V
+  const-string           v0, "callbackParameters"
+  invoke-interface       v8, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v2
+  const/4                v3, 0
+  if-eqz                 v2, +03ah
+  invoke-interface       v8, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  new-instance           v2, Lorg/json/JSONObject;
+  invoke-direct          v2, v0, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v2, Lorg/json/JSONObject;->names()Lorg/json/JSONArray;
+  move-result-object     v0
+  move                   v4, v3
+  invoke-virtual         v0, Lorg/json/JSONArray;->length()I
+  move-result            v5
+  if-ge                  v4, v5, +024h
+  invoke-virtual         v0, v4, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
+  move-result-object     v5
+  invoke-virtual         v2, v5, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v6
+  invoke-virtual         v1, v5, v6, Lcom/adjust/sdk/AdjustEvent;->addCallbackParameter(Ljava/lang/String; Ljava/lang/String;)V
+  add-int/lit8           v4, v4, 1
+  goto                   -13h
+  move-exception         v0
+  sget-object            v2, Lcom/adjust/sdk/flutter/AdjustSdk;->TAG Ljava/lang/String;
+  new-instance           v4, Ljava/lang/StringBuilder;
+  const-string           v5, "Failed to parse event callback parameter! Details: "
+  invoke-direct          v4, v5, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v4, v0, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  invoke-virtual         v4, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v0
+  invoke-static          v2, v0, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String;)I
+  const-string/jumbo     v0, partnerParameters
+  invoke-interface       v8, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v2
+  if-eqz                 v2, +039h
+  invoke-interface       v8, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v8
+  check-cast             v8, Ljava/lang/String;
+  new-instance           v0, Lorg/json/JSONObject;
+  invoke-direct          v0, v8, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v0, Lorg/json/JSONObject;->names()Lorg/json/JSONArray;
+  move-result-object     v8
+  invoke-virtual         v8, Lorg/json/JSONArray;->length()I
+  move-result            v2
+  if-ge                  v3, v2, +024h
+  invoke-virtual         v8, v3, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
+  move-result-object     v2
+  invoke-virtual         v0, v2, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v4
+  invoke-virtual         v1, v2, v4, Lcom/adjust/sdk/AdjustEvent;->addPartnerParameter(Ljava/lang/String; Ljava/lang/String;)V
+  add-int/lit8           v3, v3, 1
+  goto                   -13h
+  move-exception         v8
+  sget-object            v0, Lcom/adjust/sdk/flutter/AdjustSdk;->TAG Ljava/lang/String;
+  new-instance           v2, Ljava/lang/StringBuilder;
+  const-string           v3, "Failed to parse event partner parameter! Details: "
+  invoke-direct          v2, v3, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v2, v8, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+  invoke-virtual         v2, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v8
+  invoke-static          v0, v8, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String;)I
+  new-instance           v8, Lcom/dexterous/flutterlocalnotifications/d;
+  invoke-direct          v8, v9, Lcom/dexterous/flutterlocalnotifications/d;-><init>(Ly8/q;)V
+  invoke-static          v1, v8, Lcom/adjust/sdk/Adjust;->verifyAndTrackPlayStorePurchase(Lcom/adjust/sdk/AdjustEvent; Lcom/adjust/sdk/OnPurchaseVerificationFinishedListener;)V
+  return-void            
+
+---- METHOD private verifyAppStorePurchase (Ly8/o; Ly8/q;)V ----
+  const-string           v1, "Error. No verifyAppStorePurchase on Android platform!"
+  invoke-interface       v2, v1, Ly8/q;->success(Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD private verifyPlayStorePurchase (Ly8/o; Ly8/q;)V ----
+  iget-object            v5, v5, Ly8/o;->b Ljava/lang/Object;
+  check-cast             v5, Ljava/util/Map;
+  if-nez                 v5, +003h
+  return-void            
+  const-string/jumbo     v0, productId
+  invoke-interface       v5, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v1
+  const/4                v2, 0
+  if-eqz                 v1, +009h
+  invoke-interface       v5, v0, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  goto                   +2h
+  move-object            v0, v2
+  const-string/jumbo     v1, purchaseToken
+  invoke-interface       v5, v1, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +009h
+  invoke-interface       v5, v1, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v5
+  move-object            v2, v5
+  check-cast             v2, Ljava/lang/String;
+  new-instance           v5, Lcom/adjust/sdk/AdjustPlayStorePurchase;
+  invoke-direct          v5, v0, v2, Lcom/adjust/sdk/AdjustPlayStorePurchase;-><init>(Ljava/lang/String; Ljava/lang/String;)V
+  new-instance           v0, Lcom/dexterous/flutterlocalnotifications/c;
+  invoke-direct          v0, v6, Lcom/dexterous/flutterlocalnotifications/c;-><init>(Ly8/q;)V
+  invoke-static          v5, v0, Lcom/adjust/sdk/Adjust;->verifyPlayStorePurchase(Lcom/adjust/sdk/AdjustPlayStorePurchase; Lcom/adjust/sdk/OnPurchaseVerificationFinishedListener;)V
+  return-void            
+
+---- METHOD public onAttachedToActivity (Lv8/b;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/flutter/AdjustSdk;->activityPluginBinding Lv8/b;
+  check-cast             v1, Lo/d1;
+  invoke-virtual         v1, v0, Lo/d1;->b(Ly8/u;)V
+  iget-object            v1, v0, Lcom/adjust/sdk/flutter/AdjustSdk;->activityPluginBinding Lv8/b;
+  check-cast             v1, Lo/d1;
+  iget-object            v1, v1, Lo/d1;->a Ljava/lang/Object;
+  check-cast             v1, Landroidx/fragment/app/K;
+  invoke-virtual         v1, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
+  move-result-object     v1
+  invoke-direct          v0, v1, Lcom/adjust/sdk/flutter/AdjustSdk;->processDeeplinkFromIntent(Landroid/content/Intent;)V
+  return-void            
+
+---- METHOD public onAttachedToEngine (Lu8/b;)V ----
+  iget-object            v0, v3, Lu8/b;->a Landroid/content/Context;
+  iput-object            v0, v2, Lcom/adjust/sdk/flutter/AdjustSdk;->applicationContext Landroid/content/Context;
+  new-instance           v0, Ly8/r;
+  const-string           v1, "com.adjust.sdk/api"
+  iget-object            v3, v3, Lu8/b;->c Ly8/f;
+  invoke-direct          v0, v3, v1, Ly8/r;-><init>(Ly8/f; Ljava/lang/String;)V
+  iput-object            v0, v2, Lcom/adjust/sdk/flutter/AdjustSdk;->channel Ly8/r;
+  invoke-virtual         v0, v2, Ly8/r;->b(Ly8/p;)V
+  return-void            
+
+---- METHOD public onDetachedFromActivity ()V ----
+  invoke-direct          v0, Lcom/adjust/sdk/flutter/AdjustSdk;->detachFromActivity()V
+  return-void            
+
+---- METHOD public onDetachedFromActivityForConfigChanges ()V ----
+  invoke-direct          v0, Lcom/adjust/sdk/flutter/AdjustSdk;->detachFromActivity()V
+  return-void            
+
+---- METHOD public onDetachedFromEngine (Lu8/b;)V ----
+  invoke-direct          v1, Lcom/adjust/sdk/flutter/AdjustSdk;->detachFromActivity()V
+  const/4                v2, 0
+  iput-boolean           v2, v1, Lcom/adjust/sdk/flutter/AdjustSdk;->isSdkInitialized Z
+  iget-object            v2, v1, Lcom/adjust/sdk/flutter/AdjustSdk;->cachedDirectDeeplinks Ljava/util/ArrayList;
+  invoke-virtual         v2, Ljava/util/ArrayList;->clear()V
+  const/4                v2, 0
+  iput-object            v2, v1, Lcom/adjust/sdk/flutter/AdjustSdk;->applicationContext Landroid/content/Context;
+  iget-object            v0, v1, Lcom/adjust/sdk/flutter/AdjustSdk;->channel Ly8/r;
+  if-eqz                 v0, +005h
+  invoke-virtual         v0, v2, Ly8/r;->b(Ly8/p;)V
+  iput-object            v2, v1, Lcom/adjust/sdk/flutter/AdjustSdk;->channel Ly8/r;
+  return-void            
+
+---- METHOD public onMethodCall (Ly8/o; Ly8/q;)V ----
+  iget-object            v0, v4, Ly8/o;->a Ljava/lang/String;
+  invoke-virtual         v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+  const/4                v1, -1
+  invoke-virtual         v0, Ljava/lang/String;->hashCode()I
+  move-result            v2
+  sparse-switch          v2, +00003aeh
+  goto/16                +2aeh
+  const-string/jumbo     v2, trackThirdPartySharing
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +2a3h
+  const/16               v1, 48
+  goto/16                +29fh
+  const-string           v2, "isEnabled"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +295h
+  const/16               v1, 47
+  goto/16                +291h
+  const-string           v2, "getSdkVersion"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +287h
+  const/16               v1, 46
+  goto/16                +283h
+  const-string           v2, "initSdk"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +279h
+  const/16               v1, 45
+  goto/16                +275h
+  const-string/jumbo     v2, trackAppStoreSubscription
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +26ah
+  const/16               v1, 44
+  goto/16                +266h
+  const-string/jumbo     v2, verifyAndTrackAppStorePurchase
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +25bh
+  const/16               v1, 43
+  goto/16                +257h
+  const-string/jumbo     v2, verifyAppStorePurchase
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +24ch
+  const/16               v1, 42
+  goto/16                +248h
+  const-string           v2, "disable"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +23eh
+  const/16               v1, 41
+  goto/16                +23ah
+  const-string           v2, "onResume"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +230h
+  const/16               v1, 40
+  goto/16                +22ch
+  const-string           v2, "disableCoppaComplianceInDelay"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +222h
+  const/16               v1, 39
+  goto/16                +21eh
+  const-string/jumbo     v2, requestAppTrackingAuthorization
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +213h
+  const/16               v1, 38
+  goto/16                +20fh
+  const-string           v2, "enableCoppaComplianceInDelay"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +205h
+  const/16               v1, 37
+  goto/16                +201h
+  const-string           v2, "gdprForgetMe"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +1f7h
+  const/16               v1, 36
+  goto/16                +1f3h
+  const-string/jumbo     v2, trackEvent
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +1e8h
+  const/16               v1, 35
+  goto/16                +1e4h
+  const-string           v2, "getAdidWithTimeout"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +1dah
+  const/16               v1, 34
+  goto/16                +1d6h
+  const-string/jumbo     v2, trackMeasurementConsent
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +1cbh
+  const/16               v1, 33
+  goto/16                +1c7h
+  const-string/jumbo     v2, setPushToken
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +1bch
+  const/16               v1, 32
+  goto/16                +1b8h
+  const-string           v2, "getLastDeeplink"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +1aeh
+  const/16               v1, 31
+  goto/16                +1aah
+  const-string           v2, "disablePlayStoreKidsComplianceInDelay"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +1a0h
+  const/16               v1, 30
+  goto/16                +19ch
+  const-string/jumbo     v2, verifyAndTrackPlayStorePurchase
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +191h
+  const/16               v1, 29
+  goto/16                +18dh
+  const-string/jumbo     v2, setTestOptions
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +182h
+  const/16               v1, 28
+  goto/16                +17eh
+  const-string/jumbo     v2, trackAdRevenue
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +173h
+  const/16               v1, 27
+  goto/16                +16fh
+  const-string           v2, "getThirdPartySharingSettingsWithTimeout"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +165h
+  const/16               v1, 26
+  goto/16                +161h
+  const-string/jumbo     v2, verifyPlayStorePurchase
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +156h
+  const/16               v1, 25
+  goto/16                +152h
+  const-string           v2, "getIdfv"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +148h
+  const/16               v1, 24
+  goto/16                +144h
+  const-string           v2, "getIdfa"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +13ah
+  const/16               v1, 23
+  goto/16                +136h
+  const-string           v2, "getAdid"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +12ch
+  const/16               v1, 22
+  goto/16                +128h
+  const-string/jumbo     v2, switchBackToOnlineMode
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +11dh
+  const/16               v1, 21
+  goto/16                +119h
+  const-string           v2, "getAppTrackingAuthorizationStatus"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +10fh
+  const/16               v1, 20
+  goto/16                +10bh
+  const-string           v2, "getAmazonAdId"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +101h
+  const/16               v1, 19
+  goto/16                +0fdh
+  const-string/jumbo     v2, updateSkanConversionValue
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +0f2h
+  const/16               v1, 18
+  goto/16                +0eeh
+  const-string/jumbo     v2, removeGlobalCallbackParameter
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +0e3h
+  const/16               v1, 17
+  goto/16                +0dfh
+  const-string/jumbo     v2, setExternalDeviceIdInDelay
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +0d4h
+  const/16               v1, 16
+  goto/16                +0d0h
+  const-string/jumbo     v2, switchToOfflineMode
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +0c5h
+  const/16               v1, 15
+  goto/16                +0c1h
+  const-string/jumbo     v2, processAndResolveDeeplink
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +0b6h
+  const/16               v1, 14
+  goto/16                +0b2h
+  const-string           v2, "getAttribution"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +0a8h
+  const/16               v1, 13
+  goto/16                +0a4h
+  const-string           v2, "addGlobalPartnerParameter"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +09ah
+  const/16               v1, 12
+  goto/16                +096h
+  const-string/jumbo     v2, trackPlayStoreSubscription
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +08bh
+  const/16               v1, 11
+  goto/16                +087h
+  const-string/jumbo     v2, removeGlobalPartnerParameters
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +07ch
+  const/16               v1, 10
+  goto/16                +078h
+  const-string           v2, "addGlobalCallbackParameter"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +06eh
+  const/16               v1, 9
+  goto/16                +06ah
+  const-string           v2, "enable"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +060h
+  const/16               v1, 8
+  goto/16                +05ch
+  const-string           v2, "onPause"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +52h
+  const/4                v1, 7
+  goto                   +50h
+  const-string/jumbo     v2, removeGlobalPartnerParameter
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +46h
+  const/4                v1, 6
+  goto                   +44h
+  const-string           v2, "enablePlayStoreKidsComplianceInDelay"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +3bh
+  const/4                v1, 5
+  goto                   +39h
+  const-string           v2, "getAttributionWithTimeout"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +30h
+  const/4                v1, 4
+  goto                   +2eh
+  const-string           v2, "getGoogleAdId"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +25h
+  const/4                v1, 3
+  goto                   +23h
+  const-string/jumbo     v2, removeGlobalCallbackParameters
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +19h
+  const/4                v1, 2
+  goto                   +17h
+  const-string           v2, "endFirstSessionDelay"
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +eh
+  const/4                v1, 1
+  goto                   +ch
+  const-string/jumbo     v2, processDeeplink
+  invoke-virtual         v0, v2, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +2h
+  const/4                v1, 0
+  packed-switch          v1, +00001c3h
+  sget-object            v0, Lcom/adjust/sdk/flutter/AdjustSdk;->TAG Ljava/lang/String;
+  new-instance           v1, Ljava/lang/StringBuilder;
+  const-string           v2, "Not implemented method: "
+  invoke-direct          v1, v2, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  iget-object            v4, v4, Ly8/o;->a Ljava/lang/String;
+  invoke-virtual         v1, v4, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual         v1, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v4
+  invoke-static          v0, v4, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String;)I
+  invoke-interface       v5, Ly8/q;->notImplemented()V
+  goto/16                +0e0h
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->trackThirdPartySharing(Ly8/o; Ly8/q;)V
+  goto/16                +0dbh
+  invoke-direct          v3, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->isEnabled(Ly8/q;)V
+  goto/16                +0d6h
+  invoke-direct          v3, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->getSdkVersion(Ly8/q;)V
+  goto/16                +0d1h
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->initSdk(Ly8/o; Ly8/q;)V
+  goto/16                +0cch
+  invoke-direct          v3, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->trackAppStoreSubscription(Ly8/q;)V
+  goto/16                +0c7h
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->verifyAndTrackAppStorePurchase(Ly8/o; Ly8/q;)V
+  goto/16                +0c2h
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->verifyAppStorePurchase(Ly8/o; Ly8/q;)V
+  goto/16                +0bdh
+  invoke-direct          v3, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->disable(Ly8/q;)V
+  goto/16                +0b8h
+  invoke-direct          v3, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->onResume(Ly8/q;)V
+  goto/16                +0b3h
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->disableCoppaComplianceInDelay(Ly8/o; Ly8/q;)V
+  goto/16                +0aeh
+  invoke-direct          v3, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->requestAppTrackingAuthorization(Ly8/q;)V
+  goto/16                +0a9h
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->enableCoppaComplianceInDelay(Ly8/o; Ly8/q;)V
+  goto/16                +0a4h
+  invoke-direct          v3, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->gdprForgetMe(Ly8/q;)V
+  goto/16                +09fh
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->trackEvent(Ly8/o; Ly8/q;)V
+  goto/16                +09ah
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->getAdidWithTimeout(Ly8/o; Ly8/q;)V
+  goto/16                +095h
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->trackMeasurementConsent(Ly8/o; Ly8/q;)V
+  goto/16                +090h
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->setPushToken(Ly8/o; Ly8/q;)V
+  goto/16                +08bh
+  invoke-direct          v3, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->getLastDeeplink(Ly8/q;)V
+  goto/16                +086h
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->disablePlayStoreKidsComplianceInDelay(Ly8/o; Ly8/q;)V
+  goto/16                +081h
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->verifyAndTrackPlayStorePurchase(Ly8/o; Ly8/q;)V
+  goto/16                +07ch
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->setTestOptions(Ly8/o; Ly8/q;)V
+  goto/16                +077h
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->trackAdRevenue(Ly8/o; Ly8/q;)V
+  goto/16                +072h
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->getThirdPartySharingSettingsWithTimeout(Ly8/o; Ly8/q;)V
+  goto/16                +06dh
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->verifyPlayStorePurchase(Ly8/o; Ly8/q;)V
+  goto/16                +068h
+  invoke-direct          v3, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->getIdfv(Ly8/q;)V
+  goto/16                +063h
+  invoke-direct          v3, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->getIdfa(Ly8/q;)V
+  goto/16                +05eh
+  invoke-direct          v3, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->getAdid(Ly8/q;)V
+  goto/16                +059h
+  invoke-direct          v3, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->switchBackToOnlineMode(Ly8/q;)V
+  goto                   +54h
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->getAppTrackingAuthorizationStatus(Ly8/o; Ly8/q;)V
+  goto                   +50h
+  invoke-direct          v3, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->getAmazonAdId(Ly8/q;)V
+  goto                   +4ch
+  invoke-direct          v3, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->updateSkanConversionValue(Ly8/q;)V
+  goto                   +48h
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->removeGlobalCallbackParameter(Ly8/o; Ly8/q;)V
+  goto                   +44h
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->setExternalDeviceIdInDelay(Ly8/o; Ly8/q;)V
+  goto                   +40h
+  invoke-direct          v3, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->switchToOfflineMode(Ly8/q;)V
+  goto                   +3ch
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->processAndResolveDeeplink(Ly8/o; Ly8/q;)V
+  goto                   +38h
+  invoke-direct          v3, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->getAttribution(Ly8/q;)V
+  goto                   +34h
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->addGlobalPartnerParameter(Ly8/o; Ly8/q;)V
+  goto                   +30h
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->trackPlayStoreSubscription(Ly8/o; Ly8/q;)V
+  goto                   +2ch
+  invoke-direct          v3, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->removeGlobalPartnerParameters(Ly8/q;)V
+  goto                   +28h
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->addGlobalCallbackParameter(Ly8/o; Ly8/q;)V
+  goto                   +24h
+  invoke-direct          v3, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->enable(Ly8/q;)V
+  goto                   +20h
+  invoke-direct          v3, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->onPause(Ly8/q;)V
+  goto                   +1ch
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->removeGlobalPartnerParameter(Ly8/o; Ly8/q;)V
+  goto                   +18h
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->enablePlayStoreKidsComplianceInDelay(Ly8/o; Ly8/q;)V
+  goto                   +14h
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->getAttributionWithTimeout(Ly8/o; Ly8/q;)V
+  goto                   +10h
+  invoke-direct          v3, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->getGoogleAdId(Ly8/q;)V
+  goto                   +ch
+  invoke-direct          v3, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->removeGlobalCallbackParameters(Ly8/q;)V
+  goto                   +8h
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->endFirstSessionDelay(Ly8/o; Ly8/q;)V
+  goto                   +4h
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/flutter/AdjustSdk;->processDeeplink(Ly8/o; Ly8/q;)V
+  return-void            
+  nop                    
+  sparse-switch-payload  -7769058b -7496c43e -6f77064a -6d48a193 -6cb57d4e -67ac0dd4 -5d27dcd8 -4fe204a9 -4d6ada7d -4d37fe60 -47d3bdb5 -45ddf4c1 -3db3007b -38a228b7 -35ff3d16 -33f7d229 -2db83a00 -1c5eada3 -b876cd3 -b26d748 -982f857 -92e66b4 -482fb0c -47f5874 -47f585f -1d9fd4b e9dcb1 667e56e e5babea 136f5461 191b30d1 1fe7ea12 2d53acbd 42092169 4386ac27 43b5a80f 4833d124 4e686631 534a1110 537719d6 57429eec 639e22e8 68059efa 68b567ce 6f601a68 7421050a 79455b34 7d80d2b7 7dcf2412
+  packed-switch-payload  0 1 2 3 4 5 6 7 8 9 a b c d e f 10 11 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f 20 21 22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 30
+
+---- METHOD public onNewIntent (Landroid/content/Intent;)Z ----
+  invoke-direct          v0, v1, Lcom/adjust/sdk/flutter/AdjustSdk;->processDeeplinkFromIntent(Landroid/content/Intent;)V
+  const/4                v1, 0
+  return                 v1
+
+---- METHOD public onReattachedToActivityForConfigChanges (Lv8/b;)V ----
+  invoke-virtual         v0, v1, Lcom/adjust/sdk/flutter/AdjustSdk;->onAttachedToActivity(Lv8/b;)V
+  return-void            
+######################################################################

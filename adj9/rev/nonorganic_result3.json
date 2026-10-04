@@ -1,0 +1,36 @@
+{
+ "gps": "ba56f461-9b35-4416-9612-d1bcad094b29",
+ "auid": "5b286d3c-7a68-4b73-8895-1a31a0bfc27b",
+ "referrer": "adjust_reftag=c0Sztz9FqfLzn&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+ "push": "emsprqv73wFaQF-redw0P4ou9o:APA91b8qbkSotcIrqBv0LLBeT5Gn60ke-Bpr3nTejz_-qje_fv60qHw31QPRo25P4SpIvz9zR16VHDozenVe4SmxpSnm_C5J75eSnpM-89_kiUwIxH",
+ "installed_at": "2026-09-14T11:41:50.774Z+0200",
+ "attr_before": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"6f06b494785f80ecf74c19e8fd14ee30\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-14T10:43:01.662400502Z\",\"first_session_time\":\"2026-09-14T10:43:01.662400502Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ ],
+ "session": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"6f06b494785f80ecf74c19e8fd14ee30\",\"ask_in\":2000}"
+ ],
+ "sdk_click": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"6f06b494785f80ecf74c19e8fd14ee30\"}"
+ ],
+ "sdk_info": [
+  200,
+  "{}"
+ ],
+ "attr_1": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"6f06b494785f80ecf74c19e8fd14ee30\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-14T10:44:16Z\",\"first_session_time\":\"2026-09-14T10:44:16Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ ],
+ "attr_2": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"6f06b494785f80ecf74c19e8fd14ee30\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-14T10:44:16Z\",\"first_session_time\":\"2026-09-14T10:44:16Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ ],
+ "attr_3": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"6f06b494785f80ecf74c19e8fd14ee30\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-14T10:44:16Z\",\"first_session_time\":\"2026-09-14T10:44:16Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ ],
+ "verdict": "Organic"
+}

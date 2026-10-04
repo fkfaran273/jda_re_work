@@ -1,0 +1,17 @@
+# CLASS Lcom/adjust/sdk/AdjustLinkResolution$1;
+FIELD public final synthetic a Ljava/net/URL;
+FIELD public final synthetic b Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;
+
+---- METHOD public constructor <init> (Ljava/net/URL; Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustLinkResolution$1;->a Ljava/net/URL;
+  iput-object            v2, v0, Lcom/adjust/sdk/AdjustLinkResolution$1;->b Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustLinkResolution$1;->a Ljava/net/URL;
+  iget-object            v1, v3, Lcom/adjust/sdk/AdjustLinkResolution$1;->b Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;
+  const/4                v2, 0
+  invoke-static          v0, v2, v1, Lcom/adjust/sdk/AdjustLinkResolution;->access$000(Ljava/net/URL; I Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;)V
+  return-void            
+######################################################################

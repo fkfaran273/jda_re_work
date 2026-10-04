@@ -1,0 +1,526 @@
+# CLASS Lcom/adjust/sdk/AdjustConfig;
+FIELD public static final ENVIRONMENT_PRODUCTION Ljava/lang/String;
+FIELD public static final ENVIRONMENT_SANDBOX Ljava/lang/String;
+FIELD  appToken Ljava/lang/String;
+FIELD  basePath Ljava/lang/String;
+FIELD  cachedAdidReadCallbacks Ljava/util/ArrayList;
+FIELD  cachedAdidReadTimeoutCallbacks Ljava/util/ArrayList;
+FIELD  cachedAttributionReadCallbacks Ljava/util/ArrayList;
+FIELD  cachedAttributionReadTimeoutCallbacks Ljava/util/ArrayList;
+FIELD  cachedDeeplinkResolutionCallback Lcom/adjust/sdk/OnDeeplinkResolvedListener;
+FIELD  cachedThirdPartySharingTimeoutCallbacks Ljava/util/ArrayList;
+FIELD  context Landroid/content/Context;
+FIELD  coppaComplianceEnabled Z
+FIELD  defaultTracker Ljava/lang/String;
+FIELD  environment Ljava/lang/String;
+FIELD  eventDeduplicationIdsMaxSize Ljava/lang/Integer;
+FIELD  externalDeviceId Ljava/lang/String;
+FIELD  fbAppId Ljava/lang/String;
+FIELD  gdprPath Ljava/lang/String;
+FIELD  isAndroidIdReadingEnabled Z
+FIELD  isAppSetIdReadingEnabled Z
+FIELD  isCostDataInAttributionEnabled Ljava/lang/Boolean;
+FIELD  isDataResidency Z
+FIELD  isDeviceIdsFromPluginsReadingEnabled Z
+FIELD  isDeviceIdsReadingOnceEnabled Z
+FIELD  isFbIdReadingEnabled Z
+FIELD  isFireAdIdReadingEnabled Z
+FIELD  isFirstSessionDelayEnabled Z
+FIELD  isGoogleAdIdReadingEnabled Z
+FIELD  isPreinstallTrackingEnabled Z
+FIELD  isSendingInBackgroundEnabled Z
+FIELD  logger Lcom/adjust/sdk/ILogger;
+FIELD  onAttributionChangedListener Lcom/adjust/sdk/OnAttributionChangedListener;
+FIELD  onDeferredDeeplinkResponseListener Lcom/adjust/sdk/OnDeferredDeeplinkResponseListener;
+FIELD  onEventTrackingFailedListener Lcom/adjust/sdk/OnEventTrackingFailedListener;
+FIELD  onEventTrackingSucceededListener Lcom/adjust/sdk/OnEventTrackingSucceededListener;
+FIELD  onRemoteTriggerListener Lcom/adjust/sdk/OnRemoteTriggerListener;
+FIELD  onSessionTrackingFailedListener Lcom/adjust/sdk/OnSessionTrackingFailedListener;
+FIELD  onSessionTrackingSucceededListener Lcom/adjust/sdk/OnSessionTrackingSucceededListener;
+FIELD  onThirdPartySharingSettingsChangedListener Lcom/adjust/sdk/OnThirdPartySharingSettingsChangedListener;
+FIELD  playStoreKidsComplianceEnabled Z
+FIELD  preLaunchActions Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;
+FIELD  preinstallFilePath Ljava/lang/String;
+FIELD  processName Ljava/lang/String;
+FIELD  purchaseVerificationPath Ljava/lang/String;
+FIELD  pushToken Ljava/lang/String;
+FIELD  sdkPrefix Ljava/lang/String;
+FIELD  startEnabled Ljava/lang/Boolean;
+FIELD  startOffline Z
+FIELD  storeInfo Lcom/adjust/sdk/AdjustStoreInfo;
+FIELD  subscriptionPath Ljava/lang/String;
+FIELD  urlStrategyDomains Ljava/util/List;
+FIELD  useSubdomains Z
+
+---- METHOD public constructor <init> (Landroid/content/Context; Ljava/lang/String; Ljava/lang/String;)V ----
+  invoke-direct          v1, Ljava/lang/Object;-><init>()V
+  new-instance           v0, Ljava/util/ArrayList;
+  invoke-direct          v0, Ljava/util/ArrayList;-><init>()V
+  iput-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->cachedAdidReadCallbacks Ljava/util/ArrayList;
+  new-instance           v0, Ljava/util/ArrayList;
+  invoke-direct          v0, Ljava/util/ArrayList;-><init>()V
+  iput-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->cachedAdidReadTimeoutCallbacks Ljava/util/ArrayList;
+  new-instance           v0, Ljava/util/ArrayList;
+  invoke-direct          v0, Ljava/util/ArrayList;-><init>()V
+  iput-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->cachedAttributionReadCallbacks Ljava/util/ArrayList;
+  new-instance           v0, Ljava/util/ArrayList;
+  invoke-direct          v0, Ljava/util/ArrayList;-><init>()V
+  iput-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->cachedAttributionReadTimeoutCallbacks Ljava/util/ArrayList;
+  new-instance           v0, Ljava/util/ArrayList;
+  invoke-direct          v0, Ljava/util/ArrayList;-><init>()V
+  iput-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->cachedThirdPartySharingTimeoutCallbacks Ljava/util/ArrayList;
+  const/4                v0, 0
+  invoke-direct          v1, v2, v3, v4, v0, Lcom/adjust/sdk/AdjustConfig;->init(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Z)V
+  return-void            
+
+---- METHOD public constructor <init> (Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Z)V ----
+  invoke-direct          v1, Ljava/lang/Object;-><init>()V
+  new-instance           v0, Ljava/util/ArrayList;
+  invoke-direct          v0, Ljava/util/ArrayList;-><init>()V
+  iput-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->cachedAdidReadCallbacks Ljava/util/ArrayList;
+  new-instance           v0, Ljava/util/ArrayList;
+  invoke-direct          v0, Ljava/util/ArrayList;-><init>()V
+  iput-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->cachedAdidReadTimeoutCallbacks Ljava/util/ArrayList;
+  new-instance           v0, Ljava/util/ArrayList;
+  invoke-direct          v0, Ljava/util/ArrayList;-><init>()V
+  iput-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->cachedAttributionReadCallbacks Ljava/util/ArrayList;
+  new-instance           v0, Ljava/util/ArrayList;
+  invoke-direct          v0, Ljava/util/ArrayList;-><init>()V
+  iput-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->cachedAttributionReadTimeoutCallbacks Ljava/util/ArrayList;
+  new-instance           v0, Ljava/util/ArrayList;
+  invoke-direct          v0, Ljava/util/ArrayList;-><init>()V
+  iput-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->cachedThirdPartySharingTimeoutCallbacks Ljava/util/ArrayList;
+  invoke-direct          v1, v2, v3, v4, v5, Lcom/adjust/sdk/AdjustConfig;->init(Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Z)V
+  return-void            
+
+---- METHOD private checkAppToken (Ljava/lang/String;)Z ----
+  const/4                v0, 0
+  if-nez                 v4, +00ch
+  iget-object            v4, v3, Lcom/adjust/sdk/AdjustConfig;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v1, v0, [Ljava/lang/Object;
+  const-string           v2, "Missing App Token"
+  invoke-interface       v4, v2, v1, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v0
+  invoke-virtual         v4, Ljava/lang/String;->length()I
+  move-result            v1
+  const/16               v2, 12
+  if-eq                  v1, v2, +00eh
+  iget-object            v1, v3, Lcom/adjust/sdk/AdjustConfig;->logger Lcom/adjust/sdk/ILogger;
+  filled-new-array       v4, [Ljava/lang/Object;
+  move-result-object     v4
+  const-string           v2, "Malformed App Token '%s'"
+  invoke-interface       v1, v2, v4, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v0
+  const/4                v4, 1
+  return                 v4
+
+---- METHOD private checkContext (Landroid/content/Context;)Z ----
+  const/4                v0, 0
+  if-nez                 v4, +00ch
+  iget-object            v4, v3, Lcom/adjust/sdk/AdjustConfig;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v1, v0, [Ljava/lang/Object;
+  const-string           v2, "Missing context"
+  invoke-interface       v4, v2, v1, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v0
+  const-string           v1, "android.permission.INTERNET"
+  invoke-static          v4, v1, Lcom/adjust/sdk/Util;->checkPermission(Landroid/content/Context; Ljava/lang/String;)Z
+  move-result            v4
+  if-nez                 v4, +00ch
+  iget-object            v4, v3, Lcom/adjust/sdk/AdjustConfig;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v1, v0, [Ljava/lang/Object;
+  const-string           v2, "Missing permission: INTERNET"
+  invoke-interface       v4, v2, v1, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v0
+  const/4                v4, 1
+  return                 v4
+
+---- METHOD private checkEnvironment (Ljava/lang/String;)Z ----
+  const/4                v0, 0
+  if-nez                 v5, +00ch
+  iget-object            v5, v4, Lcom/adjust/sdk/AdjustConfig;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v1, v0, [Ljava/lang/Object;
+  const-string           v2, "Missing environment"
+  invoke-interface       v5, v2, v1, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v0
+  const-string/jumbo     v1, sandbox
+  invoke-virtual         v5, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v1
+  const/4                v2, 1
+  if-eqz                 v1, +00ch
+  iget-object            v5, v4, Lcom/adjust/sdk/AdjustConfig;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v0, v0, [Ljava/lang/Object;
+  const-string           v1, "SANDBOX: Adjust is running in Sandbox mode. Use this setting for testing. Don't forget to set the environment to `production` before publishing!"
+  invoke-interface       v5, v1, v0, Lcom/adjust/sdk/ILogger;->warnInProduction(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v2
+  const-string/jumbo     v1, production
+  invoke-virtual         v5, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v1
+  iget-object            v3, v4, Lcom/adjust/sdk/AdjustConfig;->logger Lcom/adjust/sdk/ILogger;
+  if-eqz                 v1, +00ah
+  new-array              v5, v0, [Ljava/lang/Object;
+  const-string           v0, "PRODUCTION: Adjust is running in Production mode. Use this setting only for the build that you want to publish. Set the environment to `sandbox` if you want to test your app!"
+  invoke-interface       v3, v0, v5, Lcom/adjust/sdk/ILogger;->warnInProduction(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v2
+  filled-new-array       v5, [Ljava/lang/Object;
+  move-result-object     v5
+  const-string           v1, "Unknown environment '%s'"
+  invoke-interface       v3, v1, v5, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v0
+
+---- METHOD private init (Landroid/content/Context; Ljava/lang/String; Ljava/lang/String; Z)V ----
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v0
+  iput-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->logger Lcom/adjust/sdk/ILogger;
+  if-eqz                 v5, +011h
+  const-string/jumbo     v5, production
+  invoke-virtual         v5, v4, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v5
+  if-eqz                 v5, +008h
+  sget-object            v5, Lcom/adjust/sdk/LogLevel;->SUPPRESS Lcom/adjust/sdk/LogLevel;
+  invoke-direct          v1, v5, v4, Lcom/adjust/sdk/AdjustConfig;->setLogLevel(Lcom/adjust/sdk/LogLevel; Ljava/lang/String;)V
+  goto                   +6h
+  sget-object            v5, Lcom/adjust/sdk/LogLevel;->INFO Lcom/adjust/sdk/LogLevel;
+  invoke-direct          v1, v5, v4, Lcom/adjust/sdk/AdjustConfig;->setLogLevel(Lcom/adjust/sdk/LogLevel; Ljava/lang/String;)V
+  if-eqz                 v2, +006h
+  invoke-virtual         v2, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+  move-result-object     v2
+  iput-object            v2, v1, Lcom/adjust/sdk/AdjustConfig;->context Landroid/content/Context;
+  iput-object            v3, v1, Lcom/adjust/sdk/AdjustConfig;->appToken Ljava/lang/String;
+  iput-object            v4, v1, Lcom/adjust/sdk/AdjustConfig;->environment Ljava/lang/String;
+  const/4                v2, 0
+  iput-boolean           v2, v1, Lcom/adjust/sdk/AdjustConfig;->isSendingInBackgroundEnabled Z
+  iput-boolean           v2, v1, Lcom/adjust/sdk/AdjustConfig;->isPreinstallTrackingEnabled Z
+  iput-boolean           v2, v1, Lcom/adjust/sdk/AdjustConfig;->isDeviceIdsReadingOnceEnabled Z
+  iput-boolean           v2, v1, Lcom/adjust/sdk/AdjustConfig;->coppaComplianceEnabled Z
+  iput-boolean           v2, v1, Lcom/adjust/sdk/AdjustConfig;->playStoreKidsComplianceEnabled Z
+  iput-boolean           v2, v1, Lcom/adjust/sdk/AdjustConfig;->isFirstSessionDelayEnabled Z
+  const/4                v2, 1
+  iput-boolean           v2, v1, Lcom/adjust/sdk/AdjustConfig;->isGoogleAdIdReadingEnabled Z
+  iput-boolean           v2, v1, Lcom/adjust/sdk/AdjustConfig;->isAndroidIdReadingEnabled Z
+  iput-boolean           v2, v1, Lcom/adjust/sdk/AdjustConfig;->isAppSetIdReadingEnabled Z
+  iput-boolean           v2, v1, Lcom/adjust/sdk/AdjustConfig;->isFbIdReadingEnabled Z
+  iput-boolean           v2, v1, Lcom/adjust/sdk/AdjustConfig;->isFireAdIdReadingEnabled Z
+  iput-boolean           v2, v1, Lcom/adjust/sdk/AdjustConfig;->isDeviceIdsFromPluginsReadingEnabled Z
+  return-void            
+
+---- METHOD private setLogLevel (Lcom/adjust/sdk/LogLevel; Ljava/lang/String;)V ----
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustConfig;->logger Lcom/adjust/sdk/ILogger;
+  const-string/jumbo     v1, production
+  invoke-virtual         v1, v4, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v4
+  invoke-interface       v0, v3, v4, Lcom/adjust/sdk/ILogger;->setLogLevel(Lcom/adjust/sdk/LogLevel; Z)V
+  return-void            
+
+---- METHOD public disableAndroidIdReading ()V ----
+  const/4                v0, 0
+  iput-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isAndroidIdReadingEnabled Z
+  return-void            
+
+---- METHOD public disableAppSetIdReading ()V ----
+  const/4                v0, 0
+  iput-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isAppSetIdReadingEnabled Z
+  return-void            
+
+---- METHOD public disableDeviceIdsFromPluginsReading ()V ----
+  const/4                v0, 0
+  iput-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isDeviceIdsFromPluginsReadingEnabled Z
+  return-void            
+
+---- METHOD public disableDeviceIdsReading ()V ----
+  const/4                v0, 0
+  iput-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isGoogleAdIdReadingEnabled Z
+  iput-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isAndroidIdReadingEnabled Z
+  iput-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isAppSetIdReadingEnabled Z
+  iput-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isFbIdReadingEnabled Z
+  iput-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isFireAdIdReadingEnabled Z
+  iput-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isDeviceIdsFromPluginsReadingEnabled Z
+  return-void            
+
+---- METHOD public disableFbIdReading ()V ----
+  const/4                v0, 0
+  iput-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isFbIdReadingEnabled Z
+  return-void            
+
+---- METHOD public disableFireAdIdReading ()V ----
+  const/4                v0, 0
+  iput-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isFireAdIdReadingEnabled Z
+  return-void            
+
+---- METHOD public disableGoogleAdIdReading ()V ----
+  const/4                v0, 0
+  iput-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isGoogleAdIdReadingEnabled Z
+  return-void            
+
+---- METHOD public enableCoppaCompliance ()V ----
+  const/4                v0, 1
+  iput-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->coppaComplianceEnabled Z
+  return-void            
+
+---- METHOD public enableCostDataInAttribution ()V ----
+  sget-object            v0, Ljava/lang/Boolean;->TRUE Ljava/lang/Boolean;
+  iput-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->isCostDataInAttributionEnabled Ljava/lang/Boolean;
+  return-void            
+
+---- METHOD public enableDeviceIdsReadingOnce ()V ----
+  const/4                v0, 1
+  iput-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isDeviceIdsReadingOnceEnabled Z
+  return-void            
+
+---- METHOD public enableFirstSessionDelay ()V ----
+  const/4                v0, 1
+  iput-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isFirstSessionDelayEnabled Z
+  return-void            
+
+---- METHOD public enablePlayStoreKidsCompliance ()V ----
+  const/4                v0, 1
+  iput-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->playStoreKidsComplianceEnabled Z
+  return-void            
+
+---- METHOD public enablePreinstallTracking ()V ----
+  const/4                v0, 1
+  iput-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isPreinstallTrackingEnabled Z
+  return-void            
+
+---- METHOD public enableSendingInBackground ()V ----
+  const/4                v0, 1
+  iput-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isSendingInBackgroundEnabled Z
+  return-void            
+
+---- METHOD public getAppToken ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->appToken Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getContext ()Landroid/content/Context; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->context Landroid/content/Context;
+  return-object          v0
+
+---- METHOD public getCostDataInAttributionEnabled ()Ljava/lang/Boolean; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->isCostDataInAttributionEnabled Ljava/lang/Boolean;
+  return-object          v0
+
+---- METHOD public getDefaultTracker ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->defaultTracker Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getEnvironment ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->environment Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getEventDeduplicationIdsMaxSize ()Ljava/lang/Integer; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->eventDeduplicationIdsMaxSize Ljava/lang/Integer;
+  return-object          v0
+
+---- METHOD public getExternalDeviceId ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->externalDeviceId Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getFbAppId ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->fbAppId Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getLogger ()Lcom/adjust/sdk/ILogger; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->logger Lcom/adjust/sdk/ILogger;
+  return-object          v0
+
+---- METHOD public getOnAttributionChangedListener ()Lcom/adjust/sdk/OnAttributionChangedListener; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->onAttributionChangedListener Lcom/adjust/sdk/OnAttributionChangedListener;
+  return-object          v0
+
+---- METHOD public getOnDeeplinkResponseListener ()Lcom/adjust/sdk/OnDeferredDeeplinkResponseListener; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->onDeferredDeeplinkResponseListener Lcom/adjust/sdk/OnDeferredDeeplinkResponseListener;
+  return-object          v0
+
+---- METHOD public getOnEventTrackingFailedListener ()Lcom/adjust/sdk/OnEventTrackingFailedListener; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->onEventTrackingFailedListener Lcom/adjust/sdk/OnEventTrackingFailedListener;
+  return-object          v0
+
+---- METHOD public getOnEventTrackingSucceededListener ()Lcom/adjust/sdk/OnEventTrackingSucceededListener; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->onEventTrackingSucceededListener Lcom/adjust/sdk/OnEventTrackingSucceededListener;
+  return-object          v0
+
+---- METHOD public getOnRemoteTriggerListener ()Lcom/adjust/sdk/OnRemoteTriggerListener; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->onRemoteTriggerListener Lcom/adjust/sdk/OnRemoteTriggerListener;
+  return-object          v0
+
+---- METHOD public getOnSessionTrackingFailedListener ()Lcom/adjust/sdk/OnSessionTrackingFailedListener; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->onSessionTrackingFailedListener Lcom/adjust/sdk/OnSessionTrackingFailedListener;
+  return-object          v0
+
+---- METHOD public getOnSessionTrackingSucceededListener ()Lcom/adjust/sdk/OnSessionTrackingSucceededListener; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->onSessionTrackingSucceededListener Lcom/adjust/sdk/OnSessionTrackingSucceededListener;
+  return-object          v0
+
+---- METHOD public getOnThirdPartySharingSettingsChangedListener ()Lcom/adjust/sdk/OnThirdPartySharingSettingsChangedListener; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->onThirdPartySharingSettingsChangedListener Lcom/adjust/sdk/OnThirdPartySharingSettingsChangedListener;
+  return-object          v0
+
+---- METHOD public getPreinstallFilePath ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->preinstallFilePath Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getProcessName ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->processName Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getSdkPrefix ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->sdkPrefix Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getStoreInfo ()Lcom/adjust/sdk/AdjustStoreInfo; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->storeInfo Lcom/adjust/sdk/AdjustStoreInfo;
+  return-object          v0
+
+---- METHOD public getUrlStrategyDomains ()Ljava/util/List; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->urlStrategyDomains Ljava/util/List;
+  return-object          v0
+
+---- METHOD public isAndroidIdReadingEnabled ()Z ----
+  iget-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isAndroidIdReadingEnabled Z
+  return                 v0
+
+---- METHOD public isAppSetIdReadingEnabled ()Z ----
+  iget-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isAppSetIdReadingEnabled Z
+  return                 v0
+
+---- METHOD public isCoppaComplianceEnabled ()Z ----
+  iget-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->coppaComplianceEnabled Z
+  return                 v0
+
+---- METHOD public isDeviceIdsFromPluginsReadingEnabled ()Z ----
+  iget-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isDeviceIdsFromPluginsReadingEnabled Z
+  return                 v0
+
+---- METHOD public isDeviceIdsReadingOnceEnabled ()Z ----
+  iget-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isDeviceIdsReadingOnceEnabled Z
+  return                 v0
+
+---- METHOD public isFbIdReadingEnabled ()Z ----
+  iget-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isFbIdReadingEnabled Z
+  return                 v0
+
+---- METHOD public isFireAdIdReadingEnabled ()Z ----
+  iget-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isFireAdIdReadingEnabled Z
+  return                 v0
+
+---- METHOD public isGoogleAdIdReadingEnabled ()Z ----
+  iget-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isGoogleAdIdReadingEnabled Z
+  return                 v0
+
+---- METHOD public isPlayStoreKidsComplianceEnabled ()Z ----
+  iget-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->playStoreKidsComplianceEnabled Z
+  return                 v0
+
+---- METHOD public isPreinstallTrackingEnabled ()Z ----
+  iget-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isPreinstallTrackingEnabled Z
+  return                 v0
+
+---- METHOD public isSendingInBackgroundEnabled ()Z ----
+  iget-boolean           v0, v1, Lcom/adjust/sdk/AdjustConfig;->isSendingInBackgroundEnabled Z
+  return                 v0
+
+---- METHOD public isValid ()Z ----
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustConfig;->appToken Ljava/lang/String;
+  invoke-direct          v2, v0, Lcom/adjust/sdk/AdjustConfig;->checkAppToken(Ljava/lang/String;)Z
+  move-result            v0
+  const/4                v1, 0
+  if-nez                 v0, +003h
+  return                 v1
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustConfig;->environment Ljava/lang/String;
+  invoke-direct          v2, v0, Lcom/adjust/sdk/AdjustConfig;->checkEnvironment(Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  return                 v1
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustConfig;->context Landroid/content/Context;
+  invoke-direct          v2, v0, Lcom/adjust/sdk/AdjustConfig;->checkContext(Landroid/content/Context;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  return                 v1
+  const/4                v0, 1
+  return                 v0
+
+---- METHOD public setDefaultTracker (Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustConfig;->defaultTracker Ljava/lang/String;
+  return-void            
+
+---- METHOD public setEventDeduplicationIdsMaxSize (Ljava/lang/Integer;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustConfig;->eventDeduplicationIdsMaxSize Ljava/lang/Integer;
+  return-void            
+
+---- METHOD public setExternalDeviceId (Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustConfig;->externalDeviceId Ljava/lang/String;
+  return-void            
+
+---- METHOD public setFbAppId (Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustConfig;->fbAppId Ljava/lang/String;
+  return-void            
+
+---- METHOD public setLogLevel (Lcom/adjust/sdk/LogLevel;)V ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustConfig;->environment Ljava/lang/String;
+  invoke-direct          v1, v2, v0, Lcom/adjust/sdk/AdjustConfig;->setLogLevel(Lcom/adjust/sdk/LogLevel; Ljava/lang/String;)V
+  return-void            
+
+---- METHOD public setOnAttributionChangedListener (Lcom/adjust/sdk/OnAttributionChangedListener;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustConfig;->onAttributionChangedListener Lcom/adjust/sdk/OnAttributionChangedListener;
+  return-void            
+
+---- METHOD public setOnDeferredDeeplinkResponseListener (Lcom/adjust/sdk/OnDeferredDeeplinkResponseListener;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustConfig;->onDeferredDeeplinkResponseListener Lcom/adjust/sdk/OnDeferredDeeplinkResponseListener;
+  return-void            
+
+---- METHOD public setOnEventTrackingFailedListener (Lcom/adjust/sdk/OnEventTrackingFailedListener;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustConfig;->onEventTrackingFailedListener Lcom/adjust/sdk/OnEventTrackingFailedListener;
+  return-void            
+
+---- METHOD public setOnEventTrackingSucceededListener (Lcom/adjust/sdk/OnEventTrackingSucceededListener;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustConfig;->onEventTrackingSucceededListener Lcom/adjust/sdk/OnEventTrackingSucceededListener;
+  return-void            
+
+---- METHOD public setOnRemoteTriggerListener (Lcom/adjust/sdk/OnRemoteTriggerListener;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustConfig;->onRemoteTriggerListener Lcom/adjust/sdk/OnRemoteTriggerListener;
+  return-void            
+
+---- METHOD public setOnSessionTrackingFailedListener (Lcom/adjust/sdk/OnSessionTrackingFailedListener;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustConfig;->onSessionTrackingFailedListener Lcom/adjust/sdk/OnSessionTrackingFailedListener;
+  return-void            
+
+---- METHOD public setOnSessionTrackingSucceededListener (Lcom/adjust/sdk/OnSessionTrackingSucceededListener;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustConfig;->onSessionTrackingSucceededListener Lcom/adjust/sdk/OnSessionTrackingSucceededListener;
+  return-void            
+
+---- METHOD public setOnThirdPartySharingSettingsChangedListener (Lcom/adjust/sdk/OnThirdPartySharingSettingsChangedListener;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustConfig;->onThirdPartySharingSettingsChangedListener Lcom/adjust/sdk/OnThirdPartySharingSettingsChangedListener;
+  return-void            
+
+---- METHOD public setPreinstallFilePath (Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustConfig;->preinstallFilePath Ljava/lang/String;
+  return-void            
+
+---- METHOD public setProcessName (Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustConfig;->processName Ljava/lang/String;
+  return-void            
+
+---- METHOD public setSdkPrefix (Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustConfig;->sdkPrefix Ljava/lang/String;
+  return-void            
+
+---- METHOD public setStoreInfo (Lcom/adjust/sdk/AdjustStoreInfo;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustConfig;->storeInfo Lcom/adjust/sdk/AdjustStoreInfo;
+  return-void            
+
+---- METHOD public setUrlStrategy (Ljava/util/List; Z Z)V ----
+  if-eqz                 v2, +010h
+  invoke-interface       v2, Ljava/util/List;->isEmpty()Z
+  move-result            v0
+  if-eqz                 v0, +003h
+  goto                   +8h
+  iput-object            v2, v1, Lcom/adjust/sdk/AdjustConfig;->urlStrategyDomains Ljava/util/List;
+  iput-boolean           v3, v1, Lcom/adjust/sdk/AdjustConfig;->useSubdomains Z
+  iput-boolean           v4, v1, Lcom/adjust/sdk/AdjustConfig;->isDataResidency Z
+  return-void            
+  iget-object            v2, v1, Lcom/adjust/sdk/AdjustConfig;->logger Lcom/adjust/sdk/ILogger;
+  const/4                v3, 0
+  new-array              v3, v3, [Ljava/lang/Object;
+  const-string           v4, "Invalid URL strategy domains array"
+  invoke-interface       v2, v4, v3, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+######################################################################

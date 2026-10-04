@@ -1,0 +1,86 @@
+[
+ {
+  "arm": "S0",
+  "sig_state": "VALID",
+  "gps": "c6572c78-ff0a-4143-a7c5-faf2447cd6a3",
+  "click_http": 302,
+  "referrer": "adjust_reftag=cC072tBJJYd95&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+  "session_http": 200,
+  "sdk_click_http": 200,
+  "sdk_click_resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"85a9168ecde05373af83943fcd6bf804\"}",
+  "attribution": {
+   "tracker_token": "wy7261z",
+   "tracker_name": "Organic",
+   "network": "Organic",
+   "engagement_time": "0001-01-01T00:00:00Z",
+   "installed_at": "2026-09-26T21:04:22Z",
+   "first_session_time": "2026-09-26T21:04:22Z",
+   "is_reattributed": false,
+   "is_redownload_install": false
+  },
+  "verdict": "ORGANIC wy7261z"
+ },
+ {
+  "arm": "S1",
+  "sig_state": "FLIP",
+  "gps": "6595efc5-d8fe-4567-9ae2-45c3ad592949",
+  "click_http": 302,
+  "referrer": "adjust_reftag=cnssejTtdZn6v&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+  "session_http": 200,
+  "sdk_click_http": 200,
+  "sdk_click_resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"792c3f86ba9e05546c229dafa19a3f33\"}",
+  "attribution": {
+   "tracker_token": "wy7261z",
+   "tracker_name": "Organic",
+   "network": "Organic",
+   "engagement_time": "0001-01-01T00:00:00Z",
+   "installed_at": "2026-09-26T21:06:13Z",
+   "first_session_time": "2026-09-26T21:06:13Z",
+   "is_reattributed": false,
+   "is_redownload_install": false
+  },
+  "verdict": "ORGANIC wy7261z"
+ },
+ {
+  "arm": "S2",
+  "sig_state": "EMPTY",
+  "gps": "67b53252-ab61-4a7b-8ab8-1b5e3f7cc9eb",
+  "click_http": 302,
+  "referrer": "adjust_reftag=c4PCRfeoNGIC6&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+  "session_http": 200,
+  "sdk_click_http": 200,
+  "sdk_click_resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"9c4cc1d0b1a68fbde4f0dfbf83b1adf6\"}",
+  "attribution": {
+   "tracker_token": "wy7261z",
+   "tracker_name": "Organic",
+   "network": "Organic",
+   "engagement_time": "0001-01-01T00:00:00Z",
+   "installed_at": "2026-09-26T21:08:07Z",
+   "first_session_time": "2026-09-26T21:08:07Z",
+   "is_reattributed": false,
+   "is_redownload_install": false
+  },
+  "verdict": "ORGANIC wy7261z"
+ },
+ {
+  "arm": "S3",
+  "sig_state": "GARBAGE",
+  "gps": "64cb2e4e-4619-4b0c-8163-451565c9167f",
+  "click_http": 302,
+  "referrer": "adjust_reftag=c38HqVI1sTwTV&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+  "session_http": 200,
+  "sdk_click_http": 200,
+  "sdk_click_resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"44d8a3e08dbb9433ef128eafe5022772\"}",
+  "attribution": {
+   "tracker_token": "wy7261z",
+   "tracker_name": "Organic",
+   "network": "Organic",
+   "engagement_time": "0001-01-01T00:00:00Z",
+   "installed_at": "2026-09-26T21:10:02Z",
+   "first_session_time": "2026-09-26T21:10:02Z",
+   "is_reattributed": false,
+   "is_redownload_install": false
+  },
+  "verdict": "ORGANIC wy7261z"
+ }
+]

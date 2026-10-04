@@ -1,0 +1,18 @@
+[
+ {
+  "unit": 1,
+  "auid": "073ccff9-c71c-4987-a914-167666ff7c26",
+  "gps": "d016e7e4-fb1c-4d0a-b619-db01f6a6a262",
+  "http": 400,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"ask_in\":7200000}",
+  "hdr": "07184f3a723d9fb202d1b9d951803c4b"
+ },
+ {
+  "unit": 1,
+  "auid": "073ccff9-c71c-4987-a914-167666ff7c26",
+  "gps": "d016e7e4-fb1c-4d0a-b619-db01f6a6a262",
+  "http": 400,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"ask_in\":7200000}",
+  "hdr": "07184f3a723d9fb202d1b9d951803c4b"
+ }
+]

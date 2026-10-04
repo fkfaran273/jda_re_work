@@ -1,0 +1,73 @@
+# CLASS Lcom/adjust/sdk/ResponseData;
+FIELD public activityKind Lcom/adjust/sdk/ActivityKind;
+FIELD public activityPackage Lcom/adjust/sdk/ActivityPackage;
+FIELD public adid Ljava/lang/String;
+FIELD public askIn Ljava/lang/Long;
+FIELD public attribution Lcom/adjust/sdk/AdjustAttribution;
+FIELD public continueIn Ljava/lang/Long;
+FIELD public controlParams Lorg/json/JSONObject;
+FIELD public jsonResponse Lorg/json/JSONObject;
+FIELD public message Ljava/lang/String;
+FIELD public resolvedDeeplink Ljava/lang/String;
+FIELD public retryIn Ljava/lang/Long;
+FIELD public sendingParameters Ljava/util/Map;
+FIELD public signedParameters Ljava/util/Map;
+FIELD public success Z
+FIELD public timestamp Ljava/lang/String;
+FIELD public trackingState Lcom/adjust/sdk/TrackingState;
+FIELD public willRetry Z
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v1, Ljava/lang/Object;-><init>()V
+  const/4                v0, 0
+  iput-boolean           v0, v1, Lcom/adjust/sdk/ResponseData;->success Z
+  iput-boolean           v0, v1, Lcom/adjust/sdk/ResponseData;->willRetry Z
+  return-void            
+
+---- METHOD public static buildResponseData (Lcom/adjust/sdk/ActivityPackage; Ljava/util/Map; Ljava/util/Map;)Lcom/adjust/sdk/ResponseData; ----
+  invoke-virtual         v3, Lcom/adjust/sdk/ActivityPackage;->getActivityKind()Lcom/adjust/sdk/ActivityKind;
+  move-result-object     v0
+  sget-object            v1, Lcom/adjust/sdk/Y;->a [I
+  invoke-virtual         v0, Ljava/lang/Enum;->ordinal()I
+  move-result            v2
+  aget                   v1, v1, v2
+  packed-switch          v1, +0000036h
+  new-instance           v1, Lcom/adjust/sdk/ResponseData;
+  invoke-direct          v1, Lcom/adjust/sdk/ResponseData;-><init>()V
+  goto                   +24h
+  new-instance           v1, Lcom/adjust/sdk/ThirdPartySharingResponseData;
+  invoke-direct          v1, Lcom/adjust/sdk/ThirdPartySharingResponseData;-><init>()V
+  goto                   +1eh
+  new-instance           v1, Lcom/adjust/sdk/PurchaseVerificationResponseData;
+  invoke-direct          v1, Lcom/adjust/sdk/PurchaseVerificationResponseData;-><init>()V
+  goto                   +18h
+  new-instance           v1, Lcom/adjust/sdk/EventResponseData;
+  invoke-direct          v1, v3, Lcom/adjust/sdk/EventResponseData;-><init>(Lcom/adjust/sdk/ActivityPackage;)V
+  goto                   +12h
+  new-instance           v1, Lcom/adjust/sdk/AttributionResponseData;
+  invoke-direct          v1, Lcom/adjust/sdk/AttributionResponseData;-><init>()V
+  goto                   +ch
+  new-instance           v1, Lcom/adjust/sdk/SdkClickResponseData;
+  invoke-direct          v1, Lcom/adjust/sdk/SdkClickResponseData;-><init>()V
+  goto                   +6h
+  new-instance           v1, Lcom/adjust/sdk/SessionResponseData;
+  invoke-direct          v1, v3, Lcom/adjust/sdk/SessionResponseData;-><init>(Lcom/adjust/sdk/ActivityPackage;)V
+  iput-object            v0, v1, Lcom/adjust/sdk/ResponseData;->activityKind Lcom/adjust/sdk/ActivityKind;
+  iput-object            v3, v1, Lcom/adjust/sdk/ResponseData;->activityPackage Lcom/adjust/sdk/ActivityPackage;
+  iput-object            v4, v1, Lcom/adjust/sdk/ResponseData;->sendingParameters Ljava/util/Map;
+  iput-object            v5, v1, Lcom/adjust/sdk/ResponseData;->signedParameters Ljava/util/Map;
+  return-object          v1
+  nop                    
+  packed-switch-payload  1 2 3 4 5 6
+
+---- METHOD public toString ()Ljava/lang/String; ----
+  iget-object            v0, v3, Lcom/adjust/sdk/ResponseData;->message Ljava/lang/String;
+  iget-object            v1, v3, Lcom/adjust/sdk/ResponseData;->timestamp Ljava/lang/String;
+  iget-object            v2, v3, Lcom/adjust/sdk/ResponseData;->jsonResponse Lorg/json/JSONObject;
+  filled-new-array       v0, v1, v2, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v1, "message:%s timestamp:%s json:%s"
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+######################################################################

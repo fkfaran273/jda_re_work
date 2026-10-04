@@ -1,0 +1,10 @@
+{
+ "ok": true,
+ "classname": "com.adjust.sdk.sig.t1",
+ "methods": [
+  "a(android.content.Context)",
+  "a(android.content.Context,[B)",
+  "b(android.content.Context)"
+ ],
+ "fields": []
+}

@@ -1,0 +1,57 @@
+# CLASS Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;
+FIELD private scheduledThreadPoolExecutor Ljava/util/concurrent/ScheduledThreadPoolExecutor;
+
+---- METHOD public constructor <init> (Ljava/lang/String; Z)V ----
+  invoke-direct          v4, Ljava/lang/Object;-><init>()V
+  new-instance           v0, Ljava/util/concurrent/ScheduledThreadPoolExecutor;
+  new-instance           v1, Lcom/adjust/sdk/scheduler/ThreadFactoryWrapper;
+  invoke-direct          v1, v5, Lcom/adjust/sdk/scheduler/ThreadFactoryWrapper;-><init>(Ljava/lang/String;)V
+  new-instance           v2, Lt3/a;
+  const/4                v3, 1
+  invoke-direct          v2, v5, v3, Lt3/a;-><init>(Ljava/lang/String; I)V
+  const/4                v5, 1
+  invoke-direct          v0, v5, v1, v2, Ljava/util/concurrent/ScheduledThreadPoolExecutor;-><init>(I Ljava/util/concurrent/ThreadFactory; Ljava/util/concurrent/RejectedExecutionHandler;)V
+  iput-object            v0, v4, Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;->scheduledThreadPoolExecutor Ljava/util/concurrent/ScheduledThreadPoolExecutor;
+  if-nez                 v6, +00eh
+  sget-object            v6, Ljava/util/concurrent/TimeUnit;->MILLISECONDS Ljava/util/concurrent/TimeUnit;
+  const-wide/16          v1, 10
+  invoke-virtual         v0, v1, v2, v6, Ljava/util/concurrent/ThreadPoolExecutor;->setKeepAliveTime(J Ljava/util/concurrent/TimeUnit;)V
+  iget-object            v6, v4, Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;->scheduledThreadPoolExecutor Ljava/util/concurrent/ScheduledThreadPoolExecutor;
+  invoke-virtual         v6, v5, Ljava/util/concurrent/ThreadPoolExecutor;->allowCoreThreadTimeOut(Z)V
+  return-void            
+
+---- METHOD public scheduleFuture (Ljava/lang/Runnable; J)Ljava/util/concurrent/ScheduledFuture; ----
+  iget-object            v0, v2, Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;->scheduledThreadPoolExecutor Ljava/util/concurrent/ScheduledThreadPoolExecutor;
+  new-instance           v1, Lcom/adjust/sdk/scheduler/RunnableWrapper;
+  invoke-direct          v1, v3, Lcom/adjust/sdk/scheduler/RunnableWrapper;-><init>(Ljava/lang/Runnable;)V
+  sget-object            v3, Ljava/util/concurrent/TimeUnit;->MILLISECONDS Ljava/util/concurrent/TimeUnit;
+  invoke-virtual         v0, v1, v4, v5, v3, Ljava/util/concurrent/ScheduledThreadPoolExecutor;->schedule(Ljava/lang/Runnable; J Ljava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
+  move-result-object     v3
+  return-object          v3
+
+---- METHOD public scheduleFutureWithFixedDelay (Ljava/lang/Runnable; J J)Ljava/util/concurrent/ScheduledFuture; ----
+  iget-object            v0, v7, Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;->scheduledThreadPoolExecutor Ljava/util/concurrent/ScheduledThreadPoolExecutor;
+  new-instance           v1, Lcom/adjust/sdk/scheduler/RunnableWrapper;
+  invoke-direct          v1, v8, Lcom/adjust/sdk/scheduler/RunnableWrapper;-><init>(Ljava/lang/Runnable;)V
+  sget-object            v6, Ljava/util/concurrent/TimeUnit;->MILLISECONDS Ljava/util/concurrent/TimeUnit;
+  move-wide              v2, v9
+  move-wide              v4, v11
+  invoke-virtual/range   v0 ... v6, Ljava/util/concurrent/ScheduledThreadPoolExecutor;->scheduleWithFixedDelay(Ljava/lang/Runnable; J J Ljava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
+  move-result-object     v8
+  return-object          v8
+
+---- METHOD public scheduleFutureWithReturn (Ljava/util/concurrent/Callable; J)Ljava/util/concurrent/ScheduledFuture; ----
+  iget-object            v0, v3, Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;->scheduledThreadPoolExecutor Ljava/util/concurrent/ScheduledThreadPoolExecutor;
+  new-instance           v1, LG/b;
+  const/4                v2, 2
+  invoke-direct          v1, v4, v2, LG/b;-><init>(Ljava/lang/Object; I)V
+  sget-object            v4, Ljava/util/concurrent/TimeUnit;->MILLISECONDS Ljava/util/concurrent/TimeUnit;
+  invoke-virtual         v0, v1, v5, v6, v4, Ljava/util/concurrent/ScheduledThreadPoolExecutor;->schedule(Ljava/util/concurrent/Callable; J Ljava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
+  move-result-object     v4
+  return-object          v4
+
+---- METHOD public teardown ()V ----
+  iget-object            v0, v1, Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;->scheduledThreadPoolExecutor Ljava/util/concurrent/ScheduledThreadPoolExecutor;
+  invoke-virtual         v0, Ljava/util/concurrent/ScheduledThreadPoolExecutor;->shutdownNow()Ljava/util/List;
+  return-void            
+######################################################################

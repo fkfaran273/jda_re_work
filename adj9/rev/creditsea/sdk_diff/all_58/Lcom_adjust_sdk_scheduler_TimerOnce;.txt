@@ -1,0 +1,100 @@
+# CLASS Lcom/adjust/sdk/scheduler/TimerOnce;
+FIELD private command Ljava/lang/Runnable;
+FIELD private logger Lcom/adjust/sdk/ILogger;
+FIELD private name Ljava/lang/String;
+FIELD private scheduler Lcom/adjust/sdk/scheduler/FutureScheduler;
+FIELD private waitingTask Ljava/util/concurrent/ScheduledFuture;
+
+---- METHOD public constructor <init> (Ljava/lang/Runnable; Ljava/lang/String;)V ----
+  invoke-direct          v2, Ljava/lang/Object;-><init>()V
+  iput-object            v4, v2, Lcom/adjust/sdk/scheduler/TimerOnce;->name Ljava/lang/String;
+  new-instance           v0, Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;
+  const/4                v1, 1
+  invoke-direct          v0, v4, v1, Lcom/adjust/sdk/scheduler/SingleThreadFutureScheduler;-><init>(Ljava/lang/String; Z)V
+  iput-object            v0, v2, Lcom/adjust/sdk/scheduler/TimerOnce;->scheduler Lcom/adjust/sdk/scheduler/FutureScheduler;
+  iput-object            v3, v2, Lcom/adjust/sdk/scheduler/TimerOnce;->command Ljava/lang/Runnable;
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  iput-object            v3, v2, Lcom/adjust/sdk/scheduler/TimerOnce;->logger Lcom/adjust/sdk/ILogger;
+  return-void            
+
+---- METHOD public static bridge synthetic a (Lcom/adjust/sdk/scheduler/TimerOnce;)Ljava/lang/Runnable; ----
+  iget-object            v0, v0, Lcom/adjust/sdk/scheduler/TimerOnce;->command Ljava/lang/Runnable;
+  return-object          v0
+
+---- METHOD public static bridge synthetic b (Lcom/adjust/sdk/scheduler/TimerOnce;)Lcom/adjust/sdk/ILogger; ----
+  iget-object            v0, v0, Lcom/adjust/sdk/scheduler/TimerOnce;->logger Lcom/adjust/sdk/ILogger;
+  return-object          v0
+
+---- METHOD public static bridge synthetic c (Lcom/adjust/sdk/scheduler/TimerOnce;)Ljava/lang/String; ----
+  iget-object            v0, v0, Lcom/adjust/sdk/scheduler/TimerOnce;->name Ljava/lang/String;
+  return-object          v0
+
+---- METHOD private cancel (Z)V ----
+  iget-object            v0, v2, Lcom/adjust/sdk/scheduler/TimerOnce;->waitingTask Ljava/util/concurrent/ScheduledFuture;
+  if-eqz                 v0, +005h
+  invoke-interface       v0, v3, Ljava/util/concurrent/Future;->cancel(Z)Z
+  const/4                v3, 0
+  iput-object            v3, v2, Lcom/adjust/sdk/scheduler/TimerOnce;->waitingTask Ljava/util/concurrent/ScheduledFuture;
+  iget-object            v3, v2, Lcom/adjust/sdk/scheduler/TimerOnce;->logger Lcom/adjust/sdk/ILogger;
+  iget-object            v0, v2, Lcom/adjust/sdk/scheduler/TimerOnce;->name Ljava/lang/String;
+  filled-new-array       v0, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v1, "%s canceled"
+  invoke-interface       v3, v1, v0, Lcom/adjust/sdk/ILogger;->verbose(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD public static bridge synthetic d (Lcom/adjust/sdk/scheduler/TimerOnce;)V ----
+  const/4                v0, 0
+  iput-object            v0, v1, Lcom/adjust/sdk/scheduler/TimerOnce;->waitingTask Ljava/util/concurrent/ScheduledFuture;
+  return-void            
+
+---- METHOD public cancel ()V ----
+  const/4                v0, 0
+  invoke-direct          v1, v0, Lcom/adjust/sdk/scheduler/TimerOnce;->cancel(Z)V
+  return-void            
+
+---- METHOD public getFireIn ()J ----
+  iget-object            v0, v2, Lcom/adjust/sdk/scheduler/TimerOnce;->waitingTask Ljava/util/concurrent/ScheduledFuture;
+  if-nez                 v0, +005h
+  const-wide/16          v0, 0
+  return-wide            v0
+  sget-object            v1, Ljava/util/concurrent/TimeUnit;->MILLISECONDS Ljava/util/concurrent/TimeUnit;
+  invoke-interface       v0, v1, Ljava/util/concurrent/Delayed;->getDelay(Ljava/util/concurrent/TimeUnit;)J
+  move-result-wide       v0
+  return-wide            v0
+
+---- METHOD public startIn (J)V ----
+  const/4                v0, 0
+  invoke-direct          v5, v0, Lcom/adjust/sdk/scheduler/TimerOnce;->cancel(Z)V
+  sget-object            v0, Lcom/adjust/sdk/Util;->SecondsDisplayFormat Ljava/text/DecimalFormat;
+  long-to-double         v1, v6
+  const-wide             v3, 4652007308841189376
+  div-double/2addr       v1, v3
+  invoke-virtual         v0, v1, v2, Ljava/text/NumberFormat;->format(D)Ljava/lang/String;
+  move-result-object     v0
+  iget-object            v1, v5, Lcom/adjust/sdk/scheduler/TimerOnce;->logger Lcom/adjust/sdk/ILogger;
+  iget-object            v2, v5, Lcom/adjust/sdk/scheduler/TimerOnce;->name Ljava/lang/String;
+  filled-new-array       v2, v0, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v2, "%s starting. Launching in %s seconds"
+  invoke-interface       v1, v2, v0, Lcom/adjust/sdk/ILogger;->verbose(Ljava/lang/String; [Ljava/lang/Object;)V
+  iget-object            v0, v5, Lcom/adjust/sdk/scheduler/TimerOnce;->scheduler Lcom/adjust/sdk/scheduler/FutureScheduler;
+  new-instance           v1, LB0/b;
+  const/16               v2, 24
+  invoke-direct          v1, v5, v2, LB0/b;-><init>(Ljava/lang/Object; I)V
+  invoke-interface       v0, v1, v6, v7, Lcom/adjust/sdk/scheduler/FutureScheduler;->scheduleFuture(Ljava/lang/Runnable; J)Ljava/util/concurrent/ScheduledFuture;
+  move-result-object     v6
+  iput-object            v6, v5, Lcom/adjust/sdk/scheduler/TimerOnce;->waitingTask Ljava/util/concurrent/ScheduledFuture;
+  return-void            
+
+---- METHOD public teardown ()V ----
+  const/4                v0, 1
+  invoke-direct          v1, v0, Lcom/adjust/sdk/scheduler/TimerOnce;->cancel(Z)V
+  iget-object            v0, v1, Lcom/adjust/sdk/scheduler/TimerOnce;->scheduler Lcom/adjust/sdk/scheduler/FutureScheduler;
+  if-eqz                 v0, +005h
+  invoke-interface       v0, Lcom/adjust/sdk/scheduler/FutureScheduler;->teardown()V
+  const/4                v0, 0
+  iput-object            v0, v1, Lcom/adjust/sdk/scheduler/TimerOnce;->scheduler Lcom/adjust/sdk/scheduler/FutureScheduler;
+  return-void            
+######################################################################

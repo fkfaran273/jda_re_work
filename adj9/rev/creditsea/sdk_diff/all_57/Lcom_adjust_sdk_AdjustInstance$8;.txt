@@ -1,0 +1,37 @@
+# CLASS Lcom/adjust/sdk/AdjustInstance$8;
+FIELD public final synthetic a Landroid/content/Context;
+FIELD public final synthetic b Lcom/adjust/sdk/OnAdidReadListener;
+FIELD public final synthetic c J
+FIELD public final synthetic d Lcom/adjust/sdk/AdjustInstance;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/AdjustInstance; Landroid/content/Context; Lcom/adjust/sdk/OnAdidReadListener; J)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustInstance$8;->d Lcom/adjust/sdk/AdjustInstance;
+  iput-object            v2, v0, Lcom/adjust/sdk/AdjustInstance$8;->a Landroid/content/Context;
+  iput-object            v3, v0, Lcom/adjust/sdk/AdjustInstance$8;->b Lcom/adjust/sdk/OnAdidReadListener;
+  iput-wide              v4, v0, Lcom/adjust/sdk/AdjustInstance$8;->c J
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v5, Lcom/adjust/sdk/AdjustInstance$8;->a Landroid/content/Context;
+  invoke-static          v0, Lcom/adjust/sdk/Util;->getAdidFromActivityStateFile(Landroid/content/Context;)Ljava/lang/String;
+  move-result-object     v0
+  if-eqz                 v0, +016h
+  new-instance           v1, Landroid/os/Handler;
+  iget-object            v2, v5, Lcom/adjust/sdk/AdjustInstance$8;->a Landroid/content/Context;
+  invoke-virtual         v2, Landroid/content/Context;->getMainLooper()Landroid/os/Looper;
+  move-result-object     v2
+  invoke-direct          v1, v2, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+  new-instance           v2, Lcom/adjust/sdk/AdjustInstance$8$1;
+  invoke-direct          v2, v5, v0, Lcom/adjust/sdk/AdjustInstance$8$1;-><init>(Lcom/adjust/sdk/AdjustInstance$8; Ljava/lang/String;)V
+  invoke-virtual         v1, v2, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+  return-void            
+  iget-wide              v0, v5, Lcom/adjust/sdk/AdjustInstance$8;->c J
+  iget-object            v2, v5, Lcom/adjust/sdk/AdjustInstance$8;->b Lcom/adjust/sdk/OnAdidReadListener;
+  iget-object            v3, v5, Lcom/adjust/sdk/AdjustInstance$8;->d Lcom/adjust/sdk/AdjustInstance;
+  invoke-static          v3, Lcom/adjust/sdk/AdjustInstance;->access$000(Lcom/adjust/sdk/AdjustInstance;)Ljava/util/ArrayList;
+  move-result-object     v3
+  iget-object            v4, v5, Lcom/adjust/sdk/AdjustInstance$8;->a Landroid/content/Context;
+  invoke-static          v0, v1, v2, v3, v4, Lcom/adjust/sdk/ActivityHandler;->queueGetAdidWithTimeout(J Lcom/adjust/sdk/OnAdidReadListener; Ljava/util/ArrayList; Landroid/content/Context;)V
+  return-void            
+######################################################################

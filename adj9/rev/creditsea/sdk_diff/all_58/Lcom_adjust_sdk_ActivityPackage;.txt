@@ -1,0 +1,549 @@
+# CLASS Lcom/adjust/sdk/ActivityPackage;
+FIELD private static final serialPersistentFields [Ljava/io/ObjectStreamField;
+FIELD private static final serialVersionUID J
+FIELD private activityKind Lcom/adjust/sdk/ActivityKind;
+FIELD private callbackParameters Ljava/util/Map;
+FIELD private clickTimeInMilliseconds J
+FIELD private clickTimeInSeconds J
+FIELD private clickTimeServerInSeconds J
+FIELD private clientSdk Ljava/lang/String;
+FIELD public varargs event Lcom/adjust/sdk/AdjustEvent;
+FIELD private firstErrorCode I
+FIELD private googlePlayInstant Ljava/lang/Boolean;
+FIELD private varargs hashCode I
+FIELD private installBeginTimeInSeconds J
+FIELD private installBeginTimeServerInSeconds J
+FIELD private installVersion Ljava/lang/String;
+FIELD private isClick Ljava/lang/Boolean;
+FIELD private lastErrorCode I
+FIELD private parameters Ljava/util/Map;
+FIELD private partnerParameters Ljava/util/Map;
+FIELD private path Ljava/lang/String;
+FIELD private purchaseVerificationCallback Lcom/adjust/sdk/OnPurchaseVerificationFinishedListener;
+FIELD private retries I
+FIELD private retryCount I
+FIELD private suffix Ljava/lang/String;
+FIELD private waitBeforeSendTimeSeconds D
+
+---- METHOD static constructor <clinit> ()V ----
+  new-instance           v0, Ljava/io/ObjectStreamField;
+  const-string/jumbo     v1, path
+  const-class            v2, Ljava/lang/String;
+  invoke-direct          v0, v1, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v1, Ljava/io/ObjectStreamField;
+  const-string           v3, "clientSdk"
+  invoke-direct          v1, v3, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v3, Ljava/io/ObjectStreamField;
+  const-string/jumbo     v4, parameters
+  const-class            v5, Ljava/util/Map;
+  invoke-direct          v3, v4, v5, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v4, Ljava/io/ObjectStreamField;
+  const-string           v6, "activityKind"
+  const-class            v7, Lcom/adjust/sdk/ActivityKind;
+  invoke-direct          v4, v6, v7, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v6, Ljava/io/ObjectStreamField;
+  const-string/jumbo     v7, suffix
+  invoke-direct          v6, v7, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v7, Ljava/io/ObjectStreamField;
+  const-string           v2, "callbackParameters"
+  invoke-direct          v7, v2, v5, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v8, Ljava/io/ObjectStreamField;
+  const-string/jumbo     v2, partnerParameters
+  invoke-direct          v8, v2, v5, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v9, Ljava/io/ObjectStreamField;
+  sget-object            v2, Ljava/lang/Integer;->TYPE Ljava/lang/Class;
+  const-string/jumbo     v5, retryCount
+  invoke-direct          v9, v5, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v10, Ljava/io/ObjectStreamField;
+  const-string           v5, "firstErrorCode"
+  invoke-direct          v10, v5, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v11, Ljava/io/ObjectStreamField;
+  const-string           v5, "lastErrorCode"
+  invoke-direct          v11, v5, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v12, Ljava/io/ObjectStreamField;
+  sget-object            v2, Ljava/lang/Double;->TYPE Ljava/lang/Class;
+  const-string/jumbo     v5, waitBeforeSendTimeSeconds
+  invoke-direct          v12, v5, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  move-object            v2, v3
+  move-object            v3, v4
+  move-object            v4, v6
+  move-object            v5, v7
+  move-object            v6, v8
+  move-object            v7, v9
+  move-object            v8, v10
+  move-object            v9, v11
+  move-object            v10, v12
+  filled-new-array/range v0 ... v10, [Ljava/io/ObjectStreamField;
+  move-result-object     v0
+  sput-object            v0, Lcom/adjust/sdk/ActivityPackage;->serialPersistentFields [Ljava/io/ObjectStreamField;
+  return-void            
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/ActivityKind;)V ----
+  invoke-direct          v1, Ljava/lang/Object;-><init>()V
+  sget-object            v0, Lcom/adjust/sdk/ActivityKind;->UNKNOWN Lcom/adjust/sdk/ActivityKind;
+  iput-object            v2, v1, Lcom/adjust/sdk/ActivityPackage;->activityKind Lcom/adjust/sdk/ActivityKind;
+  return-void            
+
+---- METHOD private readObject (Ljava/io/ObjectInputStream;)V ----
+  invoke-virtual         v4, Ljava/io/ObjectInputStream;->readFields()Ljava/io/ObjectInputStream$GetField;
+  move-result-object     v4
+  const-string/jumbo     v0, path
+  const/4                v1, 0
+  invoke-static          v4, v0, v1, Lcom/adjust/sdk/Util;->readStringField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v0
+  iput-object            v0, v3, Lcom/adjust/sdk/ActivityPackage;->path Ljava/lang/String;
+  const-string           v0, "clientSdk"
+  invoke-static          v4, v0, v1, Lcom/adjust/sdk/Util;->readStringField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v0
+  iput-object            v0, v3, Lcom/adjust/sdk/ActivityPackage;->clientSdk Ljava/lang/String;
+  const-string/jumbo     v0, parameters
+  invoke-static          v4, v0, v1, Lcom/adjust/sdk/Util;->readObjectField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/util/Map;
+  iput-object            v0, v3, Lcom/adjust/sdk/ActivityPackage;->parameters Ljava/util/Map;
+  sget-object            v0, Lcom/adjust/sdk/ActivityKind;->UNKNOWN Lcom/adjust/sdk/ActivityKind;
+  const-string           v2, "activityKind"
+  invoke-static          v4, v2, v0, Lcom/adjust/sdk/Util;->readObjectField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Lcom/adjust/sdk/ActivityKind;
+  iput-object            v0, v3, Lcom/adjust/sdk/ActivityPackage;->activityKind Lcom/adjust/sdk/ActivityKind;
+  const-string/jumbo     v0, suffix
+  invoke-static          v4, v0, v1, Lcom/adjust/sdk/Util;->readStringField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v0
+  iput-object            v0, v3, Lcom/adjust/sdk/ActivityPackage;->suffix Ljava/lang/String;
+  const-string           v0, "callbackParameters"
+  invoke-static          v4, v0, v1, Lcom/adjust/sdk/Util;->readObjectField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/util/Map;
+  iput-object            v0, v3, Lcom/adjust/sdk/ActivityPackage;->callbackParameters Ljava/util/Map;
+  const-string/jumbo     v0, partnerParameters
+  invoke-static          v4, v0, v1, Lcom/adjust/sdk/Util;->readObjectField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/util/Map;
+  iput-object            v0, v3, Lcom/adjust/sdk/ActivityPackage;->partnerParameters Ljava/util/Map;
+  const-string/jumbo     v0, retryCount
+  const/4                v1, 0
+  invoke-static          v4, v0, v1, Lcom/adjust/sdk/Util;->readIntField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; I)I
+  move-result            v0
+  iput                   v0, v3, Lcom/adjust/sdk/ActivityPackage;->retryCount I
+  const-string           v0, "firstErrorCode"
+  invoke-static          v4, v0, v1, Lcom/adjust/sdk/Util;->readIntField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; I)I
+  move-result            v0
+  iput                   v0, v3, Lcom/adjust/sdk/ActivityPackage;->firstErrorCode I
+  const-string           v0, "lastErrorCode"
+  invoke-static          v4, v0, v1, Lcom/adjust/sdk/Util;->readIntField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; I)I
+  move-result            v0
+  iput                   v0, v3, Lcom/adjust/sdk/ActivityPackage;->lastErrorCode I
+  const-string/jumbo     v0, waitBeforeSendTimeSeconds
+  const-wide/16          v1, 0
+  invoke-static          v4, v0, v1, v2, Lcom/adjust/sdk/Util;->readDoubleField(Ljava/io/ObjectInputStream$GetField; Ljava/lang/String; D)D
+  move-result-wide       v0
+  iput-wide              v0, v3, Lcom/adjust/sdk/ActivityPackage;->waitBeforeSendTimeSeconds D
+  return-void            
+
+---- METHOD private writeObject (Ljava/io/ObjectOutputStream;)V ----
+  invoke-virtual         v1, Ljava/io/ObjectOutputStream;->defaultWriteObject()V
+  return-void            
+
+---- METHOD public addError (I)V ----
+  iget                   v0, v1, Lcom/adjust/sdk/ActivityPackage;->retryCount I
+  add-int/lit8           v0, v0, 1
+  iput                   v0, v1, Lcom/adjust/sdk/ActivityPackage;->retryCount I
+  iget                   v0, v1, Lcom/adjust/sdk/ActivityPackage;->firstErrorCode I
+  if-nez                 v0, +005h
+  iput                   v2, v1, Lcom/adjust/sdk/ActivityPackage;->firstErrorCode I
+  return-void            
+  iput                   v2, v1, Lcom/adjust/sdk/ActivityPackage;->lastErrorCode I
+  return-void            
+
+---- METHOD public equals (Ljava/lang/Object;)Z ----
+  const/4                v0, 1
+  if-ne                  v6, v5, +003h
+  return                 v0
+  const/4                v1, 0
+  if-nez                 v6, +003h
+  return                 v1
+  invoke-virtual         v5, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+  move-result-object     v2
+  invoke-virtual         v6, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+  move-result-object     v3
+  if-eq                  v2, v3, +003h
+  return                 v1
+  check-cast             v6, Lcom/adjust/sdk/ActivityPackage;
+  iget-object            v2, v5, Lcom/adjust/sdk/ActivityPackage;->path Ljava/lang/String;
+  iget-object            v3, v6, Lcom/adjust/sdk/ActivityPackage;->path Ljava/lang/String;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v5, Lcom/adjust/sdk/ActivityPackage;->clientSdk Ljava/lang/String;
+  iget-object            v3, v6, Lcom/adjust/sdk/ActivityPackage;->clientSdk Ljava/lang/String;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v5, Lcom/adjust/sdk/ActivityPackage;->parameters Ljava/util/Map;
+  iget-object            v3, v6, Lcom/adjust/sdk/ActivityPackage;->parameters Ljava/util/Map;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalObject(Ljava/lang/Object; Ljava/lang/Object;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v5, Lcom/adjust/sdk/ActivityPackage;->activityKind Lcom/adjust/sdk/ActivityKind;
+  iget-object            v3, v6, Lcom/adjust/sdk/ActivityPackage;->activityKind Lcom/adjust/sdk/ActivityKind;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalEnum(Ljava/lang/Enum; Ljava/lang/Enum;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v5, Lcom/adjust/sdk/ActivityPackage;->suffix Ljava/lang/String;
+  iget-object            v3, v6, Lcom/adjust/sdk/ActivityPackage;->suffix Ljava/lang/String;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v5, Lcom/adjust/sdk/ActivityPackage;->callbackParameters Ljava/util/Map;
+  iget-object            v3, v6, Lcom/adjust/sdk/ActivityPackage;->callbackParameters Ljava/util/Map;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalObject(Ljava/lang/Object; Ljava/lang/Object;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v5, Lcom/adjust/sdk/ActivityPackage;->partnerParameters Ljava/util/Map;
+  iget-object            v3, v6, Lcom/adjust/sdk/ActivityPackage;->partnerParameters Ljava/util/Map;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalObject(Ljava/lang/Object; Ljava/lang/Object;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget                   v2, v5, Lcom/adjust/sdk/ActivityPackage;->retryCount I
+  invoke-static          v2, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v2
+  iget                   v3, v6, Lcom/adjust/sdk/ActivityPackage;->retryCount I
+  invoke-static          v3, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalInt(Ljava/lang/Integer; Ljava/lang/Integer;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget                   v2, v5, Lcom/adjust/sdk/ActivityPackage;->firstErrorCode I
+  invoke-static          v2, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v2
+  iget                   v3, v6, Lcom/adjust/sdk/ActivityPackage;->firstErrorCode I
+  invoke-static          v3, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalInt(Ljava/lang/Integer; Ljava/lang/Integer;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget                   v2, v5, Lcom/adjust/sdk/ActivityPackage;->lastErrorCode I
+  invoke-static          v2, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v2
+  iget                   v3, v6, Lcom/adjust/sdk/ActivityPackage;->lastErrorCode I
+  invoke-static          v3, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+  move-result-object     v3
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalInt(Ljava/lang/Integer; Ljava/lang/Integer;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-wide              v2, v5, Lcom/adjust/sdk/ActivityPackage;->waitBeforeSendTimeSeconds D
+  invoke-static          v2, v3, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+  move-result-object     v2
+  iget-wide              v3, v6, Lcom/adjust/sdk/ActivityPackage;->waitBeforeSendTimeSeconds D
+  invoke-static          v3, v4, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+  move-result-object     v6
+  invoke-static          v2, v6, Lcom/adjust/sdk/Util;->equalsDouble(Ljava/lang/Double; Ljava/lang/Double;)Z
+  move-result            v6
+  if-nez                 v6, +003h
+  return                 v1
+  return                 v0
+
+---- METHOD public getActivityKind ()Lcom/adjust/sdk/ActivityKind; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/ActivityPackage;->activityKind Lcom/adjust/sdk/ActivityKind;
+  return-object          v0
+
+---- METHOD public getCallbackParameters ()Ljava/util/Map; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/ActivityPackage;->callbackParameters Ljava/util/Map;
+  return-object          v0
+
+---- METHOD public getClickTimeInMilliseconds ()J ----
+  iget-wide              v0, v2, Lcom/adjust/sdk/ActivityPackage;->clickTimeInMilliseconds J
+  return-wide            v0
+
+---- METHOD public getClickTimeInSeconds ()J ----
+  iget-wide              v0, v2, Lcom/adjust/sdk/ActivityPackage;->clickTimeInSeconds J
+  return-wide            v0
+
+---- METHOD public getClickTimeServerInSeconds ()J ----
+  iget-wide              v0, v2, Lcom/adjust/sdk/ActivityPackage;->clickTimeServerInSeconds J
+  return-wide            v0
+
+---- METHOD public getClientSdk ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/ActivityPackage;->clientSdk Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getExtendedString ()Ljava/lang/String; ----
+  new-instance           v0, Ljava/lang/StringBuilder;
+  invoke-direct          v0, Ljava/lang/StringBuilder;-><init>()V
+  iget-object            v1, v6, Lcom/adjust/sdk/ActivityPackage;->path Ljava/lang/String;
+  filled-new-array       v1, [Ljava/lang/Object;
+  move-result-object     v1
+  const-string           v2, "Path:      %s
+"
+  invoke-static          v2, v1, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v1
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  iget-object            v1, v6, Lcom/adjust/sdk/ActivityPackage;->clientSdk Ljava/lang/String;
+  filled-new-array       v1, [Ljava/lang/Object;
+  move-result-object     v1
+  const-string           v2, "ClientSdk: %s
+"
+  invoke-static          v2, v1, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v1
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  iget-object            v1, v6, Lcom/adjust/sdk/ActivityPackage;->parameters Ljava/util/Map;
+  if-eqz                 v1, +04eh
+  const-string           v1, "Parameters:"
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  new-instance           v1, Ljava/util/TreeMap;
+  iget-object            v2, v6, Lcom/adjust/sdk/ActivityPackage;->parameters Ljava/util/Map;
+  invoke-direct          v1, v2, Ljava/util/TreeMap;-><init>(Ljava/util/Map;)V
+  const-string/jumbo     v2, secret_id
+  const-string           v3, "adj_signing_id"
+  filled-new-array       v2, v3, [Ljava/lang/String;
+  move-result-object     v2
+  invoke-static          v2, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+  move-result-object     v2
+  invoke-virtual         v1, Ljava/util/TreeMap;->entrySet()Ljava/util/Set;
+  move-result-object     v1
+  invoke-interface       v1, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+  move-result-object     v1
+  invoke-interface       v1, Ljava/util/Iterator;->hasNext()Z
+  move-result            v3
+  if-eqz                 v3, +027h
+  invoke-interface       v1, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v3
+  check-cast             v3, Ljava/util/Map$Entry;
+  invoke-interface       v3, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+  move-result-object     v4
+  check-cast             v4, Ljava/lang/String;
+  invoke-interface       v2, v4, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+  move-result            v5
+  if-eqz                 v5, +003h
+  goto                   -18h
+  invoke-interface       v3, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+  move-result-object     v3
+  filled-new-array       v4, v3, [Ljava/lang/Object;
+  move-result-object     v3
+  const-string           v4, "
+	%-16s %s"
+  invoke-static          v4, v3, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v3
+  invoke-virtual         v0, v3, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  goto                   -2ah
+  invoke-virtual         v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public getFailureMessage ()Ljava/lang/String; ----
+  iget-object            v0, v2, Lcom/adjust/sdk/ActivityPackage;->activityKind Lcom/adjust/sdk/ActivityKind;
+  invoke-virtual         v0, Lcom/adjust/sdk/ActivityKind;->toString()Ljava/lang/String;
+  move-result-object     v0
+  iget-object            v1, v2, Lcom/adjust/sdk/ActivityPackage;->suffix Ljava/lang/String;
+  filled-new-array       v0, v1, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v1, "Failed to track %s%s"
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public getFirstErrorCode ()I ----
+  iget                   v0, v1, Lcom/adjust/sdk/ActivityPackage;->firstErrorCode I
+  return                 v0
+
+---- METHOD public getGooglePlayInstant ()Ljava/lang/Boolean; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/ActivityPackage;->googlePlayInstant Ljava/lang/Boolean;
+  return-object          v0
+
+---- METHOD public getInstallBeginTimeInSeconds ()J ----
+  iget-wide              v0, v2, Lcom/adjust/sdk/ActivityPackage;->installBeginTimeInSeconds J
+  return-wide            v0
+
+---- METHOD public getInstallBeginTimeServerInSeconds ()J ----
+  iget-wide              v0, v2, Lcom/adjust/sdk/ActivityPackage;->installBeginTimeServerInSeconds J
+  return-wide            v0
+
+---- METHOD public getInstallVersion ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/ActivityPackage;->installVersion Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getIsClick ()Ljava/lang/Boolean; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/ActivityPackage;->isClick Ljava/lang/Boolean;
+  return-object          v0
+
+---- METHOD public getLastErrorCode ()I ----
+  iget                   v0, v1, Lcom/adjust/sdk/ActivityPackage;->lastErrorCode I
+  return                 v0
+
+---- METHOD public getParameters ()Ljava/util/Map; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/ActivityPackage;->parameters Ljava/util/Map;
+  return-object          v0
+
+---- METHOD public getPartnerParameters ()Ljava/util/Map; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/ActivityPackage;->partnerParameters Ljava/util/Map;
+  return-object          v0
+
+---- METHOD public getPath ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/ActivityPackage;->path Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getPurchaseVerificationCallback ()Lcom/adjust/sdk/OnPurchaseVerificationFinishedListener; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/ActivityPackage;->purchaseVerificationCallback Lcom/adjust/sdk/OnPurchaseVerificationFinishedListener;
+  return-object          v0
+
+---- METHOD public getRetries ()I ----
+  iget                   v0, v1, Lcom/adjust/sdk/ActivityPackage;->retries I
+  return                 v0
+
+---- METHOD public getRetryCount ()I ----
+  iget                   v0, v1, Lcom/adjust/sdk/ActivityPackage;->retryCount I
+  return                 v0
+
+---- METHOD public getSuffix ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/ActivityPackage;->suffix Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getWaitBeforeSendTimeSeconds ()D ----
+  iget-wide              v0, v2, Lcom/adjust/sdk/ActivityPackage;->waitBeforeSendTimeSeconds D
+  return-wide            v0
+
+---- METHOD public hashCode ()I ----
+  iget                   v0, v2, Lcom/adjust/sdk/ActivityPackage;->hashCode I
+  if-nez                 v0, +05bh
+  const/16               v0, 17
+  iput                   v0, v2, Lcom/adjust/sdk/ActivityPackage;->hashCode I
+  iget-object            v1, v2, Lcom/adjust/sdk/ActivityPackage;->path Ljava/lang/String;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  iput                   v0, v2, Lcom/adjust/sdk/ActivityPackage;->hashCode I
+  iget-object            v1, v2, Lcom/adjust/sdk/ActivityPackage;->clientSdk Ljava/lang/String;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  iput                   v0, v2, Lcom/adjust/sdk/ActivityPackage;->hashCode I
+  iget-object            v1, v2, Lcom/adjust/sdk/ActivityPackage;->parameters Ljava/util/Map;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashObject(Ljava/lang/Object; I)I
+  move-result            v0
+  iput                   v0, v2, Lcom/adjust/sdk/ActivityPackage;->hashCode I
+  iget-object            v1, v2, Lcom/adjust/sdk/ActivityPackage;->activityKind Lcom/adjust/sdk/ActivityKind;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashEnum(Ljava/lang/Enum; I)I
+  move-result            v0
+  iput                   v0, v2, Lcom/adjust/sdk/ActivityPackage;->hashCode I
+  iget-object            v1, v2, Lcom/adjust/sdk/ActivityPackage;->suffix Ljava/lang/String;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  iput                   v0, v2, Lcom/adjust/sdk/ActivityPackage;->hashCode I
+  iget-object            v1, v2, Lcom/adjust/sdk/ActivityPackage;->callbackParameters Ljava/util/Map;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashObject(Ljava/lang/Object; I)I
+  move-result            v0
+  iput                   v0, v2, Lcom/adjust/sdk/ActivityPackage;->hashCode I
+  iget-object            v1, v2, Lcom/adjust/sdk/ActivityPackage;->partnerParameters Ljava/util/Map;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashObject(Ljava/lang/Object; I)I
+  move-result            v0
+  mul-int/lit8           v0, v0, 37
+  iget                   v1, v2, Lcom/adjust/sdk/ActivityPackage;->retryCount I
+  add-int/2addr          v0, v1
+  mul-int/lit8           v0, v0, 37
+  iget                   v1, v2, Lcom/adjust/sdk/ActivityPackage;->firstErrorCode I
+  add-int/2addr          v0, v1
+  mul-int/lit8           v0, v0, 37
+  iget                   v1, v2, Lcom/adjust/sdk/ActivityPackage;->lastErrorCode I
+  add-int/2addr          v0, v1
+  iput                   v0, v2, Lcom/adjust/sdk/ActivityPackage;->hashCode I
+  iget-wide              v0, v2, Lcom/adjust/sdk/ActivityPackage;->waitBeforeSendTimeSeconds D
+  invoke-static          v0, v1, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+  move-result-object     v0
+  iget                   v1, v2, Lcom/adjust/sdk/ActivityPackage;->hashCode I
+  invoke-static          v0, v1, Lcom/adjust/sdk/Util;->hashDouble(Ljava/lang/Double; I)I
+  move-result            v0
+  iput                   v0, v2, Lcom/adjust/sdk/ActivityPackage;->hashCode I
+  iget                   v0, v2, Lcom/adjust/sdk/ActivityPackage;->hashCode I
+  return                 v0
+
+---- METHOD public increaseRetries ()I ----
+  iget                   v0, v1, Lcom/adjust/sdk/ActivityPackage;->retries I
+  add-int/lit8           v0, v0, 1
+  iput                   v0, v1, Lcom/adjust/sdk/ActivityPackage;->retries I
+  return                 v0
+
+---- METHOD public setCallbackParameters (Ljava/util/Map;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/ActivityPackage;->callbackParameters Ljava/util/Map;
+  return-void            
+
+---- METHOD public setClickTimeInMilliseconds (J)V ----
+  iput-wide              v1, v0, Lcom/adjust/sdk/ActivityPackage;->clickTimeInMilliseconds J
+  return-void            
+
+---- METHOD public setClickTimeInSeconds (J)V ----
+  iput-wide              v1, v0, Lcom/adjust/sdk/ActivityPackage;->clickTimeInSeconds J
+  return-void            
+
+---- METHOD public setClickTimeServerInSeconds (J)V ----
+  iput-wide              v1, v0, Lcom/adjust/sdk/ActivityPackage;->clickTimeServerInSeconds J
+  return-void            
+
+---- METHOD public setClientSdk (Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/ActivityPackage;->clientSdk Ljava/lang/String;
+  return-void            
+
+---- METHOD public setGooglePlayInstant (Ljava/lang/Boolean;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/ActivityPackage;->googlePlayInstant Ljava/lang/Boolean;
+  return-void            
+
+---- METHOD public setInstallBeginTimeInSeconds (J)V ----
+  iput-wide              v1, v0, Lcom/adjust/sdk/ActivityPackage;->installBeginTimeInSeconds J
+  return-void            
+
+---- METHOD public setInstallBeginTimeServerInSeconds (J)V ----
+  iput-wide              v1, v0, Lcom/adjust/sdk/ActivityPackage;->installBeginTimeServerInSeconds J
+  return-void            
+
+---- METHOD public setInstallVersion (Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/ActivityPackage;->installVersion Ljava/lang/String;
+  return-void            
+
+---- METHOD public setIsClick (Ljava/lang/Boolean;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/ActivityPackage;->isClick Ljava/lang/Boolean;
+  return-void            
+
+---- METHOD public setParameters (Ljava/util/Map;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/ActivityPackage;->parameters Ljava/util/Map;
+  return-void            
+
+---- METHOD public setPartnerParameters (Ljava/util/Map;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/ActivityPackage;->partnerParameters Ljava/util/Map;
+  return-void            
+
+---- METHOD public setPath (Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/ActivityPackage;->path Ljava/lang/String;
+  return-void            
+
+---- METHOD public setPurchaseVerificationCallback (Lcom/adjust/sdk/OnPurchaseVerificationFinishedListener;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/ActivityPackage;->purchaseVerificationCallback Lcom/adjust/sdk/OnPurchaseVerificationFinishedListener;
+  return-void            
+
+---- METHOD public setSuffix (Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/ActivityPackage;->suffix Ljava/lang/String;
+  return-void            
+
+---- METHOD public setWaitBeforeSendTimeSeconds (D)V ----
+  iput-wide              v1, v0, Lcom/adjust/sdk/ActivityPackage;->waitBeforeSendTimeSeconds D
+  return-void            
+
+---- METHOD public toString ()Ljava/lang/String; ----
+  iget-object            v0, v2, Lcom/adjust/sdk/ActivityPackage;->activityKind Lcom/adjust/sdk/ActivityKind;
+  invoke-virtual         v0, Lcom/adjust/sdk/ActivityKind;->toString()Ljava/lang/String;
+  move-result-object     v0
+  iget-object            v1, v2, Lcom/adjust/sdk/ActivityPackage;->suffix Ljava/lang/String;
+  filled-new-array       v0, v1, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v1, "%s%s"
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+######################################################################

@@ -1,0 +1,45 @@
+[
+ {
+  "file": "1_c.txt",
+  "kind": "session",
+  "n_wire": 43,
+  "blob": "6ec1105c5b92f95f2c57f08a58ac09ce6d23e7d997c6637dd3d7acc3c248d138c45d992e979224fa669f2e3151ba404466490cdeced9d582f8bbd9726156c844cde7baa6d03f33e5eab2f69f35f4171260cd7b8008bfae37e8cee12bfdeffc434ba46c766363bc342eb1c70bfb064555fd123c8d766e8bddfe122fe8d3e215425ae09e5cf9182ee071cdaa377e1a4db1219c4811cec42fff928f5ce7496c8bba966ff1b1ff69dee392898bcde5a055221b4499c8a8aef1e8bf50786cb7c150d5",
+  "blob_len": 192,
+  "second": 1789388588,
+  "our_claims": 27,
+  "our_desc10_len": 360,
+  "our_unpadded": 360,
+  "our_desc10": "KlcAG2cbAAsKSl1KVi0FGiJbDHMI073ccff9-c71c-4987-a914-167666ff7c2631jut9tib0eeps3.13.92026-09-14T17:53:07.753Z+0530moto g42phoneproductiond016e7e4-fb1c-4d0a-b619-db01f6a6a262serviceS2SE32.28-28-4com.android.vending2026-09-14T17:52:12.431Z+0530S2SE32.28-28-4android12com.penti.app15000001com.android.vending12026-09-14T17:52:12.431Z+0530sessionandroid5.7.0105.0.0",
+  "our_blob": "6ec1105c5b92f95f2c57f08a58ac09ce0064a1b4af0acbaf38b54cc1f7f1e7319e790ed5c69581ceaddd48e604cc15c1dce77aa5e7b157aa7ed19ce097c4f9990585f5816ef58212ed2411d17586a512f87fce35458faae2ab63fbf7db652c9cc4fcfa82d36eacc2e4fa9b1ff09b97a0a300d064aec27b1302fecfaf0ff71f6e288ea048ef2e6b1ad7ae969b164384c497ea893a3d5bf8686669cee7daf802ceb3d5a27d28b8490a65b5545cf1f2915e71e84cf4cc2c0bc0fa37630b692029e5",
+  "vm_status": "exit-clean",
+  "byte_identical": false,
+  "bytes_matching": 18,
+  "first_diff": 16
+ },
+ {
+  "file": "2_c.txt",
+  "kind": "click",
+  "n_wire": 47,
+  "blob": "50d97c186add3fbb39fe50d1272ed6df4b70f61a07b36a0063c341bcdb1b6e04828ddb72bb713cd9f5d20f653300c1eb7bbe7ad01544cc9f82073caf40e0b6a19d4b9dd76d1277f29e9b0284344687f5195394269cdade3f35b56b88f53d68251712613a6b5212418366f758ad75e3c05bcb7634b45efa087c4ad474e1d1bab3e4e9b8b0f1f11a042005a43e4a04a1481a7240d9ddadf146262b3b5020cdbfd917a1747ecb8b7ff2748e9b1d9761a673b841e40ece55df3b8bda0997a05e9525",
+  "blob_len": 192,
+  "second": 1789388589,
+  "our_claims": 32,
+  "our_desc10_len": 392,
+  "our_unpadded": 391,
+  "our_desc10": "KlcAG2cbAAsKSl1KVi0FGiJbDHMI073ccff9-c71c-4987-a914-167666ff7c2631jut9tib0eeps3.13.92026-09-14T17:53:07.846Z+0530moto g42phoneproduction0d016e7e4-fb1c-4d0a-b619-db01f6a6a262serviceS2SE32.28-28-42026-09-14T17:52:12.431Z+0530S2SE32.28-28-4android12com.penti.apputm_source=(not%20set)&utm_medium=(not%20set)google150000010install_referrer1012026-09-14T17:52:12.431Z+0530clickandroid5.7.0105.0.0\u0000",
+  "our_blob": "50d97c186add3fbb39fe50d1272ed6dfb6baf63eab599e07a49b52e95e90596b5d837f2e97c831d1d3de07d11331b5933ca5ec16fb19d668d287e7731493234dfc2e674a341fcc960e93b0c9b5b2ad4106c79710248042829a707ec5240c35b011acc5c19f7b698b1d3feba8cf08ac75588e525510f83995b931b79a7ecb25ad49e15238e6ee87fcb3ff3420ce649d36d2ee971e137507738bbaa20fd85f4d9346c5054e7618f2a030c4148850c7feb4b3a9d02f8bc5508e17c6aea67fef8726",
+  "vm_status": "exit-clean",
+  "byte_identical": false,
+  "bytes_matching": 17,
+  "first_diff": 16
+ },
+ {
+  "file": "3_c.txt",
+  "kind": "attribution",
+  "n_wire": 0,
+  "blob": "07184f3a723d9fb202d1b9d951803c4b99872ae4fbdaaf3324c8cefe922efaeebadfd9e3bbd6909917b10f92c3dcd1a72ca34a3565b3d6d2e993f44cac27c8c5443ba489dea53c3ce81f6460bc5bee4212db67815d55543d6fb58f960b3852cb540f4419ffe5a3c812a18a923a6fcaa3518f80c12d76c12b1e9a0e0955107740ebfe34cd9193b77fa5960070b98646e85cb8ab53195a0e81a26b7c3601a24804a6895c28add989ef1f6d1010b6e81a451002c046a09a63c9f620d0e9d2316877",
+  "blob_len": 192,
+  "second": 1789388591,
+  "claims_error": "KeyError(\"claims_from_wire(attribution): params missing ['android_uuid', 'api_level', 'app_token', 'app_version', 'created_at', 'device_name', 'device_type', 'environment', 'gps_adid', 'gps_adid_src', 'initiated_by', 'os_name', 'os_version', 'package_name', 'tracking_enabled']\")"
+ }
+]

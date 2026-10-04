@@ -1,0 +1,9 @@
+# CLASS Lcom/adjust/sdk/sig/w1;
+
+---- METHOD public static synthetic a((I)I)  ----
+  if-eqz                 v0, +005h
+  add-int/lit8           v0, v0, -1
+  return                 v0
+  const/4                v0, 0
+  throw                  v0
+######################################################################

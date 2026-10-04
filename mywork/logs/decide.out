@@ -1,0 +1,24 @@
+============================================================================
+DECISIVE d0 COMPARISON  (device #0 vs what we actually ship)
+============================================================================
+  [1] emulating native for seed 0x19d4c97e ... (this is the slow part, ~2 min)
+      done in 110.0s
+----------------------------------------------------------------------------
+sign_id=1 seed=0x19d4c97e
+  SHIPPED native d0 == DEVICE d0 : NO   (24/144 bytes differ)
+  F.region head that DOES match DEVICE: DEVICE_SELECTORS
+  [2] emulating native for seed 0xe1c3efdd ... (this is the slow part, ~2 min)
+      done in 114.8s
+----------------------------------------------------------------------------
+sign_id=2 seed=0xe1c3efdd
+  SHIPPED native d0 == DEVICE d0 : NO   (24/144 bytes differ)
+  F.region head that DOES match DEVICE: DEVICE_SELECTORS
+  [3] emulating native for seed 0x0f476009 ... (this is the slow part, ~2 min)
+      done in 115.0s
+----------------------------------------------------------------------------
+sign_id=3 seed=0x0f476009
+  SHIPPED native d0 == DEVICE d0 : NO   (24/144 bytes differ)
+  F.region head that DOES match DEVICE: none
+============================================================================
+TALLY: shipped-native matches device on 0/3 signings; differs on 3/3
+============================================================================

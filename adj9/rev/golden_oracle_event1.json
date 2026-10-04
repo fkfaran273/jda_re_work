@@ -1,0 +1,15 @@
+{
+ "canonical_event1": {
+  "ts": 1788938788920,
+  "text": "{gps_adid_attempt=1, api_level=31, hardware_name=S2SE32.28-28-4, partner_params={\"content_type\":\"product\",\"value\":\"0.0\"}, app_version=3.12.1, app_token=jut9tib0eeps, event_count=19, session_length=9210, created_at=2026-09-09T09:26:28.796Z+0200, wait_total=0.0, device_type=phone, language=tr, gps_adid=f476b3d4-e0b1-4707-bc43-6153d17f7f8c, foreground=1, connectivity_type=1, device_manufacturer=motorola, display_width=1080, event_token=p90b20, time_spent=2148, device_name=moto g42, needs_response_details=1, os_build=S2SE32.28-28-4, cpu_type=arm64-v8a, retry_count=0, screen_size=normal, screen_format=long, last_error=0, gps_adid_src=service, push_token=fZvAtnhVRIid7G3BjFYhcL:APA91bFL7PUS7-pe_9Ys440XGppY645DsOs15mrT8EZgSZwJtZpApQ0H1Rl3dil5zm8ETsW62Jy2blbvAXq0PEDdhcYCBIHhLoJuvya7C8AA4fBw42P3EsM, seq=17, subsession_count=45, wait_time=0.0, os_version=12, first_error=0, android_uuid=98633fb2-1f47-4d4f-a80a-81fa5d75a219, sent_at=2026-09-09T09:26:28.913Z+0200, offline_mode_enabled=0, environment=production, screen_density=high, attribution_deeplink=1, session_count=6, display_height=2237, package_name=com.penti.app, os_name=android, ui_mode=1, enqueue_size=0, tracking_enabled=1, activity_kind=event, client_sdk=android5.7.0, adj_verification=KlcAG2cbAAsKSl1KVi0FGiJbDHMI}"
+ },
+ "nsign_event1": {
+  "ts": 1788938789685,
+  "text": "len=192\nhex=315fc9d06c1a8a9128d17fcf1c79730736c63d76573cfce1b914e78ef8226571af98b0daa00e08d0217147d968ff1df3bc88e270c7a44887ce9da6e6a967bd6b275ce19c241090157b415c3dda87e1f517580e0a89171612c009682632c215692a13ba36ca8b85c5aaea48b3df9fc5fcd2b53a0425546295d4e665154d7d3e88f3f87c6eddbcc2bba3ae439d5615e96d9837230474b80fde38875332acd52cfa5c4464e742de9de1e2412b6779df6b2d396f5e476ad49856acb062c986696c53"
+ },
+ "header_event1": {
+  "ts": 1788938789686,
+  "text": "Signature signature=\"MV/J0GwaipEo0X/PHHlzBzbGPXZXPPzhuRTnjvgiZXGvmLDaoA4I0CFxR9lo/x3zvIjicMekSIfOnabmqWe9aydc4ZwkEJAVe0FcPdqH4fUXWA4KiRcWEsAJaCYywhVpKhO6NsqLhcWq6kiz35/F/NK1OgQlVGKV1OZlFU19Pojz+Hxu3bzCu6OuQ51WFeltmDcjBHS4D944h1MyrNUs+lxEZOdC3p3h4kErZ3nfay05b15HatSYVqywYsmGaWxT\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\""
+ },
+ "map_event1": "map_size=54\nmap_toString={gps_adid_attempt=1, api_level=31, hardware_name=S2SE32.28-28-4, partner_params={\"content_type\":\"product\",\"value\":\"0.0\"}, app_version=3.12.1, app_token=jut9tib0eeps, event_count=19, session_length=9210, created_at=2026-09-09T09:26:28.796Z+0200, wait_total=0.0, device_type=phone, language=tr, gps_adid=f476b3d4-e0b1-4707-bc43-6153d17f7f8c, foreground=1, connectivity_type=1, "
+}

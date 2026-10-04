@@ -1,0 +1,13 @@
+# CLASS Lcom/adjust/sdk/sig/o2;
+FIELD public static final a Lcom/adjust/sdk/sig/o2;
+
+---- METHOD static constructor <clinit> ()V ----
+  new-instance           v0, Lcom/adjust/sdk/sig/o2;
+  invoke-direct          v0, Lcom/adjust/sdk/sig/o2;-><init>()V
+  sput-object            v0, Lcom/adjust/sdk/sig/o2;->a Lcom/adjust/sdk/sig/o2;
+  return-void            
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Lcom/adjust/sdk/sig/p2;-><init>()V
+  return-void            
+######################################################################

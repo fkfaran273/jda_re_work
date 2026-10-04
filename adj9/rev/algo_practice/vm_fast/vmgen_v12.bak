@@ -1,0 +1,659 @@
+"""gen.py — the block compiler for the adj9 FinEx VM.
+
+Reads the frozen decode (vm_tables.pkl.gz, built by _build_cache.py) and turns
+the 83k-instruction program into ~10k *basic-block* Python functions.  Each
+block is a straight-line run of non-branching instructions plus the branch
+that terminates it; the generated body has every operand pre-decoded (register
+name -> list index, immediate -> constant, mem operand -> address mask), so no
+per-step string parsing, no if/elif mnemonic chain and no dict-of-strings
+register file remains in the inner loop.
+
+Semantics are a line-for-line transcription of fin_vm2.FinEx.run + the
+vm_final.Ex helpers it calls (val/set_reg/mem_op2/ld/st + the FinEx ldrh
+override), so the produced blob is unchanged.  Anything whose operand form is
+not recognised falls back to GENERIC, which re-implements the original
+per-mnemonic branch for that single instruction.
+
+Compiled code objects are cached in vm_blocks.marshal (marshal format), keyed
+by a signature of the decode tables.
+"""
+import hashlib
+import marshal
+import os
+import re
+import struct
+import sys
+import types
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, os.path.dirname(os.path.dirname(HERE)))   # rev/  (for vm_final helpers)
+sys.path.insert(0, HERE)
+
+M64 = (1 << 64) - 1
+M32 = 0xFFFFFFFF
+PM = 0x0000FFFFFFFFFFFF
+MASK8 = PM & ~7
+MASK4 = PM & ~3
+COND = ["eq", "ne", "lt", "ge", "gt", "le", "hs", "lo", "hi", "ls"]
+CIDX = {c: i for i, c in enumerate(COND)}
+
+OP_PUSH, OP_POP = 0x147630, 0x147734
+OP_PUSH2, OP_POP2 = 0x146470, 0x146478
+OP_EMIT, OP_LENQ, OP_OUTLEN = 0x146ed8, 0x147304, 0x1472e8
+OP_PUSHS, OP_POPS = 0x147120, 0x147220
+OP_MKITER, OP_ITERNEXT = 0x146558, 0x146650
+OP_RAND = 0x148d10
+OP_ISEMPTY = 0x146474
+CAP_SWAPS = {0x147a20}
+CAP_PUSHS = {0x14784c, 0x147a18}
+
+TERM = {"b", "cbz", "cbnz", "tbz", "tbnz", "ret"}
+# addresses the executor can enter that are not branch targets of the
+# emulated program (FinEx seeds pc = 0x100114, mid-prologue)
+FORCE_SPLIT = {0x100114}          # FinEx seeds pc here (mid-prologue)
+
+
+def branch_targets(FAST):
+    """Every address control can enter that is not the fallthrough of the
+    preceding instruction: all b/b.cond/cb*/tb* targets + the entry pc."""
+    tgts = set(FORCE_SPLIT)
+    for (m, ops, _npc) in FAST:
+        if m in ("b", "cbz", "cbnz", "tbz", "tbnz") or m.startswith("b."):
+            p2 = split_ops(ops)
+            t = pt(p2[-1])
+            if t is not None:
+                tgts.add(t)
+    return tgts
+FREES = ("X", "MEM", "FL", "VD", "EMIT", "Q", "IT", "SR", "RND", "NR", "SH",
+         "EXIT", "PUSH", "POP", "EMIT_", "LENQ", "OUTLEN", "PUSHS", "POPS",
+         "MKITER", "ITERNEXT", "ISEMPTY", "RAND_", "CAP_SWAP", "CAP_PUSH0",
+         "CAP_PUSH", "GEN", "self", "T")
+
+_GPR = re.compile(r"^([wx])(\d+)$")
+_EXIT_CLS = None
+
+
+class VMExit(Exception):
+    pass
+
+
+# --------------------------------------------------------------------------
+# operand classification (done once, at generation time)
+# --------------------------------------------------------------------------
+class Odd(Exception):
+    """Operand form the fast emitter does not model -> use GENERIC."""
+
+
+def opnd(s):
+    """-> (code_expr, width) where width in (64, 32, None=other/vec)."""
+    s = s.strip()
+    if not s:
+        raise Odd()
+    if s[0] == "#":
+        t = pt(s)
+        if t is None:
+            raise Odd()
+        return (repr(t) if t >= 0 else "(%d)" % t), None
+    if s == "sp":
+        return "X[31]", 64
+    m = _GPR.match(s)
+    if m:
+        n = int(m.group(2))
+        if n > 30:
+            raise Odd()
+        if m.group(1) == "w":
+            return "X[%d]&M32" % n, 32
+        return "X[%d]" % n, 64
+    return "VD.get(%r,0)" % s, "V"
+
+
+def dst(s):
+    """-> (store_target, mask_tail, width); caller emits `tgt=value+tail`."""
+    s = s.strip()
+    if s == "sp":
+        return "X[31]", "&M64", 64
+    m = _GPR.match(s)
+    if m:
+        n = int(m.group(2))
+        if n > 30:
+            raise Odd()
+        if m.group(1) == "w":
+            return "X[%d]" % n, "&M32", 32
+        return "X[%d]" % n, "&M64", 64
+    return "VD[%r]" % s, "&M64", "V"
+
+
+_pcache = {}
+
+
+def pt(s):
+    v = _pcache.get(s, 0)
+    if v == 0 and s not in _pcache:
+        try:
+            v = int(s.lstrip("#"), 16)
+        except (ValueError, AttributeError):
+            v = None
+        _pcache[s] = v
+    return v
+
+
+def split_ops(ops):
+    if not ops:
+        return []
+    return [p.strip() for p in ops.split(",")]
+
+
+# --------------------------------------------------------------------------
+# memory operand plans (identical parsing to vm_final._memplan)
+# --------------------------------------------------------------------------
+_memplans = {}
+
+
+def _memplan(m, ops):
+    """Same parser as vm_final._memplan (kept byte-identical on purpose)."""
+    key = (m, ops)
+    if key in _memplans:
+        return _memplans[key]
+    o = ops.replace(" ", "")
+    plan = None
+    mm = re.match(r"^([wx]\d+|\w+\d*),\[([wx]\d+|sp)(?:,(#?[-0-9x]+))?\](!?)", o)
+    if mm:
+        d, base, imm, wb = mm.group(1), mm.group(2), mm.group(3), mm.group(4)
+        imm = imm.strip() if imm else "0"
+        try:
+            off = int(imm.replace("#", ""), 0)
+        except ValueError:
+            off = 0
+        if off is None:
+            off = 0
+        size = 4 if (d.startswith("w") or m in ("ldrb", "strb", "ldrsw")) else 8
+        plan = ("imm", d, base, off, wb == "!", size)
+    else:
+        mm2 = re.match(r"^(\w+),(\w+),\[([wx]\d+|sp)(?:,(#?-?[\dx]+))?\](!?)", o)
+        if mm2 and m in ("stp", "ldp"):
+            imm = mm2.group(4)
+            plan = ("pair", mm2.group(1), mm2.group(2), mm2.group(3),
+                    int(imm.lstrip("#"), 0) if imm else 0, mm2.group(5) == "!")
+        if plan is None:
+            mm3 = re.match(r"^(\w+),\[(\w+)\],(#?-?[\dx]+)$", o)
+            if mm3:
+                plan = ("post", mm3.group(1), mm3.group(2), int(mm3.group(3), 0))
+        if plan is None:
+            mm4 = re.match(r"^(\w+),\[(\w+),(\w+)(?:,(uxtw|lsl)#(\d+))?\]", o)
+            if mm4:
+                plan = ("regidx", mm4.group(1), mm4.group(2), mm4.group(3),
+                        int(mm4.group(5) or 0))
+    _memplans[key] = plan
+    return plan
+
+
+MEM_MN = ("ldr", "ldur", "str", "stur", "ldp", "stp", "ldrsb", "ldrsw",
+          "ldursw", "ldrb", "strb", "ldrsh", "ldrh")
+
+
+def emit_mem(m, ops, L):
+    """Emit the body of vm_final.Ex.mem_op2 (+ FinEx's ldrh override)."""
+    plan = _memplan(m, ops)
+    if plan is None:
+        return                                   # unknown form: no-op, as original
+    kind = plan[0]
+    if kind == "imm":
+        _, d, base, off, wb, size = plan
+        if not GPRN(base):
+            raise Odd()
+        av, _ = opnd(base)
+        mask = "MASK8" if size == 8 else "MASK4"
+        t = "_a=(%s+%d)&M64" % (av, off) if off else "_a=%s&M64" % av
+        if m in ("str", "stur", "strb"):
+            sv, _ = opnd(d)
+            L.append(t)
+            L.append("MEM[_a&%s]=(%s)&M64" % (mask, sv))
+        elif m == "stp":
+            pass
+        else:
+            dv, dm, dw = dst(d)
+            L.append(t)
+            L.append("%s=MEM.get(_a&%s,0)%s" % (dv, mask, dm))
+            if m in ("ldrsw", "ldursw"):
+                L.append("_v=MEM.get(_a&%s,0)&M32" % mask)
+                L.append("%s=(_v-(1<<32) if _v>=0x80000000 else _v)%s"
+                         % (dv, dm))
+        if wb:
+            L.append("X[%d]=_a&M64" % baseidx(base))
+    elif kind == "pair":
+        _, d1, d2, base, off, wb = plan
+        if not GPRN(base):
+            raise Odd()
+        av, _ = opnd(base)
+        if off:
+            L.append("_a=(%s+%d)&M64" % (av, off))
+        else:
+            L.append("_a=%s&M64" % av)
+        if m == "stp":
+            v1, _ = opnd(d1)
+            v2, _ = opnd(d2)
+            L.append("MEM[_a&MASK8]=(%s)&M64" % v1)
+            L.append("MEM[(_a+8)&MASK8]=(%s)&M64" % v2)
+        else:
+            e1, m1, _ = dst(d1)
+            e2, m2, _ = dst(d2)
+            L.append("%s=MEM.get(_a&MASK8,0)%s" % (e1, m1))
+            L.append("%s=MEM.get((_a+8)&MASK8,0)%s" % (e2, m2))
+        if wb:
+            bi = baseidx(base)
+            if off:
+                L.append("X[%d]=_a&M64" % bi)
+            else:
+                L.append("X[%d]=(%s+%d)&M64" % (bi, av, off))
+    elif kind == "post":
+        _, d, base, imm = plan
+        if not GPRN(base):
+            raise Odd()
+        av, _ = opnd(base)
+        de, dm, _ = dst(d)
+        L.append("_a=%s&M64" % av)
+        L.append("%s=MEM.get(_a&MASK8,0)%s" % (de, dm))
+        L.append("X[%d]=(_a+%d)&M64" % (baseidx(base), imm))
+    else:
+        _, d, base, ix, sh = plan
+        if not GPRN(base):
+            raise Odd()
+        iv, _ = opnd(ix)
+        av, _ = opnd(base)
+        de, dm, _ = dst(d)
+        mask = "MASK4" if d.strip().startswith("w") else "MASK8"
+        L.append("_a=(%s+(%s<<%d))&M64" % (av, iv, sh))
+        L.append("%s=MEM.get(_a&%s,0)%s" % (de, mask, dm))
+    if m == "ldrh":                       # FinEx.mem_op2 override
+        d = ops.split(",")[0].strip()
+        if GPRN(d):
+            n = int(d[1:])
+            if n <= 30:
+                L.append("X[%d]&=M16" % n)
+
+
+def GPRN(s):
+    s = s.strip()
+    return s == "sp" or bool(_GPR.match(s)) and int(_GPR.match(s).group(2)) <= 30
+
+
+def baseidx(s):
+    s = s.strip()
+    return 31 if s == "sp" else int(s[1:])
+
+
+# --------------------------------------------------------------------------
+# per-instruction emitters -> list of source lines (or raise Odd)
+# --------------------------------------------------------------------------
+ALU = {"add": "+", "sub": "-", "and": "&", "orr": "|", "eor": "^", "mul": "*"}
+
+
+def emit_one(m, ops, npc, L):
+    """Emit one instruction. Returns True if a branch/exit terminates the
+    block (block must `return`), False if it falls through."""
+    p = split_ops(ops)
+
+    if m in ("mov", "movz"):
+        de, dm, _ = dst(p[0])
+        sv, _ = opnd(p[1])
+        L.append("%s=%s%s" % (de, sv, dm))
+        return False
+
+    if m == "movk":
+        mm = re.match(r"^(\w+),#(0x[0-9a-f]+|\d+)(?:,lsl#(\d+))?",
+                      ops.replace(" ", ""))
+        if not mm:
+            raise Odd()
+        d, imm, sh = mm.group(1), int(mm.group(2), 0), int(mm.group(3) or 0)
+        if not GPRN(d):
+            raise Odd()
+        bi = baseidx(d)
+        w32 = d.strip().startswith("w")
+        L.append("X[%d]=(X[%d]&~(%d<<%d))|((%d&0xFFFF)<<%d)"
+                 % (bi, bi, 0xFFFF, sh, imm, sh)
+                 + ("&M32" if w32 else "&M64"))
+        return False
+
+    if m in ALU or m in ("lsl", "lsr", "rev", "rev16", "neg", "mvn",
+                         "udiv", "msub"):
+        return emit_alu(m, ops, p, L)
+
+    if m in ("cmp", "cmn", "tst"):
+        return emit_cmp(m, p, L)
+
+    if m == "csel":
+        de, dm, _ = dst(p[0])
+        a, _ = opnd(p[1])
+        b, _ = opnd(p[2])
+        L.append("%s=((%s) if FL[%d] else (%s))%s" % (de, a, CIDX[p[3]], b, dm))
+        return False
+
+    if m == "cset":
+        de, dm, _ = dst(p[0])
+        L.append("%s=(1 if FL[%d] else 0)%s" % (de, CIDX[p[1]], dm))
+        return False
+
+    if m == "ccmp":
+        a, _ = opnd(p[0])
+        b, _ = opnd(p[1])
+        L.append("if FL[%d]:" % CIDX[p[3]])
+        L.append("    _d=(%s-%s)&M64" % (a, b))
+        L.append("    FL[0]=_d==0;FL[1]=_d!=0;FL[6]=(%s)>=(%s);FL[7]=(%s)<(%s)"
+                 % (a, b, a, b))
+        L.append("    FL[8]=(%s)>(%s);FL[9]=(%s)<=(%s)" % (a, b, a, b))
+        return False
+
+    if m == "blr":
+        L.append("X[0]=0")
+        return False
+
+    if m == "mrs":
+        L.append("self.R[%r]=0x1000" % p[0])
+        return False
+
+    if m in MEM_MN:
+        emit_mem(m, ops, L)
+        return False
+
+    if m == "bl":
+        t = pt(ops)
+        if t is None:
+            raise Odd()
+        if t in (OP_PUSH, OP_PUSH2):
+            L.append("PUSH()")
+        elif t in (OP_POP, OP_POP2):
+            L.append("POP()")
+        elif t == OP_EMIT:
+            L.append("EMIT_()")
+        elif t == OP_LENQ:
+            L.append("LENQ()")
+        elif t == OP_OUTLEN:
+            L.append("OUTLEN()")
+        elif t == OP_PUSHS:
+            L.append("PUSHS()")
+        elif t == OP_POPS:
+            L.append("POPS()")
+        elif t in CAP_SWAPS:
+            L.append("CAP_SWAP()")
+        elif t in CAP_PUSHS:
+            L.append("CAP_PUSH0()" if t == 0x147a18 else "CAP_PUSH()")
+        elif t == OP_MKITER:
+            L.append("MKITER()")
+        elif t == OP_ITERNEXT:
+            L.append("ITERNEXT()")
+        elif t == OP_ISEMPTY:
+            L.append("ISEMPTY()")
+        elif t == OP_RAND:
+            L.append("RAND_()")
+        else:
+            L.append("GEN(%r,%r,%d)" % (m, ops, npc))
+        return False
+
+    if m == "ret":
+        L.append("if SH:")
+        L.append("    return SH.pop()")
+        L.append("raise EXIT('ret')")
+        return True
+
+    if m == "b":
+        t = pt(ops)
+        if t is None:
+            raise Odd()
+        if t == 0x100318:
+            L.append("raise EXIT('exit-clean')")
+        else:
+            L.append("return %d" % t)
+        return True
+
+    if m.startswith("b."):
+        cond = m[2:]
+        if cond not in CIDX:
+            raise Odd()
+        t = pt(ops)
+        if t is None:
+            raise Odd()
+        if t == 0x100318:
+            L.append("if FL[%d]:" % CIDX[cond])
+            L.append("    raise EXIT('exit-clean')")
+            L.append("return %d" % npc)
+        else:
+            L.append("return %d if FL[%d] else %d" % (t, CIDX[cond], npc))
+        return True
+
+    if m in ("cbz", "cbnz"):
+        a, _ = opnd(p[0])
+        t = pt(p[-1])
+        if t is None:
+            raise Odd()
+        if t == 0x100318:
+            L.append("if %s%s0:" % (a, "==" if m == "cbz" else "!="))
+            L.append("    raise EXIT('exit-clean')")
+            L.append("return %d" % npc)
+        else:
+            L.append("return %d if %s%s0 else %d"
+                     % (t, a, "==" if m == "cbz" else "!=", npc))
+        return True
+
+    if m in ("tbz", "tbnz"):
+        a, _ = opnd(p[0])
+        bit = pt(p[1])
+        t = pt(p[-1])
+        if t is None or bit is None:
+            raise Odd()
+        test = "(((%s)>>%d)&1)==%d" % (a, bit, 0 if m == "tbz" else 1)
+        if t == 0x100318:
+            L.append("if %s:" % test)
+            L.append("    raise EXIT('exit-clean')")
+            L.append("return %d" % npc)
+        else:
+            L.append("return %d if %s else %d" % (t, test, npc))
+        return True
+
+    # every other mnemonic is an explicit no-op in FinEx.run
+    return False
+
+
+def emit_alu(m, ops, p, L):
+    de, dm, _dw = dst(p[0])
+    if m == "udiv":
+        a, _ = opnd(p[1])
+        b, _ = opnd(p[2])
+        L.append("%s=((%s&M32)//(%s&M32) if (%s&M32) else 0)%s"
+                 % (de, a, b, b, dm))
+        return False
+    if m == "msub":
+        a, _ = opnd(p[1])
+        b, _ = opnd(p[2])
+        c, _ = opnd(p[3])
+        L.append("%s=((%s-(%s)*(%s))&M64)%s" % (de, c, a, b, dm))
+        return False
+    a, _ = opnd(p[1])
+    if len(p) > 2:
+        b, _ = opnd(p[2])
+    else:
+        b = "0"
+    if len(p) > 3:
+        sh = p[3].replace(" ", "")
+        mm = re.match(r"^(lsl|lsr|uxtw|sxtw)#(\d+)$", sh)
+        if mm:
+            k = int(mm.group(2))
+            kind = mm.group(1)
+            if kind == "lsl":
+                b = "((%s)<<%d)&M64" % (b, k)
+            elif kind == "lsr":
+                b = "(%s)>>%d" % (b, k)
+            elif kind in ("uxtw", "sxtw"):
+                b = "((%s&M32)<<%d)&M64" % (b, k)
+    if m in ALU:
+        v = "((%s)%s(%s))" % (a, ALU[m], b)
+    elif m == "lsl":
+        v = "((%s)<<(%s))&M64" % (a, b)
+    elif m == "lsr":
+        v = "(%s)>>(%s)" % (a, b)
+    elif m == "rev":
+        v = "_rev(%s)" % a
+    elif m == "rev16":
+        v = "(((%s)&0xFFFF)<<16)|((%s>>16)&0xFFFF)" % (a, a)
+    elif m == "neg":
+        v = "(-(%s))&M64" % a
+    elif m == "mvn":
+        v = "~(%s)&M64" % a
+    else:
+        raise Odd()
+    L.append("%s=%s%s" % (de, v, dm))
+    return False
+
+
+def emit_cmp(m, p, L):
+    a, _ = opnd(p[0])
+    b, _ = opnd(p[1]) if len(p) > 1 else "0"
+    if p[0].strip().startswith("w"):
+        L.append("_a=(%s)&M32" % a)
+        L.append("_b=(%s)&M32" % b)
+        if m == "cmp":
+            L.append("_r=_a-_b;_d=_r&M32;_C=_a>=_b;_N=(_d>>31)&1;_V=(((_a^_b)&(_a^_d))>>31)&1")
+        elif m == "cmn":
+            L.append("_r=_a+_b;_d=_r&M32;_C=_r>0xFFFFFFFF;_N=(_d>>31)&1;_V=(((~(_a^_b)&(_a^_d))>>31)&1)")
+        else:
+            L.append("_d=_a&_b;_C=False;_N=(_d>>31)&1;_V=0")
+        L.append("_Z=_d==0")
+        L.append("FL[0]=_Z;FL[1]=not _Z;FL[2]=_N!=_V;FL[3]=_N==_V;FL[4]=(not _Z)and(_N==_V);FL[5]=_Z or(_N!=_V)")
+        L.append("FL[6]=_C;FL[7]=not _C;FL[8]=_C and not _Z;FL[9]=(not _C)or _Z")
+        return False
+    L.append("_a=%s&M64" % a)
+    L.append("_b=%s&M64" % b)
+    if m == "cmp":
+        L.append("_s=_a-_b;_d=_s&M64")
+        L.append("FL[0]=_d==0;FL[1]=_d!=0;FL[2]=_s<0;FL[3]=_s>=0;FL[4]=_s>0;FL[5]=_s<=0;FL[8]=_d>0;FL[9]=_d<=0")
+        L.append("FL[6]=_a>=_b;FL[7]=_a<_b")
+    elif m == "cmn":
+        L.append("_s=_a+_b;_d=_s&M64")
+        L.append("FL[0]=_d==0;FL[1]=_d!=0;FL[2]=_s<0;FL[3]=_s>=0;FL[4]=_s>0;FL[5]=_s<=0;FL[8]=_d>0;FL[9]=_d<=0")
+        L.append("FL[6]=True;FL[7]=False")
+    else:
+        L.append("_d=_a&_b;_s=_d")
+        L.append("FL[0]=_d==0;FL[1]=_d!=0;FL[2]=_s<0;FL[3]=_s>=0;FL[4]=_s>0;FL[5]=_s<=0;FL[8]=_d>0;FL[9]=_d<=0")
+        L.append("FL[6]=False;FL[7]=False")
+    return False
+
+
+# --------------------------------------------------------------------------
+# block construction
+# --------------------------------------------------------------------------
+def load_tables():
+    import gzip
+    import pickle
+    p = os.path.join(HERE, "vm_tables.pkl.gz")
+    with gzip.open(p, "rb") as f:
+        raw = f.read()
+    t = pickle.loads(raw)
+    sig = hashlib.sha256(raw).hexdigest()[:16]
+    return t, sig
+
+
+def blocks(FAST, PCADDR):
+    """Split the instruction stream into basic blocks -> (start, end_excl).
+    A block always starts at a branch target (or the entry pc) and runs to the
+    first branch instruction or non-contiguous instruction."""
+    tgts = branch_targets(FAST)
+    out = []
+    n = len(FAST)
+    i = 0
+    while i < n:
+        j = i
+        while j + 1 < n:
+            m = FAST[j][0]
+            if m in TERM or m.startswith("b."):
+                break
+            if PCADDR[j + 1] != PCADDR[j] + 4:
+                break
+            if PCADDR[j + 1] in tgts:
+                break
+            j += 1
+        out.append((i, j + 1))
+        i = j + 1
+    return out
+
+
+TRACE = False
+
+
+def gen_blocks(FAST, PCADDR):
+    bl = blocks(FAST, PCADDR)
+    srcs = []
+    ngen = 0
+    for (i0, i1) in bl:
+        L = []
+        bad = False
+        try:
+            for i in range(i0, i1):
+                m, ops, npc = FAST[i]
+                mark = len(L)
+                emit_one(m, ops, npc, L)
+                if TRACE:
+                    L[mark:mark] = ["T.append(%d)" % (npc - 4)]
+        except Odd:
+            bad = True
+        except Exception:
+            bad = True
+        if bad:
+            # an unmodelled operand form inside this block -> the whole block
+            # re-runs through GEN(), one instruction at a time.
+            L = []
+            for i in range(i0, i1):
+                m, ops, npc = FAST[i]
+                if TRACE:
+                    L.append("T.append(%d)" % (npc - 4))
+                L.append("_s=GEN(%r,%r,%d)" % (m, ops, npc))
+            L.append("return _s")
+        else:
+            last_m, _last_ops, last_npc = FAST[i1 - 1]
+            if not (last_m in TERM or last_m.startswith("b.")):
+                L.append("return %d" % last_npc)
+            ngen += 1
+        srcs.append(chr(10).join(L))
+    return bl, srcs, ngen
+
+
+VERSION = "v12"
+NL = chr(10)
+
+
+def _mksrc(src):
+    """Wrap a block body in a factory so every state object becomes a real
+    closure cell (LOAD_DEREF) instead of a global lookup."""
+    head = "def _mk(" + ", ".join(FREES) + "):" + NL
+    head += "    def _blk():" + NL
+    body = "".join("        " + ln + NL for ln in src.split(NL))
+    return head + body + "    return _blk" + NL
+
+
+def compile_blocks(FAST, PCADDR, sig, verbose=False):
+    """-> (blocks, [code objects], n_fast, from_cache)"""
+    bl = blocks(FAST, PCADDR)
+    cache = os.path.join(HERE, "vm_blocks_%s-%s.marshal" % (sig, VERSION))
+    if os.path.exists(cache):
+        try:
+            codes = marshal.loads(open(cache, "rb").read())
+            if len(codes) == len(bl):
+                return bl, codes, len(bl), True
+        except Exception:
+            pass
+    _bl, srcs, ngen = gen_blocks(FAST, PCADDR)
+    g = {"M64": M64, "M32": M32, "M16": 0xFFFF, "MASK8": MASK8,
+         "MASK4": MASK4, "_rev": _rev}
+    codes = []
+    for src in srcs:
+        exec(_mksrc(src), g)
+        codes.append(g["_mk"].__code__)
+    if verbose:
+        print("compiled %d blocks (%d fully fast, %d with generic)"
+              % (len(codes), ngen, len(codes) - ngen))
+    try:
+        open(cache, "wb").write(marshal.dumps(codes))
+    except Exception:
+        pass
+    return bl, codes, ngen, False
+
+
+_rev = lambda a: int.from_bytes((a & 0xFFFFFFFF).to_bytes(4, "little"), "big")

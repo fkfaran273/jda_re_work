@@ -1,0 +1,18 @@
+# CLASS Lcom/adjust/sdk/c;
+FIELD public final synthetic a I
+
+---- METHOD public synthetic constructor <init> (I)V ----
+  iput                   v1, v0, Lcom/adjust/sdk/c;->a I
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run (Lcom/adjust/sdk/ActivityHandler;)V ----
+  iget                   v0, v1, Lcom/adjust/sdk/c;->a I
+  packed-switch          v0, +000000ch
+  invoke-static          v2, Lcom/adjust/sdk/ActivityHandler;->m(Lcom/adjust/sdk/ActivityHandler;)V
+  return-void            
+  invoke-static          v2, Lcom/adjust/sdk/ActivityHandler;->K(Lcom/adjust/sdk/ActivityHandler;)V
+  return-void            
+  nop                    
+  packed-switch-payload  0
+######################################################################

@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "lib": ["es2020"],
+    "types": ["frida-gum"],
+    "typeRoots": ["./node_modules/@types"],
+    "strict": false,
+    "skipLibCheck": true,
+    "module": "commonjs",
+    "moduleResolution": "node"
+  },
+  "include": ["*.js"]
+}

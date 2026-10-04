@@ -1,0 +1,5 @@
+# CLASS Lcom/adjust/sdk/OnSessionTrackingSucceededListener;
+
+---- METHOD public abstract onSessionTrackingSucceeded (Lcom/adjust/sdk/AdjustSessionSuccess;)V ----
+  (no code)
+######################################################################

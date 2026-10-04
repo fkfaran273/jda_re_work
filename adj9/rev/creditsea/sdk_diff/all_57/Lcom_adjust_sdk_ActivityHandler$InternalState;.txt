@@ -1,0 +1,67 @@
+# CLASS Lcom/adjust/sdk/ActivityHandler$InternalState;
+FIELD  enabled Z
+FIELD  firstLaunch Z
+FIELD  foregroundOrElseBackground Ljava/lang/Boolean;
+FIELD  offline Z
+FIELD  preinstallHasBeenRead Z
+FIELD  sessionResponseProcessed Z
+FIELD final synthetic this$0 Lcom/adjust/sdk/ActivityHandler;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/ActivityHandler;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/ActivityHandler$InternalState;->this$0 Lcom/adjust/sdk/ActivityHandler;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public hasPreinstallBeenRead ()Z ----
+  iget-boolean           v0, v1, Lcom/adjust/sdk/ActivityHandler$InternalState;->preinstallHasBeenRead Z
+  return                 v0
+
+---- METHOD public hasSessionResponseNotBeenProcessed ()Z ----
+  iget-boolean           v0, v1, Lcom/adjust/sdk/ActivityHandler$InternalState;->sessionResponseProcessed Z
+  xor-int/lit8           v0, v0, 1
+  return                 v0
+
+---- METHOD public isDisabled ()Z ----
+  iget-boolean           v0, v1, Lcom/adjust/sdk/ActivityHandler$InternalState;->enabled Z
+  xor-int/lit8           v0, v0, 1
+  return                 v0
+
+---- METHOD public isEnabled ()Z ----
+  iget-boolean           v0, v1, Lcom/adjust/sdk/ActivityHandler$InternalState;->enabled Z
+  return                 v0
+
+---- METHOD public isFirstLaunch ()Z ----
+  iget-boolean           v0, v1, Lcom/adjust/sdk/ActivityHandler$InternalState;->firstLaunch Z
+  return                 v0
+
+---- METHOD public isInBackground ()Z ----
+  iget-object            v0, v1, Lcom/adjust/sdk/ActivityHandler$InternalState;->foregroundOrElseBackground Ljava/lang/Boolean;
+  if-eqz                 v0, +00ah
+  invoke-virtual         v0, Ljava/lang/Boolean;->booleanValue()Z
+  move-result            v0
+  if-nez                 v0, +004h
+  const/4                v0, 1
+  return                 v0
+  const/4                v0, 0
+  return                 v0
+
+---- METHOD public isInForeground ()Z ----
+  iget-object            v0, v1, Lcom/adjust/sdk/ActivityHandler$InternalState;->foregroundOrElseBackground Ljava/lang/Boolean;
+  if-eqz                 v0, +00ah
+  invoke-virtual         v0, Ljava/lang/Boolean;->booleanValue()Z
+  move-result            v0
+  if-eqz                 v0, +004h
+  const/4                v0, 1
+  return                 v0
+  const/4                v0, 0
+  return                 v0
+
+---- METHOD public isOffline ()Z ----
+  iget-boolean           v0, v1, Lcom/adjust/sdk/ActivityHandler$InternalState;->offline Z
+  return                 v0
+
+---- METHOD public isOnline ()Z ----
+  iget-boolean           v0, v1, Lcom/adjust/sdk/ActivityHandler$InternalState;->offline Z
+  xor-int/lit8           v0, v0, 1
+  return                 v0
+######################################################################

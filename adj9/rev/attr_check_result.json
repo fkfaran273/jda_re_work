@@ -1,0 +1,6 @@
+{
+ "gps": "74ff39cf-e7e7-4239-a179-032fd1bf00f2",
+ "auid": "7c96dfa6-4969-4478-be51-29f831fa6da4",
+ "status": 200,
+ "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"b6e075262ff318c8a7f87d9d124bcbea\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-15T09:28:02.432290732Z\",\"first_session_time\":\"2026-09-15T09:28:02.432290732Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+}

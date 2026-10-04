@@ -1,0 +1,20 @@
+{
+ "gps": "991212dc-4bfe-489e-bf0e-e42ecf095bc6",
+ "auid": "1e7e62e5-f847-48df-98f2-4a2ae527d79d",
+ "referrer": "utm_source=(not%20set)&utm_medium=(not%20set)",
+ "click_iso": "2026-09-14T17:48:35.000Z+0530",
+ "installed": "2026-09-14T17:53:08.431Z+0530",
+ "session": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"277ea89baaaba733bf573fac0d0c1661\",\"ask_in\":2000}"
+ ],
+ "click": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"277ea89baaaba733bf573fac0d0c1661\"}"
+ ],
+ "attr": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"277ea89baaaba733bf573fac0d0c1661\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-15T15:00:05Z\",\"first_session_time\":\"2026-09-15T15:00:05Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ ],
+ "verdict": "wy7261z/Organic"
+}

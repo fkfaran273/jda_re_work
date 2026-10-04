@@ -1,0 +1,35 @@
+# CLASS Lcom/adjust/sdk/ActivityHandler$37;
+FIELD public final synthetic a Lcom/adjust/sdk/ActivityHandler;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/ActivityHandler;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/ActivityHandler$37;->a Lcom/adjust/sdk/ActivityHandler;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v4, Lcom/adjust/sdk/ActivityHandler$37;->a Lcom/adjust/sdk/ActivityHandler;
+  invoke-virtual         v0, Lcom/adjust/sdk/ActivityHandler;->getContext()Landroid/content/Context;
+  move-result-object     v0
+  invoke-static          v0, Lcom/adjust/sdk/SharedPreferencesManager;->getDefaultInstance(Landroid/content/Context;)Lcom/adjust/sdk/SharedPreferencesManager;
+  move-result-object     v0
+  invoke-virtual         v0, Lcom/adjust/sdk/SharedPreferencesManager;->getLicenseVerificationTracked()Z
+  move-result            v0
+  if-eqz                 v0, +003h
+  goto                   +20h
+  iget-object            v0, v4, Lcom/adjust/sdk/ActivityHandler$37;->a Lcom/adjust/sdk/ActivityHandler;
+  invoke-virtual         v0, Lcom/adjust/sdk/ActivityHandler;->getContext()Landroid/content/Context;
+  move-result-object     v0
+  iget-object            v1, v4, Lcom/adjust/sdk/ActivityHandler$37;->a Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v1, Lcom/adjust/sdk/ActivityHandler;->access$1800(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/ILogger;
+  move-result-object     v1
+  iget-object            v2, v4, Lcom/adjust/sdk/ActivityHandler$37;->a Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v2, Lcom/adjust/sdk/ActivityHandler;->access$1900(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/DeviceInfo;
+  move-result-object     v2
+  iget-wide              v2, v2, Lcom/adjust/sdk/DeviceInfo;->appInstallTime J
+  invoke-static          v0, v1, v2, v3, Lcom/adjust/sdk/Reflection;->getLicenseRequiredData(Landroid/content/Context; Lcom/adjust/sdk/ILogger; J)Lcom/adjust/sdk/LicenseData;
+  move-result-object     v0
+  if-eqz                 v0, +007h
+  iget-object            v1, v4, Lcom/adjust/sdk/ActivityHandler$37;->a Lcom/adjust/sdk/ActivityHandler;
+  invoke-virtual         v1, v0, Lcom/adjust/sdk/ActivityHandler;->sendLicenseVerificationData(Lcom/adjust/sdk/LicenseData;)V
+  return-void            
+######################################################################

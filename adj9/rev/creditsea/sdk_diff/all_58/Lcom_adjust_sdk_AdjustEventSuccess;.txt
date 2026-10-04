@@ -1,0 +1,26 @@
+# CLASS Lcom/adjust/sdk/AdjustEventSuccess;
+FIELD public adid Ljava/lang/String;
+FIELD public callbackId Ljava/lang/String;
+FIELD public eventToken Ljava/lang/String;
+FIELD public jsonResponse Lorg/json/JSONObject;
+FIELD public message Ljava/lang/String;
+FIELD public timestamp Ljava/lang/String;
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public toString ()Ljava/lang/String; ----
+  iget-object            v0, v6, Lcom/adjust/sdk/AdjustEventSuccess;->message Ljava/lang/String;
+  iget-object            v1, v6, Lcom/adjust/sdk/AdjustEventSuccess;->timestamp Ljava/lang/String;
+  iget-object            v2, v6, Lcom/adjust/sdk/AdjustEventSuccess;->adid Ljava/lang/String;
+  iget-object            v3, v6, Lcom/adjust/sdk/AdjustEventSuccess;->eventToken Ljava/lang/String;
+  iget-object            v4, v6, Lcom/adjust/sdk/AdjustEventSuccess;->callbackId Ljava/lang/String;
+  iget-object            v5, v6, Lcom/adjust/sdk/AdjustEventSuccess;->jsonResponse Lorg/json/JSONObject;
+  filled-new-array/range v0 ... v5, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v1, "Event Success msg:%s time:%s adid:%s event:%s cid:%s json:%s"
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+######################################################################

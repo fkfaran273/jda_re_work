@@ -1,0 +1,67 @@
+# CLASS Lcom/adjust/sdk/sig/o3;
+FIELD public static final a Lcom/adjust/sdk/sig/n1;
+
+---- METHOD static constructor <clinit> ()V ----
+  sget-object            v0, Lcom/adjust/sdk/sig/i1;->b Lcom/adjust/sdk/sig/h1;
+  new-instance           v1, Lcom/adjust/sdk/sig/j1;
+  invoke-direct          v1, v0, Lcom/adjust/sdk/sig/j1;-><init>(Lcom/adjust/sdk/sig/i1;)V
+  invoke-static          v1, Lcom/adjust/sdk/sig/o3;->a(Lcom/adjust/sdk/sig/j1;)Lcom/adjust/sdk/sig/m3;
+  new-instance           v0, Lcom/adjust/sdk/sig/l1;
+  iget-boolean           v2, v1, Lcom/adjust/sdk/sig/j1;->a Z
+  iget-boolean           v3, v1, Lcom/adjust/sdk/sig/j1;->b Z
+  iget                   v1, v1, Lcom/adjust/sdk/sig/j1;->c I
+  invoke-direct          v0, v2, v3, v1, Lcom/adjust/sdk/sig/l1;-><init>(Z Z I)V
+  new-instance           v1, Lcom/adjust/sdk/sig/n1;
+  invoke-direct          v1, v0, Lcom/adjust/sdk/sig/n1;-><init>(Lcom/adjust/sdk/sig/l1;)V
+  sput-object            v1, Lcom/adjust/sdk/sig/o3;->a Lcom/adjust/sdk/sig/n1;
+  return-void            
+
+---- METHOD public static final a (Lcom/adjust/sdk/sig/j1;)Lcom/adjust/sdk/sig/m3; ----
+  const/4                v0, 1
+  iput-boolean           v0, v1, Lcom/adjust/sdk/sig/j1;->a Z
+  const/4                v0, 0
+  iput-boolean           v0, v1, Lcom/adjust/sdk/sig/j1;->b Z
+  sget-object            v1, Lcom/adjust/sdk/sig/m3;->a Lcom/adjust/sdk/sig/m3;
+  return-object          v1
+
+---- METHOD public static a (Lcom/adjust/sdk/sig/a0;)Ljava/lang/String; ----
+  sget-object            v0, Lcom/adjust/sdk/sig/o3;->a Lcom/adjust/sdk/sig/n1;
+  invoke-virtual         v0, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+  sget-object            v1, Lcom/adjust/sdk/sig/z;->a Lcom/adjust/sdk/sig/z;
+  new-instance           v2, Lcom/adjust/sdk/sig/o1;
+  invoke-direct          v2, Lcom/adjust/sdk/sig/o1;-><init>()V
+  new-instance           v3, Lcom/adjust/sdk/sig/v2;
+  sget-object            v4, Lcom/adjust/sdk/sig/p3;->c Lcom/adjust/sdk/sig/p3;
+  sget-object            v5, Lcom/adjust/sdk/sig/p3;->g Lcom/adjust/sdk/sig/f0;
+  iget-object            v5, v5, Lcom/adjust/sdk/sig/f0;->a [Ljava/lang/Enum;
+  array-length           v5, v5
+  new-array              v5, v5, [Lcom/adjust/sdk/sig/v2;
+  new-instance           v6, Lcom/adjust/sdk/sig/x;
+  invoke-direct          v6, v2, Lcom/adjust/sdk/sig/x;-><init>(Lcom/adjust/sdk/sig/o1;)V
+  invoke-direct          v3, v6, v0, v4, v5, Lcom/adjust/sdk/sig/v2;-><init>(Lcom/adjust/sdk/sig/x; Lcom/adjust/sdk/sig/i1; Lcom/adjust/sdk/sig/p3; [Lcom/adjust/sdk/sig/v2;)V
+  invoke-virtual         v3, v1, v7, Lcom/adjust/sdk/sig/v2;->a(Lcom/adjust/sdk/sig/r1; Ljava/lang/Object;)V
+  invoke-virtual         v2, Lcom/adjust/sdk/sig/o1;->toString()Ljava/lang/String;
+  move-result-object     v7
+  invoke-virtual         v2, Lcom/adjust/sdk/sig/o1;->a()V
+  sget-object            v0, Lcom/adjust/sdk/sig/s2;->a [B
+  invoke-static          v7, Lcom/adjust/sdk/sig/d3;->a(Ljava/lang/String;)[B
+  move-result-object     v7
+  array-length           v1, v7
+  const/4                v2, 0
+  if-ge                  v2, v1, +00fh
+  aget-byte              v3, v7, v2
+  rem-int/lit8           v4, v2, 19
+  aget-byte              v4, v0, v4
+  xor-int/2addr          v3, v4
+  int-to-byte            v3, v3
+  aput-byte              v3, v7, v2
+  add-int/lit8           v2, v2, 1
+  goto                   -eh
+  const/4                v0, 2
+  invoke-static          v7, v0, Landroid/util/Base64;->encodeToString([B I)Ljava/lang/String;
+  move-result-object     v7
+  return-object          v7
+  move-exception         v7
+  invoke-virtual         v2, Lcom/adjust/sdk/sig/o1;->a()V
+  throw                  v7
+######################################################################

@@ -1,0 +1,17 @@
+# CLASS Lcom/adjust/sdk/Util$2;
+FIELD public final synthetic a Landroid/content/Context;
+FIELD public final synthetic b Ljava/lang/Object;
+
+---- METHOD public constructor <init> (Landroid/content/Context; Ljava/lang/Object;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/Util$2;->a Landroid/content/Context;
+  iput-object            v2, v0, Lcom/adjust/sdk/Util$2;->b Ljava/lang/Object;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final call ()Ljava/lang/Object; ----
+  iget-object            v0, v2, Lcom/adjust/sdk/Util$2;->a Landroid/content/Context;
+  iget-object            v1, v2, Lcom/adjust/sdk/Util$2;->b Ljava/lang/Object;
+  invoke-static          v0, v1, Lcom/adjust/sdk/Reflection;->getPlayAdId(Landroid/content/Context; Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+######################################################################

@@ -1,0 +1,15 @@
+{
+ "ok": true,
+ "methods": [
+  "onResume()",
+  "sign(android.content.Context,java.util.Map,java.lang.String,java.lang.String)",
+  "sign(android.content.Context,java.util.Map,java.util.Map,java.util.Map)"
+ ],
+ "fields": [
+  "Companion : com.adjust.sdk.sig.t2",
+  "EXCEPTION_MSG_SDK4 : java.lang.String",
+  "a : com.adjust.sdk.sig.NativeLibHelper",
+  "b : com.adjust.sdk.sig.t1",
+  "c : boolean"
+ ]
+}

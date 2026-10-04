@@ -1,0 +1,55 @@
+--- 
++++ 
+@@ -22,3 +22,2 @@
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object vX, vX
+ new-instance vX, Ljava/io/ObjectStreamField;
+@@ -26,3 +25,2 @@
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object vX, vX
+ new-instance vX, Ljava/io/ObjectStreamField;
+@@ -30,3 +28,2 @@
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object vX, vX
+ new-instance vX, Ljava/io/ObjectStreamField;
+@@ -34,3 +31,2 @@
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object vX, vX
+ new-instance vX, Ljava/io/ObjectStreamField;
+@@ -38,3 +34,2 @@
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object vX, vX
+ new-instance vX, Ljava/io/ObjectStreamField;
+@@ -42,3 +37,2 @@
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object vX, vX
+ new-instance vX, Ljava/io/ObjectStreamField;
+@@ -46,3 +40,2 @@
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object vX, vX
+ new-instance vX, Ljava/io/ObjectStreamField;
+@@ -51,3 +44,2 @@
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object vX, vX
+ new-instance vX, Ljava/io/ObjectStreamField;
+@@ -55,3 +47,2 @@
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object vX, vX
+ new-instance vX, Ljava/io/ObjectStreamField;
+@@ -59,3 +50,2 @@
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+-move-object vX, vX
+ new-instance vX, Ljava/io/ObjectStreamField;
+@@ -63,2 +53,12 @@
+ invoke-direct vX, vX, vX, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
++move-object vX, vX
++move-object vX, vX
++move-object vX, vX
++move-object vX, vX
++move-object vX, vX
++move-object vX, vX
++move-object vX, vX
++move-object vX, vX
++move-object vX, vX
++move-object vX, vX
+ filled-new-array/range vX ... vX, [Ljava/io/ObjectStreamField;

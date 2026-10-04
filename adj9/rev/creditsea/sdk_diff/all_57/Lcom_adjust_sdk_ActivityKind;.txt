@@ -1,0 +1,237 @@
+# CLASS Lcom/adjust/sdk/ActivityKind;
+FIELD private static final synthetic $VALUES [Lcom/adjust/sdk/ActivityKind;
+FIELD public static final enum AD_REVENUE Lcom/adjust/sdk/ActivityKind;
+FIELD public static final enum ATTRIBUTION Lcom/adjust/sdk/ActivityKind;
+FIELD public static final enum CLICK Lcom/adjust/sdk/ActivityKind;
+FIELD public static final enum DISABLE_THIRD_PARTY_SHARING Lcom/adjust/sdk/ActivityKind;
+FIELD public static final enum EVENT Lcom/adjust/sdk/ActivityKind;
+FIELD public static final enum GDPR Lcom/adjust/sdk/ActivityKind;
+FIELD public static final enum INFO Lcom/adjust/sdk/ActivityKind;
+FIELD public static final enum MEASUREMENT_CONSENT Lcom/adjust/sdk/ActivityKind;
+FIELD public static final enum PURCHASE_VERIFICATION Lcom/adjust/sdk/ActivityKind;
+FIELD public static final enum REATTRIBUTION Lcom/adjust/sdk/ActivityKind;
+FIELD public static final enum REVENUE Lcom/adjust/sdk/ActivityKind;
+FIELD public static final enum SESSION Lcom/adjust/sdk/ActivityKind;
+FIELD public static final enum SUBSCRIPTION Lcom/adjust/sdk/ActivityKind;
+FIELD public static final enum THIRD_PARTY_SHARING Lcom/adjust/sdk/ActivityKind;
+FIELD public static final enum UNKNOWN Lcom/adjust/sdk/ActivityKind;
+
+---- METHOD private static synthetic $values ()[Lcom/adjust/sdk/ActivityKind; ----
+  sget-object            v0, Lcom/adjust/sdk/ActivityKind;->UNKNOWN Lcom/adjust/sdk/ActivityKind;
+  sget-object            v1, Lcom/adjust/sdk/ActivityKind;->SESSION Lcom/adjust/sdk/ActivityKind;
+  sget-object            v2, Lcom/adjust/sdk/ActivityKind;->EVENT Lcom/adjust/sdk/ActivityKind;
+  sget-object            v3, Lcom/adjust/sdk/ActivityKind;->CLICK Lcom/adjust/sdk/ActivityKind;
+  sget-object            v4, Lcom/adjust/sdk/ActivityKind;->ATTRIBUTION Lcom/adjust/sdk/ActivityKind;
+  sget-object            v5, Lcom/adjust/sdk/ActivityKind;->REVENUE Lcom/adjust/sdk/ActivityKind;
+  sget-object            v6, Lcom/adjust/sdk/ActivityKind;->REATTRIBUTION Lcom/adjust/sdk/ActivityKind;
+  sget-object            v7, Lcom/adjust/sdk/ActivityKind;->INFO Lcom/adjust/sdk/ActivityKind;
+  sget-object            v8, Lcom/adjust/sdk/ActivityKind;->GDPR Lcom/adjust/sdk/ActivityKind;
+  sget-object            v9, Lcom/adjust/sdk/ActivityKind;->AD_REVENUE Lcom/adjust/sdk/ActivityKind;
+  sget-object            v10, Lcom/adjust/sdk/ActivityKind;->DISABLE_THIRD_PARTY_SHARING Lcom/adjust/sdk/ActivityKind;
+  sget-object            v11, Lcom/adjust/sdk/ActivityKind;->SUBSCRIPTION Lcom/adjust/sdk/ActivityKind;
+  sget-object            v12, Lcom/adjust/sdk/ActivityKind;->THIRD_PARTY_SHARING Lcom/adjust/sdk/ActivityKind;
+  sget-object            v13, Lcom/adjust/sdk/ActivityKind;->MEASUREMENT_CONSENT Lcom/adjust/sdk/ActivityKind;
+  sget-object            v14, Lcom/adjust/sdk/ActivityKind;->PURCHASE_VERIFICATION Lcom/adjust/sdk/ActivityKind;
+  filled-new-array/range v0 ... v14, [Lcom/adjust/sdk/ActivityKind;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD static constructor <clinit> ()V ----
+  new-instance           v0, Lcom/adjust/sdk/ActivityKind;
+  const-string           v1, "UNKNOWN"
+  const/4                v2, 0
+  invoke-direct          v0, v1, v2, Lcom/adjust/sdk/ActivityKind;-><init>(Ljava/lang/String; I)V
+  sput-object            v0, Lcom/adjust/sdk/ActivityKind;->UNKNOWN Lcom/adjust/sdk/ActivityKind;
+  new-instance           v0, Lcom/adjust/sdk/ActivityKind;
+  const-string           v1, "SESSION"
+  const/4                v2, 1
+  invoke-direct          v0, v1, v2, Lcom/adjust/sdk/ActivityKind;-><init>(Ljava/lang/String; I)V
+  sput-object            v0, Lcom/adjust/sdk/ActivityKind;->SESSION Lcom/adjust/sdk/ActivityKind;
+  new-instance           v0, Lcom/adjust/sdk/ActivityKind;
+  const-string           v1, "EVENT"
+  const/4                v2, 2
+  invoke-direct          v0, v1, v2, Lcom/adjust/sdk/ActivityKind;-><init>(Ljava/lang/String; I)V
+  sput-object            v0, Lcom/adjust/sdk/ActivityKind;->EVENT Lcom/adjust/sdk/ActivityKind;
+  new-instance           v0, Lcom/adjust/sdk/ActivityKind;
+  const-string           v1, "CLICK"
+  const/4                v2, 3
+  invoke-direct          v0, v1, v2, Lcom/adjust/sdk/ActivityKind;-><init>(Ljava/lang/String; I)V
+  sput-object            v0, Lcom/adjust/sdk/ActivityKind;->CLICK Lcom/adjust/sdk/ActivityKind;
+  new-instance           v0, Lcom/adjust/sdk/ActivityKind;
+  const-string           v1, "ATTRIBUTION"
+  const/4                v2, 4
+  invoke-direct          v0, v1, v2, Lcom/adjust/sdk/ActivityKind;-><init>(Ljava/lang/String; I)V
+  sput-object            v0, Lcom/adjust/sdk/ActivityKind;->ATTRIBUTION Lcom/adjust/sdk/ActivityKind;
+  new-instance           v0, Lcom/adjust/sdk/ActivityKind;
+  const-string           v1, "REVENUE"
+  const/4                v2, 5
+  invoke-direct          v0, v1, v2, Lcom/adjust/sdk/ActivityKind;-><init>(Ljava/lang/String; I)V
+  sput-object            v0, Lcom/adjust/sdk/ActivityKind;->REVENUE Lcom/adjust/sdk/ActivityKind;
+  new-instance           v0, Lcom/adjust/sdk/ActivityKind;
+  const-string           v1, "REATTRIBUTION"
+  const/4                v2, 6
+  invoke-direct          v0, v1, v2, Lcom/adjust/sdk/ActivityKind;-><init>(Ljava/lang/String; I)V
+  sput-object            v0, Lcom/adjust/sdk/ActivityKind;->REATTRIBUTION Lcom/adjust/sdk/ActivityKind;
+  new-instance           v0, Lcom/adjust/sdk/ActivityKind;
+  const-string           v1, "INFO"
+  const/4                v2, 7
+  invoke-direct          v0, v1, v2, Lcom/adjust/sdk/ActivityKind;-><init>(Ljava/lang/String; I)V
+  sput-object            v0, Lcom/adjust/sdk/ActivityKind;->INFO Lcom/adjust/sdk/ActivityKind;
+  new-instance           v0, Lcom/adjust/sdk/ActivityKind;
+  const-string           v1, "GDPR"
+  const/16               v2, 8
+  invoke-direct          v0, v1, v2, Lcom/adjust/sdk/ActivityKind;-><init>(Ljava/lang/String; I)V
+  sput-object            v0, Lcom/adjust/sdk/ActivityKind;->GDPR Lcom/adjust/sdk/ActivityKind;
+  new-instance           v0, Lcom/adjust/sdk/ActivityKind;
+  const-string           v1, "AD_REVENUE"
+  const/16               v2, 9
+  invoke-direct          v0, v1, v2, Lcom/adjust/sdk/ActivityKind;-><init>(Ljava/lang/String; I)V
+  sput-object            v0, Lcom/adjust/sdk/ActivityKind;->AD_REVENUE Lcom/adjust/sdk/ActivityKind;
+  new-instance           v0, Lcom/adjust/sdk/ActivityKind;
+  const-string           v1, "DISABLE_THIRD_PARTY_SHARING"
+  const/16               v2, 10
+  invoke-direct          v0, v1, v2, Lcom/adjust/sdk/ActivityKind;-><init>(Ljava/lang/String; I)V
+  sput-object            v0, Lcom/adjust/sdk/ActivityKind;->DISABLE_THIRD_PARTY_SHARING Lcom/adjust/sdk/ActivityKind;
+  new-instance           v0, Lcom/adjust/sdk/ActivityKind;
+  const-string           v1, "SUBSCRIPTION"
+  const/16               v2, 11
+  invoke-direct          v0, v1, v2, Lcom/adjust/sdk/ActivityKind;-><init>(Ljava/lang/String; I)V
+  sput-object            v0, Lcom/adjust/sdk/ActivityKind;->SUBSCRIPTION Lcom/adjust/sdk/ActivityKind;
+  new-instance           v0, Lcom/adjust/sdk/ActivityKind;
+  const-string           v1, "THIRD_PARTY_SHARING"
+  const/16               v2, 12
+  invoke-direct          v0, v1, v2, Lcom/adjust/sdk/ActivityKind;-><init>(Ljava/lang/String; I)V
+  sput-object            v0, Lcom/adjust/sdk/ActivityKind;->THIRD_PARTY_SHARING Lcom/adjust/sdk/ActivityKind;
+  new-instance           v0, Lcom/adjust/sdk/ActivityKind;
+  const-string           v1, "MEASUREMENT_CONSENT"
+  const/16               v2, 13
+  invoke-direct          v0, v1, v2, Lcom/adjust/sdk/ActivityKind;-><init>(Ljava/lang/String; I)V
+  sput-object            v0, Lcom/adjust/sdk/ActivityKind;->MEASUREMENT_CONSENT Lcom/adjust/sdk/ActivityKind;
+  new-instance           v0, Lcom/adjust/sdk/ActivityKind;
+  const-string           v1, "PURCHASE_VERIFICATION"
+  const/16               v2, 14
+  invoke-direct          v0, v1, v2, Lcom/adjust/sdk/ActivityKind;-><init>(Ljava/lang/String; I)V
+  sput-object            v0, Lcom/adjust/sdk/ActivityKind;->PURCHASE_VERIFICATION Lcom/adjust/sdk/ActivityKind;
+  invoke-static          Lcom/adjust/sdk/ActivityKind;->$values()[Lcom/adjust/sdk/ActivityKind;
+  move-result-object     v0
+  sput-object            v0, Lcom/adjust/sdk/ActivityKind;->$VALUES [Lcom/adjust/sdk/ActivityKind;
+  return-void            
+
+---- METHOD private constructor <init> (Ljava/lang/String; I)V ----
+  invoke-direct          v0, v1, v2, Ljava/lang/Enum;-><init>(Ljava/lang/String; I)V
+  return-void            
+
+---- METHOD public static fromString (Ljava/lang/String;)Lcom/adjust/sdk/ActivityKind; ----
+  const-string/jumbo     v0, session
+  invoke-virtual         v0, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-eqz                 v0, +005h
+  sget-object            v1, Lcom/adjust/sdk/ActivityKind;->SESSION Lcom/adjust/sdk/ActivityKind;
+  return-object          v1
+  const-string           v0, "event"
+  invoke-virtual         v0, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-eqz                 v0, +005h
+  sget-object            v1, Lcom/adjust/sdk/ActivityKind;->EVENT Lcom/adjust/sdk/ActivityKind;
+  return-object          v1
+  const-string           v0, "click"
+  invoke-virtual         v0, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-eqz                 v0, +005h
+  sget-object            v1, Lcom/adjust/sdk/ActivityKind;->CLICK Lcom/adjust/sdk/ActivityKind;
+  return-object          v1
+  const-string           v0, "attribution"
+  invoke-virtual         v0, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-eqz                 v0, +005h
+  sget-object            v1, Lcom/adjust/sdk/ActivityKind;->ATTRIBUTION Lcom/adjust/sdk/ActivityKind;
+  return-object          v1
+  const-string           v0, "info"
+  invoke-virtual         v0, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-eqz                 v0, +005h
+  sget-object            v1, Lcom/adjust/sdk/ActivityKind;->INFO Lcom/adjust/sdk/ActivityKind;
+  return-object          v1
+  const-string           v0, "gdpr"
+  invoke-virtual         v0, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-eqz                 v0, +005h
+  sget-object            v1, Lcom/adjust/sdk/ActivityKind;->GDPR Lcom/adjust/sdk/ActivityKind;
+  return-object          v1
+  const-string           v0, "ad_revenue"
+  invoke-virtual         v0, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-eqz                 v0, +005h
+  sget-object            v1, Lcom/adjust/sdk/ActivityKind;->AD_REVENUE Lcom/adjust/sdk/ActivityKind;
+  return-object          v1
+  const-string/jumbo     v0, subscription
+  invoke-virtual         v0, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-eqz                 v0, +005h
+  sget-object            v1, Lcom/adjust/sdk/ActivityKind;->SUBSCRIPTION Lcom/adjust/sdk/ActivityKind;
+  return-object          v1
+  const-string/jumbo     v0, third_party_sharing
+  invoke-virtual         v0, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-eqz                 v0, +005h
+  sget-object            v1, Lcom/adjust/sdk/ActivityKind;->THIRD_PARTY_SHARING Lcom/adjust/sdk/ActivityKind;
+  return-object          v1
+  const-string           v0, "measurement_consent"
+  invoke-virtual         v0, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-eqz                 v0, +005h
+  sget-object            v1, Lcom/adjust/sdk/ActivityKind;->MEASUREMENT_CONSENT Lcom/adjust/sdk/ActivityKind;
+  return-object          v1
+  const-string/jumbo     v0, purchase_verification
+  invoke-virtual         v0, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v1
+  if-eqz                 v1, +005h
+  sget-object            v1, Lcom/adjust/sdk/ActivityKind;->PURCHASE_VERIFICATION Lcom/adjust/sdk/ActivityKind;
+  return-object          v1
+  sget-object            v1, Lcom/adjust/sdk/ActivityKind;->UNKNOWN Lcom/adjust/sdk/ActivityKind;
+  return-object          v1
+
+---- METHOD public static valueOf (Ljava/lang/String;)Lcom/adjust/sdk/ActivityKind; ----
+  const-class            v0, Lcom/adjust/sdk/ActivityKind;
+  invoke-static          v0, v1, Ljava/lang/Enum;->valueOf(Ljava/lang/Class; Ljava/lang/String;)Ljava/lang/Enum;
+  move-result-object     v1
+  check-cast             v1, Lcom/adjust/sdk/ActivityKind;
+  return-object          v1
+
+---- METHOD public static values ()[Lcom/adjust/sdk/ActivityKind; ----
+  sget-object            v0, Lcom/adjust/sdk/ActivityKind;->$VALUES [Lcom/adjust/sdk/ActivityKind;
+  invoke-virtual         v0, [Lcom/adjust/sdk/ActivityKind;->clone()Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, [Lcom/adjust/sdk/ActivityKind;
+  return-object          v0
+
+---- METHOD public toString ()Ljava/lang/String; ----
+  invoke-virtual         v1, Ljava/lang/Enum;->ordinal()I
+  move-result            v0
+  packed-switch          v0, +000002ch
+  const-string/jumbo     v0, unknown
+  return-object          v0
+  const-string/jumbo     v0, purchase_verification
+  return-object          v0
+  const-string           v0, "measurement_consent"
+  return-object          v0
+  const-string/jumbo     v0, third_party_sharing
+  return-object          v0
+  const-string/jumbo     v0, subscription
+  return-object          v0
+  const-string           v0, "ad_revenue"
+  return-object          v0
+  const-string           v0, "gdpr"
+  return-object          v0
+  const-string           v0, "info"
+  return-object          v0
+  const-string           v0, "attribution"
+  return-object          v0
+  const-string           v0, "click"
+  return-object          v0
+  const-string           v0, "event"
+  return-object          v0
+  const-string/jumbo     v0, session
+  return-object          v0
+  packed-switch-payload  1 2 3 4 5 6 7 8 9 a b c d e
+######################################################################

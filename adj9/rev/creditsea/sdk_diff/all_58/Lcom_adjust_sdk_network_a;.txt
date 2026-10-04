@@ -1,0 +1,24 @@
+# CLASS Lcom/adjust/sdk/network/a;
+FIELD public final synthetic a Lcom/adjust/sdk/network/IActivityPackageSender$ResponseDataCallbackSubscriber;
+FIELD public final synthetic b Lcom/adjust/sdk/ActivityPackage;
+FIELD public final synthetic c Ljava/util/Map;
+FIELD public final synthetic d Lcom/adjust/sdk/network/ActivityPackageSender;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/network/ActivityPackageSender; Lcom/adjust/sdk/network/IActivityPackageSender$ResponseDataCallbackSubscriber; Lcom/adjust/sdk/ActivityPackage; Ljava/util/Map;)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/network/a;->d Lcom/adjust/sdk/network/ActivityPackageSender;
+  iput-object            v2, v0, Lcom/adjust/sdk/network/a;->a Lcom/adjust/sdk/network/IActivityPackageSender$ResponseDataCallbackSubscriber;
+  iput-object            v3, v0, Lcom/adjust/sdk/network/a;->b Lcom/adjust/sdk/ActivityPackage;
+  iput-object            v4, v0, Lcom/adjust/sdk/network/a;->c Ljava/util/Map;
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v3, Lcom/adjust/sdk/network/a;->b Lcom/adjust/sdk/ActivityPackage;
+  iget-object            v1, v3, Lcom/adjust/sdk/network/a;->c Ljava/util/Map;
+  iget-object            v2, v3, Lcom/adjust/sdk/network/a;->d Lcom/adjust/sdk/network/ActivityPackageSender;
+  invoke-virtual         v2, v0, v1, Lcom/adjust/sdk/network/ActivityPackageSender;->sendActivityPackageSync(Lcom/adjust/sdk/ActivityPackage; Ljava/util/Map;)Lcom/adjust/sdk/ResponseData;
+  move-result-object     v0
+  iget-object            v1, v3, Lcom/adjust/sdk/network/a;->a Lcom/adjust/sdk/network/IActivityPackageSender$ResponseDataCallbackSubscriber;
+  invoke-interface       v1, v0, Lcom/adjust/sdk/network/IActivityPackageSender$ResponseDataCallbackSubscriber;->onResponseDataCallback(Lcom/adjust/sdk/ResponseData;)V
+  return-void            
+######################################################################

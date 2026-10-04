@@ -1,0 +1,5 @@
+# CLASS Lcom/adjust/sdk/OnEventTrackingSucceededListener;
+
+---- METHOD public abstract onEventTrackingSucceeded (Lcom/adjust/sdk/AdjustEventSuccess;)V ----
+  (no code)
+######################################################################

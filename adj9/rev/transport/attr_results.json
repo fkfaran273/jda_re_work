@@ -1,0 +1,107 @@
+[
+ {
+  "tag": "A",
+  "status": 200,
+  "verdict": "FAIL(Organic)",
+  "note": "tracker=wy7261z network=Organic eng=0001-01-01T00:00:00 installed=2026-09-27T13:54:47Z",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "tag": "B",
+  "status": 200,
+  "verdict": "FAIL(Organic)",
+  "note": "tracker=wy7261z network=Organic eng=0001-01-01T00:00:00 installed=2026-09-27T13:54:47Z",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "tag": "C",
+  "status": 200,
+  "verdict": "FAIL(Organic)",
+  "note": "tracker=wy7261z network=Organic eng=0001-01-01T00:00:00 installed=2026-09-27T13:54:47Z",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "tag": "D",
+  "status": 200,
+  "verdict": "OTHER",
+  "note": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"eng",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}n"
+ },
+ {
+  "tag": "E",
+  "status": 200,
+  "verdict": "FAIL(Organic)",
+  "note": "tracker=wy7261z network=Organic eng=0001-01-01T00:00:00 installed=2026-09-27T13:54:47Z",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "tag": "E2",
+  "status": 200,
+  "verdict": "FAIL(Organic)",
+  "note": "tracker=wy7261z network=Organic eng=0001-01-01T00:00:00 installed=2026-09-27T13:54:47Z",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "tag": "B2",
+  "status": 200,
+  "verdict": "FAIL(Organic)",
+  "note": "tracker=wy7261z network=Organic eng=0001-01-01T00:00:00 installed=2026-09-27T13:54:47Z",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "tag": "C2",
+  "status": 200,
+  "verdict": "FAIL(Organic)",
+  "note": "tracker=wy7261z network=Organic eng=0001-01-01T00:00:00 installed=2026-09-27T13:54:47Z",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "tag": "B3",
+  "status": 200,
+  "verdict": "FAIL(Organic)",
+  "note": "tracker=wy7261z network=Organic eng=0001-01-01T00:00:00 installed=2026-09-27T13:54:47Z",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "tag": "B4",
+  "status": 200,
+  "verdict": "FAIL(Organic)",
+  "note": "tracker=wy7261z network=Organic eng=0001-01-01T00:00:00 installed=2026-09-27T13:54:47Z",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "tag": "B5",
+  "status": 200,
+  "verdict": "FAIL(Organic)",
+  "note": "tracker=wy7261z network=Organic eng=0001-01-01T00:00:00 installed=2026-09-27T13:54:47Z",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "tag": "C3",
+  "status": 200,
+  "verdict": "FAIL(Organic)",
+  "note": "tracker=wy7261z network=Organic eng=0001-01-01T00:00:00 installed=2026-09-27T13:54:47Z",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "tag": "A2",
+  "status": 200,
+  "verdict": "FAIL(Organic)",
+  "note": "tracker=wy7261z network=Organic eng=0001-01-01T00:00:00 installed=2026-09-27T13:54:47Z",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "tag": "FLIP",
+  "status": 200,
+  "verdict": "FAIL(Organic)",
+  "note": "tracker=wy7261z network=Organic eng=0001-01-01T00:00:00 installed=2026-09-27T13:54:47Z",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "tag": "NOAUTH",
+  "status": 200,
+  "verdict": "FAIL(Organic)",
+  "note": "tracker=wy7261z network=Organic eng=0001-01-01T00:00:00 installed=2026-09-27T13:54:47Z",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T13:54:47Z\",\"first_session_time\":\"2026-09-27T13:54:47Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ }
+]

@@ -1,0 +1,20 @@
+{
+ "sec": 1789554477,
+ "sends": [
+  {
+   "i": 1,
+   "st": 200,
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"3a5efd0a54df7340003cf225da23ec8f\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-08T12:07:28Z\",\"first_session_time\":\"2026-09-08T12:07:28Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+  },
+  {
+   "i": 2,
+   "st": 200,
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"3a5efd0a54df7340003cf225da23ec8f\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-08T12:07:28Z\",\"first_session_time\":\"2026-09-08T12:07:28Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+  },
+  {
+   "i": 3,
+   "st": 200,
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"3a5efd0a54df7340003cf225da23ec8f\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-08T12:07:28Z\",\"first_session_time\":\"2026-09-08T12:07:28Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+  }
+ ]
+}

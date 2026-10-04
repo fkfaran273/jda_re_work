@@ -1,0 +1,36 @@
+--- 
++++ 
+@@ -17,13 +17,10 @@
+ return-void
+----- METHOD public static synthetic access$000 (Lcom/adjust/sdk/scheduler/TimerOnce;)Ljava/lang/String; ----
+-iget-object vX, vX, Lcom/adjust/sdk/scheduler/TimerOnce;->name Ljava/lang/String;
++---- METHOD public static bridge synthetic a (Lcom/adjust/sdk/scheduler/TimerOnce;)Ljava/lang/Runnable; ----
++iget-object vX, vX, Lcom/adjust/sdk/scheduler/TimerOnce;->command Ljava/lang/Runnable;
+ return-object vX
+----- METHOD public static synthetic access$100 (Lcom/adjust/sdk/scheduler/TimerOnce;)Lcom/adjust/sdk/ILogger; ----
++---- METHOD public static bridge synthetic b (Lcom/adjust/sdk/scheduler/TimerOnce;)Lcom/adjust/sdk/ILogger; ----
+ iget-object vX, vX, Lcom/adjust/sdk/scheduler/TimerOnce;->logger Lcom/adjust/sdk/ILogger;
+ return-object vX
+----- METHOD public static synthetic access$200 (Lcom/adjust/sdk/scheduler/TimerOnce;)Ljava/lang/Runnable; ----
+-iget-object vX, vX, Lcom/adjust/sdk/scheduler/TimerOnce;->command Ljava/lang/Runnable;
+-return-object vX
+----- METHOD public static synthetic access$302 (Lcom/adjust/sdk/scheduler/TimerOnce; Ljava/util/concurrent/ScheduledFuture;)Ljava/util/concurrent/ScheduledFuture; ----
+-iput-object vX, vX, Lcom/adjust/sdk/scheduler/TimerOnce;->waitingTask Ljava/util/concurrent/ScheduledFuture;
++---- METHOD public static bridge synthetic c (Lcom/adjust/sdk/scheduler/TimerOnce;)Ljava/lang/String; ----
++iget-object vX, vX, Lcom/adjust/sdk/scheduler/TimerOnce;->name Ljava/lang/String;
+ return-object vX
+@@ -41,2 +38,6 @@
+ invoke-interface vX, vX, vX, Lcom/adjust/sdk/ILogger;->verbose(Ljava/lang/String; [Ljava/lang/Object;)V
++return-void
++---- METHOD public static bridge synthetic d (Lcom/adjust/sdk/scheduler/TimerOnce;)V ----
++const/4 vX, 0
++iput-object vX, vX, Lcom/adjust/sdk/scheduler/TimerOnce;->waitingTask Ljava/util/concurrent/ScheduledFuture;
+ return-void
+@@ -71,4 +72,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/scheduler/TimerOnce;->scheduler Lcom/adjust/sdk/scheduler/FutureScheduler;
+-new-instance vX, Lcom/adjust/sdk/scheduler/TimerOnce$1;
+-invoke-direct vX, vX, Lcom/adjust/sdk/scheduler/TimerOnce$1;-><init>(Lcom/adjust/sdk/scheduler/TimerOnce;)V
++new-instance vX, LB0/b;
++const/16 vX, 24
++invoke-direct vX, vX, vX, LB0/b;-><init>(Ljava/lang/Object; I)V
+ invoke-interface vX, vX, vX, vX, Lcom/adjust/sdk/scheduler/FutureScheduler;->scheduleFuture(Ljava/lang/Runnable; J)Ljava/util/concurrent/ScheduledFuture;

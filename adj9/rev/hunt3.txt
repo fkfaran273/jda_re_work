@@ -1,0 +1,33 @@
+is 0x9e778 a known callee? False ; 0x9e54c? False
+
+=== bl -> 0x9e778 (SetByteArrayRegion): 0 site(s) ===
+
+=== bl -> 0x9e54c (NewByteArray): 0 site(s) ===
+
+=== bl -> 0x9afa4 (?): 267 site(s) ===
+  0xa22c  [off]
+  0x19990  [off]
+  0x19b4c  [off]
+  0x1c9a0  [off]
+  0x23aa8  [off]
+  0x96204  [ON]
+  0x991d0  [off]
+  0x9aef8  [off]
+  0x9c6a4  [off]
+  0x9c910  [off]
+  0x9d068  [off]
+  0x9d214  [off]
+  0x9d378  [off]
+  0x9d854  [off]
+  0x9d8d4  [off]
+  0x9dbf4  [off]
+
+=== refs to 0x1536d2  64-hex blob (32B hex-decoded?) : 0 ===
+
+=== refs to 0x3620  .rodata+0xc0 0123456789abcdeffedcba9876543210 : 0 ===
+
+=== refs to 0x3640  .rodata+0xe0 f0e1d2c3 9979825a a1ebd96e dcbc1b8f : 0 ===
+
+=== refs to 0x3660  .rodata+0x100 'SHA-256' : 0 ===
+
+=== refs to 0x3668  .rodata+0x108 '/system/lib64/libart.so' : 0 ===

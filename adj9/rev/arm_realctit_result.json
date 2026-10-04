@@ -1,0 +1,30 @@
+{
+ "arm": "real-CTIT transport (python mint, device egress)",
+ "note": "arm_transport2 used a bogus 217s CTIT; the real g42 win is ~5-6s click->install. This sweeps the true timing.",
+ "runs": [
+  {
+   "ctit": 6.0,
+   "gps": "da64a836-c5bd-4412-97e5-810d244b7ed8",
+   "auid": "68ee8600-0391-40a6-aed3-19523641ed86",
+   "session": [
+    200,
+    "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"a76141c05afeb48134b9b89fc182db6f\",\"ask_in\":2000}\r\n"
+   ],
+   "sdk_click": [
+    200,
+    "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"a76141c05afeb48134b9b89fc182db6f\"}\r\n"
+   ],
+   "verdict": {
+    "tracker_token": "wy7261z",
+    "tracker_name": "Organic",
+    "network": "Organic",
+    "engagement_time": "0001-01-01T00:00:00Z",
+    "installed_at": "2026-09-24T11:27:04Z",
+    "first_session_time": "2026-09-24T11:27:04Z",
+    "is_reattributed": false,
+    "is_redownload_install": false
+   },
+   "JOINED": false
+  }
+ ]
+}

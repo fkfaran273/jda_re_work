@@ -1,0 +1,46 @@
+# CLASS Lcom/adjust/sdk/TrackingState;
+FIELD private static final synthetic $VALUES [Lcom/adjust/sdk/TrackingState;
+FIELD public static final enum OPTED_OUT Lcom/adjust/sdk/TrackingState;
+FIELD private value I
+
+---- METHOD private static synthetic $values ()[Lcom/adjust/sdk/TrackingState; ----
+  sget-object            v0, Lcom/adjust/sdk/TrackingState;->OPTED_OUT Lcom/adjust/sdk/TrackingState;
+  filled-new-array       v0, [Lcom/adjust/sdk/TrackingState;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD static constructor <clinit> ()V ----
+  new-instance           v0, Lcom/adjust/sdk/TrackingState;
+  const/4                v1, 0
+  const/4                v2, 1
+  const-string           v3, "OPTED_OUT"
+  invoke-direct          v0, v3, v1, v2, Lcom/adjust/sdk/TrackingState;-><init>(Ljava/lang/String; I I)V
+  sput-object            v0, Lcom/adjust/sdk/TrackingState;->OPTED_OUT Lcom/adjust/sdk/TrackingState;
+  invoke-static          Lcom/adjust/sdk/TrackingState;->$values()[Lcom/adjust/sdk/TrackingState;
+  move-result-object     v0
+  sput-object            v0, Lcom/adjust/sdk/TrackingState;->$VALUES [Lcom/adjust/sdk/TrackingState;
+  return-void            
+
+---- METHOD private constructor <init> (Ljava/lang/String; I I)V ----
+  invoke-direct          v0, v1, v2, Ljava/lang/Enum;-><init>(Ljava/lang/String; I)V
+  iput                   v3, v0, Lcom/adjust/sdk/TrackingState;->value I
+  return-void            
+
+---- METHOD public static valueOf (Ljava/lang/String;)Lcom/adjust/sdk/TrackingState; ----
+  const-class            v0, Lcom/adjust/sdk/TrackingState;
+  invoke-static          v0, v1, Ljava/lang/Enum;->valueOf(Ljava/lang/Class; Ljava/lang/String;)Ljava/lang/Enum;
+  move-result-object     v1
+  check-cast             v1, Lcom/adjust/sdk/TrackingState;
+  return-object          v1
+
+---- METHOD public static values ()[Lcom/adjust/sdk/TrackingState; ----
+  sget-object            v0, Lcom/adjust/sdk/TrackingState;->$VALUES [Lcom/adjust/sdk/TrackingState;
+  invoke-virtual         v0, [Lcom/adjust/sdk/TrackingState;->clone()Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, [Lcom/adjust/sdk/TrackingState;
+  return-object          v0
+
+---- METHOD public getValue ()I ----
+  iget                   v0, v1, Lcom/adjust/sdk/TrackingState;->value I
+  return                 v0
+######################################################################

@@ -1,0 +1,68 @@
+[
+ {
+  "t": "sym",
+  "name": "HMAC_Init_ex",
+  "addr": "0x73a610011c"
+ },
+ {
+  "t": "hooked",
+  "name": "HMAC_Init_ex"
+ },
+ {
+  "t": "sym",
+  "name": "HMAC_Update",
+  "addr": "0x73a61003f8"
+ },
+ {
+  "t": "hooked",
+  "name": "HMAC_Update"
+ },
+ {
+  "t": "sym",
+  "name": "HMAC_Final",
+  "addr": "0x73a6100420"
+ },
+ {
+  "t": "hooked",
+  "name": "HMAC_Final"
+ },
+ {
+  "t": "sym",
+  "name": "EVP_DecryptInit_ex",
+  "addr": "0x73a60ed53c"
+ },
+ {
+  "t": "hooked",
+  "name": "EVP_DecryptInit_ex"
+ },
+ {
+  "t": "sym",
+  "name": "EVP_DecryptUpdate",
+  "addr": "0x73a60ed814"
+ },
+ {
+  "t": "hooked",
+  "name": "EVP_DecryptUpdate"
+ },
+ {
+  "t": "sym",
+  "name": "EVP_DigestUpdate",
+  "addr": "0x73a60f35dc"
+ },
+ {
+  "t": "hooked",
+  "name": "EVP_DigestUpdate"
+ },
+ {
+  "t": "sym",
+  "name": "EVP_DigestInit_ex",
+  "addr": "0x73a60f34bc"
+ },
+ {
+  "t": "hooked",
+  "name": "EVP_DigestInit_ex"
+ },
+ {
+  "t": "ready"
+ }
+]

@@ -1,0 +1,60 @@
+disassembling .text ...
+327541 insns
+
+=== code sites loading crypto/keystore strings ===
+
+*** init.ttVM_x86.rc                         data@0x1520d0     2 site(s),   2 on nSign path
+       0x25b8c [ON]
+       0x26e58 [ON]
+*** init.nox.rc                              data@0x152170     2 site(s),   2 on nSign path
+       0x26a68 [ON]
+       0x26eb0 [ON]
+*** /system/etc/init.microvirt.sh            data@0x1521e0     2 site(s),   2 on nSign path
+       0x274d8 [ON]
+       0x28464 [ON]
+*** init.svc.qemud                           data@0x152370     2 site(s),   2 on nSign path
+       0x31654 [ON]
+       0x31950 [ON]
+*** init.svc.qemu-adb-keys                   data@0x152c00     2 site(s),   2 on nSign path
+       0x36414 [ON]
+       0x396b4 [ON]
+*** init.svc.goldfish-setup                  data@0x152a60     2 site(s),   2 on nSign path
+       0x36870 [ON]
+       0x39830 [ON]
+*** ro.qemu.initrc                           data@0x152d28     2 site(s),   2 on nSign path
+       0x37508 [ON]
+       0x397b0 [ON]
+*** init.svc.qemu-props-bootcomplete         data@0x1529f0     2 site(s),   2 on nSign path
+       0x3772c [ON]
+       0x397c0 [ON]
+*** init.svc.ranchu-setup                    data@0x152d10     2 site(s),   2 on nSign path
+       0x37978 [ON]
+       0x39794 [ON]
+*** init.svc.ranchu-net                      data@0x152be0     2 site(s),   2 on nSign path
+       0x37e80 [ON]
+       0x39698 [ON]
+*** init.svc.qemu-adb-setup                  data@0x1527e0     2 site(s),   2 on nSign path
+       0x38950 [ON]
+       0x395d4 [ON]
+*** init.svc.qemu-props                      data@0x152ad0     2 site(s),   2 on nSign path
+       0x38ed4 [ON]
+       0x39884 [ON]
+*** init.svc.android-hardware-media-c2-goldf data@0x152c70     2 site(s),   2 on nSign path
+       0x393cc [ON]
+       0x39724 [ON]
+*** init.svc.goldfish-logcat                 data@0x1528c0     2 site(s),   2 on nSign path
+       0x39448 [ON]
+       0x3968c [ON]
+*** doFinal                                  data@0x153878     2 site(s),   2 on nSign path
+       0xa0d74 [ON]
+       0xb9564 [ON]
+*** ~Q[MPV[tZFlKPMZ?key2                     data@0x154810     2 site(s),   2 on nSign path
+       0xd82c8 [ON]
+       0xda2dc [ON]
+*** init.vbox86.rc                           data@0x152108     1 site(s),   1 on nSign path
+       0x2571c [ON]
+    Ed25519                                  data@0x153788     2 site(s),   0 on nSign path
+       0x96ca4 
+       0x96fbc 
+    generateKeyPair                          data@0x153b60     1 site(s),   0 on nSign path
+       0xa9c2c 

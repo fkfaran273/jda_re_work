@@ -1,0 +1,45 @@
+--- 
++++ 
+@@ -8,3 +8,3 @@
+ move-result-object vX
+-if-eq vX, vX, +04dh
++if-eq vX, vX, +04eh
+ invoke-virtual vX, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+@@ -14,4 +14,4 @@
+ invoke-virtual vX, vX, vX, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String; I)Landroid/content/pm/PackageInfo;
+-new-instance vX, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesConnection;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesConnection;-><init>(J)V
++new-instance vX, Lcom/adjust/sdk/Q;
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/Q;-><init>(J)V
+ new-instance vX, Landroid/content/Intent;
+@@ -25,10 +25,10 @@
+ if BRANCH
+-new-instance vX, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesInterface;
+-invoke-virtual vX, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesConnection;->a()Landroid/os/IBinder;
++new-instance vX, Lcom/adjust/sdk/S;
++invoke-virtual vX, Lcom/adjust/sdk/Q;->a()Landroid/os/IBinder;
+ move-result-object vX
+-invoke-direct vX, vX, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesInterface;-><init>(Landroid/os/IBinder;)V
++invoke-direct vX, vX, Lcom/adjust/sdk/S;-><init>(Landroid/os/IBinder;)V
+ new-instance vX, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesInfo;
+-invoke-virtual vX, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesInterface;->a()Ljava/lang/String;
++invoke-virtual vX, Lcom/adjust/sdk/S;->d()Ljava/lang/String;
+ move-result-object vX
+-invoke-virtual vX, Lcom/adjust/sdk/GooglePlayServicesClient$GooglePlayServicesInterface;->b()Ljava/lang/Boolean;
++invoke-virtual vX, Lcom/adjust/sdk/S;->e()Ljava/lang/Boolean;
+ move-result-object vX
+@@ -43,8 +43,9 @@
+ throw vX
++new-instance vX, Ljava/io/IOException;
+ const-string "Google Play connection failed"
+-invoke-static vX, Lokhttp3/a;->z(Ljava/lang/String;)V
+-const/4 vX, 0
+-return-object vX
++invoke-direct vX, vX, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
++throw vX
++new-instance vX, Ljava/lang/IllegalStateException;
+ const-string "Google Play Services info can't be accessed from the main thread"
+-invoke-static vX, Lokhttp3/a;->D(Ljava/lang/String;)V
+-GOTO
++invoke-direct vX, vX, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
++throw vX

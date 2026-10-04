@@ -1,0 +1,351 @@
+# CLASS Lcom/adjust/sdk/PackageFactory;
+FIELD private static final Ljava/lang/String;
+
+---- METHOD public constructor <init>(()V)  ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public static buildDeeplinkSdkClickPackage((Landroid/net/Uri; Landroid/net/Uri; J Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/ActivityPackage;)  ----
+  const/4                v1, 0
+  if-nez                 v11, +003h
+  return-object          v1
+  invoke-virtual         v11, Landroid/net/Uri;->toString()Ljava/lang/String;
+  move-result-object     v2
+  if-eqz                 v2, +099h
+  invoke-virtual         v2, Ljava/lang/String;->length()I
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +091h
+  const-string           v0, "UTF-8"
+  invoke-static          v2, v0, Ljava/net/URLDecoder;->decode(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v2
+  goto                   +3ch
+  move-exception         v0
+  goto                   +5h
+  move-exception         v0
+  goto                   +15h
+  move-exception         v0
+  goto                   +25h
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  invoke-virtual         v0, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object     v0
+  filled-new-array       v0, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v4, "Deeplink url decoding failed. Message: (%s)"
+  invoke-interface       v3, v4, v0, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  goto                   +24h
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  invoke-virtual         v0, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object     v0
+  filled-new-array       v0, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v4, "Deeplink url decoding failed due to IllegalArgumentException. Message: (%s)"
+  invoke-interface       v3, v4, v0, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  goto                   +12h
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  invoke-virtual         v0, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object     v0
+  filled-new-array       v0, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v4, "Deeplink url decoding failed due to UnsupportedEncodingException. Message: (%s)"
+  invoke-interface       v3, v4, v0, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v0
+  filled-new-array       v2, [Ljava/lang/Object;
+  move-result-object     v3
+  const-string           v4, "Url to parse (%s)"
+  invoke-interface       v0, v4, v3, Lcom/adjust/sdk/ILogger;->verbose(Ljava/lang/String; [Ljava/lang/Object;)V
+  new-instance           v0, Landroid/net/UrlQuerySanitizer;
+  invoke-direct          v0, Landroid/net/UrlQuerySanitizer;-><init>()V
+  invoke-static          Landroid/net/UrlQuerySanitizer;->getAllButNulLegal()Landroid/net/UrlQuerySanitizer$ValueSanitizer;
+  move-result-object     v3
+  invoke-virtual         v0, v3, Landroid/net/UrlQuerySanitizer;->setUnregisteredParameterValueSanitizer(Landroid/net/UrlQuerySanitizer$ValueSanitizer;)V
+  const/4                v3, 1
+  invoke-virtual         v0, v3, Landroid/net/UrlQuerySanitizer;->setAllowUnregisteredParamaters(Z)V
+  invoke-virtual         v0, v2, Landroid/net/UrlQuerySanitizer;->parseUrl(Ljava/lang/String;)V
+  invoke-virtual         v0, Landroid/net/UrlQuerySanitizer;->getParameterList()Ljava/util/List;
+  move-result-object     v4
+  move-object            v5, v15
+  move-object/from16     v6, v16
+  move-object/from16     v7, v17
+  move-object/from16     v8, v18
+  move-object/from16     v9, v19
+  move-object/from16     v10, v20
+  invoke-static/range    v4 ... v10, Lcom/adjust/sdk/PackageFactory;->queryStringClickPackageBuilder(Ljava/util/List; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/PackageBuilder;
+  move-result-object     v15
+  if-nez                 v15, +003h
+  return-object          v1
+  invoke-virtual         v11, Landroid/net/Uri;->toString()Ljava/lang/String;
+  move-result-object     v11
+  iput-object            v11, v15, Lcom/adjust/sdk/PackageBuilder;->deeplink Ljava/lang/String;
+  iput-wide              v13, v15, Lcom/adjust/sdk/PackageBuilder;->clickTimeInMilliseconds J
+  if-eqz                 v12, +008h
+  invoke-virtual         v12, Landroid/net/Uri;->toString()Ljava/lang/String;
+  move-result-object     v11
+  iput-object            v11, v15, Lcom/adjust/sdk/PackageBuilder;->referrer Ljava/lang/String;
+  const-string           v11, "deeplink"
+  invoke-virtual         v15, v11, Lcom/adjust/sdk/PackageBuilder;->buildClickPackage(Ljava/lang/String;)Lcom/adjust/sdk/ActivityPackage;
+  move-result-object     v11
+  return-object          v11
+  return-object          v1
+
+---- METHOD public static buildInstallReferrerSdkClickPackage((Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/ActivityPackage;)  ----
+  invoke-static          Ljava/lang/System;->currentTimeMillis()J
+  move-result-wide       v6
+  new-instance           v0, Lcom/adjust/sdk/PackageBuilder;
+  move-object            v3, v10
+  move-object            v1, v11
+  move-object            v2, v12
+  move-object            v4, v13
+  move-object            v5, v14
+  invoke-direct/range    v0 ... v7, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; J)V
+  iput-object            v15, v0, Lcom/adjust/sdk/PackageBuilder;->internalState Lcom/adjust/sdk/ActivityHandler$InternalState;
+  iget-object            v10, v8, Lcom/adjust/sdk/ReferrerDetails;->installReferrer Ljava/lang/String;
+  iput-object            v10, v0, Lcom/adjust/sdk/PackageBuilder;->referrer Ljava/lang/String;
+  iget-wide              v10, v8, Lcom/adjust/sdk/ReferrerDetails;->referrerClickTimestampSeconds J
+  iput-wide              v10, v0, Lcom/adjust/sdk/PackageBuilder;->clickTimeInSeconds J
+  iget-wide              v10, v8, Lcom/adjust/sdk/ReferrerDetails;->installBeginTimestampSeconds J
+  iput-wide              v10, v0, Lcom/adjust/sdk/PackageBuilder;->installBeginTimeInSeconds J
+  iget-wide              v10, v8, Lcom/adjust/sdk/ReferrerDetails;->referrerClickTimestampServerSeconds J
+  iput-wide              v10, v0, Lcom/adjust/sdk/PackageBuilder;->clickTimeServerInSeconds J
+  iget-wide              v10, v8, Lcom/adjust/sdk/ReferrerDetails;->installBeginTimestampServerSeconds J
+  iput-wide              v10, v0, Lcom/adjust/sdk/PackageBuilder;->installBeginTimeServerInSeconds J
+  iget-object            v10, v8, Lcom/adjust/sdk/ReferrerDetails;->installVersion Ljava/lang/String;
+  iput-object            v10, v0, Lcom/adjust/sdk/PackageBuilder;->installVersion Ljava/lang/String;
+  iget-object            v10, v8, Lcom/adjust/sdk/ReferrerDetails;->googlePlayInstant Ljava/lang/Boolean;
+  iput-object            v10, v0, Lcom/adjust/sdk/PackageBuilder;->googlePlayInstant Ljava/lang/Boolean;
+  iget-object            v8, v8, Lcom/adjust/sdk/ReferrerDetails;->isClick Ljava/lang/Boolean;
+  iput-object            v8, v0, Lcom/adjust/sdk/PackageBuilder;->isClick Ljava/lang/Boolean;
+  iput-object            v9, v0, Lcom/adjust/sdk/PackageBuilder;->referrerApi Ljava/lang/String;
+  const-string           v8, "install_referrer"
+  invoke-virtual         v0, v8, Lcom/adjust/sdk/PackageBuilder;->buildClickPackage(Ljava/lang/String;)Lcom/adjust/sdk/ActivityPackage;
+  move-result-object     v8
+  return-object          v8
+
+---- METHOD public static buildLicenseVerificationSdkClickPackage((Lcom/adjust/sdk/LicenseData; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/ActivityPackage;)  ----
+  invoke-static          Ljava/lang/System;->currentTimeMillis()J
+  move-result-wide       v6
+  new-instance           v0, Lcom/adjust/sdk/PackageBuilder;
+  move-object            v3, v9
+  move-object            v1, v10
+  move-object            v2, v11
+  move-object            v4, v12
+  move-object            v5, v13
+  invoke-direct/range    v0 ... v7, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; J)V
+  iput-object            v14, v0, Lcom/adjust/sdk/PackageBuilder;->internalState Lcom/adjust/sdk/ActivityHandler$InternalState;
+  iput-object            v8, v0, Lcom/adjust/sdk/PackageBuilder;->licenseData Lcom/adjust/sdk/LicenseData;
+  const-string           v8, "google_lvl"
+  invoke-virtual         v0, v8, Lcom/adjust/sdk/PackageBuilder;->buildClickPackage(Ljava/lang/String;)Lcom/adjust/sdk/ActivityPackage;
+  move-result-object     v8
+  return-object          v8
+
+---- METHOD public static buildPreinstallSdkClickPackage((Ljava/lang/String; Ljava/lang/String; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager;)Lcom/adjust/sdk/ActivityPackage;)  ----
+  if-eqz                 v9, +022h
+  invoke-virtual         v9, Ljava/lang/String;->length()I
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +1ah
+  invoke-static          Ljava/lang/System;->currentTimeMillis()J
+  move-result-wide       v7
+  new-instance           v1, Lcom/adjust/sdk/PackageBuilder;
+  move-object            v4, v11
+  move-object            v2, v12
+  move-object            v3, v13
+  move-object            v5, v14
+  move-object            v6, v15
+  invoke-direct/range    v1 ... v8, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; J)V
+  iput-object            v9, v1, Lcom/adjust/sdk/PackageBuilder;->preinstallPayload Ljava/lang/String;
+  iput-object            v10, v1, Lcom/adjust/sdk/PackageBuilder;->preinstallLocation Ljava/lang/String;
+  const-string           v9, "preinstall"
+  invoke-virtual         v1, v9, Lcom/adjust/sdk/PackageBuilder;->buildClickPackage(Ljava/lang/String;)Lcom/adjust/sdk/ActivityPackage;
+  move-result-object     v9
+  return-object          v9
+  const/4                v9, 0
+  return-object          v9
+
+---- METHOD public static buildReftagSdkClickPackage((Ljava/lang/String; J Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/ActivityPackage;)  ----
+  const-string           v1, "malformed"
+  const/4                v2, 0
+  if-eqz                 v11, +08fh
+  invoke-virtual         v11, Ljava/lang/String;->length()I
+  move-result            v0
+  if-nez                 v0, +004h
+  goto/16                +087h
+  const-string           v0, "UTF-8"
+  invoke-static          v11, v0, Ljava/net/URLDecoder;->decode(Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v1
+  goto                   +3ch
+  move-exception         v0
+  goto                   +5h
+  move-exception         v0
+  goto                   +15h
+  move-exception         v0
+  goto                   +25h
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  invoke-virtual         v0, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object     v0
+  filled-new-array       v0, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v4, "Referrer decoding failed. Message: (%s)"
+  invoke-interface       v3, v4, v0, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  goto                   +24h
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  invoke-virtual         v0, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object     v0
+  filled-new-array       v0, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v4, "Referrer decoding failed due to IllegalArgumentException. Message: (%s)"
+  invoke-interface       v3, v4, v0, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  goto                   +12h
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  invoke-virtual         v0, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object     v0
+  filled-new-array       v0, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v4, "Referrer decoding failed due to UnsupportedEncodingException. Message: (%s)"
+  invoke-interface       v3, v4, v0, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v0
+  filled-new-array       v1, [Ljava/lang/Object;
+  move-result-object     v3
+  const-string           v4, "Referrer to parse (%s)"
+  invoke-interface       v0, v4, v3, Lcom/adjust/sdk/ILogger;->verbose(Ljava/lang/String; [Ljava/lang/Object;)V
+  new-instance           v0, Landroid/net/UrlQuerySanitizer;
+  invoke-direct          v0, Landroid/net/UrlQuerySanitizer;-><init>()V
+  invoke-static          Landroid/net/UrlQuerySanitizer;->getAllButNulLegal()Landroid/net/UrlQuerySanitizer$ValueSanitizer;
+  move-result-object     v3
+  invoke-virtual         v0, v3, Landroid/net/UrlQuerySanitizer;->setUnregisteredParameterValueSanitizer(Landroid/net/UrlQuerySanitizer$ValueSanitizer;)V
+  const/4                v3, 1
+  invoke-virtual         v0, v3, Landroid/net/UrlQuerySanitizer;->setAllowUnregisteredParamaters(Z)V
+  invoke-virtual         v0, v1, Landroid/net/UrlQuerySanitizer;->parseQuery(Ljava/lang/String;)V
+  invoke-virtual         v0, Landroid/net/UrlQuerySanitizer;->getParameterList()Ljava/util/List;
+  move-result-object     v4
+  move-object            v5, v14
+  move-object            v6, v15
+  move-object/from16     v7, v16
+  move-object/from16     v8, v17
+  move-object/from16     v9, v18
+  move-object/from16     v10, v19
+  invoke-static/range    v4 ... v10, Lcom/adjust/sdk/PackageFactory;->queryStringClickPackageBuilder(Ljava/util/List; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/PackageBuilder;
+  move-result-object     v14
+  if-nez                 v14, +003h
+  return-object          v2
+  iput-object            v1, v14, Lcom/adjust/sdk/PackageBuilder;->referrer Ljava/lang/String;
+  iput-wide              v12, v14, Lcom/adjust/sdk/PackageBuilder;->clickTimeInMilliseconds J
+  iput-object            v11, v14, Lcom/adjust/sdk/PackageBuilder;->rawReferrer Ljava/lang/String;
+  const-string/jumbo     v11, reftag
+  invoke-virtual         v14, v11, Lcom/adjust/sdk/PackageBuilder;->buildClickPackage(Ljava/lang/String;)Lcom/adjust/sdk/ActivityPackage;
+  move-result-object     v11
+  return-object          v11
+  return-object          v2
+
+---- METHOD private static queryStringClickPackageBuilder((Ljava/util/List; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; Lcom/adjust/sdk/ActivityHandler$InternalState;)Lcom/adjust/sdk/PackageBuilder;)  ----
+  if-nez                 v11, +004h
+  const/4                v0, 0
+  return-object          v0
+  new-instance           v8, Ljava/util/LinkedHashMap;
+  invoke-direct          v8, Ljava/util/LinkedHashMap;-><init>()V
+  new-instance           v9, Lcom/adjust/sdk/AdjustAttribution;
+  invoke-direct          v9, Lcom/adjust/sdk/AdjustAttribution;-><init>()V
+  invoke-interface       v11, Ljava/util/List;->iterator()Ljava/util/Iterator;
+  move-result-object     v0
+  invoke-interface       v0, Ljava/util/Iterator;->hasNext()Z
+  move-result            v1
+  if-eqz                 v1, +010h
+  invoke-interface       v0, Ljava/util/Iterator;->next()Ljava/lang/Object;
+  move-result-object     v1
+  check-cast             v1, Landroid/net/UrlQuerySanitizer$ParameterValuePair;
+  iget-object            v2, v1, Landroid/net/UrlQuerySanitizer$ParameterValuePair;->mParameter Ljava/lang/String;
+  iget-object            v1, v1, Landroid/net/UrlQuerySanitizer$ParameterValuePair;->mValue Ljava/lang/String;
+  invoke-static          v2, v1, v8, v9, Lcom/adjust/sdk/PackageFactory;->readQueryString(Ljava/lang/String; Ljava/lang/String; Ljava/util/Map; Lcom/adjust/sdk/AdjustAttribution;)Z
+  goto                   -13h
+  invoke-static          Ljava/lang/System;->currentTimeMillis()J
+  move-result-wide       v6
+  const-string/jumbo     v0, reftag
+  invoke-interface       v8, v0, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  move-object            v10, v0
+  check-cast             v10, Ljava/lang/String;
+  if-eqz                 v12, +008h
+  iget-wide              v0, v12, Lcom/adjust/sdk/ActivityState;->lastActivity J
+  sub-long               v0, v6, v0
+  iput-wide              v0, v12, Lcom/adjust/sdk/ActivityState;->lastInterval J
+  new-instance           v0, Lcom/adjust/sdk/PackageBuilder;
+  move-object            v3, v12
+  move-object            v1, v13
+  move-object            v2, v14
+  move-object            v4, v15
+  move-object/from16     v5, v16
+  invoke-direct/range    v0 ... v7, Lcom/adjust/sdk/PackageBuilder;-><init>(Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; J)V
+  move-object            v1, v0
+  move-object/from16     v0, v17
+  iput-object            v0, v1, Lcom/adjust/sdk/PackageBuilder;->internalState Lcom/adjust/sdk/ActivityHandler$InternalState;
+  iput-object            v8, v1, Lcom/adjust/sdk/PackageBuilder;->extraParameters Ljava/util/Map;
+  iput-object            v9, v1, Lcom/adjust/sdk/PackageBuilder;->attribution Lcom/adjust/sdk/AdjustAttribution;
+  iput-object            v10, v1, Lcom/adjust/sdk/PackageBuilder;->reftag Ljava/lang/String;
+  return-object          v1
+
+---- METHOD private static readQueryString((Ljava/lang/String; Ljava/lang/String; Ljava/util/Map; Lcom/adjust/sdk/AdjustAttribution;)Z)  ----
+  const/4                v0, 0
+  if-eqz                 v2, +02ch
+  if-nez                 v3, +003h
+  goto                   +28h
+  const-string           v1, "adjust_"
+  invoke-virtual         v2, v1, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+  move-result            v1
+  if-nez                 v1, +003h
+  return                 v0
+  const/4                v1, 7
+  invoke-virtual         v2, v1, Ljava/lang/String;->substring(I)Ljava/lang/String;
+  move-result-object     v2
+  invoke-virtual         v2, Ljava/lang/String;->length()I
+  move-result            v1
+  if-nez                 v1, +003h
+  return                 v0
+  invoke-virtual         v3, Ljava/lang/String;->length()I
+  move-result            v1
+  if-nez                 v1, +003h
+  return                 v0
+  invoke-static          v5, v2, v3, Lcom/adjust/sdk/PackageFactory;->tryToSetAttribution(Lcom/adjust/sdk/AdjustAttribution; Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v5
+  if-nez                 v5, +005h
+  invoke-interface       v4, v2, v3, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  const/4                v2, 1
+  return                 v2
+  return                 v0
+
+---- METHOD private static tryToSetAttribution((Lcom/adjust/sdk/AdjustAttribution; Ljava/lang/String; Ljava/lang/String;)Z)  ----
+  const-string/jumbo     v0, tracker
+  invoke-virtual         v3, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  const/4                v1, 1
+  if-eqz                 v0, +005h
+  iput-object            v4, v2, Lcom/adjust/sdk/AdjustAttribution;->trackerName Ljava/lang/String;
+  return                 v1
+  const-string           v0, "campaign"
+  invoke-virtual         v3, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-eqz                 v0, +005h
+  iput-object            v4, v2, Lcom/adjust/sdk/AdjustAttribution;->campaign Ljava/lang/String;
+  return                 v1
+  const-string           v0, "adgroup"
+  invoke-virtual         v3, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v0
+  if-eqz                 v0, +005h
+  iput-object            v4, v2, Lcom/adjust/sdk/AdjustAttribution;->adgroup Ljava/lang/String;
+  return                 v1
+  const-string           v0, "creative"
+  invoke-virtual         v3, v0, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v3
+  if-eqz                 v3, +005h
+  iput-object            v4, v2, Lcom/adjust/sdk/AdjustAttribution;->creative Ljava/lang/String;
+  return                 v1
+  const/4                v2, 0
+  return                 v2
+######################################################################

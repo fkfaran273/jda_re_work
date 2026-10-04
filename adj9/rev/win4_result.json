@@ -1,0 +1,107 @@
+[
+ {
+  "status": 400,
+  "token": "2fedfd3dfcc48e92aae70f3fd2e1608a",
+  "network": "?",
+  "eng": "?",
+  "tag": "R1"
+ },
+ {
+  "status": 400,
+  "token": "2fedfd3dfcc48e92aae70f3fd2e1608a",
+  "network": "?",
+  "eng": "?",
+  "tag": "R1b"
+ },
+ {
+  "status": 200,
+  "token": "wy7261z",
+  "network": "Organic",
+  "eng": "0001-01-01T00:00:00",
+  "tag": "R2"
+ },
+ {
+  "status": 200,
+  "token": "wy7261z",
+  "network": "Organic",
+  "eng": "0001-01-01T00:00:00",
+  "tag": "R3"
+ },
+ {
+  "status": 200,
+  "token": "wy7261z",
+  "network": "Organic",
+  "eng": "0001-01-01T00:00:00",
+  "tag": "R0"
+ },
+ {
+  "status": 400,
+  "token": "2fedfd3dfcc48e92aae70f3fd2e1608a",
+  "network": "?",
+  "eng": "?",
+  "tag": "R1"
+ },
+ {
+  "status": 400,
+  "token": "2fedfd3dfcc48e92aae70f3fd2e1608a",
+  "network": "?",
+  "eng": "?",
+  "tag": "R1b"
+ },
+ {
+  "status": 200,
+  "token": "wy7261z",
+  "network": "Organic",
+  "eng": "0001-01-01T00:00:00",
+  "tag": "R2"
+ },
+ {
+  "status": 200,
+  "token": "wy7261z",
+  "network": "Organic",
+  "eng": "0001-01-01T00:00:00",
+  "tag": "R3"
+ },
+ {
+  "status": 200,
+  "token": "wy7261z",
+  "network": "Organic",
+  "eng": "0001-01-01T00:00:00",
+  "tag": "R0"
+ },
+ {
+  "status": 400,
+  "token": "2fedfd3dfcc48e92aae70f3fd2e1608a",
+  "network": "?",
+  "eng": "?",
+  "tag": "R1"
+ },
+ {
+  "status": 400,
+  "token": "2fedfd3dfcc48e92aae70f3fd2e1608a",
+  "network": "?",
+  "eng": "?",
+  "tag": "R1b"
+ },
+ {
+  "status": 200,
+  "token": "wy7261z",
+  "network": "Organic",
+  "eng": "0001-01-01T00:00:00",
+  "tag": "R2"
+ },
+ {
+  "status": 200,
+  "token": "wy7261z",
+  "network": "Organic",
+  "eng": "0001-01-01T00:00:00",
+  "tag": "R3"
+ },
+ {
+  "status": 200,
+  "token": "wy7261z",
+  "network": "Organic",
+  "eng": "0001-01-01T00:00:00",
+  "tag": "R0"
+ }
+]

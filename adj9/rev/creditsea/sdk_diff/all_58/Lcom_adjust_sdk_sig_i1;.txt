@@ -1,0 +1,18 @@
+# CLASS Lcom/adjust/sdk/sig/i1;
+FIELD public static final b Lcom/adjust/sdk/sig/h1;
+FIELD public final a Lcom/adjust/sdk/sig/l1;
+
+---- METHOD static constructor <clinit> ()V ----
+  new-instance           v0, Lcom/adjust/sdk/sig/h1;
+  invoke-direct          v0, Lcom/adjust/sdk/sig/h1;-><init>()V
+  sput-object            v0, Lcom/adjust/sdk/sig/i1;->b Lcom/adjust/sdk/sig/h1;
+  return-void            
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/sig/l1;)V ----
+  invoke-direct          v1, Ljava/lang/Object;-><init>()V
+  iput-object            v2, v1, Lcom/adjust/sdk/sig/i1;->a Lcom/adjust/sdk/sig/l1;
+  new-instance           v2, Ljava/util/concurrent/ConcurrentHashMap;
+  const/16               v0, 16
+  invoke-direct          v2, v0, Ljava/util/concurrent/ConcurrentHashMap;-><init>(I)V
+  return-void            
+######################################################################

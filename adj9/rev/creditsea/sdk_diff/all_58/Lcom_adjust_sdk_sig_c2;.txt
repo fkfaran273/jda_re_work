@@ -1,0 +1,9 @@
+# CLASS Lcom/adjust/sdk/sig/c2;
+FIELD public static final a [Lcom/adjust/sdk/sig/l2;
+
+---- METHOD static constructor <clinit> ()V ----
+  const/4                v0, 0
+  new-array              v0, v0, [Lcom/adjust/sdk/sig/l2;
+  sput-object            v0, Lcom/adjust/sdk/sig/c2;->a [Lcom/adjust/sdk/sig/l2;
+  return-void            
+######################################################################

@@ -1,0 +1,5 @@
+record_version           0x0303
+server_version           0x0303
+cipher                   0x1302 TLS_AES_256_GCM_SHA384
+extensions_order         ['supported_versions', 'key_share']
+tls_version_negotiated   0x0304

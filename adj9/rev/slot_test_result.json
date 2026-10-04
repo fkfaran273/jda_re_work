@@ -1,0 +1,29 @@
+{
+ "auid": "7aeed4a8-5f4b-43e6-b204-0869a1f8594a",
+ "runs": [
+  {
+   "label": "A zeros #0 + random H",
+   "http": 200,
+   "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z",
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-14T12:23:08Z\",\"first_session_time\":\"2026-09-14T12:23:08Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+  },
+  {
+   "label": "B CAPTURED #0 + random H",
+   "http": 200,
+   "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z",
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-14T12:23:08Z\",\"first_session_time\":\"2026-09-14T12:23:08Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+  },
+  {
+   "label": "C zeros #0 + CAPTURED H",
+   "http": 200,
+   "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z",
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-14T12:23:08Z\",\"first_session_time\":\"2026-09-14T12:23:08Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+  },
+  {
+   "label": "D CAPTURED #0 + CAPTURED H",
+   "http": 200,
+   "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z",
+   "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-14T12:23:08Z\",\"first_session_time\":\"2026-09-14T12:23:08Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+  }
+ ]
+}

@@ -1,0 +1,283 @@
+{
+ "ts": 1790496055.7332385,
+ "synthetic": true,
+ "kind": "session",
+ "sdk": "android5.7.0",
+ "map": [
+  [
+   "store_name_from_system",
+   "com.android.vending"
+  ],
+  [
+   "gps_adid_attempt",
+   "1"
+  ],
+  [
+   "app_token",
+   "jut9tib0eeps"
+  ],
+  [
+   "wait_total",
+   "0.0"
+  ],
+  [
+   "device_type",
+   "phone"
+  ],
+  [
+   "gps_adid",
+   "f44b8d77-4c68-4990-9d02-7b1c821a42ce"
+  ],
+  [
+   "foreground",
+   "1"
+  ],
+  [
+   "connectivity_type",
+   "1"
+  ],
+  [
+   "needs_response_details",
+   "1"
+  ],
+  [
+   "cpu_type",
+   "arm64-v8a"
+  ],
+  [
+   "retry_count",
+   "0"
+  ],
+  [
+   "screen_size",
+   "normal"
+  ],
+  [
+   "screen_format",
+   "long"
+  ],
+  [
+   "last_error",
+   "0"
+  ],
+  [
+   "gps_adid_src",
+   "service"
+  ],
+  [
+   "wait_time",
+   "0.0"
+  ],
+  [
+   "first_error",
+   "0"
+  ],
+  [
+   "android_uuid",
+   "eedd7076-dde1-4c8d-89a6-94f41ff6337c"
+  ],
+  [
+   "offline_mode_enabled",
+   "0"
+  ],
+  [
+   "environment",
+   "production"
+  ],
+  [
+   "attribution_deeplink",
+   "1"
+  ],
+  [
+   "session_count",
+   "1"
+  ],
+  [
+   "package_name",
+   "com.penti.app"
+  ],
+  [
+   "initiating_package_name",
+   "com.android.vending"
+  ],
+  [
+   "os_name",
+   "android"
+  ],
+  [
+   "ui_mode",
+   "1"
+  ],
+  [
+   "enqueue_size",
+   "0"
+  ],
+  [
+   "tracking_enabled",
+   "1"
+  ],
+  [
+   "api_level",
+   "31"
+  ],
+  [
+   "os_version",
+   "12"
+  ],
+  [
+   "device_name",
+   "moto g42"
+  ],
+  [
+   "device_manufacturer",
+   "motorola"
+  ],
+  [
+   "hardware_name",
+   "S2SE32.28-28-4"
+  ],
+  [
+   "os_build",
+   "S2SE32.28-28-4"
+  ],
+  [
+   "app_version",
+   "3.13.9"
+  ],
+  [
+   "language",
+   "tr"
+  ],
+  [
+   "display_width",
+   "1080"
+  ],
+  [
+   "display_height",
+   "2237"
+  ],
+  [
+   "screen_density",
+   "high"
+  ],
+  [
+   "created_at",
+   "2026-09-24T17:16:46.928Z+0200"
+  ],
+  [
+   "sent_at",
+   "2026-09-24T17:16:46.942Z+0200"
+  ],
+  [
+   "installed_at",
+   "2026-09-24T17:16:47.431Z+0200"
+  ],
+  [
+   "updated_at",
+   "2026-09-24T17:16:47.431Z+0200"
+  ]
+ ],
+ "blob_hex": "7e5913f73fa9c81d0500ac595300bc2af483e665e3d51804d9358b40d0f692c8feb50c991aa027240038896c97aa5896d188a884b3b162717b58d12df9ce4503baf0376520bc0b01b85dc36ef867467aee4eda6015d8f5ee6af8579f7ed2ec5276eb96e081de4014ee889073a556a3b90810d12a2514c9ca90e1a58f4de4c449e3c7989f647e7345d3ab0a8bd2a14c5f06d8a6aff813300890a7422b73e0bb7636472ac6cf894cb60e68e2a5a37a4846aa3acaf2b59b8d029c150fd6056d05b2",
+ "paired_row": {
+  "sign_id": 9,
+  "second": 1790496006,
+  "S": 320739661,
+  "head": [
+   {
+    "w1": 43
+   },
+   {
+    "w1": 34
+   },
+   {
+    "w1": 37
+   },
+   {
+    "w1": 46
+   },
+   {
+    "w1": 68
+   }
+  ],
+  "d10_len": 360,
+  "d10_hex": "4b6c6341473263624141734b536c314b5669304647694a6244484d4965656464373037362d646465312d346338642d383961362d39346634316666363333376333316a7574397469623065657073332e31332e39323032362d30392d32345431373a31363a34362e3932385a2b303230306d6f746f2067343270686f6e6570726f64756374696f6e66343462386437372d346336382d343939302d396430322d376231633832316134326365736572766963655332534533322e32382d32382d34636f6d2e616e64726f69642e76656e64696e67323032362d30392d32345431373a31363a34372e3433315a2b303230305332534533322e32382d32382d34616e64726f69643132636f6d2e70656e74692e6170703135303030303031636f6d2e616e64726f69642e76656e64696e6731323032362d30392d32345431373a31363a34372e3433315a2b3032303073657373696f6e616e64726f6964352e372e303130352e302e30",
+  "desc": {
+   "0": {
+    "w0": 144,
+    "lenDwords": 36,
+    "length": 144,
+    "hex": "f99e5da3b5576b7935b0a757bfc31bfec5d057374fa32d2435b0a757bfc31bfec5d057374fa32d2435b0a757bfc31bfec5d057374fa32d2435b0a757bfc31bfec5d057374fa32d2435b0a757bfc31bfec5d057374fa32d2435b0a757bfc31bfec5d057374fa32d2435b0a757bfc31bfec5d057374fa32d2435b0a757bfc31bfec5d057374fa32d2435b0a757bfc31bfe"
+   },
+   "9": {
+    "w0": 20,
+    "lenDwords": 5,
+    "length": 20,
+    "hex": "fad0f10d60f93c17937b2f1eb6c09691ae7d74bd"
+   },
+   "8": {
+    "w0": 16,
+    "lenDwords": 4,
+    "length": 16,
+    "hex": "bffffffffffffd1f0007000000000000"
+   },
+   "4": {
+    "w0": 32,
+    "lenDwords": 8,
+    "length": 32,
+    "hex": "0400008010801c80100810981cc0540040e052e0088ac6baf0608a7318949da4"
+   },
+   "2": {
+    "w0": 4,
+    "lenDwords": 1,
+    "length": 4,
+    "hex": "4d191e13"
+   },
+   "7": {
+    "w0": 4,
+    "lenDwords": 1,
+    "length": 4,
+    "hex": "00000168"
+   },
+   "10": {
+    "w0": 360,
+    "lenDwords": 90,
+    "length": 360,
+    "hex": "4b6c6341473263624141734b536c314b5669304647694a6244484d4965656464373037362d646465312d346338642d383961362d39346634316666363333376333316a7574397469623065657073332e31332e39323032362d30392d32345431373a31363a34362e3932385a2b303230306d6f746f2067343270686f6e6570726f64756374696f6e66343462386437372d346336382d343939302d396430322d376231633832316134326365736572766963655332534533322e32382d32382d34636f6d2e616e64726f69642e76656e64696e67323032362d30392d32345431373a31363a34372e3433315a2b303230305332534533322e32382d32382d34616e64726f69643132636f6d2e70656e74692e6170703135303030303031636f6d2e616e64726f69642e76656e64696e6731323032362d30392d32345431373a31363a34372e3433315a2b3032303073657373696f6e616e64726f6964352e372e303130352e302e30"
+   },
+   "5": {
+    "w0": 4,
+    "lenDwords": 1,
+    "length": 4,
+    "hex": "00000000"
+   },
+   "1": {
+    "w0": 0,
+    "lenDwords": 0,
+    "length": 0,
+    "hex": ""
+   },
+   "6": {
+    "w0": 4,
+    "lenDwords": 1,
+    "length": 4,
+    "hex": "00000000"
+   },
+   "3": {
+    "w0": 0,
+    "lenDwords": 0,
+    "length": 0,
+    "hex": ""
+   }
+  }
+ },
+ "mint": {
+  "status": "exit-clean",
+  "steps": 9878275,
+  "second": 1790496006,
+  "stream": 365072220160,
+  "seed": 320739661,
+  "d2": 1293491731,
+  "desc10_padded": 360,
+  "desc10_unpadded": 360
+ }
+}

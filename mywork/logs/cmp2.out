@@ -1,0 +1,14 @@
+seed = 0x19d4c97e
+native post-head d0 from the REAL signer (113.6s):
+  d2 = 0x7ec9d419
+  d0 = 6886f92d ff16ddaf 2dce4a3f ba5ebe6c 4e0d4836 0d8c1f2c df549e2e 6e4ffded
+
+F.region head=F.HEAD_FIRST       d0=diff   bytes differing =  24/144
+F.region head=F.HEAD_RESIGN      d0=diff   bytes differing =  24/144
+F.region head=SYNTH_FIRST        d0=EXACT  bytes differing =   0/144
+F.region head=SYNTH_RESIGN       d0=diff   bytes differing =  22/144
+F.region head=SYNTH_RESIGN_ALT   d0=diff   bytes differing =  24/144
+F.region head=DEVICE_SELECTORS   d0=diff   bytes differing =  24/144
+F.region head=None               d0=diff   bytes differing =  24/144
+
+VERDICT: F.region reproduces the native d0 with: SYNTH_FIRST

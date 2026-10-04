@@ -1,0 +1,350 @@
+{
+ "generated": "2026-09-27",
+ "question": "true click claim order/set for adj9 (SDK 5.0.0), derived independently of desc10_law.py",
+ "verdict": "desc10_keys('click', {}) in adj9/rev/desc10_law.py (re-exported by adj9/rev/mint_pipeline.py line 51) is EXACTLY CORRECT: same 32 keys, same order, same optional push_token slot. The click claim law is NOT the cause of the click envelope mismatch.",
+ "true_click_claim_order": [
+  "adj_verification",
+  "android_uuid",
+  "api_level",
+  "app_token",
+  "app_version",
+  "created_at",
+  "device_name",
+  "device_type",
+  "environment",
+  "google_play_instant",
+  "gps_adid",
+  "gps_adid_src",
+  "hardware_name",
+  "installed_at",
+  "os_build",
+  "os_name",
+  "os_version",
+  "package_name",
+  "referrer",
+  "referrer_api",
+  "adj_signing_id",
+  "session_count",
+  "session_length",
+  "source",
+  "subsession_count",
+  "time_spent",
+  "tracking_enabled",
+  "updated_at",
+  "activity_kind",
+  "client_sdk",
+  "headers_id",
+  "native_version"
+ ],
+ "true_click_claim_order_with_push_token": [
+  "adj_verification",
+  "android_uuid",
+  "api_level",
+  "app_token",
+  "app_version",
+  "created_at",
+  "device_name",
+  "device_type",
+  "environment",
+  "google_play_instant",
+  "gps_adid",
+  "gps_adid_src",
+  "hardware_name",
+  "installed_at",
+  "os_build",
+  "os_name",
+  "os_version",
+  "package_name",
+  "push_token",
+  "referrer",
+  "referrer_api",
+  "adj_signing_id",
+  "session_count",
+  "session_length",
+  "source",
+  "subsession_count",
+  "time_spent",
+  "tracking_enabled",
+  "updated_at",
+  "activity_kind",
+  "client_sdk",
+  "headers_id",
+  "native_version"
+ ],
+ "counts": {
+  "click_claims_without_push_token": 32,
+  "click_claims_with_push_token": 33,
+  "map_lookups_observed_in_trace": 29,
+  "constants_injected_by_signer": 3
+ },
+ "comparison_vs_current_law": {
+  "law_source": "adj9/rev/desc10_law.py :: desc10_keys (imported at adj9/rev/mint_pipeline.py:51)",
+  "keys_only_in_truth": [],
+  "keys_only_in_law": [],
+  "order_difference": null,
+  "identical": true,
+  "notes": [
+   "desc10_law.py lines 17-20 describe push_token as a '143-char FCM token'; the observed value is 142 bytes. Placement in the law is correct, only the comment's length is off by one.",
+   "desc10_law.py line 23 CLICK_PROFILE = ['google_play_instant','referrer','referrer_api'] is confirmed exactly right: these are the only three click-specific profile claims.",
+   "desc10_law.py line 26-27 CLICK_TAIL = ['session_count','session_length','source','subsession_count','time_spent','tracking_enabled','updated_at'] is confirmed exactly right and in that sorted order.",
+   "Session-ONLY keys (store_name_from_system, initiating_package_name) are confirmed absent from click, and click-ONLY tail keys (session_length, time_spent, subsession_count, source) confirmed absent from session."
+  ]
+ },
+ "evidence": {
+  "PRIMARY_runtime_trace": {
+   "what": "The 'mapget' hook in the device captures records every Map/HashMap.get the signer performs, in order, with thread, receiver id, key and value. For a click signing this sequence is literally the claim-pulling order.",
+   "canonical_click_signing": "device/adj9_wh4.log lines 286385..286505, thread Adjust-pool-24-thread-1-SdkClickHandler/675, created_at=2026-09-12T21:15:11.762Z+0200",
+   "per_claim": [
+    {
+     "claim_index": 0,
+     "key": "adj_verification",
+     "value": "KlcAG2cbAAsKSl1KVi0FGiJbDHMI",
+     "source": "device/adj9_wh4.log : mapget block at line 286393"
+    },
+    {
+     "claim_index": 1,
+     "key": "android_uuid",
+     "value": "d773f47f-fc0e-4994-9cf7-7c3cf5bb6368",
+     "source": "device/adj9_wh4.log : mapget block at line 286397"
+    },
+    {
+     "claim_index": 2,
+     "key": "api_level",
+     "value": "31",
+     "source": "device/adj9_wh4.log : mapget block at line 286401"
+    },
+    {
+     "claim_index": 3,
+     "key": "app_token",
+     "value": "jut9tib0eeps",
+     "source": "device/adj9_wh4.log : mapget block at line 286405"
+    },
+    {
+     "claim_index": 4,
+     "key": "app_version",
+     "value": "3.13.9",
+     "source": "device/adj9_wh4.log : mapget block at line 286409"
+    },
+    {
+     "claim_index": 5,
+     "key": "created_at",
+     "value": "2026-09-12T21:15:11.762Z+0200",
+     "source": "device/adj9_wh4.log : mapget block at line 286413"
+    },
+    {
+     "claim_index": 6,
+     "key": "device_name",
+     "value": "moto g42",
+     "source": "device/adj9_wh4.log : mapget block at line 286417"
+    },
+    {
+     "claim_index": 7,
+     "key": "device_type",
+     "value": "phone",
+     "source": "device/adj9_wh4.log : mapget block at line 286421"
+    },
+    {
+     "claim_index": 8,
+     "key": "environment",
+     "value": "production",
+     "source": "device/adj9_wh4.log : mapget block at line 286425"
+    },
+    {
+     "claim_index": 9,
+     "key": "google_play_instant",
+     "value": "0",
+     "source": "device/adj9_wh4.log : mapget block at line 286429"
+    },
+    {
+     "claim_index": 10,
+     "key": "gps_adid",
+     "value": "f476b3d4-e0b1-4707-bc43-6153d17f7f8c",
+     "source": "device/adj9_wh4.log : mapget block at line 286433"
+    },
+    {
+     "claim_index": 11,
+     "key": "gps_adid_src",
+     "value": "service",
+     "source": "device/adj9_wh4.log : mapget block at line 286437"
+    },
+    {
+     "claim_index": 12,
+     "key": "hardware_name",
+     "value": "S2SE32.28-28-4",
+     "source": "device/adj9_wh4.log : mapget block at line 286441"
+    },
+    {
+     "claim_index": 13,
+     "key": "installed_at",
+     "value": "2026-09-08T12:20:49.782Z+0200",
+     "source": "device/adj9_wh4.log : mapget block at line 286445"
+    },
+    {
+     "claim_index": 14,
+     "key": "os_build",
+     "value": "S2SE32.28-28-4",
+     "source": "device/adj9_wh4.log : mapget block at line 286449"
+    },
+    {
+     "claim_index": 15,
+     "key": "os_name",
+     "value": "android",
+     "source": "device/adj9_wh4.log : mapget block at line 286453"
+    },
+    {
+     "claim_index": 16,
+     "key": "os_version",
+     "value": "12",
+     "source": "device/adj9_wh4.log : mapget block at line 286457"
+    },
+    {
+     "claim_index": 17,
+     "key": "package_name",
+     "value": "com.penti.app",
+     "source": "device/adj9_wh4.log : mapget block at line 286461"
+    },
+    {
+     "claim_index": 18,
+     "key": "referrer",
+     "value": "utm_source=google-play&utm_medium=organic",
+     "source": "device/adj9_wh4.log : mapget block at line 286465"
+    },
+    {
+     "claim_index": 19,
+     "key": "referrer_api",
+     "value": "google",
+     "source": "device/adj9_wh4.log : mapget block at line 286469"
+    },
+    {
+     "claim_index": 20,
+     "key": "session_count",
+     "value": "1",
+     "source": "device/adj9_wh4.log : mapget block at line 286473"
+    },
+    {
+     "claim_index": 21,
+     "key": "session_length",
+     "value": "0",
+     "source": "device/adj9_wh4.log : mapget block at line 286477"
+    },
+    {
+     "claim_index": 22,
+     "key": "source",
+     "value": "install_referrer",
+     "source": "device/adj9_wh4.log : mapget block at line 286481"
+    },
+    {
+     "claim_index": 23,
+     "key": "subsession_count",
+     "value": "1",
+     "source": "device/adj9_wh4.log : mapget block at line 286485"
+    },
+    {
+     "claim_index": 24,
+     "key": "time_spent",
+     "value": "0",
+     "source": "device/adj9_wh4.log : mapget block at line 286489"
+    },
+    {
+     "claim_index": 25,
+     "key": "tracking_enabled",
+     "value": "1",
+     "source": "device/adj9_wh4.log : mapget block at line 286493"
+    },
+    {
+     "claim_index": 26,
+     "key": "updated_at",
+     "value": "2026-09-10T07:26:18.015Z+0200",
+     "source": "device/adj9_wh4.log : mapget block at line 286497"
+    },
+    {
+     "claim_index": 27,
+     "key": "activity_kind",
+     "value": "click",
+     "source": "device/adj9_wh4.log : mapget block at line 286501"
+    },
+    {
+     "claim_index": 28,
+     "key": "client_sdk",
+     "value": "android5.7.0",
+     "source": "device/adj9_wh4.log : mapget block at line 286505"
+    },
+    {
+     "claim_index": 20,
+     "key": "adj_signing_id",
+     "source": "NOT a map lookup - constant injected by the signer, no mapget trace"
+    },
+    {
+     "claim_index": 30,
+     "key": "headers_id",
+     "source": "NOT a map lookup - constant injected by the signer, no mapget trace"
+    },
+    {
+     "claim_index": 31,
+     "key": "native_version",
+     "source": "NOT a map lookup - constant injected by the signer, no mapget trace"
+    }
+   ],
+   "push_token_variant": "device/adj9_wh.log lines 3114316..3115600, thread Adjust-pool-22-thread-1-SdkClickHandler/27021: 30-key order with push_token between package_name and referrer",
+   "population": {
+    "exact_law_order_click_29key_windows": 68,
+    "exact_law_order_click_30key_push_token_windows": 97,
+    "exact_law_order_session_24key_windows": 638,
+    "non_conforming_variants_found": 0,
+    "logs_scanned": [
+     "device/adj9_wh.log",
+     "device/adj9_wh2.log",
+     "device/adj9_wh4.log"
+    ]
+   }
+  },
+  "BYTE_EXACT_proof": [
+   {
+    "genuine": "all_signings.json[8]  ev=22272  d7=0x00000183 (387)  d10=388 B",
+    "built_with_law_len": 387,
+    "unpadded_equal": true,
+    "padded_equal": true,
+    "source_map": "device/adj9_wh4.log:286385..286505"
+   },
+   {
+    "genuine": "all_signings.json[3]  ev=23770  d7=0x00000211 (529)  d10=532 B",
+    "built_with_law_len": 529,
+    "unpadded_equal": true,
+    "padded_equal": true,
+    "source_map": "reconstructed from the adj9_wh4.log:286385 map (identical device/session values) plus the only two differing values read out of the genuine payload (android_uuid=171861b2-33bd-436e-9c52-5427ab41d565, created_at=2026-09-12T21:03:20.204Z+0200) plus push_token"
+   }
+  ],
+  "sign_input_map_crosscheck": {
+   "file": "device/adj9_capture_full.log",
+   "line": 2991,
+   "activity_kind": "click",
+   "map_size": 49,
+   "note": "The click sign_input map carries 49 keys: session extras store_name_from_system / initiating_package_name are absent, click extras session_length / time_spent / subsession_count / source / google_play_instant / referrer / referrer_api are present. Its map_order field is Java HashMap iteration order and is NOT the claim order."
+  }
+ },
+ "size_388_vs_532": {
+  "unpadded_ev22272": 387,
+  "padded_ev22272": 388,
+  "nul_pad_ev22272": 1,
+  "unpadded_ev23770": 529,
+  "padded_ev23770": 532,
+  "nul_pad_ev23770": 3,
+  "explanation": "The only structural difference is the optional push_token claim, inserted in sorted position between package_name and referrer. Its value is 142 bytes: 529 - 387 = 142 exactly. Padding then differs because 387 needs 1 NUL to reach 388 while 529 needs 3 NULs to reach 532, which adds 2 more bytes. 142 + 2 = 144 = 532 - 388.",
+  "push_token_value_len": 142,
+  "corroboration": "session payloads show the same 142-byte delta: all_signings.json[0] has d7=0x1f6 (502) and d10=504 B, all_signings.json[4] has d7=0x168 (360) and d10=360 B; 502-360 = 142."
+ },
+ "ev_number_correction": {
+  "note": "The brief listed ev=28663 among the clicks. In adj9/rev/all_signings.json the record with ev=28663 (index 9) is a SESSION, not a click: d7=0x00000168 (360) and the payload ends with 1500000 / com.android.vending / 1 / <updated_at> / session / android5.7.0 / 10 / 5.0.0. It matches the session sign_input at device/adj9_wh4.log:286212 (created_at=2026-09-12T21:15:11.678Z+0200). The genuine CLICK records in all_signings.json are ev=22272 (index 8) and ev=23770 (index 3)."
+ },
+ "native_library_finding": {
+  "conclusion": "The claim order is NOT encoded in any of the four native signer libraries, so it cannot be recovered by disassembling sig335/367/500/550.aar.so.",
+  "evidence": "Byte-substring scan of the full files extracted/_ref/sig335.aar.so, sig367.aar.so, sig500.aar.so and sig550.aar.so finds ZERO occurrences of any of the 35 claim-key strings (adj_verification, android_uuid, api_level, app_token, app_version, created_at, device_name, device_type, environment, google_play_instant, gps_adid, gps_adid_src, hardware_name, installed_at, os_build, os_name, os_version, package_name, push_token, referrer, referrer_api, session_count, session_length, source, subsession_count, time_spent, tracking_enabled, updated_at, activity_kind, client_sdk, headers_id, native_version, adj_signing_id, initiating_package_name, store_name_from_system, initiated_by).",
+  "where_the_order_comes_from": "com/adjust/sdk/sig/u2 (classes.jar inside sig500.aar, extracted to extracted/_ref/u2.class) builds a java.util.LinkedHashMap and passes it to the native signer. Its only key literals are adj_signing_id, headers_id, algorithm, native_version, adj_verification, activity_kind, client_sdk. The 29 profile+tail keys are pulled out of the ActivityPackage HashMap in sorted order at runtime, which is exactly what the mapget trace records. u2.class contains only 5 of the 35 key names, so the selection is done against the map, not a static table."
+ },
+ "could_not_determine": [
+  "Conditional branches for click variants not exercised on this device: a click with no referrer (sideloaded install), no referrer_api, or google_play_instant absent. All 165 observed click signings had all three present. Their sorted-position placement follows from the law, but no direct evidence exists for a missing-key case in this capture set.",
+  "Behaviour when push_token is present but empty/null (the law drops it; unverified).",
+  "The exact native code path that implements the sort. It is not string-table driven and was not disassembled further.",
+  "The ev=23770 click's own sign_input map is not present in any capture log on disk (searched every device/*.log for created_at=2026-09-12T21:03:20.204Z+0200, no hit); its payload was instead reconstructed via byte-exact prefix/suffix alignment, which is sufficient because the alignment isolates the only three differing regions (android_uuid, created_at, and the inserted push_token)."
+ ]
+}

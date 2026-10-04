@@ -1,0 +1,41 @@
+{
+ "start_gaid": "d016e7e4-fb1c-4d0a-b619-db01f6a6a262",
+ "runs": [
+  {
+   "variant": 1,
+   "style": "both",
+   "marker": "cline_w1",
+   "gaid_set": "70ebe5ee-073d-4510-8747-b02e0b445b20",
+   "gaid_readback": "70ebe5ee-073d-4510-8747-b02e0b445b20",
+   "click_http": 302,
+   "referrer": "adjust_reftag=clDcZM9uNPxtf&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=cline_w1",
+   "t_click": 1789467458,
+   "attribution": "{\"tracker_token\":\"24xo21wl\",\"tracker_name\":\"VKM Digital Yeni::AH::vkm_0926_36::cline_w1\",\"network\":\"VKM Digital Yeni\",\"campaign\":\"AH\",\"adgroup\":\"vkm_0926_36\",\"creative\":\"cline_w1\",\"engagement_time\":\"2026-09-15T10:17:38Z\",\"installed_at\":\"2026-09-15T10:17:45Z\",\"first_session_time\":\"2026-09-15T10:17:45Z\",\"is_reattributed\":false,\"is_redownload_install\":false}t\u0000\u0010VKM Digital Yenit\u0000+VKM Digital Yeni::AH::vkm_0926_36::cline_w1t\u0000\b24xo21wlx",
+   "our_click_joined": true
+  },
+  {
+   "variant": 2,
+   "style": "idfa",
+   "marker": "cline_w2",
+   "gaid_set": "91ee19db-7ccd-45c2-be88-9e11efe64427",
+   "gaid_readback": "91ee19db-7ccd-45c2-be88-9e11efe64427",
+   "click_http": 302,
+   "referrer": "adjust_reftag=cQrztvUDhgLZI&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=cline_w2",
+   "t_click": 1789467480,
+   "attribution": "{\"tracker_token\":\"24bvw9fq\",\"tracker_name\":\"VKM Digital Yeni::AH::vkm_0926_36::cline_w2\",\"network\":\"VKM Digital Yeni\",\"campaign\":\"AH\",\"adgroup\":\"vkm_0926_36\",\"creative\":\"cline_w2\",\"engagement_time\":\"2026-09-15T10:18:01Z\",\"installed_at\":\"2026-09-15T10:18:07Z\",\"first_session_time\":\"2026-09-15T10:18:07Z\",\"is_reattributed\":false,\"is_redownload_install\":false}t\u0000\u0010VKM Digital Yenit\u0000+VKM Digital Yeni::AH::vkm_0926_36::cline_w2t\u0000\b24bvw9fqx",
+   "our_click_joined": true
+  },
+  {
+   "variant": 3,
+   "style": "gps",
+   "marker": "cline_w3",
+   "gaid_set": "f6394da1-b020-4399-9b48-68e5badc9ece",
+   "gaid_readback": "f6394da1-b020-4399-9b48-68e5badc9ece",
+   "click_http": 302,
+   "referrer": "adjust_reftag=cvdrbsUTcDO3b&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=cline_w3",
+   "t_click": 1789467503,
+   "attribution": "{\"tracker_token\":\"24p2bvr3\",\"tracker_name\":\"VKM Digital Yeni::AH::vkm_0926_36::cline_w3\",\"network\":\"VKM Digital Yeni\",\"campaign\":\"AH\",\"adgroup\":\"vkm_0926_36\",\"creative\":\"cline_w3\",\"engagement_time\":\"2026-09-15T10:18:24Z\",\"installed_at\":\"2026-09-15T10:18:31Z\",\"first_session_time\":\"2026-09-15T10:18:31Z\",\"is_reattributed\":false,\"is_redownload_install\":false}t\u0000\u0010VKM Digital Yenit\u0000+VKM Digital Yeni::AH::vkm_0926_36::cline_w3t\u0000\b24p2bvr3x",
+   "our_click_joined": true
+  }
+ ]
+}

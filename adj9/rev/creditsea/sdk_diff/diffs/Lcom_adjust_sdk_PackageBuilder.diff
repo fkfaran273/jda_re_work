@@ -1,0 +1,1348 @@
+--- classes_57/Lcom_adjust_sdk_PackageBuilder;.txt	2026-09-29 18:31:41.834878100 +0530
++++ classes_58/Lcom_adjust_sdk_PackageBuilder;.txt	2026-09-29 18:31:41.895407300 +0530
+@@ -1,6 +1,6 @@
+ # CLASS Lcom/adjust/sdk/PackageBuilder;
+ FIELD private static Lcom/adjust/sdk/ILogger;
+-FIELD private Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
++FIELD private Lcom/adjust/sdk/U;
+ FIELD private Lcom/adjust/sdk/AdjustConfig;
+ FIELD  Lcom/adjust/sdk/AdjustAttribution;
+ FIELD  J
+@@ -10,7 +10,7 @@
+ FIELD  Ljava/lang/String;
+ FIELD private Lcom/adjust/sdk/DeviceInfo;
+ FIELD  Ljava/util/Map;
+-FIELD private Lcom/adjust/sdk/FirstSessionDelayManager;
++FIELD private Lcom/adjust/sdk/P;
+ FIELD private Lcom/adjust/sdk/GlobalParameters;
+ FIELD  Ljava/lang/Boolean;
+ FIELD  J
+@@ -32,7 +32,7 @@
+   sput-object            v0, Lcom/adjust/sdk/PackageBuilder;->logger Lcom/adjust/sdk/ILogger;
+   return-void            
+ 
+----- METHOD public constructor <init>((Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/FirstSessionDelayManager; J)V)  ----
++---- METHOD public constructor <init>((Lcom/adjust/sdk/AdjustConfig; Lcom/adjust/sdk/DeviceInfo; Lcom/adjust/sdk/ActivityState; Lcom/adjust/sdk/GlobalParameters; Lcom/adjust/sdk/P; J)V)  ----
+   invoke-direct          v2, Ljava/lang/Object;-><init>()V
+   const-wide/16          v0, -1
+   iput-wide              v0, v2, Lcom/adjust/sdk/PackageBuilder;->clickTimeInSeconds J
+@@ -43,10 +43,10 @@
+   iput-wide              v8, v2, Lcom/adjust/sdk/PackageBuilder;->createdAt J
+   iput-object            v4, v2, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iput-object            v3, v2, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-  new-instance           v3, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  invoke-direct          v3, v5, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;-><init>(Lcom/adjust/sdk/ActivityState;)V
+-  iput-object            v3, v2, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iput-object            v7, v2, Lcom/adjust/sdk/PackageBuilder;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
++  new-instance           v3, Lcom/adjust/sdk/U;
++  invoke-direct          v3, v5, Lcom/adjust/sdk/U;-><init>(Lcom/adjust/sdk/ActivityState;)V
++  iput-object            v3, v2, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iput-object            v7, v2, Lcom/adjust/sdk/PackageBuilder;->firstSessionDelayManager Lcom/adjust/sdk/P;
+   iput-object            v6, v2, Lcom/adjust/sdk/PackageBuilder;->globalParameters Lcom/adjust/sdk/GlobalParameters;
+   return-void            
+ 
+@@ -210,47 +210,47 @@
+   return-void            
+ 
+ ---- METHOD private checkDeviceIds((Ljava/util/Map;)V)  ----
+-  if-eqz                 v3, +07ah
++  if-eqz                 v3, +0a4h
+   const-string           v0, "android_id"
+   invoke-interface       v3, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+   move-result            v0
+-  if-nez                 v0, +072h
++  if-nez                 v0, +09ch
+   const-string           v0, "gps_adid"
+   invoke-interface       v3, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+   move-result            v0
+-  if-nez                 v0, +06ah
++  if-nez                 v0, +094h
+   const-string           v0, "fire_adid"
+   invoke-interface       v3, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+   move-result            v0
+-  if-nez                 v0, +062h
++  if-nez                 v0, +08ch
+   const-string           v0, "oaid"
+   invoke-interface       v3, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+   move-result            v0
+-  if-nez                 v0, +05ah
++  if-nez                 v0, +084h
+   const-string           v0, "imei"
+   invoke-interface       v3, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+   move-result            v0
+-  if-nez                 v0, +052h
++  if-nez                 v0, +07ch
+   const-string           v0, "meid"
+   invoke-interface       v3, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+   move-result            v0
+-  if-nez                 v0, +04ah
++  if-nez                 v0, +074h
+   const-string           v0, "device_id"
+   invoke-interface       v3, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+   move-result            v0
+-  if-nez                 v0, +042h
++  if-nez                 v0, +06ch
+   const-string           v0, "imeis"
+   invoke-interface       v3, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+   move-result            v0
+-  if-nez                 v0, +03ah
++  if-nez                 v0, +064h
+   const-string           v0, "meids"
+   invoke-interface       v3, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+   move-result            v0
+-  if-nez                 v0, +032h
++  if-nez                 v0, +05ch
+   const-string           v0, "device_ids"
+   invoke-interface       v3, v0, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+   move-result            v3
+-  if-nez                 v3, +02ah
++  if-nez                 v3, +054h
+   iget-object            v3, v2, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+   iget-boolean           v0, v3, Lcom/adjust/sdk/AdjustConfig;->coppaComplianceEnabled Z
+   const/4                v1, 0
+@@ -260,20 +260,41 @@
+   const-string           v1, "Missing Device IDs. COPPA enabled."
+   invoke-interface       v3, v1, v0, Lcom/adjust/sdk/ILogger;->info(Ljava/lang/String; [Ljava/lang/Object;)V
+   return-void            
+-  iget-boolean           v3, v3, Lcom/adjust/sdk/AdjustConfig;->playStoreKidsComplianceEnabled Z
+-  if-eqz                 v3, +00ch
++  iget-boolean           v0, v3, Lcom/adjust/sdk/AdjustConfig;->playStoreKidsComplianceEnabled Z
++  if-eqz                 v0, +00ch
+   sget-object            v3, Lcom/adjust/sdk/PackageBuilder;->logger Lcom/adjust/sdk/ILogger;
+   new-array              v0, v1, [Ljava/lang/Object;
+   const-string           v1, "Missing Device IDs. Play store kids compliance enabled."
+   invoke-interface       v3, v1, v0, Lcom/adjust/sdk/ILogger;->info(Ljava/lang/String; [Ljava/lang/Object;)V
+   return-void            
++  iget-boolean           v0, v3, Lcom/adjust/sdk/AdjustConfig;->isGoogleAdIdReadingEnabled Z
++  if-nez                 v0, +00ch
++  sget-object            v3, Lcom/adjust/sdk/PackageBuilder;->logger Lcom/adjust/sdk/ILogger;
++  new-array              v0, v1, [Ljava/lang/Object;
++  const-string           v1, "Missing Google Advertising ID, reading disabled."
++  invoke-interface       v3, v1, v0, Lcom/adjust/sdk/ILogger;->info(Ljava/lang/String; [Ljava/lang/Object;)V
++  return-void            
++  iget-boolean           v0, v3, Lcom/adjust/sdk/AdjustConfig;->isAndroidIdReadingEnabled Z
++  if-nez                 v0, +00ch
++  sget-object            v3, Lcom/adjust/sdk/PackageBuilder;->logger Lcom/adjust/sdk/ILogger;
++  new-array              v0, v1, [Ljava/lang/Object;
++  const-string           v1, "Missing Android ID, reading disabled."
++  invoke-interface       v3, v1, v0, Lcom/adjust/sdk/ILogger;->info(Ljava/lang/String; [Ljava/lang/Object;)V
++  return-void            
++  iget-boolean           v3, v3, Lcom/adjust/sdk/AdjustConfig;->isFireAdIdReadingEnabled Z
++  if-nez                 v3, +00ch
++  sget-object            v3, Lcom/adjust/sdk/PackageBuilder;->logger Lcom/adjust/sdk/ILogger;
++  new-array              v0, v1, [Ljava/lang/Object;
++  const-string           v1, "Missing Fire Advertising ID, reading disabled."
++  invoke-interface       v3, v1, v0, Lcom/adjust/sdk/ILogger;->info(Ljava/lang/String; [Ljava/lang/Object;)V
++  return-void            
+   sget-object            v3, Lcom/adjust/sdk/PackageBuilder;->logger Lcom/adjust/sdk/ILogger;
+   new-array              v0, v1, [Ljava/lang/Object;
+   const-string           v1, "Missing Device IDs. Please check if Proguard is correctly set with Adjust SDK"
+   invoke-interface       v3, v1, v0, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+   return-void            
+ 
+----- METHOD private containsFireIds((Ljava/util/Map;)Z)  ----
++---- METHOD private containsFireAdId((Ljava/util/Map;)Z)  ----
+   if-nez                 v2, +004h
+   const/4                v2, 0
+   return                 v2
+@@ -282,7 +303,7 @@
+   move-result            v2
+   return                 v2
+ 
+----- METHOD private containsPlayIds((Ljava/util/Map;)Z)  ----
++---- METHOD private containsGoogleAdId((Ljava/util/Map;)Z)  ----
+   if-nez                 v2, +004h
+   const/4                v2, 0
+   return                 v2
+@@ -320,26 +341,26 @@
+   const-string           v3, "Partner"
+   invoke-static          v1, v2, v3, Lcom/adjust/sdk/Util;->mergeParameters(Ljava/util/Map; Ljava/util/Map; Ljava/lang/String;)Ljava/util/Map;
+   move-result-object     v1
+-  const-string           v2, "partner_params"
++  const-string/jumbo     v2, partner_params
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addMapJson(Ljava/util/Map; Ljava/lang/String; Ljava/util/Map;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadPlayIds(Lcom/adjust/sdk/AdjustConfig;)V
+-  iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-object            v1, v1, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->f Ljava/lang/String;
++  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadGoogleAdId(Lcom/adjust/sdk/AdjustConfig;)V
++  iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-object            v1, v1, Lcom/adjust/sdk/U;->f Ljava/lang/String;
+   const-string           v2, "android_uuid"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdId Ljava/lang/String;
++  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdId Ljava/lang/String;
+   const-string           v2, "gps_adid"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget                   v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdIdAttempt I
++  iget                   v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdIdReadAttempt I
+   int-to-long            v1, v1
+   const-string           v3, "gps_adid_attempt"
+   invoke-static          v0, v3, v1, v2, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdIdSource Ljava/lang/String;
++  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdIdSource Ljava/lang/String;
+   const-string           v2, "gps_adid_src"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -358,10 +379,10 @@
+   iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->appSetId Ljava/lang/String;
+   const-string           v2, "google_app_set_id"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsPlayIds(Ljava/util/Map;)Z
++  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsGoogleAdId(Ljava/util/Map;)Z
+   move-result            v1
+   if-nez                 v1, +022h
+-  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsFireIds(Ljava/util/Map;)Z
++  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsFireAdId(Ljava/util/Map;)Z
+   move-result            v1
+   if-nez                 v1, +01ch
+   sget-object            v1, Lcom/adjust/sdk/PackageBuilder;->logger Lcom/adjust/sdk/ILogger;
+@@ -371,7 +392,7 @@
+   invoke-interface       v1, v3, v2, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadNonPlayIds(Lcom/adjust/sdk/AdjustConfig;)V
++  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->readAndroidId(Lcom/adjust/sdk/AdjustConfig;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->androidId Ljava/lang/String;
+   const-string           v2, "android_id"
+@@ -484,14 +505,14 @@
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v2, Lcom/adjust/sdk/DeviceInfo;->osVersion Ljava/lang/String;
+-  const-string           v3, "os_version"
++  const-string/jumbo     v3, os_version
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v2, Lcom/adjust/sdk/DeviceInfo;->packageName Ljava/lang/String;
+-  const-string           v3, "package_name"
++  const-string/jumbo     v3, package_name
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-object            v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->g Ljava/lang/String;
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-object            v2, v2, Lcom/adjust/sdk/U;->g Ljava/lang/String;
+   const-string/jumbo     v3, push_token
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -527,22 +548,22 @@
+   iget-object            v6, v6, Lcom/adjust/sdk/AdjustAdRevenue;->adRevenuePlacement Ljava/lang/String;
+   const-string           v2, "ad_revenue_placement"
+   invoke-static          v0, v2, v6, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget                   v6, v6, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->b I
++  iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget                   v6, v6, Lcom/adjust/sdk/U;->b I
+   int-to-long            v2, v6
+   const-string/jumbo     v6, session_count
+   invoke-static          v0, v6, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+-  iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-wide              v2, v6, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->e J
++  iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-wide              v2, v6, Lcom/adjust/sdk/U;->e J
+   const-string/jumbo     v6, session_length
+   invoke-static          v0, v6, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addDuration(Ljava/util/Map; Ljava/lang/String; J)V
+-  iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget                   v6, v6, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->c I
++  iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget                   v6, v6, Lcom/adjust/sdk/U;->c I
+   int-to-long            v2, v6
+   const-string/jumbo     v6, subsession_count
+   invoke-static          v0, v6, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+-  iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-wide              v2, v6, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->d J
++  iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-wide              v2, v6, Lcom/adjust/sdk/U;->d J
+   const-string/jumbo     v6, time_spent
+   invoke-static          v0, v6, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addDuration(Ljava/util/Map; Ljava/lang/String; J)V
+   iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -585,22 +606,22 @@
+   invoke-virtual         v0, v1, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadPlayIds(Lcom/adjust/sdk/AdjustConfig;)V
+-  iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-object            v1, v1, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->f Ljava/lang/String;
++  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadGoogleAdId(Lcom/adjust/sdk/AdjustConfig;)V
++  iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-object            v1, v1, Lcom/adjust/sdk/U;->f Ljava/lang/String;
+   const-string           v2, "android_uuid"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdId Ljava/lang/String;
++  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdId Ljava/lang/String;
+   const-string           v2, "gps_adid"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget                   v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdIdAttempt I
++  iget                   v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdIdReadAttempt I
+   int-to-long            v1, v1
+   const-string           v3, "gps_adid_attempt"
+   invoke-static          v0, v3, v1, v2, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdIdSource Ljava/lang/String;
++  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdIdSource Ljava/lang/String;
+   const-string           v2, "gps_adid_src"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -619,10 +640,10 @@
+   iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->appSetId Ljava/lang/String;
+   const-string           v2, "google_app_set_id"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsPlayIds(Ljava/util/Map;)Z
++  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsGoogleAdId(Ljava/util/Map;)Z
+   move-result            v1
+   if-nez                 v1, +022h
+-  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsFireIds(Ljava/util/Map;)Z
++  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsFireAdId(Ljava/util/Map;)Z
+   move-result            v1
+   if-nez                 v1, +01ch
+   sget-object            v1, Lcom/adjust/sdk/PackageBuilder;->logger Lcom/adjust/sdk/ILogger;
+@@ -632,7 +653,7 @@
+   invoke-interface       v1, v3, v2, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadNonPlayIds(Lcom/adjust/sdk/AdjustConfig;)V
++  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->readAndroidId(Lcom/adjust/sdk/AdjustConfig;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->androidId Ljava/lang/String;
+   const-string           v2, "android_id"
+@@ -690,14 +711,14 @@
+   invoke-static          v0, v2, v6, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v6, v6, Lcom/adjust/sdk/DeviceInfo;->osVersion Ljava/lang/String;
+-  const-string           v2, "os_version"
++  const-string/jumbo     v2, os_version
+   invoke-static          v0, v2, v6, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v6, v6, Lcom/adjust/sdk/DeviceInfo;->packageName Ljava/lang/String;
+-  const-string           v2, "package_name"
++  const-string/jumbo     v2, package_name
+   invoke-static          v0, v2, v6, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-object            v6, v6, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->g Ljava/lang/String;
++  iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-object            v6, v6, Lcom/adjust/sdk/U;->g Ljava/lang/String;
+   const-string/jumbo     v2, push_token
+   invoke-static          v0, v2, v6, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -736,22 +757,22 @@
+   invoke-virtual         v0, v1, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadPlayIds(Lcom/adjust/sdk/AdjustConfig;)V
+-  iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-object            v1, v1, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->f Ljava/lang/String;
++  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadGoogleAdId(Lcom/adjust/sdk/AdjustConfig;)V
++  iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-object            v1, v1, Lcom/adjust/sdk/U;->f Ljava/lang/String;
+   const-string           v2, "android_uuid"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdId Ljava/lang/String;
++  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdId Ljava/lang/String;
+   const-string           v2, "gps_adid"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget                   v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdIdAttempt I
++  iget                   v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdIdReadAttempt I
+   int-to-long            v1, v1
+   const-string           v3, "gps_adid_attempt"
+   invoke-static          v0, v3, v1, v2, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdIdSource Ljava/lang/String;
++  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdIdSource Ljava/lang/String;
+   const-string           v2, "gps_adid_src"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -770,10 +791,10 @@
+   iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->appSetId Ljava/lang/String;
+   const-string           v2, "google_app_set_id"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsPlayIds(Ljava/util/Map;)Z
++  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsGoogleAdId(Ljava/util/Map;)Z
+   move-result            v1
+   if-nez                 v1, +022h
+-  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsFireIds(Ljava/util/Map;)Z
++  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsFireAdId(Ljava/util/Map;)Z
+   move-result            v1
+   if-nez                 v1, +01ch
+   sget-object            v1, Lcom/adjust/sdk/PackageBuilder;->logger Lcom/adjust/sdk/ILogger;
+@@ -783,7 +804,7 @@
+   invoke-interface       v1, v3, v2, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadNonPlayIds(Lcom/adjust/sdk/AdjustConfig;)V
++  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->readAndroidId(Lcom/adjust/sdk/AdjustConfig;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->androidId Ljava/lang/String;
+   const-string           v2, "android_id"
+@@ -939,21 +960,21 @@
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v2, Lcom/adjust/sdk/DeviceInfo;->osVersion Ljava/lang/String;
+-  const-string           v3, "os_version"
++  const-string/jumbo     v3, os_version
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v2, Lcom/adjust/sdk/DeviceInfo;->packageName Ljava/lang/String;
+-  const-string           v3, "package_name"
++  const-string/jumbo     v3, package_name
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->extraParameters Ljava/util/Map;
+-  const-string           v3, "params"
++  const-string/jumbo     v3, params
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addMapJson(Ljava/util/Map; Ljava/lang/String; Ljava/util/Map;)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->globalParameters Lcom/adjust/sdk/GlobalParameters;
+   iget-object            v2, v2, Lcom/adjust/sdk/GlobalParameters;->partnerParameters Ljava/util/Map;
+-  const-string           v3, "partner_params"
++  const-string/jumbo     v3, partner_params
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addMapJson(Ljava/util/Map; Ljava/lang/String; Ljava/util/Map;)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-object            v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->g Ljava/lang/String;
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-object            v2, v2, Lcom/adjust/sdk/U;->g Ljava/lang/String;
+   const-string/jumbo     v3, push_token
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->rawReferrer Ljava/lang/String;
+@@ -980,24 +1001,24 @@
+   iget-object            v2, v2, Lcom/adjust/sdk/DeviceInfo;->screenSize Ljava/lang/String;
+   const-string/jumbo     v3, screen_size
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget                   v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->b I
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget                   v2, v2, Lcom/adjust/sdk/U;->b I
+   int-to-long            v2, v2
+   const-string/jumbo     v4, session_count
+   invoke-static          v0, v4, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-wide              v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->e J
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-wide              v2, v2, Lcom/adjust/sdk/U;->e J
+   const-string/jumbo     v4, session_length
+   invoke-static          v0, v4, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addDuration(Ljava/util/Map; Ljava/lang/String; J)V
+   const-string/jumbo     v2, source
+   invoke-static          v0, v2, v6, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget                   v6, v6, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->c I
++  iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget                   v6, v6, Lcom/adjust/sdk/U;->c I
+   int-to-long            v2, v6
+   const-string/jumbo     v6, subsession_count
+   invoke-static          v0, v6, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+-  iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-wide              v2, v6, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->d J
++  iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-wide              v2, v6, Lcom/adjust/sdk/U;->d J
+   const-string/jumbo     v6, time_spent
+   invoke-static          v0, v6, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addDuration(Ljava/util/Map; Ljava/lang/String; J)V
+   iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -1005,7 +1026,7 @@
+   const-string/jumbo     v2, updated_at
+   invoke-static          v0, v2, v6, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->preinstallPayload Ljava/lang/String;
+-  const-string           v2, "payload"
++  const-string/jumbo     v2, payload
+   invoke-static          v0, v2, v6, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->preinstallLocation Ljava/lang/String;
+   const-string           v2, "found_location"
+@@ -1091,22 +1112,22 @@
+   invoke-virtual         v0, v1, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadPlayIds(Lcom/adjust/sdk/AdjustConfig;)V
+-  iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-object            v1, v1, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->f Ljava/lang/String;
++  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadGoogleAdId(Lcom/adjust/sdk/AdjustConfig;)V
++  iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-object            v1, v1, Lcom/adjust/sdk/U;->f Ljava/lang/String;
+   const-string           v2, "android_uuid"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdId Ljava/lang/String;
++  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdId Ljava/lang/String;
+   const-string           v2, "gps_adid"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget                   v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdIdAttempt I
++  iget                   v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdIdReadAttempt I
+   int-to-long            v1, v1
+   const-string           v3, "gps_adid_attempt"
+   invoke-static          v0, v3, v1, v2, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdIdSource Ljava/lang/String;
++  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdIdSource Ljava/lang/String;
+   const-string           v2, "gps_adid_src"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -1125,10 +1146,10 @@
+   iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->appSetId Ljava/lang/String;
+   const-string           v2, "google_app_set_id"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsPlayIds(Ljava/util/Map;)Z
++  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsGoogleAdId(Ljava/util/Map;)Z
+   move-result            v1
+   if-nez                 v1, +022h
+-  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsFireIds(Ljava/util/Map;)Z
++  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsFireAdId(Ljava/util/Map;)Z
+   move-result            v1
+   if-nez                 v1, +01ch
+   sget-object            v1, Lcom/adjust/sdk/PackageBuilder;->logger Lcom/adjust/sdk/ILogger;
+@@ -1138,7 +1159,7 @@
+   invoke-interface       v1, v3, v2, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadNonPlayIds(Lcom/adjust/sdk/AdjustConfig;)V
++  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->readAndroidId(Lcom/adjust/sdk/AdjustConfig;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->androidId Ljava/lang/String;
+   const-string           v2, "android_id"
+@@ -1194,14 +1215,14 @@
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v2, Lcom/adjust/sdk/DeviceInfo;->osVersion Ljava/lang/String;
+-  const-string           v3, "os_version"
++  const-string/jumbo     v3, os_version
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v2, Lcom/adjust/sdk/DeviceInfo;->packageName Ljava/lang/String;
+-  const-string           v3, "package_name"
++  const-string/jumbo     v3, package_name
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-object            v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->g Ljava/lang/String;
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-object            v2, v2, Lcom/adjust/sdk/U;->g Ljava/lang/String;
+   const-string/jumbo     v3, push_token
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -1240,22 +1261,22 @@
+   invoke-virtual         v0, v1, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadPlayIds(Lcom/adjust/sdk/AdjustConfig;)V
+-  iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-object            v1, v1, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->f Ljava/lang/String;
++  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadGoogleAdId(Lcom/adjust/sdk/AdjustConfig;)V
++  iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-object            v1, v1, Lcom/adjust/sdk/U;->f Ljava/lang/String;
+   const-string           v2, "android_uuid"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdId Ljava/lang/String;
++  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdId Ljava/lang/String;
+   const-string           v2, "gps_adid"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget                   v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdIdAttempt I
++  iget                   v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdIdReadAttempt I
+   int-to-long            v1, v1
+   const-string           v3, "gps_adid_attempt"
+   invoke-static          v0, v3, v1, v2, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdIdSource Ljava/lang/String;
++  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdIdSource Ljava/lang/String;
+   const-string           v2, "gps_adid_src"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -1274,10 +1295,10 @@
+   iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->appSetId Ljava/lang/String;
+   const-string           v2, "google_app_set_id"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsPlayIds(Ljava/util/Map;)Z
++  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsGoogleAdId(Ljava/util/Map;)Z
+   move-result            v1
+   if-nez                 v1, +022h
+-  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsFireIds(Ljava/util/Map;)Z
++  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsFireAdId(Ljava/util/Map;)Z
+   move-result            v1
+   if-nez                 v1, +01ch
+   sget-object            v1, Lcom/adjust/sdk/PackageBuilder;->logger Lcom/adjust/sdk/ILogger;
+@@ -1287,7 +1308,7 @@
+   invoke-interface       v1, v3, v2, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadNonPlayIds(Lcom/adjust/sdk/AdjustConfig;)V
++  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->readAndroidId(Lcom/adjust/sdk/AdjustConfig;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->androidId Ljava/lang/String;
+   const-string           v2, "android_id"
+@@ -1316,8 +1337,8 @@
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   const-string           v2, "needs_response_details"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addBoolean(Ljava/util/Map; Ljava/lang/String; Ljava/lang/Boolean;)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-object            v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->g Ljava/lang/String;
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-object            v2, v2, Lcom/adjust/sdk/U;->g Ljava/lang/String;
+   const-string/jumbo     v3, push_token
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   const-string/jumbo     v2, source
+@@ -1364,22 +1385,22 @@
+   invoke-static          v0, v1, v5, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v5, v4, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v1, v4, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-  invoke-virtual         v5, v1, Lcom/adjust/sdk/DeviceInfo;->reloadPlayIds(Lcom/adjust/sdk/AdjustConfig;)V
+-  iget-object            v5, v4, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-object            v5, v5, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->f Ljava/lang/String;
++  invoke-virtual         v5, v1, Lcom/adjust/sdk/DeviceInfo;->reloadGoogleAdId(Lcom/adjust/sdk/AdjustConfig;)V
++  iget-object            v5, v4, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-object            v5, v5, Lcom/adjust/sdk/U;->f Ljava/lang/String;
+   const-string           v1, "android_uuid"
+   invoke-static          v0, v1, v5, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v5, v4, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget-object            v5, v5, Lcom/adjust/sdk/DeviceInfo;->playAdId Ljava/lang/String;
++  iget-object            v5, v5, Lcom/adjust/sdk/DeviceInfo;->googleAdId Ljava/lang/String;
+   const-string           v1, "gps_adid"
+   invoke-static          v0, v1, v5, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v5, v4, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget                   v5, v5, Lcom/adjust/sdk/DeviceInfo;->playAdIdAttempt I
++  iget                   v5, v5, Lcom/adjust/sdk/DeviceInfo;->googleAdIdReadAttempt I
+   int-to-long            v1, v5
+   const-string           v5, "gps_adid_attempt"
+   invoke-static          v0, v5, v1, v2, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+   iget-object            v5, v4, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget-object            v5, v5, Lcom/adjust/sdk/DeviceInfo;->playAdIdSource Ljava/lang/String;
++  iget-object            v5, v5, Lcom/adjust/sdk/DeviceInfo;->googleAdIdSource Ljava/lang/String;
+   const-string           v1, "gps_adid_src"
+   invoke-static          v0, v1, v5, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v5, v4, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -1398,10 +1419,10 @@
+   iget-object            v5, v5, Lcom/adjust/sdk/DeviceInfo;->appSetId Ljava/lang/String;
+   const-string           v1, "google_app_set_id"
+   invoke-static          v0, v1, v5, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  invoke-direct          v4, v0, Lcom/adjust/sdk/PackageBuilder;->containsPlayIds(Ljava/util/Map;)Z
++  invoke-direct          v4, v0, Lcom/adjust/sdk/PackageBuilder;->containsGoogleAdId(Ljava/util/Map;)Z
+   move-result            v5
+   if-nez                 v5, +022h
+-  invoke-direct          v4, v0, Lcom/adjust/sdk/PackageBuilder;->containsFireIds(Ljava/util/Map;)Z
++  invoke-direct          v4, v0, Lcom/adjust/sdk/PackageBuilder;->containsFireAdId(Ljava/util/Map;)Z
+   move-result            v5
+   if-nez                 v5, +01ch
+   sget-object            v5, Lcom/adjust/sdk/PackageBuilder;->logger Lcom/adjust/sdk/ILogger;
+@@ -1411,7 +1432,7 @@
+   invoke-interface       v5, v2, v1, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+   iget-object            v5, v4, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v1, v4, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-  invoke-virtual         v5, v1, Lcom/adjust/sdk/DeviceInfo;->reloadNonPlayIds(Lcom/adjust/sdk/AdjustConfig;)V
++  invoke-virtual         v5, v1, Lcom/adjust/sdk/DeviceInfo;->readAndroidId(Lcom/adjust/sdk/AdjustConfig;)V
+   iget-object            v5, v4, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v5, v5, Lcom/adjust/sdk/DeviceInfo;->androidId Ljava/lang/String;
+   const-string           v1, "android_id"
+@@ -1463,14 +1484,14 @@
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v4, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->osVersion Ljava/lang/String;
+-  const-string           v2, "os_version"
++  const-string/jumbo     v2, os_version
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v4, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->packageName Ljava/lang/String;
+-  const-string           v2, "package_name"
++  const-string/jumbo     v2, package_name
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  iget-object            v1, v4, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-object            v1, v1, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->g Ljava/lang/String;
++  iget-object            v1, v4, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-object            v1, v1, Lcom/adjust/sdk/U;->g Ljava/lang/String;
+   const-string/jumbo     v2, push_token
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v4, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -1513,26 +1534,26 @@
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addMapJson(Ljava/util/Map; Ljava/lang/String; Ljava/util/Map;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->globalParameters Lcom/adjust/sdk/GlobalParameters;
+   iget-object            v1, v1, Lcom/adjust/sdk/GlobalParameters;->partnerParameters Ljava/util/Map;
+-  const-string           v2, "partner_params"
++  const-string/jumbo     v2, partner_params
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addMapJson(Ljava/util/Map; Ljava/lang/String; Ljava/util/Map;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadPlayIds(Lcom/adjust/sdk/AdjustConfig;)V
+-  iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-object            v1, v1, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->f Ljava/lang/String;
++  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadGoogleAdId(Lcom/adjust/sdk/AdjustConfig;)V
++  iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-object            v1, v1, Lcom/adjust/sdk/U;->f Ljava/lang/String;
+   const-string           v2, "android_uuid"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdId Ljava/lang/String;
++  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdId Ljava/lang/String;
+   const-string           v2, "gps_adid"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget                   v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdIdAttempt I
++  iget                   v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdIdReadAttempt I
+   int-to-long            v1, v1
+   const-string           v3, "gps_adid_attempt"
+   invoke-static          v0, v3, v1, v2, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdIdSource Ljava/lang/String;
++  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdIdSource Ljava/lang/String;
+   const-string           v2, "gps_adid_src"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -1551,10 +1572,10 @@
+   iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->appSetId Ljava/lang/String;
+   const-string           v2, "google_app_set_id"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsPlayIds(Ljava/util/Map;)Z
++  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsGoogleAdId(Ljava/util/Map;)Z
+   move-result            v1
+   if-nez                 v1, +022h
+-  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsFireIds(Ljava/util/Map;)Z
++  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsFireAdId(Ljava/util/Map;)Z
+   move-result            v1
+   if-nez                 v1, +01ch
+   sget-object            v1, Lcom/adjust/sdk/PackageBuilder;->logger Lcom/adjust/sdk/ILogger;
+@@ -1564,7 +1585,7 @@
+   invoke-interface       v1, v3, v2, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadNonPlayIds(Lcom/adjust/sdk/AdjustConfig;)V
++  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->readAndroidId(Lcom/adjust/sdk/AdjustConfig;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->androidId Ljava/lang/String;
+   const-string           v2, "android_id"
+@@ -1677,14 +1698,14 @@
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v2, Lcom/adjust/sdk/DeviceInfo;->osVersion Ljava/lang/String;
+-  const-string           v3, "os_version"
++  const-string/jumbo     v3, os_version
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v2, Lcom/adjust/sdk/DeviceInfo;->packageName Ljava/lang/String;
+-  const-string           v3, "package_name"
++  const-string/jumbo     v3, package_name
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-object            v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->g Ljava/lang/String;
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-object            v2, v2, Lcom/adjust/sdk/U;->g Ljava/lang/String;
+   const-string/jumbo     v3, push_token
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -1699,22 +1720,22 @@
+   iget-object            v2, v2, Lcom/adjust/sdk/DeviceInfo;->screenSize Ljava/lang/String;
+   const-string/jumbo     v3, screen_size
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget                   v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->b I
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget                   v2, v2, Lcom/adjust/sdk/U;->b I
+   int-to-long            v2, v2
+   const-string/jumbo     v4, session_count
+   invoke-static          v0, v4, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-wide              v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->e J
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-wide              v2, v2, Lcom/adjust/sdk/U;->e J
+   const-string/jumbo     v4, session_length
+   invoke-static          v0, v4, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addDuration(Ljava/util/Map; Ljava/lang/String; J)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget                   v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->c I
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget                   v2, v2, Lcom/adjust/sdk/U;->c I
+   int-to-long            v2, v2
+   const-string/jumbo     v4, subsession_count
+   invoke-static          v0, v4, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-wide              v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->d J
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-wide              v2, v2, Lcom/adjust/sdk/U;->d J
+   const-string/jumbo     v4, time_spent
+   invoke-static          v0, v4, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addDuration(Ljava/util/Map; Ljava/lang/String; J)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -1758,22 +1779,22 @@
+   invoke-virtual         v0, v1, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadPlayIds(Lcom/adjust/sdk/AdjustConfig;)V
+-  iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-object            v1, v1, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->f Ljava/lang/String;
++  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadGoogleAdId(Lcom/adjust/sdk/AdjustConfig;)V
++  iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-object            v1, v1, Lcom/adjust/sdk/U;->f Ljava/lang/String;
+   const-string           v2, "android_uuid"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdId Ljava/lang/String;
++  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdId Ljava/lang/String;
+   const-string           v2, "gps_adid"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget                   v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdIdAttempt I
++  iget                   v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdIdReadAttempt I
+   int-to-long            v1, v1
+   const-string           v3, "gps_adid_attempt"
+   invoke-static          v0, v3, v1, v2, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdIdSource Ljava/lang/String;
++  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdIdSource Ljava/lang/String;
+   const-string           v2, "gps_adid_src"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -1792,10 +1813,10 @@
+   iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->appSetId Ljava/lang/String;
+   const-string           v2, "google_app_set_id"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsPlayIds(Ljava/util/Map;)Z
++  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsGoogleAdId(Ljava/util/Map;)Z
+   move-result            v1
+   if-nez                 v1, +022h
+-  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsFireIds(Ljava/util/Map;)Z
++  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsFireAdId(Ljava/util/Map;)Z
+   move-result            v1
+   if-nez                 v1, +01ch
+   sget-object            v1, Lcom/adjust/sdk/PackageBuilder;->logger Lcom/adjust/sdk/ILogger;
+@@ -1805,7 +1826,7 @@
+   invoke-interface       v1, v3, v2, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadNonPlayIds(Lcom/adjust/sdk/AdjustConfig;)V
++  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->readAndroidId(Lcom/adjust/sdk/AdjustConfig;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->androidId Ljava/lang/String;
+   const-string           v2, "android_id"
+@@ -1826,7 +1847,7 @@
+   const-string           v3, "Partner"
+   invoke-static          v1, v2, v3, Lcom/adjust/sdk/Util;->mergeParameters(Ljava/util/Map; Ljava/util/Map; Ljava/lang/String;)Ljava/util/Map;
+   move-result-object     v1
+-  const-string           v2, "partner_params"
++  const-string/jumbo     v2, partner_params
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addMapJson(Ljava/util/Map; Ljava/lang/String; Ljava/util/Map;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->apiLevel Ljava/lang/String;
+@@ -1936,14 +1957,14 @@
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v2, Lcom/adjust/sdk/DeviceInfo;->osVersion Ljava/lang/String;
+-  const-string           v3, "os_version"
++  const-string/jumbo     v3, os_version
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v2, Lcom/adjust/sdk/DeviceInfo;->packageName Ljava/lang/String;
+-  const-string           v3, "package_name"
++  const-string/jumbo     v3, package_name
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-object            v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->g Ljava/lang/String;
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-object            v2, v2, Lcom/adjust/sdk/U;->g Ljava/lang/String;
+   const-string/jumbo     v3, push_token
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -1958,22 +1979,22 @@
+   iget-object            v2, v2, Lcom/adjust/sdk/DeviceInfo;->screenSize Ljava/lang/String;
+   const-string/jumbo     v3, screen_size
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget                   v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->b I
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget                   v2, v2, Lcom/adjust/sdk/U;->b I
+   int-to-long            v2, v2
+   const-string/jumbo     v4, session_count
+   invoke-static          v0, v4, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-wide              v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->e J
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-wide              v2, v2, Lcom/adjust/sdk/U;->e J
+   const-string/jumbo     v4, session_length
+   invoke-static          v0, v4, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addDuration(Ljava/util/Map; Ljava/lang/String; J)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget                   v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->c I
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget                   v2, v2, Lcom/adjust/sdk/U;->c I
+   int-to-long            v2, v2
+   const-string/jumbo     v4, subsession_count
+   invoke-static          v0, v4, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-wide              v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->d J
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-wide              v2, v2, Lcom/adjust/sdk/U;->d J
+   const-string/jumbo     v4, time_spent
+   invoke-static          v0, v4, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addDuration(Ljava/util/Map; Ljava/lang/String; J)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -1986,7 +2007,7 @@
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   invoke-virtual         v6, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->getSku()Ljava/lang/String;
+   move-result-object     v2
+-  const-string           v3, "product_id"
++  const-string/jumbo     v3, product_id
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   invoke-virtual         v6, Lcom/adjust/sdk/AdjustPlayStoreSubscription;->getPurchaseToken()Ljava/lang/String;
+   move-result-object     v2
+@@ -2056,26 +2077,26 @@
+   const-string           v2, "granular_third_party_sharing_options"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addMapJson(Ljava/util/Map; Ljava/lang/String; Ljava/util/Map;)V
+   iget-object            v5, v5, Lcom/adjust/sdk/AdjustThirdPartySharing;->partnerSharingSettings Ljava/util/Map;
+-  const-string           v1, "partner_sharing_settings"
++  const-string/jumbo     v1, partner_sharing_settings
+   invoke-static          v0, v1, v5, Lcom/adjust/sdk/PackageBuilder;->addMapJson(Ljava/util/Map; Ljava/lang/String; Ljava/util/Map;)V
+   iget-object            v5, v4, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v1, v4, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-  invoke-virtual         v5, v1, Lcom/adjust/sdk/DeviceInfo;->reloadPlayIds(Lcom/adjust/sdk/AdjustConfig;)V
+-  iget-object            v5, v4, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-object            v5, v5, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->f Ljava/lang/String;
++  invoke-virtual         v5, v1, Lcom/adjust/sdk/DeviceInfo;->reloadGoogleAdId(Lcom/adjust/sdk/AdjustConfig;)V
++  iget-object            v5, v4, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-object            v5, v5, Lcom/adjust/sdk/U;->f Ljava/lang/String;
+   const-string           v1, "android_uuid"
+   invoke-static          v0, v1, v5, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v5, v4, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget-object            v5, v5, Lcom/adjust/sdk/DeviceInfo;->playAdId Ljava/lang/String;
++  iget-object            v5, v5, Lcom/adjust/sdk/DeviceInfo;->googleAdId Ljava/lang/String;
+   const-string           v1, "gps_adid"
+   invoke-static          v0, v1, v5, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v5, v4, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget                   v5, v5, Lcom/adjust/sdk/DeviceInfo;->playAdIdAttempt I
++  iget                   v5, v5, Lcom/adjust/sdk/DeviceInfo;->googleAdIdReadAttempt I
+   int-to-long            v1, v5
+   const-string           v5, "gps_adid_attempt"
+   invoke-static          v0, v5, v1, v2, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+   iget-object            v5, v4, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget-object            v5, v5, Lcom/adjust/sdk/DeviceInfo;->playAdIdSource Ljava/lang/String;
++  iget-object            v5, v5, Lcom/adjust/sdk/DeviceInfo;->googleAdIdSource Ljava/lang/String;
+   const-string           v1, "gps_adid_src"
+   invoke-static          v0, v1, v5, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v5, v4, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -2094,10 +2115,10 @@
+   iget-object            v5, v5, Lcom/adjust/sdk/DeviceInfo;->appSetId Ljava/lang/String;
+   const-string           v1, "google_app_set_id"
+   invoke-static          v0, v1, v5, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  invoke-direct          v4, v0, Lcom/adjust/sdk/PackageBuilder;->containsPlayIds(Ljava/util/Map;)Z
++  invoke-direct          v4, v0, Lcom/adjust/sdk/PackageBuilder;->containsGoogleAdId(Ljava/util/Map;)Z
+   move-result            v5
+   if-nez                 v5, +022h
+-  invoke-direct          v4, v0, Lcom/adjust/sdk/PackageBuilder;->containsFireIds(Ljava/util/Map;)Z
++  invoke-direct          v4, v0, Lcom/adjust/sdk/PackageBuilder;->containsFireAdId(Ljava/util/Map;)Z
+   move-result            v5
+   if-nez                 v5, +01ch
+   sget-object            v5, Lcom/adjust/sdk/PackageBuilder;->logger Lcom/adjust/sdk/ILogger;
+@@ -2107,7 +2128,7 @@
+   invoke-interface       v5, v2, v1, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+   iget-object            v5, v4, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v1, v4, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-  invoke-virtual         v5, v1, Lcom/adjust/sdk/DeviceInfo;->reloadNonPlayIds(Lcom/adjust/sdk/AdjustConfig;)V
++  invoke-virtual         v5, v1, Lcom/adjust/sdk/DeviceInfo;->readAndroidId(Lcom/adjust/sdk/AdjustConfig;)V
+   iget-object            v5, v4, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v5, v5, Lcom/adjust/sdk/DeviceInfo;->androidId Ljava/lang/String;
+   const-string           v1, "android_id"
+@@ -2159,14 +2180,14 @@
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v4, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->osVersion Ljava/lang/String;
+-  const-string           v2, "os_version"
++  const-string/jumbo     v2, os_version
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v4, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->packageName Ljava/lang/String;
+-  const-string           v2, "package_name"
++  const-string/jumbo     v2, package_name
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  iget-object            v1, v4, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-object            v1, v1, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->g Ljava/lang/String;
++  iget-object            v1, v4, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-object            v1, v1, Lcom/adjust/sdk/U;->g Ljava/lang/String;
+   const-string/jumbo     v2, push_token
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v4, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -2205,22 +2226,22 @@
+   invoke-virtual         v0, v1, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadPlayIds(Lcom/adjust/sdk/AdjustConfig;)V
+-  iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-object            v1, v1, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->f Ljava/lang/String;
++  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadGoogleAdId(Lcom/adjust/sdk/AdjustConfig;)V
++  iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-object            v1, v1, Lcom/adjust/sdk/U;->f Ljava/lang/String;
+   const-string           v2, "android_uuid"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdId Ljava/lang/String;
++  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdId Ljava/lang/String;
+   const-string           v2, "gps_adid"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget                   v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdIdAttempt I
++  iget                   v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdIdReadAttempt I
+   int-to-long            v1, v1
+   const-string           v3, "gps_adid_attempt"
+   invoke-static          v0, v3, v1, v2, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdIdSource Ljava/lang/String;
++  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdIdSource Ljava/lang/String;
+   const-string           v2, "gps_adid_src"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -2235,10 +2256,10 @@
+   iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->fireTrackingEnabled Ljava/lang/Boolean;
+   const-string           v2, "fire_tracking_enabled"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addBoolean(Ljava/util/Map; Ljava/lang/String; Ljava/lang/Boolean;)V
+-  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsPlayIds(Ljava/util/Map;)Z
++  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsGoogleAdId(Ljava/util/Map;)Z
+   move-result            v1
+   if-nez                 v1, +022h
+-  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsFireIds(Ljava/util/Map;)Z
++  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsFireAdId(Ljava/util/Map;)Z
+   move-result            v1
+   if-nez                 v1, +01ch
+   sget-object            v1, Lcom/adjust/sdk/PackageBuilder;->logger Lcom/adjust/sdk/ILogger;
+@@ -2248,7 +2269,7 @@
+   invoke-interface       v1, v3, v2, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadNonPlayIds(Lcom/adjust/sdk/AdjustConfig;)V
++  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->readAndroidId(Lcom/adjust/sdk/AdjustConfig;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->androidId Ljava/lang/String;
+   const-string           v2, "android_id"
+@@ -2361,14 +2382,14 @@
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v2, Lcom/adjust/sdk/DeviceInfo;->osVersion Ljava/lang/String;
+-  const-string           v3, "os_version"
++  const-string/jumbo     v3, os_version
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v2, Lcom/adjust/sdk/DeviceInfo;->packageName Ljava/lang/String;
+-  const-string           v3, "package_name"
++  const-string/jumbo     v3, package_name
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-object            v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->g Ljava/lang/String;
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-object            v2, v2, Lcom/adjust/sdk/U;->g Ljava/lang/String;
+   const-string/jumbo     v3, push_token
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -2383,22 +2404,22 @@
+   iget-object            v2, v2, Lcom/adjust/sdk/DeviceInfo;->screenSize Ljava/lang/String;
+   const-string/jumbo     v3, screen_size
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget                   v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->b I
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget                   v2, v2, Lcom/adjust/sdk/U;->b I
+   int-to-long            v2, v2
+   const-string/jumbo     v4, session_count
+   invoke-static          v0, v4, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-wide              v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->e J
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-wide              v2, v2, Lcom/adjust/sdk/U;->e J
+   const-string/jumbo     v4, session_length
+   invoke-static          v0, v4, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addDuration(Ljava/util/Map; Ljava/lang/String; J)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget                   v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->c I
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget                   v2, v2, Lcom/adjust/sdk/U;->c I
+   int-to-long            v2, v2
+   const-string/jumbo     v4, subsession_count
+   invoke-static          v0, v4, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-wide              v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->d J
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-wide              v2, v2, Lcom/adjust/sdk/U;->d J
+   const-string/jumbo     v4, time_spent
+   invoke-static          v0, v4, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addDuration(Ljava/util/Map; Ljava/lang/String; J)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -2407,7 +2428,7 @@
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   invoke-virtual         v6, Lcom/adjust/sdk/AdjustEvent;->getProductId()Ljava/lang/String;
+   move-result-object     v2
+-  const-string           v3, "product_id"
++  const-string/jumbo     v3, product_id
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   invoke-virtual         v6, Lcom/adjust/sdk/AdjustEvent;->getPurchaseToken()Ljava/lang/String;
+   move-result-object     v2
+@@ -2453,22 +2474,22 @@
+   invoke-virtual         v0, v1, Ljava/util/HashMap;->putAll(Ljava/util/Map;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadPlayIds(Lcom/adjust/sdk/AdjustConfig;)V
+-  iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-object            v1, v1, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->f Ljava/lang/String;
++  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadGoogleAdId(Lcom/adjust/sdk/AdjustConfig;)V
++  iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-object            v1, v1, Lcom/adjust/sdk/U;->f Ljava/lang/String;
+   const-string           v2, "android_uuid"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdId Ljava/lang/String;
++  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdId Ljava/lang/String;
+   const-string           v2, "gps_adid"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget                   v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdIdAttempt I
++  iget                   v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdIdReadAttempt I
+   int-to-long            v1, v1
+   const-string           v3, "gps_adid_attempt"
+   invoke-static          v0, v3, v1, v2, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdIdSource Ljava/lang/String;
++  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdIdSource Ljava/lang/String;
+   const-string           v2, "gps_adid_src"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -2483,10 +2504,10 @@
+   iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->fireTrackingEnabled Ljava/lang/Boolean;
+   const-string           v2, "fire_tracking_enabled"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addBoolean(Ljava/util/Map; Ljava/lang/String; Ljava/lang/Boolean;)V
+-  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsPlayIds(Ljava/util/Map;)Z
++  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsGoogleAdId(Ljava/util/Map;)Z
+   move-result            v1
+   if-nez                 v1, +022h
+-  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsFireIds(Ljava/util/Map;)Z
++  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsFireAdId(Ljava/util/Map;)Z
+   move-result            v1
+   if-nez                 v1, +01ch
+   sget-object            v1, Lcom/adjust/sdk/PackageBuilder;->logger Lcom/adjust/sdk/ILogger;
+@@ -2496,7 +2517,7 @@
+   invoke-interface       v1, v3, v2, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadNonPlayIds(Lcom/adjust/sdk/AdjustConfig;)V
++  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->readAndroidId(Lcom/adjust/sdk/AdjustConfig;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->androidId Ljava/lang/String;
+   const-string           v2, "android_id"
+@@ -2609,14 +2630,14 @@
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v2, Lcom/adjust/sdk/DeviceInfo;->osVersion Ljava/lang/String;
+-  const-string           v3, "os_version"
++  const-string/jumbo     v3, os_version
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v2, Lcom/adjust/sdk/DeviceInfo;->packageName Ljava/lang/String;
+-  const-string           v3, "package_name"
++  const-string/jumbo     v3, package_name
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-object            v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->g Ljava/lang/String;
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-object            v2, v2, Lcom/adjust/sdk/U;->g Ljava/lang/String;
+   const-string/jumbo     v3, push_token
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -2631,22 +2652,22 @@
+   iget-object            v2, v2, Lcom/adjust/sdk/DeviceInfo;->screenSize Ljava/lang/String;
+   const-string/jumbo     v3, screen_size
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget                   v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->b I
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget                   v2, v2, Lcom/adjust/sdk/U;->b I
+   int-to-long            v2, v2
+   const-string/jumbo     v4, session_count
+   invoke-static          v0, v4, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-wide              v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->e J
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-wide              v2, v2, Lcom/adjust/sdk/U;->e J
+   const-string/jumbo     v4, session_length
+   invoke-static          v0, v4, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addDuration(Ljava/util/Map; Ljava/lang/String; J)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget                   v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->c I
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget                   v2, v2, Lcom/adjust/sdk/U;->c I
+   int-to-long            v2, v2
+   const-string/jumbo     v4, subsession_count
+   invoke-static          v0, v4, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-wide              v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->d J
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-wide              v2, v2, Lcom/adjust/sdk/U;->d J
+   const-string/jumbo     v4, time_spent
+   invoke-static          v0, v4, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addDuration(Ljava/util/Map; Ljava/lang/String; J)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -2655,7 +2676,7 @@
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   invoke-virtual         v6, Lcom/adjust/sdk/AdjustPlayStorePurchase;->getProductId()Ljava/lang/String;
+   move-result-object     v2
+-  const-string           v3, "product_id"
++  const-string/jumbo     v3, product_id
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   invoke-virtual         v6, Lcom/adjust/sdk/AdjustPlayStorePurchase;->getPurchaseToken()Ljava/lang/String;
+   move-result-object     v6
+@@ -2710,8 +2731,8 @@
+   if-eqz                 v0, +007h
+   const-string           v0, "ff_play_store_kids_app"
+   invoke-static          v5, v0, v1, v2, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+-  iget-object            v0, v4, Lcom/adjust/sdk/PackageBuilder;->firstSessionDelayManager Lcom/adjust/sdk/FirstSessionDelayManager;
+-  iget                   v0, v0, Lcom/adjust/sdk/FirstSessionDelayManager;->c I
++  iget-object            v0, v4, Lcom/adjust/sdk/PackageBuilder;->firstSessionDelayManager Lcom/adjust/sdk/P;
++  iget                   v0, v0, Lcom/adjust/sdk/P;->c I
+   const/4                v1, 2
+   if-eq                  v0, v1, +00bh
+   if-eqz                 v0, +009h
+@@ -2719,6 +2740,18 @@
+   const-string           v1, "ff_first_session_delay"
+   invoke-static          v5, v1, v0, Lcom/adjust/sdk/PackageBuilder;->addBoolean(Ljava/util/Map; Ljava/lang/String; Ljava/lang/Boolean;)V
+   iget-object            v0, v4, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
++  iget-boolean           v0, v0, Lcom/adjust/sdk/AdjustConfig;->isGoogleAdIdReadingEnabled Z
++  if-nez                 v0, +009h
++  sget-object            v0, Ljava/lang/Boolean;->TRUE Ljava/lang/Boolean;
++  const-string           v1, "ff_gps_adid_disabled"
++  invoke-static          v5, v1, v0, Lcom/adjust/sdk/PackageBuilder;->addBoolean(Ljava/util/Map; Ljava/lang/String; Ljava/lang/Boolean;)V
++  iget-object            v0, v4, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
++  iget-boolean           v0, v0, Lcom/adjust/sdk/AdjustConfig;->isAndroidIdReadingEnabled Z
++  if-nez                 v0, +009h
++  sget-object            v0, Ljava/lang/Boolean;->TRUE Ljava/lang/Boolean;
++  const-string           v1, "ff_android_id_disabled"
++  invoke-static          v5, v1, v0, Lcom/adjust/sdk/PackageBuilder;->addBoolean(Ljava/util/Map; Ljava/lang/String; Ljava/lang/Boolean;)V
++  iget-object            v0, v4, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+   iget-boolean           v0, v0, Lcom/adjust/sdk/AdjustConfig;->isAppSetIdReadingEnabled Z
+   if-nez                 v0, +009h
+   sget-object            v0, Ljava/lang/Boolean;->TRUE Ljava/lang/Boolean;
+@@ -2731,6 +2764,18 @@
+   const-string           v1, "ff_fb_id_disabled"
+   invoke-static          v5, v1, v0, Lcom/adjust/sdk/PackageBuilder;->addBoolean(Ljava/util/Map; Ljava/lang/String; Ljava/lang/Boolean;)V
+   iget-object            v0, v4, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
++  iget-boolean           v0, v0, Lcom/adjust/sdk/AdjustConfig;->isFireAdIdReadingEnabled Z
++  if-nez                 v0, +009h
++  sget-object            v0, Ljava/lang/Boolean;->TRUE Ljava/lang/Boolean;
++  const-string           v1, "ff_fire_adid_disabled"
++  invoke-static          v5, v1, v0, Lcom/adjust/sdk/PackageBuilder;->addBoolean(Ljava/util/Map; Ljava/lang/String; Ljava/lang/Boolean;)V
++  iget-object            v0, v4, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
++  iget-boolean           v0, v0, Lcom/adjust/sdk/AdjustConfig;->isDeviceIdsFromPluginsReadingEnabled Z
++  if-nez                 v0, +009h
++  sget-object            v0, Ljava/lang/Boolean;->TRUE Ljava/lang/Boolean;
++  const-string           v1, "ff_plugins_device_ids_disabled"
++  invoke-static          v5, v1, v0, Lcom/adjust/sdk/PackageBuilder;->addBoolean(Ljava/util/Map; Ljava/lang/String; Ljava/lang/Boolean;)V
++  iget-object            v0, v4, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+   iget-object            v0, v0, Lcom/adjust/sdk/AdjustConfig;->onRemoteTriggerListener Lcom/adjust/sdk/OnRemoteTriggerListener;
+   if-eqz                 v0, +009h
+   sget-object            v0, Ljava/lang/Boolean;->TRUE Ljava/lang/Boolean;
+@@ -2984,26 +3029,26 @@
+   const-string           v3, "Partner"
+   invoke-static          v1, v2, v3, Lcom/adjust/sdk/Util;->mergeParameters(Ljava/util/Map; Ljava/util/Map; Ljava/lang/String;)Ljava/util/Map;
+   move-result-object     v1
+-  const-string           v2, "partner_params"
++  const-string/jumbo     v2, partner_params
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addMapJson(Ljava/util/Map; Ljava/lang/String; Ljava/util/Map;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadPlayIds(Lcom/adjust/sdk/AdjustConfig;)V
+-  iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-object            v1, v1, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->f Ljava/lang/String;
++  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadGoogleAdId(Lcom/adjust/sdk/AdjustConfig;)V
++  iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-object            v1, v1, Lcom/adjust/sdk/U;->f Ljava/lang/String;
+   const-string           v2, "android_uuid"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdId Ljava/lang/String;
++  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdId Ljava/lang/String;
+   const-string           v2, "gps_adid"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget                   v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdIdAttempt I
++  iget                   v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdIdReadAttempt I
+   int-to-long            v1, v1
+   const-string           v3, "gps_adid_attempt"
+   invoke-static          v0, v3, v1, v2, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+-  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->playAdIdSource Ljava/lang/String;
++  iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->googleAdIdSource Ljava/lang/String;
+   const-string           v2, "gps_adid_src"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+@@ -3022,10 +3067,10 @@
+   iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->appSetId Ljava/lang/String;
+   const-string           v2, "google_app_set_id"
+   invoke-static          v0, v2, v1, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsPlayIds(Ljava/util/Map;)Z
++  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsGoogleAdId(Ljava/util/Map;)Z
+   move-result            v1
+   if-nez                 v1, +022h
+-  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsFireIds(Ljava/util/Map;)Z
++  invoke-direct          v5, v0, Lcom/adjust/sdk/PackageBuilder;->containsFireAdId(Ljava/util/Map;)Z
+   move-result            v1
+   if-nez                 v1, +01ch
+   sget-object            v1, Lcom/adjust/sdk/PackageBuilder;->logger Lcom/adjust/sdk/ILogger;
+@@ -3035,7 +3080,7 @@
+   invoke-interface       v1, v3, v2, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->adjustConfig Lcom/adjust/sdk/AdjustConfig;
+-  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->reloadNonPlayIds(Lcom/adjust/sdk/AdjustConfig;)V
++  invoke-virtual         v1, v2, Lcom/adjust/sdk/DeviceInfo;->readAndroidId(Lcom/adjust/sdk/AdjustConfig;)V
+   iget-object            v1, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v1, v1, Lcom/adjust/sdk/DeviceInfo;->androidId Ljava/lang/String;
+   const-string           v2, "android_id"
+@@ -3110,8 +3155,8 @@
+   iget-object            v2, v6, Lcom/adjust/sdk/AdjustEvent;->callbackId Ljava/lang/String;
+   const-string           v3, "event_callback_id"
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget                   v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->a I
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget                   v2, v2, Lcom/adjust/sdk/U;->a I
+   int-to-long            v2, v2
+   const-string           v4, "event_count"
+   invoke-static          v0, v4, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+@@ -3154,20 +3199,20 @@
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v2, Lcom/adjust/sdk/DeviceInfo;->osVersion Ljava/lang/String;
+-  const-string           v3, "os_version"
++  const-string/jumbo     v3, os_version
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->deviceInfo Lcom/adjust/sdk/DeviceInfo;
+   iget-object            v2, v2, Lcom/adjust/sdk/DeviceInfo;->packageName Ljava/lang/String;
+-  const-string           v3, "package_name"
++  const-string/jumbo     v3, package_name
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v6, Lcom/adjust/sdk/AdjustEvent;->productId Ljava/lang/String;
+-  const-string           v3, "product_id"
++  const-string/jumbo     v3, product_id
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v6, Lcom/adjust/sdk/AdjustEvent;->purchaseToken Ljava/lang/String;
+   const-string/jumbo     v3, purchase_token
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-object            v2, v2, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->g Ljava/lang/String;
++  iget-object            v2, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-object            v2, v2, Lcom/adjust/sdk/U;->g Ljava/lang/String;
+   const-string/jumbo     v3, push_token
+   invoke-static          v0, v3, v2, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+   iget-object            v2, v6, Lcom/adjust/sdk/AdjustEvent;->revenue Ljava/lang/Double;
+@@ -3191,22 +3236,22 @@
+   iget-object            v6, v6, Lcom/adjust/sdk/DeviceInfo;->screenSize Ljava/lang/String;
+   const-string/jumbo     v2, screen_size
+   invoke-static          v0, v2, v6, Lcom/adjust/sdk/PackageBuilder;->addString(Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V
+-  iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget                   v6, v6, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->b I
++  iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget                   v6, v6, Lcom/adjust/sdk/U;->b I
+   int-to-long            v2, v6
+   const-string/jumbo     v6, session_count
+   invoke-static          v0, v6, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+-  iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-wide              v2, v6, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->e J
++  iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-wide              v2, v6, Lcom/adjust/sdk/U;->e J
+   const-string/jumbo     v6, session_length
+   invoke-static          v0, v6, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addDuration(Ljava/util/Map; Ljava/lang/String; J)V
+-  iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget                   v6, v6, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->c I
++  iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget                   v6, v6, Lcom/adjust/sdk/U;->c I
+   int-to-long            v2, v6
+   const-string/jumbo     v6, subsession_count
+   invoke-static          v0, v6, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addLong(Ljava/util/Map; Ljava/lang/String; J)V
+-  iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;
+-  iget-wide              v2, v6, Lcom/adjust/sdk/PackageBuilder$ActivityStateCopy;->d J
++  iget-object            v6, v5, Lcom/adjust/sdk/PackageBuilder;->activityStateCopy Lcom/adjust/sdk/U;
++  iget-wide              v2, v6, Lcom/adjust/sdk/U;->d J
+   const-string/jumbo     v6, time_spent
+   invoke-static          v0, v6, v2, v3, Lcom/adjust/sdk/PackageBuilder;->addDuration(Ljava/util/Map; Ljava/lang/String; J)V
+   invoke-static          v7, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;

@@ -1,0 +1,136 @@
+{
+ "ks": [
+  {
+   "t": "sym",
+   "name": "HMAC_Init_ex",
+   "addr": "0x73a610011c"
+  },
+  {
+   "t": "hooked",
+   "name": "HMAC_Init_ex"
+  },
+  {
+   "t": "sym",
+   "name": "HMAC_Update",
+   "addr": "0x73a61003f8"
+  },
+  {
+   "t": "hooked",
+   "name": "HMAC_Update"
+  },
+  {
+   "t": "sym",
+   "name": "HMAC_Final",
+   "addr": "0x73a6100420"
+  },
+  {
+   "t": "hooked",
+   "name": "HMAC_Final"
+  },
+  {
+   "t": "sym",
+   "name": "EVP_DecryptInit_ex",
+   "addr": "0x73a60ed53c"
+  },
+  {
+   "t": "hooked",
+   "name": "EVP_DecryptInit_ex"
+  },
+  {
+   "t": "sym",
+   "name": "EVP_DecryptUpdate",
+   "addr": "0x73a60ed814"
+  },
+  {
+   "t": "hooked",
+   "name": "EVP_DecryptUpdate"
+  },
+  {
+   "t": "sym",
+   "name": "EVP_DigestUpdate",
+   "addr": "0x73a60f35dc"
+  },
+  {
+   "t": "hooked",
+   "name": "EVP_DigestUpdate"
+  },
+  {
+   "t": "sym",
+   "name": "EVP_DigestInit_ex",
+   "addr": "0x73a60f34bc"
+  },
+  {
+   "t": "hooked",
+   "name": "EVP_DigestInit_ex"
+  },
+  {
+   "t": "ready"
+  }
+ ],
+ "app": [
+  {
+   "t": "step",
+   "s": "KG",
+   "ty": "object"
+  },
+  {
+   "t": "step",
+   "s": "KG.getInstance",
+   "ty": "function"
+  },
+  {
+   "t": "step",
+   "s": "KG.getInstance.overload",
+   "ty": "function"
+  },
+  {
+   "t": "step",
+   "s": "KGPS",
+   "ty": "object"
+  },
+  {
+   "t": "step",
+   "s": "KGPS.$new",
+   "ty": "function"
+  },
+  {
+   "t": "step",
+   "s": "spec",
+   "ty": "object"
+  },
+  {
+   "t": "step",
+   "s": "kg",
+   "ty": "object"
+  },
+  {
+   "t": "step",
+   "s": "kg.init",
+   "ty": "function"
+  },
+  {
+   "t": "step",
+   "s": "kg.init.overload",
+   "ty": "function"
+  },
+  {
+   "t": "step",
+   "s": "kg.generateKey",
+   "ty": "function"
+  },
+  {
+   "t": "step",
+   "s": "generated_ok"
+  },
+  {
+   "t": "mac",
+   "msg": "PROBE-KEY2-MESSAGE",
+   "hex": "ad7969c34cd097052b7aee20f6973ac1912fc238471a75e29ff44fb8fe757522"
+  },
+  {
+   "t": "mac2",
+   "msg": "{\"a\":\"b\"}",
+   "hex": "850d4f8607023def0aa63e43c668011fd4df675031032ba2a70f5918194509a7"
+  }
+ ]
+}

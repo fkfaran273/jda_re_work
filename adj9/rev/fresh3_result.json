@@ -1,0 +1,172 @@
+{
+ "verdict0": "VERDICT [0]: srand receives time(NULL) VERBATIM. The urandom->seed chain (0x143794 -> 0x1437ec) is a parallel, separate seeding path (its own state object; no libc srand call inside). Therefore the C rand() stream consumed by the wire builder is seeded by the RESUME WALL-CLOCK SECOND.",
+ "verdict3": "Isolated chance-level hits only (15 vs 15.6 expected); no same-seed multi-word cluster, no cross-row ordering => noise.",
+ "fresh_secs": [
+  1790106110,
+  1790106176,
+  1790106196
+ ],
+ "sec_by_row": {
+  "0": 1789239390,
+  "1": 1789239528,
+  "2": 1789240075,
+  "3": 1789240076,
+  "4": 1789240075,
+  "5": 1789240228,
+  "6": 1789240340,
+  "7": 1789240512,
+  "8": 1789240512,
+  "9": 1789240512
+ },
+ "hits": {
+  "lrand48": [
+   [
+    "pair",
+    1789240512,
+    214220,
+    321327729,
+    [
+     "reg7.W0"
+    ]
+   ],
+   [
+    "triple",
+    1789240515,
+    896554,
+    1976116118,
+    [
+     "reg5.W0"
+    ]
+   ],
+   [
+    "pair",
+    1789240225,
+    902263,
+    262160,
+    [
+     "reg5.d4[0]"
+    ]
+   ]
+  ],
+  "ANSI": [
+   [
+    "raw",
+    1790106176,
+    43531,
+    1824262404,
+    [
+     "fresh2.dwBE[16]"
+    ]
+   ],
+   [
+    "raw",
+    1789240514,
+    43827,
+    1271818526,
+    [
+     "reg9.d2"
+    ]
+   ],
+   [
+    "raw",
+    1790106198,
+    9184,
+    1958398007,
+    [
+     "fresh3.dwBE[9]"
+    ]
+   ],
+   [
+    "pair",
+    1789240510,
+    1780519,
+    33554433,
+    [
+     "reg2.d4[0]"
+    ]
+   ]
+  ],
+  "TYPE3": [
+   [
+    "pair",
+    1790106111,
+    280246,
+    87777699,
+    [
+     "fresh3.dwBE[24]"
+    ]
+   ],
+   [
+    "triple",
+    1790106108,
+    208980,
+    2098276987,
+    [
+     "fresh2.dwBE[27]"
+    ]
+   ],
+   [
+    "pair",
+    1789240075,
+    375075,
+    1301607565,
+    [
+     "reg2.U0"
+    ]
+   ],
+   [
+    "pair",
+    1789239529,
+    397215,
+    1672064232,
+    [
+     "reg1.U2"
+    ]
+   ],
+   [
+    "pair",
+    1789240230,
+    563474,
+    268976156,
+    [
+     "reg5.d4[2]"
+    ]
+   ],
+   [
+    "triple",
+    1790106111,
+    780634,
+    1228630634,
+    [
+     "fresh3.dwBE[2]"
+    ]
+   ],
+   [
+    "raw",
+    1789239528,
+    85126,
+    440407664,
+    [
+     "reg1.d4[4]"
+    ]
+   ],
+   [
+    "pair",
+    1790106112,
+    1775571,
+    2098276987,
+    [
+     "fresh2.dwBE[27]"
+    ]
+   ]
+  ]
+ },
+ "cross": {
+  "lrand48": 25,
+  "ANSI": 16,
+  "TYPE3": 27
+ },
+ "expected_attrib": 5.202373104169965,
+ "expected_union": 28.073815762996674,
+ "max_cluster": 2
+}

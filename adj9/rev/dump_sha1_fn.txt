@@ -1,0 +1,514 @@
+
+======================================================================
+FUNCTION 0x12e5f4   11 instructions to first ret
+======================================================================
+  0x12e5f4  adrp       x8, #0x3000
+  0x12e5f8  adrp       x9, #0x3000
+  0x12e5fc  str        wzr, [x0, #0x40]
+  0x12e600  str        xzr, [x0, #0x48]
+  0x12e604  ldr        q0, [x8, #0x620]
+  0x12e608  mov        w8, #0xc1d6
+  0x12e60c  ldr        q1, [x9, #0x640]
+  0x12e610  movk       w8, #0xca62, lsl #16
+  0x12e614  stp        q0, q1, [x0, #0x50]
+  0x12e618  str        w8, [x0, #0x70]
+  0x12e61c  ret        
+
+  fingerprint: ror amounts []
+               add#=0 eor=0  4th SHA1 K (ca62c1d6) as immediate: False
+               large immediates: []
+
+======================================================================
+FUNCTION 0x8d400   188 instructions to first ret
+======================================================================
+  0x8d400  sub        sp, sp, #0xa0
+  0x8d404  stp        x29, x30, [sp, #0x50]
+  0x8d408  stp        x26, x25, [sp, #0x60]
+  0x8d40c  stp        x24, x23, [sp, #0x70]
+  0x8d410  stp        x22, x21, [sp, #0x80]
+  0x8d414  stp        x20, x19, [sp, #0x90]
+  0x8d418  add        x29, sp, #0x50
+  0x8d41c  adrp       x14, #0x3000
+  0x8d420  adrp       x15, #0x3000
+  0x8d424  mrs        x8, tpidr_el0
+  0x8d428  adrp       x16, #0x3000
+  0x8d42c  ldr        x13, [x8, #0x28]
+  0x8d430  mov        x10, #0x2b00
+  0x8d434  ldr        q0, [x14, #0x630]
+  0x8d438  mov        x11, #0x906d
+  0x8d43c  ldr        q1, [x15, #0x610]
+  0x8d440  adrp       x15, #0x3000
+  0x8d444  mov        x12, #0x1c0e
+  0x8d448  stur       x13, [x29, #-8]
+  0x8d44c  mov        x13, #0xa22f
+  0x8d450  mov        x14, #0x7221
+  0x8d454  stp        q0, q1, [sp]
+  0x8d458  ldr        q0, [x15, #0x5e0]
+  0x8d45c  ldr        q1, [x16, #0x5d0]
+  0x8d460  mov        x15, #0xda60
+  0x8d464  mov        x16, #0x8667
+  0x8d468  mov        x17, #0xc545
+  0x8d46c  mov        x1, #0x6260
+  0x8d470  mov        x2, #0x7077
+  0x8d474  mov        x3, #0xb283
+  0x8d478  mov        x4, #0xde43
+  0x8d47c  mov        x5, #0x81e
+  0x8d480  mov        x7, #0x168e
+  0x8d484  mov        x19, #0xc006
+  0x8d488  mov        x20, #0xbd0c
+  0x8d48c  mov        x26, #0xda60
+  0x8d490  movk       x10, #0x3231, lsl #16
+  0x8d494  movk       x11, #0xe4d6, lsl #16
+  0x8d498  movk       x12, #0x9e72, lsl #16
+  0x8d49c  movk       x13, #0x528c, lsl #16
+  0x8d4a0  movk       x14, #0xe633, lsl #16
+  0x8d4a4  movk       x15, #0x981d, lsl #16
+  0x8d4a8  movk       x16, #0xcb60, lsl #16
+  0x8d4ac  movk       x17, #0x2ffa, lsl #16
+  0x8d4b0  movk       x1, #0x21bc, lsl #16
+  0x8d4b4  movk       x2, #0xdb59, lsl #16
+  0x8d4b8  movk       x3, #0x3b75, lsl #16
+  0x8d4bc  movk       x4, #0xbb42, lsl #16
+  0x8d4c0  movk       x5, #0xfccf, lsl #16
+  0x8d4c4  movk       x7, #0xbe67, lsl #16
+  0x8d4c8  movk       x19, #0x6e21, lsl #16
+  0x8d4cc  movk       x20, #0x1deb, lsl #16
+  0x8d4d0  movk       x26, #0x981d, lsl #16
+  0x8d4d4  movk       x10, #0x46b4, lsl #32
+  0x8d4d8  movk       x11, #0x33ce, lsl #32
+  0x8d4dc  movk       x12, #0x1c45, lsl #32
+  0x8d4e0  movk       x13, #0xfd78, lsl #32
+  0x8d4e4  movk       x14, #0x4a64, lsl #32
+  0x8d4e8  movk       x15, #0x9cd1, lsl #32
+  0x8d4ec  movk       x16, #0x8aec, lsl #32
+  0x8d4f0  movk       x17, #0xad90, lsl #32
+  0x8d4f4  movk       x1, #0xceb8, lsl #32
+  0x8d4f8  movk       x2, #0xccfa, lsl #32
+  0x8d4fc  movk       x3, #0x9ae2, lsl #32
+  0x8d500  movk       x4, #0x3d69, lsl #32
+  0x8d504  movk       x5, #0xafb5, lsl #32
+  0x8d508  movk       x7, #0xfa79, lsl #32
+  0x8d50c  movk       x19, #0x4cdb, lsl #32
+  0x8d510  movk       x20, #0x96ce, lsl #32
+  0x8d514  movk       x26, #0x9cd1, lsl #32
+  0x8d518  mov        x9, xzr
+  0x8d51c  movk       x10, #0xf7bc, lsl #48
+  0x8d520  movk       x11, #0x6363, lsl #48
+  0x8d524  movk       x12, #0x602e, lsl #48
+  0x8d528  movk       x13, #0x1d30, lsl #48
+  0x8d52c  movk       x14, #0x8e8, lsl #48
+  0x8d530  movk       x15, #0x4b6d, lsl #48
+  0x8d534  movk       x16, #0x97f3, lsl #48
+  0x8d538  movk       x17, #0xb176, lsl #48
+  0x8d53c  movk       x1, #0xcb48, lsl #48
+  0x8d540  movk       x2, #0xcbbe, lsl #48
+  0x8d544  movk       x3, #0xdea4, lsl #48
+  0x8d548  movk       x4, #0x11eb, lsl #48
+  0x8d54c  movk       x5, #0xdeda, lsl #48
+  0x8d550  mov        x6, sp
+  0x8d554  movk       x7, #0x64c4, lsl #48
+  0x8d558  movk       x19, #0x371e, lsl #48
+  0x8d55c  movk       x20, #0xdf36, lsl #48
+  0x8d560  movk       x26, #0x4b6d, lsl #48
+  0x8d564  stp        q0, q1, [sp, #0x20]
+  0x8d568  cmp        x26, x16
+  0x8d56c  mov        x25, x26
+  0x8d570  ccmp       x26, x17, #4, ne
+  0x8d574  mov        x26, #0x1c0e
+  0x8d578  movk       x26, #0x9e72, lsl #16
+  0x8d57c  movk       x26, #0x1c45, lsl #32
+  0x8d580  movk       x26, #0x602e, lsl #48
+  0x8d584  b.eq       #0x8d568
+  0x8d588  mov        x26, #0x2b00
+  0x8d58c  cmp        x25, x1
+  0x8d590  movk       x26, #0x3231, lsl #16
+  0x8d594  movk       x26, #0x46b4, lsl #32
+  0x8d598  movk       x26, #0xf7bc, lsl #48
+  0x8d59c  b.eq       #0x8d568
+  0x8d5a0  mov        x26, #0x7221
+  0x8d5a4  cmp        x25, x2
+  0x8d5a8  movk       x26, #0xe633, lsl #16
+  0x8d5ac  movk       x26, #0x4a64, lsl #32
+  0x8d5b0  movk       x26, #0x8e8, lsl #48
+  0x8d5b4  b.eq       #0x8d568
+  0x8d5b8  cmp        x25, x3
+  0x8d5bc  b.eq       #0x8d6ac
+  0x8d5c0  cmp        x25, x5
+  0x8d5c4  b.eq       #0x8d660
+  0x8d5c8  mov        x26, #0xa22f
+  0x8d5cc  cmp        x25, x20
+  0x8d5d0  movk       x26, #0x528c, lsl #16
+  0x8d5d4  movk       x26, #0xfd78, lsl #32
+  0x8d5d8  movk       x26, #0x1d30, lsl #48
+  0x8d5dc  b.eq       #0x8d568
+  0x8d5e0  cmp        x25, x14
+  0x8d5e4  b.eq       #0x8d698
+  0x8d5e8  cmp        x25, x4
+  0x8d5ec  b.eq       #0x8d568
+  0x8d5f0  mov        x26, #0x2b00
+  0x8d5f4  cmp        x25, x13
+  0x8d5f8  movk       x26, #0x3231, lsl #16
+  0x8d5fc  movk       x26, #0x46b4, lsl #32
+  0x8d600  movk       x26, #0xf7bc, lsl #48
+  0x8d604  b.eq       #0x8d568
+  0x8d608  cmp        x25, x19
+  0x8d60c  b.eq       #0x8d688
+  0x8d610  mov        x26, #0x906d
+  0x8d614  cmp        x25, x15
+  0x8d618  movk       x26, #0xe4d6, lsl #16
+  0x8d61c  movk       x26, #0x33ce, lsl #32
+  0x8d620  movk       x26, #0x6363, lsl #48
+  0x8d624  b.eq       #0x8d568
+  0x8d628  cmp        x25, x12
+  0x8d62c  b.eq       #0x8d6a4
+  0x8d630  cmp        x25, x11
+  0x8d634  b.eq       #0x8d678
+  0x8d638  mov        x26, #0x7221
+  0x8d63c  cmp        x25, x7
+  0x8d640  movk       x26, #0xe633, lsl #16
+  0x8d644  movk       x26, #0x4a64, lsl #32
+  0x8d648  movk       x26, #0x8e8, lsl #48
+  0x8d64c  b.eq       #0x8d568
+  0x8d650  mov        x26, x25
+  0x8d654  cmp        x25, x10
+  0x8d658  b.ne       #0x8d568
+  0x8d65c  b          #0x8d6bc
+  0x8d660  add        x23, x6, x21, lsl #3
+  0x8d664  ldr        w24, [x0, #0x60]
+  0x8d668  ldp        w22, w23, [x23]
+  0x8d66c  cmp        w24, w22
+  0x8d670  csel       x26, x19, x7, eq
+  0x8d674  b          #0x8d568
+  0x8d678  cmp        x9, #8
+  0x8d67c  mov        x21, x9
+  0x8d680  csel       x26, x1, x5, eq
+  0x8d684  b          #0x8d568
+  0x8d688  ldr        w25, [x0, #0x64]
+  0x8d68c  cmp        w25, w23
+  0x8d690  csel       x26, x20, x2, eq
+  0x8d694  b          #0x8d568
+  0x8d698  cmp        w24, w23
+  0x8d69c  csel       x26, x3, x16, eq
+  0x8d6a0  b          #0x8d568
+  0x8d6a4  add        x9, x21, #1
+  0x8d6a8  b          #0x8d568
+  0x8d6ac  ldr        w25, [x0, #0x64]
+  0x8d6b0  cmp        w25, w22
+  0x8d6b4  csel       x26, x4, x17, eq
+  0x8d6b8  b          #0x8d568
+  0x8d6bc  ldr        x8, [x8, #0x28]
+  0x8d6c0  cmp        x21, #8
+  0x8d6c4  ldur       x9, [x29, #-8]
+  0x8d6c8  cset       w0, lo
+  0x8d6cc  cmp        x8, x9
+  0x8d6d0  b.ne       #0x8d6f0
+  0x8d6d4  ldp        x20, x19, [sp, #0x90]
+  0x8d6d8  ldp        x22, x21, [sp, #0x80]
+  0x8d6dc  ldp        x24, x23, [sp, #0x70]
+  0x8d6e0  ldp        x26, x25, [sp, #0x60]
+  0x8d6e4  ldp        x29, x30, [sp, #0x50]
+  0x8d6e8  add        sp, sp, #0xa0
+  0x8d6ec  ret        
+
+  fingerprint: ror amounts []
+               add#=4 eor=0  4th SHA1 K (ca62c1d6) as immediate: False
+               large immediates: []
+
+======================================================================
+FUNCTION 0x31924   279 instructions to first ret
+======================================================================
+  0x31924  adrp       x8, #0x155000
+  0x31928  add        x8, x8, #0x710
+  0x3192c  mov        x9, #-0x1c00
+  0x31930  stlrb      wzr, [x8]
+  0x31934  mov        x8, sp
+  0x31938  add        x0, x8, x9
+  0x3193c  mov        sp, x0
+  0x31940  adrp       x11, #0x152000
+  0x31944  add        x11, x11, #0x474
+  0x31948  adrp       x10, #0x152000
+  0x3194c  add        x10, x10, #0x3c0
+  0x31950  adrp       x9, #0x152000
+  0x31954  add        x9, x9, #0x370
+  0x31958  str        x11, [x0, #0x810]
+  0x3195c  adrp       x11, #0x152000
+  0x31960  add        x11, x11, #0x508
+  0x31964  str        x10, [x0, #0x300]
+  0x31968  adrp       x10, #0x152000
+  0x3196c  add        x10, x10, #0x3e0
+  0x31970  str        x9, [x0]
+  0x31974  mov        w9, #8
+  0x31978  str        x11, [x0, #0xd10]
+  0x3197c  adrp       x11, #0x152000
+  0x31980  add        x11, x11, #0x518
+  0x31984  str        x10, [x0, #0x400]
+  0x31988  adrp       x10, #0x152000
+  0x3198c  add        x10, x10, #0x400
+  0x31990  str        w9, [x0, #0xa8]
+  0x31994  adrp       x13, #0x152000
+  0x31998  add        x13, x13, #0x528
+  0x3199c  str        x11, [x0, #0xd18]
+  0x319a0  adrp       x11, #0x3000
+  0x319a4  str        x10, [x0, #0x500]
+  0x319a8  adrp       x10, #0x152000
+  0x319ac  add        x10, x10, #0x420
+  0x319b0  str        w9, [x0, #0x1a8]
+  0x319b4  adrp       x14, #0x152000
+  0x319b8  add        x14, x14, #0x540
+  0x319bc  ldr        q1, [x11, #0x5b0]
+  0x319c0  sub        x11, x8, #0xe58
+  0x319c4  str        x10, [x0, #0x600]
+  0x319c8  adrp       x10, #0x152000
+  0x319cc  add        x10, x10, #0x380
+  0x319d0  str        w9, [x0, #0x2a8]
+  0x319d4  adrp       x15, #0x152000
+  0x319d8  add        x15, x15, #0x4e8
+  0x319dc  str        q1, [x11]
+  0x319e0  adrp       x11, #0x152000
+  0x319e4  add        x11, x11, #0x4b8
+  0x319e8  str        x10, [x0, #0x100]
+  0x319ec  adrp       x10, #0x152000
+  0x319f0  add        x10, x10, #0x3a0
+  0x319f4  str        w9, [x0, #0x3a8]
+  0x319f8  str        x11, [x0, #0xa08]
+  0x319fc  adrp       x2, #0x152000
+  0x31a00  add        x2, x2, #0x484
+  0x31a04  str        x11, [x0, #0xb08]
+  0x31a08  str        x11, [x0, #0x1020]
+  0x31a0c  adrp       x11, #0x152000
+  0x31a10  add        x11, x11, #0x5d0
+  0x31a14  str        w9, [x0, #0x4a8]
+  0x31a18  str        w9, [x0, #0x5a8]
+  0x31a1c  mov        w12, #4
+  0x31a20  str        w9, [x0, #0x6a8]
+  0x31a24  adrp       x9, #0x3000
+  0x31a28  str        x11, [x0, #0x1100]
+  0x31a2c  adrp       x11, #0x152000
+  0x31a30  add        x11, x11, #0x5e0
+  0x31a34  str        x10, [x0, #0x200]
+  0x31a38  adrp       x10, #0x152000
+  0x31a3c  add        x10, x10, #0x440
+  0x31a40  ldr        q0, [x9, #0x590]
+  0x31a44  adrp       x9, #0x152000
+  0x31a48  add        x9, x9, #0x47c
+  0x31a4c  str        x11, [x0, #0x1118]
+  0x31a50  adrp       x11, #0x152000
+  0x31a54  add        x11, x11, #0x5f0
+  0x31a58  str        x10, [x0, #0x700]
+  0x31a5c  adrp       x10, #0x152000
+  0x31a60  add        x10, x10, #0x468
+  0x31a64  str        x9, [x0, #0x818]
+  0x31a68  str        x11, [x0, #0x1200]
+  0x31a6c  adrp       x11, #0x152000
+  0x31a70  add        x11, x11, #0x358
+  0x31a74  adrp       x9, #0x152000
+  0x31a78  add        x9, x9, #0x488
+  0x31a7c  str        x13, [x0, #0xd20]
+  0x31a80  mov        w13, #2
+  0x31a84  str        x14, [x0, #0xe00]
+  0x31a88  str        x11, [x0, #0x1208]
+  0x31a8c  adrp       x11, #0x152000
+  0x31a90  add        x11, x11, #0x600
+  0x31a94  adrp       x14, #0x3000
+  0x31a98  str        x10, [x0, #0x800]
+  0x31a9c  mov        x10, #-0x1358
+  0x31aa0  str        x9, [x0, #0x900]
+  0x31aa4  adrp       x9, #0x152000
+  0x31aa8  add        x9, x9, #0x498
+  0x31aac  str        x11, [x0, #0x1300]
+  0x31ab0  adrp       x11, #0x152000
+  0x31ab4  add        x11, x11, #0x618
+  0x31ab8  str        x13, [x0, #0x9f8]
+  0x31abc  ldr        d1, [x14, #0x578]
+  0x31ac0  str        x13, [x0, #0xaf8]
+  0x31ac4  adrp       x1, #0x152000
+  0x31ac8  add        x1, x1, #0x574
+  0x31acc  str        x11, [x0, #0x1400]
+  0x31ad0  adrp       x11, #0x152000
+  0x31ad4  add        x11, x11, #0x628
+  0x31ad8  str        x13, [x0, #0xef8]
+  0x31adc  adrp       x13, #0x3000
+  0x31ae0  str        q0, [x8, x10]
+  0x31ae4  adrp       x10, #0x152000
+  0x31ae8  add        x10, x10, #0x4d0
+  0x31aec  str        x11, [x0, #0x1408]
+  0x31af0  adrp       x11, #0x152000
+  0x31af4  add        x11, x11, #0x630
+  0x31af8  str        x9, [x0, #0x908]
+  0x31afc  adrp       x9, #0x152000
+  0x31b00  add        x9, x9, #0x4a0
+  0x31b04  str        x15, [x0, #0xc08]
+  0x31b08  str        x11, [x0, #0x1500]
+  0x31b0c  adrp       x11, #0x152000
+  0x31b10  add        x11, x11, #0x660
+  0x31b14  str        x15, [x0, #0xe10]
+  0x31b18  str        d1, [x0, #0xea8]
+  0x31b1c  adrp       x15, #0x152000
+  0x31b20  add        x15, x15, #0x560
+  0x31b24  ldr        q1, [x13, #0x5c0]
+  0x31b28  str        x11, [x0, #0x1600]
+  0x31b2c  adrp       x11, #0x152000
+  0x31b30  add        x11, x11, #0x670
+  0x31b34  adrp       x13, #0x152000
+  0x31b38  add        x13, x13, #0x57c
+  0x31b3c  str        x9, [x0, #0x910]
+  0x31b40  adrp       x9, #0x152000
+  0x31b44  add        x9, x9, #0x4a8
+  0x31b48  str        x11, [x0, #0x1700]
+  0x31b4c  adrp       x11, #0x152000
+  0x31b50  add        x11, x11, #0x680
+  0x31b54  str        x10, [x0, #0xc00]
+  0x31b58  adrp       x10, #0x152000
+  0x31b5c  add        x10, x10, #0x4f0
+  0x31b60  str        x15, [x0, #0xf00]
+  0x31b64  sub        x15, x8, #0xc58
+  0x31b68  str        x11, [x0, #0x1800]
+  0x31b6c  adrp       x11, #0x152000
+  0x31b70  add        x11, x11, #0x6a0
+  0x31b74  str        x13, [x0, #0xf18]
+  0x31b78  adrp       x13, #0x152000
+  0x31b7c  add        x13, x13, #0x584
+  0x31b80  movi       v0.2s, #1
+  0x31b84  str        x9, [x0, #0xa00]
+  0x31b88  str        x11, [x0, #0x1900]
+  0x31b8c  adrp       x11, #0x152000
+  0x31b90  add        x11, x11, #0x6ac
+  0x31b94  adrp       x9, #0x152000
+  0x31b98  add        x9, x9, #0x4c0
+  0x31b9c  str        x10, [x0, #0xd00]
+  0x31ba0  adrp       x10, #0x152000
+  0x31ba4  add        x10, x10, #0x504
+  0x31ba8  str        x13, [x0, #0xf20]
+  0x31bac  adrp       x13, #0x3000
+  0x31bb0  str        q1, [x15]
+  0x31bb4  adrp       x15, #0x152000
+  0x31bb8  add        x15, x15, #0x590
+  0x31bbc  str        x11, [x0, #0x1908]
+  0x31bc0  adrp       x11, #0x152000
+  0x31bc4  add        x11, x11, #0x6b0
+  0x31bc8  str        d0, [x0, #0x9a8]
+  0x31bcc  movi       v0.2s, #3
+  0x31bd0  str        x9, [x0, #0xb00]
+  0x31bd4  mov        w9, #1
+  0x31bd8  str        x10, [x0, #0xd08]
+  0x31bdc  mov        w10, #3
+  0x31be0  adrp       x17, #0x152000
+  0x31be4  add        x17, x17, #0x458
+  0x31be8  adrp       x16, #0x152000
+  0x31bec  add        x16, x16, #0x328
+  0x31bf0  str        x2, [x0, #0x820]
+  0x31bf4  adrp       x14, #0x152000
+  0x31bf8  add        x14, x14, #0x558
+  0x31bfc  str        x12, [x0, #0x8f8]
+  0x31c00  str        x2, [x0, #0xa10]
+  0x31c04  ldr        q1, [x13, #0x650]
+  0x31c08  str        x12, [x0, #0xdf8]
+  0x31c0c  adrp       x13, #0x152000
+  0x31c10  add        x13, x13, #0x5b0
+  0x31c14  str        x1, [x0, #0xf10]
+  0x31c18  str        x12, [x0, #0xff8]
+  0x31c1c  mov        w1, #0x1c
+  0x31c20  str        x15, [x0, #0x1000]
+  0x31c24  sub        x15, x8, #0xb58
+  0x31c28  str        x2, [x0, #0x1008]
+  0x31c2c  str        x12, [x0, #0x10f8]
+  0x31c30  adrp       x12, #0x152000
+  0x31c34  add        x12, x12, #0x650
+  0x31c38  str        x2, [x0, #0x1108]
+  0x31c3c  str        x11, [x0, #0x1a00]
+  0x31c40  adrp       x11, #0x152000
+  0x31c44  add        x11, x11, #0x6c0
+  0x31c48  ldur       x2, [x29, #-0x58]
+  0x31c4c  str        x9, [x0, #0xf8]
+  0x31c50  str        x9, [x0, #0x1f8]
+  0x31c54  str        xzr, [x0, #8]
+  0x31c58  str        xzr, [x0, #0x108]
+  0x31c5c  str        xzr, [x0, #0x208]
+  0x31c60  str        x9, [x0, #0x2f8]
+  0x31c64  str        xzr, [x0, #0x308]
+  0x31c68  str        x9, [x0, #0x3f8]
+  0x31c6c  str        xzr, [x0, #0x408]
+  0x31c70  str        x9, [x0, #0x4f8]
+  0x31c74  str        xzr, [x0, #0x508]
+  0x31c78  str        x9, [x0, #0x5f8]
+  0x31c7c  str        xzr, [x0, #0x608]
+  0x31c80  str        x9, [x0, #0x6f8]
+  0x31c84  str        x17, [x0, #0x708]
+  0x31c88  str        w10, [x0, #0x7a8]
+  0x31c8c  str        x9, [x0, #0x7f8]
+  0x31c90  str        x16, [x0, #0x808]
+  0x31c94  str        d0, [x0, #0xaa8]
+  0x31c98  str        w10, [x0, #0xba8]
+  0x31c9c  str        x9, [x0, #0xbf8]
+  0x31ca0  str        w10, [x0, #0xca8]
+  0x31ca4  str        x9, [x0, #0xcf8]
+  0x31ca8  str        x14, [x0, #0xe08]
+  0x31cac  str        x14, [x0, #0xf08]
+  0x31cb0  str        x16, [x0, #0x1010]
+  0x31cb4  str        x13, [x0, #0x1018]
+  0x31cb8  str        q1, [x15]
+  0x31cbc  str        x17, [x0, #0x1110]
+  0x31cc0  str        d0, [x0, #0x11a8]
+  0x31cc4  str        w10, [x0, #0x11b0]
+  0x31cc8  str        x10, [x0, #0x11f8]
+  0x31ccc  str        wzr, [x0, #0x12a8]
+  0x31cd0  str        x9, [x0, #0x12f8]
+  0x31cd4  str        x14, [x0, #0x1308]
+  0x31cd8  str        wzr, [x0, #0x13a8]
+  0x31cdc  str        x9, [x0, #0x13f8]
+  0x31ce0  str        wzr, [x0, #0x14a8]
+  0x31ce4  str        x9, [x0, #0x14f8]
+  0x31ce8  str        x12, [x0, #0x1508]
+  0x31cec  str        w10, [x0, #0x15a8]
+  0x31cf0  str        x9, [x0, #0x15f8]
+  0x31cf4  str        x14, [x0, #0x1608]
+  0x31cf8  str        w10, [x0, #0x16a8]
+  0x31cfc  str        x9, [x0, #0x16f8]
+  0x31d00  str        x14, [x0, #0x1708]
+  0x31d04  str        w10, [x0, #0x17a8]
+  0x31d08  str        x9, [x0, #0x17f8]
+  0x31d0c  str        x17, [x0, #0x1808]
+  0x31d10  str        w10, [x0, #0x18a8]
+  0x31d14  str        x9, [x0, #0x18f8]
+  0x31d18  str        wzr, [x0, #0x19a8]
+  0x31d1c  str        x9, [x0, #0x19f8]
+  0x31d20  str        x17, [x0, #0x1a08]
+  0x31d24  str        w10, [x0, #0x1aa8]
+  0x31d28  str        x9, [x0, #0x1af8]
+  0x31d2c  stp        x11, x12, [x8, #-0x100]
+  0x31d30  stur       w10, [x8, #-0x58]
+  0x31d34  stur       x9, [x8, #-8]
+  0x31d38  bl         #0x2974c
+  0x31d3c  ldur       x8, [x29, #-0x50]
+  0x31d40  ldr        x8, [x8, #0x28]
+  0x31d44  ldur       x9, [x29, #-0x48]
+  0x31d48  cmp        x8, x9
+  0x31d4c  b.ne       #0x31d80
+  0x31d50  sub        sp, x29, #0x40
+  0x31d54  ldp        x20, x19, [sp, #0x90]
+  0x31d58  ldp        x22, x21, [sp, #0x80]
+  0x31d5c  ldp        x24, x23, [sp, #0x70]
+  0x31d60  ldp        x26, x25, [sp, #0x60]
+  0x31d64  ldp        x28, x27, [sp, #0x50]
+  0x31d68  ldp        x29, x30, [sp, #0x40]
+  0x31d6c  ldp        d9, d8, [sp, #0x30]
+  0x31d70  ldp        d11, d10, [sp, #0x20]
+  0x31d74  ldp        d13, d12, [sp, #0x10]
+  0x31d78  ldp        d15, d14, [sp], #0xa0
+  0x31d7c  ret        
+
+  fingerprint: ror amounts []
+               add#=52 eor=0  4th SHA1 K (ca62c1d6) as immediate: False
+               large immediates: []
+
+
+=== callers (bl / b) of each function ===
+
+  0x12e5f4 : 1 caller(s)
+      from 0xe57c
+
+  0x8d400 : 1 caller(s)
+      from 0x102f8
+
+  0x31924 : 1 caller(s)
+      from 0x2e934

@@ -1,0 +1,20 @@
+# CLASS Lcom/adjust/sdk/AdjustInstance$11;
+FIELD public final synthetic a Lcom/adjust/sdk/OnSdkVersionReadListener;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/OnSdkVersionReadListener;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustInstance$11;->a Lcom/adjust/sdk/OnSdkVersionReadListener;
+  invoke-direct          v0, Lcom/adjust/sdk/scheduler/AsyncTaskExecutor;-><init>()V
+  return-void            
+
+---- METHOD public final doInBackground ([Ljava/lang/Object;)Ljava/lang/Object; ----
+  check-cast             v1, [Ljava/lang/Void;
+  invoke-static          Lcom/adjust/sdk/Util;->getSdkVersion()Ljava/lang/String;
+  move-result-object     v1
+  return-object          v1
+
+---- METHOD public final onPostExecute (Ljava/lang/Object;)V ----
+  check-cast             v2, Ljava/lang/String;
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustInstance$11;->a Lcom/adjust/sdk/OnSdkVersionReadListener;
+  invoke-interface       v0, v2, Lcom/adjust/sdk/OnSdkVersionReadListener;->onSdkVersionRead(Ljava/lang/String;)V
+  return-void            
+######################################################################

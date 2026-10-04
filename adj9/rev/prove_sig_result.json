@@ -1,0 +1,13 @@
+{
+ "gps": "0e789180-17da-440b-b1c3-0349d40e0e93",
+ "auid": "4be5a1e4-b828-4e6b-8455-583fba8ba981",
+ "device_token": "24i5ummx",
+ "device_network": "VKM Digital Yeni",
+ "runs": [
+  {
+   "label": "P2 crafted poll (maker)",
+   "http": 200,
+   "verdict": "wy7261z / eng=0001-01-01T00:00:00Z"
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "arm": "oracle",
+ "gps_adid": "f44b8d77-4c68-4990-9d02-7b1c821a42ce",
+ "verdict": {
+  "token": "24xg6t54",
+  "network": "VKM Digital Yeni",
+  "engagement_time": "2026-09-24T15:16:40Z",
+  "installed_at": "2026-09-24T15:16:52Z",
+  "organic": false,
+  "verdict": "NON-ORGANIC"
+ }
+}

@@ -1,0 +1,11 @@
+distinct first-16 values: 22 / 24
+  REPEATED 49672b213dde2d9d11aad13516394cf7 x2
+  REPEATED 7c73f29a26ceedd8080b78182800ddaf x2
+
+pairs with common prefix >=4:
+  (4,5) cp= 16  dt0=929ms
+  (10,11) cp= 16  dt0=810ms
+
+repeated 16B-aligned blocks: 2
+   off=  0 49672b213dde2d9d11aad13516394cf7 x2
+   off=  0 7c73f29a26ceedd8080b78182800ddaf x2

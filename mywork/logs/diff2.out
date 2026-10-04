@@ -1,0 +1,21 @@
+========================================================================
+PAIRED DIFF  kind=session sdk=android5.7.0 second=1790490115 seed=0xd124f72b
+  blob=192B  captured head=2b 22 25 2e
+========================================================================
+P0   PASS  d2=2bf724d1 expected=2bf724d1
+P1   PASS  hdr=4d33f8646b7011120733b7eb71908d0b
+P2   PASS  status=exit-clean stream=0x5500000000 match=48/48 diff=[]
+P3   PASS  law=360B cap=360B(unpadded 360B)
+P4a  FAIL  adjs.region(seed=d124f72b) head-ignored  d0=False d2=True d4=True[0.0s]
+     F.region    head=cap           d0=EXACT d4=EXACT
+     F.region    head=None          d0=diff d4=EXACT
+     F.region    head=F.HEAD_FIRST  d0=diff d4=EXACT
+     F.region    head=F.HEAD_RESIGN d0=diff d4=EXACT
+     F.region    head=kind          d0=diff d4=EXACT
+P4b  PASS  F.region seed lift: cap
+P5   PASS  match=48/48 diff=[]
+     info: {"status": "exit-clean", "steps": 10519758, "second": 1790490115, "stream": 365072220160, "seed": 3508860715, "d2": 737617105, "desc10_padded": 360, "desc10_unpadded": 360}
+P6   FAIL  captured=2b 22 25 2e expected=2b 22 25 2e 44
+========================================================================
+SUMMARY: 6/8 pass   FAILED: P4a P6
+========================================================================

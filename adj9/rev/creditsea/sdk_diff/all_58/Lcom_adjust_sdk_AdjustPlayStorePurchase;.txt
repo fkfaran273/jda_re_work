@@ -1,0 +1,18 @@
+# CLASS Lcom/adjust/sdk/AdjustPlayStorePurchase;
+FIELD private final productId Ljava/lang/String;
+FIELD private final purchaseToken Ljava/lang/String;
+
+---- METHOD public constructor <init> (Ljava/lang/String; Ljava/lang/String;)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustPlayStorePurchase;->productId Ljava/lang/String;
+  iput-object            v2, v0, Lcom/adjust/sdk/AdjustPlayStorePurchase;->purchaseToken Ljava/lang/String;
+  return-void            
+
+---- METHOD public getProductId ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustPlayStorePurchase;->productId Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getPurchaseToken ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustPlayStorePurchase;->purchaseToken Ljava/lang/String;
+  return-object          v0
+######################################################################

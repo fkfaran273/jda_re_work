@@ -1,0 +1,26 @@
+# CLASS Lcom/adjust/sdk/AdjustSessionFailure;
+FIELD public adid Ljava/lang/String;
+FIELD public jsonResponse Lorg/json/JSONObject;
+FIELD public message Ljava/lang/String;
+FIELD public timestamp Ljava/lang/String;
+FIELD public willRetry Z
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public toString ()Ljava/lang/String; ----
+  iget-object            v0, v5, Lcom/adjust/sdk/AdjustSessionFailure;->message Ljava/lang/String;
+  iget-object            v1, v5, Lcom/adjust/sdk/AdjustSessionFailure;->timestamp Ljava/lang/String;
+  iget-object            v2, v5, Lcom/adjust/sdk/AdjustSessionFailure;->adid Ljava/lang/String;
+  iget-boolean           v3, v5, Lcom/adjust/sdk/AdjustSessionFailure;->willRetry Z
+  invoke-static          v3, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object     v3
+  iget-object            v4, v5, Lcom/adjust/sdk/AdjustSessionFailure;->jsonResponse Lorg/json/JSONObject;
+  filled-new-array       v0, v1, v2, v3, v4, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v1, "Session Failure msg:%s time:%s adid:%s retry:%b json:%s"
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+######################################################################

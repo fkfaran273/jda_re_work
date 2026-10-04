@@ -1,0 +1,77 @@
+[
+ {
+  "arm": "C0",
+  "client_sdk": "android5.7.0",
+  "gps": "fc1908a6-7981-4678-a959-22419cd8adfb",
+  "click_http": 302,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"1cdfc2b972f725059988dddc4276e8b6\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"1cdfc2b972f725059988dddc4276e8b6\"}"
+  ],
+  "verdict": "click=200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"1cdfc2b972f725059988dddc4276e8b6\"}"
+ },
+ {
+  "arm": "C1",
+  "client_sdk": "android5.6.0",
+  "gps": "a04b6791-90fc-4a5d-83cd-828684d7e578",
+  "click_http": 302,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"92dee95d853cb46d00a0677e04b88493\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"92dee95d853cb46d00a0677e04b88493\"}"
+  ],
+  "verdict": "click=200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"92dee95d853cb46d00a0677e04b88493\"}"
+ },
+ {
+  "arm": "C2",
+  "client_sdk": "android5.0.0",
+  "gps": "1d230789-bba0-4cd0-ae8b-1c70e482f033",
+  "click_http": 302,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"af7883ea168b460677d8be4bdbb3aba3\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"af7883ea168b460677d8be4bdbb3aba3\"}"
+  ],
+  "verdict": "click=200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"af7883ea168b460677d8be4bdbb3aba3\"}"
+ },
+ {
+  "arm": "C3",
+  "client_sdk": "ios5.7.0",
+  "gps": "3dfa8588-f454-4c1b-8bb4-d7ab4a0ea0b2",
+  "click_http": 302,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"78234d2a846aba90a8dbabfff0dd6a98\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"78234d2a846aba90a8dbabfff0dd6a98\"}"
+  ],
+  "verdict": "click=200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"78234d2a846aba90a8dbabfff0dd6a98\"}"
+ },
+ {
+  "arm": "C4",
+  "client_sdk": "android99.0.0",
+  "gps": "9807deaf-c06a-4009-999e-6aab5cd16dea",
+  "click_http": 302,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"40089d7ea3e83cdc5801c334cc477a5d\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"40089d7ea3e83cdc5801c334cc477a5d\"}"
+  ],
+  "verdict": "click=200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"40089d7ea3e83cdc5801c334cc477a5d\"}"
+ }
+]

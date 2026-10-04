@@ -1,0 +1,37 @@
+[
+ {
+  "row": 0,
+  "kind": "session",
+  "ev": 0,
+  "match": true,
+  "second": 1789239390
+ },
+ {
+  "row": 1,
+  "kind": "session",
+  "ev": 0,
+  "match": true,
+  "second": 1789239528
+ },
+ {
+  "row": 2,
+  "kind": "session",
+  "ev": 0,
+  "match": false,
+  "second": null
+ },
+ {
+  "row": 3,
+  "kind": "click",
+  "ev": 23770,
+  "match": false,
+  "second": null
+ },
+ {
+  "row": 4,
+  "kind": "session",
+  "ev": 0,
+  "match": true,
+  "second": 1789240075
+ }
+]

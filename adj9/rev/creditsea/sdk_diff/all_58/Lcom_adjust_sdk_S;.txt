@@ -1,0 +1,92 @@
+# CLASS Lcom/adjust/sdk/s;
+FIELD public final synthetic a I
+FIELD public final synthetic b Ljava/util/ArrayList;
+FIELD public final synthetic c Ljava/lang/String;
+
+---- METHOD public synthetic constructor <init> (I Ljava/lang/String; Ljava/util/ArrayList;)V ----
+  iput                   v1, v0, Lcom/adjust/sdk/s;->a I
+  iput-object            v3, v0, Lcom/adjust/sdk/s;->b Ljava/util/ArrayList;
+  iput-object            v2, v0, Lcom/adjust/sdk/s;->c Ljava/lang/String;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget                   v0, v6, Lcom/adjust/sdk/s;->a I
+  packed-switch          v0, +0000092h
+  iget-object            v0, v6, Lcom/adjust/sdk/s;->b Ljava/util/ArrayList;
+  invoke-virtual         v0, Ljava/util/ArrayList;->size()I
+  move-result            v1
+  const/4                v2, 0
+  if-ge                  v2, v1, +025h
+  invoke-virtual         v0, v2, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+  move-result-object     v3
+  add-int/lit8           v2, v2, 1
+  check-cast             v3, Lcom/adjust/sdk/AdjustTimeoutCallback;
+  if-eqz                 v3, -00ah
+  invoke-virtual         v3, Lcom/adjust/sdk/AdjustTimeoutCallback;->getTimeoutTimer()Lcom/adjust/sdk/scheduler/TimerOnce;
+  move-result-object     v4
+  if-eqz                 v4, +005h
+  invoke-virtual         v4, Lcom/adjust/sdk/scheduler/TimerOnce;->cancel()V
+  invoke-virtual         v3, Lcom/adjust/sdk/AdjustTimeoutCallback;->getOnAdidReadListener()Lcom/adjust/sdk/OnAdidReadListener;
+  move-result-object     v4
+  if-eqz                 v4, +007h
+  iget-object            v5, v6, Lcom/adjust/sdk/s;->c Ljava/lang/String;
+  invoke-interface       v4, v5, Lcom/adjust/sdk/OnAdidReadListener;->onAdidRead(Ljava/lang/String;)V
+  const/4                v4, 0
+  invoke-virtual         v3, v4, Lcom/adjust/sdk/AdjustTimeoutCallback;->setOnAdidReadListener(Lcom/adjust/sdk/OnAdidReadListener;)V
+  goto                   -24h
+  return-void            
+  iget-object            v0, v6, Lcom/adjust/sdk/s;->b Ljava/util/ArrayList;
+  invoke-virtual         v0, Ljava/util/ArrayList;->size()I
+  move-result            v1
+  const/4                v2, 0
+  if-ge                  v2, v1, +012h
+  invoke-virtual         v0, v2, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+  move-result-object     v3
+  add-int/lit8           v2, v2, 1
+  check-cast             v3, Lcom/adjust/sdk/OnAdidReadListener;
+  if-eqz                 v3, -00ah
+  iget-object            v4, v6, Lcom/adjust/sdk/s;->c Ljava/lang/String;
+  invoke-interface       v3, v4, Lcom/adjust/sdk/OnAdidReadListener;->onAdidRead(Ljava/lang/String;)V
+  goto                   -11h
+  return-void            
+  iget-object            v0, v6, Lcom/adjust/sdk/s;->b Ljava/util/ArrayList;
+  invoke-virtual         v0, Ljava/util/ArrayList;->size()I
+  move-result            v1
+  const/4                v2, 0
+  if-ge                  v2, v1, +025h
+  invoke-virtual         v0, v2, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+  move-result-object     v3
+  add-int/lit8           v2, v2, 1
+  check-cast             v3, Lcom/adjust/sdk/AdjustTimeoutCallback;
+  if-eqz                 v3, -00ah
+  invoke-virtual         v3, Lcom/adjust/sdk/AdjustTimeoutCallback;->getTimeoutTimer()Lcom/adjust/sdk/scheduler/TimerOnce;
+  move-result-object     v4
+  if-eqz                 v4, +005h
+  invoke-virtual         v4, Lcom/adjust/sdk/scheduler/TimerOnce;->cancel()V
+  invoke-virtual         v3, Lcom/adjust/sdk/AdjustTimeoutCallback;->getOnAdidReadListener()Lcom/adjust/sdk/OnAdidReadListener;
+  move-result-object     v4
+  if-eqz                 v4, +007h
+  iget-object            v5, v6, Lcom/adjust/sdk/s;->c Ljava/lang/String;
+  invoke-interface       v4, v5, Lcom/adjust/sdk/OnAdidReadListener;->onAdidRead(Ljava/lang/String;)V
+  const/4                v4, 0
+  invoke-virtual         v3, v4, Lcom/adjust/sdk/AdjustTimeoutCallback;->setOnAdidReadListener(Lcom/adjust/sdk/OnAdidReadListener;)V
+  goto                   -24h
+  return-void            
+  iget-object            v0, v6, Lcom/adjust/sdk/s;->b Ljava/util/ArrayList;
+  invoke-virtual         v0, Ljava/util/ArrayList;->size()I
+  move-result            v1
+  const/4                v2, 0
+  if-ge                  v2, v1, +012h
+  invoke-virtual         v0, v2, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+  move-result-object     v3
+  add-int/lit8           v2, v2, 1
+  check-cast             v3, Lcom/adjust/sdk/OnAdidReadListener;
+  if-eqz                 v3, -00ah
+  iget-object            v4, v6, Lcom/adjust/sdk/s;->c Ljava/lang/String;
+  invoke-interface       v3, v4, Lcom/adjust/sdk/OnAdidReadListener;->onAdidRead(Ljava/lang/String;)V
+  goto                   -11h
+  return-void            
+  nop                    
+  packed-switch-payload  0 1 2
+######################################################################

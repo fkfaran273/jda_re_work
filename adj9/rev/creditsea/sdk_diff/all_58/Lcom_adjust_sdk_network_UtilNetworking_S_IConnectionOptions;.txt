@@ -1,0 +1,5 @@
+# CLASS Lcom/adjust/sdk/network/UtilNetworking$IConnectionOptions;
+
+---- METHOD public abstract applyConnectionOptions (Ljavax/net/ssl/HttpsURLConnection; Ljava/lang/String; I)V ----
+  (no code)
+######################################################################

@@ -1,0 +1,24 @@
+=== mint_pipeline dry-run (OFFLINE) ===
+second      : 1790492900
+kind        : session
+region src  : F.py region(V=1790499662, pid=26530, tid=26593) [REAL]
+V           : 0x6ab8db4e (= tv_sec ^ tv_usec)
+claims      : 27 law keys, kind=session
+mint        : status=exit-clean steps=9878275 nrand=8 stream=0x5500000000 (24.5s)
+  [PASS] blob is 192 bytes (48 BE words) — 192 B
+  [PASS] blob[:16] == make_header(second) — 2d4ba16a1af43f77261190767b0b2ef0
+  [PASS] header == 4 pair-XOR units of Random3(second) — units 2d4ba16a 1af43f77 26119076 7b0b2ef0
+  [PASS] body == FinEx(descs, second) re-run (byte-identical remint)
+  [PASS] status exit-clean — exit-clean
+  [PASS] nrand == 8 (srand re-seeded per signing; first 8 draws = header) — 8
+  [PASS] #10 padded to a 4-byte multiple — padded=360 unpadded=360
+  [PASS] #7 carries the UNPADDED length — unpadded=360
+  [adv] region structural laws on the region USED:
+        L1 tile U[2]^U[0]==R||R : PASS [(0, 26603), (2, 26603), (4, 26603), (6, 26603), (8, 26603), (10, 26603), (12, 26603), (14, 26603)]
+        L2 d4[6]>>16 == R       : PASS
+        L3 X == U[3]            : FAIL
+Authorization: Signature signature="LUuhahr0P3cmEZB2ewsu8F3IGKP3yNysuXKlLJAVcEpbSDUNtzsiEPNrHXkaD7bOAcijJ2ZC1GB...
+blob hex     : 2d4ba16a1af43f77261190767b0b2ef05dc818a3f7c8dcacb972a52c9015704a5b48350db73b2210f36b1d791a0fb6ce01c8a3276642d4607c7b08a3e066b685256ea9a116b09fbf325e7fb470811283f8858dcbf5919e5f4ebe7bfafc7540c08acfc70c8eb79a071afa44d1d33f5f49a189a5658d246ac8e7092e126581415494709cd0a0c85e2da3887af74273d3a3a9bc706402405cd26d020bef6cc283940db0f524b62529e9a580221b44fda40f7d3684869b7e870fc632cc4b49896d09
+  header(16B): 2d4ba16a1af43f77261190767b0b2ef0
+  body(176B) : 5dc818a3f7c8dcacb972a52c9015704a5b48350db73b2210f36b1d791a0fb6ce01c8a3276642d4607c7b08a3e066b685256ea9a116b09fbf325e7fb470811283f8858dcbf5919e5f4ebe7bfafc7540c08acfc70c8eb79a071afa44d1d33f5f49a189a5658d246ac8e7092e126581415494709cd0a0c85e2da3887af74273d3a3a9bc706402405cd26d020bef6cc283940db0f524b62529e9a580221b44fda40f7d3684869b7e870fc632cc4b49896d09
+=== DRY-RUN: PASS ===

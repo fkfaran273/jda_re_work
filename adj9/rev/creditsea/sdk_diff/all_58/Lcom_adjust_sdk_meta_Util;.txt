@@ -1,0 +1,41 @@
+# CLASS Lcom/adjust/sdk/meta/Util;
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public static synchronized getMetaInstallReferrerDetails (Landroid/content/Context; Ljava/lang/String; Lcom/adjust/sdk/ILogger;)Lcom/adjust/sdk/ReferrerDetails; ----
+  const-class            v0, Lcom/adjust/sdk/meta/Util;
+  monitor-enter          v0
+  sget-boolean           v1, Lcom/adjust/sdk/meta/AdjustMetaReferrer;->shouldReadMetaReferrer Z
+  const/4                v2, 0
+  if-nez                 v1, +004h
+  monitor-exit           v0
+  return-object          v2
+  const-string           v1, "getMetaInstallReferrerDetails invoked"
+  const/4                v3, 0
+  new-array              v3, v3, [Ljava/lang/Object;
+  invoke-interface       v6, v1, v3, Lcom/adjust/sdk/ILogger;->info(Ljava/lang/String; [Ljava/lang/Object;)V
+  const/4                v1, 1
+  invoke-static          v4, v5, v6, v1, Lcom/adjust/sdk/meta/MetaReferrerClient;->getMetaInstallReferrer(Landroid/content/Context; Ljava/lang/String; Lcom/adjust/sdk/ILogger; Z)Lcom/adjust/sdk/meta/MetaInstallReferrerResult;
+  move-result-object     v4
+  if-nez                 v4, +004h
+  monitor-exit           v0
+  return-object          v2
+  iget-object            v4, v4, Lcom/adjust/sdk/meta/MetaInstallReferrerResult;->metaInstallReferrerDetails Lcom/adjust/sdk/meta/MetaInstallReferrerDetails;
+  if-nez                 v4, +004h
+  monitor-exit           v0
+  return-object          v2
+  new-instance           v5, Lcom/adjust/sdk/ReferrerDetails;
+  iget-object            v6, v4, Lcom/adjust/sdk/meta/MetaInstallReferrerDetails;->installReferrer Ljava/lang/String;
+  iget-wide              v1, v4, Lcom/adjust/sdk/meta/MetaInstallReferrerDetails;->actualTimestampInSec J
+  iget-boolean           v4, v4, Lcom/adjust/sdk/meta/MetaInstallReferrerDetails;->isClick Z
+  invoke-static          v4, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+  move-result-object     v4
+  invoke-direct          v5, v6, v1, v2, v4, Lcom/adjust/sdk/ReferrerDetails;-><init>(Ljava/lang/String; J Ljava/lang/Boolean;)V
+  monitor-exit           v0
+  return-object          v5
+  move-exception         v4
+  monitor-exit           v0
+  throw                  v4
+######################################################################

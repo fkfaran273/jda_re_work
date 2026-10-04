@@ -1,0 +1,86 @@
+# CLASS Lcom/adjust/sdk/AdjustSigner;
+FIELD private static bridge signerInstance Ljava/lang/Object;
+
+---- METHOD private constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD private static getSignerInstance ()V ----
+  sget-object            v0, Lcom/adjust/sdk/AdjustSigner;->signerInstance Ljava/lang/Object;
+  if-nez                 v0, +018h
+  const-class            v0, Lcom/adjust/sdk/AdjustSigner;
+  monitor-enter          v0
+  sget-object            v1, Lcom/adjust/sdk/AdjustSigner;->signerInstance Ljava/lang/Object;
+  if-nez                 v1, +00dh
+  const-string           v1, "com.adjust.sdk.sig.Signer"
+  invoke-static          v1, Lcom/adjust/sdk/Reflection;->createDefaultInstance(Ljava/lang/String;)Ljava/lang/Object;
+  move-result-object     v1
+  sput-object            v1, Lcom/adjust/sdk/AdjustSigner;->signerInstance Ljava/lang/Object;
+  goto                   +3h
+  move-exception         v1
+  goto                   +3h
+  monitor-exit           v0
+  return-void            
+  monitor-exit           v0
+  throw                  v1
+  return-void            
+
+---- METHOD public static isPresent ()Z ----
+  invoke-static          Lcom/adjust/sdk/AdjustSigner;->getSignerInstance()V
+  sget-object            v0, Lcom/adjust/sdk/AdjustSigner;->signerInstance Ljava/lang/Object;
+  if-eqz                 v0, +004h
+  const/4                v0, 1
+  return                 v0
+  const/4                v0, 0
+  return                 v0
+
+---- METHOD public static onResume (Lcom/adjust/sdk/ILogger;)V ----
+  invoke-static          Lcom/adjust/sdk/AdjustSigner;->getSignerInstance()V
+  sget-object            v0, Lcom/adjust/sdk/AdjustSigner;->signerInstance Ljava/lang/Object;
+  if-nez                 v0, +003h
+  return-void            
+  sget-object            v0, Lcom/adjust/sdk/AdjustSigner;->signerInstance Ljava/lang/Object;
+  const-string           v1, "onResume"
+  const/4                v2, 0
+  new-array              v2, v2, [Ljava/lang/Object;
+  const/4                v3, 0
+  invoke-static          v0, v1, v3, v2, Lcom/adjust/sdk/Reflection;->invokeInstanceMethod(Ljava/lang/Object; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+  return-void            
+  move-exception         v0
+  invoke-virtual         v0, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object     v0
+  filled-new-array       v0, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string           v1, "Invoking Signer onResume() received an error [%s]"
+  invoke-interface       v4, v1, v0, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD public static sign (Ljava/util/Map; Ljava/util/Map; Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Ljava/util/Map; ----
+  invoke-static          Lcom/adjust/sdk/AdjustSigner;->getSignerInstance()V
+  new-instance           v0, Ljava/util/HashMap;
+  invoke-direct          v0, Ljava/util/HashMap;-><init>()V
+  sget-object            v1, Lcom/adjust/sdk/AdjustSigner;->signerInstance Ljava/lang/Object;
+  if-eqz                 v1, +02dh
+  const-string           v1, "Signing all the parameters"
+  const/4                v2, 0
+  new-array              v2, v2, [Ljava/lang/Object;
+  invoke-interface       v8, v1, v2, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+  sget-object            v1, Lcom/adjust/sdk/AdjustSigner;->signerInstance Ljava/lang/Object;
+  const-string/jumbo     v2, sign
+  const-class            v3, Landroid/content/Context;
+  const-class            v4, Ljava/util/Map;
+  filled-new-array       v3, v4, v4, v4, [Ljava/lang/Class;
+  move-result-object     v3
+  filled-new-array       v7, v5, v6, v0, [Ljava/lang/Object;
+  move-result-object     v5
+  invoke-static          v1, v2, v3, v5, Lcom/adjust/sdk/Reflection;->invokeInstanceMethod(Ljava/lang/Object; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+  return-object          v0
+  move-exception         v5
+  invoke-virtual         v5, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object     v5
+  filled-new-array       v5, [Ljava/lang/Object;
+  move-result-object     v5
+  const-string           v6, "Invoking Signer sign() received an error [%s]"
+  invoke-interface       v8, v6, v5, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-object          v0
+######################################################################

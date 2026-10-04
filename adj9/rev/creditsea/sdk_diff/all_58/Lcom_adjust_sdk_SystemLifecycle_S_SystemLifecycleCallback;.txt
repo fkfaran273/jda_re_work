@@ -1,0 +1,5 @@
+# CLASS Lcom/adjust/sdk/SystemLifecycle$SystemLifecycleCallback;
+
+---- METHOD public abstract onActivityLifecycle (Z)V ----
+  (no code)
+######################################################################

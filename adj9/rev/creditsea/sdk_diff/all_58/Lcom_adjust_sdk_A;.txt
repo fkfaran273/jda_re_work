@@ -1,0 +1,43 @@
+# CLASS Lcom/adjust/sdk/a;
+FIELD public final synthetic a I
+FIELD public final synthetic b Lcom/adjust/sdk/ActivityHandler;
+
+---- METHOD public synthetic constructor <init> (Lcom/adjust/sdk/ActivityHandler; I)V ----
+  iput                   v2, v0, Lcom/adjust/sdk/a;->a I
+  iput-object            v1, v0, Lcom/adjust/sdk/a;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget                   v0, v1, Lcom/adjust/sdk/a;->a I
+  packed-switch          v0, +000003ah
+  iget-object            v0, v1, Lcom/adjust/sdk/a;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->Q(Lcom/adjust/sdk/ActivityHandler;)V
+  return-void            
+  iget-object            v0, v1, Lcom/adjust/sdk/a;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->a(Lcom/adjust/sdk/ActivityHandler;)V
+  return-void            
+  iget-object            v0, v1, Lcom/adjust/sdk/a;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->u(Lcom/adjust/sdk/ActivityHandler;)V
+  return-void            
+  iget-object            v0, v1, Lcom/adjust/sdk/a;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->C(Lcom/adjust/sdk/ActivityHandler;)V
+  return-void            
+  iget-object            v0, v1, Lcom/adjust/sdk/a;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->j(Lcom/adjust/sdk/ActivityHandler;)V
+  return-void            
+  iget-object            v0, v1, Lcom/adjust/sdk/a;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->P(Lcom/adjust/sdk/ActivityHandler;)V
+  return-void            
+  iget-object            v0, v1, Lcom/adjust/sdk/a;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->y(Lcom/adjust/sdk/ActivityHandler;)V
+  return-void            
+  iget-object            v0, v1, Lcom/adjust/sdk/a;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->i(Lcom/adjust/sdk/ActivityHandler;)V
+  return-void            
+  iget-object            v0, v1, Lcom/adjust/sdk/a;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->B(Lcom/adjust/sdk/ActivityHandler;)V
+  return-void            
+  nop                    
+  packed-switch-payload  0 1 2 3 4 5 6 7
+######################################################################

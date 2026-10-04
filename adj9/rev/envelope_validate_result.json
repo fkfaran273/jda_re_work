@@ -1,0 +1,128 @@
+[
+ {
+  "arm": "A0",
+  "gps": "e06cab71-a8d5-45f0-be12-3012fdc2486d",
+  "click_http": 302,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"db88f77215c4465118fd88efe3ab3568\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"db88f77215c4465118fd88efe3ab3568\"}"
+  ],
+  "verdict": "session=200 click=200"
+ },
+ {
+  "arm": "A1",
+  "gps": "37d1bce6-3b62-42eb-872d-d931d25bf278",
+  "click_http": 302,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"c3e4bf4a283f170492d827816ee184b6\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"c3e4bf4a283f170492d827816ee184b6\"}"
+  ],
+  "verdict": "session=200 click=200"
+ },
+ {
+  "arm": "A2",
+  "gps": "a92eeed0-84a9-4de1-90d2-7ffe3073ea19",
+  "click_http": 302,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"24e0a40c049e29f961b89dc85000d260\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"24e0a40c049e29f961b89dc85000d260\"}"
+  ],
+  "verdict": "session=200 click=200"
+ },
+ {
+  "arm": "A3",
+  "gps": "11a61c7f-b8c1-4f95-8e01-3f356248e60b",
+  "click_http": 302,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"465b86a36ed00a400c3f754bf6f55cfc\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"465b86a36ed00a400c3f754bf6f55cfc\"}"
+  ],
+  "verdict": "session=200 click=200"
+ },
+ {
+  "arm": "A4",
+  "gps": "4247dcae-2da2-434c-bd01-7e61da9a2622",
+  "click_http": 302,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"31b0427dd6dd9633a77a00feb6ee51be\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"31b0427dd6dd9633a77a00feb6ee51be\"}"
+  ],
+  "verdict": "session=200 click=200"
+ },
+ {
+  "arm": "A5",
+  "gps": "7ac7600d-2406-46de-b43d-7050333535b1",
+  "click_http": 302,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"92781d8caec17130b9294063fe068432\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"92781d8caec17130b9294063fe068432\"}"
+  ],
+  "verdict": "session=200 click=200"
+ },
+ {
+  "arm": "A6",
+  "gps": "b9c8b087-5533-4d94-a323-c83f02450408",
+  "click_http": 302,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"1fd2a19ac6de100aa4d8714f85b58361\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"1fd2a19ac6de100aa4d8714f85b58361\"}"
+  ],
+  "verdict": "session=200 click=200"
+ },
+ {
+  "arm": "A7",
+  "gps": "7ab3f60d-0dc4-4b79-a9fa-0b93418be261",
+  "click_http": 302,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"5b258be27d215822291e3053f2de2fca\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   400,
+   "{\"error\":\"SDK click failed (unsupported sdk)\"}"
+  ],
+  "verdict": "session=200 click=400"
+ },
+ {
+  "arm": "A8",
+  "gps": "d62e0ece-f6fd-4913-8ea0-0548816499eb",
+  "click_http": 302,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"3dd1b4f0979833b40f46c4c57bdd0842\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"3dd1b4f0979833b40f46c4c57bdd0842\"}"
+  ],
+  "verdict": "session=200 click=200"
+ }
+]

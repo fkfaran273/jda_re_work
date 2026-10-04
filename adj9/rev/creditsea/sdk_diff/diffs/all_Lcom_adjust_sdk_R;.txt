@@ -1,0 +1,32 @@
+--- 
++++ 
+@@ -1,3 +1,28 @@
+----- METHOD private constructor <init> ()V ----
++FIELD public final synthetic a I
++FIELD public final synthetic b Lcom/adjust/sdk/OnAdidReadListener;
++FIELD public final synthetic c Lcom/adjust/sdk/ActivityHandler;
++---- METHOD public synthetic constructor <init> (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/OnAdidReadListener; I)V ----
++iput vX, vX, Lcom/adjust/sdk/r;->a I
++iput-object vX, vX, Lcom/adjust/sdk/r;->c Lcom/adjust/sdk/ActivityHandler;
++iput-object vX, vX, Lcom/adjust/sdk/r;->b Lcom/adjust/sdk/OnAdidReadListener;
+ invoke-direct vX, Ljava/lang/Object;-><init>()V
+ return-void
++---- METHOD public final run ()V ----
++iget vX, vX, Lcom/adjust/sdk/r;->a I
++packed-switch
++iget-object vX, vX, Lcom/adjust/sdk/r;->c Lcom/adjust/sdk/ActivityHandler;
++invoke-static vX, Lcom/adjust/sdk/ActivityHandler;->a0(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/ActivityState;
++move-result-object vX
++iget-object vX, vX, Lcom/adjust/sdk/ActivityState;->adid Ljava/lang/String;
++iget-object vX, vX, Lcom/adjust/sdk/r;->b Lcom/adjust/sdk/OnAdidReadListener;
++invoke-interface vX, vX, Lcom/adjust/sdk/OnAdidReadListener;->onAdidRead(Ljava/lang/String;)V
++return-void
++iget-object vX, vX, Lcom/adjust/sdk/r;->c Lcom/adjust/sdk/ActivityHandler;
++invoke-static vX, Lcom/adjust/sdk/ActivityHandler;->a0(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/ActivityState;
++move-result-object vX
++iget-object vX, vX, Lcom/adjust/sdk/ActivityState;->adid Ljava/lang/String;
++iget-object vX, vX, Lcom/adjust/sdk/r;->b Lcom/adjust/sdk/OnAdidReadListener;
++invoke-interface vX, vX, Lcom/adjust/sdk/OnAdidReadListener;->onAdidRead(Ljava/lang/String;)V
++return-void
++nop
++packed-switch-payload 0

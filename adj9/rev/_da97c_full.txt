@@ -1,0 +1,533 @@
+0xda97c  str      d8, [sp, #-0x70]!                
+0xda980  stp      x29, x30, [sp, #0x10]            
+0xda984  stp      x28, x27, [sp, #0x20]            
+0xda988  stp      x26, x25, [sp, #0x30]            
+0xda98c  stp      x24, x23, [sp, #0x40]            
+0xda990  stp      x22, x21, [sp, #0x50]            
+0xda994  stp      x20, x19, [sp, #0x60]            
+0xda998  add      x29, sp, #0x10                   
+0xda99c  sub      sp, sp, #0x210                   
+0xda9a0  mrs      x8, tpidr_el0                    
+0xda9a4  add      x11, sp, #0xb0                   
+0xda9a8  str      x8, [sp, #8]                     
+0xda9ac  mov      x13, #0x507b                     
+0xda9b0  ldr      x8, [x8, #0x28]                  
+0xda9b4  mov      x19, #0x8a0                      
+0xda9b8  movk     x13, #0x2c50, lsl #16            
+0xda9bc  movk     x19, #0xbd15, lsl #16            
+0xda9c0  movk     x13, #0x48ac, lsl #32            
+0xda9c4  movk     x19, #0xb02c, lsl #32            
+0xda9c8  stur     x8, [x29, #-0x20]                
+0xda9cc  movk     x13, #0xc90b, lsl #48            
+0xda9d0  ldp      x10, x8, [x0, #0x18]             
+0xda9d4  movk     x19, #0x93e7, lsl #48            
+0xda9d8  mov      x27, #0x692                      
+0xda9dc  ldr      x14, [x0]                        
+0xda9e0  mov      x28, #0x1471                     
+0xda9e4  mov      x20, #0x1859                     
+0xda9e8  mov      x26, #0xd282                     
+0xda9ec  ldr      x10, [x10]                       
+0xda9f0  mov      x21, #0xe386                     
+0xda9f4  ldr      w12, [x8]                        
+0xda9f8  mov      x24, #0xd05b                     
+0xda9fc  ldp      x8, x9, [x0, #8]                 
+0xdaa00  mov      x23, #0xc2a2                     
+0xdaa04  mov      x25, #0x8d87                     
+0xdaa08  cmp      w12, #1                          
+0xdaa0c  mov      x22, #0x865                      
+0xdaa10  ccmp     x10, #0, #4, ge                  
+0xdaa14  movk     x27, #0x8807, lsl #16            
+0xdaa18  ldr      x8, [x8]                         
+0xdaa1c  movk     x28, #0x4a0, lsl #16             
+0xdaa20  ldr      x9, [x9]                         
+0xdaa24  movk     x20, #0x2b53, lsl #16            
+0xdaa28  movk     x26, #0x957d, lsl #16            
+0xdaa2c  movk     x21, #0xeab8, lsl #16            
+0xdaa30  stp      x8, x14, [sp, #0x70]             
+0xdaa34  movk     x24, #0xef20, lsl #16            
+0xdaa38  ccmp     x9, #0, #4, ne                   
+0xdaa3c  stp      x9, x10, [sp, #0x20]             
+0xdaa40  add      x9, x11, #8                      
+0xdaa44  movk     x23, #0x1048, lsl #16            
+0xdaa48  movk     x25, #0xa2f3, lsl #16            
+0xdaa4c  movk     x22, #0x5362, lsl #16            
+0xdaa50  ccmp     x8, #0, #4, ne                   
+0xdaa54  add      x8, x11, #0x20                   
+0xdaa58  movk     x27, #0xfbe3, lsl #32            
+0xdaa5c  movk     x28, #0x5fd, lsl #32             
+0xdaa60  movk     x20, #0x6ffc, lsl #32            
+0xdaa64  movk     x26, #0xadd, lsl #32             
+0xdaa68  ccmp     x14, #0, #4, ne                  
+0xdaa6c  stp      x8, x9, [sp, #0x10]              
+0xdaa70  add      x8, x11, #0x100                  
+0xdaa74  mov      x9, #0xd282                      
+0xdaa78  movk     x9, #0x957d, lsl #16             
+0xdaa7c  movk     x21, #0xc1ec, lsl #32            
+0xdaa80  movk     x24, #0x96cc, lsl #32            
+0xdaa84  movk     x23, #0x7104, lsl #32            
+0xdaa88  str      x8, [sp, #0x68]                  
+0xdaa8c  csel     x8, x19, x13, eq                 
+0xdaa90  movk     x25, #0x8648, lsl #32            
+0xdaa94  movk     x22, #0x98ea, lsl #32            
+0xdaa98  movk     x9, #0xadd, lsl #32              
+0xdaa9c  movk     x27, #0xa1b3, lsl #48            
+0xdaaa0  str      x8, [sp, #0xa0]                  
+0xdaaa4  movk     x28, #0xa11a, lsl #48            
+0xdaaa8  movk     x20, #0x930b, lsl #48            
+0xdaaac  movk     x26, #0x549f, lsl #48            
+0xdaab0  movk     x21, #0x808f, lsl #48            
+0xdaab4  movk     x24, #0x8753, lsl #48            
+0xdaab8  movk     x23, #0x9ffe, lsl #48            
+0xdaabc  movk     x25, #0xa5e3, lsl #48            
+0xdaac0  movk     x22, #0xabfd, lsl #48            
+0xdaac4  movk     x9, #0x549f, lsl #48             
+0xdaac8  str      w12, [sp, #0x84]                 
+0xdaacc  str      wzr, [sp, #0xac]                 
+0xdaad0  mov      x8, x9                           
+0xdaad4  mov      x9, #0xcdf8                      
+0xdaad8  movk     x9, #0xd72b, lsl #16             
+0xdaadc  cmp      x8, x21                          
+0xdaae0  movk     x9, #0x55aa, lsl #32             
+0xdaae4  movk     x9, #0xfe6b, lsl #48             
+0xdaae8  b.eq     #0xdaad0                         
+0xdaaec  cmp      x8, x24                          
+0xdaaf0  b.eq     #0xdb138                         
+0xdaaf4  cmp      x8, x20                          
+0xdaaf8  b.eq     #0xdaf0c                         
+0xdaafc  cmp      x8, x19                          
+0xdab00  b.eq     #0xdad80                         
+0xdab04  cmp      x8, x23                          
+0xdab08  b.eq     #0xdb014                         
+0xdab0c  cmp      x8, x28                          
+0xdab10  b.eq     #0xdae10                         
+0xdab14  cmp      x8, x27                          
+0xdab18  b.eq     #0xdaee4                         
+0xdab1c  cmp      x8, x25                          
+0xdab20  b.eq     #0xdad98                         
+0xdab24  mov      x9, #0xea12                      
+0xdab28  cmp      x8, x22                          
+0xdab2c  movk     x9, #0x2ac8, lsl #16             
+0xdab30  movk     x9, #0x1d60, lsl #32             
+0xdab34  movk     x9, #0x1023, lsl #48             
+0xdab38  b.eq     #0xdaad0                         
+0xdab3c  mov      x9, #0x1381                      
+0xdab40  movk     x9, #0xa58a, lsl #16             
+0xdab44  movk     x9, #0xb763, lsl #32             
+0xdab48  movk     x9, #0xbbcd, lsl #48             
+0xdab4c  cmp      x8, x9                           
+0xdab50  b.eq     #0xdae48                         
+0xdab54  mov      x9, #0xfe0a                      
+0xdab58  movk     x9, #0x69fd, lsl #16             
+0xdab5c  movk     x9, #0x5f3a, lsl #32             
+0xdab60  movk     x9, #0xbdc7, lsl #48             
+0xdab64  cmp      x8, x9                           
+0xdab68  b.eq     #0xdb074                         
+0xdab6c  mov      x9, #0x507b                      
+0xdab70  movk     x9, #0x2c50, lsl #16             
+0xdab74  movk     x9, #0x48ac, lsl #32             
+0xdab78  movk     x9, #0xc90b, lsl #48             
+0xdab7c  cmp      x8, x9                           
+0xdab80  b.eq     #0xdadbc                         
+0xdab84  mov      x9, #0x4c0d                      
+0xdab88  mov      x10, #0x25ce                     
+0xdab8c  movk     x9, #0x52dd, lsl #16             
+0xdab90  movk     x10, #0x8c3e, lsl #16            
+0xdab94  movk     x9, #0x7dcf, lsl #32             
+0xdab98  movk     x10, #0xdec2, lsl #32            
+0xdab9c  movk     x9, #0x48fe, lsl #48             
+0xdaba0  movk     x10, #0xf201, lsl #48            
+0xdaba4  cmp      x8, x10                          
+0xdaba8  b.eq     #0xdaad0                         
+0xdabac  mov      x9, #0xcdf8                      
+0xdabb0  movk     x9, #0xd72b, lsl #16             
+0xdabb4  movk     x9, #0x55aa, lsl #32             
+0xdabb8  movk     x9, #0xfe6b, lsl #48             
+0xdabbc  cmp      x8, x9                           
+0xdabc0  b.eq     #0xdb120                         
+0xdabc4  mov      x9, #0x1968                      
+0xdabc8  movk     x9, #0x5932, lsl #16             
+0xdabcc  movk     x9, #0x8339, lsl #32             
+0xdabd0  movk     x9, #0xb13, lsl #48              
+0xdabd4  cmp      x8, x9                           
+0xdabd8  b.eq     #0xdb0b0                         
+0xdabdc  mov      x9, #0xea12                      
+0xdabe0  movk     x9, #0x2ac8, lsl #16             
+0xdabe4  movk     x9, #0x1d60, lsl #32             
+0xdabe8  movk     x9, #0x1023, lsl #48             
+0xdabec  cmp      x8, x9                           
+0xdabf0  b.eq     #0xdb0e8                         
+0xdabf4  mov      x9, #0x1471                      
+0xdabf8  mov      x10, #0xcd53                     
+0xdabfc  movk     x9, #0x4a0, lsl #16              
+0xdac00  movk     x10, #0xade6, lsl #16            
+0xdac04  movk     x9, #0x5fd, lsl #32              
+0xdac08  movk     x10, #0xefff, lsl #32            
+0xdac0c  movk     x9, #0xa11a, lsl #48             
+0xdac10  movk     x10, #0x13d4, lsl #48            
+0xdac14  cmp      x8, x10                          
+0xdac18  b.eq     #0xdaad0                         
+0xdac1c  mov      x9, #0xb3d0                      
+0xdac20  movk     x9, #0x566, lsl #16              
+0xdac24  movk     x9, #0xa50d, lsl #32             
+0xdac28  movk     x9, #0x204a, lsl #48             
+0xdac2c  cmp      x8, x9                           
+0xdac30  b.eq     #0xdb05c                         
+0xdac34  mov      x9, #0x692                       
+0xdac38  mov      x10, #0x7801                     
+0xdac3c  movk     x9, #0x8807, lsl #16             
+0xdac40  movk     x10, #0xa06d, lsl #16            
+0xdac44  movk     x9, #0xfbe3, lsl #32             
+0xdac48  movk     x10, #0xab5f, lsl #32            
+0xdac4c  movk     x9, #0xa1b3, lsl #48             
+0xdac50  movk     x10, #0x22db, lsl #48            
+0xdac54  cmp      x8, x10                          
+0xdac58  b.eq     #0xdaad0                         
+0xdac5c  mov      x9, #0x1381                      
+0xdac60  mov      x10, #0xb031                     
+0xdac64  movk     x9, #0xa58a, lsl #16             
+0xdac68  movk     x10, #0x9cc1, lsl #16            
+0xdac6c  movk     x9, #0xb763, lsl #32             
+0xdac70  movk     x10, #0xffeb, lsl #32            
+0xdac74  movk     x9, #0xbbcd, lsl #48             
+0xdac78  movk     x10, #0x2516, lsl #48            
+0xdac7c  cmp      x8, x10                          
+0xdac80  b.eq     #0xdaad0                         
+0xdac84  mov      x9, #0x92                        
+0xdac88  movk     x9, #0x16d6, lsl #16             
+0xdac8c  movk     x9, #0x9d06, lsl #32             
+0xdac90  movk     x9, #0x2680, lsl #48             
+0xdac94  cmp      x8, x9                           
+0xdac98  b.eq     #0xdadec                         
+0xdac9c  mov      x9, #0x1968                      
+0xdaca0  mov      x10, #0x754                      
+0xdaca4  movk     x9, #0x5932, lsl #16             
+0xdaca8  movk     x10, #0xa078, lsl #16            
+0xdacac  movk     x9, #0x8339, lsl #32             
+0xdacb0  movk     x10, #0x1f94, lsl #32            
+0xdacb4  movk     x9, #0xb13, lsl #48              
+0xdacb8  movk     x10, #0x3282, lsl #48            
+0xdacbc  cmp      x8, x10                          
+0xdacc0  b.eq     #0xdaad0                         
+0xdacc4  mov      x9, #0x1dac                      
+0xdacc8  movk     x9, #0x9f5e, lsl #16             
+0xdaccc  movk     x9, #0xb762, lsl #32             
+0xdacd0  movk     x9, #0x3b4a, lsl #48             
+0xdacd4  cmp      x8, x9                           
+0xdacd8  b.eq     #0xdaf44                         
+0xdacdc  mov      x9, #0x4c0d                      
+0xdace0  movk     x9, #0x52dd, lsl #16             
+0xdace4  movk     x9, #0x7dcf, lsl #32             
+0xdace8  movk     x9, #0x48fe, lsl #48             
+0xdacec  cmp      x8, x9                           
+0xdacf0  b.eq     #0xdaf68                         
+0xdacf4  ldr      x9, [sp, #0xa0]                  
+0xdacf8  cmp      x8, x26                          
+0xdacfc  b.eq     #0xdaad0                         
+0xdad00  mov      x9, #0x6436                      
+0xdad04  movk     x9, #0x2869, lsl #16             
+0xdad08  movk     x9, #0xc5df, lsl #32             
+0xdad0c  movk     x9, #0x56de, lsl #48             
+0xdad10  cmp      x8, x9                           
+0xdad14  b.eq     #0xdb098                         
+0xdad18  mov      x9, #0x5cb8                      
+0xdad1c  movk     x9, #0x2795, lsl #16             
+0xdad20  movk     x9, #0x15f4, lsl #32             
+0xdad24  movk     x9, #0x77a4, lsl #48             
+0xdad28  cmp      x8, x9                           
+0xdad2c  b.eq     #0xdae60                         
+0xdad30  mov      x9, #0x6dbb                      
+0xdad34  movk     x9, #0xc058, lsl #16             
+0xdad38  movk     x9, #0xf56d, lsl #32             
+0xdad3c  movk     x9, #0x7e88, lsl #48             
+0xdad40  cmp      x8, x9                           
+0xdad44  b.eq     #0xdb038                         
+0xdad48  mov      x9, #0x7408                      
+0xdad4c  movk     x9, #0x4e14, lsl #16             
+0xdad50  movk     x9, #0x43cd, lsl #32             
+0xdad54  movk     x9, #0x7f74, lsl #48             
+0xdad58  cmp      x8, x9                           
+0xdad5c  b.eq     #0xdad80                         
+0xdad60  mov      x10, #0xe11a                     
+0xdad64  mov      x9, x8                           
+0xdad68  movk     x10, #0xe707, lsl #16            
+0xdad6c  movk     x10, #0x5296, lsl #32            
+0xdad70  movk     x10, #0x1df3, lsl #48            
+0xdad74  cmp      x8, x10                          
+0xdad78  b.ne     #0xdaad0                         
+0xdad7c  b        #0xdb18c                         
+0xdad80  mov      x9, #0xe11a                      
+0xdad84  str      xzr, [sp, #0x98]                 
+0xdad88  movk     x9, #0xe707, lsl #16             
+0xdad8c  movk     x9, #0x5296, lsl #32             
+0xdad90  movk     x9, #0x1df3, lsl #48             
+0xdad94  b        #0xdaad0                         
+0xdad98  ldr      x0, [sp, #0x58]                  
+0xdad9c  bl       #0x148a00                        ; -> free
+0xdada0  mov      x9, #0xea12                      
+0xdada4  add      x8, sp, #0xb0                    
+0xdada8  movk     x9, #0x2ac8, lsl #16             
+0xdadac  movk     x9, #0x1d60, lsl #32             
+0xdadb0  movk     x9, #0x1023, lsl #48             
+0xdadb4  str      xzr, [x8, #0x120]                
+0xdadb8  b        #0xdaad0                         
+0xdadbc  movi     d0, #0000000000000000            
+0xdadc0  add      x0, sp, #0xac                    
+0xdadc4  bl       #0x13de90                        
+0xdadc8  ldr      w8, [sp, #0xac]                  
+0xdadcc  fmov     d8, d0                           
+0xdadd0  cmp      w8, #0                           
+0xdadd4  mov      x8, #0x7408                      
+0xdadd8  movk     x8, #0x4e14, lsl #16             
+0xdaddc  movk     x8, #0x43cd, lsl #32             
+0xdade0  movk     x8, #0x7f74, lsl #48             
+0xdade4  csel     x9, x24, x8, eq                  
+0xdade8  b        #0xdaad0                         
+0xdadec  ldr      x0, [sp, #0x50]                  
+0xdadf0  bl       #0x148a00                        ; -> free
+0xdadf4  mov      x9, #0x1471                      
+0xdadf8  add      x8, sp, #0xb0                    
+0xdadfc  movk     x9, #0x4a0, lsl #16              
+0xdae00  movk     x9, #0x5fd, lsl #32              
+0xdae04  movk     x9, #0xa11a, lsl #48             
+0xdae08  str      xzr, [x8, #0x130]                
+0xdae0c  b        #0xdaad0                         
+0xdae10  add      x8, sp, #0xb0                    
+0xdae14  mov      x9, #0x754                       
+0xdae18  movk     x9, #0xa078, lsl #16             
+0xdae1c  movk     x9, #0x1f94, lsl #32             
+0xdae20  ldr      x8, [x8, #0x138]                 
+0xdae24  movk     x9, #0x3282, lsl #48             
+0xdae28  str      x8, [sp, #0x48]                  
+0xdae2c  cmp      x8, #0                           
+0xdae30  mov      x8, #0x6dbb                      
+0xdae34  movk     x8, #0xc058, lsl #16             
+0xdae38  movk     x8, #0xf56d, lsl #32             
+0xdae3c  movk     x8, #0x7e88, lsl #48             
+0xdae40  csel     x9, x9, x8, eq                   
+0xdae44  b        #0xdaad0                         
+0xdae48  add      x8, sp, #0xb0                    
+0xdae4c  ldr      x8, [x8, #0x118]                 
+0xdae50  cmp      x8, #0                           
+0xdae54  str      x8, [sp, #0x60]                  
+0xdae58  csel     x9, x21, x23, eq                 
+0xdae5c  b        #0xdaad0                         
+0xdae60  ldr      w0, [sp, #0x84]                  
+0xdae64  bl       #0xe293c                         
+0xdae68  ldp      x27, x26, [sp, #0x70]            
+0xdae6c  add      x2, sp, #0xb0                    
+0xdae70  mov      x1, x27                          
+0xdae74  mov      x0, x26                          
+0xdae78  bl       #0x1bb5c                         
+0xdae7c  ldr      w3, [sp, #0xbc]                  
+0xdae80  add      x0, sp, #0xac                    
+0xdae84  mov      x1, x26                          
+0xdae88  mov      x26, #0xd282                     
+0xdae8c  mov      x2, x27                          
+0xdae90  mov      x27, #0x692                      
+0xdae94  ldr      x4, [sp, #0x68]                  
+0xdae98  movk     x26, #0x957d, lsl #16            
+0xdae9c  movk     x27, #0x8807, lsl #16            
+0xdaea0  movk     x26, #0xadd, lsl #32             
+0xdaea4  movk     x27, #0xfbe3, lsl #32            
+0xdaea8  movk     x26, #0x549f, lsl #48            
+0xdaeac  movk     x27, #0xa1b3, lsl #48            
+0xdaeb0  bl       #0x232ec                         
+0xdaeb4  ldr      w8, [sp, #0xac]                  
+0xdaeb8  mov      x9, #0x6436                      
+0xdaebc  movk     x9, #0x2869, lsl #16             
+0xdaec0  movk     x9, #0xc5df, lsl #32             
+0xdaec4  cmp      w8, #0                           
+0xdaec8  mov      x8, #0x25ce                      
+0xdaecc  movk     x8, #0x8c3e, lsl #16             
+0xdaed0  movk     x9, #0x56de, lsl #48             
+0xdaed4  movk     x8, #0xdec2, lsl #32             
+0xdaed8  movk     x8, #0xf201, lsl #48             
+0xdaedc  csel     x9, x8, x9, eq                   
+0xdaee0  b        #0xdaad0                         
+0xdaee4  add      x8, sp, #0xb0                    
+0xdaee8  ldr      x0, [x8, #0x148]                 
+0xdaeec  bl       #0x148a00                        ; -> free
+0xdaef0  ldr      x8, [sp, #0xc8]                  
+0xdaef4  mov      x9, #0xe11a                      
+0xdaef8  movk     x9, #0xe707, lsl #16             
+0xdaefc  movk     x9, #0x5296, lsl #32             
+0xdaf00  str      x8, [sp, #0x98]                  
+0xdaf04  movk     x9, #0x1df3, lsl #48             
+0xdaf08  b        #0xdaad0                         
+0xdaf0c  ldr      x10, [sp, #0x88]                 
+0xdaf10  mov      x8, #0x1dac                      
+0xdaf14  mov      x9, #0x5cb8                      
+0xdaf18  movk     x8, #0x9f5e, lsl #16             
+0xdaf1c  movk     x9, #0x2795, lsl #16             
+0xdaf20  movk     x8, #0xb762, lsl #32             
+0xdaf24  movk     x9, #0x15f4, lsl #32             
+0xdaf28  cmp      x10, #0                          
+0xdaf2c  movk     x8, #0x3b4a, lsl #48             
+0xdaf30  movk     x9, #0x77a4, lsl #48             
+0xdaf34  csel     x9, x9, x8, eq                   
+0xdaf38  ldr      x8, [sp, #0x90]                  
+0xdaf3c  stp      x8, x10, [sp, #0x38]             
+0xdaf40  b        #0xdaad0                         
+0xdaf44  ldp      x10, x8, [sp, #0x38]             
+0xdaf48  mov      x9, #0x1859                      
+0xdaf4c  movk     x9, #0x2b53, lsl #16             
+0xdaf50  movk     x9, #0x6ffc, lsl #32             
+0xdaf54  movk     x9, #0x930b, lsl #48             
+0xdaf58  sub      x8, x8, #1                       
+0xdaf5c  strb     wzr, [x10], #1                   
+0xdaf60  stp      x8, x10, [sp, #0x88]             
+0xdaf64  b        #0xdaad0                         
+0xdaf68  ldp      x27, x26, [sp, #0x70]            
+0xdaf6c  add      x2, sp, #0xb0                    
+0xdaf70  mov      x1, x27                          
+0xdaf74  mov      x0, x26                          
+0xdaf78  bl       #0xda4b4                         
+0xdaf7c  add      x3, sp, #0xb0                    
+0xdaf80  mov      x0, x26                          
+0xdaf84  mov      x1, x27                          
+0xdaf88  ldr      x2, [sp, #0x28]                  
+0xdaf8c  bl       #0xda6b8                         
+0xdaf90  add      x0, sp, #0xb0                    
+0xdaf94  bl       #0x14868                         
+0xdaf98  add      x2, sp, #0xb0                    
+0xdaf9c  mov      x0, x26                          
+0xdafa0  mov      x1, x27                          
+0xdafa4  mov      x27, #0x692                      
+0xdafa8  movk     x27, #0x8807, lsl #16            
+0xdafac  movk     x27, #0xfbe3, lsl #32            
+0xdafb0  movk     x27, #0xa1b3, lsl #48            
+0xdafb4  bl       #0x1bbb4                         
+0xdafb8  add      x0, sp, #0xb0                    
+0xdafbc  bl       #0xe4a7c                         
+0xdafc0  add      x0, sp, #0xb0                    
+0xdafc4  bl       #0xf9dc                          
+0xdafc8  add      x1, sp, #0xac                    
+0xdafcc  add      x2, sp, #0xb0                    
+0xdafd0  mov      x0, x26                          
+0xdafd4  mov      x26, #0xd282                     
+0xdafd8  movk     x26, #0x957d, lsl #16            
+0xdafdc  movk     x26, #0xadd, lsl #32             
+0xdafe0  movk     x26, #0x549f, lsl #48            
+0xdafe4  bl       #0x12cb74                        
+0xdafe8  mov      x8, #0xb3d0                      
+0xdafec  mov      x9, #0xb031                      
+0xdaff0  movk     x8, #0x566, lsl #16              
+0xdaff4  movk     x9, #0x9cc1, lsl #16             
+0xdaff8  movk     x8, #0xa50d, lsl #32             
+0xdaffc  movk     x9, #0xffeb, lsl #32             
+0xdb000  tst      w0, #1                           
+0xdb004  movk     x8, #0x204a, lsl #48             
+0xdb008  movk     x9, #0x2516, lsl #48             
+0xdb00c  csel     x9, x9, x8, ne                   
+0xdb010  b        #0xdaad0                         
+0xdb014  ldr      x0, [sp, #0x60]                  
+0xdb018  bl       #0x148a00                        ; -> free
+0xdb01c  mov      x9, #0xcdf8                      
+0xdb020  add      x8, sp, #0xb0                    
+0xdb024  movk     x9, #0xd72b, lsl #16             
+0xdb028  movk     x9, #0x55aa, lsl #32             
+0xdb02c  movk     x9, #0xfe6b, lsl #48             
+0xdb030  str      xzr, [x8, #0x118]                
+0xdb034  b        #0xdaad0                         
+0xdb038  ldr      x0, [sp, #0x48]                  
+0xdb03c  bl       #0x148a00                        ; -> free
+0xdb040  mov      x9, #0x1968                      
+0xdb044  add      x8, sp, #0xb0                    
+0xdb048  movk     x9, #0x5932, lsl #16             
+0xdb04c  movk     x9, #0x8339, lsl #32             
+0xdb050  movk     x9, #0xb13, lsl #48              
+0xdb054  str      xzr, [x8, #0x138]                
+0xdb058  b        #0xdaad0                         
+0xdb05c  mov      x9, #0x1381                      
+0xdb060  str      wzr, [sp, #0xac]                 
+0xdb064  movk     x9, #0xa58a, lsl #16             
+0xdb068  movk     x9, #0xb763, lsl #32             
+0xdb06c  movk     x9, #0xbbcd, lsl #48             
+0xdb070  b        #0xdaad0                         
+0xdb074  ldr      x0, [sp, #0x30]                  
+0xdb078  bl       #0x148a00                        ; -> free
+0xdb07c  mov      x9, #0x692                       
+0xdb080  add      x8, sp, #0xb0                    
+0xdb084  movk     x9, #0x8807, lsl #16             
+0xdb088  movk     x9, #0xfbe3, lsl #32             
+0xdb08c  movk     x9, #0xa1b3, lsl #48             
+0xdb090  str      xzr, [x8, #0x140]                
+0xdb094  b        #0xdaad0                         
+0xdb098  mov      x9, #0x4c0d                      
+0xdb09c  str      wzr, [sp, #0xac]                 
+0xdb0a0  movk     x9, #0x52dd, lsl #16             
+0xdb0a4  movk     x9, #0x7dcf, lsl #32             
+0xdb0a8  movk     x9, #0x48fe, lsl #48             
+0xdb0ac  b        #0xdaad0                         
+0xdb0b0  add      x8, sp, #0xb0                    
+0xdb0b4  mov      x9, #0x7801                      
+0xdb0b8  movk     x9, #0xa06d, lsl #16             
+0xdb0bc  movk     x9, #0xab5f, lsl #32             
+0xdb0c0  ldr      x8, [x8, #0x140]                 
+0xdb0c4  movk     x9, #0x22db, lsl #48             
+0xdb0c8  str      x8, [sp, #0x30]                  
+0xdb0cc  cmp      x8, #0                           
+0xdb0d0  mov      x8, #0xfe0a                      
+0xdb0d4  movk     x8, #0x69fd, lsl #16             
+0xdb0d8  movk     x8, #0x5f3a, lsl #32             
+0xdb0dc  movk     x8, #0xbdc7, lsl #48             
+0xdb0e0  csel     x9, x9, x8, eq                   
+0xdb0e4  b        #0xdaad0                         
+0xdb0e8  add      x8, sp, #0xb0                    
+0xdb0ec  mov      x9, #0xcd53                      
+0xdb0f0  movk     x9, #0xade6, lsl #16             
+0xdb0f4  movk     x9, #0xefff, lsl #32             
+0xdb0f8  ldr      x8, [x8, #0x130]                 
+0xdb0fc  movk     x9, #0x13d4, lsl #48             
+0xdb100  str      x8, [sp, #0x50]                  
+0xdb104  cmp      x8, #0                           
+0xdb108  mov      x8, #0x92                        
+0xdb10c  movk     x8, #0x16d6, lsl #16             
+0xdb110  movk     x8, #0x9d06, lsl #32             
+0xdb114  movk     x8, #0x2680, lsl #48             
+0xdb118  csel     x9, x9, x8, eq                   
+0xdb11c  b        #0xdaad0                         
+0xdb120  add      x8, sp, #0xb0                    
+0xdb124  ldr      x8, [x8, #0x120]                 
+0xdb128  cmp      x8, #0                           
+0xdb12c  str      x8, [sp, #0x58]                  
+0xdb130  csel     x9, x22, x25, eq                 
+0xdb134  b        #0xdaad0                         
+0xdb138  ldr      x0, [sp, #0x18]                  
+0xdb13c  mov      w1, wzr                          
+0xdb140  mov      w2, #0x148                       
+0xdb144  bl       #0x148a20                        ; -> memset
+0xdb148  ldr      w8, [sp, #0x84]                  
+0xdb14c  str      d8, [sp, #0xb0]                  
+0xdb150  ldr      x0, [sp, #0x10]                  
+0xdb154  str      w8, [sp, #0xbc]                  
+0xdb158  ldr      x8, [sp, #0x20]                  
+0xdb15c  str      x8, [sp, #0xc0]                  
+0xdb160  bl       #0x143794                        
+0xdb164  ldr      x9, [sp, #0x68]                  
+0xdb168  mov      w8, #0x14                        
+0xdb16c  str      wzr, [sp, #0x1b0]                
+0xdb170  str      wzr, [sp, #0x1c0]                
+0xdb174  stp      x8, x9, [sp, #0x88]              
+0xdb178  mov      x9, #0x1859                      
+0xdb17c  movk     x9, #0x2b53, lsl #16             
+0xdb180  movk     x9, #0x6ffc, lsl #32             
+0xdb184  movk     x9, #0x930b, lsl #48             
+0xdb188  b        #0xdaad0                         
+0xdb18c  ldr      x8, [sp, #8]                     
+0xdb190  ldr      x8, [x8, #0x28]                  
+0xdb194  ldur     x9, [x29, #-0x20]                
+0xdb198  cmp      x8, x9                           
+0xdb19c  b.ne     #0xdb1c8                         
+0xdb1a0  ldr      x0, [sp, #0x98]                  
+0xdb1a4  add      sp, sp, #0x210                   
+0xdb1a8  ldp      x20, x19, [sp, #0x60]            
+0xdb1ac  ldp      x22, x21, [sp, #0x50]            
+0xdb1b0  ldp      x24, x23, [sp, #0x40]            
+0xdb1b4  ldp      x26, x25, [sp, #0x30]            
+0xdb1b8  ldp      x28, x27, [sp, #0x20]            
+0xdb1bc  ldp      x29, x30, [sp, #0x10]            
+0xdb1c0  ldr      d8, [sp], #0x70                  
+0xdb1c4  ret                                       
+0xdb1c8  bl       #0x148a10                        ; -> __stack_chk_fail
+0xdb1cc  sub      sp, sp, #0x130                   

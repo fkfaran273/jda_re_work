@@ -1,0 +1,18 @@
+{
+ "gps": "07a2d482-3f7f-45b7-9e72-6a076b0dfe95",
+ "verdict": {
+  "tracker_token": "24pxw9rl",
+  "tracker_name": "VKM Digital Yeni::AH::vkm_0926_36::penti_generic",
+  "network": "VKM Digital Yeni",
+  "campaign": "AH",
+  "adgroup": "vkm_0926_36",
+  "creative": "penti_generic",
+  "engagement_time": "2026-09-27T08:52:03Z",
+  "installed_at": "2026-09-27T08:52:11Z",
+  "first_session_time": "2026-09-27T08:52:11Z",
+  "is_reattributed": false,
+  "is_redownload_install": false
+ },
+ "S_values": [],
+ "logcat_ADJ9S": "--------- beginning of main\r\n09-27 14:22:08.753 24136 24136 I ADJ9S   : oracle_native loaded\r\n09-27 14:22:10.458 24136 24335 I ADJ9S   : nativeArm -> -2\r\n"
+}

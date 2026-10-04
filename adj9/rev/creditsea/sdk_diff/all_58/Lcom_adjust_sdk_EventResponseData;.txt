@@ -1,0 +1,146 @@
+# CLASS Lcom/adjust/sdk/EventResponseData;
+FIELD private callbackId Ljava/lang/String;
+FIELD private eventToken Ljava/lang/String;
+FIELD private sdkPlatform Ljava/lang/String;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/ActivityPackage;)V ----
+  invoke-direct          v2, Lcom/adjust/sdk/ResponseData;-><init>()V
+  invoke-virtual         v3, Lcom/adjust/sdk/ActivityPackage;->getParameters()Ljava/util/Map;
+  move-result-object     v0
+  const-string           v1, "event_token"
+  invoke-interface       v0, v1, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  iput-object            v0, v2, Lcom/adjust/sdk/EventResponseData;->eventToken Ljava/lang/String;
+  invoke-virtual         v3, Lcom/adjust/sdk/ActivityPackage;->getParameters()Ljava/util/Map;
+  move-result-object     v0
+  const-string           v1, "event_callback_id"
+  invoke-interface       v0, v1, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, Ljava/lang/String;
+  iput-object            v0, v2, Lcom/adjust/sdk/EventResponseData;->callbackId Ljava/lang/String;
+  invoke-virtual         v3, Lcom/adjust/sdk/ActivityPackage;->getClientSdk()Ljava/lang/String;
+  move-result-object     v3
+  invoke-static          v3, Lcom/adjust/sdk/Util;->getSdkPrefixPlatform(Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v3
+  iput-object            v3, v2, Lcom/adjust/sdk/EventResponseData;->sdkPlatform Ljava/lang/String;
+  return-void            
+
+---- METHOD public getFailureResponseData ()Lcom/adjust/sdk/AdjustEventFailure; ----
+  iget-boolean           v0, v3, Lcom/adjust/sdk/ResponseData;->success Z
+  if-eqz                 v0, +004h
+  const/4                v0, 0
+  return-object          v0
+  new-instance           v0, Lcom/adjust/sdk/AdjustEventFailure;
+  invoke-direct          v0, Lcom/adjust/sdk/AdjustEventFailure;-><init>()V
+  iget-object            v1, v3, Lcom/adjust/sdk/EventResponseData;->sdkPlatform Ljava/lang/String;
+  const-string/jumbo     v2, unity
+  invoke-virtual         v2, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v1
+  iget-object            v2, v3, Lcom/adjust/sdk/EventResponseData;->eventToken Ljava/lang/String;
+  if-eqz                 v1, +03ah
+  const-string           v1, ""
+  if-eqz                 v2, +003h
+  goto                   +2h
+  move-object            v2, v1
+  iput-object            v2, v0, Lcom/adjust/sdk/AdjustEventFailure;->eventToken Ljava/lang/String;
+  iget-object            v2, v3, Lcom/adjust/sdk/ResponseData;->message Ljava/lang/String;
+  if-eqz                 v2, +003h
+  goto                   +2h
+  move-object            v2, v1
+  iput-object            v2, v0, Lcom/adjust/sdk/AdjustEventFailure;->message Ljava/lang/String;
+  iget-object            v2, v3, Lcom/adjust/sdk/ResponseData;->timestamp Ljava/lang/String;
+  if-eqz                 v2, +003h
+  goto                   +2h
+  move-object            v2, v1
+  iput-object            v2, v0, Lcom/adjust/sdk/AdjustEventFailure;->timestamp Ljava/lang/String;
+  iget-object            v2, v3, Lcom/adjust/sdk/ResponseData;->adid Ljava/lang/String;
+  if-eqz                 v2, +003h
+  goto                   +2h
+  move-object            v2, v1
+  iput-object            v2, v0, Lcom/adjust/sdk/AdjustEventFailure;->adid Ljava/lang/String;
+  iget-object            v2, v3, Lcom/adjust/sdk/EventResponseData;->callbackId Ljava/lang/String;
+  if-eqz                 v2, +003h
+  move-object            v1, v2
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustEventFailure;->callbackId Ljava/lang/String;
+  iget-boolean           v1, v3, Lcom/adjust/sdk/ResponseData;->willRetry Z
+  iput-boolean           v1, v0, Lcom/adjust/sdk/AdjustEventFailure;->willRetry Z
+  iget-object            v1, v3, Lcom/adjust/sdk/ResponseData;->jsonResponse Lorg/json/JSONObject;
+  if-eqz                 v1, +003h
+  goto                   +6h
+  new-instance           v1, Lorg/json/JSONObject;
+  invoke-direct          v1, Lorg/json/JSONObject;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustEventFailure;->jsonResponse Lorg/json/JSONObject;
+  return-object          v0
+  iput-object            v2, v0, Lcom/adjust/sdk/AdjustEventFailure;->eventToken Ljava/lang/String;
+  iget-object            v1, v3, Lcom/adjust/sdk/ResponseData;->message Ljava/lang/String;
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustEventFailure;->message Ljava/lang/String;
+  iget-object            v1, v3, Lcom/adjust/sdk/ResponseData;->timestamp Ljava/lang/String;
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustEventFailure;->timestamp Ljava/lang/String;
+  iget-object            v1, v3, Lcom/adjust/sdk/ResponseData;->adid Ljava/lang/String;
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustEventFailure;->adid Ljava/lang/String;
+  iget-object            v1, v3, Lcom/adjust/sdk/EventResponseData;->callbackId Ljava/lang/String;
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustEventFailure;->callbackId Ljava/lang/String;
+  iget-boolean           v1, v3, Lcom/adjust/sdk/ResponseData;->willRetry Z
+  iput-boolean           v1, v0, Lcom/adjust/sdk/AdjustEventFailure;->willRetry Z
+  iget-object            v1, v3, Lcom/adjust/sdk/ResponseData;->jsonResponse Lorg/json/JSONObject;
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustEventFailure;->jsonResponse Lorg/json/JSONObject;
+  return-object          v0
+
+---- METHOD public getSuccessResponseData ()Lcom/adjust/sdk/AdjustEventSuccess; ----
+  iget-boolean           v0, v3, Lcom/adjust/sdk/ResponseData;->success Z
+  if-nez                 v0, +004h
+  const/4                v0, 0
+  return-object          v0
+  new-instance           v0, Lcom/adjust/sdk/AdjustEventSuccess;
+  invoke-direct          v0, Lcom/adjust/sdk/AdjustEventSuccess;-><init>()V
+  iget-object            v1, v3, Lcom/adjust/sdk/EventResponseData;->sdkPlatform Ljava/lang/String;
+  const-string/jumbo     v2, unity
+  invoke-virtual         v2, v1, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v1
+  iget-object            v2, v3, Lcom/adjust/sdk/EventResponseData;->eventToken Ljava/lang/String;
+  if-eqz                 v1, +036h
+  const-string           v1, ""
+  if-eqz                 v2, +003h
+  goto                   +2h
+  move-object            v2, v1
+  iput-object            v2, v0, Lcom/adjust/sdk/AdjustEventSuccess;->eventToken Ljava/lang/String;
+  iget-object            v2, v3, Lcom/adjust/sdk/ResponseData;->message Ljava/lang/String;
+  if-eqz                 v2, +003h
+  goto                   +2h
+  move-object            v2, v1
+  iput-object            v2, v0, Lcom/adjust/sdk/AdjustEventSuccess;->message Ljava/lang/String;
+  iget-object            v2, v3, Lcom/adjust/sdk/ResponseData;->timestamp Ljava/lang/String;
+  if-eqz                 v2, +003h
+  goto                   +2h
+  move-object            v2, v1
+  iput-object            v2, v0, Lcom/adjust/sdk/AdjustEventSuccess;->timestamp Ljava/lang/String;
+  iget-object            v2, v3, Lcom/adjust/sdk/ResponseData;->adid Ljava/lang/String;
+  if-eqz                 v2, +003h
+  goto                   +2h
+  move-object            v2, v1
+  iput-object            v2, v0, Lcom/adjust/sdk/AdjustEventSuccess;->adid Ljava/lang/String;
+  iget-object            v2, v3, Lcom/adjust/sdk/EventResponseData;->callbackId Ljava/lang/String;
+  if-eqz                 v2, +003h
+  move-object            v1, v2
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustEventSuccess;->callbackId Ljava/lang/String;
+  iget-object            v1, v3, Lcom/adjust/sdk/ResponseData;->jsonResponse Lorg/json/JSONObject;
+  if-eqz                 v1, +003h
+  goto                   +6h
+  new-instance           v1, Lorg/json/JSONObject;
+  invoke-direct          v1, Lorg/json/JSONObject;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustEventSuccess;->jsonResponse Lorg/json/JSONObject;
+  return-object          v0
+  iput-object            v2, v0, Lcom/adjust/sdk/AdjustEventSuccess;->eventToken Ljava/lang/String;
+  iget-object            v1, v3, Lcom/adjust/sdk/ResponseData;->message Ljava/lang/String;
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustEventSuccess;->message Ljava/lang/String;
+  iget-object            v1, v3, Lcom/adjust/sdk/ResponseData;->timestamp Ljava/lang/String;
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustEventSuccess;->timestamp Ljava/lang/String;
+  iget-object            v1, v3, Lcom/adjust/sdk/ResponseData;->adid Ljava/lang/String;
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustEventSuccess;->adid Ljava/lang/String;
+  iget-object            v1, v3, Lcom/adjust/sdk/EventResponseData;->callbackId Ljava/lang/String;
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustEventSuccess;->callbackId Ljava/lang/String;
+  iget-object            v1, v3, Lcom/adjust/sdk/ResponseData;->jsonResponse Lorg/json/JSONObject;
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustEventSuccess;->jsonResponse Lorg/json/JSONObject;
+  return-object          v0
+######################################################################

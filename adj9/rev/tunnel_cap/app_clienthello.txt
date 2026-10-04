@@ -1,0 +1,16 @@
+0x0303|0x1301,0x1302,0x1303,0xc02b,0xc02c,0xcca9,0xc02f,0xc030,0xcca8,0xc009,0xc00a,0xc013,0xc014,0x009c,0x009d,0x002f,0x0035|0|server_name,extended_master_secret,renegotiation_info,supported_groups,ec_point_formats,session_ticket_v2,alpn,status_request,signature_algorithms,key_share,psk_key_exchange_modes,supported_versions,padding|0x001d,0x0017,0x0018|0x0403,0x0804,0x0401,0x0503,0x0805,0x0501,0x0806,0x0601,0x0201|http/1.1|0x0304,0x0303|0x001d
+record_version           0x0301
+legacy_version           0x0303
+session_id_len           32
+cipher_suites            ['0x1301 TLS_AES_128_GCM_SHA256', '0x1302 TLS_AES_256_GCM_SHA384', '0x1303 TLS_CHACHA20_POLY1305_SHA256', '0xc02b ECDHE-ECDSA-AES128-GCM-SHA256', '0xc02c ECDHE-ECDSA-AES256-GCM-SHA384', '0xcca9 ECDHE-ECDSA-CHACHA20-POLY1305', '0xc02f ECDHE-RSA-AES128-GCM-SHA256', '0xc030 ECDHE-RSA-AES256-GCM-SHA384', '0xcca8 ECDHE-RSA-CHACHA20-POLY1305', '0xc009 ECDHE-ECDSA-AES128-SHA', '0xc00a ECDHE-ECDSA-AES256-SHA', '0xc013 ECDHE-RSA-AES128-SHA', '0xc014 ECDHE-RSA-AES256-SHA', '0x009c RSA-PSK-AES128-GCM-SHA256', '0x009d', '0x002f AES128-SHA', '0x0035 AES256-SHA']
+compression              [0]
+extensions_order         ['server_name', 'extended_master_secret', 'renegotiation_info', 'supported_groups', 'ec_point_formats', 'session_ticket_v2', 'alpn', 'status_request', 'signature_algorithms', 'key_share', 'psk_key_exchange_modes', 'supported_versions', 'padding']
+extensions_raw           [{'type': 'server_name', 'code': 0, 'len': 19}, {'type': 'extended_master_secret', 'code': 23, 'len': 0}, {'type': 'renegotiation_info', 'code': 65281, 'len': 1}, {'type': 'supported_groups', 'code': 10, 'len': 8}, {'type': 'ec_point_formats', 'code': 11, 'len': 2}, {'type': 'session_ticket_v2', 'code': 35, 'len': 0}, {'type': 'alpn', 'code': 16, 'len': 11}, {'type': 'status_request', 'code': 5, 'len': 5}, {'type': 'signature_algorithms', 'code': 13, 'len': 20}, {'type': 'key_share', 'code': 51, 'len': 38}, {'type': 'psk_key_exchange_modes', 'code': 45, 'len': 2}, {'type': 'supported_versions', 'code': 43, 'len': 5}, {'type': 'padding', 'code': 21, 'len': 238}]
+sni                      app.adjust.com
+supported_groups         ['0x001d x25519', '0x0017 secp256r1', '0x0018 secp384r1']
+ec_point_formats         ['0']
+alpn_offer               ['http/1.1']
+signature_algorithms     ['0x0403', '0x0804', '0x0401', '0x0503', '0x0805', '0x0501', '0x0806', '0x0601', '0x0201']
+key_share                ['0x001d x25519 (len=32)']
+psk_modes                ['1']
+supported_versions       ['0x0304', '0x0303']

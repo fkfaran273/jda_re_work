@@ -1,0 +1,12 @@
+{
+ "gps": "37e70820-dabc-4d5e-a34d-eff8b27f01f7",
+ "session": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"ccedca23385f85443f017799f6574bf9\",\"ask_in\":2000}"
+ ],
+ "attribution": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"ccedca23385f85443f017799f6574bf9\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T15:49:04Z\",\"first_session_time\":\"2026-09-27T15:49:04Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ ],
+ "blob_hex": "5b10b67d54b876066ef3881c039c84ed5af0a562c4c20209ab34397eb200e45a39bfd4c09de52bbcedec7b1ef49bc0f173649b7cae9ad1d4106359537d9080410ed35c76a5596ecdc7a13d1e33f206d3c108db127c8ba0beabf208c63b6fb0838bd3c716ba139645f011496273c1997674ca389b4f10dfdcabd6eeb051233b1145e9dbb999d9ddbdcd981ed2c1f5378ab9e1e53cc2214b3c654617db2d6448c21647c953595b10a9b85c484f241ce2f49d21af3c800f2ed60b46984eee1a8257"
+}

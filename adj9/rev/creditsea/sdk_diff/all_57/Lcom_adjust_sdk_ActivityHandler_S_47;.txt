@@ -1,0 +1,32 @@
+# CLASS Lcom/adjust/sdk/ActivityHandler$47;
+FIELD public final synthetic a Lcom/adjust/sdk/SessionResponseData;
+FIELD public final synthetic b Lcom/adjust/sdk/ActivityHandler;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/SessionResponseData;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/ActivityHandler$47;->b Lcom/adjust/sdk/ActivityHandler;
+  iput-object            v2, v0, Lcom/adjust/sdk/ActivityHandler$47;->a Lcom/adjust/sdk/SessionResponseData;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v2, Lcom/adjust/sdk/ActivityHandler$47;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->access$1600(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustConfig;
+  move-result-object     v0
+  if-nez                 v0, +003h
+  goto                   +bh
+  iget-object            v0, v2, Lcom/adjust/sdk/ActivityHandler$47;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->access$1600(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustConfig;
+  move-result-object     v0
+  iget-object            v0, v0, Lcom/adjust/sdk/AdjustConfig;->onSessionTrackingFailedListener Lcom/adjust/sdk/OnSessionTrackingFailedListener;
+  if-nez                 v0, +003h
+  return-void            
+  iget-object            v0, v2, Lcom/adjust/sdk/ActivityHandler$47;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->access$1600(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustConfig;
+  move-result-object     v0
+  iget-object            v0, v0, Lcom/adjust/sdk/AdjustConfig;->onSessionTrackingFailedListener Lcom/adjust/sdk/OnSessionTrackingFailedListener;
+  iget-object            v1, v2, Lcom/adjust/sdk/ActivityHandler$47;->a Lcom/adjust/sdk/SessionResponseData;
+  invoke-virtual         v1, Lcom/adjust/sdk/SessionResponseData;->getFailureResponseData()Lcom/adjust/sdk/AdjustSessionFailure;
+  move-result-object     v1
+  invoke-interface       v0, v1, Lcom/adjust/sdk/OnSessionTrackingFailedListener;->onSessionTrackingFailed(Lcom/adjust/sdk/AdjustSessionFailure;)V
+  return-void            
+######################################################################

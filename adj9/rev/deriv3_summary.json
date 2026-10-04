@@ -1,0 +1,19 @@
+{
+ "rows": 16,
+ "K16": 1758,
+ "KVAR": 1986,
+ "K4": 292,
+ "families": {
+  "AES-128-ECB": 225024,
+  "HMAC(MD5,SHA1,SHA256)": 2621520,
+  "concat MD5/SHA256": 3495360,
+  "SipHash(2-4,1-3)": 379728,
+  "XOR-mask": 1547040,
+  "crc32 mixes+seeded": 14832,
+  "hash-trunc": 3740,
+  "fnv1a": 46720,
+  "murmur3": 9376
+ },
+ "tests": 87166216,
+ "hits": []
+}

@@ -1,0 +1,5 @@
+# CLASS Lcom/adjust/sdk/scheduler/ThreadScheduler;
+
+---- METHOD public abstract schedule (Ljava/lang/Runnable; J)V ----
+  (no code)
+######################################################################

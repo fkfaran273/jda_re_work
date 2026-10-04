@@ -1,0 +1,20 @@
+# CLASS Lcom/adjust/sdk/AdjustInstance$12;
+FIELD public final synthetic a Lcom/adjust/sdk/OnGooglePlayInstallReferrerReadListener;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/OnGooglePlayInstallReferrerReadListener;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustInstance$12;->a Lcom/adjust/sdk/OnGooglePlayInstallReferrerReadListener;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final onFail (Ljava/lang/String;)V ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustInstance$12;->a Lcom/adjust/sdk/OnGooglePlayInstallReferrerReadListener;
+  invoke-interface       v0, v2, Lcom/adjust/sdk/OnGooglePlayInstallReferrerReadListener;->onFail(Ljava/lang/String;)V
+  return-void            
+
+---- METHOD public final onInstallReferrerRead (Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String;)V ----
+  iget-object            v3, v1, Lcom/adjust/sdk/AdjustInstance$12;->a Lcom/adjust/sdk/OnGooglePlayInstallReferrerReadListener;
+  new-instance           v0, Lcom/adjust/sdk/GooglePlayInstallReferrerDetails;
+  invoke-direct          v0, v2, Lcom/adjust/sdk/GooglePlayInstallReferrerDetails;-><init>(Lcom/adjust/sdk/ReferrerDetails;)V
+  invoke-interface       v3, v0, Lcom/adjust/sdk/OnGooglePlayInstallReferrerReadListener;->onInstallReferrerRead(Lcom/adjust/sdk/GooglePlayInstallReferrerDetails;)V
+  return-void            
+######################################################################

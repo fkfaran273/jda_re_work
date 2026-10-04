@@ -1,0 +1,82 @@
+[
+ {
+  "als": 0,
+  "kind": "session",
+  "token": "token",
+  "d10_len": 504,
+  "sec": 1789239390,
+  "status": "exit-clean",
+  "steps": 10493669,
+  "byte_exact": true
+ },
+ {
+  "als": 1,
+  "kind": "session",
+  "token": "token",
+  "d10_len": 504,
+  "sec": 1789239528,
+  "status": "exit-clean",
+  "steps": 10493669,
+  "byte_exact": true
+ },
+ {
+  "als": 4,
+  "kind": "session",
+  "token": "plain",
+  "d10_len": 360,
+  "sec": 1789240075,
+  "status": "exit-clean",
+  "steps": 9871985,
+  "byte_exact": true
+ },
+ {
+  "als": 5,
+  "kind": "session",
+  "token": "plain",
+  "d10_len": 360,
+  "sec": 1789240228,
+  "status": "exit-clean",
+  "steps": 9871985,
+  "byte_exact": true
+ },
+ {
+  "als": 6,
+  "kind": "session",
+  "token": "plain",
+  "d10_len": 360,
+  "sec": 1789240340,
+  "status": "exit-clean",
+  "steps": 9871985,
+  "byte_exact": true
+ },
+ {
+  "als": 7,
+  "kind": "session",
+  "token": "plain",
+  "d10_len": 360,
+  "sec": 1789240512,
+  "status": "exit-clean",
+  "steps": 9871985,
+  "byte_exact": true
+ },
+ {
+  "als": 8,
+  "kind": "click",
+  "token": "plain",
+  "d10_len": 388,
+  "sec": 1789240512,
+  "status": "exit-clean",
+  "steps": 9885778,
+  "byte_exact": false
+ },
+ {
+  "als": 9,
+  "kind": "session",
+  "token": "plain",
+  "d10_len": 360,
+  "sec": 1789240512,
+  "status": "exit-clean",
+  "steps": 9878275,
+  "byte_exact": false
+ }
+]

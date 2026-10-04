@@ -1,0 +1,5 @@
+# CLASS Lcom/adjust/sdk/sig/k1;
+
+---- METHOD public abstract discriminator(()Ljava/lang/String;)  ----
+  (no code)
+######################################################################

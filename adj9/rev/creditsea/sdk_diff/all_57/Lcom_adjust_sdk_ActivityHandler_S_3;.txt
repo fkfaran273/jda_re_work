@@ -1,0 +1,26 @@
+# CLASS Lcom/adjust/sdk/ActivityHandler$3;
+FIELD public final synthetic a Ljava/util/ArrayList;
+FIELD public final synthetic b Lcom/adjust/sdk/AdjustAttribution;
+
+---- METHOD public constructor <init> (Ljava/util/ArrayList; Lcom/adjust/sdk/AdjustAttribution;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/ActivityHandler$3;->a Ljava/util/ArrayList;
+  iput-object            v2, v0, Lcom/adjust/sdk/ActivityHandler$3;->b Lcom/adjust/sdk/AdjustAttribution;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v5, Lcom/adjust/sdk/ActivityHandler$3;->a Ljava/util/ArrayList;
+  invoke-virtual         v0, Ljava/util/ArrayList;->size()I
+  move-result            v1
+  const/4                v2, 0
+  if-ge                  v2, v1, +012h
+  invoke-virtual         v0, v2, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+  move-result-object     v3
+  add-int/lit8           v2, v2, 1
+  check-cast             v3, Lcom/adjust/sdk/OnAttributionReadListener;
+  if-eqz                 v3, -00ah
+  iget-object            v4, v5, Lcom/adjust/sdk/ActivityHandler$3;->b Lcom/adjust/sdk/AdjustAttribution;
+  invoke-interface       v3, v4, Lcom/adjust/sdk/OnAttributionReadListener;->onAttributionRead(Lcom/adjust/sdk/AdjustAttribution;)V
+  goto                   -11h
+  return-void            
+######################################################################

@@ -1,0 +1,15 @@
+{
+ "identity": "gps=95598e55-3fc1-45ed-8f50-8749e21505f5 auid=bd9792a0-e8ff-4094-8b2f-4af5cd261bd8",
+ "click": "http=302 reftag=adjust_reftag=cQp4pBPHM9QLK&utm_source=VKM+D",
+ "session/mint": "exit-clean #10=360B blob=192B",
+ "session/send": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"26cf26af8bce9c052235338ce72bc228\",\"ask_in\":2000}",
+ "sdk_click/send": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"26cf26af8bce9c052235338ce72bc228\"}",
+ "attribution/0": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"26cf26af8bce9c052235338ce72bc228\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-19T04:26:51Z\",\"firs",
+ "attribution/1": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"26cf26af8bce9c052235338ce72bc228\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-19T04:26:51Z\",\"firs",
+ "attribution/2": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"26cf26af8bce9c052235338ce72bc228\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-19T04:26:51Z\",\"firs",
+ "attribution/3": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"26cf26af8bce9c052235338ce72bc228\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-19T04:26:51Z\",\"firs",
+ "RESULT": "no non-organic seen from crafted polls (Organic / fallback)",
+ "gps": "95598e55-3fc1-45ed-8f50-8749e21505f5",
+ "auid": "bd9792a0-e8ff-4094-8b2f-4af5cd261bd8",
+ "marker": "cline_pure_e"
+}

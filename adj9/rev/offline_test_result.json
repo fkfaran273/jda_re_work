@@ -1,0 +1,14 @@
+{
+ "gps": "efda191d-be09-4f05-b9ca-c3339f98a362",
+ "auid": "1621a933-3e33-45ba-969a-2ba79b34b9d9",
+ "second": 1790524300,
+ "session": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"7375096e1be627a6c5d63fc2673ceb2e\",\"ask_in\":2000}"
+ ],
+ "attribution": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"7375096e1be627a6c5d63fc2673ceb2e\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T15:52:28Z\",\"first_session_time\":\"2026-09-27T15:52:28Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ ],
+ "blob_hex": "27113c8b1d4886dc501a49125a2ebd7cdac0b841250f0b1951883ed610c02b60c84107db4a192112bc22f23fb50f9facbc92a7668dafd7f74284fa5c4245e61a695b116451c470c6b961ebf6417764f988b4e6efe9c6dde474e074553eabdd981516c199ede0ed18e40492642811a5ba056e7e46bdc711d185ac7a177602a03389702174f8998c7d56c74a111d6a8e2272af7209e726f9c6cd0915e3ade9fb373ee19de25777c27e40de75b93fdaceac60008a2173dfdd089577ad03311fb56b"
+}

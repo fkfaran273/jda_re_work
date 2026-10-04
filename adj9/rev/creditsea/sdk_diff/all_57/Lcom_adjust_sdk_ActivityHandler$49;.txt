@@ -1,0 +1,30 @@
+# CLASS Lcom/adjust/sdk/ActivityHandler$49;
+FIELD public final synthetic a Lcom/adjust/sdk/ActivityHandler;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/ActivityHandler;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/ActivityHandler$49;->a Lcom/adjust/sdk/ActivityHandler;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v2, Lcom/adjust/sdk/ActivityHandler$49;->a Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->access$1600(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustConfig;
+  move-result-object     v0
+  if-nez                 v0, +003h
+  goto                   +bh
+  iget-object            v0, v2, Lcom/adjust/sdk/ActivityHandler$49;->a Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->access$1600(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustConfig;
+  move-result-object     v0
+  iget-object            v0, v0, Lcom/adjust/sdk/AdjustConfig;->onThirdPartySharingSettingsChangedListener Lcom/adjust/sdk/OnThirdPartySharingSettingsChangedListener;
+  if-nez                 v0, +003h
+  return-void            
+  iget-object            v0, v2, Lcom/adjust/sdk/ActivityHandler$49;->a Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->access$1600(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustConfig;
+  move-result-object     v0
+  iget-object            v0, v0, Lcom/adjust/sdk/AdjustConfig;->onThirdPartySharingSettingsChangedListener Lcom/adjust/sdk/OnThirdPartySharingSettingsChangedListener;
+  iget-object            v1, v2, Lcom/adjust/sdk/ActivityHandler$49;->a Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v1, Lcom/adjust/sdk/ActivityHandler;->access$1500(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustThirdPartySharingResult;
+  move-result-object     v1
+  invoke-interface       v0, v1, Lcom/adjust/sdk/OnThirdPartySharingSettingsChangedListener;->onThirdPartySharingSettingsChanged(Lcom/adjust/sdk/AdjustThirdPartySharingResult;)V
+  return-void            
+######################################################################

@@ -1,0 +1,35 @@
+{
+ "gps": "274418fe-880e-4739-9a7f-1ee44c61ab7d",
+ "auid": "57316f47-67a6-41c3-bb99-2182fb353897",
+ "referrer": "adjust_reftag=cA1DXYdvcrG5k&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+ "signed": false,
+ "transport": "device",
+ "steps": [
+  [
+   "session",
+   400,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"ae883eb3d2a3709449e24642e2c458dd\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-17T16:22:10, this session: 2026-09-17T16:27:03, interval: 4m53s, min interval: 20m))\"}\r\n"
+  ],
+  [
+   "sdk_click",
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"ae883eb3d2a3709449e24642e2c458dd\"}\r\n"
+  ],
+  [
+   "attr1",
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"ae883eb3d2a3709449e24642e2c458dd\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-17T07:45:42Z\",\"first_session_time\":\"2026-09-17T07:45:42Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}\r\n"
+  ],
+  [
+   "attr2",
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"ae883eb3d2a3709449e24642e2c458dd\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-17T07:45:42Z\",\"first_session_time\":\"2026-09-17T07:45:42Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}\r\n"
+  ],
+  [
+   "attr3",
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"ae883eb3d2a3709449e24642e2c458dd\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-17T07:45:42Z\",\"first_session_time\":\"2026-09-17T07:45:42Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}\r\n"
+  ]
+ ],
+ "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z"
+}

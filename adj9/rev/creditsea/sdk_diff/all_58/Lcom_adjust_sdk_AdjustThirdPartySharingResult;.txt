@@ -1,0 +1,38 @@
+# CLASS Lcom/adjust/sdk/AdjustThirdPartySharingResult;
+FIELD private final thirdPartySharingSettingsJson Ljava/lang/String;
+
+---- METHOD public constructor <init> (Ljava/lang/String;)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustThirdPartySharingResult;->thirdPartySharingSettingsJson Ljava/lang/String;
+  return-void            
+
+---- METHOD public equals (Ljava/lang/Object;)Z ----
+  const/4                v0, 0
+  if-nez                 v3, +003h
+  return                 v0
+  if-ne                  v3, v2, +004h
+  const/4                v3, 1
+  return                 v3
+  instance-of            v1, v3, Lcom/adjust/sdk/AdjustThirdPartySharingResult;
+  if-nez                 v1, +003h
+  return                 v0
+  check-cast             v3, Lcom/adjust/sdk/AdjustThirdPartySharingResult;
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustThirdPartySharingResult;->thirdPartySharingSettingsJson Ljava/lang/String;
+  iget-object            v3, v3, Lcom/adjust/sdk/AdjustThirdPartySharingResult;->thirdPartySharingSettingsJson Ljava/lang/String;
+  invoke-static          v0, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v3
+  return                 v3
+
+---- METHOD public getThirdPartySharingSettingsJson ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustThirdPartySharingResult;->thirdPartySharingSettingsJson Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public hashCode ()I ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustThirdPartySharingResult;->thirdPartySharingSettingsJson Ljava/lang/String;
+  if-eqz                 v0, +007h
+  invoke-virtual         v0, Ljava/lang/String;->hashCode()I
+  move-result            v0
+  return                 v0
+  const/4                v0, 0
+  return                 v0
+######################################################################

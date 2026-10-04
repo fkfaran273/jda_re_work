@@ -1,0 +1,5 @@
+# CLASS Lcom/adjust/sdk/OnRemoteTriggerListener;
+
+---- METHOD public abstract onRemoteTrigger (Lcom/adjust/sdk/AdjustRemoteTrigger;)V ----
+  (no code)
+######################################################################

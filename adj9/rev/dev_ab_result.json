@@ -1,0 +1,18 @@
+{
+ "pre": {
+  "auid": "41ca78c9-f652-4555-a546-dbe7999efbec",
+  "token": "24pxw9rl",
+  "raw": "\ufffd\ufffd\u0000\u0005sr\u0000 com.adjust.sdk.AdjustAttribution\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0003\u0000\fL\u0000\u0007adgroupt\u0000\u0012Ljava/lang/String;L\u0000\bcampaignq\u0000~\u0000\u0001L\u0000\nclickLabelq\u0000~\u0000\u0001L\u0000\ncostAmountt\u0000\u0012Ljava/lang/Double;L\u0000\fcostCurrencyq\u0000~\u0000\u0001L\u0000\bcostTypeq\u0000~\u0000\u0001L\u0000\bcreativeq\u0000~\u0000\u0001L\u0000\u0011fbInstallReferrerq\u0000~\u0000\u0001L\u0000\fjsonResponseq\u0000~\u0000\u0001L\u0000\u0007networkq\u0000~\u0000\u0001L\u0000\u000btrackerNameq\u0000~\u0000\u0001L\u0000\ftrackerTokenq\u0000~\u0000\u0001xpt\u0000\u000bvkm_0926_36t\u0000\u0002AHt\u0000\u0000sr\u0000\u0010java.lang.Double\ufffd\ufffd\ufffdJ)k\ufffd\u0004\u0002\u0000\u0001D\u0000\u0005valuexr\u0000\u0010java.lang.Number\ufffd\ufffd\ufffd\u001d\u000b\ufffd\ufffd\ufffd\u0002\u0000\u0000xp\u007f\ufffd\u0000\u0000\u0000\u0000\u0000\u0000q\u0000~\u0000\u0006q\u0000~\u0000\u0006t\u0000\rpenti_genericq\u0000~\u0000\u0006t\u0001o{\"tracker_token\":\"24pxw9rl\",\"tracker_name\":\"VKM Digital Yeni::AH::vkm_0926_36::penti_generic\",\"network\":\"VKM Digital Yeni\",\"campaign\":\"AH\",\"adgroup\":\"vkm_0926_36\",\"creative\":\"penti_generic\",\"engagement_time\":\"2026-09-14T10:25:58Z\",\"installed_at\":\"2026-09-14T12:23:08Z\",\"first_session_time\":\"2026-09-14T12:23:08Z\",\"is_reattributed\":false,\"is_redownload_install\":"
+ },
+ "post": {
+  "auid": "7aeed4a8-5f4b-43e6-b204-0869a1f8594a",
+  "token": "24pxw9rl",
+  "raw": "\ufffd\ufffd\u0000\u0005sr\u0000 com.adjust.sdk.AdjustAttribution\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0001\u0003\u0000\fL\u0000\u0007adgroupt\u0000\u0012Ljava/lang/String;L\u0000\bcampaignq\u0000~\u0000\u0001L\u0000\nclickLabelq\u0000~\u0000\u0001L\u0000\ncostAmountt\u0000\u0012Ljava/lang/Double;L\u0000\fcostCurrencyq\u0000~\u0000\u0001L\u0000\bcostTypeq\u0000~\u0000\u0001L\u0000\bcreativeq\u0000~\u0000\u0001L\u0000\u0011fbInstallReferrerq\u0000~\u0000\u0001L\u0000\fjsonResponseq\u0000~\u0000\u0001L\u0000\u0007networkq\u0000~\u0000\u0001L\u0000\u000btrackerNameq\u0000~\u0000\u0001L\u0000\ftrackerTokenq\u0000~\u0000\u0001xpt\u0000\u000bvkm_0926_36t\u0000\u0002AHt\u0000\u0000sr\u0000\u0010java.lang.Double\ufffd\ufffd\ufffdJ)k\ufffd\u0004\u0002\u0000\u0001D\u0000\u0005valuexr\u0000\u0010java.lang.Number\ufffd\ufffd\ufffd\u001d\u000b\ufffd\ufffd\ufffd\u0002\u0000\u0000xp\u007f\ufffd\u0000\u0000\u0000\u0000\u0000\u0000q\u0000~\u0000\u0006q\u0000~\u0000\u0006t\u0000\rpenti_genericq\u0000~\u0000\u0006t\u0001o{\"tracker_token\":\"24pxw9rl\",\"tracker_name\":\"VKM Digital Yeni::AH::vkm_0926_36::penti_generic\",\"network\":\"VKM Digital Yeni\",\"campaign\":\"AH\",\"adgroup\":\"vkm_0926_36\",\"creative\":\"penti_generic\",\"engagement_time\":\"2026-09-14T10:25:58Z\",\"installed_at\":\"2026-09-14T12:23:08Z\",\"first_session_time\":\"2026-09-14T12:23:08Z\",\"is_reattributed\":false,\"is_redownload_install\":"
+ },
+ "crafted": {
+  "auid": "7aeed4a8-5f4b-43e6-b204-0869a1f8594a",
+  "http": 200,
+  "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z / inst=2026-09-14T12:23:08Z",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-14T12:23:08Z\",\"first_session_time\":\"2026-09-14T12:23:08Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ }
+}

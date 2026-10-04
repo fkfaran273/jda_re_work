@@ -1,0 +1,113 @@
+{
+  "link": "",
+  "referrer": "adjust_reftag=cxaOf09vQrBHs&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+  "gaid": "80970d76-1b90-4e28-97cc-a6e5cd55f690",
+  "device": {
+    "kernel": "15",
+    "locale": {
+      "country": "IN",
+      "language": "en"
+    },
+    "ram": {
+      "available": "5401",
+      "shown": "8112"
+    },
+    "os_incremental": "OS2.0.3.0.VNUINXM",
+    "bluetooth": "3.0",
+    "hardware": "",
+    "imei": "868663035562624",
+    "cpu_core": "7",
+    "private_ip": "10.0.211.23",
+    "device_type": "phone",
+    "timezone": "+0530",
+    "serial": "232427507a2a1454",
+    "mnc": "908",
+    "android_id": "b9b26e146de12319",
+    "cpu_arch": "aarch64",
+    "display_metrics": {
+      "ypx": "1080",
+      "screen_layout_name": "large",
+      "screen_layout_format": "long",
+      "xpx": "2312",
+      "ydp": 440.098,
+      "xdp": 439.962,
+      "aspect_ratio": "14:6",
+      "density_dpi": "xxhdpi",
+      "screen_layout_size": 3
+    },
+    "last_rebooted_at": 1789928380318,
+    "network_band": "LTE",
+    "cpu_abi2": "",
+    "User-Agent": "Mozilla/5.0 (Linux; Android 15; 2406ERN9CI Build/AQ3A.240912.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/152.0.7977.42 Mobile Safari/537.36",
+    "cpu_frequency": {
+      "max": "1958.0",
+      "min": "499.0"
+    },
+    "os_version": "15",
+    "build": "AQ3A.240912.001",
+    "gpu": {
+      "version": "ARM",
+      "vendor": "ARM",
+      "name": "Immortalis-G925",
+      "opengl_version": "262400"
+    },
+    "build_prop": {
+      "dalvik_vm_isa_arm64_variant": "kryo300",
+      "ro_build_user": "builder"
+    },
+    "manufacturer": "Xiaomi",
+    "subAgent": "7ooe7l82n9f691l9w0",
+    "local_tz": "IST",
+    "product": "breeze_in",
+    "brand": "Redmi",
+    "screen_size": "5.8",
+    "mcc": "405",
+    "device_id": "80970d76-1b90-4e28-97cc-a6e5cd55f690",
+    "mac": "92:a1:ce:57:9a:08",
+    "adid": "80970d76-1b90-4e28-97cc-a6e5cd55f690",
+    "apps_count": {
+      "user_apps": 27,
+      "sideloaded_apps": 13,
+      "stock_apps": 230
+    },
+    "fingerprint": "Redmi/breeze_in/breeze:15/AQ3A.240912.001/OS2.0.3.0.VNUINXM:user/release-keys",
+    "device": "breeze",
+    "sensors": {
+      "magnetometer": {
+        "vendor": "QST",
+        "name": "qmc630x Magnetometer Non-wakeup"
+      },
+      "gyroscope": {
+        "vendor": "xiaomi",
+        "name": "virtual_gyroscope  Non-wakeup"
+      },
+      "accelerometer": {
+        "vendor": "Bosch",
+        "name": "bma2x2 Accelerometer Non-wakeup"
+      }
+    },
+    "sdk": "35",
+    "name": "breeze",
+    "currency": {
+      "code": "INR",
+      "name": "Indian Rupee"
+    },
+    "mainboard": "breeze",
+    "country": "India",
+    "local_timezone": "Indian Standard Time",
+    "processor": "AArch64 Processor rev 4 (aarch64)",
+    "network": "WiFi",
+    "carrier": "Vi India",
+    "os_codename": "REL",
+    "cpu_abi": "arm64-v8a",
+    "internal_memory": {
+      "available": "104.64 GB",
+      "shown": "128 GB"
+    },
+    "model": "2406ERN9CI",
+    "local_tz_name": "Asia/Kolkata",
+    "resolution": "1080x2312",
+    "display": "AQ3A.240912.001",
+    "dpi": "440"
+  }
+}

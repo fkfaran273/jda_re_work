@@ -1,0 +1,20 @@
+[
+ {
+  "als": 7,
+  "kind": "session",
+  "d10_len": 360,
+  "byte_exact": true
+ },
+ {
+  "als": 8,
+  "kind": "click",
+  "d10_len": 388,
+  "byte_exact": false
+ },
+ {
+  "als": 9,
+  "kind": "session",
+  "d10_len": 360,
+  "byte_exact": false
+ }
+]

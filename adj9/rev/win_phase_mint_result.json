@@ -1,0 +1,13 @@
+{
+ "gps": "5cbe36d2-999d-4e82-9a62-b24b9027feed",
+ "second": 1790594886,
+ "blob_hex": "7ecd9b254c19521e553937d172ce9b2aefbdb1c362edda7f02465cb818d5b4eadfe2a3797886191b4031ac9d31d6ca62bde00e32938273c19e2ad65711bfa66a3d1d3afd3b69f48b21125baece0a4288ab0ff4243eb6581dcb40f0ab5e7ec6163daf27ad724555c7524f0be89ff57de5b96c3e9b983af431e2c52215f8cee4a9f7a85c3e298e83194b82906d3e6bb808d5bff3136c357eaed141e3e83aa04593856ac4ab2981941591721e8817f387d1eeb91ccb860cc2c62b5060bc246d6311",
+ "session": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"b15e13c1f81ab36c648ccc833bbecf88\",\"ask_in\":2000}"
+ ],
+ "attribution": [
+  400,
+  "{\"error\":\"Attribution request failed (unsupported sdk)\",\"ask_in\":2592000000}"
+ ]
+}

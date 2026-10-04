@@ -1,0 +1,21 @@
+{
+ "gps": "3a21a9e2-67fa-481b-a159-c7d6783d35d7",
+ "auid": "b1b5a9df-9067-48a8-8b4b-f418327ebd72",
+ "arms": [
+  {
+   "http": 200,
+   "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z / inst=2026-09-17T12:41:28Z",
+   "raw": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"c6b5d6692dbddfb3990fe64020cb9e8a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-17T12:41:28Z\",\"first_session_time\":\"2026-09-17T12:41:28Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}\r\n"
+  },
+  {
+   "http": 200,
+   "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z / inst=2026-09-17T12:41:28Z",
+   "raw": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"c6b5d6692dbddfb3990fe64020cb9e8a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-17T12:41:28Z\",\"first_session_time\":\"2026-09-17T12:41:28Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}\r\n"
+  },
+  {
+   "http": "ERR",
+   "verdict": "HTTP ERR adb.exe: no devices/emulators found\r\n",
+   "raw": "adb.exe: no devices/emulators found\r\n"
+  }
+ ]
+}

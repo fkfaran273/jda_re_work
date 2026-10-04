@@ -1,0 +1,42 @@
+# CLASS Lcom/adjust/sdk/w;
+FIELD public final synthetic a I
+FIELD public final synthetic b Ljava/lang/Object;
+
+---- METHOD public synthetic constructor <init> (Ljava/lang/Object; I)V ----
+  iput                   v2, v0, Lcom/adjust/sdk/w;->a I
+  iput-object            v1, v0, Lcom/adjust/sdk/w;->b Ljava/lang/Object;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final onFail (Ljava/lang/String;)V ----
+  iget                   v0, v2, Lcom/adjust/sdk/w;->a I
+  packed-switch          v0, +000001ah
+  iget-object            v0, v2, Lcom/adjust/sdk/w;->b Ljava/lang/Object;
+  check-cast             v0, Lcom/adjust/sdk/OnGooglePlayInstallReferrerReadListener;
+  invoke-interface       v0, v3, Lcom/adjust/sdk/OnGooglePlayInstallReferrerReadListener;->onFail(Ljava/lang/String;)V
+  return-void            
+  iget-object            v0, v2, Lcom/adjust/sdk/w;->b Ljava/lang/Object;
+  check-cast             v0, Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->e0(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/ILogger;
+  move-result-object     v0
+  const/4                v1, 0
+  new-array              v1, v1, [Ljava/lang/Object;
+  invoke-interface       v0, v3, v1, Lcom/adjust/sdk/ILogger;->debug(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  packed-switch-payload  0
+
+---- METHOD public final onInstallReferrerRead (Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String;)V ----
+  iget                   v0, v1, Lcom/adjust/sdk/w;->a I
+  packed-switch          v0, +0000018h
+  new-instance           v3, Lcom/adjust/sdk/GooglePlayInstallReferrerDetails;
+  invoke-direct          v3, v2, Lcom/adjust/sdk/GooglePlayInstallReferrerDetails;-><init>(Lcom/adjust/sdk/ReferrerDetails;)V
+  iget-object            v2, v1, Lcom/adjust/sdk/w;->b Ljava/lang/Object;
+  check-cast             v2, Lcom/adjust/sdk/OnGooglePlayInstallReferrerReadListener;
+  invoke-interface       v2, v3, Lcom/adjust/sdk/OnGooglePlayInstallReferrerReadListener;->onInstallReferrerRead(Lcom/adjust/sdk/GooglePlayInstallReferrerDetails;)V
+  return-void            
+  iget-object            v0, v1, Lcom/adjust/sdk/w;->b Ljava/lang/Object;
+  check-cast             v0, Lcom/adjust/sdk/ActivityHandler;
+  invoke-virtual         v0, v2, v3, Lcom/adjust/sdk/ActivityHandler;->sendInstallReferrer(Lcom/adjust/sdk/ReferrerDetails; Ljava/lang/String;)V
+  return-void            
+  packed-switch-payload  0
+######################################################################

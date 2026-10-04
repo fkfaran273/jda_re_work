@@ -1,0 +1,21 @@
+{
+ "stages": {
+  "7b_session": {
+   "n": 393216,
+   "hits": []
+  },
+  "7b_click": {
+   "n": 1572864,
+   "hits": []
+  },
+  "7b_attribution": {
+   "n": 49152,
+   "hits": []
+  },
+  "7b_event": {
+   "n": 12582912,
+   "hits": []
+  }
+ },
+ "hits": []
+}

@@ -1,0 +1,57 @@
+=== crypto constants materialised in .text (mov/movk immediates) ===
+
+SHA1_K     : 1/4 distinct constants, 2 sites
+    0xca62c1d6    2 site(s)  first @ 0x12e608
+    top clusters:
+      0x12e608 - 0x12e610  (2 sites)
+
+SHA1_H     : 1/5 distinct constants, 2 sites
+    0x10325476    2 site(s)  first @ 0x6ad54
+    top clusters:
+      0x6ad54 - 0x6c558  (2 sites)
+
+SHA256_K   : 6/64 distinct constants, 35 sites
+    0xc24b8b70   11 site(s)  first @ 0x2cc9c
+    0x391c0cb3    9 site(s)  first @ 0x3e224
+    0xd807aa98    7 site(s)  first @ 0x18e8c
+    0xc19bf174    4 site(s)  first @ 0x34db0
+    0x4d2c6dfc    2 site(s)  first @ 0x64414
+    0x4a7484aa    2 site(s)  first @ 0x74924
+    top clusters:
+      0xb00e4 - 0xb1030  (9 sites)
+      0xbfdf4 - 0xc0894  (7 sites)
+      0x2c8ec - 0x3022c  (4 sites)
+      0xaba8c - 0xabfec  (3 sites)
+      0x18e8c - 0x191d4  (2 sites)
+
+SHA256_H   : 2/8 distinct constants, 19 sites
+    0xa54ff53a   10 site(s)  first @ 0xe440
+    0x3c6ef372    9 site(s)  first @ 0x4a6d8
+    top clusters:
+      0xcd12c - 0xcdb3c  (7 sites)
+      0xe440 - 0xe5c8  (3 sites)
+      0x1df28 - 0x20a9c  (2 sites)
+      0x4a6d8 - 0x4b4fc  (2 sites)
+      0xe9e3c - 0xea984  (2 sites)
+
+MD5_K      : 9/64 distinct constants, 82 sites
+    0x455a14ed   45 site(s)  first @ 0xaf2c
+    0xe6db99e5   10 site(s)  first @ 0xe800
+    0xf4d50d87    6 site(s)  first @ 0x15e04
+    0xa8304613    5 site(s)  first @ 0x525fc
+    0xd8a1e681    4 site(s)  first @ 0x46664
+    0x265e5a51    4 site(s)  first @ 0x478c0
+    0xe7d3fbc8    3 site(s)  first @ 0x70a0c
+    0xab9423a7    3 site(s)  first @ 0x7d560
+    top clusters:
+      0x97438 - 0x9fdf4  (15 sites)
+      0xd6af8 - 0xdd44c  (11 sites)
+      0x12ce0c - 0x135d2c  (8 sites)
+      0xaf2c - 0xe800  (7 sites)
+      0x7a500 - 0x8037c  (6 sites)
+
+MD5_H      : 1/4 distinct constants, 2 sites
+    0x10325476    2 site(s)  first @ 0x6ad54
+    top clusters:
+      0x6ad54 - 0x6c558  (2 sites)
+

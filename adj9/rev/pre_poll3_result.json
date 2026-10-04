@@ -1,0 +1,14 @@
+[
+ [
+  400,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"068922c9197da15e4fe2543affb8e1e9\",\"error\":\"Attribution request failed (app is not installed)\",\"ask_in\":2592000000}"
+ ],
+ [
+  400,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"068922c9197da15e4fe2543affb8e1e9\",\"error\":\"Attribution request failed (app is not installed)\",\"ask_in\":2592000000}"
+ ],
+ [
+  400,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"068922c9197da15e4fe2543affb8e1e9\",\"error\":\"Attribution request failed (app is not installed)\",\"ask_in\":2592000000}"
+ ]
+]

@@ -1,0 +1,923 @@
+{
+ "source_log": "win_capture/module_win_capture.log",
+ "n_blobs": 6,
+ "winning_blobs": [
+  {
+   "i": 0,
+   "ts": 1790341508852,
+   "second": 1790341508,
+   "activity_kind": "session",
+   "signer_thread": "Adjust-pool-27-thread-1-ActivityPackageSender len=1142",
+   "consts_ok": true,
+   "cert_ok": true,
+   "sha0_ok": true,
+   "tail2": "0000",
+   "header": "60df78e44167d71852d4963377bd4ca7",
+   "tail32": "15e1c73b256cbc3f6edc5d08169a6ddc6448a5516f03bbea6489686fe4e252c3",
+   "block": "5502974ee7fe8fc2b5a4cf7fca0324b251af9bc3c051ff3cc56c90f341fe7ce8",
+   "S_seed": 2848944211,
+   "d2w": 1399902121,
+   "head": "9e7f83cdbfbdd231ee419c5da02d8737",
+   "head_values": [
+    "9e7f",
+    "83cd",
+    "bfbd",
+    "d231",
+    "ee41",
+    "9c5d",
+    "a02d",
+    "8737"
+   ],
+   "head_selector_sets": [
+    [
+     "2b"
+    ],
+    [
+     "41"
+    ],
+    [
+     "42"
+    ],
+    [
+     "43"
+    ],
+    [
+     "44"
+    ],
+    [
+     "45"
+    ],
+    [
+     "46"
+    ],
+    [
+     "47"
+    ]
+   ],
+   "phase": "WIN_HEAD_FIRST (0x2B,0x41)+CY@2",
+   "d2_fpy_match": true,
+   "d4w_fpy": [
+    "00084008",
+    "02000004",
+    "020e8208",
+    "040c8a0c",
+    "430c9b0a",
+    "990b964a",
+    "901f6c4e",
+    "703ce2c1"
+   ],
+   "d0w0_fpy_with_phase": [
+    "7f9ecd83",
+    "bdbf31d2",
+    "41ee5d9c",
+    "2da03787"
+   ],
+   "head_reproduced": true,
+   "head_reproduced_fpy_HEAD_FIRST": false,
+   "head_reproduced_fpy_HEAD_RESIGN": false,
+   "block_is_payload_hmac": false,
+   "t1_a_out_hex": "2adeb46fbc5871785f11521e815fef151dae1fcb7ea87facacf7b29159106c7e",
+   "nsign_native_match": true,
+   "header_model": "60df78e44167d71852d4963377bd4ca7",
+   "header_match": true,
+   "record_synthesized": true,
+   "whitened_body_synthesized": true,
+   "d2_record_bytes": "seed stored BIG-endian in record; d2 descriptor "
+  },
+  {
+   "i": 1,
+   "ts": 1790341509608,
+   "second": 1790341509,
+   "activity_kind": "attribution",
+   "signer_thread": "Adjust-pool-25-thread-1-SdkClickHandler len=1133",
+   "consts_ok": true,
+   "cert_ok": true,
+   "sha0_ok": true,
+   "tail2": "0000",
+   "header": "3926cc0606ae7c3c3b162d3c6eddc009",
+   "tail32": "13fc577d4a13cef4cd6cab4514271f301d42195a0dd442f4dbdd42f111eab679",
+   "block": "6ea16d087c375229e60e069b70ec54600afbce1c0f02a2b7b9d294351ba6e396",
+   "S_seed": 3290869532,
+   "d2w": 481240772,
+   "head": "8d1a93efeff4e52b993023ff5fe4258f",
+   "head_values": [
+    "8d1a",
+    "93ef",
+    "eff4",
+    "e52b",
+    "9930",
+    "23ff",
+    "5fe4",
+    "258f"
+   ],
+   "head_selector_sets": [
+    [
+     "2b"
+    ],
+    [
+     "41"
+    ],
+    [
+     "42"
+    ],
+    [
+     "43"
+    ],
+    [
+     "44"
+    ],
+    [
+     "45"
+    ],
+    [
+     "46"
+    ],
+    [
+     "47"
+    ]
+   ],
+   "phase": "WIN_HEAD_FIRST (0x2B,0x41)+CY@2",
+   "d2_fpy_match": true,
+   "d4w_fpy": [
+    "00108010",
+    "80088808",
+    "20101818",
+    "30201400",
+    "dc185900",
+    "911ab470",
+    "10b0d4c6",
+    "1b7ce74d"
+   ],
+   "d0w0_fpy_with_phase": [
+    "1a8def93",
+    "f4ef2be5",
+    "3099ff23",
+    "e45f8f25"
+   ],
+   "head_reproduced": true,
+   "head_reproduced_fpy_HEAD_FIRST": false,
+   "head_reproduced_fpy_HEAD_RESIGN": false,
+   "block_is_payload_hmac": false,
+   "t1_a_out_hex": "ef1cde9c15ee0a0d24fd91a3ff70c9b92c028b382c598c887e342f3fcf8760a7",
+   "nsign_native_match": true,
+   "header_model": "3926cc0606ae7c3c3b162d3c6eddc009",
+   "header_match": true,
+   "record_synthesized": true,
+   "whitened_body_synthesized": true,
+   "d2_record_bytes": "seed stored BIG-endian in record; d2 descriptor "
+  },
+  {
+   "i": 2,
+   "ts": 1790341510983,
+   "second": 1790341510,
+   "activity_kind": "attribution",
+   "signer_thread": "adj9-chosen-sign len=1142",
+   "consts_ok": true,
+   "cert_ok": true,
+   "sha0_ok": true,
+   "tail2": "0000",
+   "header": "520bea1505cbc87565c26b035e4ce43f",
+   "tail32": "b09a72e63e5fd3b1993b366c6e90f0837c6e1353723ee7c8ed4e4607ec962391",
+   "block": "0a04927339faf4f2d8c40e178138e72c6036606a410a231bd03d50ab65a97fdb",
+   "S_seed": 2771381211,
+   "d2w": 3689623461,
+   "head": "c9eaebf976be1db9a3c0dedd60a45580",
+   "head_values": [
+    "c9ea",
+    "ebf9",
+    "76be",
+    "1db9",
+    "a3c0",
+    "dedd",
+    "60a4",
+    "5580"
+   ],
+   "head_selector_sets": [
+    [
+     "2b"
+    ],
+    [
+     "48"
+    ],
+    [
+     "42"
+    ],
+    [
+     "43"
+    ],
+    [
+     "44"
+    ],
+    [
+     "45"
+    ],
+    [
+     "46"
+    ],
+    [
+     "47"
+    ]
+   ],
+   "phase": "WIN_HEAD_RESIGN (0x2B,0x48)+CY@2",
+   "d2_fpy_match": true,
+   "d4w_fpy": [
+    "02000240",
+    "10400140",
+    "21000148",
+    "52403110",
+    "21d85152",
+    "638b235e",
+    "1a1664c3",
+    "79be82d3"
+   ],
+   "d0w0_fpy_with_phase": [
+    "eac9f9eb",
+    "be76b91d",
+    "c0a3ddde",
+    "a4608055"
+   ],
+   "head_reproduced": true,
+   "head_reproduced_fpy_HEAD_FIRST": false,
+   "head_reproduced_fpy_HEAD_RESIGN": false,
+   "block_is_payload_hmac": false,
+   "t1_a_out_hex": "5f675500437b570e7adff1bbf1091f1dc41f69aca42973d4448468eefa76ea85",
+   "nsign_native_match": false,
+   "header_model": "520bea1505cbc87565c26b035e4ce43f",
+   "header_match": true,
+   "record_synthesized": true,
+   "whitened_body_synthesized": true,
+   "d2_record_bytes": "seed stored BIG-endian in record; d2 descriptor "
+  },
+  {
+   "i": 3,
+   "ts": 1790341511887,
+   "second": 1790341511,
+   "activity_kind": "attribution",
+   "signer_thread": "adj9-chosen-sign len=1355",
+   "consts_ok": true,
+   "cert_ok": true,
+   "sha0_ok": true,
+   "tail2": "0000",
+   "header": "7cb6ef3f19e9cea901be35cc25127590",
+   "tail32": "a86698310cb3bb896b09259fa5ef74cf0a15ac037e2c1276448f43efb58b1db2",
+   "block": "cb40ddd9e4ab52dc4f690527392f65006d90db754a86577d0f7d87b945b2fbaf",
+   "S_seed": 2161973750,
+   "d2w": 4128890240,
+   "head": "7c0f16bdf580fe40ffbdd814d9e91740",
+   "head_values": [
+    "7c0f",
+    "16bd",
+    "f580",
+    "fe40",
+    "ffbd",
+    "d814",
+    "d9e9",
+    "1740"
+   ],
+   "head_selector_sets": [
+    [
+     "2b"
+    ],
+    [
+     "48"
+    ],
+    [
+     "42"
+    ],
+    [
+     "43"
+    ],
+    [
+     "44"
+    ],
+    [
+     "45"
+    ],
+    [
+     "46"
+    ],
+    [
+     "47"
+    ]
+   ],
+   "phase": "WIN_HEAD_RESIGN (0x2B,0x48)+CY@2",
+   "d2_fpy_match": true,
+   "d4w_fpy": [
+    "00802080",
+    "22000a80",
+    "28810840",
+    "26816401",
+    "44426205",
+    "262569c5",
+    "692c5426",
+    "fd016d90"
+   ],
+   "d0w0_fpy_with_phase": [
+    "0f7cbd16",
+    "80f540fe",
+    "bdff14d8",
+    "e9d94017"
+   ],
+   "head_reproduced": true,
+   "head_reproduced_fpy_HEAD_FIRST": false,
+   "head_reproduced_fpy_HEAD_RESIGN": false,
+   "block_is_payload_hmac": false,
+   "t1_a_out_hex": "6c9dc4fbcdbb842b4bb3849e13e53b48ff6ebc0e8f3f8a6d22fa424301ba0e0d",
+   "nsign_native_match": false,
+   "header_model": "7cb6ef3f19e9cea901be35cc25127590",
+   "header_match": true,
+   "record_synthesized": true,
+   "whitened_body_synthesized": true,
+   "d2_record_bytes": "seed stored BIG-endian in record; d2 descriptor "
+  },
+  {
+   "i": 4,
+   "ts": 1790341512582,
+   "second": 1790341512,
+   "activity_kind": "attribution",
+   "signer_thread": "adj9-chosen-sign len=644",
+   "consts_ok": true,
+   "cert_ok": true,
+   "sha0_ok": true,
+   "tail2": "0000",
+   "header": "5de779694994be397d1ab25c35306f9d",
+   "tail32": "3ce32acb8403ee3530311a920d1575e4a4a4b33c44739f477b88b55f1c9ec764",
+   "block": "5da5e5709c09e6d511f91b3beafc5562598c03358916bb2104bf036265dbc346",
+   "S_seed": 2820583385,
+   "d2w": 3652132520,
+   "head": "db59d7f63c55085aa493a55a09937b3f",
+   "head_values": [
+    "db59",
+    "d7f6",
+    "3c55",
+    "085a",
+    "a493",
+    "a55a",
+    "0993",
+    "7b3f"
+   ],
+   "head_selector_sets": [
+    [
+     "2b"
+    ],
+    [
+     "48"
+    ],
+    [
+     "42"
+    ],
+    [
+     "43"
+    ],
+    [
+     "44"
+    ],
+    [
+     "45"
+    ],
+    [
+     "46"
+    ],
+    [
+     "47"
+    ]
+   ],
+   "phase": "WIN_HEAD_RESIGN (0x2B,0x48)+CY@2",
+   "d2_fpy_match": true,
+   "d4w_fpy": [
+    "02000280",
+    "02040001",
+    "42840400",
+    "c480c611",
+    "0207a292",
+    "6580a346",
+    "c63500ad",
+    "c9ac9e3a"
+   ],
+   "d0w0_fpy_with_phase": [
+    "59dbf6d7",
+    "553c5a08",
+    "93a45aa5",
+    "93093f7b"
+   ],
+   "head_reproduced": true,
+   "head_reproduced_fpy_HEAD_FIRST": false,
+   "head_reproduced_fpy_HEAD_RESIGN": false,
+   "block_is_payload_hmac": false,
+   "t1_a_out_hex": "41f10df1355957a1ead8db8d219f6fdaa1e2584e0cd1b81b5cedca600c47cf4a",
+   "nsign_native_match": false,
+   "header_model": "5de779694994be397d1ab25c35306f9d",
+   "header_match": true,
+   "record_synthesized": true,
+   "whitened_body_synthesized": true,
+   "d2_record_bytes": "seed stored BIG-endian in record; d2 descriptor "
+  },
+  {
+   "i": 5,
+   "ts": 1790341513324,
+   "second": 1790341513,
+   "activity_kind": "attribution",
+   "signer_thread": "Adjust-pool-31-thread-1-ActivityPackageSender len=644",
+   "consts_ok": true,
+   "cert_ok": true,
+   "sha0_ok": true,
+   "tail2": "0000",
+   "header": "43db3f967ae28ce90efee9f35c5e4f57",
+   "tail32": "031c74d94f1628273a865b5849a3acebe30abd5e63bfa2d52c31fd416689fd80",
+   "block": "c2465e316bc47588782ee5fd7a080ca72940416e91eb85565eb40ebd7ca0674e",
+   "S_seed": 1854755305,
+   "d2w": 3914435950,
+   "head": "f3bcaef7e77772d23b52258f6c0ffbd4",
+   "head_values": [
+    "f3bc",
+    "aef7",
+    "e777",
+    "72d2",
+    "3b52",
+    "258f",
+    "6c0f",
+    "fbd4"
+   ],
+   "head_selector_sets": [
+    [
+     "2b"
+    ],
+    [
+     "41"
+    ],
+    [
+     "42"
+    ],
+    [
+     "43"
+    ],
+    [
+     "44"
+    ],
+    [
+     "45"
+    ],
+    [
+     "46"
+    ],
+    [
+     "47"
+    ]
+   ],
+   "phase": "WIN_HEAD_FIRST (0x2B,0x41)+CY@2",
+   "d2_fpy_match": true,
+   "d4w_fpy": [
+    "00800081",
+    "20004000",
+    "64814600",
+    "62115210",
+    "07111792",
+    "76517e02",
+    "788b5d57",
+    "8049ade8"
+   ],
+   "d0w0_fpy_with_phase": [
+    "bcf3f7ae",
+    "77e7d272",
+    "523b8f25",
+    "0f6cd4fb"
+   ],
+   "head_reproduced": true,
+   "head_reproduced_fpy_HEAD_FIRST": false,
+   "head_reproduced_fpy_HEAD_RESIGN": false,
+   "block_is_payload_hmac": false,
+   "t1_a_out_hex": "7579fd3d62e2bc4b9736dc970bbf7ecf35ea8a3a40917c3e42022fa319fdcc34",
+   "nsign_native_match": true,
+   "header_model": "43db3f967ae28ce90efee9f35c5e4f57",
+   "header_match": true,
+   "record_synthesized": true,
+   "whitened_body_synthesized": true,
+   "d2_record_bytes": "seed stored BIG-endian in record; d2 descriptor "
+  }
+ ],
+ "corpus": [
+  {
+   "i": 0,
+   "second": 1789239390,
+   "S_seed": 4111903297,
+   "d2w": 1101666037,
+   "head": "a96c673ccaaecb297fa41c3aa8b70579",
+   "head_selector_sets": [
+    [
+     "22"
+    ],
+    [
+     "2e"
+    ],
+    [
+     "42"
+    ],
+    [
+     "43"
+    ],
+    [
+     "44"
+    ],
+    [
+     "45"
+    ],
+    [
+     "46"
+    ],
+    [
+     "47"
+    ]
+   ],
+   "block": "3b8a0547deab218de185e07359b952516605c9441ddcfa4fcd0ff77d0ec2ca5a",
+   "tail2": "0000",
+   "header": "1fcd5ee71c45f3d87afb208672db2ad4",
+   "tail32": "93d56fc5ad506372586b1503b81f15cc81aacb658373998b506132bd58495b86",
+   "region_match_all_signings": true,
+   "header_model": "1fcd5ee71c45f3d87afb208672db2ad4",
+   "header_match": true
+  },
+  {
+   "i": 1,
+   "second": 1789239528,
+   "S_seed": 313663083,
+   "d2w": 1797173778,
+   "head": "edc3e0f4ddcfd232e751a69e93fddf05",
+   "head_selector_sets": [
+    [
+     "22"
+    ],
+    [
+     "2e"
+    ],
+    [
+     "42"
+    ],
+    [
+     "43"
+    ],
+    [
+     "44"
+    ],
+    [
+     "45"
+    ],
+    [
+     "46"
+    ],
+    [
+     "47"
+    ]
+   ],
+   "block": "78432df5ef1062c1056c89fffc76b64b7bedfe72f4d113e225f6181ac1097edd",
+   "tail2": "0000",
+   "header": "5b71ec7c5838229470dd286861ff97ec",
+   "tail32": "984a9556ff63b90b2753e2f20fa106350c2c135215dbf47933c7546def004fef",
+   "region_match_all_signings": true,
+   "header_model": "5b71ec7c5838229470dd286861ff97ec",
+   "header_match": true
+  },
+  {
+   "i": 2,
+   "second": 1789240075,
+   "S_seed": 2949302830,
+   "d2w": 785042095,
+   "head": "fb605cd9bd6302f7664334c55071a54e",
+   "head_selector_sets": [
+    [
+     "22"
+    ],
+    [
+     "2e"
+    ],
+    [
+     "42"
+    ],
+    [
+     "43"
+    ],
+    [
+     "44"
+    ],
+    [
+     "45"
+    ],
+    [
+     "46"
+    ],
+    [
+     "47"
+    ]
+   ],
+   "block": "35764766ad3cdc69eefd1b5c53903681ec1f540035a9c7614931c28d1bd0bdc0",
+   "tail2": "0000",
+   "header": "211c2cd4236fbed860e65b4b3f99bdea",
+   "tail32": "41ad3fcef3724d2424452ba0fda2199d5e608856d27843f9a97313980e27b58e",
+   "region_match_all_signings": false,
+   "header_model": "211c2cd4236fbed860e65b4b3f99bdea",
+   "header_match": true
+  },
+  {
+   "i": 3,
+   "second": 1789240076,
+   "S_seed": 2608690281,
+   "d2w": 1769242011,
+   "head": "ef6664836f6bedc1e6296fd2643a45f8",
+   "head_selector_sets": [
+    [
+     "22"
+    ],
+    [
+     "41"
+    ],
+    [
+     "42"
+    ],
+    [
+     "43"
+    ],
+    [
+     "44"
+    ],
+    [
+     "45"
+    ],
+    [
+     "46"
+    ],
+    [
+     "47"
+    ]
+   ],
+   "block": "50d3490887b3b3f97147e4db40f22a2f867a83eb535f53390c774cfdcec67ab0",
+   "tail2": "0000",
+   "header": "380195de2110d57b04ee7a3e15c9f77e",
+   "tail32": "b49f4fa073ab7cc156b86aa93e20ec67216b4d7a81ad222c2e56e77aca230b1c",
+   "region_match_all_signings": false,
+   "header_model": "380195de2110d57b04ee7a3e15c9f77e",
+   "header_match": true
+  },
+  {
+   "i": 4,
+   "second": 1789240075,
+   "S_seed": 2949302830,
+   "d2w": 785042095,
+   "head": "fb605cd9bd6302f7664334c55071a54e",
+   "head_selector_sets": [
+    [
+     "22"
+    ],
+    [
+     "2e"
+    ],
+    [
+     "42"
+    ],
+    [
+     "43"
+    ],
+    [
+     "44"
+    ],
+    [
+     "45"
+    ],
+    [
+     "46"
+    ],
+    [
+     "47"
+    ]
+   ],
+   "block": "35764766ad3cdc69eefd1b5c53903681ec1f540035a9c7614931c28d1bd0bdc0",
+   "tail2": "0000",
+   "header": "211c2cd4236fbed860e65b4b3f99bdea",
+   "tail32": "41ad3fcef3724d2424452ba0fda2199d5e608856d27843f9a97313980e27b58e",
+   "region_match_all_signings": true,
+   "header_model": "211c2cd4236fbed860e65b4b3f99bdea",
+   "header_match": true
+  },
+  {
+   "i": 5,
+   "second": 1789240228,
+   "S_seed": 2556386321,
+   "d2w": 291266456,
+   "head": "c9759623f53b6adb325586d5de5b358d",
+   "head_selector_sets": [
+    [
+     "22"
+    ],
+    [
+     "2e"
+    ],
+    [
+     "42"
+    ],
+    [
+     "43"
+    ],
+    [
+     "44"
+    ],
+    [
+     "45"
+    ],
+    [
+     "46"
+    ],
+    [
+     "47"
+    ]
+   ],
+   "block": "c7bc4f37ed48bb6f959773f87a4a6ef8f2a7974d4067d189c5bb235fe1237c17",
+   "tail2": "0000",
+   "header": "505f30c74f92913e1085da234e306b8a",
+   "tail32": "eed129515e6afe32418b320c1465f7f0d9fd46ac78a0bc5e4e5db04d0bcd27bf",
+   "region_match_all_signings": true,
+   "header_model": "505f30c74f92913e1085da234e306b8a",
+   "header_match": true
+  },
+  {
+   "i": 6,
+   "second": 1789240340,
+   "S_seed": 1787390297,
+   "d2w": 1500088682,
+   "head": "64f344ab53cfcaeb0bb8a4c66595eab3",
+   "head_selector_sets": [
+    [
+     "22"
+    ],
+    [
+     "2e"
+    ],
+    [
+     "42"
+    ],
+    [
+     "43"
+    ],
+    [
+     "44"
+    ],
+    [
+     "45"
+    ],
+    [
+     "46"
+    ],
+    [
+     "47"
+    ]
+   ],
+   "block": "46498ded6464d1ca4462d3d62737bd503ef292e38fbfc8e8caea99e3e59cf29f",
+   "tail2": "0000",
+   "header": "61c5008a6fe933906007ea802c7e75a0",
+   "tail32": "aab0116ad52a712eecb799483013985a69ad73d896fb065c0a2b85ba869ee9e2",
+   "region_match_all_signings": true,
+   "header_model": "61c5008a6fe933906007ea802c7e75a0",
+   "header_match": true
+  },
+  {
+   "i": 7,
+   "second": 1789240512,
+   "S_seed": 2525108987,
+   "d2w": 4212818582,
+   "head": "2713711250db4cf437b6cc98b7da1af5",
+   "head_selector_sets": [
+    [
+     "22"
+    ],
+    [
+     "2e"
+    ],
+    [
+     "42"
+    ],
+    [
+     "43"
+    ],
+    [
+     "44"
+    ],
+    [
+     "45"
+    ],
+    [
+     "46"
+    ],
+    [
+     "47"
+    ]
+   ],
+   "block": "cb6a72a2bc418622426f96c9aa0a7253dc2d70b93697d990ac6b5eeea896c60c",
+   "tail2": "0000",
+   "header": "5595c3c431567e631a7bf9b958dabea7",
+   "tail32": "1a36a52ed23249e8b4f4befea4a7f8309ed242eda8dcc20df680db9bdc5ab596",
+   "region_match_all_signings": true,
+   "header_model": "5595c3c431567e631a7bf9b958dabea7",
+   "header_match": true
+  }
+ ],
+ "phases": {
+  "WIN_HEAD_FIRST (0x2B,0x41)+CY@2": [
+   "2b",
+   "41",
+   "42",
+   "43",
+   "44",
+   "45",
+   "46",
+   "47"
+  ],
+  "WIN_HEAD_RESIGN (0x2B,0x48)+CY@2": [
+   "2b",
+   "48",
+   "42",
+   "43",
+   "44",
+   "45",
+   "46",
+   "47"
+  ],
+  "corpus HEAD_FIRST (0x22,0x2E)+CY@2": [
+   "22",
+   "2e",
+   "42",
+   "43",
+   "44",
+   "45",
+   "46",
+   "47"
+  ],
+  "corpus HEAD_RESIGN (0x2B,0x07,0x22,0x2E)+CY@4": [
+   "2b",
+   "07",
+   "22",
+   "2e",
+   "44",
+   "45",
+   "46",
+   "47"
+  ],
+  "synth (0x2B,0x22,0x25,0x2E)+CY@4": [
+   "2b",
+   "22",
+   "25",
+   "2e",
+   "44",
+   "45",
+   "46",
+   "47"
+  ],
+  "synth (0x2B,0x07,0x22,0x25,0x2E)+CY@5": [
+   "2b",
+   "07",
+   "22",
+   "25",
+   "2e",
+   "45",
+   "46",
+   "47"
+  ]
+ },
+ "findings": {
+  "S": "record stores the seed BIG-endian at [20:24); the d2 descriptor word = byteswap(seed); 6 distinct draws, not time-correlated, not V^(pid<<16)",
+  "d2": "F.py region d2 == byteswap(seed) == d2w for all 6",
+  "d4": "not carried in the blob; confirmed via head selector consistency over _d0_source(_d4_words(S)) for all 6 blobs",
+  "d0_head": "record head = 8 halfword values stored BE16 in selector call order; winning device phases WIN_HEAD_FIRST (0x2B,0x41) and WIN_HEAD_RESIGN (0x2B,0x48), both + stable cycle CY(i)=0x40|(i&7) from i=2",
+  "phase_correlation": "WIN_HEAD_RESIGN rows were signed by the adj9-chosen-sign re-sign path; WIN_HEAD_FIRST rows by fresh Signer.nSign sender threads",
+  "block": "32-B block [46:78) is VM-computed hash material (not the payload HMAC, no sha256 preimage found); only fin_vm2 reproduces it",
+  "tail2": "0000 in all 14 observations (6 win + 8 corpus)",
+  "tail32": "blob[160:192) separate digest; no simple hash preimage"
+ },
+ "header_model": "make_header(unix_sec) matches all 6 win + 8 corpus blob headers",
+ "poisoned_rows": [
+  {
+   "row": 0,
+   "sign_id": 1,
+   "S": 1639916486,
+   "d4_match": true,
+   "d0_phase": "poison_first"
+  },
+  {
+   "row": 1,
+   "sign_id": 2,
+   "S": 1219865967,
+   "d4_match": true,
+   "d0_phase": "poison_first"
+  },
+  {
+   "row": 2,
+   "sign_id": 3,
+   "S": 3586283460,
+   "d4_match": true,
+   "d0_phase": "poison_resign"
+  },
+  {
+   "row": 3,
+   "sign_id": 4,
+   "S": 2976425901,
+   "d4_match": true,
+   "d0_phase": "poison_resign"
+  }
+ ]
+}

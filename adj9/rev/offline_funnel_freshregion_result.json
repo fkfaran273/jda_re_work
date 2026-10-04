@@ -1,0 +1,228 @@
+[
+ {
+  "idx": 0,
+  "gps": "b9d0a0c4-77cf-4e86-b313-bf5934d5d038",
+  "auid": "ddf79447-11e6-472e-8c3b-2b2943b6f458",
+  "flip_session_bit": false,
+  "steps": {
+   "session": {
+    "info": {
+     "status": "exit-clean",
+     "steps": 9871985,
+     "second": 1790442757,
+     "region": {
+      "V": 1790563333,
+      "pid": 26530
+     },
+     "n_claims": 27,
+     "desc10_len": 360,
+     "unpadded": 360,
+     "flipped": false,
+     "kind": "session"
+    },
+    "http": 200,
+    "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"fa3c1416075da8cf2a8355ad1af4d394\",\"ask_in\":2000}"
+   },
+   "sdk_click": {
+    "info": {
+     "status": "exit-clean",
+     "steps": 10199743,
+     "second": 1790442770,
+     "region": {
+      "V": 1790404816,
+      "pid": 26530
+     },
+     "n_claims": 32,
+     "desc10_len": 464,
+     "unpadded": 464,
+     "flipped": false,
+     "kind": "click"
+    },
+    "http": 200,
+    "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"fa3c1416075da8cf2a8355ad1af4d394\"}"
+   },
+   "attribution": [
+    {
+     "http": 200,
+     "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"fa3c1416075da8cf2a8355ad1af4d394\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-26T17:12:52Z\",\"first_session_time\":\"2026-09-26T17:12:52Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+     "info": {
+      "status": "exit-clean",
+      "steps": 9264557,
+      "second": 1790442787,
+      "region": {
+       "V": 1790330764,
+       "pid": 26530
+      },
+      "n_claims": 21,
+      "desc10_len": 248,
+      "unpadded": 246,
+      "flipped": false,
+      "kind": "attribution"
+     }
+    },
+    {
+     "http": 200,
+     "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"fa3c1416075da8cf2a8355ad1af4d394\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-26T17:12:52Z\",\"first_session_time\":\"2026-09-26T17:12:52Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+     "info": {
+      "status": "exit-clean",
+      "steps": 9264557,
+      "second": 1790442813,
+      "region": {
+       "V": 1790006233,
+       "pid": 26530
+      },
+      "n_claims": 21,
+      "desc10_len": 248,
+      "unpadded": 246,
+      "flipped": false,
+      "kind": "attribution"
+     }
+    },
+    {
+     "http": 200,
+     "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"fa3c1416075da8cf2a8355ad1af4d394\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-26T17:12:52Z\",\"first_session_time\":\"2026-09-26T17:12:52Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+     "info": {
+      "status": "exit-clean",
+      "steps": 9264557,
+      "second": 1790442839,
+      "region": {
+       "V": 1790563415,
+       "pid": 26530
+      },
+      "n_claims": 21,
+      "desc10_len": 248,
+      "unpadded": 246,
+      "flipped": false,
+      "kind": "attribution"
+     }
+    }
+   ]
+  },
+  "click": {
+   "http": 302,
+   "referrer": "adjust_reftag=clwRIHYWAHNY2&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+   "t_click": 1790442759,
+   "hops": [
+    {
+     "url": "https://app.adjust.com/1sd1lk6a?campaign=AH&adgroup=vkm_0926_36&creative=penti_generic&click_id=clk-e4bee64c3751&idfa=b9d0a0c4-77cf-4e86-b313-bf5934d5d038&install_callback=http%3A%2F%2Fec2-13-126-162-",
+     "http": 302,
+     "location": "market://details?id=com.penti.app&referrer=adjust_reftag%3DclwRIHYWAHNY2%26utm_source%3DVKM%2BDigital%2BYeni%26utm_campaign%3DAH%26utm_content%3Dvkm_0926_36%26utm_term%3Dpenti_generic"
+    }
+   ]
+  },
+  "verdict": "ORGANIC wy7261z / eng=0001-01-01T00:00:00Z"
+ },
+ {
+  "idx": 99,
+  "gps": "5454db28-7a89-4150-a490-8f71fdaf6e04",
+  "auid": "ffa8206c-6f1e-4097-93fc-c48e786211b5",
+  "flip_session_bit": true,
+  "steps": {
+   "session": {
+    "info": {
+     "status": "exit-clean",
+     "steps": 9871985,
+     "second": 1790442852,
+     "region": {
+      "V": 1790088649,
+      "pid": 26530
+     },
+     "n_claims": 27,
+     "desc10_len": 360,
+     "unpadded": 360,
+     "flipped": true,
+     "kind": "session"
+    },
+    "http": 200,
+    "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"cc67b2975a7895b152071fd7dfd99ad8\",\"ask_in\":2000}"
+   },
+   "sdk_click": {
+    "info": {
+     "status": "exit-clean",
+     "steps": 10199743,
+     "second": 1790442865,
+     "region": {
+      "V": 1790319349,
+      "pid": 26530
+     },
+     "n_claims": 32,
+     "desc10_len": 464,
+     "unpadded": 464,
+     "flipped": false,
+     "kind": "click"
+    },
+    "http": 200,
+    "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"cc67b2975a7895b152071fd7dfd99ad8\"}"
+   },
+   "attribution": [
+    {
+     "http": 200,
+     "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"cc67b2975a7895b152071fd7dfd99ad8\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-26T17:14:27Z\",\"first_session_time\":\"2026-09-26T17:14:27Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+     "info": {
+      "status": "exit-clean",
+      "steps": 9264557,
+      "second": 1790442881,
+      "region": {
+       "V": 1790134789,
+       "pid": 26530
+      },
+      "n_claims": 21,
+      "desc10_len": 248,
+      "unpadded": 246,
+      "flipped": false,
+      "kind": "attribution"
+     }
+    },
+    {
+     "http": 200,
+     "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"cc67b2975a7895b152071fd7dfd99ad8\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-26T17:14:27Z\",\"first_session_time\":\"2026-09-26T17:14:27Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+     "info": {
+      "status": "exit-clean",
+      "steps": 9264557,
+      "second": 1790442909,
+      "region": {
+       "V": 1790170643,
+       "pid": 26530
+      },
+      "n_claims": 21,
+      "desc10_len": 248,
+      "unpadded": 246,
+      "flipped": false,
+      "kind": "attribution"
+     }
+    },
+    {
+     "http": 200,
+     "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"cc67b2975a7895b152071fd7dfd99ad8\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-26T17:14:27Z\",\"first_session_time\":\"2026-09-26T17:14:27Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+     "info": {
+      "status": "exit-clean",
+      "steps": 9264557,
+      "second": 1790442936,
+      "region": {
+       "V": 1790717665,
+       "pid": 26530
+      },
+      "n_claims": 21,
+      "desc10_len": 248,
+      "unpadded": 246,
+      "flipped": false,
+      "kind": "attribution"
+     }
+    }
+   ]
+  },
+  "click": {
+   "http": 302,
+   "referrer": "adjust_reftag=c3LJzUKnb3oEe&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+   "t_click": 1790442853,
+   "hops": [
+    {
+     "url": "https://app.adjust.com/1sd1lk6a?campaign=AH&adgroup=vkm_0926_36&creative=penti_generic&click_id=clk-5508532e32e6&idfa=5454db28-7a89-4150-a490-8f71fdaf6e04&install_callback=http%3A%2F%2Fec2-13-126-162-",
+     "http": 302,
+     "location": "market://details?id=com.penti.app&referrer=adjust_reftag%3Dc3LJzUKnb3oEe%26utm_source%3DVKM%2BDigital%2BYeni%26utm_campaign%3DAH%26utm_content%3Dvkm_0926_36%26utm_term%3Dpenti_generic"
+    }
+   ]
+  },
+  "verdict": "ORGANIC wy7261z / eng=0001-01-01T00:00:00Z"
+ }
+]

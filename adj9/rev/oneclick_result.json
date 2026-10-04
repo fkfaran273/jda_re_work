@@ -1,0 +1,34 @@
+{
+ "gps": "11111111-2222-3333-4444-555555555555",
+ "auid": "c6f61a9a-c9e8-4acf-a6af-f211d1b6359e",
+ "ua": "Dalvik/2.1.0 (Linux; U; Android 15; moto g34 5G Build/V1UG35H.75-14)",
+ "tz": "+0530",
+ "mode": "B (already clicked: referrer + GAID)",
+ "dev": {
+  "api_level": "35",
+  "os_version": "15",
+  "device_name": "moto g34 5G",
+  "device_manufacturer": "motorola",
+  "hardware_name": "fogos",
+  "os_build": "V1UG35H.75-14",
+  "app_version": "3.13.9",
+  "install_version": "3.13.9",
+  "language": "en",
+  "mcc": "405",
+  "mnc": "863",
+  "display_width": "1600",
+  "display_height": "720",
+  "screen_density": "xhigh"
+ },
+ "polls": 3,
+ "dry": true,
+ "referrer": "adjust_reftag=TESTreftag123&adj_click_type=Click&adjust_campaign=AH",
+ "session": [
+  200,
+  "{\"app_token\": \"jut9tib0eeps\", \"adid\": \"00000000000000000000000000000000\", \"ask_in\": 2000}"
+ ],
+ "sdk_click": [
+  200,
+  "{\"app_token\": \"jut9tib0eeps\", \"adid\": \"00000000000000000000000000000000\", \"ask_in\": 2000}"
+ ]
+}

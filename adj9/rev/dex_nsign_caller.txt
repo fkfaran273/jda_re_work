@@ -1,0 +1,43 @@
+[32m2026-09-09 18:48:22.250[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36m__init__[0m:[36m8331[0m - [34m[1mDEX None None None[0m
+[32m2026-09-09 18:48:22.250[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36m__init__[0m:[36m511[0m - [34m[1mHeaderItem[0m
+[32m2026-09-09 18:48:22.258[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7636[0m - [34m[1mStarting parsing map_item 'HEADER_ITEM'[0m
+[32m2026-09-09 18:48:22.258[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36m__init__[0m:[36m511[0m - [34m[1mHeaderItem[0m
+[32m2026-09-09 18:48:22.271[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7757[0m - [34m[1mEnd of parsing map_item 'HEADER_ITEM'. Required time 0:00.0126[0m
+[32m2026-09-09 18:48:22.271[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7636[0m - [34m[1mStarting parsing map_item 'MAP_LIST'[0m
+[32m2026-09-09 18:48:22.271[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7757[0m - [34m[1mEnd of parsing map_item 'MAP_LIST'. Required time 0:00.0000[0m
+[32m2026-09-09 18:48:22.271[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7636[0m - [34m[1mStarting parsing map_item 'STRING_DATA_ITEM'[0m
+[32m2026-09-09 18:48:22.349[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7757[0m - [34m[1mEnd of parsing map_item 'STRING_DATA_ITEM'. Required time 0:00.0782[0m
+[32m2026-09-09 18:48:22.365[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7636[0m - [34m[1mStarting parsing map_item 'STRING_ID_ITEM'[0m
+[32m2026-09-09 18:48:22.400[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7757[0m - [34m[1mEnd of parsing map_item 'STRING_ID_ITEM'. Required time 0:00.0350[0m
+[32m2026-09-09 18:48:22.418[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7636[0m - [34m[1mStarting parsing map_item 'TYPE_ID_ITEM'[0m
+[32m2026-09-09 18:48:22.430[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7757[0m - [34m[1mEnd of parsing map_item 'TYPE_ID_ITEM'. Required time 0:00.0119[0m
+[32m2026-09-09 18:48:22.430[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7636[0m - [34m[1mStarting parsing map_item 'FIELD_ID_ITEM'[0m
+[32m2026-09-09 18:48:22.609[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7757[0m - [34m[1mEnd of parsing map_item 'FIELD_ID_ITEM'. Required time 0:00.1789[0m
+[32m2026-09-09 18:48:22.609[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7636[0m - [34m[1mStarting parsing map_item 'TYPE_LIST'[0m
+[32m2026-09-09 18:48:22.631[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7757[0m - [34m[1mEnd of parsing map_item 'TYPE_LIST'. Required time 0:00.0211[0m
+[32m2026-09-09 18:48:22.638[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7636[0m - [34m[1mStarting parsing map_item 'PROTO_ID_ITEM'[0m
+[32m2026-09-09 18:48:22.687[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7757[0m - [34m[1mEnd of parsing map_item 'PROTO_ID_ITEM'. Required time 0:00.0493[0m
+[32m2026-09-09 18:48:22.688[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7636[0m - [34m[1mStarting parsing map_item 'METHOD_ID_ITEM'[0m
+[32m2026-09-09 18:48:22.972[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7757[0m - [34m[1mEnd of parsing map_item 'METHOD_ID_ITEM'. Required time 0:00.2839[0m
+[32m2026-09-09 18:48:22.972[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7636[0m - [34m[1mStarting parsing map_item 'CLASS_DATA_ITEM'[0m
+[32m2026-09-09 18:48:23.252[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7757[0m - [34m[1mEnd of parsing map_item 'CLASS_DATA_ITEM'. Required time 0:00.2796[0m
+[32m2026-09-09 18:48:23.256[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7636[0m - [34m[1mStarting parsing map_item 'DEBUG_INFO_ITEM'[0m
+[32m2026-09-09 18:48:23.258[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7757[0m - [34m[1mEnd of parsing map_item 'DEBUG_INFO_ITEM'. Required time 0:00.0013[0m
+[32m2026-09-09 18:48:23.258[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7636[0m - [34m[1mStarting parsing map_item 'CODE_ITEM'[0m
+[32m2026-09-09 18:48:23.478[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7757[0m - [34m[1mEnd of parsing map_item 'CODE_ITEM'. Required time 0:00.2204[0m
+[32m2026-09-09 18:48:23.478[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7636[0m - [34m[1mStarting parsing map_item 'ANNOTATION_ITEM'[0m
+[32m2026-09-09 18:48:23.897[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7757[0m - [34m[1mEnd of parsing map_item 'ANNOTATION_ITEM'. Required time 0:00.4183[0m
+[32m2026-09-09 18:48:23.910[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7636[0m - [34m[1mStarting parsing map_item 'ANNOTATION_SET_ITEM'[0m
+[32m2026-09-09 18:48:23.931[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7757[0m - [34m[1mEnd of parsing map_item 'ANNOTATION_SET_ITEM'. Required time 0:00.0215[0m
+[32m2026-09-09 18:48:23.937[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7636[0m - [34m[1mStarting parsing map_item 'ANNOTATION_SET_REF_LIST'[0m
+[32m2026-09-09 18:48:23.940[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7757[0m - [34m[1mEnd of parsing map_item 'ANNOTATION_SET_REF_LIST'. Required time 0:00.0027[0m
+[32m2026-09-09 18:48:23.940[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7636[0m - [34m[1mStarting parsing map_item 'ENCODED_ARRAY_ITEM'[0m
+[32m2026-09-09 18:48:23.959[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7757[0m - [34m[1mEnd of parsing map_item 'ENCODED_ARRAY_ITEM'. Required time 0:00.0189[0m
+[32m2026-09-09 18:48:23.959[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7636[0m - [34m[1mStarting parsing map_item 'ANNOTATIONS_DIRECTORY_ITEM'[0m
+[32m2026-09-09 18:48:24.150[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7757[0m - [34m[1mEnd of parsing map_item 'ANNOTATIONS_DIRECTORY_ITEM'. Required time 0:00.1903[0m
+[32m2026-09-09 18:48:24.153[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7636[0m - [34m[1mStarting parsing map_item 'CLASS_DEF_ITEM'[0m
+[32m2026-09-09 18:48:26.108[0m | [34m[1mDEBUG   [0m | [36mandroguard.core.dex[0m:[36mparse[0m:[36m7757[0m - [34m[1mEnd of parsing map_item 'CLASS_DEF_ITEM'. Required time 0:01.9542[0m
+### Lcom/adjust/sdk/sig/NativeLibHelper; a (Landroid/content/Context; Ljava/util/LinkedHashMap; [B I)[B insns: 3
+   invoke-direct v0, v1, v2, v3, v4, Lcom/adjust/sdk/sig/NativeLibHelper;->nSign(Landroid/content/Context; Ljava/lang/Object; [B I)[B
+   move-result-object v1
+   return-object v1

@@ -1,0 +1,19 @@
+{
+ "gps": "d2a67fab-b720-4731-b9c9-021713132b49",
+ "device_params": "moto-real",
+ "transport": "device",
+ "session": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"3e1b47e03d40b76f38473bdf91410973\",\"ask_in\":2000}\r\n"
+ ],
+ "verdict": {
+  "tracker_token": "wy7261z",
+  "tracker_name": "Organic",
+  "network": "Organic",
+  "engagement_time": "0001-01-01T00:00:00Z",
+  "installed_at": "2026-09-25T09:24:12Z",
+  "first_session_time": "2026-09-25T09:24:12Z",
+  "is_reattributed": false,
+  "is_redownload_install": false
+ }
+}

@@ -1,0 +1,1544 @@
+{
+ "saz": "cainiaot1iosmodd_24aug26_ios12_install_login_explore.saz",
+ "n_found": 30,
+ "verdict_counts": {
+  "magic_rec0_2_is_010008": 30,
+  "sep19_is_0x02": 30,
+  "sep24_is_0x03": 30,
+  "sep45_is_0x04": 30,
+  "sep78_is_0x05": 30,
+  "sha256_empty_at_79_110": 30,
+  "sep111_113_is_060107": 0,
+  "zero14_at_114_127": 0,
+  "zero2_at_128_129": 30,
+  "tail_0e14_at_130_143": 30,
+  "digest_ok": 30,
+  "header_law_ok": 0
+ },
+ "cert_values": {
+  "0000000000000000000000000000000000000000": [
+   "0142_c.txt",
+   "0143_c.txt",
+   "0144_c.txt",
+   "0157_c.txt",
+   "0170_c.txt",
+   "0454_c.txt",
+   "1068_c.txt",
+   "1144_c.txt",
+   "1303_c.txt",
+   "1311_c.txt",
+   "1427_c.txt",
+   "1443_c.txt",
+   "1451_c.txt",
+   "1678_c.txt",
+   "1908_c.txt",
+   "1949_c.txt",
+   "2155_c.txt",
+   "2545_c.txt",
+   "2564_c.txt",
+   "2688_c.txt",
+   "2719_c.txt",
+   "2758_c.txt",
+   "2795_c.txt",
+   "2831_c.txt",
+   "2864_c.txt",
+   "2903_c.txt",
+   "2925_c.txt",
+   "2959_c.txt",
+   "3260_c.txt",
+   "3429_c.txt"
+  ]
+ },
+ "head_phases": {
+  "(64,)": [
+   "0142_c.txt",
+   "0143_c.txt",
+   "0144_c.txt",
+   "0157_c.txt",
+   "0170_c.txt",
+   "0454_c.txt",
+   "1068_c.txt",
+   "1144_c.txt",
+   "1303_c.txt",
+   "1311_c.txt",
+   "1427_c.txt",
+   "1443_c.txt",
+   "1451_c.txt",
+   "1678_c.txt",
+   "1908_c.txt",
+   "1949_c.txt",
+   "2155_c.txt",
+   "2545_c.txt",
+   "2564_c.txt",
+   "2688_c.txt",
+   "2719_c.txt",
+   "2758_c.txt",
+   "2795_c.txt",
+   "2831_c.txt",
+   "2864_c.txt",
+   "2903_c.txt",
+   "2925_c.txt",
+   "2959_c.txt",
+   "3260_c.txt",
+   "3429_c.txt"
+  ],
+  "(64, 65)": [
+   "0142_c.txt",
+   "0143_c.txt",
+   "0144_c.txt",
+   "0157_c.txt",
+   "0170_c.txt",
+   "0454_c.txt",
+   "1068_c.txt",
+   "1144_c.txt",
+   "1303_c.txt",
+   "1311_c.txt",
+   "1427_c.txt",
+   "1443_c.txt",
+   "1451_c.txt",
+   "1678_c.txt",
+   "1908_c.txt",
+   "1949_c.txt",
+   "2155_c.txt",
+   "2545_c.txt",
+   "2564_c.txt",
+   "2688_c.txt",
+   "2719_c.txt",
+   "2758_c.txt",
+   "2795_c.txt",
+   "2831_c.txt",
+   "2864_c.txt",
+   "2903_c.txt",
+   "2925_c.txt",
+   "2959_c.txt",
+   "3260_c.txt",
+   "3429_c.txt"
+  ]
+ },
+ "variant112": {
+  "2": 30
+ },
+ "field114_129": {
+  "6950686f6e6531332c32000000000000": {
+   "ascii": "iPhone13,2......",
+   "files": [
+    "0142_c.txt",
+    "0143_c.txt",
+    "0144_c.txt",
+    "0157_c.txt",
+    "0170_c.txt",
+    "0454_c.txt",
+    "1068_c.txt",
+    "1144_c.txt",
+    "1303_c.txt",
+    "1311_c.txt",
+    "1427_c.txt",
+    "1443_c.txt",
+    "1451_c.txt",
+    "1678_c.txt",
+    "1908_c.txt",
+    "1949_c.txt",
+    "2155_c.txt",
+    "2545_c.txt",
+    "2564_c.txt",
+    "2688_c.txt",
+    "2719_c.txt",
+    "2758_c.txt",
+    "2795_c.txt",
+    "2831_c.txt",
+    "2864_c.txt",
+    "2903_c.txt",
+    "2925_c.txt",
+    "2959_c.txt",
+    "3260_c.txt",
+    "3429_c.txt"
+   ]
+  }
+ },
+ "gold_phase_sanity": [
+  {
+   "app": "creditsea",
+   "kind": "session",
+   "stored_head": [
+    43
+   ],
+   "found": [
+    [
+     43
+    ],
+    [
+     43,
+     65
+    ]
+   ],
+   "ok": true
+  },
+  {
+   "app": "creditsea",
+   "kind": "click",
+   "stored_head": [
+    43
+   ],
+   "found": [
+    [
+     43
+    ],
+    [
+     43,
+     65
+    ]
+   ],
+   "ok": true
+  },
+  {
+   "app": "creditsea",
+   "kind": "attribution",
+   "stored_head": [
+    43
+   ],
+   "found": [
+    [
+     43
+    ],
+    [
+     43,
+     65
+    ]
+   ],
+   "ok": true
+  },
+  {
+   "app": "penti",
+   "kind": "session",
+   "stored_head": [
+    43
+   ],
+   "found": [
+    [
+     43
+    ],
+    [
+     43,
+     65
+    ]
+   ],
+   "ok": true
+  },
+  {
+   "app": "penti",
+   "kind": "click",
+   "stored_head": [
+    43
+   ],
+   "found": [
+    [
+     43
+    ],
+    [
+     43,
+     65
+    ]
+   ],
+   "ok": true
+  },
+  {
+   "app": "penti",
+   "kind": "session",
+   "stored_head": [
+    43,
+    72
+   ],
+   "found": [
+    [
+     43,
+     72
+    ]
+   ],
+   "ok": true
+  },
+  {
+   "app": "penti",
+   "kind": "click",
+   "stored_head": [
+    43,
+    72
+   ],
+   "found": [
+    [
+     43,
+     72
+    ]
+   ],
+   "ok": true
+  },
+  {
+   "app": "penti",
+   "kind": "attribution",
+   "stored_head": [
+    43,
+    72
+   ],
+   "found": [
+    [
+     43,
+     72
+    ]
+   ],
+   "ok": true
+  },
+  {
+   "app": "penti",
+   "kind": "attribution",
+   "stored_head": [
+    43
+   ],
+   "found": [
+    [
+     43
+    ],
+    [
+     43,
+     65
+    ]
+   ],
+   "ok": true
+  }
+ ],
+ "results": [
+  {
+   "file": "0142_c.txt",
+   "path": "https://consent.adjust.com/sdk_click",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "3be1d83d6b8eae543eb1a8a5757ca3d6",
+   "digest_ok": true,
+   "S": 3702265801,
+   "S_hex": "dcac17c9",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "3b2de77488ed52353dace1f58e6c0ff7",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "0143_c.txt",
+   "path": "https://consent.adjust.io/sdk_click",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "3be1d83d6b8eae543eb1a8a5757ca3d6",
+   "digest_ok": true,
+   "S": 3927906798,
+   "S_hex": "ea1f19ee",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "c839f68f85d28f85fcd8c26eb13397bf",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "0144_c.txt",
+   "path": "https://consent.adjust.io/session",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "3be1d83d6b8eae543eb1a8a5757ca3d6",
+   "digest_ok": true,
+   "S": 2707084985,
+   "S_hex": "a15ad6b9",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "f0c3219acc469587785ba90244de5b77",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "0157_c.txt",
+   "path": "https://consent.adjust.io/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "7032bfb41df49d64635f7fdf77692880",
+   "digest_ok": true,
+   "S": 3844490772,
+   "S_hex": "e5264614",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "1d05926d9c5d64ac6a9ce5f4ebc49b3c",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "0170_c.txt",
+   "path": "https://consent.adjust.com/attribution?bundle_id=com.cainiao.cnintl4iphone&primary_dedupe_token=0101e59d-b7e6-482d-91df-6f5112f0ad2b&initiated_by=backend&last_skan_update=%7B%22coarse_value%22%3A%22low%22%2C%22lock_window%22%3Afalse%2C%22timestamp%22%3A%222026-08-23T23%3A34%3A25.249Z-0700%22%2C%22source%22%3A%22sdk%22%2C%22conversion_value%22%3A0%7D&app_version=57505987&installed_at=2026-08-23T23%3A30%3A20.441Z-0700&device_name=iPhone13%2C2&app_version_short=2.4.20&needs_response_details=1&attribution_deeplink=1&skadn_registered_at=2026-08-23T23%3A34%3A25.249Z-0700&send_in_background_enabled=0&os_name=ios&sent_at=2026-08-23T23%3A35%3A45.737Z-0700&idfv=E914D631-B38E-45EC-8950-14AE9FECE2AE&app_token=hd3rt9fm33sw&os_version=26.5&environment=production&started_at=2026-08-20T21%3A57%3A06.000Z-0700&created_at=2026-08-23T23%3A35%3A45.731Z-0700&device_type=iPhone&att_status=3&idfa=DD2B6190-9EF6-4378-8492-3105AA17F500",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "1e81a0e358d3435d53e19372326ae6cc",
+   "digest_ok": true,
+   "S": 2116021225,
+   "S_hex": "7e1febe9",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "7c13b72e21e3f140678dacb03a7d2bc2",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "0454_c.txt",
+   "path": "https://consent.adjust.io/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "2aa273867af137e645c00ff372140080",
+   "digest_ok": true,
+   "S": 1908119704,
+   "S_hex": "71bb9898",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "06c3f4e35389b6b411dee3fe4494939b",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "1068_c.txt",
+   "path": "https://consent.adjust.com/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "445f276a44223915169583790e380479",
+   "digest_ok": true,
+   "S": 2196634309,
+   "S_hex": "82edfac5",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "e447ed1307625cd1b6a0bff455850dd8",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "1144_c.txt",
+   "path": "https://consent.adjust.com/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "1ce776e8624d3f484b17fb9c40f720c9",
+   "digest_ok": true,
+   "S": 1566286221,
+   "S_hex": "5d5ba18d",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "48679ea7eb0c54fd2156f796823d12ee",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "1303_c.txt",
+   "path": "https://consent.adjust.com/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "3adbbd0759adff20262f526c2109d6b7",
+   "digest_ok": true,
+   "S": 1802265904,
+   "S_hex": "6b6c6530",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "e75d3c4646d59e62e4f13fea4579afbb",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "1311_c.txt",
+   "path": "https://consent.adjust.com/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "6f5f4b1f4beb933e27e018ab13adc93b",
+   "digest_ok": true,
+   "S": 3934469482,
+   "S_hex": "ea833d6a",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "51b4fbba1ac13f55de2e7420955bb88d",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "1427_c.txt",
+   "path": "https://consent.adjust.com/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "12eaa7fd20919ccf207c6ae955a028b5",
+   "digest_ok": true,
+   "S": 1866504305,
+   "S_hex": "6f409871",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "3eb562137cdc34fb2a347692685df15b",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "1443_c.txt",
+   "path": "https://consent.adjust.com/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "34b9910157bf2ae7500a6c541263f6c7",
+   "digest_ok": true,
+   "S": 1680858891,
+   "S_hex": "642fdf0b",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "7d6ff248a07ac02c921e1d394f0b297c",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "1451_c.txt",
+   "path": "https://consent.adjust.com/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "476489b5738b89fb28cc910a7f465e21",
+   "digest_ok": true,
+   "S": 3054962868,
+   "S_hex": "b61708b4",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "439f7baee19bd28048b57084eab17429",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "1678_c.txt",
+   "path": "https://consent.adjust.com/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "036ca82810a27af207a753a402a64c11",
+   "digest_ok": true,
+   "S": 504210818,
+   "S_hex": "1e0da582",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "34cd3748a488fc766fb66c33fff3ee14",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "1908_c.txt",
+   "path": "https://consent.adjust.com/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "729afe9c161726a64f75a6ba3fec087d",
+   "digest_ok": true,
+   "S": 123986850,
+   "S_hex": "0763e3a2",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "872fb1a4ae3ca3b0bc288aa3953bdc75",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "1949_c.txt",
+   "path": "https://consent.adjust.com/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "735662911f2170f664b7694e1f60ff21",
+   "digest_ok": true,
+   "S": 4039111016,
+   "S_hex": "f0bff168",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "0bd1b7e97b9e93e75f90e3a82fdf66ae",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "2155_c.txt",
+   "path": "https://consent.adjust.com/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "3b2821db5616cf396f85b2d31f1f8ea8",
+   "digest_ok": true,
+   "S": 687368540,
+   "S_hex": "28f8695c",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "4bd2587dcb70d8934b9e5831cb3cdffa",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "2545_c.txt",
+   "path": "https://consent.adjust.com/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "74720810129ebec14c964a612ae13c2c",
+   "digest_ok": true,
+   "S": 3908185915,
+   "S_hex": "e8f22f3b",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "a445029f69734cf9271581cfea23e559",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "2564_c.txt",
+   "path": "https://consent.adjust.com/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "274681592263be742291b34f39687c94",
+   "digest_ok": true,
+   "S": 228037877,
+   "S_hex": "0d9794f5",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "efd3300ae46b43be97df48069c677263",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "2688_c.txt",
+   "path": "https://consent.adjust.com/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "0a1b66ae13cd36ee477b73072626bd45",
+   "digest_ok": true,
+   "S": 1461514703,
+   "S_hex": "571cf1cf",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "c46f9d1a854e9e7f862bdf5ec70a9e9d",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "2719_c.txt",
+   "path": "https://consent.adjust.com/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "2507395c6995ba9a1442323631a7fc0c",
+   "digest_ok": true,
+   "S": 2918051255,
+   "S_hex": "adededb7",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "a8bf9231f3a5967af7eecd60acf492f8",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "2758_c.txt",
+   "path": "https://consent.adjust.com/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "1b906c1b49bc684b7fddb2e25cf6662f",
+   "digest_ok": true,
+   "S": 3003948844,
+   "S_hex": "b30c9f2c",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "2e656edbe52b11359ac5da7b518b2499",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "2795_c.txt",
+   "path": "https://consent.adjust.com/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "519834e200c5d00642c7666b03f42c1f",
+   "digest_ok": true,
+   "S": 1537529561,
+   "S_hex": "5ba4d6d9",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "62c87a9fd2cf6cc3c493dcc474948cca",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "2831_c.txt",
+   "path": "https://consent.adjust.com/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "6239e07c20154509440db2c774acbeab",
+   "digest_ok": true,
+   "S": 443754508,
+   "S_hex": "1a73280c",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "3c218c7f082db9583d0a8d5409064c71",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "2864_c.txt",
+   "path": "https://consent.adjust.com/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "6f875f641afb7b44219daf767b8c2a9c",
+   "digest_ok": true,
+   "S": 3134259674,
+   "S_hex": "bad101da",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "fce76a56aac32d59edcc7b7dbbe876f0",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "2903_c.txt",
+   "path": "https://consent.adjust.com/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "072738427633346a502600121257ab23",
+   "digest_ok": true,
+   "S": 641933355,
+   "S_hex": "2643202b",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "8098d03966941e1fa8b2f8134ebed611",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "2925_c.txt",
+   "path": "https://consent.adjust.com/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "47c27b427fa169186ff0e1ce72fd7b03",
+   "digest_ok": true,
+   "S": 3531093951,
+   "S_hex": "d27837bf",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "ec3a8e9ac4b69544df68bdc8f7e47d95",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "2959_c.txt",
+   "path": "https://consent.adjust.com/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "506235a4489efc155203f69a01448c9f",
+   "digest_ok": true,
+   "S": 3459211528,
+   "S_hex": "ce2f6108",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "bd05bd334acdad895a775a41adbfa523",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "3260_c.txt",
+   "path": "https://consent.adjust.com/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "5ac321ee407b691b6e40838d3a6ab159",
+   "digest_ok": true,
+   "S": 3138080565,
+   "S_hex": "bb0b4f35",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "376a4cdd87eee92f221c59ab929866d8",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  },
+  {
+   "file": "3429_c.txt",
+   "path": "https://consent.adjust.com/event",
+   "client_sdk": "ios5.8.0",
+   "header16_hex": "06bf02d81386784b19b1aee71947b4f9",
+   "digest_ok": true,
+   "S": 2849517773,
+   "S_hex": "a9d830cd",
+   "cert_sha1_hex": "0000000000000000000000000000000000000000",
+   "d0_head_hex": "501723339cc7055bbaafc98b767fd6c3",
+   "byte111": 6,
+   "byte112_variant": 2,
+   "byte113": 7,
+   "field114_129_hex": "6950686f6e6531332c32000000000000",
+   "field114_129_ascii": "iPhone13,2......",
+   "constants": {
+    "magic_rec0_2_is_010008": true,
+    "sep19_is_0x02": true,
+    "sep24_is_0x03": true,
+    "sep45_is_0x04": true,
+    "sep78_is_0x05": true,
+    "sha256_empty_at_79_110": true,
+    "sep111_113_is_060107": false,
+    "zero14_at_114_127": false,
+    "zero2_at_128_129": true,
+    "tail_0e14_at_130_143": true
+   },
+   "header_law_seconds": [],
+   "timing_b64_match": true,
+   "timing_header16_match": false,
+   "d0_cycle_ok": true,
+   "head_phase_matches": [
+    [
+     64
+    ],
+    [
+     64,
+     65
+    ]
+   ]
+  }
+ ],
+ "hex_dumps_first3": [
+  "0142_c.txt S=3702265801 cert=0000000000000000000000000000000000000000\n  000: 01 00 08 3b 2d e7 74 88 ed 52 35 3d ac e1 f5 8e  ...;-.t..R5=....\n  010: 6c 0f f7 02 dc ac 17 c9 03 00 00 00 00 00 00 00  l...............\n  020: 00 00 00 00 00 00 00 00 00 00 00 00 00 04 41 ec  ..............A.\n  030: fb 18 d6 af 59 6f 91 ee 56 bd f6 43 16 4e 8d 94  ....Yo..V..C.N..\n  040: 2d fa cd 2d 0d ba cd 5c 88 01 c6 42 25 56 05 e3  -..-...\\...B%V..\n  050: b0 c4 42 98 fc 1c 14 9a fb f4 c8 99 6f b9 24 27  ..B.........o.$'\n  060: ae 41 e4 64 9b 93 4c a4 95 99 1b 78 52 b8 55 06  .A.d..L....xR.U.\n  070: 02 07 69 50 68 6f 6e 65 31 33 2c 32 00 00 00 00  ..iPhone13,2....\n  080: 00 00 0e 0e 0e 0e 0e 0e 0e 0e 0e 0e 0e 0e 0e 0e  ................",
+  "0143_c.txt S=3927906798 cert=0000000000000000000000000000000000000000\n  000: 01 00 08 c8 39 f6 8f 85 d2 8f 85 fc d8 c2 6e b1  ....9.........n.\n  010: 33 97 bf 02 ea 1f 19 ee 03 00 00 00 00 00 00 00  3...............\n  020: 00 00 00 00 00 00 00 00 00 00 00 00 00 04 97 92  ................\n  030: 3a e4 f8 ff e2 43 05 3a 2b a3 8d 17 15 a3 81 9a  :....C.:+.......\n  040: 7e 39 5f 46 59 ff f3 bb ee ac 6c 95 5c 0a 05 e3  ~9_FY.....l.\\...\n  050: b0 c4 42 98 fc 1c 14 9a fb f4 c8 99 6f b9 24 27  ..B.........o.$'\n  060: ae 41 e4 64 9b 93 4c a4 95 99 1b 78 52 b8 55 06  .A.d..L....xR.U.\n  070: 02 07 69 50 68 6f 6e 65 31 33 2c 32 00 00 00 00  ..iPhone13,2....\n  080: 00 00 0e 0e 0e 0e 0e 0e 0e 0e 0e 0e 0e 0e 0e 0e  ................",
+  "0144_c.txt S=2707084985 cert=0000000000000000000000000000000000000000\n  000: 01 00 08 f0 c3 21 9a cc 46 95 87 78 5b a9 02 44  .....!..F..x[..D\n  010: de 5b 77 02 a1 5a d6 b9 03 00 00 00 00 00 00 00  .[w..Z..........\n  020: 00 00 00 00 00 00 00 00 00 00 00 00 00 04 a4 5c  ...............\\\n  030: 7a 76 76 e5 ba e1 9c 32 03 fc 49 f5 ac 2f e3 8f  zvv....2..I../..\n  040: 7b d7 59 00 8f 12 57 33 7d 51 a5 c2 1c 26 05 e3  {.Y...W3}Q...&..\n  050: b0 c4 42 98 fc 1c 14 9a fb f4 c8 99 6f b9 24 27  ..B.........o.$'\n  060: ae 41 e4 64 9b 93 4c a4 95 99 1b 78 52 b8 55 06  .A.d..L....xR.U.\n  070: 02 07 69 50 68 6f 6e 65 31 33 2c 32 00 00 00 00  ..iPhone13,2....\n  080: 00 00 0e 0e 0e 0e 0e 0e 0e 0e 0e 0e 0e 0e 0e 0e  ................"
+ ]
+}

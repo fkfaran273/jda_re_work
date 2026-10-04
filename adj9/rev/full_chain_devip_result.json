@@ -1,0 +1,26 @@
+{
+ "gps": "b03b4bcc-e33f-4ae1-88f8-5215316a96dc",
+ "auid": "84c3919c-afa0-4d9c-a771-e2915eecca4e",
+ "creative": "cline_full",
+ "referrer": "adjust_reftag=cFsJkgYtgO332&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=cline_mintsess",
+ "session": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2189b5be7db1f59394279bc3a76cd3ba\",\"ask_in\":2000}\r\n"
+ ],
+ "sdk_click": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2189b5be7db1f59394279bc3a76cd3ba\"}\r\n"
+ ],
+ "arms": [
+  {
+   "http": 200,
+   "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z / inst=2026-09-17T16:04:45Z",
+   "raw": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2189b5be7db1f59394279bc3a76cd3ba\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-17T16:04:45Z\",\"first_session_time\":\"2026-09-17T16:04:45Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}\r\n"
+  },
+  {
+   "http": 200,
+   "verdict": "wy7261z / Organic / eng=0001-01-01T00:00:00Z / inst=2026-09-17T16:04:45Z",
+   "raw": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2189b5be7db1f59394279bc3a76cd3ba\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-17T16:04:45Z\",\"first_session_time\":\"2026-09-17T16:04:45Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}\r\n"
+  }
+ ]
+}

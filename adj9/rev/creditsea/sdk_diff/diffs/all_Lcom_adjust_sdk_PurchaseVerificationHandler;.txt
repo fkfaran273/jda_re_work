@@ -1,0 +1,51 @@
+--- 
++++ 
+@@ -23,18 +23,20 @@
+ return-void
+----- METHOD public static synthetic access$000 (Lcom/adjust/sdk/PurchaseVerificationHandler; Lcom/adjust/sdk/ActivityPackage;)V ----
++---- METHOD public static bridge synthetic a (Lcom/adjust/sdk/PurchaseVerificationHandler;)V ----
++const-wide/16 vX, 0
++iput-wide vX, vX, Lcom/adjust/sdk/PurchaseVerificationHandler;->lastPackageRetryInMilli J
++return-void
++---- METHOD public static bridge synthetic b (Lcom/adjust/sdk/PurchaseVerificationHandler;)V ----
++invoke-direct vX, Lcom/adjust/sdk/PurchaseVerificationHandler;->sendNextPurchaseVerificationPackage()V
++return-void
++---- METHOD public static bridge synthetic c (Lcom/adjust/sdk/PurchaseVerificationHandler;)V ----
++invoke-direct vX, Lcom/adjust/sdk/PurchaseVerificationHandler;->sendNextPurchaseVerificationPackageI()V
++return-void
++---- METHOD public static bridge synthetic d (Lcom/adjust/sdk/PurchaseVerificationHandler; Lcom/adjust/sdk/ActivityPackage;)V ----
+ invoke-direct vX, vX, Lcom/adjust/sdk/PurchaseVerificationHandler;->sendPurchaseVerificationPackageI(Lcom/adjust/sdk/ActivityPackage;)V
+ return-void
+----- METHOD public static synthetic access$100 (Lcom/adjust/sdk/PurchaseVerificationHandler;)V ----
+-invoke-direct vX, Lcom/adjust/sdk/PurchaseVerificationHandler;->sendNextPurchaseVerificationPackageI()V
+-return-void
+----- METHOD public static synthetic access$202 (Lcom/adjust/sdk/PurchaseVerificationHandler; J)J ----
+-iput-wide vX, vX, Lcom/adjust/sdk/PurchaseVerificationHandler;->lastPackageRetryInMilli J
+-return-wide vX
+----- METHOD public static synthetic access$300 (Lcom/adjust/sdk/PurchaseVerificationHandler;)V ----
+-invoke-direct vX, Lcom/adjust/sdk/PurchaseVerificationHandler;->sendNextPurchaseVerificationPackage()V
+-return-void
+ ---- METHOD private sendNextPurchaseVerificationPackage ()V ----
+ iget-object vX, vX, Lcom/adjust/sdk/PurchaseVerificationHandler;->scheduler Lcom/adjust/sdk/scheduler/ThreadScheduler;
+-new-instance vX, Lcom/adjust/sdk/PurchaseVerificationHandler$2;
+-invoke-direct vX, vX, Lcom/adjust/sdk/PurchaseVerificationHandler$2;-><init>(Lcom/adjust/sdk/PurchaseVerificationHandler;)V
++new-instance vX, Lcom/adjust/sdk/X;
++const/4 vX, 0
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/X;-><init>(Lcom/adjust/sdk/PurchaseVerificationHandler; I)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -84,4 +86,5 @@
+ if BRANCH
+-new-instance vX, Lcom/adjust/sdk/PurchaseVerificationHandler$3;
+-invoke-direct vX, vX, Lcom/adjust/sdk/PurchaseVerificationHandler$3;-><init>(Lcom/adjust/sdk/PurchaseVerificationHandler;)V
++new-instance vX, Lcom/adjust/sdk/X;
++const/4 vX, 1
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/X;-><init>(Lcom/adjust/sdk/PurchaseVerificationHandler; I)V
+ iget-object vX, vX, Lcom/adjust/sdk/PurchaseVerificationHandler;->scheduler Lcom/adjust/sdk/scheduler/ThreadScheduler;
+@@ -226,4 +229,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/PurchaseVerificationHandler;->scheduler Lcom/adjust/sdk/scheduler/ThreadScheduler;
+-new-instance vX, Lcom/adjust/sdk/PurchaseVerificationHandler$1;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/PurchaseVerificationHandler$1;-><init>(Lcom/adjust/sdk/PurchaseVerificationHandler; Lcom/adjust/sdk/ActivityPackage;)V
++new-instance vX, Lcom/adjust/sdk/C;
++const/16 vX, 20
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/C;-><init>(I Ljava/lang/Object; Ljava/lang/Object;)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V

@@ -1,0 +1,11 @@
+--- 
++++ 
+@@ -20,5 +20,5 @@
+ invoke-direct vX, vX, vX, Lcom/adjust/sdk/sig/f1;-><init>(I I)V
+-new-instance vX, La2/a;
+-const/16 vX, 25
+-invoke-direct vX, vX, vX, La2/a;-><init>(Ljava/lang/Object; I)V
++new-instance vX, Lcom/adjust/sdk/sig/r;
++const/4 vX, 3
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/sig/r;-><init>(Lcom/adjust/sdk/sig/d2; I)V
+ const-string "com.adjust.sdk.sig.755f89ae93acbe52c30f8a09("

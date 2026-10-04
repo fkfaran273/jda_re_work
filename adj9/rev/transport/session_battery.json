@@ -1,0 +1,74 @@
+[
+ {
+  "tag": "A",
+  "label": "python http.client (CPython/OpenSSL)",
+  "probe": "POST",
+  "status": 200,
+  "verdict": "RESP",
+  "note": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\"}",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\"}",
+  "waited_s": 960.0,
+  "desc": "genuine blob | python http.client (CPython/OpenSSL)",
+  "gps_adid": "363e5b78-8670-4c50-8348-9f87c604111b"
+ },
+ {
+  "tag": "D",
+  "label": "device curl (phone IP + BoringSSL)",
+  "probe": "POST",
+  "status": 200,
+  "verdict": "PASS(recognized)",
+  "note": "ask_in=5000 adid=f680309ed01474098a68d0f0bce44e04",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"ask_in\":5000}",
+  "waited_s": 1200.0,
+  "desc": "genuine blob | device curl (phone IP + BoringSSL)",
+  "gps_adid": "363e5b78-8670-4c50-8348-9f87c604111b"
+ },
+ {
+  "tag": "B131",
+  "label": "curl_cffi impersonate=chrome131",
+  "probe": "POST",
+  "status": 200,
+  "verdict": "RESP",
+  "note": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\"}",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\"}",
+  "waited_s": 1200.0,
+  "desc": "genuine blob | curl_cffi impersonate=chrome131",
+  "gps_adid": "363e5b78-8670-4c50-8348-9f87c604111b"
+ },
+ {
+  "tag": "Cok12",
+  "label": "tls_client okhttp4_android_12",
+  "probe": "POST",
+  "status": 200,
+  "verdict": "RESP",
+  "note": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\"}",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\"}",
+  "waited_s": 1200.0,
+  "desc": "genuine blob | tls_client okhttp4_android_12",
+  "gps_adid": "363e5b78-8670-4c50-8348-9f87c604111b"
+ },
+ {
+  "tag": "XJSON",
+  "label": "python http.client | transport_session.json pairing",
+  "probe": "POST",
+  "status": 200,
+  "verdict": "RESP",
+  "note": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d3a205a1c77e219be02d5bbf2d814d51\"}",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d3a205a1c77e219be02d5bbf2d814d51\"}",
+  "waited_s": 0.0,
+  "desc": "transport_session.json pairing (row-0 blob on identity 7cc81be0)",
+  "gps_adid": "363e5b78-8670-4c50-8348-9f87c604111b"
+ },
+ {
+  "tag": "XJSONa",
+  "label": "curl_cffi chrome131 | transport_session.json pairing",
+  "probe": "POST",
+  "status": 200,
+  "verdict": "RESP",
+  "note": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d3a205a1c77e219be02d5bbf2d814d51\"}",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d3a205a1c77e219be02d5bbf2d814d51\"}",
+  "waited_s": 1200.0,
+  "desc": "transport_session.json pairing (row-0 blob on identity 7cc81be0)",
+  "gps_adid": "363e5b78-8670-4c50-8348-9f87c604111b"
+ }
+]

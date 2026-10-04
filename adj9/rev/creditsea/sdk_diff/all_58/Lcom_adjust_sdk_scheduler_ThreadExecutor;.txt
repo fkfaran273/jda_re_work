@@ -1,0 +1,8 @@
+# CLASS Lcom/adjust/sdk/scheduler/ThreadExecutor;
+
+---- METHOD public abstract submit (Ljava/lang/Runnable;)V ----
+  (no code)
+
+---- METHOD public abstract teardown ()V ----
+  (no code)
+######################################################################

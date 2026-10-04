@@ -1,0 +1,4 @@
+CONNECT api-p1.penti.com.tr:443 HTTP/1.1
+Host: api-p1.penti.com.tr:443
+Proxy-Connection: Keep-Alive
+User-Agent: okhttp/5.3.2

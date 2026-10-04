@@ -1,0 +1,37 @@
+.text   va=0x8be0 off=0x8be0 size=0x13fdd4
+.rodata va=0x3560 off=0x3560 size=0x150
+
+=== constant block, read as LE dwords ===
+  .rodata+0x0b0  va=0x3610  0000035c
+  .rodata+0x0b4  va=0x3614  00000300
+  .rodata+0x0b8  va=0x3618  0000035c
+  .rodata+0x0bc  va=0x361c  000002a0
+  .rodata+0x0c0  va=0x3620  67452301  <== MD5/SHA1 H0
+  .rodata+0x0c4  va=0x3624  efcdab89  <== H1
+  .rodata+0x0c8  va=0x3628  98badcfe  <== H2
+  .rodata+0x0cc  va=0x362c  10325476  <== H3
+  .rodata+0x0d0  va=0x3630  00000320
+  .rodata+0x0d4  va=0x3634  0000029a
+  .rodata+0x0d8  va=0x3638  0000035c
+  .rodata+0x0dc  va=0x363c  000002dc
+  .rodata+0x0e0  va=0x3640  c3d2e1f0  <== SHA1 H4
+  .rodata+0x0e4  va=0x3644  5a827999  <== SHA1 K0
+  .rodata+0x0e8  va=0x3648  6ed9eba1  <== SHA1 K1
+  .rodata+0x0ec  va=0x364c  8f1bbcdc  <== SHA1 K2
+  .rodata+0x0f0  va=0x3650  00000003
+  .rodata+0x0f4  va=0x3654  00000003
+  .rodata+0x0f8  va=0x3658  00000000
+  .rodata+0x0fc  va=0x365c  00000000
+
+=== code references to the SHA-1/MD5 constant block: 4 ===
+  0x31c04  adrp+mem     .rodata+0xf0   ldr q1, [x13, #0x650]
+  0x8d434  adrp+mem     .rodata+0xd0   ldr q0, [x14, #0x630]
+  0x12e604  adrp+mem     .rodata+0xc0   ldr q0, [x8, #0x620]
+  0x12e60c  adrp+mem     .rodata+0xe0   ldr q1, [x9, #0x640]
+
+=== function containment: nearest preceding symbol/bl-target ===
+  func 0x31924  refs at 0x31c04
+  func 0x8d400  refs at 0x8d434
+  func 0x12e5f4  refs at 0x12e604, 0x12e60c
+
+(nsign_cfg.pkl not usable: TypeError("unhashable type: 'list'"))

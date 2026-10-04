@@ -1,0 +1,1 @@
+for pid in 623 11561; do echo "=== pid $pid"; grep -oE "lib(keymaster[a-z_]*|keymint[a-z_]*|km_compat_service|puresoftkeymasterdevice|soft_attestation_cert|tricky_store|hidl|utils)\.so" /proc/$pid/maps 2>/dev/null | sort -u; done

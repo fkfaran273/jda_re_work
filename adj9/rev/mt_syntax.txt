@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import ast; ast.parse(open(r"manual_test.py", encoding="utf-8").read())
+                ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\ast.py", line 46, in parse
+    return compile(source, filename, mode, flags,
+                   _feature_version=feature_version, optimize=optimize)
+  File "<unknown>", line 22
+    "referrer": "adjust_reftag=...&utm_source=...",   <- paste
+                                                      ^
+SyntaxError: invalid syntax

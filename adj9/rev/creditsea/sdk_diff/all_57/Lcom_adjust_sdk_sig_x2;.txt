@@ -1,0 +1,26 @@
+# CLASS Lcom/adjust/sdk/sig/x2;
+FIELD public static final a Lcom/adjust/sdk/sig/x2;
+FIELD public static final b Lcom/adjust/sdk/sig/g2;
+
+---- METHOD static constructor <clinit> ()V ----
+  new-instance           v0, Lcom/adjust/sdk/sig/x2;
+  invoke-direct          v0, Lcom/adjust/sdk/sig/x2;-><init>()V
+  sput-object            v0, Lcom/adjust/sdk/sig/x2;->a Lcom/adjust/sdk/sig/x2;
+  new-instance           v0, Lcom/adjust/sdk/sig/g2;
+  invoke-direct          v0, Lcom/adjust/sdk/sig/g2;-><init>()V
+  sput-object            v0, Lcom/adjust/sdk/sig/x2;->b Lcom/adjust/sdk/sig/g2;
+  return-void            
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final a ()Lcom/adjust/sdk/sig/l2; ----
+  sget-object            v0, Lcom/adjust/sdk/sig/x2;->b Lcom/adjust/sdk/sig/g2;
+  return-object          v0
+
+---- METHOD public final a (Lcom/adjust/sdk/sig/v2; Ljava/lang/Object;)V ----
+  check-cast             v2, Ljava/lang/String;
+  invoke-virtual         v1, v2, Lcom/adjust/sdk/sig/v2;->a(Ljava/lang/String;)V
+  return-void            
+######################################################################

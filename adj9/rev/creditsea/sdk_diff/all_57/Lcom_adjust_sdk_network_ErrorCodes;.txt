@@ -1,0 +1,11 @@
+# CLASS Lcom/adjust/sdk/network/ErrorCodes;
+FIELD public static final IO_EXCEPTION I
+FIELD public static final MALFORMED_URL_EXCEPTION I
+FIELD public static final NULL_JSON_RESPONSE I
+FIELD public static final PROTOCOL_EXCEPTION I
+FIELD public static final SERVER_RETRY_IN I
+FIELD public static final SOCKET_TIMEOUT_EXCEPTION I
+FIELD public static final SSL_HANDSHAKE_EXCEPTION I
+FIELD public static final THROWABLE I
+FIELD public static final UNSUPPORTED_ENCODING_EXCEPTION I
+######################################################################

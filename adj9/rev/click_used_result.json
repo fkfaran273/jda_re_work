@@ -1,0 +1,122 @@
+[
+ {
+  "arm": "N0",
+  "gps": "4c855eba-6c17-4138-a0d4-20cfd4b2ee95",
+  "click": false,
+  "sdk_click": false,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"679f907e2e2acf8c04f2ef44dbcc21eb\",\"ask_in\":2000}"
+  ],
+  "polls": [
+   {
+    "http": 200,
+    "attribution": {
+     "tracker_token": "wy7261z",
+     "tracker_name": "Organic",
+     "network": "Organic",
+     "engagement_time": "0001-01-01T00:00:00Z",
+     "installed_at": "2026-09-28T12:03:52Z",
+     "first_session_time": "2026-09-28T12:03:52Z",
+     "is_reattributed": false,
+     "is_redownload_install": false
+    },
+    "raw": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"679f907e2e2acf8c04f2ef44dbcc21eb\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-28T12:03:52Z\",\"first_session_time\":\"2026-09-28T12:03:52Z\",\"is_reattributed\":fal"
+   }
+  ],
+  "final": {
+   "tracker_token": "wy7261z",
+   "tracker_name": "Organic",
+   "network": "Organic",
+   "engagement_time": "0001-01-01T00:00:00Z",
+   "installed_at": "2026-09-28T12:03:52Z",
+   "first_session_time": "2026-09-28T12:03:52Z",
+   "is_reattributed": false,
+   "is_redownload_install": false
+  },
+  "verdict": "Organic / wy7261z / eng=0001-01-01T00:00:00Z"
+ },
+ {
+  "arm": "N1",
+  "gps": "d8c5666d-8530-4d87-8469-b2328e42f833",
+  "click": {
+   "http": 302,
+   "referrer": "adjust_reftag=ctRssEZwQ32Ca&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic"
+  },
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"28005319b1bce57fb59adbcb444f3ca8\"}"
+  ],
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"28005319b1bce57fb59adbcb444f3ca8\",\"ask_in\":2000}"
+  ],
+  "polls": [
+   {
+    "http": 200,
+    "attribution": {
+     "tracker_token": "wy7261z",
+     "tracker_name": "Organic",
+     "network": "Organic",
+     "engagement_time": "0001-01-01T00:00:00Z",
+     "installed_at": "2026-09-28T12:04:49Z",
+     "first_session_time": "2026-09-28T12:04:49Z",
+     "is_reattributed": false,
+     "is_redownload_install": false
+    },
+    "raw": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"28005319b1bce57fb59adbcb444f3ca8\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-28T12:04:49Z\",\"first_session_time\":\"2026-09-28T12:04:49Z\",\"is_reattributed\":fal"
+   }
+  ],
+  "final": {
+   "tracker_token": "wy7261z",
+   "tracker_name": "Organic",
+   "network": "Organic",
+   "engagement_time": "0001-01-01T00:00:00Z",
+   "installed_at": "2026-09-28T12:04:49Z",
+   "first_session_time": "2026-09-28T12:04:49Z",
+   "is_reattributed": false,
+   "is_redownload_install": false
+  },
+  "verdict": "Organic / wy7261z / eng=0001-01-01T00:00:00Z"
+ },
+ {
+  "arm": "N2",
+  "gps": "77a0a53e-d79d-46b4-9099-9b9634ab988e",
+  "click": {
+   "http": 302,
+   "referrer": "adjust_reftag=cuSvZsS8buCY5&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic"
+  },
+  "sdk_click": false,
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"c7dc2e99a5ab99c3753143243913779b\",\"ask_in\":2000}"
+  ],
+  "polls": [
+   {
+    "http": 200,
+    "attribution": {
+     "tracker_token": "wy7261z",
+     "tracker_name": "Organic",
+     "network": "Organic",
+     "engagement_time": "0001-01-01T00:00:00Z",
+     "installed_at": "2026-09-28T12:06:02Z",
+     "first_session_time": "2026-09-28T12:06:02Z",
+     "is_reattributed": false,
+     "is_redownload_install": false
+    },
+    "raw": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"c7dc2e99a5ab99c3753143243913779b\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-28T12:06:02Z\",\"first_session_time\":\"2026-09-28T12:06:02Z\",\"is_reattributed\":fal"
+   }
+  ],
+  "final": {
+   "tracker_token": "wy7261z",
+   "tracker_name": "Organic",
+   "network": "Organic",
+   "engagement_time": "0001-01-01T00:00:00Z",
+   "installed_at": "2026-09-28T12:06:02Z",
+   "first_session_time": "2026-09-28T12:06:02Z",
+   "is_reattributed": false,
+   "is_redownload_install": false
+  },
+  "verdict": "Organic / wy7261z / eng=0001-01-01T00:00:00Z"
+ }
+]

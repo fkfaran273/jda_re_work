@@ -1,0 +1,11 @@
+# CLASS Lcom/adjust/sdk/sig/s2;
+FIELD public static final a [B
+
+---- METHOD static constructor <clinit> ()V ----
+  const/16               v0, 19
+  new-array              v0, v0, [B
+  fill-array-data        v0, +0000006h
+  sput-object            v0, Lcom/adjust/sdk/sig/s2;->a [B
+  return-void            
+  fill-array-data-payload b'Quoh8uafohgh7CahM2h\x00' | \x51\x75\x6f\x68\x38\x75\x61\x66\x6f\x68\x67\x68\x37\x43\x61\x68\x4d\x32\x68\x00
+######################################################################

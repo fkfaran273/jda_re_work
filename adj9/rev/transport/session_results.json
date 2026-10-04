@@ -1,0 +1,93 @@
+[
+ {
+  "tag": "A",
+  "status": 400,
+  "verdict": "GATE(400 exists)",
+  "note": "Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:33:55, this session: 2026-09-27T14:34:19, interval: 24s, min int",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:33:55, this session: 2026-09-27T14:34:19, interval: 24s, min interval: 20m))\"}"
+ },
+ {
+  "tag": "B",
+  "status": 400,
+  "verdict": "GATE(400 exists)",
+  "note": "Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:33:55, this session: 2026-09-27T14:34:23, interval: 28s, min int",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:33:55, this session: 2026-09-27T14:34:23, interval: 28s, min interval: 20m))\"}"
+ },
+ {
+  "tag": "C",
+  "status": 400,
+  "verdict": "GATE(400 exists)",
+  "note": "Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:33:55, this session: 2026-09-27T14:34:27, interval: 32s, min int",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:33:55, this session: 2026-09-27T14:34:27, interval: 32s, min interval: 20m))\"}"
+ },
+ {
+  "tag": "D",
+  "status": 400,
+  "verdict": "?",
+  "note": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Las",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:33:55, this session: 2026-09-27T14:34:31, interval: 36s, min interval: 20m))\"}n"
+ },
+ {
+  "tag": "B2",
+  "status": 400,
+  "verdict": "GATE(400 exists)",
+  "note": "Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:33:55, this session: 2026-09-27T14:34:35, interval: 40s, min int",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:33:55, this session: 2026-09-27T14:34:35, interval: 40s, min interval: 20m))\"}"
+ },
+ {
+  "tag": "C2",
+  "status": 400,
+  "verdict": "GATE(400 exists)",
+  "note": "Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:33:55, this session: 2026-09-27T14:34:39, interval: 44s, min int",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:33:55, this session: 2026-09-27T14:34:39, interval: 44s, min interval: 20m))\"}"
+ },
+ {
+  "tag": "B3",
+  "status": 400,
+  "verdict": "GATE(400 exists)",
+  "note": "Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:33:55, this session: 2026-09-27T14:34:43, interval: 48s, min int",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:33:55, this session: 2026-09-27T14:34:43, interval: 48s, min interval: 20m))\"}"
+ },
+ {
+  "tag": "B4",
+  "status": 400,
+  "verdict": "GATE(400 exists)",
+  "note": "Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:33:55, this session: 2026-09-27T14:34:47, interval: 52s, min int",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:33:55, this session: 2026-09-27T14:34:47, interval: 52s, min interval: 20m))\"}"
+ },
+ {
+  "tag": "B5",
+  "status": 400,
+  "verdict": "GATE(400 exists)",
+  "note": "Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:33:55, this session: 2026-09-27T14:34:51, interval: 56s, min int",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:33:55, this session: 2026-09-27T14:34:51, interval: 56s, min interval: 20m))\"}"
+ },
+ {
+  "tag": "C3",
+  "status": 400,
+  "verdict": "GATE(400 exists)",
+  "note": "Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:33:55, this session: 2026-09-27T14:34:55, interval: 1m, min inte",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:33:55, this session: 2026-09-27T14:34:55, interval: 1m, min interval: 20m))\"}"
+ },
+ {
+  "tag": "A2",
+  "status": 400,
+  "verdict": "GATE(400 exists)",
+  "note": "Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:33:55, this session: 2026-09-27T14:34:59, interval: 1m4s, min in",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:33:55, this session: 2026-09-27T14:34:59, interval: 1m4s, min interval: 20m))\"}"
+ },
+ {
+  "tag": "FLIP",
+  "status": 400,
+  "verdict": "GATE(400 exists)",
+  "note": "Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:33:55, this session: 2026-09-27T14:35:03, interval: 1m8s, min in",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:33:55, this session: 2026-09-27T14:35:03, interval: 1m8s, min interval: 20m))\"}"
+ },
+ {
+  "tag": "NOAUTH",
+  "status": 400,
+  "verdict": "GATE(400 exists)",
+  "note": "Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:33:55, this session: 2026-09-27T14:35:07, interval: 1m12s, min i",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"f680309ed01474098a68d0f0bce44e04\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-27T14:33:55, this session: 2026-09-27T14:35:07, interval: 1m12s, min interval: 20m))\"}"
+ }
+]

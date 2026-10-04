@@ -1,0 +1,117 @@
+--- 
++++ 
+@@ -36,27 +36,10 @@
+ iget-object vX, vX, Lcom/adjust/sdk/PackageHandler;->scheduler Lcom/adjust/sdk/scheduler/ThreadScheduler;
+-new-instance vX, Lcom/adjust/sdk/PackageHandler$1;
+-invoke-direct vX, vX, Lcom/adjust/sdk/PackageHandler$1;-><init>(Lcom/adjust/sdk/PackageHandler;)V
++new-instance vX, Lcom/adjust/sdk/V;
++const/4 vX, 0
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/V;-><init>(Lcom/adjust/sdk/PackageHandler; I)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+ return-void
+----- METHOD public static synthetic access$000 (Lcom/adjust/sdk/PackageHandler;)V ----
+-invoke-direct vX, Lcom/adjust/sdk/PackageHandler;->initI()V
+-return-void
+----- METHOD public static synthetic access$100 (Lcom/adjust/sdk/PackageHandler; Lcom/adjust/sdk/ActivityPackage;)V ----
+-invoke-direct vX, vX, Lcom/adjust/sdk/PackageHandler;->addI(Lcom/adjust/sdk/ActivityPackage;)V
+-return-void
+----- METHOD public static synthetic access$200 (Lcom/adjust/sdk/PackageHandler;)V ----
+-invoke-direct vX, Lcom/adjust/sdk/PackageHandler;->sendFirstI()V
+-return-void
+----- METHOD public static synthetic access$300 (Lcom/adjust/sdk/PackageHandler; Ljava/lang/Long;)V ----
+-invoke-direct vX, vX, Lcom/adjust/sdk/PackageHandler;->sendNextI(Ljava/lang/Long;)V
+-return-void
+----- METHOD public static synthetic access$400 (Lcom/adjust/sdk/PackageHandler;)Lcom/adjust/sdk/ILogger; ----
+-iget-object vX, vX, Lcom/adjust/sdk/PackageHandler;->logger Lcom/adjust/sdk/ILogger;
+-return-object vX
+----- METHOD public static synthetic access$500 (Lcom/adjust/sdk/PackageHandler;)Ljava/util/concurrent/atomic/AtomicBoolean; ----
++---- METHOD public static bridge synthetic a (Lcom/adjust/sdk/PackageHandler;)Ljava/util/concurrent/atomic/AtomicBoolean; ----
+ iget-object vX, vX, Lcom/adjust/sdk/PackageHandler;->isSending Ljava/util/concurrent/atomic/AtomicBoolean;
+ return-object vX
+----- METHOD public static synthetic access$600 (Lcom/adjust/sdk/PackageHandler;)V ----
+-invoke-direct vX, Lcom/adjust/sdk/PackageHandler;->flushI()V
+-return-void
+ ---- METHOD private addI (Lcom/adjust/sdk/ActivityPackage;)V ----
+@@ -103,2 +86,11 @@
+ return-void
++---- METHOD public static bridge synthetic b (Lcom/adjust/sdk/PackageHandler;)Lcom/adjust/sdk/ILogger; ----
++iget-object vX, vX, Lcom/adjust/sdk/PackageHandler;->logger Lcom/adjust/sdk/ILogger;
++return-object vX
++---- METHOD public static bridge synthetic c (Lcom/adjust/sdk/PackageHandler; Lcom/adjust/sdk/ActivityPackage;)V ----
++invoke-direct vX, vX, Lcom/adjust/sdk/PackageHandler;->addI(Lcom/adjust/sdk/ActivityPackage;)V
++return-void
++---- METHOD public static bridge synthetic d (Lcom/adjust/sdk/PackageHandler;)V ----
++invoke-direct vX, Lcom/adjust/sdk/PackageHandler;->flushI()V
++return-void
+ ---- METHOD public static deletePackageQueue (Landroid/content/Context;)Ljava/lang/Boolean; ----
+@@ -113,2 +105,8 @@
+ return-void
++---- METHOD public static bridge synthetic e (Lcom/adjust/sdk/PackageHandler;)V ----
++invoke-direct vX, Lcom/adjust/sdk/PackageHandler;->initI()V
++return-void
++---- METHOD public static bridge synthetic f (Lcom/adjust/sdk/PackageHandler;)V ----
++invoke-direct vX, Lcom/adjust/sdk/PackageHandler;->sendFirstI()V
++return-void
+ ---- METHOD private flushI ()V ----
+@@ -117,2 +115,5 @@
+ invoke-direct vX, Lcom/adjust/sdk/PackageHandler;->writePackageQueueI()V
++return-void
++---- METHOD public static bridge synthetic g (Lcom/adjust/sdk/PackageHandler; Ljava/lang/Long;)V ----
++invoke-direct vX, vX, Lcom/adjust/sdk/PackageHandler;->sendNextI(Ljava/lang/Long;)V
+ return-void
+@@ -247,4 +248,5 @@
+ if BRANCH
+-new-instance vX, Lcom/adjust/sdk/PackageHandler$7;
+-invoke-direct vX, vX, Lcom/adjust/sdk/PackageHandler$7;-><init>(Lcom/adjust/sdk/PackageHandler;)V
++new-instance vX, Lcom/adjust/sdk/V;
++const/4 vX, 4
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/V;-><init>(Lcom/adjust/sdk/PackageHandler; I)V
+ iget-object vX, vX, Lcom/adjust/sdk/PackageHandler;->logger Lcom/adjust/sdk/ILogger;
+@@ -293,4 +295,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/PackageHandler;->scheduler Lcom/adjust/sdk/scheduler/ThreadScheduler;
+-new-instance vX, Lcom/adjust/sdk/PackageHandler$2;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/PackageHandler$2;-><init>(Lcom/adjust/sdk/PackageHandler; Lcom/adjust/sdk/ActivityPackage;)V
++new-instance vX, Lcom/adjust/sdk/C;
++const/16 vX, 18
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/C;-><init>(I Ljava/lang/Object; Ljava/lang/Object;)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -299,4 +302,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/PackageHandler;->scheduler Lcom/adjust/sdk/scheduler/ThreadScheduler;
+-new-instance vX, Lcom/adjust/sdk/PackageHandler$6;
+-invoke-direct vX, vX, Lcom/adjust/sdk/PackageHandler$6;-><init>(Lcom/adjust/sdk/PackageHandler;)V
++new-instance vX, Lcom/adjust/sdk/V;
++const/4 vX, 3
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/V;-><init>(Lcom/adjust/sdk/PackageHandler; I)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -330,4 +334,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/PackageHandler;->scheduler Lcom/adjust/sdk/scheduler/ThreadScheduler;
+-new-instance vX, Lcom/adjust/sdk/PackageHandler$4;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/PackageHandler$4;-><init>(Lcom/adjust/sdk/PackageHandler; Lcom/adjust/sdk/ResponseData;)V
++new-instance vX, Lcom/adjust/sdk/C;
++const/16 vX, 19
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/C;-><init>(I Ljava/lang/Object; Ljava/lang/Object;)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -346,6 +351,13 @@
+ invoke-interface vX, vX, Lcom/adjust/sdk/IActivityHandler;->finishedTrackingActivity(Lcom/adjust/sdk/ResponseData;)V
+-new-instance vX, Lcom/adjust/sdk/PackageHandler$5;
+-invoke-direct vX, vX, Lcom/adjust/sdk/PackageHandler$5;-><init>(Lcom/adjust/sdk/PackageHandler;)V
++new-instance vX, Lcom/adjust/sdk/V;
++const/4 vX, 2
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/V;-><init>(Lcom/adjust/sdk/PackageHandler; I)V
+ iget-object vX, vX, Lcom/adjust/sdk/ResponseData;->retryIn Ljava/lang/Long;
+ if BRANCH
++invoke-virtual vX, Ljava/lang/Long;->longValue()J
++move-result-wide vX
++const-wide/16 vX, 0
++cmp-long vX, vX, vX
++if BRANCH
++iget-object vX, vX, Lcom/adjust/sdk/ResponseData;->retryIn Ljava/lang/Long;
+ invoke-virtual vX, Ljava/lang/Long;->longValue()J
+@@ -415,4 +427,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/PackageHandler;->scheduler Lcom/adjust/sdk/scheduler/ThreadScheduler;
+-new-instance vX, Lcom/adjust/sdk/PackageHandler$3;
+-invoke-direct vX, vX, Lcom/adjust/sdk/PackageHandler$3;-><init>(Lcom/adjust/sdk/PackageHandler;)V
++new-instance vX, Lcom/adjust/sdk/V;
++const/4 vX, 1
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/V;-><init>(Lcom/adjust/sdk/PackageHandler; I)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V

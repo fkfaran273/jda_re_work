@@ -1,0 +1,275 @@
+{
+ "source_files": [
+  "fin_descs.json",
+  "golden_saz.json",
+  "device/triples_tail7.json"
+ ],
+ "built": "2026-09-14T10:40:17.015375Z",
+ "va_order": [
+  0,
+  9,
+  8,
+  4,
+  2,
+  7,
+  10,
+  5,
+  1,
+  6,
+  3
+ ],
+ "slots": {
+  "9": {
+   "len_dw": 5,
+   "data_hex": "fad0f10d60f93c17937b2f1eb6c09691ae7d74bd"
+  },
+  "8": {
+   "len_dw": 4,
+   "data_hex": "bffffffffffffd1f0007000000000000"
+  },
+  "2": {
+   "len_dw": 1,
+   "data_hex": "fb1a8296"
+  },
+  "7": {
+   "len_dw": 1,
+   "data_hex": "00000168"
+  },
+  "5": {
+   "len_dw": 1,
+   "data_hex": "00000000"
+  },
+  "1": {
+   "len_dw": 0,
+   "data_hex": ""
+  },
+  "6": {
+   "len_dw": 1,
+   "data_hex": "00000000"
+  },
+  "3": {
+   "len_dw": 0,
+   "data_hex": ""
+  }
+ },
+ "claims_base_hex": "4b6c6341473263624141734b536c314b5669304647694a6244484d4964373733663437662d666330652d343939342d396366372d37633363663562623633363833316a7574397469623065657073332e31332e39323032362d30392d31325432313a31353a31312e3637385a2b303230306d6f746f2067343270686f6e6570726f64756374696f6e66343736623364342d653062312d343730372d626334332d363135336431376637663863736572766963655332534533322e32382d32382d34636f6d2e616e64726f69642e76656e64696e67323032362d30392d30385431323a32303a34392e3738325a2b303230305332534533322e32382d32382d34616e64726f69643132636f6d2e70656e74692e6170703135303030303031636f6d2e616e64726f69642e76656e64696e6731323032362d30392d31305430373a32363a31382e3031355a2b3032303073657373696f6e616e64726f6964352e372e303130352e302e30",
+ "claims_fields": {
+  "android_uuid": [
+   28,
+   64,
+   "d773f47f-fc0e-4994-9cf7-7c3cf5bb6368"
+  ],
+  "gps_adid": [
+   136,
+   172,
+   "f476b3d4-e0b1-4707-bc43-6153d17f7f8c"
+  ],
+  "adj_verification": [
+   0,
+   28,
+   "KlcAG2cbAAsKSl1KVi0FGiJbDHMI"
+  ],
+  "app_token": [
+   66,
+   78,
+   "jut9tib0eeps"
+  ],
+  "app_version": [
+   78,
+   84,
+   "3.13.9"
+  ],
+  "created_at": [
+   84,
+   113,
+   "2026-09-12T21:15:11.678Z+0200"
+  ],
+  "device_name": [
+   113,
+   121,
+   "moto g42"
+  ],
+  "device_type": [
+   121,
+   126,
+   "phone"
+  ],
+  "environment": [
+   126,
+   136,
+   "production"
+  ],
+  "installed_at": [
+   212,
+   241,
+   "2026-09-08T12:20:49.782Z+0200"
+  ],
+  "updated_at": [
+   305,
+   334,
+   "2026-09-10T07:26:18.015Z+0200"
+  ],
+  "os_version": [
+   262,
+   264,
+   "12"
+  ],
+  "api_level": [
+   64,
+   66,
+   "31"
+  ]
+ },
+ "H_policy": "random 32B per call (HRAND: exits clean iff #0 zeroed - full_chain)",
+ "core0_policy": "zeros(144B) + 1 random dword at 140:144",
+ "captured_H": {
+  "sess_H": "46cb9a96471f255bb64bd0e8e82f6a1fda7398c86fcdb8c68cc7afe313833502",
+  "click_H": "732c428984eefe01ec0cbcb3e616a53fbb3d0bd12f2ea1372decdee1589ba8a3"
+ },
+ "wire_templates": {
+  "session": {
+   "store_name_from_system": "com.android.vending",
+   "gps_adid_attempt": "1",
+   "api_level": "30",
+   "hardware_name": "DN2101_11_A.20",
+   "app_version": "3.12.1",
+   "app_token": "jut9tib0eeps",
+   "installed_at": "2026-09-08T14:00:02.774Z+0530",
+   "created_at": "2026-09-08T14:05:22.928Z+0530",
+   "wait_total": "0.0",
+   "device_type": "phone",
+   "language": "tr",
+   "gps_adid": "1a89cb29-3590-418c-ae2b-122bbd93e38f",
+   "foreground": "1",
+   "connectivity_type": "1",
+   "mcc": "405",
+   "device_manufacturer": "OnePlus",
+   "display_width": "1080",
+   "device_name": "DN2101",
+   "needs_response_details": "1",
+   "os_build": "RP1A.200720.011",
+   "updated_at": "2026-09-08T14:00:02.774Z+0530",
+   "cpu_type": "arm64-v8a",
+   "retry_count": "0",
+   "screen_size": "normal",
+   "screen_format": "long",
+   "last_error": "0",
+   "gps_adid_src": "service",
+   "mnc": "872",
+   "wait_time": "0.0",
+   "os_version": "11",
+   "first_error": "0",
+   "android_uuid": "117d0470-c64e-4530-af62-48049861d40a",
+   "sent_at": "2026-09-08T14:05:22.942Z+0530",
+   "offline_mode_enabled": "0",
+   "environment": "production",
+   "screen_density": "high",
+   "attribution_deeplink": "1",
+   "session_count": "1",
+   "display_height": "2293",
+   "package_name": "com.penti.app",
+   "initiating_package_name": "com.android.vending",
+   "os_name": "android",
+   "ui_mode": "1",
+   "enqueue_size": "0",
+   "tracking_enabled": "1"
+  },
+  "sdk_click": {
+   "api_level": "30",
+   "hardware_name": "DN2101_11_A.20",
+   "app_version": "3.12.1",
+   "app_token": "jut9tib0eeps",
+   "installed_at": "2026-09-08T14:00:02.774Z+0530",
+   "device_type": "phone",
+   "language": "tr",
+   "gps_adid": "1a89cb29-3590-418c-ae2b-122bbd93e38f",
+   "source": "install_referrer",
+   "foreground": "1",
+   "connectivity_type": "1",
+   "mcc": "405",
+   "os_build": "RP1A.200720.011",
+   "click_time": "2026-09-08T13:59:47.000Z+0530",
+   "cpu_type": "arm64-v8a",
+   "install_version": "3.12.1",
+   "screen_size": "normal",
+   "gps_adid_src": "service",
+   "subsession_count": "1",
+   "sent_at": "2026-09-08T14:05:22.970Z+0530",
+   "offline_mode_enabled": "0",
+   "screen_density": "high",
+   "session_count": "1",
+   "ui_mode": "1",
+   "gps_adid_attempt": "1",
+   "session_length": "0",
+   "created_at": "2026-09-08T14:05:22.961Z+0530",
+   "referrer_api": "google",
+   "device_manufacturer": "OnePlus",
+   "display_width": "1080",
+   "time_spent": "0",
+   "device_name": "DN2101",
+   "needs_response_details": "1",
+   "updated_at": "2026-09-08T14:00:02.774Z+0530",
+   "screen_format": "long",
+   "mnc": "872",
+   "click_time_server": "2026-09-08T13:59:48.000Z+0530",
+   "os_version": "11",
+   "google_play_instant": "0",
+   "install_begin_time_server": "2026-09-08T13:59:53.000Z+0530",
+   "android_uuid": "117d0470-c64e-4530-af62-48049861d40a",
+   "referrer": "utm_source=(not%20set)&utm_medium=(not%20set)",
+   "environment": "production",
+   "attribution_deeplink": "1",
+   "install_begin_time": "2026-09-08T13:59:52.000Z+0530",
+   "display_height": "2293",
+   "package_name": "com.penti.app",
+   "os_name": "android",
+   "tracking_enabled": "1"
+  },
+  "sdk_info": {
+   "gps_adid_attempt": "1",
+   "wait_time": "0.0",
+   "app_token": "jut9tib0eeps",
+   "created_at": "2026-09-08T14:05:25.550Z+0530",
+   "wait_total": "0.0",
+   "first_error": "0",
+   "gps_adid": "1a89cb29-3590-418c-ae2b-122bbd93e38f",
+   "source": "push",
+   "foreground": "1",
+   "android_uuid": "117d0470-c64e-4530-af62-48049861d40a",
+   "sent_at": "2026-09-08T14:05:25.665Z+0530",
+   "offline_mode_enabled": "0",
+   "environment": "production",
+   "needs_response_details": "1",
+   "attribution_deeplink": "1",
+   "retry_count": "0",
+   "last_error": "0",
+   "gps_adid_src": "service",
+   "push_token": "emsp6HGsRJWM9avd-xXS5Y:APA91bFZPSOQh57RUHzVJjWwt16UALPH7mcy5IDUxdXiiXolDNry5NinRRdk5W0lLI2BnNyusb7DHeBhAbtTbHpYy4ziep7JUo2wuTgHkAR7Go4gFoVLKWI",
+   "enqueue_size": "1",
+   "tracking_enabled": "1"
+  }
+ },
+ "coupled_fields": [
+  "gps_adid",
+  "android_uuid",
+  "app_token",
+  "app_version",
+  "api_level",
+  "created_at",
+  "device_name",
+  "device_type",
+  "environment",
+  "installed_at",
+  "updated_at",
+  "os_version",
+  "language",
+  "mcc",
+  "mnc"
+ ],
+ "hard_rules": [
+  "claims swaps are equal-length ONLY (raw-concat blob)",
+  "never swap 'com.android.vending12' (eats updated_at leading 2)",
+  "both installed_at AND updated_at must be refreshed",
+  "wire created_at == second-1 of header seed (law: header=created+1s)"
+ ]
+}

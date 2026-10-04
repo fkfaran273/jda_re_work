@@ -1,0 +1,9 @@
+{
+ "gaid": "9591f053-5843-42ee-88e6-07feb0472ac0 -> 341b2f51-b183-4102-8537-2bc71fecd28d",
+ "click": "302",
+ "session/tls": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"d6ce254e378e8f7a2af8bd4fa9707861\",\"ask_in\":2000}",
+ "sdk_click/tls": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"d6ce254e378e8f7a2af8bd4fa9707861\"}",
+ "RESULT": "no verdict found",
+ "gps": "341b2f51-b183-4102-8537-2bc71fecd28d",
+ "verdict": null
+}

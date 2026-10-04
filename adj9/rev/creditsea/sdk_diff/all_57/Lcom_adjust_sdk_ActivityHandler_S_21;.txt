@@ -1,0 +1,18 @@
+# CLASS Lcom/adjust/sdk/ActivityHandler$21;
+FIELD public final synthetic a Lcom/adjust/sdk/OnAttributionReadListener;
+FIELD public final synthetic b Lcom/adjust/sdk/ActivityHandler;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/ActivityHandler; Lcom/adjust/sdk/OnAttributionReadListener;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/ActivityHandler$21;->b Lcom/adjust/sdk/ActivityHandler;
+  iput-object            v2, v0, Lcom/adjust/sdk/ActivityHandler$21;->a Lcom/adjust/sdk/OnAttributionReadListener;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v2, Lcom/adjust/sdk/ActivityHandler$21;->a Lcom/adjust/sdk/OnAttributionReadListener;
+  iget-object            v1, v2, Lcom/adjust/sdk/ActivityHandler$21;->b Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v1, Lcom/adjust/sdk/ActivityHandler;->access$1400(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustAttribution;
+  move-result-object     v1
+  invoke-interface       v0, v1, Lcom/adjust/sdk/OnAttributionReadListener;->onAttributionRead(Lcom/adjust/sdk/AdjustAttribution;)V
+  return-void            
+######################################################################

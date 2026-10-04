@@ -1,0 +1,611 @@
+{"event": "proxy_listening", "port": 8889, "t": 1790531808.197}
+{"id": "1790531814_0", "event": "connect", "target": "app.adjust.com:443", "peer": "127.0.0.1:42106", "connect_headers": ["Proxy-Connection: Keep-Alive"], "t": 1790531814.963}
+{"id": "1790531814_0", "event": "tunnel_open", "target": "app.adjust.com:443", "t": 1790531815.143}
+{"id": "1790531814_0", "event": "tunnel_closed", "target": "app.adjust.com:443", "bytes": 451, "t": 1790531816.52}
+{"id": "1790531814_0", "event": "tunnel_closed", "target": "app.adjust.com:443", "bytes": 4107, "t": 1790531816.52}
+{"id": "1790531814_0", "event": "tunnel_done", "target": "app.adjust.com:443", "t": 1790531816.52}
+{"id": "1790531826_1", "event": "connect", "target": "app.adjust.com:443", "peer": "127.0.0.1:42112", "connect_headers": ["Proxy-Connection: Keep-Alive"], "t": 1790531826.103}
+{"id": "1790531826_1", "event": "tunnel_open", "target": "app.adjust.com:443", "t": 1790531826.275}
+{"id": "1790531826_1", "event": "tunnel_closed", "target": "app.adjust.com:443", "bytes": 451, "t": 1790531827.599}
+{"id": "1790531826_1", "event": "tunnel_closed", "target": "app.adjust.com:443", "bytes": 4161, "t": 1790531827.599}
+{"id": "1790531826_1", "event": "tunnel_done", "target": "app.adjust.com:443", "t": 1790531827.599}
+{"id": "1790532017_2", "event": "connect", "target": "app.adjust.com:443", "peer": "192.168.0.103:37760", "connect_headers": ["Host: app.adjust.com:443", "User-Agent: curl/7.73.0", "Proxy-Connection: Keep-Alive"], "t": 1790532017.496}
+{"id": "1790532017_2", "event": "tunnel_open", "target": "app.adjust.com:443", "t": 1790532017.648}
+{"id": "1790532017_2", "event": "tunnel_closed", "target": "app.adjust.com:443", "bytes": 721, "t": 1790532018.428}
+{"id": "1790532017_2", "event": "tunnel_closed", "target": "app.adjust.com:443", "bytes": 4485, "t": 1790532018.428}
+{"id": "1790532017_2", "event": "tunnel_done", "target": "app.adjust.com:443", "t": 1790532018.428}
+{"id": "1790532043_3", "event": "connect", "target": "firebaseinstallations.googleapis.com:443", "peer": "192.168.0.103:37762", "connect_headers": ["Host: firebaseinstallations.googleapis.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790532043.586}
+{"id": "1790532043_4", "event": "connect", "target": "firebase-settings.crashlytics.com:443", "peer": "192.168.0.103:37764", "connect_headers": ["Host: firebase-settings.crashlytics.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790532043.598}
+{"id": "1790532043_3", "event": "tunnel_open", "target": "firebaseinstallations.googleapis.com:443", "t": 1790532043.606}
+{"id": "1790532043_5", "event": "connect", "target": "api.personaclick.com:443", "peer": "192.168.0.103:37766", "connect_headers": ["Host: api.personaclick.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790532043.641}
+{"id": "1790532043_4", "event": "tunnel_open", "target": "firebase-settings.crashlytics.com:443", "t": 1790532043.643}
+{"id": "1790532043_6", "event": "connect", "target": "android.apis.google.com:443", "peer": "192.168.0.103:37768", "connect_headers": ["Host: android.apis.google.com:443", "Proxy-Connection: keep-alive", "User-Agent: com.google.android.gms/263436029 (Linux; U; Android 12; en_IN; moto g42; Build/S2SE32.28-28-4; Cronet/151.0.7922.83)"], "t": 1790532043.931}
+{"id": "1790532043_6", "event": "tunnel_open", "target": "android.apis.google.com:443", "t": 1790532044.009}
+{"id": "1790532043_5", "event": "tunnel_open", "target": "api.personaclick.com:443", "t": 1790532044.07}
+{"id": "1790532044_7", "event": "connect", "target": "connectivitycheck.gstatic.com:443", "peer": "192.168.0.103:37770", "connect_headers": ["Host: connectivitycheck.gstatic.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790532044.954}
+{"id": "1790532044_7", "event": "tunnel_open", "target": "connectivitycheck.gstatic.com:443", "t": 1790532044.975}
+{"id": "1790532045_8", "event": "connect", "target": "api-p1.penti.com.tr:443", "peer": "192.168.0.103:37772", "connect_headers": ["Host: api-p1.penti.com.tr:443", "Proxy-Connection: Keep-Alive", "User-Agent: okhttp/5.3.2"], "t": 1790532045.044}
+{"id": "1790532045_9", "event": "connect", "target": "firebaseremoteconfig.googleapis.com:443", "peer": "192.168.0.103:37774", "connect_headers": ["Host: firebaseremoteconfig.googleapis.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790532045.116}
+{"id": "1790532045_9", "event": "tunnel_open", "target": "firebaseremoteconfig.googleapis.com:443", "t": 1790532045.136}
+{"id": "1790532045_8", "event": "tunnel_open", "target": "api-p1.penti.com.tr:443", "t": 1790532045.579}
+{"id": "1790532043_5", "event": "tunnel_closed", "target": "api.personaclick.com:443", "bytes": 8675, "t": 1790532045.926}
+{"id": "1790532043_5", "event": "tunnel_closed", "target": "api.personaclick.com:443", "bytes": 893, "t": 1790532045.927}
+{"id": "1790532043_5", "event": "tunnel_done", "target": "api.personaclick.com:443", "t": 1790532045.927}
+{"id": "1790532045_10", "event": "connect", "target": "workspacevideo-pa.googleapis.com:443", "peer": "192.168.0.103:37780", "connect_headers": ["Host: workspacevideo-pa.googleapis.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: okhttp/5.4.0"], "t": 1790532045.981}
+{"id": "1790532046_11", "event": "connect", "target": "app.adjust.com:443", "peer": "192.168.0.103:37782", "connect_headers": ["Host: app.adjust.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790532046.024}
+{"id": "1790532045_10", "event": "tunnel_open", "target": "workspacevideo-pa.googleapis.com:443", "t": 1790532046.032}
+{"id": "1790532046_11", "event": "tunnel_open", "target": "app.adjust.com:443", "t": 1790532046.179}
+{"id": "1790532047_12", "event": "connect", "target": "prod-lt-playstoregatewayadapter-pa.googleapis.com:443", "peer": "192.168.0.103:37792", "connect_headers": ["Host: prod-lt-playstoregatewayadapter-pa.googleapis.com:443", "Proxy-Connection: keep-alive", "User-Agent: AndroidHttpClient (Linux; U; Android 12; en_IN; moto g42; Build/S2SE32.28-28-4; Cronet/150.0.7871.41)"], "t": 1790532047.567}
+{"id": "1790532047_12", "event": "tunnel_open", "target": "prod-lt-playstoregatewayadapter-pa.googleapis.com:443", "t": 1790532047.588}
+{"id": "1790532048_13", "event": "connect", "target": "api-p1.penti.com.tr:443", "peer": "192.168.0.103:37802", "connect_headers": ["Host: api-p1.penti.com.tr:443", "Proxy-Connection: Keep-Alive", "User-Agent: okhttp/5.3.2"], "t": 1790532048.477}
+{"id": "1790532048_13", "event": "tunnel_open", "target": "api-p1.penti.com.tr:443", "t": 1790532048.557}
+{"id": "1790532049_14", "event": "connect", "target": "api-p1.penti.com.tr:443", "peer": "192.168.0.103:37812", "connect_headers": ["Host: api-p1.penti.com.tr:443", "Proxy-Connection: Keep-Alive", "User-Agent: okhttp/5.3.2"], "t": 1790532049.356}
+{"id": "1790532049_14", "event": "tunnel_open", "target": "api-p1.penti.com.tr:443", "t": 1790532049.431}
+{"id": "1790532050_15", "event": "connect", "target": "api-p1.penti.com.tr:443", "peer": "192.168.0.103:37830", "connect_headers": ["Host: api-p1.penti.com.tr:443", "Proxy-Connection: Keep-Alive", "User-Agent: okhttp/5.3.2"], "t": 1790532050.766}
+{"id": "1790532050_15", "event": "tunnel_open", "target": "api-p1.penti.com.tr:443", "t": 1790532050.849}
+{"id": "1790532046_11", "event": "tunnel_closed", "target": "app.adjust.com:443", "bytes": 5553, "t": 1790532053.518}
+{"id": "1790532046_11", "event": "tunnel_closed", "target": "app.adjust.com:443", "bytes": 5272, "t": 1790532053.519}
+{"id": "1790532046_11", "event": "tunnel_done", "target": "app.adjust.com:443", "t": 1790532053.519}
+{"id": "1790532056_16", "event": "connect", "target": "play-fe.googleapis.com:443", "peer": "192.168.0.103:37860", "connect_headers": ["Host: play-fe.googleapis.com:443", "Proxy-Connection: keep-alive", "User-Agent: AndroidHttpClient (Linux; U; Android 12; en_IN; moto g42; Build/S2SE32.28-28-4; Cronet/150.0.7871.41)"], "t": 1790532056.632}
+{"id": "1790532056_16", "event": "tunnel_open", "target": "play-fe.googleapis.com:443", "t": 1790532056.652}
+{"id": "1790532045_8", "event": "tunnel_closed", "target": "api-p1.penti.com.tr:443", "bytes": 10717, "t": 1790532060.659}
+{"id": "1790532045_8", "event": "tunnel_closed", "target": "api-p1.penti.com.tr:443", "bytes": 908, "t": 1790532060.66}
+{"id": "1790532045_8", "event": "tunnel_done", "target": "api-p1.penti.com.tr:443", "t": 1790532060.66}
+{"id": "1790532048_13", "event": "tunnel_closed", "target": "api-p1.penti.com.tr:443", "bytes": 7460, "t": 1790532063.677}
+{"id": "1790532048_13", "event": "tunnel_closed", "target": "api-p1.penti.com.tr:443", "bytes": 946, "t": 1790532063.677}
+{"id": "1790532048_13", "event": "tunnel_done", "target": "api-p1.penti.com.tr:443", "t": 1790532063.677}
+{"id": "1790532050_15", "event": "tunnel_closed", "target": "api-p1.penti.com.tr:443", "bytes": 41953, "t": 1790532066.018}
+{"id": "1790532050_15", "event": "tunnel_closed", "target": "api-p1.penti.com.tr:443", "bytes": 2069, "t": 1790532066.018}
+{"id": "1790532050_15", "event": "tunnel_done", "target": "api-p1.penti.com.tr:443", "t": 1790532066.018}
+{"id": "1790532049_14", "event": "tunnel_closed", "target": "api-p1.penti.com.tr:443", "bytes": 509992, "t": 1790532067.089}
+{"id": "1790532049_14", "event": "tunnel_closed", "target": "api-p1.penti.com.tr:443", "bytes": 3545, "t": 1790532067.09}
+{"id": "1790532049_14", "event": "tunnel_done", "target": "api-p1.penti.com.tr:443", "t": 1790532067.09}
+{"id": "1790532078_17", "event": "connect", "target": "firebaselogging-pa.googleapis.com:443", "peer": "192.168.0.103:37862", "connect_headers": ["Host: firebaselogging-pa.googleapis.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790532078.939}
+{"id": "1790532078_17", "event": "tunnel_open", "target": "firebaselogging-pa.googleapis.com:443", "t": 1790532078.964}
+{"id": "1790532079_18", "event": "connect", "target": "youtubei.googleapis.com:443", "peer": "192.168.0.103:37864", "connect_headers": ["Host: youtubei.googleapis.com:443", "Proxy-Connection: keep-alive", "User-Agent: com.google.android.youtube/1561296049 (Linux; U; Android 12; en_IN; moto g42; Build/S2SE32.28-28-4; Cronet/151.0.7922.83)"], "t": 1790532079.913}
+{"id": "1790532079_18", "event": "tunnel_open", "target": "youtubei.googleapis.com:443", "t": 1790532079.935}
+{"id": "1790532080_19", "event": "connect", "target": "people-pa.googleapis.com:443", "peer": "192.168.0.103:37866", "connect_headers": ["Host: people-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790532080.127}
+{"id": "1790532080_19", "event": "tunnel_open", "target": "people-pa.googleapis.com:443", "t": 1790532080.147}
+{"id": "1790532080_20", "event": "connect", "target": "i.ytimg.com:443", "peer": "192.168.0.103:37868", "connect_headers": ["Host: i.ytimg.com:443", "Proxy-Connection: keep-alive", "User-Agent: com.google.android.youtube/1561296049 (Linux; U; Android 12; en_IN; moto g42; Build/S2SE32.28-28-4; Cronet/151.0.7922.83)"], "t": 1790532080.724}
+{"id": "1790532080_21", "event": "connect", "target": "sqs.ap-northeast-1.amazonaws.com:443", "peer": "192.168.0.103:37872", "connect_headers": ["Host: sqs.ap-northeast-1.amazonaws.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790532080.725}
+{"id": "1790532080_20", "event": "tunnel_open", "target": "i.ytimg.com:443", "t": 1790532080.825}
+{"id": "1790532080_21", "event": "tunnel_open", "target": "sqs.ap-northeast-1.amazonaws.com:443", "t": 1790532080.895}
+{"id": "1790532080_22", "event": "connect", "target": "firebaseremoteconfigrealtime.googleapis.com:443", "peer": "192.168.0.103:37874", "connect_headers": ["Host: firebaseremoteconfigrealtime.googleapis.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790532080.977}
+{"id": "1790532080_22", "event": "tunnel_open", "target": "firebaseremoteconfigrealtime.googleapis.com:443", "t": 1790532080.999}
+{"id": "1790532081_23", "event": "connect", "target": "graph.facebook.com:443", "peer": "192.168.0.103:37876", "connect_headers": ["Host: graph.facebook.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790532081.764}
+{"id": "1790532081_23", "event": "tunnel_open", "target": "graph.facebook.com:443", "t": 1790532081.78}
+{"id": "1790532081_24", "event": "connect", "target": "graph.facebook.com:443", "peer": "192.168.0.103:37878", "connect_headers": ["Host: graph.facebook.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790532081.807}
+{"id": "1790532081_24", "event": "tunnel_open", "target": "graph.facebook.com:443", "t": 1790532081.827}
+{"id": "1790532043_3", "event": "tunnel_closed", "target": "firebaseinstallations.googleapis.com:443", "bytes": 1374, "t": 1790532082.349}
+{"id": "1790532043_3", "event": "tunnel_closed", "target": "firebaseinstallations.googleapis.com:443", "bytes": 6201, "t": 1790532082.35}
+{"id": "1790532043_3", "event": "tunnel_done", "target": "firebaseinstallations.googleapis.com:443", "t": 1790532082.35}
+{"id": "1790532082_25", "event": "connect", "target": "firebaseremoteconfig.googleapis.com:443", "peer": "192.168.0.103:37880", "connect_headers": ["Host: firebaseremoteconfig.googleapis.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790532082.875}
+{"id": "1790532082_25", "event": "tunnel_open", "target": "firebaseremoteconfig.googleapis.com:443", "t": 1790532082.887}
+{"id": "1790532082_26", "event": "connect", "target": "firebaseremoteconfig.googleapis.com:443", "peer": "192.168.0.103:37882", "connect_headers": ["Host: firebaseremoteconfig.googleapis.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790532082.907}
+{"id": "1790532082_26", "event": "tunnel_open", "target": "firebaseremoteconfig.googleapis.com:443", "t": 1790532082.917}
+{"id": "1790532083_27", "event": "connect", "target": "googlehomefoyer-pa.googleapis.com:443", "peer": "192.168.0.103:37884", "connect_headers": ["Host: googlehomefoyer-pa.googleapis.com:443", "Proxy-Connection: keep-alive", "User-Agent: AndroidHttpClient (Linux; U; Android 12; en_IN; moto g42; Build/S2SE32.28-28-4; Cronet/150.0.7871.41)"], "t": 1790532083.551}
+{"id": "1790532083_27", "event": "tunnel_open", "target": "googlehomefoyer-pa.googleapis.com:443", "t": 1790532083.573}
+{"id": "1790532084_28", "event": "connect", "target": "connectivitycheck.gstatic.com:443", "peer": "192.168.0.103:37886", "connect_headers": ["Host: connectivitycheck.gstatic.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790532084.398}
+{"id": "1790532084_28", "event": "tunnel_open", "target": "connectivitycheck.gstatic.com:443", "t": 1790532084.411}
+{"id": "1790532045_10", "event": "tunnel_closed", "target": "workspacevideo-pa.googleapis.com:443", "bytes": 1138, "t": 1790532106.427}
+{"id": "1790532045_10", "event": "tunnel_closed", "target": "workspacevideo-pa.googleapis.com:443", "bytes": 5284, "t": 1790532106.428}
+{"id": "1790532045_10", "event": "tunnel_done", "target": "workspacevideo-pa.googleapis.com:443", "t": 1790532106.428}
+{"id": "1790532082_26", "event": "tunnel_closed", "target": "firebaseremoteconfig.googleapis.com:443", "bytes": 2314, "t": 1790532109.273}
+{"id": "1790532082_25", "event": "tunnel_closed", "target": "firebaseremoteconfig.googleapis.com:443", "bytes": 2314, "t": 1790532109.274}
+{"id": "1790532081_23", "event": "tunnel_closed", "target": "graph.facebook.com:443", "bytes": 1602, "t": 1790532109.275}
+{"id": "1790532081_24", "event": "tunnel_closed", "target": "graph.facebook.com:443", "bytes": 1291, "t": 1790532109.275}
+{"id": "1790532080_22", "event": "tunnel_closed", "target": "firebaseremoteconfigrealtime.googleapis.com:443", "bytes": 1733, "t": 1790532109.276}
+{"id": "1790532080_21", "event": "tunnel_closed", "target": "sqs.ap-northeast-1.amazonaws.com:443", "bytes": 10864, "t": 1790532109.276}
+{"id": "1790532082_26", "event": "tunnel_closed", "target": "firebaseremoteconfig.googleapis.com:443", "bytes": 5783, "t": 1790532109.276}
+{"id": "1790532082_26", "event": "tunnel_done", "target": "firebaseremoteconfig.googleapis.com:443", "t": 1790532109.276}
+{"id": "1790532082_25", "event": "tunnel_closed", "target": "firebaseremoteconfig.googleapis.com:443", "bytes": 5745, "t": 1790532109.276}
+{"id": "1790532082_25", "event": "tunnel_done", "target": "firebaseremoteconfig.googleapis.com:443", "t": 1790532109.277}
+{"id": "1790532081_23", "event": "tunnel_closed", "target": "graph.facebook.com:443", "bytes": 7965, "t": 1790532109.277}
+{"id": "1790532081_23", "event": "tunnel_done", "target": "graph.facebook.com:443", "t": 1790532109.277}
+{"id": "1790532081_24", "event": "tunnel_closed", "target": "graph.facebook.com:443", "bytes": 7038, "t": 1790532109.278}
+{"id": "1790532081_24", "event": "tunnel_done", "target": "graph.facebook.com:443", "t": 1790532109.278}
+{"id": "1790532080_22", "event": "tunnel_closed", "target": "firebaseremoteconfigrealtime.googleapis.com:443", "bytes": 4480, "t": 1790532109.278}
+{"id": "1790532080_22", "event": "tunnel_done", "target": "firebaseremoteconfigrealtime.googleapis.com:443", "t": 1790532109.278}
+{"id": "1790532080_21", "event": "tunnel_closed", "target": "sqs.ap-northeast-1.amazonaws.com:443", "bytes": 6606, "t": 1790532109.278}
+{"id": "1790532080_21", "event": "tunnel_done", "target": "sqs.ap-northeast-1.amazonaws.com:443", "t": 1790532109.278}
+{"id": "1790532110_29", "event": "connect", "target": "play.googleapis.com:443", "peer": "192.168.0.103:37894", "connect_headers": ["Host: play.googleapis.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790532110.649}
+{"id": "1790532110_29", "event": "tunnel_open", "target": "play.googleapis.com:443", "t": 1790532110.675}
+{"id": "1790532110_29", "event": "tunnel_closed", "target": "play.googleapis.com:443", "bytes": 7565, "t": 1790532111.06}
+{"id": "1790532110_29", "event": "tunnel_closed", "target": "play.googleapis.com:443", "bytes": 2803, "t": 1790532111.061}
+{"id": "1790532110_29", "event": "tunnel_done", "target": "play.googleapis.com:443", "t": 1790532111.061}
+{"id": "1790532112_30", "event": "connect", "target": "play-fe.googleapis.com:443", "peer": "192.168.0.103:37896", "connect_headers": ["Host: play-fe.googleapis.com:443", "Proxy-Connection: keep-alive", "User-Agent: AndroidHttpClient (Linux; U; Android 12; en_IN; moto g42; Build/S2SE32.28-28-4; Cronet/150.0.7871.41)"], "t": 1790532112.913}
+{"id": "1790532112_30", "event": "tunnel_open", "target": "play-fe.googleapis.com:443", "t": 1790532112.924}
+{"id": "1790532136_32", "event": "connect", "target": "play.googleapis.com:443", "peer": "192.168.0.103:37900", "connect_headers": ["Host: play.googleapis.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: okhttp/5.4.0"], "t": 1790532136.5}
+{"id": "1790532136_31", "event": "connect", "target": "play.googleapis.com:443", "peer": "192.168.0.103:37898", "connect_headers": ["Host: play.googleapis.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: okhttp/5.4.0"], "t": 1790532136.501}
+{"id": "1790532136_33", "event": "connect", "target": "play.googleapis.com:443", "peer": "192.168.0.103:37902", "connect_headers": ["Host: play.googleapis.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: okhttp/5.4.0"], "t": 1790532136.502}
+{"id": "1790532136_35", "event": "connect", "target": "play.googleapis.com:443", "peer": "192.168.0.103:37906", "connect_headers": ["Host: play.googleapis.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: okhttp/5.4.0"], "t": 1790532136.503}
+{"id": "1790532136_36", "event": "connect", "target": "play.googleapis.com:443", "peer": "192.168.0.103:37908", "connect_headers": ["Host: play.googleapis.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: okhttp/5.4.0"], "t": 1790532136.505}
+{"id": "1790532136_34", "event": "connect", "target": "play.googleapis.com:443", "peer": "192.168.0.103:37904", "connect_headers": ["Host: play.googleapis.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: okhttp/5.4.0"], "t": 1790532136.506}
+{"id": "1790532136_33", "event": "tunnel_open", "target": "play.googleapis.com:443", "t": 1790532136.515}
+{"id": "1790532136_34", "event": "tunnel_open", "target": "play.googleapis.com:443", "t": 1790532136.517}
+{"id": "1790532136_32", "event": "tunnel_open", "target": "play.googleapis.com:443", "t": 1790532136.517}
+{"id": "1790532136_31", "event": "tunnel_open", "target": "play.googleapis.com:443", "t": 1790532136.517}
+{"id": "1790532136_36", "event": "tunnel_open", "target": "play.googleapis.com:443", "t": 1790532136.519}
+{"id": "1790532136_35", "event": "tunnel_open", "target": "play.googleapis.com:443", "t": 1790532136.519}
+{"id": "1790532136_37", "event": "connect", "target": "play.googleapis.com:443", "peer": "192.168.0.103:37910", "connect_headers": ["Host: play.googleapis.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: okhttp/5.4.0"], "t": 1790532136.533}
+{"id": "1790532136_37", "event": "tunnel_open", "target": "play.googleapis.com:443", "t": 1790532136.542}
+{"id": "1790532136_38", "event": "connect", "target": "play.googleapis.com:443", "peer": "192.168.0.103:37912", "connect_headers": ["Host: play.googleapis.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: okhttp/5.4.0"], "t": 1790532136.549}
+{"id": "1790532136_39", "event": "connect", "target": "play.googleapis.com:443", "peer": "192.168.0.103:37914", "connect_headers": ["Host: play.googleapis.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: okhttp/5.4.0"], "t": 1790532136.549}
+{"id": "1790532136_38", "event": "tunnel_open", "target": "play.googleapis.com:443", "t": 1790532136.566}
+{"id": "1790532136_39", "event": "tunnel_open", "target": "play.googleapis.com:443", "t": 1790532136.566}
+{"id": "1790532136_40", "event": "connect", "target": "play.googleapis.com:443", "peer": "192.168.0.103:37916", "connect_headers": ["Host: play.googleapis.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: okhttp/5.4.0"], "t": 1790532136.571}
+{"id": "1790532136_40", "event": "tunnel_open", "target": "play.googleapis.com:443", "t": 1790532136.58}
+{"id": "1790532136_34", "event": "tunnel_closed", "target": "play.googleapis.com:443", "bytes": 5153, "t": 1790532136.621}
+{"id": "1790532136_34", "event": "tunnel_closed", "target": "play.googleapis.com:443", "bytes": 739, "t": 1790532136.621}
+{"id": "1790532136_34", "event": "tunnel_done", "target": "play.googleapis.com:443", "t": 1790532136.621}
+{"id": "1790532136_32", "event": "tunnel_closed", "target": "play.googleapis.com:443", "bytes": 5152, "t": 1790532136.622}
+{"id": "1790532136_32", "event": "tunnel_closed", "target": "play.googleapis.com:443", "bytes": 739, "t": 1790532136.622}
+{"id": "1790532136_32", "event": "tunnel_done", "target": "play.googleapis.com:443", "t": 1790532136.622}
+{"id": "1790532136_33", "event": "tunnel_closed", "target": "play.googleapis.com:443", "bytes": 5154, "t": 1790532136.684}
+{"id": "1790532136_36", "event": "tunnel_closed", "target": "play.googleapis.com:443", "bytes": 5152, "t": 1790532136.685}
+{"id": "1790532136_31", "event": "tunnel_closed", "target": "play.googleapis.com:443", "bytes": 5153, "t": 1790532136.685}
+{"id": "1790532136_33", "event": "tunnel_closed", "target": "play.googleapis.com:443", "bytes": 739, "t": 1790532136.685}
+{"id": "1790532136_33", "event": "tunnel_done", "target": "play.googleapis.com:443", "t": 1790532136.685}
+{"id": "1790532136_36", "event": "tunnel_closed", "target": "play.googleapis.com:443", "bytes": 739, "t": 1790532136.686}
+{"id": "1790532136_36", "event": "tunnel_done", "target": "play.googleapis.com:443", "t": 1790532136.686}
+{"id": "1790532136_31", "event": "tunnel_closed", "target": "play.googleapis.com:443", "bytes": 739, "t": 1790532136.686}
+{"id": "1790532136_31", "event": "tunnel_done", "target": "play.googleapis.com:443", "t": 1790532136.686}
+{"id": "1790532136_37", "event": "tunnel_closed", "target": "play.googleapis.com:443", "bytes": 5154, "t": 1790532136.704}
+{"id": "1790532136_37", "event": "tunnel_closed", "target": "play.googleapis.com:443", "bytes": 739, "t": 1790532136.704}
+{"id": "1790532136_37", "event": "tunnel_done", "target": "play.googleapis.com:443", "t": 1790532136.704}
+{"id": "1790532136_39", "event": "tunnel_closed", "target": "play.googleapis.com:443", "bytes": 5153, "t": 1790532136.767}
+{"id": "1790532136_40", "event": "tunnel_closed", "target": "play.googleapis.com:443", "bytes": 5152, "t": 1790532136.768}
+{"id": "1790532136_39", "event": "tunnel_closed", "target": "play.googleapis.com:443", "bytes": 739, "t": 1790532136.768}
+{"id": "1790532136_39", "event": "tunnel_done", "target": "play.googleapis.com:443", "t": 1790532136.768}
+{"id": "1790532136_40", "event": "tunnel_closed", "target": "play.googleapis.com:443", "bytes": 739, "t": 1790532136.768}
+{"id": "1790532136_40", "event": "tunnel_done", "target": "play.googleapis.com:443", "t": 1790532136.768}
+{"id": "1790532136_38", "event": "tunnel_closed", "target": "play.googleapis.com:443", "bytes": 739, "t": 1790532136.914}
+{"id": "1790532136_38", "event": "tunnel_closed", "target": "play.googleapis.com:443", "bytes": 5153, "t": 1790532136.915}
+{"id": "1790532136_38", "event": "tunnel_done", "target": "play.googleapis.com:443", "t": 1790532136.915}
+{"id": "1790532136_35", "event": "tunnel_closed", "target": "play.googleapis.com:443", "bytes": 23340, "t": 1790532197.128}
+{"id": "1790532136_35", "event": "tunnel_closed", "target": "play.googleapis.com:443", "bytes": 8517, "t": 1790532197.128}
+{"id": "1790532136_35", "event": "tunnel_done", "target": "play.googleapis.com:443", "t": 1790532197.128}
+{"id": "1790532044_7", "event": "tunnel_closed", "target": "connectivitycheck.gstatic.com:443", "bytes": 4874, "t": 1790532285.154}
+{"id": "1790532044_7", "event": "tunnel_closed", "target": "connectivitycheck.gstatic.com:443", "bytes": 835, "t": 1790532285.154}
+{"id": "1790532044_7", "event": "tunnel_done", "target": "connectivitycheck.gstatic.com:443", "t": 1790532285.154}
+{"id": "1790532043_4", "event": "tunnel_closed", "target": "firebase-settings.crashlytics.com:443", "bytes": 7082, "t": 1790532285.212}
+{"id": "1790532043_4", "event": "tunnel_closed", "target": "firebase-settings.crashlytics.com:443", "bytes": 1981, "t": 1790532285.213}
+{"id": "1790532043_4", "event": "tunnel_done", "target": "firebase-settings.crashlytics.com:443", "t": 1790532285.213}
+{"id": "1790532045_9", "event": "tunnel_closed", "target": "firebaseremoteconfig.googleapis.com:443", "bytes": 11863, "t": 1790532285.553}
+{"id": "1790532045_9", "event": "tunnel_closed", "target": "firebaseremoteconfig.googleapis.com:443", "bytes": 2245, "t": 1790532285.553}
+{"id": "1790532045_9", "event": "tunnel_done", "target": "firebaseremoteconfig.googleapis.com:443", "t": 1790532285.553}
+{"id": "1790532047_12", "event": "tunnel_closed", "target": "prod-lt-playstoregatewayadapter-pa.googleapis.com:443", "bytes": 7231, "t": 1790532288.257}
+{"id": "1790532047_12", "event": "tunnel_closed", "target": "prod-lt-playstoregatewayadapter-pa.googleapis.com:443", "bytes": 9045, "t": 1790532288.258}
+{"id": "1790532047_12", "event": "tunnel_done", "target": "prod-lt-playstoregatewayadapter-pa.googleapis.com:443", "t": 1790532288.258}
+{"id": "1790532056_16", "event": "tunnel_closed", "target": "play-fe.googleapis.com:443", "bytes": 5900, "t": 1790532296.846}
+{"id": "1790532056_16", "event": "tunnel_closed", "target": "play-fe.googleapis.com:443", "bytes": 7212, "t": 1790532296.846}
+{"id": "1790532056_16", "event": "tunnel_done", "target": "play-fe.googleapis.com:443", "t": 1790532296.846}
+{"id": "1790532080_20", "event": "tunnel_closed", "target": "i.ytimg.com:443", "bytes": 2197, "t": 1790532321.218}
+{"id": "1790532080_20", "event": "tunnel_closed", "target": "i.ytimg.com:443", "bytes": 6985, "t": 1790532321.219}
+{"id": "1790532080_20", "event": "tunnel_done", "target": "i.ytimg.com:443", "t": 1790532321.219}
+{"id": "1790532080_19", "event": "tunnel_closed", "target": "people-pa.googleapis.com:443", "bytes": 1707, "t": 1790532321.642}
+{"id": "1790532080_19", "event": "tunnel_closed", "target": "people-pa.googleapis.com:443", "bytes": 5449, "t": 1790532321.642}
+{"id": "1790532080_19", "event": "tunnel_done", "target": "people-pa.googleapis.com:443", "t": 1790532321.642}
+{"id": "1790532078_17", "event": "tunnel_closed", "target": "firebaselogging-pa.googleapis.com:443", "bytes": 5821, "t": 1790532322.347}
+{"id": "1790532078_17", "event": "tunnel_closed", "target": "firebaselogging-pa.googleapis.com:443", "bytes": 3143, "t": 1790532322.348}
+{"id": "1790532078_17", "event": "tunnel_done", "target": "firebaselogging-pa.googleapis.com:443", "t": 1790532322.348}
+{"id": "1790532083_27", "event": "tunnel_closed", "target": "googlehomefoyer-pa.googleapis.com:443", "bytes": 3541, "t": 1790532324.392}
+{"id": "1790532083_27", "event": "tunnel_closed", "target": "googlehomefoyer-pa.googleapis.com:443", "bytes": 87880, "t": 1790532324.392}
+{"id": "1790532083_27", "event": "tunnel_done", "target": "googlehomefoyer-pa.googleapis.com:443", "t": 1790532324.392}
+{"id": "1790532084_28", "event": "tunnel_closed", "target": "connectivitycheck.gstatic.com:443", "bytes": 4874, "t": 1790532324.553}
+{"id": "1790532084_28", "event": "tunnel_closed", "target": "connectivitycheck.gstatic.com:443", "bytes": 835, "t": 1790532324.554}
+{"id": "1790532084_28", "event": "tunnel_done", "target": "connectivitycheck.gstatic.com:443", "t": 1790532324.554}
+{"id": "1790532346_41", "event": "connect", "target": "play.googleapis.com:443", "peer": "192.168.0.103:37918", "connect_headers": ["Host: play.googleapis.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790532346.688}
+{"id": "1790532346_41", "event": "tunnel_open", "target": "play.googleapis.com:443", "t": 1790532346.7}
+{"id": "1790532346_41", "event": "tunnel_closed", "target": "play.googleapis.com:443", "bytes": 7558, "t": 1790532347.334}
+{"id": "1790532346_41", "event": "tunnel_closed", "target": "play.googleapis.com:443", "bytes": 3986, "t": 1790532347.334}
+{"id": "1790532346_41", "event": "tunnel_done", "target": "play.googleapis.com:443", "t": 1790532347.334}
+{"id": "1790532112_30", "event": "tunnel_closed", "target": "play-fe.googleapis.com:443", "bytes": 7165, "t": 1790532353.165}
+{"id": "1790532112_30", "event": "tunnel_closed", "target": "play-fe.googleapis.com:443", "bytes": 4389, "t": 1790532353.166}
+{"id": "1790532112_30", "event": "tunnel_done", "target": "play-fe.googleapis.com:443", "t": 1790532353.166}
+{"id": "1790532079_18", "event": "tunnel_closed", "target": "youtubei.googleapis.com:443", "bytes": 8380, "t": 1790532443.477}
+{"id": "1790532079_18", "event": "tunnel_closed", "target": "youtubei.googleapis.com:443", "bytes": 8706, "t": 1790532443.478}
+{"id": "1790532079_18", "event": "tunnel_done", "target": "youtubei.googleapis.com:443", "t": 1790532443.478}
+{"id": "1790532043_6", "event": "tunnel_closed", "target": "android.apis.google.com:443", "bytes": 33892, "t": 1790532782.2}
+{"id": "1790532043_6", "event": "tunnel_closed", "target": "android.apis.google.com:443", "bytes": 18573, "t": 1790532782.201}
+{"id": "1790532043_6", "event": "tunnel_done", "target": "android.apis.google.com:443", "t": 1790532782.201}
+{"id": "1790532814_42", "event": "connect", "target": "android.apis.google.com:443", "peer": "192.168.0.103:37920", "connect_headers": ["Host: android.apis.google.com:443", "Proxy-Connection: keep-alive", "User-Agent: com.google.android.gms/263436029 (Linux; U; Android 12; en_IN; moto g42; Build/S2SE32.28-28-4; Cronet/151.0.7922.83)"], "t": 1790532814.169}
+{"id": "1790532814_43", "event": "connect", "target": "android.apis.google.com:443", "peer": "192.168.0.103:37922", "connect_headers": ["Host: android.apis.google.com:443", "Proxy-Connection: keep-alive", "User-Agent: com.google.android.gms/263436029 (Linux; U; Android 12; en_IN; moto g42; Build/S2SE32.28-28-4; Cronet/151.0.7922.83)"], "t": 1790532814.172}
+{"id": "1790532814_42", "event": "tunnel_open", "target": "android.apis.google.com:443", "t": 1790532814.21}
+{"id": "1790532814_43", "event": "tunnel_open", "target": "android.apis.google.com:443", "t": 1790532814.212}
+{"id": "1790532814_44", "event": "connect", "target": "sqs.ap-northeast-1.amazonaws.com:443", "peer": "192.168.0.103:37926", "connect_headers": ["Host: sqs.ap-northeast-1.amazonaws.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790532814.808}
+{"id": "1790532814_44", "event": "tunnel_open", "target": "sqs.ap-northeast-1.amazonaws.com:443", "t": 1790532814.972}
+{"id": "1790532815_45", "event": "connect", "target": "firebaseremoteconfigrealtime.googleapis.com:443", "peer": "192.168.0.103:37928", "connect_headers": ["Host: firebaseremoteconfigrealtime.googleapis.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790532815.433}
+{"id": "1790532815_45", "event": "tunnel_open", "target": "firebaseremoteconfigrealtime.googleapis.com:443", "t": 1790532815.5}
+{"id": "1790532815_46", "event": "connect", "target": "graph.facebook.com:443", "peer": "192.168.0.103:37932", "connect_headers": ["Host: graph.facebook.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790532815.696}
+{"id": "1790532815_47", "event": "connect", "target": "graph.facebook.com:443", "peer": "192.168.0.103:37930", "connect_headers": ["Host: graph.facebook.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790532815.722}
+{"id": "1790532815_46", "event": "tunnel_open", "target": "graph.facebook.com:443", "t": 1790532815.732}
+{"id": "1790532815_47", "event": "tunnel_open", "target": "graph.facebook.com:443", "t": 1790532815.734}
+{"id": "1790532815_48", "event": "connect", "target": "taskassist-pa.googleapis.com:443", "peer": "192.168.0.103:37934", "connect_headers": ["Host: taskassist-pa.googleapis.com:443", "Proxy-Connection: keep-alive", "User-Agent: AndroidHttpClient (Linux; U; Android 12; en_IN; moto g42; Build/S2SE32.28-28-4; Cronet/150.0.7871.41)"], "t": 1790532815.809}
+{"id": "1790532815_48", "event": "tunnel_open", "target": "taskassist-pa.googleapis.com:443", "t": 1790532815.827}
+{"id": "1790532815_49", "event": "connect", "target": "firebaseremoteconfig.googleapis.com:443", "peer": "192.168.0.103:37936", "connect_headers": ["Host: firebaseremoteconfig.googleapis.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790532815.873}
+{"id": "1790532815_50", "event": "connect", "target": "firebaseremoteconfig.googleapis.com:443", "peer": "192.168.0.103:37938", "connect_headers": ["Host: firebaseremoteconfig.googleapis.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790532815.88}
+{"id": "1790532815_49", "event": "tunnel_open", "target": "firebaseremoteconfig.googleapis.com:443", "t": 1790532815.905}
+{"id": "1790532815_50", "event": "tunnel_open", "target": "firebaseremoteconfig.googleapis.com:443", "t": 1790532815.916}
+{"id": "1790532816_51", "event": "connect", "target": "connectivitycheck.gstatic.com:443", "peer": "192.168.0.103:37940", "connect_headers": ["Host: connectivitycheck.gstatic.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790532816.674}
+{"id": "1790532816_51", "event": "tunnel_open", "target": "connectivitycheck.gstatic.com:443", "t": 1790532816.712}
+{"id": "1790532826_52", "event": "connect", "target": "youtubei.googleapis.com:443", "peer": "192.168.0.103:37942", "connect_headers": ["Host: youtubei.googleapis.com:443", "Proxy-Connection: keep-alive", "User-Agent: com.google.android.apps.youtube.music/93851240 (Linux; U; Android 12; en_IN; moto g42; Build/S2SE32.28-28-4; Cronet/154.0.8037.21)"], "t": 1790532826.137}
+{"id": "1790532826_52", "event": "tunnel_open", "target": "youtubei.googleapis.com:443", "t": 1790532826.157}
+{"id": "1790532815_50", "event": "tunnel_closed", "target": "firebaseremoteconfig.googleapis.com:443", "bytes": 2314, "t": 1790532843.346}
+{"id": "1790532815_49", "event": "tunnel_closed", "target": "firebaseremoteconfig.googleapis.com:443", "bytes": 2314, "t": 1790532843.346}
+{"id": "1790532815_46", "event": "tunnel_closed", "target": "graph.facebook.com:443", "bytes": 1301, "t": 1790532843.346}
+{"id": "1790532815_47", "event": "tunnel_closed", "target": "graph.facebook.com:443", "bytes": 1592, "t": 1790532843.347}
+{"id": "1790532815_50", "event": "tunnel_closed", "target": "firebaseremoteconfig.googleapis.com:443", "bytes": 5615, "t": 1790532843.347}
+{"id": "1790532815_50", "event": "tunnel_done", "target": "firebaseremoteconfig.googleapis.com:443", "t": 1790532843.347}
+{"id": "1790532815_49", "event": "tunnel_closed", "target": "firebaseremoteconfig.googleapis.com:443", "bytes": 5774, "t": 1790532843.348}
+{"id": "1790532815_49", "event": "tunnel_done", "target": "firebaseremoteconfig.googleapis.com:443", "t": 1790532843.348}
+{"id": "1790532815_46", "event": "tunnel_closed", "target": "graph.facebook.com:443", "bytes": 8177, "t": 1790532843.348}
+{"id": "1790532815_46", "event": "tunnel_done", "target": "graph.facebook.com:443", "t": 1790532843.348}
+{"id": "1790532815_45", "event": "tunnel_closed", "target": "firebaseremoteconfigrealtime.googleapis.com:443", "bytes": 1733, "t": 1790532843.349}
+{"id": "1790532814_44", "event": "tunnel_closed", "target": "sqs.ap-northeast-1.amazonaws.com:443", "bytes": 10864, "t": 1790532843.349}
+{"id": "1790532815_47", "event": "tunnel_closed", "target": "graph.facebook.com:443", "bytes": 6799, "t": 1790532843.349}
+{"id": "1790532815_47", "event": "tunnel_done", "target": "graph.facebook.com:443", "t": 1790532843.349}
+{"id": "1790532815_45", "event": "tunnel_closed", "target": "firebaseremoteconfigrealtime.googleapis.com:443", "bytes": 4480, "t": 1790532843.35}
+{"id": "1790532815_45", "event": "tunnel_done", "target": "firebaseremoteconfigrealtime.googleapis.com:443", "t": 1790532843.35}
+{"id": "1790532814_44", "event": "tunnel_closed", "target": "sqs.ap-northeast-1.amazonaws.com:443", "bytes": 6606, "t": 1790532843.35}
+{"id": "1790532814_44", "event": "tunnel_done", "target": "sqs.ap-northeast-1.amazonaws.com:443", "t": 1790532843.35}
+{"id": "1790532854_53", "event": "connect", "target": "play-fe.googleapis.com:443", "peer": "192.168.0.103:37950", "connect_headers": ["Host: play-fe.googleapis.com:443", "Proxy-Connection: keep-alive", "User-Agent: AndroidHttpClient (Linux; U; Android 12; en_IN; moto g42; Build/S2SE32.28-28-4; Cronet/150.0.7871.41)"], "t": 1790532854.711}
+{"id": "1790532854_53", "event": "tunnel_open", "target": "play-fe.googleapis.com:443", "t": 1790532854.729}
+{"id": "1790533040_54", "event": "connect", "target": "youtubei.googleapis.com:443", "peer": "192.168.0.103:37952", "connect_headers": ["Host: youtubei.googleapis.com:443", "Proxy-Connection: keep-alive", "User-Agent: com.google.android.youtube/1561296049 (Linux; U; Android 12; en_IN; moto g42; Build/S2SE32.28-28-4; Cronet/151.0.7922.83)"], "t": 1790533040.757}
+{"id": "1790533040_54", "event": "tunnel_open", "target": "youtubei.googleapis.com:443", "t": 1790533040.776}
+{"id": "1790532815_48", "event": "tunnel_closed", "target": "taskassist-pa.googleapis.com:443", "bytes": 2877, "t": 1790533056.442}
+{"id": "1790532815_48", "event": "tunnel_closed", "target": "taskassist-pa.googleapis.com:443", "bytes": 7263, "t": 1790533056.443}
+{"id": "1790532815_48", "event": "tunnel_done", "target": "taskassist-pa.googleapis.com:443", "t": 1790533056.443}
+{"id": "1790532816_51", "event": "tunnel_closed", "target": "connectivitycheck.gstatic.com:443", "bytes": 988, "t": 1790533056.842}
+{"id": "1790532816_51", "event": "tunnel_closed", "target": "connectivitycheck.gstatic.com:443", "bytes": 896, "t": 1790533056.843}
+{"id": "1790532816_51", "event": "tunnel_done", "target": "connectivitycheck.gstatic.com:443", "t": 1790533056.843}
+{"id": "1790532814_43", "event": "tunnel_closed", "target": "android.apis.google.com:443", "bytes": 2577, "t": 1790533059.331}
+{"id": "1790532814_43", "event": "tunnel_closed", "target": "android.apis.google.com:443", "bytes": 2372, "t": 1790533059.331}
+{"id": "1790532814_43", "event": "tunnel_done", "target": "android.apis.google.com:443", "t": 1790533059.331}
+{"id": "1790532854_53", "event": "tunnel_closed", "target": "play-fe.googleapis.com:443", "bytes": 7229, "t": 1790533094.951}
+{"id": "1790532854_53", "event": "tunnel_closed", "target": "play-fe.googleapis.com:443", "bytes": 4358, "t": 1790533094.952}
+{"id": "1790532854_53", "event": "tunnel_done", "target": "play-fe.googleapis.com:443", "t": 1790533094.952}
+{"id": "1790533151_55", "event": "connect", "target": "app.adjust.com:443", "peer": "127.0.0.1:40046", "connect_headers": ["Host: app.adjust.com:443"], "t": 1790533151.975}
+{"id": "1790533151_55", "event": "tunnel_open", "target": "app.adjust.com:443", "t": 1790533152.127}
+{"id": "1790533151_55", "event": "tunnel_closed", "target": "app.adjust.com:443", "bytes": 5663, "t": 1790533152.436}
+{"id": "1790533151_55", "event": "tunnel_closed", "target": "app.adjust.com:443", "bytes": 3386, "t": 1790533152.436}
+{"id": "1790533151_55", "event": "tunnel_done", "target": "app.adjust.com:443", "t": 1790533152.436}
+{"id": "1790532814_42", "event": "tunnel_closed", "target": "android.apis.google.com:443", "bytes": 9404, "t": 1790533181.371}
+{"id": "1790532814_42", "event": "tunnel_closed", "target": "android.apis.google.com:443", "bytes": 21299, "t": 1790533181.372}
+{"id": "1790532814_42", "event": "tunnel_done", "target": "android.apis.google.com:443", "t": 1790533181.372}
+{"id": "1790533181_56", "event": "connect", "target": "android.apis.google.com:443", "peer": "192.168.0.103:37954", "connect_headers": ["Host: android.apis.google.com:443", "Proxy-Connection: keep-alive", "User-Agent: com.google.android.gms/263436029 (Linux; U; Android 12; en_IN; moto g42; Build/S2SE32.28-28-4; Cronet/151.0.7922.83)"], "t": 1790533181.394}
+{"id": "1790533181_56", "event": "tunnel_open", "target": "android.apis.google.com:443", "t": 1790533181.453}
+{"id": "1790533182_57", "event": "connect", "target": "firebase-settings.crashlytics.com:443", "peer": "192.168.0.103:37956", "connect_headers": ["Host: firebase-settings.crashlytics.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790533182.97}
+{"id": "1790533182_57", "event": "tunnel_open", "target": "firebase-settings.crashlytics.com:443", "t": 1790533182.994}
+{"id": "1790533183_58", "event": "connect", "target": "ip4.tracker-api.my.com:443", "peer": "192.168.0.103:37958", "connect_headers": ["Host: ip4.tracker-api.my.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790533183.353}
+{"id": "1790533183_59", "event": "connect", "target": "public-api.uxfeedback.ru:443", "peer": "192.168.0.103:37960", "connect_headers": ["Host: public-api.uxfeedback.ru:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790533183.625}
+{"id": "1790533183_59", "event": "tunnel_open", "target": "public-api.uxfeedback.ru:443", "t": 1790533183.832}
+{"id": "1790533183_60", "event": "connect", "target": "startup.mobile.yandex.net:443", "peer": "192.168.0.103:37962", "connect_headers": ["Host: startup.mobile.yandex.net:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790533183.906}
+{"id": "1790533183_60", "event": "tunnel_open", "target": "startup.mobile.yandex.net:443", "t": 1790533184.118}
+{"id": "1790533184_61", "event": "connect", "target": "stats.avito.ru:443", "peer": "192.168.0.103:37966", "connect_headers": ["Host: stats.avito.ru:443", "Proxy-Connection: Keep-Alive", "User-Agent: okhttp/4.12.0"], "t": 1790533184.412}
+{"id": "1790533184_61", "event": "tunnel_open", "target": "stats.avito.ru:443", "t": 1790533184.416}
+{"id": "1790533183_58", "event": "tunnel_open", "target": "ip4.tracker-api.my.com:443", "t": 1790533184.579}
+{"id": "1790533184_62", "event": "connect", "target": "ts.tracker-api.my.com:443", "peer": "192.168.0.103:37968", "connect_headers": ["Host: ts.tracker-api.my.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"], "t": 1790533184.684}
+{"id": "1790533184_63", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:37970", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533184.756}
+{"id": "1790533184_63", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533184.773}
+{"id": "1790533184_64", "event": "connect", "target": "app.avito.ru:443", "peer": "192.168.0.103:37972", "connect_headers": ["Host: app.avito.ru:443", "Proxy-Connection: Keep-Alive", "User-Agent: okhttp/4.12.0"], "t": 1790533184.998}
+{"id": "1790533184_64", "event": "tunnel_open", "target": "app.avito.ru:443", "t": 1790533185.002}
+{"id": "1790533185_65", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:37974", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533185.29}
+{"id": "1790533185_66", "event": "connect", "target": "app.avito.ru:443", "peer": "192.168.0.103:37964", "connect_headers": ["Host: app.avito.ru:443", "Proxy-Connection: Keep-Alive", "User-Agent: okhttp/4.12.0"], "t": 1790533185.291}
+{"id": "1790533185_66", "event": "tunnel_open", "target": "app.avito.ru:443", "t": 1790533185.293}
+{"id": "1790533185_65", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533185.319}
+{"id": "1790533185_67", "event": "connect", "target": "app.avito.ru:443", "peer": "192.168.0.103:37976", "connect_headers": ["Host: app.avito.ru:443", "Proxy-Connection: Keep-Alive", "User-Agent: okhttp/4.12.0"], "t": 1790533185.436}
+{"id": "1790533185_67", "event": "tunnel_open", "target": "app.avito.ru:443", "t": 1790533185.439}
+{"id": "1790533184_63", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 5163, "t": 1790533185.464}
+{"id": "1790533184_63", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 7156, "t": 1790533185.465}
+{"id": "1790533184_63", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533185.465}
+{"id": "1790533185_68", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:37978", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533185.511}
+{"id": "1790533185_68", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533185.523}
+{"id": "1790533185_65", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 5260, "t": 1790533185.598}
+{"id": "1790533185_65", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2102, "t": 1790533185.598}
+{"id": "1790533185_65", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533185.598}
+{"id": "1790533185_69", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:37980", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533185.646}
+{"id": "1790533185_69", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533185.657}
+{"id": "1790533185_70", "event": "connect", "target": "stats.avito.ru:443", "peer": "192.168.0.103:37982", "connect_headers": ["Host: stats.avito.ru:443", "Proxy-Connection: Keep-Alive", "User-Agent: okhttp/4.12.0"], "t": 1790533185.895}
+{"id": "1790533184_62", "event": "tunnel_open", "target": "ts.tracker-api.my.com:443", "t": 1790533185.921}
+{"id": "1790533185_70", "event": "tunnel_open", "target": "stats.avito.ru:443", "t": 1790533185.923}
+{"id": "1790533185_68", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2907, "t": 1790533186.179}
+{"id": "1790533185_68", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 4785, "t": 1790533186.18}
+{"id": "1790533185_68", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533186.18}
+{"id": "1790533185_69", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 1837, "t": 1790533186.318}
+{"id": "1790533185_69", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2101, "t": 1790533186.319}
+{"id": "1790533185_69", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533186.319}
+{"id": "1790533186_73", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:37988", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533186.445}
+{"id": "1790533186_72", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:37986", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533186.446}
+{"id": "1790533186_71", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:37984", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533186.447}
+{"id": "1790533186_73", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533186.484}
+{"id": "1790533186_72", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533186.484}
+{"id": "1790533186_71", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533186.491}
+{"id": "1790533184_61", "event": "tunnel_closed", "target": "stats.avito.ru:443", "bytes": 0, "t": 1790533186.492}
+{"id": "1790533184_61", "event": "tunnel_closed", "target": "stats.avito.ru:443", "bytes": 517, "t": 1790533186.492}
+{"id": "1790533184_61", "event": "tunnel_done", "target": "stats.avito.ru:443", "t": 1790533186.493}
+{"id": "1790533186_74", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:37990", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533186.5}
+{"id": "1790533186_74", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533186.511}
+{"id": "1790533184_62", "event": "tunnel_closed", "target": "ts.tracker-api.my.com:443", "bytes": 5250, "t": 1790533186.611}
+{"id": "1790533184_62", "event": "tunnel_closed", "target": "ts.tracker-api.my.com:443", "bytes": 1199, "t": 1790533186.611}
+{"id": "1790533184_62", "event": "tunnel_done", "target": "ts.tracker-api.my.com:443", "t": 1790533186.611}
+{"id": "1790533186_75", "event": "connect", "target": "app.avito.ru:443", "peer": "192.168.0.103:37992", "connect_headers": ["Host: app.avito.ru:443", "Proxy-Connection: Keep-Alive", "User-Agent: okhttp/4.12.0"], "t": 1790533186.732}
+{"id": "1790533186_75", "event": "tunnel_open", "target": "app.avito.ru:443", "t": 1790533186.735}
+{"id": "1790533186_74", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 5029, "t": 1790533186.88}
+{"id": "1790533186_74", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 6349, "t": 1790533186.88}
+{"id": "1790533186_74", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533186.88}
+{"id": "1790533186_73", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 5030, "t": 1790533187.0}
+{"id": "1790533186_73", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 6312, "t": 1790533187.0}
+{"id": "1790533186_73", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533187.0}
+{"id": "1790533184_64", "event": "tunnel_closed", "target": "app.avito.ru:443", "bytes": 0, "t": 1790533187.032}
+{"id": "1790533184_64", "event": "tunnel_closed", "target": "app.avito.ru:443", "bytes": 517, "t": 1790533187.033}
+{"id": "1790533184_64", "event": "tunnel_done", "target": "app.avito.ru:443", "t": 1790533187.033}
+{"id": "1790533186_72", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 6007, "t": 1790533187.05}
+{"id": "1790533186_72", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 5049, "t": 1790533187.051}
+{"id": "1790533186_72", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533187.051}
+{"id": "1790533187_76", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:37994", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533187.07}
+{"id": "1790533186_71", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 5013, "t": 1790533187.096}
+{"id": "1790533186_71", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 6920, "t": 1790533187.097}
+{"id": "1790533186_71", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533187.097}
+{"id": "1790533187_76", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533187.104}
+{"id": "1790533187_77", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:37996", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533187.126}
+{"id": "1790533187_77", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533187.134}
+{"id": "1790533187_78", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:37998", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533187.198}
+{"id": "1790533187_78", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533187.209}
+{"id": "1790533185_66", "event": "tunnel_closed", "target": "app.avito.ru:443", "bytes": 0, "t": 1790533187.331}
+{"id": "1790533185_66", "event": "tunnel_closed", "target": "app.avito.ru:443", "bytes": 517, "t": 1790533187.331}
+{"id": "1790533185_66", "event": "tunnel_done", "target": "app.avito.ru:443", "t": 1790533187.331}
+{"id": "1790533187_79", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38000", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533187.43}
+{"id": "1790533187_79", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533187.438}
+{"id": "1790533185_67", "event": "tunnel_closed", "target": "app.avito.ru:443", "bytes": 0, "t": 1790533187.466}
+{"id": "1790533185_67", "event": "tunnel_closed", "target": "app.avito.ru:443", "bytes": 517, "t": 1790533187.467}
+{"id": "1790533185_67", "event": "tunnel_done", "target": "app.avito.ru:443", "t": 1790533187.467}
+{"id": "1790533187_80", "event": "connect", "target": "stats.avito.ru:443", "peer": "192.168.0.103:38002", "connect_headers": ["Host: stats.avito.ru:443", "Proxy-Connection: Keep-Alive", "User-Agent: okhttp/4.12.0"], "t": 1790533187.606}
+{"id": "1790533187_80", "event": "tunnel_open", "target": "stats.avito.ru:443", "t": 1790533187.634}
+{"id": "1790533187_76", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 4615, "t": 1790533187.73}
+{"id": "1790533187_76", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2099, "t": 1790533187.731}
+{"id": "1790533187_76", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533187.731}
+{"id": "1790533187_77", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 4640, "t": 1790533187.756}
+{"id": "1790533187_77", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2061, "t": 1790533187.757}
+{"id": "1790533187_77", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533187.757}
+{"id": "1790533187_79", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 4624, "t": 1790533187.763}
+{"id": "1790533187_79", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2675, "t": 1790533187.763}
+{"id": "1790533187_79", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533187.763}
+{"id": "1790533187_78", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 4681, "t": 1790533187.858}
+{"id": "1790533187_78", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 1756, "t": 1790533187.859}
+{"id": "1790533187_78", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533187.859}
+{"id": "1790533185_70", "event": "tunnel_closed", "target": "stats.avito.ru:443", "bytes": 0, "t": 1790533187.959}
+{"id": "1790533185_70", "event": "tunnel_closed", "target": "stats.avito.ru:443", "bytes": 517, "t": 1790533187.959}
+{"id": "1790533185_70", "event": "tunnel_done", "target": "stats.avito.ru:443", "t": 1790533187.959}
+{"id": "1790533188_81", "event": "connect", "target": "www.gstatic.com:443", "peer": "192.168.0.103:38004", "connect_headers": ["Host: www.gstatic.com:443", "Proxy-Connection: Keep-Alive", "User-Agent: okhttp/5.3.2"], "t": 1790533188.587}
+{"id": "1790533188_81", "event": "tunnel_open", "target": "www.gstatic.com:443", "t": 1790533188.608}
+{"id": "1790533186_75", "event": "tunnel_closed", "target": "app.avito.ru:443", "bytes": 0, "t": 1790533188.772}
+{"id": "1790533186_75", "event": "tunnel_closed", "target": "app.avito.ru:443", "bytes": 517, "t": 1790533188.772}
+{"id": "1790533186_75", "event": "tunnel_done", "target": "app.avito.ru:443", "t": 1790533188.772}
+{"id": "1790533188_82", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38006", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533188.884}
+{"id": "1790533188_82", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533188.891}
+{"id": "1790533188_82", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 1378, "t": 1790533189.287}
+{"id": "1790533188_82", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 5955, "t": 1790533189.287}
+{"id": "1790533188_82", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533189.287}
+{"id": "1790533189_83", "event": "connect", "target": "stats.avito.ru:443", "peer": "192.168.0.103:38008", "connect_headers": ["Host: stats.avito.ru:443", "Proxy-Connection: Keep-Alive", "User-Agent: okhttp/4.12.0"], "t": 1790533189.582}
+{"id": "1790533189_83", "event": "tunnel_open", "target": "stats.avito.ru:443", "t": 1790533189.585}
+{"id": "1790533187_80", "event": "tunnel_closed", "target": "stats.avito.ru:443", "bytes": 0, "t": 1790533189.657}
+{"id": "1790533187_80", "event": "tunnel_closed", "target": "stats.avito.ru:443", "bytes": 517, "t": 1790533189.658}
+{"id": "1790533187_80", "event": "tunnel_done", "target": "stats.avito.ru:443", "t": 1790533189.658}
+{"id": "1790533190_84", "event": "connect", "target": "www.googleapis.com:443", "peer": "192.168.0.103:38010", "connect_headers": ["Host: www.googleapis.com:443", "Proxy-Connection: keep-alive", "User-Agent: com.google.android.gms/263436029 (Linux; U; Android 12; en_IN; moto g42; Build/S2SE32.28-28-4; Cronet/151.0.7922.83)"], "t": 1790533190.612}
+{"id": "1790533190_84", "event": "tunnel_open", "target": "www.googleapis.com:443", "t": 1790533190.651}
+{"id": "1790533189_83", "event": "tunnel_closed", "target": "stats.avito.ru:443", "bytes": 0, "t": 1790533191.613}
+{"id": "1790533189_83", "event": "tunnel_closed", "target": "stats.avito.ru:443", "bytes": 517, "t": 1790533191.613}
+{"id": "1790533189_83", "event": "tunnel_done", "target": "stats.avito.ru:443", "t": 1790533191.613}
+{"id": "1790533191_85", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38012", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533191.948}
+{"id": "1790533191_85", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533191.959}
+{"id": "1790533191_85", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 1461, "t": 1790533192.882}
+{"id": "1790533191_85", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 1710, "t": 1790533192.883}
+{"id": "1790533191_85", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533192.883}
+{"id": "1790533193_86", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38028", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533193.28}
+{"id": "1790533193_86", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533193.289}
+{"id": "1790533193_87", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38030", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533193.314}
+{"id": "1790533193_88", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38032", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533193.315}
+{"id": "1790533193_89", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38034", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533193.317}
+{"id": "1790533193_90", "event": "connect", "target": "ondevicesafety-pa.googleapis.com:443", "peer": "192.168.0.103:38036", "connect_headers": ["Host: ondevicesafety-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533193.324}
+{"id": "1790533193_87", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533193.329}
+{"id": "1790533193_88", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533193.331}
+{"id": "1790533193_89", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533193.331}
+{"id": "1790533193_91", "event": "connect", "target": "ondevicesafety-pa.googleapis.com:443", "peer": "192.168.0.103:38038", "connect_headers": ["Host: ondevicesafety-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533193.341}
+{"id": "1790533193_90", "event": "tunnel_open", "target": "ondevicesafety-pa.googleapis.com:443", "t": 1790533193.345}
+{"id": "1790533193_91", "event": "tunnel_open", "target": "ondevicesafety-pa.googleapis.com:443", "t": 1790533193.348}
+{"id": "1790533193_92", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38020", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533193.4}
+{"id": "1790533193_93", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38040", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533193.426}
+{"id": "1790533193_92", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533193.433}
+{"id": "1790533193_93", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533193.435}
+{"id": "1790533193_86", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 5069, "t": 1790533193.632}
+{"id": "1790533193_86", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2061, "t": 1790533193.632}
+{"id": "1790533193_86", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533193.632}
+{"id": "1790533193_89", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 5068, "t": 1790533193.654}
+{"id": "1790533193_90", "event": "tunnel_closed", "target": "ondevicesafety-pa.googleapis.com:443", "bytes": 36244, "t": 1790533193.654}
+{"id": "1790533193_91", "event": "tunnel_closed", "target": "ondevicesafety-pa.googleapis.com:443", "bytes": 36262, "t": 1790533193.655}
+{"id": "1790533193_89", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2100, "t": 1790533193.655}
+{"id": "1790533193_89", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533193.655}
+{"id": "1790533193_90", "event": "tunnel_closed", "target": "ondevicesafety-pa.googleapis.com:443", "bytes": 6917, "t": 1790533193.655}
+{"id": "1790533193_90", "event": "tunnel_done", "target": "ondevicesafety-pa.googleapis.com:443", "t": 1790533193.655}
+{"id": "1790533193_91", "event": "tunnel_closed", "target": "ondevicesafety-pa.googleapis.com:443", "bytes": 6917, "t": 1790533193.656}
+{"id": "1790533193_91", "event": "tunnel_done", "target": "ondevicesafety-pa.googleapis.com:443", "t": 1790533193.656}
+{"id": "1790533193_94", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38042", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533193.69}
+{"id": "1790533193_94", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533193.701}
+{"id": "1790533193_95", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38044", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533193.727}
+{"id": "1790533193_96", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38046", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533193.73}
+{"id": "1790533193_95", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533193.736}
+{"id": "1790533193_96", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533193.738}
+{"id": "1790533193_88", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 5074, "t": 1790533193.939}
+{"id": "1790533193_87", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 5132, "t": 1790533193.939}
+{"id": "1790533193_88", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2675, "t": 1790533193.94}
+{"id": "1790533193_88", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533193.94}
+{"id": "1790533193_87", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 1763, "t": 1790533193.94}
+{"id": "1790533193_87", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533193.94}
+{"id": "1790533193_98", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38050", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533193.948}
+{"id": "1790533193_98", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533193.955}
+{"id": "1790533193_97", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38048", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533193.981}
+{"id": "1790533193_97", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533193.991}
+{"id": "1790533193_95", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 1439, "t": 1790533194.098}
+{"id": "1790533193_95", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 1710, "t": 1790533194.098}
+{"id": "1790533193_95", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533194.098}
+{"id": "1790533193_93", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 5238, "t": 1790533194.123}
+{"id": "1790533193_93", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2104, "t": 1790533194.124}
+{"id": "1790533193_93", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533194.124}
+{"id": "1790533194_99", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38052", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533194.143}
+{"id": "1790533193_96", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 4615, "t": 1790533194.149}
+{"id": "1790533193_96", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2096, "t": 1790533194.15}
+{"id": "1790533193_96", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533194.15}
+{"id": "1790533194_99", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533194.153}
+{"id": "1790533194_100", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38054", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533194.16}
+{"id": "1790533194_100", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533194.196}
+{"id": "1790533193_97", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 4624, "t": 1790533194.252}
+{"id": "1790533193_97", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2673, "t": 1790533194.252}
+{"id": "1790533193_97", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533194.252}
+{"id": "1790533193_92", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 5225, "t": 1790533194.257}
+{"id": "1790533193_92", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2909, "t": 1790533194.258}
+{"id": "1790533193_92", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533194.258}
+{"id": "1790533194_101", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38056", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533194.296}
+{"id": "1790533194_101", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533194.305}
+{"id": "1790533193_94", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 4618, "t": 1790533194.35}
+{"id": "1790533193_94", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2059, "t": 1790533194.35}
+{"id": "1790533193_94", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533194.351}
+{"id": "1790533194_99", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 1439, "t": 1790533194.362}
+{"id": "1790533194_99", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 1709, "t": 1790533194.362}
+{"id": "1790533194_99", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533194.362}
+{"id": "1790533193_98", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 4659, "t": 1790533194.381}
+{"id": "1790533193_98", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 1760, "t": 1790533194.381}
+{"id": "1790533193_98", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533194.381}
+{"id": "1790533194_100", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 1837, "t": 1790533194.587}
+{"id": "1790533194_100", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2099, "t": 1790533194.587}
+{"id": "1790533194_100", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533194.587}
+{"id": "1790533194_102", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38064", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533194.611}
+{"id": "1790533194_102", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533194.619}
+{"id": "1790533194_101", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 4782, "t": 1790533194.707}
+{"id": "1790533194_101", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2909, "t": 1790533194.707}
+{"id": "1790533194_101", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533194.707}
+{"id": "1790533194_103", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38066", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533194.77}
+{"id": "1790533194_103", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533194.78}
+{"id": "1790533194_102", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 5216, "t": 1790533194.909}
+{"id": "1790533194_102", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2106, "t": 1790533194.909}
+{"id": "1790533194_102", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533194.909}
+{"id": "1790533194_104", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38068", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533194.952}
+{"id": "1790533194_104", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533194.967}
+{"id": "1790533194_103", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 5225, "t": 1790533194.97}
+{"id": "1790533194_103", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2913, "t": 1790533194.971}
+{"id": "1790533194_103", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533194.971}
+{"id": "1790533195_105", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38070", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533195.03}
+{"id": "1790533195_105", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533195.04}
+{"id": "1790533194_104", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 1837, "t": 1790533195.316}
+{"id": "1790533194_104", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2101, "t": 1790533195.316}
+{"id": "1790533194_104", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533195.316}
+{"id": "1790533195_106", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38078", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533195.55}
+{"id": "1790533195_106", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533195.561}
+{"id": "1790533195_107", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38080", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533195.589}
+{"id": "1790533195_108", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38082", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533195.59}
+{"id": "1790533195_109", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38084", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533195.591}
+{"id": "1790533195_107", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533195.598}
+{"id": "1790533195_108", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533195.6}
+{"id": "1790533195_109", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533195.6}
+{"id": "1790533195_105", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 4785, "t": 1790533195.687}
+{"id": "1790533195_105", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2907, "t": 1790533195.688}
+{"id": "1790533195_105", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533195.688}
+{"id": "1790533195_110", "event": "connect", "target": "ondevicesafety-pa.googleapis.com:443", "peer": "192.168.0.103:38086", "connect_headers": ["Host: ondevicesafety-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533195.722}
+{"id": "1790533195_111", "event": "connect", "target": "ondevicesafety-pa.googleapis.com:443", "peer": "192.168.0.103:38088", "connect_headers": ["Host: ondevicesafety-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533195.723}
+{"id": "1790533195_111", "event": "tunnel_open", "target": "ondevicesafety-pa.googleapis.com:443", "t": 1790533195.742}
+{"id": "1790533195_110", "event": "tunnel_open", "target": "ondevicesafety-pa.googleapis.com:443", "t": 1790533195.742}
+{"id": "1790533195_112", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38090", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533195.769}
+{"id": "1790533195_112", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533195.786}
+{"id": "1790533195_113", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38092", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533195.89}
+{"id": "1790533195_113", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533195.898}
+{"id": "1790533195_107", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 5097, "t": 1790533196.032}
+{"id": "1790533195_107", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2675, "t": 1790533196.032}
+{"id": "1790533195_107", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533196.032}
+{"id": "1790533196_114", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38094", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533196.055}
+{"id": "1790533196_114", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533196.063}
+{"id": "1790533195_108", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 5110, "t": 1790533196.099}
+{"id": "1790533195_108", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 1763, "t": 1790533196.1}
+{"id": "1790533195_108", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533196.1}
+{"id": "1790533195_106", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 5069, "t": 1790533196.116}
+{"id": "1790533195_106", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2102, "t": 1790533196.117}
+{"id": "1790533195_106", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533196.117}
+{"id": "1790533195_109", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 5070, "t": 1790533196.224}
+{"id": "1790533195_109", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2062, "t": 1790533196.224}
+{"id": "1790533195_109", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533196.224}
+{"id": "1790533196_116", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38096", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533196.343}
+{"id": "1790533196_115", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38098", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533196.344}
+{"id": "1790533196_117", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38100", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533196.345}
+{"id": "1790533196_116", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533196.352}
+{"id": "1790533196_117", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533196.358}
+{"id": "1790533196_115", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533196.359}
+{"id": "1790533196_114", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 4624, "t": 1790533196.454}
+{"id": "1790533196_114", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2670, "t": 1790533196.455}
+{"id": "1790533196_114", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533196.455}
+{"id": "1790533195_110", "event": "tunnel_closed", "target": "ondevicesafety-pa.googleapis.com:443", "bytes": 36338, "t": 1790533196.617}
+{"id": "1790533195_110", "event": "tunnel_closed", "target": "ondevicesafety-pa.googleapis.com:443", "bytes": 2673, "t": 1790533196.618}
+{"id": "1790533195_110", "event": "tunnel_done", "target": "ondevicesafety-pa.googleapis.com:443", "t": 1790533196.618}
+{"id": "1790533195_113", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 5240, "t": 1790533196.803}
+{"id": "1790533195_113", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2104, "t": 1790533196.803}
+{"id": "1790533195_113", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533196.803}
+{"id": "1790533196_117", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 4617, "t": 1790533196.912}
+{"id": "1790533196_117", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2060, "t": 1790533196.913}
+{"id": "1790533196_117", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533196.913}
+{"id": "1790533196_118", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38102", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533196.946}
+{"id": "1790533196_118", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533196.957}
+{"id": "1790533195_111", "event": "tunnel_closed", "target": "ondevicesafety-pa.googleapis.com:443", "bytes": 36329, "t": 1790533197.035}
+{"id": "1790533195_111", "event": "tunnel_closed", "target": "ondevicesafety-pa.googleapis.com:443", "bytes": 2674, "t": 1790533197.036}
+{"id": "1790533195_111", "event": "tunnel_done", "target": "ondevicesafety-pa.googleapis.com:443", "t": 1790533197.036}
+{"id": "1790533196_116", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 4681, "t": 1790533197.072}
+{"id": "1790533196_116", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 1759, "t": 1790533197.073}
+{"id": "1790533196_116", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533197.073}
+{"id": "1790533196_115", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 4615, "t": 1790533197.074}
+{"id": "1790533196_115", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2098, "t": 1790533197.074}
+{"id": "1790533196_115", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533197.075}
+{"id": "1790533195_112", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 5203, "t": 1790533197.284}
+{"id": "1790533195_112", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2912, "t": 1790533197.285}
+{"id": "1790533195_112", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533197.285}
+{"id": "1790533196_118", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 1837, "t": 1790533197.323}
+{"id": "1790533196_118", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2099, "t": 1790533197.324}
+{"id": "1790533196_118", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533197.324}
+{"id": "1790533197_119", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38104", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533197.356}
+{"id": "1790533197_119", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533197.367}
+{"id": "1790533197_119", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 4807, "t": 1790533198.857}
+{"id": "1790533197_119", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2908, "t": 1790533198.857}
+{"id": "1790533197_119", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533198.857}
+{"id": "1790533199_120", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38106", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533199.003}
+{"id": "1790533199_120", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533199.034}
+{"id": "1790533199_120", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 5225, "t": 1790533200.284}
+{"id": "1790533199_120", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2908, "t": 1790533200.285}
+{"id": "1790533199_120", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533200.285}
+{"id": "1790533200_121", "event": "connect", "target": "geller-pa.googleapis.com:443", "peer": "192.168.0.103:38108", "connect_headers": ["Host: geller-pa.googleapis.com:443", "User-Agent: grpc-java-okhttp/1.85.0-SNAPSHOT"], "t": 1790533200.444}
+{"id": "1790533200_121", "event": "tunnel_open", "target": "geller-pa.googleapis.com:443", "t": 1790533200.455}
+{"id": "1790533200_121", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 4764, "t": 1790533201.062}
+{"id": "1790533200_121", "event": "tunnel_closed", "target": "geller-pa.googleapis.com:443", "bytes": 2907, "t": 1790533201.062}
+{"id": "1790533200_121", "event": "tunnel_done", "target": "geller-pa.googleapis.com:443", "t": 1790533201.062}
+{"id": "1790533040_54", "event": "tunnel_closed", "target": "youtubei.googleapis.com:443", "bytes": 8034, "t": 1790533215.052}
+{"id": "1790533040_54", "event": "tunnel_closed", "target": "youtubei.googleapis.com:443", "bytes": 2968, "t": 1790533215.053}
+{"id": "1790533040_54", "event": "tunnel_done", "target": "youtubei.googleapis.com:443", "t": 1790533215.053}
+{"id": "1790532826_52", "event": "tunnel_closed", "target": "youtubei.googleapis.com:443", "bytes": 10667, "t": 1790533217.007}
+{"id": "1790532826_52", "event": "tunnel_closed", "target": "youtubei.googleapis.com:443", "bytes": 8627, "t": 1790533217.007}
+{"id": "1790532826_52", "event": "tunnel_done", "target": "youtubei.googleapis.com:443", "t": 1790533217.007}
+{"id": "1790533183_58", "event": "tunnel_closed", "target": "ip4.tracker-api.my.com:443", "bytes": 5286, "t": 1790533221.293}
+{"id": "1790533183_58", "event": "tunnel_closed", "target": "ip4.tracker-api.my.com:443", "bytes": 778, "t": 1790533221.293}
+{"id": "1790533183_58", "event": "tunnel_done", "target": "ip4.tracker-api.my.com:443", "t": 1790533221.293}
+{"id": "1790533183_59", "event": "tunnel_closed", "target": "public-api.uxfeedback.ru:443", "bytes": 7084, "t": 1790533250.776}
+{"id": "1790533183_59", "event": "tunnel_closed", "target": "public-api.uxfeedback.ru:443", "bytes": 1513, "t": 1790533250.777}
+{"id": "1790533183_59", "event": "tunnel_done", "target": "public-api.uxfeedback.ru:443", "t": 1790533250.777}
+{"id": "1790533183_60", "event": "tunnel_closed", "target": "startup.mobile.yandex.net:443", "bytes": 6343, "t": 1790533273.285}
+{"id": "1790533183_60", "event": "tunnel_closed", "target": "startup.mobile.yandex.net:443", "bytes": 1515, "t": 1790533273.285}
+{"id": "1790533183_60", "event": "tunnel_done", "target": "startup.mobile.yandex.net:443", "t": 1790533273.285}
+{"id": "1790533182_57", "event": "tunnel_closed", "target": "firebase-settings.crashlytics.com:443", "bytes": 5968, "t": 1790533423.27}
+{"id": "1790533182_57", "event": "tunnel_closed", "target": "firebase-settings.crashlytics.com:443", "bytes": 1171, "t": 1790533423.271}
+{"id": "1790533182_57", "event": "tunnel_done", "target": "firebase-settings.crashlytics.com:443", "t": 1790533423.271}
+{"id": "1790533181_56", "event": "tunnel_closed", "target": "android.apis.google.com:443", "bytes": 6478, "t": 1790533423.888}
+{"id": "1790533181_56", "event": "tunnel_closed", "target": "android.apis.google.com:443", "bytes": 4177, "t": 1790533423.888}
+{"id": "1790533181_56", "event": "tunnel_done", "target": "android.apis.google.com:443", "t": 1790533423.888}
+{"id": "1790533190_84", "event": "tunnel_closed", "target": "www.googleapis.com:443", "bytes": 3081, "t": 1790533431.369}
+{"id": "1790533190_84", "event": "tunnel_closed", "target": "www.googleapis.com:443", "bytes": 75251, "t": 1790533431.37}
+{"id": "1790533190_84", "event": "tunnel_done", "target": "www.googleapis.com:443", "t": 1790533431.37}
+{"id": "1790533188_81", "event": "tunnel_closed", "target": "www.gstatic.com:443", "bytes": 5300, "t": 1790533434.53}
+{"id": "1790533188_81", "event": "tunnel_closed", "target": "www.gstatic.com:443", "bytes": 1312, "t": 1790533434.53}
+{"id": "1790533188_81", "event": "tunnel_done", "target": "www.gstatic.com:443", "t": 1790533434.53}

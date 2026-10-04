@@ -1,0 +1,5 @@
+# CLASS Lcom/adjust/sdk/OnAttributionReadListener;
+
+---- METHOD public abstract onAttributionRead (Lcom/adjust/sdk/AdjustAttribution;)V ----
+  (no code)
+######################################################################

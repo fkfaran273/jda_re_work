@@ -1,0 +1,61 @@
+# CLASS Lcom/adjust/sdk/sig/p3;
+FIELD public static final enum Lcom/adjust/sdk/sig/p3;
+FIELD public static final enum Lcom/adjust/sdk/sig/p3;
+FIELD public static final enum Lcom/adjust/sdk/sig/p3;
+FIELD public static final synthetic [Lcom/adjust/sdk/sig/p3;
+FIELD public static final synthetic Lcom/adjust/sdk/sig/f0;
+FIELD public final C
+FIELD public final C
+
+---- METHOD static constructor <clinit>(()V)  ----
+  new-instance           v0, Lcom/adjust/sdk/sig/p3;
+  const-string           v1, "OBJ"
+  const/4                v2, 0
+  const/16               v3, 123
+  const/16               v4, 125
+  invoke-direct          v0, v1, v2, v3, v4, Lcom/adjust/sdk/sig/p3;-><init>(Ljava/lang/String; I C C)V
+  sput-object            v0, Lcom/adjust/sdk/sig/p3;->c Lcom/adjust/sdk/sig/p3;
+  new-instance           v1, Lcom/adjust/sdk/sig/p3;
+  const-string           v2, "LIST"
+  const/4                v5, 1
+  const/16               v6, 91
+  const/16               v7, 93
+  invoke-direct          v1, v2, v5, v6, v7, Lcom/adjust/sdk/sig/p3;-><init>(Ljava/lang/String; I C C)V
+  sput-object            v1, Lcom/adjust/sdk/sig/p3;->d Lcom/adjust/sdk/sig/p3;
+  new-instance           v2, Lcom/adjust/sdk/sig/p3;
+  const-string           v5, "MAP"
+  const/4                v8, 2
+  invoke-direct          v2, v5, v8, v3, v4, Lcom/adjust/sdk/sig/p3;-><init>(Ljava/lang/String; I C C)V
+  sput-object            v2, Lcom/adjust/sdk/sig/p3;->e Lcom/adjust/sdk/sig/p3;
+  new-instance           v3, Lcom/adjust/sdk/sig/p3;
+  const-string           v4, "POLY_OBJ"
+  const/4                v5, 3
+  invoke-direct          v3, v4, v5, v6, v7, Lcom/adjust/sdk/sig/p3;-><init>(Ljava/lang/String; I C C)V
+  filled-new-array       v0, v1, v2, v3, [Lcom/adjust/sdk/sig/p3;
+  move-result-object     v0
+  sput-object            v0, Lcom/adjust/sdk/sig/p3;->f [Lcom/adjust/sdk/sig/p3;
+  new-instance           v1, Lcom/adjust/sdk/sig/f0;
+  invoke-direct          v1, v0, Lcom/adjust/sdk/sig/f0;-><init>([Ljava/lang/Enum;)V
+  sput-object            v1, Lcom/adjust/sdk/sig/p3;->g Lcom/adjust/sdk/sig/f0;
+  return-void            
+
+---- METHOD public constructor <init>((Ljava/lang/String; I C C)V)  ----
+  invoke-direct          v0, v1, v2, Ljava/lang/Enum;-><init>(Ljava/lang/String; I)V
+  iput-char              v3, v0, Lcom/adjust/sdk/sig/p3;->a C
+  iput-char              v4, v0, Lcom/adjust/sdk/sig/p3;->b C
+  return-void            
+
+---- METHOD public static valueOf((Ljava/lang/String;)Lcom/adjust/sdk/sig/p3;)  ----
+  const-class            v0, Lcom/adjust/sdk/sig/p3;
+  invoke-static          v0, v1, Ljava/lang/Enum;->valueOf(Ljava/lang/Class; Ljava/lang/String;)Ljava/lang/Enum;
+  move-result-object     v1
+  check-cast             v1, Lcom/adjust/sdk/sig/p3;
+  return-object          v1
+
+---- METHOD public static values(()[Lcom/adjust/sdk/sig/p3;)  ----
+  sget-object            v0, Lcom/adjust/sdk/sig/p3;->f [Lcom/adjust/sdk/sig/p3;
+  invoke-virtual         v0, Ljava/lang/Object;->clone()Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, [Lcom/adjust/sdk/sig/p3;
+  return-object          v0
+######################################################################

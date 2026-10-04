@@ -1,0 +1,13 @@
+--- 
++++ 
+@@ -200,4 +200,6 @@
+ ---- METHOD public toString ()Ljava/lang/String; ----
++sget-object vX, Lcom/adjust/sdk/F;->a [I
+ invoke-virtual vX, Ljava/lang/Enum;->ordinal()I
+ move-result vX
++aget vX, vX, vX
+ packed-switch
+@@ -227,2 +229,2 @@
+ return-object vX
+-packed-switch-payload 1 2 3 4 5 6 7 8 9 a b c d e
++packed-switch-payload 1 2 3 4 5 6 7 8 9 a b

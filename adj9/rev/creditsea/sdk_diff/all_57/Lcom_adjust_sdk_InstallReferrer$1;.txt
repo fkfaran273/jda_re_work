@@ -1,0 +1,13 @@
+# CLASS Lcom/adjust/sdk/InstallReferrer$1;
+FIELD public final synthetic a Lcom/adjust/sdk/InstallReferrer;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/InstallReferrer;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/InstallReferrer$1;->a Lcom/adjust/sdk/InstallReferrer;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v1, Lcom/adjust/sdk/InstallReferrer$1;->a Lcom/adjust/sdk/InstallReferrer;
+  invoke-virtual         v0, Lcom/adjust/sdk/InstallReferrer;->startConnection()V
+  return-void            
+######################################################################

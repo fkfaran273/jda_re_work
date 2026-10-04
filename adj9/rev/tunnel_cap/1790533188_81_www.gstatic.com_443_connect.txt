@@ -1,0 +1,4 @@
+CONNECT www.gstatic.com:443 HTTP/1.1
+Host: www.gstatic.com:443
+Proxy-Connection: Keep-Alive
+User-Agent: okhttp/5.3.2

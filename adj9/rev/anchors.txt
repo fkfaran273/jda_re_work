@@ -1,0 +1,241 @@
+nSign path: 255475 instructions
+
+=== JNI call sites on the nSign path ===
+  FindClass                        123 site(s)  first @ 0xa6ec
+  GetFieldID                       103 site(s)  first @ 0x813d0
+  GetObjectField                    87 site(s)  first @ 0x813d8
+  GetMethodID                       45 site(s)  first @ 0x87ae8
+  CallObjectMethod                  36 site(s)  first @ 0x86fdc
+  NewStringUTF                      17 site(s)  first @ 0xa214
+  CallBooleanMethod                 14 site(s)  first @ 0xda84
+  CallByteMethod                    11 site(s)  first @ 0x1bb08
+  CallStaticObjectMethod             7 site(s)  first @ 0x138c08
+  CallVoidMethod                     6 site(s)  first @ 0x2c1d0
+  GetArrayLength                     6 site(s)  first @ 0x23b8c
+  NewByteArray                       3 site(s)  first @ 0x104f8
+  GetByteArrayElements               3 site(s)  first @ 0x31b24
+  NewObjectArray                     2 site(s)  first @ 0x12c310
+  GetIntArrayElements                2 site(s)  first @ 0x9e9e4
+  GetByteArrayRegion                 2 site(s)  first @ 0x9de88
+  SetObjectArrayElement              1 site(s)  first @ 0x31abc
+  SetByteArrayRegion                 1 site(s)  first @ 0x9e880
+
+### NewByteArray — 3 site(s)
+  ---- 0x104f8
+    0x104d0: mov      x27, #0x6f1e
+    0x104d4: mov      x28, #0xc623
+    0x104d8: mov      x19, #0x8713
+    0x104dc: mov      x23, #0x20b4
+    0x104e0: stur     x8, [x29, #-0x48]
+    0x104e4: adrp     x8, #0x3000
+    0x104e8: mov      x22, #0x101c
+    0x104ec: mov      x20, #0xbdd1
+    0x104f0: mov      x26, #0x62f4
+    0x104f4: mov      x9, #0x124b
+    0x104f8: ldr      s8, [x8, #0x580]  <<<
+    0x104fc: add      x8, x3, #0x20
+    0x10500: movk     x24, #0x2835, lsl #16
+    0x10504: movk     x25, #0xa1f6, lsl #16
+    0x10508: movk     x27, #0x8021, lsl #16
+    0x1050c: movk     x28, #0x4957, lsl #16
+    0x10510: movk     x19, #0xf73f, lsl #16
+    0x10514: movk     x23, #0x262c, lsl #16
+    0x10518: movk     x22, #0x5740, lsl #16
+    0x1051c: movk     x20, #0x14f4, lsl #16
+  ---- 0x9e580
+    0x9e558: stp      x24, x23, [sp, #0x40]
+    0x9e55c: stp      x22, x21, [sp, #0x50]
+    0x9e560: stp      x20, x19, [sp, #0x60]
+    0x9e564: add      x29, sp, #0x10
+    0x9e568: ldr      x8, [x1]
+    0x9e56c: mov      x21, x0
+    0x9e570: mov      x22, #0x4e5
+    0x9e574: mov      x24, #0xb9de
+    0x9e578: str      x1, [sp, #8]
+    0x9e57c: mov      x0, x1
+    0x9e580: ldr      x8, [x8, #0x580]  <<<
+    0x9e584: mov      w1, w2
+    0x9e588: movk     x22, #0x2378, lsl #16
+    0x9e58c: movk     x24, #0x8503, lsl #16
+    0x9e590: movk     x22, #0xd226, lsl #32
+    0x9e594: movk     x24, #0x87eb, lsl #32
+    0x9e598: mov      x19, x3
+    0x9e59c: movk     x22, #0xa2a2, lsl #48
+    0x9e5a0: movk     x24, #0x2917, lsl #48
+    0x9e5a4: blr      x8
+  ---- 0x12c328
+    0x12c300: str      q0, [x25, #0x550]
+    0x12c304: ldr      q0, [x25, #0x570]
+    0x12c308: eor      v1.16b, v1.16b, v4.16b
+    0x12c30c: str      q1, [x25, #0x540]
+    0x12c310: ldr      q1, [x25, #0x560]
+    0x12c314: eor      v0.16b, v0.16b, v4.16b
+    0x12c318: str      q0, [x25, #0x570]
+    0x12c31c: ldr      q0, [x25, #0x590]
+    0x12c320: eor      v1.16b, v1.16b, v4.16b
+    0x12c324: str      q1, [x25, #0x560]
+    0x12c328: ldr      q1, [x25, #0x580]  <<<
+    0x12c32c: eor      v0.16b, v0.16b, v4.16b
+    0x12c330: str      q0, [x25, #0x590]
+    0x12c334: ldr      q0, [x25, #0x5b0]
+    0x12c338: eor      v1.16b, v1.16b, v4.16b
+    0x12c33c: str      q1, [x25, #0x580]
+    0x12c340: ldr      q1, [x25, #0x5a0]
+    0x12c344: eor      v0.16b, v0.16b, v4.16b
+    0x12c348: str      q0, [x25, #0x5b0]
+    0x12c34c: ldr      q0, [x25, #0x5d0]
+
+### SetByteArrayRegion — 1 site(s)
+  ---- 0x9e880
+    0x9e858: b.eq     #0x9e8e8
+    0x9e85c: cmp      x8, x19
+    0x9e860: b.eq     #0x9e904
+    0x9e864: cmp      x8, x26
+    0x9e868: b.ne     #0x9e834
+    0x9e86c: ldr      x8, [x23]
+    0x9e870: mov      x0, x23
+    0x9e874: mov      x1, x22
+    0x9e878: ldr      w2, [sp, #0x10]
+    0x9e87c: ldur     w3, [x29, #-0xc]
+    0x9e880: ldr      x8, [x8, #0x680]  <<<
+    0x9e884: ldur     x4, [x29, #-8]
+    0x9e888: blr      x8
+    0x9e88c: mov      x0, x23
+    0x9e890: mov      x1, xzr
+    0x9e894: bl       #0x9afa4
+    0x9e898: tst      w0, #1
+    0x9e89c: csel     x8, x21, x20, ne
+    0x9e8a0: b        #0x9e834
+    0x9e8a4: mov      x8, #0x981a
+
+### GetByteArrayElements — 3 site(s)
+  ---- 0x31b24
+    0x31afc: adrp     x9, #0x152000
+    0x31b00: add      x9, x9, #0x4a0
+    0x31b04: str      x15, [x0, #0xc08]   <== 192!
+    0x31b08: str      x11, [x0, #0x1500]
+    0x31b0c: adrp     x11, #0x152000
+    0x31b10: add      x11, x11, #0x660
+    0x31b14: str      x15, [x0, #0xe10]
+    0x31b18: str      d1, [x0, #0xea8]
+    0x31b1c: adrp     x15, #0x152000
+    0x31b20: add      x15, x15, #0x560
+    0x31b24: ldr      q1, [x13, #0x5c0]  <<<
+    0x31b28: str      x11, [x0, #0x1600]
+    0x31b2c: adrp     x11, #0x152000
+    0x31b30: add      x11, x11, #0x670
+    0x31b34: adrp     x13, #0x152000
+    0x31b38: add      x13, x13, #0x57c
+    0x31b3c: str      x9, [x0, #0x910]
+    0x31b40: adrp     x9, #0x152000
+    0x31b44: add      x9, x9, #0x4a8
+    0x31b48: str      x11, [x0, #0x1700]
+  ---- 0x9e49c
+    0x9e474: ldur     x8, [x29, #-8]
+    0x9e478: ldr      x8, [x8]
+    0x9e47c: cmp      x8, #0
+    0x9e480: csel     x9, x19, x26, eq
+    0x9e484: b        #0x9e2b8
+    0x9e488: mov      x28, x23
+    0x9e48c: mov      x2, xzr
+    0x9e490: ldp      x23, x1, [sp]
+    0x9e494: ldr      x8, [x23]
+    0x9e498: mov      x0, x23
+    0x9e49c: ldr      x8, [x8, #0x5c0]  <<<
+    0x9e4a0: blr      x8
+    0x9e4a4: ldur     x8, [x29, #-8]
+    0x9e4a8: mov      x1, xzr
+    0x9e4ac: str      x0, [x8]
+    0x9e4b0: mov      x0, x23
+    0x9e4b4: mov      x23, x28
+    0x9e4b8: mov      x28, #0xb1e8
+    0x9e4bc: movk     x28, #0x330a, lsl #16
+    0x9e4c0: movk     x28, #0x531c, lsl #32
+  ---- 0x12c358
+    0x12c330: str      q0, [x25, #0x590]
+    0x12c334: ldr      q0, [x25, #0x5b0]
+    0x12c338: eor      v1.16b, v1.16b, v4.16b
+    0x12c33c: str      q1, [x25, #0x580]
+    0x12c340: ldr      q1, [x25, #0x5a0]
+    0x12c344: eor      v0.16b, v0.16b, v4.16b
+    0x12c348: str      q0, [x25, #0x5b0]
+    0x12c34c: ldr      q0, [x25, #0x5d0]
+    0x12c350: eor      v1.16b, v1.16b, v4.16b
+    0x12c354: str      q1, [x25, #0x5a0]
+    0x12c358: ldr      q1, [x25, #0x5c0]  <<<
+    0x12c35c: eor      v0.16b, v0.16b, v4.16b
+    0x12c360: str      q0, [x25, #0x5d0]
+    0x12c364: ldr      q0, [x25, #0x5f0]
+    0x12c368: eor      v1.16b, v1.16b, v4.16b
+    0x12c36c: str      q1, [x25, #0x5c0]
+    0x12c370: ldr      q1, [x25, #0x5e0]
+    0x12c374: eor      v0.16b, v0.16b, v4.16b
+    0x12c378: str      q0, [x25, #0x5f0]
+    0x12c37c: ldr      d0, [x25, #0x600]
+
+### GetByteArrayRegion — 2 site(s)
+  ---- 0x9de88
+    0x9de60: cmp      x8, x10
+    0x9de64: b.ne     #0x9dd68
+    0x9de68: b        #0x9e088
+    0x9de6c: mov      x22, x28
+    0x9de70: mov      w2, wzr
+    0x9de74: ldp      x28, x1, [sp, #0x20]
+    0x9de78: mov      x4, x26
+    0x9de7c: ldr      x3, [sp, #0x18]
+    0x9de80: ldr      x8, [x28]
+    0x9de84: mov      x0, x28
+    0x9de88: ldr      x8, [x8, #0x640]  <<<
+    0x9de8c: blr      x8
+    0x9de90: mov      x0, x28
+    0x9de94: mov      x28, x22
+    0x9de98: mov      x22, #0x9c7c
+    0x9de9c: mov      x1, xzr
+    0x9dea0: movk     x22, #0x9609, lsl #16
+    0x9dea4: movk     x22, #0xe576, lsl #32
+    0x9dea8: movk     x22, #0xe5b7, lsl #48
+    0x9deac: bl       #0x9afa4
+  ---- 0x12e60c
+    0x12e5e4: ldp      x28, x27, [sp, #0x10]
+    0x12e5e8: ldp      x29, x30, [sp], #0x60
+    0x12e5ec: ret      
+    0x12e5f0: bl       #0x148a10
+    0x12e5f4: adrp     x8, #0x3000
+    0x12e5f8: adrp     x9, #0x3000
+    0x12e5fc: str      wzr, [x0, #0x40]
+    0x12e600: str      xzr, [x0, #0x48]
+    0x12e604: ldr      q0, [x8, #0x620]
+    0x12e608: mov      w8, #0xc1d6
+    0x12e60c: ldr      q1, [x9, #0x640]  <<<
+    0x12e610: movk     w8, #0xca62, lsl #16
+    0x12e614: stp      q0, q1, [x0, #0x50]
+    0x12e618: str      w8, [x0, #0x70]
+    0x12e61c: ret      
+    0x12e620: sub      sp, sp, #0x80
+    0x12e624: stp      x29, x30, [sp, #0x20]
+    0x12e628: stp      x28, x27, [sp, #0x30]
+    0x12e62c: stp      x26, x25, [sp, #0x40]
+    0x12e630: stp      x24, x23, [sp, #0x50]
+
+=== .rodata (336 bytes) ===
+  0000  0000000080842e4100000000004ccd40                  .......A.....L.@
+  0010  0000000000408f400100000000000000                  .....@.@........
+  0020  cdcc4c3f9a99993e0000000000000000                  ..L?...>........
+  0030  03000000000000000300000003000000                  ................
+  0040  00000000030000000000000000000000                  ................
+  0050  00000000000000000100000001000000                  ................
+  0060  01000000000000000300000003000000                  ................
+  0070  a00200007a010000980300009e020000                  ....z...........
+  0080  5c030000d00200007c030000dc020000                  \.......|.......
+  0090  0000000000000000a086010000000000                  ................
+  00a0  02000000030000000500000006000000                  ................
+  00b0  5c030000000300005c030000a0020000                  \.......\.......
+  00c0  0123456789abcdeffedcba9876543210                  .#Eg........vT2.
+  00d0  200300009a0200005c030000dc020000                   .......\.......
+  00e0  f0e1d2c39979825aa1ebd96edcbc1b8f                  .....y.Z...n....
+  00f0  03000000030000000000000000000000                  ................
+  0100  5348412d323536002f73797374656d2f                  SHA-256./system/
+  0110  6c696236342f6c69626172742e736f00                  lib64/libart.so.
+  0120  726f2e6172636800006578796e6f7339                  ro.arch..exynos9
+  0130  383130002f73797374656d2f6c696236                  810./system/lib6
+  0140  342f6c642d616e64726f69642e736f00                  4/ld-android.so.

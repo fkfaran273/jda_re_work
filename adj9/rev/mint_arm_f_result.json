@@ -1,0 +1,18 @@
+{
+ "gps": "519e40d6-cd1e-4331-a31e-c67e16bad09b",
+ "mode": "param-exact mint v4",
+ "session": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"c421813212c3a0e76ea3bf441643df87\",\"ask_in\":2000}\r\n"
+ ],
+ "verdict": {
+  "tracker_token": "wy7261z",
+  "tracker_name": "Organic",
+  "network": "Organic",
+  "engagement_time": "0001-01-01T00:00:00Z",
+  "installed_at": "2026-09-25T11:03:08Z",
+  "first_session_time": "2026-09-25T11:03:08Z",
+  "is_reattributed": false,
+  "is_redownload_install": false
+ }
+}

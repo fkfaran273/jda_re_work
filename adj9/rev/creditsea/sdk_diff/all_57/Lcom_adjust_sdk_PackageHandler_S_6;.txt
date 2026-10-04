@@ -1,0 +1,13 @@
+# CLASS Lcom/adjust/sdk/PackageHandler$6;
+FIELD public final synthetic a Lcom/adjust/sdk/PackageHandler;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/PackageHandler;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/PackageHandler$6;->a Lcom/adjust/sdk/PackageHandler;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run ()V ----
+  iget-object            v0, v1, Lcom/adjust/sdk/PackageHandler$6;->a Lcom/adjust/sdk/PackageHandler;
+  invoke-static          v0, Lcom/adjust/sdk/PackageHandler;->access$600(Lcom/adjust/sdk/PackageHandler;)V
+  return-void            
+######################################################################

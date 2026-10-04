@@ -1,0 +1,21 @@
+--- 
++++ 
+@@ -18,3 +18,4 @@
+ return-void
+----- METHOD public static synthetic access$000 (Ljava/net/URL; I Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;)V ----
++---- METHOD public static bridge synthetic a (Ljava/net/URL; Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;)V ----
++const/4 vX, 0
+ invoke-static vX, vX, vX, Lcom/adjust/sdk/AdjustLinkResolution;->requestAndResolve(Ljava/net/URL; I Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;)V
+@@ -63,5 +64,2 @@
+ move-result-object vX
+-invoke-static vX, Lcom/google/firebase/perf/network/FirebasePerfUrlConnection;->instrument(Ljava/lang/Object;)Ljava/lang/Object;
+-move-result-object vX
+-check-cast vX, Ljava/net/URLConnection;
+ check-cast vX, Ljava/net/HttpURLConnection;
+@@ -127,4 +125,4 @@
+ sget-object vX, Lcom/adjust/sdk/AdjustLinkResolution;->executor Ljava/util/concurrent/ExecutorService;
+-new-instance vX, Lcom/adjust/sdk/AdjustLinkResolution$1;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/AdjustLinkResolution$1;-><init>(Ljava/net/URL; Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;)V
++new-instance vX, Lcom/adjust/sdk/N;
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/N;-><init>(Ljava/net/URL; Lcom/adjust/sdk/AdjustLinkResolution$AdjustLinkResolutionCallback;)V
+ invoke-interface vX, vX, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V

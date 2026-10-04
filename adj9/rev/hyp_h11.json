@@ -1,0 +1,9 @@
+{
+ "arm": "h11",
+ "gps": "8f62c35f-24f0-4297-9463-1050c01e0585",
+ "session": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"99c84c0bc784a0209bfb9e32e8278fc6\",\"ask_in\":2000}"
+ ],
+ "verdict": null
+}

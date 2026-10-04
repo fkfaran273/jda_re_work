@@ -1,0 +1,16 @@
+# CLASS Lcom/adjust/sdk/SdkClickResponseData;
+FIELD  clickTime J
+FIELD  clickTimeServer J
+FIELD  googlePlayInstant Ljava/lang/Boolean;
+FIELD  installBegin J
+FIELD  installBeginServer J
+FIELD  installReferrer Ljava/lang/String;
+FIELD  installVersion Ljava/lang/String;
+FIELD  isClick Ljava/lang/Boolean;
+FIELD  isInstallReferrer Z
+FIELD  referrerApi Ljava/lang/String;
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Lcom/adjust/sdk/ResponseData;-><init>()V
+  return-void            
+######################################################################

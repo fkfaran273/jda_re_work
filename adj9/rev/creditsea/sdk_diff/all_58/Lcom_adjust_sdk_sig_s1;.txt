@@ -1,0 +1,6 @@
+# CLASS Lcom/adjust/sdk/sig/s1;
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/RuntimeException;-><init>()V
+  return-void            
+######################################################################

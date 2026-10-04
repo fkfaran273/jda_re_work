@@ -1,0 +1,32 @@
+{
+ "log": [
+  "gps=7cc81be0-60a0-4342-a878-eb5ee4f2634a (REAL DEVICE GAID)",
+  "click 302 referrer=adjust_reftag=cVxwJxtbQwuyM&utm_source=VKM+Digital+Yeni&utm_",
+  "installed_at=2026-09-14T17:52:12.431Z+0530 updated_at=2026-09-24T20:36:30.448Z+0530 (PM values, re-attribution story)",
+  "signed session     sec=1790625704 S=a6da5d2b st=exit-clean 192B",
+  "SESSION 200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"d3a205a1c77e219be02d5bbf2d814d51\",\"ask_in\":5000}",
+  "signed click       sec=1790625720 S=e74f6d6d st=exit-clean 192B",
+  "SDK_CLICK 200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"d3a205a1c77e219be02d5bbf2d814d51\"}",
+  "signed attribution sec=1790625736 S=aed0e2d2 st=exit-clean 192B",
+  "ATTRIBUTION 200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"d3a205a1c77e219be02d5bbf2d814d51\",\"attribution\":{\"tracker_token\":\"24xxe7sm\",\"tracker_name\":\"VKM Digital Yeni::AH::vkm_0929::penti_generic\",\"network\":\"VKM Digital Ye"
+ ],
+ "gps": "7cc81be0-60a0-4342-a878-eb5ee4f2634a",
+ "real_gaid": true,
+ "click": {
+  "http": 302,
+  "referrer": "adjust_reftag=cVxwJxtbQwuyM&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0929&utm_term=penti_generic"
+ },
+ "session": {
+  "http": 200,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d3a205a1c77e219be02d5bbf2d814d51\",\"ask_in\":5000}"
+ },
+ "sdk_click": {
+  "http": 200,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d3a205a1c77e219be02d5bbf2d814d51\"}"
+ },
+ "attribution": {
+  "http": 200,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"d3a205a1c77e219be02d5bbf2d814d51\",\"attribution\":{\"tracker_token\":\"24xxe7sm\",\"tracker_name\":\"VKM Digital Yeni::AH::vkm_0929::penti_generic\",\"network\":\"VKM Digital Yeni\",\"campaign\":\"AH\",\"adgroup\":\"vkm_0929\",\"creative\":\"penti_generic\",\"engagement_time\":\"2026-09-28T20:01:46Z\",\"installed_at\":\"2026-09-25T13:05:08Z\",\"first_session_time\":\"2026-09-28T20:02:01Z\",\"is_reattributed\":true,\"is_redownload_install\":false}}"
+ },
+ "verdict": "NON-ORGANIC"
+}

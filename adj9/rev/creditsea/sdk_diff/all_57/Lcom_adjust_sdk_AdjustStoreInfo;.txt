@@ -1,0 +1,43 @@
+# CLASS Lcom/adjust/sdk/AdjustStoreInfo;
+FIELD private static final logger Lcom/adjust/sdk/ILogger;
+FIELD  storeAppId Ljava/lang/String;
+FIELD  storeName Ljava/lang/String;
+
+---- METHOD static constructor <clinit> ()V ----
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v0
+  sput-object            v0, Lcom/adjust/sdk/AdjustStoreInfo;->logger Lcom/adjust/sdk/ILogger;
+  return-void            
+
+---- METHOD public constructor <init> (Ljava/lang/String;)V ----
+  invoke-direct          v1, Ljava/lang/Object;-><init>()V
+  invoke-direct          v1, v2, Lcom/adjust/sdk/AdjustStoreInfo;->isValidStore(Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  return-void            
+  iput-object            v2, v1, Lcom/adjust/sdk/AdjustStoreInfo;->storeName Ljava/lang/String;
+  return-void            
+
+---- METHOD private isValidStore (Ljava/lang/String;)Z ----
+  const/4                v0, 0
+  if-nez                 v4, +00ch
+  sget-object            v4, Lcom/adjust/sdk/AdjustStoreInfo;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v1, v0, [Ljava/lang/Object;
+  const-string           v2, "Missing store name"
+  invoke-interface       v4, v2, v1, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v0
+  invoke-virtual         v4, Ljava/lang/String;->isEmpty()Z
+  move-result            v4
+  if-eqz                 v4, +00ch
+  sget-object            v4, Lcom/adjust/sdk/AdjustStoreInfo;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v1, v0, [Ljava/lang/Object;
+  const-string           v2, "Store name can't be empty"
+  invoke-interface       v4, v2, v1, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v0
+  const/4                v4, 1
+  return                 v4
+
+---- METHOD public setStoreAppId (Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustStoreInfo;->storeAppId Ljava/lang/String;
+  return-void            
+######################################################################

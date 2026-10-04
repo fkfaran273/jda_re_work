@@ -1,0 +1,10 @@
+=== decrypt sites for crypto/keystore strings ===
+
+  Ed25519                            data@0x153788   decrypt@0x96fd0    fn=0xa2088    [off]
+  generateKeyPair                    data@0x153b60   decrypt@0xa9c38    fn=0xb53c0    [off]
+  ~Q[MPV[tZFlKPMZ?key2               data@0x154810   decrypt@0xd82dc    fn=0xe3128    [ON ]
+
+=== summary: functions that touch the crypto strings ===
+  fn 0xa2088 : Ed25519
+  fn 0xb53c0 : generateKeyPair
+  fn 0xe3128 : ~Q[MPV[tZFlKPMZ?key2

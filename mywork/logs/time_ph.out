@@ -1,0 +1,5 @@
+[time] import native_d0: 0.1s
+[time] posthead_region_native(seed=0xd124f72b): 115.6s
+d2=0x2bf724d1
+d0[:8]=86fb712a d09fbe59 53ede83d 05891e0b f3bf520a c5b9824f 46cb885f 65eb280d
+d4=00010002 10031004 14031414 02120651 0a100553 9917d516 56642320 edb4f70b

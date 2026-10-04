@@ -1,0 +1,575 @@
+WALL_A_SLICE_1.md
+  - 0xdbd14 bl 0x13de90     clock_gettime          (call #2)
+
+WALL_A_SLICE_2.md
+
+
+WALL_A_SLICE_3.md
+  - - The real function prologue is **`0xe3c0`** (`sub sp,#0x130; stp x29,x30...
+  - descriptor region `0x151d58..0x151e00`** (the words arrays). Entries are
+  - `cmp x8, x10; b.eq #0x10594` means *if state == x10's token → state := x9's
+  - `0x9248b957964b63cc` → block `0x129b4` → tail-link `b #0x130e8`.
+
+WALL_A_SLICE_4.md
+  - 0x13e1f8  adr  x21, #0x155138          ; x21 = "/dev/urandom"   <- the ONLY ref
+  - 0x13e744  adr  x8, #0x155e30           ; one-shot flag
+  - 0x13e74c  mov  w0, #0x38               ; syscall 56 = openat
+  - 0x13e758  mov  w3, #0x80000            ; O_CLOEXEC
+
+WALL_A_SLICE_5.md
+  - `x22` at the openat `0xe1f88` resolves via `adr x22, #0x1548f0` (`0xe1aac`)
+  - **fn `0x100094`** (two-step prologue `sub sp,#0x160`, spans ≥
+  - | `0x146558` | `mkiter` | `calloc(1,0x10)` iterator descriptor |
+  - 12a414  cbnz w0, #0x12a2f8       ; LOOP
+
+WALL_A_SLICE_6.md
+  - - Builder = fn **`0x100094`** (prologue `sub sp,#0x160`, clean
+  - - The 11 field descriptors are `mkdesc(0x147d3c)` nodes
+  - | H (TEE HMAC) rides as a 32-B field, never decoded | **PROVEN** (descriptor 0x20 + role analysis) |
+  - via popped counters (`add x28, x20, w22, uxtw #3; ldr x1, [x28, #0x20]!`).
+
+WALL_A_SLICE_7.md
+  - Builder fn `0x100094` (`sub sp,#0x160`, `0x100094..0x12aa48`), `vm_program.txt`
+  - tail per tag&3: 1B (lsl#0x18) / 2B (rev16&0xffff0000) / 3B pack / 4B (rev)
+  - 11 descriptors (slice 6 inventory, re-asserted `final_fieldloop.py`):
+
+WALL_A_SLICE_8.md
+  - as descriptor `0x20` (8 dwords) into its own sink, then the queue-merge
+
+WALL_A_SLICE_9.md
+  - | 1 | `0x146470/74/78` treated as NOOP | disasm: `b #0x147630` (PUSH) / `b #0x147620` (isEmpty) / `b #0x147734` (POP) | alias to PUSH/POP/isEmpty; `0x10030c PUSH(queue2,17)` now fills |
+  - | 2 | LENQ stream reg `x1` | `0x147304` reads `[x0+#0x14/0x18/0x0]` → stream is `x0` (site `0x100384 ldp x21,x0,[x20]` proves it) | use `x0` |
+
+WALL_A_SLICE_10.md
+  - tbnz w0,#0 -> die; POP -> w0; stp; cmp w0,#0x2d -> 0x128838 | == -> 0x128990
+  - cmp #0x37e -> 0x100710; #0x19f -> 0x100830; #0xeb -> 0x100a2c
+  - #0xbb -> 0x100db0; #0x7d -> 0x128fc0; #0x99 -> 0x1293c8; else 0x12a8b4
+  - needs REAL descriptor bytes. Of the 11 we hold 1 (H from `pairset.json`);
+
+WALL_A_SLICE_11.md
+  - ## 2. The 11 descriptors: known / derivable / unknown (one event)
+  - - **R1 — cert SHA-1, offline.** JCA trace (`adj9_hp.log`) proves once-per-process `SHA-1(745-B cert)`. `base.apk` has no v1 `META-INF/*.RSA` (v2/v3 only) → parse the APK Signing Block for the DER cert
+  - - **R4 — core-record layout.** Once R1/R2 + stream-struct model (slice 10) land: forward-simulate with descriptor 4 = known H + 9 = R1/R2 + timestamps from the golden ts, compare 48-dword output vs th
+
+WALL_A_SLICE_11_R1.md
+  - ## Descriptor-9 (20 B = SHA-1 size) candidates, ranked
+  - ## Descriptor table update (slice 11 §2)
+  - #4 H: KNOWN (pairs_run 34×). #5 level: const (31 moto / 30 OnePlus).
+  - Remaining unknowns unchanged: #0 layout, #2/#6/#7/#8 values, #3/#10
+
+WALL_A_SLICE_11_R2.md
+  - ## Descriptor table update
+  - at signing time; 20-B size matches the `0x14` descriptor). The one residual
+  - caveat (digest computed ⇒ digest placed as descriptor 9) is structural:
+  - ## Scoreboard (11 descriptors, one event)
+
+WALL_A_SLICE_12.md
+  - Descriptors fed with real data (#4 = real H 8 dw, #9 = cert-SHA1 5 dw,
+  - model → maze exits → real bytes for the remaining 8 descriptors → 38-match
+
+WALL_A_SLICE_13.md
+  - (the 11 descriptors), `0x147e2c` ×11 in the epilogue (`0x12ddb4…`,
+  - descriptors the popped values take edge paths, and OUTLEN now returns
+  - contributors are *input* problems (8 unknown descriptor payloads incl. ns
+  - descriptor bytes (#0/#2/#3/#6/#7/#8/#10 + ns stamps), then the 38-match and
+
+WALL_A_SLICE_14.md
+  - null/zero checks (`cmp x3,#0; ccmp x2,#0`), then the same opaque-maze
+
+WALL_A_SLICE_15.md
+  - (real / A1∼A2 same-in / B1∼B2 h-zero / C1 h-flip / D1∼D2 mapX / E lv30 /
+  - | D1∼D2 (same mapX) | 48/48 | 48/48 | 48/48 | 48/48 |
+  - Direct (exact) only: stream-struct resimulation with real bytes (R4: #0
+  - layout, #2/#3/#6/#7/#8/#10 + ns) + EMIT/`0xbb548` lifts. Ruled out:
+
+WALL_A_SLICE_16.md
+
+
+WALL_A_SLICE_17.md
+
+
+WALL_A_SLICE_18.md
+  - | D1/D2 | live map + first-key value `+"X"` (`# map_key_modified=` + old value logged in `probe_result`) |
+  - only synchronous prize left is real descriptor bytes (R4).
+  - `cmp x3,#0; ccmp x2,#0; csel x19,x9,x8,ne` ⇒ **`x19 = {2 values}`}** on
+
+WALL_A_SLICE_19.md
+  - constrained; remaining unknowns are exactly the native-only set (#0 layout,
+  - #2/#3/#6/#7/#8/#10, ns stamps) per slices 10–11.
+
+WALL_A_SLICE_20.md
+  - #2/#6/#7 × {ts_sec, api 31, mapsize 50, 11, 36, 62, 48, 1, 0, 0xC0, 176,
+  - after real multi-dword payloads (#0/#3/#8/#10) + ns stamps land.
+  - SOLVED INPUTS: #1 ∅, #4 H (per-call), #5 level (31/30), #9 cert-SHA1.
+  - CONSTRAINED: #2/#6/#7 (workspace-only, no control) — candidates enumerated,
+
+WALL_A_SLICE_21.md
+  - 4. MAIN-init sweep (12 variants: acc/offs/data presets) + #0/#8
+  - dword sweeps (320 runs) + #2/#6/#7 sweep (39 runs): ALL null. Three
+  - 2. Real #0 payload (R4): first value that makes any LENQ return nonzero
+  - w0=0 → `[CTX+0x20]`. OUTLEN=0 was CORRECT (zero-filled #0 ⇒ TOP=0 ⇒
+
+WALL_A_SLICE_22.md
+  - - OUTLEN=0 re-audited CORRECT (zero #0 ⇒ TOP=0).
+
+WALL_A_SLICE_23.md
+  - # Wall A — slice 23: descriptor build sites — lengths proven, sources localized (2026-09-11)
+  - #2/#4/#8/#9 data = whatever `x8/x9/x10/x19/x20/x22` POINT TO (pointer-sized
+  - slots; 32/20/16-B reads through them; #2's 4 B may be value-direct).
+  - Then: resimulation with REAL #2/#8 (+#9 ✓,#4 ✓,#5 level) — 6+ known of 11.
+
+WALL_A_SLICE_24.md
+  - ## 2. `x19` reassigned by the maze (`0xdb268 mov x19,#0x55a2` + ladder)
+  - x4=x29−0x30`, plus `d0=[x25+0x600]` float load nearby) and from inside
+
+WALL_A_SLICE_25.md
+  - (`adr x28,#0x153910` + decrypt-and-write-back). In-use, twice.
+  - i.e. plausibly where #0's 144 B (and #3's string) get built. Its two call
+  - x4=x29−0x30`) and `0xbb548+0xbba34`. Full claim list (WHICH keys → #0
+
+WALL_A_SLICE_26.md
+  - # Wall A — slice 26: the master struct — all fixed descriptors localized (2026-09-11)
+  - | struct off | size | descriptor | how |
+  - | `+0x20` | 4 | #2 | `[sp+0x58] = x19+0x20` (`0x12cbd4`) → mkdesc#2 (`0x12d2c0`) |
+  - | `+0x30` | 32 | #4 H | `[sp+0x50] = x19+0x30` (`0x12cbf4` overwrites spill) → mkdesc#4 (`0x12d4f8`, len `0x20`) |
+
+WALL_A_SLICE_27.md
+  - KNOWN: #1 ∅, #3 ∅, #4 H (per-call), #5 `00…`, #6 `00…`, #9 cert-SHA1.
+  - SOURCED (address known, value = struct/runtime): #2 (`x19+0x20` 4 B), #7
+  - OPEN: #0 content (144 B @ `x19+0x50`), #2/#7 values, #10 values, ns stamps
+  - (likely inside #0), `0xbb548` order. Resimulation inputs needed: #0 +
+
+WALL_A_SLICE_28.md
+  - holders — i.e. #0's 144 B is built by ITERATING entries (order = the
+  - #0/#2/#7/#8/#10/ns directly. What it supplies: exact Java-side assembly
+  - (above), the iteration (not lookup) nature of #0's construction, and the
+  - full `sign()` call graph for any future Java-hook placement. Net: #0
+
+WALL_A_SLICE_29.md
+
+
+WALL_A_SLICE_30.md
+  - ## 3. #0-encoding battery (9 hypotheses, `r4_batt.py`)
+  - Raw hashCode search in 38 blobs: 0/27 + 0/27 (`h0_test.py`). #0 content
+  - values + H + blob + second. The #0 ENCODING (144 B from ~30 fetched claims)
+
+WALL_A_SLICE_31.md
+
+
+WALL_A_SLICE_32.md
+
+
+WALL_A_SLICE_33.md
+
+
+WALL_A_SLICE_34.md
+  - - PUSH B = 709149083 == draw #2, EXACT.
+
+WALL_A_SLICE_35.md
+  - value selecting the stream: for #0-selected, OUTLEN = acc - TOP#0.
+  - With acc starting 0, ANY nonzero TOP#0 gives u32-huge OUTLEN >= 742 on
+  - twice. The lever is precise: #0's tail (TOP#0) + acc growth set OUTLEN;
+  - #0-tail variants x acc-growth tracking: measure OUTLEN(stream0) +
+
+WALL_A_SLICE_36.md
+
+
+WALL_A_SLICE_37.md
+  - `dispatch#1 = (-rev32(#0-tail)) mod 2^32` in the kv-body configuration
+  - passes 2+ need live workspace values (real merge EMITs from real #0).
+  - Real #0 encoding (fetch-ordered content + correct tail per target pass) so
+
+WALL_A_SLICE_38.md
+  - # Wall A - slice 38: #0-encoding battery exhausted, remainder crystallized (2026-09-11)
+  - Differentials: no stable dword in ANY of 40 controlled pairs. #0 content:
+  - 1. Struct values: #2 (x19+0x20), #7/+10-len ([x19+0x128]), #10-ptr
+  - 2. ns stamps (likely #0-embedded; clock_gettime x2 at JNI entry).
+
+WALL_A_SLICE_39.md
+  - Live-reg trace at the header XOR showed `w21 <- 0` at POP#2 while native
+
+WALL_A_SLICE_40.md
+
+
+WALL_A_SLICE_41.md
+  - carry the whitened claims (H as opaque tag among them per descriptor
+  - Real LENQ values into the 44 slots (R4 #0 encoding - the ONLY content
+
+WALL_A_SLICE_42.md
+  - values route short cases). Real #0 content → real LENQ hits → deeper cases
+
+WALL_A_SLICE_43.md
+
+
+WALL_A_SLICE_44.md
+
+
+WALL_A_SLICE_45.md
+
+
+WALL_A_SLICE_46.md
+  - routing needs real LENQ/OUTLEN hits = real #0 TOPs/acc = real content.
+  - No experiment left on the routing side; the content side (R4 #0 encoding +
+
+WALL_A_SLICE_47.md
+  - content (real #0 encoding -> real TOPs -> real LENQ hits -> real trip
+
+WALL_A_SLICE_48.md
+
+
+WALL_A_SLICE_49.md
+  - - Tail-steering law (`dispatch#1 = -rev32(#0-tail)`) reaches any window
+  - huge-overshoot into upper cases). Real #0-tail + real TOPs route here.
+
+WALL_A_SLICE_50.md
+  - Fetch program fully characterized (readers, passes, order, counts). #0
+  - (a) non-claim bytes dominate #0 (timestamps/env/binary telemetry),
+  - (b) a transform outside the tested family, (c) #0 assembled elsewhere
+
+WALL_A_SLICE_51.md
+  - true #0 encoding (all ~100 variants flat on overlap). The walk is
+
+WALL_A_SLICE_52.md
+
+
+WALL_A_SLICE_53.md
+
+
+WALL_A_SLICE_54.md
+  - #10 content is write-only pre-gateway (like #2/#7) - untestable until the
+  - unknowns unchanged (#0 true bytes, struct u32s, ns placement, #10 length).
+
+WALL_A_SLICE_55.md
+
+
+WALL_A_SLICE_56.md
+
+
+WALL_A_SLICE_57.md
+  - orchestrator struct (x19-slots incl. #0's 144 B window at +0x50).
+  - ## Reframe: #0 = env telemetry, not map claims
+  - This explains the claim-battery wipeout (~100 recipes flat): #0 was never
+  - descriptors (or 0xba4a8's separate record), not #0.
+
+WALL_A_SLICE_58.md
+  - `x8,[sp]`-style arg at the dispatch sites). Then #0's env segments stop
+
+WALL_A_SLICE_59.md
+
+
+WALL_A_SLICE_60.md
+  - and returns. Candidate role: builds one #0 segment or the runtime string
+  - across its 9 callers = what gets serialized where, incl. #0 segments?).
+
+WALL_A_SLICE_61.md
+  - per slot (#0/others/ns), hub walks needing live regs (ba674, bb668-visit,
+
+WALL_A_SLICE_62.md
+
+
+WALL_A_SLICE_63.md
+
+
+WALL_A_SLICE_64.md
+  - fetching. Worker-region output hunting (slice 63) deprioritized for #0.
+  - independent #0-composition constraints.
+
+WALL_A_SLICE_65.md
+  - for click signings). #0's composition therefore VARIES by endpoint type:
+  - click-#0 (41-claim space) vs session/event-#0 (36-claim space). Tests must
+
+WALL_A_SLICE_66.md
+  - ## Pad zero masks TOP#0
+  - `fq-hc` filled 35 hashes + 4 zero pad bytes: last dword = 0 => TOP#0 = 0
+
+WALL_A_SLICE_67.md
+
+
+WALL_A_SLICE_68.md
+  - #0-tail + #2/#6/#7 ∈ {0, 1, 36} with kv body: all identical (1375 steps,
+
+WALL_A_SLICE_69.md
+
+
+WALL_A_SLICE_70.md
+
+
+WALL_A_SLICE_71.md
+  - - Chain is INTERPROCEDURAL (0xbb548-hub ⇄ 0xbbbf8-hub); `cmp x2,#0;
+
+WALL_A_SLICE_72.md
+
+
+WALL_A_SLICE_73.md
+
+
+WALL_A_SLICE_76.md
+
+
+WALL_A_SLICE_77.md
+  - - Descriptor translation (x1-struct -> (len,tag,data)) pending.
+
+WALL_A_SLICE_78.md
+  - | descriptor | len (dw) | content |
+  - | #0 | 36 | core record (env verdicts/telemetry) |
+  - | #4 | 8 | H = TEE-HMAC (opaque per-device tag) |
+  - | #2 | 1 | master struct u32 |
+
+WALL_A_SLICE_79.md
+  - into plain dicts — no emulator, no descriptor inputs, no #0 needed —
+  - values rather than deriving them from claims + #0. The #0 gap (Option A)
+
+WALL_A_SLICE_80.md
+  - # Wall A - slice 80: #0 investigation — per-signing entropy (2026-09-13)
+  - Can descriptor #0's 36 dwords (144 B @struct+0x50) be reconstructed
+  - - #0 dword35 (last emit): `0x3465d635` (session, 12:02:24.477) vs
+  - so placeholder runs can't localize #0's words for blob read-off.
+
+WALL_A_SLICE_81.md
+  - `rev/make_fresh.py`: builds the 11 descriptors from scratch (whcap
+  - session's #0/#4(H)/#9/#8/#2/#5/#6 replayed verbatim; #10 rebuilt with
+  - - The server ACCEPTED: replayed H (~18h old), replayed #0, fresh
+  - freshness-bound and #0-slots are not validated — the parse-model
+
+WALL_A_SLICE_82.md
+  - # Wall A - slice 82: clean 200 on crafted signature; #0/H unvalidated (2026-09-13)
+  - ## What the 200 proves about #0/H validation
+  - zero-filled #0 with one random dword35, fresh timestamps/claims,
+  - the server does **not** validate #0's words (they were zeros/random) and
+
+WALL_A_SLICE_83.md
+  - # Wall A - slice 83: the server cannot get #0's nonce words either (2026-09-13)
+  - Can Adjust's server recover descriptor #0's real nonce words from a
+  - 2. #0's words reach the body through value-dependent routing:
+  - field EMITs land at (sink_#0, j) deterministically, but the
+
+WALL_A_SLICE_84.md
+  - # Wall A - slice 84: taint probe - 0/44 verifiable; #0's tiled shape (2026-09-13)
+  - those slices asserted, and pins down #0's actual content.
+  - | #2 (1 dw) random | all 44 | exit-clean, same steps |
+  - | #0 (36 dw) fully random x2 | all (header too - never emitted) | **12M-step cap, no exit** |
+
+WALL_A_SLICE_85.md
+  - # Wall A - slice 85: #0 CAPTURED LIVE - the "nonce words" are heap pointers (2026-09-13)
+  - dw 10-11   0x0b (11, descriptor count; same 0xb as vm x2) + 0
+  - adjacent allocations: the descriptor array and its nodes)
+  - ## Consequence (final answer to "can we get #0's nonce words")
+
+WALL_A_SLICE_86.md
+  - | fresh #2 | fresh reftag parsed from our own click's 302 | Organic |
+
+WALL_A_SLICE_87.md
+  - | attempt5/6 | fresh | **idfa=adid (user's verbatim link)** | session-first, CTIT, real #0 in 7 | Organic |
+  - | attempt7 | fresh | idfa+gps_adid | session-first, CAPTURED REAL #0 | Organic |
+  - #0 real vs zero, H replay, TLS fingerprint, header order.
+
+WALL_A_SLICE_88.md
+  - `#2` sweep vs the 70-blob corpus with real H (this slice starts it).
+  - - Crypto is structurally done (header 94/94, body 48/48 on captured inputs — `fin_result.md`). Only per-signing small slots open: `#2` (1 dw, captured `fb1a8296`), `#8` (4 dw, captured `bfffffff…`), w
+  - `#2` sweep (`sweep2_run.py`, 23 candidates × ~40 s, 8-parallel): control `fb1a8296` 48/48; **every** other value (zeros, small ints, api levels 30/31/33/35/36, ±1 bit, byte-swaps) exit-clean at **exac
+  - Free-forge (zeros `#0`+`#2`+`#8`): **no exit** (`steps`, 0/48) — combined zeros break merge routing (dispatch is value-steered). Refined rule replacing slice 82's "zeros everywhere": `#0` may be zeroe
+
+WALL_A_SLICE_89.md
+  - | xiaomi funnel #2 (fresh `2ac23e10`) | session **400 too-frequent** (merged into `d3b89ee0…` record), rest 200 | Organic, eng 0001 |
+
+WALL_A_SLICE_90.md
+  - (same as the device), body-stamp timezone, a **captured genuine `#0`** and a
+  - **captured genuine `H`**. Remaining untested: `#2` (1 dw) and `#8` (4 dw).
+  - `#2` (1 dword, `u32 @struct+0x20`, per-signing) and `#8` (4 dwords, runtime
+  - Definitive: one Frida capture of the **full descriptor set for a single
+
+WALL_A_SLICE_91.md
+
+
+WALL_A_SLICE_92.md
+  - This also settles the slice-88 "server cannot verify #2/#8 (inversion barrier)"
+
+WALL_A_SLICE_93.md
+
+
+WALL_A_SLICE_94.md
+  - Descriptor #10 of the adj9 body (360 B, 90 dwords) is **a fixed-order
+  - desc10 map (ONE sample) + #0 telemetry + #8 ⇒ at best a *candidate* input set.
+
+WALL_A_SLICE_95.md
+  - (law now computable) → mint vs its nsign hex → per-signing #0/#8 remain the
+  - ready to fold into adj9_forge.py once #0/#8 are solved.
+
+WALL_A_SLICE_96.md
+  - → mint vs nsign hex; per-signing #0/#8 remain the only maker gap.
+  - 1. Maker gap #0/#2/#8: we now hold TWO device-minted refs (minted4 + the AMC
+  - mint) with exact known inputs — rerun the offline differential for #2 (hash
+  - of desc10/second/H?) with per-signing data; #0/#8 randomness already OK'd by
+
+WALL_A_SLICE_97.md
+  - (desc_probe.py: golden #2 fb1a8296 not among 40+ hash candidates — #2 stays
+  - ( Organic fallback). #0/#8 completeness: record-only, no verdict impact.
+  - 2. #2 hunt needs more (desc10,#2) pairs from live bursts — completeness only.
+  - - Maker offline: 48/48 computable steps; per-install #0/#2/#8 inputs remain
+
+WALL_A_SLICE_98.md
+  - ## 4. Descriptor + header classification (measured)
+  - | comparison | d0 | d2 | d4 | d8 | d7 | d10 |
+  - - `#0/#2/#4` DIFF even for two byte-identical session maps signed in the same
+  - C LAW #10 + random #4      192 B  MISMATCH  diffbytes=176 first@16
+
+WALL_A_SLICE_99.md
+  - # Wall A — slice 99: OFFLINE VERIFICATION of #0 / #2 / #4 (the pure-Python-signer question)
+  - descriptor set, and that `#10` (claims) is fully computable by the desc10 law.
+  - The three remaining per-signing inputs were `#0` (144 B), `#2` (4 B), `#4` (32 B,
+  - bug (`#2` overwritten by `#7`: both fields are 1 dword). This slice re-verifies
+
+WALL_A_SLICE_100.md
+  - Answer: we were missing **what produces d4 (H)**. It is no longer a mystery.
+  - mac.update(msg); H = mac.doFinal();                    // => d4 / H
+
+WALL_A_SLICE_101.md
+  - body cannot match because `#0` (36-dword per-request core) and `#4` (H) are
+  - 4. Descriptor inputs for the golden second are recorded in
+  - `desc_det_result.json` (d0/d4/d8/d9/d2/d7/d10 per kind). Notably **`d0` is not
+  - which makes `#0` a promising derivation target — and `#0` is the only other
+
+WALL_A_SLICE_102.md
+  - | 3 | "`#0` is not server-validated / `#2` is free / `#8` replay is fine" — slices 82/84; `WALL_A_SLICE_88.md` §4 | **UNPROVEN (invalid instrument)** | Those arms were scored on **HTTP 200 / exit-clea
+  - | 6 | "`#4` = `H` = `HMAC-SHA256(key2, msg)`" | **NOT CONFIRMED — statistically contradicted** | Slice 99 §4 measured `#4` as **non-uniform**: 29 always-zero bits concentrated in bytes 0–7, byte-0 alp
+  - | `#2` | **no** | per-call; no derivation found (slice 99 §2; `#2`-derivation battery all miss) |
+  - | `#0` | **no** | slice 85: `#0` is **process memory addresses** (7 heap + 4 MTE-tagged pointers) — not a value the server can compute |
+
+WALL_A_SLICE_103.md
+  - # Wall A — slice 103: descriptor `#4` is NOT `H` — the mislabel that corrupted every "H" experiment
+  - `OPS_LIFT.md` labels descriptor `#4` as "**H (TEE-HMAC, arg3), 32 B**", and every
+  - manipulated that slot. **The label is wrong.** `#4` is a *structured, non-uniform
+  - golden #4 = 00100400041440008000c44088104c050025c852cc6e00b101e76c80427bf58e
+
+WALL_A_SLICE_104.md
+  - # Wall A — slice 104: `#4`/`#2` are per-call process state (not derivable), and the maker's `#4` defect is FIXED
+  - 1. **`#4` and `#2` are not functions of the material we know.** Two signings with
+  - the **same claims and the same second** still produce different `#4` *and*
+  - different `#2`. Since the server cannot recompute `#0`/`#2`/`#4`, it cannot
+
+WALL_A_SLICE_105.md
+  - while descriptor `#7` keeps the **unpadded** length (slice 99 §2).
+  - an arbitrary map, i.e. descriptor `#10` as the native holds it plus the exact
+
+WALL_A_SLICE_106.md
+  - descriptor path slice 105 discovered, end-to-end.
+  - the **VM consumes that descriptor correctly** and lands on the device's own blob.
+  - desc = raw + b'\0' * (-len(raw) % 4)             # descriptor #10
+  - signings' descriptors are not in `all_signings`. Closing it needs one EMIT trace
+
+WALL_A_SLICE_107.md
+  - unpadded 246 B (descriptor #7)   padded 248 B = 62 dwords (descriptor #10)
+  - mismatch **twice over**, and could never verify regardless of `H`, `#4` or
+
+WALL_A_SLICE_108.md
+  - which store descriptor dwords as individual JSON/field entries — the claim string
+  - `rev/adj9_forge.make_signature_law(val, kind, second, d4, d0, d2)` was added — the
+  - cert/constant descriptors, the **captured structured `#4`** (never a MAC), and the
+  - captured `#2`/`#0`.
+
+WALL_A_SLICE_109.md
+
+
+WALL_A_SLICE_110.md
+  - header and constants are all byte-exact, and `#0`/`#2`/`#4` are per-call device
+
+WALL_A_SLICE_111.md
+  - Any single descriptor change diffuses through the VM (slice 98: randomising `#4`
+  - | 21-key **attribution** law, `#4` = captured structured record | the slice-107 fix, never before tested on the oracle | 200 NOT |
+  - | 21-key attribution law, **`#4` = the real keystore MAC (`eebe704e…`)** | the campaign's central "H" hypothesis, tested against the *server* instead of a byte-diff | 200 NOT |
+  - So neither the attribution claim set, nor the session claim set, nor `#4`=H makes
+
+WALL_A_SLICE_112.md
+  - ## 2. `#4 ≠ H`, with the device's own pairing — the "H in #4" hypothesis is dead
+  - descriptor #4 = 00100400041440008000c44088104c050025c852cc6e00b101e76c80427bf58e   (structured)
+  - #4 == H ? False      #4[8:] == H[:24] ? False      #4[8:] == H[8:] ? False
+  - | descriptor `#4` | 8 / 8 (12 occurrences each) |
+
+WALL_A_SLICE_113.md
+  - **byte-identical** payload produce different `#0/#2/#4` and different bodies
+
+WALL_A_SLICE_114.md
+
+
+WALL_A_SLICE_115.md
+  - then we will make it offline … i think we need to find #0/#2/#4 region."
+  - differing in `#0/#2/#4`) and slice 100 (MTE-tagged heap pointers inside `#0`), the
+  - ## 4. `#0` is 144 B of only FIVE distinct dwords
+  - golden #0: 13271271 | b7d0992b db50f44c b63798cc dab7f51a | (that triad) x8
+
+WALL_A_SLICE_116.md
+  - reproduces device blobs byte-exactly (48/48) when fed the captured descriptors
+  - (`#0`/`#2`/`#4`/…), which is the same statement from the input side.
+  - * What is NOT settled: what `#0`'s 5 dwords + `#2` + `#4` (the "region", slice 113)
+  - `region_struct.log` (`#0 = [W0][C1][C2][C3][W1][C1][C2][C3] ×8`), `region_derive.log`
+
+WALL_A_SLICE_117.md
+  - adr  x13, #0x1548c0 ; movi v1.16b, #0x3a
+  - ldrb w8,[x13,#0x18] ; eor w8,w8,#0x3a ; strb w8,[x13,#0x18]   (x8 bytes)
+  - adrp x13, #0x155000 ; strb w11,[x13,#0xd94]                    (latch = 1)
+  - The descriptor set (`#0…#10`) — and therefore the region `#0/#2/#4` — is **not**
+
+WALL_A_SLICE_118.md
+  - The `#0/#2/#4` region is **no longer a black box**. One device call now yields the
+  - **complete descriptor/stream plane** of a signing together with its blob — and the
+  - q=3467677168  slots=8    n=0..7      sparse, RISING bit density      <- #4 shape
+  - q=3467675776  slots=1                0xdc45600c (random-looking)     <- #2 shape
+
+WALL_A_SLICE_119.md
+  - # SLICE 119 — the captured plane IS the VM's stream plane, and descriptors are NOT in it
+  - descriptor set and see if the VM reproduces our blob.* Two scripts ran:
+  - | `rev/fin118.py` | do the captured values work as descriptors? | **0/4 arms byte-exact** — every arm hit the 20 M step cap (no termination) |
+  - | `rev/fin_desc_probe.py` | control: does FinEx still reproduce the golden blob? + are descriptors emitted? | **control passes** (`header law OK: True`); **descriptors 0/36, 0/8, 0/5, 0/1 present in t
+
+WALL_A_SLICE_120.md
+  - Slice 119 concluded that the descriptor table is **memory**, not EMIT. So the agent was
+  - | 16-byte repeating tile (`#0` shape) | only **zero** tiles (`00000000 ×3, 00000003`) — not the region |
+  - | sparse ascending 8-dword blocks (`#4` shape) | only `ffffffff` runs and ASCII fragments |
+  - So the builder's argument windows are small control structs; the descriptor table and the
+
+WALL_A_SLICE_121.md
+  - My slice-118/119 searches compared **little-endian** dwords of the blob/descriptors, hence
+  - "blob dwords in EMIT: 0/48" and "descriptors not in the trace 0/36" were **artefacts of
+  - **(2) `rev/fin118.py`'s 0/4 is explained:** it built descriptor bytes with
+  - "36-slot stream with a `0x90` length word" and that `fin_descs.json` calls **`#0`** —
+
+WALL_A_SLICE_122.md
+  - **225 segments**, first segment = 148 emits, and it contains **exactly the descriptor set**:
+  - | #0 | 36 | `13271271` (tile ×8) | ✓ |
+  - | #4 | 8 | `00100400` | ✓ |
+  - | #2 | 1 | `fb1a8296` | ✓ |
+
+WALL_A_SLICE_123.md
+  - (complete descriptor sets captured from the app's own signings), so they do not depend on
+  - ## 1. Four descriptors are CONSTANTS
+  - ## 2. Two descriptors are already computed offline
+  - ## 3. `#0` is only 20 informative bytes
+
+WALL_A_SLICE_124.md
+  - * **`sub_9afa4` is recursive** — 9 of its 21 calls are `bl #0x9afa4` (plus `bl 0x9ad54`,
+  - 0x9cfcc  str d1, [x8, #0x10]
+  - So each descriptor block is `src ^ key`, with `src` produced by the recursive walk.
+  - ⇒ `W0`, the tile, `#2` and `#4`'s words are **not** one- or two-word `H` expressions under
+
+WALL_A_SLICE_125.md
+  - The 56-byte region (`#0` 20 informative bytes, `#4` 32 B, `#2` 4 B) is the **only** unknown
+  - `pair_h3.json` gives 6 signings with `(claims, H, second) → #0/#2/#4`; the sections are
+  - have both the map and `#0/#2/#4`), and cross-check any pattern against the 10 real samples.
+
+WALL_A_SLICE_126.md
+  - i   len   uuid1  uuid2  nU  iso_off  ver_off  afterIso  #2
+  - For the 56-byte region (`#0` 20 informative bytes, `#4` 32 B, `#2` 4 B):
+  - | crc32 / adler32 / fnv1a / Java-hash / md5 / sha1 / sha256 / blake2 of claims, `#0`, `#4`, `#7`, tile | 0 hits |
+  - state — slice 115 read `#0` as heap/MTE-pointer-shaped) is not in the request.
+
+WALL_A_SLICE_127.md
+  - golden seg0 : #0=13271271…  #2=fb1a8296  #4=00100400…  #9=fad0f10d…  #10='KlcA…'(90w)
+  - app    seg0 : #0=ae2efc57…  #2=8333f07a  #4=80001000…  #9=fad0f10d…  #10='KlcA…'(90w)
+  - So: **fresh `#0/#2/#4` (a genuine new signing), same `#10/#9/#8` family** — exactly the
+  - `rev/app_fin2.py`: feed seg0's descriptors (with `#9` in *both* the captured and the
+
+WALL_A_SLICE_128.md
+  - ## 1. `h4fit`: no keyed digest of `H` makes `#4`
+  - Instrument notes: all 11 region components are distinct (`d0=11 d2=11 d4=11`) — with a
+  - different `#0/#2/#4`;
+  - | checksums of claims/#0/#4, `#2` as slice of them | slice 123 (`d2_probe`) |

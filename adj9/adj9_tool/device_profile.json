@@ -1,0 +1,45 @@
+{
+ "_comment": "moto g42 device profile. Timezone is +0530 (Asia/Kolkata / IST), confirmed live: the device reports Asia/Kolkata and the real app's freshly-captured signed /session d10 stamps every timestamp +0530 (see device/win_capture_rows.json). An earlier revision of this file wrongly set +0200 and claimed +0530 came from a different device; that was incorrect. app_version is 3.14.0, confirmed live via dumpsys (versionName=3.14.0) and the captured signed d10. language stays 'tr' because the device locale is Turkish; that is genuine and independent of the UTC offset.",
+
+ "DEV": {
+  "api_level": "31",
+  "os_version": "12",
+  "device_name": "moto g42",
+  "device_manufacturer": "motorola",
+  "hardware_name": "S2SE32.28-28-4",
+  "os_build": "S2SE32.28-28-4",
+  "app_version": "3.14.0",
+  "install_version": "3.14.0",
+  "language": "tr",
+  "display_width": "1080",
+  "display_height": "2237",
+  "screen_density": "high",
+  "no_sim": true
+ },
+
+ "UA": "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)",
+
+ "OFF_MINUTES": 330,
+ "OFF_LABEL": "+0530",
+
+ "ADD_IDFA": false,
+
+ "device_json_fields": {
+  "sdk": "31",
+  "os_version": "12",
+  "model": "moto g42",
+  "brand": "motorola",
+  "mainboard": "S2SE32.28-28-4",
+  "build": "S2SE32.28-28-4",
+  "locale.language": "tr",
+  "display_metrics.xpx": "1080",
+  "display_metrics.ypx": "2237",
+  "display_metrics.density_dpi": "hdpi"
+ },
+
+ "evidence": {
+  "timezone": "Asia/Kolkata (IST, +0530) confirmed live: getprop persist.sys.timezone=Asia/Kolkata, and the real app's freshly-captured signed /session d10 stamps all timestamps +0530 (device/win_capture_rows.json).",
+  "referrer": "raw click referrer is utm_source=google-play&utm_medium=organic (adj9_wh4.log:2698, adj9_wh2.log:2263)",
+  "sim_codes": "mcc/mnc appear in zero requests"
+ }
+}

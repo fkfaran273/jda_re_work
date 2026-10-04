@@ -1,0 +1,10 @@
+{
+ "genuine": [
+  400,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"ad003833f2df4c8f545a300402237d7a\",\"ask_in\":7200000}"
+ ],
+ "bitflip": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"ad003833f2df4c8f545a300402237d7a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-14T11:23:30Z\",\"first_session_time\":\"2026-09-14T11:23:30Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ ]
+}

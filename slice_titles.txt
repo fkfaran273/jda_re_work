@@ -1,0 +1,128 @@
+WALL_A_SLICE_1.md | # Wall A — first slice into the sealing scheme (2026-09-10)
+WALL_A_SLICE_2.md | # Wall A — slice 2: the crypto inventory is settled (2026-09-10)
+WALL_A_SLICE_3.md | # Wall A — slice 3: the seal's primitive layer found (2026-09-10, evening)
+WALL_A_SLICE_4.md | # Wall A — slice 4: the fold's entropy is a 32-bit seed (2026-09-10, late)
+WALL_A_SLICE_5.md | # Wall A — slice 5: the real body path — srand(time) + a queue VM (2026-09-11)
+WALL_A_SLICE_6.md | # Wall A — slice 6: CONCLUSION — the adj9 verification model, complete (2026-09-11)
+WALL_A_SLICE_7.md | # Wall A — slice 7: FINAL — byte-exact validation + close-out (2026-09-11)
+WALL_A_SLICE_8.md | # Wall A — slice 8: 192B DECODE vs the 38-blob corpus (2026-09-11)
+WALL_A_SLICE_9.md | # Wall A — slice 9: server-like verification + forward-VM field stage EXACT (2026-09-11)
+WALL_A_SLICE_10.md | # Wall A — slice 10: remaining, precisely specified (2026-09-11)
+WALL_A_SLICE_11.md | # Wall A — slice 11: REAL DATA pack (2026-09-11)
+WALL_A_SLICE_11_R1.md | # Wall A — slice 11 addendum: R1 DONE — app cert recovered (2026-09-11)
+WALL_A_SLICE_11_R2.md | # Wall A — slice 11 addendum: R2 DONE — cert-SHA1 confirmed in-path (2026-09-11)
+WALL_A_SLICE_12.md | # Wall A — slice 12: candidate #1 tested in the decoder (2026-09-11)
+WALL_A_SLICE_13.md | # Wall A — slice 13: stream allocators + struct model (2026-09-11)
+WALL_A_SLICE_14.md | # Wall A — slice 14: LENQ maze PROVEN from constants (2026-09-11)
+WALL_A_SLICE_15.md | # Wall A — slice 15: differential localization DEAD — diffusion is total (2026-09-11)
+WALL_A_SLICE_16.md | # Wall A — slice 16: EMIT dual-mode proven + in place (2026-09-11)
+WALL_A_SLICE_17.md | # Wall A — slice 17: final assembly `0xbb548`, call level (2026-09-11)
+WALL_A_SLICE_18.md | # Wall A — slice 18: probe inputs specified + assembly route is arg-dependent (2026-09-11)
+WALL_A_SLICE_19.md | # Wall A — slice 19: fresh device capture — complete tuple, signer unchanged (2026-09-11)
+WALL_A_SLICE_20.md | # Wall A — slice 20: R4 resimulation — baseline, sweep, starvation (2026-09-11)
+WALL_A_SLICE_21.md | # Wall A — slice 21: 29-op queue audit — exit inside case `0x128838` (2026-09-11)
+WALL_A_SLICE_22.md | # Wall A — slice 22: the balance paradox + full pre-dispatch audit (2026-09-11)
+WALL_A_SLICE_23.md | # Wall A — slice 23: descriptor build sites — lengths proven, sources localized (2026-09-11)
+WALL_A_SLICE_24.md | # Wall A — slice 24: hub prologue + caller graph corrections (2026-09-11)
+WALL_A_SLICE_25.md | # Wall A — slice 25: `0xba4a8` = Java-interop claim fetcher (2026-09-11)
+WALL_A_SLICE_26.md | # Wall A — slice 26: the master struct — all fixed descriptors localized (2026-09-11)
+WALL_A_SLICE_27.md | # Wall A — slice 27: three proven constants — 7.5/11 known (2026-09-11)
+WALL_A_SLICE_28.md | # Wall A — slice 28: smali route — pipeline confirmed, fetcher = iterator (2026-09-11)
+WALL_A_SLICE_29.md | # Wall A — slice 29: iteration-body blocks enumerated, walk forks on 2 runtime values (2026-09-11)
+WALL_A_SLICE_30.md | # Wall A — slice 30: native claim list captured live (map.get hook) (2026-09-11)
+WALL_A_SLICE_31.md | # Wall A — slice 31: shared queue — +122 steps, loop found, warming shown (2026-09-11)
+WALL_A_SLICE_32.md | # Wall A - slice 32: guided descent - passes chain by dispatch values (2026-09-11)
+WALL_A_SLICE_33.md | # Wall A - slice 33: end-to-end map - header loop reached (2026-09-11)
+WALL_A_SLICE_34.md | # Wall A - slice 34: header primitive byte-exact in-emulator (2026-09-11)
+WALL_A_SLICE_35.md | # Wall A - slice 35: header sustainment - supply feeds passes, re-entry needs OUTLEN (2026-09-11)
+WALL_A_SLICE_36.md | # Wall A - slice 36: staged walk to header loop + sustainment limit (2026-09-11)
+WALL_A_SLICE_37.md | # Wall A - slice 37: dispatch control law + sustainment (2026-09-11)
+WALL_A_SLICE_38.md | # Wall A - slice 38: #0-encoding battery exhausted, remainder crystallized (2026-09-11)
+WALL_A_SLICE_39.md | # Wall A - slice 39: three emulator fixes - full header byte-exact (2026-09-11)
+WALL_A_SLICE_40.md | # Wall A - slice 40: deepest forced walk - seeder circulation (2026-09-11)
+WALL_A_SLICE_41.md | # Wall A - slice 41: workhorse walks 44, body layout sequential (2026-09-11)
+WALL_A_SLICE_42.md | # Wall A - slice 42: clean-return scheduler model (2026-09-11)
+WALL_A_SLICE_43.md | # Wall A - slice 43: refill sweep - 153-case walks 188, counts are POP-fed (2026-09-11)
+WALL_A_SLICE_44.md | # Wall A - slice 44: CAP entry decoded, pad exit found, others open (2026-09-11)
+WALL_A_SLICE_45.md | # Wall A - slice 45: CAP machine mapped, append-mode, header at MAIN[4..8) (2026-09-11)
+WALL_A_SLICE_46.md | # Wall A - slice 46: one merge stream; 258-pass routing census (2026-09-11)
+WALL_A_SLICE_47.md | # Wall A - slice 47: depth sweep - transient buffers, no lasting residue (2026-09-11)
+WALL_A_SLICE_48.md | # Wall A - slice 48: chained walk, overlap metric corrected (2026-09-11)
+WALL_A_SLICE_49.md | # Wall A - slice 49: caller-based EMIT, acc growth, gateway windows (2026-09-11)
+WALL_A_SLICE_50.md | # Wall A - slice 50: fetch clusters - 3 readers, double-sweep (2026-09-11)
+WALL_A_SLICE_51.md | # Wall A - slice 51: natural header + full walk + content verdict (2026-09-11)
+WALL_A_SLICE_52.md | # Wall A - slice 52: proper JNI census (env-deref verified) (2026-09-11)
+WALL_A_SLICE_53.md | # Wall A - slice 53: the single allocator is worker-side, not output (2026-09-11)
+WALL_A_SLICE_54.md | # Wall A - slice 54: time formats recovered, #10 tested flat (2026-09-11)
+WALL_A_SLICE_55.md | # Wall A - slice 55: assembly call args decoded (2026-09-11)
+WALL_A_SLICE_56.md | # Wall A - slice 56: register audit + handoff scan negative (2026-09-11)
+WALL_A_SLICE_57.md | # Wall A - slice 57: feeder `0xda6b8` = env-input dispatcher (2026-09-11)
+WALL_A_SLICE_58.md | # Wall A - slice 58: workers are verdict-bit setters (2026-09-11)
+WALL_A_SLICE_59.md | # Wall A - slice 59: x0 == x19 == master struct CONFIRMED (2026-09-11)
+WALL_A_SLICE_60.md | # Wall A - slice 60: mid-tier aggregators nest dispatchers (2026-09-11)
+WALL_A_SLICE_61.md | # Wall A - slice 61: worker inventory complete + 0x9c478 audit (2026-09-11)
+WALL_A_SLICE_62.md | # Wall A - slice 62: gateway select anatomy + #8 test null (2026-09-11)
+WALL_A_SLICE_63.md | # Wall A - slice 63: output-path hunt, boundary corrected (2026-09-11)
+WALL_A_SLICE_64.md | # Wall A - slice 64: fetch reads attributed to caller threads (2026-09-11)
+WALL_A_SLICE_65.md | # Wall A - slice 65: endpoint-adaptive fetch sets (2026-09-11)
+WALL_A_SLICE_66.md | # Wall A - slice 66: endpoint-matched resim + pad-masks-top (2026-09-11)
+WALL_A_SLICE_67.md | # Wall A - slice 67: workspace anatomy + small-tail prediction (2026-09-11)
+WALL_A_SLICE_68.md | # Wall A - slice 68: small-tail battery null, assembly harness next (2026-09-11)
+WALL_A_SLICE_69.md | # Wall A - slice 69: assembly harness + movk fix (2026-09-11)
+WALL_A_SLICE_70.md | # Wall A - slice 70: assembly hub edge map (2026-09-11)
+WALL_A_SLICE_71.md | # Wall A - slice 71: redispatch machine + chain (2026-09-11)
+WALL_A_SLICE_72.md | # Wall A - slice 72: LIVE entry capture + memdump (2026-09-11)
+WALL_A_SLICE_73.md | # Wall A - slice 73-75: replay, contracts, tail capture (2026-09-12)
+WALL_A_SLICE_76.md | # Wall A - slice 76: VM fires per signing + live field map (2026-09-12)
+WALL_A_SLICE_77.md | # Wall A - slice 77: live pipeline captured, verify at the last inch (2026-09-12)
+WALL_A_SLICE_78.md | # Wall A — slice 78: BODY DECODED — the envelope, end to end, live-proven (2026-09-13)
+WALL_A_SLICE_79.md | # Wall A - slice 79: Option C — pure-Python trace replay, 44/44 + 4/4 (2026-09-13)
+WALL_A_SLICE_80.md | # Wall A - slice 80: #0 investigation — per-signing entropy (2026-09-13)
+WALL_A_SLICE_81.md | # Wall A - slice 81: first offline-crafted signature ACCEPTED (200) (2026-09-13)
+WALL_A_SLICE_82.md | # Wall A - slice 82: clean 200 on crafted signature; #0/H unvalidated (2026-09-13)
+WALL_A_SLICE_83.md | # Wall A - slice 83: the server cannot get #0's nonce words either (2026-09-13)
+WALL_A_SLICE_84.md | # Wall A - slice 84: taint probe - 0/44 verifiable; #0's tiled shape (2026-09-13)
+WALL_A_SLICE_85.md | # Wall A - slice 85: #0 CAPTURED LIVE - the "nonce words" are heap pointers (2026-09-13)
+WALL_A_SLICE_86.md | # Wall A - slice 86: attribution flow — organic is NOT a signature verdict (2026-09-14)
+WALL_A_SLICE_87.md | # Wall A - slice 87: attribution campaign — signature proven valid, organic gate identified (2026-09-14)
+WALL_A_SLICE_88.md | # Wall A - slice 88: device campaign close-out 2026-09-15 — offline endgame (2026-09-15)
+WALL_A_SLICE_89.md | # Wall A - slice 89: attribution campaign with genuine clicks — Organic everywhere (2026-09-15)
+WALL_A_SLICE_90.md | # Wall A — slice 90: the verdict is **signature-bound**; crafted polls cannot read it (2026-09-15)
+WALL_A_SLICE_91.md | # Wall A — slice 91: **NON-ORGANIC WON from Python** — the missing piece was a
+WALL_A_SLICE_92.md | # Wall A — slice 92: "200 is default, server verifies blob content" — PROVEN (2026-09-15 evening)
+WALL_A_SLICE_93.md | # Wall A - slice 93: the signing pipeline solved end-to-end (2026-09-16)
+WALL_A_SLICE_94.md | # WALL_A_SLICE_94 — desc #10 packing law DECODED (byte map) + model closure
+WALL_A_SLICE_95.md | # WALL_A_SLICE_95 — desc10 law PROVEN byte-exact (3-block alphabetical law) + native fetch unit mapped
+WALL_A_SLICE_96.md | # WALL_A_SLICE_96 — desc10 law UNIFIED and PROVEN for BOTH activity kinds (click 387B byte-exact)
+WALL_A_SLICE_97.md | # Wall A — slice 97: DEVICE-MINT-OF-OUR-MAP works + verbatim send answered (2026-09-17)
+WALL_A_SLICE_98.md | # WALL_A_SLICE_98 — 2026-09-17 close-out: law COMPLETE, maker CLEAN (desc10-contamination DEAD), 200 ≠ verified
+WALL_A_SLICE_99.md | # Wall A — slice 99: OFFLINE VERIFICATION of #0 / #2 / #4 (the pure-Python-signer question)
+WALL_A_SLICE_100.md | # Wall A — slice 100: the signature's missing piece is FOUND and NAMED: key2
+WALL_A_SLICE_101.md | # Wall A — slice 101: key2 mechanism CONFIRMED, and three claims from slice 100 corrected
+WALL_A_SLICE_102.md | # Wall A — slice 102: CLAIMS AUDIT — which conclusions are measured, which are models, and which are wrong
+WALL_A_SLICE_103.md | # Wall A — slice 103: descriptor `#4` is NOT `H` — the mislabel that corrupted every "H" experiment
+WALL_A_SLICE_104.md | # Wall A — slice 104: `#4`/`#2` are per-call process state (not derivable), and the maker's `#4` defect is FIXED
+WALL_A_SLICE_105.md | # Wall A — slice 105: desc10 law COMPLETED — the optional `push_token` claim
+WALL_A_SLICE_106.md | # Wall A — slice 106: FinEx verified byte-exact on 6 independent device signings (incl. `push_token`)
+WALL_A_SLICE_107.md | # Wall A — slice 107: the `attribution` claim set — the signature-side answer to "what are we missing"
+WALL_A_SLICE_108.md | # Wall A — slice 108: wire-ready `/attribution` blob + the full kind census
+WALL_A_SLICE_109.md | # Wall A — slice 109: NON-ORGANIC WON (run 10) — fresh GAID + marker click, on-device verdict
+WALL_A_SLICE_110.md | # Wall A — slice 110: the decisive PURE-PYTHON result — accepted, but not booked
+WALL_A_SLICE_111.md | # Wall A — slice 111: the server validates the BODY — measured with a pure-Python oracle
+WALL_A_SLICE_112.md | # Wall A — slice 112: the per-call region is NOT derivable; the server demands the exact body
+WALL_A_SLICE_113.md | # Wall A — slice 113: the user's hypothesis tested — our Python first session does NOT book
+WALL_A_SLICE_114.md | # Wall A — slice 114: the user's own click + device data, run through our Python
+WALL_A_SLICE_115.md | # Wall A — slice 115: the device oracle is LIVE — attach fixed, mints captured
+WALL_A_SLICE_116.md | # Wall A — slice 116: same map + same second ⇒ identical body (DETERMINISTIC)
+WALL_A_SLICE_117.md | # Wall A — slice 117: nSign's real body reversed; the builders are its callees
+WALL_A_SLICE_118.md | ---
+WALL_A_SLICE_119.md | ---
+WALL_A_SLICE_120.md | ---
+WALL_A_SLICE_121.md | ---
+WALL_A_SLICE_122.md | ---
+WALL_A_SLICE_123.md | ---
+WALL_A_SLICE_124.md | ---
+WALL_A_SLICE_125.md | ---
+WALL_A_SLICE_126.md | ---
+WALL_A_SLICE_127.md | ---
+WALL_A_SLICE_128.md | ---

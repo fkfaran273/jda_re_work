@@ -1,0 +1,223 @@
+# CLASS Lcom/adjust/sdk/AdjustEvent;
+FIELD private static logger Lcom/adjust/sdk/ILogger;
+FIELD  callbackId Ljava/lang/String;
+FIELD  callbackParameters Ljava/util/Map;
+FIELD  currency Ljava/lang/String;
+FIELD  deduplicationId Ljava/lang/String;
+FIELD  eventToken Ljava/lang/String;
+FIELD  orderId Ljava/lang/String;
+FIELD  partnerParameters Ljava/util/Map;
+FIELD  productId Ljava/lang/String;
+FIELD  purchaseToken Ljava/lang/String;
+FIELD  revenue Ljava/lang/Double;
+
+---- METHOD static constructor <clinit> ()V ----
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v0
+  sput-object            v0, Lcom/adjust/sdk/AdjustEvent;->logger Lcom/adjust/sdk/ILogger;
+  return-void            
+
+---- METHOD public constructor <init> (Ljava/lang/String;)V ----
+  invoke-direct          v1, Ljava/lang/Object;-><init>()V
+  sget-object            v0, Lcom/adjust/sdk/AdjustEvent;->logger Lcom/adjust/sdk/ILogger;
+  invoke-static          v2, v0, Lcom/adjust/sdk/AdjustEvent;->checkEventToken(Ljava/lang/String; Lcom/adjust/sdk/ILogger;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  return-void            
+  iput-object            v2, v1, Lcom/adjust/sdk/AdjustEvent;->eventToken Ljava/lang/String;
+  return-void            
+
+---- METHOD private static checkEventToken (Ljava/lang/String; Lcom/adjust/sdk/ILogger;)Z ----
+  const/4                v0, 0
+  if-nez                 v2, +00ah
+  new-array              v2, v0, [Ljava/lang/Object;
+  const-string           v1, "Missing Event Token"
+  invoke-interface       v3, v1, v2, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v0
+  invoke-virtual         v2, Ljava/lang/String;->length()I
+  move-result            v2
+  if-gtz                 v2, +00ah
+  new-array              v2, v0, [Ljava/lang/Object;
+  const-string           v1, "Event Token can't be empty"
+  invoke-interface       v3, v1, v2, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v0
+  const/4                v2, 1
+  return                 v2
+
+---- METHOD private checkRevenue (Ljava/lang/Double; Ljava/lang/String;)Z ----
+  const/4                v0, 0
+  if-eqz                 v6, +036h
+  invoke-virtual         v6, Ljava/lang/Double;->doubleValue()D
+  move-result-wide       v1
+  const-wide/16          v3, 0
+  cmpg-double            v1, v1, v3
+  if-gez                 v1, +00eh
+  sget-object            v7, Lcom/adjust/sdk/AdjustEvent;->logger Lcom/adjust/sdk/ILogger;
+  filled-new-array       v6, [Ljava/lang/Object;
+  move-result-object     v6
+  const-string           v1, "Invalid amount %.5f"
+  invoke-interface       v7, v1, v6, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v0
+  if-nez                 v7, +00ch
+  sget-object            v6, Lcom/adjust/sdk/AdjustEvent;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v7, v0, [Ljava/lang/Object;
+  const-string           v1, "Currency must be set with revenue"
+  invoke-interface       v6, v1, v7, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v0
+  const-string           v6, ""
+  invoke-virtual         v7, v6, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+  move-result            v6
+  if-eqz                 v6, +018h
+  sget-object            v6, Lcom/adjust/sdk/AdjustEvent;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v7, v0, [Ljava/lang/Object;
+  const-string           v1, "Currency is empty"
+  invoke-interface       v6, v1, v7, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v0
+  if-eqz                 v7, +00ch
+  sget-object            v6, Lcom/adjust/sdk/AdjustEvent;->logger Lcom/adjust/sdk/ILogger;
+  new-array              v7, v0, [Ljava/lang/Object;
+  const-string           v1, "Revenue must be set with currency"
+  invoke-interface       v6, v1, v7, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v0
+  const/4                v6, 1
+  return                 v6
+
+---- METHOD public addCallbackParameter (Ljava/lang/String; Ljava/lang/String;)V ----
+  const-string           v0, "key"
+  const-string           v1, "Callback"
+  invoke-static          v3, v0, v1, Lcom/adjust/sdk/Util;->isValidParameter(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +2bh
+  const-string/jumbo     v0, value
+  invoke-static          v4, v0, v1, Lcom/adjust/sdk/Util;->isValidParameter(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +21h
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustEvent;->callbackParameters Ljava/util/Map;
+  if-nez                 v0, +009h
+  new-instance           v0, Ljava/util/LinkedHashMap;
+  invoke-direct          v0, Ljava/util/LinkedHashMap;-><init>()V
+  iput-object            v0, v2, Lcom/adjust/sdk/AdjustEvent;->callbackParameters Ljava/util/Map;
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustEvent;->callbackParameters Ljava/util/Map;
+  invoke-interface       v0, v3, v4, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v4
+  check-cast             v4, Ljava/lang/String;
+  if-eqz                 v4, +00dh
+  sget-object            v4, Lcom/adjust/sdk/AdjustEvent;->logger Lcom/adjust/sdk/ILogger;
+  filled-new-array       v3, [Ljava/lang/Object;
+  move-result-object     v3
+  const-string           v0, "Key %s was overwritten"
+  invoke-interface       v4, v0, v3, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD public addPartnerParameter (Ljava/lang/String; Ljava/lang/String;)V ----
+  const-string           v0, "key"
+  const-string           v1, "Partner"
+  invoke-static          v3, v0, v1, Lcom/adjust/sdk/Util;->isValidParameter(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +2bh
+  const-string/jumbo     v0, value
+  invoke-static          v4, v0, v1, Lcom/adjust/sdk/Util;->isValidParameter(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +21h
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustEvent;->partnerParameters Ljava/util/Map;
+  if-nez                 v0, +009h
+  new-instance           v0, Ljava/util/LinkedHashMap;
+  invoke-direct          v0, Ljava/util/LinkedHashMap;-><init>()V
+  iput-object            v0, v2, Lcom/adjust/sdk/AdjustEvent;->partnerParameters Ljava/util/Map;
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustEvent;->partnerParameters Ljava/util/Map;
+  invoke-interface       v0, v3, v4, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  move-result-object     v4
+  check-cast             v4, Ljava/lang/String;
+  if-eqz                 v4, +00dh
+  sget-object            v4, Lcom/adjust/sdk/AdjustEvent;->logger Lcom/adjust/sdk/ILogger;
+  filled-new-array       v3, [Ljava/lang/Object;
+  move-result-object     v3
+  const-string           v0, "Key %s was overwritten"
+  invoke-interface       v4, v0, v3, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD public getCallbackId ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustEvent;->callbackId Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getCallbackParameters ()Ljava/util/Map; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustEvent;->callbackParameters Ljava/util/Map;
+  return-object          v0
+
+---- METHOD public getCurrency ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustEvent;->currency Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getDeduplicationId ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustEvent;->deduplicationId Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getEventToken ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustEvent;->eventToken Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getOrderId ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustEvent;->orderId Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getPartnerParameters ()Ljava/util/Map; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustEvent;->partnerParameters Ljava/util/Map;
+  return-object          v0
+
+---- METHOD public getProductId ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustEvent;->productId Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getPurchaseToken ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustEvent;->purchaseToken Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getRevenue ()Ljava/lang/Double; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustEvent;->revenue Ljava/lang/Double;
+  return-object          v0
+
+---- METHOD public isValid ()Z ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustEvent;->eventToken Ljava/lang/String;
+  if-eqz                 v0, +004h
+  const/4                v0, 1
+  return                 v0
+  const/4                v0, 0
+  return                 v0
+
+---- METHOD public setCallbackId (Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustEvent;->callbackId Ljava/lang/String;
+  return-void            
+
+---- METHOD public setDeduplicationId (Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustEvent;->deduplicationId Ljava/lang/String;
+  return-void            
+
+---- METHOD public setOrderId (Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustEvent;->orderId Ljava/lang/String;
+  return-void            
+
+---- METHOD public setProductId (Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustEvent;->productId Ljava/lang/String;
+  return-void            
+
+---- METHOD public setPurchaseToken (Ljava/lang/String;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/AdjustEvent;->purchaseToken Ljava/lang/String;
+  return-void            
+
+---- METHOD public setRevenue (D Ljava/lang/String;)V ----
+  invoke-static          v2, v3, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+  move-result-object     v0
+  invoke-direct          v1, v0, v4, Lcom/adjust/sdk/AdjustEvent;->checkRevenue(Ljava/lang/Double; Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  return-void            
+  invoke-static          v2, v3, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+  move-result-object     v2
+  iput-object            v2, v1, Lcom/adjust/sdk/AdjustEvent;->revenue Ljava/lang/Double;
+  iput-object            v4, v1, Lcom/adjust/sdk/AdjustEvent;->currency Ljava/lang/String;
+  return-void            
+######################################################################

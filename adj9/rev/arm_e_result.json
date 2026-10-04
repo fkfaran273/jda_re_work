@@ -1,0 +1,118 @@
+{
+ "arm": "E (ARM C + fresh-timestamp law)",
+ "profile": "moto g42",
+ "gps": "5eae3aa2-d909-4d08-8897-b7defccd8a60",
+ "auid": "ce001376-ffc5-4903-8bc2-fffb74311071",
+ "referrer": "adjust_reftag=cXzE4lQFZxTYX&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+ "reftag": "cXzE4lQFZxTYX",
+ "n_session_params": 43,
+ "n_click_params": 47,
+ "n_attr_params": 22,
+ "session": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"bbe17cd0478aaa1356b733da19f5a7e0\",\"ask_in\":2000}"
+ ],
+ "sdk_click": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"bbe17cd0478aaa1356b733da19f5a7e0\"}"
+ ],
+ "attr1": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"bbe17cd0478aaa1356b733da19f5a7e0\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-24T12:10:40Z\",\"first_session_time\":\"2026-09-24T12:10:40Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ ],
+ "attr2": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"bbe17cd0478aaa1356b733da19f5a7e0\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-24T12:10:40Z\",\"first_session_time\":\"2026-09-24T12:10:40Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ ],
+ "verdicts": [
+  {
+   "tracker_token": "wy7261z",
+   "tracker_name": "Organic",
+   "network": "Organic",
+   "engagement_time": "0001-01-01T00:00:00Z",
+   "installed_at": "2026-09-24T12:10:40Z",
+   "first_session_time": "2026-09-24T12:10:40Z",
+   "is_reattributed": false,
+   "is_redownload_install": false
+  },
+  {
+   "tracker_token": "wy7261z",
+   "tracker_name": "Organic",
+   "network": "Organic",
+   "engagement_time": "0001-01-01T00:00:00Z",
+   "installed_at": "2026-09-24T12:10:40Z",
+   "first_session_time": "2026-09-24T12:10:40Z",
+   "is_reattributed": false,
+   "is_redownload_install": false
+  }
+ ],
+ "request_log": [
+  {
+   "what": "tracker click",
+   "status": "302",
+   "reftag": "cXzE4lQFZxTYX",
+   "hop": "https://app.adjust.com/1sd1lk6a?campaign=AH&adgroup=vkm_0926_36&creative=penti_generic&click_id=5eae3aa2-d909-4d08-8897-b7defccd8a60&idfa=5eae3aa2-d909-4d08-889",
+   "t": 1790251540.94663
+  },
+  {
+   "what": "mint attr2",
+   "status": "exit-clean",
+   "steps": 9264557,
+   "t": 1790251634.044387
+  },
+  {
+   "what": "mint attr1",
+   "status": "exit-clean",
+   "steps": 9264557,
+   "t": 1790251634.0467706
+  },
+  {
+   "what": "mint sdk_click",
+   "status": "exit-clean",
+   "steps": 9887826,
+   "t": 1790251634.0473473
+  },
+  {
+   "what": "mint session",
+   "status": "exit-clean",
+   "steps": 9871985,
+   "t": 1790251634.0480213
+  },
+  {
+   "what": "POST /session",
+   "status": 200,
+   "sign_second": 1790251839,
+   "fired_at": 1790251838.9804642,
+   "lag": 0.6506223678588867,
+   "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"bbe17cd0478aaa1356b733da19f5a7e0\",\"ask_in\":2000}",
+   "t": 1790251839.6310954
+  },
+  {
+   "what": "POST /sdk_click",
+   "status": 200,
+   "sign_second": 1790251842,
+   "fired_at": 1790251841.980548,
+   "lag": 0.5007603168487549,
+   "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"bbe17cd0478aaa1356b733da19f5a7e0\"}",
+   "t": 1790251842.481312
+  },
+  {
+   "what": "GET /attribution #1",
+   "status": 200,
+   "sign_second": 1790251850,
+   "fired_at": 1790251849.980272,
+   "lag": 0.8022527694702148,
+   "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"bbe17cd0478aaa1356b733da19f5a7e0\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-24T12:10:40Z\",\"first_session_time\":\"2026-09-24T12:10:40Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+   "t": 1790251850.7825305
+  },
+  {
+   "what": "GET /attribution #2",
+   "status": 200,
+   "sign_second": 1790251895,
+   "fired_at": 1790251894.9801075,
+   "lag": 0.6484477519989014,
+   "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"bbe17cd0478aaa1356b733da19f5a7e0\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-24T12:10:40Z\",\"first_session_time\":\"2026-09-24T12:10:40Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+   "t": 1790251895.6285615
+  }
+ ]
+}

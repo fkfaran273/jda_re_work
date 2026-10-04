@@ -1,0 +1,7 @@
+# CLASS Lcom/adjust/sdk/AttributionResponseData;
+FIELD public deeplink Landroid/net/Uri;
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Lcom/adjust/sdk/ResponseData;-><init>()V
+  return-void            
+######################################################################

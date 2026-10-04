@@ -1,0 +1,275 @@
+# CLASS Lcom/adjust/sdk/AdjustAttribution;
+FIELD private static final serialPersistentFields [Ljava/io/ObjectStreamField;
+FIELD private static final serialVersionUID J
+FIELD public adgroup Ljava/lang/String;
+FIELD public campaign Ljava/lang/String;
+FIELD public clickLabel Ljava/lang/String;
+FIELD public costAmount Ljava/lang/Double;
+FIELD public costCurrency Ljava/lang/String;
+FIELD public costType Ljava/lang/String;
+FIELD public creative Ljava/lang/String;
+FIELD public fbInstallReferrer Ljava/lang/String;
+FIELD public jsonResponse Ljava/lang/String;
+FIELD public network Ljava/lang/String;
+FIELD public trackerName Ljava/lang/String;
+FIELD public trackerToken Ljava/lang/String;
+
+---- METHOD static constructor <clinit> ()V ----
+  new-instance           v0, Ljava/io/ObjectStreamField;
+  const-string/jumbo     v1, trackerToken
+  const-class            v2, Ljava/lang/String;
+  invoke-direct          v0, v1, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v1, Ljava/io/ObjectStreamField;
+  const-string/jumbo     v3, trackerName
+  invoke-direct          v1, v3, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v3, Ljava/io/ObjectStreamField;
+  const-string           v4, "network"
+  invoke-direct          v3, v4, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v4, Ljava/io/ObjectStreamField;
+  const-string           v5, "campaign"
+  invoke-direct          v4, v5, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v5, Ljava/io/ObjectStreamField;
+  const-string           v6, "adgroup"
+  invoke-direct          v5, v6, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v6, Ljava/io/ObjectStreamField;
+  const-string           v7, "creative"
+  invoke-direct          v6, v7, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v7, Ljava/io/ObjectStreamField;
+  const-string           v8, "clickLabel"
+  invoke-direct          v7, v8, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v8, Ljava/io/ObjectStreamField;
+  const-string           v9, "costType"
+  invoke-direct          v8, v9, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v9, Ljava/io/ObjectStreamField;
+  const-string           v10, "costAmount"
+  const-class            v11, Ljava/lang/Double;
+  invoke-direct          v9, v10, v11, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v10, Ljava/io/ObjectStreamField;
+  const-string           v11, "costCurrency"
+  invoke-direct          v10, v11, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v11, Ljava/io/ObjectStreamField;
+  const-string           v12, "fbInstallReferrer"
+  invoke-direct          v11, v12, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  new-instance           v12, Ljava/io/ObjectStreamField;
+  const-string           v13, "jsonResponse"
+  invoke-direct          v12, v13, v2, Ljava/io/ObjectStreamField;-><init>(Ljava/lang/String; Ljava/lang/Class;)V
+  move-object            v2, v3
+  move-object            v3, v4
+  move-object            v4, v5
+  move-object            v5, v6
+  move-object            v6, v7
+  move-object            v7, v8
+  move-object            v8, v9
+  move-object            v9, v10
+  move-object            v10, v11
+  move-object            v11, v12
+  filled-new-array/range v0 ... v11, [Ljava/io/ObjectStreamField;
+  move-result-object     v0
+  sput-object            v0, Lcom/adjust/sdk/AdjustAttribution;->serialPersistentFields [Ljava/io/ObjectStreamField;
+  return-void            
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD private readObject (Ljava/io/ObjectInputStream;)V ----
+  invoke-virtual         v1, Ljava/io/ObjectInputStream;->defaultReadObject()V
+  return-void            
+
+---- METHOD private writeObject (Ljava/io/ObjectOutputStream;)V ----
+  invoke-virtual         v1, Ljava/io/ObjectOutputStream;->defaultWriteObject()V
+  return-void            
+
+---- METHOD public equals (Ljava/lang/Object;)Z ----
+  const/4                v0, 1
+  if-ne                  v5, v4, +003h
+  return                 v0
+  const/4                v1, 0
+  if-nez                 v5, +003h
+  return                 v1
+  invoke-virtual         v4, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+  move-result-object     v2
+  invoke-virtual         v5, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+  move-result-object     v3
+  if-eq                  v2, v3, +003h
+  return                 v1
+  check-cast             v5, Lcom/adjust/sdk/AdjustAttribution;
+  iget-object            v2, v4, Lcom/adjust/sdk/AdjustAttribution;->trackerToken Ljava/lang/String;
+  iget-object            v3, v5, Lcom/adjust/sdk/AdjustAttribution;->trackerToken Ljava/lang/String;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v4, Lcom/adjust/sdk/AdjustAttribution;->trackerName Ljava/lang/String;
+  iget-object            v3, v5, Lcom/adjust/sdk/AdjustAttribution;->trackerName Ljava/lang/String;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v4, Lcom/adjust/sdk/AdjustAttribution;->network Ljava/lang/String;
+  iget-object            v3, v5, Lcom/adjust/sdk/AdjustAttribution;->network Ljava/lang/String;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v4, Lcom/adjust/sdk/AdjustAttribution;->campaign Ljava/lang/String;
+  iget-object            v3, v5, Lcom/adjust/sdk/AdjustAttribution;->campaign Ljava/lang/String;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v4, Lcom/adjust/sdk/AdjustAttribution;->adgroup Ljava/lang/String;
+  iget-object            v3, v5, Lcom/adjust/sdk/AdjustAttribution;->adgroup Ljava/lang/String;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v4, Lcom/adjust/sdk/AdjustAttribution;->creative Ljava/lang/String;
+  iget-object            v3, v5, Lcom/adjust/sdk/AdjustAttribution;->creative Ljava/lang/String;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v4, Lcom/adjust/sdk/AdjustAttribution;->clickLabel Ljava/lang/String;
+  iget-object            v3, v5, Lcom/adjust/sdk/AdjustAttribution;->clickLabel Ljava/lang/String;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v4, Lcom/adjust/sdk/AdjustAttribution;->costType Ljava/lang/String;
+  iget-object            v3, v5, Lcom/adjust/sdk/AdjustAttribution;->costType Ljava/lang/String;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v4, Lcom/adjust/sdk/AdjustAttribution;->costAmount Ljava/lang/Double;
+  iget-object            v3, v5, Lcom/adjust/sdk/AdjustAttribution;->costAmount Ljava/lang/Double;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalsDouble(Ljava/lang/Double; Ljava/lang/Double;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v4, Lcom/adjust/sdk/AdjustAttribution;->costCurrency Ljava/lang/String;
+  iget-object            v3, v5, Lcom/adjust/sdk/AdjustAttribution;->costCurrency Ljava/lang/String;
+  invoke-static          v2, v3, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v2
+  if-nez                 v2, +003h
+  return                 v1
+  iget-object            v2, v4, Lcom/adjust/sdk/AdjustAttribution;->fbInstallReferrer Ljava/lang/String;
+  iget-object            v5, v5, Lcom/adjust/sdk/AdjustAttribution;->fbInstallReferrer Ljava/lang/String;
+  invoke-static          v2, v5, Lcom/adjust/sdk/Util;->equalString(Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v5
+  if-nez                 v5, +003h
+  return                 v1
+  return                 v0
+
+---- METHOD public hashCode ()I ----
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustAttribution;->trackerToken Ljava/lang/String;
+  const/16               v1, 17
+  invoke-static          v0, v1, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  iget-object            v1, v2, Lcom/adjust/sdk/AdjustAttribution;->trackerName Ljava/lang/String;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  iget-object            v1, v2, Lcom/adjust/sdk/AdjustAttribution;->network Ljava/lang/String;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  iget-object            v1, v2, Lcom/adjust/sdk/AdjustAttribution;->campaign Ljava/lang/String;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  iget-object            v1, v2, Lcom/adjust/sdk/AdjustAttribution;->adgroup Ljava/lang/String;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  iget-object            v1, v2, Lcom/adjust/sdk/AdjustAttribution;->creative Ljava/lang/String;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  iget-object            v1, v2, Lcom/adjust/sdk/AdjustAttribution;->clickLabel Ljava/lang/String;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  iget-object            v1, v2, Lcom/adjust/sdk/AdjustAttribution;->costType Ljava/lang/String;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  iget-object            v1, v2, Lcom/adjust/sdk/AdjustAttribution;->costAmount Ljava/lang/Double;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashDouble(Ljava/lang/Double; I)I
+  move-result            v0
+  iget-object            v1, v2, Lcom/adjust/sdk/AdjustAttribution;->costCurrency Ljava/lang/String;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  iget-object            v1, v2, Lcom/adjust/sdk/AdjustAttribution;->fbInstallReferrer Ljava/lang/String;
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->hashString(Ljava/lang/String; I)I
+  move-result            v0
+  return                 v0
+
+---- METHOD public toMap ()Ljava/util/Map; ----
+  new-instance           v0, Ljava/util/HashMap;
+  invoke-direct          v0, Ljava/util/HashMap;-><init>()V
+  iget-object            v1, v3, Lcom/adjust/sdk/AdjustAttribution;->trackerToken Ljava/lang/String;
+  if-eqz                 v1, +008h
+  const-string/jumbo     v2, trackerToken
+  invoke-virtual         v0, v2, v1, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  iget-object            v1, v3, Lcom/adjust/sdk/AdjustAttribution;->trackerName Ljava/lang/String;
+  if-eqz                 v1, +008h
+  const-string/jumbo     v2, trackerName
+  invoke-virtual         v0, v2, v1, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  iget-object            v1, v3, Lcom/adjust/sdk/AdjustAttribution;->network Ljava/lang/String;
+  if-eqz                 v1, +007h
+  const-string           v2, "network"
+  invoke-virtual         v0, v2, v1, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  iget-object            v1, v3, Lcom/adjust/sdk/AdjustAttribution;->campaign Ljava/lang/String;
+  if-eqz                 v1, +007h
+  const-string           v2, "campaign"
+  invoke-virtual         v0, v2, v1, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  iget-object            v1, v3, Lcom/adjust/sdk/AdjustAttribution;->adgroup Ljava/lang/String;
+  if-eqz                 v1, +007h
+  const-string           v2, "adgroup"
+  invoke-virtual         v0, v2, v1, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  iget-object            v1, v3, Lcom/adjust/sdk/AdjustAttribution;->creative Ljava/lang/String;
+  if-eqz                 v1, +007h
+  const-string           v2, "creative"
+  invoke-virtual         v0, v2, v1, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  iget-object            v1, v3, Lcom/adjust/sdk/AdjustAttribution;->clickLabel Ljava/lang/String;
+  if-eqz                 v1, +007h
+  const-string           v2, "clickLabel"
+  invoke-virtual         v0, v2, v1, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  iget-object            v1, v3, Lcom/adjust/sdk/AdjustAttribution;->costType Ljava/lang/String;
+  if-eqz                 v1, +007h
+  const-string           v2, "costType"
+  invoke-virtual         v0, v2, v1, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  iget-object            v1, v3, Lcom/adjust/sdk/AdjustAttribution;->costAmount Ljava/lang/Double;
+  if-eqz                 v1, +00bh
+  invoke-virtual         v1, Ljava/lang/Double;->toString()Ljava/lang/String;
+  move-result-object     v1
+  const-string           v2, "costAmount"
+  invoke-virtual         v0, v2, v1, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  iget-object            v1, v3, Lcom/adjust/sdk/AdjustAttribution;->costCurrency Ljava/lang/String;
+  if-eqz                 v1, +007h
+  const-string           v2, "costCurrency"
+  invoke-virtual         v0, v2, v1, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  iget-object            v1, v3, Lcom/adjust/sdk/AdjustAttribution;->fbInstallReferrer Ljava/lang/String;
+  if-eqz                 v1, +007h
+  const-string           v2, "fbInstallReferrer"
+  invoke-virtual         v0, v2, v1, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  iget-object            v1, v3, Lcom/adjust/sdk/AdjustAttribution;->jsonResponse Ljava/lang/String;
+  if-eqz                 v1, +007h
+  const-string           v2, "jsonResponse"
+  invoke-virtual         v0, v2, v1, Ljava/util/HashMap;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+  return-object          v0
+
+---- METHOD public toString ()Ljava/lang/String; ----
+  iget-object            v0, v11, Lcom/adjust/sdk/AdjustAttribution;->trackerToken Ljava/lang/String;
+  iget-object            v1, v11, Lcom/adjust/sdk/AdjustAttribution;->trackerName Ljava/lang/String;
+  iget-object            v2, v11, Lcom/adjust/sdk/AdjustAttribution;->network Ljava/lang/String;
+  iget-object            v3, v11, Lcom/adjust/sdk/AdjustAttribution;->campaign Ljava/lang/String;
+  iget-object            v4, v11, Lcom/adjust/sdk/AdjustAttribution;->adgroup Ljava/lang/String;
+  iget-object            v5, v11, Lcom/adjust/sdk/AdjustAttribution;->creative Ljava/lang/String;
+  iget-object            v6, v11, Lcom/adjust/sdk/AdjustAttribution;->clickLabel Ljava/lang/String;
+  iget-object            v7, v11, Lcom/adjust/sdk/AdjustAttribution;->costType Ljava/lang/String;
+  iget-object            v8, v11, Lcom/adjust/sdk/AdjustAttribution;->costAmount Ljava/lang/Double;
+  iget-object            v9, v11, Lcom/adjust/sdk/AdjustAttribution;->costCurrency Ljava/lang/String;
+  iget-object            v10, v11, Lcom/adjust/sdk/AdjustAttribution;->fbInstallReferrer Ljava/lang/String;
+  filled-new-array/range v0 ... v10, [Ljava/lang/Object;
+  move-result-object     v0
+  const-string/jumbo     v1, tt:%s tn:%s net:%s cam:%s adg:%s cre:%s cl:%s ct:%s ca:%.2f cc:%s fir:%s
+  invoke-static          v1, v0, Lcom/adjust/sdk/Util;->formatString(Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+######################################################################

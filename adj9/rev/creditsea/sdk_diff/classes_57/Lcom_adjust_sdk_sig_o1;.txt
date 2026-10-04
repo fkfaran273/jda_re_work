@@ -1,0 +1,79 @@
+# CLASS Lcom/adjust/sdk/sig/o1;
+FIELD public [C
+FIELD public I
+
+---- METHOD public constructor <init>(()V)  ----
+  invoke-direct          v4, Ljava/lang/Object;-><init>()V
+  sget-object            v0, Lcom/adjust/sdk/sig/i;->c Lcom/adjust/sdk/sig/i;
+  monitor-enter          v0
+  iget-object            v1, v0, Lcom/adjust/sdk/sig/i;->a Lcom/adjust/sdk/sig/e;
+  invoke-virtual         v1, Lcom/adjust/sdk/sig/e;->isEmpty()Z
+  move-result            v2
+  const/4                v3, 0
+  if-eqz                 v2, +004h
+  move-object            v1, v3
+  goto                   +5h
+  invoke-virtual         v1, Lcom/adjust/sdk/sig/e;->removeLast()Ljava/lang/Object;
+  move-result-object     v1
+  check-cast             v1, [C
+  if-eqz                 v1, +00ch
+  iget                   v2, v0, Lcom/adjust/sdk/sig/i;->b I
+  array-length           v3, v1
+  sub-int/2addr          v2, v3
+  iput                   v2, v0, Lcom/adjust/sdk/sig/i;->b I
+  move-object            v3, v1
+  goto                   +3h
+  move-exception         v1
+  goto                   +bh
+  monitor-exit           v0
+  if-nez                 v3, +006h
+  const/16               v0, 128
+  new-array              v3, v0, [C
+  iput-object            v3, v4, Lcom/adjust/sdk/sig/o1;->a [C
+  return-void            
+  monitor-exit           v0
+  throw                  v1
+
+---- METHOD public final a((I I)I)  ----
+  add-int/2addr          v4, v3
+  iget-object            v0, v2, Lcom/adjust/sdk/sig/o1;->a [C
+  array-length           v1, v0
+  if-gt                  v1, v4, +00dh
+  mul-int/lit8           v1, v3, 2
+  if-ge                  v4, v1, +003h
+  move                   v4, v1
+  invoke-static          v0, v4, Ljava/util/Arrays;->copyOf([C I)[C
+  move-result-object     v4
+  iput-object            v4, v2, Lcom/adjust/sdk/sig/o1;->a [C
+  return                 v3
+
+---- METHOD public final a(()V)  ----
+  sget-object            v0, Lcom/adjust/sdk/sig/i;->c Lcom/adjust/sdk/sig/i;
+  iget-object            v1, v5, Lcom/adjust/sdk/sig/o1;->a [C
+  monitor-enter          v0
+  iget                   v2, v0, Lcom/adjust/sdk/sig/i;->b I
+  array-length           v3, v1
+  add-int/2addr          v3, v2
+  sget                   v4, Lcom/adjust/sdk/sig/g;->a I
+  if-ge                  v3, v4, +00eh
+  array-length           v3, v1
+  add-int/2addr          v2, v3
+  iput                   v2, v0, Lcom/adjust/sdk/sig/i;->b I
+  iget-object            v2, v0, Lcom/adjust/sdk/sig/i;->a Lcom/adjust/sdk/sig/e;
+  invoke-virtual         v2, v1, Lcom/adjust/sdk/sig/e;->addLast(Ljava/lang/Object;)V
+  goto                   +3h
+  move-exception         v1
+  goto                   +3h
+  monitor-exit           v0
+  return-void            
+  monitor-exit           v0
+  throw                  v1
+
+---- METHOD public final toString(()Ljava/lang/String;)  ----
+  new-instance           v0, Ljava/lang/String;
+  iget-object            v1, v4, Lcom/adjust/sdk/sig/o1;->a [C
+  iget                   v2, v4, Lcom/adjust/sdk/sig/o1;->b I
+  const/4                v3, 0
+  invoke-direct          v0, v1, v3, v2, Ljava/lang/String;-><init>([C I I)V
+  return-object          v0
+######################################################################

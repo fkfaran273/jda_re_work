@@ -1,0 +1,232 @@
+--- 
++++ 
+@@ -28,18 +28,18 @@
+ return-void
+----- METHOD public static synthetic access$000 (Lcom/adjust/sdk/SdkClickHandler;)Ljava/util/List; ----
++---- METHOD public static bridge synthetic a (Lcom/adjust/sdk/SdkClickHandler;)Ljava/lang/ref/WeakReference; ----
++iget-object vX, vX, Lcom/adjust/sdk/SdkClickHandler;->activityHandlerWeakRef Ljava/lang/ref/WeakReference;
++return-object vX
++---- METHOD public static bridge synthetic b (Lcom/adjust/sdk/SdkClickHandler;)Lcom/adjust/sdk/ILogger; ----
++iget-object vX, vX, Lcom/adjust/sdk/SdkClickHandler;->logger Lcom/adjust/sdk/ILogger;
++return-object vX
++---- METHOD public static bridge synthetic c (Lcom/adjust/sdk/SdkClickHandler;)Ljava/util/List; ----
+ iget-object vX, vX, Lcom/adjust/sdk/SdkClickHandler;->packageQueue Ljava/util/List;
+ return-object vX
+----- METHOD public static synthetic access$100 (Lcom/adjust/sdk/SdkClickHandler;)Lcom/adjust/sdk/ILogger; ----
+-iget-object vX, vX, Lcom/adjust/sdk/SdkClickHandler;->logger Lcom/adjust/sdk/ILogger;
+-return-object vX
+----- METHOD public static synthetic access$200 (Lcom/adjust/sdk/SdkClickHandler;)V ----
++---- METHOD public static bridge synthetic d (Lcom/adjust/sdk/SdkClickHandler;)V ----
+ invoke-direct vX, Lcom/adjust/sdk/SdkClickHandler;->sendNextSdkClick()V
+ return-void
+----- METHOD public static synthetic access$300 (Lcom/adjust/sdk/SdkClickHandler;)Ljava/lang/ref/WeakReference; ----
+-iget-object vX, vX, Lcom/adjust/sdk/SdkClickHandler;->activityHandlerWeakRef Ljava/lang/ref/WeakReference;
+-return-object vX
+----- METHOD public static synthetic access$400 (Lcom/adjust/sdk/SdkClickHandler;)V ----
++---- METHOD public static bridge synthetic e (Lcom/adjust/sdk/SdkClickHandler;)V ----
+ invoke-direct vX, Lcom/adjust/sdk/SdkClickHandler;->sendNextSdkClickI()V
+ return-void
+----- METHOD public static synthetic access$500 (Lcom/adjust/sdk/SdkClickHandler; Lcom/adjust/sdk/ActivityPackage;)V ----
++---- METHOD public static bridge synthetic f (Lcom/adjust/sdk/SdkClickHandler; Lcom/adjust/sdk/ActivityPackage;)V ----
+ invoke-direct vX, vX, Lcom/adjust/sdk/SdkClickHandler;->sendSdkClickI(Lcom/adjust/sdk/ActivityPackage;)V
+@@ -97,4 +97,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/SdkClickHandler;->scheduler Lcom/adjust/sdk/scheduler/ThreadScheduler;
+-new-instance vX, Lcom/adjust/sdk/SdkClickHandler$4;
+-invoke-direct vX, vX, Lcom/adjust/sdk/SdkClickHandler$4;-><init>(Lcom/adjust/sdk/SdkClickHandler;)V
++new-instance vX, Lcom/adjust/sdk/u;
++const/4 vX, 4
++invoke-direct vX, vX, vX, Lcom/adjust/sdk/u;-><init>(Ljava/lang/Object; I)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -130,4 +131,5 @@
+ move-result vX
+-new-instance vX, Lcom/adjust/sdk/SdkClickHandler$5;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/SdkClickHandler$5;-><init>(Lcom/adjust/sdk/SdkClickHandler; Lcom/adjust/sdk/ActivityPackage;)V
++new-instance vX, Lcom/adjust/sdk/Z;
++const/4 vX, 1
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/Z;-><init>(Lcom/adjust/sdk/SdkClickHandler; Lcom/adjust/sdk/ActivityPackage; I)V
+ invoke-direct vX, vX, Lcom/adjust/sdk/SdkClickHandler;->waitTime(I)J
+@@ -140,3 +142,3 @@
+ return-void
+-invoke-virtual vX, Lcom/adjust/sdk/SdkClickHandler$5;->run()V
++invoke-virtual vX, Lcom/adjust/sdk/Z;->run()V
+ return-void
+@@ -149,3 +151,3 @@
+ check-cast vX, Lcom/adjust/sdk/IActivityHandler;
+-invoke-virtual vX, Lcom/adjust/sdk/ActivityPackage;->getParameters()Ljava/util/Map;
++invoke-virtual/range vX, Lcom/adjust/sdk/ActivityPackage;->getParameters()Ljava/util/Map;
+ move-result-object vX
+@@ -163,3 +165,3 @@
+ const/4 vX, 0
+-invoke-virtual vX, Lcom/adjust/sdk/ActivityPackage;->getParameters()Ljava/util/Map;
++invoke-virtual/range vX, Lcom/adjust/sdk/ActivityPackage;->getParameters()Ljava/util/Map;
+ move-result-object vX
+@@ -174,3 +176,3 @@
+ move-result-object vX
+-invoke-virtual vX, Lcom/adjust/sdk/ActivityPackage;->getClickTimeInMilliseconds()J
++invoke-virtual/range vX, Lcom/adjust/sdk/ActivityPackage;->getClickTimeInMilliseconds()J
+ move-result-wide vX
+@@ -189,7 +191,7 @@
+ if BRANCH
+-invoke-virtual vX, Lcom/adjust/sdk/ActivityPackage;->getClickTimeInSeconds()J
+-move-result-wide vX
+-invoke-virtual vX, Lcom/adjust/sdk/ActivityPackage;->getInstallBeginTimeInSeconds()J
+-move-result-wide vX
+-invoke-virtual vX, Lcom/adjust/sdk/ActivityPackage;->getParameters()Ljava/util/Map;
++invoke-virtual/range vX, Lcom/adjust/sdk/ActivityPackage;->getClickTimeInSeconds()J
++move-result-wide vX
++invoke-virtual/range vX, Lcom/adjust/sdk/ActivityPackage;->getInstallBeginTimeInSeconds()J
++move-result-wide vX
++invoke-virtual/range vX, Lcom/adjust/sdk/ActivityPackage;->getParameters()Ljava/util/Map;
+ move-result-object vX
+@@ -199,13 +201,13 @@
+ check-cast vX, Ljava/lang/String;
+-invoke-virtual vX, Lcom/adjust/sdk/ActivityPackage;->getClickTimeServerInSeconds()J
+-move-result-wide vX
+-invoke-virtual vX, Lcom/adjust/sdk/ActivityPackage;->getInstallBeginTimeServerInSeconds()J
+-move-result-wide vX
+-invoke-virtual vX, Lcom/adjust/sdk/ActivityPackage;->getInstallVersion()Ljava/lang/String;
+-move-result-object vX
+-invoke-virtual vX, Lcom/adjust/sdk/ActivityPackage;->getGooglePlayInstant()Ljava/lang/Boolean;
+-move-result-object vX
+-invoke-virtual vX, Lcom/adjust/sdk/ActivityPackage;->getIsClick()Ljava/lang/Boolean;
+-move-result-object vX
+-invoke-virtual vX, Lcom/adjust/sdk/ActivityPackage;->getParameters()Ljava/util/Map;
++invoke-virtual/range vX, Lcom/adjust/sdk/ActivityPackage;->getClickTimeServerInSeconds()J
++move-result-wide vX
++invoke-virtual/range vX, Lcom/adjust/sdk/ActivityPackage;->getInstallBeginTimeServerInSeconds()J
++move-result-wide vX
++invoke-virtual/range vX, Lcom/adjust/sdk/ActivityPackage;->getInstallVersion()Ljava/lang/String;
++move-result-object vX
++invoke-virtual/range vX, Lcom/adjust/sdk/ActivityPackage;->getGooglePlayInstant()Ljava/lang/Boolean;
++move-result-object vX
++invoke-virtual/range vX, Lcom/adjust/sdk/ActivityPackage;->getIsClick()Ljava/lang/Boolean;
++move-result-object vX
++invoke-virtual/range vX, Lcom/adjust/sdk/ActivityPackage;->getParameters()Ljava/util/Map;
+ move-result-object vX
+@@ -215,11 +217,8 @@
+ check-cast vX, Ljava/lang/String;
++move-object/from16 vX, vX
++move-object/from16 vX, vX
++move-object/from16 vX, vX
+ move-wide/from16 vX, vX
+-move/from16 vX, vX
++move-object/from16 vX, vX
+ move-wide/from16 vX, vX
+-move/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+ GOTO
+@@ -227,5 +226,2 @@
+ const/4 vX, 0
+-move-object/from16 vX, vX
+-move/from16 vX, vX
+-move/from16 vX, vX
+ move-wide vX, vX
+@@ -233,9 +229,9 @@
+ move-wide vX, vX
+-move-object vX, vX
+-move-object vX, vX
+-move-object vX, vX
+-move-object/from16 vX, vX
+-move-object/from16 vX, vX
+-if BRANCH
+-const-string "preinstall"
++move-object/from16 vX, vX
++move-object/from16 vX, vX
++move-object/from16 vX, vX
++move-object/from16 vX, vX
++move-wide/from16 vX, vX
++if BRANCH
++const-string/jumbo preinstall
+ invoke-virtual vX, vX, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+@@ -246,3 +242,2 @@
+ const/4 vX, 0
+-move/from16 vX, vX
+ if BRANCH
+@@ -252,8 +247,7 @@
+ if BRANCH
+-const/4 vX, 1
+-GOTO
+-const/4 vX, 0
+-invoke-direct vX, Lcom/adjust/sdk/SdkClickHandler;->generateSendingParametersI()Ljava/util/Map;
+-move-result-object vX
+-move/from16 vX, vX
++const/16 vX, 1
++GOTO
++const/16 vX, 0
++invoke-direct/range vX, Lcom/adjust/sdk/SdkClickHandler;->generateSendingParametersI()Ljava/util/Map;
++move-result-object vX
+ iget-object vX, vX, Lcom/adjust/sdk/SdkClickHandler;->activityPackageSender Lcom/adjust/sdk/network/IActivityPackageSender;
+@@ -270,3 +264,3 @@
+ return-void
+-move-object vX, vX
++move/from16 vX, vX
+ const-wide/16 vX, 0
+@@ -278,6 +272,6 @@
+ if-ne vX, vX, +006h
+-invoke-interface/range vX, Lcom/adjust/sdk/IActivityHandler;->gotOptOutResponse()V
+-return-void
+-if BRANCH
+-invoke-interface/range vX, Lcom/adjust/sdk/IActivityHandler;->getContext()Landroid/content/Context;
++invoke-interface vX, Lcom/adjust/sdk/IActivityHandler;->gotOptOutResponse()V
++return-void
++if BRANCH
++invoke-interface vX, Lcom/adjust/sdk/IActivityHandler;->getContext()Landroid/content/Context;
+ move-result-object vX
+@@ -285,4 +279,2 @@
+ move-result-object vX
+-move-object vX, vX
+-move-wide/from16 vX, vX
+ invoke-virtual/range vX, Lcom/adjust/sdk/ActivityPackage;->getClickTimeInMilliseconds()J
+@@ -290,5 +282,2 @@
+ invoke-virtual vX, vX, vX, vX, Lcom/adjust/sdk/SharedPreferencesManager;->removeRawReferrer(Ljava/lang/String; J)V
+-GOTO
+-move-object vX, vX
+-move-wide/from16 vX, vX
+ if BRANCH
+@@ -300,3 +289,5 @@
+ iput-wide vX, vX, Lcom/adjust/sdk/SdkClickResponseData;->installBeginServer J
++move-object/from16 vX, vX
+ iput-object vX, vX, Lcom/adjust/sdk/SdkClickResponseData;->installVersion Ljava/lang/String;
++move-object/from16 vX, vX
+ iput-object vX, vX, Lcom/adjust/sdk/SdkClickResponseData;->googlePlayInstant Ljava/lang/Boolean;
+@@ -319,3 +310,3 @@
+ if BRANCH
+-invoke-interface/range vX, Lcom/adjust/sdk/IActivityHandler;->getContext()Landroid/content/Context;
++invoke-interface vX, Lcom/adjust/sdk/IActivityHandler;->getContext()Landroid/content/Context;
+ move-result-object vX
+@@ -335,3 +326,3 @@
+ if BRANCH
+-invoke-interface/range vX, Lcom/adjust/sdk/IActivityHandler;->getContext()Landroid/content/Context;
++invoke-interface vX, Lcom/adjust/sdk/IActivityHandler;->getContext()Landroid/content/Context;
+ move-result-object vX
+@@ -340,3 +331,2 @@
+ invoke-virtual vX, Lcom/adjust/sdk/SharedPreferencesManager;->setLicenseVerificationTracked()V
+-move-object/from16 vX, vX
+ invoke-interface vX, vX, Lcom/adjust/sdk/IActivityHandler;->finishedTrackingActivity(Lcom/adjust/sdk/ResponseData;)V
+@@ -390,4 +380,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/SdkClickHandler;->scheduler Lcom/adjust/sdk/scheduler/ThreadScheduler;
+-new-instance vX, Lcom/adjust/sdk/SdkClickHandler$3;
+-invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/SdkClickHandler$3;-><init>(Lcom/adjust/sdk/SdkClickHandler; Ljava/lang/String; Ljava/lang/String;)V
++new-instance vX, Lcom/adjust/sdk/D;
++const/4 vX, 2
++invoke-direct vX, vX, vX, vX, vX, Lcom/adjust/sdk/D;-><init>(Ljava/lang/Object; Ljava/lang/Object; Ljava/lang/Object; I)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -396,4 +387,4 @@
+ iget-object vX, vX, Lcom/adjust/sdk/SdkClickHandler;->scheduler Lcom/adjust/sdk/scheduler/ThreadScheduler;
+-new-instance vX, Lcom/adjust/sdk/SdkClickHandler$2;
+-invoke-direct vX, vX, Lcom/adjust/sdk/SdkClickHandler$2;-><init>(Lcom/adjust/sdk/SdkClickHandler;)V
++new-instance vX, Lcom/adjust/sdk/a0;
++invoke-direct vX, vX, Lcom/adjust/sdk/a0;-><init>(Lcom/adjust/sdk/SdkClickHandler;)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+@@ -402,4 +393,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/SdkClickHandler;->scheduler Lcom/adjust/sdk/scheduler/ThreadScheduler;
+-new-instance vX, Lcom/adjust/sdk/SdkClickHandler$1;
+-invoke-direct vX, vX, vX, Lcom/adjust/sdk/SdkClickHandler$1;-><init>(Lcom/adjust/sdk/SdkClickHandler; Lcom/adjust/sdk/ActivityPackage;)V
++new-instance vX, Lcom/adjust/sdk/Z;
++const/4 vX, 0
++invoke-direct vX, vX, vX, vX, Lcom/adjust/sdk/Z;-><init>(Lcom/adjust/sdk/SdkClickHandler; Lcom/adjust/sdk/ActivityPackage; I)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V

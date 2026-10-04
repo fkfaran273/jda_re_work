@@ -1,0 +1,131 @@
+{
+ "stages": {
+  "R1_fixed_laws": {
+   "n": 2160,
+   "hits": [],
+   "note": "rerun of stage1 with fixed oracle",
+   "source": "rerun_R1_R6"
+  },
+  "R2_orders": {
+   "n": 5400,
+   "hits": [],
+   "note": "rerun of stage2 with fixed oracle",
+   "source": "rerun_R1_R6"
+  },
+  "R3_vocab_only": {
+   "n": 720,
+   "hits": [],
+   "note": "rerun of stage3 with fixed oracle",
+   "source": "rerun_R1_R6"
+  },
+  "R4_combinatorial_reps": {
+   "n": 432000,
+   "hits": [],
+   "note": "rerun of stage4 with fixed oracle",
+   "source": "rerun_R1_R6"
+  },
+  "R5a_full_lists": {
+   "n": 51840,
+   "hits": [],
+   "note": "rerun of 5a + key 5e-5h laws with fixed oracle, all 30",
+   "source": "rerun_R1_R6"
+  },
+  "stage7b__7b_session": {
+   "n": 393216,
+   "hits": [],
+   "source": "stage7b"
+  },
+  "stage7b__7b_click": {
+   "n": 1572864,
+   "hits": [],
+   "source": "stage7b"
+  },
+  "stage7b__7b_attribution": {
+   "n": 49152,
+   "hits": [],
+   "source": "stage7b"
+  },
+  "stage7b__7b_event": {
+   "n": 12582912,
+   "hits": [],
+   "source": "stage7b"
+  },
+  "stage8__8_old_stage_b_rerun": {
+   "n": 10485760,
+   "hits": [],
+   "source": "stage8"
+  },
+  "stage9__9_timestamps": {
+   "n": 34560,
+   "hits": [],
+   "note": "canonical UTC / epoch timestamp substitutions x 6 laws x 2 bindings",
+   "source": "stage9"
+  },
+  "stage10__10_envperm_drops": {
+   "n": 86400,
+   "hits": [],
+   "note": "24 envelope permutations x 4 extras x 10 bindings x pinned {mid, first}",
+   "source": "stage10"
+  },
+  "stage6r__6r_frames_x_newclaims_reps": {
+   "n": 15840,
+   "hits": [],
+   "note": "30 frames (D9 x magic x tail) x 6 bindings x 11 laws, 4 representative records",
+   "source": "stage6r"
+  }
+ },
+ "hits": [],
+ "sources": {
+  "rerun_R1_R6": {
+   "file": "_sub_claims3_out.json",
+   "stages": [
+    "R1_fixed_laws",
+    "R2_orders",
+    "R3_vocab_only",
+    "R4_combinatorial_reps",
+    "R5a_full_lists"
+   ]
+  },
+  "stage7b": {
+   "file": "_sub_claims3_stage7b_out.json",
+   "stages": [
+    "7b_session",
+    "7b_click",
+    "7b_attribution",
+    "7b_event"
+   ]
+  },
+  "stage8": {
+   "file": "_sub_claims3_stage8_out.json",
+   "stages": [
+    "8_old_stage_b_rerun"
+   ]
+  },
+  "stage9": {
+   "file": "_sub_claims3_stage9_out.json",
+   "stages": [
+    "9_timestamps"
+   ]
+  },
+  "stage10": {
+   "file": "_sub_claims3_stage10_out.json",
+   "stages": [
+    "10_envperm_drops"
+   ]
+  },
+  "strcrack": {
+   "file": "_sub_claims3_strcrack_out.json",
+   "n_strings": 11
+  },
+  "stage6r": {
+   "file": "_sub_claims3_stage6r_out.json",
+   "stages": [
+    "6r_frames_x_newclaims_reps"
+   ]
+  }
+ },
+ "totals": {
+  "n_candidates_corrected": 25712824,
+  "n_hits": 0
+ }
+}

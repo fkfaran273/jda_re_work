@@ -1,0 +1,67 @@
+{
+  "_comment": "Reference only - run_install.py carries its own CAMPAIGN dict. One entry per app. head_phase and d8 are NOT here: the signer resolves the head from app_token (adj9_signature.HEAD_PHASE_BY_APP_TOKEN) and d8 is a per-.so constant (adj9_signature.D8_DEFAULT).",
+  "penti": {
+    "app_name": "penti",
+    "package_name": " ",
+    "app_token": "jut9tib0eeps",
+    "cert_sha1": "fad0f10d60f93c17937b2f1eb6c09691ae7d74bd",
+    "sdk_version": "5.8.0",
+    "_note_sdk": "The 5.8 claims law, not 5.7: the genuine penti captures rebuild 192/192 under it, and their session body carries no session_length/subsession_count/time_spent -- which the 5.7 law requires. Verified against all 6 win_capture signings.",
+    "client_sdk": "android5.7.0",
+    "native_version": "5.0.0",
+    "adj_signing_id": "1500000",
+    "headers_id": "10",
+    "adj_verification": "KlcAG2cbAAsKSl1KVi0FGiJbDHMI",
+    "click_link": "https://app.adjust.com/1sd1lk6a?campaign=AH&adgroup=vkm_0926_36&creative=penti_generic&click_id={gaid}&gps_adid={gaid}",
+    "gap_seconds": 180,
+    "poll_delays": [
+      3,
+      8,
+      20
+    ],
+    "app_version": "3.13.9",
+    "_note": "app_token is 12 chars: jut9tib0eeps. An earlier truncated copy (jut9tib0eeps -> jut9tib0eo) made /session return 500 \"failed to get app token\". Verified against the genuine capture."
+  },
+  "creditsea": {
+    "app_name": "creditsea",
+    "package_name": "com.creditsea.app",
+    "app_token": "i2n2e5kmcpvk",
+    "cert_sha1": "06f5ffcee0541608765407ab9e0180e7b1b7e7d0",
+    "sdk_version": "5.8.0",
+    "client_sdk": "flutter5.8.0@android5.8.0",
+    "native_version": "5.0.0",
+    "adj_signing_id": "1500000",
+    "headers_id": "10",
+    "adj_verification": "KlcAG2cbAAsKSl1KVi0FGiJbDHMI",
+    "click_link": "http://clicks.mobpine.com/api/track/v1/click?aff_id=3&offer_id=23482250",
+    "gap_seconds": 13,
+    "poll_delays": [
+      3,
+      8,
+      20
+    ],
+    "_note": "mobpine is used only to obtain a reftag, which is then placed in the /sdk_click referrer field. No id params are appended to the link.",
+    "app_version": "1.0.174"
+  },
+    "declic": {
+      "app_name": "declic",
+      "package_name": "com.declic.mobile.app",
+      "app_token": "1afnt5j9dsg0",
+      "cert_sha1": "dd60fcbb9a438b4c8eb82d274aa8818595bc8445",
+      "sdk_version": "5.8.0",
+      "client_sdk": "android5.8.0",
+      "native_version": "5.0.0",
+      "adj_signing_id": "1500000",
+      "headers_id": "10",
+      "adj_verification": "KlcAG2cbAAsKSl1KVi0FGiJbDHMI",
+      "click_link": "https://app.adjust.com/23hfwhce?campaign=ADB_SEP&adgroup=ADB_SEP_RNA_ADZ88_fft5t54t&click_id={dp2}&gps_adid={gaid}&install_callback=http%3A%2F%2Fwebdata.offersinfinite.com%2Fpostback.php%3Faf_id%3Dadjust%26af_id2%3Dadzjunction%26ofr_id%3DOIdecADZ%26sub1_af%3D{dp2}%26sub2_af%3D225_jk87787%26idfa_id%3D{gaid}&event_callback_tonbet_byzo32=http%3A%2F%2Fep.offersinfinite.com%2Findex.php%3Faf_id%3Dadjust%26af_id2%3Dadzjunction%26goal1%3D{dp2}%26goal2%3D%7Bevent%7D%26ofr_id%3DOIdecADZ",
+      "gap_seconds": 13,
+      "poll_delays": [
+        3,
+        8,
+        20
+      ],
+      "app_version": "1.0.174",
+      "_note": "link uses two macros: {gaid} (install adid) and {dp2} (advertiser click_id/sub1_af/goal1)."
+    }
+}

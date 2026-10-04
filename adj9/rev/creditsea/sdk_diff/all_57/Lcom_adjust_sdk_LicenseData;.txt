@@ -1,0 +1,43 @@
+# CLASS Lcom/adjust/sdk/LicenseData;
+FIELD private final responseCode I
+FIELD private final signature Ljava/lang/String;
+FIELD private final signedData Ljava/lang/String;
+
+---- METHOD public constructor <init> (Ljava/lang/String; Ljava/lang/String; I)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/LicenseData;->signedData Ljava/lang/String;
+  iput-object            v2, v0, Lcom/adjust/sdk/LicenseData;->signature Ljava/lang/String;
+  iput                   v3, v0, Lcom/adjust/sdk/LicenseData;->responseCode I
+  return-void            
+
+---- METHOD public getResponseCode ()I ----
+  iget                   v0, v1, Lcom/adjust/sdk/LicenseData;->responseCode I
+  return                 v0
+
+---- METHOD public getSignature ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/LicenseData;->signature Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public getSignedData ()Ljava/lang/String; ----
+  iget-object            v0, v1, Lcom/adjust/sdk/LicenseData;->signedData Ljava/lang/String;
+  return-object          v0
+
+---- METHOD public isValid ()Z ----
+  iget-object            v0, v3, Lcom/adjust/sdk/LicenseData;->signedData Ljava/lang/String;
+  const/4                v1, 0
+  if-eqz                 v0, +018h
+  iget-object            v2, v3, Lcom/adjust/sdk/LicenseData;->signature Ljava/lang/String;
+  if-nez                 v2, +003h
+  goto                   +12h
+  invoke-virtual         v0, Ljava/lang/String;->isEmpty()Z
+  move-result            v0
+  if-nez                 v0, +00dh
+  iget-object            v0, v3, Lcom/adjust/sdk/LicenseData;->signature Ljava/lang/String;
+  invoke-virtual         v0, Ljava/lang/String;->isEmpty()Z
+  move-result            v0
+  if-eqz                 v0, +003h
+  goto                   +3h
+  const/4                v0, 1
+  return                 v0
+  return                 v1
+######################################################################

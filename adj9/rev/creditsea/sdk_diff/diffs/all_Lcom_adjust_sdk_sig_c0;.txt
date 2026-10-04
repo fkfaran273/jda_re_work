@@ -1,0 +1,40 @@
+--- 
++++ 
+@@ -54,5 +54,9 @@
+ new-instance vX, Ljava/lang/IndexOutOfBoundsException;
++new-instance vX, Ljava/lang/StringBuilder;
+ const-string "Empty list doesn't contain element at index "
++invoke-direct vX, vX, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
++invoke-virtual vX, vX, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+ const/16 vX, 46
+-invoke-static vX, vX, vX, Landroidx/compose/animation/c;->q(Ljava/lang/String; I C)Ljava/lang/String;
++invoke-virtual vX, vX, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
++invoke-virtual vX, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+ move-result-object vX
+@@ -82,8 +86,8 @@
+ return-object vX
++new-instance vX, Ljava/lang/IndexOutOfBoundsException;
+ const-string "Index: "
+-invoke-static vX, vX, Ld;->g(I Ljava/lang/String;)Ljava/lang/String;
++invoke-static vX, vX, Lio/flutter/plugins/googlesignin/b;->l(I Ljava/lang/String;)Ljava/lang/String;
+ move-result-object vX
+-invoke-static vX, Landroidx/sqlite/driver/a;->h(Ljava/lang/String;)V
+-const/4 vX, 0
+-return-object vX
++invoke-direct vX, vX, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
++throw vX
+ ---- METHOD public final bridge synthetic remove (I)Ljava/lang/Object; ----
+@@ -120,9 +124,9 @@
+ return-object vX
++new-instance vX, Ljava/lang/IndexOutOfBoundsException;
+ const-string "fromIndex: "
+ const-string ", toIndex: "
+-invoke-static vX, vX, vX, vX, Landroidx/compose/animation/c;->n(I I Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
++invoke-static vX, vX, vX, vX, LB2/a;->g(Ljava/lang/String; I I Ljava/lang/String;)Ljava/lang/String;
+ move-result-object vX
+-invoke-static vX, Landroidx/sqlite/driver/a;->h(Ljava/lang/String;)V
+-const/4 vX, 0
+-return-object vX
++invoke-direct vX, vX, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
++throw vX
+ ---- METHOD public final toArray ()[Ljava/lang/Object; ----

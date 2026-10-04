@@ -1,0 +1,170 @@
+[
+ {
+  "sid": 142,
+  "header16_hex": "3be1d83d6b8eae543eb1a8a5757ca3d6",
+  "signing_second": 1787553332,
+  "offset_vs_request_second": -9
+ },
+ {
+  "sid": 157,
+  "header16_hex": "7032bfb41df49d64635f7fdf77692880",
+  "signing_second": 1787553343,
+  "offset_vs_request_second": 0
+ },
+ {
+  "sid": 170,
+  "header16_hex": "1e81a0e358d3435d53e19372326ae6cc",
+  "signing_second": 1787553345,
+  "offset_vs_request_second": 0
+ },
+ {
+  "sid": 454,
+  "header16_hex": "2aa273867af137e645c00ff372140080",
+  "signing_second": 1787553734,
+  "offset_vs_request_second": 0
+ },
+ {
+  "sid": 1068,
+  "header16_hex": "445f276a44223915169583790e380479",
+  "signing_second": 1787555530,
+  "offset_vs_request_second": 0
+ },
+ {
+  "sid": 1144,
+  "header16_hex": "1ce776e8624d3f484b17fb9c40f720c9",
+  "signing_second": 1787555694,
+  "offset_vs_request_second": 0
+ },
+ {
+  "sid": 1303,
+  "header16_hex": "3adbbd0759adff20262f526c2109d6b7",
+  "signing_second": 1787555749,
+  "offset_vs_request_second": 0
+ },
+ {
+  "sid": 1311,
+  "header16_hex": "6f5f4b1f4beb933e27e018ab13adc93b",
+  "signing_second": 1787555752,
+  "offset_vs_request_second": 0
+ },
+ {
+  "sid": 1427,
+  "header16_hex": "12eaa7fd20919ccf207c6ae955a028b5",
+  "signing_second": 1787555854,
+  "offset_vs_request_second": 0
+ },
+ {
+  "sid": 1443,
+  "header16_hex": "34b9910157bf2ae7500a6c541263f6c7",
+  "signing_second": 1787555856,
+  "offset_vs_request_second": 0
+ },
+ {
+  "sid": 1451,
+  "header16_hex": "476489b5738b89fb28cc910a7f465e21",
+  "signing_second": 1787555857,
+  "offset_vs_request_second": 0
+ },
+ {
+  "sid": 1678,
+  "header16_hex": "036ca82810a27af207a753a402a64c11",
+  "signing_second": 1787556043,
+  "offset_vs_request_second": 0
+ },
+ {
+  "sid": 1908,
+  "header16_hex": "729afe9c161726a64f75a6ba3fec087d",
+  "signing_second": 1787556293,
+  "offset_vs_request_second": 0
+ },
+ {
+  "sid": 1949,
+  "header16_hex": "735662911f2170f664b7694e1f60ff21",
+  "signing_second": 1787556407,
+  "offset_vs_request_second": -1
+ },
+ {
+  "sid": 2155,
+  "header16_hex": "3b2821db5616cf396f85b2d31f1f8ea8",
+  "signing_second": 1787556874,
+  "offset_vs_request_second": 0
+ },
+ {
+  "sid": 2545,
+  "header16_hex": "74720810129ebec14c964a612ae13c2c",
+  "signing_second": 1787557023,
+  "offset_vs_request_second": 0
+ },
+ {
+  "sid": 2564,
+  "header16_hex": "274681592263be742291b34f39687c94",
+  "signing_second": 1787557041,
+  "offset_vs_request_second": 0
+ },
+ {
+  "sid": 2688,
+  "header16_hex": "0a1b66ae13cd36ee477b73072626bd45",
+  "signing_second": 1787557198,
+  "offset_vs_request_second": 0
+ },
+ {
+  "sid": 2719,
+  "header16_hex": "2507395c6995ba9a1442323631a7fc0c",
+  "signing_second": 1787557216,
+  "offset_vs_request_second": 0
+ },
+ {
+  "sid": 2758,
+  "header16_hex": "1b906c1b49bc684b7fddb2e25cf6662f",
+  "signing_second": 1787557237,
+  "offset_vs_request_second": 0
+ },
+ {
+  "sid": 2795,
+  "header16_hex": "519834e200c5d00642c7666b03f42c1f",
+  "signing_second": 1787557249,
+  "offset_vs_request_second": 1
+ },
+ {
+  "sid": 2831,
+  "header16_hex": "6239e07c20154509440db2c774acbeab",
+  "signing_second": 1787557265,
+  "offset_vs_request_second": 1
+ },
+ {
+  "sid": 2864,
+  "header16_hex": "6f875f641afb7b44219daf767b8c2a9c",
+  "signing_second": 1787557280,
+  "offset_vs_request_second": 1
+ },
+ {
+  "sid": 2903,
+  "header16_hex": "072738427633346a502600121257ab23",
+  "signing_second": 1787557290,
+  "offset_vs_request_second": -2
+ },
+ {
+  "sid": 2925,
+  "header16_hex": "47c27b427fa169186ff0e1ce72fd7b03",
+  "signing_second": 1787557309,
+  "offset_vs_request_second": 0
+ },
+ {
+  "sid": 2959,
+  "header16_hex": "506235a4489efc155203f69a01448c9f",
+  "signing_second": 1787557325,
+  "offset_vs_request_second": -1
+ },
+ {
+  "sid": 3260,
+  "header16_hex": "5ac321ee407b691b6e40838d3a6ab159",
+  "signing_second": 1787557446,
+  "offset_vs_request_second": 0
+ },
+ {
+  "sid": 3429,
+  "header16_hex": "06bf02d81386784b19b1aee71947b4f9",
+  "signing_second": 1787557518,
+  "offset_vs_request_second": 0
+ }
+]

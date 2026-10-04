@@ -1,0 +1,16 @@
+{
+ "referrer": "adjust_reftag=cIwLQnupGVhjh&utm_source=VKM+Digital+Yeni&utm_campaign=AH&utm_content=vkm_0926_36&utm_term=penti_generic",
+ "reftag": "cIwLQnupGVhjh",
+ "session": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"928f48827b6bd72c701759c4b2e9f3c9\",\"ask_in\":2000}"
+ ],
+ "sdk_click": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"928f48827b6bd72c701759c4b2e9f3c9\"}"
+ ],
+ "gps": "ceeb3441-3d13-415a-9a1a-8c997a2079b3",
+ "auid": "2990bc81-71f4-46ab-a994-ecac2a21b91d",
+ "old_gaid": "67638470-da93-44e8-8145-e8887bca8f29",
+ "verdict_device_oracle": null
+}

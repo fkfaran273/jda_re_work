@@ -1,0 +1,17 @@
+{
+ "identity": "gps=df91f20e-e9dc-4635-930b-2de2f18247ce auid=6ee80ed4-5d1e-4102-819c-a7f43dd32fcf marker=cline_wire_f",
+ "gaid": "readback df91f20e-e9dc-4635-930b-2de2f18247ce OK",
+ "click": "http=302 reftag=adjust_reftag=cfvlCcbSDYiZi&utm_source=VKM+Dig",
+ "session": "exit-clean #10=360B blob=192B | signing 50 keys, WIRE 43 params",
+ "session/send": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"d75580bc9f3b1ebdb9bd7509d0d70349\",\"ask_in\":2000}",
+ "sdk_click": "exit-clean signing 54 keys, WIRE 47 params",
+ "sdk_click/send": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"d75580bc9f3b1ebdb9bd7509d0d70349\"}",
+ "attribution/0": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"d75580bc9f3b1ebdb9bd7509d0d70349\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"in",
+ "attribution/1": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"d75580bc9f3b1ebdb9bd7509d0d70349\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"in",
+ "attribution/2": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"d75580bc9f3b1ebdb9bd7509d0d70349\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"in",
+ "attribution/3": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"d75580bc9f3b1ebdb9bd7509d0d70349\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"in",
+ "crafted_installed_at": "2026-09-19T10:36:15.200Z+0530",
+ "gps": "df91f20e-e9dc-4635-930b-2de2f18247ce",
+ "auid": "6ee80ed4-5d1e-4102-819c-a7f43dd32fcf",
+ "marker": "cline_wire_f"
+}

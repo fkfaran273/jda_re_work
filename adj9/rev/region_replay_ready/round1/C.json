@@ -1,0 +1,303 @@
+{
+ "name": "C",
+ "desc": "orig_id+FRESH_region",
+ "region_kind": "fresh",
+ "params": {
+  "initiated_by": "backend",
+  "gps_adid_attempt": "1",
+  "api_level": "31",
+  "app_version": "3.13.9",
+  "app_token": "jut9tib0eeps",
+  "os_version": "12",
+  "created_at": "2026-09-26T15:20:29.783Z+0530",
+  "device_type": "phone",
+  "gps_adid": "0e789180-17da-440b-b1c3-0349d40e0e93",
+  "foreground": "1",
+  "android_uuid": "0fed724a-ae9b-4f9f-b089-ac56747bcafa",
+  "sent_at": "2026-09-26T15:20:29.810Z+0530",
+  "offline_mode_enabled": "0",
+  "device_name": "moto g42",
+  "environment": "production",
+  "needs_response_details": "1",
+  "attribution_deeplink": "1",
+  "package_name": "com.penti.app",
+  "os_name": "android",
+  "ui_mode": "1",
+  "gps_adid_src": "service",
+  "tracking_enabled": "1"
+ },
+ "blob_hex": "6f7081513cd4731915c6d5a43cdcdceb9e29ee2839a3a476608a2f59ca7e031bc72b392b75851604e72722b3ba4992974fcb33d1a1d373184e48b99d08cdd6dc6b8feea2b920677b92e553ddfd043d01e23094e33470acd30fd620cf148417778ad3a9368f913cc96e3908174da39129734c6904fd9f9fce7a40b17c577943e31cc2be92a3bc5af08005428733040f0f0307e5c01787cbf1b37dffc11ad4cbbcb86b4e7efb7d540df51a788b8f259ecd634861438ec1a387b997fe6235b7cc9a",
+ "auth": "Signature signature=\"b3CBUTzUcxkVxtWkPNzc654p7ig5o6R2YIovWcp+AxvHKzkrdYUWBOcnIrO6SZKXT8sz0aHTcxhOSLmdCM3W3GuP7qK5IGd7kuVT3f0EPQHiMJTjNHCs0w/WIM8UhBd3itOpNo+RPMluOQgXTaORKXNMaQT9n5/OekCxfFd5Q+Mcwr6So7xa8IAFQoczBA8PAwflwBeHy/Gzff/BGtTLvLhrTn77fVQN9Rp4i48lns1jSGFDjsGjh7mX/mI1t8ya\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"",
+ "raw_request": "GET /attribution?initiated_by=backend&gps_adid_attempt=1&api_level=31&app_version=3.13.9&app_token=jut9tib0eeps&os_version=12&created_at=2026-09-26T15%3A20%3A29.783Z%2B0530&device_type=phone&gps_adid=0e789180-17da-440b-b1c3-0349d40e0e93&foreground=1&android_uuid=0fed724a-ae9b-4f9f-b089-ac56747bcafa&sent_at=2026-09-26T15%3A20%3A29.810Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=com.penti.app&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1 HTTP/1.1\r\nClient-SDK: android5.7.0\r\nAuthorization: Signature signature=\"b3CBUTzUcxkVxtWkPNzc654p7ig5o6R2YIovWcp+AxvHKzkrdYUWBOcnIrO6SZKXT8sz0aHTcxhOSLmdCM3W3GuP7qK5IGd7kuVT3f0EPQHiMJTjNHCs0w/WIM8UhBd3itOpNo+RPMluOQgXTaORKXNMaQT9n5/OekCxfFd5Q+Mcwr6So7xa8IAFQoczBA8PAwflwBeHy/Gzff/BGtTLvLhrTn77fVQN9Rp4i48lns1jSGFDjsGjh7mX/mI1t8ya\",adj_signing_id=\"1500000\",algorithm=\"adj9\",headers_id=\"10\",native_version=\"5.0.0\",adj_verification=\"KlcAG2cbAAsKSl1KVi0FGiJbDHMI\"\r\nUser-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)\r\nHost: app.adjust.com\r\nConnection: Keep-Alive\r\nAccept-Encoding: gzip\r\n\r\n",
+ "path": "/attribution?initiated_by=backend&gps_adid_attempt=1&api_level=31&app_version=3.13.9&app_token=jut9tib0eeps&os_version=12&created_at=2026-09-26T15%3A20%3A29.783Z%2B0530&device_type=phone&gps_adid=0e789180-17da-440b-b1c3-0349d40e0e93&foreground=1&android_uuid=0fed724a-ae9b-4f9f-b089-ac56747bcafa&sent_at=2026-09-26T15%3A20%3A29.810Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=com.penti.app&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1",
+ "checks": {
+  "checks": [
+   {
+    "id": "blob_192",
+    "label": "blob is 192 B (48 BE dwords)",
+    "pass": true,
+    "detail": "192 B"
+   },
+   {
+    "id": "header_law",
+    "label": "blob[:16] == make_header(second)",
+    "pass": true,
+    "detail": "6f7081513cd4731915c6d5a43cdcdceb"
+   },
+   {
+    "id": "header_pair_xor",
+    "label": "header == 4 pair-XOR Random3(second) units",
+    "pass": true,
+    "detail": "6f708151 3cd47319 15c6d5a4 3cdcdceb"
+   },
+   {
+    "id": "vm_exit_clean",
+    "label": "FinEx exit-clean",
+    "pass": true,
+    "detail": "exit-clean"
+   },
+   {
+    "id": "nrand_8",
+    "label": "nrand == 8 (srand re-fires per signing)",
+    "pass": true,
+    "detail": "8"
+   },
+   {
+    "id": "claims_law_keys",
+    "label": "desc10 law key set complete (21 keys)",
+    "pass": true,
+    "detail": "21 keys"
+   },
+   {
+    "id": "claims_law_bytes",
+    "label": "build_desc10(claims) == padded #10 == VM input",
+    "pass": true,
+    "detail": "unpadded=246 padded=248"
+   },
+   {
+    "id": "desc7_unpadded",
+    "label": "#7 carries the UNPADDED #10 length",
+    "pass": true,
+    "detail": "246"
+   },
+   {
+    "id": "claims_eq_wire",
+    "label": "every claim == the value that goes on the wire",
+    "pass": true,
+    "detail": "mismatched: none"
+   },
+   {
+    "id": "region_bytes_exact",
+    "label": "region bytes == the fresh region exactly",
+    "pass": true,
+    "detail": "d0=58237f2a1dedf6d4 d2=ac10160d d4=0040800000c040c0"
+   },
+   {
+    "id": "head_phase",
+    "label": "fresh d0 == F._d0_words(head=[34, 46])",
+    "pass": true,
+    "detail": "head=[34, 46]"
+   },
+   {
+    "id": "d4_from_d2seed",
+    "label": "d4 == F._d4_words(seed read from d2)",
+    "pass": true,
+    "detail": "seed=ac10160d"
+   },
+   {
+    "id": "region_L1",
+    "label": "region law L1_tile_Rrep",
+    "pass": true,
+    "detail": "got=True genuine_ref=True X@word[1, 3, 5]"
+   },
+   {
+    "id": "region_L2",
+    "label": "region law L2_d4_6_hi_eq_R",
+    "pass": true,
+    "detail": "got=True genuine_ref=True X@word[1, 3, 5]"
+   },
+   {
+    "id": "region_L3",
+    "label": "region law L3",
+    "pass": true,
+    "detail": "got=True genuine_ref=True X@word[1, 3, 5]"
+   },
+   {
+    "id": "seed_law_advisory",
+    "label": "seed inverts to some (usec,pid) \u2014 ADVISORY",
+    "pass": true,
+    "detail": "usec=34250 < 1e6 is consistent; pid is NOT transmitted so this law constrains nothing the server could check"
+   },
+   {
+    "id": "auth_header",
+    "label": "Authorization == adj9_full_chain._auth_header",
+    "pass": true,
+    "detail": "407 chars"
+   },
+   {
+    "id": "auth_b64",
+    "label": "auth signature= decodes back to the 192-B blob",
+    "pass": true,
+    "detail": "b3CBUTzUcxkVxtWkPNzc654p7ig5o6R2..."
+   },
+   {
+    "id": "envelope_shape",
+    "label": "192-B envelope = 16-B header + 44 body dwords",
+    "pass": true,
+    "detail": "48/48 dwords differ from the (different-second) genuine blob"
+   }
+  ],
+  "ok": true,
+  "seed_law": {
+   "seed_le": "0x0d1610ac",
+   "residual_x": "0x67a185ca",
+   "implied_usec_at_pid26530": 230858,
+   "implied_usec_min": 34250,
+   "implied_pid_for_min_usec": 26529,
+   "always_satisfiable": true,
+   "note": "usec=34250 < 1e6 is consistent; pid is NOT transmitted so this law constrains nothing the server could check"
+  },
+  "diff_vs_genuine_dwords": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35,
+   36,
+   37,
+   38,
+   39,
+   40,
+   41,
+   42,
+   43,
+   44,
+   45,
+   46,
+   47
+  ],
+  "region_laws": {
+   "L1_tile_Rrep": true,
+   "L1_hits": [
+    [
+     0,
+     11968
+    ],
+    [
+     2,
+     11968
+    ],
+    [
+     4,
+     11968
+    ],
+    [
+     6,
+     11968
+    ],
+    [
+     8,
+     11968
+    ],
+    [
+     10,
+     11968
+    ],
+    [
+     12,
+     11968
+    ],
+    [
+     14,
+     11968
+    ]
+   ],
+   "L2_d4_6_hi_eq_R": true,
+   "L3_X_eq_U3": true,
+   "L3_x_index": [
+    1,
+    3,
+    5
+   ],
+   "L3": true
+  }
+ },
+ "gps_adid": "0e789180-17da-440b-b1c3-0349d40e0e93",
+ "android_uuid": "0fed724a-ae9b-4f9f-b089-ac56747bcafa",
+ "sign_second": 1790416230,
+ "head": [
+  34,
+  46
+ ],
+ "V": 1790185644,
+ "pid": 26530,
+ "tid": 26593,
+ "region": {
+  "d0": "58237f2a1dedf6d43e02fbfb332dd1dd10c2d53b1dedf6d43e02fbfb332dd1dd10c2d53b1dedf6d43e02fbfb332dd1dd10c2d53b1dedf6d43e02fbfb332dd1dd10c2d53b1dedf6d43e02fbfb332dd1dd10c2d53b1dedf6d43e02fbfb332dd1dd10c2d53b1dedf6d43e02fbfb332dd1dd10c2d53b1dedf6d43e02fbfb332dd1dd10c2d53b1dedf6d43e02fbfb332dd1dd",
+  "d2": "ac10160d",
+  "d4": "0040800000c040c088000088c0820488c9088cc6070009c92ec00d2fc8d6111c"
+ },
+ "claims": {
+  "adj_verification": "KlcAG2cbAAsKSl1KVi0FGiJbDHMI",
+  "android_uuid": "0fed724a-ae9b-4f9f-b089-ac56747bcafa",
+  "api_level": "31",
+  "app_token": "jut9tib0eeps",
+  "app_version": "3.13.9",
+  "created_at": "2026-09-26T15:20:29.783Z+0530",
+  "device_name": "moto g42",
+  "device_type": "phone",
+  "environment": "production",
+  "gps_adid": "0e789180-17da-440b-b1c3-0349d40e0e93",
+  "gps_adid_src": "service",
+  "initiated_by": "backend",
+  "os_name": "android",
+  "os_version": "12",
+  "package_name": "com.penti.app",
+  "adj_signing_id": "1500000",
+  "tracking_enabled": "1",
+  "activity_kind": "attribution",
+  "client_sdk": "android5.7.0",
+  "headers_id": "10",
+  "native_version": "5.0.0"
+ },
+ "desc10_unpadded": 246,
+ "desc10_padded": 248,
+ "vm": {
+  "status": "exit-clean",
+  "steps": 9264557,
+  "nrand": 8,
+  "stream": 365072220160
+ },
+ "remint_identical": true
+}

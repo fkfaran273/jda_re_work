@@ -1,0 +1,29 @@
+{
+ "tag": "generate_204",
+ "ts": 1790356700.2445047,
+ "method": "GET",
+ "url": "https://app.adjust.com/generate_204",
+ "path": "/generate_204",
+ "host": "app.adjust.com",
+ "http_version": "HTTP/1.1",
+ "headers": [
+  [
+   "Connection",
+   "close"
+  ],
+  [
+   "User-Agent",
+   "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36"
+  ],
+  [
+   "Host",
+   "app.adjust.com"
+  ],
+  [
+   "Accept-Encoding",
+   "gzip"
+  ]
+ ],
+ "body_len": 0,
+ "params": []
+}

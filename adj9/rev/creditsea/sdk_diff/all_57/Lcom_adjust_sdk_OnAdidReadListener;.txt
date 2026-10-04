@@ -1,0 +1,5 @@
+# CLASS Lcom/adjust/sdk/OnAdidReadListener;
+
+---- METHOD public abstract onAdidRead (Ljava/lang/String;)V ----
+  (no code)
+######################################################################

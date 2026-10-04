@@ -1,0 +1,11 @@
+{
+ "ok": true,
+ "classname": "com.adjust.sdk.sig.NativeLibHelper",
+ "methods": [
+  "a()",
+  "a(android.content.Context,java.util.LinkedHashMap,[B,int)",
+  "nOnResume()",
+  "nSign(android.content.Context,java.lang.Object,[B,int)"
+ ],
+ "fields": []
+}

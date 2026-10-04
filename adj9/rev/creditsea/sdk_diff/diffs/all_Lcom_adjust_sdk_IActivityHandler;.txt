@@ -1,0 +1,7 @@
+--- 
++++ 
+@@ -26,3 +26,3 @@
+ (no code)
+----- METHOD public abstract getFirstSessionDelayManager ()Lcom/adjust/sdk/FirstSessionDelayManager; ----
++---- METHOD public abstract getFirstSessionDelayManager ()Lcom/adjust/sdk/P; ----
+ (no code)

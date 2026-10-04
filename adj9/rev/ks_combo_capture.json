@@ -1,0 +1,1286 @@
+{
+ "targets": {
+  "app": "com.penti.app",
+  "623": "android.hardware.keymaster@4.1-service-qti",
+  "9943": "keystore2"
+ },
+ "events": {
+  "app": [
+   {
+    "t": "hooked",
+    "name": "HMAC_Init_ex",
+    "mod": "libcrypto.so",
+    "pid": 13716
+   },
+   {
+    "t": "hooked",
+    "name": "HMAC_Final",
+    "mod": "libcrypto.so",
+    "pid": 13716
+   },
+   {
+    "t": "hooked",
+    "name": "HMAC",
+    "mod": "libcrypto.so",
+    "pid": 13716
+   },
+   {
+    "t": "hooked",
+    "name": "EVP_DigestSignInit",
+    "mod": "libcrypto.so",
+    "pid": 13716
+   },
+   {
+    "t": "ready",
+    "pid": 13716,
+    "found": [
+     "EVP_DigestSignInit",
+     "HMAC",
+     "HMAC_Final",
+     "EVP_DigestSignUpdate",
+     "HMAC_Init_ex"
+    ]
+   }
+  ],
+  "623": [
+   {
+    "t": "hooked",
+    "name": "HMAC_Init_ex",
+    "mod": "libcrypto.so",
+    "pid": 623
+   },
+   {
+    "t": "hooked",
+    "name": "HMAC_Final",
+    "mod": "libcrypto.so",
+    "pid": 623
+   },
+   {
+    "t": "hooked",
+    "name": "HMAC",
+    "mod": "libcrypto.so",
+    "pid": 623
+   },
+   {
+    "t": "hooked",
+    "name": "EVP_DigestSignInit",
+    "mod": "libcrypto.so",
+    "pid": 623
+   },
+   {
+    "t": "ready",
+    "pid": 623,
+    "found": [
+     "HMAC_Final",
+     "EVP_DigestSignInit",
+     "HMAC",
+     "HMAC_Init_ex",
+     "EVP_DigestSignUpdate"
+    ]
+   }
+  ],
+  "9943": []
+ },
+ "app": [
+  {
+   "t": "probe",
+   "step": "use Mac ok"
+  },
+  {
+   "t": "probe",
+   "step": "use String ok"
+  },
+  {
+   "t": "probe",
+   "step": "use KeyStore ok"
+  },
+  {
+   "t": "probe",
+   "step": "getInstance ok"
+  },
+  {
+   "t": "probe",
+   "step": "load ok"
+  },
+  {
+   "t": "probe",
+   "step": "containsAlias ok"
+  },
+  {
+   "t": "probe",
+   "step": "had",
+   "v": "true"
+  },
+  {
+   "t": "probe",
+   "step": "getKey(over) ok"
+  },
+  {
+   "t": "probe",
+   "step": "key.getClass ERR",
+   "v": "TypeError: not a function  @  TypeError: not a function |     at <anonymous> (ks_probe_src.js:55)"
+  },
+  {
+   "t": "probe",
+   "step": "key class"
+  },
+  {
+   "t": "probe",
+   "step": "getEncoded ok"
+  },
+  {
+   "t": "probe",
+   "step": "key_encoded",
+   "v": "null (not exportable -> need native hook)"
+  },
+  {
+   "t": "probe",
+   "step": "default Mac provider",
+   "v": "AndroidOpenSSL"
+  },
+  {
+   "t": "probe",
+   "step": "default Mac class",
+   "v": "javax.crypto.Mac"
+  },
+  {
+   "t": "probe",
+   "step": "probe provider ok"
+  },
+  {
+   "t": "probe",
+   "step": "prov#1",
+   "v": "AndroidOpenSSL -> com.android.org.conscrypt.OpenSSLMac$HmacSHA256"
+  },
+  {
+   "t": "probe",
+   "step": "prov#3",
+   "v": "AndroidKeyStoreBCWorkaround -> android.security.keystore2.AndroidKeyStoreHmacSpi$HmacSHA256"
+  },
+  {
+   "t": "probe",
+   "step": "enumerate Mac providers ok"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.NativeCrypto.EVP_DigestFinal_ex",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.NativeCrypto.EVP_DigestInit_ex",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.NativeCrypto.EVP_DigestSign",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.NativeCrypto.EVP_DigestSignFinal",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.NativeCrypto.EVP_DigestSignInit",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.NativeCrypto.EVP_DigestSignUpdate",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.NativeCrypto.EVP_DigestUpdate",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.NativeCrypto.HMAC_CTX_free",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.NativeCrypto.HMAC_CTX_new",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.NativeCrypto.HMAC_Final",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.NativeCrypto.HMAC_Init_ex",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.NativeCrypto.HMAC_Update",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hookedNamed com.android.org.conscrypt.NativeCrypto",
+   "v": "12 methods matched"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.OpenSSLMac.engineInit",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.OpenSSLMac.engineUpdate",
+   "v": "2 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "hook com.android.org.conscrypt.OpenSSLMac.engineDoFinal",
+   "v": "1 overloads"
+  },
+  {
+   "t": "probe",
+   "step": "--- msg 0 ---",
+   "v": "PROBE-KEY2-MESSAGE"
+  },
+  {
+   "t": "probe",
+   "step": "Mac.getInstance2 ERR",
+   "v": "Error: java.security.NoSuchAlgorithmException: no such algorithm: HmacSHA256 for provider AndroidKeyStore  @  Error: java.security.NoSuchAlgorithmException: no such algorithm: HmacSHA256 for provider AndroidKeyStore |     at <anonymous> (/node_modules/frida-java-bridge/lib/env.js:230)"
+  },
+  {
+   "t": "probe",
+   "step": "mac_ks_0",
+   "v": "ERR getInstance"
+  },
+  {
+   "t": "probe",
+   "step": "Mac.getInstance1 ok"
+  },
+  {
+   "t": "probe",
+   "step": "Mac.init ok"
+  },
+  {
+   "t": "probe",
+   "step": "getBytes ok"
+  },
+  {
+   "t": "probe",
+   "step": "doFinal ok"
+  },
+  {
+   "t": "probe",
+   "step": "mac_def_0",
+   "v": "8f54cb1d0f46ef9bc9acd3dcb26e75da15e6584f13a93238292c56aa63f8f727"
+  },
+  {
+   "t": "mac",
+   "msg": "PROBE-KEY2-MESSAGE",
+   "ks_provider": "ERR getInstance",
+   "def_provider": "8f54cb1d0f46ef9bc9acd3dcb26e75da15e6584f13a93238292c56aa63f8f727"
+  },
+  {
+   "t": "probe",
+   "step": "--- msg 1 ---",
+   "v": "{\"a\":\"b\"}"
+  },
+  {
+   "t": "probe",
+   "step": "Mac.getInstance2 ERR",
+   "v": "Error: java.security.NoSuchAlgorithmException: no such algorithm: HmacSHA256 for provider AndroidKeyStore  @  Error: java.security.NoSuchAlgorithmException: no such algorithm: HmacSHA256 for provider AndroidKeyStore |     at <anonymous> (/node_modules/frida-java-bridge/lib/env.js:230)"
+  },
+  {
+   "t": "probe",
+   "step": "mac_ks_1",
+   "v": "ERR getInstance"
+  },
+  {
+   "t": "probe",
+   "step": "Mac.getInstance1 ok"
+  },
+  {
+   "t": "probe",
+   "step": "Mac.init ok"
+  },
+  {
+   "t": "probe",
+   "step": "getBytes ok"
+  },
+  {
+   "t": "probe",
+   "step": "doFinal ok"
+  },
+  {
+   "t": "probe",
+   "step": "mac_def_1",
+   "v": "3d1872b71322e4ec4d217af6a1620648af66d79b1fc5f9cab50fc12becb2fb77"
+  },
+  {
+   "t": "mac",
+   "msg": "{\"a\":\"b\"}",
+   "ks_provider": "ERR getInstance",
+   "def_provider": "3d1872b71322e4ec4d217af6a1620648af66d79b1fc5f9cab50fc12becb2fb77"
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2eef94d",
+    "501900663280"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2eef68d",
+    "501900663168"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2eef68d",
+    "b[9]5b44454641554c545d",
+    "0",
+    "9"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2eef68d",
+    "b[20]0000000000000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2eef94d",
+    "b[1095]308204433082032ba003020102020900c2e08746644a308d300d06092a864886f70d0101",
+    "0",
+    "1095"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2eef94d",
+    "b[32]0000000000000000000000000000000000000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef4b2d",
+    "501900600376"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef4b2d",
+    "b[27]30193117301506035504030c0e2a2e70656e74692e636f6d2e7472",
+    "0",
+    "27"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef4b2d",
+    "b[16]00000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef0fcd",
+    "501900663168"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef0fcd",
+    "b[294]30820122300d06092a864886f70d01010105000382010f003082010a0282010100ea64a3",
+    "0",
+    "294"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef0fcd",
+    "b[20]0000000000000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef6b8d",
+    "501900663280"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef6b8d",
+    "b[294]30820122300d06092a864886f70d01010105000382010f003082010a0282010100ea64a3",
+    "0",
+    "294"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef6b8d",
+    "b[32]0000000000000000000000000000000000000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef3bed",
+    "501900600376"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef3bed",
+    "b[201]3081c6310b30090603550406130255533110300e060355040813074172697a6f6e613113",
+    "0",
+    "201"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef3bed",
+    "b[16]00000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef0b4d",
+    "501900663168"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef0b4d",
+    "b[294]30820122300d06092a864886f70d01010105000382010f003082010a0282010100e59066",
+    "0",
+    "294"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef0b4d",
+    "b[20]0000000000000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef088d",
+    "501900663280"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef088d",
+    "b[294]30820122300d06092a864886f70d01010105000382010f003082010a0282010100e59066",
+    "0",
+    "294"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef088d",
+    "b[32]0000000000000000000000000000000000000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef5b6d",
+    "501900600376"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef5b6d",
+    "b[146]30818f310b30090603550406130255533110300e060355040813074172697a6f6e613113",
+    "0",
+    "146"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef5b6d",
+    "b[16]00000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef6e4d",
+    "501900663168"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef6e4d",
+    "b[294]30820122300d06092a864886f70d01010105000382010f003082010a0282010100bdedc1",
+    "0",
+    "294"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef6e4d",
+    "b[20]0000000000000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef628d",
+    "501900663280"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef628d",
+    "b[294]30820122300d06092a864886f70d01010105000382010f003082010a0282010100bdedc1",
+    "0",
+    "294"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef628d",
+    "b[32]0000000000000000000000000000000000000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef550d",
+    "501900600376"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef550d",
+    "b[27]30193117301506035504030c0e2a2e70656e74692e636f6d2e7472",
+    "0",
+    "27"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef550d",
+    "b[16]00000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef45cd",
+    "501900600376"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef45cd",
+    "b[201]3081c6310b30090603550406130255533110300e060355040813074172697a6f6e613113",
+    "0",
+    "201"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef45cd",
+    "b[16]00000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef58ad",
+    "501900663280"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef58ad",
+    "b[294]30820122300d06092a864886f70d01010105000382010f003082010a0282010100ea64a3",
+    "0",
+    "294"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef58ad",
+    "b[32]0000000000000000000000000000000000000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef97ad",
+    "501900600376"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef97ad",
+    "b[27]30193117301506035504030c0e2a2e70656e74692e636f6d2e7472",
+    "0",
+    "27"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef97ad",
+    "b[16]00000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef69cd",
+    "501900600376"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef69cd",
+    "b[201]3081c6310b30090603550406130255533110300e060355040813074172697a6f6e613113",
+    "0",
+    "201"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef69cd",
+    "b[16]00000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef932d",
+    "501900600376"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef932d",
+    "b[27]30193117301506035504030c0e2a2e70656e74692e636f6d2e7472",
+    "0",
+    "27"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef932d",
+    "b[16]00000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2efa60d",
+    "501900600376"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2efa60d",
+    "b[201]3081c6310b30090603550406130255533110300e060355040813074172697a6f6e613113",
+    "0",
+    "201"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2efa60d",
+    "b[16]00000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef414d",
+    "501900663280"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef414d",
+    "b[294]30820122300d06092a864886f70d01010105000382010f003082010a0282010100ea64a3",
+    "0",
+    "294"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef414d",
+    "b[32]0000000000000000000000000000000000000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2efa0ad",
+    "501900663280"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2efa0ad",
+    "b[18]686f6d655f706167655f63616368655f7472",
+    "0",
+    "18"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2efa0ad",
+    "b[32]0000000000000000000000000000000000000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ed45ad",
+    "501900663280"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ed45ad",
+    "b[76]68747470733a2f2f70656e74696d65646961732e736d2e6d6e63646e2e636f6d2f70656e",
+    "0",
+    "76"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ed45ad",
+    "b[32]0000000000000000000000000000000000000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ed802d",
+    "501900663280"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ed802d",
+    "b[84]68747470733a2f2f70656e74696d65646961732e736d2e6d6e63646e2e636f6d2f70656e",
+    "0",
+    "84"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ed802d",
+    "b[32]0000000000000000000000000000000000000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ed4a2d",
+    "501900663280"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ed4a2d",
+    "b[80]68747470733a2f2f70656e74696d65646961732e736d2e6d6e63646e2e636f6d2f70656e",
+    "0",
+    "80"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ed4a2d",
+    "b[32]0000000000000000000000000000000000000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ed756d",
+    "501900663280"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ed756d",
+    "b[77]68747470733a2f2f70656e74696d65646961732e736d2e6d6e63646e2e636f6d2f70656e",
+    "0",
+    "77"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ed756d",
+    "b[32]0000000000000000000000000000000000000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ed7f4d",
+    "501900663280"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ed7f4d",
+    "b[76]68747470733a2f2f70656e74696d65646961732e736d2e6d6e63646e2e636f6d2f70656e",
+    "0",
+    "76"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ed7f4d",
+    "b[32]0000000000000000000000000000000000000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ed532d",
+    "501900663280"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ed532d",
+    "b[83]68747470733a2f2f70656e74696d65646961732e736d2e6d6e63646e2e636f6d2f70656e",
+    "0",
+    "83"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ed532d",
+    "b[32]0000000000000000000000000000000000000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef550d",
+    "501900663280"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef550d",
+    "b[79]68747470733a2f2f70656e74696d65646961732e736d2e6d6e63646e2e636f6d2f70656e",
+    "0",
+    "79"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ef550d",
+    "b[32]0000000000000000000000000000000000000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ed45ad",
+    "501900663280"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ed45ad",
+    "b[85]68747470733a2f2f70656e74696d65646961732e736d2e6d6e63646e2e636f6d2f70656e",
+    "0",
+    "85"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ed45ad",
+    "b[32]0000000000000000000000000000000000000000000000000000000000000000",
+    "0"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestInit_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,long",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ed7f4d",
+    "501900663280"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestUpdate",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ed7f4d",
+    "b[86]68747470733a2f2f70656e74696d65646961732e736d2e6d6e63646e2e636f6d2f70656e",
+    "0",
+    "86"
+   ]
+  },
+  {
+   "t": "nc",
+   "cls": "com.android.org.conscrypt.NativeCrypto",
+   "m": "EVP_DigestFinal_ex",
+   "sig": "com.android.org.conscrypt.NativeRef$EVP_MD_CTX,[B,int",
+   "a": [
+    "com.android.org.conscrypt.NativeRef$EVP_MD_CTX@2ed7f4d",
+    "b[32]0000000000000000000000000000000000000000000000000000000000000000",
+    "0"
+   ]
+  }
+ ]
+}

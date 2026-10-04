@@ -1,0 +1,94 @@
+--- 
++++ 
+@@ -18,2 +18,3 @@
+ FIELD gdprPath Ljava/lang/String;
++FIELD isAndroidIdReadingEnabled Z
+ FIELD isAppSetIdReadingEnabled Z
+@@ -21,5 +22,8 @@
+ FIELD isDataResidency Z
++FIELD isDeviceIdsFromPluginsReadingEnabled Z
+ FIELD isDeviceIdsReadingOnceEnabled Z
+ FIELD isFbIdReadingEnabled Z
++FIELD isFireAdIdReadingEnabled Z
+ FIELD isFirstSessionDelayEnabled Z
++FIELD isGoogleAdIdReadingEnabled Z
+ FIELD isPreinstallTrackingEnabled Z
+@@ -144,3 +148,3 @@
+ return vX
+-const-string "production"
++const-string/jumbo production
+ invoke-virtual vX, vX, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+@@ -163,3 +167,3 @@
+ if BRANCH
+-const-string "production"
++const-string/jumbo production
+ invoke-virtual vX, vX, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+@@ -186,4 +190,8 @@
+ const/4 vX, 1
++iput-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isGoogleAdIdReadingEnabled Z
++iput-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isAndroidIdReadingEnabled Z
+ iput-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isAppSetIdReadingEnabled Z
+ iput-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isFbIdReadingEnabled Z
++iput-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isFireAdIdReadingEnabled Z
++iput-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isDeviceIdsFromPluginsReadingEnabled Z
+ return-void
+@@ -191,3 +199,3 @@
+ iget-object vX, vX, Lcom/adjust/sdk/AdjustConfig;->logger Lcom/adjust/sdk/ILogger;
+-const-string "production"
++const-string/jumbo production
+ invoke-virtual vX, vX, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+@@ -196,2 +204,6 @@
+ return-void
++---- METHOD public disableAndroidIdReading ()V ----
++const/4 vX, 0
++iput-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isAndroidIdReadingEnabled Z
++return-void
+ ---- METHOD public disableAppSetIdReading ()V ----
+@@ -200,2 +212,15 @@
+ return-void
++---- METHOD public disableDeviceIdsFromPluginsReading ()V ----
++const/4 vX, 0
++iput-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isDeviceIdsFromPluginsReadingEnabled Z
++return-void
++---- METHOD public disableDeviceIdsReading ()V ----
++const/4 vX, 0
++iput-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isGoogleAdIdReadingEnabled Z
++iput-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isAndroidIdReadingEnabled Z
++iput-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isAppSetIdReadingEnabled Z
++iput-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isFbIdReadingEnabled Z
++iput-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isFireAdIdReadingEnabled Z
++iput-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isDeviceIdsFromPluginsReadingEnabled Z
++return-void
+ ---- METHOD public disableFbIdReading ()V ----
+@@ -203,2 +228,10 @@
+ iput-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isFbIdReadingEnabled Z
++return-void
++---- METHOD public disableFireAdIdReading ()V ----
++const/4 vX, 0
++iput-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isFireAdIdReadingEnabled Z
++return-void
++---- METHOD public disableGoogleAdIdReading ()V ----
++const/4 vX, 0
++iput-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isGoogleAdIdReadingEnabled Z
+ return-void
+@@ -298,2 +331,5 @@
+ return-object vX
++---- METHOD public isAndroidIdReadingEnabled ()Z ----
++iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isAndroidIdReadingEnabled Z
++return vX
+ ---- METHOD public isAppSetIdReadingEnabled ()Z ----
+@@ -304,2 +340,5 @@
+ return vX
++---- METHOD public isDeviceIdsFromPluginsReadingEnabled ()Z ----
++iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isDeviceIdsFromPluginsReadingEnabled Z
++return vX
+ ---- METHOD public isDeviceIdsReadingOnceEnabled ()Z ----
+@@ -309,2 +348,8 @@
+ iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isFbIdReadingEnabled Z
++return vX
++---- METHOD public isFireAdIdReadingEnabled ()Z ----
++iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isFireAdIdReadingEnabled Z
++return vX
++---- METHOD public isGoogleAdIdReadingEnabled ()Z ----
++iget-boolean vX, vX, Lcom/adjust/sdk/AdjustConfig;->isGoogleAdIdReadingEnabled Z
+ return vX

@@ -1,0 +1,143 @@
+--- classes_57/Lcom_adjust_sdk_sig_u2;.txt	2026-09-29 18:31:41.881027000 +0530
++++ classes_58/Lcom_adjust_sdk_sig_u2;.txt	2026-09-29 18:31:41.938676700 +0530
+@@ -22,9 +22,9 @@
+   invoke-direct          v1, v4, Lcom/adjust/sdk/sig/x1;-><init>(Ljava/util/Map;)V
+   iput-object            v1, v0, Lcom/adjust/sdk/sig/u2;->g Lcom/adjust/sdk/sig/x1;
+   return-void            
+-  const-string/jumbo     v1, sign: Empty input parameters
+-  invoke-static          v1, Lokhttp3/a;->s(Ljava/lang/String;)V
+-  const/4                v1, 0
++  new-instance           v1, Ljava/lang/IllegalArgumentException;
++  const-string/jumbo     v2, sign: Empty input parameters
++  invoke-direct          v1, v2, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+   throw                  v1
+ 
+ ---- METHOD public static a((Ljava/util/LinkedHashMap; [B)Ljava/lang/String;)  ----
+@@ -37,22 +37,22 @@
+   invoke-virtual         v0, v3, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+   move-result-object     v4
+   const-string           v5, "Required value was null."
+-  if-eqz                 v4, +09fh
++  if-eqz                 v4, +0a3h
+   check-cast             v4, Ljava/lang/String;
+   const-string           v6, "headers_id"
+   invoke-virtual         v0, v6, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+   move-result-object     v7
+-  if-eqz                 v7, +090h
++  if-eqz                 v7, +093h
+   check-cast             v7, Ljava/lang/String;
+   const-string           v8, "algorithm"
+   invoke-virtual         v0, v8, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+   move-result-object     v9
+-  if-eqz                 v9, +081h
++  if-eqz                 v9, +083h
+   check-cast             v9, Ljava/lang/String;
+   const-string           v10, "native_version"
+   invoke-virtual         v0, v10, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+   move-result-object     v11
+-  if-eqz                 v11, +072h
++  if-eqz                 v11, +073h
+   check-cast             v11, Ljava/lang/String;
+   const-string           v12, "adj_verification"
+   invoke-virtual         v0, v12, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+@@ -107,21 +107,21 @@
+   invoke-static          v5, v1, v0, Ljava/lang/String;->format(Ljava/util/Locale; Ljava/lang/String; [Ljava/lang/Object;)Ljava/lang/String;
+   move-result-object     v0
+   return-object          v0
+-  invoke-static          v5, Lokhttp3/a;->s(Ljava/lang/String;)V
+-  const/4                v0, 0
+-  return-object          v0
+-  invoke-static          v5, Lokhttp3/a;->s(Ljava/lang/String;)V
+-  const/4                v0, 0
+-  return-object          v0
+-  invoke-static          v5, Lokhttp3/a;->s(Ljava/lang/String;)V
+-  const/4                v0, 0
+-  return-object          v0
+-  invoke-static          v5, Lokhttp3/a;->s(Ljava/lang/String;)V
+-  const/4                v0, 0
+-  return-object          v0
+-  invoke-static          v5, Lokhttp3/a;->s(Ljava/lang/String;)V
+-  const/4                v0, 0
+-  return-object          v0
++  new-instance           v0, Ljava/lang/IllegalArgumentException;
++  invoke-direct          v0, v5, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
++  throw                  v0
++  new-instance           v0, Ljava/lang/IllegalArgumentException;
++  invoke-direct          v0, v5, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
++  throw                  v0
++  new-instance           v0, Ljava/lang/IllegalArgumentException;
++  invoke-direct          v0, v5, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
++  throw                  v0
++  new-instance           v0, Ljava/lang/IllegalArgumentException;
++  invoke-direct          v0, v5, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
++  throw                  v0
++  new-instance           v0, Ljava/lang/IllegalArgumentException;
++  invoke-direct          v0, v5, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
++  throw                  v0
+ 
+ ---- METHOD public final a(()V)  ----
+   iget-object            v0, v8, Lcom/adjust/sdk/sig/u2;->g Lcom/adjust/sdk/sig/x1;
+@@ -138,7 +138,7 @@
+   invoke-direct          v2, v0, Lcom/adjust/sdk/sig/f;-><init>([Ljava/lang/Object;)V
+   invoke-interface       v2, Ljava/util/Iterator;->hasNext()Z
+   move-result            v0
+-  if-eqz                 v0, +021h
++  if-eqz                 v0, +027h
+   invoke-interface       v2, Ljava/util/Iterator;->next()Ljava/lang/Object;
+   move-result-object     v0
+   check-cast             v0, Ljava/lang/String;
+@@ -150,10 +150,13 @@
+   goto                   -17h
+   const-string/jumbo     v1, sign: 
+   const-string           v2, " is null"
+-  invoke-static          v1, v0, v2, Ld;->k(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
++  invoke-static          v1, v0, v2, LB2/a;->D(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+   move-result-object     v0
+-  invoke-static          v0, Lokhttp3/a;->r(Ljava/lang/Object;)V
+-  return-void            
++  new-instance           v1, Ljava/lang/IllegalArgumentException;
++  invoke-virtual         v0, Ljava/lang/Object;->toString()Ljava/lang/String;
++  move-result-object     v0
++  invoke-direct          v1, v0, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
++  throw                  v1
+   iget-object            v0, v8, Lcom/adjust/sdk/sig/u2;->e Ljava/util/Map;
+   const-string           v2, "a"
+   invoke-interface       v0, v2, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+@@ -161,7 +164,7 @@
+   const-string           v2, "b"
+   invoke-virtual         v2, v0, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+   move-result            v0
+-  if-nez                 v0, +0d6h
++  if-nez                 v0, +0d8h
+   new-instance           v0, Lcom/adjust/sdk/sig/a0;
+   invoke-direct          v0, Lcom/adjust/sdk/sig/a0;-><init>()V
+   invoke-static          v0, Lcom/adjust/sdk/sig/o3;->a(Lcom/adjust/sdk/sig/a0;)Ljava/lang/String;
+@@ -228,7 +231,7 @@
+   invoke-direct          v0, v1, Lcom/adjust/sdk/sig/b2;-><init>(Ljava/lang/String;)V
+   throw                  v0
+   const/4                v0, 0
+-  if-eqz                 v3, +03eh
++  if-eqz                 v3, +040h
+   iget-object            v2, v8, Lcom/adjust/sdk/sig/u2;->g Lcom/adjust/sdk/sig/x1;
+   const-string           v3, "Calling native begin: "
+   invoke-virtual         v2, v3, Lcom/adjust/sdk/sig/x1;->a(Ljava/lang/String;)V
+@@ -249,14 +252,15 @@
+   iget-object            v1, v8, Lcom/adjust/sdk/sig/u2;->f Ljava/util/Map;
+   const-string           v2, "authorization"
+   invoke-interface       v1, v2, v0, Ljava/util/Map;->put(Ljava/lang/Object; Ljava/lang/Object;)Ljava/lang/Object;
+-  goto                   +19h
++  goto                   +1bh
+   move-exception         v0
+   const-string/jumbo     v1, sign: Signature generation failed. Exiting...
+   invoke-static          v4, v1, v0, Landroid/util/Log;->e(Ljava/lang/String; Ljava/lang/String; Ljava/lang/Throwable;)I
+   throw                  v0
+-  const-string/jumbo     v0, sign: Returned a null signature. Exiting...
+-  invoke-static          v0, Lokhttp3/a;->s(Ljava/lang/String;)V
+-  return-void            
++  new-instance           v0, Ljava/lang/IllegalArgumentException;
++  const-string/jumbo     v1, sign: Returned a null signature. Exiting...
++  invoke-direct          v0, v1, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
++  throw                  v0
+   new-instance           v0, Lcom/adjust/sdk/sig/b2;
+   const-string/jumbo     v1, sign: Reached maximum retries
+   invoke-direct          v0, v1, Lcom/adjust/sdk/sig/b2;-><init>(Ljava/lang/String;)V

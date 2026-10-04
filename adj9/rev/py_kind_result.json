@@ -1,0 +1,15 @@
+{
+ "desc10_len": 360,
+ "unpadded": 360,
+ "diff": 44,
+ "CONTROL genuine verbatim": {
+  "http": 400,
+  "verdict": "RECOGNIZED(400)",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"ask_in\":7200000}"
+ },
+ "OUR mint, record = SESSION law": {
+  "http": 200,
+  "verdict": "not-recognized(200)",
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-15T10:50:21Z\",\"first_session_time\":\"2026-09-15T10:50:21Z\",\"is_reattributed\":fal"
+ }
+}

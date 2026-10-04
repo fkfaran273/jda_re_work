@@ -1,0 +1,33 @@
+--- 
++++ 
+@@ -87,2 +87,12 @@
+ return-object vX
++---- METHOD public static getGoogleAdId (Landroid/content/Context; Ljava/lang/Object;)Ljava/lang/String; ----
++const/4 vX, 0
++const-string "getId"
++const/4 vX, 0
++new-array vX, vX, [Ljava/lang/Object;
++invoke-static vX, vX, vX, vX, Lcom/adjust/sdk/Reflection;->invokeInstanceMethod(Ljava/lang/Object; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
++move-result-object vX
++check-cast vX, Ljava/lang/String;
++return-object vX
++return-object vX
+ ---- METHOD public static getHuaweiAdsReferrer (Landroid/content/Context; Lcom/adjust/sdk/ILogger;)Lcom/adjust/sdk/ReferrerDetails; ----
+@@ -190,12 +200,2 @@
+ const/4 vX, 0
+-return-object vX
+----- METHOD public static getPlayAdId (Landroid/content/Context; Ljava/lang/Object;)Ljava/lang/String; ----
+-const/4 vX, 0
+-const-string "getId"
+-const/4 vX, 0
+-new-array vX, vX, [Ljava/lang/Object;
+-invoke-static vX, vX, vX, vX, Lcom/adjust/sdk/Reflection;->invokeInstanceMethod(Ljava/lang/Object; Ljava/lang/String; [Ljava/lang/Class; [Ljava/lang/Object;)Ljava/lang/Object;
+-move-result-object vX
+-check-cast vX, Ljava/lang/String;
+-return-object vX
+ return-object vX
+@@ -300,3 +300,3 @@
+ return vX
+----- METHOD public static isPlayTrackingEnabled (Landroid/content/Context; Ljava/lang/Object;)Ljava/lang/Boolean; ----
++---- METHOD public static isGoogleAdIdTrackingEnabled (Landroid/content/Context; Ljava/lang/Object;)Ljava/lang/Boolean; ----
+ const/4 vX, 0

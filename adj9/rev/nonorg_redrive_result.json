@@ -1,0 +1,42 @@
+[
+ {
+  "mode": "SAME",
+  "gps": "d016e7e4-fb1c-4d0a-b619-db01f6a6a262",
+  "session_keys": 43,
+  "click_keys": 47,
+  "referrer": "utm_source=(not%20set)&utm_medium=(not%20set)",
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"ask_in\":5000}"
+  ],
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\"}"
+  ],
+  "verdict": "ORGANIC (Organic / wy7261z)",
+  "last": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-14T12:23:08Z\",\"first_session_time\":\"2026-09-14T12:23:08Z\",\"is_reattributed\":fal"
+  ]
+ },
+ {
+  "mode": "FRESH",
+  "gps": "ddc1056a-03eb-4fde-bb6a-4da9192393d0",
+  "session_keys": 43,
+  "click_keys": 47,
+  "referrer": "utm_source=(not%20set)&utm_medium=(not%20set)",
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"1c161969bc6639b1fb7d1306720633a0\",\"ask_in\":2000}"
+  ],
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"1c161969bc6639b1fb7d1306720633a0\"}"
+  ],
+  "verdict": "ORGANIC (Organic / wy7261z)",
+  "last": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"1c161969bc6639b1fb7d1306720633a0\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-28T12:44:14Z\",\"first_session_time\":\"2026-09-28T12:44:14Z\",\"is_reattributed\":fal"
+  ]
+ }
+]

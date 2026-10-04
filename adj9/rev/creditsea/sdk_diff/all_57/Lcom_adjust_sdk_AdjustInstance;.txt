@@ -1,0 +1,956 @@
+# CLASS Lcom/adjust/sdk/AdjustInstance;
+FIELD private activityHandler Lcom/adjust/sdk/IActivityHandler;
+FIELD private basePath Ljava/lang/String;
+FIELD private final cachedAdidReadCallbacks Ljava/util/ArrayList;
+FIELD private final cachedAdidReadTimeoutCallbacks Ljava/util/ArrayList;
+FIELD private final cachedAttributionReadCallbacks Ljava/util/ArrayList;
+FIELD private final cachedAttributionReadTimeoutCallbacks Ljava/util/ArrayList;
+FIELD private cachedDeeplinkResolutionCallback Lcom/adjust/sdk/OnDeeplinkResolvedListener;
+FIELD private final cachedThirdPartySharingTimeoutCallbacks Ljava/util/ArrayList;
+FIELD private gdprPath Ljava/lang/String;
+FIELD private preLaunchActions Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;
+FIELD private purchaseVerificationPath Ljava/lang/String;
+FIELD private pushToken Ljava/lang/String;
+FIELD private startEnabled Ljava/lang/Boolean;
+FIELD private startOffline Z
+FIELD private subscriptionPath Ljava/lang/String;
+
+---- METHOD public constructor <init> ()V ----
+  invoke-direct          v1, Ljava/lang/Object;-><init>()V
+  const/4                v0, 0
+  iput-object            v0, v1, Lcom/adjust/sdk/AdjustInstance;->startEnabled Ljava/lang/Boolean;
+  const/4                v0, 0
+  iput-boolean           v0, v1, Lcom/adjust/sdk/AdjustInstance;->startOffline Z
+  new-instance           v0, Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;
+  invoke-direct          v0, Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;-><init>()V
+  iput-object            v0, v1, Lcom/adjust/sdk/AdjustInstance;->preLaunchActions Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;
+  new-instance           v0, Ljava/util/ArrayList;
+  invoke-direct          v0, Ljava/util/ArrayList;-><init>()V
+  iput-object            v0, v1, Lcom/adjust/sdk/AdjustInstance;->cachedAdidReadCallbacks Ljava/util/ArrayList;
+  new-instance           v0, Ljava/util/ArrayList;
+  invoke-direct          v0, Ljava/util/ArrayList;-><init>()V
+  iput-object            v0, v1, Lcom/adjust/sdk/AdjustInstance;->cachedAdidReadTimeoutCallbacks Ljava/util/ArrayList;
+  new-instance           v0, Ljava/util/ArrayList;
+  invoke-direct          v0, Ljava/util/ArrayList;-><init>()V
+  iput-object            v0, v1, Lcom/adjust/sdk/AdjustInstance;->cachedAttributionReadCallbacks Ljava/util/ArrayList;
+  new-instance           v0, Ljava/util/ArrayList;
+  invoke-direct          v0, Ljava/util/ArrayList;-><init>()V
+  iput-object            v0, v1, Lcom/adjust/sdk/AdjustInstance;->cachedAttributionReadTimeoutCallbacks Ljava/util/ArrayList;
+  new-instance           v0, Ljava/util/ArrayList;
+  invoke-direct          v0, Ljava/util/ArrayList;-><init>()V
+  iput-object            v0, v1, Lcom/adjust/sdk/AdjustInstance;->cachedThirdPartySharingTimeoutCallbacks Ljava/util/ArrayList;
+  return-void            
+
+---- METHOD public static synthetic a (Lcom/adjust/sdk/ActivityHandler; Z)V ----
+  invoke-static          v1, v0, Lcom/adjust/sdk/AdjustInstance;->lambda$trackMeasurementConsent$1(Z Lcom/adjust/sdk/ActivityHandler;)V
+  return-void            
+
+---- METHOD public static synthetic access$000 (Lcom/adjust/sdk/AdjustInstance;)Ljava/util/ArrayList; ----
+  iget-object            v0, v0, Lcom/adjust/sdk/AdjustInstance;->cachedAdidReadTimeoutCallbacks Ljava/util/ArrayList;
+  return-object          v0
+
+---- METHOD public static synthetic access$100 (Lcom/adjust/sdk/AdjustInstance;)Ljava/util/ArrayList; ----
+  iget-object            v0, v0, Lcom/adjust/sdk/AdjustInstance;->cachedAttributionReadTimeoutCallbacks Ljava/util/ArrayList;
+  return-object          v0
+
+---- METHOD public static synthetic access$200 (Lcom/adjust/sdk/AdjustInstance;)Ljava/util/ArrayList; ----
+  iget-object            v0, v0, Lcom/adjust/sdk/AdjustInstance;->cachedThirdPartySharingTimeoutCallbacks Ljava/util/ArrayList;
+  return-object          v0
+
+---- METHOD public static synthetic access$300 (Lcom/adjust/sdk/AdjustInstance; Landroid/content/Context;)Ljava/lang/String; ----
+  invoke-direct          v0, v1, Lcom/adjust/sdk/AdjustInstance;->getCachedDeeplink(Landroid/content/Context;)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD public static synthetic b (Lcom/adjust/sdk/AdjustThirdPartySharing; Lcom/adjust/sdk/ActivityHandler;)V ----
+  invoke-static          v0, v1, Lcom/adjust/sdk/AdjustInstance;->lambda$trackThirdPartySharing$0(Lcom/adjust/sdk/AdjustThirdPartySharing; Lcom/adjust/sdk/ActivityHandler;)V
+  return-void            
+
+---- METHOD public static synthetic c (Landroid/content/Context;)V ----
+  invoke-static          v0, Lcom/adjust/sdk/AdjustInstance;->lambda$setSendingReferrersAsNotSent$2(Landroid/content/Context;)V
+  return-void            
+
+---- METHOD private cacheDeeplink (Landroid/net/Uri; Landroid/content/Context;)V ----
+  invoke-static          v2, Lcom/adjust/sdk/SharedPreferencesManager;->getDefaultInstance(Landroid/content/Context;)Lcom/adjust/sdk/SharedPreferencesManager;
+  move-result-object     v2
+  invoke-virtual         v2, v1, Lcom/adjust/sdk/SharedPreferencesManager;->cacheDeeplink(Landroid/net/Uri;)V
+  return-void            
+
+---- METHOD private checkActivityHandler (Ljava/lang/String;)Z ----
+  const/4                v0, 0
+  invoke-direct          v1, v2, v0, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String; Z)Z
+  move-result            v2
+  return                 v2
+
+---- METHOD private checkActivityHandler (Ljava/lang/String; Z)Z ----
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  if-eqz                 v0, +004h
+  const/4                v3, 1
+  return                 v3
+  const/4                v0, 0
+  if-nez                 v3, +00eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  new-array              v4, v0, [Ljava/lang/Object;
+  const-string           v1, "Adjust not initialized correctly"
+  invoke-interface       v3, v1, v4, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v0
+  if-eqz                 v4, +010h
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v4
+  filled-new-array       v3, [Ljava/lang/Object;
+  move-result-object     v3
+  const-string           v1, "Adjust not initialized, but %s saved for launch"
+  invoke-interface       v4, v1, v3, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+  goto                   +eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v4
+  filled-new-array       v3, [Ljava/lang/Object;
+  move-result-object     v3
+  const-string           v1, "Adjust not initialized, can't perform %s"
+  invoke-interface       v4, v1, v3, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+  return                 v0
+
+---- METHOD private checkActivityHandler (Z Ljava/lang/String; Ljava/lang/String;)Z ----
+  const/4                v0, 1
+  if-eqz                 v2, +007h
+  invoke-direct          v1, v3, v0, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String; Z)Z
+  move-result            v2
+  return                 v2
+  invoke-direct          v1, v4, v0, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String; Z)Z
+  move-result            v2
+  return                 v2
+
+---- METHOD private getCachedDeeplink (Landroid/content/Context;)Ljava/lang/String; ----
+  invoke-static          v1, Lcom/adjust/sdk/SharedPreferencesManager;->getDefaultInstance(Landroid/content/Context;)Lcom/adjust/sdk/SharedPreferencesManager;
+  move-result-object     v1
+  invoke-virtual         v1, Lcom/adjust/sdk/SharedPreferencesManager;->getCachedDeeplink()Ljava/lang/String;
+  move-result-object     v1
+  return-object          v1
+
+---- METHOD private isInstanceEnabled ()Z ----
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustInstance;->startEnabled Ljava/lang/Boolean;
+  if-eqz                 v0, +00bh
+  invoke-virtual         v0, Ljava/lang/Boolean;->booleanValue()Z
+  move-result            v0
+  if-eqz                 v0, +003h
+  goto                   +3h
+  const/4                v0, 0
+  return                 v0
+  const/4                v0, 1
+  return                 v0
+
+---- METHOD private static synthetic lambda$setSendingReferrersAsNotSent$2 (Landroid/content/Context;)V ----
+  invoke-static          v0, Lcom/adjust/sdk/SharedPreferencesManager;->getDefaultInstance(Landroid/content/Context;)Lcom/adjust/sdk/SharedPreferencesManager;
+  move-result-object     v0
+  invoke-virtual         v0, Lcom/adjust/sdk/SharedPreferencesManager;->setSendingReferrersAsNotSent()V
+  return-void            
+
+---- METHOD private static synthetic lambda$trackMeasurementConsent$1 (Z Lcom/adjust/sdk/ActivityHandler;)V ----
+  invoke-virtual         v1, v0, Lcom/adjust/sdk/ActivityHandler;->tryTrackMeasurementConsentI(Z)V
+  return-void            
+
+---- METHOD private static synthetic lambda$trackThirdPartySharing$0 (Lcom/adjust/sdk/AdjustThirdPartySharing; Lcom/adjust/sdk/ActivityHandler;)V ----
+  invoke-virtual         v1, v0, Lcom/adjust/sdk/ActivityHandler;->tryTrackThirdPartySharingI(Lcom/adjust/sdk/AdjustThirdPartySharing;)V
+  return-void            
+
+---- METHOD private saveDeeplink (Lcom/adjust/sdk/AdjustDeeplink; J Landroid/content/Context;)V ----
+  invoke-static          v4, Lcom/adjust/sdk/SharedPreferencesManager;->getDefaultInstance(Landroid/content/Context;)Lcom/adjust/sdk/SharedPreferencesManager;
+  move-result-object     v4
+  invoke-virtual         v4, v1, v2, v3, Lcom/adjust/sdk/SharedPreferencesManager;->saveDeeplink(Lcom/adjust/sdk/AdjustDeeplink; J)V
+  return-void            
+
+---- METHOD private saveGdprForgetMe (Landroid/content/Context;)V ----
+  invoke-static          v1, Lcom/adjust/sdk/SharedPreferencesManager;->getDefaultInstance(Landroid/content/Context;)Lcom/adjust/sdk/SharedPreferencesManager;
+  move-result-object     v1
+  invoke-virtual         v1, Lcom/adjust/sdk/SharedPreferencesManager;->setGdprForgetMe()V
+  return-void            
+
+---- METHOD private savePreinstallReferrer (Ljava/lang/String; Landroid/content/Context;)V ----
+  invoke-static          v2, Lcom/adjust/sdk/SharedPreferencesManager;->getDefaultInstance(Landroid/content/Context;)Lcom/adjust/sdk/SharedPreferencesManager;
+  move-result-object     v2
+  invoke-virtual         v2, v1, Lcom/adjust/sdk/SharedPreferencesManager;->savePreinstallReferrer(Ljava/lang/String;)V
+  return-void            
+
+---- METHOD private savePushToken (Ljava/lang/String; Landroid/content/Context;)V ----
+  invoke-static          v2, Lcom/adjust/sdk/SharedPreferencesManager;->getDefaultInstance(Landroid/content/Context;)Lcom/adjust/sdk/SharedPreferencesManager;
+  move-result-object     v2
+  invoke-virtual         v2, v1, Lcom/adjust/sdk/SharedPreferencesManager;->savePushToken(Ljava/lang/String;)V
+  return-void            
+
+---- METHOD private saveRawReferrer (Ljava/lang/String; J Landroid/content/Context;)V ----
+  invoke-static          v4, Lcom/adjust/sdk/SharedPreferencesManager;->getDefaultInstance(Landroid/content/Context;)Lcom/adjust/sdk/SharedPreferencesManager;
+  move-result-object     v4
+  invoke-virtual         v4, v1, v2, v3, Lcom/adjust/sdk/SharedPreferencesManager;->saveRawReferrer(Ljava/lang/String; J)V
+  return-void            
+
+---- METHOD private setSendingReferrersAsNotSent (Landroid/content/Context;)V ----
+  new-instance           v0, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;
+  const-string           v1, "AdjustInstance"
+  invoke-direct          v0, v1, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;-><init>(Ljava/lang/String;)V
+  new-instance           v1, Landroidx/profileinstaller/c;
+  const/4                v2, 2
+  invoke-direct          v1, v4, v2, Landroidx/profileinstaller/c;-><init>(Landroid/content/Context; I)V
+  invoke-interface       v0, v1, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+  return-void            
+
+---- METHOD public addGlobalCallbackParameter (Ljava/lang/String; Ljava/lang/String;)V ----
+  const-string           v0, "adding global callback parameter"
+  const/4                v1, 1
+  invoke-direct          v2, v0, v1, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String; Z)Z
+  move-result            v0
+  if-eqz                 v0, +008h
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v0, v3, v4, Lcom/adjust/sdk/IActivityHandler;->addGlobalCallbackParameter(Ljava/lang/String; Ljava/lang/String;)V
+  return-void            
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->preLaunchActions Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;
+  iget-object            v0, v0, Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;->preLaunchActionsArray Ljava/util/List;
+  new-instance           v1, Lcom/adjust/sdk/AdjustInstance$2;
+  invoke-direct          v1, v3, v4, Lcom/adjust/sdk/AdjustInstance$2;-><init>(Ljava/lang/String; Ljava/lang/String;)V
+  invoke-interface       v0, v1, Ljava/util/List;->add(Ljava/lang/Object;)Z
+  return-void            
+
+---- METHOD public addGlobalPartnerParameter (Ljava/lang/String; Ljava/lang/String;)V ----
+  const-string           v0, "adding global partner parameter"
+  const/4                v1, 1
+  invoke-direct          v2, v0, v1, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String; Z)Z
+  move-result            v0
+  if-eqz                 v0, +008h
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v0, v3, v4, Lcom/adjust/sdk/IActivityHandler;->addGlobalPartnerParameter(Ljava/lang/String; Ljava/lang/String;)V
+  return-void            
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->preLaunchActions Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;
+  iget-object            v0, v0, Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;->preLaunchActionsArray Ljava/util/List;
+  new-instance           v1, Lcom/adjust/sdk/AdjustInstance$3;
+  invoke-direct          v1, v3, v4, Lcom/adjust/sdk/AdjustInstance$3;-><init>(Ljava/lang/String; Ljava/lang/String;)V
+  invoke-interface       v0, v1, Ljava/util/List;->add(Ljava/lang/Object;)Z
+  return-void            
+
+---- METHOD public disable ()V ----
+  sget-object            v0, Ljava/lang/Boolean;->FALSE Ljava/lang/Boolean;
+  iput-object            v0, v3, Lcom/adjust/sdk/AdjustInstance;->startEnabled Ljava/lang/Boolean;
+  const-string           v0, "enabled mode"
+  const-string           v1, "disabled mode"
+  const/4                v2, 0
+  invoke-direct          v3, v2, v0, v1, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Z Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v0
+  if-eqz                 v0, +007h
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v0, v2, Lcom/adjust/sdk/IActivityHandler;->setEnabled(Z)V
+  return-void            
+
+---- METHOD public disableCoppaComplianceInDelay ()V ----
+  const-string           v0, "disableCoppaComplianceInDelay"
+  invoke-direct          v2, v0, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  return-void            
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  const/4                v1, 0
+  invoke-interface       v0, v1, Lcom/adjust/sdk/IActivityHandler;->setCoppaComplianceInDelay(Z)V
+  return-void            
+
+---- METHOD public disablePlayStoreKidsComplianceInDelay ()V ----
+  const-string           v0, "disablePlayStoreKidsComplianceInDelay"
+  invoke-direct          v2, v0, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  return-void            
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  const/4                v1, 0
+  invoke-interface       v0, v1, Lcom/adjust/sdk/IActivityHandler;->setPlayStoreKidsComplianceInDelay(Z)V
+  return-void            
+
+---- METHOD public enable ()V ----
+  sget-object            v0, Ljava/lang/Boolean;->TRUE Ljava/lang/Boolean;
+  iput-object            v0, v3, Lcom/adjust/sdk/AdjustInstance;->startEnabled Ljava/lang/Boolean;
+  const-string           v0, "enabled mode"
+  const-string           v1, "disabled mode"
+  const/4                v2, 1
+  invoke-direct          v3, v2, v0, v1, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Z Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v0
+  if-eqz                 v0, +007h
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v0, v2, Lcom/adjust/sdk/IActivityHandler;->setEnabled(Z)V
+  return-void            
+
+---- METHOD public enableCoppaComplianceInDelay ()V ----
+  const-string           v0, "enableCoppaComplianceInDelay"
+  invoke-direct          v2, v0, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  return-void            
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  const/4                v1, 1
+  invoke-interface       v0, v1, Lcom/adjust/sdk/IActivityHandler;->setCoppaComplianceInDelay(Z)V
+  return-void            
+
+---- METHOD public enablePlayStoreKidsComplianceInDelay ()V ----
+  const-string           v0, "enablePlayStoreKidsComplianceInDelay"
+  invoke-direct          v2, v0, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  return-void            
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  const/4                v1, 1
+  invoke-interface       v0, v1, Lcom/adjust/sdk/IActivityHandler;->setPlayStoreKidsComplianceInDelay(Z)V
+  return-void            
+
+---- METHOD public endFirstSessionDelay ()V ----
+  const-string           v0, "endFirstSessionDelay"
+  invoke-direct          v1, v0, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  return-void            
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v0, Lcom/adjust/sdk/IActivityHandler;->endFirstSessionDelay()V
+  return-void            
+
+---- METHOD public gdprForgetMe (Landroid/content/Context;)V ----
+  invoke-direct          v1, v2, Lcom/adjust/sdk/AdjustInstance;->saveGdprForgetMe(Landroid/content/Context;)V
+  const-string           v2, "gdpr"
+  const/4                v0, 1
+  invoke-direct          v1, v2, v0, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String; Z)Z
+  move-result            v2
+  if-eqz                 v2, +00fh
+  iget-object            v2, v1, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v2, Lcom/adjust/sdk/IActivityHandler;->isEnabled()Z
+  move-result            v2
+  if-eqz                 v2, +007h
+  iget-object            v2, v1, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v2, Lcom/adjust/sdk/IActivityHandler;->gdprForgetMe()V
+  return-void            
+
+---- METHOD public getAdid (Lcom/adjust/sdk/OnAdidReadListener;)V ----
+  const-string           v0, "getAdid"
+  invoke-direct          v1, v0, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +008h
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustInstance;->cachedAdidReadCallbacks Ljava/util/ArrayList;
+  invoke-virtual         v0, v2, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+  return-void            
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v0, v2, Lcom/adjust/sdk/IActivityHandler;->getAdid(Lcom/adjust/sdk/OnAdidReadListener;)V
+  return-void            
+
+---- METHOD public getAdidWithTimeout (Landroid/content/Context; J Lcom/adjust/sdk/OnAdidReadListener;)V ----
+  const-string           v0, "getAdidWithTimeout"
+  invoke-direct          v8, v0, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String;)Z
+  move-result            v1
+  if-nez                 v1, +014h
+  new-instance           v1, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;
+  invoke-direct          v1, v0, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;-><init>(Ljava/lang/String;)V
+  new-instance           v2, Lcom/adjust/sdk/AdjustInstance$8;
+  move-object            v3, v8
+  move-object            v4, v9
+  move-wide              v6, v10
+  move-object            v5, v12
+  invoke-direct/range    v2 ... v7, Lcom/adjust/sdk/AdjustInstance$8;-><init>(Lcom/adjust/sdk/AdjustInstance; Landroid/content/Context; Lcom/adjust/sdk/OnAdidReadListener; J)V
+  invoke-interface       v1, v2, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+  return-void            
+  move-object            v3, v8
+  move-wide              v6, v10
+  move-object            v5, v12
+  iget-object            v9, v3, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v9, v6, v7, v5, Lcom/adjust/sdk/IActivityHandler;->getAdidWithTimeout(J Lcom/adjust/sdk/OnAdidReadListener;)V
+  return-void            
+
+---- METHOD public getAmazonAdId (Landroid/content/Context; Lcom/adjust/sdk/OnAmazonAdIdReadListener;)V ----
+  invoke-virtual         v1, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+  move-result-object     v1
+  invoke-static          v1, v2, Lcom/adjust/sdk/DeviceInfo;->getFireAdvertisingIdBypassConditions(Landroid/content/ContentResolver; Lcom/adjust/sdk/OnAmazonAdIdReadListener;)V
+  return-void            
+
+---- METHOD public getAttribution (Lcom/adjust/sdk/OnAttributionReadListener;)V ----
+  const-string           v0, "getAttribution"
+  invoke-direct          v1, v0, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +008h
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustInstance;->cachedAttributionReadCallbacks Ljava/util/ArrayList;
+  invoke-virtual         v0, v2, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+  return-void            
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v0, v2, Lcom/adjust/sdk/IActivityHandler;->getAttribution(Lcom/adjust/sdk/OnAttributionReadListener;)V
+  return-void            
+
+---- METHOD public getAttributionWithTimeout (Landroid/content/Context; J Lcom/adjust/sdk/OnAttributionReadListener;)V ----
+  const-string           v0, "getAttributionWithTimeout"
+  invoke-direct          v8, v0, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String;)Z
+  move-result            v1
+  if-nez                 v1, +014h
+  new-instance           v1, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;
+  invoke-direct          v1, v0, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;-><init>(Ljava/lang/String;)V
+  new-instance           v2, Lcom/adjust/sdk/AdjustInstance$9;
+  move-object            v3, v8
+  move-object            v4, v9
+  move-wide              v6, v10
+  move-object            v5, v12
+  invoke-direct/range    v2 ... v7, Lcom/adjust/sdk/AdjustInstance$9;-><init>(Lcom/adjust/sdk/AdjustInstance; Landroid/content/Context; Lcom/adjust/sdk/OnAttributionReadListener; J)V
+  invoke-interface       v1, v2, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+  return-void            
+  move-object            v3, v8
+  move-wide              v6, v10
+  move-object            v5, v12
+  iget-object            v9, v3, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v9, v6, v7, v5, Lcom/adjust/sdk/IActivityHandler;->getAttributionWithTimeout(J Lcom/adjust/sdk/OnAttributionReadListener;)V
+  return-void            
+
+---- METHOD public getGooglePlayInstallReferrer (Landroid/content/Context; Lcom/adjust/sdk/OnGooglePlayInstallReferrerReadListener;)V ----
+  new-instance           v0, Lcom/adjust/sdk/InstallReferrer;
+  new-instance           v1, Lcom/adjust/sdk/AdjustInstance$12;
+  invoke-direct          v1, v4, Lcom/adjust/sdk/AdjustInstance$12;-><init>(Lcom/adjust/sdk/OnGooglePlayInstallReferrerReadListener;)V
+  invoke-direct          v0, v3, v1, Lcom/adjust/sdk/InstallReferrer;-><init>(Landroid/content/Context; Lcom/adjust/sdk/InstallReferrerReadListener;)V
+  invoke-virtual         v0, Lcom/adjust/sdk/InstallReferrer;->startConnection()V
+  return-void            
+
+---- METHOD public getLastDeeplink (Landroid/content/Context; Lcom/adjust/sdk/OnLastDeeplinkReadListener;)V ----
+  new-instance           v0, Lcom/adjust/sdk/AdjustInstance$13;
+  invoke-direct          v0, v1, v2, v3, Lcom/adjust/sdk/AdjustInstance$13;-><init>(Lcom/adjust/sdk/AdjustInstance; Landroid/content/Context; Lcom/adjust/sdk/OnLastDeeplinkReadListener;)V
+  const/4                v2, 0
+  new-array              v2, v2, [Ljava/lang/Void;
+  invoke-virtual         v0, v2, Lcom/adjust/sdk/scheduler/AsyncTaskExecutor;->execute([Ljava/lang/Object;)Lcom/adjust/sdk/scheduler/AsyncTaskExecutor;
+  return-void            
+
+---- METHOD public getSdkVersion (Lcom/adjust/sdk/OnSdkVersionReadListener;)V ----
+  new-instance           v0, Lcom/adjust/sdk/AdjustInstance$11;
+  invoke-direct          v0, v2, Lcom/adjust/sdk/AdjustInstance$11;-><init>(Lcom/adjust/sdk/OnSdkVersionReadListener;)V
+  const/4                v2, 0
+  new-array              v2, v2, [Ljava/lang/Void;
+  invoke-virtual         v0, v2, Lcom/adjust/sdk/scheduler/AsyncTaskExecutor;->execute([Ljava/lang/Object;)Lcom/adjust/sdk/scheduler/AsyncTaskExecutor;
+  return-void            
+
+---- METHOD public getThirdPartySharingSettingsWithTimeout (Landroid/content/Context; J Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;)V ----
+  const-string           v0, "getThirdPartySharingSettings"
+  invoke-direct          v8, v0, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String;)Z
+  move-result            v1
+  if-nez                 v1, +014h
+  new-instance           v1, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;
+  invoke-direct          v1, v0, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;-><init>(Ljava/lang/String;)V
+  new-instance           v2, Lcom/adjust/sdk/AdjustInstance$10;
+  move-object            v3, v8
+  move-object            v4, v9
+  move-wide              v6, v10
+  move-object            v5, v12
+  invoke-direct/range    v2 ... v7, Lcom/adjust/sdk/AdjustInstance$10;-><init>(Lcom/adjust/sdk/AdjustInstance; Landroid/content/Context; Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener; J)V
+  invoke-interface       v1, v2, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V
+  return-void            
+  move-object            v3, v8
+  move-wide              v6, v10
+  move-object            v5, v12
+  iget-object            v9, v3, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v9, v6, v7, v5, Lcom/adjust/sdk/IActivityHandler;->getThirdPartySharingSettingsWithTimeout(J Lcom/adjust/sdk/OnThirdPartySharingSettingsReadListener;)V
+  return-void            
+
+---- METHOD public initSdk (Lcom/adjust/sdk/AdjustConfig;)V ----
+  invoke-static          Lcom/adjust/sdk/AdjustSigner;->isPresent()Z
+  move-result            v0
+  const/4                v1, 0
+  if-nez                 v0, +00eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  new-array              v0, v1, [Ljava/lang/Object;
+  const-string           v1, "Missing signature library, SDK can't be initialised"
+  invoke-interface       v3, v1, v0, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  if-nez                 v3, +00eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  new-array              v0, v1, [Ljava/lang/Object;
+  const-string           v1, "AdjustConfig missing"
+  invoke-interface       v3, v1, v0, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  invoke-virtual         v3, Lcom/adjust/sdk/AdjustConfig;->isValid()Z
+  move-result            v0
+  if-nez                 v0, +00eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  new-array              v0, v1, [Ljava/lang/Object;
+  const-string           v1, "AdjustConfig not initialized correctly"
+  invoke-interface       v3, v1, v0, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  if-eqz                 v0, +00eh
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v3
+  new-array              v0, v1, [Ljava/lang/Object;
+  const-string           v1, "Adjust already initialized"
+  invoke-interface       v3, v1, v0, Lcom/adjust/sdk/ILogger;->error(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->preLaunchActions Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;
+  iput-object            v0, v3, Lcom/adjust/sdk/AdjustConfig;->preLaunchActions Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->pushToken Ljava/lang/String;
+  iput-object            v0, v3, Lcom/adjust/sdk/AdjustConfig;->pushToken Ljava/lang/String;
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->startEnabled Ljava/lang/Boolean;
+  iput-object            v0, v3, Lcom/adjust/sdk/AdjustConfig;->startEnabled Ljava/lang/Boolean;
+  iget-boolean           v0, v2, Lcom/adjust/sdk/AdjustInstance;->startOffline Z
+  iput-boolean           v0, v3, Lcom/adjust/sdk/AdjustConfig;->startOffline Z
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->basePath Ljava/lang/String;
+  iput-object            v0, v3, Lcom/adjust/sdk/AdjustConfig;->basePath Ljava/lang/String;
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->gdprPath Ljava/lang/String;
+  iput-object            v0, v3, Lcom/adjust/sdk/AdjustConfig;->gdprPath Ljava/lang/String;
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->subscriptionPath Ljava/lang/String;
+  iput-object            v0, v3, Lcom/adjust/sdk/AdjustConfig;->subscriptionPath Ljava/lang/String;
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->purchaseVerificationPath Ljava/lang/String;
+  iput-object            v0, v3, Lcom/adjust/sdk/AdjustConfig;->purchaseVerificationPath Ljava/lang/String;
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->cachedDeeplinkResolutionCallback Lcom/adjust/sdk/OnDeeplinkResolvedListener;
+  iput-object            v0, v3, Lcom/adjust/sdk/AdjustConfig;->cachedDeeplinkResolutionCallback Lcom/adjust/sdk/OnDeeplinkResolvedListener;
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->cachedAdidReadCallbacks Ljava/util/ArrayList;
+  iput-object            v0, v3, Lcom/adjust/sdk/AdjustConfig;->cachedAdidReadCallbacks Ljava/util/ArrayList;
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->cachedAdidReadTimeoutCallbacks Ljava/util/ArrayList;
+  iput-object            v0, v3, Lcom/adjust/sdk/AdjustConfig;->cachedAdidReadTimeoutCallbacks Ljava/util/ArrayList;
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->cachedAttributionReadCallbacks Ljava/util/ArrayList;
+  iput-object            v0, v3, Lcom/adjust/sdk/AdjustConfig;->cachedAttributionReadCallbacks Ljava/util/ArrayList;
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->cachedAttributionReadTimeoutCallbacks Ljava/util/ArrayList;
+  iput-object            v0, v3, Lcom/adjust/sdk/AdjustConfig;->cachedAttributionReadTimeoutCallbacks Ljava/util/ArrayList;
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->cachedThirdPartySharingTimeoutCallbacks Ljava/util/ArrayList;
+  iput-object            v0, v3, Lcom/adjust/sdk/AdjustConfig;->cachedThirdPartySharingTimeoutCallbacks Ljava/util/ArrayList;
+  invoke-static          v3, Lcom/adjust/sdk/AdjustFactory;->getActivityHandler(Lcom/adjust/sdk/AdjustConfig;)Lcom/adjust/sdk/IActivityHandler;
+  move-result-object     v0
+  iput-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  iget-object            v3, v3, Lcom/adjust/sdk/AdjustConfig;->context Landroid/content/Context;
+  invoke-direct          v2, v3, Lcom/adjust/sdk/AdjustInstance;->setSendingReferrersAsNotSent(Landroid/content/Context;)V
+  return-void            
+
+---- METHOD public isEnabled (Landroid/content/Context; Lcom/adjust/sdk/OnIsEnabledListener;)V ----
+  const-string           v0, "isEnabled"
+  invoke-direct          v1, v0, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +00fh
+  new-instance           v0, Lcom/adjust/sdk/AdjustInstance$1;
+  invoke-direct          v0, v3, Lcom/adjust/sdk/AdjustInstance$1;-><init>(Lcom/adjust/sdk/OnIsEnabledListener;)V
+  filled-new-array       v2, [Landroid/content/Context;
+  move-result-object     v2
+  invoke-virtual         v0, v2, Lcom/adjust/sdk/scheduler/AsyncTaskExecutor;->execute([Ljava/lang/Object;)Lcom/adjust/sdk/scheduler/AsyncTaskExecutor;
+  return-void            
+  iget-object            v2, v1, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v2, v3, Lcom/adjust/sdk/IActivityHandler;->isEnabled(Lcom/adjust/sdk/OnIsEnabledListener;)V
+  return-void            
+
+---- METHOD public onPause ()V ----
+  const-string           v0, "onPause"
+  invoke-direct          v1, v0, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  return-void            
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v0, Lcom/adjust/sdk/IActivityHandler;->onPause()V
+  return-void            
+
+---- METHOD public onResume ()V ----
+  const-string           v0, "onResume"
+  invoke-direct          v1, v0, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  return-void            
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v0, Lcom/adjust/sdk/IActivityHandler;->onResume()V
+  return-void            
+
+---- METHOD public processAndResolveDeeplink (Lcom/adjust/sdk/AdjustDeeplink; Landroid/content/Context; Lcom/adjust/sdk/OnDeeplinkResolvedListener;)V ----
+  if-eqz                 v5, +02dh
+  invoke-virtual         v5, Lcom/adjust/sdk/AdjustDeeplink;->isValid()Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +25h
+  if-nez                 v7, +006h
+  invoke-virtual         v4, v5, v6, Lcom/adjust/sdk/AdjustInstance;->processDeeplink(Lcom/adjust/sdk/AdjustDeeplink; Landroid/content/Context;)V
+  return-void            
+  iget-object            v0, v5, Lcom/adjust/sdk/AdjustDeeplink;->url Landroid/net/Uri;
+  invoke-direct          v4, v0, v6, Lcom/adjust/sdk/AdjustInstance;->cacheDeeplink(Landroid/net/Uri; Landroid/content/Context;)V
+  invoke-static          Ljava/lang/System;->currentTimeMillis()J
+  move-result-wide       v0
+  const-string           v2, "processAndResolveDeeplink"
+  const/4                v3, 1
+  invoke-direct          v4, v2, v3, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String; Z)Z
+  move-result            v2
+  if-nez                 v2, +008h
+  invoke-direct          v4, v5, v0, v1, v6, Lcom/adjust/sdk/AdjustInstance;->saveDeeplink(Lcom/adjust/sdk/AdjustDeeplink; J Landroid/content/Context;)V
+  iput-object            v7, v4, Lcom/adjust/sdk/AdjustInstance;->cachedDeeplinkResolutionCallback Lcom/adjust/sdk/OnDeeplinkResolvedListener;
+  return-void            
+  iget-object            v6, v4, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v6, v5, v0, v1, v7, Lcom/adjust/sdk/IActivityHandler;->processAndResolveDeeplink(Lcom/adjust/sdk/AdjustDeeplink; J Lcom/adjust/sdk/OnDeeplinkResolvedListener;)V
+  return-void            
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v5
+  const/4                v6, 0
+  new-array              v6, v6, [Ljava/lang/Object;
+  const-string           v7, "Skipping deeplink processing (null or empty)"
+  invoke-interface       v5, v7, v6, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD public processDeeplink (Lcom/adjust/sdk/AdjustDeeplink; Landroid/content/Context;)V ----
+  if-eqz                 v5, +025h
+  invoke-virtual         v5, Lcom/adjust/sdk/AdjustDeeplink;->isValid()Z
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +1dh
+  iget-object            v0, v5, Lcom/adjust/sdk/AdjustDeeplink;->url Landroid/net/Uri;
+  invoke-direct          v4, v0, v6, Lcom/adjust/sdk/AdjustInstance;->cacheDeeplink(Landroid/net/Uri; Landroid/content/Context;)V
+  invoke-static          Ljava/lang/System;->currentTimeMillis()J
+  move-result-wide       v0
+  const-string           v2, "processDeeplink"
+  const/4                v3, 1
+  invoke-direct          v4, v2, v3, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String; Z)Z
+  move-result            v2
+  if-nez                 v2, +006h
+  invoke-direct          v4, v5, v0, v1, v6, Lcom/adjust/sdk/AdjustInstance;->saveDeeplink(Lcom/adjust/sdk/AdjustDeeplink; J Landroid/content/Context;)V
+  return-void            
+  iget-object            v6, v4, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v6, v5, v0, v1, Lcom/adjust/sdk/IActivityHandler;->processDeeplink(Lcom/adjust/sdk/AdjustDeeplink; J)V
+  return-void            
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v5
+  const/4                v6, 0
+  new-array              v6, v6, [Ljava/lang/Object;
+  const-string           v0, "Skipping deeplink processing (null or empty)"
+  invoke-interface       v5, v0, v6, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD public removeGlobalCallbackParameter (Ljava/lang/String;)V ----
+  const-string/jumbo     v0, removing global callback parameter
+  const/4                v1, 1
+  invoke-direct          v2, v0, v1, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String; Z)Z
+  move-result            v0
+  if-eqz                 v0, +008h
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v0, v3, Lcom/adjust/sdk/IActivityHandler;->removeGlobalCallbackParameter(Ljava/lang/String;)V
+  return-void            
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->preLaunchActions Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;
+  iget-object            v0, v0, Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;->preLaunchActionsArray Ljava/util/List;
+  new-instance           v1, Lcom/adjust/sdk/AdjustInstance$4;
+  invoke-direct          v1, v3, Lcom/adjust/sdk/AdjustInstance$4;-><init>(Ljava/lang/String;)V
+  invoke-interface       v0, v1, Ljava/util/List;->add(Ljava/lang/Object;)Z
+  return-void            
+
+---- METHOD public removeGlobalCallbackParameters ()V ----
+  const-string/jumbo     v0, resetting global callback parameters
+  const/4                v1, 1
+  invoke-direct          v2, v0, v1, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String; Z)Z
+  move-result            v0
+  if-eqz                 v0, +008h
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v0, Lcom/adjust/sdk/IActivityHandler;->removeGlobalCallbackParameters()V
+  return-void            
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->preLaunchActions Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;
+  iget-object            v0, v0, Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;->preLaunchActionsArray Ljava/util/List;
+  new-instance           v1, Lcom/adjust/sdk/AdjustInstance$6;
+  invoke-direct          v1, Lcom/adjust/sdk/AdjustInstance$6;-><init>()V
+  invoke-interface       v0, v1, Ljava/util/List;->add(Ljava/lang/Object;)Z
+  return-void            
+
+---- METHOD public removeGlobalPartnerParameter (Ljava/lang/String;)V ----
+  const-string/jumbo     v0, removing global partner parameter
+  const/4                v1, 1
+  invoke-direct          v2, v0, v1, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String; Z)Z
+  move-result            v0
+  if-eqz                 v0, +008h
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v0, v3, Lcom/adjust/sdk/IActivityHandler;->removeGlobalPartnerParameter(Ljava/lang/String;)V
+  return-void            
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->preLaunchActions Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;
+  iget-object            v0, v0, Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;->preLaunchActionsArray Ljava/util/List;
+  new-instance           v1, Lcom/adjust/sdk/AdjustInstance$5;
+  invoke-direct          v1, v3, Lcom/adjust/sdk/AdjustInstance$5;-><init>(Ljava/lang/String;)V
+  invoke-interface       v0, v1, Ljava/util/List;->add(Ljava/lang/Object;)Z
+  return-void            
+
+---- METHOD public removeGlobalPartnerParameters ()V ----
+  const-string/jumbo     v0, resetting global partner parameters
+  const/4                v1, 1
+  invoke-direct          v2, v0, v1, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String; Z)Z
+  move-result            v0
+  if-eqz                 v0, +008h
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v0, Lcom/adjust/sdk/IActivityHandler;->removeGlobalPartnerParameters()V
+  return-void            
+  iget-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->preLaunchActions Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;
+  iget-object            v0, v0, Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;->preLaunchActionsArray Ljava/util/List;
+  new-instance           v1, Lcom/adjust/sdk/AdjustInstance$7;
+  invoke-direct          v1, Lcom/adjust/sdk/AdjustInstance$7;-><init>()V
+  invoke-interface       v0, v1, Ljava/util/List;->add(Ljava/lang/Object;)Z
+  return-void            
+
+---- METHOD public sendPreinstallReferrer (Ljava/lang/String; Landroid/content/Context;)V ----
+  if-eqz                 v2, +023h
+  invoke-virtual         v2, Ljava/lang/String;->length()I
+  move-result            v0
+  if-nez                 v0, +003h
+  goto                   +1bh
+  invoke-direct          v1, v2, v3, Lcom/adjust/sdk/AdjustInstance;->savePreinstallReferrer(Ljava/lang/String; Landroid/content/Context;)V
+  const-string           v2, "preinstall referrer"
+  const/4                v3, 1
+  invoke-direct          v1, v2, v3, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String; Z)Z
+  move-result            v2
+  if-eqz                 v2, +00fh
+  iget-object            v2, v1, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v2, Lcom/adjust/sdk/IActivityHandler;->isEnabled()Z
+  move-result            v2
+  if-eqz                 v2, +007h
+  iget-object            v2, v1, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v2, Lcom/adjust/sdk/IActivityHandler;->sendPreinstallReferrer()V
+  return-void            
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v2
+  const/4                v3, 0
+  new-array              v3, v3, [Ljava/lang/Object;
+  const-string           v0, "Skipping SYSTEM_INSTALLER_REFERRER preinstall referrer processing (null or empty)"
+  invoke-interface       v2, v0, v3, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD public sendReferrer (Ljava/lang/String; Landroid/content/Context;)V ----
+  invoke-static          Ljava/lang/System;->currentTimeMillis()J
+  move-result-wide       v0
+  if-eqz                 v4, +024h
+  invoke-virtual         v4, Ljava/lang/String;->length()I
+  move-result            v2
+  if-nez                 v2, +003h
+  goto                   +1ch
+  invoke-direct          v3, v4, v0, v1, v5, Lcom/adjust/sdk/AdjustInstance;->saveRawReferrer(Ljava/lang/String; J Landroid/content/Context;)V
+  const-string/jumbo     v4, referrer
+  const/4                v5, 1
+  invoke-direct          v3, v4, v5, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String; Z)Z
+  move-result            v4
+  if-eqz                 v4, +00fh
+  iget-object            v4, v3, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v4, Lcom/adjust/sdk/IActivityHandler;->isEnabled()Z
+  move-result            v4
+  if-eqz                 v4, +007h
+  iget-object            v4, v3, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v4, Lcom/adjust/sdk/IActivityHandler;->sendReftagReferrer()V
+  return-void            
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v4
+  const/4                v5, 0
+  new-array              v5, v5, [Ljava/lang/Object;
+  const-string           v0, "Skipping INSTALL_REFERRER intent referrer processing (null or empty)"
+  invoke-interface       v4, v0, v5, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD public setExternalDeviceIdInDelay (Ljava/lang/String;)V ----
+  const-string/jumbo     v0, setExternalDeviceIdInDelay
+  invoke-direct          v1, v0, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  return-void            
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v0, v2, Lcom/adjust/sdk/IActivityHandler;->setExternalDeviceIdInDelay(Ljava/lang/String;)V
+  return-void            
+
+---- METHOD public setPushToken (Ljava/lang/String; Landroid/content/Context;)V ----
+  invoke-direct          v1, v2, v3, Lcom/adjust/sdk/AdjustInstance;->savePushToken(Ljava/lang/String; Landroid/content/Context;)V
+  const-string/jumbo     v3, push token
+  const/4                v0, 1
+  invoke-direct          v1, v3, v0, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String; Z)Z
+  move-result            v3
+  if-eqz                 v3, +00fh
+  iget-object            v3, v1, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v3, Lcom/adjust/sdk/IActivityHandler;->isEnabled()Z
+  move-result            v3
+  if-eqz                 v3, +007h
+  iget-object            v3, v1, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v3, v2, v0, Lcom/adjust/sdk/IActivityHandler;->setPushToken(Ljava/lang/String; Z)V
+  return-void            
+
+---- METHOD public setTestOptions (Lcom/adjust/sdk/AdjustTestOptions;)V ----
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustTestOptions;->basePath Ljava/lang/String;
+  if-eqz                 v0, +004h
+  iput-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->basePath Ljava/lang/String;
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustTestOptions;->gdprPath Ljava/lang/String;
+  if-eqz                 v0, +004h
+  iput-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->gdprPath Ljava/lang/String;
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustTestOptions;->subscriptionPath Ljava/lang/String;
+  if-eqz                 v0, +004h
+  iput-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->subscriptionPath Ljava/lang/String;
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustTestOptions;->purchaseVerificationPath Ljava/lang/String;
+  if-eqz                 v0, +004h
+  iput-object            v0, v2, Lcom/adjust/sdk/AdjustInstance;->purchaseVerificationPath Ljava/lang/String;
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustTestOptions;->baseUrl Ljava/lang/String;
+  if-eqz                 v0, +005h
+  invoke-static          v0, Lcom/adjust/sdk/AdjustFactory;->setBaseUrl(Ljava/lang/String;)V
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustTestOptions;->gdprUrl Ljava/lang/String;
+  if-eqz                 v0, +005h
+  invoke-static          v0, Lcom/adjust/sdk/AdjustFactory;->setGdprUrl(Ljava/lang/String;)V
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustTestOptions;->subscriptionUrl Ljava/lang/String;
+  if-eqz                 v0, +005h
+  invoke-static          v0, Lcom/adjust/sdk/AdjustFactory;->setSubscriptionUrl(Ljava/lang/String;)V
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustTestOptions;->purchaseVerificationUrl Ljava/lang/String;
+  if-eqz                 v0, +005h
+  invoke-static          v0, Lcom/adjust/sdk/AdjustFactory;->setPurchaseVerificationUrl(Ljava/lang/String;)V
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustTestOptions;->timerIntervalInMilliseconds Ljava/lang/Long;
+  if-eqz                 v0, +009h
+  invoke-virtual         v0, Ljava/lang/Long;->longValue()J
+  move-result-wide       v0
+  invoke-static          v0, v1, Lcom/adjust/sdk/AdjustFactory;->setTimerInterval(J)V
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustTestOptions;->timerStartInMilliseconds Ljava/lang/Long;
+  if-eqz                 v0, +00bh
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustTestOptions;->timerIntervalInMilliseconds Ljava/lang/Long;
+  invoke-virtual         v0, Ljava/lang/Long;->longValue()J
+  move-result-wide       v0
+  invoke-static          v0, v1, Lcom/adjust/sdk/AdjustFactory;->setTimerStart(J)V
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustTestOptions;->sessionIntervalInMilliseconds Ljava/lang/Long;
+  if-eqz                 v0, +009h
+  invoke-virtual         v0, Ljava/lang/Long;->longValue()J
+  move-result-wide       v0
+  invoke-static          v0, v1, Lcom/adjust/sdk/AdjustFactory;->setSessionInterval(J)V
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustTestOptions;->subsessionIntervalInMilliseconds Ljava/lang/Long;
+  if-eqz                 v0, +009h
+  invoke-virtual         v0, Ljava/lang/Long;->longValue()J
+  move-result-wide       v0
+  invoke-static          v0, v1, Lcom/adjust/sdk/AdjustFactory;->setSubsessionInterval(J)V
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustTestOptions;->tryInstallReferrer Ljava/lang/Boolean;
+  if-eqz                 v0, +009h
+  invoke-virtual         v0, Ljava/lang/Boolean;->booleanValue()Z
+  move-result            v0
+  invoke-static          v0, Lcom/adjust/sdk/AdjustFactory;->setTryInstallReferrer(Z)V
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustTestOptions;->noBackoffWait Ljava/lang/Boolean;
+  if-eqz                 v0, +00ah
+  sget-object            v0, Lcom/adjust/sdk/BackoffStrategy;->NO_WAIT Lcom/adjust/sdk/BackoffStrategy;
+  invoke-static          v0, Lcom/adjust/sdk/AdjustFactory;->setPackageHandlerBackoffStrategy(Lcom/adjust/sdk/BackoffStrategy;)V
+  invoke-static          v0, Lcom/adjust/sdk/AdjustFactory;->setSdkClickBackoffStrategy(Lcom/adjust/sdk/BackoffStrategy;)V
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustTestOptions;->ignoreSystemLifecycleBootstrap Ljava/lang/Boolean;
+  if-eqz                 v0, +009h
+  invoke-virtual         v0, Ljava/lang/Boolean;->booleanValue()Z
+  move-result            v0
+  invoke-static          v0, Lcom/adjust/sdk/AdjustFactory;->setIgnoreSystemLifecycleBootstrap(Z)V
+  iget-object            v3, v3, Lcom/adjust/sdk/AdjustTestOptions;->allowUrlStrategyFallback Ljava/lang/Boolean;
+  if-eqz                 v3, +009h
+  invoke-virtual         v3, Ljava/lang/Boolean;->booleanValue()Z
+  move-result            v3
+  invoke-static          v3, Lcom/adjust/sdk/AdjustFactory;->setAllowUrlStrategyFallback(Z)V
+  return-void            
+
+---- METHOD public switchBackToOnlineMode ()V ----
+  const-string           v0, "offline mode"
+  const-string           v1, "online mode"
+  const/4                v2, 0
+  invoke-direct          v3, v2, v0, v1, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Z Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +005h
+  iput-boolean           v2, v3, Lcom/adjust/sdk/AdjustInstance;->startOffline Z
+  return-void            
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v0, v2, Lcom/adjust/sdk/IActivityHandler;->setOfflineMode(Z)V
+  return-void            
+
+---- METHOD public switchToOfflineMode ()V ----
+  const-string           v0, "offline mode"
+  const-string           v1, "online mode"
+  const/4                v2, 1
+  invoke-direct          v3, v2, v0, v1, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Z Ljava/lang/String; Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +005h
+  iput-boolean           v2, v3, Lcom/adjust/sdk/AdjustInstance;->startOffline Z
+  return-void            
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v0, v2, Lcom/adjust/sdk/IActivityHandler;->setOfflineMode(Z)V
+  return-void            
+
+---- METHOD public teardown ()V ----
+  const-string/jumbo     v0, teardown
+  invoke-direct          v1, v0, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  return-void            
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v0, Lcom/adjust/sdk/IActivityHandler;->teardown()V
+  const/4                v0, 0
+  iput-object            v0, v1, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  return-void            
+
+---- METHOD public trackAdRevenue (Lcom/adjust/sdk/AdjustAdRevenue;)V ----
+  const-string/jumbo     v0, trackAdRevenue
+  invoke-direct          v1, v0, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  return-void            
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v0, v2, Lcom/adjust/sdk/IActivityHandler;->trackAdRevenue(Lcom/adjust/sdk/AdjustAdRevenue;)V
+  return-void            
+
+---- METHOD public trackEvent (Lcom/adjust/sdk/AdjustEvent;)V ----
+  const-string/jumbo     v0, trackEvent
+  invoke-direct          v1, v0, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  return-void            
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v0, v2, Lcom/adjust/sdk/IActivityHandler;->trackEvent(Lcom/adjust/sdk/AdjustEvent;)V
+  return-void            
+
+---- METHOD public trackMeasurementConsent (Z)V ----
+  const-string           v0, "measurement consent"
+  const/4                v1, 1
+  invoke-direct          v3, v0, v1, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String; Z)Z
+  move-result            v0
+  if-nez                 v0, +010h
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustInstance;->preLaunchActions Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;
+  iget-object            v0, v0, Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;->preLaunchActionsArray Ljava/util/List;
+  new-instance           v1, Lcom/adjust/sdk/n;
+  const/4                v2, 1
+  invoke-direct          v1, v4, v2, Lcom/adjust/sdk/n;-><init>(Z I)V
+  invoke-interface       v0, v1, Ljava/util/List;->add(Ljava/lang/Object;)Z
+  return-void            
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v0, v4, Lcom/adjust/sdk/IActivityHandler;->trackMeasurementConsent(Z)V
+  return-void            
+
+---- METHOD public trackPlayStoreSubscription (Lcom/adjust/sdk/AdjustPlayStoreSubscription;)V ----
+  const-string/jumbo     v0, trackPlayStoreSubscription
+  invoke-direct          v1, v0, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +003h
+  return-void            
+  iget-object            v0, v1, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v0, v2, Lcom/adjust/sdk/IActivityHandler;->trackPlayStoreSubscription(Lcom/adjust/sdk/AdjustPlayStoreSubscription;)V
+  return-void            
+
+---- METHOD public trackThirdPartySharing (Lcom/adjust/sdk/AdjustThirdPartySharing;)V ----
+  const-string/jumbo     v0, third party sharing
+  const/4                v1, 1
+  invoke-direct          v3, v0, v1, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String; Z)Z
+  move-result            v0
+  if-nez                 v0, +010h
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustInstance;->preLaunchActions Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;
+  iget-object            v0, v0, Lcom/adjust/sdk/AdjustInstance$PreLaunchActions;->preLaunchActionsArray Ljava/util/List;
+  new-instance           v1, Lcom/adjust/sdk/l;
+  const/4                v2, 1
+  invoke-direct          v1, v4, v2, Lcom/adjust/sdk/l;-><init>(Lcom/adjust/sdk/AdjustThirdPartySharing; I)V
+  invoke-interface       v0, v1, Ljava/util/List;->add(Ljava/lang/Object;)Z
+  return-void            
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v0, v4, Lcom/adjust/sdk/IActivityHandler;->trackThirdPartySharing(Lcom/adjust/sdk/AdjustThirdPartySharing;)V
+  return-void            
+
+---- METHOD public verifyAndTrackPlayStorePurchase (Lcom/adjust/sdk/AdjustEvent; Lcom/adjust/sdk/OnPurchaseVerificationFinishedListener;)V ----
+  const-string/jumbo     v0, verifyAndTrack
+  invoke-direct          v3, v0, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +013h
+  if-eqz                 v5, +010h
+  new-instance           v4, Lcom/adjust/sdk/AdjustPurchaseVerificationResult;
+  const/16               v0, 100
+  const-string           v1, "SDK needs to be initialized before making purchase verification request"
+  const-string           v2, "not_verified"
+  invoke-direct          v4, v2, v0, v1, Lcom/adjust/sdk/AdjustPurchaseVerificationResult;-><init>(Ljava/lang/String; I Ljava/lang/String;)V
+  invoke-interface       v5, v4, Lcom/adjust/sdk/OnPurchaseVerificationFinishedListener;->onVerificationFinished(Lcom/adjust/sdk/AdjustPurchaseVerificationResult;)V
+  return-void            
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v0, v4, v5, Lcom/adjust/sdk/IActivityHandler;->verifyAndTrackPlayStorePurchase(Lcom/adjust/sdk/AdjustEvent; Lcom/adjust/sdk/OnPurchaseVerificationFinishedListener;)V
+  return-void            
+
+---- METHOD public verifyPlayStorePurchase (Lcom/adjust/sdk/AdjustPlayStorePurchase; Lcom/adjust/sdk/OnPurchaseVerificationFinishedListener;)V ----
+  const-string/jumbo     v0, verifyPurchase
+  invoke-direct          v3, v0, Lcom/adjust/sdk/AdjustInstance;->checkActivityHandler(Ljava/lang/String;)Z
+  move-result            v0
+  if-nez                 v0, +011h
+  new-instance           v4, Lcom/adjust/sdk/AdjustPurchaseVerificationResult;
+  const/16               v0, 100
+  const-string           v1, "SDK needs to be initialized before making purchase verification request"
+  const-string           v2, "not_verified"
+  invoke-direct          v4, v2, v0, v1, Lcom/adjust/sdk/AdjustPurchaseVerificationResult;-><init>(Ljava/lang/String; I Ljava/lang/String;)V
+  invoke-interface       v5, v4, Lcom/adjust/sdk/OnPurchaseVerificationFinishedListener;->onVerificationFinished(Lcom/adjust/sdk/AdjustPurchaseVerificationResult;)V
+  return-void            
+  iget-object            v0, v3, Lcom/adjust/sdk/AdjustInstance;->activityHandler Lcom/adjust/sdk/IActivityHandler;
+  invoke-interface       v0, v4, v5, Lcom/adjust/sdk/IActivityHandler;->verifyPlayStorePurchase(Lcom/adjust/sdk/AdjustPlayStorePurchase; Lcom/adjust/sdk/OnPurchaseVerificationFinishedListener;)V
+  return-void            
+######################################################################

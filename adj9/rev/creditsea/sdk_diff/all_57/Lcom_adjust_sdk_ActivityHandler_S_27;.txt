@@ -1,0 +1,18 @@
+# CLASS Lcom/adjust/sdk/ActivityHandler$27;
+FIELD public final synthetic a Lcom/adjust/sdk/ActivityHandler;
+
+---- METHOD public constructor <init> (Lcom/adjust/sdk/ActivityHandler;)V ----
+  iput-object            v1, v0, Lcom/adjust/sdk/ActivityHandler$27;->a Lcom/adjust/sdk/ActivityHandler;
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  return-void            
+
+---- METHOD public final run (Lcom/adjust/sdk/ActivityHandler;)V ----
+  iget-object            v0, v1, Lcom/adjust/sdk/ActivityHandler$27;->a Lcom/adjust/sdk/ActivityHandler;
+  invoke-static          v0, Lcom/adjust/sdk/ActivityHandler;->access$1600(Lcom/adjust/sdk/ActivityHandler;)Lcom/adjust/sdk/AdjustConfig;
+  move-result-object     v0
+  iget-object            v0, v0, Lcom/adjust/sdk/AdjustConfig;->startEnabled Ljava/lang/Boolean;
+  invoke-virtual         v0, Ljava/lang/Boolean;->booleanValue()Z
+  move-result            v0
+  invoke-static          v2, v0, Lcom/adjust/sdk/ActivityHandler;->access$1700(Lcom/adjust/sdk/ActivityHandler; Z)V
+  return-void            
+######################################################################

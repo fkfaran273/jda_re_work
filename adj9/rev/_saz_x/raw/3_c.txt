@@ -1,0 +1,8 @@
+GET https://app.adjust.com/attribution?initiated_by=backend&gps_adid_attempt=1&api_level=31&app_version=3.13.9&app_token=jut9tib0eeps&os_version=12&created_at=2026-09-14T17%3A53%3A11.322Z%2B0530&device_type=phone&gps_adid=d016e7e4-fb1c-4d0a-b619-db01f6a6a262&foreground=1&android_uuid=073ccff9-c71c-4987-a914-167666ff7c26&sent_at=2026-09-14T17%3A53%3A11.358Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=com.penti.app&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1 HTTP/1.1
+Client-SDK: android5.7.0
+Authorization: Signature signature="BxhPOnI9n7IC0bnZUYA8S5mHKuT72q8zJMjO/pIu+u6639nju9aQmRexD5LD3NGnLKNKNWWz1tLpk/RMrCfIxUQ7pInepTw86B9kYLxb7kIS22eBXVVUPW+1j5YLOFLLVA9EGf/lo8gSoYqSOm/Ko1GPgMEtdsErHpoOCVUQd0Dr/jTNkZO3f6WWAHC5hkboXLirUxlaDoGia3w2AaJIBKaJXCit2YnvH20QELboGkUQAsBGoJpjyfYg0OnSMWh3",adj_signing_id="1500000",algorithm="adj9",headers_id="10",native_version="5.0.0",adj_verification="KlcAG2cbAAsKSl1KVi0FGiJbDHMI"
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)
+Host: app.adjust.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+

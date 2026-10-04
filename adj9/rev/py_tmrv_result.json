@@ -1,0 +1,15 @@
+{
+ "identity": "gps=80970d76-1b90-4e28-97cc-a6e5cd55f690 auid=bd01c0fb-c6c1-4e28-bd16-74e7ede0bf82",
+ "click": "302 (fired by user) reftag=adjust_reftag=cxaOf09vQrBHs&utm_source=VKM+D",
+ "session/mint": "exit-clean #10=363B blob=192B",
+ "session/send": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"7c4e2ebd556276a8f5c7b9e22c6f34db\"}",
+ "sdk_click/send": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"7c4e2ebd556276a8f5c7b9e22c6f34db\"}",
+ "attribution/0": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"7c4e2ebd556276a8f5c7b9e22c6f34db\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-21T11:37:46Z\",\"firs",
+ "attribution/1": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"7c4e2ebd556276a8f5c7b9e22c6f34db\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-21T11:37:46Z\",\"firs",
+ "attribution/2": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"7c4e2ebd556276a8f5c7b9e22c6f34db\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-21T11:37:46Z\",\"firs",
+ "attribution/3": "200 {\"app_token\":\"jut9tib0eeps\",\"adid\":\"7c4e2ebd556276a8f5c7b9e22c6f34db\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-21T11:37:46Z\",\"firs",
+ "RESULT": "no non-organic seen (Organic / fallback)",
+ "gps": "80970d76-1b90-4e28-97cc-a6e5cd55f690",
+ "auid": "bd01c0fb-c6c1-4e28-bd16-74e7ede0bf82",
+ "marker": "cline_rdmi1"
+}

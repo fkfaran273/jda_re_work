@@ -1,0 +1,38 @@
+{
+ "be_m31": {
+  "self_ok": 0,
+  "hits": {}
+ },
+ "be_m32": {
+  "self_ok": 0,
+  "hits": {}
+ },
+ "le_m31": {
+  "self_ok": 0,
+  "hits": {}
+ },
+ "le_m32": {
+  "self_ok": 0,
+  "hits": {}
+ },
+ "be_mp": {
+  "self_ok": 0,
+  "hits": {}
+ },
+ "le_mp": {
+  "self_ok": 0,
+  "hits": {}
+ },
+ "stream_be_m31": {
+  "stream_hits": 0
+ },
+ "stream_be_m32": {
+  "stream_hits": 0
+ },
+ "stream_be_mp": {
+  "stream_hits": 0
+ },
+ "stream_le_m32": {
+  "stream_hits": 0
+ }
+}

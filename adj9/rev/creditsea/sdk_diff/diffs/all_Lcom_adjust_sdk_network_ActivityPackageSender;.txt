@@ -1,0 +1,92 @@
+--- 
++++ 
+@@ -38,3 +38,2 @@
+ move-object vX, vX
+-move vX, vX
+ move-object vX, vX
+@@ -44,2 +43,3 @@
+ move-object vX, vX
++move vX, vX
+ invoke-direct/range vX ... vX, Lcom/adjust/sdk/network/UrlStrategy;-><init>(Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/util/List; Z)V
+@@ -281,3 +281,3 @@
+ const-string "&"
+-invoke-static vX, vX, vX, vX, vX, Landroidx/compose/ui/graphics/g;->A(Ljava/lang/StringBuilder; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V
++invoke-static vX, vX, vX, vX, vX, Lco/hyperverge/encoder/a;->y(Ljava/lang/StringBuilder; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String; Ljava/lang/String;)V
+ GOTO
+@@ -381,3 +381,3 @@
+ const-string " Will retry later"
+-invoke-static vX, vX, vX, Ld;->q(Ljava/lang/StringBuilder; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
++invoke-static vX, vX, vX, LB2/a;->r(Ljava/lang/StringBuilder; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+ move-result-object vX
+@@ -532,24 +532,2 @@
+ GOTO
+-move-exception vX
+-move-object vX, vX
+-GOTO
+-move-exception vX
+-move-object vX, vX
+-GOTO
+-move-exception vX
+-move-object vX, vX
+-GOTO
+-move-exception vX
+-move-object vX, vX
+-GOTO
+-move-exception vX
+-move-object vX, vX
+-GOTO
+-move-exception vX
+-move-object vX, vX
+-GOTO
+-move-exception vX
+-move-object vX, vX
+-GOTO
+-move-object vX, vX
+ invoke-virtual vX, Lcom/adjust/sdk/ActivityPackage;->getActivityKind()Lcom/adjust/sdk/ActivityKind;
+@@ -577,3 +555,2 @@
+ move-result-object vX
+-move-object vX, vX
+ GOTO
+@@ -586,3 +563,2 @@
+ move-result-object vX
+-GOTO
+ invoke-virtual vX, vX, vX, Lcom/adjust/sdk/network/ActivityPackageSender;->readConnectionResponse(Ljavax/net/ssl/HttpsURLConnection; Lcom/adjust/sdk/ResponseData;)Ljava/lang/Integer;
+@@ -647,5 +623,2 @@
+ move-exception vX
+-move-object vX, vX
+-move-object vX, vX
+-move-object vX, vX
+ GOTO
+@@ -778,3 +751,3 @@
+ if BRANCH
+-invoke-static vX, Landroidx/compose/material/f;->m(Ljava/lang/String;)Ljava/lang/StringBuilder;
++invoke-static vX, LB2/a;->v(Ljava/lang/String;)Ljava/lang/StringBuilder;
+ move-result-object vX
+@@ -789,3 +762,3 @@
+ if BRANCH
+-invoke-static vX, Landroidx/compose/material/f;->m(Ljava/lang/String;)Ljava/lang/StringBuilder;
++invoke-static vX, LB2/a;->v(Ljava/lang/String;)Ljava/lang/StringBuilder;
+ move-result-object vX
+@@ -800,3 +773,3 @@
+ if BRANCH
+-invoke-static vX, Landroidx/compose/material/f;->m(Ljava/lang/String;)Ljava/lang/StringBuilder;
++invoke-static vX, LB2/a;->v(Ljava/lang/String;)Ljava/lang/StringBuilder;
+ move-result-object vX
+@@ -809,3 +782,3 @@
+ if BRANCH
+-invoke-static vX, Landroidx/compose/material/f;->m(Ljava/lang/String;)Ljava/lang/StringBuilder;
++invoke-static vX, LB2/a;->v(Ljava/lang/String;)Ljava/lang/StringBuilder;
+ move-result-object vX
+@@ -893,4 +866,4 @@
+ iget-object vX, vX, Lcom/adjust/sdk/network/ActivityPackageSender;->logger Lcom/adjust/sdk/ILogger;
++const/16 vX, 200
+ const-string "Response message: %s"
+-const/16 vX, 200
+ if-ne vX, vX, +00ah
+@@ -909,4 +882,4 @@
+ iget-object vX, vX, Lcom/adjust/sdk/network/ActivityPackageSender;->executor Lcom/adjust/sdk/scheduler/ThreadExecutor;
+-new-instance vX, Lcom/adjust/sdk/network/ActivityPackageSender$1;
+-invoke-direct vX, vX, vX, vX, vX, Lcom/adjust/sdk/network/ActivityPackageSender$1;-><init>(Lcom/adjust/sdk/network/ActivityPackageSender; Lcom/adjust/sdk/network/IActivityPackageSender$ResponseDataCallbackSubscriber; Lcom/adjust/sdk/ActivityPackage; Ljava/util/Map;)V
++new-instance vX, Lcom/adjust/sdk/network/a;
++invoke-direct vX, vX, vX, vX, vX, Lcom/adjust/sdk/network/a;-><init>(Lcom/adjust/sdk/network/ActivityPackageSender; Lcom/adjust/sdk/network/IActivityPackageSender$ResponseDataCallbackSubscriber; Lcom/adjust/sdk/ActivityPackage; Ljava/util/Map;)V
+ invoke-interface vX, vX, Lcom/adjust/sdk/scheduler/ThreadExecutor;->submit(Ljava/lang/Runnable;)V

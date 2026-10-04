@@ -1,0 +1,52 @@
+[
+ {
+  "mode": "SAME",
+  "gps": "d016e7e4-fb1c-4d0a-b619-db01f6a6a262",
+  "skeys": 43,
+  "ckeys": 47,
+  "head": [
+   "0x2b",
+   "0x48"
+  ],
+  "session_mint": "exit-clean",
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"ask_in\":5000}"
+  ],
+  "click_mint": "exit-clean",
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\"}"
+  ],
+  "verdict": "*** NON-ORGANIC: VKM Digital Yeni / 24ca05dc ***",
+  "last": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"attribution\":{\"tracker_token\":\"24ca05dc\",\"tracker_name\":\"VKM Digital Yeni::AH::vkm_0926_36::cline_probe\",\"network\":\"VKM Digital Yeni\",\"campaign\":\"AH\",\"adgroup\":\"vkm_0926_36\",\"creative\":\"cli"
+  ]
+ },
+ {
+  "mode": "FRESH",
+  "gps": "e6982e8b-efbf-4ae4-a61b-6b88a0fe9dba",
+  "skeys": 43,
+  "ckeys": 47,
+  "head": [
+   "0x2b",
+   "0x48"
+  ],
+  "session_mint": "exit-clean",
+  "session": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"0e28d3a9343fa290ec050019fe9b29a1\",\"ask_in\":2000}"
+  ],
+  "click_mint": "exit-clean",
+  "sdk_click": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"0e28d3a9343fa290ec050019fe9b29a1\"}"
+  ],
+  "verdict": "ORGANIC (Organic / wy7261z)",
+  "last": [
+   200,
+   "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"0e28d3a9343fa290ec050019fe9b29a1\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-28T18:00:15Z\",\"first_session_time\":\"202"
+  ]
+ }
+]

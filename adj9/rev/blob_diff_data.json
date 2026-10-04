@@ -1,0 +1,879 @@
+{
+ "second": 1790517288,
+ "auth_record_ts": 1790517288323,
+ "nsign_record_ts": 1790517288321,
+ "genuine_blob_hex": "2d69a9f53ced113631880e1748e954760880dc6ac7fdeed70445d3a7e92031584f5fcbffdd589896a192a9d0d334441ca0c60885d1a603e3540c8cf3cde179b3988d50d797a4cfbe10bd2b26c06b1ba9b5593a35b05ccc0b4f5e3a9ea48ecd1b6345d1c9fb9e93ca05e48e3b6a9b21fdb9fda19d0e4d694a3f11345da66db89aa00220ccd9e1c09fb2c90546961adc54ccea9609182e670ec48665d51ca45414f04d1d092ed6778e389061e5ba8324cfdeb08eab1d9e84b9a54f8ae92d5e5982",
+ "genuine_record_hex": "0100083de61e65bf2a798ad8c55478f53757d902f67d5e5e03fad0f10d60f93c17937b2f1eb6c09691ae7d74bd04a7d8a0b2fe8c8b8ab334cb92f7f677f0c6a111c0658dbbd1558b077db81b07a405e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855060107000000000000000000000000000000000e0e0e0e0e0e0e0e0e0e0e0e0e0e",
+ "genuine_S": "f67d5e5e",
+ "genuine_d2w": "5e5e7df6",
+ "genuine_head": "3de61e65bf2a798ad8c55478f53757d9",
+ "genuine_head_prefix": [
+  "0x2b"
+ ],
+ "genuine_block32": "a7d8a0b2fe8c8b8ab334cb92f7f677f0c6a111c0658dbbd1558b077db81b07a4",
+ "genuine_tail2": "0000",
+ "consts_ok": true,
+ "mint_ownclaims": {
+  "header_match": true,
+  "words_differing": [],
+  "header": "2d69a9f53ced113631880e1748e95476",
+  "other_header": "2d69a9f53ced113631880e1748e95476",
+  "blob_hex": "2d69a9f53ced113631880e1748e954760880dc6ac7fdeed70445d3a7e92031584f5fcbffdd589896a192a9d0d334441ca0c60885d1a603e3540c8cf3cde179b3988d50d797a4cfbe10bd2b26c06b1ba9b5593a35b05ccc0b4f5e3a9ea48ecd1b6345d1c9fb9e93ca05e48e3b6a9b21fdb9fda19d0e4d694a3f11345da66db89aa00220ccd9e1c09fb2c90546961adc54ccea9609182e670ec48665d51ca45414f04d1d092ed6778e389061e5ba8324cfdeb08eab1d9e84b9a54f8ae92d5e5982",
+  "record_hex": "0100083de61e65bf2a798ad8c55478f53757d902f67d5e5e03fad0f10d60f93c17937b2f1eb6c09691ae7d74bd04a7d8a0b2fe8c8b8ab334cb92f7f677f0c6a111c0658dbbd1558b077db81b07a405e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855060107000000000000000000000000000000000e0e0e0e0e0e0e0e0e0e0e0e0e0e",
+  "field_diff": [
+   {
+    "field": "magic",
+    "range": "[0:3)",
+    "len": 3,
+    "genuine": "010008",
+    "ours": "010008",
+    "equal": true,
+    "note": "01 00 08"
+   },
+   {
+    "field": "head d0[0..3]",
+    "range": "[3:19)",
+    "len": 16,
+    "genuine": "3de61e65bf2a798ad8c55478f53757d9",
+    "ours": "3de61e65bf2a798ad8c55478f53757d9",
+    "equal": true,
+    "note": "d0 words 0..3, rev16 LE-packed"
+   },
+   {
+    "field": "flag19",
+    "range": "[19:20)",
+    "len": 1,
+    "genuine": "02",
+    "ours": "02",
+    "equal": true,
+    "note": "02"
+   },
+   {
+    "field": "S (BE32)",
+    "range": "[20:24)",
+    "len": 4,
+    "genuine": "f67d5e5e",
+    "ours": "f67d5e5e",
+    "equal": true,
+    "note": "F.py native seed"
+   },
+   {
+    "field": "flag24",
+    "range": "[24:25)",
+    "len": 1,
+    "genuine": "03",
+    "ours": "03",
+    "equal": true,
+    "note": "03"
+   },
+   {
+    "field": "cert SHA-1 d9",
+    "range": "[25:45)",
+    "len": 20,
+    "genuine": "fad0f10d60f93c17937b2f1eb6c09691ae7d74bd",
+    "ours": "fad0f10d60f93c17937b2f1eb6c09691ae7d74bd",
+    "equal": true,
+    "note": "fad0f10d... (pinned)"
+   },
+   {
+    "field": "flag45",
+    "range": "[45:46)",
+    "len": 1,
+    "genuine": "04",
+    "ours": "04",
+    "equal": true,
+    "note": "04"
+   },
+   {
+    "field": "block32",
+    "range": "[46:78)",
+    "len": 32,
+    "genuine": "a7d8a0b2fe8c8b8ab334cb92f7f677f0c6a111c0658dbbd1558b077db81b07a4",
+    "ours": "a7d8a0b2fe8c8b8ab334cb92f7f677f0c6a111c0658dbbd1558b077db81b07a4",
+    "equal": true,
+    "note": "32-B hash-like block"
+   },
+   {
+    "field": "flag78",
+    "range": "[78:79)",
+    "len": 1,
+    "genuine": "05",
+    "ours": "05",
+    "equal": true,
+    "note": "05"
+   },
+   {
+    "field": "SHA256(\"\")",
+    "range": "[79:111)",
+    "len": 32,
+    "genuine": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ours": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "equal": true,
+    "note": "e3b0c442... (pinned)"
+   },
+   {
+    "field": "tag111",
+    "range": "[111:114)",
+    "len": 3,
+    "genuine": "060107",
+    "ours": "060107",
+    "equal": true,
+    "note": "06 01 07"
+   },
+   {
+    "field": "zeros14",
+    "range": "[114:128)",
+    "len": 14,
+    "genuine": "0000000000000000000000000000",
+    "ours": "0000000000000000000000000000",
+    "equal": true,
+    "note": "00*14"
+   },
+   {
+    "field": "tail2",
+    "range": "[128:130)",
+    "len": 2,
+    "genuine": "0000",
+    "ours": "0000",
+    "equal": true,
+    "note": "2-B tail"
+   },
+   {
+    "field": "ones14",
+    "range": "[130:144)",
+    "len": 14,
+    "genuine": "0e0e0e0e0e0e0e0e0e0e0e0e0e0e",
+    "ours": "0e0e0e0e0e0e0e0e0e0e0e0e0e0e",
+    "equal": true,
+    "note": "0e*14"
+   }
+  ],
+  "fin_ex": {
+   "status": "exit-clean",
+   "steps": 9868778,
+   "nrand": 8,
+   "stream": 365072220160
+  }
+ },
+ "desc10_unpadded": 360,
+ "desc10": "KlcAG2cbAAsKSl1KVi0FGiJbDHMI906ddeb2-2898-490a-afc7-74622c49134c31jut9tib0eeps3.14.02026-09-27T19:24:47.439Z+0530moto g42phoneproduction363e5b78-8670-4c50-8348-9f87c604111bserviceS2SE32.28-28-4com.android.vending2026-09-14T17:52:12.431Z+0530S2SE32.28-28-4android12com.penti.app15000001com.android.vending12026-09-24T20:36:30.448Z+0530sessionandroid5.7.0105.0.0",
+ "desc10_keys": [
+  "adj_verification",
+  "android_uuid",
+  "api_level",
+  "app_token",
+  "app_version",
+  "created_at",
+  "device_name",
+  "device_type",
+  "environment",
+  "gps_adid",
+  "gps_adid_src",
+  "hardware_name",
+  "initiating_package_name",
+  "installed_at",
+  "os_build",
+  "os_name",
+  "os_version",
+  "package_name",
+  "adj_signing_id",
+  "session_count",
+  "store_name_from_system",
+  "tracking_enabled",
+  "updated_at",
+  "activity_kind",
+  "client_sdk",
+  "headers_id",
+  "native_version"
+ ],
+ "mint_realjson": {
+  "header_match": true,
+  "words_differing": [
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20,
+   21,
+   22,
+   23,
+   24,
+   25,
+   26,
+   27,
+   28,
+   29,
+   30,
+   31,
+   32,
+   33,
+   34,
+   35,
+   36,
+   37,
+   38,
+   39,
+   40,
+   41,
+   42,
+   43,
+   44,
+   45,
+   46,
+   47
+  ],
+  "header": "2d69a9f53ced113631880e1748e95476",
+  "other_header": "2d69a9f53ced113631880e1748e95476",
+  "blob_hex": "2d69a9f53ced113631880e1748e954760880dc6ac7fdeed70445d3a7e92031584f5fcbffdd589896a192a9d0d334441c97b8513f7c05d9ac9e2ad6257a51cb6c84f28b8c00296f12e6668d7279fa0924b5f40cd58feffcd83b8e9f0a3c5b3fae3e8f54eb9c2329f3abf922056f1570e8cfce800abcdae7335f200c004e10e78a0b6c0dfb2dd99b8e251925c663bf9ab4caa799a87a1cc742576ef678f09cd7fcf87d5be7a775a037aae19c136e8bff196cfc0e1d91380c255a89fa4b1a33597f",
+  "record_hex": "0100083de61e65bf2a798ad8c55478f53757d902f67d5e5e03fad0f10d60f93c17937b2f1eb6c09691ae7d74bd04b7f490414de6b1bbd071e5d9e0961aefbc1cded53b1629a931fb071ae06d288005e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855060107000000000000000000000000000000000e0e0e0e0e0e0e0e0e0e0e0e0e0e",
+  "field_diff": [
+   {
+    "field": "magic",
+    "range": "[0:3)",
+    "len": 3,
+    "genuine": "010008",
+    "ours": "010008",
+    "equal": true,
+    "note": "01 00 08"
+   },
+   {
+    "field": "head d0[0..3]",
+    "range": "[3:19)",
+    "len": 16,
+    "genuine": "3de61e65bf2a798ad8c55478f53757d9",
+    "ours": "3de61e65bf2a798ad8c55478f53757d9",
+    "equal": true,
+    "note": "d0 words 0..3, rev16 LE-packed"
+   },
+   {
+    "field": "flag19",
+    "range": "[19:20)",
+    "len": 1,
+    "genuine": "02",
+    "ours": "02",
+    "equal": true,
+    "note": "02"
+   },
+   {
+    "field": "S (BE32)",
+    "range": "[20:24)",
+    "len": 4,
+    "genuine": "f67d5e5e",
+    "ours": "f67d5e5e",
+    "equal": true,
+    "note": "F.py native seed"
+   },
+   {
+    "field": "flag24",
+    "range": "[24:25)",
+    "len": 1,
+    "genuine": "03",
+    "ours": "03",
+    "equal": true,
+    "note": "03"
+   },
+   {
+    "field": "cert SHA-1 d9",
+    "range": "[25:45)",
+    "len": 20,
+    "genuine": "fad0f10d60f93c17937b2f1eb6c09691ae7d74bd",
+    "ours": "fad0f10d60f93c17937b2f1eb6c09691ae7d74bd",
+    "equal": true,
+    "note": "fad0f10d... (pinned)"
+   },
+   {
+    "field": "flag45",
+    "range": "[45:46)",
+    "len": 1,
+    "genuine": "04",
+    "ours": "04",
+    "equal": true,
+    "note": "04"
+   },
+   {
+    "field": "block32",
+    "range": "[46:78)",
+    "len": 32,
+    "genuine": "a7d8a0b2fe8c8b8ab334cb92f7f677f0c6a111c0658dbbd1558b077db81b07a4",
+    "ours": "b7f490414de6b1bbd071e5d9e0961aefbc1cded53b1629a931fb071ae06d2880",
+    "equal": false,
+    "note": "32-B hash-like block"
+   },
+   {
+    "field": "flag78",
+    "range": "[78:79)",
+    "len": 1,
+    "genuine": "05",
+    "ours": "05",
+    "equal": true,
+    "note": "05"
+   },
+   {
+    "field": "SHA256(\"\")",
+    "range": "[79:111)",
+    "len": 32,
+    "genuine": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "ours": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "equal": true,
+    "note": "e3b0c442... (pinned)"
+   },
+   {
+    "field": "tag111",
+    "range": "[111:114)",
+    "len": 3,
+    "genuine": "060107",
+    "ours": "060107",
+    "equal": true,
+    "note": "06 01 07"
+   },
+   {
+    "field": "zeros14",
+    "range": "[114:128)",
+    "len": 14,
+    "genuine": "0000000000000000000000000000",
+    "ours": "0000000000000000000000000000",
+    "equal": true,
+    "note": "00*14"
+   },
+   {
+    "field": "tail2",
+    "range": "[128:130)",
+    "len": 2,
+    "genuine": "0000",
+    "ours": "0000",
+    "equal": true,
+    "note": "2-B tail"
+   },
+   {
+    "field": "ones14",
+    "range": "[130:144)",
+    "len": 14,
+    "genuine": "0e0e0e0e0e0e0e0e0e0e0e0e0e0e",
+    "ours": "0e0e0e0e0e0e0e0e0e0e0e0e0e0e",
+    "equal": true,
+    "note": "0e*14"
+   }
+  ],
+  "desc10_unpadded": 360,
+  "param_mismatch_vs_capture": {
+   "created_at": {
+    "app_session_params_real": "2026-09-25T18:35:08.025Z+0530",
+    "captured_sign_input": "2026-09-27T19:24:47.439Z+0530"
+   },
+   "gps_adid": {
+    "app_session_params_real": "7cc81be0-60a0-4342-a878-eb5ee4f2634a",
+    "captured_sign_input": "363e5b78-8670-4c50-8348-9f87c604111b"
+   },
+   "android_uuid": {
+    "app_session_params_real": "1b06322b-9070-4bdc-a231-2199bef3f3f5",
+    "captured_sign_input": "906ddeb2-2898-490a-afc7-74622c49134c"
+   },
+   "sent_at": {
+    "app_session_params_real": "2026-09-25T18:35:08.070Z+0530",
+    "captured_sign_input": "2026-09-27T19:24:47.480Z+0530"
+   }
+  }
+ },
+ "head_table": [
+  {
+   "name": "F.HEAD_FIRST",
+   "selectors": [
+    "0x22",
+    "0x2e"
+   ],
+   "head": "9f08b15bbf2a798ad8c55478f53757d9",
+   "matches": false,
+   "laws": {
+    "L1_tile_Rrep": true,
+    "L1_hits": [
+     [
+      0,
+      7498
+     ],
+     [
+      2,
+      7498
+     ],
+     [
+      4,
+      7498
+     ],
+     [
+      6,
+      7498
+     ],
+     [
+      8,
+      7498
+     ],
+     [
+      10,
+      7498
+     ],
+     [
+      12,
+      7498
+     ],
+     [
+      14,
+      7498
+     ]
+    ],
+    "L2_d4_6_hi_eq_R": true,
+    "L3_X_eq_U3": true
+   }
+  },
+  {
+   "name": "F.HEAD_RESIGN",
+   "selectors": [
+    "0x2b",
+    "0x7",
+    "0x22",
+    "0x2e"
+   ],
+   "head": "3de67fb49f08b15bd8c55478f53757d9",
+   "matches": false,
+   "laws": {
+    "L1_tile_Rrep": true,
+    "L1_hits": [
+     [
+      0,
+      7498
+     ],
+     [
+      2,
+      7498
+     ],
+     [
+      4,
+      7498
+     ],
+     [
+      6,
+      7498
+     ],
+     [
+      8,
+      7498
+     ],
+     [
+      10,
+      7498
+     ],
+     [
+      12,
+      7498
+     ],
+     [
+      14,
+      7498
+     ]
+    ],
+    "L2_d4_6_hi_eq_R": true,
+    "L3_X_eq_U3": false
+   }
+  },
+  {
+   "name": "MP.DEVICE_SELECTORS (mint_pipeline default)",
+   "selectors": [
+    "0x2b",
+    "0x22",
+    "0x25",
+    "0x2e",
+    "0x44",
+    "0x45",
+    "0x46",
+    "0x47",
+    "0x40",
+    "0x41",
+    "0x42",
+    "0x43"
+   ],
+   "head": "3de69f08745ab15bd8c55478f53757d9",
+   "matches": false,
+   "laws": {
+    "L1_tile_Rrep": true,
+    "L1_hits": [
+     [
+      0,
+      7498
+     ],
+     [
+      2,
+      7498
+     ],
+     [
+      4,
+      7498
+     ],
+     [
+      6,
+      7498
+     ],
+     [
+      8,
+      7498
+     ],
+     [
+      10,
+      7498
+     ],
+     [
+      12,
+      7498
+     ],
+     [
+      14,
+      7498
+     ]
+    ],
+    "L2_d4_6_hi_eq_R": true,
+    "L3_X_eq_U3": false
+   }
+  },
+  {
+   "name": "recovered genuine prefix (0x2b,)",
+   "selectors": [
+    "0x2b"
+   ],
+   "head": "3de61e65bf2a798ad8c55478f53757d9",
+   "matches": true,
+   "laws": {
+    "L1_tile_Rrep": true,
+    "L1_hits": [
+     [
+      0,
+      7498
+     ],
+     [
+      2,
+      7498
+     ],
+     [
+      4,
+      7498
+     ],
+     [
+      6,
+      7498
+     ],
+     [
+      8,
+      7498
+     ],
+     [
+      10,
+      7498
+     ],
+     [
+      12,
+      7498
+     ],
+     [
+      14,
+      7498
+     ]
+    ],
+    "L2_d4_6_hi_eq_R": true,
+    "L3_X_eq_U3": true
+   }
+  }
+ ],
+ "all_six": [
+  {
+   "ts": 1790517288323,
+   "second": 1790517288,
+   "S": "f67d5e5e",
+   "d2w": "5e5e7df6",
+   "tail2": "0000",
+   "consts_ok": true,
+   "head_prefix": [
+    "0x2b"
+   ],
+   "laws": {
+    "genuine": {
+     "L1": true,
+     "L2": true,
+     "L3": true,
+     "head_match": true
+    },
+    "HEAD_FIRST": {
+     "L1": true,
+     "L2": true,
+     "L3": true,
+     "head_match": false
+    },
+    "HEAD_RESIGN": {
+     "L1": true,
+     "L2": true,
+     "L3": false,
+     "head_match": false
+    },
+    "DEVICE_SELECTORS": {
+     "L1": true,
+     "L2": true,
+     "L3": false,
+     "head_match": false
+    }
+   }
+  },
+  {
+   "ts": 1790517289741,
+   "second": 1790517289,
+   "S": "64fe908a",
+   "d2w": "8a90fe64",
+   "tail2": "0000",
+   "consts_ok": true,
+   "head_prefix": [
+    "0x2b"
+   ],
+   "laws": {
+    "genuine": {
+     "L1": true,
+     "L2": true,
+     "L3": true,
+     "head_match": true
+    },
+    "HEAD_FIRST": {
+     "L1": true,
+     "L2": true,
+     "L3": true,
+     "head_match": false
+    },
+    "HEAD_RESIGN": {
+     "L1": true,
+     "L2": true,
+     "L3": false,
+     "head_match": false
+    },
+    "DEVICE_SELECTORS": {
+     "L1": true,
+     "L2": true,
+     "L3": false,
+     "head_match": false
+    }
+   }
+  },
+  {
+   "ts": 1790517290445,
+   "second": 1790517290,
+   "S": "2b70ea71",
+   "d2w": "71ea702b",
+   "tail2": "0000",
+   "consts_ok": true,
+   "head_prefix": [
+    "0x2b",
+    "0x48"
+   ],
+   "laws": {
+    "genuine": {
+     "L1": true,
+     "L2": true,
+     "L3": true,
+     "head_match": true
+    },
+    "HEAD_FIRST": {
+     "L1": true,
+     "L2": true,
+     "L3": true,
+     "head_match": false
+    },
+    "HEAD_RESIGN": {
+     "L1": true,
+     "L2": true,
+     "L3": false,
+     "head_match": false
+    },
+    "DEVICE_SELECTORS": {
+     "L1": true,
+     "L2": true,
+     "L3": false,
+     "head_match": false
+    }
+   }
+  },
+  {
+   "ts": 1790517291184,
+   "second": 1790517291,
+   "S": "67f23115",
+   "d2w": "1531f267",
+   "tail2": "0000",
+   "consts_ok": true,
+   "head_prefix": [
+    "0x2b",
+    "0x48"
+   ],
+   "laws": {
+    "genuine": {
+     "L1": true,
+     "L2": true,
+     "L3": true,
+     "head_match": true
+    },
+    "HEAD_FIRST": {
+     "L1": true,
+     "L2": true,
+     "L3": true,
+     "head_match": false
+    },
+    "HEAD_RESIGN": {
+     "L1": true,
+     "L2": true,
+     "L3": false,
+     "head_match": false
+    },
+    "DEVICE_SELECTORS": {
+     "L1": true,
+     "L2": true,
+     "L3": false,
+     "head_match": false
+    }
+   }
+  },
+  {
+   "ts": 1790517291876,
+   "second": 1790517291,
+   "S": "0f7f588e",
+   "d2w": "8e587f0f",
+   "tail2": "0000",
+   "consts_ok": true,
+   "head_prefix": [
+    "0x2b",
+    "0x48"
+   ],
+   "laws": {
+    "genuine": {
+     "L1": true,
+     "L2": true,
+     "L3": true,
+     "head_match": true
+    },
+    "HEAD_FIRST": {
+     "L1": true,
+     "L2": true,
+     "L3": true,
+     "head_match": false
+    },
+    "HEAD_RESIGN": {
+     "L1": true,
+     "L2": true,
+     "L3": false,
+     "head_match": false
+    },
+    "DEVICE_SELECTORS": {
+     "L1": true,
+     "L2": true,
+     "L3": false,
+     "head_match": false
+    }
+   }
+  },
+  {
+   "ts": 1790517292641,
+   "second": 1790517292,
+   "S": "ae62f15e",
+   "d2w": "5ef162ae",
+   "tail2": "0000",
+   "consts_ok": true,
+   "head_prefix": [
+    "0x2b"
+   ],
+   "laws": {
+    "genuine": {
+     "L1": true,
+     "L2": true,
+     "L3": true,
+     "head_match": true
+    },
+    "HEAD_FIRST": {
+     "L1": true,
+     "L2": true,
+     "L3": true,
+     "head_match": false
+    },
+    "HEAD_RESIGN": {
+     "L1": true,
+     "L2": true,
+     "L3": false,
+     "head_match": false
+    },
+    "DEVICE_SELECTORS": {
+     "L1": true,
+     "L2": true,
+     "L3": false,
+     "head_match": false
+    }
+   }
+  }
+ ],
+ "block32_perturbation": [
+  {
+   "build_idx": 0,
+   "len_dw": 36,
+   "block32_changes": true,
+   "tail2": "0000"
+  },
+  {
+   "build_idx": 9,
+   "len_dw": 5,
+   "block32_changes": true,
+   "tail2": "0000"
+  },
+  {
+   "build_idx": 8,
+   "len_dw": 4,
+   "block32_changes": true,
+   "tail2": "0000"
+  },
+  {
+   "build_idx": 4,
+   "len_dw": 8,
+   "block32_changes": false,
+   "tail2": "0000"
+  },
+  {
+   "build_idx": 2,
+   "len_dw": 1,
+   "block32_changes": true,
+   "tail2": "0000"
+  },
+  {
+   "build_idx": 7,
+   "len_dw": 1,
+   "note": "no emission"
+  },
+  {
+   "build_idx": 10,
+   "len_dw": 90,
+   "block32_changes": true,
+   "tail2": "0000"
+  },
+  {
+   "build_idx": 5,
+   "len_dw": 1,
+   "note": "no emission"
+  },
+  {
+   "build_idx": 1,
+   "len_dw": 0,
+   "note": "empty"
+  },
+  {
+   "build_idx": 6,
+   "len_dw": 1,
+   "block32_changes": true,
+   "tail2": "0000"
+  },
+  {
+   "build_idx": 3,
+   "len_dw": 0,
+   "note": "empty"
+  }
+ ],
+ "block32_preimage_hits": [],
+ "block32_preimage_search_space": "sha256/sha1x2/md5x2 over all 1-3-part permutations of 13 tokens (2379 messages) + 169 HMAC-SHA256 key/msg pairs"
+}

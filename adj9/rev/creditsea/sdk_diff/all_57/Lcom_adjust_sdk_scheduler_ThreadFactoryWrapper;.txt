@@ -1,0 +1,35 @@
+# CLASS Lcom/adjust/sdk/scheduler/ThreadFactoryWrapper;
+FIELD private source Ljava/lang/String;
+
+---- METHOD public constructor <init> (Ljava/lang/String;)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/scheduler/ThreadFactoryWrapper;->source Ljava/lang/String;
+  return-void            
+
+---- METHOD public newThread (Ljava/lang/Runnable;)Ljava/lang/Thread; ----
+  invoke-static          Ljava/util/concurrent/Executors;->defaultThreadFactory()Ljava/util/concurrent/ThreadFactory;
+  move-result-object     v0
+  invoke-interface       v0, v3, Ljava/util/concurrent/ThreadFactory;->newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
+  move-result-object     v3
+  const/16               v0, 9
+  invoke-virtual         v3, v0, Ljava/lang/Thread;->setPriority(I)V
+  new-instance           v0, Ljava/lang/StringBuilder;
+  const-string           v1, "Adjust-"
+  invoke-direct          v0, v1, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  invoke-virtual         v3, Ljava/lang/Thread;->getName()Ljava/lang/String;
+  move-result-object     v1
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  const-string           v1, "-"
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  iget-object            v1, v2, Lcom/adjust/sdk/scheduler/ThreadFactoryWrapper;->source Ljava/lang/String;
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual         v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v0
+  invoke-virtual         v3, v0, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
+  const/4                v0, 1
+  invoke-virtual         v3, v0, Ljava/lang/Thread;->setDaemon(Z)V
+  new-instance           v0, Lcom/adjust/sdk/scheduler/ThreadFactoryWrapper$1;
+  invoke-direct          v0, Lcom/adjust/sdk/scheduler/ThreadFactoryWrapper$1;-><init>()V
+  invoke-virtual         v3, v0, Ljava/lang/Thread;->setUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V
+  return-object          v3
+######################################################################

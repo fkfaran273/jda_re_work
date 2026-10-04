@@ -1,0 +1,14 @@
+{
+ "gps": "1e63c600-e86b-4e92-a6c3-63846dd6057c",
+ "launched_at": "2026-09-27T16:13:42Z",
+ "poll": [],
+ "attribution_raw": "{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-27T15:56:03Z\",\"first_session_time\":\"2026-09-27T15:56:03Z\",\"is_reattributed\":false,\"is_redownload_install\":false}t\u0000\u0007Organict\u0000\u0007Organict\u0000\u0007wy7261zx",
+ "found_after_s": 5,
+ "tracker_token": "wy7261z",
+ "logcat_tail": [
+  "09-27 21:43:49.845  8648  8857 D ADJ9ORA : signer_sign_entry len=2228 :: call=5 thread=adj9-chosen-sign/tid=8857 this=com.adjust.sdk.sig.Signer@d089aca -- instance fields of this (declared+supe...",
+  "09-27 21:43:49.845  8648  8857 I LSPosed-Bridge: ADJ9ORA: signer_sign_entry len=2228 :: call=5 thread=adj9-chosen-sign/tid=8857 this=com.adjust.sdk.sig.Signer@d089aca -- instance fields of this (declared+supe...",
+  "09-27 21:43:49.846  8648  8857 D ADJ9ORA : sig_statics len=1577 :: call=5 -- com.adjust.sdk.sig.Signer:   static com.adjust.sdk.sig.Signer#Companion:com.adjust.sdk.sig.t2=<obj com.adjust....",
+  "09-27 21:43:49.846  8648  8857 I LSPosed-Bridge: ADJ9ORA: sig_statics len=1577 :: call=5 -- com.adjust.sdk.sig.Signer:   static com.adjust.sdk.sig.Signer#Companion:com.adjust.sdk.sig.t2=<obj com.adjust...."
+ ]
+}

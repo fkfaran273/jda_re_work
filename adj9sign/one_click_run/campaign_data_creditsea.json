@@ -1,0 +1,18 @@
+{
+    "cert_sha1": "06f5ffcee0541608765407ab9e0180e7b1b7e7d0",
+    "app_token": "i2n2e5kmcpvk",
+    "package_name": "com.creditsea.app",
+    "client_sdk": "flutter5.8.0@android5.8.0",
+    "adj_signing_id": "1500000",
+    "headers_id": "10",
+    "native_version": "5.0.0",
+    "adj_verification": "KlcAG2cbAAsKSl1KVi0FGiJbDHMI",
+    "algorithm": "adj9",
+    "sdk_version": "5.8.0",
+    "pre_click_link": "http://clicks.mobpine.com/api/track/v1/click?aff_id=3&offer_id=23482250",
+    "gaid_params": ["adj_gps_adid", "adj_idfa", "adj_click_id"],
+    "installed_days_ago": 9,
+    "updated_days_ago": 2,
+    "keep_install_story_in_session": true,
+    "click_link": "https://creditsea.go.link?adj_t=246drhkt&adj_campaign=BD&adj_adgroup=BD9&adj_creative=SC_898989qm&adj_click_id={gaid}&adj_gps_adid={gaid}&adj_install_callback=http%3A%2F%2Fclick.quasarmobi.com%2Fapi%2Ftrack%2Fv1%2Fpostback%3Fclick_id%3D{gaid}%26offer_id%3Dsmartsea%26advertiser_id%3Dsmartconnect%26p_sub1%3Dadjust&adj_event_callback_78v7mj=http%3A%2F%2Fclick.quasarmobi.com%2Fapi%2Ftrack%2Fv1%2Fevents%3Fclick_id%3D{gaid}%26goal%3D%7Bevent%7D%26offer_id%3Dsmartsea%26advertiser_id%3Dsmartconnect%26p_sub1%3Dadjust"
+}

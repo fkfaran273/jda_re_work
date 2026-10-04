@@ -1,0 +1,1 @@
+"C:\Users\Apps\.workbuddy-ai\binaries\python\envs\default\Scripts\python.exe" -X utf8 "C:\Users\Apps\Downloads\com.penti.app\adj9\rev\farm_win.py" > "C:\Users\Apps\Downloads\com.penti.app\adj9\rev\fw3.log" 2> "C:\Users\Apps\Downloads\com.penti.app\adj9\rev\fw3_err.log"

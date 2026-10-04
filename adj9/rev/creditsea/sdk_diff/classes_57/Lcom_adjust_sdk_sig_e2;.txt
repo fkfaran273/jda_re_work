@@ -1,0 +1,32 @@
+# CLASS Lcom/adjust/sdk/sig/e2;
+
+---- METHOD public static final a((Lcom/adjust/sdk/sig/l2; I)Ljava/lang/CharSequence;)  ----
+  new-instance           v0, Ljava/lang/StringBuilder;
+  invoke-direct          v0, Ljava/lang/StringBuilder;-><init>()V
+  invoke-interface       v2, v3, Lcom/adjust/sdk/sig/l2;->a(I)Ljava/lang/String;
+  move-result-object     v1
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  const-string           v1, ": "
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-interface       v2, v3, Lcom/adjust/sdk/sig/l2;->b(I)Lcom/adjust/sdk/sig/l2;
+  move-result-object     v2
+  invoke-interface       v2, Lcom/adjust/sdk/sig/l2;->b()Ljava/lang/String;
+  move-result-object     v2
+  invoke-virtual         v0, v2, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  invoke-virtual         v0, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+  move-result-object     v2
+  return-object          v2
+
+---- METHOD public static final a((Lcom/adjust/sdk/sig/d2;)Ljava/lang/String;)  ----
+  new-instance           v0, Lcom/adjust/sdk/sig/f1;
+  const/4                v1, 0
+  invoke-direct          v0, v1, v1, Lcom/adjust/sdk/sig/f1;-><init>(I I)V
+  new-instance           v1, La2/a;
+  const/16               v2, 25
+  invoke-direct          v1, v3, v2, La2/a;-><init>(Ljava/lang/Object; I)V
+  const-string           v3, "com.adjust.sdk.sig.755f89ae93acbe52c30f8a09("
+  const-string           v2, ")"
+  invoke-static          v0, v3, v2, v1, Lcom/adjust/sdk/sig/o;->a(Ljava/lang/Iterable; Ljava/lang/String; Ljava/lang/String; Lcom/adjust/sdk/sig/r0;)Ljava/lang/String;
+  move-result-object     v3
+  return-object          v3
+######################################################################

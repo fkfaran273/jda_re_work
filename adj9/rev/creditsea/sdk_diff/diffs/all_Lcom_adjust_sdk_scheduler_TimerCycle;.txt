@@ -1,0 +1,36 @@
+--- 
++++ 
+@@ -38,10 +38,10 @@
+ return-void
+----- METHOD public static synthetic access$000 (Lcom/adjust/sdk/scheduler/TimerCycle;)Ljava/lang/String; ----
+-iget-object vX, vX, Lcom/adjust/sdk/scheduler/TimerCycle;->name Ljava/lang/String;
++---- METHOD public static bridge synthetic a (Lcom/adjust/sdk/scheduler/TimerCycle;)Ljava/lang/Runnable; ----
++iget-object vX, vX, Lcom/adjust/sdk/scheduler/TimerCycle;->command Ljava/lang/Runnable;
+ return-object vX
+----- METHOD public static synthetic access$100 (Lcom/adjust/sdk/scheduler/TimerCycle;)Lcom/adjust/sdk/ILogger; ----
++---- METHOD public static bridge synthetic b (Lcom/adjust/sdk/scheduler/TimerCycle;)Lcom/adjust/sdk/ILogger; ----
+ iget-object vX, vX, Lcom/adjust/sdk/scheduler/TimerCycle;->logger Lcom/adjust/sdk/ILogger;
+ return-object vX
+----- METHOD public static synthetic access$200 (Lcom/adjust/sdk/scheduler/TimerCycle;)Ljava/lang/Runnable; ----
+-iget-object vX, vX, Lcom/adjust/sdk/scheduler/TimerCycle;->command Ljava/lang/Runnable;
++---- METHOD public static bridge synthetic c (Lcom/adjust/sdk/scheduler/TimerCycle;)Ljava/lang/String; ----
++iget-object vX, vX, Lcom/adjust/sdk/scheduler/TimerCycle;->name Ljava/lang/String;
+ return-object vX
+@@ -57,4 +57,4 @@
+ iget-object vX, vX, Lcom/adjust/sdk/scheduler/TimerCycle;->logger Lcom/adjust/sdk/ILogger;
++iget-object vX, vX, Lcom/adjust/sdk/scheduler/TimerCycle;->name Ljava/lang/String;
+ if BRANCH
+-iget-object vX, vX, Lcom/adjust/sdk/scheduler/TimerCycle;->name Ljava/lang/String;
+ filled-new-array vX, [Ljava/lang/Object;
+@@ -64,3 +64,2 @@
+ return-void
+-iget-object vX, vX, Lcom/adjust/sdk/scheduler/TimerCycle;->name Ljava/lang/String;
+ filled-new-array vX, [Ljava/lang/Object;
+@@ -70,4 +69,5 @@
+ iget-object vX, vX, Lcom/adjust/sdk/scheduler/TimerCycle;->scheduler Lcom/adjust/sdk/scheduler/FutureScheduler;
+-new-instance vX, Lcom/adjust/sdk/scheduler/TimerCycle$1;
+-invoke-direct vX, vX, Lcom/adjust/sdk/scheduler/TimerCycle$1;-><init>(Lcom/adjust/sdk/scheduler/TimerCycle;)V
++new-instance vX, LB0/b;
++const/16 vX, 23
++invoke-direct vX, vX, vX, LB0/b;-><init>(Ljava/lang/Object; I)V
+ iget-wide vX, vX, Lcom/adjust/sdk/scheduler/TimerCycle;->initialDelay J

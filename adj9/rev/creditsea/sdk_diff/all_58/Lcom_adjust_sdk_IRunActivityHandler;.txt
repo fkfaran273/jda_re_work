@@ -1,0 +1,5 @@
+# CLASS Lcom/adjust/sdk/IRunActivityHandler;
+
+---- METHOD public abstract run (Lcom/adjust/sdk/ActivityHandler;)V ----
+  (no code)
+######################################################################

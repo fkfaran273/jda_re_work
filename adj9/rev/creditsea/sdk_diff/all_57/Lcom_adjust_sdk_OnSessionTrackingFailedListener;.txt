@@ -1,0 +1,5 @@
+# CLASS Lcom/adjust/sdk/OnSessionTrackingFailedListener;
+
+---- METHOD public abstract onSessionTrackingFailed (Lcom/adjust/sdk/AdjustSessionFailure;)V ----
+  (no code)
+######################################################################

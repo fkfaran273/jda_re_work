@@ -1,0 +1,42 @@
+# CLASS Lcom/adjust/sdk/sig/f;
+FIELD public final a [Ljava/lang/Object;
+FIELD public b I
+
+---- METHOD public constructor <init> ([Ljava/lang/Object;)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-object            v1, v0, Lcom/adjust/sdk/sig/f;->a [Ljava/lang/Object;
+  return-void            
+
+---- METHOD public final hasNext ()Z ----
+  iget                   v0, v2, Lcom/adjust/sdk/sig/f;->b I
+  iget-object            v1, v2, Lcom/adjust/sdk/sig/f;->a [Ljava/lang/Object;
+  array-length           v1, v1
+  if-ge                  v0, v1, +004h
+  const/4                v0, 1
+  return                 v0
+  const/4                v0, 0
+  return                 v0
+
+---- METHOD public final next ()Ljava/lang/Object; ----
+  iget-object            v0, v3, Lcom/adjust/sdk/sig/f;->a [Ljava/lang/Object;
+  iget                   v1, v3, Lcom/adjust/sdk/sig/f;->b I
+  add-int/lit8           v2, v1, 1
+  iput                   v2, v3, Lcom/adjust/sdk/sig/f;->b I
+  aget-object            v0, v0, v1
+  return-object          v0
+  move-exception         v0
+  iget                   v1, v3, Lcom/adjust/sdk/sig/f;->b I
+  add-int/lit8           v1, v1, -1
+  iput                   v1, v3, Lcom/adjust/sdk/sig/f;->b I
+  invoke-virtual         v0, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object     v0
+  invoke-static          v0, Landroidx/sqlite/driver/a;->l(Ljava/lang/String;)V
+  const/4                v0, 0
+  return-object          v0
+
+---- METHOD public final remove ()V ----
+  new-instance           v0, Ljava/lang/UnsupportedOperationException;
+  const-string           v1, "Operation is not supported for read-only collection"
+  invoke-direct          v0, v1, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+  throw                  v0
+######################################################################

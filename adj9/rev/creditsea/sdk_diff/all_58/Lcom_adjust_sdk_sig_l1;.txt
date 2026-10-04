@@ -1,0 +1,43 @@
+# CLASS Lcom/adjust/sdk/sig/l1;
+FIELD public final a Z
+FIELD public final b Z
+FIELD public final c I
+
+---- METHOD public constructor <init> (Z Z I)V ----
+  invoke-direct          v0, Ljava/lang/Object;-><init>()V
+  iput-boolean           v1, v0, Lcom/adjust/sdk/sig/l1;->a Z
+  iput-boolean           v2, v0, Lcom/adjust/sdk/sig/l1;->b Z
+  iput                   v3, v0, Lcom/adjust/sdk/sig/l1;->c I
+  return-void            
+
+---- METHOD public final toString ()Ljava/lang/String; ----
+  new-instance           v0, Ljava/lang/StringBuilder;
+  const-string           v1, "JsonConfiguration(encodeDefaults="
+  invoke-direct          v0, v1, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+  iget-boolean           v1, v3, Lcom/adjust/sdk/sig/l1;->a Z
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+  const-string           v1, ", ignoreUnknownKeys=false, isLenient=false, allowStructuredMapKeys=false, prettyPrint=false, explicitNulls="
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  iget-boolean           v1, v3, Lcom/adjust/sdk/sig/l1;->b Z
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+  const-string           v1, ", prettyPrintIndent='    ', coerceInputValues=false, useArrayPolymorphism=false, classDiscriminator='type', allowSpecialFloatingPointValues=false, useAlternativeNames=true, namingStrategy=null, decodeEnumsCaseInsensitive=false, allowTrailingComma=false, allowComments=false, classDiscriminatorMode="
+  invoke-virtual         v0, v1, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  iget                   v1, v3, Lcom/adjust/sdk/sig/l1;->c I
+  const/4                v2, 1
+  if-eq                  v1, v2, +011h
+  const/4                v2, 2
+  if-eq                  v1, v2, +00bh
+  const/4                v2, 3
+  if-eq                  v1, v2, +005h
+  const-string           v1, "null"
+  goto                   +9h
+  const-string           v1, "POLYMORPHIC"
+  goto                   +6h
+  const-string           v1, "ALL_JSON_OBJECTS"
+  goto                   +3h
+  const-string           v1, "NONE"
+  const-string           v2, ", exceptionsWithDebugInfo=true)"
+  invoke-static          v0, v1, v2, LB2/a;->r(Ljava/lang/StringBuilder; Ljava/lang/String; Ljava/lang/String;)Ljava/lang/String;
+  move-result-object     v0
+  return-object          v0
+######################################################################

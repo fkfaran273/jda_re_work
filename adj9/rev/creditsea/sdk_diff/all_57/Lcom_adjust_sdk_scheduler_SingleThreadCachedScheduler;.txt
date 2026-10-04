@@ -1,0 +1,124 @@
+# CLASS Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;
+FIELD private isTeardown Z
+FIELD private isThreadProcessing Z
+FIELD private final queue Ljava/util/List;
+FIELD private threadPoolExecutor Ljava/util/concurrent/ThreadPoolExecutor;
+
+---- METHOD public constructor <init> (Ljava/lang/String;)V ----
+  invoke-direct          v10, Ljava/lang/Object;-><init>()V
+  new-instance           v0, Ljava/util/ArrayList;
+  invoke-direct          v0, Ljava/util/ArrayList;-><init>()V
+  iput-object            v0, v10, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->queue Ljava/util/List;
+  const/4                v0, 0
+  iput-boolean           v0, v10, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->isThreadProcessing Z
+  iput-boolean           v0, v10, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->isTeardown Z
+  new-instance           v1, Ljava/util/concurrent/ThreadPoolExecutor;
+  new-instance           v7, Ljava/util/concurrent/SynchronousQueue;
+  invoke-direct          v7, Ljava/util/concurrent/SynchronousQueue;-><init>()V
+  new-instance           v8, Lcom/adjust/sdk/scheduler/ThreadFactoryWrapper;
+  invoke-direct          v8, v11, Lcom/adjust/sdk/scheduler/ThreadFactoryWrapper;-><init>(Ljava/lang/String;)V
+  new-instance           v9, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler$1;
+  invoke-direct          v9, v11, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler$1;-><init>(Ljava/lang/String;)V
+  const                  v3, 2147483647
+  const-wide/16          v4, 60
+  const/4                v2, 0
+  sget-object            v6, Ljava/util/concurrent/TimeUnit;->SECONDS Ljava/util/concurrent/TimeUnit;
+  invoke-direct/range    v1 ... v9, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(I I J Ljava/util/concurrent/TimeUnit; Ljava/util/concurrent/BlockingQueue; Ljava/util/concurrent/ThreadFactory; Ljava/util/concurrent/RejectedExecutionHandler;)V
+  iput-object            v1, v10, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->threadPoolExecutor Ljava/util/concurrent/ThreadPoolExecutor;
+  return-void            
+
+---- METHOD public static synthetic access$000 (Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler; Ljava/lang/Runnable;)V ----
+  invoke-direct          v0, v1, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->tryExecuteRunnable(Ljava/lang/Runnable;)V
+  return-void            
+
+---- METHOD public static synthetic access$100 (Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;)Ljava/util/List; ----
+  iget-object            v0, v0, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->queue Ljava/util/List;
+  return-object          v0
+
+---- METHOD public static synthetic access$200 (Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;)Z ----
+  iget-boolean           v0, v0, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->isTeardown Z
+  return                 v0
+
+---- METHOD public static synthetic access$302 (Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler; Z)Z ----
+  iput-boolean           v1, v0, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->isThreadProcessing Z
+  return                 v1
+
+---- METHOD private processQueue (Ljava/lang/Runnable;)V ----
+  iget-object            v0, v2, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->threadPoolExecutor Ljava/util/concurrent/ThreadPoolExecutor;
+  new-instance           v1, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler$3;
+  invoke-direct          v1, v2, v3, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler$3;-><init>(Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler; Ljava/lang/Runnable;)V
+  invoke-virtual         v0, v1, Ljava/util/concurrent/AbstractExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
+  return-void            
+
+---- METHOD private tryExecuteRunnable (Ljava/lang/Runnable;)V ----
+  iget-boolean           v0, v2, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->isTeardown Z
+  if-eqz                 v0, +003h
+  return-void            
+  invoke-interface       v3, Ljava/lang/Runnable;->run()V
+  return-void            
+  move-exception         v3
+  invoke-static          Lcom/adjust/sdk/AdjustFactory;->getLogger()Lcom/adjust/sdk/ILogger;
+  move-result-object     v0
+  invoke-virtual         v3, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+  move-result-object     v3
+  filled-new-array       v3, [Ljava/lang/Object;
+  move-result-object     v3
+  const-string           v1, "Execution failed: %s"
+  invoke-interface       v0, v1, v3, Lcom/adjust/sdk/ILogger;->warn(Ljava/lang/String; [Ljava/lang/Object;)V
+  return-void            
+
+---- METHOD public schedule (Ljava/lang/Runnable; J)V ----
+  iget-object            v0, v3, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->queue Ljava/util/List;
+  monitor-enter          v0
+  iget-boolean           v1, v3, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->isTeardown Z
+  if-eqz                 v1, +006h
+  monitor-exit           v0
+  return-void            
+  move-exception         v4
+  goto                   +dh
+  iget-object            v1, v3, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->threadPoolExecutor Ljava/util/concurrent/ThreadPoolExecutor;
+  new-instance           v2, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler$2;
+  invoke-direct          v2, v3, v5, v6, v4, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler$2;-><init>(Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler; J Ljava/lang/Runnable;)V
+  invoke-virtual         v1, v2, Ljava/util/concurrent/AbstractExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
+  monitor-exit           v0
+  return-void            
+  monitor-exit           v0
+  throw                  v4
+
+---- METHOD public submit (Ljava/lang/Runnable;)V ----
+  iget-object            v0, v2, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->queue Ljava/util/List;
+  monitor-enter          v0
+  iget-boolean           v1, v2, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->isTeardown Z
+  if-eqz                 v1, +006h
+  monitor-exit           v0
+  return-void            
+  move-exception         v3
+  goto                   +13h
+  iget-boolean           v1, v2, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->isThreadProcessing Z
+  if-nez                 v1, +009h
+  const/4                v1, 1
+  iput-boolean           v1, v2, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->isThreadProcessing Z
+  invoke-direct          v2, v3, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->processQueue(Ljava/lang/Runnable;)V
+  goto                   +6h
+  iget-object            v1, v2, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->queue Ljava/util/List;
+  invoke-interface       v1, v3, Ljava/util/List;->add(Ljava/lang/Object;)Z
+  monitor-exit           v0
+  return-void            
+  monitor-exit           v0
+  throw                  v3
+
+---- METHOD public teardown ()V ----
+  iget-object            v0, v2, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->queue Ljava/util/List;
+  monitor-enter          v0
+  const/4                v1, 1
+  iput-boolean           v1, v2, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->isTeardown Z
+  iget-object            v1, v2, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->queue Ljava/util/List;
+  invoke-interface       v1, Ljava/util/List;->clear()V
+  iget-object            v1, v2, Lcom/adjust/sdk/scheduler/SingleThreadCachedScheduler;->threadPoolExecutor Ljava/util/concurrent/ThreadPoolExecutor;
+  invoke-virtual         v1, Ljava/util/concurrent/ThreadPoolExecutor;->shutdown()V
+  monitor-exit           v0
+  return-void            
+  move-exception         v1
+  monitor-exit           v0
+  throw                  v1
+######################################################################

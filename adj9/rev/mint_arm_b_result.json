@@ -1,0 +1,11 @@
+{
+ "old_gaid": "de3d5188-c5c0-4c0e-a363-d126d08e2089",
+ "gps": "de3d5188-c5c0-4c0e-a363-d126d08e2089",
+ "auid": "b06db5a4-2a34-4549-82c6-f2a221cf3ff4",
+ "device_click": "302",
+ "session": [
+  200,
+  "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"6a3be0ca49455fe20eb4572f01f34e7a\",\"ask_in\":2000}"
+ ],
+ "verdict_device_oracle": null
+}

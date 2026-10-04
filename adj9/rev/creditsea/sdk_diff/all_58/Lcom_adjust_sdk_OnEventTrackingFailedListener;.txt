@@ -1,0 +1,5 @@
+# CLASS Lcom/adjust/sdk/OnEventTrackingFailedListener;
+
+---- METHOD public abstract onEventTrackingFailed (Lcom/adjust/sdk/AdjustEventFailure;)V ----
+  (no code)
+######################################################################

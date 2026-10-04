@@ -1,0 +1,11 @@
+# CLASS Lcom/adjust/sdk/sig/ISigner;
+
+---- METHOD public abstract onResume ()V ----
+  (no code)
+
+---- METHOD public abstract sign (Landroid/content/Context; Ljava/util/Map; Ljava/lang/String; Ljava/lang/String;)V ----
+  (no code)
+
+---- METHOD public abstract sign (Landroid/content/Context; Ljava/util/Map; Ljava/util/Map; Ljava/util/Map;)V ----
+  (no code)
+######################################################################

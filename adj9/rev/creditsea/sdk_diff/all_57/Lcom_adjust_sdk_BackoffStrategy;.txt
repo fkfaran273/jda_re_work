@@ -1,0 +1,89 @@
+# CLASS Lcom/adjust/sdk/BackoffStrategy;
+FIELD private static final synthetic $VALUES [Lcom/adjust/sdk/BackoffStrategy;
+FIELD public static final enum LONG_WAIT Lcom/adjust/sdk/BackoffStrategy;
+FIELD public static final enum NO_WAIT Lcom/adjust/sdk/BackoffStrategy;
+FIELD public static final enum SHORT_WAIT Lcom/adjust/sdk/BackoffStrategy;
+FIELD public static final enum TEST_WAIT Lcom/adjust/sdk/BackoffStrategy;
+FIELD  maxRange D
+FIELD  maxWait J
+FIELD  milliSecondMultiplier J
+FIELD  minRange D
+FIELD  minRetries I
+
+---- METHOD private static synthetic $values ()[Lcom/adjust/sdk/BackoffStrategy; ----
+  sget-object            v0, Lcom/adjust/sdk/BackoffStrategy;->LONG_WAIT Lcom/adjust/sdk/BackoffStrategy;
+  sget-object            v1, Lcom/adjust/sdk/BackoffStrategy;->SHORT_WAIT Lcom/adjust/sdk/BackoffStrategy;
+  sget-object            v2, Lcom/adjust/sdk/BackoffStrategy;->TEST_WAIT Lcom/adjust/sdk/BackoffStrategy;
+  sget-object            v3, Lcom/adjust/sdk/BackoffStrategy;->NO_WAIT Lcom/adjust/sdk/BackoffStrategy;
+  filled-new-array       v0, v1, v2, v3, [Lcom/adjust/sdk/BackoffStrategy;
+  move-result-object     v0
+  return-object          v0
+
+---- METHOD static constructor <clinit> ()V ----
+  new-instance           v0, Lcom/adjust/sdk/BackoffStrategy;
+  const-wide/high16      v8, 4602678819172646912
+  const-wide/high16      v10, 4607182418800017408
+  const-string           v1, "LONG_WAIT"
+  const/4                v2, 0
+  const/4                v3, 1
+  const-wide/32          v4, 120000
+  const-wide/32          v6, 86400000
+  invoke-direct/range    v0 ... v11, Lcom/adjust/sdk/BackoffStrategy;-><init>(Ljava/lang/String; I I J J D D)V
+  sput-object            v0, Lcom/adjust/sdk/BackoffStrategy;->LONG_WAIT Lcom/adjust/sdk/BackoffStrategy;
+  new-instance           v1, Lcom/adjust/sdk/BackoffStrategy;
+  const-wide/high16      v9, 4602678819172646912
+  const-wide/high16      v11, 4607182418800017408
+  const-string           v2, "SHORT_WAIT"
+  const/4                v4, 1
+  const-wide/16          v5, 200
+  const-wide/32          v7, 3600000
+  invoke-direct/range    v1 ... v12, Lcom/adjust/sdk/BackoffStrategy;-><init>(Ljava/lang/String; I I J J D D)V
+  sput-object            v1, Lcom/adjust/sdk/BackoffStrategy;->SHORT_WAIT Lcom/adjust/sdk/BackoffStrategy;
+  new-instance           v2, Lcom/adjust/sdk/BackoffStrategy;
+  const-wide/high16      v10, 4602678819172646912
+  const-wide/high16      v12, 4607182418800017408
+  const-string           v3, "TEST_WAIT"
+  const/4                v4, 2
+  const/4                v5, 1
+  const-wide/16          v6, 200
+  const-wide/16          v8, 1000
+  invoke-direct/range    v2 ... v13, Lcom/adjust/sdk/BackoffStrategy;-><init>(Ljava/lang/String; I I J J D D)V
+  sput-object            v2, Lcom/adjust/sdk/BackoffStrategy;->TEST_WAIT Lcom/adjust/sdk/BackoffStrategy;
+  new-instance           v3, Lcom/adjust/sdk/BackoffStrategy;
+  const-wide/high16      v11, 4607182418800017408
+  const-wide/high16      v13, 4607182418800017408
+  const-string           v4, "NO_WAIT"
+  const/4                v5, 3
+  const/16               v6, 100
+  const-wide/16          v7, 1
+  const-wide/16          v9, 1000
+  invoke-direct/range    v3 ... v14, Lcom/adjust/sdk/BackoffStrategy;-><init>(Ljava/lang/String; I I J J D D)V
+  sput-object            v3, Lcom/adjust/sdk/BackoffStrategy;->NO_WAIT Lcom/adjust/sdk/BackoffStrategy;
+  invoke-static          Lcom/adjust/sdk/BackoffStrategy;->$values()[Lcom/adjust/sdk/BackoffStrategy;
+  move-result-object     v0
+  sput-object            v0, Lcom/adjust/sdk/BackoffStrategy;->$VALUES [Lcom/adjust/sdk/BackoffStrategy;
+  return-void            
+
+---- METHOD private constructor <init> (Ljava/lang/String; I I J J D D)V ----
+  invoke-direct          v0, v1, v2, Ljava/lang/Enum;-><init>(Ljava/lang/String; I)V
+  iput                   v3, v0, Lcom/adjust/sdk/BackoffStrategy;->minRetries I
+  iput-wide              v4, v0, Lcom/adjust/sdk/BackoffStrategy;->milliSecondMultiplier J
+  iput-wide              v6, v0, Lcom/adjust/sdk/BackoffStrategy;->maxWait J
+  iput-wide              v8, v0, Lcom/adjust/sdk/BackoffStrategy;->minRange D
+  iput-wide              v10, v0, Lcom/adjust/sdk/BackoffStrategy;->maxRange D
+  return-void            
+
+---- METHOD public static valueOf (Ljava/lang/String;)Lcom/adjust/sdk/BackoffStrategy; ----
+  const-class            v0, Lcom/adjust/sdk/BackoffStrategy;
+  invoke-static          v0, v1, Ljava/lang/Enum;->valueOf(Ljava/lang/Class; Ljava/lang/String;)Ljava/lang/Enum;
+  move-result-object     v1
+  check-cast             v1, Lcom/adjust/sdk/BackoffStrategy;
+  return-object          v1
+
+---- METHOD public static values ()[Lcom/adjust/sdk/BackoffStrategy; ----
+  sget-object            v0, Lcom/adjust/sdk/BackoffStrategy;->$VALUES [Lcom/adjust/sdk/BackoffStrategy;
+  invoke-virtual         v0, [Lcom/adjust/sdk/BackoffStrategy;->clone()Ljava/lang/Object;
+  move-result-object     v0
+  check-cast             v0, [Lcom/adjust/sdk/BackoffStrategy;
+  return-object          v0
+######################################################################

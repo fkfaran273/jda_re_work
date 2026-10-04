@@ -1,0 +1,14 @@
+# CLASS Lcom/adjust/sdk/scheduler/FutureScheduler;
+
+---- METHOD public abstract scheduleFuture (Ljava/lang/Runnable; J)Ljava/util/concurrent/ScheduledFuture; ----
+  (no code)
+
+---- METHOD public abstract scheduleFutureWithFixedDelay (Ljava/lang/Runnable; J J)Ljava/util/concurrent/ScheduledFuture; ----
+  (no code)
+
+---- METHOD public abstract scheduleFutureWithReturn (Ljava/util/concurrent/Callable; J)Ljava/util/concurrent/ScheduledFuture; ----
+  (no code)
+
+---- METHOD public abstract teardown ()V ----
+  (no code)
+######################################################################
