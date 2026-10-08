@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+FiddlerGateway: Direct
+StartTime: 01:10:55.566
+Connection: close
+
+Encrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.
+
+Secure Protocol: Tls13
+Cipher: Aes128 128bits
+Hash Algorithm: Sha256 ?bits
+Key Exchange: None 255bits
+
+== Server Certificate ==========
+[Subject]
+  CN=*.revenuecat.com
+
+[Issuer]
+  CN=Amazon ECDSA 256 M04, O=Amazon, C=US
+
+[Serial Number]
+  05A6F5B818AB61D2C3AF56A317BBC086
+
+[Not Before]
+  19-11-2025 05:30:00
+
+[Not After]
+  19-12-2026 05:29:59
+
+[Thumbprint]
+  A9D681AC246C649DD9F51F20ADB4B39C53F02624
+
+[SubjectAltNames]
+*.revenuecat.com, *.revenue.cat, revenue.cat, revenuecat.com

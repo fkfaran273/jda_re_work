@@ -1,0 +1,8 @@
+session -> HTTP 200  {"app_token":"smxi7gqwu39c","adid":"419fa914f1bfcfa944363df6de92dd59","ask_in":2000}
+sdk_click -> HTTP 200  {"app_token":"smxi7gqwu39c","adid":"419fa914f1bfcfa944363df6de92dd59"}
+attribution #1 -> HTTP 200  {"app_token":"smxi7gqwu39c","adid":"419fa914f1bfcfa944363df6de92dd59","attribution":{"tracker_token":"g0bpyt5","tracker_name":"Organic","network":"Organic","engagement_time":"0001-01-01T00:00:00Z","in
+attribution #2 -> HTTP 200  {"app_token":"smxi7gqwu39c","adid":"419fa914f1bfcfa944363df6de92dd59","attribution":{"tracker_token":"g0bpyt5","tracker_name":"Organic","network":"Organic","engagement_time":"0001-01-01T00:00:00Z","in
+poll +3s -> Organic / g0bpyt5
+poll +8s -> Organic / g0bpyt5
+poll +20s -> Organic / g0bpyt5
+Organic after all polls

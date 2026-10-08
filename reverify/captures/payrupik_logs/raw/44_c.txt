@@ -1,0 +1,46 @@
+CONNECT app-api.payrupikloan.in:443 HTTP/1.1
+Host: app-api.payrupikloan.in:443
+Connection: Keep-Alive
+User-Agent: okhttp/5.3.2
+
+A SSLv3-compatible ClientHello handshake was found. Fiddler extracted the parameters below.
+
+Version: 3.3 (TLS/1.2)
+Random: 8A 7A 21 8B E7 2C E6 A9 9A 20 DE AD 8A C6 88 BE 87 A5 FA 5A 8E 49 EA 25 78 70 6E BA E3 A3 4B 0D
+"Time": 20-12-2043 05:54:42 PM
+SessionID: 30 2A CE 85 92 3F 85 8B 7A 9C 13 3B B1 3A 62 DF 45 AE 10 9C 2B 9C DF 3B 80 9E 0C B2 03 D0 59 05
+Extensions: 
+	server_name	app-api.payrupikloan.in
+	extended_master_secret	empty
+	renegotiation_info	00
+	supported_groups	x25519 [0x1d], secp256r1 [0x17], secp384r1 [0x18]
+	ec_point_formats	uncompressed [0x0]
+	SessionTicket	empty
+	ALPN		h2, http/1.1
+	status_request	OCSP - Implicit Responder
+	signature_algs	ecdsa_secp256r1_sha256, rsa_pss_rsae_sha256, rsa_pkcs1_sha256, ecdsa_secp384r1_sha384, rsa_pss_rsae_sha384, rsa_pkcs1_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha512, rsa_pkcs1_sha1
+	key_share	00 24 00 1D 00 20 C5 FF 98 19 9F 81 3E 42 D4 D8 5E 39 4F 29 37 B0 C2 F4 73 3D 3E 44 5F AC 5F 32 B6 86 4A 4A 88 20
+	psk_key_exchange_modes	01 01
+	supported_versions	Tls1.3, Tls1.2
+	padding		230 null bytes
+Ciphers: 
+	[1301]	TLS_AES_128_GCM_SHA256
+	[1302]	TLS_AES_256_GCM_SHA384
+	[1303]	TLS_CHACHA20_POLY1305_SHA256
+	[C02B]	TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+	[C02F]	TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	[C02C]	TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+	[C030]	TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	[CCA9]	TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
+	[CCA8]	TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+	[C013]	TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+	[C014]	TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+	[009C]	TLS_RSA_WITH_AES_128_GCM_SHA256
+	[009D]	TLS_RSA_WITH_AES_256_GCM_SHA384
+	[002F]	TLS_RSA_WITH_AES_128_CBC_SHA
+	[0035]	TLS_RSA_WITH_AES_256_CBC_SHA
+
+Compression: 
+	[00]	NO_COMPRESSION
+
+

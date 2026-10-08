@@ -1,0 +1,11 @@
+POST https://app.adjust.com/session HTTP/1.1
+Client-SDK: react-native5.4.4@android5.4.5
+Authorization: Signature signature="3E3B6EC1041DFB7154F0C731513E2AA95FC50214FB344614408087B847FB1A7A55598F0D5753560874660C7FEF073BE70178BD70981F7583896B0E430872BF414817101D56807AE84CADD32C46175DB3CABEF454117747486AFE635CF4D6FE1ACC953B09BAC2AD768C4B374ADB5D142B6D8CC545AF2DC28A232AE63D9B9580EBD6ADC2E0BD4961645B99BF5ED3336A82889EAE8FED6B55D4E8636D77C3166548D248D770690F5AF7F18AB8F01DEDD60F0F545DD345D4A714D96A2D100AAA5A78BEA981428AA93CE63F71D41722E10E70E77098B19346A8C6E57D4C5DFD38D925BC8F212E61797AD9B65EF5BFB06CC8F66AB3676489AD5C491CC1AACAE56DA198CDFF6F287B034978EB28EE9EBA5B19BFEAD4216C9238E9ACE4523E0E60A533C154358E36E6F98942A727E2A34DA281DF",adj_signing_id="1300000",algorithm="adj7",headers_id="7",native_version="3.61.0"
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; GM1901 Build/QKQ1.190716.003)
+Host: app.adjust.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 1031
+
+store_name_from_system=com.android.vending&gps_adid_attempt=1&country=IN&api_level=29&hardware_name=GM1901_14_201019&app_version=14.4.8&app_token=cv4d2hlazp4w&installed_at=2026-02-16T13%3A43%3A27.591Z%2B0300&created_at=2026-02-16T13%3A44%3A04.198Z%2B0300&wait_total=0.0&device_type=phone&language=en&gps_adid=ea4561af-1d36-4aba-807c-a9c4250250a8&foreground=1&connectivity_type=1&mcc=405&device_manufacturer=OnePlus&display_width=1080&device_name=GM1901&needs_response_details=1&os_build=QKQ1.190716.003&updated_at=2026-02-16T13%3A43%3A27.591Z%2B0300&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&screen_format=long&last_error=0&gps_adid_src=service&mnc=872&queue_size=4&wait_time=0.0&os_version=10&first_error=0&android_uuid=4c986a9b-af46-45cc-8655-5172d6130b1e&sent_at=2026-02-16T13%3A45%3A48.523Z%2B0300&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&session_count=1&display_height=2218&package_name=com.fdjservices.nirio&os_name=android&ui_mode=1&enqueue_size=3&tracking_enabled=1

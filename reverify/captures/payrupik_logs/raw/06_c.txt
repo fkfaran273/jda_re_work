@@ -1,0 +1,48 @@
+CONNECT firebaseinstallations.googleapis.com:443 HTTP/1.1
+Host: firebaseinstallations.googleapis.com:443
+Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 11; DN2101 Build/RP1A.200720.011)
+
+A SSLv3-compatible ClientHello handshake was found. Fiddler extracted the parameters below.
+
+Version: 3.3 (TLS/1.2)
+Random: 50 31 F5 46 4C F4 40 34 C1 72 0B 97 11 F6 B1 56 53 27 F5 F7 C7 6A EF B0 0B D5 9D 54 DC 75 FD 4D
+"Time": 22-09-2007 08:44:24 PM
+SessionID: CA 53 2B CA 85 C6 1E 4B D9 FF D9 7D DC A3 0D 82 F0 BE F1 1D D9 E8 F3 5F 7A 4D C7 92 C3 2F 82 E3
+Extensions: 
+	server_name	firebaseinstallations.googleapis.com
+	extended_master_secret	empty
+	renegotiation_info	00
+	supported_groups	x25519 [0x1d], secp256r1 [0x17], secp384r1 [0x18]
+	ec_point_formats	uncompressed [0x0]
+	SessionTicket	empty
+	ALPN		http/1.1
+	status_request	OCSP - Implicit Responder
+	signature_algs	ecdsa_secp256r1_sha256, rsa_pss_rsae_sha256, rsa_pkcs1_sha256, ecdsa_secp384r1_sha384, rsa_pss_rsae_sha384, rsa_pkcs1_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha512, rsa_pkcs1_sha1
+	key_share	00 24 00 1D 00 20 CC FF 5F 2F 12 FA 9E AE 40 F0 32 59 98 10 A3 EC D5 54 43 E8 F8 1A 53 5F 3B C7 AE C4 7A D4 DC 54
+	psk_key_exchange_modes	01 01
+	supported_versions	Tls1.3, Tls1.2, Tls1.1, Tls1.0
+	padding		212 null bytes
+Ciphers: 
+	[1301]	TLS_AES_128_GCM_SHA256
+	[1302]	TLS_AES_256_GCM_SHA384
+	[1303]	TLS_CHACHA20_POLY1305_SHA256
+	[C02B]	TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+	[C02C]	TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+	[CCA9]	TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
+	[C02F]	TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	[C030]	TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	[CCA8]	TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+	[C009]	TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
+	[C00A]	TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
+	[C013]	TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+	[C014]	TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+	[009C]	TLS_RSA_WITH_AES_128_GCM_SHA256
+	[009D]	TLS_RSA_WITH_AES_256_GCM_SHA384
+	[002F]	TLS_RSA_WITH_AES_128_CBC_SHA
+	[0035]	TLS_RSA_WITH_AES_256_CBC_SHA
+
+Compression: 
+	[00]	NO_COMPRESSION
+
+

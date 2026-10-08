@@ -1,0 +1,17 @@
+HTTP/1.1 200
+Content-Type: application/json
+Content-Length: 78
+Connection: keep-alive
+Date: Thu, 08 Oct 2026 06:58:31 GMT
+X-Content-Type-Options: nosniff
+MOE-REQUEST-ID: d68e9410-c117-4256-980a-fd93164f2d6b
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Strict-Transport-Security: max-age=16070400; includeSubDomains
+X-Cache: Miss from cloudfront
+Via: 1.1 d0a577b9f8d7db1f14de308059fcd518.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: DEL51-P6
+X-Amz-Cf-Id: _WkbcgQFMkSlQu-EWqftnwEL2JH-A7fuDh0BOHiOMw3rpAYEUZ4C4A==
+
+{"campaigns":[],"min_delay_btw_inapps":0,"sync_interval":900,"fc_settings":{}}

@@ -1,0 +1,1358 @@
+{
+ "report": {
+  "session": {
+   "n_dev": 45,
+   "n_our": 45,
+   "dev_only": [],
+   "our_only": [],
+   "shared": [
+    "android_uuid",
+    "api_level",
+    "app_token",
+    "app_version",
+    "attribution_deeplink",
+    "connectivity_type",
+    "country",
+    "cpu_type",
+    "created_at",
+    "device_manufacturer",
+    "device_name",
+    "device_type",
+    "display_height",
+    "display_width",
+    "enqueue_size",
+    "environment",
+    "ff_first_session_delay",
+    "first_error",
+    "foreground",
+    "gps_adid",
+    "gps_adid_attempt",
+    "gps_adid_src",
+    "hardware_name",
+    "initiating_package_name",
+    "installed_at",
+    "language",
+    "last_error",
+    "needs_response_details",
+    "offline_mode_enabled",
+    "os_build",
+    "os_name",
+    "os_version",
+    "package_name",
+    "retry_count",
+    "screen_density",
+    "screen_format",
+    "screen_size",
+    "sent_at",
+    "session_count",
+    "store_name_from_system",
+    "tracking_enabled",
+    "ui_mode",
+    "updated_at",
+    "wait_time",
+    "wait_total"
+   ],
+   "shapes": {
+    "android_uuid": {
+     "dev": "009049a6-20d9-4511-9f25-705bced12ee5",
+     "our": "009049a6-20d9-4511-9f25-705bced12ee5",
+     "shape_match": true,
+     "equal": true
+    },
+    "api_level": {
+     "dev": "31",
+     "our": "31",
+     "shape_match": true,
+     "equal": true
+    },
+    "app_token": {
+     "dev": "vf3lochhmgw0",
+     "our": "vf3lochhmgw0",
+     "shape_match": true,
+     "equal": true
+    },
+    "app_version": {
+     "dev": "3.2.33",
+     "our": "3.2.33",
+     "shape_match": true,
+     "equal": true
+    },
+    "attribution_deeplink": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    },
+    "connectivity_type": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    },
+    "country": {
+     "dev": "IN",
+     "our": "IN",
+     "shape_match": true,
+     "equal": true
+    },
+    "cpu_type": {
+     "dev": "arm64-v8a",
+     "our": "arm64-v8a",
+     "shape_match": true,
+     "equal": true
+    },
+    "created_at": {
+     "dev": "2026-10-07T01:10:48.959Z+0530",
+     "our": "2026-10-07T08:46:00.244Z+0530",
+     "shape_match": true,
+     "equal": false
+    },
+    "device_manufacturer": {
+     "dev": "motorola",
+     "our": "motorola",
+     "shape_match": true,
+     "equal": true
+    },
+    "device_name": {
+     "dev": "moto g42",
+     "our": "moto g42",
+     "shape_match": true,
+     "equal": true
+    },
+    "device_type": {
+     "dev": "phone",
+     "our": "phone",
+     "shape_match": true,
+     "equal": true
+    },
+    "display_height": {
+     "dev": "2237",
+     "our": "2237",
+     "shape_match": true,
+     "equal": true
+    },
+    "display_width": {
+     "dev": "1080",
+     "our": "1080",
+     "shape_match": true,
+     "equal": true
+    },
+    "enqueue_size": {
+     "dev": "0",
+     "our": "0",
+     "shape_match": true,
+     "equal": true
+    },
+    "environment": {
+     "dev": "production",
+     "our": "production",
+     "shape_match": true,
+     "equal": true
+    },
+    "ff_first_session_delay": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    },
+    "first_error": {
+     "dev": "0",
+     "our": "0",
+     "shape_match": true,
+     "equal": true
+    },
+    "foreground": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    },
+    "gps_adid": {
+     "dev": "e7ababf5-88cc-4991-ae51-bf191dcd240a",
+     "our": "e7ababf5-88cc-4991-ae51-bf191dcd240a",
+     "shape_match": true,
+     "equal": true
+    },
+    "gps_adid_attempt": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    },
+    "gps_adid_src": {
+     "dev": "service",
+     "our": "service",
+     "shape_match": true,
+     "equal": true
+    },
+    "hardware_name": {
+     "dev": "S2SE32.28-28-4",
+     "our": "S2SE32.28-28-4",
+     "shape_match": true,
+     "equal": true
+    },
+    "initiating_package_name": {
+     "dev": "com.android.vending",
+     "our": "com.android.vending",
+     "shape_match": true,
+     "equal": true
+    },
+    "installed_at": {
+     "dev": "2026-10-07T01:10:34.279Z+0530",
+     "our": "2026-10-07T08:43:33.800Z+0530",
+     "shape_match": true,
+     "equal": false
+    },
+    "language": {
+     "dev": "en",
+     "our": "en",
+     "shape_match": true,
+     "equal": true
+    },
+    "last_error": {
+     "dev": "0",
+     "our": "0",
+     "shape_match": true,
+     "equal": true
+    },
+    "needs_response_details": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    },
+    "offline_mode_enabled": {
+     "dev": "0",
+     "our": "0",
+     "shape_match": true,
+     "equal": true
+    },
+    "os_build": {
+     "dev": "S2SE32.28-28-4",
+     "our": "S2SE32.28-28-4",
+     "shape_match": true,
+     "equal": true
+    },
+    "os_name": {
+     "dev": "android",
+     "our": "android",
+     "shape_match": true,
+     "equal": true
+    },
+    "os_version": {
+     "dev": "12",
+     "our": "12",
+     "shape_match": true,
+     "equal": true
+    },
+    "package_name": {
+     "dev": "social.hunch.app",
+     "our": "social.hunch.app",
+     "shape_match": true,
+     "equal": true
+    },
+    "retry_count": {
+     "dev": "0",
+     "our": "0",
+     "shape_match": true,
+     "equal": true
+    },
+    "screen_density": {
+     "dev": "high",
+     "our": "high",
+     "shape_match": true,
+     "equal": true
+    },
+    "screen_format": {
+     "dev": "long",
+     "our": "long",
+     "shape_match": true,
+     "equal": true
+    },
+    "screen_size": {
+     "dev": "normal",
+     "our": "normal",
+     "shape_match": true,
+     "equal": true
+    },
+    "sent_at": {
+     "dev": "2026-10-07T01:10:49.032Z+0530",
+     "our": "2026-10-07T08:46:00.886Z+0530",
+     "shape_match": true,
+     "equal": false
+    },
+    "session_count": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    },
+    "store_name_from_system": {
+     "dev": "com.android.vending",
+     "our": "com.android.vending",
+     "shape_match": true,
+     "equal": true
+    },
+    "tracking_enabled": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    },
+    "ui_mode": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    },
+    "updated_at": {
+     "dev": "2026-10-07T01:10:34.279Z+0530",
+     "our": "2026-10-07T08:43:33.800Z+0530",
+     "shape_match": true,
+     "equal": false
+    },
+    "wait_time": {
+     "dev": "0.0",
+     "our": "0.0",
+     "shape_match": true,
+     "equal": true
+    },
+    "wait_total": {
+     "dev": "0.0",
+     "our": "0.0",
+     "shape_match": true,
+     "equal": true
+    }
+   },
+   "dev_order": [
+    "store_name_from_system",
+    "gps_adid_attempt",
+    "country",
+    "api_level",
+    "hardware_name",
+    "app_version",
+    "app_token",
+    "installed_at",
+    "created_at",
+    "wait_total",
+    "device_type",
+    "language",
+    "gps_adid",
+    "foreground",
+    "connectivity_type",
+    "ff_first_session_delay",
+    "device_manufacturer",
+    "display_width",
+    "device_name",
+    "needs_response_details",
+    "os_build",
+    "updated_at",
+    "cpu_type",
+    "retry_count",
+    "screen_size",
+    "screen_format",
+    "last_error",
+    "gps_adid_src",
+    "wait_time",
+    "os_version",
+    "first_error",
+    "android_uuid",
+    "sent_at",
+    "offline_mode_enabled",
+    "environment",
+    "screen_density",
+    "attribution_deeplink",
+    "session_count",
+    "display_height",
+    "package_name",
+    "initiating_package_name",
+    "os_name",
+    "ui_mode",
+    "enqueue_size",
+    "tracking_enabled"
+   ],
+   "our_order": [
+    "store_name_from_system",
+    "gps_adid_attempt",
+    "country",
+    "api_level",
+    "hardware_name",
+    "app_version",
+    "app_token",
+    "installed_at",
+    "created_at",
+    "wait_total",
+    "device_type",
+    "language",
+    "gps_adid",
+    "foreground",
+    "connectivity_type",
+    "device_manufacturer",
+    "display_width",
+    "device_name",
+    "needs_response_details",
+    "os_build",
+    "updated_at",
+    "cpu_type",
+    "retry_count",
+    "screen_size",
+    "screen_format",
+    "last_error",
+    "gps_adid_src",
+    "wait_time",
+    "os_version",
+    "first_error",
+    "android_uuid",
+    "sent_at",
+    "offline_mode_enabled",
+    "environment",
+    "screen_density",
+    "attribution_deeplink",
+    "session_count",
+    "display_height",
+    "package_name",
+    "initiating_package_name",
+    "os_name",
+    "ui_mode",
+    "enqueue_size",
+    "tracking_enabled",
+    "ff_first_session_delay"
+   ]
+  },
+  "click": {
+   "n_dev": 50,
+   "n_our": 50,
+   "dev_only": [],
+   "our_only": [],
+   "shared": [
+    "android_uuid",
+    "api_level",
+    "app_token",
+    "app_version",
+    "attribution_deeplink",
+    "click_time",
+    "click_time_server",
+    "connectivity_type",
+    "country",
+    "cpu_type",
+    "created_at",
+    "device_manufacturer",
+    "device_name",
+    "device_type",
+    "display_height",
+    "display_width",
+    "environment",
+    "ff_first_session_delay",
+    "foreground",
+    "google_play_instant",
+    "gps_adid",
+    "gps_adid_attempt",
+    "gps_adid_src",
+    "hardware_name",
+    "install_begin_time",
+    "install_begin_time_server",
+    "install_version",
+    "installed_at",
+    "language",
+    "needs_response_details",
+    "offline_mode_enabled",
+    "os_build",
+    "os_name",
+    "os_version",
+    "package_name",
+    "partner_params",
+    "referrer",
+    "referrer_api",
+    "screen_density",
+    "screen_format",
+    "screen_size",
+    "sent_at",
+    "session_count",
+    "session_length",
+    "source",
+    "subsession_count",
+    "time_spent",
+    "tracking_enabled",
+    "ui_mode",
+    "updated_at"
+   ],
+   "shapes": {
+    "android_uuid": {
+     "dev": "009049a6-20d9-4511-9f25-705bced12ee5",
+     "our": "009049a6-20d9-4511-9f25-705bced12ee5",
+     "shape_match": true,
+     "equal": true
+    },
+    "api_level": {
+     "dev": "31",
+     "our": "31",
+     "shape_match": true,
+     "equal": true
+    },
+    "app_token": {
+     "dev": "vf3lochhmgw0",
+     "our": "vf3lochhmgw0",
+     "shape_match": true,
+     "equal": true
+    },
+    "app_version": {
+     "dev": "3.2.33",
+     "our": "3.2.33",
+     "shape_match": true,
+     "equal": true
+    },
+    "attribution_deeplink": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    },
+    "click_time": {
+     "dev": "2026-10-07T01:07:25.000Z+0530",
+     "our": "2026-10-07T08:42:30.000Z+0530",
+     "shape_match": true,
+     "equal": false
+    },
+    "click_time_server": {
+     "dev": "2026-10-07T01:07:24.000Z+0530",
+     "our": "2026-10-07T08:42:30.000Z+0530",
+     "shape_match": true,
+     "equal": false
+    },
+    "connectivity_type": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    },
+    "country": {
+     "dev": "IN",
+     "our": "IN",
+     "shape_match": true,
+     "equal": true
+    },
+    "cpu_type": {
+     "dev": "arm64-v8a",
+     "our": "arm64-v8a",
+     "shape_match": true,
+     "equal": true
+    },
+    "created_at": {
+     "dev": "2026-10-07T01:10:49.068Z+0530",
+     "our": "2026-10-07T08:46:00.500Z+0530",
+     "shape_match": true,
+     "equal": false
+    },
+    "device_manufacturer": {
+     "dev": "motorola",
+     "our": "motorola",
+     "shape_match": true,
+     "equal": true
+    },
+    "device_name": {
+     "dev": "moto g42",
+     "our": "moto g42",
+     "shape_match": true,
+     "equal": true
+    },
+    "device_type": {
+     "dev": "phone",
+     "our": "phone",
+     "shape_match": true,
+     "equal": true
+    },
+    "display_height": {
+     "dev": "2237",
+     "our": "2237",
+     "shape_match": true,
+     "equal": true
+    },
+    "display_width": {
+     "dev": "1080",
+     "our": "1080",
+     "shape_match": true,
+     "equal": true
+    },
+    "environment": {
+     "dev": "production",
+     "our": "production",
+     "shape_match": true,
+     "equal": true
+    },
+    "ff_first_session_delay": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    },
+    "foreground": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    },
+    "google_play_instant": {
+     "dev": "0",
+     "our": "0",
+     "shape_match": true,
+     "equal": true
+    },
+    "gps_adid": {
+     "dev": "e7ababf5-88cc-4991-ae51-bf191dcd240a",
+     "our": "e7ababf5-88cc-4991-ae51-bf191dcd240a",
+     "shape_match": true,
+     "equal": true
+    },
+    "gps_adid_attempt": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    },
+    "gps_adid_src": {
+     "dev": "service",
+     "our": "service",
+     "shape_match": true,
+     "equal": true
+    },
+    "hardware_name": {
+     "dev": "S2SE32.28-28-4",
+     "our": "S2SE32.28-28-4",
+     "shape_match": true,
+     "equal": true
+    },
+    "install_begin_time": {
+     "dev": "2026-10-07T01:07:31.000Z+0530",
+     "our": "2026-10-07T08:42:35.000Z+0530",
+     "shape_match": true,
+     "equal": false
+    },
+    "install_begin_time_server": {
+     "dev": "2026-10-07T01:07:30.000Z+0530",
+     "our": "2026-10-07T08:42:35.000Z+0530",
+     "shape_match": true,
+     "equal": false
+    },
+    "install_version": {
+     "dev": "3.2.33",
+     "our": "3.2.33",
+     "shape_match": true,
+     "equal": true
+    },
+    "installed_at": {
+     "dev": "2026-10-07T01:10:34.279Z+0530",
+     "our": "2026-10-07T08:43:33.800Z+0530",
+     "shape_match": true,
+     "equal": false
+    },
+    "language": {
+     "dev": "en",
+     "our": "en",
+     "shape_match": true,
+     "equal": true
+    },
+    "needs_response_details": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    },
+    "offline_mode_enabled": {
+     "dev": "0",
+     "our": "0",
+     "shape_match": true,
+     "equal": true
+    },
+    "os_build": {
+     "dev": "S2SE32.28-28-4",
+     "our": "S2SE32.28-28-4",
+     "shape_match": true,
+     "equal": true
+    },
+    "os_name": {
+     "dev": "android",
+     "our": "android",
+     "shape_match": true,
+     "equal": true
+    },
+    "os_version": {
+     "dev": "12",
+     "our": "12",
+     "shape_match": true,
+     "equal": true
+    },
+    "package_name": {
+     "dev": "social.hunch.app",
+     "our": "social.hunch.app",
+     "shape_match": true,
+     "equal": true
+    },
+    "partner_params": {
+     "dev": "{\"mixpanel_uuid\":\"$device:5357c21a-82a8-4768-bf91-bf52bd91b093\"}",
+     "our": "{\"mixpanel_uuid\":\"$device:c1b7ebd7-0066-425a-8f38-3daf29da90d2\"}",
+     "shape_match": true,
+     "equal": false
+    },
+    "referrer": {
+     "dev": "adjust_reftag=c9WQljjOu6Lc2&utm_source=Spyke+Media&utm_campaign=SOHYPE_ADH&utm_content=%7Baffiliate_id%7D",
+     "our": "adjust_reftag=c9WQljjOu6Lc2&utm_source=Spyke+Media&utm_campaign=SOHYPE_ADH&utm_content=%7Baffiliate_id%7D",
+     "shape_match": true,
+     "equal": true
+    },
+    "referrer_api": {
+     "dev": "google",
+     "our": "google",
+     "shape_match": true,
+     "equal": true
+    },
+    "screen_density": {
+     "dev": "high",
+     "our": "high",
+     "shape_match": true,
+     "equal": true
+    },
+    "screen_format": {
+     "dev": "long",
+     "our": "long",
+     "shape_match": true,
+     "equal": true
+    },
+    "screen_size": {
+     "dev": "normal",
+     "our": "normal",
+     "shape_match": true,
+     "equal": true
+    },
+    "sent_at": {
+     "dev": "2026-10-07T01:10:49.106Z+0530",
+     "our": "2026-10-07T08:46:00.275Z+0530",
+     "shape_match": true,
+     "equal": false
+    },
+    "session_count": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    },
+    "session_length": {
+     "dev": "0",
+     "our": "0",
+     "shape_match": true,
+     "equal": true
+    },
+    "source": {
+     "dev": "install_referrer",
+     "our": "install_referrer",
+     "shape_match": true,
+     "equal": true
+    },
+    "subsession_count": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    },
+    "time_spent": {
+     "dev": "0",
+     "our": "0",
+     "shape_match": true,
+     "equal": true
+    },
+    "tracking_enabled": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    },
+    "ui_mode": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    },
+    "updated_at": {
+     "dev": "2026-10-07T01:10:34.279Z+0530",
+     "our": "2026-10-07T08:43:33.800Z+0530",
+     "shape_match": true,
+     "equal": false
+    }
+   },
+   "dev_order": [
+    "country",
+    "api_level",
+    "hardware_name",
+    "app_version",
+    "partner_params",
+    "app_token",
+    "installed_at",
+    "device_type",
+    "language",
+    "gps_adid",
+    "source",
+    "foreground",
+    "connectivity_type",
+    "os_build",
+    "click_time",
+    "cpu_type",
+    "install_version",
+    "screen_size",
+    "gps_adid_src",
+    "subsession_count",
+    "sent_at",
+    "offline_mode_enabled",
+    "screen_density",
+    "session_count",
+    "ui_mode",
+    "gps_adid_attempt",
+    "session_length",
+    "created_at",
+    "referrer_api",
+    "ff_first_session_delay",
+    "device_manufacturer",
+    "display_width",
+    "time_spent",
+    "device_name",
+    "needs_response_details",
+    "updated_at",
+    "screen_format",
+    "click_time_server",
+    "os_version",
+    "google_play_instant",
+    "install_begin_time_server",
+    "android_uuid",
+    "referrer",
+    "environment",
+    "attribution_deeplink",
+    "install_begin_time",
+    "display_height",
+    "package_name",
+    "os_name",
+    "tracking_enabled"
+   ],
+   "our_order": [
+    "country",
+    "api_level",
+    "hardware_name",
+    "app_version",
+    "app_token",
+    "installed_at",
+    "device_type",
+    "language",
+    "gps_adid",
+    "source",
+    "foreground",
+    "connectivity_type",
+    "os_build",
+    "click_time",
+    "cpu_type",
+    "install_version",
+    "screen_size",
+    "gps_adid_src",
+    "subsession_count",
+    "sent_at",
+    "offline_mode_enabled",
+    "screen_density",
+    "session_count",
+    "ui_mode",
+    "gps_adid_attempt",
+    "session_length",
+    "created_at",
+    "referrer_api",
+    "device_manufacturer",
+    "display_width",
+    "time_spent",
+    "device_name",
+    "needs_response_details",
+    "updated_at",
+    "screen_format",
+    "click_time_server",
+    "os_version",
+    "google_play_instant",
+    "install_begin_time_server",
+    "android_uuid",
+    "referrer",
+    "environment",
+    "attribution_deeplink",
+    "install_begin_time",
+    "display_height",
+    "package_name",
+    "os_name",
+    "tracking_enabled",
+    "ff_first_session_delay",
+    "partner_params"
+   ]
+  },
+  "attribution": {
+   "n_dev": 23,
+   "n_our": 23,
+   "dev_only": [],
+   "our_only": [],
+   "shared": [
+    "android_uuid",
+    "api_level",
+    "app_token",
+    "app_version",
+    "attribution_deeplink",
+    "created_at",
+    "device_name",
+    "device_type",
+    "environment",
+    "ff_first_session_delay",
+    "foreground",
+    "gps_adid",
+    "gps_adid_attempt",
+    "gps_adid_src",
+    "initiated_by",
+    "needs_response_details",
+    "offline_mode_enabled",
+    "os_name",
+    "os_version",
+    "package_name",
+    "sent_at",
+    "tracking_enabled",
+    "ui_mode"
+   ],
+   "shapes": {
+    "android_uuid": {
+     "dev": "009049a6-20d9-4511-9f25-705bced12ee5",
+     "our": "009049a6-20d9-4511-9f25-705bced12ee5",
+     "shape_match": true,
+     "equal": true
+    },
+    "api_level": {
+     "dev": "31",
+     "our": "31",
+     "shape_match": true,
+     "equal": true
+    },
+    "app_token": {
+     "dev": "vf3lochhmgw0",
+     "our": "vf3lochhmgw0",
+     "shape_match": true,
+     "equal": true
+    },
+    "app_version": {
+     "dev": "3.2.33",
+     "our": "3.2.33",
+     "shape_match": true,
+     "equal": true
+    },
+    "attribution_deeplink": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    },
+    "created_at": {
+     "dev": "2026-10-07T01:10:52.479Z+0530",
+     "our": "2026-10-07T08:46:00.240Z+0530",
+     "shape_match": true,
+     "equal": false
+    },
+    "device_name": {
+     "dev": "moto g42",
+     "our": "moto g42",
+     "shape_match": true,
+     "equal": true
+    },
+    "device_type": {
+     "dev": "phone",
+     "our": "phone",
+     "shape_match": true,
+     "equal": true
+    },
+    "environment": {
+     "dev": "production",
+     "our": "production",
+     "shape_match": true,
+     "equal": true
+    },
+    "ff_first_session_delay": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    },
+    "foreground": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    },
+    "gps_adid": {
+     "dev": "e7ababf5-88cc-4991-ae51-bf191dcd240a",
+     "our": "e7ababf5-88cc-4991-ae51-bf191dcd240a",
+     "shape_match": true,
+     "equal": true
+    },
+    "gps_adid_attempt": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    },
+    "gps_adid_src": {
+     "dev": "service",
+     "our": "service",
+     "shape_match": true,
+     "equal": true
+    },
+    "initiated_by": {
+     "dev": "backend",
+     "our": "backend",
+     "shape_match": true,
+     "equal": true
+    },
+    "needs_response_details": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    },
+    "offline_mode_enabled": {
+     "dev": "0",
+     "our": "0",
+     "shape_match": true,
+     "equal": true
+    },
+    "os_name": {
+     "dev": "android",
+     "our": "android",
+     "shape_match": true,
+     "equal": true
+    },
+    "os_version": {
+     "dev": "12",
+     "our": "12",
+     "shape_match": true,
+     "equal": true
+    },
+    "package_name": {
+     "dev": "social.hunch.app",
+     "our": "social.hunch.app",
+     "shape_match": true,
+     "equal": true
+    },
+    "sent_at": {
+     "dev": "2026-10-07T01:10:52.491Z+0530",
+     "our": "2026-10-07T08:46:00.302Z+0530",
+     "shape_match": true,
+     "equal": false
+    },
+    "tracking_enabled": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    },
+    "ui_mode": {
+     "dev": "1",
+     "our": "1",
+     "shape_match": true,
+     "equal": true
+    }
+   },
+   "dev_order": [
+    "gps_adid_attempt",
+    "api_level",
+    "app_version",
+    "app_token",
+    "created_at",
+    "device_type",
+    "gps_adid",
+    "foreground",
+    "ff_first_session_delay",
+    "device_name",
+    "needs_response_details",
+    "gps_adid_src",
+    "initiated_by",
+    "os_version",
+    "android_uuid",
+    "sent_at",
+    "offline_mode_enabled",
+    "environment",
+    "attribution_deeplink",
+    "package_name",
+    "os_name",
+    "ui_mode",
+    "tracking_enabled"
+   ],
+   "our_order": [
+    "initiated_by",
+    "gps_adid_attempt",
+    "api_level",
+    "app_version",
+    "app_token",
+    "os_version",
+    "created_at",
+    "device_type",
+    "gps_adid",
+    "foreground",
+    "android_uuid",
+    "sent_at",
+    "offline_mode_enabled",
+    "device_name",
+    "environment",
+    "needs_response_details",
+    "attribution_deeplink",
+    "package_name",
+    "os_name",
+    "ui_mode",
+    "gps_adid_src",
+    "tracking_enabled",
+    "ff_first_session_delay"
+   ]
+  }
+ },
+ "our_sess": {
+  "store_name_from_system": "com.android.vending",
+  "gps_adid_attempt": "1",
+  "country": "IN",
+  "api_level": "31",
+  "hardware_name": "S2SE32.28-28-4",
+  "app_version": "3.2.33",
+  "app_token": "vf3lochhmgw0",
+  "installed_at": "2026-10-07T08:43:33.800Z+0530",
+  "created_at": "2026-10-07T08:46:00.244Z+0530",
+  "wait_total": "0.0",
+  "device_type": "phone",
+  "language": "en",
+  "gps_adid": "e7ababf5-88cc-4991-ae51-bf191dcd240a",
+  "foreground": "1",
+  "connectivity_type": "1",
+  "device_manufacturer": "motorola",
+  "display_width": "1080",
+  "device_name": "moto g42",
+  "needs_response_details": "1",
+  "os_build": "S2SE32.28-28-4",
+  "updated_at": "2026-10-07T08:43:33.800Z+0530",
+  "cpu_type": "arm64-v8a",
+  "retry_count": "0",
+  "screen_size": "normal",
+  "screen_format": "long",
+  "last_error": "0",
+  "gps_adid_src": "service",
+  "wait_time": "0.0",
+  "os_version": "12",
+  "first_error": "0",
+  "android_uuid": "009049a6-20d9-4511-9f25-705bced12ee5",
+  "sent_at": "2026-10-07T08:46:00.886Z+0530",
+  "offline_mode_enabled": "0",
+  "environment": "production",
+  "screen_density": "high",
+  "attribution_deeplink": "1",
+  "session_count": "1",
+  "display_height": "2237",
+  "package_name": "social.hunch.app",
+  "initiating_package_name": "com.android.vending",
+  "os_name": "android",
+  "ui_mode": "1",
+  "enqueue_size": "0",
+  "tracking_enabled": "1",
+  "ff_first_session_delay": "1"
+ },
+ "our_click": {
+  "country": "IN",
+  "api_level": "31",
+  "hardware_name": "S2SE32.28-28-4",
+  "app_version": "3.2.33",
+  "app_token": "vf3lochhmgw0",
+  "installed_at": "2026-10-07T08:43:33.800Z+0530",
+  "device_type": "phone",
+  "language": "en",
+  "gps_adid": "e7ababf5-88cc-4991-ae51-bf191dcd240a",
+  "source": "install_referrer",
+  "foreground": "1",
+  "connectivity_type": "1",
+  "os_build": "S2SE32.28-28-4",
+  "click_time": "2026-10-07T08:42:30.000Z+0530",
+  "cpu_type": "arm64-v8a",
+  "install_version": "3.2.33",
+  "screen_size": "normal",
+  "gps_adid_src": "service",
+  "subsession_count": "1",
+  "sent_at": "2026-10-07T08:46:00.275Z+0530",
+  "offline_mode_enabled": "0",
+  "screen_density": "high",
+  "session_count": "1",
+  "ui_mode": "1",
+  "gps_adid_attempt": "1",
+  "session_length": "0",
+  "created_at": "2026-10-07T08:46:00.500Z+0530",
+  "referrer_api": "google",
+  "device_manufacturer": "motorola",
+  "display_width": "1080",
+  "time_spent": "0",
+  "device_name": "moto g42",
+  "needs_response_details": "1",
+  "updated_at": "2026-10-07T08:43:33.800Z+0530",
+  "screen_format": "long",
+  "click_time_server": "2026-10-07T08:42:30.000Z+0530",
+  "os_version": "12",
+  "google_play_instant": "0",
+  "install_begin_time_server": "2026-10-07T08:42:35.000Z+0530",
+  "android_uuid": "009049a6-20d9-4511-9f25-705bced12ee5",
+  "referrer": "adjust_reftag=c9WQljjOu6Lc2&utm_source=Spyke+Media&utm_campaign=SOHYPE_ADH&utm_content=%7Baffiliate_id%7D",
+  "environment": "production",
+  "attribution_deeplink": "1",
+  "install_begin_time": "2026-10-07T08:42:35.000Z+0530",
+  "display_height": "2237",
+  "package_name": "social.hunch.app",
+  "os_name": "android",
+  "tracking_enabled": "1",
+  "ff_first_session_delay": "1",
+  "partner_params": "{\"mixpanel_uuid\":\"$device:c1b7ebd7-0066-425a-8f38-3daf29da90d2\"}"
+ },
+ "our_attr": {
+  "initiated_by": "backend",
+  "gps_adid_attempt": "1",
+  "api_level": "31",
+  "app_version": "3.2.33",
+  "app_token": "vf3lochhmgw0",
+  "os_version": "12",
+  "created_at": "2026-10-07T08:46:00.240Z+0530",
+  "device_type": "phone",
+  "gps_adid": "e7ababf5-88cc-4991-ae51-bf191dcd240a",
+  "foreground": "1",
+  "android_uuid": "009049a6-20d9-4511-9f25-705bced12ee5",
+  "sent_at": "2026-10-07T08:46:00.302Z+0530",
+  "offline_mode_enabled": "0",
+  "device_name": "moto g42",
+  "environment": "production",
+  "needs_response_details": "1",
+  "attribution_deeplink": "1",
+  "package_name": "social.hunch.app",
+  "os_name": "android",
+  "ui_mode": "1",
+  "gps_adid_src": "service",
+  "tracking_enabled": "1",
+  "ff_first_session_delay": "1"
+ },
+ "dev_sess": {
+  "store_name_from_system": "com.android.vending",
+  "gps_adid_attempt": "1",
+  "country": "IN",
+  "api_level": "31",
+  "hardware_name": "S2SE32.28-28-4",
+  "app_version": "3.2.33",
+  "app_token": "vf3lochhmgw0",
+  "installed_at": "2026-10-07T01:10:34.279Z+0530",
+  "created_at": "2026-10-07T01:10:48.959Z+0530",
+  "wait_total": "0.0",
+  "device_type": "phone",
+  "language": "en",
+  "gps_adid": "e7ababf5-88cc-4991-ae51-bf191dcd240a",
+  "foreground": "1",
+  "connectivity_type": "1",
+  "ff_first_session_delay": "1",
+  "device_manufacturer": "motorola",
+  "display_width": "1080",
+  "device_name": "moto g42",
+  "needs_response_details": "1",
+  "os_build": "S2SE32.28-28-4",
+  "updated_at": "2026-10-07T01:10:34.279Z+0530",
+  "cpu_type": "arm64-v8a",
+  "retry_count": "0",
+  "screen_size": "normal",
+  "screen_format": "long",
+  "last_error": "0",
+  "gps_adid_src": "service",
+  "wait_time": "0.0",
+  "os_version": "12",
+  "first_error": "0",
+  "android_uuid": "009049a6-20d9-4511-9f25-705bced12ee5",
+  "sent_at": "2026-10-07T01:10:49.032Z+0530",
+  "offline_mode_enabled": "0",
+  "environment": "production",
+  "screen_density": "high",
+  "attribution_deeplink": "1",
+  "session_count": "1",
+  "display_height": "2237",
+  "package_name": "social.hunch.app",
+  "initiating_package_name": "com.android.vending",
+  "os_name": "android",
+  "ui_mode": "1",
+  "enqueue_size": "0",
+  "tracking_enabled": "1"
+ },
+ "dev_click": {
+  "country": "IN",
+  "api_level": "31",
+  "hardware_name": "S2SE32.28-28-4",
+  "app_version": "3.2.33",
+  "partner_params": "{\"mixpanel_uuid\":\"$device:5357c21a-82a8-4768-bf91-bf52bd91b093\"}",
+  "app_token": "vf3lochhmgw0",
+  "installed_at": "2026-10-07T01:10:34.279Z+0530",
+  "device_type": "phone",
+  "language": "en",
+  "gps_adid": "e7ababf5-88cc-4991-ae51-bf191dcd240a",
+  "source": "install_referrer",
+  "foreground": "1",
+  "connectivity_type": "1",
+  "os_build": "S2SE32.28-28-4",
+  "click_time": "2026-10-07T01:07:25.000Z+0530",
+  "cpu_type": "arm64-v8a",
+  "install_version": "3.2.33",
+  "screen_size": "normal",
+  "gps_adid_src": "service",
+  "subsession_count": "1",
+  "sent_at": "2026-10-07T01:10:49.106Z+0530",
+  "offline_mode_enabled": "0",
+  "screen_density": "high",
+  "session_count": "1",
+  "ui_mode": "1",
+  "gps_adid_attempt": "1",
+  "session_length": "0",
+  "created_at": "2026-10-07T01:10:49.068Z+0530",
+  "referrer_api": "google",
+  "ff_first_session_delay": "1",
+  "device_manufacturer": "motorola",
+  "display_width": "1080",
+  "time_spent": "0",
+  "device_name": "moto g42",
+  "needs_response_details": "1",
+  "updated_at": "2026-10-07T01:10:34.279Z+0530",
+  "screen_format": "long",
+  "click_time_server": "2026-10-07T01:07:24.000Z+0530",
+  "os_version": "12",
+  "google_play_instant": "0",
+  "install_begin_time_server": "2026-10-07T01:07:30.000Z+0530",
+  "android_uuid": "009049a6-20d9-4511-9f25-705bced12ee5",
+  "referrer": "adjust_reftag=c9WQljjOu6Lc2&utm_source=Spyke+Media&utm_campaign=SOHYPE_ADH&utm_content=%7Baffiliate_id%7D",
+  "environment": "production",
+  "attribution_deeplink": "1",
+  "install_begin_time": "2026-10-07T01:07:31.000Z+0530",
+  "display_height": "2237",
+  "package_name": "social.hunch.app",
+  "os_name": "android",
+  "tracking_enabled": "1"
+ },
+ "dev_attr": {
+  "gps_adid_attempt": "1",
+  "api_level": "31",
+  "app_version": "3.2.33",
+  "app_token": "vf3lochhmgw0",
+  "created_at": "2026-10-07T01:10:52.479Z+0530",
+  "device_type": "phone",
+  "gps_adid": "e7ababf5-88cc-4991-ae51-bf191dcd240a",
+  "foreground": "1",
+  "ff_first_session_delay": "1",
+  "device_name": "moto g42",
+  "needs_response_details": "1",
+  "gps_adid_src": "service",
+  "initiated_by": "backend",
+  "os_version": "12",
+  "android_uuid": "009049a6-20d9-4511-9f25-705bced12ee5",
+  "sent_at": "2026-10-07T01:10:52.491Z+0530",
+  "offline_mode_enabled": "0",
+  "environment": "production",
+  "attribution_deeplink": "1",
+  "package_name": "social.hunch.app",
+  "os_name": "android",
+  "ui_mode": "1",
+  "tracking_enabled": "1"
+ },
+ "sec": 1791342960,
+ "click_sec": 1791342750
+}

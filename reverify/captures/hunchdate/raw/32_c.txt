@@ -1,0 +1,12 @@
+GET https://firebase-settings.crashlytics.com/spi/v2/platforms/android/gmp/1%3A871858590108%3Aandroid%3A65909dfd632fb7809eb859/settings?build_version=306&display_version=3.2.33 HTTP/1.1
+Accept: application/json
+X-Crashlytics-Installation-ID: dZ8qCW6mT8OSqw8H977Q2Y
+X-Crashlytics-Device-Model: motorolamoto g42
+X-Crashlytics-OS-Build-Version: 4140d-bd21d
+X-Crashlytics-OS-Display-Version: 12
+X-Crashlytics-API-Client-Version: 2.1.0
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)
+Host: firebase-settings.crashlytics.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+

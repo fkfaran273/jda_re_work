@@ -1,0 +1,8 @@
+HTTP/1.1 302 Found
+Date: Wed, 07 Oct 2026 19:13:26 GMT
+Content-Length: 932
+Connection: close
+Server: nginx/1.18.0 (Ubuntu)
+Location: https://app.adjust.com/2015o4dz?campaign=HM2&adgroup=HM2_1722_&click_id=57HwnlnOdmhUtN3MvJN9l6&ip_address=%7Bloop_id%7D&gps_adid=9cde459e-fa49-4df9-85bc-f87f54c85e96&install_callback=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fpostback%3Fclick_id%3D57HwnlnOdmhUtN3MvJN9l6&event_callback_4vpab5=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fevents%3Fclick_id%3D57HwnlnOdmhUtN3MvJN9l6%26goal%3D4vpab5
+
+<p>Found. Redirecting to <a href="https://app.adjust.com/2015o4dz?campaign=HM2&amp;adgroup=HM2_1722_&amp;click_id=57HwnlnOdmhUtN3MvJN9l6&amp;ip_address=%7Bloop_id%7D&amp;gps_adid=9cde459e-fa49-4df9-85bc-f87f54c85e96&amp;install_callback=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fpostback%3Fclick_id%3D57HwnlnOdmhUtN3MvJN9l6&amp;event_callback_4vpab5=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fevents%3Fclick_id%3D57HwnlnOdmhUtN3MvJN9l6%26goal%3D4vpab5">https://app.adjust.com/2015o4dz?campaign=HM2&amp;adgroup=HM2_1722_&amp;click_id=57HwnlnOdmhUtN3MvJN9l6&amp;ip_address=%7Bloop_id%7D&amp;gps_adid=9cde459e-fa49-4df9-85bc-f87f54c85e96&amp;install_callback=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fpostback%3Fclick_id%3D57HwnlnOdmhUtN3MvJN9l6&amp;event_callback_4vpab5=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fevents%3Fclick_id%3D57HwnlnOdmhUtN3MvJN9l6%26goal%3D4vpab5</a></p>

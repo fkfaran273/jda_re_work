@@ -1,0 +1,47 @@
+{
+ "sigs": [
+  {
+   "sig": "432A73E36247F58D0B4D16A60C4FD2804EDA1AB3F75DE1B102A5EB9BE22D68A5BB91FED656A31E268F12F592D530F8D61DEAC2A65C56322EAFBD1293F00CD933DB8E3408674EA3CD7EC408519ABF4067AD5EE0E8BE7847E102828C8BF70F7547F57B13D6F5EDEFD128D576A2E0A930C3886B2DF5009781440D936EDDF84B9DCD4C392923931D9E59894AB1CDA9B21284F5027E54A01664F10BAC6622ED459C7F4F98C52F93349D94824F98672EF0CF40163F1AB4A5B36EB5F502E062975C06A6F8B0676FF333DA73327EFFDB68BEFD8A16177B782A072484A0DC1B037D90E482D4A040CBB8AAF82B431D1337841EE81A4C978806A60E4952A91BB1C01F4706D2F8101A257322E622BE5DC4784BA87BE257FD058AE56319889EA4114F314DE26A50EE16918DAC6FF36469B732A7E7EB3D",
+   "asid": "1300000",
+   "alg": "adj7",
+   "h": "8",
+   "nv": "3.62.0"
+  },
+  {
+   "sig": "432A73E36247F58D0B4D16A60C4FD280E09ACB145E44CAB29A257017AC1638AD75E6D03E6032DF759D8AFAC9300A8E46F5D3EEC97B70B3E0533A62340FAACD6B3104B748A59D84D5B4FED530F7D018B3408C29142C2762E32080E8A2885401F390EEF5FAC7891D2B67A2A945D2FE6AFD2505A5F3C0360D8BF407931F038E8699F6D44E784E18FDB485B88F15A4A50300E3828EA874131D75543E9AF8AA581909A8C066768375E2D7F23C116B38963AA0769C26DDBF6244D418CC12B324CF55E8BF711373DB25D5F69034D5D952082A658A65CBC0CC59D1187EA5FC031F13ECA5CEDB41495C248B39ADB175A06891CA8E957C8845AA0E492F300ACFBBCAE2DCCD430384560F8BBF103E74E28406D70BE351FDC38F9846E5DAAEAF084950D2E08185F7F6F306DCE3A83167362D3B2E3BDB",
+   "asid": "1300000",
+   "alg": "adj7",
+   "h": "8",
+   "nv": "3.62.0"
+  },
+  {
+   "sig": "74D8B7E664AC8A344FBC82216DDE69E4B5210A54FB5ED4B5CD298C5D388EC8F0F91391666AFC9D71DA6EC96F90DAE5C42A4852E61253F0722CB0118D5DFBC807098D0437D99305E2E5B70B48DB430D67CA909C3CC0DDFB9005A684940BDD97FF6BCBB1E866F1D6B2E1121A2F23B7D0CC5A53662908F4617D80C4D2CFBE24968DFCD487371997057F1C98C44B2DBCCAAF146DA5EB15F9E80BD1F1A1F3D47234909A9B43AE7CA10D4A2446659A0E95CE37B49E4C4600BC206741BEC05D5A08F514672E07FD7641FF1BEC969CFEBB5C06B9CE87A1446A59115B4399534637A30F47CAA733603030CBEBF69BE5CA5C5580C7382C4021488995F3960A32BFF351DB8838C500510C6EA705163543000751433D2FB68ACA122CEC9947BFB24FA97D0DFFF23B271E89A8934078B7424522CE04F3",
+   "asid": "1300000",
+   "alg": "adj7",
+   "h": "8",
+   "nv": "3.62.0"
+  },
+  {
+   "sig": "22007C3E3961CB0E07C96B7326DAC32B2EA217F7D49C752A8C1F62DB9B95536E3DE424FE869306BC63FDF0D54CB9E11CD72552494075F2BCBA5DFB01448B0E9055B7733F8E92DDA4C5C8102313B774BBD2EF882ACF6DA537BE45DEDDFF7FB3F28D305E55AD1B10F5F87711264C193006DAFB3667B0AC026283D90008707E48EACEA5FD7D57B3C759FDBEE1E629E76A7AA03B435260056A4701E14EBE4582A13D20A63CCDB1C5B4059554949F889A0065270F3503E269CAE8994DF5D484DEFA6EACD01E0C4E8B47B2FC17D3591DD7CB511276B895FA97314BA4BBFB107D08D60BBE3E06DFBD0E1ED2E343614A57A119976A3CE3C7F1D764B4F570BE7D1A42DD2C63029714484780E3732E03C4F1D30FA2100A3EB351C48DA373088DE0ACE67852F852694E615AEADD509FE5BED3C24C64",
+   "asid": "1300000",
+   "alg": "adj7",
+   "h": "8",
+   "nv": "3.62.0"
+  }
+ ],
+ "responses": [
+  "{\"app_token\":\"smxi7gqwu39c\",\"adid\":\"556f8e2d5f4fbce87a7bdfab869bbebe\",\"ask_in\":2000}",
+  "{\"app_token\":\"smxi7gqwu39c\",\"adid\":\"556f8e2d5f4fbce87a7bdfab869bbebe\"}",
+  "{\"app_token\":\"smxi7gqwu39c\",\"adid\":\"556f8e2d5f4fbce87a7bdfab869bbebe\",\"attribution\":{\"tracker_token\":\"248wk8ym\",\"tracker_name\":\"VL-Alliance::HM2::HM2_1722_\",\"network\":\"VL-Alliance\",\"campaign\":\"HM2\",\"adgroup\":\"HM2_1722_\",\"engagement_time\":\"2026-10-06T06:24:12Z\",\"installed_at\":\"2026-10-06T06:25:42Z\",\"first_session_time\":\"2026-10-06T06:25:42Z\",\"is_reattributed\":false,\"is_redownload_install\":false}"
+ ],
+ "queries": [
+  "/attribution?gps_adid_attempt=1&api_level=37&app_version=3.0.4&app_token=smxi7gqwu39c&created_at=2026-10-06T11%3A55%3A45.180Z%2B0530&device_type=phone&gps_adid=39daafc6-f5c4-412d-bf0c-e4b9482547ca&foreground=1&device_name=Pixel%206a&needs_response_details=1&gps_adid_src=service&push_token=elO_UX5cR66PO8ev_8y9TV%3AAPA91bE3H2KMFD0rrse1-qJqYYLhT2Qz2ht0bO8RgzJytclm7LqYqZ9uVpSHFNrnK8GAVljnB4rQ-4KcTAZNfD7KdC-HoUGaPZPMd5kD0bBT1olptZpLalU&initiated_by=backend&os_version=17&android_uuid=d5c688a4-27a0-4218-af7e-2efb1a21d89e&sent_at=2026-10-06T11%3A55%3A45.190Z%2B0530&offline_mode_enabled=0&environment=production&attribution_deeplink=1&package_name=in.hanafintech&os_name=android&ui_mode=1&tracking_enabled=1t",
+  "/attribution?gps_adid_attempt=1&api_level=37&app_version=3.0.4&app_token=smxi7gqwu39c&created_at=2026-10-06T11%3A55%3A45.180Z%2B0530&device_type=phone&gps_adid=39daafc6-f5c4-412d-bf0c-e4b9482547ca&foreground=1&device_name=Pixel%206a&needs_response_details=1&gps_adid_src=service&push_token=elO_UX5cR66PO8ev_8y9TV%3AAPA91bE3H2KMFD0rrse1-qJqYYLhT2Qz2ht0bO8RgzJytclm7LqYqZ9uVpSHFNrnK8GAVljnB4rQ-4KcTAZNfD7KdC-HoUGaPZPMd5kD0bBT1olptZpLalU&initiated_by=backend&os_version=17&android_uuid=d5c688a4-27a0-4218-af7e-2efb1a21d89e&sent_at=2026-10-06T11%3A55%3A45.190Z%2B0530&offline_mode_enabled=0&environment=production&attribution_deeplink=1&package_name=in.hanafintech&os_name=android&ui_mode=1&tracking_enabled=1 HTTP/1.1xsq"
+ ],
+ "bodies": [
+  "app_token=smxi7gqwu39c&installed_at=2026-10-06T11%3A55%3A17.820Z%2B0530&created_at=2026-10-06T11%3A55%3A42.321Z%2B0530&wait_total=0.0&device_type=phone&language=en&gps_adid=39daafc6-f5c4-412d-bf0c-e4b9482547ca&foreground=1&connectivity_type=1&device_manufacturer=Google&display_width=1080&device_name=Pixel+6a&needs_response_details=1&os_build=CP2A.260705.006&updated_at=2026-10-06T11%3A55%3A17.820Z%2B0530&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&screen_format=long&last_error=0&gps_adid_src=service&push_token=elO_UX5cR66PO8ev_8y9TV%3AAPA91bE3H2KMFD0rrse1-qJqYYLhT2Qz2ht0bO8RgzJytclm7LqYqZ9uVpSHFNrnK8GAVljnB4rQ-4KcTAZNfD7KdC-HoUGaPZPMd5kD0bBT1olptZpLalU&wait_time=0.0&os_version=17&first_error=0&android_uuid=d5c688a4-27a0-4218-af7e-2efb1a21d89e&sent_at=2026-10-06T11%3A55%3A42.356Z%2B0530&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&session_count=1&display_height=2400&package_name=in.hanafintech&initiating_package_name=com.android.vending&os_name=android&ui_mode=1&enqueue_size=0&tracking_enabled=1",
+  "app_token=smxi7gqwu39c&installed_at=2026-10-06T11%3A55%3A17.820Z%2B0530&device_type=phone&language=en&gps_adid=39daafc6-f5c4-412d-bf0c-e4b9482547ca&source=install_referrer&foreground=1&connectivity_type=1&os_build=CP2A.260705.006&click_time=2026-10-06T11%3A54%3A14.000Z%2B0530&cpu_type=arm64-v8a&install_version=3.0.4&screen_size=normal&gps_adid_src=service&subsession_count=1&sent_at=2026-10-06T11%3A55%3A42.373Z%2B0530&offline_mode_enabled=0&screen_density=high&session_count=1&ui_mode=1&gps_adid_attempt=1&session_length=0&created_at=2026-10-06T11%3A55%3A42.370Z%2B0530&referrer_api=google&device_manufacturer=Google&display_width=1080&time_spent=0&device_name=Pixel+6a&needs_response_details=1&updated_at=2026-10-06T11%3A55%3A17.820Z%2B0530&screen_format=long&push_token=elO_UX5cR66PO8ev_8y9TV%3AAPA91bE3H2KMFD0rrse1-qJqYYLhT2Qz2ht0bO8RgzJytclm7LqYqZ9uVpSHFNrnK8GAVljnB4rQ-4KcTAZNfD7KdC-HoUGaPZPMd5kD0bBT1olptZpLalU&click_time_server=2026-10-06T11%3A54%3A13.000Z%2B0530&os_version=17&google_play_instant=0&install_begin_time_server=2026-10-06T11%3A54%3A15.000Z%2B0530&android_uuid=d5c688a4-27a0-4218-af7e-2efb1a21d89e&referrer=adjust_reftag%3DcmTHC4v8KOvVM%26utm_source%3DVL-Alliance%26utm_campaign%3DHM2%26utm_content%3DHM2_1722_&environment=production&attribution_deeplink=1&install_begin_time=2026-10-06T11%3A54%3A15.000Z%2B0530&display_height=2400&package_name=in.hanafintech&os_name=android&tracking_enabled=1",
+  "app_token=smxi7gqwu39c&created_at=2026-10-06T11%3A55%3A45.180Z%2B0530&device_type=phone&gps_adid=39daafc6-f5c4-412d-bf0c-e4b9482547ca&foreground=1&device_name=Pixel%206a&needs_response_details=1&gps_adid_src=service&push_token=elO_UX5cR66PO8ev_8y9TV%3AAPA91bE3H2KMFD0rrse1-qJqYYLhT2Qz2ht0bO8RgzJytclm7LqYqZ9uVpSHFNrnK8GAVljnB4rQ-4KcTAZNfD7KdC-HoUGaPZPMd5kD0bBT1olptZpLalU&initiated_by=backend&os_version=17&android_uuid=d5c688a4-27a0-4218-af7e-2efb1a21d89e&sent_at=2026-10-06T11%3A55%3A45.190Z%2B0530&offline_mode_enabled=0&environment=production&attribution_deeplink=1&package_name=in.hanafintech&os_name=android&ui_mode=1&tracking_enabled=1",
+  "app_token=smxi7gqwu39c&wait_total=0.0&device_type=phone&language=en&gps_adid=39daafc6-f5c4-412d-bf0c-e4b9482547ca&foreground=1&connectivity_type=1&os_build=CP2A.260705.006&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&gps_adid_src=service&subsession_count=1&wait_time=0.0&first_error=0&sent_at=2026-10-06T11%3A55%3A47.306Z%2B0530&offline_mode_enabled=0&screen_density=high&session_count=1&ui_mode=1&enqueue_size=0&gps_adid_attempt=1&event_count=1&session_length=5&created_at=2026-10-06T11%3A55%3A47.285Z%2B0530&device_manufacturer=Google&display_width=1080&event_token=y3sjx5&time_spent=5&device_name=Pixel+6a&needs_response_details=1&screen_format=long&last_error=0&push_token=elO_UX5cR66PO8ev_8y9TV%3AAPA91bE3H2KMFD0rrse1-qJqYYLhT2Qz2ht0bO8RgzJytclm7LqYqZ9uVpSHFNrnK8GAVljnB4rQ-4KcTAZNfD7KdC-HoUGaPZPMd5kD0bBT1olptZpLalU&seq=1&os_version=17&callback_params=%7B%22google_adid%22%3A%2239daafc6-f5c4-412d-bf0c-e4b9482547ca%22%7D&android_uuid=d5c688a4-27a0-4218-af7e-2efb1a21d89e&environment=production&attribution_deeplink=1&display_height=2400&package_name=in.hanafintech&os_name=android&tracking_enabled=1"
+ ]
+}

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="7" BitFlags="2100">
+  <SessionTimers ClientConnected="2026-10-07T13:05:37.1558153+05:30" ClientBeginRequest="2026-10-07T13:05:37.1663688+05:30" GotRequestHeaders="2026-10-07T13:05:37.1663688+05:30" ClientDoneRequest="2026-10-07T13:05:37.1663688+05:30" GatewayTime="0" DNSTime="7" TCPConnectTime="7" HTTPSHandshakeTime="34" ServerConnected="2026-10-07T13:05:37.1819702+05:30" FiddlerBeginRequest="2026-10-07T13:05:37.1819702+05:30" ServerGotRequest="2026-10-07T13:05:37.1819702+05:30" ServerBeginResponse="0001-01-01T00:00:00" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="0001-01-01T00:00:00" ClientBeginResponse="2026-10-07T13:05:37.1819702+05:30" ClientDoneResponse="2026-10-07T13:05:37.1819702+05:30" />
+  <PipeInfo />
+  <TunnelInfo BytesEgress="0" BytesIngress="0" />
+  <SessionFlags>
+    <SessionFlag N="https-client-version" V="Tls13" />
+    <SessionFlag N="x-supported-client-tls-protocols" V="15360" />
+    <SessionFlag N="x-egressport" V="13944" />
+    <SessionFlag N="x-responsebodytransferlength" V="0" />
+    <SessionFlag N="x-clientport" V="13939" />
+    <SessionFlag N="https-server-version" V="Tls13" />
+    <SessionFlag N="https-client-snihostname" V="firebase-settings.crashlytics.com" />
+    <SessionFlag N="x-clientip" V="::ffff:127.0.0.1" />
+    <SessionFlag N="https-client-sessionid" V="B6 CB DA 32 52 7A CC EE DF 39 E5 03 D5 E8 B9 FD D3 EF C7 96 B9 1D 87 39 32 B5 A0 FD 58 34 85 74" />
+    <SessionFlag N="x-hostip" V="142.250.182.99" />
+    <SessionFlag N="x-processinfo" V="python:34048" />
+    <SessionFlag N="https-server-cipher" V="Aes256 256bits" />
+  </SessionFlags>
+</Session>

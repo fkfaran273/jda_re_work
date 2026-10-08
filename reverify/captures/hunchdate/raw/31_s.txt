@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+FiddlerGateway: Direct
+StartTime: 01:10:45.486
+Connection: close
+
+Encrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.
+
+Secure Protocol: Tls13
+Cipher: Aes128 128bits
+Hash Algorithm: Sha256 ?bits
+Key Exchange: None 255bits
+
+== Server Certificate ==========
+[Subject]
+  CN=*.mobile-messenger.intercom.com
+
+[Issuer]
+  CN=Amazon RSA 2048 M04, O=Amazon, C=US
+
+[Serial Number]
+  04C14F1E7133608310617F4CE987F838
+
+[Not Before]
+  15-08-2026 05:30:00
+
+[Not After]
+  01-03-2027 05:29:59
+
+[Thumbprint]
+  2261642434205F2C2E24D9F3C465BD99C5361311
+
+[SubjectAltNames]
+*.mobile-messenger.intercom.com

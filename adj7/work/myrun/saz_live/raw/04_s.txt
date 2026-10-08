@@ -1,0 +1,8 @@
+HTTP/1.1 502 Fiddler - DNS Lookup Failed
+Date: Wed, 07 Oct 2026 19:13:27 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: close
+Cache-Control: no-cache, must-revalidate
+Timestamp: 00:43:27.252
+
+[Fiddler] DNS Lookup for "details?id=in.hanafintech&amp;referrer=adjust_reftag%3DcIwptD1kMIAe6%26utm_source%3DVL-Alliance%26utm_campaign%3DHM2%26utm_content%3DHM2_1722_" failed. System.Net.Sockets.SocketException No such host is known                                                                                                                                                                                                                                                                                      

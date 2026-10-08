@@ -1,0 +1,16 @@
+{
+ "host": "analytics.adjust.com",
+ "att_status": "0",
+ "nirio_adj7": {
+  "status": 200,
+  "network": "Organic",
+  "tracker_token": "pf7enwj",
+  "body": "{\"app_token\":\"cv4d2hlazp4w\",\"adid\":\"04b529e4445ade26859bbd52088058de\",\"attribution\":{\"tracker_token\":\"pf7enwj\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"in"
+ },
+ "adj9_shape": {
+  "status": 200,
+  "network": "Organic",
+  "tracker_token": "pf7enwj",
+  "body": "{\"app_token\":\"cv4d2hlazp4w\",\"adid\":\"04b529e4445ade26859bbd52088058de\",\"attribution\":{\"tracker_token\":\"pf7enwj\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"in"
+ }
+}

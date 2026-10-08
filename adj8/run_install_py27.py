@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 """run_install_py27.py -- the adj8 funnel on Python 2.7 (same wire format as
-run_install.py; config from campaign_data.py + device_data.py; signing from
-adj8_pure_py27.py, pure Python).
+run_install.py; the campaign dict is hardcoded below, the device profile
+comes from device_data.py; signing from adj8_pure_py27.py, pure Python).
 
     python2.7 run_install_py27.py --dry-run      # sign, send nothing
-    python2.7 run_install_py27.py                # live run (customer)
-    python2.7 run_install_py27.py graddef        # another campaign
+    python2.7 run_install_py27.py                # live run
+    python2.7 run_install_py27.py --event tok    # also send one in-app event
 """
 from __future__ import print_function
 
@@ -60,7 +60,6 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
 import adj8_pure_py27 as S
-import campaign_data as C
 import device_data as D
 
 def say(msg):
@@ -79,28 +78,50 @@ _args2 = [a for a in sys.argv[1:] if not a.startswith("-")]
 if SEND_EVENT and _args2:
     EVENT_TOKEN = _args2[-1]
 
-_args = []
-_skip = False
-for _a in sys.argv[1:]:
-    if _skip:
-        _skip = False
-        continue
-    if _a == "--gap":
-        _skip = True          # its numeric value is not an app name
-        continue
-    if not _a.startswith("-"):
-        _args.append(_a)
-if _args and _args[0] not in C.CAMPAIGNS:
-    raise SystemExit("unknown app %r - have: %s"
-                     % (_args[0], ", ".join(sorted(C.CAMPAIGNS))))
-campaign = C.get(_args[0]) if _args else C.get()
 
 # ==========================================================================
-# The profiles.  Everything the requests need comes from these two files --
-# the signer's subset (cert_sha1, client_sdk, adj_signing_id, ...) goes into
-# every sign_request call.
+# The campaign (the backend's format, hardcoded) and the funnel config.
+# The signer reads cert_sha1 and the 'adjust' block straight from
+# campaign_data with every sign_request call.
 # ==========================================================================
-CFG = C.signer_fields(campaign)
+campaign_data = {
+    'app_name': 'be Customer',
+    'package_name': 'xyz.be.customer',
+    'app_size': 23,
+    'app_version_name': u'2.6.153',
+    'app_version_code': u'206153',
+
+    'tracker': 'adjust',
+    'adjust': {
+        "app_token": "7z9fjy072rgg",
+        "sdk": u'android5.7.0',
+        "native_version": "3.67.0",
+        "adj_signing_id": "1400000",
+        "headers_id": "9",
+        "algorithm": "adj8",
+    },
+
+    'supported_os': '8.0',
+
+    # SHA-1 of the APK signing cert (META-INF/BNDLTOOL.RSA of the
+    # device-pulled base.apk); confirmed on-device by the LSPosed oracle.
+    "cert_sha1": "07e6d5074866a3b8e1fb6efcb4714aff91624550",
+    # adj8 (3.x) has no adj_verification -- that field is 5.x only.
+    "adj_verification": None,
+}
+
+FUNNEL = {
+    # ACTIVE (2026-10-04): mobpine forwards sub3 as gps_adid, so sub3={gaid}
+    # makes the click device-matched.  Booked NON-ORGANIC live from this PC
+    # (fresh GAID, pure signer).
+    "click_link": ("http://clicks.mobpine.com/api/track/v1/click"
+                   "?aff_id=3&offer_id=23472302&sub3={gaid}"),
+    "agent": "",
+    # click -> install gap (s); Adjust silently drops sdk_clicks under ~10 s
+    "install_after": 48,
+    "poll_delays": [30, 45, 60, 60],
+}
+
 DEVICE = D.DEVICE
 PARAMS = D.device_to_params(DEVICE)
 APP_UA = D.device_headers(DEVICE)
@@ -120,12 +141,11 @@ def elog(*parts):
     _LOG_F.flush()
 
 # ==========================================================================
-# THE API LAYER -- what each endpoint actually puts on the wire
-# (field-for-field the genuine adj8 captures: session 44, click 48,
-# attribution 22 fields)
+# THE API LAYER -- each endpoint's full field set, field-for-field the
+# genuine adj8 captures (session 44, click 48, attribution 22 fields).
 # ==========================================================================
 MINT_SKEW = -2
-INSTALL_AFTER = int(CFG.get("install_after", 48))
+INSTALL_AFTER = int(FUNNEL.get("install_after", 48))
 
 def signing_second():
     # sits a little in the past so created_at/sent_at never claim a moment
@@ -137,55 +157,75 @@ def _stamp(ts, ms):
     return dt.strftime("%Y-%m-%dT%H:%M:%S." + ("%03d" % ms) + "Z"
                        + D.tz_label(DEVICE))
 
-# the SDK's first-session counters (genuine be session shape; the click and
-# attribution requests carry none of them)
-_SESSION_COUNTERS = {"enqueue_size": "0", "first_error": "0",
-                     "last_error": "0", "retry_count": "0",
-                     "wait_time": "0.0", "wait_total": "0.0"}
+def sign(fields, kind, sec):
+    """fields -> the Authorization header value."""
+    return S.sign_request(fields, kind, campaign_data, second=sec)
 
-def _common(gaid, android_uuid):
-    out = {
-        "app_token": CFG["app_token"],
-        "app_version": CFG["app_version"],
-        "package_name": CFG["package_name"],
+def build_session_request(gaid, android_uuid, sec, click_sec=None):
+    installed = _stamp(sec if click_sec is None
+                       else click_sec + INSTALL_AFTER, 774)
+    return {
+        "app_token": campaign_data["adjust"]["app_token"],
+        "app_version": campaign_data["app_version_name"],
+        "package_name": campaign_data["package_name"],
         "gps_adid": gaid, "android_uuid": android_uuid,
         "environment": "production", "device_type": "phone",
         "gps_adid_src": "service", "gps_adid_attempt": "1",
         "foreground": "1", "needs_response_details": "1",
         "attribution_deeplink": "1", "offline_mode_enabled": "0",
         "ui_mode": "1", "tracking_enabled": "1", "os_name": "android",
-    }
-    out.update(PARAMS)
-    if campaign.get("device_ids"):
-        # the graddef SDK carries a per-install external id and the GMS App
-        # Set ID on every request (booked capture yamistar_capture.json)
-        out["external_device_id"] = campaign.get("external_device_id", "")
-        out["google_app_set_id"] = campaign.get("google_app_set_id", "")
-    return out
-
-def build_session_request(gaid, android_uuid, sec, click_sec=None):
-    f = _common(gaid, android_uuid)
-    f.update(_SESSION_COUNTERS)
-    installed = _stamp(sec if click_sec is None
-                       else click_sec + INSTALL_AFTER, 774)
-    f.update({
+        "api_level": PARAMS["api_level"], "os_version": PARAMS["os_version"],
+        "device_name": PARAMS["device_name"],
+        "device_manufacturer": PARAMS["device_manufacturer"],
+        "hardware_name": PARAMS["hardware_name"],
+        "os_build": PARAMS["os_build"], "language": PARAMS["language"],
+        "country": PARAMS["country"],
+        "display_width": PARAMS["display_width"],
+        "display_height": PARAMS["display_height"],
+        "screen_density": PARAMS["screen_density"],
+        "screen_size": PARAMS["screen_size"],
+        "screen_format": PARAMS["screen_format"],
+        "cpu_type": PARAMS["cpu_type"],
+        "connectivity_type": PARAMS["connectivity_type"],
+        "enqueue_size": "0", "first_error": "0", "last_error": "0",
+        "retry_count": "0", "wait_time": "0.0", "wait_total": "0.0",
         "store_name_from_system": "com.android.vending",
         "initiating_package_name": "com.android.vending",
         "session_count": "1",
         "created_at": _stamp(sec, 928), "sent_at": _stamp(sec, 942),
         "installed_at": installed, "updated_at": installed,
-    })
-    return f
+    }
 
 def build_click_request(gaid, android_uuid, sec, referrer, click_sec=None):
-    f = _common(gaid, android_uuid)
     click_sec = sec if click_sec is None else click_sec
     installed = _stamp(click_sec + INSTALL_AFTER, 774)
     begin = click_sec + 8
-    f.update({
+    return {
+        "app_token": campaign_data["adjust"]["app_token"],
+        "app_version": campaign_data["app_version_name"],
+        "package_name": campaign_data["package_name"],
+        "gps_adid": gaid, "android_uuid": android_uuid,
+        "environment": "production", "device_type": "phone",
+        "gps_adid_src": "service", "gps_adid_attempt": "1",
+        "foreground": "1", "needs_response_details": "1",
+        "attribution_deeplink": "1", "offline_mode_enabled": "0",
+        "ui_mode": "1", "tracking_enabled": "1", "os_name": "android",
+        "api_level": PARAMS["api_level"], "os_version": PARAMS["os_version"],
+        "device_name": PARAMS["device_name"],
+        "device_manufacturer": PARAMS["device_manufacturer"],
+        "hardware_name": PARAMS["hardware_name"],
+        "os_build": PARAMS["os_build"], "language": PARAMS["language"],
+        "country": PARAMS["country"],
+        "display_width": PARAMS["display_width"],
+        "display_height": PARAMS["display_height"],
+        "screen_density": PARAMS["screen_density"],
+        "screen_size": PARAMS["screen_size"],
+        "screen_format": PARAMS["screen_format"],
+        "cpu_type": PARAMS["cpu_type"],
+        "connectivity_type": PARAMS["connectivity_type"],
         "source": "install_referrer", "referrer_api": "google",
         "referrer": referrer, "google_play_instant": "0",
-        "install_version": CFG["app_version"],
+        "install_version": campaign_data["app_version_name"],
         "session_count": "1", "session_length": "0",
         "subsession_count": "1", "time_spent": "0",
         "created_at": _stamp(sec, 961), "sent_at": _stamp(sec, 970),
@@ -194,15 +234,14 @@ def build_click_request(gaid, android_uuid, sec, referrer, click_sec=None):
         "click_time_server": _stamp(click_sec - 2, 0),
         "install_begin_time": _stamp(begin, 0),
         "install_begin_time_server": _stamp(begin - 2, 0),
-    })
-    return f
+    }
 
 def build_attribution_request(gaid, android_uuid, sec):
     return {
         "initiated_by": "backend", "gps_adid_attempt": "1",
         "api_level": PARAMS["api_level"],
-        "app_version": CFG["app_version"],
-        "app_token": CFG["app_token"],
+        "app_version": campaign_data["app_version_name"],
+        "app_token": campaign_data["adjust"]["app_token"],
         "os_version": PARAMS["os_version"],
         "created_at": _stamp(sec, 666),
         "device_type": "phone", "gps_adid": gaid, "foreground": "1",
@@ -212,26 +251,30 @@ def build_attribution_request(gaid, android_uuid, sec):
         "device_name": PARAMS["device_name"],
         "environment": "production", "needs_response_details": "1",
         "attribution_deeplink": "1",
-        "package_name": CFG["package_name"],
+        "package_name": campaign_data["package_name"],
         "os_name": "android", "ui_mode": "1",
         "gps_adid_src": "service", "tracking_enabled": "1",
     }
 
 def build_event_request(gaid, android_uuid, sec):
-    f = _common(gaid, android_uuid)
-    f.update({
+    fields = {
+        "app_token": campaign_data["adjust"]["app_token"],
+        "app_version": campaign_data["app_version_name"],
+        "package_name": campaign_data["package_name"],
+        "gps_adid": gaid, "android_uuid": android_uuid,
+        "environment": "production", "device_type": "phone",
+        "gps_adid_src": "service", "gps_adid_attempt": "1",
+        "foreground": "1", "needs_response_details": "1",
+        "attribution_deeplink": "1", "offline_mode_enabled": "0",
+        "ui_mode": "1", "tracking_enabled": "1", "os_name": "android",
         "event_count": "1", "seq": "1",
         "session_count": "1", "session_length": "0",
         "subsession_count": "1", "time_spent": "0",
         "created_at": _stamp(sec, 873), "sent_at": _stamp(sec, 940),
-    })
+    }
     if EVENT_TOKEN:
-        f["event_token"] = EVENT_TOKEN
-    return f
-
-def sign(fields, kind, sec):
-    """fields -> the Authorization header value."""
-    return S.sign_request(fields, kind, CFG, second=sec)
+        fields["event_token"] = EVENT_TOKEN
+    return fields
 
 def call(method, path, fields, auth):
     body = urlencode(fields) if method == "POST" else None
@@ -239,7 +282,7 @@ def call(method, path, fields, auth):
               else path + "?" + _urlencode_get(fields))
     elog("--> %s https://app.adjust.com%s" % (method, target))
     elog("    headers: Client-SDK: %s | User-Agent: %s"
-         % (CFG["client_sdk"], APP_UA))
+         % (campaign_data["adjust"]["sdk"], APP_UA))
     elog("    headers: Authorization: %s...  (signature truncated here)"
          % auth[:72])
     if body is not None:
@@ -247,7 +290,7 @@ def call(method, path, fields, auth):
     c = httpclient.HTTPSConnection("app.adjust.com", 443, timeout=30)
     try:
         c.putrequest(method, target, skip_host=1, skip_accept_encoding=1)
-        c.putheader("Client-SDK", CFG["client_sdk"])
+        c.putheader("Client-SDK", campaign_data["adjust"]["sdk"])
         c.putheader("Authorization", auth)
         c.putheader("User-Agent", APP_UA)
         c.putheader("Host", "app.adjust.com")
@@ -284,18 +327,16 @@ JS_REPLACE = re.compile(
 UNIESC = re.compile(r"\\u([0-9a-fA-F]{4})")
 
 def _reftag_in(s):
-    """The adjust_reftag inside a referrer= value (a Location header, a
-    market:// URL or an html/js hop); None when there is none."""
+    """The adjust_reftag inside a referrer= value; None when there is none."""
     if "referrer=" not in s:
         return None
     ref = unquote(s.split("referrer=", 1)[1])
     return ref.split(";S.browser_fallback_url")[0]
 
 def _subst(url, gaid, dp2):
-    """Click-link macros: {gaid}/{dp2} as in adj9, plus {agent} (mobpine
-    sub2; an empty 'agent' field drops the param rather than sending a
-    literal '{agent}')."""
-    agent = str(campaign.get("agent", "") or "")
+    """Click-link macros: {gaid}/{dp2}, plus {agent} (mobpine sub2; an empty
+    'agent' drops the param rather than sending a literal '{agent}')."""
+    agent = str(FUNNEL.get("agent", "") or "")
     if "{agent}" in url and not agent:
         url = re.sub(r"[?&]sub2=\{agent\}", "", url)
     return (url.replace("{gaid}", gaid).replace("{dp2}", dp2 or gaid)
@@ -317,7 +358,7 @@ def _one_visit(url):
             c.request("GET", urlunsplit(
                 ("", "", parts.path or "/", parts.query, "")),
                 headers={"User-Agent": APP_UA,
-                         "Client-SDK": CFG["client_sdk"],
+                         "Client-SDK": campaign_data["adjust"]["sdk"],
                          "Accept": ("text/html,application/xhtml+xml,"
                                     "application/xml;q=0.9,*/*;q=0.8"),
                          "Accept-Encoding": "identity",
@@ -384,8 +425,7 @@ def open_click_link(gaid, dp2=None):
     web hop) and return the adjust_reftag the Play Store redirect hands
     back."""
     for attempt in (1, 2):
-        reftag, final_url = _one_visit(_subst(
-            campaign["click_link"], gaid, dp2))
+        reftag, final_url = _one_visit(_subst(FUNNEL["click_link"], gaid, dp2))
         if reftag:
             return reftag
         if attempt == 1:
@@ -398,16 +438,23 @@ def main():
     # default stays a random uuid4.
     gaid = os.environ.get("FUNNEL_GAID") or str(uuid.uuid4())
     android_uuid = str(uuid.uuid4())
-    if campaign.get("device_ids"):
-        campaign["external_device_id"] = os.urandom(8).encode("hex")
-        campaign["google_app_set_id"] = str(uuid.uuid4())
     started = time.time()
     elog("=" * 78)
     elog("LIVE FUNNEL  app=%s  gaid=%s  android_uuid=%s"
-         % (CFG["package_name"], gaid, android_uuid))
-    elog("click_link: %s" % _subst(campaign["click_link"], gaid, None))
+         % (campaign_data["package_name"], gaid, android_uuid))
+    elog("click_link: %s" % _subst(FUNNEL["click_link"], gaid, None))
     elog("UA: %s" % APP_UA)
     elog("=" * 78)
+
+    # the graddef SDK carries a per-install external id and the GMS App Set
+    # ID on every request (booked capture yamistar_capture.json)
+    ext_id = os.urandom(8).encode("hex")
+    aset_id = str(uuid.uuid4())
+    def with_device_ids(fields):
+        if FUNNEL.get("device_ids"):
+            fields["external_device_id"] = ext_id
+            fields["google_app_set_id"] = aset_id
+        return fields
 
     referrer = None
     if not DRY_RUN:
@@ -422,7 +469,7 @@ def main():
     # persisted so the device can be re-polled later (attribution lags
     # sometimes); one file per run
     with open(os.path.join(HERE, "last_run_py27.json"), "w") as _f:
-        json.dump({"app": CFG["package_name"], "gaid": gaid,
+        json.dump({"app": campaign_data["package_name"], "gaid": gaid,
                    "android_uuid": android_uuid, "reftag": referrer,
                    "click_second": click_second, "started": started}, _f,
                   indent=1)
@@ -431,8 +478,8 @@ def main():
         time.sleep(GAP)
     sec = signing_second()
     say("signing  /session ...")
-    fields = build_session_request(gaid, android_uuid, sec,
-                                   click_sec=click_second)
+    fields = with_device_ids(build_session_request(gaid, android_uuid, sec,
+                                                   click_sec=click_second))
     auth = sign(fields, "session", sec)
     adid = ""
     if DRY_RUN:
@@ -459,8 +506,9 @@ def main():
         time.sleep(12)
         sec = signing_second()
         say("signing  /sdk_click ...")
-        fields = build_click_request(gaid, android_uuid, sec, referrer,
-                                     click_sec=click_second)
+        fields = with_device_ids(build_click_request(gaid, android_uuid, sec,
+                                                     referrer,
+                                                     click_sec=click_second))
         auth = sign(fields, "click", sec)
         say("         %d fields" % len(fields))
         if not DRY_RUN:
@@ -474,7 +522,7 @@ def main():
             time.sleep(GAP)
         say("signing  /event ...")
         sec = signing_second()
-        fields = build_event_request(gaid, android_uuid, sec)
+        fields = with_device_ids(build_event_request(gaid, android_uuid, sec))
         auth = sign(fields, "event", sec)
         say("         %d fields" % len(fields))
         status, body = call("POST", "/event", fields, auth)
@@ -488,10 +536,11 @@ def main():
         return 0
 
     verdict = {}
-    for delay in CFG["poll_delays"]:
+    for delay in FUNNEL["poll_delays"]:
         time.sleep(delay)
         sec = signing_second()
-        fields = build_attribution_request(gaid, android_uuid, sec)
+        fields = with_device_ids(build_attribution_request(gaid, android_uuid,
+                                                           sec))
         auth = sign(fields, "attribution", sec)
         _status, body = call("GET", "/attribution", fields, auth)
         print(body)
@@ -520,10 +569,10 @@ def main():
     return 0
 
 if __name__ == "__main__":
-    say("campaign  %s / %s" % (CFG["package_name"], CFG["app_token"]))
+    say("campaign  %s / %s" % (campaign_data["package_name"], campaign_data["adjust"]["app_token"]))
     say("device    %s %s (Android %s, api %s)"
         % (PARAMS["device_manufacturer"], PARAMS["device_name"],
            PARAMS["os_version"], PARAMS["api_level"]))
     say("signer    adj8_pure_py27 (pure Python, cert %s...)"
-        % CFG["cert_sha1"][:12])
+        % campaign_data["cert_sha1"][:12])
     raise SystemExit(main())

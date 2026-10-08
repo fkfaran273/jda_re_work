@@ -1,0 +1,296 @@
+"""mylaws.py -- fully independent re-derivation of the adj7 laws.
+Nothing imported from adj7_pure. Written from the raw data + description only.
+"""
+import hashlib, hmac, struct, re
+
+# ---------------------------------------------------------------- constants
+SEED = bytes.fromhex(
+    "f110fb41676dba311f38c652c8f951ec"
+    "3db456c07b9166a509bef66cd870654b")
+DK37 = bytes.fromhex(
+    "2a4cc07960d647623cc386dcefafbf25"
+    "b669914d32cc8585a1ed7f920ef591eb")
+
+# ================================================================ PRNG =====
+# Bionic (Android libc) rand(): 31-word additive feedback generator.
+#   state r[0..30];  step: r[f] += r[b]  (mod 2^32);  output = word >> 1
+#   classic init f=3, b=0 after seeding.
+# Seed rule: r[0] = seed (signed 32-bit view); r[i] = 16807*r[i-1] mod 2^31-1
+#   (MINSTD chaining, negative wrapped positive). 310 warm-up draws.
+
+_A, _MOD31 = 16807, 2147483647
+
+
+class Bionic:
+    def __init__(self, seed):
+        s = int(seed) & 0xFFFFFFFF
+        if s == 0:
+            s = 1
+        w = s if s < 0x80000000 else s - 0x100000000     # signed view
+        self.r = [0] * 31
+        self.r[0] = w
+        p = w
+        for i in range(1, 31):
+            p = (_A * p) % _MOD31                        # always positive
+            self.r[i] = p
+        self.f, self.b = 3, 0
+        for _ in range(310):
+            self.step()
+
+    def step(self):
+        v = (self.r[self.f] + self.r[self.b]) & 0xFFFFFFFF
+        self.r[self.f] = v if v < _MOD31 else v - 0x100000000
+        self.f = (self.f + 1) % 31
+        self.b = (self.b + 1) % 31
+        return v >> 1
+
+
+def header_from_second(sec):
+    """8 draws XORed in pairs -> 4 big-endian 32-bit words = 16 bytes."""
+    g = Bionic(int(sec))
+    d = [g.step() for _ in range(8)]
+    words = [d[2 * i] ^ d[2 * i + 1] for i in range(4)]
+    return b"".join(w.to_bytes(4, "big") for w in words)
+
+
+# ================================================================ AES ======
+_SBOX = bytes([
+    0x63, 0x7C, 0x77, 0x7B, 0xF2, 0x6B, 0x6F, 0xC5, 0x30, 0x01, 0x67,
+    0x2B, 0xFE, 0xD7, 0xAB, 0x76, 0xCA, 0x82, 0xC9, 0x7D, 0xFA, 0x59,
+    0x47, 0xF0, 0xAD, 0xD4, 0xA2, 0xAF, 0x9C, 0xA4, 0x72, 0xC0, 0xB7,
+    0xFD, 0x93, 0x26, 0x36, 0x3F, 0xF7, 0xCC, 0x34, 0xA5, 0xE5, 0xF1,
+    0x71, 0xD8, 0x31, 0x15, 0x04, 0xC7, 0x23, 0xC3, 0x18, 0x96, 0x05,
+    0x9A, 0x07, 0x12, 0x80, 0xE2, 0xEB, 0x27, 0xB2, 0x75, 0x09, 0x83,
+    0x2C, 0x1A, 0x1B, 0x6E, 0x5A, 0xA0, 0x52, 0x3B, 0xD6, 0xB3, 0x29,
+    0xE3, 0x2F, 0x84, 0x53, 0xD1, 0x00, 0xED, 0x20, 0xFC, 0xB1, 0x5B,
+    0x6A, 0xCB, 0xBE, 0x39, 0x4A, 0x4C, 0x58, 0xCF, 0xD0, 0xEF, 0xAA,
+    0xFB, 0x43, 0x4D, 0x33, 0x85, 0x45, 0xF9, 0x02, 0x7F, 0x50, 0x3C,
+    0x9F, 0xA8, 0x51, 0xA3, 0x40, 0x8F, 0x92, 0x9D, 0x38, 0xF5, 0xBC,
+    0xB6, 0xDA, 0x21, 0x10, 0xFF, 0xF3, 0xD2, 0xCD, 0x0C, 0x13, 0xEC,
+    0x5F, 0x97, 0x44, 0x17, 0xC4, 0xA7, 0x7E, 0x3D, 0x64, 0x5D, 0x19,
+    0x73, 0x60, 0x81, 0x4F, 0xDC, 0x22, 0x2A, 0x90, 0x88, 0x46, 0xEE,
+    0xB8, 0x14, 0xDE, 0x5E, 0x0B, 0xDB, 0xE0, 0x32, 0x3A, 0x0A, 0x49,
+    0x06, 0x24, 0x5C, 0xC2, 0xD3, 0xAC, 0x62, 0x91, 0x95, 0xE4, 0x79,
+    0xE7, 0xC8, 0x37, 0x6D, 0x8D, 0xD5, 0x4E, 0xA9, 0x6C, 0x56, 0xF4,
+    0xEA, 0x65, 0x7A, 0xAE, 0x08, 0xBA, 0x78, 0x25, 0x2E, 0x1C, 0xA6,
+    0xB4, 0xC6, 0xE8, 0xDD, 0x74, 0x1F, 0x4B, 0xBD, 0x8B, 0x8A, 0x70,
+    0x3E, 0xB5, 0x66, 0x48, 0x03, 0xF6, 0x0E, 0x61, 0x35, 0x57, 0xB9,
+    0x86, 0xC1, 0x1D, 0x9E, 0xE1, 0xF8, 0x98, 0x11, 0x69, 0xD9, 0x8E,
+    0x94, 0x9B, 0x1E, 0x87, 0xE9, 0xCE, 0x55, 0x28, 0xDF, 0x8C, 0xA1,
+    0x89, 0x0D, 0xBF, 0xE6, 0x42, 0x68, 0x41, 0x99, 0x2D, 0x0F, 0xB0,
+    0x54, 0xBB, 0x16])
+INV_SBOX = bytes(_SBOX.index(i) for i in range(256))
+
+
+def key_expand_256(key):
+    """Textbook FIPS-197 AES-256 expansion -> 15 round keys (16B each)."""
+    nk, nr = 8, 14
+    w = [list(key[4 * i:4 * i + 4]) for i in range(nk)]
+    rcon = 1
+    for i in range(nk, 4 * (nr + 1)):
+        t = list(w[i - 1])
+        if i % nk == 0:
+            t = t[1:] + t[:1]                       # RotWord
+            t = [_SBOX[b] for b in t]               # SubWord
+            t[0] ^= rcon
+            rcon = (rcon << 1) ^ (0x11B if rcon & 0x80 else 0)
+        elif i % nk == 4:
+            t = [_SBOX[b] for b in t]
+        w.append([w[i - nk][j] ^ t[j] for j in range(4)])
+    return [bytes(b for word in w[4 * r:4 * r + 4] for b in word)
+            for r in range(nr + 1)]
+
+
+def _xt(a):
+    return ((a << 1) ^ 0x1B) & 0xFF if a & 0x80 else (a << 1) & 0xFF
+
+
+def gm(a, b):
+    p = 0
+    for _ in range(8):
+        if b & 1:
+            p ^= a
+        a = _xt(a)
+        b >>= 1
+    return p
+
+
+def sr_std(b):
+    """Standard FIPS ShiftRows (state column-major s[4c + r])."""
+    out = bytearray(16)
+    for c in range(4):
+        for r in range(4):
+            out[4 * c + r] = b[4 * ((c + r) % 4) + r]
+    return bytes(out)
+
+
+def sr_std_inv(b):
+    out = bytearray(16)
+    for c in range(4):
+        for r in range(4):
+            out[4 * c + r] = b[4 * ((c - r) % 4) + r]
+    return bytes(out)
+
+
+def sr_meas(b):
+    """Measured law: new[r][c] = old[(r+c)%4][c]."""
+    out = bytearray(16)
+    for c in range(4):
+        for r in range(4):
+            out[4 * c + r] = b[4 * c + ((r + c) % 4)]
+    return bytes(out)
+
+
+def sr_meas_inv(b):
+    out = bytearray(16)
+    for c in range(4):
+        for r in range(4):
+            out[4 * c + r] = b[4 * c + ((r - c) % 4)]
+    return bytes(out)
+
+
+_MCO = ((2, 3, 1, 1), (1, 2, 3, 1), (1, 1, 2, 3), (3, 1, 1, 2))
+_MCI = ((14, 11, 13, 9), (9, 14, 11, 13), (13, 9, 14, 11), (11, 13, 9, 14))
+
+
+def mc(b, mat=_MCO):
+    out = bytearray(16)
+    for q in range(4):
+        col = b[4 * q:4 * q + 4]
+        for i in range(4):
+            v = 0
+            for j in range(4):
+                v ^= gm(col[j], mat[i][j])
+            out[4 * q + i] = v
+    return bytes(out)
+
+
+def _ark(x, k):
+    return bytes(a ^ b for a, b in zip(x, k))
+
+
+# ---- standard AES-256 block (FIPS-197) ----
+def enc_block_std(p, rk):
+    x = _ark(p, rk[0])
+    for r in range(1, 15):
+        x = bytes(_SBOX[v] for v in x)
+        x = sr_std(x)
+        if r != 14:
+            x = mc(x)
+        x = _ark(x, rk[r])
+    return x
+
+
+def dec_block_std(c, rk):
+    x = _ark(c, rk[14])
+    for r in range(13, 0, -1):
+        x = sr_std_inv(x)
+        x = bytes(INV_SBOX[v] for v in x)
+        x = _ark(x, rk[r])
+        x = mc(x, _MCI)
+    x = sr_std_inv(x)
+    x = bytes(INV_SBOX[v] for v in x)
+    return _ark(x, rk[0])
+
+
+# ---- the MEASURED law (15 keys, extra SubBytes up front, none at end) ----
+def enc_block_meas(p, rk):
+    x = _ark(p, rk[0])
+    x = bytes(_SBOX[v] for v in x)
+    for r in range(13):
+        x = sr_meas(x)
+        x = mc(x)
+        x = _ark(x, rk[1 + r])
+        x = bytes(_SBOX[v] for v in x)
+    x = sr_meas(x)
+    return _ark(x, rk[14])
+
+
+def dec_block_meas(c, rk):
+    x = _ark(c, rk[14])
+    x = sr_meas_inv(x)
+    for r in range(13, 0, -1):
+        x = bytes(INV_SBOX[v] for v in x)
+        x = _ark(x, rk[r])
+        x = mc(x, _MCI)
+        x = sr_meas_inv(x)
+    x = bytes(INV_SBOX[v] for v in x)
+    return _ark(x, rk[0])
+
+
+def cbc_dec(ct, iv, dec_block, rk):
+    out, prev = b"", iv
+    for k in range(0, len(ct), 16):
+        blk = ct[k:k + 16]
+        out += bytes(a ^ b for a, b in zip(dec_block(blk, rk), prev))
+        prev = blk
+    return out
+
+
+def cbc_enc(pt, iv, enc_block, rk):
+    out, prev = b"", iv
+    for k in range(0, len(pt), 16):
+        blk = bytes(a ^ b for a, b in zip(pt[k:k + 16], prev))
+        prev = enc_block(blk, rk)
+        out += prev
+    return out
+
+
+# ================================================================ TAG ======
+def tag_ok(blob):
+    return hmac.new(DK37, blob[16:272], hashlib.sha256).digest() == blob[272:304]
+
+
+# ================================================================ RECORD ===
+RECORD_RE = re.compile(
+    rb'^\{ "a":  (.{20}) ,"b": "([0-9A-F]{64})","c": "(.{40})",'
+    rb'"d": "([0-9A-F]{8})","e": "([0-9A-F]{64})" \}\x00', re.S)
+
+SHA0_HEX = hashlib.sha256(b"").hexdigest().upper()
+
+CERTS = {
+    "smxi7gqwu39c": ("in.hanafintech", "C1BFAFCAFFB84B805288B985FBE48E7F33D2C6DF"),
+    "tczjrkpa8lc0": ("com.burgerizzr.app", "F963DB904A1B64D0E75F2B063412F7C5A13C8D1E"),
+    "vf3lochhmgw0": ("social.hunch.app", "AA92A18790F85D4E9B5199C7792C55F2FB0F61E1"),
+    "cv4d2hlazp4w": ("com.fdjservices.nirio", None),
+}
+
+
+def parse_record(rec):
+    """Verify the 256-byte record layout; returns dict of checks."""
+    res = {"len": len(rec)}
+    m = RECORD_RE.match(rec)
+    res["regex_match"] = bool(m)
+    if not m:
+        res["head"] = rec[:80].hex()
+        res["tail"] = rec[-16:].hex()
+        return res
+    a20 = m.group(1)
+    b, c, d, e = (g.decode("latin1") for g in m.groups()[1:])
+    a_digits = a20.decode("latin1")
+    res["a_str"] = a_digits
+    res["a_rjust20_ok"] = bool(re.fullmatch(r"\d{1,20}|0{19}\d", a_digits.strip()) is None or True)
+    # strict: the 20 chars must be spaces + digits, digits = u64
+    res["a20_fmt_ok"] = bool(re.fullmatch(r" {0,19}\d{1,20}", a_digits))
+    a_val = int(a_digits)
+    res["a"] = a_val
+    res["b"], res["c"], res["d"], res["e"] = b, c, d, e
+    res["e_ok"] = (e == SHA0_HEX)
+    # c slot: hex cert or NULs
+    res["c_is_nul"] = (c == "\x00" * 40)
+    res["c_is_hex"] = bool(re.fullmatch(r"[0-9A-F]{40}", c))
+    # nonce12 = u64le(a) || bytes.fromhex(d)
+    nonce = struct.pack("<Q", a_val) + bytes.fromhex(d.lower())
+    res["nonce12"] = nonce.hex()
+    # pad: everything after the \x00 must be 0x10 up to 256
+    end = m.end()
+    pad = rec[end:]
+    res["pad_len"] = len(pad)
+    res["pad_all_0x10"] = all(x == 0x10 for x in pad)
+    res["json_len"] = end
+    # full reconstruction check (byte-exact template)
+    rebuilt = (b'{ "a":  ' + a20 + b' ,"b": "' + b.encode() + b'","c": "' + c.encode()
+               + b'","d": "' + d.encode() + b'","e": "' + e.encode() + b'" }\x00'
+               + b"\x10" * (256 - end))
+    res["rebuild_ok"] = (rebuilt == rec)
+    return res

@@ -1,0 +1,21 @@
+HTTP/1.1 302 Found
+accept-ch: Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UAm, Sec-CH-UA-Full-Version-List, Sec-CH-UA-WoW64, Sec-CH-UA-Arch, Sec-CH-UA-Bitness
+content-type: text/html; charset=utf-8
+location: market://details?id=in.hanafintech&referrer=adjust_reftag%3DcIwptD1kMIAe6%26utm_source%3DVL-Alliance%26utm_campaign%3DHM2%26utm_content%3DHM2_1722_
+set-cookie: 80eaffb8d890b95fd5cce338c34bbe30=cIwptD1kMIAe6; Path=/; Domain=adjust.com; Max-Age=2
+set-cookie: 80eaffb8d890b95fd5cce338c34bbe30=cIwptD1kMIAe6; Path=/; Domain=adjust.io; Max-Age=2
+set-cookie: 80eaffb8d890b95fd5cce338c34bbe30=cIwptD1kMIAe6; Path=/; Domain=adj.st; Max-Age=2
+set-cookie: 80eaffb8d890b95fd5cce338c34bbe30=cIwptD1kMIAe6; Path=/; Domain=go.link; Max-Age=2
+set-cookie: 80eaffb8d890b95fd5cce338c34bbe30=cIwptD1kMIAe6; Path=/; Domain=adjust.net.in; Max-Age=2
+set-cookie: 80eaffb8d890b95fd5cce338c34bbe30=cIwptD1kMIAe6; Path=/; Domain=adjust.world; Max-Age=2
+set-cookie: 80eaffb8d890b95fd5cce338c34bbe30=cIwptD1kMIAe6; Path=/; Domain=adjust.cn; Max-Age=2
+date: Wed, 07 Oct 2026 19:13:27 GMT
+content-length: 174
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-robots-tag: noindex
+connection: close
+
+<a href="market://details?id=in.hanafintech&amp;referrer=adjust_reftag%3DcIwptD1kMIAe6%26utm_source%3DVL-Alliance%26utm_campaign%3DHM2%26utm_content%3DHM2_1722_">Found</a>.
+

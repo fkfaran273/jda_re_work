@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Wed, 07 Oct 2026 07:35:38 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1251
+Connection: close
+Vary: Origin
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+x-download-options: noopen
+x-readtime: 2
+
+{"error_no":0,"error_message":"success","data":null,"query_params":{"carrier":"","channel":"PayRupik","d_id":"4c2576c7-56da-3568-9d9c-dd5ef029b6c8","device_time":"1791358537842","device_type":"motorola-moto g42","device_zone":"IST","json":"[{\"create_time\":1791358537833,\"domain\":\"json.dynamicdns.in\",\"error_no\":-1020,\"method\":\"GET\",\"request_time\":1791358537645,\"response_code\":200,\"response_length\":355,\"response_time\":1791358537832,\"total_time\":187,\"url\":\"https://json.dynamicdns.in/appdomain/domain_prod.json?access_time\\u003d1791358537\\u0026adjust_id\\u003d\\u0026app_instance_id\\u003d\\u0026app_version\\u003d3.0.4\\u0026channel\\u003dPayRupik\\u0026common_google_adid\\u003d\\u0026d_id_store\\u003d4c2576c7-56da-3568-9d9c-dd5ef029b6c8\\u0026d_sys_ver\\u003d12\\u0026language\\u003den-in\\u0026package_name\\u003din.hanafintech\\u0026package_type\\u003d0\",\"device_type\":\"motorola-moto g42\",\"platform\":\"android\",\"project\":\"PayRupik\",\"push_id\":\"\",\"sequence_id\":\"\",\"system_version\":\"12\",\"version\":\"3.0.4\"}]","network_type":"wifi","platform":"android","project":"PayRupik","push_id":"","sdk_version":"1.4.3.3","sequence_id":"","system_version":"12(31)","version":"3.0.4","ip":"180.151.14.234"}}

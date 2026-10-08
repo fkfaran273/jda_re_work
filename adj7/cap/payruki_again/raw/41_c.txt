@@ -1,0 +1,11 @@
+POST https://app.adjust.com/session HTTP/1.1
+Client-SDK: android5.6.0
+Authorization: Signature signature="0FBDBC0D16D6F5D820BC78D33D709353E023D841154C9EA79375DC37AD79C87BAB855E1B7F16F71A983A9B8CFF1779008285BC65405D64086F31B12D8C72B73380482F8CF92E69D8F5BF51F5AFBC44D0DFC6002EA428333C4759F3E0CAE744E989C604B3DCBBF5DDB85D296E4929DDE1756DBCF278BBB2D7D553C5B74881C952CC39454969506CD487D81C20EC599B1A00E22BAA5EFA9D0358C29C79D2E1887F0A637D2A98CB98A45C48F2BF392BCA9B7FA17F45897C5D32577641CC8C0A36DB30E94BBBE5004CC2D4226F716EEFCB3424CEC45832687603DB174484CDF203D6DC937573B0AE3EBE0A914881F04011802DA062CF2A589E5ED7A6E12DF3CFCD9B6FB2B82D01B37922D3C7426F36220B34C8D3764F5C31A6BE5391408741C9C4F3BED5EBAD57B318D6B2B083A0836ED67B",adj_signing_id="1300000",algorithm="adj7",headers_id="8",native_version="3.62.0"
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)
+Host: app.adjust.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 1124
+
+store_name_from_system=com.android.vending&gps_adid_attempt=1&country=IN&api_level=31&hardware_name=S2SE32.28-28-4&partner_params=%7B%22payrupik_c_id%22%3A%224c2576c7-56da-3568-9d9c-dd5ef029b6c8%22%7D&app_version=3.0.4&app_token=smxi7gqwu39c&installed_at=2026-10-07T14%3A29%3A41.201Z%2B0530&created_at=2026-10-07T14%3A32%3A32.979Z%2B0530&wait_total=0.0&device_type=phone&language=en&gps_adid=b50efff3-c855-4384-9909-9c4feaec8c99&foreground=1&connectivity_type=1&device_manufacturer=motorola&display_width=1080&device_name=moto+g42&needs_response_details=1&os_build=S2SE32.28-28-4&updated_at=2026-10-07T14%3A29%3A41.201Z%2B0530&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&screen_format=long&last_error=0&gps_adid_src=service&wait_time=0.0&os_version=12&first_error=0&android_uuid=767079b2-b6a4-48b5-a4e0-51e290c76991&sent_at=2026-10-07T14%3A32%3A33.355Z%2B0530&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&session_count=1&display_height=2237&package_name=in.hanafintech&initiating_package_name=com.android.vending&os_name=android&ui_mode=1&enqueue_size=0&tracking_enabled=1

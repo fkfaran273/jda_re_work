@@ -1,0 +1,12 @@
+GET https://firebase-settings.crashlytics.com/spi/v2/platforms/android/gmp/1%3A162416709673%3Aandroid%3A1df6bc0e4fcccef5808c38/settings?build_version=86&display_version=3.0.4 HTTP/1.1
+Accept: application/json
+X-Crashlytics-Installation-ID: fKLYZTouRj2ykguHckrGrE
+X-Crashlytics-Device-Model: OnePlusDN2101
+X-Crashlytics-OS-Build-Version: 1649864983659
+X-Crashlytics-OS-Display-Version: 11
+X-Crashlytics-API-Client-Version: 3.0.6
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 11; DN2101 Build/RP1A.200720.011)
+Host: firebase-settings.crashlytics.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+

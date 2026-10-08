@@ -1,0 +1,47 @@
+CONNECT oversee.froescik.in:443 HTTP/1.1
+Host: oversee.froescik.in:443
+Connection: Keep-Alive
+User-Agent: okhttp/5.3.2
+
+A SSLv3-compatible ClientHello handshake was found. Fiddler extracted the parameters below.
+
+Version: 3.3 (TLS/1.2)
+Random: C1 7B 3F CD 54 A5 8A 78 0D CE C8 1F 50 91 82 FA 13 55 AA 86 4F 75 FB 3B 11 C4 D7 9D 71 09 35 9C
+"Time": 13-02-2079 10:25:29 AM
+SessionID: 54 26 EC B9 C0 A8 29 1D 48 33 AC C2 34 E5 13 F9 E9 34 9B 56 70 5C A3 43 54 CB 92 FF 12 2D F2 8A
+Extensions: 
+	server_name	oversee.froescik.in
+	extended_master_secret	empty
+	renegotiation_info	00
+	supported_groups	x25519 [0x1d], secp256r1 [0x17], secp384r1 [0x18]
+	ec_point_formats	uncompressed [0x0]
+	SessionTicket	empty
+	ALPN		h2, http/1.1
+	status_request	OCSP - Implicit Responder
+	signature_algs	ecdsa_secp256r1_sha256, rsa_pss_rsae_sha256, rsa_pkcs1_sha256, ecdsa_secp384r1_sha384, rsa_pss_rsae_sha384, rsa_pkcs1_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha512, rsa_pkcs1_sha1
+	key_share	00 24 00 1D 00 20 8C 13 AA 4E 4E F0 C2 48 42 F9 22 82 10 C3 9B FF DC 9C BD 3A 41 0C 8F 60 A2 78 40 28 F6 B0 35 78
+	psk_key_exchange_modes	01 01
+	supported_versions	Tls1.3, Tls1.2
+	padding		139 null bytes
+	pre_shared_key	00 26 00 20 77 02 00 00 C3 AA F8 86 E5 95 4B 38 35 47 58 82 FB 33 09 05 8D E6 7A 75 5B 2F DB 5F 51 8A 53 0D 7F FC 65 EF 00 31 30 0C 34 06 0C F6 EE 40 CB 9C A6 D7 CA D7 24 82 B5 0C 0E 21 EA 58 D1 5D 50 46 54 63 C0 CD 81 35 11 72 6A 18 0D 36 18 E4 32 50 DF 34 4C D7 D5 31 7A
+Ciphers: 
+	[1301]	TLS_AES_128_GCM_SHA256
+	[1302]	TLS_AES_256_GCM_SHA384
+	[1303]	TLS_CHACHA20_POLY1305_SHA256
+	[C02B]	TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+	[C02F]	TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	[C02C]	TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+	[C030]	TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	[CCA9]	TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
+	[CCA8]	TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+	[C013]	TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+	[C014]	TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+	[009C]	TLS_RSA_WITH_AES_128_GCM_SHA256
+	[009D]	TLS_RSA_WITH_AES_256_GCM_SHA384
+	[002F]	TLS_RSA_WITH_AES_128_CBC_SHA
+	[0035]	TLS_RSA_WITH_AES_256_CBC_SHA
+
+Compression: 
+	[00]	NO_COMPRESSION
+
+

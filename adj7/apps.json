@@ -1,0 +1,35 @@
+{
+  "_comment": "adj7 funnel config (click link + timing) per campaign.  App identity lives in campaign_data.py (mirrored here for the runner), the device profile in device_data.json.  install_after = click->install gap in s (Adjust silently drops sdk_clicks under ~10 s; the genuine niri capture had ~21.6 s).",
+  "nirio": {
+    "click_link": "https://nirio.go.link/home?adj_t=1zpd0epy&adj_campaign=OPT_APST&adj_adgroup={sub2}&adj_click_id={click_id}&adj_gps_adid={sub3}&adj_install_callback=http%3A%2F%2Fpb.appsatiate.com%2Fapi%2Ftrack%2Fv1%2Fpostback%3Fclick_id%3D{click_id}%26advertising_id%3Doptivads%26p_sub1%3Dadjust%26offer_id%3Dniroptmmp&adj_event_callback_fhwtwc_ycw106=http%3A%2F%2Fpb.appsatiate.com%2Fapi%2Ftrack%2Fv1%2Fevents%3Fclick_id%3D{click_id}%26goal%3D%7Bevent%7D%26advertising_id%3Doptivads%26p_sub1%3Dadjust%26offer_id%3Dniroptmmp",
+    "agent": "",
+    "install_after": 22,
+    "poll_delays": [
+      30,
+      45,
+      60,
+      60
+    ],
+    "app_token": "cv4d2hlazp4w",
+    "package_name": "com.fdjservices.nirio",
+    "client_sdk": "react-native5.4.4@android5.4.5",
+    "cert_sha1": "0e11813dd360d8aac04b6db33293cfbc4d3f1370",
+    "_note_click_link": "PLACEHOLDER (empty, 2026-10-05): no booked tracker link for niri yet.  With an empty click_link the runner skips the tracker visit (printed note) and the sdk_click carries the capture's generic Play referrer utm_source=(not set)&utm_medium=(not set) -- the genuine sid 28 story, which still booked NON-ORGANIC (Kwanko) by device match.  Fill the tracker URL (macros {gaid}/{dp2}/{agent} supported) to enable tracked clicks."
+  },
+  "hanafintech": {
+    "_comment": "in.hanafintech live funnel; mobpine offer 23483498 forwards sub3 as the go.link gps_adid (device-matched click)",
+    "app_token": "smxi7gqwu39c",
+    "click_link": "http://clicks.mobpine.com/api/track/v1/click?aff_id=3&offer_id=23483498&sub3={gaid}&sub2=zt1",
+    "agent": "",
+    "install_after": 63,
+    "poll_delays": [
+      30,
+      45,
+      60,
+      60
+    ],
+    "package_name": "in.hanafintech",
+    "client_sdk": "android5.6.0",
+    "cert_sha1": "c1bfafcaffb84b805288b985fbe48e7f33d2c6df"
+  }
+}

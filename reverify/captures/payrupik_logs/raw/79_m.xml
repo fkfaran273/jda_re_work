@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="79" BitFlags="2100">
+  <SessionTimers ClientConnected="2026-10-05T14:41:27.7749199+05:30" ClientBeginRequest="2026-10-05T14:41:27.7853334+05:30" GotRequestHeaders="2026-10-05T14:41:27.7863658+05:30" ClientDoneRequest="2026-10-05T14:41:27.7863658+05:30" GatewayTime="0" DNSTime="6" TCPConnectTime="193" HTTPSHandshakeTime="222" ServerConnected="2026-10-05T14:41:27.9854241+05:30" FiddlerBeginRequest="2026-10-05T14:41:27.9854241+05:30" ServerGotRequest="2026-10-05T14:41:27.9854241+05:30" ServerBeginResponse="0001-01-01T00:00:00" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="0001-01-01T00:00:00" ClientBeginResponse="2026-10-05T14:41:27.9854241+05:30" ClientDoneResponse="2026-10-05T14:41:27.9854241+05:30" />
+  <PipeInfo />
+  <TunnelInfo BytesEgress="0" BytesIngress="0" />
+  <SessionFlags>
+    <SessionFlag N="https-server-cipher" V="Aes256 256bits" />
+    <SessionFlag N="https-client-version" V="Tls13" />
+    <SessionFlag N="x-egressport" V="17182" />
+    <SessionFlag N="x-responsebodytransferlength" V="0" />
+    <SessionFlag N="x-clientport" V="33642" />
+    <SessionFlag N="https-server-version" V="Tls13" />
+    <SessionFlag N="https-client-snihostname" V="sdk-api.apptracer.ru" />
+    <SessionFlag N="x-clientip" V="::ffff:192.168.29.226" />
+    <SessionFlag N="https-client-sessionid" V="30 7A 95 8E 66 24 FB 24 EA 9C 14 74 38 4E 05 E5 C0 6B 24 BA CB BF 9D C1 18 24 50 13 93 91 0A 53" />
+    <SessionFlag N="x-hostip" V="2a00:b4c0:9100:b000::11" />
+    <SessionFlag N="x-supported-client-tls-protocols" V="16320" />
+    <SessionFlag N="x-supported-client-alpn" V="http/1.1" />
+  </SessionFlags>
+</Session>

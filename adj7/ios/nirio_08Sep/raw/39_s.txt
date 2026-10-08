@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+content-type: application/json; charset=utf-8
+date: Tue, 08 Sep 2026 05:41:18 GMT
+content-length: 1057
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-robots-tag: noindex
+
+{"app_token":"cv4d2hlazp4w","adid":"04b529e4445ade26859bbd52088058de","attribution":{"tracker_token":"24s38ts0","tracker_name":"Kwanko_Optivads _DTS::OPT_APST::{sub2}","network":"Kwanko_Optivads _DTS","campaign":"OPT_APST","adgroup":"{sub2}","deeplink":"nirio://home?adj_t=1zpd0epy\u0026adj_campaign=OPT_APST\u0026adj_adgroup={sub2}\u0026adj_click_id={click_id}\u0026adj_gps_adid={sub3}\u0026adj_install_callback=http%3A%2F%2Fpb.appsatiate.com%2Fapi%2Ftrack%2Fv1%2Fpostback%3Fclick_id%3D{click_id}%26advertising_id%3Doptivads%26p_sub1%3Dadjust%26offer_id%3Dniroptmmp\u0026adj_event_callback_fhwtwc_ycw106=http%3A%2F%2Fpb.appsatiate.com%2Fapi%2Ftrack%2Fv1%2Fevents%3Fclick_id%3D{click_id}%26goal%3D%7Bevent%7D%26advertising_id%3Doptivads%26p_sub1%3Dadjust%26offer_id%3Dniroptmmp\u0026adjust_no_sdkclick=1","engagement_time":"2026-09-08T05:40:14Z","installed_at":"2026-09-08T05:41:10Z","first_session_time":"2026-09-08T05:41:10Z","is_reattributed":false,"is_redownload_install":false},"skadn_conv_value":0,"skadn_coarse_value":"low","skadn_lock_window":false}

@@ -3,6 +3,23 @@ __pycache__/
 *.py[cod]
 *.pyo
 
+# Capture files: the originals live in C:\Users\Apps\Downloads (40+ MB of
+# .saz/.chls must never enter the repo -- the analysers take paths instead).
+*.saz
+*.chls
+
+# Emulator trace dumps (adj7/work): 0.2-0.7 GB each, regenerable scratch whose
+# conclusions live in the adj7/work/*.md findings docs.  GitHub rejects any blob
+# >100 MB, and every version would live in history forever, so keep them local.
+adj7/work/v*_reads.txt
+adj7/work/v*_writes.txt
+adj7/work/v*_codetrace.txt
+adj7/work/v*_events.txt
+adj7/work/spn_tr*.txt
+adj9/rev/*_wirelog*.json
+adj9/rev/_wire_row*.json
+adj9/rev/_bdbg*_wirelog*.json
+
 # Virtual environment
 venv/
 .venv/

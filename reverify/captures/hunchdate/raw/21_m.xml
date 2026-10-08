@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="21" BitFlags="2100">
+  <SessionTimers ClientConnected="2026-10-07T01:10:44.2217464+05:30" ClientBeginRequest="2026-10-07T01:10:44.2407394+05:30" GotRequestHeaders="2026-10-07T01:10:44.2407394+05:30" ClientDoneRequest="2026-10-07T01:10:44.2407394+05:30" GatewayTime="0" DNSTime="13" TCPConnectTime="6" HTTPSHandshakeTime="60" ServerConnected="2026-10-07T01:10:44.2607405+05:30" FiddlerBeginRequest="2026-10-07T01:10:44.2607405+05:30" ServerGotRequest="2026-10-07T01:10:44.2607405+05:30" ServerBeginResponse="0001-01-01T00:00:00" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="0001-01-01T00:00:00" ClientBeginResponse="2026-10-07T01:10:44.2607405+05:30" ClientDoneResponse="2026-10-07T01:10:44.2616917+05:30" />
+  <PipeInfo />
+  <TunnelInfo BytesEgress="0" BytesIngress="0" />
+  <SessionFlags>
+    <SessionFlag N="https-client-version" V="Tls13" />
+    <SessionFlag N="x-supported-client-tls-protocols" V="15360" />
+    <SessionFlag N="x-egressport" V="13656" />
+    <SessionFlag N="x-responsebodytransferlength" V="0" />
+    <SessionFlag N="x-clientport" V="13654" />
+    <SessionFlag N="https-server-version" V="Tls13" />
+    <SessionFlag N="https-client-snihostname" V="firebaseinstallations.googleapis.com" />
+    <SessionFlag N="x-clientip" V="::ffff:127.0.0.1" />
+    <SessionFlag N="https-client-sessionid" V="83 3F 74 FA 2D 21 02 1B 75 AD 9D C5 16 4F 2B 3E A9 25 F5 F5 16 50 89 BD 01 FF 5F 5D B1 7F 25 A0" />
+    <SessionFlag N="x-hostip" V="172.217.112.4" />
+    <SessionFlag N="x-processinfo" V="python:34048" />
+    <SessionFlag N="https-server-cipher" V="Aes256 256bits" />
+  </SessionFlags>
+</Session>

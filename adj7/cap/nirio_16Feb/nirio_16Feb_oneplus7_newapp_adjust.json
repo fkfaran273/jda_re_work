@@ -1,0 +1,1291 @@
+[
+ {
+  "sid": "27",
+  "method": "POST",
+  "url": "https://app.adjust.com/third_party_sharing",
+  "client_ip": "",
+  "begin": "",
+  "done": "",
+  "request_headers": [
+   [
+    "Client-SDK",
+    "react-native5.4.4@android5.4.5"
+   ],
+   [
+    "Authorization",
+    "Signature signature=\"66E7CA6832CB9E2210A0EBA90D27C4C261C9CA5419D145C63DC75870DE4ED2AA7F2173FF709B9984C48038F0C8281235A4CE07393B557521ADA36029F72B6CB39F62EF399D5C63C2E93D27F51D62CF718053E760587B6F899E9538F34A21DDF24938D3C3560AA22C81CE08B990303D4EBD0AF37C46B1F95691BE4B95C8CC18A9B72F86866284F6B2B4C2DCF85545906750DFE7FF0D0F0363119A7B29135723FC49B35696EFA3B7FE70BE200450DB19FB5D074327F4E05367F6E70EB889983FBA52F4DB44E6007624208DF5F9E0219011EC26DD101DE45123E567BB1A4F3FB0E22FDAC11447F1875E9363191026BD44F7890206C96F8BB2D3C84D9A09466D90F0A45CE5C4605CBBBA864D563DCF456188D59B7E1D353653679C22085A7303AA7986161B1ABCC424F80835F6A437DC1D5E\",adj_signing_id=\"1300000\",algorithm=\"adj7\",headers_id=\"7\",native_version=\"3.61.0\""
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 10; GM1901 Build/QKQ1.190716.003)"
+   ],
+   [
+    "Host",
+    "app.adjust.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Content-Length",
+    "619"
+   ]
+  ],
+  "body": {
+   "gps_adid_attempt": "1",
+   "api_level": "29",
+   "app_version": "14.4.8",
+   "app_token": "cv4d2hlazp4w",
+   "created_at": "2026-02-16T13:44:04.198Z+0300",
+   "wait_total": "0.0",
+   "device_type": "phone",
+   "gps_adid": "ea4561af-1d36-4aba-807c-a9c4250250a8",
+   "foreground": "1",
+   "device_name": "GM1901",
+   "needs_response_details": "1",
+   "retry_count": "0",
+   "last_error": "0",
+   "gps_adid_src": "service",
+   "wait_time": "0.0",
+   "os_version": "10",
+   "first_error": "0",
+   "sharing": "enable",
+   "android_uuid": "4c986a9b-af46-45cc-8655-5172d6130b1e",
+   "sent_at": "2026-02-16T13:44:04.213Z+0300",
+   "offline_mode_enabled": "0",
+   "environment": "production",
+   "attribution_deeplink": "1",
+   "package_name": "com.fdjservices.nirio",
+   "os_name": "android",
+   "ui_mode": "1",
+   "enqueue_size": "0",
+   "tracking_enabled": "1"
+  },
+  "status": "202",
+  "response_headers": [
+   [
+    "content-type",
+    "application/json"
+   ],
+   [
+    "date",
+    "Mon, 16 Feb 2026 10:44:06 GMT"
+   ],
+   [
+    "content-length",
+    "127"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "response": "{\"app_token\":\"cv4d2hlazp4w\",\"adid\":\"4212a983ee58dcb1564cb579148da234\",\"error\":\"Third party sharing failed (nothing to update)\"}"
+ },
+ {
+  "sid": "28",
+  "method": "POST",
+  "url": "https://app.adjust.com/sdk_click",
+  "client_ip": "",
+  "begin": "",
+  "done": "",
+  "request_headers": [
+   [
+    "Client-SDK",
+    "react-native5.4.4@android5.4.5"
+   ],
+   [
+    "Authorization",
+    "Signature signature=\"66E7CA6832CB9E2210A0EBA90D27C4C200A79C0783613EF61A522095FB3CCED4F15D3467C46F4AB66AEDE77C96DF787B58FA5BAE445CA96D348DB661E1CE4B1B67634D82EE21883E045A40036455589C860BC1575747B38BA3E511E843153A11D1099C367DD895E8A7908AD1CD84F55510F32F822B8FD8CB6D990E532449CB37AEC1F76DEDE4895F2360F36E28DFA39E078DF4F10DD072E92C56044E1077EF23A7B5EBF2CCA443E4567B7EE75EAF126B17E571621505DCBD602FBD10716C495A08CB6A310D8B73992B9DFB0AC5528C2D982C913C045DF4EE57A685377C8CA6E141D94C624A87978DED2D08E10B4320F4B15624BC4FCB609290B09B72F362E9204A486254E019A04B121EC825CA2CB1412E2600BA41B71241FA5F46B0FDAF6969E9BC5CAD0B726CEEAA9F3E440428434D\",adj_signing_id=\"1300000\",algorithm=\"adj7\",headers_id=\"7\",native_version=\"3.61.0\""
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 10; GM1901 Build/QKQ1.190716.003)"
+   ],
+   [
+    "Host",
+    "app.adjust.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Content-Length",
+    "1180"
+   ]
+  ],
+  "body": {
+   "country": "IN",
+   "api_level": "29",
+   "hardware_name": "GM1901_14_201019",
+   "app_version": "14.4.8",
+   "app_token": "cv4d2hlazp4w",
+   "installed_at": "2026-02-16T13:43:27.591Z+0300",
+   "device_type": "phone",
+   "language": "en",
+   "gps_adid": "ea4561af-1d36-4aba-807c-a9c4250250a8",
+   "source": "install_referrer",
+   "foreground": "1",
+   "connectivity_type": "1",
+   "mcc": "405",
+   "os_build": "QKQ1.190716.003",
+   "click_time": "2026-02-16T13:43:06.000Z+0300",
+   "cpu_type": "arm64-v8a",
+   "screen_size": "normal",
+   "gps_adid_src": "service",
+   "subsession_count": "1",
+   "sent_at": "2026-02-16T13:44:04.263Z+0300",
+   "offline_mode_enabled": "0",
+   "screen_density": "high",
+   "session_count": "1",
+   "ui_mode": "1",
+   "gps_adid_attempt": "1",
+   "session_length": "0",
+   "created_at": "2026-02-16T13:44:04.252Z+0300",
+   "referrer_api": "google",
+   "device_manufacturer": "OnePlus",
+   "display_width": "1080",
+   "time_spent": "0",
+   "device_name": "GM1901",
+   "needs_response_details": "1",
+   "updated_at": "2026-02-16T13:43:27.591Z+0300",
+   "screen_format": "long",
+   "mnc": "872",
+   "os_version": "10",
+   "google_play_instant": "0",
+   "android_uuid": "4c986a9b-af46-45cc-8655-5172d6130b1e",
+   "referrer": "utm_source=(not%20set)&utm_medium=(not%20set)",
+   "environment": "production",
+   "attribution_deeplink": "1",
+   "install_begin_time": "2026-02-16T13:43:08.000Z+0300",
+   "display_height": "2218",
+   "package_name": "com.fdjservices.nirio",
+   "os_name": "android",
+   "tracking_enabled": "1"
+  },
+  "status": "200",
+  "response_headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 16 Feb 2026 10:44:06 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "response": "{\"app_token\":\"cv4d2hlazp4w\",\"adid\":\"4212a983ee58dcb1564cb579148da234\"}"
+ },
+ {
+  "sid": "47",
+  "method": "POST",
+  "url": "https://app.adjust.com/third_party_sharing",
+  "client_ip": "",
+  "begin": "",
+  "done": "",
+  "request_headers": [
+   [
+    "Client-SDK",
+    "react-native5.4.4@android5.4.5"
+   ],
+   [
+    "Authorization",
+    "Signature signature=\"6CC320D13DF195ED4A0EE5C6795E445A03BD69F0AA811B9EE43F9B8FCFF0ED7F3F6CFE13DBF4A1302B60AF69A2A4AFD9E3AEDCBDC6A9A61520568355B1A6E51765F066B9EFAEEF89CCE8E13AB34AD8D4074E8AA48BF52FB5E6DCCA8498525FA2F1E73BBB477B2CCFFD6C9D3539FCB5E9690988D4022A84C10A61EE27B8A88543572C31140937190417BCF759439027DB45D7D0BB42537F3A5B0AAB2DC416920FB745204AB585CC6CE4A461BAF823FCBC6D07D877497ED4BD9345396E08292CC8E0048CF25457D71BE8C6C8B8AD1D7EAB82CF8C7482B79AFCBB546FAED862AFB9EC52D97386DB20EAE506F31070E581E8736AC9F68B25EFC8043A909C252A72258C0F6640FA81D1C2736ECA26EFB3100D63F1B11E41A60B7F3B5D9B5FAE3CD5B6A903850339D5DE240E80863F6A494002\",adj_signing_id=\"1300000\",algorithm=\"adj7\",headers_id=\"7\",native_version=\"3.61.0\""
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 10; GM1901 Build/QKQ1.190716.003)"
+   ],
+   [
+    "Host",
+    "app.adjust.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Content-Length",
+    "632"
+   ]
+  ],
+  "body": {
+   "gps_adid_attempt": "1",
+   "api_level": "29",
+   "app_version": "14.4.8",
+   "app_token": "cv4d2hlazp4w",
+   "created_at": "2026-02-16T13:44:04.198Z+0300",
+   "wait_total": "0.0",
+   "device_type": "phone",
+   "gps_adid": "ea4561af-1d36-4aba-807c-a9c4250250a8",
+   "foreground": "1",
+   "device_name": "GM1901",
+   "needs_response_details": "1",
+   "retry_count": "0",
+   "last_error": "0",
+   "gps_adid_src": "service",
+   "queue_size": "4",
+   "wait_time": "0.0",
+   "os_version": "10",
+   "first_error": "0",
+   "sharing": "enable",
+   "android_uuid": "4c986a9b-af46-45cc-8655-5172d6130b1e",
+   "sent_at": "2026-02-16T13:44:13.669Z+0300",
+   "offline_mode_enabled": "0",
+   "environment": "production",
+   "attribution_deeplink": "1",
+   "package_name": "com.fdjservices.nirio",
+   "os_name": "android",
+   "ui_mode": "1",
+   "enqueue_size": "0",
+   "tracking_enabled": "1"
+  },
+  "status": "202",
+  "response_headers": [
+   [
+    "content-type",
+    "application/json"
+   ],
+   [
+    "date",
+    "Mon, 16 Feb 2026 10:44:15 GMT"
+   ],
+   [
+    "content-length",
+    "127"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "response": "{\"app_token\":\"cv4d2hlazp4w\",\"adid\":\"4212a983ee58dcb1564cb579148da234\",\"error\":\"Third party sharing failed (nothing to update)\"}"
+ },
+ {
+  "sid": "48",
+  "method": "POST",
+  "url": "https://app.adjust.com/sdk_click",
+  "client_ip": "",
+  "begin": "",
+  "done": "",
+  "request_headers": [
+   [
+    "Client-SDK",
+    "react-native5.4.4@android5.4.5"
+   ],
+   [
+    "Authorization",
+    "Signature signature=\"6CC320D13DF195ED4A0EE5C6795E445AD6C4E4AA201B7B364A8C1EE2801BCC9C51656C5E14C8AEB3CE6ACBE45CA81CC7F3885855C977BF61C7661E8E79EEC9AE3B246A60B7E63A03A15D6E2B5227F330634E83EA8784FC5722A2C2F6A25740C32FD43670CF6BB31C7942B33271EE98BE4CAD7B8F73A5FCD00335E8A8A46E0AD0E5AB434B373D062F7E21E864D0419639541BB70B3B478F9A063612DD36B6BEC6F3916B8094A1F73A79AC1368C36EE59E37350C740DBABD1182BE7CC3FB6F653E616AB0F34926FB6146C3E7D83A79905E44B9C29E99079E0D562E470DDDB26F5FE30B3E3A2D0AE2A260E7652A5357E76AD6AD9393B14EF69240EA858A668AD87DFBD8CB12E67E3F1EA15B94B52315B63287BFD260B4E7300898F3167F94FDB1C171AB2B6583742E07DDF2F04B9DFEDFCF\",adj_signing_id=\"1300000\",algorithm=\"adj7\",headers_id=\"7\",native_version=\"3.61.0\""
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 10; GM1901 Build/QKQ1.190716.003)"
+   ],
+   [
+    "Host",
+    "app.adjust.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Content-Length",
+    "1169"
+   ]
+  ],
+  "body": {
+   "gps_adid_attempt": "1",
+   "api_level": "29",
+   "hardware_name": "GM1901_14_201019",
+   "app_version": "14.4.8",
+   "app_token": "cv4d2hlazp4w",
+   "installed_at": "2026-02-16T13:43:27.591Z+0300",
+   "session_length": "9",
+   "created_at": "2026-02-16T13:44:13.681Z+0300",
+   "device_type": "phone",
+   "language": "fr",
+   "gps_adid": "ea4561af-1d36-4aba-807c-a9c4250250a8",
+   "referrer_api": "google",
+   "source": "install_referrer",
+   "foreground": "1",
+   "connectivity_type": "1",
+   "mcc": "405",
+   "device_manufacturer": "OnePlus",
+   "display_width": "1080",
+   "time_spent": "1",
+   "device_name": "GM1901",
+   "needs_response_details": "1",
+   "os_build": "QKQ1.190716.003",
+   "updated_at": "2026-02-16T13:43:27.591Z+0300",
+   "click_time": "2026-02-16T13:43:06.000Z+0300",
+   "cpu_type": "arm64-v8a",
+   "screen_size": "normal",
+   "screen_format": "long",
+   "gps_adid_src": "service",
+   "subsession_count": "2",
+   "mnc": "872",
+   "os_version": "10",
+   "google_play_instant": "0",
+   "android_uuid": "4c986a9b-af46-45cc-8655-5172d6130b1e",
+   "sent_at": "2026-02-16T13:44:13.695Z+0300",
+   "referrer": "utm_source=(not%20set)&utm_medium=(not%20set)",
+   "offline_mode_enabled": "0",
+   "environment": "production",
+   "screen_density": "high",
+   "attribution_deeplink": "1",
+   "install_begin_time": "2026-02-16T13:43:08.000Z+0300",
+   "session_count": "1",
+   "display_height": "2218",
+   "package_name": "com.fdjservices.nirio",
+   "os_name": "android",
+   "ui_mode": "1",
+   "tracking_enabled": "1"
+  },
+  "status": "200",
+  "response_headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 16 Feb 2026 10:44:15 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "response": "{\"app_token\":\"cv4d2hlazp4w\",\"adid\":\"4212a983ee58dcb1564cb579148da234\"}"
+ },
+ {
+  "sid": "68",
+  "method": "POST",
+  "url": "https://app.adjust.com/third_party_sharing",
+  "client_ip": "",
+  "begin": "",
+  "done": "",
+  "request_headers": [
+   [
+    "Client-SDK",
+    "react-native5.4.4@android5.4.5"
+   ],
+   [
+    "Authorization",
+    "Signature signature=\"014CAC061BB350CF3E9D22E80506FCC0F4692C16DB1AB4B0079187CEC8CF727DFF219CAA9757217CD4342DACA2AB824F1DEDADBFC6228FCF415AF72F7951BE2BAE5A06183D027036FDD95F91350DE74D397CFEE937EFA7CADEE9EA6E8F7022C6F05E8813583B22EAF7FE4A77A7C47D887424ABCAD3D44D8D8C3F9FE64F24646AB5E403F3C06D78D849FC0D2EE3FB6D1304793E2B399513D3BEF762598E9175F6F51B397693917C07EE3A8984EF263FB974B94E0179459FF17D5BF567B3FD417BCAD309CFD1F4DFF95CBF2DE724B4AA942158E1EF10B656C907BFEC90EC2AA06582AF59196202DB0B4A3D52EF757ED16E02FF2818C8B0E054A63F824FD377718BBA815C0D5F7FB9E54BEAF279939BF7F7D1C6B08A093DFCD81E6C17631137987047A8B025A06212F140DA5953536E214F\",adj_signing_id=\"1300000\",algorithm=\"adj7\",headers_id=\"7\",native_version=\"3.61.0\""
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 10; GM1901 Build/QKQ1.190716.003)"
+   ],
+   [
+    "Host",
+    "app.adjust.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Content-Length",
+    "632"
+   ]
+  ],
+  "body": {
+   "gps_adid_attempt": "1",
+   "api_level": "29",
+   "app_version": "14.4.8",
+   "app_token": "cv4d2hlazp4w",
+   "created_at": "2026-02-16T13:44:04.209Z+0300",
+   "wait_total": "0.0",
+   "device_type": "phone",
+   "gps_adid": "ea4561af-1d36-4aba-807c-a9c4250250a8",
+   "foreground": "1",
+   "device_name": "GM1901",
+   "needs_response_details": "1",
+   "retry_count": "0",
+   "last_error": "0",
+   "gps_adid_src": "service",
+   "queue_size": "4",
+   "wait_time": "0.0",
+   "os_version": "10",
+   "first_error": "0",
+   "sharing": "enable",
+   "android_uuid": "4c986a9b-af46-45cc-8655-5172d6130b1e",
+   "sent_at": "2026-02-16T13:44:34.989Z+0300",
+   "offline_mode_enabled": "0",
+   "environment": "production",
+   "attribution_deeplink": "1",
+   "package_name": "com.fdjservices.nirio",
+   "os_name": "android",
+   "ui_mode": "1",
+   "enqueue_size": "1",
+   "tracking_enabled": "1"
+  },
+  "status": "202",
+  "response_headers": [
+   [
+    "content-type",
+    "application/json"
+   ],
+   [
+    "date",
+    "Mon, 16 Feb 2026 10:44:36 GMT"
+   ],
+   [
+    "content-length",
+    "127"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "response": "{\"app_token\":\"cv4d2hlazp4w\",\"adid\":\"4212a983ee58dcb1564cb579148da234\",\"error\":\"Third party sharing failed (nothing to update)\"}"
+ },
+ {
+  "sid": "88",
+  "method": "POST",
+  "url": "https://app.adjust.com/third_party_sharing",
+  "client_ip": "",
+  "begin": "",
+  "done": "",
+  "request_headers": [
+   [
+    "Client-SDK",
+    "react-native5.4.4@android5.4.5"
+   ],
+   [
+    "Authorization",
+    "Signature signature=\"3DCB79A766D9F07525FF2AC1649821B40CBD9843CB02AFA6600D158A77F9864FA1211191CBEB2F620AC01BC674226B30B21F27168105B0B0316CEF1A582A695587C11EE0E8EA4E6ADA8DF707A5F7CB7FB7803AE7563AC642323FC71D780310149CB8A68F37D8A8B67EAA18FD7BCAFDE03C11C32B73454F9E3A7F5EA1E73A0C1E41224E66E4DEE2B6329983451905BD7643366812D63641A260D982B6B2B25FBFB454CAF0EB2CB1504418CCA079EF155BA9EDF5B1BD409E00FFE4BF70C1E538A287EC25A1CE55E27F49B8F3C37957EFAF1B710B68737AD6747274E6669F95AFC61CD817D00B9C7908484F5F43408AF1E9D99B842CEEA5C50A51B9C9BCB820DC690BBB2CE821BA75ED3D4BF9212B098CEEC6F9B59B8EF75DCA3C7D03517A9F8D2A335DA0221B680481461A5B4218FBBCDC\",adj_signing_id=\"1300000\",algorithm=\"adj7\",headers_id=\"7\",native_version=\"3.61.0\""
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 10; GM1901 Build/QKQ1.190716.003)"
+   ],
+   [
+    "Host",
+    "app.adjust.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Content-Length",
+    "632"
+   ]
+  ],
+  "body": {
+   "gps_adid_attempt": "1",
+   "api_level": "29",
+   "app_version": "14.4.8",
+   "app_token": "cv4d2hlazp4w",
+   "created_at": "2026-02-16T13:44:04.220Z+0300",
+   "wait_total": "0.0",
+   "device_type": "phone",
+   "gps_adid": "ea4561af-1d36-4aba-807c-a9c4250250a8",
+   "foreground": "1",
+   "device_name": "GM1901",
+   "needs_response_details": "1",
+   "retry_count": "0",
+   "last_error": "0",
+   "gps_adid_src": "service",
+   "queue_size": "4",
+   "wait_time": "0.0",
+   "os_version": "10",
+   "first_error": "0",
+   "sharing": "enable",
+   "android_uuid": "4c986a9b-af46-45cc-8655-5172d6130b1e",
+   "sent_at": "2026-02-16T13:44:54.151Z+0300",
+   "offline_mode_enabled": "0",
+   "environment": "production",
+   "attribution_deeplink": "1",
+   "package_name": "com.fdjservices.nirio",
+   "os_name": "android",
+   "ui_mode": "1",
+   "enqueue_size": "2",
+   "tracking_enabled": "1"
+  },
+  "status": "202",
+  "response_headers": [
+   [
+    "content-type",
+    "application/json"
+   ],
+   [
+    "date",
+    "Mon, 16 Feb 2026 10:44:55 GMT"
+   ],
+   [
+    "content-length",
+    "127"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "response": "{\"app_token\":\"cv4d2hlazp4w\",\"adid\":\"4212a983ee58dcb1564cb579148da234\",\"error\":\"Third party sharing failed (nothing to update)\"}"
+ },
+ {
+  "sid": "90",
+  "method": "POST",
+  "url": "https://app.adjust.com/session",
+  "client_ip": "",
+  "begin": "",
+  "done": "",
+  "request_headers": [
+   [
+    "Client-SDK",
+    "react-native5.4.4@android5.4.5"
+   ],
+   [
+    "Authorization",
+    "Signature signature=\"3E3B6EC1041DFB7154F0C731513E2AA95FC50214FB344614408087B847FB1A7A55598F0D5753560874660C7FEF073BE70178BD70981F7583896B0E430872BF414817101D56807AE84CADD32C46175DB3CABEF454117747486AFE635CF4D6FE1ACC953B09BAC2AD768C4B374ADB5D142B6D8CC545AF2DC28A232AE63D9B9580EBD6ADC2E0BD4961645B99BF5ED3336A82889EAE8FED6B55D4E8636D77C3166548D248D770690F5AF7F18AB8F01DEDD60F0F545DD345D4A714D96A2D100AAA5A78BEA981428AA93CE63F71D41722E10E70E77098B19346A8C6E57D4C5DFD38D925BC8F212E61797AD9B65EF5BFB06CC8F66AB3676489AD5C491CC1AACAE56DA198CDFF6F287B034978EB28EE9EBA5B19BFEAD4216C9238E9ACE4523E0E60A533C154358E36E6F98942A727E2A34DA281DF\",adj_signing_id=\"1300000\",algorithm=\"adj7\",headers_id=\"7\",native_version=\"3.61.0\""
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 10; GM1901 Build/QKQ1.190716.003)"
+   ],
+   [
+    "Host",
+    "app.adjust.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Content-Length",
+    "1031"
+   ]
+  ],
+  "body": {
+   "store_name_from_system": "com.android.vending",
+   "gps_adid_attempt": "1",
+   "country": "IN",
+   "api_level": "29",
+   "hardware_name": "GM1901_14_201019",
+   "app_version": "14.4.8",
+   "app_token": "cv4d2hlazp4w",
+   "installed_at": "2026-02-16T13:43:27.591Z+0300",
+   "created_at": "2026-02-16T13:44:04.198Z+0300",
+   "wait_total": "0.0",
+   "device_type": "phone",
+   "language": "en",
+   "gps_adid": "ea4561af-1d36-4aba-807c-a9c4250250a8",
+   "foreground": "1",
+   "connectivity_type": "1",
+   "mcc": "405",
+   "device_manufacturer": "OnePlus",
+   "display_width": "1080",
+   "device_name": "GM1901",
+   "needs_response_details": "1",
+   "os_build": "QKQ1.190716.003",
+   "updated_at": "2026-02-16T13:43:27.591Z+0300",
+   "cpu_type": "arm64-v8a",
+   "retry_count": "0",
+   "screen_size": "normal",
+   "screen_format": "long",
+   "last_error": "0",
+   "gps_adid_src": "service",
+   "mnc": "872",
+   "queue_size": "4",
+   "wait_time": "0.0",
+   "os_version": "10",
+   "first_error": "0",
+   "android_uuid": "4c986a9b-af46-45cc-8655-5172d6130b1e",
+   "sent_at": "2026-02-16T13:45:48.523Z+0300",
+   "offline_mode_enabled": "0",
+   "environment": "production",
+   "screen_density": "high",
+   "attribution_deeplink": "1",
+   "session_count": "1",
+   "display_height": "2218",
+   "package_name": "com.fdjservices.nirio",
+   "os_name": "android",
+   "ui_mode": "1",
+   "enqueue_size": "3",
+   "tracking_enabled": "1"
+  },
+  "status": "200",
+  "response_headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 16 Feb 2026 10:45:50 GMT"
+   ],
+   [
+    "content-length",
+    "84"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "response": "{\"app_token\":\"cv4d2hlazp4w\",\"adid\":\"4212a983ee58dcb1564cb579148da234\",\"ask_in\":2000}"
+ },
+ {
+  "sid": "91",
+  "method": "POST",
+  "url": "https://app.adjust.com/third_party_sharing",
+  "client_ip": "",
+  "begin": "",
+  "done": "",
+  "request_headers": [
+   [
+    "Client-SDK",
+    "react-native5.4.4@android5.4.5"
+   ],
+   [
+    "Authorization",
+    "Signature signature=\"540AA1616677740A6FF2D8AF4C4E0E3F200F2BFBFB5C2DCECCC187163F75306CC4A35533FA2E4C65273BAAC8DFF1A58A46DC245BBB59538F32FD6695C75BF92FE882A82E31F1CA2439645EFB1E3FB641A122B8D650F8559F0E8C5F0154EC57616FD33748BAB36F194F79808BCEF52CAF61D4B6CB3D6C4552C6C04BC1764AE37F684CB45F8C4EAFCF8AEF8381B1B47E2261F1DBB00785AED8C3EB4D15568CB0A56BC6F0307ACE639C3CF1D6D6FBC5CD5AB224A49004C5C56D520F8F5046F6000E596892E0EB36E1056BF44C0AB6FA6F479D9E32D6FF6204517C0E595D519E96FF74CD8095A9FAF5EE5F5783061B23739BAF3AFDB9423F50076E73D8DA013F8A3CE053B936F99D85D1AE754AD6CB918E9CD8C740EC4BFC81F1F816649BDB92CC611A1B992124C3EE432A58244E20AD0529\",adj_signing_id=\"1300000\",algorithm=\"adj7\",headers_id=\"7\",native_version=\"3.61.0\""
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 10; GM1901 Build/QKQ1.190716.003)"
+   ],
+   [
+    "Host",
+    "app.adjust.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Content-Length",
+    "632"
+   ]
+  ],
+  "body": {
+   "gps_adid_attempt": "1",
+   "api_level": "29",
+   "app_version": "14.4.8",
+   "app_token": "cv4d2hlazp4w",
+   "created_at": "2026-02-16T13:44:54.127Z+0300",
+   "wait_total": "0.0",
+   "device_type": "phone",
+   "gps_adid": "ea4561af-1d36-4aba-807c-a9c4250250a8",
+   "device_name": "GM1901",
+   "needs_response_details": "1",
+   "retry_count": "0",
+   "last_error": "0",
+   "gps_adid_src": "service",
+   "queue_size": "1",
+   "wait_time": "0.0",
+   "os_version": "10",
+   "first_error": "0",
+   "sharing": "enable",
+   "android_uuid": "4c986a9b-af46-45cc-8655-5172d6130b1e",
+   "sent_at": "2026-02-16T13:45:50.320Z+0300",
+   "offline_mode_enabled": "0",
+   "environment": "production",
+   "attribution_deeplink": "1",
+   "background": "1",
+   "package_name": "com.fdjservices.nirio",
+   "os_name": "android",
+   "ui_mode": "1",
+   "enqueue_size": "4",
+   "tracking_enabled": "1"
+  },
+  "status": "202",
+  "response_headers": [
+   [
+    "content-type",
+    "application/json"
+   ],
+   [
+    "date",
+    "Mon, 16 Feb 2026 10:45:51 GMT"
+   ],
+   [
+    "content-length",
+    "127"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "response": "{\"app_token\":\"cv4d2hlazp4w\",\"adid\":\"4212a983ee58dcb1564cb579148da234\",\"error\":\"Third party sharing failed (nothing to update)\"}"
+ },
+ {
+  "sid": "94",
+  "method": "POST",
+  "url": "https://app.adjust.com/sdk_click",
+  "client_ip": "",
+  "begin": "",
+  "done": "",
+  "request_headers": [
+   [
+    "Client-SDK",
+    "react-native5.4.4@android5.4.5"
+   ],
+   [
+    "Authorization",
+    "Signature signature=\"0C4106FC5D7CF6815F48EAA92C77D0D18E0E14751D3A51E4C704E5952A4B34A368230556192C44F8ABED9BE2F2BA93B1A8572A664DA317B9819B5AEA7A1487A243C4C8187C90BD510FF2E911C882BAE6B92A911544118C44C31F9B656AF88B5F64A4BBF95601FEE737F0DB353835B33F03BC11EAF74EB0ABF74797F7F189CFDC582B2C455DE32E2A2157686250C4CA1B6FB77CEE62DDBB317305BE1C569CF77078DDA7B977B5D4B9EE25E93DD2660A91417B69A4B3C5257CB9642639376563B2BAAE2EB3E17E4BC3160DB7F5466F020BF98839B6237399E92A9E18AD1B3E3329ED695D5A3340BE677D1257D28AEEA1B570F69F9EA9A0458C35BD615D46709F532AE0723DBEF1BE6AAEA73FAAC31C7E2C6E6A8458D922E36BA3313FA73E0FE4760CFBF921D951BFF34BB903BE963B2741\",adj_signing_id=\"1300000\",algorithm=\"adj7\",headers_id=\"7\",native_version=\"3.61.0\""
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 10; GM1901 Build/QKQ1.190716.003)"
+   ],
+   [
+    "Host",
+    "app.adjust.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Content-Length",
+    "1169"
+   ]
+  ],
+  "body": {
+   "gps_adid_attempt": "1",
+   "api_level": "29",
+   "hardware_name": "GM1901_14_201019",
+   "app_version": "14.4.8",
+   "app_token": "cv4d2hlazp4w",
+   "installed_at": "2026-02-16T13:43:27.591Z+0300",
+   "session_length": "7",
+   "created_at": "2026-02-16T13:47:18.545Z+0300",
+   "device_type": "phone",
+   "language": "fr",
+   "gps_adid": "ea4561af-1d36-4aba-807c-a9c4250250a8",
+   "referrer_api": "google",
+   "source": "install_referrer",
+   "foreground": "1",
+   "connectivity_type": "1",
+   "mcc": "405",
+   "device_manufacturer": "OnePlus",
+   "display_width": "1080",
+   "time_spent": "1",
+   "device_name": "GM1901",
+   "needs_response_details": "1",
+   "os_build": "QKQ1.190716.003",
+   "updated_at": "2026-02-16T13:43:27.591Z+0300",
+   "click_time": "2026-02-16T13:43:06.000Z+0300",
+   "cpu_type": "arm64-v8a",
+   "screen_size": "normal",
+   "screen_format": "long",
+   "gps_adid_src": "service",
+   "subsession_count": "2",
+   "mnc": "872",
+   "os_version": "10",
+   "google_play_instant": "0",
+   "android_uuid": "0f76b251-0f1e-4a7f-bac4-986f2a4af06f",
+   "sent_at": "2026-02-16T13:47:18.563Z+0300",
+   "referrer": "utm_source=(not%20set)&utm_medium=(not%20set)",
+   "offline_mode_enabled": "0",
+   "environment": "production",
+   "screen_density": "high",
+   "attribution_deeplink": "1",
+   "install_begin_time": "2026-02-16T13:43:08.000Z+0300",
+   "session_count": "1",
+   "display_height": "2218",
+   "package_name": "com.fdjservices.nirio",
+   "os_name": "android",
+   "ui_mode": "1",
+   "tracking_enabled": "1"
+  },
+  "status": "200",
+  "response_headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 16 Feb 2026 10:47:20 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "response": "{\"app_token\":\"cv4d2hlazp4w\",\"adid\":\"4212a983ee58dcb1564cb579148da234\"}"
+ },
+ {
+  "sid": "95",
+  "method": "POST",
+  "url": "https://app.adjust.com/third_party_sharing",
+  "client_ip": "",
+  "begin": "",
+  "done": "",
+  "request_headers": [
+   [
+    "Client-SDK",
+    "react-native5.4.4@android5.4.5"
+   ],
+   [
+    "Authorization",
+    "Signature signature=\"0C4106FC5D7CF6815F48EAA92C77D0D13FDBDE7562B782C6BEDB56A352F110CB0F714ACEFE563E8AC140B4CC3A3764AA1BBF77FB469B66B17CD3FF1797E5534EC6E9F833DCCBB723ADDD51134FB81F69CD70DC9959056A5D837E175E19C9EB1AF6460C39BA39E782EB7189DB5D6CB498A808282BE6018E74ECF559F2001760EE541BB057F240C829800B92A67EC3E9F895A56E64F9B434940D5886EC2CEC8063C725A58109A82422C4BEFF48E7FAB09DD7CF8E2C757588AA6F778B8C68775AA6080F898DC2D5CDB2BDCA3A9691359A5D81636C2AA1FE391A8ED4B807A2EBA3044D0F1595B6F111C7D4F42E0FB89972C597701F0D0DA7D78FB1523037E75EA854D48166F5CA4DE5B0BA134FC5F3A8798A2959F11D4847FA38AD7D5F827D599867EB806C43612CAE4DB66A6C3A7956CF65\",adj_signing_id=\"1300000\",algorithm=\"adj7\",headers_id=\"7\",native_version=\"3.61.0\""
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 10; GM1901 Build/QKQ1.190716.003)"
+   ],
+   [
+    "Host",
+    "app.adjust.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Content-Length",
+    "632"
+   ]
+  ],
+  "body": {
+   "gps_adid_attempt": "1",
+   "api_level": "29",
+   "app_version": "14.4.8",
+   "app_token": "cv4d2hlazp4w",
+   "created_at": "2026-02-16T13:47:11.750Z+0300",
+   "wait_total": "0.0",
+   "device_type": "phone",
+   "gps_adid": "ea4561af-1d36-4aba-807c-a9c4250250a8",
+   "foreground": "1",
+   "device_name": "GM1901",
+   "needs_response_details": "1",
+   "retry_count": "0",
+   "last_error": "0",
+   "gps_adid_src": "service",
+   "queue_size": "3",
+   "wait_time": "0.0",
+   "os_version": "10",
+   "first_error": "0",
+   "sharing": "enable",
+   "android_uuid": "0f76b251-0f1e-4a7f-bac4-986f2a4af06f",
+   "sent_at": "2026-02-16T13:47:18.533Z+0300",
+   "offline_mode_enabled": "0",
+   "environment": "production",
+   "attribution_deeplink": "1",
+   "package_name": "com.fdjservices.nirio",
+   "os_name": "android",
+   "ui_mode": "1",
+   "enqueue_size": "1",
+   "tracking_enabled": "1"
+  },
+  "status": "202",
+  "response_headers": [
+   [
+    "content-type",
+    "application/json"
+   ],
+   [
+    "date",
+    "Mon, 16 Feb 2026 10:47:19 GMT"
+   ],
+   [
+    "content-length",
+    "127"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "response": "{\"app_token\":\"cv4d2hlazp4w\",\"adid\":\"4212a983ee58dcb1564cb579148da234\",\"error\":\"Third party sharing failed (nothing to update)\"}"
+ },
+ {
+  "sid": "96",
+  "method": "GET",
+  "url": "https://app.adjust.com/attribution?initiated_by=sdk&gps_adid_attempt=1&api_level=29&app_version=14.4.8&app_token=cv4d2hlazp4w&os_version=10&created_at=2026-02-16T13%3A47%3A18.539Z%2B0300&device_type=phone&gps_adid=ea4561af-1d36-4aba-807c-a9c4250250a8&foreground=1&android_uuid=0f76b251-0f1e-4a7f-bac4-986f2a4af06f&sent_at=2026-02-16T13%3A47%3A18.569Z%2B0300&offline_mode_enabled=0&device_name=GM1901&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=com.fdjservices.nirio&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1",
+  "client_ip": "",
+  "begin": "",
+  "done": "",
+  "request_headers": [
+   [
+    "Client-SDK",
+    "react-native5.4.4@android5.4.5"
+   ],
+   [
+    "Authorization",
+    "Signature signature=\"0C4106FC5D7CF6815F48EAA92C77D0D1454AB8CAA29E4B16A2B10F63CF59A74D9E2216B038DACFCA5F1C320CEB9DB54472ECD0CADD7BCF21EFD5547DB10AAA6B65B8C54D40C2364968D22F48EC3B87631D5C1574039E3CF88E317E754880D804D8D19960DCDD7AFF609E1BF0B4FCA2AD3988CCA9CF5C7F95AFC52830DF786D5DF3799959B83B92293891903C14726E81D089B7858B6B82B8759DBB88F25E34114F00119287B532F29E2B91ED4DAC6E0C3509ADF9716E07AFA49ADB257065CD7A4F78DC13D75F002B6BF7C09ABAE072FE701DE12F1B8CEF0B2BE8DD5AA0657693249FDB66497D76C05625C1D2756BCB5EBE7E202D7D65CF67C00CBF923C3F1BE75C503F81D054937AFF5F5EEC0559B507B6E2AC4DA6D1551F18926387B3AE8C376DC9042A5C7B961EE8EFE897185DDED2\",adj_signing_id=\"1300000\",algorithm=\"adj7\",headers_id=\"7\",native_version=\"3.61.0\""
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 10; GM1901 Build/QKQ1.190716.003)"
+   ],
+   [
+    "Host",
+    "app.adjust.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ],
+  "body": "",
+  "status": "200",
+  "response_headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 16 Feb 2026 10:47:20 GMT"
+   ],
+   [
+    "content-length",
+    "584"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "response": "{\"app_token\":\"cv4d2hlazp4w\",\"adid\":\"4212a983ee58dcb1564cb579148da234\",\"attribution\":{\"tracker_token\":\"1xmjqt16\",\"tracker_name\":\"Kwanko_Spykemedia_DTS::NOV::{affiliate_id}::{app_name}\",\"network\":\"Kwanko_Spykemedia_DTS\",\"campaign\":\"NOV\",\"adgroup\":\"{affiliate_id}\",\"creative\":\"{app_name}\",\"deeplink\":\"nirio://home?adj_t=1wwj1ebt\\u0026adj_campaign=NOV\\u0026adj_adgroup={affiliate_id}\\u0026adj_creative={app_name}\\u0026adjust_no_sdkclick=1\",\"engagement_time\":\"2026-02-16T10:43:00Z\",\"installed_at\":\"2026-02-16T10:44:06Z\",\"first_session_time\":\"2026-02-16T10:44:06Z\",\"is_reattributed\":false}}"
+ },
+ {
+  "sid": "97",
+  "method": "POST",
+  "url": "https://app.adjust.com/third_party_sharing",
+  "client_ip": "",
+  "begin": "",
+  "done": "",
+  "request_headers": [
+   [
+    "Client-SDK",
+    "react-native5.4.4@android5.4.5"
+   ],
+   [
+    "Authorization",
+    "Signature signature=\"5CC9354E156EF028397091052F2702E2E173DB822E2A4E9CDA55694FCB54A9461DCDD05B939404812206F0BCBBC981068E48DAFE2E1DCDC3F0B92858179294CD3A2AFE5A7776A6F0257BDD253D5EC7671C07010343B5BAD7E5880E47C8EEAFD65BC798A25E556854AEBB304791A9A2D677598CA1F842FBB3F2CB31FFF9ED42F8FF0F52444E39B049684763A71004A77A928E4186389D323F1A7D3E2E76DBC0732C8D2A9DFD1A97624A8B1C86D77DEA3ECB83580F3DBC3BA213194FBF4EBDE165192964BA65154ADBF584EC5DB7CC9A27EFDA1EC60A646241F5E31EC56C26A104725E0FF40E58324CA0283A998D5DB03509E8587F653669B0C702CDC8479E559E1561153F69D470B5D8A08EFB6922B3898BC2D36BDC5D878B4F987192B4B1E9882381D48A8A1F60FC80CB82D53D3D6794\",adj_signing_id=\"1300000\",algorithm=\"adj7\",headers_id=\"7\",native_version=\"3.61.0\""
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 10; GM1901 Build/QKQ1.190716.003)"
+   ],
+   [
+    "Host",
+    "app.adjust.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Content-Length",
+    "619"
+   ]
+  ],
+  "body": {
+   "gps_adid_attempt": "1",
+   "api_level": "29",
+   "app_version": "14.4.8",
+   "app_token": "cv4d2hlazp4w",
+   "created_at": "2026-02-16T13:47:26.234Z+0300",
+   "wait_total": "0.0",
+   "device_type": "phone",
+   "gps_adid": "ea4561af-1d36-4aba-807c-a9c4250250a8",
+   "device_name": "GM1901",
+   "needs_response_details": "1",
+   "retry_count": "0",
+   "last_error": "0",
+   "gps_adid_src": "service",
+   "wait_time": "0.0",
+   "os_version": "10",
+   "first_error": "0",
+   "sharing": "enable",
+   "android_uuid": "0f76b251-0f1e-4a7f-bac4-986f2a4af06f",
+   "sent_at": "2026-02-16T13:47:26.250Z+0300",
+   "offline_mode_enabled": "0",
+   "environment": "production",
+   "attribution_deeplink": "1",
+   "background": "1",
+   "package_name": "com.fdjservices.nirio",
+   "os_name": "android",
+   "ui_mode": "1",
+   "enqueue_size": "0",
+   "tracking_enabled": "1"
+  },
+  "status": "202",
+  "response_headers": [
+   [
+    "content-type",
+    "application/json"
+   ],
+   [
+    "date",
+    "Mon, 16 Feb 2026 10:47:28 GMT"
+   ],
+   [
+    "content-length",
+    "127"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "response": "{\"app_token\":\"cv4d2hlazp4w\",\"adid\":\"4212a983ee58dcb1564cb579148da234\",\"error\":\"Third party sharing failed (nothing to update)\"}"
+ }
+]

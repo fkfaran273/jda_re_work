@@ -5,14 +5,14 @@
 
   header  bionic rand() seeded by the signing second: 310 warm-up draws,
           then eight draws XORed in pairs, big-endian.
-  record  head from the 4-byte nonce, then nonce4 (raw), the cert SHA-1 and
-          the block -- SHA-256 chained from IV2 over cert || 00 08 || head ||
-          rev4(nonce4) || sha256("") || 01 || claims.  AES-256-CBC with the
-          fixed key, IV = header; tag = HMAC-SHA256(DK38) over the body.
+  record  head from the 4-byte nonce; nonce4 (raw), the cert SHA-1 and the
+          block -- SHA-256 chained from IV2 over cert || 00 08 || head ||
+          rev4(nonce4) || sha256("") || 01 || claims.  CBC with the fixed
+          key, IV = header; tag = HMAC-SHA256(DK38) over the body.
 
-  RECORDED  DK38 and the AES key: lib immediates, no generating rule.
-  Derived: head masks (131 step 2), IV2 (lib immediates XOR 3435973836), the
-  AES S-box and schedule, the SHA-256 constants (cube roots of primes).
+  RECORDED  DK38, AES_KEY: lib immediates, no generating rule.  Derived: the
+  head masks (131 step 2), IV2 (lib immediates XOR 3435973836), the S-box,
+  the AES-256 schedule, the SHA-256 constants (cube roots of primes).
   Byte-exact on the genuine 3.67.0 device blobs (bevietnam_.saz) and
   server-proven non-organic (2026-10-04 replay + fresh-GAID install).
 
@@ -36,15 +36,17 @@ import binascii, hashlib, hmac, os, struct, time
 SHA0 = hashlib.sha256(b"").digest()
 
 # the two recorded lib immediates (no generating rule)
-DK38 = bytearray.fromhex(
-    "caab83444a2146392abb96b64230615529a770c63c163c1c7528673e0671728f")
-AES_KEY = bytearray.fromhex("ffb5e5f9c862b637d13351c292633e39"
-                        "965a3c2d037ed64dfff5388e11d80db3")
+DK38 = bytearray.fromhex("caab83444a2146392abb96b64230615529a770c63c163c1c7528673e0671728f")
+AES_KEY = bytearray.fromhex("ffb5e5f9c862b637d13351c292633e39965a3c2d037ed64dfff5388e11d80db3")
 
 # -- the claims law: the native's pool in emission order; a key only when the
 # -- map carries it non-empty; values concatenated bare.  adj_signing_id pins
 # -- after "main" (right after package_name); headers_id + native_version
-# -- close the string.
+# -- close the string.  The pool IS the Android lib's table (recovered from
+# -- the obfuscated strings of libsigner 3.62.0, adj7_work/adj7s4_pool_order;
+# -- 3.67.0 adds secret_id): it is a cross-platform UNION, so iOS-only names
+# -- (bundle_id, idfa, idfv, att_status, skadn_*, app_version_short) sit in
+# -- it and never fire on Android -- the SDK never puts them in the map.
 CLAIMS = {
     "main": ("ad_impressions_count ad_revenue_network ad_revenue_placement "
              "ad_revenue_unit adgroup android_id android_uuid api_level "
@@ -67,23 +69,22 @@ CLAIMS = {
              "purchase_time push_token referrer referrer_api reftag "
              "revenue sales_region secondary_dedupe_token secret_id seq"
              ).split(),
-    "tail": ("session_count session_length sharing skadn_registered_at "
+    "rest": ("session_count session_length sharing skadn_registered_at "
              "source started_at store_app_id_from_client "
              "store_name_from_client store_name_from_system "
              "subsession_count time_spent tracker tracking_enabled "
-             "updated_at").split(),
-    "last": ("activity_kind client_sdk").split(),
+             "updated_at activity_kind client_sdk").split(),
 }
 
 def claims_string(val, c):
     """The exact claims bytes the block hash ingests."""
-    out = ""
-    for grp in ("main", "tail", "last"):
-        out += "".join(str(val[k]) for k in CLAIMS[grp]
-                       if val.get(k) not in (None, ""))
-        if grp == "main":
-            out += c["adj_signing_id"]
-    return (out + c["headers_id"] + c["native_version"]).encode("latin1")
+    parts = [str(val[k]) for k in CLAIMS["main"]
+             if val.get(k) not in (None, "")]
+    parts.append(c["adjust"]["adj_signing_id"])
+    parts += [str(val[k]) for k in CLAIMS["rest"]
+              if val.get(k) not in (None, "")]
+    return ("".join(parts) + c["adjust"]["headers_id"] +
+            c["adjust"]["native_version"]).encode("latin1")
 
 # -- the header: bionic rand() of the signing second ---------------------------
 _M, _A = 2147483647, 16807               # MINSTD: Mersenne prime, 7**5
@@ -117,8 +118,7 @@ def make_header(unix_sec):
 
 # -- the head: 24 Lehmer draws (seed = u32be(nonce4)) drive a 16-slot
 # -- Fisher-Yates shuffle; one bit forced on per halfword; 16x16 bit
-# -- transpose; the eight masks (131 step 2) fold halfwords 8..15 by XOR.
-HEAD_MASKS = tuple(131 + 2 * i for i in range(8))
+# -- transpose; the eight fold masks (131 step 2) fold halfwords 8..15.
 
 def head_for(nonce4):
     state = struct.unpack(">I", _b(nonce4))[0] or 123459876
@@ -132,14 +132,13 @@ def head_for(nonce4):
         perm[i], perm[j] = perm[j], perm[i]
     pre = []
     for i in range(16):
-        v = (draws[16 + i // 2] >> 16 if i % 2 == 0
-             else draws[16 + (i - 1) // 2])
+        v = draws[16 + i // 2] >> (16 if i % 2 == 0 else 0)
         pos = 15 - perm[i]
         pre.append((v & ((1 << pos) - 1)) | (1 << pos))
     src = [sum(((pre[i] >> (15 - j)) & 1) << (15 - i) for i in range(16))
            for j in range(16)][8:]
     out = b""
-    for msk in HEAD_MASKS:
+    for msk in range(131, 147, 2):
         v = 0
         for k in range(8):
             if msk >> k & 1:
@@ -199,8 +198,7 @@ _K256 = tuple(_frac_cbrt(p) for p in _primes(64))   # the FIPS 180-4 constants
 # -- eight constant-push sites store IV2 XOR 3435973836 per dword; the
 # -- state-loading helper unmasks each with 3435973836.
 IV2 = tuple(w ^ 3435973836 for w in struct.unpack(
-    ">8I", bytearray.fromhex("018a6c12190ae32cce07f5493186d96f"
-                         "cb061855af48c1739da54cdc06cf339e")))
+    ">8I", bytearray.fromhex("018a6c12190ae32cce07f5493186d96fcb061855af48c1739da54cdc06cf339e")))
 
 def record_block(head, nonce4, claims, cert):
     """The device stores the nonce raw and hashes it reversed."""
@@ -256,10 +254,10 @@ def _key_schedule(key):
 _RK = _key_schedule(AES_KEY)
 
 def _mix_col(col):
-    return [(_gmul(col[0], 2) ^ _gmul(col[1], 3) ^ col[2] ^ col[3]),
-            (col[0] ^ _gmul(col[1], 2) ^ _gmul(col[2], 3) ^ col[3]),
-            (col[0] ^ col[1] ^ _gmul(col[2], 2) ^ _gmul(col[3], 3)),
-            (_gmul(col[0], 3) ^ col[1] ^ col[2] ^ _gmul(col[3], 2))]
+    """AES MixColumns."""
+    return [_gmul(m[0], col[0]) ^ _gmul(m[1], col[1]) ^ _gmul(m[2], col[2])
+            ^ _gmul(m[3], col[3])
+            for m in ((2, 3, 1, 1), (1, 2, 3, 1), (1, 1, 2, 3), (3, 1, 1, 2))]
 
 def _encrypt_chunk(chunk):
     """AES-256 encrypt one 16-byte block with the fixed key."""
@@ -276,10 +274,9 @@ def _encrypt_chunk(chunk):
 def encrypt(record, header):
     """128 B plaintext + 16 B IV -> the encrypted body (CBC)."""
     out, wa = b"", header
-    for k in range(len(record) // 16):
+    for k in range(0, len(record), 16):
         c = _encrypt_chunk([a ^ b for a, b in
-                            zip(bytearray(record[16 * k:16 * k + 16]),
-                                bytearray(wa))])
+                            zip(bytearray(record[k:k + 16]), bytearray(wa))])
         out += c
         wa = c
     return out
@@ -303,18 +300,18 @@ def sign(second, nonce4, claims, cert):
 def sign_request(fields, kind, c, second=None, nonce4=None):
     """Sign one request and return the Authorization header VALUE.
 
-    c = the campaign's signer fields (campaign_data.signer_fields()):
-    cert_sha1 (required), client_sdk, adj_signing_id, headers_id,
-    native_version, algorithm.
+    c = the campaign dict, the backend's format: adjust{sdk, adj_signing_id,
+    headers_id, native_version, algorithm} + cert_sha1.
     """
     val = dict(fields)
     val["activity_kind"] = "click" if kind == "sdk_click" else kind
-    val["client_sdk"] = c["client_sdk"]
+    val["client_sdk"] = c["adjust"]["sdk"]
     second = int(second if second is not None else time.time())
     nonce4 = os.urandom(4) if nonce4 is None else _b(bytearray(nonce4))
     blob = sign(second, nonce4, claims_string(val, c),
                 _b(bytearray.fromhex(c["cert_sha1"])))
     return ('Signature signature="%s",adj_signing_id="%s",algorithm="%s",'
             'headers_id="%s",native_version="%s"'
-            % (base64.b64encode(blob).decode("ascii"), c["adj_signing_id"],
-               c["algorithm"], c["headers_id"], c["native_version"]))
+            % (base64.b64encode(blob).decode("ascii"),
+               c["adjust"]["adj_signing_id"], c["adjust"]["algorithm"],
+               c["adjust"]["headers_id"], c["adjust"]["native_version"]))

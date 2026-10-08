@@ -1,0 +1,15 @@
+{
+ "gaid": "81ce752b-2d46-492a-aa11-346de31ba9fc",
+ "android_uuid": "22a45df6-8e24-410d-9590-e12058ee07fb",
+ "reftag": "adjust_reftag=ccYxSl5KjQL4B&utm_source=VL-Alliance&utm_campaign=HM2&utm_content=HM2_1722_",
+ "verdict": {
+  "tracker_token": "g0bpyt5",
+  "tracker_name": "Organic",
+  "network": "Organic",
+  "engagement_time": "0001-01-01T00:00:00Z",
+  "installed_at": "2026-10-07T11:50:11Z",
+  "first_session_time": "2026-10-07T11:50:11Z",
+  "is_reattributed": false,
+  "is_redownload_install": false
+ }
+}

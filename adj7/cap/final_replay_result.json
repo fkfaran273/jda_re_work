@@ -1,0 +1,52 @@
+{
+ "results": [
+  {
+   "name": "(a) GENUINE-AUTH CONTROL (device blob verbatim)",
+   "status": 200,
+   "tracker": "248wk8ym",
+   "network": "VL-Alliance",
+   "adid": "bc620c16d8112216e33514e30a03eb37",
+   "booked": true
+  },
+  {
+   "name": "(b) OUR MINT, FRESH NONCE  <-- THE TEST",
+   "status": 200,
+   "tracker": "g0bpyt5",
+   "network": "Organic",
+   "adid": "bc620c16d8112216e33514e30a03eb37",
+   "booked": false
+  },
+  {
+   "name": "(c) OUR MINT, DEVICE NONCE (diagnostic)",
+   "status": 200,
+   "tracker": "248wk8ym",
+   "network": "VL-Alliance",
+   "adid": "bc620c16d8112216e33514e30a03eb37",
+   "booked": true
+  }
+ ],
+ "offline": {
+  "query_identical": true,
+  "byte_identical_device_nonce": true,
+  "claims_len": 211,
+  "h_ascii_match": true,
+  "header_match": true,
+  "sec": 1791363756,
+  "nonce12_dev": "bd37db0dc2162ab78b8dc5db",
+  "fresh_nonce": "49cc9b1608a974db6dcfa00d",
+  "record_device": {
+   "a": "13198386680674596797",
+   "b": "75871CA76A6A9A190909FC54035367E9798E889F1FD28D2EAFA9F51B076775AD",
+   "c": "C1BFAFCAFFB84B805288B985FBE48E7F33D2C6DF",
+   "d": "8B8DC5DB",
+   "e": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  "record_fresh": {
+   "a": "15813450043808795721",
+   "b": "5FF0640C1BD4DDCA5E7ACAFDB554616EB0468CC35C89E06A8C10938B7373A166",
+   "c": "C1BFAFCAFFB84B805288B985FBE48E7F33D2C6DF",
+   "d": "6DCFA00D",
+   "e": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  }
+ }
+}

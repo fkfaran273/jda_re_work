@@ -1,0 +1,6 @@
+{
+ "mode": "corrupt",
+ "att_status": "3",
+ "idfa": "04210AB7-600E-4316-883B-AABB03365360",
+ "resp": "{\"app_token\":\"1ri26ekrhwtc\",\"adid\":\"29ba58869e82d2702a77d6d270a4260c\",\"attribution\":{\"tracker_token\":\"693eppa\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-10-08T08:04:40Z\",\"first_session_time\":\"2026-10-08T08:04:40Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+}

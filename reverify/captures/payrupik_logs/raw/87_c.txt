@@ -1,0 +1,48 @@
+CONNECT ip4.tracker-api.vk-analytics.ru:443 HTTP/1.1
+Host: ip4.tracker-api.vk-analytics.ru:443
+Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 11; DN2101 Build/RP1A.200720.011)
+
+A SSLv3-compatible ClientHello handshake was found. Fiddler extracted the parameters below.
+
+Version: 3.3 (TLS/1.2)
+Random: 04 E6 50 F6 08 4B F3 61 6D 66 0A 0D 58 B2 53 E7 D1 D4 05 C6 97 0C AA 3B 58 A9 29 1C 81 8C E6 C1
+"Time": 15-12-2100 01:18:20 AM
+SessionID: 5A 52 31 D4 8F 43 D6 02 FB E5 B8 A8 38 04 B9 BD 92 BB 75 96 5D 4D D2 87 3A 6A 2F 6B 65 8F 03 8E
+Extensions: 
+	server_name	ip4.tracker-api.vk-analytics.ru
+	extended_master_secret	empty
+	renegotiation_info	00
+	supported_groups	x25519 [0x1d], secp256r1 [0x17], secp384r1 [0x18]
+	ec_point_formats	uncompressed [0x0]
+	SessionTicket	empty
+	ALPN		http/1.1
+	status_request	OCSP - Implicit Responder
+	signature_algs	ecdsa_secp256r1_sha256, rsa_pss_rsae_sha256, rsa_pkcs1_sha256, ecdsa_secp384r1_sha384, rsa_pss_rsae_sha384, rsa_pkcs1_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha512, rsa_pkcs1_sha1
+	key_share	00 24 00 1D 00 20 CD F2 8D D0 7E 5D B0 B7 A1 AD F2 75 CF 85 F5 1A C9 AA C6 EB AD 60 C4 3B 69 C7 4A 66 A2 7B 94 22
+	psk_key_exchange_modes	01 01
+	supported_versions	Tls1.3, Tls1.2, Tls1.1, Tls1.0
+	padding		217 null bytes
+Ciphers: 
+	[1301]	TLS_AES_128_GCM_SHA256
+	[1302]	TLS_AES_256_GCM_SHA384
+	[1303]	TLS_CHACHA20_POLY1305_SHA256
+	[C02B]	TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+	[C02C]	TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+	[CCA9]	TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
+	[C02F]	TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	[C030]	TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	[CCA8]	TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+	[C009]	TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
+	[C00A]	TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
+	[C013]	TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+	[C014]	TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+	[009C]	TLS_RSA_WITH_AES_128_GCM_SHA256
+	[009D]	TLS_RSA_WITH_AES_256_GCM_SHA384
+	[002F]	TLS_RSA_WITH_AES_128_CBC_SHA
+	[0035]	TLS_RSA_WITH_AES_256_CBC_SHA
+
+Compression: 
+	[00]	NO_COMPRESSION
+
+

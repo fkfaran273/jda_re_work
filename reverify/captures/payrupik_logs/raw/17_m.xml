@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="17" BitFlags="2100">
+  <SessionTimers ClientConnected="2026-10-05T14:40:21.5995196+05:30" ClientBeginRequest="2026-10-05T14:40:21.6006467+05:30" GotRequestHeaders="2026-10-05T14:40:21.6016458+05:30" ClientDoneRequest="2026-10-05T14:40:21.6016458+05:30" GatewayTime="0" DNSTime="0" TCPConnectTime="6" HTTPSHandshakeTime="19" ServerConnected="2026-10-05T14:40:21.6079404+05:30" FiddlerBeginRequest="2026-10-05T14:40:21.6079404+05:30" ServerGotRequest="2026-10-05T14:40:21.6079404+05:30" ServerBeginResponse="0001-01-01T00:00:00" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="0001-01-01T00:00:00" ClientBeginResponse="2026-10-05T14:40:21.6079404+05:30" ClientDoneResponse="2026-10-05T14:40:21.6079404+05:30" />
+  <PipeInfo />
+  <TunnelInfo BytesEgress="0" BytesIngress="0" />
+  <SessionFlags>
+    <SessionFlag N="https-client-version" V="None" />
+    <SessionFlag N="x-egressport" V="23387" />
+    <SessionFlag N="x-responsebodytransferlength" V="0" />
+    <SessionFlag N="x-clientport" V="33574" />
+    <SessionFlag N="https-client-snihostname" V="play.googleapis.com" />
+    <SessionFlag N="x-clientip" V="::ffff:192.168.29.226" />
+    <SessionFlag N="https-client-sessionid" V="2E DC EF 70 B1 DA 39 E7 22 13 70 83 D7 88 34 FA D3 ED 3B D0 DA 6A A2 CE 50 14 C9 46 34 1E 92 DD" />
+    <SessionFlag N="x-hostip" V="2001:4860:4840:400::" />
+    <SessionFlag N="x-supported-client-tls-protocols" V="16320" />
+    <SessionFlag N="x-supported-client-alpn" V="http/1.1" />
+  </SessionFlags>
+</Session>

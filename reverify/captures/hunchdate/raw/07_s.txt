@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+FiddlerGateway: Direct
+StartTime: 01:10:43.252
+Connection: close
+
+Encrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.
+
+Secure Protocol: Tls13
+Cipher: Aes128 128bits
+Hash Algorithm: Sha256 ?bits
+Key Exchange: None 255bits
+
+== Server Certificate ==========
+[Subject]
+  CN=*.moengage.com, O=MoEngage Inc., L=San Francisco, S=California, C=US
+
+[Issuer]
+  CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1, O=DigiCert Inc, C=US
+
+[Serial Number]
+  0739741F07A05CAD4558575C115BCCE4
+
+[Not Before]
+  13-01-2026 05:30:00
+
+[Not After]
+  14-02-2027 05:29:59
+
+[Thumbprint]
+  456586CF4F4B229C2174D8434B9E3047B140A012
+
+[SubjectAltNames]
+*.moengage.com

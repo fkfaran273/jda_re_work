@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="26" BitFlags="2100">
+  <SessionTimers ClientConnected="2026-10-07T01:10:44.4449367+05:30" ClientBeginRequest="2026-10-07T01:10:44.4599369+05:30" GotRequestHeaders="2026-10-07T01:10:44.4599369+05:30" ClientDoneRequest="2026-10-07T01:10:44.4599369+05:30" GatewayTime="0" DNSTime="9" TCPConnectTime="6" HTTPSHandshakeTime="325" ServerConnected="2026-10-07T01:10:44.4759862+05:30" FiddlerBeginRequest="2026-10-07T01:10:44.4759862+05:30" ServerGotRequest="2026-10-07T01:10:44.4759862+05:30" ServerBeginResponse="0001-01-01T00:00:00" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="0001-01-01T00:00:00" ClientBeginResponse="2026-10-07T01:10:44.4759862+05:30" ClientDoneResponse="2026-10-07T01:10:44.4759862+05:30" />
+  <PipeInfo />
+  <TunnelInfo BytesEgress="0" BytesIngress="0" />
+  <SessionFlags>
+    <SessionFlag N="https-client-version" V="Tls13" />
+    <SessionFlag N="x-supported-client-tls-protocols" V="15360" />
+    <SessionFlag N="x-egressport" V="13663" />
+    <SessionFlag N="x-responsebodytransferlength" V="0" />
+    <SessionFlag N="x-clientport" V="13661" />
+    <SessionFlag N="https-server-version" V="Tls13" />
+    <SessionFlag N="https-client-snihostname" V="api.revenuecat.com" />
+    <SessionFlag N="x-clientip" V="::ffff:127.0.0.1" />
+    <SessionFlag N="https-client-sessionid" V="6B 77 39 3F C2 C7 D8 92 C9 CF 5D 55 3B 48 94 FD C5 E0 DA B5 6C 68 7C 53 AD 41 56 59 63 A0 FD 3D" />
+    <SessionFlag N="x-hostip" V="13.224.163.33" />
+    <SessionFlag N="x-processinfo" V="python:34048" />
+    <SessionFlag N="https-server-cipher" V="Aes128 128bits" />
+  </SessionFlags>
+</Session>

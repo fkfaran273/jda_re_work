@@ -1,0 +1,6 @@
+{
+ "mode": "none",
+ "att_status": "3",
+ "idfa": "61E57B7A-A292-42F8-9073-236EA51AA7D3",
+ "resp": "{\"app_token\":\"1ri26ekrhwtc\",\"adid\":\"b047fe4e109eb08f276124ac44aaf09d\",\"attribution\":{\"tracker_token\":\"693eppa\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-10-08T08:06:04Z\",\"first_session_time\":\"2026-10-08T08:06:04Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+}

@@ -1,0 +1,1492 @@
+{
+ "golden_flow_summary": {
+  "session": {
+   "status": "HTTP/1.1 200 OK",
+   "response": {
+    "app_token": "smxi7gqwu39c",
+    "adid": "6b575c41bbefc8caaccaf6faa01eac3a",
+    "ask_in": 2000
+   }
+  },
+  "sdk_click": {
+   "status": "HTTP/1.1 200 OK",
+   "response": {
+    "app_token": "smxi7gqwu39c",
+    "adid": "6b575c41bbefc8caaccaf6faa01eac3a"
+   }
+  },
+  "attribution": {
+   "status": "HTTP/1.1 200 OK",
+   "response": {
+    "app_token": "smxi7gqwu39c",
+    "adid": "6b575c41bbefc8caaccaf6faa01eac3a",
+    "attribution": {
+     "tracker_token": "248wk8ym",
+     "tracker_name": "VL-Alliance::HM2::HM2_1722_",
+     "network": "VL-Alliance",
+     "campaign": "HM2",
+     "adgroup": "HM2_1722_",
+     "engagement_time": "2026-10-06T10:10:24Z",
+     "installed_at": "2026-10-06T10:17:39Z",
+     "first_session_time": "2026-10-06T10:17:39Z",
+     "is_reattributed": false,
+     "is_redownload_install": false
+    }
+   }
+  },
+  "event": {
+   "status": "HTTP/1.1 200 OK",
+   "response": {
+    "app_token": "smxi7gqwu39c",
+    "adid": "6b575c41bbefc8caaccaf6faa01eac3a"
+   }
+  }
+ },
+ "click_in_saz": null,
+ "our_device_profile": {
+  "api_level": "29",
+  "os_version": "10",
+  "device_name": "GM1901",
+  "device_manufacturer": "OnePlus",
+  "hardware_name": "GM1901_14_201019",
+  "os_build": "QKQ1.190716.003",
+  "language": "en",
+  "country": "AE",
+  "display_width": "1080",
+  "display_height": "2218",
+  "screen_density": "high",
+  "screen_size": "normal",
+  "screen_format": "long",
+  "cpu_type": "arm64-v8a",
+  "connectivity_type": "1",
+  "device_type": "phone",
+  "environment": "production",
+  "timezone": "+0530"
+ },
+ "our_app_ua": "Dalvik/2.1.0 (Linux; U; Android 10; GM1901 Build/QKQ1.190716.003)",
+ "our_browser_ua": "Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36",
+ "headers": {
+  "session": {
+   "golden_order": [
+    "Client-SDK",
+    "Authorization",
+    "Content-Type",
+    "User-Agent",
+    "Host",
+    "Connection",
+    "Accept-Encoding",
+    "Content-Length"
+   ],
+   "our_order": [
+    "Client-SDK",
+    "Authorization",
+    "Content-Type",
+    "User-Agent",
+    "Host",
+    "Connection",
+    "Accept-Encoding",
+    "Content-Length"
+   ],
+   "same_order_and_set": true,
+   "diffs": [
+    {
+     "class": "value",
+     "header": "user-agent",
+     "golden": "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)",
+     "ours": "Dalvik/2.1.0 (Linux; U; Android 10; GM1901 Build/QKQ1.190716.003)"
+    },
+    {
+     "class": "value",
+     "header": "content-length",
+     "golden": "1124",
+     "ours": "1222"
+    }
+   ]
+  },
+  "sdk_click": {
+   "golden_order": [
+    "Client-SDK",
+    "Authorization",
+    "Content-Type",
+    "User-Agent",
+    "Host",
+    "Connection",
+    "Accept-Encoding",
+    "Content-Length"
+   ],
+   "our_order": [
+    "Client-SDK",
+    "Authorization",
+    "Content-Type",
+    "User-Agent",
+    "Host",
+    "Connection",
+    "Accept-Encoding",
+    "Content-Length"
+   ],
+   "same_order_and_set": true,
+   "diffs": [
+    {
+     "class": "value",
+     "header": "user-agent",
+     "golden": "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)",
+     "ours": "Dalvik/2.1.0 (Linux; U; Android 10; GM1901 Build/QKQ1.190716.003)"
+    },
+    {
+     "class": "value",
+     "header": "content-length",
+     "golden": "1420",
+     "ours": "1348"
+    }
+   ]
+  },
+  "attribution": {
+   "golden_order": [
+    "Client-SDK",
+    "Authorization",
+    "User-Agent",
+    "Host",
+    "Connection",
+    "Accept-Encoding"
+   ],
+   "our_order": [
+    "Client-SDK",
+    "Authorization",
+    "User-Agent",
+    "Host",
+    "Connection",
+    "Accept-Encoding"
+   ],
+   "same_order_and_set": true,
+   "diffs": [
+    {
+     "class": "value",
+     "header": "user-agent",
+     "golden": "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)",
+     "ours": "Dalvik/2.1.0 (Linux; U; Android 10; GM1901 Build/QKQ1.190716.003)"
+    }
+   ]
+  }
+ },
+ "bodies": {
+  "session": {
+   "golden_count": 45,
+   "our_count": 46,
+   "golden_order": [
+    "store_name_from_system",
+    "gps_adid_attempt",
+    "country",
+    "api_level",
+    "hardware_name",
+    "partner_params",
+    "app_version",
+    "app_token",
+    "installed_at",
+    "created_at",
+    "wait_total",
+    "device_type",
+    "language",
+    "gps_adid",
+    "foreground",
+    "connectivity_type",
+    "device_manufacturer",
+    "display_width",
+    "device_name",
+    "needs_response_details",
+    "os_build",
+    "updated_at",
+    "cpu_type",
+    "retry_count",
+    "screen_size",
+    "screen_format",
+    "last_error",
+    "gps_adid_src",
+    "wait_time",
+    "os_version",
+    "first_error",
+    "android_uuid",
+    "sent_at",
+    "offline_mode_enabled",
+    "environment",
+    "screen_density",
+    "attribution_deeplink",
+    "session_count",
+    "display_height",
+    "package_name",
+    "initiating_package_name",
+    "os_name",
+    "ui_mode",
+    "enqueue_size",
+    "tracking_enabled"
+   ],
+   "our_order": [
+    "store_name_from_system",
+    "gps_adid_attempt",
+    "country",
+    "api_level",
+    "hardware_name",
+    "app_version",
+    "app_token",
+    "installed_at",
+    "created_at",
+    "wait_total",
+    "device_type",
+    "language",
+    "gps_adid",
+    "foreground",
+    "connectivity_type",
+    "device_manufacturer",
+    "display_width",
+    "device_name",
+    "needs_response_details",
+    "os_build",
+    "updated_at",
+    "cpu_type",
+    "retry_count",
+    "screen_size",
+    "screen_format",
+    "last_error",
+    "gps_adid_src",
+    "wait_time",
+    "os_version",
+    "first_error",
+    "push_token",
+    "partner_params",
+    "initiating_package_name",
+    "android_uuid",
+    "sent_at",
+    "offline_mode_enabled",
+    "environment",
+    "screen_density",
+    "attribution_deeplink",
+    "session_count",
+    "display_height",
+    "package_name",
+    "os_name",
+    "ui_mode",
+    "enqueue_size",
+    "tracking_enabled"
+   ],
+   "missing_in_ours": [],
+   "extra_in_ours": [
+    "push_token"
+   ],
+   "order_same": false,
+   "value_and_encoding": [
+    {
+     "field": "country",
+     "golden_raw": "IN",
+     "our_raw": "AE",
+     "class": "value",
+     "golden_decoded": "IN",
+     "our_decoded": "AE"
+    },
+    {
+     "field": "api_level",
+     "golden_raw": "31",
+     "our_raw": "29",
+     "class": "value",
+     "golden_decoded": "31",
+     "our_decoded": "29"
+    },
+    {
+     "field": "hardware_name",
+     "golden_raw": "S2SE32.28-28-4",
+     "our_raw": "GM1901_14_201019",
+     "class": "value",
+     "golden_decoded": "S2SE32.28-28-4",
+     "our_decoded": "GM1901_14_201019"
+    },
+    {
+     "field": "partner_params",
+     "golden_raw": "%7B%22payrupik_c_id%22%3A%224c2576c7-56da-3568-9d9c-dd5ef029b6c8%22%7D",
+     "our_raw": "%7B%22payrupik_c_id%22%3A%2201bfcf18-e4d4-4ee0-9deb-748de239f745%22%7D",
+     "class": "value",
+     "golden_decoded": "{\"payrupik_c_id\":\"4c2576c7-56da-3568-9d9c-dd5ef029b6c8\"}",
+     "our_decoded": "{\"payrupik_c_id\":\"01bfcf18-e4d4-4ee0-9deb-748de239f745\"}"
+    },
+    {
+     "field": "installed_at",
+     "golden_raw": "2026-10-06T15%3A41%3A06.629Z%2B0530",
+     "our_raw": "2026-10-06T17%3A47%3A06.800Z%2B0530",
+     "class": "value",
+     "golden_decoded": "2026-10-06T15:41:06.629Z+0530",
+     "our_decoded": "2026-10-06T17:47:06.800Z+0530",
+     "golden_ts_format": "local+digits+Z+offset",
+     "our_ts_format": "local+digits+Z+offset"
+    },
+    {
+     "field": "created_at",
+     "golden_raw": "2026-10-06T15%3A47%3A38.430Z%2B0530",
+     "our_raw": "2026-10-06T17%3A46%3A14.198Z%2B0530",
+     "class": "value",
+     "golden_decoded": "2026-10-06T15:47:38.430Z+0530",
+     "our_decoded": "2026-10-06T17:46:14.198Z+0530",
+     "golden_ts_format": "local+digits+Z+offset",
+     "our_ts_format": "local+digits+Z+offset"
+    },
+    {
+     "field": "gps_adid",
+     "golden_raw": "0a5863d0-66f6-4d15-b9ab-d388b77c8ba3",
+     "our_raw": "da7b3547-b7a8-4ca9-8218-a525f7a81b7b",
+     "class": "value",
+     "golden_decoded": "0a5863d0-66f6-4d15-b9ab-d388b77c8ba3",
+     "our_decoded": "da7b3547-b7a8-4ca9-8218-a525f7a81b7b"
+    },
+    {
+     "field": "device_manufacturer",
+     "golden_raw": "motorola",
+     "our_raw": "OnePlus",
+     "class": "value",
+     "golden_decoded": "motorola",
+     "our_decoded": "OnePlus"
+    },
+    {
+     "field": "device_name",
+     "golden_raw": "moto+g42",
+     "our_raw": "GM1901",
+     "class": "value",
+     "golden_decoded": "moto g42",
+     "our_decoded": "GM1901"
+    },
+    {
+     "field": "os_build",
+     "golden_raw": "S2SE32.28-28-4",
+     "our_raw": "QKQ1.190716.003",
+     "class": "value",
+     "golden_decoded": "S2SE32.28-28-4",
+     "our_decoded": "QKQ1.190716.003"
+    },
+    {
+     "field": "updated_at",
+     "golden_raw": "2026-10-06T15%3A41%3A06.629Z%2B0530",
+     "our_raw": "2026-10-06T17%3A47%3A06.800Z%2B0530",
+     "class": "value",
+     "golden_decoded": "2026-10-06T15:41:06.629Z+0530",
+     "our_decoded": "2026-10-06T17:47:06.800Z+0530",
+     "golden_ts_format": "local+digits+Z+offset",
+     "our_ts_format": "local+digits+Z+offset"
+    },
+    {
+     "field": "os_version",
+     "golden_raw": "12",
+     "our_raw": "10",
+     "class": "value",
+     "golden_decoded": "12",
+     "our_decoded": "10"
+    },
+    {
+     "field": "android_uuid",
+     "golden_raw": "bd338228-9793-4b65-a4c6-2cc461e2801f",
+     "our_raw": "024e6f7e-4cd1-458d-a812-b2d33a6e3368",
+     "class": "value",
+     "golden_decoded": "bd338228-9793-4b65-a4c6-2cc461e2801f",
+     "our_decoded": "024e6f7e-4cd1-458d-a812-b2d33a6e3368"
+    },
+    {
+     "field": "sent_at",
+     "golden_raw": "2026-10-06T15%3A47%3A38.514Z%2B0530",
+     "our_raw": "2026-10-06T17%3A46%3A14.523Z%2B0530",
+     "class": "value",
+     "golden_decoded": "2026-10-06T15:47:38.514Z+0530",
+     "our_decoded": "2026-10-06T17:46:14.523Z+0530",
+     "golden_ts_format": "local+digits+Z+offset",
+     "our_ts_format": "local+digits+Z+offset"
+    },
+    {
+     "field": "display_height",
+     "golden_raw": "2237",
+     "our_raw": "2218",
+     "class": "value",
+     "golden_decoded": "2237",
+     "our_decoded": "2218"
+    }
+   ],
+   "moved_keys": {
+    "partner_params": {
+     "golden_pos": 5,
+     "our_pos": 31
+    },
+    "app_version": {
+     "golden_pos": 6,
+     "our_pos": 5
+    },
+    "app_token": {
+     "golden_pos": 7,
+     "our_pos": 6
+    },
+    "installed_at": {
+     "golden_pos": 8,
+     "our_pos": 7
+    },
+    "created_at": {
+     "golden_pos": 9,
+     "our_pos": 8
+    },
+    "wait_total": {
+     "golden_pos": 10,
+     "our_pos": 9
+    },
+    "device_type": {
+     "golden_pos": 11,
+     "our_pos": 10
+    },
+    "language": {
+     "golden_pos": 12,
+     "our_pos": 11
+    },
+    "gps_adid": {
+     "golden_pos": 13,
+     "our_pos": 12
+    },
+    "foreground": {
+     "golden_pos": 14,
+     "our_pos": 13
+    },
+    "connectivity_type": {
+     "golden_pos": 15,
+     "our_pos": 14
+    },
+    "device_manufacturer": {
+     "golden_pos": 16,
+     "our_pos": 15
+    },
+    "display_width": {
+     "golden_pos": 17,
+     "our_pos": 16
+    },
+    "device_name": {
+     "golden_pos": 18,
+     "our_pos": 17
+    },
+    "needs_response_details": {
+     "golden_pos": 19,
+     "our_pos": 18
+    },
+    "os_build": {
+     "golden_pos": 20,
+     "our_pos": 19
+    },
+    "updated_at": {
+     "golden_pos": 21,
+     "our_pos": 20
+    },
+    "cpu_type": {
+     "golden_pos": 22,
+     "our_pos": 21
+    },
+    "retry_count": {
+     "golden_pos": 23,
+     "our_pos": 22
+    },
+    "screen_size": {
+     "golden_pos": 24,
+     "our_pos": 23
+    },
+    "screen_format": {
+     "golden_pos": 25,
+     "our_pos": 24
+    },
+    "last_error": {
+     "golden_pos": 26,
+     "our_pos": 25
+    },
+    "gps_adid_src": {
+     "golden_pos": 27,
+     "our_pos": 26
+    },
+    "wait_time": {
+     "golden_pos": 28,
+     "our_pos": 27
+    },
+    "os_version": {
+     "golden_pos": 29,
+     "our_pos": 28
+    },
+    "first_error": {
+     "golden_pos": 30,
+     "our_pos": 29
+    },
+    "android_uuid": {
+     "golden_pos": 31,
+     "our_pos": 33
+    },
+    "sent_at": {
+     "golden_pos": 32,
+     "our_pos": 34
+    },
+    "offline_mode_enabled": {
+     "golden_pos": 33,
+     "our_pos": 35
+    },
+    "environment": {
+     "golden_pos": 34,
+     "our_pos": 36
+    },
+    "screen_density": {
+     "golden_pos": 35,
+     "our_pos": 37
+    },
+    "attribution_deeplink": {
+     "golden_pos": 36,
+     "our_pos": 38
+    },
+    "session_count": {
+     "golden_pos": 37,
+     "our_pos": 39
+    },
+    "display_height": {
+     "golden_pos": 38,
+     "our_pos": 40
+    },
+    "package_name": {
+     "golden_pos": 39,
+     "our_pos": 41
+    },
+    "initiating_package_name": {
+     "golden_pos": 40,
+     "our_pos": 32
+    },
+    "os_name": {
+     "golden_pos": 41,
+     "our_pos": 42
+    },
+    "ui_mode": {
+     "golden_pos": 42,
+     "our_pos": 43
+    },
+    "enqueue_size": {
+     "golden_pos": 43,
+     "our_pos": 44
+    },
+    "tracking_enabled": {
+     "golden_pos": 44,
+     "our_pos": 45
+    }
+   },
+   "first_order_mismatch_idx": 5
+  },
+  "sdk_click": {
+   "golden_count": 49,
+   "our_count": 48,
+   "golden_order": [
+    "country",
+    "api_level",
+    "hardware_name",
+    "app_version",
+    "partner_params",
+    "app_token",
+    "installed_at",
+    "device_type",
+    "language",
+    "gps_adid",
+    "source",
+    "foreground",
+    "connectivity_type",
+    "os_build",
+    "click_time",
+    "cpu_type",
+    "install_version",
+    "screen_size",
+    "gps_adid_src",
+    "subsession_count",
+    "sent_at",
+    "offline_mode_enabled",
+    "screen_density",
+    "session_count",
+    "ui_mode",
+    "gps_adid_attempt",
+    "session_length",
+    "created_at",
+    "referrer_api",
+    "device_manufacturer",
+    "display_width",
+    "time_spent",
+    "device_name",
+    "needs_response_details",
+    "updated_at",
+    "screen_format",
+    "click_time_server",
+    "os_version",
+    "google_play_instant",
+    "install_begin_time_server",
+    "android_uuid",
+    "referrer",
+    "environment",
+    "attribution_deeplink",
+    "install_begin_time",
+    "display_height",
+    "package_name",
+    "os_name",
+    "tracking_enabled"
+   ],
+   "our_order": [
+    "country",
+    "api_level",
+    "hardware_name",
+    "app_version",
+    "app_token",
+    "installed_at",
+    "device_type",
+    "language",
+    "gps_adid",
+    "source",
+    "foreground",
+    "connectivity_type",
+    "os_build",
+    "click_time",
+    "cpu_type",
+    "install_version",
+    "partner_params",
+    "initiating_package_name",
+    "screen_size",
+    "gps_adid_src",
+    "subsession_count",
+    "sent_at",
+    "offline_mode_enabled",
+    "screen_density",
+    "session_count",
+    "ui_mode",
+    "gps_adid_attempt",
+    "session_length",
+    "created_at",
+    "referrer_api",
+    "device_manufacturer",
+    "display_width",
+    "time_spent",
+    "device_name",
+    "needs_response_details",
+    "updated_at",
+    "screen_format",
+    "os_version",
+    "google_play_instant",
+    "android_uuid",
+    "referrer",
+    "environment",
+    "attribution_deeplink",
+    "install_begin_time",
+    "display_height",
+    "package_name",
+    "os_name",
+    "tracking_enabled"
+   ],
+   "missing_in_ours": [
+    "click_time_server",
+    "install_begin_time_server"
+   ],
+   "extra_in_ours": [
+    "initiating_package_name"
+   ],
+   "order_same": false,
+   "value_and_encoding": [
+    {
+     "field": "country",
+     "golden_raw": "IN",
+     "our_raw": "AE",
+     "class": "value",
+     "golden_decoded": "IN",
+     "our_decoded": "AE"
+    },
+    {
+     "field": "api_level",
+     "golden_raw": "31",
+     "our_raw": "29",
+     "class": "value",
+     "golden_decoded": "31",
+     "our_decoded": "29"
+    },
+    {
+     "field": "hardware_name",
+     "golden_raw": "S2SE32.28-28-4",
+     "our_raw": "GM1901_14_201019",
+     "class": "value",
+     "golden_decoded": "S2SE32.28-28-4",
+     "our_decoded": "GM1901_14_201019"
+    },
+    {
+     "field": "partner_params",
+     "golden_raw": "%7B%22payrupik_c_id%22%3A%224c2576c7-56da-3568-9d9c-dd5ef029b6c8%22%7D",
+     "our_raw": "%7B%22payrupik_c_id%22%3A%2201bfcf18-e4d4-4ee0-9deb-748de239f745%22%7D",
+     "class": "value",
+     "golden_decoded": "{\"payrupik_c_id\":\"4c2576c7-56da-3568-9d9c-dd5ef029b6c8\"}",
+     "our_decoded": "{\"payrupik_c_id\":\"01bfcf18-e4d4-4ee0-9deb-748de239f745\"}"
+    },
+    {
+     "field": "installed_at",
+     "golden_raw": "2026-10-06T15%3A41%3A06.629Z%2B0530",
+     "our_raw": "2026-10-06T17%3A47%3A06.800Z%2B0530",
+     "class": "value",
+     "golden_decoded": "2026-10-06T15:41:06.629Z+0530",
+     "our_decoded": "2026-10-06T17:47:06.800Z+0530",
+     "golden_ts_format": "local+digits+Z+offset",
+     "our_ts_format": "local+digits+Z+offset"
+    },
+    {
+     "field": "gps_adid",
+     "golden_raw": "0a5863d0-66f6-4d15-b9ab-d388b77c8ba3",
+     "our_raw": "da7b3547-b7a8-4ca9-8218-a525f7a81b7b",
+     "class": "value",
+     "golden_decoded": "0a5863d0-66f6-4d15-b9ab-d388b77c8ba3",
+     "our_decoded": "da7b3547-b7a8-4ca9-8218-a525f7a81b7b"
+    },
+    {
+     "field": "os_build",
+     "golden_raw": "S2SE32.28-28-4",
+     "our_raw": "QKQ1.190716.003",
+     "class": "value",
+     "golden_decoded": "S2SE32.28-28-4",
+     "our_decoded": "QKQ1.190716.003"
+    },
+    {
+     "field": "click_time",
+     "golden_raw": "2026-10-06T15%3A40%3A25.000Z%2B0530",
+     "our_raw": "2026-10-06T17%3A46%3A03.000Z%2B0530",
+     "class": "value",
+     "golden_decoded": "2026-10-06T15:40:25.000Z+0530",
+     "our_decoded": "2026-10-06T17:46:03.000Z+0530",
+     "golden_ts_format": "local+digits+Z+offset",
+     "our_ts_format": "local+digits+Z+offset"
+    },
+    {
+     "field": "sent_at",
+     "golden_raw": "2026-10-06T15%3A47%3A38.545Z%2B0530",
+     "our_raw": "2026-10-06T17%3A46%3A14.263Z%2B0530",
+     "class": "value",
+     "golden_decoded": "2026-10-06T15:47:38.545Z+0530",
+     "our_decoded": "2026-10-06T17:46:14.263Z+0530",
+     "golden_ts_format": "local+digits+Z+offset",
+     "our_ts_format": "local+digits+Z+offset"
+    },
+    {
+     "field": "created_at",
+     "golden_raw": "2026-10-06T15%3A47%3A38.531Z%2B0530",
+     "our_raw": "2026-10-06T17%3A46%3A14.252Z%2B0530",
+     "class": "value",
+     "golden_decoded": "2026-10-06T15:47:38.531Z+0530",
+     "our_decoded": "2026-10-06T17:46:14.252Z+0530",
+     "golden_ts_format": "local+digits+Z+offset",
+     "our_ts_format": "local+digits+Z+offset"
+    },
+    {
+     "field": "device_manufacturer",
+     "golden_raw": "motorola",
+     "our_raw": "OnePlus",
+     "class": "value",
+     "golden_decoded": "motorola",
+     "our_decoded": "OnePlus"
+    },
+    {
+     "field": "device_name",
+     "golden_raw": "moto+g42",
+     "our_raw": "GM1901",
+     "class": "value",
+     "golden_decoded": "moto g42",
+     "our_decoded": "GM1901"
+    },
+    {
+     "field": "updated_at",
+     "golden_raw": "2026-10-06T15%3A41%3A06.629Z%2B0530",
+     "our_raw": "2026-10-06T17%3A47%3A06.800Z%2B0530",
+     "class": "value",
+     "golden_decoded": "2026-10-06T15:41:06.629Z+0530",
+     "our_decoded": "2026-10-06T17:47:06.800Z+0530",
+     "golden_ts_format": "local+digits+Z+offset",
+     "our_ts_format": "local+digits+Z+offset"
+    },
+    {
+     "field": "os_version",
+     "golden_raw": "12",
+     "our_raw": "10",
+     "class": "value",
+     "golden_decoded": "12",
+     "our_decoded": "10"
+    },
+    {
+     "field": "android_uuid",
+     "golden_raw": "bd338228-9793-4b65-a4c6-2cc461e2801f",
+     "our_raw": "024e6f7e-4cd1-458d-a812-b2d33a6e3368",
+     "class": "value",
+     "golden_decoded": "bd338228-9793-4b65-a4c6-2cc461e2801f",
+     "our_decoded": "024e6f7e-4cd1-458d-a812-b2d33a6e3368"
+    },
+    {
+     "field": "referrer",
+     "golden_raw": "adjust_reftag%3Dc4s6jwfH2OB7q%26utm_source%3DVL-Alliance%26utm_campaign%3DHM2%26utm_content%3DHM2_1722_",
+     "our_raw": "adjust_reftag%3Dcb1yIQa0ag9qN%26utm_source%3DVL-Alliance%26utm_campaign%3DHM2%26utm_content%3DHM2_1722_",
+     "class": "value",
+     "golden_decoded": "adjust_reftag=c4s6jwfH2OB7q&utm_source=VL-Alliance&utm_campaign=HM2&utm_content=HM2_1722_",
+     "our_decoded": "adjust_reftag=cb1yIQa0ag9qN&utm_source=VL-Alliance&utm_campaign=HM2&utm_content=HM2_1722_"
+    },
+    {
+     "field": "install_begin_time",
+     "golden_raw": "2026-10-06T15%3A40%3A26.000Z%2B0530",
+     "our_raw": "2026-10-06T17%3A46%3A05.000Z%2B0530",
+     "class": "value",
+     "golden_decoded": "2026-10-06T15:40:26.000Z+0530",
+     "our_decoded": "2026-10-06T17:46:05.000Z+0530",
+     "golden_ts_format": "local+digits+Z+offset",
+     "our_ts_format": "local+digits+Z+offset"
+    },
+    {
+     "field": "display_height",
+     "golden_raw": "2237",
+     "our_raw": "2218",
+     "class": "value",
+     "golden_decoded": "2237",
+     "our_decoded": "2218"
+    }
+   ],
+   "moved_keys": {
+    "partner_params": {
+     "golden_pos": 4,
+     "our_pos": 16
+    },
+    "app_token": {
+     "golden_pos": 5,
+     "our_pos": 4
+    },
+    "installed_at": {
+     "golden_pos": 6,
+     "our_pos": 5
+    },
+    "device_type": {
+     "golden_pos": 7,
+     "our_pos": 6
+    },
+    "language": {
+     "golden_pos": 8,
+     "our_pos": 7
+    },
+    "gps_adid": {
+     "golden_pos": 9,
+     "our_pos": 8
+    },
+    "source": {
+     "golden_pos": 10,
+     "our_pos": 9
+    },
+    "foreground": {
+     "golden_pos": 11,
+     "our_pos": 10
+    },
+    "connectivity_type": {
+     "golden_pos": 12,
+     "our_pos": 11
+    },
+    "os_build": {
+     "golden_pos": 13,
+     "our_pos": 12
+    },
+    "click_time": {
+     "golden_pos": 14,
+     "our_pos": 13
+    },
+    "cpu_type": {
+     "golden_pos": 15,
+     "our_pos": 14
+    },
+    "install_version": {
+     "golden_pos": 16,
+     "our_pos": 15
+    },
+    "screen_size": {
+     "golden_pos": 17,
+     "our_pos": 18
+    },
+    "gps_adid_src": {
+     "golden_pos": 18,
+     "our_pos": 19
+    },
+    "subsession_count": {
+     "golden_pos": 19,
+     "our_pos": 20
+    },
+    "sent_at": {
+     "golden_pos": 20,
+     "our_pos": 21
+    },
+    "offline_mode_enabled": {
+     "golden_pos": 21,
+     "our_pos": 22
+    },
+    "screen_density": {
+     "golden_pos": 22,
+     "our_pos": 23
+    },
+    "session_count": {
+     "golden_pos": 23,
+     "our_pos": 24
+    },
+    "ui_mode": {
+     "golden_pos": 24,
+     "our_pos": 25
+    },
+    "gps_adid_attempt": {
+     "golden_pos": 25,
+     "our_pos": 26
+    },
+    "session_length": {
+     "golden_pos": 26,
+     "our_pos": 27
+    },
+    "created_at": {
+     "golden_pos": 27,
+     "our_pos": 28
+    },
+    "referrer_api": {
+     "golden_pos": 28,
+     "our_pos": 29
+    },
+    "device_manufacturer": {
+     "golden_pos": 29,
+     "our_pos": 30
+    },
+    "display_width": {
+     "golden_pos": 30,
+     "our_pos": 31
+    },
+    "time_spent": {
+     "golden_pos": 31,
+     "our_pos": 32
+    },
+    "device_name": {
+     "golden_pos": 32,
+     "our_pos": 33
+    },
+    "needs_response_details": {
+     "golden_pos": 33,
+     "our_pos": 34
+    },
+    "updated_at": {
+     "golden_pos": 34,
+     "our_pos": 35
+    },
+    "screen_format": {
+     "golden_pos": 35,
+     "our_pos": 36
+    },
+    "android_uuid": {
+     "golden_pos": 40,
+     "our_pos": 39
+    },
+    "referrer": {
+     "golden_pos": 41,
+     "our_pos": 40
+    },
+    "environment": {
+     "golden_pos": 42,
+     "our_pos": 41
+    },
+    "attribution_deeplink": {
+     "golden_pos": 43,
+     "our_pos": 42
+    },
+    "install_begin_time": {
+     "golden_pos": 44,
+     "our_pos": 43
+    },
+    "display_height": {
+     "golden_pos": 45,
+     "our_pos": 44
+    },
+    "package_name": {
+     "golden_pos": 46,
+     "our_pos": 45
+    },
+    "os_name": {
+     "golden_pos": 47,
+     "our_pos": 46
+    },
+    "tracking_enabled": {
+     "golden_pos": 48,
+     "our_pos": 47
+    }
+   },
+   "first_order_mismatch_idx": 4
+  },
+  "attribution": {
+   "golden_count": 22,
+   "our_count": 22,
+   "golden_order": [
+    "initiated_by",
+    "gps_adid_attempt",
+    "api_level",
+    "app_version",
+    "app_token",
+    "os_version",
+    "created_at",
+    "device_type",
+    "gps_adid",
+    "foreground",
+    "android_uuid",
+    "sent_at",
+    "offline_mode_enabled",
+    "device_name",
+    "environment",
+    "needs_response_details",
+    "attribution_deeplink",
+    "package_name",
+    "os_name",
+    "ui_mode",
+    "gps_adid_src",
+    "tracking_enabled"
+   ],
+   "our_order": [
+    "initiated_by",
+    "gps_adid_attempt",
+    "api_level",
+    "app_version",
+    "app_token",
+    "os_version",
+    "created_at",
+    "device_type",
+    "gps_adid",
+    "foreground",
+    "android_uuid",
+    "sent_at",
+    "offline_mode_enabled",
+    "device_name",
+    "environment",
+    "needs_response_details",
+    "attribution_deeplink",
+    "package_name",
+    "os_name",
+    "ui_mode",
+    "gps_adid_src",
+    "tracking_enabled"
+   ],
+   "missing_in_ours": [],
+   "extra_in_ours": [],
+   "order_same": true,
+   "value_and_encoding": [
+    {
+     "field": "api_level",
+     "golden_raw": "31",
+     "our_raw": "29",
+     "class": "value",
+     "golden_decoded": "31",
+     "our_decoded": "29"
+    },
+    {
+     "field": "os_version",
+     "golden_raw": "12",
+     "our_raw": "10",
+     "class": "value",
+     "golden_decoded": "12",
+     "our_decoded": "10"
+    },
+    {
+     "field": "created_at",
+     "golden_raw": "2026-10-06T15%3A47%3A41.741Z%2B0530",
+     "our_raw": "2026-10-06T17%3A46%3A17.539Z%2B0530",
+     "class": "value",
+     "golden_decoded": "2026-10-06T15:47:41.741Z+0530",
+     "our_decoded": "2026-10-06T17:46:17.539Z+0530",
+     "golden_ts_format": "local+digits+Z+offset",
+     "our_ts_format": "local+digits+Z+offset"
+    },
+    {
+     "field": "gps_adid",
+     "golden_raw": "0a5863d0-66f6-4d15-b9ab-d388b77c8ba3",
+     "our_raw": "da7b3547-b7a8-4ca9-8218-a525f7a81b7b",
+     "class": "value",
+     "golden_decoded": "0a5863d0-66f6-4d15-b9ab-d388b77c8ba3",
+     "our_decoded": "da7b3547-b7a8-4ca9-8218-a525f7a81b7b"
+    },
+    {
+     "field": "android_uuid",
+     "golden_raw": "bd338228-9793-4b65-a4c6-2cc461e2801f",
+     "our_raw": "024e6f7e-4cd1-458d-a812-b2d33a6e3368",
+     "class": "value",
+     "golden_decoded": "bd338228-9793-4b65-a4c6-2cc461e2801f",
+     "our_decoded": "024e6f7e-4cd1-458d-a812-b2d33a6e3368"
+    },
+    {
+     "field": "sent_at",
+     "golden_raw": "2026-10-06T15%3A47%3A41.754Z%2B0530",
+     "our_raw": "2026-10-06T17%3A46%3A17.569Z%2B0530",
+     "class": "value",
+     "golden_decoded": "2026-10-06T15:47:41.754Z+0530",
+     "our_decoded": "2026-10-06T17:46:17.569Z+0530",
+     "golden_ts_format": "local+digits+Z+offset",
+     "our_ts_format": "local+digits+Z+offset"
+    },
+    {
+     "field": "device_name",
+     "golden_raw": "moto%20g42",
+     "our_raw": "GM1901",
+     "class": "value",
+     "golden_decoded": "moto g42",
+     "our_decoded": "GM1901"
+    }
+   ]
+  }
+ },
+ "timestamp_story": {
+  "session": {
+   "golden": {
+    "created_at": "2026-10-06T15:47:38.430Z+0530",
+    "installed_at": "2026-10-06T15:41:06.629Z+0530",
+    "sent_at": "2026-10-06T15:47:38.514Z+0530",
+    "updated_at": "2026-10-06T15:41:06.629Z+0530"
+   },
+   "ours": {
+    "created_at": "2026-10-06T17:46:14.198Z+0530",
+    "installed_at": "2026-10-06T17:47:06.800Z+0530",
+    "sent_at": "2026-10-06T17:46:14.523Z+0530",
+    "updated_at": "2026-10-06T17:47:06.800Z+0530"
+   }
+  },
+  "sdk_click": {
+   "golden": {
+    "click_time": "2026-10-06T15:40:25.000Z+0530",
+    "click_time_server": "2026-10-06T15:40:25.000Z+0530",
+    "created_at": "2026-10-06T15:47:38.531Z+0530",
+    "install_begin_time": "2026-10-06T15:40:26.000Z+0530",
+    "install_begin_time_server": "2026-10-06T15:40:26.000Z+0530",
+    "installed_at": "2026-10-06T15:41:06.629Z+0530",
+    "sent_at": "2026-10-06T15:47:38.545Z+0530",
+    "updated_at": "2026-10-06T15:41:06.629Z+0530",
+    "click_to_session_s": 433.531
+   },
+   "ours": {
+    "click_time": "2026-10-06T17:46:03.000Z+0530",
+    "created_at": "2026-10-06T17:46:14.252Z+0530",
+    "install_begin_time": "2026-10-06T17:46:05.000Z+0530",
+    "installed_at": "2026-10-06T17:47:06.800Z+0530",
+    "sent_at": "2026-10-06T17:46:14.263Z+0530",
+    "updated_at": "2026-10-06T17:47:06.800Z+0530",
+    "click_to_session_s": 11.252
+   }
+  },
+  "attribution": {
+   "golden": {
+    "created_at": "2026-10-06T15:47:41.741Z+0530",
+    "sent_at": "2026-10-06T15:47:41.754Z+0530"
+   },
+   "ours": {
+    "created_at": "2026-10-06T17:46:17.539Z+0530",
+    "sent_at": "2026-10-06T17:46:17.569Z+0530"
+   }
+  }
+ },
+ "request_line": {
+  "session": {
+   "golden": "POST https://app.adjust.com/session HTTP/1.1",
+   "ours": "POST /session HTTP/1.1"
+  },
+  "sdk_click": {
+   "golden": "POST https://app.adjust.com/sdk_click HTTP/1.1",
+   "ours": "POST /sdk_click HTTP/1.1"
+  },
+  "attribution": {
+   "golden": "GET https://app.adjust.com/attribution?initiated_by=backend&gps_adid_attempt=1&api_level=31&app_version=3.0.4&app_token=smxi7gqwu39c&os_version=12&created_at=2026-10-06T15%3A47%3A41.741Z%2B0530&device_type=phone&gps_adid=0a5863d0-66f6-4d15-b9ab-d388b77c8ba3&foreground=1&android_uuid=bd338228-9793-4b65-a4c6-2cc461e2801f&sent_at=2026-10-06T15%3A47%3A41.754Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=in.hanafintech&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1 HTTP/1.1",
+   "ours": "GET /attribution?initiated_by=backend&gps_adid_attempt=1&api_level=29&app_version=3.0.4&app_token=smxi7gqwu39c&os_version=10&created_at=2026-10-06T17%3A46%3A17.539Z%2B0530&device_type=phone&gps_adid=da7b3547-b7a8-4ca9-8218-a525f7a81b7b&foreground=1&android_uuid=024e6f7e-4cd1-458d-a812-b2d33a6e3368&sent_at=2026-10-06T17%3A46%3A17.569Z%2B0530&offline_mode_enabled=0&device_name=GM1901&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=in.hanafintech&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1 HTTP/1.1"
+  }
+ },
+ "space_encoding_law": {
+  "note": "POST bodies use quote_plus (space -> '+'), the GET query uses quote (space -> '%20') -- same laws as the golden (sid 42 device_name=moto+g42, sid 44 device_name=moto%20g42)",
+  "check": {
+   "moto g42": {
+    "golden_post_form": "moto+g42",
+    "our_post_encoder_quote_plus": "moto+g42",
+    "our_get_encoder_quote": "moto%20g42",
+    "golden_get_form": "moto%20g42"
+   },
+   "Pixel 6a": {
+    "golden_post_form": null,
+    "our_post_encoder_quote_plus": "Pixel+6a",
+    "our_get_encoder_quote": "Pixel%206a",
+    "golden_get_form": null
+   }
+  }
+ },
+ "content_length_integrity": {
+  "session": {
+   "hdr": "1124",
+   "actual_body_len": 1124,
+   "match": true
+  },
+  "sdk_click": {
+   "hdr": "1420",
+   "actual_body_len": 1420,
+   "match": true
+  },
+  "event": {
+   "hdr": "1114",
+   "actual_body_len": 1114,
+   "match": true
+  }
+ },
+ "golden_absolute_form": {
+  "session": true,
+  "sdk_click": true,
+  "attribution": true,
+  "event": true
+ },
+ "event_golden": {
+  "sid": "45",
+  "tokens": [
+   [
+    "country",
+    "IN"
+   ],
+   [
+    "api_level",
+    "31"
+   ],
+   [
+    "hardware_name",
+    "S2SE32.28-28-4"
+   ],
+   [
+    "partner_params",
+    "{\"payrupik_c_id\":\"4c2576c7-56da-3568-9d9c-dd5ef029b6c8\"}"
+   ],
+   [
+    "app_version",
+    "3.0.4"
+   ],
+   [
+    "app_token",
+    "smxi7gqwu39c"
+   ],
+   [
+    "wait_total",
+    "0.0"
+   ],
+   [
+    "device_type",
+    "phone"
+   ],
+   [
+    "language",
+    "en"
+   ],
+   [
+    "gps_adid",
+    "0a5863d0-66f6-4d15-b9ab-d388b77c8ba3"
+   ],
+   [
+    "foreground",
+    "1"
+   ],
+   [
+    "connectivity_type",
+    "1"
+   ],
+   [
+    "os_build",
+    "S2SE32.28-28-4"
+   ],
+   [
+    "cpu_type",
+    "arm64-v8a"
+   ],
+   [
+    "retry_count",
+    "0"
+   ],
+   [
+    "screen_size",
+    "normal"
+   ],
+   [
+    "gps_adid_src",
+    "service"
+   ],
+   [
+    "subsession_count",
+    "1"
+   ],
+   [
+    "wait_time",
+    "0.0"
+   ],
+   [
+    "first_error",
+    "0"
+   ],
+   [
+    "sent_at",
+    "2026-10-06T15:47:43.351Z+0530"
+   ],
+   [
+    "offline_mode_enabled",
+    "0"
+   ],
+   [
+    "screen_density",
+    "high"
+   ],
+   [
+    "session_count",
+    "1"
+   ],
+   [
+    "ui_mode",
+    "1"
+   ],
+   [
+    "enqueue_size",
+    "0"
+   ],
+   [
+    "gps_adid_attempt",
+    "1"
+   ],
+   [
+    "event_count",
+    "1"
+   ],
+   [
+    "session_length",
+    "5"
+   ],
+   [
+    "created_at",
+    "2026-10-06T15:47:43.343Z+0530"
+   ],
+   [
+    "device_manufacturer",
+    "motorola"
+   ],
+   [
+    "display_width",
+    "1080"
+   ],
+   [
+    "event_token",
+    "y3sjx5"
+   ],
+   [
+    "time_spent",
+    "5"
+   ],
+   [
+    "device_name",
+    "moto g42"
+   ],
+   [
+    "needs_response_details",
+    "1"
+   ],
+   [
+    "screen_format",
+    "long"
+   ],
+   [
+    "last_error",
+    "0"
+   ],
+   [
+    "seq",
+    "1"
+   ],
+   [
+    "os_version",
+    "12"
+   ],
+   [
+    "callback_params",
+    "{\"google_adid\":\"0a5863d0-66f6-4d15-b9ab-d388b77c8ba3\"}"
+   ],
+   [
+    "android_uuid",
+    "bd338228-9793-4b65-a4c6-2cc461e2801f"
+   ],
+   [
+    "environment",
+    "production"
+   ],
+   [
+    "attribution_deeplink",
+    "1"
+   ],
+   [
+    "display_height",
+    "2237"
+   ],
+   [
+    "package_name",
+    "in.hanafintech"
+   ],
+   [
+    "os_name",
+    "android"
+   ],
+   [
+    "tracking_enabled",
+    "1"
+   ]
+  ],
+  "response": {
+   "app_token": "smxi7gqwu39c",
+   "adid": "6b575c41bbefc8caaccaf6faa01eac3a"
+  },
+  "in_ours": false,
+  "note": "golden fires POST /event (event_token y3sjx5) AFTER the attribution answer; run_install.py has no event step"
+ },
+ "click_story": {
+  "golden": {
+   "source": "install_referrer",
+   "referrer_api": "google",
+   "click_time": "2026-10-06T15:40:25.000Z+0530",
+   "click_time_server": "2026-10-06T15:40:25.000Z+0530",
+   "install_begin_time": "2026-10-06T15:40:26.000Z+0530",
+   "install_begin_time_server": "2026-10-06T15:40:26.000Z+0530",
+   "installed_at": "2026-10-06T15:41:06.629Z+0530",
+   "google_play_instant": "0",
+   "referrer": "adjust_reftag=c4s6jwfH2OB7q&utm_source=VL-Alliance&utm_campaign=HM2&utm_content=HM2_1722_"
+  },
+  "ours": {
+   "source": "install_referrer",
+   "referrer_api": "google",
+   "click_time": "2026-10-06T17:46:03.000Z+0530",
+   "click_time_server": null,
+   "install_begin_time": "2026-10-06T17:46:05.000Z+0530",
+   "install_begin_time_server": null,
+   "installed_at": "2026-10-06T17:47:06.800Z+0530",
+   "google_play_instant": "0",
+   "referrer": "adjust_reftag=cb1yIQa0ag9qN&utm_source=VL-Alliance&utm_campaign=HM2&utm_content=HM2_1722_"
+  }
+ },
+ "referrer_param_compare": {
+  "golden": [
+   [
+    "adjust_reftag",
+    "c4s6jwfH2OB7q"
+   ],
+   [
+    "utm_source",
+    "VL-Alliance"
+   ],
+   [
+    "utm_campaign",
+    "HM2"
+   ],
+   [
+    "utm_content",
+    "HM2_1722_"
+   ]
+  ],
+  "ours": [
+   [
+    "adjust_reftag",
+    "cb1yIQa0ag9qN"
+   ],
+   [
+    "utm_source",
+    "VL-Alliance"
+   ],
+   [
+    "utm_campaign",
+    "HM2"
+   ],
+   [
+    "utm_content",
+    "HM2_1722_"
+   ]
+  ]
+ }
+}

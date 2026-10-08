@@ -1,0 +1,246 @@
+==============================================================================
+GOLDEN flow (all HTTP 200):
+  sid 42 session      {"status": "HTTP/1.1 200 OK", "response": {"app_token": "smxi7gqwu39c", "adid": "6b575c41bbefc8caaccaf6faa01eac3a", "ask_in": 2000}}
+  sid 43 sdk_click    {"status": "HTTP/1.1 200 OK", "response": {"app_token": "smxi7gqwu39c", "adid": "6b575c41bbefc8caaccaf6faa01eac3a"}}
+  sid 44 attribution  {"status": "HTTP/1.1 200 OK", "response": {"app_token": "smxi7gqwu39c", "adid": "6b575c41bbefc8caaccaf6faa01eac3a", "attribution": {"tracker_token": "
+  sid 45 event        {"status": "HTTP/1.1 200 OK", "response": {"app_token": "smxi7gqwu39c", "adid": "6b575c41bbefc8caaccaf6faa01eac3a"}}
+
+------------------------------------------------------------------------------
+[session] headers same set+order: True
+   HEADER VALUE user-agent:
+     golden 'Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)'
+     ours   'Dalvik/2.1.0 (Linux; U; Android 10; GM1901 Build/QKQ1.190716.003)'
+   HEADER VALUE content-length:
+     golden '1124'
+     ours   '1222'
+[session] fields golden 45 / ours 46  order_same=False
+   EXTRA IN OURS   : ['push_token']
+   MOVED           : {'partner_params': {'golden_pos': 5, 'our_pos': 31}, 'app_version': {'golden_pos': 6, 'our_pos': 5}, 'app_token': {'golden_pos': 7, 'our_pos': 6}, 'installed_at': {'golden_pos': 8, 'our_pos': 7}, 'created_at': {'golden_pos': 9, 'our_pos': 8}, 'wait_total': {'golden_pos': 10, 'our_pos': 9}, 'device_type': {'golden_pos': 11, 'our_pos': 10}, 'language': {'golden_pos': 12, 'our_pos': 11}, 'gps_adid': {'golden_pos': 13, 'our_pos': 12}, 'foreground': {'golden_pos': 14, 'our_pos': 13}, 'connectivity_type': {'golden_pos': 15, 'our_pos': 14}, 'device_manufacturer': {'golden_pos': 16, 'our_pos': 15}, 'display_width': {'golden_pos': 17, 'our_pos': 16}, 'device_name': {'golden_pos': 18, 'our_pos': 17}, 'needs_response_details': {'golden_pos': 19, 'our_pos': 18}, 'os_build': {'golden_pos': 20, 'our_pos': 19}, 'updated_at': {'golden_pos': 21, 'our_pos': 20}, 'cpu_type': {'golden_pos': 22, 'our_pos': 21}, 'retry_count': {'golden_pos': 23, 'our_pos': 22}, 'screen_size': {'golden_pos': 24, 'our_pos': 23}, 'screen_format': {'golden_pos': 25, 'our_pos': 24}, 'last_error': {'golden_pos': 26, 'our_pos': 25}, 'gps_adid_src': {'golden_pos': 27, 'our_pos': 26}, 'wait_time': {'golden_pos': 28, 'our_pos': 27}, 'os_version': {'golden_pos': 29, 'our_pos': 28}, 'first_error': {'golden_pos': 30, 'our_pos': 29}, 'android_uuid': {'golden_pos': 31, 'our_pos': 33}, 'sent_at': {'golden_pos': 32, 'our_pos': 34}, 'offline_mode_enabled': {'golden_pos': 33, 'our_pos': 35}, 'environment': {'golden_pos': 34, 'our_pos': 36}, 'screen_density': {'golden_pos': 35, 'our_pos': 37}, 'attribution_deeplink': {'golden_pos': 36, 'our_pos': 38}, 'session_count': {'golden_pos': 37, 'our_pos': 39}, 'display_height': {'golden_pos': 38, 'our_pos': 40}, 'package_name': {'golden_pos': 39, 'our_pos': 41}, 'initiating_package_name': {'golden_pos': 40, 'our_pos': 32}, 'os_name': {'golden_pos': 41, 'our_pos': 42}, 'ui_mode': {'golden_pos': 42, 'our_pos': 43}, 'enqueue_size': {'golden_pos': 43, 'our_pos': 44}, 'tracking_enabled': {'golden_pos': 44, 'our_pos': 45}}
+   VALUE    country:
+     golden IN
+     ours   AE
+   VALUE    api_level:
+     golden 31
+     ours   29
+   VALUE    hardware_name:
+     golden S2SE32.28-28-4
+     ours   GM1901_14_201019
+   VALUE    partner_params:
+     golden {"payrupik_c_id":"4c2576c7-56da-3568-9d9c-dd5ef029b6c8"}
+     ours   {"payrupik_c_id":"01bfcf18-e4d4-4ee0-9deb-748de239f745"}
+   VALUE    installed_at:
+     golden 2026-10-06T15:41:06.629Z+0530
+     ours   2026-10-06T17:47:06.800Z+0530  ts_format golden=local+digits+Z+offset ours=local+digits+Z+offset
+   VALUE    created_at:
+     golden 2026-10-06T15:47:38.430Z+0530
+     ours   2026-10-06T17:46:14.198Z+0530  ts_format golden=local+digits+Z+offset ours=local+digits+Z+offset
+   VALUE    gps_adid:
+     golden 0a5863d0-66f6-4d15-b9ab-d388b77c8ba3
+     ours   da7b3547-b7a8-4ca9-8218-a525f7a81b7b
+   VALUE    device_manufacturer:
+     golden motorola
+     ours   OnePlus
+   VALUE    device_name:
+     golden moto g42
+     ours   GM1901
+   VALUE    os_build:
+     golden S2SE32.28-28-4
+     ours   QKQ1.190716.003
+   VALUE    updated_at:
+     golden 2026-10-06T15:41:06.629Z+0530
+     ours   2026-10-06T17:47:06.800Z+0530  ts_format golden=local+digits+Z+offset ours=local+digits+Z+offset
+   VALUE    os_version:
+     golden 12
+     ours   10
+   VALUE    android_uuid:
+     golden bd338228-9793-4b65-a4c6-2cc461e2801f
+     ours   024e6f7e-4cd1-458d-a812-b2d33a6e3368
+   VALUE    sent_at:
+     golden 2026-10-06T15:47:38.514Z+0530
+     ours   2026-10-06T17:46:14.523Z+0530  ts_format golden=local+digits+Z+offset ours=local+digits+Z+offset
+   VALUE    display_height:
+     golden 2237
+     ours   2218
+------------------------------------------------------------------------------
+[sdk_click] headers same set+order: True
+   HEADER VALUE user-agent:
+     golden 'Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)'
+     ours   'Dalvik/2.1.0 (Linux; U; Android 10; GM1901 Build/QKQ1.190716.003)'
+   HEADER VALUE content-length:
+     golden '1420'
+     ours   '1348'
+[sdk_click] fields golden 49 / ours 48  order_same=False
+   MISSING IN OURS : ['click_time_server', 'install_begin_time_server']
+   EXTRA IN OURS   : ['initiating_package_name']
+   MOVED           : {'partner_params': {'golden_pos': 4, 'our_pos': 16}, 'app_token': {'golden_pos': 5, 'our_pos': 4}, 'installed_at': {'golden_pos': 6, 'our_pos': 5}, 'device_type': {'golden_pos': 7, 'our_pos': 6}, 'language': {'golden_pos': 8, 'our_pos': 7}, 'gps_adid': {'golden_pos': 9, 'our_pos': 8}, 'source': {'golden_pos': 10, 'our_pos': 9}, 'foreground': {'golden_pos': 11, 'our_pos': 10}, 'connectivity_type': {'golden_pos': 12, 'our_pos': 11}, 'os_build': {'golden_pos': 13, 'our_pos': 12}, 'click_time': {'golden_pos': 14, 'our_pos': 13}, 'cpu_type': {'golden_pos': 15, 'our_pos': 14}, 'install_version': {'golden_pos': 16, 'our_pos': 15}, 'screen_size': {'golden_pos': 17, 'our_pos': 18}, 'gps_adid_src': {'golden_pos': 18, 'our_pos': 19}, 'subsession_count': {'golden_pos': 19, 'our_pos': 20}, 'sent_at': {'golden_pos': 20, 'our_pos': 21}, 'offline_mode_enabled': {'golden_pos': 21, 'our_pos': 22}, 'screen_density': {'golden_pos': 22, 'our_pos': 23}, 'session_count': {'golden_pos': 23, 'our_pos': 24}, 'ui_mode': {'golden_pos': 24, 'our_pos': 25}, 'gps_adid_attempt': {'golden_pos': 25, 'our_pos': 26}, 'session_length': {'golden_pos': 26, 'our_pos': 27}, 'created_at': {'golden_pos': 27, 'our_pos': 28}, 'referrer_api': {'golden_pos': 28, 'our_pos': 29}, 'device_manufacturer': {'golden_pos': 29, 'our_pos': 30}, 'display_width': {'golden_pos': 30, 'our_pos': 31}, 'time_spent': {'golden_pos': 31, 'our_pos': 32}, 'device_name': {'golden_pos': 32, 'our_pos': 33}, 'needs_response_details': {'golden_pos': 33, 'our_pos': 34}, 'updated_at': {'golden_pos': 34, 'our_pos': 35}, 'screen_format': {'golden_pos': 35, 'our_pos': 36}, 'android_uuid': {'golden_pos': 40, 'our_pos': 39}, 'referrer': {'golden_pos': 41, 'our_pos': 40}, 'environment': {'golden_pos': 42, 'our_pos': 41}, 'attribution_deeplink': {'golden_pos': 43, 'our_pos': 42}, 'install_begin_time': {'golden_pos': 44, 'our_pos': 43}, 'display_height': {'golden_pos': 45, 'our_pos': 44}, 'package_name': {'golden_pos': 46, 'our_pos': 45}, 'os_name': {'golden_pos': 47, 'our_pos': 46}, 'tracking_enabled': {'golden_pos': 48, 'our_pos': 47}}
+   VALUE    country:
+     golden IN
+     ours   AE
+   VALUE    api_level:
+     golden 31
+     ours   29
+   VALUE    hardware_name:
+     golden S2SE32.28-28-4
+     ours   GM1901_14_201019
+   VALUE    partner_params:
+     golden {"payrupik_c_id":"4c2576c7-56da-3568-9d9c-dd5ef029b6c8"}
+     ours   {"payrupik_c_id":"01bfcf18-e4d4-4ee0-9deb-748de239f745"}
+   VALUE    installed_at:
+     golden 2026-10-06T15:41:06.629Z+0530
+     ours   2026-10-06T17:47:06.800Z+0530  ts_format golden=local+digits+Z+offset ours=local+digits+Z+offset
+   VALUE    gps_adid:
+     golden 0a5863d0-66f6-4d15-b9ab-d388b77c8ba3
+     ours   da7b3547-b7a8-4ca9-8218-a525f7a81b7b
+   VALUE    os_build:
+     golden S2SE32.28-28-4
+     ours   QKQ1.190716.003
+   VALUE    click_time:
+     golden 2026-10-06T15:40:25.000Z+0530
+     ours   2026-10-06T17:46:03.000Z+0530  ts_format golden=local+digits+Z+offset ours=local+digits+Z+offset
+   VALUE    sent_at:
+     golden 2026-10-06T15:47:38.545Z+0530
+     ours   2026-10-06T17:46:14.263Z+0530  ts_format golden=local+digits+Z+offset ours=local+digits+Z+offset
+   VALUE    created_at:
+     golden 2026-10-06T15:47:38.531Z+0530
+     ours   2026-10-06T17:46:14.252Z+0530  ts_format golden=local+digits+Z+offset ours=local+digits+Z+offset
+   VALUE    device_manufacturer:
+     golden motorola
+     ours   OnePlus
+   VALUE    device_name:
+     golden moto g42
+     ours   GM1901
+   VALUE    updated_at:
+     golden 2026-10-06T15:41:06.629Z+0530
+     ours   2026-10-06T17:47:06.800Z+0530  ts_format golden=local+digits+Z+offset ours=local+digits+Z+offset
+   VALUE    os_version:
+     golden 12
+     ours   10
+   VALUE    android_uuid:
+     golden bd338228-9793-4b65-a4c6-2cc461e2801f
+     ours   024e6f7e-4cd1-458d-a812-b2d33a6e3368
+   VALUE    referrer:
+     golden adjust_reftag=c4s6jwfH2OB7q&utm_source=VL-Alliance&utm_campaign=HM2&utm_content=HM2_1722_
+     ours   adjust_reftag=cb1yIQa0ag9qN&utm_source=VL-Alliance&utm_campaign=HM2&utm_content=HM2_1722_
+   VALUE    install_begin_time:
+     golden 2026-10-06T15:40:26.000Z+0530
+     ours   2026-10-06T17:46:05.000Z+0530  ts_format golden=local+digits+Z+offset ours=local+digits+Z+offset
+   VALUE    display_height:
+     golden 2237
+     ours   2218
+------------------------------------------------------------------------------
+[attribution] headers same set+order: True
+   HEADER VALUE user-agent:
+     golden 'Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)'
+     ours   'Dalvik/2.1.0 (Linux; U; Android 10; GM1901 Build/QKQ1.190716.003)'
+[attribution] fields golden 22 / ours 22  order_same=True
+   VALUE    api_level:
+     golden 31
+     ours   29
+   VALUE    os_version:
+     golden 12
+     ours   10
+   VALUE    created_at:
+     golden 2026-10-06T15:47:41.741Z+0530
+     ours   2026-10-06T17:46:17.539Z+0530  ts_format golden=local+digits+Z+offset ours=local+digits+Z+offset
+   VALUE    gps_adid:
+     golden 0a5863d0-66f6-4d15-b9ab-d388b77c8ba3
+     ours   da7b3547-b7a8-4ca9-8218-a525f7a81b7b
+   VALUE    android_uuid:
+     golden bd338228-9793-4b65-a4c6-2cc461e2801f
+     ours   024e6f7e-4cd1-458d-a812-b2d33a6e3368
+   VALUE    sent_at:
+     golden 2026-10-06T15:47:41.754Z+0530
+     ours   2026-10-06T17:46:17.569Z+0530  ts_format golden=local+digits+Z+offset ours=local+digits+Z+offset
+   VALUE    device_name:
+     golden moto g42
+     ours   GM1901
+------------------------------------------------------------------------------
+TIMESTAMP STORY:
+{
+ "session": {
+  "golden": {
+   "created_at": "2026-10-06T15:47:38.430Z+0530",
+   "installed_at": "2026-10-06T15:41:06.629Z+0530",
+   "sent_at": "2026-10-06T15:47:38.514Z+0530",
+   "updated_at": "2026-10-06T15:41:06.629Z+0530"
+  },
+  "ours": {
+   "created_at": "2026-10-06T17:46:14.198Z+0530",
+   "installed_at": "2026-10-06T17:47:06.800Z+0530",
+   "sent_at": "2026-10-06T17:46:14.523Z+0530",
+   "updated_at": "2026-10-06T17:47:06.800Z+0530"
+  }
+ },
+ "sdk_click": {
+  "golden": {
+   "click_time": "2026-10-06T15:40:25.000Z+0530",
+   "click_time_server": "2026-10-06T15:40:25.000Z+0530",
+   "created_at": "2026-10-06T15:47:38.531Z+0530",
+   "install_begin_time": "2026-10-06T15:40:26.000Z+0530",
+   "install_begin_time_server": "2026-10-06T15:40:26.000Z+0530",
+   "installed_at": "2026-10-06T15:41:06.629Z+0530",
+   "sent_at": "2026-10-06T15:47:38.545Z+0530",
+   "updated_at": "2026-10-06T15:41:06.629Z+0530",
+   "click_to_session_s": 433.531
+  },
+  "ours": {
+   "click_time": "2026-10-06T17:46:03.000Z+0530",
+   "created_at": "2026-10-06T17:46:14.252Z+0530",
+   "install_begin_time": "2026-10-06T17:46:05.000Z+0530",
+   "installed_at": "2026-10-06T17:47:06.800Z+0530",
+   "sent_at": "2026-10-06T17:46:14.263Z+0530",
+   "updated_at": "2026-10-06T17:47:06.800Z+0530",
+   "click_to_session_s": 11.252
+  }
+ },
+ "attribution": {
+  "golden": {
+   "created_at": "2026-10-06T15:47:41.741Z+0530",
+   "sent_at": "2026-10-06T15:47:41.754Z+0530"
+  },
+  "ours": {
+   "created_at": "2026-10-06T17:46:17.539Z+0530",
+   "sent_at": "2026-10-06T17:46:17.569Z+0530"
+  }
+ }
+}
+CLICK STORY golden vs ours:
+{
+ "golden": {
+  "source": "install_referrer",
+  "referrer_api": "google",
+  "click_time": "2026-10-06T15:40:25.000Z+0530",
+  "click_time_server": "2026-10-06T15:40:25.000Z+0530",
+  "install_begin_time": "2026-10-06T15:40:26.000Z+0530",
+  "install_begin_time_server": "2026-10-06T15:40:26.000Z+0530",
+  "installed_at": "2026-10-06T15:41:06.629Z+0530",
+  "google_play_instant": "0",
+  "referrer": "adjust_reftag=c4s6jwfH2OB7q&utm_source=VL-Alliance&utm_campaign=HM2&utm_content=HM2_1722_"
+ },
+ "ours": {
+  "source": "install_referrer",
+  "referrer_api": "google",
+  "click_time": "2026-10-06T17:46:03.000Z+0530",
+  "click_time_server": null,
+  "install_begin_time": "2026-10-06T17:46:05.000Z+0530",
+  "install_begin_time_server": null,
+  "installed_at": "2026-10-06T17:47:06.800Z+0530",
+  "google_play_instant": "0",
+  "referrer": "adjust_reftag=cb1yIQa0ag9qN&utm_source=VL-Alliance&utm_campaign=HM2&utm_content=HM2_1722_"
+ }
+}
+REQUEST LINE golden vs ours:
+{
+ "session": {
+  "golden": "POST https://app.adjust.com/session HTTP/1.1",
+  "ours": "POST /session HTTP/1.1"
+ },
+ "sdk_click": {
+  "golden": "POST https://app.adjust.com/sdk_click HTTP/1.1",
+  "ours": "POST /sdk_click HTTP/1.1"
+ },
+ "attribution": {
+  "golden": "GET https://app.adjust.com/attribution?initiated_by=backend&gps_adid_attempt=1&api_level=31&app_version=3.0.4&app_token=smxi7gqwu39c&os_version=12&created_at=2026-10-06T15%3A47%3A41.741Z%2B0530&device_type=phone&gps_adid=0a5863d0-66f6-4d15-b9ab-d388b77c8ba3&foreground=1&android_uuid=bd338228-9793-4b65-a4c6-2cc461e2801f&sent_at=2026-10-06T15%3A47%3A41.754Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=in.hanafintech&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1 HTTP/1.1",
+  "ours": "GET /attribution?initiated_by=backend&gps_adid_attempt=1&api_level=29&app_version=3.0.4&app_token=smxi7gqwu39c&os_version=10&created_at=2026-10-06T17%3A46%3A17.539Z%2B0530&device_type=phone&gps_adid=da7b3547-b7a8-4ca9-8218-a525f7a81b7b&foreground=1&android_uuid=024e6f7e-4cd1-458d-a812-b2d33a6e3368&sent_at=2026-10-06T17%3A46%3A17.569Z%2B0530&offline_mode_enabled=0&device_name=GM1901&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=in.hanafintech&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1 HTTP/1.1"
+ }
+}

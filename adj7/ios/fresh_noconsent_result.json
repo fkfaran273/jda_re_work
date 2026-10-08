@@ -1,0 +1,5 @@
+{
+ "idfv": "C58F885D-3D85-43DD-B0F6-8BA69C98CC4B",
+ "adid": "826acfed19f8179d81f66b2b424e5a56",
+ "resp": "{\"app_token\":\"cv4d2hlazp4w\",\"adid\":\"826acfed19f8179d81f66b2b424e5a56\",\"attribution\":{\"tracker_token\":\"pf7enwj\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-10-07T15:33:22Z\",\"first_session_time\":\"2026-10-07T15:33:22Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+}

@@ -1,0 +1,110 @@
+[
+ {
+  "i": 0,
+  "law": null,
+  "second": null,
+  "tag_ok": true
+ },
+ {
+  "i": 1,
+  "law": null,
+  "second": null,
+  "tag_ok": true
+ },
+ {
+  "i": 2,
+  "law": null,
+  "second": null,
+  "tag_ok": true
+ },
+ {
+  "i": 3,
+  "law": null,
+  "second": null,
+  "tag_ok": true
+ },
+ {
+  "i": 4,
+  "law": "minstd",
+  "second": 1778043093,
+  "tag_ok": true
+ },
+ {
+  "i": 5,
+  "law": null,
+  "second": null,
+  "tag_ok": true
+ },
+ {
+  "i": 6,
+  "law": null,
+  "second": null,
+  "tag_ok": true
+ },
+ {
+  "i": 7,
+  "law": null,
+  "second": null,
+  "tag_ok": true
+ },
+ {
+  "i": 8,
+  "law": null,
+  "second": null,
+  "tag_ok": true
+ },
+ {
+  "i": 9,
+  "law": null,
+  "second": null,
+  "tag_ok": true
+ },
+ {
+  "i": 10,
+  "law": null,
+  "second": null,
+  "tag_ok": true
+ },
+ {
+  "i": 11,
+  "law": null,
+  "second": null,
+  "tag_ok": true
+ },
+ {
+  "i": 12,
+  "law": null,
+  "second": null,
+  "tag_ok": true
+ },
+ {
+  "i": 13,
+  "law": "minstd",
+  "second": 1778044450,
+  "tag_ok": true
+ },
+ {
+  "i": 14,
+  "law": null,
+  "second": null,
+  "tag_ok": true
+ },
+ {
+  "i": 15,
+  "law": null,
+  "second": null,
+  "tag_ok": true
+ },
+ {
+  "i": 16,
+  "law": null,
+  "second": null,
+  "tag_ok": true
+ },
+ {
+  "i": 17,
+  "law": null,
+  "second": null,
+  "tag_ok": true
+ }
+]

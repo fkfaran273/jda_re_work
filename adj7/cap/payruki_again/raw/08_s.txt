@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+FiddlerGateway: Direct
+StartTime: 14:32:23.639
+Connection: close
+
+Encrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.
+
+Secure Protocol: Tls13
+Cipher: Aes256 256bits
+Hash Algorithm: Sha384 ?bits
+Key Exchange: None 255bits
+
+== Server Certificate ==========
+[Subject]
+  CN=*.payrupikloan.in
+
+[Issuer]
+  CN=Go Daddy Secure Certificate Authority - G2, OU=http://certs.godaddy.com/repository/, O="GoDaddy.com, Inc.", L=Scottsdale, S=Arizona, C=US
+
+[Serial Number]
+  571BE9C3AB72A37D
+
+[Not Before]
+  08-02-2026 13:17:09
+
+[Not After]
+  12-03-2027 13:17:09
+
+[Thumbprint]
+  ACC76E09B0F02B1DC29D6581938B1042072DD65B
+
+[SubjectAltNames]
+*.payrupikloan.in, payrupikloan.in

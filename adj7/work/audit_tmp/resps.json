@@ -1,0 +1,5042 @@
+[
+ {
+  "offset": 0,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 12:09:01 GMT"
+   ],
+   [
+    "content-length",
+    "84"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 84,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"ad003833f2df4c8f545a300402237d7a\",\"ask_in\":5000}"
+ },
+ {
+  "offset": 365,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 12:09:02 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"ad003833f2df4c8f545a300402237d7a\"}"
+ },
+ {
+  "offset": 716,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 12:09:08 GMT"
+   ],
+   [
+    "content-length",
+    "373"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 373,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"ad003833f2df4c8f545a300402237d7a\",\"attribution\":{\"tracker_token\":\"24ibsv01\",\"tracker_name\":\"VKM Digital Yeni::AH\",\"network\":\"VKM Digital Yeni\",\"campaign\":\"AH\",\"engagement_time\":\"2026-09-14T10:43:55Z\",\"installed_at\":\"2026-09-14T11:23:30Z\",\"first_session_time\":\"2026-09-14T11:23:30Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 1371,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 12:23:08 GMT"
+   ],
+   [
+    "content-length",
+    "84"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 84,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"ask_in\":2000}"
+ },
+ {
+  "offset": 1736,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 12:23:08 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\"}"
+ },
+ {
+  "offset": 2087,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 12:23:11 GMT"
+   ],
+   [
+    "content-length",
+    "452"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 452,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"attribution\":{\"tracker_token\":\"24pxw9rl\",\"tracker_name\":\"VKM Digital Yeni::AH::vkm_0926_36::penti_generic\",\"network\":\"VKM Digital Yeni\",\"campaign\":\"AH\",\"adgroup\":\"vkm_0926_36\",\"creative\":\"penti_generic\",\"engagement_time\":\"2026-09-14T10:25:58Z\",\"installed_at\":\"2026-09-14T12:23:08Z\",\"first_session_time\":\"2026-09-14T12:23:08Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 2821,
+  "start": "HTTP/1.1 400 Bad Request",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 15:32:39 GMT"
+   ],
+   [
+    "content-length",
+    "265"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 265,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-14T15:30:26, this session: 2026-09-14T15:32:39, interval: 2m13s, min interval: 20m))\"}"
+ },
+ {
+  "offset": 3377,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 15:32:39 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\"}"
+ },
+ {
+  "offset": 3728,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 15:32:39 GMT"
+   ],
+   [
+    "content-length",
+    "452"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 452,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"attribution\":{\"tracker_token\":\"24pxw9rl\",\"tracker_name\":\"VKM Digital Yeni::AH::vkm_0926_36::penti_generic\",\"network\":\"VKM Digital Yeni\",\"campaign\":\"AH\",\"adgroup\":\"vkm_0926_36\",\"creative\":\"penti_generic\",\"engagement_time\":\"2026-09-14T10:25:58Z\",\"installed_at\":\"2026-09-14T12:23:08Z\",\"first_session_time\":\"2026-09-14T12:23:08Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 4462,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 16:29:56 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\"}"
+ },
+ {
+  "offset": 4813,
+  "start": "HTTP/1.1 400 Bad Request",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 16:30:01 GMT"
+   ],
+   [
+    "content-length",
+    "265"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 265,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-14T16:21:12, this session: 2026-09-14T16:30:01, interval: 8m49s, min interval: 20m))\"}"
+ },
+ {
+  "offset": 5369,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 16:30:02 GMT"
+   ],
+   [
+    "content-length",
+    "452"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 452,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"attribution\":{\"tracker_token\":\"24pxw9rl\",\"tracker_name\":\"VKM Digital Yeni::AH::vkm_0926_36::penti_generic\",\"network\":\"VKM Digital Yeni\",\"campaign\":\"AH\",\"adgroup\":\"vkm_0926_36\",\"creative\":\"penti_generic\",\"engagement_time\":\"2026-09-14T10:25:58Z\",\"installed_at\":\"2026-09-14T12:23:08Z\",\"first_session_time\":\"2026-09-14T12:23:08Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 6103,
+  "start": "HTTP/1.1 400 Bad Request",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 16:34:25 GMT"
+   ],
+   [
+    "content-length",
+    "266"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 266,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-14T16:21:12, this session: 2026-09-14T16:34:25, interval: 13m13s, min interval: 20m))\"}"
+ },
+ {
+  "offset": 6660,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 16:34:26 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\"}"
+ },
+ {
+  "offset": 7011,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 16:34:26 GMT"
+   ],
+   [
+    "content-length",
+    "452"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 452,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"attribution\":{\"tracker_token\":\"24pxw9rl\",\"tracker_name\":\"VKM Digital Yeni::AH::vkm_0926_36::penti_generic\",\"network\":\"VKM Digital Yeni\",\"campaign\":\"AH\",\"adgroup\":\"vkm_0926_36\",\"creative\":\"penti_generic\",\"engagement_time\":\"2026-09-14T10:25:58Z\",\"installed_at\":\"2026-09-14T12:23:08Z\",\"first_session_time\":\"2026-09-14T12:23:08Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 7745,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 17:02:14 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\"}"
+ },
+ {
+  "offset": 8096,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 18:14:33 GMT"
+   ],
+   [
+    "content-length",
+    "84"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 84,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"ask_in\":5000}"
+ },
+ {
+  "offset": 8461,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 18:14:35 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\"}"
+ },
+ {
+  "offset": 8812,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 18:14:39 GMT"
+   ],
+   [
+    "content-length",
+    "452"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 452,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"attribution\":{\"tracker_token\":\"24pxw9rl\",\"tracker_name\":\"VKM Digital Yeni::AH::vkm_0926_36::penti_generic\",\"network\":\"VKM Digital Yeni\",\"campaign\":\"AH\",\"adgroup\":\"vkm_0926_36\",\"creative\":\"penti_generic\",\"engagement_time\":\"2026-09-14T10:25:58Z\",\"installed_at\":\"2026-09-14T12:23:08Z\",\"first_session_time\":\"2026-09-14T12:23:08Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 9546,
+  "start": "HTTP/1.1 400 Bad Request",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 19:11:33 GMT"
+   ],
+   [
+    "content-length",
+    "266"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 266,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-14T18:57:44, this session: 2026-09-14T19:11:33, interval: 13m49s, min interval: 20m))\"}"
+ },
+ {
+  "offset": 10103,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 19:11:34 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\"}"
+ },
+ {
+  "offset": 10454,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 19:11:34 GMT"
+   ],
+   [
+    "content-length",
+    "334"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 334,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-14T12:23:08Z\",\"first_session_time\":\"2026-09-14T12:23:08Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 11070,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 19:13:58 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\"}"
+ },
+ {
+  "offset": 11421,
+  "start": "HTTP/1.1 400 Bad Request",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 19:14:57 GMT"
+   ],
+   [
+    "content-length",
+    "266"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 266,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-14T18:57:44, this session: 2026-09-14T19:14:57, interval: 17m13s, min interval: 20m))\"}"
+ },
+ {
+  "offset": 11978,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 19:14:58 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\"}"
+ },
+ {
+  "offset": 12329,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 19:14:58 GMT"
+   ],
+   [
+    "content-length",
+    "334"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 334,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-14T12:23:08Z\",\"first_session_time\":\"2026-09-14T12:23:08Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 12945,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 19:19:27 GMT"
+   ],
+   [
+    "content-length",
+    "84"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 84,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"ask_in\":5000}"
+ },
+ {
+  "offset": 13310,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 19:19:28 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\"}"
+ },
+ {
+  "offset": 13661,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 19:19:34 GMT"
+   ],
+   [
+    "content-length",
+    "334"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 334,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"attribution\":{\"tracker_token\":\"wy7261z\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-14T12:23:08Z\",\"first_session_time\":\"2026-09-14T12:23:08Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 14277,
+  "start": "HTTP/1.1 400 Bad Request",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 19:22:04 GMT"
+   ],
+   [
+    "content-length",
+    "265"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 265,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-14T19:19:27, this session: 2026-09-14T19:22:04, interval: 2m37s, min interval: 20m))\"}"
+ },
+ {
+  "offset": 14833,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 19:22:04 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\"}"
+ },
+ {
+  "offset": 15184,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 14 Sep 2026 19:22:05 GMT"
+   ],
+   [
+    "content-length",
+    "452"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 452,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"2fedfd3dfcc48e92aae70f3fd2e1608a\",\"attribution\":{\"tracker_token\":\"24pxw9rl\",\"tracker_name\":\"VKM Digital Yeni::AH::vkm_0926_36::penti_generic\",\"network\":\"VKM Digital Yeni\",\"campaign\":\"AH\",\"adgroup\":\"vkm_0926_36\",\"creative\":\"penti_generic\",\"engagement_time\":\"2026-09-14T10:25:58Z\",\"installed_at\":\"2026-09-14T12:23:08Z\",\"first_session_time\":\"2026-09-14T12:23:08Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 15918,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Tue, 15 Sep 2026 12:21:49 GMT"
+   ],
+   [
+    "content-length",
+    "84"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 84,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"ask_in\":5000}"
+ },
+ {
+  "offset": 16283,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Tue, 15 Sep 2026 12:21:50 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\"}"
+ },
+ {
+  "offset": 16634,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Tue, 15 Sep 2026 12:21:56 GMT"
+   ],
+   [
+    "content-length",
+    "450"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 450,
+  "body": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"06a7174da8af9a588c00e4c970e5619a\",\"attribution\":{\"tracker_token\":\"24i5ummx\",\"tracker_name\":\"VKM Digital Yeni::AH::vkm_0926_36::cline_live_b\",\"network\":\"VKM Digital Yeni\",\"campaign\":\"AH\",\"adgroup\":\"vkm_0926_36\",\"creative\":\"cline_live_b\",\"engagement_time\":\"2026-09-15T10:50:13Z\",\"installed_at\":\"2026-09-15T10:50:21Z\",\"first_session_time\":\"2026-09-15T10:50:21Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 17366,
+  "start": "HTTP/1.1 400 Bad Request",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 23 Sep 2026 05:39:10 GMT"
+   ],
+   [
+    "content-length",
+    "265"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 265,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-23T05:31:14, this session: 2026-09-23T05:39:10, interval: 7m56s, min interval: 20m))\"}"
+ },
+ {
+  "offset": 17922,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 23 Sep 2026 05:39:10 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\"}"
+ },
+ {
+  "offset": 18273,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 23 Sep 2026 05:39:11 GMT"
+   ],
+   [
+    "content-length",
+    "427"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 427,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"attribution\":{\"tracker_token\":\"24av4pil\",\"tracker_name\":\"Google Organic Search::com.turkcell.paycell app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.turkcell.paycell app\",\"engagement_time\":\"2026-09-23T04:56:23Z\",\"installed_at\":\"2026-09-23T05:31:14Z\",\"first_session_time\":\"2026-09-23T05:31:14Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 18982,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 23 Sep 2026 06:01:47 GMT"
+   ],
+   [
+    "content-length",
+    "84"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 84,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"ask_in\":5000}"
+ },
+ {
+  "offset": 19347,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 23 Sep 2026 06:01:47 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\"}"
+ },
+ {
+  "offset": 19698,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 23 Sep 2026 06:01:53 GMT"
+   ],
+   [
+    "content-length",
+    "427"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 427,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"attribution\":{\"tracker_token\":\"24av4pil\",\"tracker_name\":\"Google Organic Search::com.turkcell.paycell app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.turkcell.paycell app\",\"engagement_time\":\"2026-09-23T04:56:23Z\",\"installed_at\":\"2026-09-23T05:31:14Z\",\"first_session_time\":\"2026-09-23T05:31:14Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 20407,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 23 Sep 2026 07:25:57 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\"}"
+ },
+ {
+  "offset": 20758,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 23 Sep 2026 07:25:58 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\"}"
+ },
+ {
+  "offset": 21109,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 23 Sep 2026 07:25:58 GMT"
+   ],
+   [
+    "content-length",
+    "427"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 427,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"attribution\":{\"tracker_token\":\"24av4pil\",\"tracker_name\":\"Google Organic Search::com.turkcell.paycell app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.turkcell.paycell app\",\"engagement_time\":\"2026-09-23T04:56:23Z\",\"installed_at\":\"2026-09-23T05:31:14Z\",\"first_session_time\":\"2026-09-23T05:31:14Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 21818,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 23 Sep 2026 18:59:24 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\"}"
+ },
+ {
+  "offset": 22169,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 23 Sep 2026 18:59:25 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\"}"
+ },
+ {
+  "offset": 22520,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 23 Sep 2026 18:59:25 GMT"
+   ],
+   [
+    "content-length",
+    "427"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 427,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"attribution\":{\"tracker_token\":\"24av4pil\",\"tracker_name\":\"Google Organic Search::com.turkcell.paycell app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.turkcell.paycell app\",\"engagement_time\":\"2026-09-23T04:56:23Z\",\"installed_at\":\"2026-09-23T05:31:14Z\",\"first_session_time\":\"2026-09-23T05:31:14Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 23229,
+  "start": "HTTP/1.1 400 Bad Request",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 23 Sep 2026 19:02:25 GMT"
+   ],
+   [
+    "content-length",
+    "264"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 264,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-23T18:59:23, this session: 2026-09-23T19:02:25, interval: 3m2s, min interval: 20m))\"}"
+ },
+ {
+  "offset": 23784,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 23 Sep 2026 19:02:25 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\"}"
+ },
+ {
+  "offset": 24135,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 23 Sep 2026 19:02:26 GMT"
+   ],
+   [
+    "content-length",
+    "427"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 427,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"attribution\":{\"tracker_token\":\"24av4pil\",\"tracker_name\":\"Google Organic Search::com.turkcell.paycell app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.turkcell.paycell app\",\"engagement_time\":\"2026-09-23T04:56:23Z\",\"installed_at\":\"2026-09-23T05:31:14Z\",\"first_session_time\":\"2026-09-23T05:31:14Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 24844,
+  "start": "HTTP/1.1 400 Bad Request",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 23 Sep 2026 19:16:25 GMT"
+   ],
+   [
+    "content-length",
+    "265"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 265,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-23T18:59:23, this session: 2026-09-23T19:16:25, interval: 17m2s, min interval: 20m))\"}"
+ },
+ {
+  "offset": 25400,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 23 Sep 2026 19:16:26 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\"}"
+ },
+ {
+  "offset": 25751,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 23 Sep 2026 19:16:26 GMT"
+   ],
+   [
+    "content-length",
+    "427"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 427,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"attribution\":{\"tracker_token\":\"24av4pil\",\"tracker_name\":\"Google Organic Search::com.turkcell.paycell app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.turkcell.paycell app\",\"engagement_time\":\"2026-09-23T04:56:23Z\",\"installed_at\":\"2026-09-23T05:31:14Z\",\"first_session_time\":\"2026-09-23T05:31:14Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 26460,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 23 Sep 2026 19:19:38 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\"}"
+ },
+ {
+  "offset": 26811,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 23 Sep 2026 19:19:38 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\"}"
+ },
+ {
+  "offset": 27162,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 23 Sep 2026 19:19:39 GMT"
+   ],
+   [
+    "content-length",
+    "427"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 427,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"attribution\":{\"tracker_token\":\"24av4pil\",\"tracker_name\":\"Google Organic Search::com.turkcell.paycell app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.turkcell.paycell app\",\"engagement_time\":\"2026-09-23T04:56:23Z\",\"installed_at\":\"2026-09-23T05:31:14Z\",\"first_session_time\":\"2026-09-23T05:31:14Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 27871,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:02:43 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\"}"
+ },
+ {
+  "offset": 28222,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:02:43 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\"}"
+ },
+ {
+  "offset": 28573,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:02:44 GMT"
+   ],
+   [
+    "content-length",
+    "427"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 427,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"attribution\":{\"tracker_token\":\"24av4pil\",\"tracker_name\":\"Google Organic Search::com.turkcell.paycell app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.turkcell.paycell app\",\"engagement_time\":\"2026-09-23T04:56:23Z\",\"installed_at\":\"2026-09-23T05:31:14Z\",\"first_session_time\":\"2026-09-23T05:31:14Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 29282,
+  "start": "HTTP/1.1 400 Bad Request",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:07:38 GMT"
+   ],
+   [
+    "content-length",
+    "265"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 265,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-24T04:02:42, this session: 2026-09-24T04:07:37, interval: 4m55s, min interval: 20m))\"}"
+ },
+ {
+  "offset": 29838,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:07:39 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\"}"
+ },
+ {
+  "offset": 30189,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:07:39 GMT"
+   ],
+   [
+    "content-length",
+    "427"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 427,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"attribution\":{\"tracker_token\":\"24av4pil\",\"tracker_name\":\"Google Organic Search::com.turkcell.paycell app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.turkcell.paycell app\",\"engagement_time\":\"2026-09-23T04:56:23Z\",\"installed_at\":\"2026-09-23T05:31:14Z\",\"first_session_time\":\"2026-09-23T05:31:14Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 30898,
+  "start": "HTTP/1.1 400 Bad Request",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:08:24 GMT"
+   ],
+   [
+    "content-length",
+    "265"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 265,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-24T04:02:42, this session: 2026-09-24T04:08:24, interval: 5m42s, min interval: 20m))\"}"
+ },
+ {
+  "offset": 31454,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:08:25 GMT"
+   ],
+   [
+    "content-length",
+    "427"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 427,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"attribution\":{\"tracker_token\":\"24av4pil\",\"tracker_name\":\"Google Organic Search::com.turkcell.paycell app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.turkcell.paycell app\",\"engagement_time\":\"2026-09-23T04:56:23Z\",\"installed_at\":\"2026-09-23T05:31:14Z\",\"first_session_time\":\"2026-09-23T05:31:14Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 32163,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:08:25 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\"}"
+ },
+ {
+  "offset": 32514,
+  "start": "HTTP/1.1 400 Bad Request",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:12:34 GMT"
+   ],
+   [
+    "content-length",
+    "265"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 265,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-24T04:02:42, this session: 2026-09-24T04:12:34, interval: 9m52s, min interval: 20m))\"}"
+ },
+ {
+  "offset": 33070,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:12:34 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\"}"
+ },
+ {
+  "offset": 33421,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:12:35 GMT"
+   ],
+   [
+    "content-length",
+    "427"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 427,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"attribution\":{\"tracker_token\":\"24av4pil\",\"tracker_name\":\"Google Organic Search::com.turkcell.paycell app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.turkcell.paycell app\",\"engagement_time\":\"2026-09-23T04:56:23Z\",\"installed_at\":\"2026-09-23T05:31:14Z\",\"first_session_time\":\"2026-09-23T05:31:14Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 34130,
+  "start": "HTTP/1.1 400 Bad Request",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:17:38 GMT"
+   ],
+   [
+    "content-length",
+    "266"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 266,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-24T04:02:42, this session: 2026-09-24T04:17:37, interval: 14m55s, min interval: 20m))\"}"
+ },
+ {
+  "offset": 34687,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:17:39 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\"}"
+ },
+ {
+  "offset": 35038,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:17:39 GMT"
+   ],
+   [
+    "content-length",
+    "427"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 427,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"attribution\":{\"tracker_token\":\"24av4pil\",\"tracker_name\":\"Google Organic Search::com.turkcell.paycell app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.turkcell.paycell app\",\"engagement_time\":\"2026-09-23T04:56:23Z\",\"installed_at\":\"2026-09-23T05:31:14Z\",\"first_session_time\":\"2026-09-23T05:31:14Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 35747,
+  "start": "HTTP/1.1 400 Bad Request",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:22:25 GMT"
+   ],
+   [
+    "content-length",
+    "266"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 266,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-24T04:02:42, this session: 2026-09-24T04:22:25, interval: 19m43s, min interval: 20m))\"}"
+ },
+ {
+  "offset": 36304,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:22:26 GMT"
+   ],
+   [
+    "content-length",
+    "427"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 427,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"attribution\":{\"tracker_token\":\"24av4pil\",\"tracker_name\":\"Google Organic Search::com.turkcell.paycell app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.turkcell.paycell app\",\"engagement_time\":\"2026-09-23T04:56:23Z\",\"installed_at\":\"2026-09-23T05:31:14Z\",\"first_session_time\":\"2026-09-23T05:31:14Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 37013,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:22:27 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\"}"
+ },
+ {
+  "offset": 37364,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:28:13 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\"}"
+ },
+ {
+  "offset": 37715,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:28:14 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\"}"
+ },
+ {
+  "offset": 38066,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:28:14 GMT"
+   ],
+   [
+    "content-length",
+    "427"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 427,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"attribution\":{\"tracker_token\":\"24av4pil\",\"tracker_name\":\"Google Organic Search::com.turkcell.paycell app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.turkcell.paycell app\",\"engagement_time\":\"2026-09-23T04:56:23Z\",\"installed_at\":\"2026-09-23T05:31:14Z\",\"first_session_time\":\"2026-09-23T05:31:14Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 38775,
+  "start": "HTTP/1.1 400 Bad Request",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:33:28 GMT"
+   ],
+   [
+    "content-length",
+    "265"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 265,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-24T04:28:13, this session: 2026-09-24T04:33:28, interval: 5m15s, min interval: 20m))\"}"
+ },
+ {
+  "offset": 39331,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:33:28 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\"}"
+ },
+ {
+  "offset": 39682,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:33:29 GMT"
+   ],
+   [
+    "content-length",
+    "427"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 427,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"attribution\":{\"tracker_token\":\"24av4pil\",\"tracker_name\":\"Google Organic Search::com.turkcell.paycell app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.turkcell.paycell app\",\"engagement_time\":\"2026-09-23T04:56:23Z\",\"installed_at\":\"2026-09-23T05:31:14Z\",\"first_session_time\":\"2026-09-23T05:31:14Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 40391,
+  "start": "HTTP/1.1 400 Bad Request",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:40:26 GMT"
+   ],
+   [
+    "content-length",
+    "266"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 266,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-09-24T04:28:13, this session: 2026-09-24T04:40:26, interval: 12m13s, min interval: 20m))\"}"
+ },
+ {
+  "offset": 40948,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:40:26 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\"}"
+ },
+ {
+  "offset": 41299,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:40:27 GMT"
+   ],
+   [
+    "content-length",
+    "427"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 427,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"attribution\":{\"tracker_token\":\"24av4pil\",\"tracker_name\":\"Google Organic Search::com.turkcell.paycell app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.turkcell.paycell app\",\"engagement_time\":\"2026-09-23T04:56:23Z\",\"installed_at\":\"2026-09-23T05:31:14Z\",\"first_session_time\":\"2026-09-23T05:31:14Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 42008,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:48:50 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\"}"
+ },
+ {
+  "offset": 42359,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:48:50 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\"}"
+ },
+ {
+  "offset": 42710,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Thu, 24 Sep 2026 04:48:51 GMT"
+   ],
+   [
+    "content-length",
+    "427"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 427,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"attribution\":{\"tracker_token\":\"24av4pil\",\"tracker_name\":\"Google Organic Search::com.turkcell.paycell app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.turkcell.paycell app\",\"engagement_time\":\"2026-09-23T04:56:23Z\",\"installed_at\":\"2026-09-23T05:31:14Z\",\"first_session_time\":\"2026-09-23T05:31:14Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 43419,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 08:52:53 GMT"
+   ],
+   [
+    "content-length",
+    "84"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 84,
+  "body": "{\"app_token\":\"ag7cwhs46ghs\",\"adid\":\"0ba4b4efb422f74582e0be3b01f76417\",\"ask_in\":5000}"
+ },
+ {
+  "offset": 43784,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 08:52:53 GMT"
+   ],
+   [
+    "content-length",
+    "425"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 425,
+  "body": "{\"app_token\":\"ag7cwhs46ghs\",\"adid\":\"0ba4b4efb422f74582e0be3b01f76417\",\"attribution\":{\"tracker_token\":\"25j0529c\",\"tracker_name\":\"Google Organic Search::com.grad.def app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.grad.def app\",\"engagement_time\":\"2026-10-03T11:19:08Z\",\"installed_at\":\"2026-10-03T12:28:51Z\",\"first_session_time\":\"2026-10-03T12:28:51Z\",\"is_reattributed\":false,\"is_redownload_install\":false},\"ask_in\":1000}"
+ },
+ {
+  "offset": 44491,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 08:52:59 GMT"
+   ],
+   [
+    "content-length",
+    "411"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 411,
+  "body": "{\"app_token\":\"ag7cwhs46ghs\",\"adid\":\"0ba4b4efb422f74582e0be3b01f76417\",\"attribution\":{\"tracker_token\":\"25j0529c\",\"tracker_name\":\"Google Organic Search::com.grad.def app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.grad.def app\",\"engagement_time\":\"2026-10-03T11:19:08Z\",\"installed_at\":\"2026-10-03T12:28:51Z\",\"first_session_time\":\"2026-10-03T12:28:51Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 45184,
+  "start": "HTTP/1.1 400 Bad Request",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 09:09:00 GMT"
+   ],
+   [
+    "content-length",
+    "265"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 265,
+  "body": "{\"app_token\":\"ag7cwhs46ghs\",\"adid\":\"0ba4b4efb422f74582e0be3b01f76417\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-10-04T08:52:53, this session: 2026-10-04T09:09:00, interval: 16m7s, min interval: 20m))\"}"
+ },
+ {
+  "offset": 45740,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 09:09:00 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ag7cwhs46ghs\",\"adid\":\"0ba4b4efb422f74582e0be3b01f76417\"}"
+ },
+ {
+  "offset": 46091,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 09:09:01 GMT"
+   ],
+   [
+    "content-length",
+    "411"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 411,
+  "body": "{\"app_token\":\"ag7cwhs46ghs\",\"adid\":\"0ba4b4efb422f74582e0be3b01f76417\",\"attribution\":{\"tracker_token\":\"25j0529c\",\"tracker_name\":\"Google Organic Search::com.grad.def app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.grad.def app\",\"engagement_time\":\"2026-10-03T11:19:08Z\",\"installed_at\":\"2026-10-03T12:28:51Z\",\"first_session_time\":\"2026-10-03T12:28:51Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 46784,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 09:31:58 GMT"
+   ],
+   [
+    "content-length",
+    "84"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 84,
+  "body": "{\"app_token\":\"ag7cwhs46ghs\",\"adid\":\"0ba4b4efb422f74582e0be3b01f76417\",\"ask_in\":5000}"
+ },
+ {
+  "offset": 47149,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 09:31:59 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ag7cwhs46ghs\",\"adid\":\"0ba4b4efb422f74582e0be3b01f76417\"}"
+ },
+ {
+  "offset": 47500,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 09:32:05 GMT"
+   ],
+   [
+    "content-length",
+    "411"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 411,
+  "body": "{\"app_token\":\"ag7cwhs46ghs\",\"adid\":\"0ba4b4efb422f74582e0be3b01f76417\",\"attribution\":{\"tracker_token\":\"25j0529c\",\"tracker_name\":\"Google Organic Search::com.grad.def app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.grad.def app\",\"engagement_time\":\"2026-10-03T11:19:08Z\",\"installed_at\":\"2026-10-03T12:28:51Z\",\"first_session_time\":\"2026-10-03T12:28:51Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 48193,
+  "start": "HTTP/1.1 400 Bad Request",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 09:46:58 GMT"
+   ],
+   [
+    "content-length",
+    "263"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 263,
+  "body": "{\"app_token\":\"ag7cwhs46ghs\",\"adid\":\"0ba4b4efb422f74582e0be3b01f76417\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-10-04T09:31:58, this session: 2026-10-04T09:46:58, interval: 15m, min interval: 20m))\"}"
+ },
+ {
+  "offset": 48747,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 09:46:59 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ag7cwhs46ghs\",\"adid\":\"0ba4b4efb422f74582e0be3b01f76417\"}"
+ },
+ {
+  "offset": 49098,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 09:46:59 GMT"
+   ],
+   [
+    "content-length",
+    "411"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 411,
+  "body": "{\"app_token\":\"ag7cwhs46ghs\",\"adid\":\"0ba4b4efb422f74582e0be3b01f76417\",\"attribution\":{\"tracker_token\":\"25j0529c\",\"tracker_name\":\"Google Organic Search::com.grad.def app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.grad.def app\",\"engagement_time\":\"2026-10-03T11:19:08Z\",\"installed_at\":\"2026-10-03T12:28:51Z\",\"first_session_time\":\"2026-10-03T12:28:51Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 49791,
+  "start": "HTTP/1.1 400 Bad Request",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 09:51:42 GMT"
+   ],
+   [
+    "content-length",
+    "266"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 266,
+  "body": "{\"app_token\":\"ag7cwhs46ghs\",\"adid\":\"0ba4b4efb422f74582e0be3b01f76417\",\"error\":\"Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-10-04T09:31:58, this session: 2026-10-04T09:51:42, interval: 19m44s, min interval: 20m))\"}"
+ },
+ {
+  "offset": 50348,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 09:51:42 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ag7cwhs46ghs\",\"adid\":\"0ba4b4efb422f74582e0be3b01f76417\"}"
+ },
+ {
+  "offset": 50699,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 09:51:42 GMT"
+   ],
+   [
+    "content-length",
+    "411"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 411,
+  "body": "{\"app_token\":\"ag7cwhs46ghs\",\"adid\":\"0ba4b4efb422f74582e0be3b01f76417\",\"attribution\":{\"tracker_token\":\"25j0529c\",\"tracker_name\":\"Google Organic Search::com.grad.def app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.grad.def app\",\"engagement_time\":\"2026-10-03T11:19:08Z\",\"installed_at\":\"2026-10-03T12:28:51Z\",\"first_session_time\":\"2026-10-03T12:28:51Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 51392,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 10:06:59 GMT"
+   ],
+   [
+    "content-length",
+    "324"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 324,
+  "body": "{\"app_token\":\"7z9fjy072rgg\",\"adid\":\"1396f6ba1cacc99402d3e52aa8453b36\",\"deeplink\":\"xyz.be.customer://ride/home?adj_t=2390uba9\\u0026adj_campaign=DNS_ADD\\u0026adj_adgroup=ADD_Arb_21_RFAMP_\\u0026gps_adid=\\u0026click_id=1mFkcMaei8izUSQvSC93lf\\u0026adj_fallback=https%3A%2F%2Fbe.com.vn%2F\\u0026adjust_no_sdkclick=1\",\"ask_in\":2000}"
+ },
+ {
+  "offset": 51998,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 10:06:59 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"7z9fjy072rgg\",\"adid\":\"1396f6ba1cacc99402d3e52aa8453b36\"}"
+ },
+ {
+  "offset": 52349,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 10:07:02 GMT"
+   ],
+   [
+    "content-length",
+    "444"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 444,
+  "body": "{\"app_token\":\"7z9fjy072rgg\",\"adid\":\"1396f6ba1cacc99402d3e52aa8453b36\",\"attribution\":{\"tracker_token\":\"24dgzadq\",\"tracker_name\":\"Dinos_Dynamic_Partner::DNS_NN85::ADD_Arb_21_RFAMP_\",\"network\":\"Dinos_Dynamic_Partner\",\"campaign\":\"DNS_NN85\",\"adgroup\":\"ADD_Arb_21_RFAMP_\",\"engagement_time\":\"2026-10-04T09:56:59Z\",\"installed_at\":\"2026-10-04T10:06:58Z\",\"first_session_time\":\"2026-10-04T10:06:58Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 53075,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 12:48:57 GMT"
+   ],
+   [
+    "content-length",
+    "84"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 84,
+  "body": "{\"app_token\":\"ag7cwhs46ghs\",\"adid\":\"0ba4b4efb422f74582e0be3b01f76417\",\"ask_in\":5000}"
+ },
+ {
+  "offset": 53440,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 12:49:03 GMT"
+   ],
+   [
+    "content-length",
+    "411"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 411,
+  "body": "{\"app_token\":\"ag7cwhs46ghs\",\"adid\":\"0ba4b4efb422f74582e0be3b01f76417\",\"attribution\":{\"tracker_token\":\"25j0529c\",\"tracker_name\":\"Google Organic Search::com.grad.def app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.grad.def app\",\"engagement_time\":\"2026-10-03T11:19:08Z\",\"installed_at\":\"2026-10-03T12:28:51Z\",\"first_session_time\":\"2026-10-03T12:28:51Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 54133,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 12:50:08 GMT"
+   ],
+   [
+    "content-length",
+    "444"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 444,
+  "body": "{\"app_token\":\"7z9fjy072rgg\",\"adid\":\"1396f6ba1cacc99402d3e52aa8453b36\",\"attribution\":{\"tracker_token\":\"24dgzadq\",\"tracker_name\":\"Dinos_Dynamic_Partner::DNS_NN85::ADD_Arb_21_RFAMP_\",\"network\":\"Dinos_Dynamic_Partner\",\"campaign\":\"DNS_NN85\",\"adgroup\":\"ADD_Arb_21_RFAMP_\",\"engagement_time\":\"2026-10-04T09:56:59Z\",\"installed_at\":\"2026-10-04T10:06:58Z\",\"first_session_time\":\"2026-10-04T10:06:58Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 54859,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 12:50:09 GMT"
+   ],
+   [
+    "content-length",
+    "444"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 444,
+  "body": "{\"app_token\":\"7z9fjy072rgg\",\"adid\":\"1396f6ba1cacc99402d3e52aa8453b36\",\"attribution\":{\"tracker_token\":\"24dgzadq\",\"tracker_name\":\"Dinos_Dynamic_Partner::DNS_NN85::ADD_Arb_21_RFAMP_\",\"network\":\"Dinos_Dynamic_Partner\",\"campaign\":\"DNS_NN85\",\"adgroup\":\"ADD_Arb_21_RFAMP_\",\"engagement_time\":\"2026-10-04T09:56:59Z\",\"installed_at\":\"2026-10-04T10:06:58Z\",\"first_session_time\":\"2026-10-04T10:06:58Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 55585,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 13:56:46 GMT"
+   ],
+   [
+    "content-length",
+    "84"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 84,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"ask_in\":5000}"
+ },
+ {
+  "offset": 55950,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 13:56:46 GMT"
+   ],
+   [
+    "content-length",
+    "441"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 441,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"attribution\":{\"tracker_token\":\"24av4pil\",\"tracker_name\":\"Google Organic Search::com.turkcell.paycell app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.turkcell.paycell app\",\"engagement_time\":\"2026-09-23T04:56:23Z\",\"installed_at\":\"2026-09-23T05:31:14Z\",\"first_session_time\":\"2026-09-23T05:31:14Z\",\"is_reattributed\":false,\"is_redownload_install\":false},\"ask_in\":1000}"
+ },
+ {
+  "offset": 56673,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 13:56:47 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\"}"
+ },
+ {
+  "offset": 57024,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 13:56:52 GMT"
+   ],
+   [
+    "content-length",
+    "427"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 427,
+  "body": "{\"app_token\":\"ikpcyoiu3ny8\",\"adid\":\"50e4212cade8ad8b43209432b62c5d5e\",\"attribution\":{\"tracker_token\":\"24av4pil\",\"tracker_name\":\"Google Organic Search::com.turkcell.paycell app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.turkcell.paycell app\",\"engagement_time\":\"2026-09-23T04:56:23Z\",\"installed_at\":\"2026-09-23T05:31:14Z\",\"first_session_time\":\"2026-09-23T05:31:14Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 57733,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 14:10:27 GMT"
+   ],
+   [
+    "content-length",
+    "84"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 84,
+  "body": "{\"app_token\":\"ag7cwhs46ghs\",\"adid\":\"0ba4b4efb422f74582e0be3b01f76417\",\"ask_in\":5000}"
+ },
+ {
+  "offset": 58098,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Sun, 04 Oct 2026 14:10:33 GMT"
+   ],
+   [
+    "content-length",
+    "411"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 411,
+  "body": "{\"app_token\":\"ag7cwhs46ghs\",\"adid\":\"0ba4b4efb422f74582e0be3b01f76417\",\"attribution\":{\"tracker_token\":\"25j0529c\",\"tracker_name\":\"Google Organic Search::com.grad.def app\",\"network\":\"Google Organic Search\",\"campaign\":\"com.grad.def app\",\"engagement_time\":\"2026-10-03T11:19:08Z\",\"installed_at\":\"2026-10-03T12:28:51Z\",\"first_session_time\":\"2026-10-03T12:28:51Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 58791,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 05 Oct 2026 13:29:07 GMT"
+   ],
+   [
+    "content-length",
+    "84"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 84,
+  "body": "{\"app_token\":\"ag7cwhs46ghs\",\"adid\":\"0ba4b4efb422f74582e0be3b01f76417\",\"ask_in\":5000}"
+ },
+ {
+  "offset": 59156,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 05 Oct 2026 13:30:59 GMT"
+   ],
+   [
+    "content-length",
+    "84"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 84,
+  "body": "{\"app_token\":\"1afnt5j9dsg0\",\"adid\":\"aa9ea7e32815caf7c6a6400e137182c2\",\"ask_in\":2000}"
+ },
+ {
+  "offset": 59521,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 05 Oct 2026 13:30:59 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"1afnt5j9dsg0\",\"adid\":\"aa9ea7e32815caf7c6a6400e137182c2\"}"
+ },
+ {
+  "offset": 59872,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Mon, 05 Oct 2026 13:31:02 GMT"
+   ],
+   [
+    "content-length",
+    "540"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 540,
+  "body": "{\"app_token\":\"1afnt5j9dsg0\",\"adid\":\"aa9ea7e32815caf7c6a6400e137182c2\",\"attribution\":{\"tracker_token\":\"24faz5r5\",\"tracker_name\":\"Declic Global Campaign Q3 2026_Austin_DigiMotive 2_Custom_AOS::ADB_SEP::ADB_SEP_RNA_ADZ88_fft5t54t\",\"network\":\"Declic Global Campaign Q3 2026_Austin_DigiMotive 2_Custom_AOS\",\"campaign\":\"ADB_SEP\",\"adgroup\":\"ADB_SEP_RNA_ADZ88_fft5t54t\",\"engagement_time\":\"2026-10-05T13:30:29Z\",\"installed_at\":\"2026-10-05T13:30:59Z\",\"first_session_time\":\"2026-10-05T13:30:59Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 60694,
+  "start": "HTTP/1.1 202 Accepted",
+  "headers": [
+   [
+    "content-type",
+    "application/json"
+   ],
+   [
+    "date",
+    "Tue, 06 Oct 2026 06:09:27 GMT"
+   ],
+   [
+    "content-length",
+    "170"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 170,
+  "body": "HTTP/1.1 202 Accepted\r\ncontent-type: application/json\r\ndate: Tue, 06 Oct 2026 06:09:49 GMT\r\ncontent-length: 170\r\nstrict-transport-security: max-age=31536000; includeSubDo"
+ },
+ {
+  "offset": 62475,
+  "start": "HTTP/1.1 202 Accepted",
+  "headers": [
+   [
+    "content-type",
+    "application/json"
+   ],
+   [
+    "date",
+    "Tue, 06 Oct 2026 06:11:22 GMT"
+   ],
+   [
+    "content-length",
+    "170"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 170,
+  "body": "HTTP/1.1 202 Accepted\r\ncontent-type: application/json\r\ndate: Tue, 06 Oct 2026 06:11:32 GMT\r\ncontent-length: 170\r\nstrict-transport-security: max-age=31536000; includeSubDo"
+ },
+ {
+  "offset": 63021,
+  "start": "HTTP/1.1 202 Accepted",
+  "headers": [
+   [
+    "content-type",
+    "application/json"
+   ],
+   [
+    "date",
+    "Tue, 06 Oct 2026 06:12:43 GMT"
+   ],
+   [
+    "content-length",
+    "170"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 170,
+  "body": "{\"app_token\":\"cv4d2hlazp4w\",\"adid\":\"cbcd982e883fb491ee42b5ca629882ef\",\"error\":\"Third party sharing failed (nothing to update)\",\"third_party_sharing\":{\"sharing\":\"enable\"}}"
+ },
+ {
+  "offset": 63464,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Tue, 06 Oct 2026 06:12:43 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"cv4d2hlazp4w\",\"adid\":\"cbcd982e883fb491ee42b5ca629882ef\"}"
+ },
+ {
+  "offset": 63815,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Tue, 06 Oct 2026 10:09:12 GMT"
+   ],
+   [
+    "content-length",
+    "84"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 84,
+  "body": "{\"app_token\":\"smxi7gqwu39c\",\"adid\":\"4c141d9c8d1745fbf2f33b2b44c7beff\",\"ask_in\":2000}"
+ },
+ {
+  "offset": 64180,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Tue, 06 Oct 2026 10:09:12 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"smxi7gqwu39c\",\"adid\":\"4c141d9c8d1745fbf2f33b2b44c7beff\"}"
+ },
+ {
+  "offset": 64531,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Tue, 06 Oct 2026 10:09:14 GMT"
+   ],
+   [
+    "content-length",
+    "334"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 334,
+  "body": "{\"app_token\":\"smxi7gqwu39c\",\"adid\":\"4c141d9c8d1745fbf2f33b2b44c7beff\",\"attribution\":{\"tracker_token\":\"g0bpyt5\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-10-06T10:09:12Z\",\"first_session_time\":\"2026-10-06T10:09:12Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 65147,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Tue, 06 Oct 2026 10:09:16 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"smxi7gqwu39c\",\"adid\":\"4c141d9c8d1745fbf2f33b2b44c7beff\"}"
+ },
+ {
+  "offset": 65498,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Tue, 06 Oct 2026 10:17:39 GMT"
+   ],
+   [
+    "content-length",
+    "84"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 84,
+  "body": "{\"app_token\":\"smxi7gqwu39c\",\"adid\":\"6b575c41bbefc8caaccaf6faa01eac3a\",\"ask_in\":2000}"
+ },
+ {
+  "offset": 65863,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Tue, 06 Oct 2026 10:17:39 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"smxi7gqwu39c\",\"adid\":\"6b575c41bbefc8caaccaf6faa01eac3a\"}"
+ },
+ {
+  "offset": 66214,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Tue, 06 Oct 2026 10:17:42 GMT"
+   ],
+   [
+    "content-length",
+    "398"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 398,
+  "body": "{\"app_token\":\"smxi7gqwu39c\",\"adid\":\"6b575c41bbefc8caaccaf6faa01eac3a\",\"attribution\":{\"tracker_token\":\"248wk8ym\",\"tracker_name\":\"VL-Alliance::HM2::HM2_1722_\",\"network\":\"VL-Alliance\",\"campaign\":\"HM2\",\"adgroup\":\"HM2_1722_\",\"engagement_time\":\"2026-10-06T10:10:24Z\",\"installed_at\":\"2026-10-06T10:17:39Z\",\"first_session_time\":\"2026-10-06T10:17:39Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 66894,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Tue, 06 Oct 2026 10:17:43 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"smxi7gqwu39c\",\"adid\":\"6b575c41bbefc8caaccaf6faa01eac3a\"}"
+ },
+ {
+  "offset": 67245,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Tue, 06 Oct 2026 11:28:43 GMT"
+   ],
+   [
+    "content-length",
+    "84"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 84,
+  "body": "{\"app_token\":\"smxi7gqwu39c\",\"adid\":\"c084b39d4e2a1122f20d1290279e1b62\",\"ask_in\":2000}"
+ },
+ {
+  "offset": 67610,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Tue, 06 Oct 2026 11:28:43 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"smxi7gqwu39c\",\"adid\":\"c084b39d4e2a1122f20d1290279e1b62\"}"
+ },
+ {
+  "offset": 67961,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Tue, 06 Oct 2026 11:28:45 GMT"
+   ],
+   [
+    "content-length",
+    "334"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 334,
+  "body": "{\"app_token\":\"smxi7gqwu39c\",\"adid\":\"c084b39d4e2a1122f20d1290279e1b62\",\"attribution\":{\"tracker_token\":\"g0bpyt5\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-10-06T11:28:43Z\",\"first_session_time\":\"2026-10-06T11:28:43Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 68577,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Tue, 06 Oct 2026 11:28:47 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"smxi7gqwu39c\",\"adid\":\"c084b39d4e2a1122f20d1290279e1b62\"}"
+ },
+ {
+  "offset": 68928,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Tue, 06 Oct 2026 18:08:28 GMT"
+   ],
+   [
+    "content-length",
+    "84"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 84,
+  "body": "{\"app_token\":\"tczjrkpa8lc0\",\"adid\":\"c084b39d4e2a1122f20d1290279e1b62\",\"ask_in\":2000}"
+ },
+ {
+  "offset": 69293,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Tue, 06 Oct 2026 18:08:28 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"tczjrkpa8lc0\",\"adid\":\"c084b39d4e2a1122f20d1290279e1b62\"}"
+ },
+ {
+  "offset": 69644,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Tue, 06 Oct 2026 18:08:31 GMT"
+   ],
+   [
+    "content-length",
+    "1047"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 1047,
+  "body": "{\"app_token\":\"tczjrkpa8lc0\",\"adid\":\"c084b39d4e2a1122f20d1290279e1b62\",\"attribution\":{\"tracker_token\":\"23euafta\",\"tracker_name\":\"blisreports::Delivery 3::DQ_raft_AUG_\",\"network\":\"blisreports\",\"campaign\":\"Delivery 3\",\"adgroup\":\"DQ_raft_AUG_\",\"deeplink\":\"burgerizzrapp://?adj_t=231lmclw\\u0026adj_adgroup=DQ_raft_AUG_\\u0026adj_campaign=DQ_raft_AUG(Sub_source)\\u0026gps_adid=\\u0026click_id=6Pd8CRNzcCxdCjFu27jfEe\\u0026adj_idfa=\\u0026adj_install_callback=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fpostback%3Fclick_id%3D6Pd8CRNzcCxdCjFu27jfEe\\u0026adj_event_callback_kio35u=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fevents%3Fclick_id%3D6Pd8CRNzcCxdCjFu27jfEe%26goal%3Dkio35u\\u0026adj_event_callback_fiylqr=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fevents%3Fclick_id%3D6Pd8CRNzcCxdCjFu27jfEe%26goal%3Dfiylqr\\u0026adjust_no_sdkclick=1\",\"engagement_time\":\"2026-10-06T18:06:54Z\",\"installed_at\":\"2026-10-06T18:08:28Z\",\"first_session_time\":\"2026-10-06T18:08:28Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "offset": 70974,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Tue, 06 Oct 2026 19:40:50 GMT"
+   ],
+   [
+    "content-length",
+    "84"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 84,
+  "body": "{\"app_token\":\"vf3lochhmgw0\",\"adid\":\"03207ac6075b4c71a23102471129dbd6\",\"ask_in\":2000}"
+ },
+ {
+  "offset": 71339,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Tue, 06 Oct 2026 19:40:50 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 70,
+  "body": "{\"app_token\":\"vf3lochhmgw0\",\"adid\":\"03207ac6075b4c71a23102471129dbd6\"}"
+ },
+ {
+  "offset": 71690,
+  "start": "HTTP/1.1 200 OK",
+  "headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Tue, 06 Oct 2026 19:40:53 GMT"
+   ],
+   [
+    "content-length",
+    "422"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "body_len": 422,
+  "body": "{\"app_token\":\"vf3lochhmgw0\",\"adid\":\"03207ac6075b4c71a23102471129dbd6\",\"attribution\":{\"tracker_token\":\"1zwaj8am\",\"tracker_name\":\"Spyke Media::SOHYPE_ADH::{affiliate_id}\",\"network\":\"Spyke Media\",\"campaign\":\"SOHYPE_ADH\",\"adgroup\":\"{affiliate_id}\",\"engagement_time\":\"2026-10-06T19:37:22Z\",\"installed_at\":\"2026-10-06T19:40:49Z\",\"first_session_time\":\"2026-10-06T19:40:49Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ }
+]

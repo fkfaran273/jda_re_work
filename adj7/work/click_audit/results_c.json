@@ -1,0 +1,101 @@
+{
+ "C1_mobpine_chain_gps": [
+  {
+   "status": 302,
+   "url": "http://clicks.mobpine.com/api/track/v1/click?aff_id=3&offer_id=23483498&sub3=acd38fca-647d-4ae7-8b9d-ec4911eaa264&gps_adid=acd38fca-647d-4ae7-8b9d-ec4911eaa264",
+   "location": "https://app.adjust.com/2015o4dz?campaign=HM2&adgroup=HM2_1722_&click_id=406NsB2Mfc2TaFz7AWGtOL&ip_address=%7Bloop_id%7D&gps_adid=acd38fca-647d-4ae7-8b9d-ec4911eaa264&install_callback=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fpostback%3Fclick_id%3D406NsB2Mfc2TaFz7AWGtOL&event_callback_4vpab5=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fevents%3Fclick_id%3D406NsB2Mfc2TaFz7AWGtOL%26goal%3D4vpab5",
+   "date": "Tue, 06 Oct 2026 21:16:13 GMT",
+   "set_cookie_names": []
+  },
+  {
+   "status": 302,
+   "url": "https://app.adjust.com/2015o4dz?campaign=HM2&adgroup=HM2_1722_&click_id=406NsB2Mfc2TaFz7AWGtOL&ip_address=%7Bloop_id%7D&gps_adid=acd38fca-647d-4ae7-8b9d-ec4911eaa264&install_callback=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fpostback%3Fclick_id%3D406NsB2Mfc2TaFz7AWGtOL&event_callback_4",
+   "location": "market://details?id=in.hanafintech&referrer=adjust_reftag%3Dc1h3jiNly9hkH%26utm_source%3DVL-Alliance%26utm_campaign%3DHM2%26utm_content%3DHM2_1722_",
+   "date": "Tue, 06 Oct 2026 21:16:15 GMT",
+   "set_cookie_names": [
+    "62819b867fe240546988c75b3cc3a086",
+    "62819b867fe240546988c75b3cc3a086",
+    "62819b867fe240546988c75b3cc3a086"
+   ]
+  },
+  {
+   "status": null,
+   "url": "market://details?id=in.hanafintech&referrer=adjust_reftag%3Dc1h3jiNly9hkH%26utm_source%3DVL-Alliance%26utm_campaign%3DHM2%26utm_content%3DHM2_1722_",
+   "note": "non-http scheme (market/intent)"
+  }
+ ],
+ "C2_mobpine_chain_nogps": [
+  {
+   "status": 302,
+   "url": "http://clicks.mobpine.com/api/track/v1/click?aff_id=3&offer_id=23483498&sub3=acd38fca-647d-4ae7-8b9d-ec4911eaa264",
+   "location": "https://app.adjust.com/2015o4dz?campaign=HM2&adgroup=HM2_1722_&click_id=0bsS8FqxaJO4nB7k3TSEDj&ip_address=%7Bloop_id%7D&gps_adid=acd38fca-647d-4ae7-8b9d-ec4911eaa264&install_callback=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fpostback%3Fclick_id%3D0bsS8FqxaJO4nB7k3TSEDj&event_callback_4vpab5=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fevents%3Fclick_id%3D0bsS8FqxaJO4nB7k3TSEDj%26goal%3D4vpab5",
+   "date": "Tue, 06 Oct 2026 21:16:18 GMT",
+   "set_cookie_names": []
+  },
+  {
+   "status": 302,
+   "url": "https://app.adjust.com/2015o4dz?campaign=HM2&adgroup=HM2_1722_&click_id=0bsS8FqxaJO4nB7k3TSEDj&ip_address=%7Bloop_id%7D&gps_adid=acd38fca-647d-4ae7-8b9d-ec4911eaa264&install_callback=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fpostback%3Fclick_id%3D0bsS8FqxaJO4nB7k3TSEDj&event_callback_4",
+   "location": "market://details?id=in.hanafintech&referrer=adjust_reftag%3DcYPZrkAhAI00l%26utm_source%3DVL-Alliance%26utm_campaign%3DHM2%26utm_content%3DHM2_1722_",
+   "date": "Tue, 06 Oct 2026 21:16:18 GMT",
+   "set_cookie_names": [
+    "b597d1807f4cf1bfd314ea9d2dfea06a",
+    "b597d1807f4cf1bfd314ea9d2dfea06a",
+    "b597d1807f4cf1bfd314ea9d2dfea06a"
+   ]
+  },
+  {
+   "status": null,
+   "url": "market://details?id=in.hanafintech&referrer=adjust_reftag%3DcYPZrkAhAI00l%26utm_source%3DVL-Alliance%26utm_campaign%3DHM2%26utm_content%3DHM2_1722_",
+   "note": "non-http scheme (market/intent)"
+  }
+ ],
+ "C3_adjust_default_ua": [
+  {
+   "status": 302,
+   "url": "https://app.adjust.com/1yzhva5b",
+   "location": "https://apps.apple.com/app/id6444654663?mt=8&pt=91576884&ct=Spyke+Media",
+   "date": "Tue, 06 Oct 2026 21:16:21 GMT",
+   "set_cookie_names": [
+    "350259005b8b47c0c8bbf7382c3b402d",
+    "350259005b8b47c0c8bbf7382c3b402d",
+    "350259005b8b47c0c8bbf7382c3b402d"
+   ]
+  },
+  {
+   "status": 301,
+   "url": "https://apps.apple.com/app/id6444654663?mt=8&pt=91576884&ct=Spyke+Media",
+   "location": "https://apps.apple.com/us/app/hunch-dating-app-vibe-meet/id6444654663?ct=Spyke+Media&pt=91576884",
+   "date": "Tue, 06 Oct 2026 21:16:21 GMT",
+   "set_cookie_names": [
+    "geo"
+   ]
+  },
+  {
+   "status": 200,
+   "url": "https://apps.apple.com/us/app/hunch-dating-app-vibe-meet/id6444654663?ct=Spyke+Media&pt=91576884",
+   "location": "",
+   "date": "Tue, 06 Oct 2026 21:16:22 GMT",
+   "set_cookie_names": [
+    "geo"
+   ]
+  }
+ ],
+ "C4_adjust_params_enrich": [
+  {
+   "status": 302,
+   "url": "https://app.adjust.com/1yzhva5b?adj_campaign=TESTCAMP99&adj_adgroup=GRP7&gps_adid=9814984a-beb6-4047-bd20-f6bb5cacd130",
+   "location": "market://details?id=social.hunch.app&referrer=adjust_reftag%3DcqxcJlePJcViF%26utm_source%3DSpyke%2BMedia",
+   "date": "Tue, 06 Oct 2026 21:16:27 GMT",
+   "set_cookie_names": [
+    "74362bf48dbeb935c1af4b91cb844d38",
+    "74362bf48dbeb935c1af4b91cb844d38",
+    "74362bf48dbeb935c1af4b91cb844d38"
+   ]
+  },
+  {
+   "status": null,
+   "url": "market://details?id=social.hunch.app&referrer=adjust_reftag%3DcqxcJlePJcViF%26utm_source%3DSpyke%2BMedia",
+   "note": "non-http scheme (market/intent)"
+  }
+ ]
+}

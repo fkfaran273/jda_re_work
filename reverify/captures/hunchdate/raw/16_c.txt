@@ -1,0 +1,9 @@
+GET https://graph.facebook.com/v16.0/app/model_asset?access_token=1237534153460824%7C03ad100a4d727ca87e2eb3debfb565dd&fields=use_case%2Cversion_id%2Casset_uri%2Crules_uri%2Cthresholds&format=json&sdk=android HTTP/1.1
+User-Agent: FBAndroidSDK.18.3.0
+Accept-Language: en_IN
+Content-Type: application/x-www-form-urlencoded
+Content-Encoding: gzip
+Host: graph.facebook.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="4" BitFlags="100">
+  <SessionTimers ClientConnected="2026-10-08T00:43:27.2278003+05:30" ClientBeginRequest="2026-10-08T00:43:27.2278003+05:30" GotRequestHeaders="2026-10-08T00:43:27.2278003+05:30" ClientDoneRequest="2026-10-08T00:43:27.2278003+05:30" GatewayTime="0" DNSTime="1" TCPConnectTime="0" HTTPSHandshakeTime="0" ServerConnected="0001-01-01T00:00:00" FiddlerBeginRequest="0001-01-01T00:00:00" ServerGotRequest="0001-01-01T00:00:00" ServerBeginResponse="0001-01-01T00:00:00" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="0001-01-01T00:00:00" ClientBeginResponse="2026-10-08T00:43:27.2545294+05:30" ClientDoneResponse="2026-10-08T00:43:27.2545294+05:30" />
+  <PipeInfo />
+  <SessionFlags>
+    <SessionFlag N="https-client-version" V="None" />
+    <SessionFlag N="x-failsession-when" V="SendingRequest" />
+    <SessionFlag N="x-clientport" V="10758" />
+    <SessionFlag N="x-clientip" V="127.0.0.1" />
+    <SessionFlag N="x-aborted-when" V="SendingRequest" />
+    <SessionFlag N="x-processinfo" V="python:44364" />
+  </SessionFlags>
+</Session>

@@ -1,0 +1,6 @@
+{
+ "http": 200,
+ "body": "{\"app_token\":\"smxi7gqwu39c\",\"adid\":\"bc620c16d8112216e33514e30a03eb37\",\"attribution\":{\"tracker_token\":\"248wk8ym\",\"tracker_name\":\"VL-Alliance::HM2::HM2_1722_\",\"network\":\"VL-Alliance\",\"campaign\":\"HM2\",\"adgroup\":\"HM2_1722_\",\"engagement_time\":\"2026-10-07T08:58:48Z\",\"installed_at\":\"2026-10-07T09:02:33Z\",\"first_session_time\":\"2026-10-07T09:02:33Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+ "verdict": "NON-ORGANIC",
+ "path": "/attribution"
+}

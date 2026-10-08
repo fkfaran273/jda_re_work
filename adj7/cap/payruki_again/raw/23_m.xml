@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="52" BitFlags="2100">
+  <SessionTimers ClientConnected="2026-10-07T14:32:32.32888+05:30" ClientBeginRequest="2026-10-07T14:32:32.3298787+05:30" GotRequestHeaders="2026-10-07T14:32:32.3298787+05:30" ClientDoneRequest="2026-10-07T14:32:32.3298787+05:30" GatewayTime="0" DNSTime="0" TCPConnectTime="80" HTTPSHandshakeTime="164" ServerConnected="2026-10-07T14:32:32.409517+05:30" FiddlerBeginRequest="2026-10-07T14:32:32.409517+05:30" ServerGotRequest="2026-10-07T14:32:32.409517+05:30" ServerBeginResponse="0001-01-01T00:00:00" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="0001-01-01T00:00:00" ClientBeginResponse="2026-10-07T14:32:32.4105174+05:30" ClientDoneResponse="2026-10-07T14:32:32.4105174+05:30" />
+  <PipeInfo />
+  <TunnelInfo BytesEgress="0" BytesIngress="0" />
+  <SessionFlags>
+    <SessionFlag N="https-client-version" V="Tls13" />
+    <SessionFlag N="x-supported-client-tls-protocols" V="15360" />
+    <SessionFlag N="x-egressport" V="47927" />
+    <SessionFlag N="x-responsebodytransferlength" V="0" />
+    <SessionFlag N="x-clientport" V="47926" />
+    <SessionFlag N="https-server-version" V="Tls12" />
+    <SessionFlag N="https-client-snihostname" V="oversee.froescik.in" />
+    <SessionFlag N="x-clientip" V="::ffff:127.0.0.1" />
+    <SessionFlag N="https-client-sessionid" V="06 C6 E4 D3 45 D4 42 C4 A8 4E 9F 2D DB 53 2D 0C 15 15 FD FF 47 BE 63 52 DA F0 D8 2A 22 4E 6E F0" />
+    <SessionFlag N="x-hostip" V="8.219.71.44" />
+    <SessionFlag N="x-processinfo" V="python:34048" />
+    <SessionFlag N="https-server-cipher" V="Aes128 128bits" />
+  </SessionFlags>
+</Session>

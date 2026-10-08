@@ -1,0 +1,343 @@
+# -*- coding: utf-8 -*-
+"""Probe: parse payrupi.chls (Charles session = Java serialization stream)
+into a full object graph and dump class names / shapes, so diff_flow.py can
+be written against the real structure."""
+import sys
+
+CHLS = r"C:\Users\Apps\Downloads\payrupi.chls"
+
+TC_NULL = 0x70
+TC_REFERENCE = 0x71
+TC_CLASSDESC = 0x72
+TC_OBJECT = 0x73
+TC_STRING = 0x74
+TC_ARRAY = 0x75
+TC_CLASS = 0x76
+TC_BLOCKDATA = 0x77
+TC_ENDBLOCKDATA = 0x78
+TC_RESET = 0x79
+TC_BLOCKDATALONG = 0x7A
+TC_EXCEPTION = 0x7B
+TC_LONGSTRING = 0x7C
+TC_PROXYCLASSDESC = 0x7D
+TC_ENUM = 0x7E
+
+SC_WRITE_METHOD = 0x01
+SC_BLOCK_DATA = 0x08
+SC_SERIALIZABLE = 0x02
+
+
+class R(object):
+    def __init__(self, data):
+        self.d = data
+        self.i = 0
+        self.handles = {}   # id -> object
+        self.next_handle = 0x7E0000
+
+    def u1(self):
+        v = self.d[self.i]; self.i += 1; return v
+
+    def u4(self):
+        v = int.from_bytes(self.d[self.i:self.i+4], "big"); self.i += 4; return v
+
+    def u8(self):
+        v = int.from_bytes(self.d[self.i:self.i+8], "big"); self.i += 8; return v
+
+    def assign(self, obj):
+        h = self.next_handle; self.next_handle += 1
+        self.handles[h] = obj
+        return h
+
+    def raw_utf(self, n):
+        s = self.d[self.i:self.i+n].decode("utf-8", "replace")
+        self.i += n
+        return s
+
+    def read_content(self):
+        """Read one content element (object/blockdata) from the stream."""
+        t = self.u1()
+        if t == TC_OBJECT:
+            self.i -= 1
+            return self.read_object()
+        if t == TC_BLOCKDATA:
+            ln = self.u1()
+            b = self.d[self.i:self.i+ln]; self.i += ln
+            return ("BLOCKDATA", b)
+        if t == TC_BLOCKDATALONG:
+            ln = self.u4()
+            b = self.d[self.i:self.i+ln]; self.i += ln
+            return ("BLOCKDATA", b)
+        if t == TC_ENDBLOCKDATA:
+            self.i -= 1
+            return None
+        raise ValueError("read_content: unexpected tag 0x%02x at %d" % (t, self.i-1))
+
+    def read_object(self):
+        t = self.u1()
+        if t == TC_OBJECT:
+            return self.read_newobject()
+        if t == TC_STRING:
+            ln = self.u2()
+            s = self.raw_utf(ln)
+            self.assign(s)
+            return s
+        if t == TC_LONGSTRING:
+            ln = self.u8()
+            s = self.raw_utf(ln)
+            self.assign(s)
+            return s
+        if t == TC_ARRAY:
+            return self.read_array()
+        if t == TC_CLASSDESC or t == TC_PROXYCLASSDESC:
+            self.i -= 1
+            return self.read_classdesc()
+        if t == TC_CLASS:
+            cd = self.read_classdesc()
+            self.assign(cd)
+            return ("CLASS", cd)
+        if t == TC_REFERENCE:
+            h = self.u4()
+            if h in self.handles:
+                return self.handles[h]
+            raise ValueError("dangling handle 0x%x at %d" % (h, self.i))
+        if t == TC_NULL:
+            return None
+        if t == TC_ENUM:
+            cd = self.read_classdesc()
+            h = self.assign(("ENUM", cd, None))
+            name = self.read_object()
+            self.handles[h] = ("ENUM", cd, name)
+            return self.handles[h]
+        if t == TC_RESET:
+            self.handles.clear(); self.next_handle = 0x7E0000
+            return ("RESET",)
+        if t == TC_BLOCKDATA or t == TC_BLOCKDATALONG:
+            self.i -= 1
+            return self.read_content()
+        if t == TC_EXCEPTION:
+            raise ValueError("TC_EXCEPTION")
+        raise ValueError("unknown tag 0x%02x at %d" % (t, self.i-1))
+
+    def u2(self):
+        v = int.from_bytes(self.d[self.i:self.i+2], "big"); self.i += 2; return v
+
+    def read_classdesc(self):
+        t = self.u1()
+        if t == TC_REFERENCE:
+            h = self.u4()
+            return self.handles[h]
+        if t == TC_NULL:
+            return None
+        if t != TC_CLASSDESC and t != TC_PROXYCLASSDESC:
+            raise ValueError("classdesc: tag 0x%02x at %d" % (t, self.i-1))
+        h = None
+        if t == TC_PROXYCLASSDESC:
+            h = self.assign(None)
+            n_ifaces = self.u4()
+            ifaces = [self.raw_utf(self.u2()) for _ in range(n_ifaces)]
+            cd = {"proxy": True, "ifaces": ifaces, "name": "(proxy)"}
+            self.handles[h] = cd
+            self.read_classannotation()
+            cd["super"] = self.read_classdesc()
+            return cd
+        name = self.raw_utf(self.u2())
+        suid = self.u8()
+        h = self.assign(None)   # newHandle sits after the serialVersionUID
+        flags = self.u1()
+        n_fields = self.u2()
+        fields = []
+        for _ in range(n_fields):
+            tc = self.u1()
+            fname = self.raw_utf(self.u2())
+            if tc in b"BCDFIJSZ":
+                fields.append((chr(tc), fname))
+            else:  # 'L' or '['
+                cls = self.raw_utf(self.u2())
+                fields.append((chr(tc), fname, cls))
+        self.handles[h] = None  # placeholder before annotation (refs possible)
+        self.read_classannotation()
+        super_cd = self.read_classdesc()
+        cd = {"name": name, "suid": suid, "flags": flags, "fields": fields,
+              "super": super_cd}
+        self.handles[h] = cd
+        return cd
+
+    def read_classannotation(self):
+        while True:
+            t = self.u1()
+            if t == TC_ENDBLOCKDATA:
+                return
+            if t == TC_BLOCKDATA:
+                ln = self.u1(); self.i += ln
+                continue
+            if t == TC_BLOCKDATALONG:
+                ln = self.u4(); self.i += ln
+                continue
+            self.i -= 1
+            self.read_object()
+
+    def read_array(self):
+        cd = self.read_classdesc()
+        h = self.assign(None)
+        n = self.u4()
+        cls = cd["name"] if cd else ""
+        prim = {"[B": ("B", 1), "[S": ("S", 2), "[I": ("I", 4),
+                "[J": ("J", 8), "[Z": ("Z", 1), "[C": ("C", 2),
+                "[F": ("F", 4), "[D": ("D", 8)}.get(cls)
+        if prim:
+            tc, w = prim
+            out = [self.read_prim(tc) for _ in range(n)]
+        else:
+            out = []
+            for _ in range(n):
+                out.append(self.read_object())
+        self.handles[h] = out
+        return out
+
+    def read_newobject(self):
+        cd = self.read_classdesc()
+        obj = {"__class__": cd["name"] if cd else "?", "__fields__": {}}
+        self.assign(obj)
+        self.read_classdata(cd, obj)
+        return obj
+
+    def read_classdata(self, cd, obj):
+        # serializable chain: chain[0] = most derived ... chain[-1] = supermost
+        chain = []
+        c = cd
+        while c and not c.get("proxy"):
+            chain.append(c)
+            c = c.get("super")
+        # Java writes classdata SUPERCLASS-FIRST -> iterate reversed
+        for c in reversed(chain):
+            fields = {}
+            for f in c["fields"]:
+                if f[0] in "BCDFIJSZ":
+                    fields[f[1]] = self.read_prim(f[0])
+                else:
+                    fields[f[1]] = self.read_object()
+            obj["__fields__"].update(fields)
+            if c["flags"] & SC_WRITE_METHOD:
+                # custom writeObject data: blockdata until TC_ENDBLOCKDATA
+                blocks = []
+                while True:
+                    t = self.u1()
+                    if t == TC_ENDBLOCKDATA:
+                        break
+                    if t == TC_BLOCKDATA:
+                        ln = self.u1()
+                        blocks.append(self.d[self.i:self.i+ln]); self.i += ln
+                    elif t == TC_BLOCKDATALONG:
+                        ln = self.u4()
+                        blocks.append(self.d[self.i:self.i+ln]); self.i += ln
+                    else:
+                        self.i -= 1
+                        blocks.append(self.read_object())
+                if blocks:
+                    obj["__fields__"]["__custom__"] = blocks
+
+    def read_prim(self, tc):
+        if tc == "B": v = self.d[self.i]; self.i += 1; return v
+        if tc == "C":
+            v = self.d[self.i:self.i+2].decode("utf-16-be"); self.i += 2; return v
+        if tc == "D":
+            import struct
+            v = struct.unpack(">d", self.d[self.i:self.i+8])[0]; self.i += 8; return v
+        if tc == "F":
+            import struct
+            v = struct.unpack(">f", self.d[self.i:self.i+4])[0]; self.i += 4; return v
+        if tc == "I":
+            v = int.from_bytes(self.d[self.i:self.i+4], "big", signed=True); self.i += 4; return v
+        if tc == "J":
+            v = int.from_bytes(self.d[self.i:self.i+8], "big", signed=True); self.i += 8; return v
+        if tc == "S":
+            v = int.from_bytes(self.d[self.i:self.i+2], "big", signed=True); self.i += 2; return v
+        if tc == "Z":
+            v = self.d[self.i]; self.i += 1; return bool(v)
+        raise ValueError("prim %r" % tc)
+
+
+def brief(v, depth=0):
+    if isinstance(v, dict) and "__class__" in v:
+        return "<%s %d fields>" % (v["__class__"], len(v["__fields__"]))
+    if isinstance(v, (bytearray, bytes)):
+        return "<%d bytes>" % len(v)
+    if isinstance(v, list):
+        return "[list %d: %s]" % (len(v), ",".join(brief(x) for x in v[:4]))
+    if isinstance(v, tuple):
+        return str(v[0])
+    return repr(v)[:80]
+
+
+def main():
+    data = open(CHLS, "rb").read()
+    assert data[:4] == b"\xac\xed\x00\x05", data[:4].hex()
+    r = R(data)
+    r.i = 4
+    root = r.read_object()
+    print("root:", brief(root))
+    # walk and index all objects by class
+    seen = {}
+
+    def walk(v):
+        if isinstance(v, dict):
+            cn = v.get("__class__")
+            if cn:
+                seen.setdefault(cn, []).append(v)
+            for k, x in v.items():
+                if k not in ("__class__",):
+                    walk(x)
+        elif isinstance(v, list):
+            for x in v:
+                walk(x)
+    walk(root)
+    print("\nclasses found:")
+    for cn, objs in sorted(seen.items()):
+        print("  %-60s x%d" % (cn, len(objs)))
+
+    # dump the first transaction-ish class fully
+    for cn, objs in sorted(seen.items()):
+        if "ransaction" in cn or "equest" in cn or "esponse" in cn:
+            print("\n=== first %s ===" % cn)
+            dump(objs[0], 0, set())
+
+
+def dump(v, ind, seen_ids):
+    pad = "  " * ind
+    if isinstance(v, dict) and "__class__" in v:
+        if id(v) in seen_ids:
+            print("%s<recursion %s>" % (pad, v["__class__"]))
+            return
+        seen_ids.add(id(v))
+        print("%s%s {" % (pad, v["__class__"]))
+        for k, x in v["__fields__"].items():
+            if k == "__custom__":
+                tot = sum(len(b) if isinstance(b, (bytes, bytearray)) else 0
+                          for b in x)
+                print("%s  __custom__: %d blocks, %d bytes" % (pad, len(x), tot))
+                for b in x[:3]:
+                    if isinstance(b, (bytes, bytearray)):
+                        print("%s    %r" % (pad, b[:160]))
+                continue
+            if isinstance(x, dict) and "__class__" in x:
+                print("%s  %s:" % (pad, k))
+                dump(x, ind + 2, seen_ids)
+            elif isinstance(x, (bytes, bytearray)):
+                print("%s  %s = <%d bytes> %r" % (pad, k, len(x), x[:120]))
+            elif isinstance(x, list):
+                print("%s  %s = [" % (pad, k))
+                for y in x:
+                    dump(y, ind + 2, seen_ids)
+                print("%s  ]" % pad)
+            else:
+                print("%s  %s = %r" % (pad, k, x))
+        print("%s}" % pad)
+    elif isinstance(v, list):
+        for y in v:
+            dump(y, ind, seen_ids)
+    else:
+        print("%s%r" % ("  " * ind, v))
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,16 @@
+POST https://firebaseremoteconfigrealtime.googleapis.com/v1/projects/871858590108/namespaces/firebase:streamFetchInvalidations HTTP/1.1
+X-Goog-Firebase-Installations-Auth: eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6ODcxODU4NTkwMTA4OmFuZHJvaWQ6NjU5MDlkZmQ2MzJmYjc4MDllYjg1OSIsImV4cCI6MTc5MTkyMDQ0NiwiZmlkIjoiZFo4cUNXNm1UOE9TcXc4SDk3N1EyWSIsInByb2plY3ROdW1iZXIiOjg3MTg1ODU5MDEwOH0.AB2LPV8wRQIhAJ-MGpDZVKA6QBUl_lPNokGLQRP9HqHx4_NBRwreIJTPAiA2urPzI-dE9X8z6wF6QSHRucH4X3x-gbnJkX7lPihofQ
+X-Goog-Api-Key: AIzaSyCjcvU0PqS2xESMb3yq2aqR-_0BDVznoBU
+X-Android-Package: social.hunch.app
+X-Android-Cert: AA92A18790F85D4E9B5199C7792C55F2FB0F61E1
+X-Google-GFE-Can-Retry: yes
+X-Accept-Response-Streaming: true
+Content-Type: application/json
+Accept: application/json
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)
+Host: firebaseremoteconfigrealtime.googleapis.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 200
+
+{"appInstanceId":"dZ8qCW6mT8OSqw8H977Q2Y","appId":"1:871858590108:android:65909dfd632fb7809eb859","namespace":"firebase","project":"871858590108","sdkVersion":"22.1.0","lastKnownVersionNumber":"1213"}

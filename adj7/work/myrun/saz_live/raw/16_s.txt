@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+content-type: application/json; charset=utf-8
+date: Wed, 07 Oct 2026 19:14:10 GMT
+content-length: 334
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-robots-tag: noindex
+
+{"app_token":"smxi7gqwu39c","adid":"96b6071e078f0f9d672206394c8023d8","attribution":{"tracker_token":"g0bpyt5","tracker_name":"Organic","network":"Organic","engagement_time":"0001-01-01T00:00:00Z","installed_at":"2026-10-07T19:14:00Z","first_session_time":"2026-10-07T19:14:00Z","is_reattributed":false,"is_redownload_install":false}}

@@ -1,0 +1,135 @@
+[
+ {
+  "row": 0,
+  "src": "wire_dev2srv",
+  "path": "/event",
+  "n_hits": 0,
+  "hits": []
+ },
+ {
+  "row": 1,
+  "src": "wire_dev2srv",
+  "path": "/event",
+  "n_hits": 0,
+  "hits": []
+ },
+ {
+  "row": 2,
+  "src": "wire_dev2srv",
+  "path": "/event",
+  "n_hits": 0,
+  "hits": []
+ },
+ {
+  "row": 3,
+  "src": "wire_dev2srv",
+  "path": "/event",
+  "n_hits": 0,
+  "hits": []
+ },
+ {
+  "row": 4,
+  "src": "wire_dev2srv",
+  "path": "/event",
+  "n_hits": 0,
+  "hits": []
+ },
+ {
+  "row": 5,
+  "src": "wire_dev2srv",
+  "path": "/event",
+  "n_hits": 0,
+  "hits": []
+ },
+ {
+  "row": 6,
+  "src": "wire_dev2srv",
+  "path": "/session",
+  "n_hits": 0,
+  "hits": []
+ },
+ {
+  "row": 7,
+  "src": "wire_dev2srv",
+  "path": "/session",
+  "n_hits": 0,
+  "hits": []
+ },
+ {
+  "row": 8,
+  "src": "saz_payruki_again",
+  "path": "https://app.adjust.com/attribution",
+  "n_hits": 0,
+  "hits": []
+ },
+ {
+  "row": 9,
+  "src": "cap_burger",
+  "path": "https://app.adjust.com/attribution",
+  "n_hits": 0,
+  "hits": []
+ },
+ {
+  "row": 10,
+  "src": "cap_payrupik_new",
+  "path": "https://app.adjust.com/attribution",
+  "n_hits": 0,
+  "hits": []
+ },
+ {
+  "row": 11,
+  "src": "cap_hunchdate",
+  "path": "https://app.adjust.com/attribution",
+  "n_hits": 0,
+  "hits": []
+ },
+ {
+  "row": 12,
+  "src": "saz_payruki_again",
+  "path": "https://app.adjust.com/sdk_click",
+  "n_hits": 0,
+  "hits": []
+ },
+ {
+  "row": 13,
+  "src": "cap_burger",
+  "path": "https://app.adjust.com/sdk_click",
+  "n_hits": 0,
+  "hits": []
+ },
+ {
+  "row": 14,
+  "src": "cap_hunchdate",
+  "path": "https://app.adjust.com/sdk_click",
+  "n_hits": 0,
+  "hits": []
+ },
+ {
+  "row": 15,
+  "src": "cap_payrupik_new",
+  "path": "https://app.adjust.com/sdk_click",
+  "n_hits": 0,
+  "hits": []
+ },
+ {
+  "row": 16,
+  "src": "cap_burger",
+  "path": "https://app.adjust.com/session",
+  "n_hits": 0,
+  "hits": []
+ },
+ {
+  "row": 17,
+  "src": "saz_payruki_again",
+  "path": "https://app.adjust.com/session",
+  "n_hits": 0,
+  "hits": []
+ },
+ {
+  "row": 18,
+  "src": "cap_payrupik_new",
+  "path": "https://app.adjust.com/session",
+  "n_hits": 0,
+  "hits": []
+ }
+]

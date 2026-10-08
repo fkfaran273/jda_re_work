@@ -1,0 +1,179 @@
+{
+ "A1_plain_requests_minhdr_android": {
+  "url": "https://app.adjust.com/1yzhva5b",
+  "elapsed": 0.95,
+  "hops": [
+   {
+    "status": 302,
+    "headers": {
+     "content-type": "text/html; charset=utf-8",
+     "location": "market://details?id=social.hunch.app&referrer=adjust_reftag%3DcOaIkIsCnrh1C%26utm_source%3DSpyke%2BMedia",
+     "set-cookie": "350259005b8b47c0c8bbf7382c3b402d=cOaIkIsCnrh1C; Path=/; Domain=adjust.com; Max-Age=2, 350259005b8b47c0c8bbf7382c3b402d=cOaIkIsCnrh1C; Path=/; Domain=adjust.io; Max-Age=2, 350259005b8b47c0c8bbf7382c3b402d=cOaIkIsCnrh1C; Path=/; Domain=adj.st; Max-Age=2, 350259005b8b47c0c8bbf7382c3b402d=cOaIkIsCnrh1C; Path=/; Domain=go.link; Max-Age=2, 350259005b8b47c0c8bbf7382c3b402d=cOaIkIsCnrh1C; Path=/; Domain=adjust.net.in; Max-Age=2, 350259005b8b47c0c8bbf7382c3b402d=cOaIkIsCnrh1C; Path=/; Domain=adjust.world; Max-Age=2, 350259005b8b47c0c8bbf7382c3b402d=cOaIkIsCnrh1C; Path=/; Domain=adjust.cn; Max-Age=2",
+     "date": "Tue, 06 Oct 2026 21:08:08 GMT"
+    },
+    "body": "<a href=\"market://details?id=social.hunch.app&amp;referrer=adjust_reftag%3DcOaIkIsCnrh1C%26utm_source%3DSpyke%2BMedia\">Found</a>.\n\n"
+   }
+  ],
+  "reftag": "adjust_reftag=cOaIkIsCnrh1C&utm_source=Spyke+Media || <a href=\"market://details?id=social.hunch.app"
+ },
+ "A2_cffi_funnelhdr_android_nogps": {
+  "url": "https://app.adjust.com/1yzhva5b",
+  "elapsed": 2.79,
+  "hops": [
+   {
+    "status": 302,
+    "headers": {
+     "content-type": "text/html; charset=utf-8",
+     "location": "market://details?id=social.hunch.app&referrer=adjust_reftag%3DcKodNlkMrGnOD%26utm_source%3DSpyke%2BMedia",
+     "set-cookie": "350259005b8b47c0c8bbf7382c3b402d=cKodNlkMrGnOD; Path=/; Domain=adjust.com; Max-Age=2, 350259005b8b47c0c8bbf7382c3b402d=cKodNlkMrGnOD; Path=/; Domain=adjust.io; Max-Age=2, 350259005b8b47c0c8bbf7382c3b402d=cKodNlkMrGnOD; Path=/; Domain=adj.st; Max-Age=2, 350259005b8b47c0c8bbf7382c3b402d=cKodNlkMrGnOD; Path=/; Domain=go.link; Max-Age=2, 350259005b8b47c0c8bbf7382c3b402d=cKodNlkMrGnOD; Path=/; Domain=adjust.net.in; Max-Age=2, 350259005b8b47c0c8bbf7382c3b402d=cKodNlkMrGnOD; Path=/; Domain=adjust.world; Max-Age=2, 350259005b8b47c0c8bbf7382c3b402d=cKodNlkMrGnOD; Path=/; Domain=adjust.cn; Max-Age=2",
+     "date": "Tue, 06 Oct 2026 21:08:13 GMT"
+    },
+    "body": "<a href=\"market://details?id=social.hunch.app&amp;referrer=adjust_reftag%3DcKodNlkMrGnOD%26utm_source%3DSpyke%2BMedia\">Found</a>.\n\n"
+   }
+  ],
+  "reftag": "adjust_reftag=cKodNlkMrGnOD&utm_source=Spyke+Media || <a href=\"market://details?id=social.hunch.app"
+ },
+ "A3_cffi_funnelhdr_android_gps_valid": {
+  "url": "https://app.adjust.com/1yzhva5b?gps_adid=92a37f2b-5bf7-4e43-9473-123cf37e4618",
+  "elapsed": 0.47,
+  "hops": [
+   {
+    "status": 302,
+    "headers": {
+     "content-type": "text/html; charset=utf-8",
+     "location": "market://details?id=social.hunch.app&referrer=adjust_reftag%3Dcw6nFInMERSbB%26utm_source%3DSpyke%2BMedia",
+     "set-cookie": "31904bdb42ddea1347376bc30c8186a3=cw6nFInMERSbB; Path=/; Domain=adjust.com; Max-Age=2, 31904bdb42ddea1347376bc30c8186a3=cw6nFInMERSbB; Path=/; Domain=adjust.io; Max-Age=2, 31904bdb42ddea1347376bc30c8186a3=cw6nFInMERSbB; Path=/; Domain=adj.st; Max-Age=2, 31904bdb42ddea1347376bc30c8186a3=cw6nFInMERSbB; Path=/; Domain=go.link; Max-Age=2, 31904bdb42ddea1347376bc30c8186a3=cw6nFInMERSbB; Path=/; Domain=adjust.net.in; Max-Age=2, 31904bdb42ddea1347376bc30c8186a3=cw6nFInMERSbB; Path=/; Domain=adjust.world; Max-Age=2, 31904bdb42ddea1347376bc30c8186a3=cw6nFInMERSbB; Path=/; Domain=adjust.cn; Max-Age=2",
+     "date": "Tue, 06 Oct 2026 21:08:16 GMT"
+    },
+    "body": "<a href=\"market://details?id=social.hunch.app&amp;referrer=adjust_reftag%3Dcw6nFInMERSbB%26utm_source%3DSpyke%2BMedia\">Found</a>.\n\n"
+   }
+  ],
+  "reftag": "adjust_reftag=cw6nFInMERSbB&utm_source=Spyke+Media || <a href=\"market://details?id=social.hunch.app"
+ },
+ "A4_cffi_funnelhdr_android_gps_malformed": {
+  "url": "https://app.adjust.com/1yzhva5b?gps_adid=not-a-uuid",
+  "elapsed": 2.63,
+  "hops": [
+   {
+    "status": 302,
+    "headers": {
+     "content-type": "text/html; charset=utf-8",
+     "location": "market://details?id=social.hunch.app&referrer=adjust_reftag%3Dcgxw668U98SxB%26utm_source%3DSpyke%2BMedia",
+     "set-cookie": "f1f4cf6b6f7515baa71d7d4307e84b2a=cgxw668U98SxB; Path=/; Domain=adjust.com; Max-Age=2, f1f4cf6b6f7515baa71d7d4307e84b2a=cgxw668U98SxB; Path=/; Domain=adjust.io; Max-Age=2, f1f4cf6b6f7515baa71d7d4307e84b2a=cgxw668U98SxB; Path=/; Domain=adj.st; Max-Age=2, f1f4cf6b6f7515baa71d7d4307e84b2a=cgxw668U98SxB; Path=/; Domain=go.link; Max-Age=2, f1f4cf6b6f7515baa71d7d4307e84b2a=cgxw668U98SxB; Path=/; Domain=adjust.net.in; Max-Age=2, f1f4cf6b6f7515baa71d7d4307e84b2a=cgxw668U98SxB; Path=/; Domain=adjust.world; Max-Age=2, f1f4cf6b6f7515baa71d7d4307e84b2a=cgxw668U98SxB; Path=/; Domain=adjust.cn; Max-Age=2",
+     "date": "Tue, 06 Oct 2026 21:08:20 GMT"
+    },
+    "body": "<a href=\"market://details?id=social.hunch.app&amp;referrer=adjust_reftag%3Dcgxw668U98SxB%26utm_source%3DSpyke%2BMedia\">Found</a>.\n\n"
+   }
+  ],
+  "reftag": "adjust_reftag=cgxw668U98SxB&utm_source=Spyke+Media || <a href=\"market://details?id=social.hunch.app"
+ },
+ "A5_cffi_funnelhdr_android_gps_macro": {
+  "url": "https://app.adjust.com/1yzhva5b?gps_adid=%7Bgps_adid%7D",
+  "elapsed": 0.49,
+  "hops": [
+   {
+    "status": 302,
+    "headers": {
+     "content-type": "text/html; charset=utf-8",
+     "location": "market://details?id=social.hunch.app&referrer=adjust_reftag%3DcanaPwINzZBmU%26utm_source%3DSpyke%2BMedia",
+     "set-cookie": "4a9444af303c98185421ea7da421bbef=canaPwINzZBmU; Path=/; Domain=adjust.com; Max-Age=2, 4a9444af303c98185421ea7da421bbef=canaPwINzZBmU; Path=/; Domain=adjust.io; Max-Age=2, 4a9444af303c98185421ea7da421bbef=canaPwINzZBmU; Path=/; Domain=adj.st; Max-Age=2, 4a9444af303c98185421ea7da421bbef=canaPwINzZBmU; Path=/; Domain=go.link; Max-Age=2, 4a9444af303c98185421ea7da421bbef=canaPwINzZBmU; Path=/; Domain=adjust.net.in; Max-Age=2, 4a9444af303c98185421ea7da421bbef=canaPwINzZBmU; Path=/; Domain=adjust.world; Max-Age=2, 4a9444af303c98185421ea7da421bbef=canaPwINzZBmU; Path=/; Domain=adjust.cn; Max-Age=2",
+     "date": "Tue, 06 Oct 2026 21:08:23 GMT"
+    },
+    "body": "<a href=\"market://details?id=social.hunch.app&amp;referrer=adjust_reftag%3DcanaPwINzZBmU%26utm_source%3DSpyke%2BMedia\">Found</a>.\n\n"
+   }
+  ],
+  "reftag": "adjust_reftag=canaPwINzZBmU&utm_source=Spyke+Media || <a href=\"market://details?id=social.hunch.app"
+ },
+ "A6_cffi_funnelhdr_android_adj_gps_valid": {
+  "url": "https://app.adjust.com/1yzhva5b?adj_gps_adid=a0477e5e-2939-477f-9609-ccebcfec687c",
+  "elapsed": 4.7,
+  "hops": [
+   {
+    "status": 302,
+    "headers": {
+     "content-type": "text/html; charset=utf-8",
+     "location": "market://details?id=social.hunch.app&referrer=adjust_reftag%3Dc2EgA06Cz26ib%26utm_source%3DSpyke%2BMedia",
+     "set-cookie": "fc3424e9db330d326460a22fa4bd5cf8=c2EgA06Cz26ib; Path=/; Domain=adjust.com; Max-Age=2, fc3424e9db330d326460a22fa4bd5cf8=c2EgA06Cz26ib; Path=/; Domain=adjust.io; Max-Age=2, fc3424e9db330d326460a22fa4bd5cf8=c2EgA06Cz26ib; Path=/; Domain=adj.st; Max-Age=2, fc3424e9db330d326460a22fa4bd5cf8=c2EgA06Cz26ib; Path=/; Domain=go.link; Max-Age=2, fc3424e9db330d326460a22fa4bd5cf8=c2EgA06Cz26ib; Path=/; Domain=adjust.net.in; Max-Age=2, fc3424e9db330d326460a22fa4bd5cf8=c2EgA06Cz26ib; Path=/; Domain=adjust.world; Max-Age=2, fc3424e9db330d326460a22fa4bd5cf8=c2EgA06Cz26ib; Path=/; Domain=adjust.cn; Max-Age=2",
+     "date": "Tue, 06 Oct 2026 21:08:30 GMT"
+    },
+    "body": "<a href=\"market://details?id=social.hunch.app&amp;referrer=adjust_reftag%3Dc2EgA06Cz26ib%26utm_source%3DSpyke%2BMedia\">Found</a>.\n\n"
+   }
+  ],
+  "reftag": "adjust_reftag=c2EgA06Cz26ib&utm_source=Spyke+Media || <a href=\"market://details?id=social.hunch.app"
+ },
+ "A7_cffi_realnavhdr_android_referer": {
+  "url": "https://app.adjust.com/1yzhva5b?gps_adid=78c28525-2d16-4513-aa58-6a08003c384a",
+  "elapsed": 0.75,
+  "hops": [
+   {
+    "status": 302,
+    "headers": {
+     "content-type": "text/html; charset=utf-8",
+     "location": "market://details?id=social.hunch.app&referrer=adjust_reftag%3DckBNTcELNWN5z%26utm_source%3DSpyke%2BMedia",
+     "set-cookie": "c51d1f894a69b6a361592b8f3b0e51d7=ckBNTcELNWN5z; Path=/; Domain=adjust.com; Max-Age=2, c51d1f894a69b6a361592b8f3b0e51d7=ckBNTcELNWN5z; Path=/; Domain=adjust.io; Max-Age=2, c51d1f894a69b6a361592b8f3b0e51d7=ckBNTcELNWN5z; Path=/; Domain=adj.st; Max-Age=2, c51d1f894a69b6a361592b8f3b0e51d7=ckBNTcELNWN5z; Path=/; Domain=go.link; Max-Age=2, c51d1f894a69b6a361592b8f3b0e51d7=ckBNTcELNWN5z; Path=/; Domain=adjust.net.in; Max-Age=2, c51d1f894a69b6a361592b8f3b0e51d7=ckBNTcELNWN5z; Path=/; Domain=adjust.world; Max-Age=2, c51d1f894a69b6a361592b8f3b0e51d7=ckBNTcELNWN5z; Path=/; Domain=adjust.cn; Max-Age=2",
+     "date": "Tue, 06 Oct 2026 21:08:32 GMT"
+    },
+    "body": "<a href=\"market://details?id=social.hunch.app&amp;referrer=adjust_reftag%3DckBNTcELNWN5z%26utm_source%3DSpyke%2BMedia\">Found</a>.\n\n"
+   }
+  ],
+  "reftag": "adjust_reftag=ckBNTcELNWN5z&utm_source=Spyke+Media || <a href=\"market://details?id=social.hunch.app"
+ },
+ "A8_plain_requests_minhdr_android_gps": {
+  "url": "https://app.adjust.com/1yzhva5b?gps_adid=ddf447f8-3425-40e5-ae4d-ff0d38c9733a",
+  "elapsed": 0.48,
+  "hops": [
+   {
+    "status": 302,
+    "headers": {
+     "content-type": "text/html; charset=utf-8",
+     "location": "market://details?id=social.hunch.app&referrer=adjust_reftag%3DcFFMqqcazpqCe%26utm_source%3DSpyke%2BMedia",
+     "set-cookie": "bbe3142e2f16f5215ac6755c2589f484=cFFMqqcazpqCe; Path=/; Domain=adjust.com; Max-Age=2, bbe3142e2f16f5215ac6755c2589f484=cFFMqqcazpqCe; Path=/; Domain=adjust.io; Max-Age=2, bbe3142e2f16f5215ac6755c2589f484=cFFMqqcazpqCe; Path=/; Domain=adj.st; Max-Age=2, bbe3142e2f16f5215ac6755c2589f484=cFFMqqcazpqCe; Path=/; Domain=go.link; Max-Age=2, bbe3142e2f16f5215ac6755c2589f484=cFFMqqcazpqCe; Path=/; Domain=adjust.net.in; Max-Age=2, bbe3142e2f16f5215ac6755c2589f484=cFFMqqcazpqCe; Path=/; Domain=adjust.world; Max-Age=2, bbe3142e2f16f5215ac6755c2589f484=cFFMqqcazpqCe; Path=/; Domain=adjust.cn; Max-Age=2",
+     "date": "Tue, 06 Oct 2026 21:08:35 GMT"
+    },
+    "body": "<a href=\"market://details?id=social.hunch.app&amp;referrer=adjust_reftag%3DcFFMqqcazpqCe%26utm_source%3DSpyke%2BMedia\">Found</a>.\n\n"
+   }
+  ],
+  "reftag": "adjust_reftag=cFFMqqcazpqCe&utm_source=Spyke+Media || <a href=\"market://details?id=social.hunch.app"
+ },
+ "A9_cffi_funnelhdr_desktop": {
+  "url": "https://app.adjust.com/1yzhva5b",
+  "elapsed": 7.32,
+  "hops": [
+   {
+    "status": 302,
+    "headers": {
+     "content-type": "text/html; charset=utf-8",
+     "location": "https://apps.apple.com/app/id6444654663?mt=8&pt=91576884&ct=Spyke+Media",
+     "set-cookie": "350259005b8b47c0c8bbf7382c3b402d=cAh8YU92BNAOC; Path=/; Domain=adjust.com; Max-Age=2, 350259005b8b47c0c8bbf7382c3b402d=cAh8YU92BNAOC; Path=/; Domain=adjust.io; Max-Age=2, 350259005b8b47c0c8bbf7382c3b402d=cAh8YU92BNAOC; Path=/; Domain=adj.st; Max-Age=2, 350259005b8b47c0c8bbf7382c3b402d=cAh8YU92BNAOC; Path=/; Domain=go.link; Max-Age=2, 350259005b8b47c0c8bbf7382c3b402d=cAh8YU92BNAOC; Path=/; Domain=adjust.net.in; Max-Age=2, 350259005b8b47c0c8bbf7382c3b402d=cAh8YU92BNAOC; Path=/; Domain=adjust.world; Max-Age=2, 350259005b8b47c0c8bbf7382c3b402d=cAh8YU92BNAOC; Path=/; Domain=adjust.cn; Max-Age=2",
+     "date": "Tue, 06 Oct 2026 21:08:42 GMT"
+    },
+    "body": "<a href=\"https://apps.apple.com/app/id6444654663?mt=8&amp;pt=91576884&amp;ct=Spyke+Media\">Found</a>.\n\n"
+   },
+   {
+    "status": 301,
+    "headers": {
+     "server": "daiquiri/5",
+     "cache-control": "public, max-age=900",
+     "location": "https://apps.apple.com/us/app/hunch-dating-app-vibe-meet/id6444654663?ct=Spyke+Media&pt=91576884",
+     "date": "Tue, 06 Oct 2026 21:08:42 GMT",
+     "via": "1.1 varnish",
+     "set-cookie": "geo=IN; domain=apple.com"
+    },
+    "body": ""
+   },
+   {
+    "status": 200,
+    "headers": {
+     "server": "daiquiri/5",
+     "content-type": "text/html",
+     "cache-control": "public, max-age=900",
+     "date": "Tue, 06 Oct 2026 21:08:44 GMT",
+     "via": "1.1 varnish",
+     "set-cookie": "geo=IN; domain=apple.com"
+    },
+    "body": "<!DOCTYPE html>\n<html dir=\"ltr\" lang=\"en-US\">\n    <head>\n        <meta charset=\"utf-8\" />\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\n        <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\" />\n        <meta name=\"applicable-device\" content=\"pc,mobile\" />\n      "
+   }
+  ],
+  "reftag": null
+ }
+}

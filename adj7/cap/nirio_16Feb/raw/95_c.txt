@@ -1,0 +1,11 @@
+POST https://app.adjust.com/third_party_sharing HTTP/1.1
+Client-SDK: react-native5.4.4@android5.4.5
+Authorization: Signature signature="0C4106FC5D7CF6815F48EAA92C77D0D13FDBDE7562B782C6BEDB56A352F110CB0F714ACEFE563E8AC140B4CC3A3764AA1BBF77FB469B66B17CD3FF1797E5534EC6E9F833DCCBB723ADDD51134FB81F69CD70DC9959056A5D837E175E19C9EB1AF6460C39BA39E782EB7189DB5D6CB498A808282BE6018E74ECF559F2001760EE541BB057F240C829800B92A67EC3E9F895A56E64F9B434940D5886EC2CEC8063C725A58109A82422C4BEFF48E7FAB09DD7CF8E2C757588AA6F778B8C68775AA6080F898DC2D5CDB2BDCA3A9691359A5D81636C2AA1FE391A8ED4B807A2EBA3044D0F1595B6F111C7D4F42E0FB89972C597701F0D0DA7D78FB1523037E75EA854D48166F5CA4DE5B0BA134FC5F3A8798A2959F11D4847FA38AD7D5F827D599867EB806C43612CAE4DB66A6C3A7956CF65",adj_signing_id="1300000",algorithm="adj7",headers_id="7",native_version="3.61.0"
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; GM1901 Build/QKQ1.190716.003)
+Host: app.adjust.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 632
+
+gps_adid_attempt=1&api_level=29&app_version=14.4.8&app_token=cv4d2hlazp4w&created_at=2026-02-16T13%3A47%3A11.750Z%2B0300&wait_total=0.0&device_type=phone&gps_adid=ea4561af-1d36-4aba-807c-a9c4250250a8&foreground=1&device_name=GM1901&needs_response_details=1&retry_count=0&last_error=0&gps_adid_src=service&queue_size=3&wait_time=0.0&os_version=10&first_error=0&sharing=enable&android_uuid=0f76b251-0f1e-4a7f-bac4-986f2a4af06f&sent_at=2026-02-16T13%3A47%3A18.533Z%2B0300&offline_mode_enabled=0&environment=production&attribution_deeplink=1&package_name=com.fdjservices.nirio&os_name=android&ui_mode=1&enqueue_size=1&tracking_enabled=1

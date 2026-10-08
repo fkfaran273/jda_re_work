@@ -1,0 +1,11 @@
+POST https://e.mail.ru/api/v1/omicron/get HTTP/1.1
+x-vkpns-request-id: 27bcc99c-6af3-43be-b07a-49e2172a9e34
+User-Agent: host_sdk/7.2.0-rc01
+X-Vkpns-Package-Name: ru.vk.store
+content-type: application/x-www-form-urlencoded; charset=utf-8
+Host: e.mail.ru
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 440
+
+mytracker_id=rustore_push_service&config_v=243&cond_s=654489dc9e58f475c283c28184b92dce81e9c9b2adb85689f4d8e991ab0a7926&app_env=RELEASE&device_width=1080&sim_mcc=405&connection_type=wifi&device_id=6227a42b-8454-493e-9717-bb9a8654e2bf&device_height=2293&device_model=OnePlus+DN2101&timezone=GMT%2B05%3A30&os_version=11&lang=en_IN&sim_mnc=872&app_build=1102003&app_version=7.2.0-rc01&app_id=ru.vk.store&current_session=1455&total_sessions=1455

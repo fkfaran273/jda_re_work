@@ -1,0 +1,7 @@
+GET https://app-measurement.com/config/app/1:691957029181:android:961e3b0b740e4aa04d8d54?gmp_version=263635&runtime_version=0&platform=android HTTP/1.1
+Host: app-measurement.com
+Connection: keep-alive
+If-None-Match: 6768731783292888738
+User-Agent: com.google.android.gms/263635022 (Linux; U; Android 11; en_IN; DN2101; Build/RP1A.200720.011; Cronet/151.0.7922.83)
+Accept-Encoding: gzip, deflate, br
+

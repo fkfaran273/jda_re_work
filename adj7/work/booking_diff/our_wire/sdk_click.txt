@@ -1,0 +1,11 @@
+POST /sdk_click HTTP/1.1
+Client-SDK: android5.6.0
+Authorization: Signature signature="321D71594D9114DF59BD00544365C331B1ACD4601100544AB94941049475BF3521D31F830DBC058BF262DB92BF47D735684DE7D022BFF5FF4B3E1BE35A146D68BE8D1B53E38563DA65F0A693E0F3C25932FCF0990A53685CD4ABB49174692FAA4FEEB2954E2924828D5DCFB0A72CE7A6DF10D9FD987DCC6DDBDD2C8910FF0265AABF3431E7441A064927C39BF3FD7F3A5B8138F4FA9B922E8433EAA022CB201A0F2E4CF58E7AE8BF9A7A5FA2CBC229C9F46AEED014C60FFB777B58449B36CF10CC40C7298825BBF67139B474AFC24CBBAECA5BC42D87B0E6F3A94B8DC33AE6602EA72E2387FCC057A5FC48D74318B7F55682948E9E7E7990F8690DEE7D682E02BC4D07E5BEFDD4D010546F5FC396C9174FC26D5B53197E184DA7AC252BEBC78AADE5D94C7E46D712AE4845BD90A55594",adj_signing_id="1300000",algorithm="adj7",headers_id="8",native_version="3.62.0"
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; GM1901 Build/QKQ1.190716.003)
+Host: app.adjust.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 1348
+
+country=AE&api_level=29&hardware_name=GM1901_14_201019&app_version=3.0.4&app_token=smxi7gqwu39c&installed_at=2026-10-06T17%3A47%3A06.800Z%2B0530&device_type=phone&language=en&gps_adid=da7b3547-b7a8-4ca9-8218-a525f7a81b7b&source=install_referrer&foreground=1&connectivity_type=1&os_build=QKQ1.190716.003&click_time=2026-10-06T17%3A46%3A03.000Z%2B0530&cpu_type=arm64-v8a&install_version=3.0.4&partner_params=%7B%22payrupik_c_id%22%3A%2201bfcf18-e4d4-4ee0-9deb-748de239f745%22%7D&initiating_package_name=com.android.vending&screen_size=normal&gps_adid_src=service&subsession_count=1&sent_at=2026-10-06T17%3A46%3A14.263Z%2B0530&offline_mode_enabled=0&screen_density=high&session_count=1&ui_mode=1&gps_adid_attempt=1&session_length=0&created_at=2026-10-06T17%3A46%3A14.252Z%2B0530&referrer_api=google&device_manufacturer=OnePlus&display_width=1080&time_spent=0&device_name=GM1901&needs_response_details=1&updated_at=2026-10-06T17%3A47%3A06.800Z%2B0530&screen_format=long&os_version=10&google_play_instant=0&android_uuid=024e6f7e-4cd1-458d-a812-b2d33a6e3368&referrer=adjust_reftag%3Dcb1yIQa0ag9qN%26utm_source%3DVL-Alliance%26utm_campaign%3DHM2%26utm_content%3DHM2_1722_&environment=production&attribution_deeplink=1&install_begin_time=2026-10-06T17%3A46%3A05.000Z%2B0530&display_height=2218&package_name=in.hanafintech&os_name=android&tracking_enabled=1

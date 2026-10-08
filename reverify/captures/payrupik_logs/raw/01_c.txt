@@ -1,0 +1,48 @@
+CONNECT graph.facebook.com:443 HTTP/1.1
+Host: graph.facebook.com:443
+Connection: Keep-Alive
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 11; DN2101 Build/RP1A.200720.011)
+
+A SSLv3-compatible ClientHello handshake was found. Fiddler extracted the parameters below.
+
+Version: 3.3 (TLS/1.2)
+Random: 67 21 A6 5F 1B 46 17 AB 50 F3 AB 0A E2 00 E5 E7 E2 D7 F4 43 E7 1F 3D 43 34 97 C0 CF EF A9 9D 52
+"Time": 07-11-2020 09:54:07 AM
+SessionID: 82 28 C0 D8 1B 8A C5 5D 1B 1B E3 85 53 2C F2 AE 94 62 F8 35 86 DA CC D4 6A 83 D0 7F 6B 89 00 0D
+Extensions: 
+	server_name	graph.facebook.com
+	extended_master_secret	empty
+	renegotiation_info	00
+	supported_groups	x25519 [0x1d], secp256r1 [0x17], secp384r1 [0x18]
+	ec_point_formats	uncompressed [0x0]
+	SessionTicket	empty
+	ALPN		http/1.1
+	status_request	OCSP - Implicit Responder
+	signature_algs	ecdsa_secp256r1_sha256, rsa_pss_rsae_sha256, rsa_pkcs1_sha256, ecdsa_secp384r1_sha384, rsa_pss_rsae_sha384, rsa_pkcs1_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha512, rsa_pkcs1_sha1
+	key_share	00 24 00 1D 00 20 86 09 F3 2A D8 E8 3C 67 BB F2 32 E9 7C 58 61 8E B4 7F C8 3F 84 69 9B 85 51 96 2A 9F E7 5F 07 22
+	psk_key_exchange_modes	01 01
+	supported_versions	Tls1.3, Tls1.2, Tls1.1, Tls1.0
+	padding		230 null bytes
+Ciphers: 
+	[1301]	TLS_AES_128_GCM_SHA256
+	[1302]	TLS_AES_256_GCM_SHA384
+	[1303]	TLS_CHACHA20_POLY1305_SHA256
+	[C02B]	TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+	[C02C]	TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+	[CCA9]	TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
+	[C02F]	TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	[C030]	TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	[CCA8]	TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+	[C009]	TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
+	[C00A]	TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
+	[C013]	TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+	[C014]	TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+	[009C]	TLS_RSA_WITH_AES_128_GCM_SHA256
+	[009D]	TLS_RSA_WITH_AES_256_GCM_SHA384
+	[002F]	TLS_RSA_WITH_AES_128_CBC_SHA
+	[0035]	TLS_RSA_WITH_AES_256_CBC_SHA
+
+Compression: 
+	[00]	NO_COMPRESSION
+
+

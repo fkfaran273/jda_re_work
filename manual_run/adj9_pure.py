@@ -17,12 +17,17 @@
   roots of primes, the S-box from its definition, the linear layer from GF(2^8)
   arithmetic.  Byte-exact against the VM and every genuine capture.
 
-  USE        S.campaign_data = campaign_data          # once, at start-up
-             auth = sign_request(fields, "session", second=sec)
-             headers["Authorization"] = auth
-  sign_request builds the claims string (the claims law below), signs and
-  returns ONLY the Authorization header value.  sign() is the raw 192-byte
-  core: sign(second, seed, claims, cert, head).
+  USE        headers["Authorization"] = S.sign_request(fields, "click",
+                                                       campaign_data,
+                                                       second=sec)
+  The campaign is PASSED IN -- the AutoLabs nested layout: top-level
+  cert_sha1 / adj_verification / head_phase and an `adjust` sub-dict with
+  app_token / sdk.  Omitted, it falls back to the module global
+  adj9_pure.campaign_data (the offline gates set the global and call
+  without the argument).  sign_request builds the claims string (the
+  claims law below), signs and returns ONLY the Authorization header
+  value.  sign() is the raw 192-byte core: sign(second, seed, claims,
+  cert, head).
 """
 import base64, hashlib, os, struct, time
 
@@ -35,9 +40,9 @@ _MASK32 = (1 << 32) - 1
 # signature.  Per-BUILD, not per-app -- see verify_head_prefix.py.
 HEAD_PHASE_DEFAULT = (0x2B,)      # 43; the generated cycle 0x40|(i&7) follows
 
-# The campaign the envelope and defaults come from.  The caller sets it once:
+# Fallback only: sign_request takes the campaign as its third argument.
+# The offline gates still set it once and call without the argument:
 #     adj9_pure.campaign_data = campaign_data
-# sign_request(fields, kind, second=sec) then needs nothing else.
 campaign_data = None
 
 # -- the claims law: which request fields are signed, in what order -----------
@@ -361,22 +366,33 @@ def sign(second, seed, claims, cert, head=None):
     body = encrypt(record, header)
     return header + body + record_digest(body)
 
-def sign_request(fields, kind, second=None, seed=None, head=None):
+def sign_request(fields, kind, campaign=None, second=None, seed=None, head=None):
     """Sign one request and return the Authorization header VALUE (a string,
-    nothing else).  Reads the module-global campaign_data -- set it once:
+    nothing else).  The campaign is passed in:
 
-        adj9_pure.campaign_data = campaign_data
-        headers["Authorization"] = sign_request(fields, "click", second=sec)
+        headers["Authorization"] = sign_request(fields, "click", campaign_data,
+                                                second=sec)
 
-    campaign_data carries cert_sha1 (required), client_sdk, adj_signing_id,
-    headers_id, native_version, adj_verification, and optionally head_phase.
+    Omitted, it falls back to the module-global adj9_pure.campaign_data (the
+    offline gates set the global and call without the argument).  The
+    campaign is the AutoLabs nested layout: top-level cert_sha1 (required),
+    adj_verification and optionally head_phase, and an `adjust` sub-dict
+    with app_token / sdk; adj_signing_id, headers_id and native_version read
+    top-level with the defaults below.
     """
-    if campaign_data is None:
-        raise ValueError("set adj9_pure.campaign_data before signing")
-    c = campaign_data
+    c = campaign if campaign is not None else campaign_data
+    if c is None:
+        raise ValueError("sign_request needs a campaign (pass it in, or set "
+                         "adj9_pure.campaign_data)")
     val = dict(fields)
     val.update({"activity_kind": kind,
-                "client_sdk": c.get("client_sdk", "android5.7.0"),
+                # the SIGNED client_sdk must be the app's own SDK string -- it
+                # sits under adjust.sdk in the AutoLabs-format campaign dicts;
+                # the old android5.7.0 fallback leaked penti's value into
+                # every other app and their installs silently went Organic
+                "client_sdk": (c.get("client_sdk")
+                               or (c.get("adjust") or {}).get("sdk")
+                               or "android5.7.0"),
                 "adj_signing_id": c.get("adj_signing_id", "1500000"),
                 "headers_id": c.get("headers_id", "10"),
                 "native_version": c.get("native_version", "5.0.0"),

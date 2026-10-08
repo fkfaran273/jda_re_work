@@ -12,9 +12,15 @@ import sys
 import urllib.parse
 import http.client
 import gzip
+import os
 
 sys.path.insert(0, ".")
+sys.path.insert(0, os.path.join("work", "cap"))
 import adj8_pure as S
+import dev_law as DL
+
+CERT_BE = bytes.fromhex("07e6d5074866a3b8e1fb6efcb4714aff91624550")   # be/moto
+CERT_GD = bytes.fromhex("7d7b594648fa4612e91e3ac80ffd3e3a086b7909")   # graddef (from the genuine capture's blobs)
 
 BS = bytes
 UA = ("Dalvik/2.1.0 (Linux; U; Android %s; %s Build/%s)")
@@ -50,16 +56,16 @@ def send(params, auth, client_sdk, ua):
         c.close()
 
 
-def run_case(name, params, client_sdk, ua, apk_path, apk_bytes, props=None):
+def run_case(name, params, client_sdk, ua, apk_path, apk_bytes, props=None,
+             cert=CERT_BE):
     if props is not None:
         S.DEVICE_PROPS.clear()
         S.DEVICE_PROPS.update(props)
     sec = created_sec(params["created_at"])
     print("== %s == signing second %d" % (name, sec))
-    blob, auth, meta = S.mint_adj8("attribution", dict(params), unix_sec=sec,
-                                   return_meta=True, apk_path=apk_path,
-                                   apk_bytes=apk_bytes)
-    print("   mint %d B tag_ok=%s" % (len(blob), meta["tag_ok"]))
+    blob, auth, meta = DL.mint_dev("attribution", dict(params), unix_sec=sec,
+                                   return_meta=True, cert=cert)
+    print("   mint %d B tag_ok=%s" % (len(blob), meta["second"] == sec))
     st, body = send(params, auth, client_sdk, ua)
     print("   -> %d %s" % (st, body[:320]))
     ok = ("Organic" not in body) and '"network"' in body
@@ -68,7 +74,7 @@ def run_case(name, params, client_sdk, ua, apk_path, apk_bytes, props=None):
     return ok
 
 
-apk_be = open("apks/base.apk", "rb").read()
+apk_be = None    # the device law signs from the captured cert, not the APK
 MOTO_PROPS = dict(S.DEVICE_PROPS)
 
 # ---- case 1: be (xyz.be.customer, booked Dinos_Dynamic_Partner) -----------
@@ -77,7 +83,7 @@ ok1 = run_case("be (moto g42 story)", be_params, "android5.7.0",
                UA % ("12", "moto g42", "S2SE32.28-28-4"),
                "/data/app/~~cgSd5YKkLX7RXvJWtSA_6Q==/"
                "xyz.be.customer-zt-y8mq-uV_paqBcpeNXcg==/base.apk",
-               apk_be, props=MOTO_PROPS)
+               apk_be, props=MOTO_PROPS, cert=CERT_BE)
 
 # ---- case 2: yamistar (com.grad.def, booked Mobavenue) ---------------------
 yami = json.load(open("cap/yami_attr.json"))
@@ -99,10 +105,10 @@ RMX_PROPS = {
     BS(b"ro.build.display.id"): BS(b"BP1A.250405.007.D1"),
     BS(b"ro.bootloader"): BS(b"unknown"),
 }
-apk_gd = open("apks/graddef_base.apk", "rb").read()
+apk_gd = None
 ok2 = run_case("yamistar (RMX2161 story)", yami["params"], "android5.6.1",
                yami["ua"], "/data/app/~~VNWurfK3vN5kr6qQae49BQ==/"
                "com.grad.def-SIu3qkp-9Ulvb5P8tBF8dQ==/base.apk",
-               apk_gd, props=RMX_PROPS)
+               apk_gd, props=RMX_PROPS, cert=CERT_GD)
 
 print("\nFINAL:", {"be": ok1, "yamistar": ok2})

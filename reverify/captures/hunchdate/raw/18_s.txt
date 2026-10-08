@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+FiddlerGateway: Direct
+StartTime: 01:10:44.399
+Connection: close
+
+Encrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.
+
+Secure Protocol: Tls13
+Cipher: Aes256 256bits
+Hash Algorithm: Sha384 ?bits
+Key Exchange: None 255bits
+
+== Server Certificate ==========
+[Subject]
+  CN=api.logrocket.com
+
+[Issuer]
+  CN=YR1, O=Let's Encrypt, C=US
+
+[Serial Number]
+  06F8E648048ED24F6DE254F0A2E3B279A8BE
+
+[Not Before]
+  13-08-2026 05:08:19
+
+[Not After]
+  11-11-2026 05:08:18
+
+[Thumbprint]
+  BEBA72310D2697DCC9564BFF419DF88C9A9D6746
+
+[SubjectAltNames]
+api.logrocket.com, app.logrocket.com, graphql.logrocket.com, i.logrocket.com, r.ingest-lr.com, r.intake-lr.com, r.lgrckt-in.com, r.logr-in.com, r.logr-ingest.com, r.logrocket.com, r.logrocket.io, r.lr-hv-in.com, r.lr-in-prod.com, r.lr-in.com, r.lr-ingest.com, r.lr-ingest.io, r.lr-intake.com, r.lrkt-in.com

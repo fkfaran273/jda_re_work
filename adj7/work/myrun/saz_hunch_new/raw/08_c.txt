@@ -1,0 +1,11 @@
+POST https://sdk-03.moengage.com/v1/cards/get HTTP/1.1
+MOE-APPKEY: WTV8ZYNUNWXAFP9F3VG9D2CT
+Accept-Encoding: gzip
+Accept-Charset: UTF-8
+Content-type: application/json
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)
+Host: sdk-03.moengage.com
+Connection: Keep-Alive
+Content-Length: 449
+
+{"last_updated_time":0,"prev_sync_card_ids":[],"request_id":"1791442710995-3e83c29e-c4df-4c44-a28d-2fc5bcdfe02c","platforms":["android"],"unique_id":"f0ff42c5-f0c9-4560-b9ca-193669dbc412","query_params":{"os":"ANDROID","app_id":"WTV8ZYNUNWXAFP9F3VG9D2CT","sdk_ver":"130502","unique_id":"f0ff42c5-f0c9-4560-b9ca-193669dbc412","device_ts":"1791442710994","device_tz_offset":"19800000","app_ver":"306","app_version_name":"3.2.33","moe_push_ser":"FCM"}}

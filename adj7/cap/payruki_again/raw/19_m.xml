@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="37" BitFlags="2100">
+  <SessionTimers ClientConnected="2026-10-07T14:32:31.8575081+05:30" ClientBeginRequest="2026-10-07T14:32:31.8710249+05:30" GotRequestHeaders="2026-10-07T14:32:31.8710249+05:30" ClientDoneRequest="2026-10-07T14:32:31.8710249+05:30" GatewayTime="0" DNSTime="0" TCPConnectTime="5" HTTPSHandshakeTime="32" ServerConnected="2026-10-07T14:32:31.8755524+05:30" FiddlerBeginRequest="2026-10-07T14:32:31.8755524+05:30" ServerGotRequest="2026-10-07T14:32:31.8755524+05:30" ServerBeginResponse="0001-01-01T00:00:00" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="0001-01-01T00:00:00" ClientBeginResponse="2026-10-07T14:32:31.8755524+05:30" ClientDoneResponse="2026-10-07T14:32:31.8755524+05:30" />
+  <PipeInfo />
+  <TunnelInfo BytesEgress="0" BytesIngress="0" />
+  <SessionFlags>
+    <SessionFlag N="https-client-version" V="Tls13" />
+    <SessionFlag N="x-supported-client-tls-protocols" V="15360" />
+    <SessionFlag N="x-egressport" V="47919" />
+    <SessionFlag N="x-responsebodytransferlength" V="0" />
+    <SessionFlag N="x-clientport" V="47914" />
+    <SessionFlag N="https-server-version" V="Tls13" />
+    <SessionFlag N="https-client-snihostname" V="app-api.payrupikloan.in" />
+    <SessionFlag N="x-clientip" V="::ffff:127.0.0.1" />
+    <SessionFlag N="https-client-sessionid" V="DD 5A BC 8A D9 D2 5C 73 BC 4B C8 EF B3 04 F0 44 D5 27 F9 69 D7 D8 1F 79 AE 7E 45 AA 8F 85 9C DA" />
+    <SessionFlag N="x-hostip" V="172.66.128.15" />
+    <SessionFlag N="x-processinfo" V="python:34048" />
+    <SessionFlag N="https-server-cipher" V="Aes256 256bits" />
+  </SessionFlags>
+</Session>

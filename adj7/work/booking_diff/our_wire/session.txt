@@ -1,0 +1,11 @@
+POST /session HTTP/1.1
+Client-SDK: android5.6.0
+Authorization: Signature signature="321D71594D9114DF59BD00544365C3316101B48C011EA1DD5AB8347303CB94B540361777D42555307D1BC6C4AF6D323A7F5A1FFE19B33EC7F6B1C4F2D0C680E474DFA1AD0303C6BBD94920D267AF685EF80DF5D5605191BCC629F0E4E91AEFEFBB82E983A6AC961A2628D6604EE5CBF8E666BB31CDF48DB5D69369D6EFE7A882E4E75745FED3C883EBA390AA8E02CC13EB6521E865D590BCA6A42254D9B6B998A56E2169434F654855BB39D96FB421B3B4FD8E2F893A045781E2E5BBF41158E59AEBFC84A42A5D7E51EABBC128AB562FAC029C3288753A07324370ABD849C48670A07DB786071269349961A97F959FC575A3BBFD7A43685266507C740AF5146134A37B8F52A41BBF205B46C0C02D0FC4BDC8968DDD3CAA8ACD38BE1A45B3090D264209A0D5ABD62F77405352E1E771A4",adj_signing_id="1300000",algorithm="adj7",headers_id="8",native_version="3.62.0"
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; GM1901 Build/QKQ1.190716.003)
+Host: app.adjust.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 1222
+
+store_name_from_system=com.android.vending&gps_adid_attempt=1&country=AE&api_level=29&hardware_name=GM1901_14_201019&app_version=3.0.4&app_token=smxi7gqwu39c&installed_at=2026-10-06T17%3A47%3A06.800Z%2B0530&created_at=2026-10-06T17%3A46%3A14.198Z%2B0530&wait_total=0.0&device_type=phone&language=en&gps_adid=da7b3547-b7a8-4ca9-8218-a525f7a81b7b&foreground=1&connectivity_type=1&device_manufacturer=OnePlus&display_width=1080&device_name=GM1901&needs_response_details=1&os_build=QKQ1.190716.003&updated_at=2026-10-06T17%3A47%3A06.800Z%2B0530&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&screen_format=long&last_error=0&gps_adid_src=service&wait_time=0.0&os_version=10&first_error=0&push_token=fe6e32dab7eZx_9R7cQ8yY%3AAPA91bH40f361cb404d418fb6ffe6dffac5ab13ee0311eaccd7410aaa42fc&partner_params=%7B%22payrupik_c_id%22%3A%2201bfcf18-e4d4-4ee0-9deb-748de239f745%22%7D&initiating_package_name=com.android.vending&android_uuid=024e6f7e-4cd1-458d-a812-b2d33a6e3368&sent_at=2026-10-06T17%3A46%3A14.523Z%2B0530&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&session_count=1&display_height=2218&package_name=in.hanafintech&os_name=android&ui_mode=1&enqueue_size=0&tracking_enabled=1

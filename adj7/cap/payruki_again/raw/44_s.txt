@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+content-type: application/json; charset=utf-8
+date: Wed, 07 Oct 2026 09:02:37 GMT
+content-length: 70
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-robots-tag: noindex
+
+{"app_token":"smxi7gqwu39c","adid":"bc620c16d8112216e33514e30a03eb37"}

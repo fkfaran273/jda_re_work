@@ -1,0 +1,15 @@
+GET https://firebase-settings.crashlytics.com/spi/v2/platforms/android/gmp/1:162416709673:android:1df6bc0e4fcccef5808c38/settings?instance=32c1b73ce748df7b77cb959176928932c64a5ff2&build_version=86&display_version=3.0.4&source=4 HTTP/1.1
+X-CRASHLYTICS-DEVELOPER-TOKEN: 470fa2b4ae81cd56ecbcda9735803434cec591fa
+X-CRASHLYTICS-DEVICE-MODEL: motorola/moto g42
+X-CRASHLYTICS-INSTALLATION-ID: fcc38b9c6c71480496096dda62d5fb24
+X-CRASHLYTICS-OS-DISPLAY-VERSION: 12
+Accept: application/json
+X-CRASHLYTICS-API-CLIENT-VERSION: 20.0.6
+User-Agent: Crashlytics Android SDK/20.0.6
+X-CRASHLYTICS-API-CLIENT-TYPE: android
+X-CRASHLYTICS-GOOGLE-APP-ID: 1:162416709673:android:1df6bc0e4fcccef5808c38
+X-CRASHLYTICS-OS-BUILD-VERSION: 4140d-bd21d
+Host: firebase-settings.crashlytics.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+

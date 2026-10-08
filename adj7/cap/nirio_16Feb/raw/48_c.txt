@@ -1,0 +1,11 @@
+POST https://app.adjust.com/sdk_click HTTP/1.1
+Client-SDK: react-native5.4.4@android5.4.5
+Authorization: Signature signature="6CC320D13DF195ED4A0EE5C6795E445AD6C4E4AA201B7B364A8C1EE2801BCC9C51656C5E14C8AEB3CE6ACBE45CA81CC7F3885855C977BF61C7661E8E79EEC9AE3B246A60B7E63A03A15D6E2B5227F330634E83EA8784FC5722A2C2F6A25740C32FD43670CF6BB31C7942B33271EE98BE4CAD7B8F73A5FCD00335E8A8A46E0AD0E5AB434B373D062F7E21E864D0419639541BB70B3B478F9A063612DD36B6BEC6F3916B8094A1F73A79AC1368C36EE59E37350C740DBABD1182BE7CC3FB6F653E616AB0F34926FB6146C3E7D83A79905E44B9C29E99079E0D562E470DDDB26F5FE30B3E3A2D0AE2A260E7652A5357E76AD6AD9393B14EF69240EA858A668AD87DFBD8CB12E67E3F1EA15B94B52315B63287BFD260B4E7300898F3167F94FDB1C171AB2B6583742E07DDF2F04B9DFEDFCF",adj_signing_id="1300000",algorithm="adj7",headers_id="7",native_version="3.61.0"
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 10; GM1901 Build/QKQ1.190716.003)
+Host: app.adjust.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 1169
+
+gps_adid_attempt=1&api_level=29&hardware_name=GM1901_14_201019&app_version=14.4.8&app_token=cv4d2hlazp4w&installed_at=2026-02-16T13%3A43%3A27.591Z%2B0300&session_length=9&created_at=2026-02-16T13%3A44%3A13.681Z%2B0300&device_type=phone&language=fr&gps_adid=ea4561af-1d36-4aba-807c-a9c4250250a8&referrer_api=google&source=install_referrer&foreground=1&connectivity_type=1&mcc=405&device_manufacturer=OnePlus&display_width=1080&time_spent=1&device_name=GM1901&needs_response_details=1&os_build=QKQ1.190716.003&updated_at=2026-02-16T13%3A43%3A27.591Z%2B0300&click_time=2026-02-16T13%3A43%3A06.000Z%2B0300&cpu_type=arm64-v8a&screen_size=normal&screen_format=long&gps_adid_src=service&subsession_count=2&mnc=872&os_version=10&google_play_instant=0&android_uuid=4c986a9b-af46-45cc-8655-5172d6130b1e&sent_at=2026-02-16T13%3A44%3A13.695Z%2B0300&referrer=utm_source%3D%28not%2520set%29%26utm_medium%3D%28not%2520set%29&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&install_begin_time=2026-02-16T13%3A43%3A08.000Z%2B0300&session_count=1&display_height=2218&package_name=com.fdjservices.nirio&os_name=android&ui_mode=1&tracking_enabled=1

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="45" BitFlags="2100">
+  <SessionTimers ClientConnected="2026-10-07T01:10:48.893496+05:30" ClientBeginRequest="2026-10-07T01:10:48.893496+05:30" GotRequestHeaders="2026-10-07T01:10:48.8944963+05:30" ClientDoneRequest="2026-10-07T01:10:48.8944963+05:30" GatewayTime="0" DNSTime="0" TCPConnectTime="155" HTTPSHandshakeTime="165" ServerConnected="2026-10-07T01:10:49.050444+05:30" FiddlerBeginRequest="2026-10-07T01:10:49.050444+05:30" ServerGotRequest="2026-10-07T01:10:49.050444+05:30" ServerBeginResponse="0001-01-01T00:00:00" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="0001-01-01T00:00:00" ClientBeginResponse="2026-10-07T01:10:49.050444+05:30" ClientDoneResponse="2026-10-07T01:10:49.050444+05:30" />
+  <PipeInfo />
+  <TunnelInfo BytesEgress="0" BytesIngress="0" />
+  <SessionFlags>
+    <SessionFlag N="x-overridedecryption" V="true" />
+    <SessionFlag N="x-egressport" V="13700" />
+    <SessionFlag N="https-server-cipher" V="Aes256 256bits" />
+    <SessionFlag N="https-client-snihostname" V="app.adjust.com" />
+    <SessionFlag N="x-processinfo" V="python:34048" />
+    <SessionFlag N="https-server-version" V="Tls13" />
+    <SessionFlag N="x-responsebodytransferlength" V="0" />
+    <SessionFlag N="x-clientip" V="::ffff:127.0.0.1" />
+    <SessionFlag N="x-supported-client-tls-protocols" V="15360" />
+    <SessionFlag N="x-clientport" V="13699" />
+    <SessionFlag N="https-client-version" V="Tls13" />
+    <SessionFlag N="x-hostip" V="185.151.204.9" />
+    <SessionFlag N="https-client-sessionid" V="C0 92 EE 10 9A 75 E0 F3 01 6C 86 59 5A 99 5E 7E 3F 7C 7F BA 2F CC 51 7A 4B 46 19 A4 71 CD 55 45" />
+    <SessionFlag N="ui-backcolor" V="lightgreen" />
+  </SessionFlags>
+</Session>

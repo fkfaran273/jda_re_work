@@ -1,0 +1,28 @@
+POST https://api.revenuecat.com/v1/config/app HTTP/1.1
+Content-Type: application/json
+Accept: application/x-rc-format
+Accept-RC-Element-Encoding: gzip
+X-Platform: android
+X-Platform-Flavor: flutter
+X-Platform-Flavor-Version: 10.12.0
+X-Platform-Version: 31
+X-Platform-Device: moto g42
+X-Platform-Brand: motorola
+X-Version: 10.20.0
+X-Preferred-Locales: en_IN
+X-Client-Locale: en-IN
+X-Client-Version: 3.2.33
+X-Client-Bundle-ID: social.hunch.app
+X-Observer-Mode-Enabled: false
+X-Is-Debug-Build: false
+X-Kotlin-Version: 2.2.21
+X-Is-Backgrounded: false
+X-Billing-Client-Sdk-Version: 8.3.0
+Authorization: Bearer goog_vuzPmLIPTnXuyfGmmWXVnZGbMqY
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)
+Host: api.revenuecat.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 115
+
+{"app_user_id":"$RCAnonymousID:285b37abb58f4c33bf29dad3c56e8231","fetch_context":"app_start","prefetched_blobs":[]}

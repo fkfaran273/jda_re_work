@@ -1,0 +1,12 @@
+{
+  "api_level": "31", "os_version": "12",
+  "device_name": "moto g64 5G", "device_manufacturer": "motorola",
+  "hardware_name": "qcom", "os_build": "V1TD35H.83-20-5",
+  "language": "en", "country": "IN",
+  "display_width": "1080", "display_height": "2400",
+  "screen_density": "high", "screen_size": "normal", "screen_format": "long",
+  "cpu_type": "arm64-v8a", "connectivity_type": "1", "timezone": "+0530",
+  "mcc": "405", "mnc": "863",
+  "enqueue_size": "0", "first_error": "0", "last_error": "0",
+  "retry_count": "0", "wait_time": "0.0", "wait_total": "0.0"
+}

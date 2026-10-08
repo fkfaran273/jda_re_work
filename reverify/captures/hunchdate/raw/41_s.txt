@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+FiddlerGateway: Direct
+StartTime: 01:10:48.634
+Connection: close
+
+Encrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.
+
+Secure Protocol: Tls13
+Cipher: Aes256 256bits
+Hash Algorithm: Sha384 ?bits
+Key Exchange: None 255bits
+
+== Server Certificate ==========
+[Subject]
+  CN=*.mixpanel.com
+
+[Issuer]
+  CN=GeoTrust TLS RSA CA G1, OU=www.digicert.com, O=DigiCert Inc, C=US
+
+[Serial Number]
+  06F15C06850CE8CABC5E1EC91FC9CB08
+
+[Not Before]
+  14-01-2026 05:30:00
+
+[Not After]
+  14-01-2027 05:29:59
+
+[Thumbprint]
+  2E966BCAC1E3BFCA483D96B1232BBE94530D98A2
+
+[SubjectAltNames]
+*.mixpanel.com, mixpanel.com

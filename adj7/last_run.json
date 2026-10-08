@@ -1,0 +1,19 @@
+{
+ "mode": "live",
+ "app": "in.hanafintech",
+ "gaid": "a63cc798-9f70-4aa8-955b-d842e6c8ac3a",
+ "android_uuid": "1cae4c95-fa8b-4255-b582-136c8aa45085",
+ "reftag": "adjust_reftag=cipCDipwihpBe&utm_source=VL-Alliance&utm_campaign=HM2&utm_content=HM2_1722_",
+ "click_second": 1791456633,
+ "adid": "454a03eca6b26027c60c2de5ee7781da",
+ "attribution": {
+  "tracker_token": "g0bpyt5",
+  "tracker_name": "Organic",
+  "network": "Organic",
+  "engagement_time": "0001-01-01T00:00:00Z",
+  "installed_at": "2026-10-08T10:51:03Z",
+  "first_session_time": "2026-10-08T10:51:03Z",
+  "is_reattributed": false,
+  "is_redownload_install": false
+ }
+}

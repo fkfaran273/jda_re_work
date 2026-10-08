@@ -1,0 +1,98 @@
+{
+ "round1": {
+  "gaid": "04bb8d9f-e9d4-4c54-84f8-22ef0d906d49",
+  "hits": [
+   {
+    "status": 302,
+    "reftag": "adjust_reftag=cvfgKGtgIebjz&utm_source=Spyke+Media",
+    "date_sec": 1791320999,
+    "set_cookie": "a33a3f54cf50f8fc483426ba22d1c5cf=cvfgKGtgIebjz; Path=/; Domain=adjust.com; Max-Age=2, a33a3f54cf50f8fc483426ba22d1c5cf=c",
+    "cookie_name": "a33a3f54cf50f8fc483426ba22d1c5cf",
+    "elapsed": 2.687,
+    "when": 1791320998.333
+   },
+   {
+    "status": 302,
+    "reftag": "adjust_reftag=cujiV0M6hM0Kq&utm_source=Spyke+Media",
+    "date_sec": 1791321000,
+    "set_cookie": "a33a3f54cf50f8fc483426ba22d1c5cf=cujiV0M6hM0Kq; Path=/; Domain=adjust.com; Max-Age=2, a33a3f54cf50f8fc483426ba22d1c5cf=c",
+    "cookie_name": "a33a3f54cf50f8fc483426ba22d1c5cf",
+    "elapsed": 0.478,
+    "when": 1791320999.212
+   },
+   {
+    "status": 302,
+    "reftag": "adjust_reftag=c6ShoDHamO71h&utm_source=Spyke+Media",
+    "date_sec": 1791321066,
+    "set_cookie": "a33a3f54cf50f8fc483426ba22d1c5cf=c6ShoDHamO71h; Path=/; Domain=adjust.com; Max-Age=2, a33a3f54cf50f8fc483426ba22d1c5cf=c",
+    "cookie_name": "a33a3f54cf50f8fc483426ba22d1c5cf",
+    "elapsed": 0.796,
+    "when": 1791321065.409
+   }
+  ]
+ },
+ "round2": {
+  "gaid": "a0b14758-95e1-4705-b818-19e08399f0bf",
+  "hits": [
+   {
+    "status": 302,
+    "reftag": "adjust_reftag=c41VPqN1gfwyD&utm_source=Spyke+Media",
+    "date_sec": 1791321066,
+    "set_cookie": "8ca873091831babe11cd7bc6b248e9f9=c41VPqN1gfwyD; Path=/; Domain=adjust.com; Max-Age=2, 8ca873091831babe11cd7bc6b248e9f9=c",
+    "cookie_name": "8ca873091831babe11cd7bc6b248e9f9",
+    "elapsed": 0.482,
+    "when": 1791321065.891
+   },
+   {
+    "status": 302,
+    "reftag": "adjust_reftag=cHPC4yshyjBtl&utm_source=Spyke+Media",
+    "date_sec": 1791321067,
+    "set_cookie": "8ca873091831babe11cd7bc6b248e9f9=cHPC4yshyjBtl; Path=/; Domain=adjust.com; Max-Age=2, 8ca873091831babe11cd7bc6b248e9f9=c",
+    "cookie_name": "8ca873091831babe11cd7bc6b248e9f9",
+    "elapsed": 0.466,
+    "when": 1791321066.757
+   },
+   {
+    "status": 302,
+    "reftag": "adjust_reftag=cOq6tVUWyw72i&utm_source=Spyke+Media",
+    "date_sec": 1791321134,
+    "set_cookie": "8ca873091831babe11cd7bc6b248e9f9=cOq6tVUWyw72i; Path=/; Domain=adjust.com; Max-Age=2, 8ca873091831babe11cd7bc6b248e9f9=c",
+    "cookie_name": "8ca873091831babe11cd7bc6b248e9f9",
+    "elapsed": 1.245,
+    "when": 1791321133.402
+   }
+  ]
+ },
+ "round3": {
+  "gaid": "4875d323-ba39-4a1d-b16f-fa44f9ddf342",
+  "hits": [
+   {
+    "status": 302,
+    "reftag": "adjust_reftag=clYIf0vgy4ePc&utm_source=Spyke+Media",
+    "date_sec": 1791321134,
+    "set_cookie": "d56328bfc79d0f9db686adc3bfe36d50=clYIf0vgy4ePc; Path=/; Domain=adjust.com; Max-Age=2, d56328bfc79d0f9db686adc3bfe36d50=c",
+    "cookie_name": "d56328bfc79d0f9db686adc3bfe36d50",
+    "elapsed": 0.473,
+    "when": 1791321133.876
+   },
+   {
+    "status": 302,
+    "reftag": "adjust_reftag=crbqaLBtTZ4gg&utm_source=Spyke+Media",
+    "date_sec": 1791321135,
+    "set_cookie": "d56328bfc79d0f9db686adc3bfe36d50=crbqaLBtTZ4gg; Path=/; Domain=adjust.com; Max-Age=2, d56328bfc79d0f9db686adc3bfe36d50=c",
+    "cookie_name": "d56328bfc79d0f9db686adc3bfe36d50",
+    "elapsed": 0.475,
+    "when": 1791321134.751
+   },
+   {
+    "status": 302,
+    "reftag": "adjust_reftag=crgKwf1d9XwP8&utm_source=Spyke+Media",
+    "date_sec": 1791321205,
+    "set_cookie": "d56328bfc79d0f9db686adc3bfe36d50=crgKwf1d9XwP8; Path=/; Domain=adjust.com; Max-Age=2, d56328bfc79d0f9db686adc3bfe36d50=c",
+    "cookie_name": "d56328bfc79d0f9db686adc3bfe36d50",
+    "elapsed": 4.62,
+    "when": 1791321204.771
+   }
+  ]
+ }
+}

@@ -1,0 +1,9 @@
+{
+ "ip": "106.219.165.14",
+ "idfv": "B9489D19-437C-48CD-A7FE-A6E6C49627F2",
+ "click_id": "73027864-C8E3-4EEA-A809-34D2BD5A12B6",
+ "adid": "7b0aa2a1002d91ad59b052c8f18b6e51",
+ "session": "{\"app_token\":\"1ri26ekrhwtc\",\"adid\":\"7b0aa2a1002d91ad59b052c8f18b6e51\"}",
+ "click": "{\"app_token\":\"1ri26ekrhwtc\",\"adid\":\"7b0aa2a1002d91ad59b052c8f18b6e51\"}",
+ "attribution": "{\"app_token\":\"1ri26ekrhwtc\",\"adid\":\"7b0aa2a1002d91ad59b052c8f18b6e51\",\"attribution\":{\"tracker_token\":\"unattr\",\"tracker_name\":\"No User Consent\",\"network\":\"No User Consent\",\"engagement_time\":\"2026-10-08T07:25:09Z\",\"installed_at\":\"2026-10-08T07:26:10Z\",\"first_session_time\":\"2026-10-08T07:26:10Z\",\"is_reattributed\":false,\"is_redownload_install\":false},\"skadn_conv_value\":0,\"skadn_coarse_value\":\"low\",\"skadn_lock_window\":false}"
+}

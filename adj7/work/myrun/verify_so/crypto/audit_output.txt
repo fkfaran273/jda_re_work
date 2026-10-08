@@ -1,0 +1,259 @@
+blob lens: 304 304 304
+myrun file: C:\Users\Apps\Downloads\com.penti.app\adj7\work\myrun\adj7_pure.py ref file: C:\Users\Apps\Downloads\com.penti.app\adj7\work\spn_law2.py
+
+=== 1. record template ===
+--- my.build_record source ---
+def build_record(H, nonce12, cert40=None):
+    """The 256-B plaintext record.  cert40: 40 bytes -- the hex-upper cert
+    SHA-1 of the app (real device) or 40 NUL bytes (no-cert path)."""
+    if cert40 is None:
+        cert40 = b"\x00" * 40
+    A = str(int.from_bytes(nonce12[0:8], "little")).rjust(20)
+    d8 = nonce12[8:12].hex().upper()
+    j = (b'{ "a":  ' + A.encode() + b' ,"b": "' + H.hex().upper().encode()
+         + b'","c": "' + cert40 + b'","d": "' + d8.encode()
+         + b'","e": "' + SHA0_HEX.encode() + b'" }\x00')
+    return j + b"\x10" * (256 - len(j))
+
+--- ref.build_record source ---
+def build_record(claims, nonce12=NONCE12_DEFAULT, cert40=CERT40_DEFAULT):
+    a = str(struct.unpack("<Q", nonce12[:8])[0]).rjust(20)
+    d = nonce12[8:12].hex().upper()
+    H = commitment_digest(claims, nonce12).hex().upper()
+    e = hashlib.sha256(b"").hexdigest().upper()
+    js = (b'{ "a":  ' + a.encode() + b' ,"b": "' + H.encode() +
+          b'","c": "' + cert40 + b'","d": "' + d.encode() +
+          b'","e": "' + e.encode() + b'" }')
+    return js + b"\x00" + b"\x10" * (256 - len(js) - 1)
+
+PASS 1a template-bytes my==hand -- len=256 jlen=240 pad=16
+PASS 1b field-order+separators -- segs={...a...b...c...d...e...} with '{ "a":  ' (brace,sp,quote,a,quote,colon,2sp), ' ,"b": "' etc.
+PASS 1c A rjust-20 space-pad -- hanaf-attr A='13106841944429420300' len=20 padded='13106841944429420300'
+PASS 1d A short-vector pad-char=0x20 -- got b'                   0'
+PASS 1e rjust-default-is-space -- python str.rjust(20) pads U+0020
+PASS 1f H-uppercase -- H slot 64 hex upper
+PASS 1g d8-uppercase -- d8=98457008
+PASS 1h e==SHA0-upper -- e=E3B0C44298FC1C14...
+PASS 1i 00-terminator position -- idx=236 byte=00 tail=b'" }\x00\x10\x10'
+PASS 1j pad fill 0x10 len=256-len(j) -- j_with00_len=240 pad_len=16
+PASS 1k pad-math 256-len -- 256-240=16
+record template j prefix (repr): b'{ "a":  13106841944429420300 ,"b": "31FED57AD12FD382E600A7A5'
+record template j suffix (repr): b'996FB92427AE41E4649B934CA495991B7852B855" }\x00\x10\x10\x10\x10' padlen 16
+
+=== 2. header (bionic rand) ===
+--- my.make_header source ---
+def make_header(unix_sec):
+    R = BionicRand(int(unix_sec))
+    d = [R.next() for _ in range(8)]
+    w = [d[2 * i] ^ d[2 * i + 1] for i in range(4)]
+    return b"".join(v.to_bytes(4, "big") for v in w)
+
+--- my.BionicRand source ---
+class BionicRand:
+    """bionic rand(): 31-word additive LCG + 310-draw warm-up."""
+
+    def __init__(self, seed):
+        r = self.r = [0] * 31
+        s = seed & 0xFFFFFFFF or 1
+        w = s if s < 2 ** 31 else s - 2 ** 32
+        r[0] = w
+        prev = w
+        for i in range(1, 31):
+            r[i] = _schrage(prev)
+            prev = r[i]
+        self.f, self.b = 3, 0
+        for _ in range(310):
+            self.next()
+
+    def next(self):
+        v = (self.r[self.f] + self.r[self.b]) & 0xFFFFFFFF
+        self.r[self.f] = v if v < _M else v - 2 ** 32
+        self.f = (self.f + 1) % 31
+        self.b = (self.b + 1) % 31
+        return v >> 1
+
+--- ref.make_header/BionicRand ---
+class BionicRand:
+    def __init__(self, seed):
+        r = self.r = [0] * 31
+        s = seed & 0xFFFFFFFF or 1
+        w = s if s < 2 ** 31 else s - 2 ** 32
+        r[0] = w
+        prev = w
+        for i in range(1, 31):
+            if prev >= 0:
+                hi, lo = divmod(prev, _Q)
+            else:
+                hi = -((-prev) // _Q)
+                lo = prev - hi * _Q
+            word = _A * lo - _R * hi
+            if word < 0:
+                word += _M
+            prev = word
+            r[i] = word
+        self.f, self.b = 3, 0
+        for _ in range(310):
+            self.next()
+
+    def next(self):
+        v = (self.r[self.f] + self.r[self.b]) & 0xFFFFFFFF
+        self.r[self.f] = v if v < 2 ** 31 else v - 2 ** 32
+        o = v >> 1
+        self.f = (self.f + 1) % 31
+        self.b = (self.b + 1) % 31
+        return o
+def make_header(unix_sec):
+    R = BionicRand(unix_sec)
+    d = [R.next() for _ in range(8)]
+    w = [d[2 * i] ^ d[2 * i + 1] for i in range(4)]
+    return b"".join(v.to_bytes(4, "big") for v in w)
+
+PASS 2a fuzz my-vs-ref headers -- 24 seeds incl 0,1,2^31-1,2^31,2^32-1,negatives
+PASS 2b fresh-reimpl (310/8/pairXOR/BE) matches my -- independent Schrage+additive code
+PASS 2c warmup!=310 differs -- 309/311 both differ
+PASS 2d draws==8 structural (16B header) -- 8 draws pairXOR->4 words->16B; draws!=8 would not fill 4 words
+PASS 2e pair-XOR+BE packing -- d=['0x69848b74', '0xf63411c', '0x41f40fd6', '0x733f91f4', '0x35e48233', '0x2544699a', '0x45c55bcc', '0x48e29f0e']
+PASS 2f endian is big (LE differs) -- be=66e7ca6832cb9e22 le=68cae766229ecb32
+PASS 2g pair-XOR load-bearing -- first4draws!=xored
+PASS 2h draws 31-bit (v>>1) -- max=2147469841
+  seed 0 (0->1): post-warmup r[0]=-1726662223 (normalization in __init__ ran clean)
+  seed 4294967295 (0xFFFFFFFF->signed -1): post-warmup r[0]=-568995196 (normalization in __init__ ran clean)
+  seed 2147483648 (2^31->signed -2^31): post-warmup r[0]=1591829523 (normalization in __init__ ran clean)
+PASS 2i seed normalization runs (no crash, 16B out) -- 24 seeds
+sid44 created_at: 2026-10-06T15:47:41.741Z+0530
+sid44 second: 1791281861 header==blob[:16]? True ref? True
+PASS 2j genuine sid44 header==make_header(sec) -- sec=1791281861 hdr=29fc17e923f797f0...
+
+=== 3. commitment hash ===
+IV0 my: ['0x16ba6d02', '0x11a298c2', '0x82187e46', '0x4c148c22', '0x3a5cbc15', '0x6519f14', '0x97b9e370', '0x8ec3bec']
+IV0 ref bytes: 16ba6d0211a298c282187e464c148c223a5cbc1506519f1497b9e37008ec3bec
+PASS 3a IV0 my==ref -- 16ba6d0211a298c282187e464c148c22...
+PASS 3b IV0 != std sha256 IV -- custom confirmed
+PASS 3c padding+compress validated vs hashlib(stdIV) -- 130 lens + boundaries, fresh impl==hashlib
+PASS 3d my.sha256_iv0==fresh-custom-IV -- boundary lens
+  mod64=55 N=3 my==ref==fresh: True H=cb5bf336e14b6dca
+  mod64=56 N=4 my==ref==fresh: True H=5718c594ebdf2aab
+  mod64=63 N=11 my==ref==fresh: True H=925e40fcf484984d
+  mod64=0 N=12 my==ref==fresh: True H=203a2b2eb57414b9
+  mod64=1 N=13 my==ref==fresh: True H=aafaa0678a185031
+  mod64=59 N=7 my==ref==fresh: True H=66f5affb0e55b514
+PASS 3e boundary claims my==ref==fresh -- 6 cases
+hanaf_map keys: ['sign_calls', 'nsign_calls', 'captures']
+PASS 3f prefix branch load-bearing (00*40!=cert40) -- 1e7fc4b80720f9cc vs d64f5a0c52eb57d7
+PASS 3g SHA0-hex-uppercase -- E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855
+PASS 3g2 e slot==SHA0 -- E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855
+PASS 3h claims latin1 -- b'caf\xe913000001'
+PASS 3i pad-formula equivalence -- (55-len)%64 vs (55-len%%64)%64 identical
+
+=== 4. AES-256-CBC ===
+PASS 4a S-box == FIPS-197 standard -- my[0:4]=637c777b
+PASS 4b nRoundKeys==15 (K0..K14) -- my=15 ref=15
+PASS 4c K0/K1==SEED halves -- f110fb41676dba31...
+PASS 4d myRK==refKEYS -- 15/15 match
+PASS 4e rcon seq standard -- ['0x1', '0x2', '0x4', '0x8', '0x10', '0x20', '0x40']
+PASS 4f ShiftRows law out[4r+c]=in[4((r+c)%4)+c] -- sr(0..15)=00050a0f04090e03080d02070c01060b
+PASS 4f2 mySR==refSR -- 00050a0f04090e03
+my _MCM: ((2, 3, 1, 1), (1, 2, 3, 1), (1, 1, 2, 3), (3, 1, 1, 2)) ref _MCM: ((2, 3, 1, 1), (1, 2, 3, 1), (1, 1, 2, 3), (3, 1, 1, 2))
+PASS 4g MixColumns matrix standard -- FIPS matrix confirmed
+PASS 4g2 gmul FIPS spot -- 0x57*0x13=0xfe
+--- my.spn_chunk ---
+def spn_chunk(P, keys=_RK):
+    x = bytes(a ^ b for a, b in zip(P, keys[0]))
+    x = bytes(AES_SBOX[v] for v in x)
+    for r in range(13):
+        x = _shift_rows(x)
+        x = _mix_columns(x)
+        x = bytes(a ^ b for a, b in zip(x, keys[1 + r]))
+        x = bytes(AES_SBOX[v] for v in x)
+    x = _shift_rows(x)
+    return bytes(a ^ b for a, b in zip(x, keys[14]))
+
+PASS 4h SubBytes count==15 (init+13+loop-tail? verify no-final) -- SBOX refs=2; tail is SR->AddK with no SubBytes after (see source)
+PASS 4i CBC IV=header (block0) -- 1062e5bca491189e
+PASS 4j CBC chaining (block1 uses C0) -- 04c5bcdaee7e38b5
+PASS 4k fresh-inverse round-trip (20 random) -- enc->fresh-dec identity
+genuine sid44 record head repr: b'{ "a":  12137478147332815070 ,"b": "599E004527744E846725E9E43569BCAE08C6E522FDB5'
+genuine sid44 record tail repr: b'"d": "85006809","e": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855" }\x00\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10'
+PASS 4l genuine sid44 decrypt parses as record -- match=True
+  A=b'12137478147332815070' H=599E004527744E84.. C=C1BFAFCAFFB84B805288B985FBE48E7F33D2C6DF D=85006809 E=E3B0C44298FC1C14..
+PASS 4m A==u64le(nonce) rjust20 -- A=b'12137478147332815070'
+  nonce12 from record: deb8d66011fc70a885006809
+PASS 4n nonce==law_recheck deb8d66011fc70a885006809 -- deb8d66011fc70a885006809
+PASS 4o H/d8/e uppercase hex -- upper confirmed
+PASS 4p e==SHA0 -- E3B0C44298FC1C14
+PASS 4q tail pad 0x10 to 256 -- padlen=16
+PASS 4r hand-rebuild==genuine record -- jlen=240
+PASS 4s my.build_record==genuine -- byte-exact
+PASS 4t final-SubBytes variant NOT genuine -- extra SubBytes breaks match (no-final confirmed)
+PASS 4u ShiftRows direction load-bearing (inv differs, fwd matches genuine) -- inv=000d0a0704010e0b fwd-genuine=True
+PASS 4v emulator mint v3 decrypt parses -- b'{ "a":  14613298175922890454 ,"b": "99E41C69796C7E008A60E68E51EA'
+
+=== 5. tag ===
+DK37 my: 2a4cc07960d647623cc386dcefafbf25b669914d32cc8585a1ed7f920ef591eb ref: 2a4cc07960d647623cc386dcefafbf25b669914d32cc8585a1ed7f920ef591eb
+DK37 words: ['0x2a4cc079', '0x60d64762', '0x3cc386dc', '0xefafbf25', '0xb669914d', '0x32cc8585', '0xa1ed7f92', '0xef591eb']
+PASS 5a DK37==SO_VERIFY word seq -- 8/8 mov-immediates 0xcc43c-0xcc5bb
+PASS 5b DK37 my==ref -- identical
+PASS 5c tag sid-42 slice[16:272] -- verify_tag=True
+PASS 5c tag sid-43 slice[16:272] -- verify_tag=True
+PASS 5c tag sid-44 slice[16:272] -- verify_tag=True
+PASS 5d verify_tag() uses [16:272] -- def verify_tag(blob):
+    return hmac.new(DK37, blob[16:272], hashlib.sha256).digest() == blob[272:304]
+  slice 0:256 verifies: False (must be False except exact)
+  slice 16:271 verifies: False (must be False except exact)
+  slice 15:272 verifies: False (must be False except exact)
+  slice 16:272+00 verifies: False (must be False except exact)
+PASS 5e slice exactness load-bearing -- off-by-one fails
+PASS 5f blob layout 16+256+32 -- len=304
+
+=== 6. auth header ===
+genuine: Signature signature="29FC17E923F797F0074FC8914ED7FCBB70B21C2B0D58AE0EE64F7EA08EB1C71E77699FEC2584BCBD202D24BACA954C05F72 ...
+my sign_request src:
+def sign_request(fields, kind, second=None, nonce12=None, cert_sha1=None,
+                 client_sdk=None, include_block2=False,
+                 adj_signing_id=ADJ_SIGNING_ID, headers_id="8",
+                 native_version="3.62.0", campaign=None):
+    """campaign (dict) overrides everything per-app when passed:
+    {cert_sha1, client_sdk, adj_signing_id, headers_id, native_version} --
+    the runner passes ITS campaign dict directly so no global wiring can be
+    forgotten."""
+    """Sign one request -> the Authorization header VALUE.
+
+    fields        the wire map (str -> str)
+    kind          session | click | event | attribution
+    second        signing second (default: now)
+    nonce12       12-B nonce; None -> urandom (device behaviour)
+    cert_sha1     the app cert SHA-1 hex (40 chars) or None -> 40 NULs
+    include_block2  True adds activity_kind+client_sdk to the claims
+                  (the genuine Java path does; the mint path did not)
+    campaign       dict overriding the per-app constants (cert_sha1,
+                   client_sdk, adj_signing_id, headers_id, native_version)
+    """
+    if campaign:
+        cert_sha1 = campaign.get("cert_sha1", cert_sha1)
+        client_sdk = campaign.get("client_sdk", client_sdk)
+        adj_signing_id = campaign.get("adj_signing_id", adj_signing_id)
+        headers_id = campaign.get("headers_id", headers_id)
+        native_version = campaign.get("native_version", native_version)
+    if second is None:
+        second = int(time.time())
+    if nonce12 is None:
+        nonce12 = os.urandom(12)
+    claims = build_claims(kind, fields, client_sdk=client_sdk,
+                          include_block2=include_block2)
+    cert40 = cert_sha1.upper().encode() if cert_sha1 else None
+    blob = sign(int(second), bytes(nonce12), claims, cert40)
+    return ('Signature signature="%s",adj_signing_id="%s",algorithm="%s",'
+            'headers_id="%s",native_version="%s"'
+            % (blob.hex().upper(), adj_signing_id, ALGORITHM, headers_id,
+               native_version))
+
+PASS 6a genuine header regex (names/order/commas/case) -- 5 params in order signature,adj_signing_id,algorithm,headers_id,native_version
+PASS 6b sig hex uppercase -- 608 hex upper (304B)
+PASS 6c tail values -- 1300000,adj7,8,3.62.0
+PASS 6d my header same shape -- Signature signature="29FC17E923F797F0074FC8914ED7FCBBFE670B99C6E5137913160FE59BB...
+PASS 6e separators exact -- no space after commas; single space after leading 'Signature'
+PASS 6f scheme/key case -- capital-S scheme, lowercase key
+
+=== SUMMARY ===
+total 69, fails 0: []
+wrote audit_results.json

@@ -1,0 +1,11 @@
+POST https://app.adjust.com/session HTTP/1.1
+Client-SDK: react-native5.4.4@android5.4.5
+Authorization: Signature signature="2B01A2F7052E758D751B3BAB24242C63EEB26EEE92F6FEB193A0E22EF2C846E0CA64F338C32D0D5948D8D561853AFAB0912B62FDB29DA2F1C6019DD4A3C0CEFCA165A0DF39B6874F7DBFE7F50C779C3EAB38A17BF8980A9E000E3CB67D6C89498495C0919E0F9E4529AF5BE22711B21A3ABB23B3C3EDA8C3E283E018D2A9A1A4CB8BC79281384A91C9D88341194F41E20973903EF3AF10C99D545C7117848B33BF86D7A4979E93779A542AD074C41634FD923FCEDAF4A86CFCC8D4883AD95A055A361856ADE8B21B2AD34D4E51546F538167B7ADF545B2D203FDD4EE5814A753B302DEEC7DEFC5E0D628A7313921E038668857877BD87B999AE05B82160562CC5B83041706EC7BF92C1823AB23378F504654C5C855A6DC0FDDDC71012379B20488DEB4E5F80D141D9E8E3AB0ED58D186",adj_signing_id="1300000",algorithm="adj7",headers_id="7",native_version="3.61.0"
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)
+Host: app.adjust.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 1043
+
+store_name_from_system=com.android.vending&gps_adid_attempt=1&country=IN&api_level=31&hardware_name=S2SE32.28-28-4&app_version=6.2.28&app_token=tczjrkpa8lc0&installed_at=2026-10-06T23%3A37%3A34.613Z%2B0530&created_at=2026-10-06T23%3A38%3A27.817Z%2B0530&wait_total=0.0&device_type=phone&language=en&gps_adid=96e18cda-6e01-4915-b826-09ea0d212322&foreground=1&connectivity_type=1&device_manufacturer=motorola&display_width=1080&device_name=moto+g42&needs_response_details=1&os_build=S2SE32.28-28-4&updated_at=2026-10-06T23%3A37%3A34.613Z%2B0530&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&screen_format=long&last_error=0&gps_adid_src=service&wait_time=0.0&os_version=12&first_error=0&android_uuid=00b7c60f-ceb6-4226-8b1d-339d5bf4cedf&sent_at=2026-10-06T23%3A38%3A27.880Z%2B0530&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&session_count=1&display_height=2237&package_name=com.burgerizzr.app&initiating_package_name=com.android.vending&os_name=android&ui_mode=1&enqueue_size=0&tracking_enabled=1

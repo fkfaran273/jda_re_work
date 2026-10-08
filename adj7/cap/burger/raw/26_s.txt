@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+content-type: application/json; charset=utf-8
+date: Tue, 06 Oct 2026 18:08:31 GMT
+content-length: 1047
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-robots-tag: noindex
+
+{"app_token":"tczjrkpa8lc0","adid":"c084b39d4e2a1122f20d1290279e1b62","attribution":{"tracker_token":"23euafta","tracker_name":"blisreports::Delivery 3::DQ_raft_AUG_","network":"blisreports","campaign":"Delivery 3","adgroup":"DQ_raft_AUG_","deeplink":"burgerizzrapp://?adj_t=231lmclw\u0026adj_adgroup=DQ_raft_AUG_\u0026adj_campaign=DQ_raft_AUG(Sub_source)\u0026gps_adid=\u0026click_id=6Pd8CRNzcCxdCjFu27jfEe\u0026adj_idfa=\u0026adj_install_callback=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fpostback%3Fclick_id%3D6Pd8CRNzcCxdCjFu27jfEe\u0026adj_event_callback_kio35u=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fevents%3Fclick_id%3D6Pd8CRNzcCxdCjFu27jfEe%26goal%3Dkio35u\u0026adj_event_callback_fiylqr=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fevents%3Fclick_id%3D6Pd8CRNzcCxdCjFu27jfEe%26goal%3Dfiylqr\u0026adjust_no_sdkclick=1","engagement_time":"2026-10-06T18:06:54Z","installed_at":"2026-10-06T18:08:28Z","first_session_time":"2026-10-06T18:08:28Z","is_reattributed":false,"is_redownload_install":false}}

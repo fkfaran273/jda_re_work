@@ -1,0 +1,33 @@
+{
+ "arg1": {
+  "initiated_by": "sdk",
+  "gps_adid_attempt": "1",
+  "api_level": "31",
+  "app_version": "3.0.4",
+  "app_token": "smxi7gqwu39c",
+  "os_version": "12",
+  "created_at": "2026-10-06T13:00:06.652Z+0530",
+  "device_type": "phone",
+  "gps_adid": "af008a79-8652-4455-b5ae-789783a06961",
+  "foreground": "1",
+  "android_uuid": "b4621749-0f5b-4ce1-8881-424a0f705fff",
+  "sent_at": "2026-10-06T13:00:06.663Z+0530",
+  "offline_mode_enabled": "0",
+  "device_name": "moto g42",
+  "environment": "production",
+  "needs_response_details": "1",
+  "attribution_deeplink": "1",
+  "package_name": "in.hanafintech",
+  "os_name": "android",
+  "ui_mode": "1",
+  "gps_adid_src": "service",
+  "tracking_enabled": "1"
+ },
+ "arg2": {
+  "endpoint": "https://app.adjust.com",
+  "client_sdk": "android5.6.0",
+  "activity_kind": "attribution"
+ },
+ "sig": "2F52CED46A6CB48B5E9D9BDF02E956FB97166269B7442C0955ACDD25B2D5BC1C0DE333E2F888FE4B0B2535A5F2B44FDC5462AD28FD3722C7D35B6AD6B69ABEE7BDA31B4DCF395AF6A5157AA017DCACF4CCC51322BCAE7F9C8C05FBC215084C5948118F6EBD8F4B0493934724C4B3A6B4B620B16874F1C4060C3C2D6323FB3575C8548CC975C2AD823E2E3A1396AA0376BE9802B9C004C2260F9323380F69755707F6A8CC51457FD95A8213E186E5EE37460AEA19585FD36F64F1DC538291A99E8116D5FCFC4C805171C03B18CF2E90911956B7C0671F0EB0D992B5D1A5670ABEC23002C724717A955DA216497BDAEDDF5ABA148012A557CE75BF5FE2C8BAD869BBA5E384DC4A4BCFC462384743137F35A87EE106970C1E33029D214F006E95872A01327F60B28D822633F88D8C094D6A",
+ "kind": "attribution"
+}

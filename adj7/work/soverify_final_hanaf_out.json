@@ -1,0 +1,22 @@
+{
+ "A": {
+  "heap_with": 0,
+  "heap_wo": 0,
+  "ck_n": 84,
+  "ck_secret_id": false,
+  "gt_n": 84,
+  "gt_secret_id": false,
+  "interp_len224": {
+   "len": 224,
+   "tag_valid_bodies": []
+  }
+ },
+ "B": {
+  "claims_eq_hook": false,
+  "heap_claims": 0,
+  "interp_len224": {
+   "len": 224,
+   "tag_valid_bodies": []
+  }
+ }
+}

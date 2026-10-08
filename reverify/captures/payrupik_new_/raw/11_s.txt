@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+FiddlerGateway: Direct
+StartTime: 15:47:32.858
+Connection: close
+
+Encrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.
+
+Secure Protocol: Tls13
+Cipher: Aes256 256bits
+Hash Algorithm: Sha384 ?bits
+Key Exchange: None 255bits
+
+== Server Certificate ==========
+[Subject]
+  CN=example.com
+
+[Issuer]
+  CN=Cloudflare TLS Issuing ECC CA 3, O=SSL Corporation, C=US
+
+[Serial Number]
+  01EEE6AABB521D5E14FC315FD9985690
+
+[Not Before]
+  27-09-2026 04:19:11
+
+[Not After]
+  26-12-2026 04:26:35
+
+[Thumbprint]
+  899CB259E7DE8DF10033A2AF48C22C2F6580A21D
+
+[SubjectAltNames]
+example.com, *.example.com

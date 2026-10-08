@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="31" BitFlags="2100">
+  <SessionTimers ClientConnected="2026-10-07T01:10:45.1911463+05:30" ClientBeginRequest="2026-10-07T01:10:45.2130345+05:30" GotRequestHeaders="2026-10-07T01:10:45.2130345+05:30" ClientDoneRequest="2026-10-07T01:10:45.2130345+05:30" GatewayTime="0" DNSTime="15" TCPConnectTime="257" HTTPSHandshakeTime="491" ServerConnected="2026-10-07T01:10:45.484599+05:30" FiddlerBeginRequest="2026-10-07T01:10:45.484599+05:30" ServerGotRequest="2026-10-07T01:10:45.4861394+05:30" ServerBeginResponse="0001-01-01T00:00:00" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="0001-01-01T00:00:00" ClientBeginResponse="2026-10-07T01:10:45.4861394+05:30" ClientDoneResponse="2026-10-07T01:10:45.4861394+05:30" />
+  <PipeInfo />
+  <TunnelInfo BytesEgress="0" BytesIngress="0" />
+  <SessionFlags>
+    <SessionFlag N="https-client-version" V="Tls13" />
+    <SessionFlag N="x-supported-client-tls-protocols" V="15360" />
+    <SessionFlag N="x-egressport" V="13670" />
+    <SessionFlag N="x-responsebodytransferlength" V="0" />
+    <SessionFlag N="x-clientport" V="13669" />
+    <SessionFlag N="https-server-version" V="Tls13" />
+    <SessionFlag N="https-client-snihostname" V="kaz760u7-android.mobile-messenger.intercom.com" />
+    <SessionFlag N="x-clientip" V="::ffff:127.0.0.1" />
+    <SessionFlag N="https-client-sessionid" V="23 9C 68 2C 36 3F F0 E1 5C 61 DE 66 51 CC 89 2A BD 40 57 D3 9E 0E 5E E3 FD 2C 11 86 F6 D7 67 4C" />
+    <SessionFlag N="x-hostip" V="3.226.131.17" />
+    <SessionFlag N="x-processinfo" V="python:34048" />
+    <SessionFlag N="https-server-cipher" V="Aes128 128bits" />
+  </SessionFlags>
+</Session>

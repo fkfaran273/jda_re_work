@@ -1,0 +1,11 @@
+POST https://app.adjust.com/session HTTP/1.1
+Client-SDK: android5.6.0
+Authorization: Signature signature="59C7C18F3FAAA42D50BE527165611B2CA91023073E5086C4359A34847F24EAE8376FA5D3BE48DCD38380B529DB305024A949B4354F3B519B6E616AED8C916F55E88B159C3BCEF33179522BA5543EDAE8C12B084CCF6280CDBD105A94E9DCED7BC4B812C4F79E2C091F4F451DA6342B2C10D9A6FA304373E0064F3585576C9021A95C6F468A4364ABE941AFF0FF48F9FDA2809F232BCBB74C4F9076450530F1E313297C9314B7D70EC32B20C91593D8BC9E47300DCD720A19312253A66160A71EB4DEAAF0F3C941B3A7F37F8636050111E52277F3C351B5E732CFD9FDF8C5BF8286B4A073219621F04B7777F74F30305A5C1C0ECCC4CB8ACD37D25A7678CFEC886CCF45A0D926F0F830AC817E3872D607AD3C29C4CAE9FE21DC33350601ED9E7A81B80F09F8F88D7051FF94D387A539F0",adj_signing_id="1300000",algorithm="adj7",headers_id="8",native_version="3.62.0"
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 11; DN2101 Build/RP1A.200720.011)
+Host: app.adjust.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 1294
+
+store_name_from_system=com.android.vending&country=IN&api_level=30&hardware_name=DN2101_11_A.20&partner_params=%7B%22payrupik_c_id%22%3A%22b4bb4595-9007-392f-9c6d-608e5c50a29b%22%7D&app_version=3.0.4&app_token=smxi7gqwu39c&installed_at=2026-10-05T14%3A39%3A52.595Z%2B0530&wait_total=0.0&device_type=phone&language=en&gps_adid=ac04a006-8c1d-44b4-9aa1-dda8efbe3c33&foreground=1&connectivity_type=1&mcc=405&os_build=RP1A.200720.011&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&gps_adid_src=service&wait_time=0.0&first_error=0&sent_at=2026-10-05T14%3A40%3A34.481Z%2B0530&offline_mode_enabled=0&screen_density=high&session_count=1&ui_mode=1&enqueue_size=0&gps_adid_attempt=1&created_at=2026-10-05T14%3A40%3A34.413Z%2B0530&device_manufacturer=OnePlus&display_width=1080&device_name=DN2101&needs_response_details=1&updated_at=2026-10-05T14%3A39%3A52.595Z%2B0530&screen_format=long&last_error=0&push_token=fKLYZTouRj2ykguHckrGrE%3AAPA91bF5F4LgdgTB4GeRBAjB06dsz0I71ioCxoshozBmC0cj3uPeI14rittLFRToyJDsbh8tGNDJOYJoaRmwnzxEmhWjJuE8CCDvsnB2BZjXWKp7Va7sEFc&mnc=872&os_version=11&android_uuid=1cb044a9-ce0b-4064-a788-5932d299a989&environment=production&attribution_deeplink=1&display_height=2293&package_name=in.hanafintech&initiating_package_name=com.android.vending&os_name=android&tracking_enabled=1

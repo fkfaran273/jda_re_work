@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+FiddlerGateway: Direct
+StartTime: 00:44:00.432
+Connection: close
+
+Encrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.
+
+Secure Protocol: Tls13
+Cipher: Aes256 256bits
+Hash Algorithm: Sha384 ?bits
+Key Exchange: None 255bits
+
+== Server Certificate ==========
+[Subject]
+  CN=app.adjust.com, O=Adjust GmbH, L=Berlin, S=Berlin, C=DE
+
+[Issuer]
+  CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1, O=DigiCert Inc, C=US
+
+[Serial Number]
+  0BD11C348B1867AC9D7B4B60549C19B3
+
+[Not Before]
+  02-02-2026 05:30:00
+
+[Not After]
+  02-02-2027 05:29:59
+
+[Thumbprint]
+  B8540DAB70534E0196B6D442E681D7E34AEA7372
+
+[SubjectAltNames]
+app.adjust.com, www.app.adjust.com

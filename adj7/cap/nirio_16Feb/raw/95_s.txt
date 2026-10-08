@@ -1,0 +1,10 @@
+HTTP/1.1 202 Accepted
+content-type: application/json
+date: Mon, 16 Feb 2026 10:47:19 GMT
+content-length: 127
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-robots-tag: noindex
+
+{"app_token":"cv4d2hlazp4w","adid":"4212a983ee58dcb1564cb579148da234","error":"Third party sharing failed (nothing to update)"}

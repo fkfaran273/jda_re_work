@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+FiddlerGateway: Direct
+StartTime: 14:41:27.985
+Connection: close
+
+Encrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.
+
+Secure Protocol: Tls13
+Cipher: Aes256 256bits
+Hash Algorithm: Sha384 ?bits
+Key Exchange: None 255bits
+
+== Server Certificate ==========
+[Subject]
+  CN=*.apptracer.ru
+
+[Issuer]
+  CN=HARICA DV TLS RSA, O=Hellenic Academic and Research Institutions CA, C=GR
+
+[Serial Number]
+  0E935257177C2AE7199A0BE60B7B1227
+
+[Not Before]
+  23-07-2026 08:50:05 PM
+
+[Not After]
+  07-02-2027 08:50:04 PM
+
+[Thumbprint]
+  CFB9B40853CB9EC74FEE07D05172C6FDC5935767
+
+[SubjectAltNames]
+*.apptracer.ru, apptracer.ru

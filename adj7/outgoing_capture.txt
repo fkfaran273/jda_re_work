@@ -1,0 +1,10 @@
+POST /session HTTP/1.1
+Host: 127.0.0.1:9999
+Accept-Encoding: identity
+Client-SDK: flutter5.5.0@android5.5.0
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)
+Content-Type: application/x-www-form-urlencoded
+Authorization: Signature signature="12628E185CA812F637B362001223BB7086B9257177673A15A7EB7D461CCDDF635F5EEE1EAE01A646606F9B50A54BFC4FAF8B4B025880515E94D460ECB30468C49B2CB10846DBE33510EAF600A6D2D71451AA4E05722DFC095D409AA0361B0E7F57518CD17C8C6559E002082C2C55BE21F51E4659B077A0CDC1AC16B549B4E52A5C0F7FAE73AD2AF00581AA1CA84E95C4AAA4FC0AA7E1D30B31D69A7CF491E1A2CB2D12D48099FFCB104D058E0DB94C0B7A4EA4B1910D145F8DABB55784EFB709E87960C1FA9DEC42F6AAC6D87417AC6075FB1D16EDF309A9E3901D51779A9B67582F5B8D40AEB9A805963BEDE8D081B29DF18C465384C95D014E12965AA94DC856E3B6CA1C72A3CFF3281B7010B466A598B183819DAF1FDB5C90C1D931AE6EF7E38ED8EC9A6D492DED577FD010AACA16",adj_signing_id="1300000",algorithm="adj7",headers_id="8",native_version="3.62.0"
+Content-Length: 1031
+
+store_name_from_system=com.android.vending&gps_adid_attempt=1&country=IN&api_level=31&hardware_name=S2SE32.28-28-4&app_version=3.2.33&app_token=vf3lochhmgw0&installed_at=2026-10-07T10%3A45%3A37.800Z%2B0530&created_at=2026-10-07T10%3A45%3A53.226Z%2B0530&wait_total=0.0&device_type=phone&language=en&gps_adid=g&foreground=1&connectivity_type=1&device_manufacturer=motorola&display_width=1080&device_name=moto+g42&needs_response_details=1&os_build=S2SE32.28-28-4&updated_at=2026-10-07T10%3A45%3A37.800Z%2B0530&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&screen_format=long&last_error=0&gps_adid_src=service&wait_time=0.0&os_version=12&first_error=0&android_uuid=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa&sent_at=2026-10-07T10%3A45%3A53.256Z%2B0530&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&session_count=1&display_height=2237&package_name=social.hunch.app&initiating_package_name=com.android.vending&os_name=android&ui_mode=1&enqueue_size=0&tracking_enabled=1&ff_first_session_delay=1

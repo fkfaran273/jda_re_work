@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+FiddlerGateway: Direct
+StartTime: 14:41:35.380
+Connection: close
+
+Encrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.
+
+Secure Protocol: Tls13
+Cipher: Aes256 256bits
+Hash Algorithm: Sha384 ?bits
+Key Exchange: None 255bits
+
+== Server Certificate ==========
+[Subject]
+  CN=mail.ru
+
+[Issuer]
+  CN=YR1, O=Let's Encrypt, C=US
+
+[Serial Number]
+  05BD3A85F6C31BD4220CED7C4F69633DD461
+
+[Not Before]
+  01-09-2026 03:46:10 PM
+
+[Not After]
+  30-11-2026 03:46:09 PM
+
+[Thumbprint]
+  270F0145CDDBE9DE649A3A4D696768AA096A6F13
+
+[SubjectAltNames]
+*.mail.ru, mail.ru

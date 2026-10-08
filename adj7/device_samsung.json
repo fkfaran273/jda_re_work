@@ -1,0 +1,12 @@
+{
+    "api_level": "36", "os_version": "16",
+    "device_name": "SM-F741N", "device_manufacturer": "samsung",
+    "hardware_name": "BP2A.250605.031.A3", "os_build": "BP2A.250605.031.A3",
+    "language": "en", "country": "IN",
+    "display_width": "1080", "display_height": "2640",
+    "screen_density": "high", "screen_size": "large", "screen_format": "long",
+    "cpu_type": "arm64-v8a", "connectivity_type": "1",
+    "device_type": "phone", "environment": "production",
+    "timezone": "+0530",
+    "mcc": "405", "mnc": "54"
+}

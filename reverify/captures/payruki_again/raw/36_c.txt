@@ -1,0 +1,11 @@
+POST https://app.adjust.com/event HTTP/1.1
+Client-SDK: android5.6.0
+Authorization: Signature signature="1ABE6F7C642BEF912F5FB9E4536A32EF55C2DF5DE420778074291DCE280D39355A76BFF986D35256B96D124B87850EDA43F97146B9B5587C2592D3BF4DA161D631EFE11A372AF2943AE8B3A35CB257BE1BFB6FC235DEE7A81D6897E04EC1DE07D9D1603AD878FF451F7DDA58ACAE0FC26602F333427501CB39308AB27615536E1EF6D66FAC1B6DBD80D4A825CA9BFF79AAA8A8369E952457C994D772E72FE39499691C7D8DDABA819DE06EF1EEDB89A32F290B26903C2EC5A9553C2DAEEE48714FC90A94F1A832BA5C828BFA543883BB4DE436C9E0F8BD2CD33C5983D3312FACFCE5CE1E0E89D07E3235C74EDC1A178938CA4182F3637EC881D21606D6592DF11238B0A05DEC7F11FFC1307DAC6A2B0E4D0020E19C4F587BF1E5CA55D63FA7BB7D246B8A6DC67FFA83B5DC5359AD4394",adj_signing_id="1300000",algorithm="adj7",headers_id="8",native_version="3.62.0"
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)
+Host: app.adjust.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 1114
+
+country=IN&api_level=31&hardware_name=S2SE32.28-28-4&partner_params=%7B%22payrupik_c_id%22%3A%224c2576c7-56da-3568-9d9c-dd5ef029b6c8%22%7D&app_version=3.0.4&app_token=smxi7gqwu39c&wait_total=0.0&device_type=phone&language=en&gps_adid=b40be343-88a9-49e7-a4da-007211fb222a&foreground=1&connectivity_type=1&os_build=S2SE32.28-28-4&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&gps_adid_src=service&subsession_count=1&wait_time=0.0&first_error=0&sent_at=2026-10-07T10%3A55%3A33.489Z%2B0530&offline_mode_enabled=0&screen_density=high&session_count=1&ui_mode=1&enqueue_size=0&gps_adid_attempt=1&event_count=1&session_length=5&created_at=2026-10-07T10%3A55%3A33.460Z%2B0530&device_manufacturer=motorola&display_width=1080&event_token=y3sjx5&time_spent=5&device_name=moto+g42&needs_response_details=1&screen_format=long&last_error=0&seq=1&os_version=12&callback_params=%7B%22google_adid%22%3A%22b40be343-88a9-49e7-a4da-007211fb222a%22%7D&android_uuid=55514fec-7f21-4e7c-af22-1ab219cd9566&environment=production&attribution_deeplink=1&display_height=2237&package_name=in.hanafintech&os_name=android&tracking_enabled=1

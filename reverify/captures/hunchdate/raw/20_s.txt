@@ -1,0 +1,23 @@
+HTTP/1.1 200 OK
+Content-Type: text/javascript; charset=UTF-8
+Vary: Origin
+x-ad-api-version-warning: The call has been auto-upgraded to v21.0 as v16.0 has been deprecated.
+cross-origin-resource-policy: cross-origin
+x-app-usage: {"call_count":0,"total_cputime":0,"total_time":0}
+Access-Control-Allow-Origin: *
+facebook-api-version: v21.0
+Strict-Transport-Security: max-age=15552000; preload
+Pragma: no-cache
+Cache-Control: private, no-cache, no-store, must-revalidate
+Expires: Sat, 01 Jan 2000 00:00:00 GMT
+x-fb-request-id: Am0R2gZd-ea4ZKD3JKzvAGR
+x-fb-trace-id: Aa+E8GHJZQE
+x-fb-rev: 1049469296
+X-FB-Debug: 9C0TIv2g6JauWJBZXHa0k6ciHZY5BayFoV1IpTAyhKpboD6r5ZP/SY5HFDol8SJK20WYtWpFAC4oVvK/BVjvoQ==
+Date: Tue, 06 Oct 2026 19:40:45 GMT
+X-FB-Connection-Quality: EXCELLENT; q=0.9, rtt=15, rtx=1, c=10, mss=1392, tbw=6476, tp=-1, tpl=-1, uplat=262, ullat=0
+Alt-Svc: h3=":443"; ma=86400
+Connection: keep-alive
+Content-Length: 16
+
+{"success":true}

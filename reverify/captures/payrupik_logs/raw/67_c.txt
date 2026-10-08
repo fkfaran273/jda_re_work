@@ -1,0 +1,7 @@
+GET https://app-api.payrupikloan.in/Account/RegisterAgreement?cipher_txt=ZCYn%2B6FiN0XA1PwRX%2FVAcjertYCHVJlqN7Z3pPpiPtBnbVPqKyMTn1RusIXFbiMhiUbuVGur2YXG%0A3PSUPIuPR%2FMcMJHXkLEzpTI2xX%2BXfRS6e0IQF%2BeQx2Oyo72C9fZrFjYkoiZQ09qcrMQgpkMCNAfB%0AunOf3uZSpXTWv%2FURxbdqBkMoLmLwScAJbgyOZK9vrXvxS6NC9psjLdrqtU6yLQ9h9ad1WM0dugZa%0AuuyYhCCLvdrrjS7cFsAh8okeipV%2BAuNkdXKKaBsSDd7WKZRvufrU0FNWl3BXEB8JoBhZGQEmrh%2F%2B%0Aoz6auVmIMO47dk9l%2F%2Fyg7SfPLEwp6beppQmkLftWpaAkD%2FBM9zX0vuXb6B%2F4YmebkAi4xVlWCZTR%0APYJH7HI9UmWCdlqgdwYYoFF921j6JN1qhQchh2FosaOYGMpyavmyzsAsZoP2jF7wNV6rDypZcKbY%0A5UAI0eXGYmLZmQ%3D%3D%0A&digest=8F26E8A1ED8F0CA3E9AFF5F7FBA5ED6DE0F32BA0&encrypt_version=2.0 HTTP/1.1
+User-Agent: b4bb4595-9007-392f-9c6d-608e5c50a29b india-hikredit(3.0.4) android
+x-india-hikredit-token: BC745E592CCB6FE1D01C58046A6A255C13E2DB2B
+Host: app-api.payrupikloan.in
+Connection: Keep-Alive
+Accept-Encoding: gzip
+

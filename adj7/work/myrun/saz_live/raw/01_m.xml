@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="1" BitFlags="0">
+  <SessionTimers ClientConnected="2026-10-08T00:43:25.4090378+05:30" ClientBeginRequest="2026-10-08T00:43:25.4239485+05:30" GotRequestHeaders="2026-10-08T00:43:25.4450676+05:30" ClientDoneRequest="2026-10-08T00:43:25.4570252+05:30" GatewayTime="0" DNSTime="104" TCPConnectTime="25" HTTPSHandshakeTime="0" ServerConnected="2026-10-08T00:43:25.5900675+05:30" FiddlerBeginRequest="2026-10-08T00:43:25.5979294+05:30" ServerGotRequest="2026-10-08T00:43:25.5979294+05:30" ServerBeginResponse="2026-10-08T00:43:25.6569845+05:30" GotResponseHeaders="2026-10-08T00:43:25.6569845+05:30" ServerDoneResponse="2026-10-08T00:43:25.6569845+05:30" ClientBeginResponse="2026-10-08T00:43:25.6569845+05:30" ClientDoneResponse="2026-10-08T00:43:25.6569845+05:30" />
+  <PipeInfo />
+  <SessionFlags>
+    <SessionFlag N="https-client-version" V="None" />
+    <SessionFlag N="x-egressport" V="10754" />
+    <SessionFlag N="x-responsebodytransferlength" V="932" />
+    <SessionFlag N="x-clientport" V="10753" />
+    <SessionFlag N="ui-backcolor" V="Yellow" />
+    <SessionFlag N="x-clientip" V="127.0.0.1" />
+    <SessionFlag N="ui-oldcolor" V="WindowText" />
+    <SessionFlag N="x-hostip" V="15.252.227.36" />
+    <SessionFlag N="x-processinfo" V="python:44364" />
+  </SessionFlags>
+</Session>

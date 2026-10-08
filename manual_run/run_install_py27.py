@@ -15,8 +15,8 @@ bytes; only the stdlib names differ.  Original header:
     python -u run_install.py --device FILE       # device dump, either layout
 
 Every API method is self-contained -- it builds its fixed body dict, signs it
-(headers["Authorization"] = S.sign_request(fields, "...", second=sec)) and
-sends it with requests:
+(headers["Authorization"] = S.sign_request(fields, "...", campaign_data,
+second=sec)) and sends it with requests:
 
     session(campaign_data, device_data)      -> POST /session
     sdk_click(campaign_data, device_data)    -> POST /sdk_click
@@ -33,6 +33,8 @@ import datetime
 import httplib
 import json
 import os
+import random
+import re
 import sys
 import time
 import urllib
@@ -68,7 +70,7 @@ SEND_EVENT = "--event" in sys.argv
 SEND_INFO = "--info" in sys.argv
 # --gap N  pause N seconds before each request, so a slow tracker can
 #          register a click before we install against it
-GAP = 0
+GAP = 30
 for _i, _a in enumerate(sys.argv):
     if _a == "--gap" and _i + 1 < len(sys.argv):
         GAP = int(sys.argv[_i + 1])
@@ -93,6 +95,22 @@ if "--event" in sys.argv and _args:
 # reftag is ever issued.
 BROWSER_UA = ("Mozilla/5.0 (Linux; Android 12) AppleWebKit/537.36 "
               "(KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36")
+# A real Chrome click sends a full fingerprint; affiliate trackers qualify
+# clicks by it.  A 3-header python click can be silently disqualified.
+BROWSER_HEADERS = {
+    "User-Agent": BROWSER_UA,
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,"
+              "image/avif,image/webp,image/apng,*/*;q=0.8,"
+              "application/signed-exchange;v=b3;q=0.7",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Accept-Encoding": "identity",
+    "Connection": "close",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+}
 
 
 # ==========================================================================
@@ -171,6 +189,9 @@ CAMPAIGNS["penti"] = {
     "retention": {1: 25, 2: 25, 3: 24, 4: 24, 5: 23, 6: 22, 7: 20},
     "cert_sha1": "fad0f10d60f93c17937b2f1eb6c09691ae7d74bd",
     "adj_verification": "KlcAG2cbAAsKSl1KVi0FGiJbDHMI",
+    # the head phase is PER BUILD: penti's libsigner uses 0x2B, the 5.8-SDK
+    # builds (creditsea, declic) use 0x40 -- recovered from genuine captures
+    "head_phase": (0x2B,),
     # their original_link template; {click_id}/{sub3} resolve to the install's
     # advertising id, and gps_adid= is appended because their template only
     # carries the id as idfa= (the Organic in the AutoLabs log)
@@ -190,6 +211,7 @@ CAMPAIGNS["declic"] = {
     },
     "cert_sha1": "dd60fcbb9a438b4c8eb82d274aa8818595bc8445",
     "adj_verification": "KlcAG2cbAAsKSl1KVi0FGiJbDHMI",
+    "head_phase": (0x40,),
     # the live tracker whose 3 Oct install JOINED (see the saz capture); its
     # template already carries gps_adid={gaid}, so nothing needs appending
     "click_link": ("https://app.adjust.com/23hfwhce?campaign=ADB_SEP"
@@ -201,18 +223,31 @@ CAMPAIGNS["declic"] = {
                    "jk87787%26idfa_id%3D{gaid}"),
     "poll_delays": [3, 8, 20],
 }
-campaign_data = CAMPAIGNS["penti"]
+CAMPAIGNS["creditsea"] = {
+    "app_name": "Creditsea",
+    "package_name": "com.creditsea.app",
+    "app_version_name": "1.0.174",
+    "tracker": "adjust",
+    "adjust": {
+        "app_token": "i2n2e5kmcpvk",
+        "sdk": "flutter5.8.0@android5.8.0",                     # Flutter composite value
+    },
+    "cert_sha1": "06f5ffcee0541608765407ab9e0180e7b1b7e7d0",
+    "adj_verification": "KlcAG2cbAAsKSl1KVi0FGiJbDHMI",
+    "head_phase": (0x40,),
+    # affiliate click URL (mobpine); it redirects into Adjust, and
+    # open_click_link appends gps_adid= because the template lacks it
+    "click_link": "http://clicks.mobpine.com/api/track/v1/click?aff_id=3&offer_id=23482250",
+    "poll_delays": [3, 8, 20],
+}
+campaign_data = CAMPAIGNS["declic"]
 if _args and _args[0] in CAMPAIGNS:
     campaign_data = CAMPAIGNS[_args[0]]
-
+print campaign_data.get("app_name")
 # --campaign FILE swaps the whole campaign dict (same nested layout)
 _cl_campaign = _cli_value("--campaign")
 if _cl_campaign:
     campaign_data = json.load(open(_cl_campaign))
-    S.campaign_data = campaign_data
-
-# the signer signs with this campaign from here on
-S.campaign_data = campaign_data
 
 # --device FILE overrides device_data.json, also in either layout
 _cl_device = _cli_value("--device")
@@ -245,6 +280,11 @@ def _stamp(ts, ms, tz_min=330, tz_label="+0530"):
     return dt.strftime("%Y-%m-%dT%H:%M:%S." + "%03d" % ms + "Z" + tz_label)
 
 
+def _ms(base):
+    """A plausible millisecond near `base` -- the genuine stamps vary."""
+    return max(0, min(999, base + random.randint(-180, 180)))
+
+
 def _ua(device):
     """The Dalvik User-Agent the app itself would send."""
     return ("Dalvik/2.1.0 (Linux; U; Android %s; %s Build/%s)"
@@ -256,7 +296,7 @@ def _headers(campaign, device, fields, kind, sec):
     """The header dict every api method sends, signature included."""
     return {
         "Client-SDK": campaign["adjust"]["sdk"],
-        "Authorization": S.sign_request(fields, kind, second=sec),
+        "Authorization": S.sign_request(fields, kind, campaign, second=sec),
         "User-Agent": _ua(device),
         "Content-Type": "application/x-www-form-urlencoded",
     }
@@ -284,10 +324,14 @@ def session(campaign_data, device_data):
     installed_at/updated_at land INSTALL_AFTER seconds after the click, so
     the body is consistent with the click -> install order the server checks.
     """
+    # the gap lands BEFORE stamping: created_at/sent_at must postdate the
+    # click that caused the install (and installed_at, click+INSTALL_AFTER)
+    if GAP and not DRY_RUN:
+        time.sleep(GAP)
     sec = signing_second()
     tz_minutes, tz = _tz_parts(device_data)
     installed = _stamp(RUN["click_sec"] + INSTALL_AFTER
-                       if RUN["click_sec"] else sec, 774, tz_minutes, tz)
+                       if RUN["click_sec"] else sec, _ms(774), tz_minutes, tz)
     fields = {
         "first_error": device_data.get("first_error", "0"),
         "package_name": campaign_data["package_name"],
@@ -299,7 +343,7 @@ def session(campaign_data, device_data):
         "device_manufacturer": device_data.get("device_manufacturer", ""),
         "connectivity_type": device_data.get("connectivity_type", "0"),
         "offline_mode_enabled": "0",
-        "sent_at": _stamp(sec, 942, tz_minutes, tz),
+        "sent_at": _stamp(sec, _ms(942), tz_minutes, tz),
         "installed_at": installed,
         "environment": "production",
         "os_version": device_data.get("os_version", ""),
@@ -324,7 +368,7 @@ def session(campaign_data, device_data):
         "app_version": campaign_data["app_version_name"],
         "language": device_data.get("language", ""),
         "country": device_data.get("country", ""),
-        "created_at": _stamp(sec, 928, tz_minutes, tz),
+        "created_at": _stamp(sec, _ms(928), tz_minutes, tz),
         "session_count": "1",
         "initiating_package_name": "com.android.vending",
         "device_name": device_data.get("device_name", ""),
@@ -334,9 +378,9 @@ def session(campaign_data, device_data):
         "api_level": device_data.get("api_level", ""),
         "os_build": device_data.get("os_build", ""),
     }
-    # NO mcc/mnc here: the 3.13.9 app's genuine bodies carry neither (the
-    # old 3.12.1 app did, golden saz 8 Sep), and sending them goes Organic
-    # live-verified 2026-10-03 with BOTH consistent and mismatched values.
+    # mcc/mnc go in only when the device dump carries both; both shapes are
+    # genuine (the 3 Oct declic capture signed them, the g42/creditsea ones
+    # did not) and the claims law signs whichever keys the map carries.
     if device_data.get("mcc") and device_data.get("mnc"):
         fields["mcc"] = device_data["mcc"]
         fields["mnc"] = device_data["mnc"]
@@ -345,8 +389,6 @@ def session(campaign_data, device_data):
     if DRY_RUN:
         print("           dry run -- not sending")
         return {}
-    if GAP:
-        time.sleep(GAP)
     r = requests.post("https://app.adjust.com/session", data=fields,
                       headers=headers, timeout=30, proxies=PROXIES)
     print("           -> %d  [t=+%.0fs]"
@@ -357,15 +399,17 @@ def session(campaign_data, device_data):
 def sdk_click(campaign_data, device_data):
     """POST /sdk_click -- the install claiming a click.
 
-    click -> install_begin (click+8) -> installed (click+INSTALL_AFTER)."""
+    click -> install_begin (click+2..4) -> installed (click+INSTALL_AFTER)."""
     if not RUN["referrer"]:
         print("sdk_click no reftag -- skipped")
         return {}
+    if GAP and not DRY_RUN:              # gap before stamping (see session)
+        time.sleep(GAP)
     sec = signing_second()
     tz_minutes, tz = _tz_parts(device_data)
     click_sec = RUN["click_sec"] or sec
-    installed = _stamp(click_sec + INSTALL_AFTER, 774, tz_minutes, tz)
-    begin = click_sec + 8
+    installed = _stamp(click_sec + INSTALL_AFTER, _ms(774), tz_minutes, tz)
+    begin = click_sec + random.randint(2, 4)
     fields = {
         "package_name": campaign_data["package_name"],
         "google_play_instant": "0",
@@ -377,7 +421,7 @@ def sdk_click(campaign_data, device_data):
         "device_manufacturer": device_data.get("device_manufacturer", ""),
         "connectivity_type": device_data.get("connectivity_type", "0"),
         "offline_mode_enabled": "0",
-        "sent_at": _stamp(sec, 970, tz_minutes, tz),
+        "sent_at": _stamp(sec, _ms(970), tz_minutes, tz),
         "click_time": _stamp(click_sec, 0, tz_minutes, tz),
         "os_version": device_data.get("os_version", ""),
         "installed_at": installed,
@@ -406,7 +450,7 @@ def sdk_click(campaign_data, device_data):
         "language": device_data.get("language", ""),
         "referrer": RUN["referrer"],
         "country": device_data.get("country", ""),
-        "created_at": _stamp(sec, 961, tz_minutes, tz),
+        "created_at": _stamp(sec, _ms(961), tz_minutes, tz),
         "session_count": "1",
         "device_name": device_data.get("device_name", ""),
         "install_begin_time": _stamp(begin, 0, tz_minutes, tz),
@@ -424,8 +468,6 @@ def sdk_click(campaign_data, device_data):
     if DRY_RUN:
         print("           dry run -- not sending")
         return {}
-    if GAP:
-        time.sleep(GAP)
     r = requests.post("https://app.adjust.com/sdk_click", data=fields,
                       headers=headers, timeout=30, proxies=PROXIES)
     print("           -> %d  [t=+%.0fs]"
@@ -450,9 +492,9 @@ def attribution(campaign_data, device_data):
         "device_type": "phone",
         "offline_mode_enabled": "0",
         "attribution_deeplink": "1",
-        "sent_at": _stamp(sec, 696, tz_minutes, tz),
+        "sent_at": _stamp(sec, _ms(696), tz_minutes, tz),
         "initiated_by": "sdk",
-        "created_at": _stamp(sec, 666, tz_minutes, tz),
+        "created_at": _stamp(sec, _ms(666), tz_minutes, tz),
         "device_name": device_data.get("device_name", ""),
         "environment": "production",
         "os_version": device_data.get("os_version", ""),
@@ -466,15 +508,24 @@ def attribution(campaign_data, device_data):
     del headers["Content-Type"]          # a GET carries no body
     if GAP:
         time.sleep(GAP)
-    r = requests.get("https://app.adjust.com/attribution", params=fields,
-                     headers=headers, timeout=30, proxies=PROXIES)
-    return r.json().get("attribution", {}) if r.content else {}
+    for _try in range(3):                # long waits see transient TLS drops
+        try:
+            r = requests.get("https://app.adjust.com/attribution",
+                             params=fields, headers=headers, timeout=30,
+                             proxies=PROXIES)
+            return r.json().get("attribution", {}) if r.content else {}
+        except Exception:
+            if _try == 2:
+                raise
+            time.sleep(3)
 
 
 def event(campaign_data, device_data, event_token=None, partner_params=None,
           seq=1, event_count=1, push_token=None):
     """POST /event -- an in-app event.  A plain event passes neither
     event_token nor partner_params and the claims law omits them."""
+    if GAP and not DRY_RUN:              # gap before stamping (see session)
+        time.sleep(GAP)
     sec = signing_second()
     tz_minutes, tz = _tz_parts(device_data)
     fields = {
@@ -487,7 +538,7 @@ def event(campaign_data, device_data, event_token=None, partner_params=None,
         "device_manufacturer": device_data.get("device_manufacturer", ""),
         "connectivity_type": device_data.get("connectivity_type", "0"),
         "offline_mode_enabled": "0",
-        "sent_at": _stamp(sec, 940, tz_minutes, tz),
+        "sent_at": _stamp(sec, _ms(940), tz_minutes, tz),
         "environment": "production",
         "os_version": device_data.get("os_version", ""),
         "android_uuid": RUN["android_uuid"],
@@ -522,7 +573,7 @@ def event(campaign_data, device_data, event_token=None, partner_params=None,
         "session_count": "1",
         "session_length": "0",
         "subsession_count": "1",
-        "created_at": _stamp(sec, 873, tz_minutes, tz),
+        "created_at": _stamp(sec, _ms(873), tz_minutes, tz),
     }
     if event_token:
         fields["event_token"] = event_token
@@ -535,8 +586,6 @@ def event(campaign_data, device_data, event_token=None, partner_params=None,
     if DRY_RUN:
         print("           dry run -- not sending")
         return {}
-    if GAP:
-        time.sleep(GAP)
     r = requests.post("https://app.adjust.com/event", data=fields,
                       headers=headers, timeout=30, proxies=PROXIES)
     print("           -> %d  [t=+%.0fs]"
@@ -548,6 +597,8 @@ def info(campaign_data, device_data, source="push", push_token=None):
     """POST /info -- SDK diagnostics, not an attribution path.  The claims
     key list is verified against two independent captures
     (verify_info_law.py)."""
+    if GAP and not DRY_RUN:              # gap before stamping (see session)
+        time.sleep(GAP)
     sec = signing_second()
     tz_minutes, tz = _tz_parts(device_data)
     fields = {
@@ -559,7 +610,7 @@ def info(campaign_data, device_data, source="push", push_token=None):
         "device_manufacturer": device_data.get("device_manufacturer", ""),
         "connectivity_type": device_data.get("connectivity_type", "0"),
         "offline_mode_enabled": "0",
-        "sent_at": _stamp(sec, 232, tz_minutes, tz),
+        "sent_at": _stamp(sec, _ms(232), tz_minutes, tz),
         "environment": "production",
         "os_version": device_data.get("os_version", ""),
         "android_uuid": RUN["android_uuid"],
@@ -590,7 +641,7 @@ def info(campaign_data, device_data, source="push", push_token=None):
         "api_level": device_data.get("api_level", ""),
         "os_build": device_data.get("os_build", ""),
         "source": source,
-        "created_at": _stamp(sec, 210, tz_minutes, tz),
+        "created_at": _stamp(sec, _ms(210), tz_minutes, tz),
     }
     if push_token:
         fields["push_token"] = push_token
@@ -599,8 +650,6 @@ def info(campaign_data, device_data, source="push", push_token=None):
     if DRY_RUN:
         print("           dry run -- not sending")
         return {}
-    if GAP:
-        time.sleep(GAP)
     r = requests.post("https://app.adjust.com/info", data=fields,
                       headers=headers, timeout=30, proxies=PROXIES)
     print("           -> %d  [t=+%.0fs]"
@@ -624,6 +673,21 @@ def open_click_link(gaid, dp2=None):
     url = campaign_data["click_link"]
     for _k in ("gaid", "dp2", "click_id", "sub3", "idfa"):
         url = url.replace("{%s}" % _k, gaid)
+
+    def fill(u):
+        """Fill empty or macro gps_adid params with the install's id, at any
+        hop.  Affiliate chains (mobpine -> go.link) forward their OWN device
+        param adj_gps_adid= EMPTY, and an Adjust click without a device id
+        can never join the install."""
+        u = re.sub(r'adj_gps_adid=(&|$)', 'adj_gps_adid=' + gaid + r'\1', u)
+        u = re.sub(r'(?<!adj_)gps_adid=(&|$)', 'gps_adid=' + gaid + r'\1', u)
+        u = re.sub(r'adj_gps_adid=%7B[^&]*%7D', 'adj_gps_adid=' + gaid, u)
+        u = re.sub(r'(?<!adj_)gps_adid=%7B[^&]*%7D', 'gps_adid=' + gaid, u)
+        u = re.sub(r'adj_gps_adid=[{][^&]*[}]', 'adj_gps_adid=' + gaid, u)
+        u = re.sub(r'(?<!adj_)gps_adid=[{][^&]*[}]', 'gps_adid=' + gaid, u)
+        return u
+
+    url = fill(url)
     if "gps_adid=" not in url:
         url += "&gps_adid=" + gaid
         print("NOTE       click template had no gps_adid= -- appended %s"
@@ -649,10 +713,7 @@ def open_click_link(gaid, dp2=None):
             _path = urlparse.urlunsplit(("", "", parts.path or "/",
                                              parts.query, ""))
         try:
-            c.request("GET", _path,
-                headers={"User-Agent": BROWSER_UA,
-                         "Accept-Encoding": "identity",
-                         "Connection": "close"})
+            c.request("GET", _path, headers=dict(BROWSER_HEADERS))
             r = c.getresponse()
             r.read()
             location = r.getheader("Location") or ""
@@ -663,7 +724,7 @@ def open_click_link(gaid, dp2=None):
             return reftag.split(";S.browser_fallback_url")[0]  # not part of it
         if not location:
             break
-        url = urlparse.urljoin(url, location)
+        url = fill(urlparse.urljoin(url, location))
     return None
 
 
@@ -709,6 +770,7 @@ def main():
     for delay in campaign_data["poll_delays"]:
         time.sleep(delay)
         verdict = attribution(campaign_data, DEVICE)
+        print verdict
         print("poll +%-2ds   %s / %s  eng %s  [t=+%.0fs]"
               % (delay, verdict.get("network"),
                  verdict.get("tracker_token"),

@@ -1,0 +1,8 @@
+HTTP/1.1 101 Switching Protocols
+Server: nginx
+Date: Tue, 06 Oct 2026 19:40:49 GMT
+Connection: upgrade
+Upgrade: websocket
+Sec-WebSocket-Accept: VEatpZw8xmWQwo8RyglgJmSB27w=
+Sec-WebSocket-Extensions: permessage-deflate; server_no_context_takeover; client_no_context_takeover
+

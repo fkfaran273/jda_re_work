@@ -1,0 +1,11 @@
+POST https://app.adjust.com/session HTTP/1.1
+Client-SDK: flutter5.5.0@android5.5.0
+Authorization: Signature signature="0DA220096E5B9FD236D9E52D49C1427A30B2DF1EAF02A27D39E445808667494E112FB48C4867B6881DD6BB251BD441223AFD44E3D33A60E9A74262E252AD9FC301DBF0729E0C7219F65B85C0E8B65FA1BA80AEED518DEF688ECD05BA96997C83E86EBB75E9A396300321A2CC9B9D702BD6C7CE74F34B19C230A1637F83E9E12A33E22891D7E972083404903054CBAEE014270BEA6E846A822C95616E00D08E863F339F3006CE9833CC7E1AD3DEFA551DB18E43A97FDBA61572873D751609DE8C09A1AFC534D82EF158195BF93031D2A2D6799684E5EC4B280F3F93C2711041F37F4A5D4A051C8F40E4C9FE61B519301CCC2464413DB8A9B2060EBEDCB6BA7F20AB89763498C90B17A18949924ACAAD8D9539E71C194EB836E16928843D482254D1C4CF1EC0C80186A004FFC5FECE7848",adj_signing_id="1300000",algorithm="adj7",headers_id="8",native_version="3.62.0"
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)
+Host: app.adjust.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 1066
+
+store_name_from_system=com.android.vending&gps_adid_attempt=1&country=IN&api_level=31&hardware_name=S2SE32.28-28-4&app_version=3.2.33&app_token=vf3lochhmgw0&installed_at=2026-10-08T12%3A25%3A33.589Z%2B0530&created_at=2026-10-08T12%3A28%3A38.295Z%2B0530&wait_total=0.0&device_type=phone&language=en&gps_adid=2cff6766-14e2-439f-b229-4894ea53b87c&foreground=1&connectivity_type=1&ff_first_session_delay=1&device_manufacturer=motorola&display_width=1080&device_name=moto+g42&needs_response_details=1&os_build=S2SE32.28-28-4&updated_at=2026-10-08T12%3A25%3A33.589Z%2B0530&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&screen_format=long&last_error=0&gps_adid_src=service&wait_time=0.0&os_version=12&first_error=0&android_uuid=6dbf173d-79e4-4fa2-a9c7-62d98f68571c&sent_at=2026-10-08T12%3A28%3A38.559Z%2B0530&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&session_count=1&display_height=2237&package_name=social.hunch.app&initiating_package_name=com.android.vending&os_name=android&ui_mode=1&enqueue_size=0&tracking_enabled=1

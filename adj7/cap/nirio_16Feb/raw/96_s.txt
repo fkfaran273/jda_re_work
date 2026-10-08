@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+content-type: application/json; charset=utf-8
+date: Mon, 16 Feb 2026 10:47:20 GMT
+content-length: 584
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-robots-tag: noindex
+
+{"app_token":"cv4d2hlazp4w","adid":"4212a983ee58dcb1564cb579148da234","attribution":{"tracker_token":"1xmjqt16","tracker_name":"Kwanko_Spykemedia_DTS::NOV::{affiliate_id}::{app_name}","network":"Kwanko_Spykemedia_DTS","campaign":"NOV","adgroup":"{affiliate_id}","creative":"{app_name}","deeplink":"nirio://home?adj_t=1wwj1ebt\u0026adj_campaign=NOV\u0026adj_adgroup={affiliate_id}\u0026adj_creative={app_name}\u0026adjust_no_sdkclick=1","engagement_time":"2026-02-16T10:43:00Z","installed_at":"2026-02-16T10:44:06Z","first_session_time":"2026-02-16T10:44:06Z","is_reattributed":false}}

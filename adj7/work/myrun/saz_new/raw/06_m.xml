@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="6" BitFlags="2100">
+  <SessionTimers ClientConnected="2026-10-07T13:05:37.1518156+05:30" ClientBeginRequest="2026-10-07T13:05:37.1663688+05:30" GotRequestHeaders="2026-10-07T13:05:37.1663688+05:30" ClientDoneRequest="2026-10-07T13:05:37.1663688+05:30" GatewayTime="0" DNSTime="0" TCPConnectTime="7" HTTPSHandshakeTime="18" ServerConnected="2026-10-07T13:05:37.1744089+05:30" FiddlerBeginRequest="2026-10-07T13:05:37.1744089+05:30" ServerGotRequest="2026-10-07T13:05:37.1744089+05:30" ServerBeginResponse="0001-01-01T00:00:00" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="0001-01-01T00:00:00" ClientBeginResponse="2026-10-07T13:05:37.1744089+05:30" ClientDoneResponse="2026-10-07T13:05:37.1744089+05:30" />
+  <PipeInfo />
+  <TunnelInfo BytesEgress="0" BytesIngress="0" />
+  <SessionFlags>
+    <SessionFlag N="https-client-version" V="Tls13" />
+    <SessionFlag N="x-supported-client-tls-protocols" V="15360" />
+    <SessionFlag N="x-egressport" V="13943" />
+    <SessionFlag N="x-responsebodytransferlength" V="0" />
+    <SessionFlag N="x-clientport" V="13935" />
+    <SessionFlag N="https-server-version" V="Tls13" />
+    <SessionFlag N="https-client-snihostname" V="graph.facebook.com" />
+    <SessionFlag N="x-clientip" V="::ffff:127.0.0.1" />
+    <SessionFlag N="https-client-sessionid" V="B6 C8 67 52 5D 02 D7 E1 67 17 13 05 5F 1F 61 5D 62 5E EA A2 12 04 E2 2E 6D BA DD FB FB A3 E1 05" />
+    <SessionFlag N="x-hostip" V="163.70.146.23" />
+    <SessionFlag N="x-processinfo" V="python:34048" />
+    <SessionFlag N="https-server-cipher" V="Aes128 128bits" />
+  </SessionFlags>
+</Session>

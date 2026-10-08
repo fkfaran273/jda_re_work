@@ -1,0 +1,6 @@
+{
+ "adid": "db32dec0197ae815652cb0e5cb9063e1", 
+ "resp": "{\"app_token\":\"1ri26ekrhwtc\",\"adid\":\"db32dec0197ae815652cb0e5cb9063e1\",\"attribution\":{\"tracker_token\":\"693eppa\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-10-08T08:04:12Z\",\"first_session_time\":\"2026-10-08T08:04:12Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}", 
+ "idfv": "6411A08B-47AF-44BF-9F1F-7FFE3C259B3C", 
+ "idfa": "1961F5B8-5B8B-4CAD-B7C3-6F81C417F7CF"
+}

@@ -1,0 +1,5 @@
+{
+ "idfv": "303C362A-9E5C-4346-A277-ED080D2931A4",
+ "adid": "c2d6ebd6da124811903974edf0cd1512",
+ "resp": "{\"app_token\":\"jut9tib0eeps\",\"adid\":\"c2d6ebd6da124811903974edf0cd1512\",\"attribution\":{\"tracker_token\":\"unattr\",\"tracker_name\":\"No User Consent\",\"network\":\"No User Consent\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-10-05T09:21:43Z\",\"first_session_time\":\"2026-10-05T09:21:43Z\",\"is_reattributed\":false,\"is_redownload_install\":false},\"skadn_conv_value\":0,\"skadn_coarse_value\":\"low\",\"skadn_lock_window\":false}"
+}

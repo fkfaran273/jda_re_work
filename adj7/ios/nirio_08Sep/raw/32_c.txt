@@ -1,0 +1,15 @@
+POST https://consent.adjust.com/third_party_sharing HTTP/1.1
+Host: consent.adjust.com
+Accept: */*
+baggage: sentry-environment=production,sentry-public_key=207e9d21366f1b373ef206dffb2f8c8b,sentry-release=com.fdjservices.nirio%4016.4.6%2B494,sentry-trace_id=313e11fe2e0040068fc7fe4e4126c64a
+Authorization: Signature signature="0AE9BB1F6DB534507518AE4377BEA206DD9B31A88A08797BAAED1A1BD4D96FFFDCC4F6FA66423BDF0C9B86BBCA1511065FF450E13E432D0547A9514847E8B1EA39D5E0F6F1E4033ACA1255B5099549908507FDD2043E5A6D9C45BA71761CC756080FB9BCF7927947B1AECCB100942CAB0D6A7576E74D57C60B861DBB6DED0C1D7DDF509955AFDBCC7F83CEB68EC59767CEFBD0C1578C9EEAF5C94D8F739760C2EE8720FE2A1D5A541ADCB964B4BD8D0C0BFE36C8D53DA97D3E27BEB743F9BAD082822EDC393433A5A6C6BB120E64780E779823C668364C15CAA9B3354D0E8475DD9657F1396CEDD291481D4D90F039D3ED42BBB9C4ECAA79A76A2564EBB64DAA15477BBAD5E0EF5621CD3746942B3CC1E55E637399E7B83F465BFC0982C0128646DA45E6043BF10DB517E40E2FE0499A",adj_signing_id="1300000",algorithm="adj7",headers_id="7",native_version="3.61.0"
+Client-Sdk: react-native5.4.4@ios5.4.6
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+sentry-trace: 313e11fe2e0040068fc7fe4e4126c64a-41da15f6ea714944-0
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 708
+User-Agent: Nirio/494 CFNetwork/1410.1 Darwin/22.6.0
+Connection: keep-alive
+
+bundle_id=com.fdjservices.nirio&primary_dedupe_token=2fc20773-baf8-4688-a3d7-3f7c8fec974f&app_version=494&foreground=1&installed_at=2026-09-08T11%3A10%3A40.319Z%2B0530&device_name=iPhone10%2C1&app_version_short=16.4.6&retry_count=0&needs_response_details=1&attribution_deeplink=1&session_count=0&os_name=ios&send_in_background_enabled=0&enqueue_size=0&sent_at=2026-09-08T11%3A11%3A09.484Z%2B0530&idfv=5C3E6785-B2DF-4992-A3EB-3816193CC01E&app_token=cv4d2hlazp4w&os_version=16.7.16&environment=production&started_at=2026-09-08T10%3A54%3A01.000Z%2B0530&created_at=2026-09-08T11%3A11%3A09.477Z%2B0530&offline_mode_enabled=0&device_type=iPhone&att_status=3&sharing=enable&idfa=EB91D1AA-B723-4291-AB2F-6F3E03751006

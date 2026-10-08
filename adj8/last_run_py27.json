@@ -1,8 +1,9 @@
 {
- "started": 1791125386.196, 
+ "started": 1791174818.234, 
  "app": "xyz.be.customer", 
- "reftag": null, 
- "click_second": 1791125386, 
- "android_uuid": "66b622ad-10a6-466b-ac3a-3aaec719ac2a", 
- "gaid": "f0dc7e24-71df-48e3-8e61-0a2e9f6f08c5"
+ "reftag": "adjust_reftag=cqa5qSfdHczv0&utm_source=Dinos_Dynamic_Partner&utm_campaign=DNS_NN85&utm_content=ADD_Arb_21_RFAMP_", 
+ "click_second": 1791174819, 
+ "adid": "5b8b06af852561aa74de14a9c44d1415", 
+ "android_uuid": "efe869c0-4798-4dae-be3b-91cc04f76791", 
+ "gaid": "bce3fc30-ac3a-41be-ab69-9ae36c0eb184"
 }

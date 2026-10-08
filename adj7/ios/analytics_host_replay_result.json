@@ -1,0 +1,8 @@
+{
+ "host": "analytics.adjust.com",
+ "att_status": "0",
+ "verdict": [
+  200,
+  "{\"app_token\":\"cv4d2hlazp4w\",\"adid\":\"04b529e4445ade26859bbd52088058de\",\"attribution\":{\"tracker_token\":\"pf7enwj\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-09-08T05:41:10Z\",\"first_session_time\":\"2026-09-08T05:41:10Z\",\"is_reattributed\":fal"
+ ]
+}

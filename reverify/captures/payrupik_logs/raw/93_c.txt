@@ -1,0 +1,13 @@
+GET https://rebus.rustore.ru/api/v3/ws?push_tokens=i1dpB1p-nnAdIALAQUu26KYkWTkgb20v HTTP/1.1
+Upgrade: websocket
+Connection: Upgrade
+Sec-WebSocket-Key: Ibu+ah3i1Z09MjvEoD7RVA==
+Sec-WebSocket-Version: 13
+Sec-WebSocket-Extensions: permessage-deflate
+User-Agent: host_sdk/7.2.0-rc01
+X-Vkpns-Package-Name: ru.vk.store
+content-type: application/json; charset=utf-8
+X-Request-Id: 61167966-91ad-42fa-a1e4-c74a7742b5e4
+Host: rebus.rustore.ru
+Accept-Encoding: gzip
+

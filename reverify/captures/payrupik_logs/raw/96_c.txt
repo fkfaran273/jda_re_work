@@ -1,0 +1,11 @@
+POST https://vkpns.rustore.ru/v1/projects/messages:get HTTP/1.1
+x-vkpns-request-id: 342d650d-424e-4d34-848f-89f0bb691dc0
+User-Agent: host_sdk/7.2.0-rc01
+X-Vkpns-Package-Name: ru.vk.store
+content-type: application/json; charset=utf-8
+Host: vkpns.rustore.ru
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 248
+
+{"requests":[{"project_id":"8yZ40aiQOJSAWA6sEIwcbZWaMnUweKXY","token":"i1dpB1p-nnAdIALAQUu26KYkWTkgb20v","min_syn":755,"limit":10},{"project_id":"TckRK3aDd9cyI7LFXFQxKIVePauB5q6u","token":"t9Y3uDS8TR4ty0iCWOseKlY5NTYFZfn1","min_syn":0,"limit":10}]}

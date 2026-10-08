@@ -1,0 +1,278 @@
+{
+ "1a template-bytes my==hand": [
+  true,
+  "len=256 jlen=240 pad=16"
+ ],
+ "1b field-order+separators": [
+  true,
+  "segs={...a...b...c...d...e...} with '{ \"a\":  ' (brace,sp,quote,a,quote,colon,2sp), ' ,\"b\": \"' etc."
+ ],
+ "1c A rjust-20 space-pad": [
+  true,
+  "hanaf-attr A='13106841944429420300' len=20 padded='13106841944429420300'"
+ ],
+ "1d A short-vector pad-char=0x20": [
+  true,
+  "got b'                   0'"
+ ],
+ "1e rjust-default-is-space": [
+  true,
+  "python str.rjust(20) pads U+0020"
+ ],
+ "1f H-uppercase": [
+  true,
+  "H slot 64 hex upper"
+ ],
+ "1g d8-uppercase": [
+  true,
+  "d8=98457008"
+ ],
+ "1h e==SHA0-upper": [
+  true,
+  "e=E3B0C44298FC1C14..."
+ ],
+ "1i 00-terminator position": [
+  true,
+  "idx=236 byte=00 tail=b'\" }\\x00\\x10\\x10'"
+ ],
+ "1j pad fill 0x10 len=256-len(j)": [
+  true,
+  "j_with00_len=240 pad_len=16"
+ ],
+ "1k pad-math 256-len": [
+  true,
+  "256-240=16"
+ ],
+ "2a fuzz my-vs-ref headers": [
+  true,
+  "24 seeds incl 0,1,2^31-1,2^31,2^32-1,negatives"
+ ],
+ "2b fresh-reimpl (310/8/pairXOR/BE) matches my": [
+  true,
+  "independent Schrage+additive code"
+ ],
+ "2c warmup!=310 differs": [
+  true,
+  "309/311 both differ"
+ ],
+ "2d draws==8 structural (16B header)": [
+  true,
+  "8 draws pairXOR->4 words->16B; draws!=8 would not fill 4 words"
+ ],
+ "2e pair-XOR+BE packing": [
+  true,
+  "d=['0x69848b74', '0xf63411c', '0x41f40fd6', '0x733f91f4', '0x35e48233', '0x2544699a', '0x45c55bcc', '0x48e29f0e']"
+ ],
+ "2f endian is big (LE differs)": [
+  true,
+  "be=66e7ca6832cb9e22 le=68cae766229ecb32"
+ ],
+ "2g pair-XOR load-bearing": [
+  true,
+  "first4draws!=xored"
+ ],
+ "2h draws 31-bit (v>>1)": [
+  true,
+  "max=2147469841"
+ ],
+ "2i seed normalization runs (no crash, 16B out)": [
+  true,
+  "24 seeds"
+ ],
+ "2j genuine sid44 header==make_header(sec)": [
+  true,
+  "sec=1791281861 hdr=29fc17e923f797f0..."
+ ],
+ "3a IV0 my==ref": [
+  true,
+  "16ba6d0211a298c282187e464c148c22..."
+ ],
+ "3b IV0 != std sha256 IV": [
+  true,
+  "custom confirmed"
+ ],
+ "3c padding+compress validated vs hashlib(stdIV)": [
+  true,
+  "130 lens + boundaries, fresh impl==hashlib"
+ ],
+ "3d my.sha256_iv0==fresh-custom-IV": [
+  true,
+  "boundary lens"
+ ],
+ "3e boundary claims my==ref==fresh": [
+  true,
+  "6 cases"
+ ],
+ "3f prefix branch load-bearing (00*40!=cert40)": [
+  true,
+  "1e7fc4b80720f9cc vs d64f5a0c52eb57d7"
+ ],
+ "3g SHA0-hex-uppercase": [
+  true,
+  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+ ],
+ "3g2 e slot==SHA0": [
+  true,
+  "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+ ],
+ "3h claims latin1": [
+  true,
+  "b'caf\\xe913000001'"
+ ],
+ "3i pad-formula equivalence": [
+  true,
+  "(55-len)%64 vs (55-len%%64)%64 identical"
+ ],
+ "4a S-box == FIPS-197 standard": [
+  true,
+  "my[0:4]=637c777b"
+ ],
+ "4b nRoundKeys==15 (K0..K14)": [
+  true,
+  "my=15 ref=15"
+ ],
+ "4c K0/K1==SEED halves": [
+  true,
+  "f110fb41676dba31..."
+ ],
+ "4d myRK==refKEYS": [
+  true,
+  "15/15 match"
+ ],
+ "4e rcon seq standard": [
+  true,
+  "['0x1', '0x2', '0x4', '0x8', '0x10', '0x20', '0x40']"
+ ],
+ "4f ShiftRows law out[4r+c]=in[4((r+c)%4)+c]": [
+  true,
+  "sr(0..15)=00050a0f04090e03080d02070c01060b"
+ ],
+ "4f2 mySR==refSR": [
+  true,
+  "00050a0f04090e03"
+ ],
+ "4g MixColumns matrix standard": [
+  true,
+  "FIPS matrix confirmed"
+ ],
+ "4g2 gmul FIPS spot": [
+  true,
+  "0x57*0x13=0xfe"
+ ],
+ "4h SubBytes count==15 (init+13+loop-tail? verify no-final)": [
+  true,
+  "SBOX refs=2; tail is SR->AddK with no SubBytes after (see source)"
+ ],
+ "4i CBC IV=header (block0)": [
+  true,
+  "1062e5bca491189e"
+ ],
+ "4j CBC chaining (block1 uses C0)": [
+  true,
+  "04c5bcdaee7e38b5"
+ ],
+ "4k fresh-inverse round-trip (20 random)": [
+  true,
+  "enc->fresh-dec identity"
+ ],
+ "4l genuine sid44 decrypt parses as record": [
+  true,
+  "match=True"
+ ],
+ "4m A==u64le(nonce) rjust20": [
+  true,
+  "A=b'12137478147332815070'"
+ ],
+ "4n nonce==law_recheck deb8d66011fc70a885006809": [
+  true,
+  "deb8d66011fc70a885006809"
+ ],
+ "4o H/d8/e uppercase hex": [
+  true,
+  "upper confirmed"
+ ],
+ "4p e==SHA0": [
+  true,
+  "E3B0C44298FC1C14"
+ ],
+ "4q tail pad 0x10 to 256": [
+  true,
+  "padlen=16"
+ ],
+ "4r hand-rebuild==genuine record": [
+  true,
+  "jlen=240"
+ ],
+ "4s my.build_record==genuine": [
+  true,
+  "byte-exact"
+ ],
+ "4t final-SubBytes variant NOT genuine": [
+  true,
+  "extra SubBytes breaks match (no-final confirmed)"
+ ],
+ "4u ShiftRows direction load-bearing (inv differs, fwd matches genuine)": [
+  true,
+  "inv=000d0a0704010e0b fwd-genuine=True"
+ ],
+ "4v emulator mint v3 decrypt parses": [
+  true,
+  "b'{ \"a\":  14613298175922890454 ,\"b\": \"99E41C69796C7E008A60E68E51EA'"
+ ],
+ "5a DK37==SO_VERIFY word seq": [
+  true,
+  "8/8 mov-immediates 0xcc43c-0xcc5bb"
+ ],
+ "5b DK37 my==ref": [
+  true,
+  "identical"
+ ],
+ "5c tag sid-42 slice[16:272]": [
+  true,
+  "verify_tag=True"
+ ],
+ "5c tag sid-43 slice[16:272]": [
+  true,
+  "verify_tag=True"
+ ],
+ "5c tag sid-44 slice[16:272]": [
+  true,
+  "verify_tag=True"
+ ],
+ "5d verify_tag() uses [16:272]": [
+  true,
+  "def verify_tag(blob):\n    return hmac.new(DK37, blob[16:272], hashlib.sha256).digest() == blob[272:304]"
+ ],
+ "5e slice exactness load-bearing": [
+  true,
+  "off-by-one fails"
+ ],
+ "5f blob layout 16+256+32": [
+  true,
+  "len=304"
+ ],
+ "6a genuine header regex (names/order/commas/case)": [
+  true,
+  "5 params in order signature,adj_signing_id,algorithm,headers_id,native_version"
+ ],
+ "6b sig hex uppercase": [
+  true,
+  "608 hex upper (304B)"
+ ],
+ "6c tail values": [
+  true,
+  "1300000,adj7,8,3.62.0"
+ ],
+ "6d my header same shape": [
+  true,
+  "Signature signature=\"29FC17E923F797F0074FC8914ED7FCBBFE670B99C6E5137913160FE59BB..."
+ ],
+ "6e separators exact": [
+  true,
+  "no space after commas; single space after leading 'Signature'"
+ ],
+ "6f scheme/key case": [
+  true,
+  "capital-S scheme, lowercase key"
+ ]
+}

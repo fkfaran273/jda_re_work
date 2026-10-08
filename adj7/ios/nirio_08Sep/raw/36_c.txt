@@ -1,0 +1,15 @@
+POST https://consent.adjust.com/third_party_sharing HTTP/1.1
+Host: consent.adjust.com
+Accept: */*
+baggage: sentry-environment=production,sentry-public_key=207e9d21366f1b373ef206dffb2f8c8b,sentry-release=com.fdjservices.nirio%4016.4.6%2B494,sentry-trace_id=313e11fe2e0040068fc7fe4e4126c64a
+Authorization: Signature signature="2592BCA775B67D0015455F39004BED3C23CC6B69CD5507D58E0D48E14D96C8F6092ECE5DA7C89AD294C00587005769AE2D1B0D4593937D001192E2137D6FBE83B2D78124E6B7C993391334890BAB1EA3931D8E486FC0E00C1F6D6A4B10C737B2B280CCD40C764EE495D31156B1D76E09ED6B7E04321B6AF8EAED07A0A8E7145BFB34CC4BB81A1AE46F6F40B52E1CBD6D674320BC31410D59BAE79A2F4D3DCF20EFBDEB18A288B4201758B6BB080A3CFA684F03FAF7678EDB0251A57BE1CA30387CAFC06DA7BB0D1E7A5B6C41F81CD4DE0A628B02228EE41E131FD0F593F57EBFA4A45AC95A63F75AC17EEC494ABB8EDEB250B0711C72AA5B772142D5E294B4284F482C0C8718F651556B6A2891D6E2F342496578FEF6817B043A4F085E3F063C98B12D1A31D9E6C357F8AFE8E34B38EA",adj_signing_id="1300000",algorithm="adj7",headers_id="7",native_version="3.61.0"
+Client-Sdk: react-native5.4.4@ios5.4.6
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+sentry-trace: 313e11fe2e0040068fc7fe4e4126c64a-41da15f6ea714944-0
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 721
+User-Agent: Nirio/494 CFNetwork/1410.1 Darwin/22.6.0
+Connection: keep-alive
+
+bundle_id=com.fdjservices.nirio&primary_dedupe_token=2fc20773-baf8-4688-a3d7-3f7c8fec974f&app_version=494&foreground=1&installed_at=2026-09-08T11%3A10%3A40.319Z%2B0530&device_name=iPhone10%2C1&app_version_short=16.4.6&retry_count=0&needs_response_details=1&attribution_deeplink=1&queue_size=2&session_count=0&os_name=ios&send_in_background_enabled=0&enqueue_size=1&idfv=5C3E6785-B2DF-4992-A3EB-3816193CC01E&app_token=cv4d2hlazp4w&os_version=16.7.16&environment=production&sent_at=2026-09-08T11%3A11%3A10.743Z%2B0530&started_at=2026-09-08T10%3A54%3A01.000Z%2B0530&created_at=2026-09-08T11%3A11%3A09.481Z%2B0530&offline_mode_enabled=0&device_type=iPhone&att_status=3&sharing=enable&idfa=EB91D1AA-B723-4291-AB2F-6F3E03751006

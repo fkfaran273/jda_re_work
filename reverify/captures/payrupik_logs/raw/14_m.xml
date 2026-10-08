@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="14" BitFlags="2100">
+  <SessionTimers ClientConnected="2026-10-05T14:40:21.3812951+05:30" ClientBeginRequest="2026-10-05T14:40:21.3824528+05:30" GotRequestHeaders="2026-10-05T14:40:21.3824528+05:30" ClientDoneRequest="2026-10-05T14:40:21.3824528+05:30" GatewayTime="0" DNSTime="9" TCPConnectTime="5" HTTPSHandshakeTime="16" ServerConnected="2026-10-05T14:40:21.3973657+05:30" FiddlerBeginRequest="2026-10-05T14:40:21.3973657+05:30" ServerGotRequest="2026-10-05T14:40:21.3973657+05:30" ServerBeginResponse="0001-01-01T00:00:00" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="0001-01-01T00:00:00" ClientBeginResponse="2026-10-05T14:40:21.3973657+05:30" ClientDoneResponse="2026-10-05T14:40:21.3973657+05:30" />
+  <PipeInfo />
+  <TunnelInfo BytesEgress="0" BytesIngress="0" />
+  <SessionFlags>
+    <SessionFlag N="https-server-cipher" V="Aes128 128bits" />
+    <SessionFlag N="https-client-version" V="Tls13" />
+    <SessionFlag N="x-egressport" V="23386" />
+    <SessionFlag N="x-responsebodytransferlength" V="0" />
+    <SessionFlag N="x-clientport" V="33572" />
+    <SessionFlag N="https-server-version" V="Tls13" />
+    <SessionFlag N="https-client-snihostname" V="json.dynamicdns.in" />
+    <SessionFlag N="x-clientip" V="::ffff:192.168.29.226" />
+    <SessionFlag N="https-client-sessionid" V="80 C7 35 15 E3 EB 55 98 6F 74 DB 37 52 13 76 44 0E 16 D7 BB 7D B1 EF 1B 97 D9 26 9C 78 98 BE 8B" />
+    <SessionFlag N="x-hostip" V="2600:9000:2656:4c00:c:6e59:7040:93a1" />
+    <SessionFlag N="x-supported-client-tls-protocols" V="15360" />
+    <SessionFlag N="x-supported-client-alpn" V="h2, http/1.1" />
+  </SessionFlags>
+</Session>

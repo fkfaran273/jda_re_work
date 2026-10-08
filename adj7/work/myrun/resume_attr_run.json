@@ -1,0 +1,14 @@
+{
+ "gaid": "700da6dc-25c3-4f09-b4fe-5595437bd7c0",
+ "expect_adid": "77cd439cc1eb60319ff8b181199975c4",
+ "verdict": {
+  "tracker_token": "g0bpyt5",
+  "tracker_name": "Organic",
+  "network": "Organic",
+  "engagement_time": "0001-01-01T00:00:00Z",
+  "installed_at": "2026-10-07T12:55:45Z",
+  "first_session_time": "2026-10-07T12:55:45Z",
+  "is_reattributed": false,
+  "is_redownload_install": false
+ }
+}

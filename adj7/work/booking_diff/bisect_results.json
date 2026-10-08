@@ -1,0 +1,17 @@
+[
+ {
+  "exp": "E8-curl-install",
+  "gaid": "d5273196-d1a3-44d7-9b9f-308bb46b102e",
+  "reftag": "adjust_reftag=cIcY7yVvmTiLJ&utm_source=VL-Alliance&utm_campaign=HM2&utm_content=HM2_1722_",
+  "verdict": {
+   "tracker_token": "g0bpyt5",
+   "tracker_name": "Organic",
+   "network": "Organic",
+   "engagement_time": "0001-01-01T00:00:00Z",
+   "installed_at": "2026-10-06T11:55:39Z",
+   "first_session_time": "2026-10-06T11:55:39Z",
+   "is_reattributed": false,
+   "is_redownload_install": false
+  }
+ }
+]

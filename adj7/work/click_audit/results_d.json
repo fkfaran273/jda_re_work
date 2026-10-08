@@ -1,0 +1,62 @@
+{
+ "D1_device_shaped_params": {
+  "status": 302,
+  "location": "market://details?id=social.hunch.app&referrer=adjust_reftag%3Dc0izk4XX5hZIT%26utm_source%3DSpyke%2BMedia%26utm_campaign%3DSOHYPE_ADH%26utm_content%3D%257Baffiliate_id%257D",
+  "date": "Tue, 06 Oct 2026 21:23:52 GMT"
+ },
+ "D2_full_mobpine_shape": {
+  "status": 302,
+  "location": "market://details?id=social.hunch.app&referrer=adjust_reftag%3DckxL8TO06nUik%26utm_source%3DSpyke%2BMedia%26utm_campaign%3DSOHYPE_ADH%26utm_content%3D%257Baffiliate_id%257D",
+  "date": "Tue, 06 Oct 2026 21:23:55 GMT"
+ },
+ "D3_mobpine_rotation": [
+  {
+   "status": 302,
+   "loc1": "https://app.adjust.com/2015o4dz?campaign=HM2&adgroup=HM2_1722_&click_id=6oB0W8YZQE9vVJQlX4eF1j&ip_address=%7Bloop_id%7D&gps_adid=380548b5-edd0-4641-bbfd-f142cd1b1e73&install_callback=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fpostback%3Fclick_id%3D6oB0W8YZQE9vVJQlX4eF1j&event_callback_4vpab5=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fevents%3Fclick_id%3D6oB0W8YZQE9vVJQlX4",
+   "date": "Tue, 06 Oct 2026 21:23:55 GMT",
+   "status2": 302,
+   "loc2": "market://details?id=in.hanafintech&referrer=adjust_reftag%3DcgxmXlq1KAAAz%26utm_source%3DVL-Alliance%26utm_campaign%3DHM2%26utm_content%3DHM2_1722_",
+   "date2": "Tue, 06 Oct 2026 21:23:56 GMT"
+  },
+  {
+   "status": 302,
+   "loc1": "https://app.adjust.com/2015o4dz?campaign=HM2&adgroup=HM2_1722_&click_id=6WR2T2hp6yvcEKL45pXBqM&ip_address=%7Bloop_id%7D&gps_adid=3fa874b6-a260-4289-9987-b415cf4162b6&install_callback=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fpostback%3Fclick_id%3D6WR2T2hp6yvcEKL45pXBqM&event_callback_4vpab5=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fevents%3Fclick_id%3D6WR2T2hp6yvcEKL45p",
+   "date": "Tue, 06 Oct 2026 21:23:59 GMT",
+   "status2": 302,
+   "loc2": "market://details?id=in.hanafintech&referrer=adjust_reftag%3DcuzJJV62oQYN1%26utm_source%3DVL-Alliance%26utm_campaign%3DHM2%26utm_content%3DHM2_1722_",
+   "date2": "Tue, 06 Oct 2026 21:24:02 GMT"
+  },
+  {
+   "status": 302,
+   "loc1": "https://app.adjust.com/2015o4dz?campaign=HM2&adgroup=HM2_1722_&click_id=78zNjCIH3xDykmmPjTtT1E&ip_address=%7Bloop_id%7D&gps_adid=cfe1aa30-38cb-4a1d-8498-add290e6ab30&install_callback=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fpostback%3Fclick_id%3D78zNjCIH3xDykmmPjTtT1E&event_callback_4vpab5=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fevents%3Fclick_id%3D78zNjCIH3xDykmmPjT",
+   "date": "Tue, 06 Oct 2026 21:24:05 GMT",
+   "status2": 302,
+   "loc2": "market://details?id=in.hanafintech&referrer=adjust_reftag%3DcGszsq2TPOmNc%26utm_source%3DVL-Alliance%26utm_campaign%3DHM2%26utm_content%3DHM2_1722_",
+   "date2": "Tue, 06 Oct 2026 21:24:05 GMT"
+  },
+  {
+   "status": 302,
+   "loc1": "https://app.adjust.com/2015o4dz?campaign=HM2&adgroup=HM2_1722_&click_id=2xSjgHDkyphVdYHLxtBW63&ip_address=%7Bloop_id%7D&gps_adid=ceee80fb-7a50-4d4d-b1cd-9b1d7d0035c0&install_callback=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fpostback%3Fclick_id%3D2xSjgHDkyphVdYHLxtBW63&event_callback_4vpab5=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fevents%3Fclick_id%3D2xSjgHDkyphVdYHLxt",
+   "date": "Tue, 06 Oct 2026 21:24:08 GMT",
+   "status2": 302,
+   "loc2": "market://details?id=in.hanafintech&referrer=adjust_reftag%3DcK55gBiXDsEvq%26utm_source%3DVL-Alliance%26utm_campaign%3DHM2%26utm_content%3DHM2_1722_",
+   "date2": "Tue, 06 Oct 2026 21:24:13 GMT"
+  },
+  {
+   "status": 302,
+   "loc1": "https://app.adjust.com/2015o4dz?campaign=HM2&adgroup=HM2_1722_&click_id=4CYUBcXHk7phLHvdapyvtx&ip_address=%7Bloop_id%7D&gps_adid=47366abf-36a0-48d3-ac8a-45148ba659b5&install_callback=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fpostback%3Fclick_id%3D4CYUBcXHk7phLHvdapyvtx&event_callback_4vpab5=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fevents%3Fclick_id%3D4CYUBcXHk7phLHvdap",
+   "date": "Tue, 06 Oct 2026 21:24:16 GMT",
+   "status2": 302,
+   "loc2": "market://details?id=in.hanafintech&referrer=adjust_reftag%3DcIZ8IyKT5nMWa%26utm_source%3DVL-Alliance%26utm_campaign%3DHM2%26utm_content%3DHM2_1722_",
+   "date2": "Tue, 06 Oct 2026 21:24:17 GMT"
+  },
+  {
+   "status": 302,
+   "loc1": "https://app.adjust.com/2015o4dz?campaign=HM2&adgroup=HM2_1722_&click_id=0SJZdE8yNUTfvo0HU353iG&ip_address=%7Bloop_id%7D&gps_adid=291aaa6e-6f81-4d76-a8ca-63449294b4f3&install_callback=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fpostback%3Fclick_id%3D0SJZdE8yNUTfvo0HU353iG&event_callback_4vpab5=http%3A%2F%2Fmp-pb.appanalytics.in%2Fapi%2Ftrack%2Fv1%2Fevents%3Fclick_id%3D0SJZdE8yNUTfvo0HU3",
+   "date": "Tue, 06 Oct 2026 21:24:20 GMT",
+   "status2": 302,
+   "loc2": "market://details?id=in.hanafintech&referrer=adjust_reftag%3DcBd23yU2J1suO%26utm_source%3DVL-Alliance%26utm_campaign%3DHM2%26utm_content%3DHM2_1722_",
+   "date2": "Tue, 06 Oct 2026 21:24:21 GMT"
+  }
+ ]
+}

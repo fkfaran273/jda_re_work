@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+FiddlerGateway: Direct
+StartTime: 01:10:48.013
+Connection: close
+
+Encrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.
+
+Secure Protocol: Tls13
+Cipher: Aes256 256bits
+Hash Algorithm: Sha384 ?bits
+Key Exchange: None 255bits
+
+== Server Certificate ==========
+[Subject]
+  CN=nexus-websocket-a.intercom.io
+
+[Issuer]
+  CN=Amazon RSA 2048 M04, O=Amazon, C=US
+
+[Serial Number]
+  049CE817637CC8945B65063C530B254E
+
+[Not Before]
+  09-08-2026 05:30:00
+
+[Not After]
+  23-02-2027 05:29:59
+
+[Thumbprint]
+  96B4E9457BE66F873B2286AFED177202BF751000
+
+[SubjectAltNames]
+nexus-websocket-a.intercom.io, nexus-websocket-pst.intercom.io, nexus-websocket-overflow.intercom.io, nexus-websocket-inbox.intercom.io

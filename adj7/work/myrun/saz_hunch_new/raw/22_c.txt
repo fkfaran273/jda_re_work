@@ -1,0 +1,15 @@
+POST https://kaz760u7-android.mobile-messenger.intercom.com/messenger/mobile/users HTTP/1.1
+Content-Length: 458
+Host: kaz760u7-android.mobile-messenger.intercom.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+User-Agent: okhttp/4.12.0
+Authorization: Basic a2F6NzYwdTc6YW5kcm9pZF9zZGstNTFkYWMwYTA1MjMzMzg5Y2Q2ZjM4YzBiMWRmMDIwYmQ0Y2ZiMTA0Yg==
+Idempotency-Key: a63e608b24bdf674
+X-INTERCOM-AGENT: intercom-android-sdk/17.3.1
+Accept-Language: en-IN
+X-INTERCOM-SUPPORTED-LANGUAGES: ar,bg,bn,bs,ca,cs,da,de,de-form,el,es,et,fa-IR,fi,fr,hi,he,hr,hu,id,it,ja,ko,lt,lv,mn,ms,nb,nl,pl,pt-PT,pt-BR,ro,ru,sl,sr,sv,sw,th,tr,uk,vi,zh-Hant,zh-Hans
+X-INTERCOM-HOST-APP-VERSION: 3.2.33
+Content-Type: application/json
+
+{"device_data":{"sdk_type":"intercom-sdk-flutter","platform_version":"12","application":"Hunch","browser":"Intercom-Android-SDK","language":"English","version":"3.2.33","application_id":"social.hunch.app","platform":"moto g42"},"sent_from_background":false,"carousel_visible":false,"device_identifier":"9249438f-8620-4f7f-bcba-de0e5bd3dce5","new_session":true,"user_attributes":{},"user":{"anonymous_id":"3eeb0f81-d99d-4de9-92ce-d2c5d3ece094","type":"user"}}

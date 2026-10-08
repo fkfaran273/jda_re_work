@@ -1,0 +1,19 @@
+{
+ "mode": "live",
+ "app": "social.hunch.app",
+ "gaid": "9076cea3-3ad0-465d-b33b-df73e3f53b63",
+ "android_uuid": "12019ec7-d331-46b7-8965-27d87deb0926",
+ "reftag": "adjust_reftag=c0JC7bfWoz7ou&utm_source=Spyke+Media&utm_campaign=SOHYPE_ADH&utm_content=%7Baffiliate_id%7D",
+ "click_second": 1791439127,
+ "adid": "8c5dec8f02d95eb76c1b561b5e8eac10",
+ "attribution": {
+  "tracker_token": "yuzxv6m",
+  "tracker_name": "Organic",
+  "network": "Organic",
+  "engagement_time": "0001-01-01T00:00:00Z",
+  "installed_at": "2026-10-08T05:59:17Z",
+  "first_session_time": "2026-10-08T05:59:17Z",
+  "is_reattributed": false,
+  "is_redownload_install": false
+ }
+}
