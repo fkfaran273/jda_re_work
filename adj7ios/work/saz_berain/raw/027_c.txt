@@ -1,0 +1,6 @@
+CONNECT gspe19-ssl.ls.apple.com:443 HTTP/1.1
+Host: gspe19-ssl.ls.apple.com
+Connection: keep-alive
+Connection: keep-alive
+
+After the client received notice of the established CONNECT, it failed to send any data.

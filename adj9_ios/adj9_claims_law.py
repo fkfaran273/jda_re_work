@@ -18,7 +18,7 @@ Law (values only, bare concatenation, latin-1):
         || tail:    pool keys >= "session_count" present in map, pool order
         || activity_kind, client_sdk, headers_id, native_version
 
-  (the 95-key pool: adj7s4_pool_order.json minus activity_kind/client_sdk;
+  (the 95-key pool: adj9_pool_order.json minus activity_kind/client_sdk;
    non-pool wire keys — sent_at, needs_response_details, attribution_deeplink,
    foreground/background, enqueue_size, retry_count, offline_mode_enabled,
    send_in_background_enabled — are NOT claimed)
@@ -43,9 +43,9 @@ import sys, json, struct
 sys.path.insert(0, r"C:\Users\Apps\Downloads\com.penti.app\adj9sign\one_click_run")
 import adj9_signer as sg
 
-WORK = r"C:\Users\Apps\Downloads\com.penti.app\adj7_work"
+WORK = r"C:\Users\Apps\Downloads\com.penti.app\adj9_ios"
 
-POOL_95 = [k for k in json.load(open(WORK + r"\adj7s4_pool_order.json"))
+POOL_95 = [k for k in json.load(open(WORK + r"\adj9_pool_order.json"))
            if k not in ("activity_kind", "client_sdk")]
 SPLIT = POOL_95.index("session_count")
 

@@ -1,7 +1,0 @@
-GET https://app-api.payrupikloan.in/bbps/showService?cipher_txt=ZCYn%2B6FiN0XA1PwRX%2FVAckJ24IJTRmxbgaxwmhA2D1QE07%2FGoClboZoQoXnWd2IkDZrE12DSnbe0%0AhvFW5wFau%2BELLP1MjGu5H2sgJfJeQCvBVfj3YH69bSUS0ECuYgWoywiVarFWxXBnFkpIYRoitwbn%0ANxvzytovF%2BwaIemr6YXmE5nK9xnSFt%2Bx%2BhpP0uNIRJfpzBNYVXCAlyPbh7bgCYXCswX4XLwHgec8%0ACrsC2uoIaYTghuuI8itfZ0P%2BhBM8IAQmBy2XlW3K%2FjKTmE1YpRVCYTOK73CDUSn1LwQDgX9GxTVo%0AT5oVx8k%2B3wMMuPohsSIRX5bb5PpdJxHT6sHld1IU5MOgxUgc3zc0hnTiUBsyHfmqYE2%2F%2Br%2B9ymqi%0Alt6MJcVRjtUBGOzocuPE6HBPOA%3D%3D%0A&digest=6932A4EC30B106BC27D8F28EB3F956728E217920&encrypt_version=2.0 HTTP/1.1
-User-Agent: b4bb4595-9007-392f-9c6d-608e5c50a29b india-hikredit(3.0.4) android
-x-india-hikredit-token: BC745E592CCB6FE1D01C58046A6A255C13E2DB2B
-Host: app-api.payrupikloan.in
-Connection: Keep-Alive
-Accept-Encoding: gzip
-

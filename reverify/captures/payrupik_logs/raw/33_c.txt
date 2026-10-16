@@ -1,7 +1,0 @@
-GET https://json.dynamicdns.in/appdomain/domain_prod.json?access_time=1791191421&adjust_id=&app_instance_id=&app_version=3.0.4&channel=PayRupik&common_google_adid=&d_id_store=b4bb4595-9007-392f-9c6d-608e5c50a29b&d_sys_ver=11&language=en-in&package_name=in.hanafintech&package_type=0 HTTP/1.1
-User-Agent: b4bb4595-9007-392f-9c6d-608e5c50a29b india-hikredit(3.0.4) android
-x-india-hikredit-token: BC745E592CCB6FE1D01C58046A6A255C13E2DB2B
-Host: json.dynamicdns.in
-Connection: Keep-Alive
-Accept-Encoding: gzip
-

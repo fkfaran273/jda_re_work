@@ -1,0 +1,11 @@
+POST https://odm.app-ads-services.com/odm/validate?version=1.1&bundle_id=com.berain.berain&app_version=4.4.0&sdk_version=odm-sdk-i-v2.1.0&retry_count=0&odm2_count=0&source=ga4f HTTP/1.1
+Host: odm.app-ads-services.com
+Content-Type: application/x-www-form-urlencoded
+Connection: keep-alive
+Accept: */*
+Accept-Language: ar
+Content-Length: 403
+Accept-Encoding: gzip, deflate, br
+User-Agent: Berain-Swift/1 CFNetwork/1410.1 Darwin/22.6.0
+
+{"mvs":"Cj03_A6KCSDjnIoGqPOLuSKPhVlSDMd6BY1y0nGAlcG6Otc8DTKRJLoNoe3UclNhi0dNAxcUYRriUpx7ALKHCj2SWiX2eaI07m4iLWQu1gmQSmZTzft775S9G3wpkQWR-eniXCf6_3BY6oUX-iL4iJiSK71JOMS9nbhXkq-4Cj3TE8AEXRSu6xy9sBXl685cCgKDvw17LXMwR0jN8sSuDRQPGnsYH58cwI6aFB9ZQtuMDzcGTjDWjkBPBNGmCj1CYSAbeQ8LZNbjTsK-6vx339mrhm45RiZt07yvWY-8x3SPMWw6mb7roY9FWuLMLRe7qHObCt227YgUBfJq","odmed":"CBYaFAgBEgcIBRUAAEhCEgcIAhUAAEhCKggwNGM0MWIxNw"}

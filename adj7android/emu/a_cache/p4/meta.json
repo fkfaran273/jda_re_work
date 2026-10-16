@@ -1,0 +1,34 @@
+{
+ "second": 1791358552,
+ "nonce": "00112233445566778899AABB",
+ "params": {
+  "app_token": "smxi7gqwu39c",
+  "package_name": "in.hanafintech",
+  "activity_kind": "event",
+  "client_sdk": "android5.6.0",
+  "os_version": "12"
+ },
+ "blob": "40e0f7831ec4508f5085436f0de0bc39de7b11fa86ef2207175efda9b30eb87cdabad50e135f33e06de7fbb602799486d63d3da044ef7476ce41c78ddaecaeb1cd5120f1901982b7d1f3f2de3503bd331a77b4cb39aa3a5456518c43fdaaddd0c6383d4b66378f2597fd8ed8d2788aa1f5d4a5937a5b992027cefe59b5bbf7d10c3d3caa3e9191ae6a3e3c97eb42506a4894a91e40220d2756bbdc7920e844ca891346d323ebb562ff2d2dc083e5c0af599fc8a6555a7b5ddf7aa506ac239db677b7e8f506169346ba11fb054255e070fd14b51217d30c20c6867a62160010fa26b24f4c90672f019c362f88cc1870af642c4341a694fc83df2e82eff466dbd7b837c515e3c685e0782273e0e452f0a79f020adb48dc654791430ca9f0d3b203422e501f1473993921623730ba5dde03",
+ "brk": 151065952,
+ "srand": [
+  1791358552
+ ],
+ "rand_calls": 8,
+ "urandom_reads": [
+  2048,
+  8
+ ],
+ "heap_base": 150994944,
+ "stack_base": 117440512,
+ "libdata_base": 5353472,
+ "jni_tail": [
+  "(167, 'NewStringUTF')",
+  "(15, 'jni15')",
+  "(34, 'CallObjectMethod')",
+  "('call', 'map', 'put')",
+  "(15, 'jni15')",
+  "(23, 'jni23')",
+  "(23, 'jni23')",
+  "(23, 'jni23')"
+ ]
+}

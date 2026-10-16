@@ -1,0 +1,16 @@
+POST https://kaz760u7-ios.mobile-messenger.intercom.com/messenger/mobile/users HTTP/1.1
+Host: kaz760u7-ios.mobile-messenger.intercom.com
+Idempotency-Key: 3226abeeb4e386c7
+Accept: application/json
+Authorization: Basic a2F6NzYwdTc6aW9zX3Nkay00MDRiNWM2YWEzYTE5ZGMyZjNlMzJmYjQwZmNlYzE0NjE4ZDhhNGQ5
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-BY, it-BY
+X-INTERCOM-AGENT: intercom-ios-sdk/19.3.4
+Content-Type: application/json
+X-INTERCOM-SUPPORTED-LANGUAGES: ar, bg, bn, bs, ca, cs, da, de, de-form, el, en, es, et, fa-IR, fi, fr, he, hi, hr, hu, id, it, ja, ko, lt, lv, mn, ms, nl, nb, pl, pt-PT, pt-BR, ro, ru, sl, sr, sv, sw, th, tr, uk, vi, zh-Hant, zh-Hans
+X-INTERCOM-HOST-APP-VERSION: 3.0.1(3)
+User-Agent: hunch/3 CFNetwork/1410.1 Darwin/22.6.0
+Content-Length: 779
+Connection: keep-alive
+
+{"new_session":true,"sent_from_background":false,"user_attributes":{},"carousel_visible":false,"device_identifier":"A06F28ED-8F93-4F8B-83F9-830D1C50DBC3","device_data":{"content_size_category":"UICTContentSizeCategoryL","language_direction":"LTR","application_id":"social.hunch.app","version":"3.0.1(3)","is_voice_over_running":"NO","application":"hunch","invert_colors_enabled":"NO","ios_environment":"appstore","platform_version":"16.7.15","platform":"iPhone10,1","browser":"Intercom-iOS-SDK","language":"en-BY","sdk_type":"intercom-sdk-flutter","auto_integrates_push_notifications":"NO","supports_rich_push":"NO","device":"iPhone","user_interface_style":"Unspecified","reduced_motion_enabled":"NO"},"user":{"type":"user","anonymous_id":"05D3BC77-F02F-4968-A7A6-ED5D9F595F67"}}

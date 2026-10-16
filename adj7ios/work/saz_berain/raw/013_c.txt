@@ -1,0 +1,14 @@
+POST https://firebaseinstallations.googleapis.com/v1/projects/berain-dd908/installations/ HTTP/1.1
+Host: firebaseinstallations.googleapis.com
+Content-Type: application/json
+X-firebase-client: H4sIAAAAAAAAE13QQY7CMAwF0KtUXjdNE1SQuuUCs5-wMKk7jSbEVZxBgxB3pwhW2b6vL1v_DlfKEjjBaFtYCHM5ExaB8fsO-EOpwAi4rpHUGrHMnC9OB5bmbTL9Om13x2H3AimcyemS_6iZaI18c9qzZ1x5kk2uwW9x-Fo4kelb08whk8KE8VaCF6eN6czQ9W-f_aWSkKRgjLVy3RSq5IxCymeUpb7Eoj4DbLbvDp2xzb_nafvTHI6DhRYmLPTaA2xv96oflO3h9Dg9ns3yzJY7AQAA
+X-Ios-Bundle-Identifier: com.berain.berain
+User-Agent: Berain-Swift/1 CFNetwork/1410.1 Darwin/22.6.0
+Connection: keep-alive
+Accept: */*
+X-Goog-Api-Key: AIzaSyDSLDbPVEe6UeGqdDQDLhPBA2yIu_xIfhc
+Content-Length: 126
+Accept-Language: ar
+Accept-Encoding: gzip, deflate, br
+
+{"appId":"1:403517756777:ios:01aaee9d19d04a86","fid":"el2t9h-VBUzPvXr8FUcusZ","authVersion":"FIS_v2","sdkVersion":"i:11.15.0"}

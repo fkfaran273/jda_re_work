@@ -1,0 +1,12 @@
+GET https://nexus-websocket-a.intercom.io/pubsub/5-cZt9yyvQ1Tl8icqF86p_bre-7MTfupWl4xie1VCHqEgoPe-DwHCJWwsXsLOtSTOqzhdd9Fw6u7qZbmAZWAcBwgZ6rn1QZj9qt7yz?X-Nexus-Version=ios.5.4.0 HTTP/1.1
+Host: nexus-websocket-a.intercom.io
+User-Agent: hunch/3 CFNetwork/1410.1 Darwin/22.6.0
+Sec-WebSocket-Key: m2XMvFWL9kTDIw0avekhgg==
+Sec-WebSocket-Version: 13
+Upgrade: websocket
+Accept: */*
+Sec-WebSocket-Extensions: permessage-deflate
+Accept-Language: en-GB,en;q=0.9
+Accept-Encoding: gzip, deflate, br
+Connection: Upgrade
+

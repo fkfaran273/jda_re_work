@@ -1,6 +1,0 @@
-GET https://connectivitycheck.gstatic.com/generate_204 HTTP/1.1
-User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36
-Host: connectivitycheck.gstatic.com
-Connection: Keep-Alive
-Accept-Encoding: gzip
-

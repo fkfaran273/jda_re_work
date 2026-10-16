@@ -1,0 +1,11 @@
+POST https://api.mixpanel.com/track/?ip=1 HTTP/1.1
+Host: api.mixpanel.com
+Content-Type: application/json
+Connection: keep-alive
+Accept: */*
+User-Agent: hunch/3 CFNetwork/1410.1 Darwin/22.6.0
+Content-Length: 1420
+Accept-Language: en-GB,en;q=0.9
+Accept-Encoding: gzip, deflate, br
+
+[{"properties":{"distinct_id":"$device:193C8849-BF03-41B6-A83B-E03684331AB0","$os":"iOS","mp_lib":"flutter","$lib_version":"2.4.4","$manufacturer":"Apple","$ae_first_app_open_date":"2026-04-01T12:00:28.513Z","$model":"iPhone10,1","$app_version_string":"3.0.1","$os_version":"16.7.15","$had_persisted_distinct_id":true,"$screen_height":667,"$app_build_number":"3","$radio":"None","token":"065219ac120106a504a13f4f37d5d54e","$device_id":"193C8849-BF03-41B6-A83B-E03684331AB0","time":1775044828513,"$screen_width":375,"$wifi":true,"$carrier":"--"},"event":"$ae_first_open","$mp_metadata":{"$mp_session_id":"34e048330b460ccb","$mp_session_start_sec":0,"$mp_event_id":"a3305206dccaf90b","$mp_session_seq_id":0},"id":1},{"id":2,"event":"$create_alias","properties":{"$manufacturer":"Apple","time":1775044828749,"alias":"97DEDAE8-ECC8-4F16-9EDD-01F464B7D1D6","$radio":"None","$lib_version":"2.4.4","$app_version_string":"3.0.1","mp_lib":"flutter","$model":"iPhone10,1","$wifi":true,"$os_version":"16.7.15","token":"065219ac120106a504a13f4f37d5d54e","$screen_height":667,"$app_build_number":"3","distinct_id":"$device:193C8849-BF03-41B6-A83B-E03684331AB0","$device_id":"193C8849-BF03-41B6-A83B-E03684331AB0","$screen_width":375,"$os":"iOS","$had_persisted_distinct_id":true,"$carrier":"--"},"$mp_metadata":{"$mp_session_seq_id":1,"$mp_session_id":"34e048330b460ccb","$mp_session_start_sec":0,"$mp_event_id":"8552d7bb2bed9eb9"}}]

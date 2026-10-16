@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Server: Apple
+Date: Wed, 01 Apr 2026 12:00:32 GMT
+Content-Type: application/json
+Content-Length: 21
+Connection: keep-alive
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+
+{"attribution":false}

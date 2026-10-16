@@ -1,0 +1,24 @@
+HTTP/1.1 200 OK
+ETag: "2413590495c1564750b2e5600badc477b239150d"
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: Accept-Encoding
+x-fb-aed: 795
+x-ad-api-version-warning: The call has been auto-upgraded to v19.0 as v17.0 has been deprecated.
+Access-Control-Allow-Origin: *
+facebook-api-version: v19.0
+Strict-Transport-Security: max-age=15552000; preload
+Pragma: no-cache
+Cache-Control: private, no-cache, no-store, must-revalidate
+Expires: Sat, 01 Jan 2000 00:00:00 GMT
+x-fb-request-id: AFz3KsskDlVBGHskf8l1u2T
+x-fb-trace-id: BLsbSgOVH/A
+x-fb-rev: 1036426764
+X-FB-Debug: GD6p3rammv5sZ7JZfKG6iHLuJ3m30OvXQE7TSORGGczdSxA7nRFjmWusqbttLmUWwwQnYCrCEEbRX0Eajq3r1w==
+Date: Wed, 01 Apr 2026 12:00:28 GMT
+X-FB-Connection-Quality: EXCELLENT; q=0.9, rtt=47, rtx=0, c=10, mss=1392, tbw=4449, tp=-1, tpl=-1, uplat=226, ullat=0
+Alt-Svc: h3=":443"; ma=86400
+Connection: keep-alive
+Content-Length: 491
+
+{"data":[{"endpoints":[{"key":"activities","value":{"att_opt_in_domain_prefix":"ep1","att_opt_out_domain_prefix":"ep2"}},{"key":"custom_audience_third_party_id","value":{"att_opt_in_domain_prefix":"ep1","att_opt_out_domain_prefix":"ep1"}},{"key":"app_indexing_session","value":{"att_opt_in_domain_prefix":"ep1","att_opt_out_domain_prefix":"ep1"}},{"key":"default_config","value":{"default_domain_prefix":"ep2","default_alternative_domain_prefix":"ep1","enable_for_early_versions":false}}]}]}

@@ -1,0 +1,19 @@
+GET https://firebase-settings.crashlytics.com/spi/v2/platforms/ios/gmp/1:403517756777:ios:01aaee9d19d04a86/settings?build_version=1&display_version=4.4.0&instance=a2bd11bc51096e1857907ecbbb239cfc1977c496&source=4 HTTP/1.1
+Host: firebase-settings.crashlytics.com
+Accept: application/json
+Accept-Charset: utf-8
+Content-Language: en_SA@calendar=gregorian
+X-Crashlytics-API-Client-Version: 11.15.0
+X-Crashlytics-Installation-ID: B61E522A-BBDE-4107-A8C9-EE3FA0CC2E6E
+Accept-Language: en_SA@calendar=gregorian
+Accept-Encoding: gzip, deflate, br
+X-Crashlytics-Device-Model: iPhone10,1
+X-Crashlytics-Developer-Token: 77f0789d8e230eccdb4b99b82dccd78d47f9b604
+X-Crashlytics-Google-App-Id: 1:403517756777:ios:01aaee9d19d04a86
+User-Agent: com.google.firebase.crashlytics.ios/11.15.0
+X-Crashlytics-API-Client-Display-Version: 11.15.0
+Connection: keep-alive
+X-Crashlytics-API-Client-Id: com.google.firebase.crashlytics.ios
+X-Crashlytics-OS-Build-Version: 20H364
+X-Crashlytics-OS-Display-Version: 16.7.12
+

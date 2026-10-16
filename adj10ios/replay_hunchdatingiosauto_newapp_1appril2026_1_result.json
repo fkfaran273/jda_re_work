@@ -1,0 +1,63 @@
+{
+ "G": {
+  "http": 200,
+  "json": {
+   "app_token": "vf3lochhmgw0",
+   "adid": "3810bf75b9ab537b18908c59675f32c6",
+   "attribution": {
+    "tracker_token": "yuzxv6m",
+    "tracker_name": "Organic",
+    "network": "Organic",
+    "engagement_time": "0001-01-01T00:00:00Z",
+    "installed_at": "2026-10-02T17:33:03Z",
+    "first_session_time": "2026-10-02T17:33:03Z",
+    "is_reattributed": false,
+    "is_redownload_install": false
+   }
+  }
+ },
+ "O": {
+  "http": 200,
+  "json": {
+   "app_token": "vf3lochhmgw0",
+   "adid": "3810bf75b9ab537b18908c59675f32c6",
+   "attribution": {
+    "tracker_token": "yuzxv6m",
+    "tracker_name": "Organic",
+    "network": "Organic",
+    "engagement_time": "0001-01-01T00:00:00Z",
+    "installed_at": "2026-10-02T17:33:03Z",
+    "first_session_time": "2026-10-02T17:33:03Z",
+    "is_reattributed": false,
+    "is_redownload_install": false
+   }
+  }
+ },
+ "ARM_session": {
+  "http": 200,
+  "json": {
+   "app_token": "vf3lochhmgw0",
+   "adid": "3810bf75b9ab537b18908c59675f32c6",
+   "skadn_conv_value": 0,
+   "skadn_coarse_value": "low",
+   "skadn_lock_window": false
+  }
+ },
+ "ARM": {
+  "http": 200,
+  "json": {
+   "app_token": "vf3lochhmgw0",
+   "adid": "3810bf75b9ab537b18908c59675f32c6",
+   "attribution": {
+    "tracker_token": "yuzxv6m",
+    "tracker_name": "Organic",
+    "network": "Organic",
+    "engagement_time": "0001-01-01T00:00:00Z",
+    "installed_at": "2026-10-02T17:33:03Z",
+    "first_session_time": "2026-10-02T17:33:03Z",
+    "is_reattributed": false,
+    "is_redownload_install": false
+   }
+  }
+ }
+}

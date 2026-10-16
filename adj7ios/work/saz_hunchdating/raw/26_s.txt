@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+Date: Wed, 01 Apr 2026 12:00:30 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 22
+Connection: keep-alive
+access-control-allow-headers: SDK-Version,Content-Type,Origin,Authorization,OneSignal-Subscription-Id
+access-control-allow-origin: *
+traceparent: 00-9978453983c2b1427932235d8dc6942f-4bbf38e335dbf632-00
+Server: cloudflare
+via: 1.1 google
+alt-svc: h3=":443"; ma=86400
+cf-cache-status: DYNAMIC
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+CF-RAY: 9e576f0b2cb85518-DEL
+
+{"in_app_messages":[]}

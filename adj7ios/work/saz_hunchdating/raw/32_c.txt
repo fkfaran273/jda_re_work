@@ -1,0 +1,11 @@
+POST https://r.lr-intake.com/i?a=yk3qmz/hunch-app&r=6-019d48ea-9b9e-7c15-b540-2c29c24a2046&t=50308252-a625-46d0-b811-ae3b41f3cca2&s=0&rs=0,u&ro=t&st=mobile HTTP/1.1
+Host: r.lr-intake.com
+Accept: */*
+Content-Type: application/octet-stream
+Connection: keep-alive
+X-LogRocket-Relay-Version: 2024.9.0
+User-Agent: hunch/3 CFNetwork/1410.1 Darwin/22.6.0
+Accept-Language: en-GB,en;q=0.9
+Accept-Encoding: gzip, deflate, br
+Content-Length: 0
+

@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+FiddlerGateway: Direct
+StartTime: 09:49:55.825
+Connection: close
+
+Encrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.
+
+Secure Protocol: Tls12
+Cipher: Aes128 128bits
+Hash Algorithm: Sha256 ?bits
+Key Exchange: ECDHE_RSA (0xae06) 255bits
+
+== Server Certificate ==========
+[Subject]
+  CN=*.myfatoorah.com, O=My Fatoorah, L=Kuwait City, C=KW
+
+[Issuer]
+  CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1, O=DigiCert Inc, C=US
+
+[Serial Number]
+  035C68B59D83522B44329A04257CD80D
+
+[Not Before]
+  16-Feb-26 5:30:00 AM
+
+[Not After]
+  20-Mar-27 5:29:59 AM
+
+[Thumbprint]
+  1DC30FC48DBC67810CDB94B543E4D6CA21399718
+
+[SubjectAltNames]
+*.myfatoorah.com, myfatoorah.com

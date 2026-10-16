@@ -1,0 +1,16 @@
+POST https://firebaseremoteconfigrealtime.googleapis.com/v1/projects/871858590108/namespaces/firebase:streamFetchInvalidations?key=AIzaSyAXjuGrXJSjtHCmulJqfDvcXt6-FO1GQsU HTTP/1.1
+Host: firebaseremoteconfigrealtime.googleapis.com
+Accept: application/json
+X-Ios-Bundle-Identifier: social.hunch.app
+Accept-Encoding: gzip, deflate, br
+If-None-Match: etag-hunch-prod-e1130-firebase-fetch-1369112868
+X-Goog-Api-Key: AIzaSyAXjuGrXJSjtHCmulJqfDvcXt6-FO1GQsU
+Accept-Language: en-GB,en;q=0.9
+Content-Length: 189
+User-Agent: hunch/3 CFNetwork/1410.1 Darwin/22.6.0
+X-Google-GFE-Can-Retry: true
+Connection: keep-alive
+Content-Type: application/json
+x-goog-firebase-installations-auth: eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6ODcxODU4NTkwMTA4OmlvczpjYWM5YTVmODg3NjdmYWQ2OWViODU5IiwiZXhwIjoxNzc1NjQ5NjI5LCJmaWQiOiJjbHJiRnF2cmRVTkV0NEJkWnVpU2xZIiwicHJvamVjdE51bWJlciI6ODcxODU4NTkwMTA4fQ.AB2LPV8wRQIgAeiMQrgUgw6K77Dl2nfiglucb04120ccsccyhlThvJQCIQDi7FPDRKXDZmuIz69RmnxqkSdTExQnoIvFd0GtXss23A
+
+{project:'871858590108', namespace:'firebase', lastKnownVersionNumber:'942', appId:'1:871858590108:ios:cac9a5f88767fad69eb859', sdkVersion:'11.13.0', appInstanceId:'clrbFqvrdUNEt4BdZuiSlY'}

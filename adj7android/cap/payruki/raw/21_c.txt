@@ -1,0 +1,10 @@
+POST https://app-api.payrupikloan.in/init/swap HTTP/1.1
+User-Agent: 4c2576c7-56da-3568-9d9c-dd5ef029b6c8 india-hikredit(3.0.4) android
+x-india-hikredit-token: 3B224B9BE17FF1943BB9184120E92E59EE981A7D
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 850
+Host: app-api.payrupikloan.in
+Connection: Keep-Alive
+Accept-Encoding: gzip
+
+encrypt_version=2.0&cipher_txt=PRR5AjRtzl6G6RZXMuhU%2FlEcLtEw%2FivYJUa32sWH5a09vyD3a%2FTrtCyWF054rhjJk1KgKvmZEvgU%0As98sj71JVJxPsFVzqP6LFBcV1UoYF7uIfxfuch8tgJBwm6bv9jYTxy2fvujkBu6XuYWpS7fUApdN%0AfzcswC0RUmmifbsej3o%3D%0A%2CeBK%2BqCAQAlc2dQnoYy8MLYHdMcC6J3d%2B98SNYHMyffOaam%2F9jMliOQa5IOhrMA3uiHnc2dGfiL7w%0AwCoSqQha484pYjkk2oYiS8YGSkalbKSAEFxumSsmWFzoWQnHucFmXrZAneLRuyvyCEZnFHzXjOxB%0Aj9GbiUm%2FPVc7WmvmvW8%3D%0A%2CBlJy58jVnNuz0VUskWJ9NvDyZo7SgsCv%2FQxmTOS%2Bk6heUFnJZnIMUQGMQeDycK83IRRFTz1lAWy4%0AE4XQCJpKXqlWA10bAz3y2XIYmhiZ2Z9CBPms6gPzeIk4pW68%2F8oRhzF%2Bd73aPwmKty%2FarWtqFlkm%0Awq%2FHDRqHKZYArNswnU8%3D%0A%2Cmiju5X0RP0SJSwA08MjtFAtizIqsU2aSzDC45PFRqLAC3y0F19y1UXRUR7abAXhR9wBVkGmef4sm%0AwLoWbA7ptdyiSXW6EyI2ysofq%2BvxADxWfAasjAeMrrvJHkoofVfPpvT2yhCKKz33PQJshrMU3Hna%0ATtyEF%2Fvhr7Xw8EJSpMs%3D%0A&digest=3797435C7B3E6302F8D29F5210FD6BBAE6469E0F

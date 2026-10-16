@@ -1,0 +1,11 @@
+POST https://device-provisioning.googleapis.com/checkin HTTP/1.1
+Host: device-provisioning.googleapis.com
+Content-Type: application/json
+Connection: keep-alive
+Accept: */*
+User-Agent: Berain-Swift/1 CFNetwork/1410.1 Darwin/22.6.0
+Content-Length: 253
+Accept-Language: ar
+Accept-Encoding: gzip, deflate, br
+
+{"locale":"ar","digest":"","checkin":{"iosbuild":{"model":"iPhone10,1","os_version":"IOS_16.7.12"},"last_checkin_msec":0,"user_number":0,"type":2},"time_zone":"America\/New_York","user_serial_number":0,"id":0,"version":2,"security_token":0,"fragment":0}

@@ -1,0 +1,11 @@
+HTTP/1.1 204 No Content
+Server: Apple
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Date: Wed, 01 Apr 2026 12:00:29 GMT
+X-Cache: TCP_MISS from a23-197-28-7.deploy.akamaitechnologies.com (AkamaiGHost/22.4.4-e0e8e110f8cd22f17826d6ac7409b8da) (-)
+Connection: keep-alive
+X-Cache-Remote: TCP_MISS from a23-50-232-154.deploy.akamaitechnologies.com (AkamaiGHost/22.4.4-e0e8e110f8cd22f17826d6ac7409b8da) (-)
+

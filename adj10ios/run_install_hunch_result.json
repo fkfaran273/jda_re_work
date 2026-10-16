@@ -1,0 +1,87 @@
+{
+ "link": "https://app.adjust.com/1yzhva5b?campaign=SOHYPE_ADH&adgroup={affiliate_id}&creative=[app_name}",
+ "att3": {
+  "att": 3,
+  "idfa": "C508CB1A-46A9-458B-B0A5-25778DF460E9",
+  "idfv": "F109316B-971E-49EC-9CD0-B5C6E2E51A51",
+  "click": {
+   "http": 302,
+   "location": "https://apps.apple.com/app/id6444654663?mt=8&pt=91576884&ct=Spyke+Media"
+  },
+  "session": {
+   "http": 200,
+   "json": {
+    "app_token": "vf3lochhmgw0",
+    "adid": "0880540acfdab224cf23d9da9100e1e8",
+    "ask_in": 2000
+   }
+  },
+  "sdk_click": {
+   "http": 200,
+   "json": {
+    "app_token": "vf3lochhmgw0",
+    "adid": "0880540acfdab224cf23d9da9100e1e8"
+   }
+  },
+  "attribution": {
+   "http": 200,
+   "json": {
+    "app_token": "vf3lochhmgw0",
+    "adid": "0880540acfdab224cf23d9da9100e1e8",
+    "attribution": {
+     "tracker_token": "yuzxv6m",
+     "tracker_name": "Organic",
+     "network": "Organic",
+     "engagement_time": "0001-01-01T00:00:00Z",
+     "installed_at": "2026-10-08T13:07:34Z",
+     "first_session_time": "2026-10-08T13:07:34Z",
+     "is_reattributed": false,
+     "is_redownload_install": false
+    }
+   }
+  },
+  "verdict": "Organic/other"
+ },
+ "att0": {
+  "att": 0,
+  "idfa": "64EA4CA9-8F07-41A5-8851-E2A0CAB3C9C9",
+  "idfv": "691C6A62-4DFA-4426-9EF5-B3DACD9DC0A0",
+  "click": {
+   "http": 302,
+   "location": "https://apps.apple.com/app/id6444654663?mt=8&pt=91576884&ct=Spyke+Media"
+  },
+  "session": {
+   "http": 200,
+   "json": {
+    "app_token": "vf3lochhmgw0",
+    "adid": "fc6410bf2b8b904432bab443d569f1ad",
+    "ask_in": 2000
+   }
+  },
+  "sdk_click": {
+   "http": 200,
+   "json": {
+    "app_token": "vf3lochhmgw0",
+    "adid": "fc6410bf2b8b904432bab443d569f1ad"
+   }
+  },
+  "attribution": {
+   "http": 200,
+   "json": {
+    "app_token": "vf3lochhmgw0",
+    "adid": "fc6410bf2b8b904432bab443d569f1ad",
+    "attribution": {
+     "tracker_token": "yuzxv6m",
+     "tracker_name": "Organic",
+     "network": "Organic",
+     "engagement_time": "0001-01-01T00:00:00Z",
+     "installed_at": "2026-10-08T13:08:05Z",
+     "first_session_time": "2026-10-08T13:08:05Z",
+     "is_reattributed": false,
+     "is_redownload_install": false
+    }
+   }
+  },
+  "verdict": "Organic/other"
+ }
+}

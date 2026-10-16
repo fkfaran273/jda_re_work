@@ -1,9 +1,0 @@
-POST https://sdk-api.apptracer.ru/api/crash/trackSession?crashToken=edmftUfGReDZbiaR3qT4Mdh6m2cCvMmzwuI7H2hmm6G HTTP/1.1
-User-Agent: TracerSDK/1.2.1 App/ru.vk.store Dalvik/2.1.0 (Linux; U; Android 11; DN2101 Build/RP1A.200720.011)
-Content-Type: application/json; charset=utf-8
-Content-Length: 498
-Host: sdk-api.apptracer.ru
-Connection: Keep-Alive
-Accept-Encoding: gzip
-
-{"deviceId":"4906f75a-2b0d-4cdd-b5b9-e52d9cb1093f","sessions":[{"versionName":"1.102.0.3","versionCode":1102003,"environment":"release","sessionUuid":"c6ae61b2-5a27-439d-87df-168f61e99229","status":"BLANK"},{"versionName":"1.102.0.3","versionCode":1102003,"environment":"release","sessionUuid":"aa29bbbe-f87d-4476-a033-f252fbaefea8","status":"BLANK"},{"versionName":"1.102.0.3","versionCode":1102003,"environment":"release","sessionUuid":"34aefd66-fea5-4aae-a780-33cd710434f6","status":"RUNNING"}]}

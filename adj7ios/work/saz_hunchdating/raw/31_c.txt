@@ -1,0 +1,8 @@
+GET https://static.intercomassets.com/assets/fin/fin-thinking-unbranded-mobile-64x64-at-2x-4386cfc12f1fa23c8a313e4bc868e5496ca755e25b7089050ca50636f82c8fa8.gif HTTP/1.1
+Host: static.intercomassets.com
+Accept: */*
+Accept-Language: en-GB,en;q=0.9
+Connection: keep-alive
+Accept-Encoding: gzip, deflate, br
+User-Agent: hunch/3 CFNetwork/1410.1 Darwin/22.6.0
+

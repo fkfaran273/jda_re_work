@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 271
+Connection: keep-alive
+Date: Wed, 01 Apr 2026 12:00:28 GMT
+X-Content-Type-Options: nosniff
+Server: nginx
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST, OPTIONS, DELETE, PUT, PATCH
+access-control-allow-headers: DNT, User-Agent, X-Requested-With, If-Modified-Since,Cache-Control, Content-Type, Range, MOE-DBNAME, MOE-APPKEY,MOE-REQUEST-ID, MOE-UNIQUE-ID, MOE-APPSECRET, MOE-INAPP-BATCH-ID, MOE-DASHBOARD-USER-ID
+moe-request-id: wgvcEivO
+Strict-Transport-Security: max-age=16070400; includeSubDomains
+X-Cache: Miss from cloudfront
+Via: 1.1 465b783bd5de4058f8720729813def5a.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: DEL51-P6
+X-Amz-Cf-Id: NqHe7mYfUy2TOhtYO-N5UPK_sNYrM55tiSpldPvz-SJxjMso58uyWA==
+
+{"status": true, "request_id": "1775044828-3D19C369-B9CD-4777-BE82-A09FB55409C4", "data": {"show_all_tab": true, "sync_intervals": {"app_open": 2700, "app_inbox": 300, "pull_to_refresh": 5, "user_activity": 0}, "card_categories": [], "deleted_card_ids": [], "cards": []}}

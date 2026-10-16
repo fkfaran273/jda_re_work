@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+content-type: application/json; charset=utf-8
+date: Wed, 20 May 2026 04:20:05 GMT
+content-length: 144
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-robots-tag: noindex
+
+{"app_token":"xb80fzavg0zk","adid":"1320196591db12584052ce8e77c6c76b","skadn_conv_value":0,"skadn_coarse_value":"low","skadn_lock_window":false}

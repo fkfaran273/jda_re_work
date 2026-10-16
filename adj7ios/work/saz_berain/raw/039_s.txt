@@ -1,0 +1,19 @@
+HTTP/1.1 200 OK
+Server: CloudFront
+Content-Type: text/javascript;charset=utf-8
+Connection: keep-alive
+Date: Wed, 20 May 2026 04:20:02 GMT
+Vary: Accept-Encoding, User-Agent
+X-Frame-Options: SAMEORIGIN
+Cache-Control: no-cache, no-store
+Cache-Control: no-cache, no-store
+Strict-Transport-Security: max-age=31536000;includeSubDomains;preload
+Pragma: no-cache
+Expires: 0
+X-Cache: Miss from cloudfront
+Via: 1.1 c2da4e01f074ed15299997cae8f9adca.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: MCT50-P1
+X-Amz-Cf-Id: TBKcarU2QZmORSY2xuZI5yOlHpPWEdkyu0hQrT4et4wklLx1mSHT9Q==
+Content-Length: 210
+
+{"arp":{"j_n":"Zw==","i_n":"Y2tifAYEBA==","d_ts":1779250800,"dh":-1882924680,"v":2,"j_s":"{}","id":"R9Z-W4R-9W6Z","r_ts":1779250802,"wdt":2.3,"hgt":4.09,"av":"4.4.0"},"imc":1,"imp":4,"inapp_delivery_mode":"SS"}

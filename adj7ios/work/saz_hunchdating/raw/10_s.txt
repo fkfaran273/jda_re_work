@@ -1,0 +1,29 @@
+HTTP/1.1 200 OK
+Date: Wed, 01 Apr 2026 12:00:28 GMT
+Content-Type: application/json; charset=utf-8
+Connection: keep-alive
+Server: cloudflare
+vary: Origin, accept-encoding
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+x-download-options: noopen
+x-permitted-cross-domain-policies: none
+referrer-policy: strict-origin-when-cross-origin
+access-control-allow-origin: *
+access-control-allow-headers: SDK-Version
+Cache-Control: public, max-age=3600
+etag: W/"67d5d15657083dd43d7ae4d092da6b90"
+x-request-id: 14fa4845-56f7-4e86-bc38-7496972edb73
+x-runtime: 0.008979
+via: 1.1 google
+alt-svc: h3=":443"; ma=86400
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+set-cookie: __cf_bm=9Lq_2iMxIo4MFef9zcbuVB0yk5fnjd_0Elxqnpi3hss-1775044828.9026833-1.0.1.1-8FhlnmdmZLqS5iAgCuVw4cPlpP11t9ln83VuxrbsyoH4emXVKYtkAQk9.SKVUl39.OEE45CZNMZIygSt4tNuRBoi0qFfAUZAy.WBKGFxyLiWzcd9akNp1idNUQqBeKcN; HttpOnly; Secure; Path=/; Domain=onesignal.com; Expires=Wed, 01 Apr 2026 12:30:28 GMT
+Age: 3062
+expires: Wed, 01 Apr 2026 13:00:28 GMT
+cf-cache-status: HIT
+CF-RAY: 9e576f04a8a99387-DEL
+Content-Length: 254
+
+{"uses_provisional_auth":false,"outcomes":{"direct":{"enabled":false},"indirect":{"notification_attribution":{"minutes_since_displayed":60,"limit":10},"enabled":false},"unattributed":{"enabled":false}},"receive_receipts_enable":false,"logging_config":{}}

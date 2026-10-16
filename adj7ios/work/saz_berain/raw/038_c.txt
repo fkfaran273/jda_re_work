@@ -1,0 +1,23 @@
+POST https://p67-fmf.icloud.com/fmipservice/fmf/18998207912/d78d21939e2708064363bb0fe55a6809ac1af052/register HTTP/1.1
+Host: p67-fmf.icloud.com
+X-Apple-PrsId: 18998207912
+User-Agent: fmflocatord/7.0 iPhone10,1/20H364
+Cookie: xr_3n2093n1a=S5KGXkCFxEdfGSFZoZ/4+Z/wKJPRfXQ/ceqMy2omrIx+nUh/eCnvyz547+4=
+X-Apple-PushEnv: production
+X-Apple-Realm-Support: 1.0
+Content-Length: 1107
+X-Apple-I-TimeZone: EDT
+Connection: keep-alive
+X-Apple-I-Client-Time: 2026-05-20T04:19:59Z
+X-Apple-Find-API-Ver: 7.0
+Authorization: Basic MTg5OTgyMDc5MTI6RUFBQkFBQUFCTHdJQUFBQUFHbnZRZ0FSRG1kekxtbGpiRzkxWkM1aGRYUm92UUF1Z19CQTExdGZqUVpKYmJ3b2hqXzg2a1FVSkRndWgtN0l5V0NpWGtYSE5JZ1VneElpY1JoeFZyZm0wRmtPOGhCbnVhZDJHSGFJdTg1R2xxWTlzUnNRX2xoR3g4TUowcTQtRXVvRmJNWlR1aDkzaDBzek5PWUVFWVNOS0lQUWFWTTZHS0JJUHhfN0RMRU9xdmxuWHJscDVrZGhxZ35+
+Accept-Language: en-US,en;q=0.9
+X-Apple-I-MD-RINFO: 50660608
+Accept: */*
+Content-Type: application/json
+Accept-Encoding: gzip, deflate, br
+X-Apple-I-MD-M: 0CxhXQI/cu5PPAnueERacpUiiLzxIwpX6IKmsx6qdzQ4eeTmAo7aka118OysWU4tUD6Wbc4dTj4xcSDU
+X-Apple-I-Locale: en_SA@calendar=gregorian
+X-Apple-I-MD: AAAABQAAABAcI4GHKQiVYmsLYUQkwW85AAAAAw==
+
+{"deviceContext":{"deviceTS":"2026-05-20T04:19:58.139Z","cause":"FMFLocationServicesStateChanged","registeredCauses":["FMFLocationServicesStateChanged"]},"deviceInfo":{"supportsNotifyV2":true,"supportsForceTouch":true,"deviceClass":"iPhone","locationServicesEnabled":true,"isChargerConnected":true,"unlockState":3,"smlLS":true,"deviceName":"iPhone","deviceColor":"2","processId":"22843","allPushTokens":["69EE678B28AFC2B0F2E7478FD550E72915F336AF395137BA85E49233E15E3605"],"fmf":true,"fenceMonitoringCapable":true,"productType":"iPhone10,1","udid":"d78d21939e2708064363bb0fe55a6809ac1af052","aps-token":"69EE678B28AFC2B0F2E7478FD550E72915F336AF395137BA85E49233E15E3605","locale":"en_SA@calendar=gregorian","fmfVersion":"526","isFMFAppRemoved":false,"platform":"iphoneos","batteryStatus":"NotCharging","idsDeviceId":"5BFE52BC-DBA6-45B5-9B29-EE03ADD22993","serialNumber":"FFMZ961VJC6D","timezone":"America\/New_York","isInternal":false,"otherDevices":[],"fmfRestrictions":false,"fmfBuildVersion":"5.0","batteryLevel":0.57999998331069946,"enclosureColor":"2","buildVersion":"20H364","productVersion":"16.7.12"}}

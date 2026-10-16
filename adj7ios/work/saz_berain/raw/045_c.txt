@@ -1,0 +1,13 @@
+POST https://consent.adjust.com/sdk_click HTTP/1.1
+Host: consent.adjust.com
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Berain-Swift/1 CFNetwork/1410.1 Darwin/22.6.0
+Client-Sdk: ios5.5.2
+Connection: keep-alive
+Accept: */*
+Accept-Language: ar
+Authorization: Signature signature="2C4FDFCE31D0418C7197E9CD646F63BC40927413ED06835C1541A054FDB745C16304D1F605824FA90629A28863F44D6A1A319E39143A12D7F113B9EEEE5487CEA035B2F41DF8C2A7131E125DB2AD6C3050C2D9294E864A39356C1B8DFD287E806B43E843EF98CB3AAE068EA13E6CC9D6D99FFBAE19FCEC950D439009497C572CE2C4E3951FAB32C3EAC36191E51B2FBD520CA2231868F1481131832FE0BF4F7F2572FDD698B3DDFCD921AEBDD146B596E531F16ED8C3C895A8FA0C4362540B9C699A2DA20E0FDF54682A7A78936BEE51DCB579372FE454C9BAD57272BA70B92D6FD5F76CD2344CD38CE21E3620F2588485EBD6D44CFC268E3C158EB64EBCD9E4677CD0320B746F2507CB91C22A3D37CD449782C683FDEA0CD4B5FC2548BB7FADA461AC70B3963B5A6FA0D0C5146895B8",adj_signing_id="1300000",algorithm="adj7",headers_id="8",native_version="3.62.0"
+Content-Length: 798
+Accept-Encoding: gzip, deflate, br
+
+idfa=0E0C62C4-5B3F-4B62-9F4C-7142390EBF69&bundle_id=com.berain.berain&source=apple_ads&primary_dedupe_token=471fd96d-cbb5-4bae-80f2-13307b2d8e8a&app_version=1&installed_at=2026-05-20T00%3A17%3A55.604Z-0400&background=1&app_version_short=4.4.0&device_name=iPhone10%2C1&needs_response_details=1&attribution_deeplink=1&error_code=100&session_count=1&os_name=ios&send_in_background_enabled=0&session_length=0&sent_at=2026-05-20T00%3A20%3A02.582Z-0400&time_spent=0&app_token=xb80fzavg0zk&environment=production&os_version=16.7.12&callback_params=%7B%22CleverTapAccountID%22%3A%22R9Z-W4R-9W6Z%22%7D&subsession_count=1&started_at=2026-04-21T06%3A12%3A44.000Z-0400&created_at=2026-05-20T00%3A20%3A00.307Z-0400&idfv=F40C31FB-1D8B-4028-8683-E31B7104E844&device_type=iPhone&att_status=3&offline_mode_enabled=0

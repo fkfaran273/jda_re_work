@@ -1,0 +1,1782 @@
+[
+ {
+  "sid": 1,
+  "method": "CONNECT",
+  "url": "example.com:443",
+  "headers": [
+   [
+    "Host",
+    "example.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 2,
+  "method": "GET",
+  "url": "https://example.com/",
+  "headers": [
+   [
+    "Host",
+    "example.com"
+   ],
+   [
+    "User-Agent",
+    "curl/7.73.0"
+   ],
+   [
+    "Accept",
+    "*/*"
+   ]
+  ]
+ },
+ {
+  "sid": 3,
+  "method": "CONNECT",
+  "url": "graph.facebook.com:443",
+  "headers": [
+   [
+    "Host",
+    "graph.facebook.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 4,
+  "method": "CONNECT",
+  "url": "graph.facebook.com:443",
+  "headers": [
+   [
+    "Host",
+    "graph.facebook.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 5,
+  "method": "CONNECT",
+  "url": "graph.facebook.com:443",
+  "headers": [
+   [
+    "Host",
+    "graph.facebook.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 6,
+  "method": "CONNECT",
+  "url": "graph.facebook.com:443",
+  "headers": [
+   [
+    "Host",
+    "graph.facebook.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 7,
+  "method": "CONNECT",
+  "url": "firebase-settings.crashlytics.com:443",
+  "headers": [
+   [
+    "Host",
+    "firebase-settings.crashlytics.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 8,
+  "method": "CONNECT",
+  "url": "firebaseinstallations.googleapis.com:443",
+  "headers": [
+   [
+    "Host",
+    "firebaseinstallations.googleapis.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 9,
+  "method": "GET",
+  "url": "https://graph.facebook.com/v16.0/app?access_token=2396553313942435%7Ccadf87a25aa2c0e89dd204c750f26545&fields=supports_implicit_sdk_logging%2Cgdpv4_nux_content%2Cgdpv4_nux_enabled%2Candroid_dialog_configs%2Candroid_sdk_error_categories%2Capp_events_session_timeout%2Capp_events_feature_bitmask%2Cauto_event_mapping_android%2Cseamless_login%2Csmart_login_bookmark_icon_url%2Csmart_login_menu_icon_url%2Crestrictive_data_filter_params%2Caam_rules%2Csuggested_events_setting%2Cprotected_mode_rules%2Cauto_log_app_events_default%2Cauto_log_app_events_enabled%2Capp_events_config.os_version(12)&format=json&sdk=android",
+  "headers": [
+   [
+    "User-Agent",
+    "FBAndroidSDK.18.2.3"
+   ],
+   [
+    "Accept-Language",
+    "en_IN"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Encoding",
+    "gzip"
+   ],
+   [
+    "Host",
+    "graph.facebook.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 10,
+  "method": "GET",
+  "url": "https://graph.facebook.com/v16.0/app/mobile_sdk_gk?access_token=2396553313942435%7Ccadf87a25aa2c0e89dd204c750f26545&fields=gatekeepers&format=json&sdk_version=18.2.3&sdk=android&platform=android",
+  "headers": [
+   [
+    "User-Agent",
+    "FBAndroidSDK.18.2.3"
+   ],
+   [
+    "Accept-Language",
+    "en_IN"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Encoding",
+    "gzip"
+   ],
+   [
+    "Host",
+    "graph.facebook.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 11,
+  "method": "GET",
+  "url": "https://graph.facebook.com/v16.0/app?access_token=2396553313942435%7Ccadf87a25aa2c0e89dd204c750f26545&fields=supports_implicit_sdk_logging%2Cgdpv4_nux_content%2Cgdpv4_nux_enabled%2Candroid_dialog_configs%2Candroid_sdk_error_categories%2Capp_events_session_timeout%2Capp_events_feature_bitmask%2Cauto_event_mapping_android%2Cseamless_login%2Csmart_login_bookmark_icon_url%2Csmart_login_menu_icon_url%2Crestrictive_data_filter_params%2Caam_rules%2Csuggested_events_setting%2Cprotected_mode_rules%2Cauto_log_app_events_default%2Cauto_log_app_events_enabled%2Capp_events_config.os_version(12)&format=json&sdk=android",
+  "headers": [
+   [
+    "User-Agent",
+    "FBAndroidSDK.18.2.3"
+   ],
+   [
+    "Accept-Language",
+    "en_IN"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Encoding",
+    "gzip"
+   ],
+   [
+    "Host",
+    "graph.facebook.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 12,
+  "method": "GET",
+  "url": "https://graph.facebook.com/v16.0/app?access_token=2396553313942435%7Ccadf87a25aa2c0e89dd204c750f26545&fields=supports_implicit_sdk_logging%2Cgdpv4_nux_content%2Cgdpv4_nux_enabled%2Candroid_dialog_configs%2Candroid_sdk_error_categories%2Capp_events_session_timeout%2Capp_events_feature_bitmask%2Cauto_event_mapping_android%2Cseamless_login%2Csmart_login_bookmark_icon_url%2Csmart_login_menu_icon_url%2Crestrictive_data_filter_params%2Caam_rules%2Csuggested_events_setting%2Cprotected_mode_rules%2Cauto_log_app_events_default%2Cauto_log_app_events_enabled%2Capp_events_config.os_version(12)&format=json&sdk=android",
+  "headers": [
+   [
+    "User-Agent",
+    "FBAndroidSDK.18.2.3"
+   ],
+   [
+    "Accept-Language",
+    "en_IN"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Encoding",
+    "gzip"
+   ],
+   [
+    "Host",
+    "graph.facebook.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 13,
+  "method": "GET",
+  "url": "https://firebase-settings.crashlytics.com/spi/v2/platforms/android/gmp/1:162416709673:android:1df6bc0e4fcccef5808c38/settings?instance=32c1b73ce748df7b77cb959176928932c64a5ff2&build_version=86&display_version=3.0.4&source=4",
+  "headers": [
+   [
+    "X-CRASHLYTICS-DEVELOPER-TOKEN",
+    "470fa2b4ae81cd56ecbcda9735803434cec591fa"
+   ],
+   [
+    "X-CRASHLYTICS-DEVICE-MODEL",
+    "motorola/moto g42"
+   ],
+   [
+    "X-CRASHLYTICS-INSTALLATION-ID",
+    "d45ce2ecc42d432aa7a92a9a413ac44c"
+   ],
+   [
+    "X-CRASHLYTICS-OS-DISPLAY-VERSION",
+    "12"
+   ],
+   [
+    "Accept",
+    "application/json"
+   ],
+   [
+    "X-CRASHLYTICS-API-CLIENT-VERSION",
+    "20.0.6"
+   ],
+   [
+    "User-Agent",
+    "Crashlytics Android SDK/20.0.6"
+   ],
+   [
+    "X-CRASHLYTICS-API-CLIENT-TYPE",
+    "android"
+   ],
+   [
+    "X-CRASHLYTICS-GOOGLE-APP-ID",
+    "1:162416709673:android:1df6bc0e4fcccef5808c38"
+   ],
+   [
+    "X-CRASHLYTICS-OS-BUILD-VERSION",
+    "4140d-bd21d"
+   ],
+   [
+    "Host",
+    "firebase-settings.crashlytics.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 14,
+  "method": "POST",
+  "url": "https://firebaseinstallations.googleapis.com/v1/projects/hanapocket-604fb/installations",
+  "headers": [
+   [
+    "Content-Type",
+    "application/json"
+   ],
+   [
+    "Accept",
+    "application/json"
+   ],
+   [
+    "Content-Encoding",
+    "gzip"
+   ],
+   [
+    "Cache-Control",
+    "no-cache"
+   ],
+   [
+    "X-Android-Package",
+    "in.hanafintech"
+   ],
+   [
+    "x-firebase-client",
+    "H4sIAAAAAAAA_6tWykhNLCpJSk0sKVayio7VUSpLLSrOzM9TslIyUqoFAFyivEQfAAAA"
+   ],
+   [
+    "X-Android-Cert",
+    "C1BFAFCAFFB84B805288B985FBE48E7F33D2C6DF"
+   ],
+   [
+    "x-goog-api-key",
+    "AIzaSyCqxoTsLB-RDjmcbz_1jfp7NxSCcN1yOVk"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "firebaseinstallations.googleapis.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Content-Length",
+    "140"
+   ]
+  ],
+  "body": "\u001f\ufffd\b\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\ufffdVJ\ufffdLQ\ufffdRJ\ufffdO\ufffd\ufffd\ufffd\ufffd)\t\ufffdML\rI*\u000e\ufffdH\ufffd*u\ufffdT\ufffdQJ,(\ufffd\u0004)0\ufffd24321437\ufffd437\ufffdJ\ufffdK)\ufffd\ufffdL\ufffd2LI3KJ6H5IKNNNM3\ufffd0\ufffdH6\ufffd\u0000\ufffd+-\ufffd\bK-*\ufffd\ufffd\ufffd\u0003\ufffdv\ufffd\f\ufffd/3\u0002\n\u0017\ufffdd#D\u0013\ufffd\f-\ufffd\f\ufffd\f\ufffdj\u0001\ufffd\ufffd\ufffd\u0587\u0000\u0000\u0000"
+ },
+ {
+  "sid": 15,
+  "method": "GET",
+  "url": "https://graph.facebook.com/v16.0/app/mobile_sdk_gk?access_token=2396553313942435%7Ccadf87a25aa2c0e89dd204c750f26545&fields=gatekeepers&format=json&sdk_version=18.2.3&sdk=android&platform=android",
+  "headers": [
+   [
+    "User-Agent",
+    "FBAndroidSDK.18.2.3"
+   ],
+   [
+    "Accept-Language",
+    "en_IN"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Encoding",
+    "gzip"
+   ],
+   [
+    "Host",
+    "graph.facebook.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 16,
+  "method": "POST",
+  "url": "https://graph.facebook.com/v16.0/2396553313942435/activities",
+  "headers": [
+   [
+    "User-Agent",
+    "FBAndroidSDK.18.2.3"
+   ],
+   [
+    "Accept-Language",
+    "en_IN"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Encoding",
+    "gzip"
+   ],
+   [
+    "Transfer-Encoding",
+    "chunked"
+   ],
+   [
+    "Host",
+    "graph.facebook.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ],
+  "body": "20e\r\n\u001f\ufffd\b\u0000\u0000\u0000\u0000\u0000\u0000\ufffdmRM\ufffd\ufffd0\u0010\ufffd5p\ufffd\ufffd\ufffd` \u0007\u000eIv+\ufffd\u06a6+%[U\ufffdX\u0013cX\u0017\ufffd\ufffdm\ufffd\ufffd\ufffdw\u0012X`\ufffd\u001e@\ufffd\ufffd\ufffd\ufffd\ufffdy\ufffdsa-s\ufffd\u0011\ufffd \ufffd6\ufffd4\ufffd\ufffdx\ufffd\ufffd$\ufffd^v\ufffdPVy\u0006\ufffd\u0002\u0010\u001e\ufffd|[\ufffd$LxF\u00ca\ufffd4\ufffd~\ufffdM\u0007\ufffd\ufffdi\ufffd\ufffdm\ufffd\u0014\ufffdJ\ufffde\ufffd\ufffd\ufffd:\ufffd1q\u0015\ufffd\ufffd\u00a3{/\ufffd{\ufffd\ufffd\ufffd#t\u0002/^\ufffd\ufffd\u007fua(dV8'Um\u0019\u007f\u0005U\ufffd\ufffd\ufffdM\ufffd\ufffd\ufffd,\ufffd\u0004Q\ufffd\ufffdb\ufffd\ufffd8\ufffd\ufffdA\u0399\u0006\ufffd(\ufffdK\ufffdJ>\u0018\ufffd\ufffdf<\ufffd3\ufffd\u001bq\ufffdz\ufffd3\u0016\u0390T\ufffdIh\ufffd\ufffd\u001a,\ufffdK\ufffddiQ\ufffd=\ufffd6zP\ufffd\"\\\ufffd]\ufffdJ.]\ufffd\u7cee\ufffd\ufffd\u0016N\ufffd\ufffd\ufffd\u0007_\ufffd\u0080\ufffdZA\ufffdz0h\ufffd\u0013fe\ufffd\ufffd~\u0015\ufffd2\ufffd\ufffd\ufffd\u000b\ufffd~0h\ufffd\u00157\ufffdj\ufffd\ufffd\t\u0005\ufffdvUq5\ufffde08\ufffdD\u0006}?=\ufffd?\ufffd\ufffd\u000e\ufffd&\ufffd\ufffd\ufffdr:\u007f\ufffd\ufffdv\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd|\ufffdAi\ufffddY|\ufffd\ufffd\ufffd\ufffd\u0005\ufffdm\ufffdIr\ufffd\ufffdd\ufffd\ufffd\u000b\ufffd\ufffd&\ufffd\ufffd,\ufffd$<\ufffdH\ufffdc=l\ufffd>-s\u0006\ufffd[uZ83\b\u001f\u02ab0NZa0-\ufffdm\u0005\ufffd\ufffd\u07f1\ufffd\ufffd\u000e\u00102\ufffd\fo\ufffdq\n\ufffd\ufffd`\ufffd\ufffd\u0000{-1\ufffd/~\ufffdfU\ufffdn%!@VO\u001d\ufffdA%\ufffd\u0013\ufffdu\f\ufffd\ufffdb\ufffdA\u0018$33ZD\ufffdv\ufffdC\ufffd,\u0001\ufffd\ufffd\ufffdq\ufffd=\ufffd\ufffd\ufffdy<Da\ufffd\ufffd\u001f0e6\ufffdI\ufffdNP\ufffd\u001f\ufffdn\ufffd\ufffd\ufffd\u0004\ufffd\ufffd\ufffd\ufffd'\ufffd6\ufffd\ufffdFC\ufffd\ufffd~M\ufffd2\ufffd\ufffdP\ufffd\ufffd\ufffd\ufffd\u000b\ufffd\u00007f\ufffd\u0003\u0000\u0000\r\n0\r\n\r\n"
+ },
+ {
+  "sid": 17,
+  "method": "CONNECT",
+  "url": "app-api.payrupikloan.in:443",
+  "headers": [
+   [
+    "Host",
+    "app-api.payrupikloan.in:443"
+   ]
+  ]
+ },
+ {
+  "sid": 18,
+  "method": "POST",
+  "url": "https://graph.facebook.com/v16.0/2396553313942435/activities",
+  "headers": [
+   [
+    "User-Agent",
+    "FBAndroidSDK.18.2.3"
+   ],
+   [
+    "Accept-Language",
+    "en_IN"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Encoding",
+    "gzip"
+   ],
+   [
+    "Transfer-Encoding",
+    "chunked"
+   ],
+   [
+    "Host",
+    "graph.facebook.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ],
+  "body": "153\r\n\u001f\ufffd\b\u0000\u0000\u0000\u0000\u0000\u0000\ufffdUPMo\ufffd0\f\ufffd5\ufffdej\ufffd\ufffdM\u000f9\u0000\ufffd$4\ufffd!\ufffd\u00f4K\ufffd&)dm\u0013\ufffdfh?\u007faE \u000eq\ufffd\ufffd\ufffd\ufffdl\ufffdRf\ufffdd\ufffdq\u0002\ufffd\ufffdd\ufffd\ufffd\ufffd\ufffd\u0014S\u0092j\ufffd@\ufffd\ufffd\u0002\ufffd\u0000\ufffd\ufffd\r\ufffd\ufffd\ufffd9U\u0015\ufffd[\\2\ufffdP\ufffd\ufffd\u0001\ufffd\ufffd\ufffd\ufffdC\ufffd\ufffd\u00048=z\ufffd\ufffd9\u0019\u0017\ufffd\ufffd\ufffdr\ufffdy\ufffd\ufffd\ufffdV\ufffd\ufffdv\u001f\ufffd\ufffd\u0006\ufffd\ufffdNZ->\ufffd\ufffd.\u001b\ufffd\ufffd*\ufffd\u001cTJ\ub4a7\rSmZ\ufffd\"\rUy\ufffd\t\ufffd\u3c77\n\ufffd\ufffd]a\u0004\ufffdY\ufffd\ufffd\ufffdA\ufffd\u001b-\ufffd\ufffdc\u0010\ufffd\u0019\ufffd\ufffd\ufffd\u0018m\ufffd\ufffd}o\u053f\ufffdNe\ufffd\u0014 R\ufffd<F\u0013\ufffd\u001b\ufffd\ufffd\ufffd]\ufffd\ufffd\ufffd:\u001a#\ufffd\u001b\ufffdk\ufffdH\ufffd2\ufffd\u0018p\f\t^\ufffdh]v\u0000\u0007\ufffdu\ufffd\ufffd\ufffd\\\ufffd\ufffd\u0311,\ufffd\ufffdUY\u071a\u0006\u001f\ufffd\u00de\ufffd\n\ufffd\ufffd3\\\ufffd\ufffd\ufffd\ufffdgP\ufffd<\ufffd_\ufffd\ufffd\ufffd2\ufffd\ufffd\u000b\ufffd\ufffdc\u0159\ufffd\ufffd\ufffdd!a\u0011=\ufffd\ufffd\ufffd\ufffd\u0000g\u0019{\ufffd\ufffd\ufffdeS\ufffd`0\ufffd~\u0003\ufffd\u0007I\u001f\ufffd'\ufffd\u0001\u0000\u0000\r\n0\r\n\r\n"
+ },
+ {
+  "sid": 19,
+  "method": "CONNECT",
+  "url": "json.dynamicdns.in:443",
+  "headers": [
+   [
+    "Host",
+    "json.dynamicdns.in:443"
+   ]
+  ]
+ },
+ {
+  "sid": 20,
+  "method": "GET",
+  "url": "https://graph.facebook.com/v16.0/app/model_asset?access_token=2396553313942435%7Ccadf87a25aa2c0e89dd204c750f26545&fields=use_case%2Cversion_id%2Casset_uri%2Crules_uri%2Cthresholds&format=json&sdk=android",
+  "headers": [
+   [
+    "User-Agent",
+    "FBAndroidSDK.18.2.3"
+   ],
+   [
+    "Accept-Language",
+    "en_IN"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Encoding",
+    "gzip"
+   ],
+   [
+    "Host",
+    "graph.facebook.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 21,
+  "method": "POST",
+  "url": "https://app-api.payrupikloan.in/init/swap",
+  "headers": [
+   [
+    "User-Agent",
+    "4c2576c7-56da-3568-9d9c-dd5ef029b6c8 india-hikredit(3.0.4) android"
+   ],
+   [
+    "x-india-hikredit-token",
+    "3B224B9BE17FF1943BB9184120E92E59EE981A7D"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Length",
+    "850"
+   ],
+   [
+    "Host",
+    "app-api.payrupikloan.in"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ],
+  "body": "encrypt_version=2.0&cipher_txt=PRR5AjRtzl6G6RZXMuhU%2FlEcLtEw%2FivYJUa32sWH5a09vyD3a%2FTrtCyWF054rhjJk1KgKvmZEvgU%0As98sj71JVJxPsFVzqP6LFBcV1UoYF7uIfxfuch8tgJBwm6bv9jYTxy2fvujkBu6XuYWpS7fUApdN%0AfzcswC0RUmmifbsej3o%3D%0A%2CeBK%2BqCAQAlc2dQnoYy8MLYHdMcC6J3d%2B98SNYHMyffOaam%2F9jMliOQa5IOhrMA3uiHnc2dGfiL7w%0AwCoSqQha484pYjkk2oYiS8YGSkalbKSAEFxumSsmWFzoWQnHucFmXrZAneLRuyvyCEZnFHzXjOxB%0Aj9GbiUm%2FPVc7WmvmvW8%3D%0A%2CBlJy58jVnNuz0VUskWJ9NvDyZo7SgsCv%2FQxmTOS%2Bk6heUFnJZnIMUQGMQeDycK83IRRFTz1lAWy4%0AE4XQCJpKXqlWA10bAz3y2XIYmhiZ2Z9CBPms6gPzeIk4pW68%2F8oRhzF%2Bd73aPwmKty%2FarWtqFlkm%0Awq%2FHDRqHKZYArNswnU8%3D%0A%2Cmiju5X0RP0SJSwA08MjtFAtizIqsU2aSzDC45PFRqLAC3y0F19y1UXRUR7abAXhR9wBVkGmef4sm%0AwLoWbA7ptdyiSXW6EyI2ysofq%2BvxADxWfAasjAeMrrvJHkoofVfPpvT2yhCKKz33PQJshrMU3Hna%0ATtyEF%2Fvhr7Xw8EJSpMs%3D%0A&digest=3797435C7B3E6302F8D29F5210FD6BBAE6469E0F"
+ },
+ {
+  "sid": 22,
+  "method": "POST",
+  "url": "https://graph.facebook.com/v16.0/2396553313942435/activities",
+  "headers": [
+   [
+    "User-Agent",
+    "FBAndroidSDK.18.2.3"
+   ],
+   [
+    "Accept-Language",
+    "en_IN"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Encoding",
+    "gzip"
+   ],
+   [
+    "Transfer-Encoding",
+    "chunked"
+   ],
+   [
+    "Host",
+    "graph.facebook.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ],
+  "body": "272\r\n\u001f\ufffd\b\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\ufffdTMo\ufffd0\u0010\ufffd5\u02e5b\u0005\u0006\ufffdq\u0c3bI\ufffd\ufffdi\u001a)\ufffd\ufffd\ufffd\ufffd\u001a\ufffda]\ufffdF\u0624M\u007f}gY\u0002\ufffd\ufffd\ufffdJU\u000f \ufffd\ufffd\ufffdf\ufffd\ufffd\u0018\ufffd\\\u0018\u00ec\ufffd\ufffd\ufffdH\ufffdF\ufffd\u0006\ufffd\u001f\ufffd!\t\u0003\ufffd\ufffdw\u001c\ufffd2\ufffd\ufffdP\u0000\ufffd=\ufffd\ufffdEA\ufffd\ufffd\ufffd\ufffd+IDC\ua53ao\ufffdf\u07ccV\ufffd)\ufffd\fT\ufffdkY8|0V\ufffdL<\teM\ufffd\ufffd\ufffdU\ufffd]\u0011r\u06b8\ufffdV\ufffd\ufffd*\ufffd\ufffd\ufffd\u0019\u001edRI+\ufffd\ufffd?G\ufffd\ufffd\ufffdFW{\ufffdB\ufffd\ufffd\ufffd\u000fhB\ufffdhB\u00079k\f\ufffdV\ufffd\ufffd\ufffdO\ufffd\u0003\ufffd52GY\ufffd\f\ufffd(f\ufffd?\ufffd\ufffd\ufffd\u001a\ufffdjs\ufffd\ufffdYHu\ufffd\ufffd\ufffd\u5008m\ufffd\ufffdU\ufffd\u0007\ufffdg\ufffd\u014c\ufffd\ufffd\ufffd\udb76\udfaa\ufffd5\ufffd#\ufffd/6\ufffd:\ufffd\ufffd`\ufffd\ufffd|\u0002\ufffd\ufffd\ufffd\ufffd\ufffde\ufffd\ufffd\ufffd[\u0018\u0014?\ufffd~s\ufffd\ufffd\ufffdy\ufffd08*R+&\ufffd\ufffdH\u0018y\ufffdG<7-|\ufffdI@\ufffdD\ufffd\ufffd[\ufffd\".\ufffd8Os\ufffd\ufffd\u0002K\ufffd\ufffd\u0018\ufffd\u0019=\ufffd|)\ufffd\u0011\ufffd\u0003\fQ\ufffdS\ufffdX0\ufffdrt'z\ufffd\u0018\u0017\u001a\ufffdA\ufffd5[\u045f\ufffd\ufffd\ufffd\ufffdl\u007f\u0012;!fv\ufffdu\u0018\ufffd\u0000F\u001c}\ufffdvVL(\u021b3\ufffd\ufffd9M<\u0006\ufffd\ufffdH<:8\ufffd\ufffd\u001b\ufffdKK\u03ba\ufffd2\ufffd\ufffd=\u0013\ufffdk$e\ufffd\u01c7\ufffd\ufffd\ufffdls\u007f\u03ee?_\ufffd\ufffd\u001f\u001cPc\ufffd/_\ufffd\"\ufffd!\ufffd&\ufffd\tp7L\ufffd\ufffd\ufffd)/]?\ufffd\ufffd \u000f\ufffd\ufffd\ufffd\u0019/\u0007\u001f}g\ufffd\u01e9=\ufffd4\ufffd\ufffd \u001c(\ufffdDo\ufffd\u0011=\ufffd2\ufffd\ufffdF\ufffd\ufffd\ufffd%\ufffd\ufffd\ufffdP\ufffd\ufffd\ufffd\u001a*\ufffdq\u076e\ufffd\ufffd\ufffd\u001as-P\ufffd\u0011?\ufffdT\ufffd\u001e\ufffd\ufffd\u0017\ufffd,\u000e\ufffd\ufffd\u0001\u0014\ufffdRY\ufffd\u000f\ufffd\ufffdd\ufffd\u0001\u0004ko\u001d\ufffdL\u007f9\ufffdj\ufffd\ufffdU\ufffd!\u0014\ufffd\ufffd\ufffd\ufffdn\u001e\ufffd\ufffd\ufffd\ufffd\ufffd\u0004\u06ffC\ufffd\ufffd>\ufffdu4A\t>\ufffd?\ufffd'dc$\ufffd(\ufffd\ufffd\u007f\ufffdM\r\u0016\ufffd4\ufffd\ufffd\u072f\ufffdR\ufffdp\u0012\ufffd\ufffd\u00158\ufffd\u0000\ufffd\ufffd\u0011gq\u0005\u0000\u0000\r\n0\r\n\r\n"
+ },
+ {
+  "sid": 23,
+  "method": "GET",
+  "url": "https://json.dynamicdns.in/appdomain/domain_prod.json?access_time=1791358537&adjust_id=&app_instance_id=&app_version=3.0.4&channel=PayRupik&common_google_adid=&d_id_store=4c2576c7-56da-3568-9d9c-dd5ef029b6c8&d_sys_ver=12&language=en-in&package_name=in.hanafintech&package_type=0",
+  "headers": [
+   [
+    "User-Agent",
+    "4c2576c7-56da-3568-9d9c-dd5ef029b6c8 india-hikredit(3.0.4) android"
+   ],
+   [
+    "x-india-hikredit-token",
+    "3B224B9BE17FF1943BB9184120E92E59EE981A7D"
+   ],
+   [
+    "Host",
+    "json.dynamicdns.in"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 24,
+  "method": "CONNECT",
+  "url": "oversee.froescik.in:443",
+  "headers": [
+   [
+    "Host",
+    "oversee.froescik.in:443"
+   ]
+  ]
+ },
+ {
+  "sid": 25,
+  "method": "GET",
+  "url": "https://firebase-settings.crashlytics.com/spi/v2/platforms/android/gmp/1%3A162416709673%3Aandroid%3A1df6bc0e4fcccef5808c38/settings?build_version=86&display_version=3.0.4",
+  "headers": [
+   [
+    "Accept",
+    "application/json"
+   ],
+   [
+    "X-Crashlytics-Installation-ID",
+    "c_dYOhltRmaeTbsQ8djuAy"
+   ],
+   [
+    "X-Crashlytics-Device-Model",
+    "motorolamoto g42"
+   ],
+   [
+    "X-Crashlytics-OS-Build-Version",
+    "4140d-bd21d"
+   ],
+   [
+    "X-Crashlytics-OS-Display-Version",
+    "12"
+   ],
+   [
+    "X-Crashlytics-API-Client-Version",
+    "3.0.6"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "firebase-settings.crashlytics.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 26,
+  "method": "POST",
+  "url": "https://oversee.froescik.in/add/networkInfoReport",
+  "headers": [
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Length",
+    "1264"
+   ],
+   [
+    "Host",
+    "oversee.froescik.in"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "User-Agent",
+    "okhttp/5.3.2"
+   ]
+  ],
+  "body": "carrier=&channel=PayRupik&d_id=4c2576c7-56da-3568-9d9c-dd5ef029b6c8&device_time=1791358537842&device_type=motorola-moto+g42&device_zone=IST&json=%5B%7B%22create_time%22%3A1791358537833%2C%22domain%22%3A%22json.dynamicdns.in%22%2C%22error_no%22%3A-1020%2C%22method%22%3A%22GET%22%2C%22request_time%22%3A1791358537645%2C%22response_code%22%3A200%2C%22response_length%22%3A355%2C%22response_time%22%3A1791358537832%2C%22total_time%22%3A187%2C%22url%22%3A%22https%3A%2F%2Fjson.dynamicdns.in%2Fappdomain%2Fdomain_prod.json%3Faccess_time%5Cu003d1791358537%5Cu0026adjust_id%5Cu003d%5Cu0026app_instance_id%5Cu003d%5Cu0026app_version%5Cu003d3.0.4%5Cu0026channel%5Cu003dPayRupik%5Cu0026common_google_adid%5Cu003d%5Cu0026d_id_store%5Cu003d4c2576c7-56da-3568-9d9c-dd5ef029b6c8%5Cu0026d_sys_ver%5Cu003d12%5Cu0026language%5Cu003den-in%5Cu0026package_name%5Cu003din.hanafintech%5Cu0026package_type%5Cu003d0%22%2C%22device_type%22%3A%22motorola-moto+g42%22%2C%22platform%22%3A%22android%22%2C%22project%22%3A%22PayRupik%22%2C%22push_id%22%3A%22%22%2C%22sequence_id%22%3A%22%22%2C%22system_version%22%3A%2212%22%2C%22version%22%3A%223.0.4%22%7D%5D&network_type=wifi&platform=android&project=PayRupik&push_id=&sdk_version=1.4.3.3&sequence_id=&system_version=12%2831%29&version=3.0.4"
+ },
+ {
+  "sid": 27,
+  "method": "CONNECT",
+  "url": "example.com:443",
+  "headers": [
+   [
+    "Host",
+    "example.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 28,
+  "method": "GET",
+  "url": "https://example.com/",
+  "headers": [
+   [
+    "Host",
+    "example.com"
+   ],
+   [
+    "User-Agent",
+    "curl/7.73.0"
+   ],
+   [
+    "Accept",
+    "*/*"
+   ]
+  ]
+ },
+ {
+  "sid": 29,
+  "method": "CONNECT",
+  "url": "app-api.payrupikloan.in:443",
+  "headers": [
+   [
+    "Host",
+    "app-api.payrupikloan.in:443"
+   ]
+  ]
+ },
+ {
+  "sid": 30,
+  "method": "POST",
+  "url": "https://app-api.payrupikloan.in/Credit/SaveTrack",
+  "headers": [
+   [
+    "User-Agent",
+    "4c2576c7-56da-3568-9d9c-dd5ef029b6c8 india-hikredit(3.0.4) android"
+   ],
+   [
+    "x-india-hikredit-token",
+    "3B224B9BE17FF1943BB9184120E92E59EE981A7D"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Length",
+    "1182"
+   ],
+   [
+    "Host",
+    "app-api.payrupikloan.in"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ],
+  "body": "cipher_txt=m%2FfP7dmo%2BK7GSKGRq27Ec9Epa2ravCLTJW7wlQ8EtE47j23j1iN%2BoTcdMGRZ3yKY9s1gJjLLHtiB%0AQckl9BGLx26Yv%2FL%2Fb63vvONigpEfR4bSdHzUp83XcwoHcl5cl1XQa6oax%2BlRWxsTo1xkMq9Fgf8%2B%0AMh5gB1CGq9BkByL%2F%2FgWk5P7fbES0t1wQXD0jgN3QfPIHtYK%2B6q5yetvOsYc1xInxfK8rccgEQ%2Fmx%0AUcFMlHJHD0t2dQ%2F8L3HuiMbxKcrGJWPuUZcYg0Tsfh6Cjb%2BRTKRrtjNlDjDyo9%2FrRjWNF7ShX%2Bl4%0AFNG1YISSr4JNdk6GeXKE0F3Dx0smw7YsdNX6Q%2Fjt1RtDj8SOH7sitrKveSAmhnvM6ZMIIxGTYw%2Bz%0AbsWetpB2Ge0p%2BW2rTls6ogMdVBqNunwa11FlJtFmqFU5axvtB26aOeeWuHBiZp9hUAmX8QMkIIGr%0AisbCNN9KTiThX5GtyDcxCm98PAdSv%2FAMqBkIgxEjA%2BKc3Xv5FIm4YaHYWnX8qutJ1N2WKn6C26sC%0AH%2BLoz7UclUgUo5Fdcu0BAiecXvSVHz1HdVn2pPomxPjWd%2BRfDsrAPu%2FfFQcXsA04UTFMJ7mRkSxM%0Ax3J81CcVELX1oDldTQVn%2BIHk0ZP9Oa%2BASp1FhGrqb%2BaltUrY9Sw%2FAsqipJyBytSe2wkxJ%2FhhVLUK%0AHbjMeo0K4pKt5lGt4K8pR%2F%2Fq1Wsq3S0EG%2B4PigMuz%2FFh89g5ONFaJ4DJv76pcKqbBlqIIkaMQfzy%0AMpJ18pOHT8vCFaJd1tzlzUKx092Y3F%2BfnquJu4HFVK%2BezK%2Ff3q9%2F7ZSHmOm1hsCdin4tQTDuNVxB%0Aq9ddv1InVcnnyFHBoPBgWI43rFjoS3xceIj%2BYAsj8stHiV0FuPVjhBmD2jLkszfzkNLdyFD7SrWn%0AupYLazbnCNGpcpNktbydMSpIS1wupQUUrVlwgx0ZpwkQd7HTyu%2B4AQCJHVwkQOYeJNmgTw%3D%3D%0A&digest=04B177326D859BCE59AB0D2E243CFF8841695CA1&encrypt_version=2.0"
+ },
+ {
+  "sid": 31,
+  "method": "CONNECT",
+  "url": "app-api.payrupikloan.in:443",
+  "headers": [
+   [
+    "Host",
+    "app-api.payrupikloan.in:443"
+   ]
+  ]
+ },
+ {
+  "sid": 32,
+  "method": "CONNECT",
+  "url": "oversee.froescik.in:443",
+  "headers": [
+   [
+    "Host",
+    "oversee.froescik.in:443"
+   ]
+  ]
+ },
+ {
+  "sid": 33,
+  "method": "CONNECT",
+  "url": "app-api.payrupikloan.in:443",
+  "headers": [
+   [
+    "Host",
+    "app-api.payrupikloan.in:443"
+   ]
+  ]
+ },
+ {
+  "sid": 34,
+  "method": "CONNECT",
+  "url": "app-api.payrupikloan.in:443",
+  "headers": [
+   [
+    "Host",
+    "app-api.payrupikloan.in:443"
+   ]
+  ]
+ },
+ {
+  "sid": 35,
+  "method": "CONNECT",
+  "url": "app-api.payrupikloan.in:443",
+  "headers": [
+   [
+    "Host",
+    "app-api.payrupikloan.in:443"
+   ]
+  ]
+ },
+ {
+  "sid": 36,
+  "method": "CONNECT",
+  "url": "app-api.payrupikloan.in:443",
+  "headers": [
+   [
+    "Host",
+    "app-api.payrupikloan.in:443"
+   ]
+  ]
+ },
+ {
+  "sid": 37,
+  "method": "CONNECT",
+  "url": "app-api.payrupikloan.in:443",
+  "headers": [
+   [
+    "Host",
+    "app-api.payrupikloan.in:443"
+   ]
+  ]
+ },
+ {
+  "sid": 38,
+  "method": "POST",
+  "url": "https://app-api.payrupikloan.in/common/config",
+  "headers": [
+   [
+    "User-Agent",
+    "4c2576c7-56da-3568-9d9c-dd5ef029b6c8 india-hikredit(3.0.4) android"
+   ],
+   [
+    "x-india-hikredit-token",
+    "3B224B9BE17FF1943BB9184120E92E59EE981A7D"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Length",
+    "531"
+   ],
+   [
+    "Host",
+    "app-api.payrupikloan.in"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ],
+  "body": "cipher_txt=m%2FfP7dmo%2BK7GSKGRq27Ecw11eRvJhWMFYPVH87uVKrnZycAFcECATeYY%2F3urWGa%2FnY1rL%2Ft3EKK2%0AIA3LgyVG2tZfh9ElmgBYLyXQ8vzTgQTTRoHpQRNw7ddIz%2BXafZYx2o82KO3YSlvY7%2FDPEWhymPV1%0AhGhvLEvTAsTaejXb04yRcIL1uNO829e6V7je1I01HeobR1rAoXD5VkgOSODuUZJIaz4dO59KHiNf%0AO3dtoyDDKZkejsd%2B5ED3I%2FpAegO37voW6XoVgvx%2BOamsZ5zhHz6bxVaoUevb2AvEzMNqYZxsmrPj%0AlQghNw82ivXjGdn8yBk5qxTan2WyRo9xUpaGNKxSbGs2Xe907Ub343mwg0lYd7aR1KmzyvT7FAvL%0A%2B3PLvPtEe1FBnn1Doo56eGmUpg%3D%3D%0A&digest=BD8A341E9E6F42862098BF7E9A235AB430ACBE61&encrypt_version=2.0"
+ },
+ {
+  "sid": 39,
+  "method": "CONNECT",
+  "url": "app-api.payrupikloan.in:443",
+  "headers": [
+   [
+    "Host",
+    "app-api.payrupikloan.in:443"
+   ]
+  ]
+ },
+ {
+  "sid": 40,
+  "method": "CONNECT",
+  "url": "app-api.payrupikloan.in:443",
+  "headers": [
+   [
+    "Host",
+    "app-api.payrupikloan.in:443"
+   ]
+  ]
+ },
+ {
+  "sid": 41,
+  "method": "POST",
+  "url": "https://app-api.payrupikloan.in/Common/PicConfig",
+  "headers": [
+   [
+    "User-Agent",
+    "4c2576c7-56da-3568-9d9c-dd5ef029b6c8 india-hikredit(3.0.4) android"
+   ],
+   [
+    "x-india-hikredit-token",
+    "3B224B9BE17FF1943BB9184120E92E59EE981A7D"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Length",
+    "531"
+   ],
+   [
+    "Host",
+    "app-api.payrupikloan.in"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ],
+  "body": "cipher_txt=m%2FfP7dmo%2BK7GSKGRq27Ecw11eRvJhWMFYPVH87uVKrnZycAFcECATeYY%2F3urWGa%2FnY1rL%2Ft3EKK2%0AIA3LgyVG2tZfh9ElmgBYLyXQ8vzTgQTTRoHpQRNw7ddIz%2BXafZYx2o82KO3YSlvY7%2FDPEWhymPV1%0AhGhvLEvTAsTaejXb04yRcIL1uNO829e6V7je1I01HeobR1rAoXD5VkgOSODuUZJIaz4dO59KHiNf%0AO3dtoyDDKZkejsd%2B5ED3I%2FpAegO37voW6XoVgvx%2BOamsZ5zhHz6bxVaoUevb2AvEzMNqYZxsmrPj%0AlQghNw82ivXjGdn8yBk5qxTan2WyRo9xUpaGNKxSbGs2Xe907Ub343mwg0lYd7aR1KmzyvT7FAvL%0A%2B3PLvPtEe1FBnn1Doo56eGmUpg%3D%3D%0A&digest=BD8A341E9E6F42862098BF7E9A235AB430ACBE61&encrypt_version=2.0"
+ },
+ {
+  "sid": 42,
+  "method": "GET",
+  "url": "https://app-api.payrupikloan.in/loan/Opening?cipher_txt=m%2FfP7dmo%2BK7GSKGRq27Ecw11eRvJhWMFYPVH87uVKrnZycAFcECATeYY%2F3urWGa%2FnY1rL%2Ft3EKK2%0AIA3LgyVG2tZfh9ElmgBYLyXQ8vzTgQTTRoHpQRNw7ddIz%2BXafZYx2o82KO3YSlvY7%2FDPEWhymPV1%0AhGhvLEvTAsTaejXb04yRcIL1uNO829e6V7je1I01HeobR1rAoXD5VkgOSODuUZJIaz4dO59KHiNf%0AO3dtoyDDKZkejsd%2B5ED3I%2FpAegO37voW6XoVgvx%2BOamsZ5zhHz6bxVaoUevb2AvEzMNqYZxsmrPj%0AlQghNw82ivXjGdn8yBk5qxTan2WyRo9xUpaGNKxSbGs2Xe907Ub343mwg0lYd7aR1KmzyvT7FAvL%0A%2B3PLvPtEe1FBnn1Doo56eGmUpg%3D%3D%0A&digest=BD8A341E9E6F42862098BF7E9A235AB430ACBE61&encrypt_version=2.0",
+  "headers": [
+   [
+    "User-Agent",
+    "4c2576c7-56da-3568-9d9c-dd5ef029b6c8 india-hikredit(3.0.4) android"
+   ],
+   [
+    "x-india-hikredit-token",
+    "3B224B9BE17FF1943BB9184120E92E59EE981A7D"
+   ],
+   [
+    "Host",
+    "app-api.payrupikloan.in"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 43,
+  "method": "POST",
+  "url": "https://app-api.payrupikloan.in/common/openevent",
+  "headers": [
+   [
+    "User-Agent",
+    "4c2576c7-56da-3568-9d9c-dd5ef029b6c8 india-hikredit(3.0.4) android"
+   ],
+   [
+    "x-india-hikredit-token",
+    "3B224B9BE17FF1943BB9184120E92E59EE981A7D"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Length",
+    "531"
+   ],
+   [
+    "Host",
+    "app-api.payrupikloan.in"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ],
+  "body": "cipher_txt=m%2FfP7dmo%2BK7GSKGRq27Ecw11eRvJhWMFYPVH87uVKrnZycAFcECATeYY%2F3urWGa%2FnY1rL%2Ft3EKK2%0AIA3LgyVG2tZfh9ElmgBYLyXQ8vzTgQTTRoHpQRNw7ddIz%2BXafZYx2o82KO3YSlvY7%2FDPEWhymPV1%0AhGhvLEvTAsTaejXb04yRcIL1uNO829e6V7je1I01HeobR1rAoXD5VkgOSODuUZJIaz4dO59KHiNf%0AO3dtoyDDKZkejsd%2B5ED3I%2FpAegO37voW6XoVgvx%2BOamsZ5zhHz6bxVaoUevb2AvEzMNqYZxsmrPj%0AlQghNw82ivXjGdn8yBk5qxTan2WyRo9xUpaGNKxSbGs2Xe907Ub343mwg0lYd7aR1KmzyvT7FAvL%0A%2B3PLvPtEe1FBnn1Doo56eGmUpg%3D%3D%0A&digest=BD8A341E9E6F42862098BF7E9A235AB430ACBE61&encrypt_version=2.0"
+ },
+ {
+  "sid": 44,
+  "method": "GET",
+  "url": "https://app-api.payrupikloan.in/api/GetUpgrade?project=PayRupik&version=3.0.4&sequence_id=&channel=PayRupik&system_version=12&device_type=motorola-moto%20g42&platform=android",
+  "headers": [
+   [
+    "Host",
+    "app-api.payrupikloan.in"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "User-Agent",
+    "okhttp/5.3.2"
+   ]
+  ]
+ },
+ {
+  "sid": 45,
+  "method": "GET",
+  "url": "https://app-api.payrupikloan.in/bbps/showService?cipher_txt=m%2FfP7dmo%2BK7GSKGRq27Ecw11eRvJhWMFYPVH87uVKrnZycAFcECATeYY%2F3urWGa%2FnY1rL%2Ft3EKK2%0AIA3LgyVG2tZfh9ElmgBYLyXQ8vzTgQTTRoHpQRNw7ddIz%2BXafZYx2o82KO3YSlvY7%2FDPEWhymPV1%0AhGhvLEvTAsTaejXb04yRcIL1uNO829e6V7je1I01HeobR1rAoXD5VkgOSODuUZJIaz4dO59KHiNf%0AO3dtoyDDKZkejsd%2B5ED3I%2FpAegO37voW6XoVgvx%2BOamsZ5zhHz6bxVaoUevb2AvEzMNqYZxsmrPj%0AlQghNw82ivXjGdn8yBk5qxTan2WyRo9xUpaGNKxSbGs2Xe907Ub343mwg0lYd7aR1KmzyvT7FAvL%0A%2B3PLvPtEe1FBnn1Doo56eGmUpg%3D%3D%0A&digest=BD8A341E9E6F42862098BF7E9A235AB430ACBE61&encrypt_version=2.0",
+  "headers": [
+   [
+    "User-Agent",
+    "4c2576c7-56da-3568-9d9c-dd5ef029b6c8 india-hikredit(3.0.4) android"
+   ],
+   [
+    "x-india-hikredit-token",
+    "3B224B9BE17FF1943BB9184120E92E59EE981A7D"
+   ],
+   [
+    "Host",
+    "app-api.payrupikloan.in"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 46,
+  "method": "POST",
+  "url": "https://app-api.payrupikloan.in/loan/index",
+  "headers": [
+   [
+    "User-Agent",
+    "4c2576c7-56da-3568-9d9c-dd5ef029b6c8 india-hikredit(3.0.4) android"
+   ],
+   [
+    "x-india-hikredit-token",
+    "3B224B9BE17FF1943BB9184120E92E59EE981A7D"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Length",
+    "553"
+   ],
+   [
+    "Host",
+    "app-api.payrupikloan.in"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ],
+  "body": "cipher_txt=m%2FfP7dmo%2BK7GSKGRq27Ecw11eRvJhWMFYPVH87uVKrnZycAFcECATeYY%2F3urWGa%2FnY1rL%2Ft3EKK2%0AIA3LgyVG2tZfh9ElmgBYLyXQ8vzTgQTTRoHpQRNw7ddIz%2BXafZYx2o82KO3YSlvY7%2FDPEWhymPV1%0AhGhvLEvTAsTaejXb04yRcIL1uNO829e6V7je1I01HeobR1rAoXD5VkgOSODuUZJIaz4dO59KHiNf%0AO3dtoyDDKZkejsd%2B5ED3I%2FpAegO37voW6XoVgvx%2BOamsZ5zhHz6bxVaoUevb2AvEzMNqYZxsmrPj%0AlQghNw82ivXjGdn8yBk5qxTan2WyRo9xUpaGNKxSbGs2Xe907Ub343mwg0lYd7aR1KmzyvT7FAvL%0A%2B3PL5VnNHMsuzze3wrpnB5oFferj9uCT%2Fa1hmCgQya%2FSANM%3D%0A&digest=462B5E39C531CD33FFFF2DCC00C15C4AB98D1686&encrypt_version=2.0"
+ },
+ {
+  "sid": 47,
+  "method": "GET",
+  "url": "https://app-api.payrupikloan.in/Loan/ShowAuth?cipher_txt=m%2FfP7dmo%2BK7GSKGRq27Ecw11eRvJhWMFYPVH87uVKrnZycAFcECATeYY%2F3urWGa%2FnY1rL%2Ft3EKK2%0AIA3LgyVG2tZfh9ElmgBYLyXQ8vzTgQTTRoHpQRNw7ddIz%2BXafZYx2o82KO3YSlvY7%2FDPEWhymPV1%0AhGhvLEvTAsTaejXb04yRcIL1uNO829e6V7je1I01HeobR1rAoXD5VkgOSODuUZJIaz4dO59KHiNf%0AO3dtoyDDKZkejsd%2B5ED3I%2FpAegO37voW6XoVgvx%2BOamsZ5zhHz6bxVaoUevb2AvEzMNqYZxsmrPj%0AlQghNw82ivXjGdn8yBk5qxTan2WyRo9xUpaGNKxSbGs2Xe907Ub343mwg0lYd7aR1KmzyvT7FAvL%0A%2B3PLvPtEe1FBnn1Doo56eGmUpg%3D%3D%0A&digest=BD8A341E9E6F42862098BF7E9A235AB430ACBE61&encrypt_version=2.0",
+  "headers": [
+   [
+    "User-Agent",
+    "4c2576c7-56da-3568-9d9c-dd5ef029b6c8 india-hikredit(3.0.4) android"
+   ],
+   [
+    "x-india-hikredit-token",
+    "3B224B9BE17FF1943BB9184120E92E59EE981A7D"
+   ],
+   [
+    "Host",
+    "app-api.payrupikloan.in"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 48,
+  "method": "POST",
+  "url": "https://app-api.payrupikloan.in/Account/SaveUserTheme",
+  "headers": [
+   [
+    "User-Agent",
+    "4c2576c7-56da-3568-9d9c-dd5ef029b6c8 india-hikredit(3.0.4) android"
+   ],
+   [
+    "x-india-hikredit-token",
+    "3B224B9BE17FF1943BB9184120E92E59EE981A7D"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Length",
+    "614"
+   ],
+   [
+    "Host",
+    "app-api.payrupikloan.in"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ],
+  "body": "cipher_txt=m%2FfP7dmo%2BK7GSKGRq27Ecw11eRvJhWMFYPVH87uVKrnZycAFcECATeYY%2F3urWGa%2FnY1rL%2Ft3EKK2%0AIA3LgyVG2tZfh9ElmgBYLyXQ8vzTgQTTRoHpQRNw7ddIz%2BXafZYx2o82KO3YSlvY7%2FDPEWhymPV1%0AhGhvLEvTAsTaejXb04yRcIL1uNO829e6V7je1I01HeobR1rAoXD5VkgOSODuUZJIaz4dO59KHiNf%0AO3dtoyDDKZkejsd%2B5ED3I%2FpAegO37voW6XoVgvx%2BOamsZ5zhHyA2AZBPeCO9lrCZr%2Ff1QmPBhYWg%0AlUHz2dc29GsyXQAZvflFKva%2BmdHKKVMe5T5PMHS%2BJqCmX7FB7TkLy%2Fy4bGM3TsAy%2BordZg49ZRtv%0AoxZU1dbNpS2nG3LwGNeEz85dP6BrPwBnKwxAWTRJI4hUQno0F1%2FZxztxds%2Bo%2B128c0GBc%2Bah6WWK%0AIalQ30YabFvnMw%3D%3D%0A&digest=3048E5FFE58CFB3585D322569EE30E877A0BED18&encrypt_version=2.0"
+ },
+ {
+  "sid": 49,
+  "method": "POST",
+  "url": "https://app-api.payrupikloan.in/account/recentLoginInfo",
+  "headers": [
+   [
+    "User-Agent",
+    "4c2576c7-56da-3568-9d9c-dd5ef029b6c8 india-hikredit(3.0.4) android"
+   ],
+   [
+    "x-india-hikredit-token",
+    "3B224B9BE17FF1943BB9184120E92E59EE981A7D"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Length",
+    "608"
+   ],
+   [
+    "Host",
+    "app-api.payrupikloan.in"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ],
+  "body": "cipher_txt=m%2FfP7dmo%2BK7GSKGRq27Ecw11eRvJhWMFYPVH87uVKrnZycAFcECATeYY%2F3urWGa%2FnY1rL%2Ft3EKK2%0AIA3LgyVG2tZfh9ElmgBYLyXQ8vzTgQTTRoHpQRNw7ddIz%2BXafZYx2o82KO3YSlvY7%2FDPEWhymPV1%0AhGhvLEvTAsTaejXb04yRcIL1uNO829e6V7je1I01HeobR1rAoXD5VkgOSODuUS85j2jwrj%2BGnLM7%0Ao02wj5k7FYmshrLP1qJbnvMb2yP5yVcsedo26zKx%2BFGsBrFY%2FQC1iC0bYBIRfR4%2BuP80slo%2B4pgg%0AlM7edlB88zLGHxBViafkua59PnyqjM9%2FRzgWA4swrLUqq1bmBiu5wh7%2FumxyB4q1syga3opPxuKi%0AOIS3Tv9GvWcr0w%2BKYEigUjyJVpzuk6Xk35JaStjapfn8jyadKjGGs7iE6yBr8hpfOvBXqCN%2BWcXq%0AwmcQn0jaZ0h0iQ%3D%3D%0A&digest=D1C5D841B6A935AB6132999D9ACC344AACADB034&encrypt_version=2.0"
+ },
+ {
+  "sid": 50,
+  "method": "POST",
+  "url": "https://oversee.froescik.in/add/appStartInfo",
+  "headers": [
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Length",
+    "283"
+   ],
+   [
+    "Host",
+    "oversee.froescik.in"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "User-Agent",
+    "okhttp/5.3.2"
+   ]
+  ],
+  "body": "carrier=&channel=PayRupik&d_id=4c2576c7-56da-3568-9d9c-dd5ef029b6c8&device_time=1791358549098&device_type=motorola-moto+g42&device_zone=GMT%2B05%3A30&network_type=wifi&platform=android&project=PayRupik&push_id=&sdk_version=1.4.3.3&sequence_id=&system_version=12%2831%29&version=3.0.4"
+ },
+ {
+  "sid": 51,
+  "method": "CONNECT",
+  "url": "oversee.froescik.in:443",
+  "headers": [
+   [
+    "Host",
+    "oversee.froescik.in:443"
+   ]
+  ]
+ },
+ {
+  "sid": 52,
+  "method": "POST",
+  "url": "https://app-api.payrupikloan.in/Comment/list",
+  "headers": [
+   [
+    "User-Agent",
+    "4c2576c7-56da-3568-9d9c-dd5ef029b6c8 india-hikredit(3.0.4) android"
+   ],
+   [
+    "x-india-hikredit-token",
+    "3B224B9BE17FF1943BB9184120E92E59EE981A7D"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Length",
+    "608"
+   ],
+   [
+    "Host",
+    "app-api.payrupikloan.in"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ],
+  "body": "cipher_txt=m%2FfP7dmo%2BK7GSKGRq27Ecw11eRvJhWMFYPVH87uVKrnZycAFcECATeYY%2F3urWGa%2FnY1rL%2Ft3EKK2%0AIA3LgyVG2tZfh9ElmgBYLyXQ8vzTgQTTRoHpQRNw7ddIz%2BXafZYx2o82KO3YSlvY7%2FDPEWhymPV1%0AhGhvLEvTAsTaejXb04yRcIL1uNO829e6V7je1I01HeobR1rAoXD5VkgOSODuUS85j2jwrj%2BGnLM7%0Ao02wj5k7FYmshrLP1qJbnvMb2yP5yVcsedo26zKx%2BFGsBrFY%2FQC1iC0bYBIRfR4%2BuP80slo%2B4pgg%0AlM7edlB88zLGHxBViafkua59PnyqjM9%2FRzgWA4swrLUqq1bmBiu5wh7%2FumxyB4q1syga3opPxuKi%0AOIS3Tv9GvWcr0w%2BKYEigUjyJVpzuk6Xk35JaStjapfn8jyadKjGGs7iE6yBr8hpfOvBXqCN%2BWcXq%0AwmcQn0jaZ0h0iQ%3D%3D%0A&digest=D1C5D841B6A935AB6132999D9ACC344AACADB034&encrypt_version=2.0"
+ },
+ {
+  "sid": 53,
+  "method": "POST",
+  "url": "https://oversee.froescik.in/add/appBaseInfo",
+  "headers": [
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Length",
+    "1831"
+   ],
+   [
+    "Host",
+    "oversee.froescik.in"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "User-Agent",
+    "okhttp/5.3.2"
+   ]
+  ],
+  "body": "carrier=&channel=PayRupik&d_id=4c2576c7-56da-3568-9d9c-dd5ef029b6c8&device_time=1791358549459&device_type=motorola-moto+g42&device_zone=GMT%2B05%3A30&network_type=wifi&platform=android&project=PayRupik&push_id=&remark=%7B%22is_root%22%3Atrue%2C%22is_emulator%22%3Afalse%2C%22app_name%22%3A%22PayRupik%22%2C%22package_name%22%3A%22in.hanafintech%22%2C%22version_code%22%3A86%2C%22channel%22%3A%22PayRupik%22%2C%22sequence_id%22%3A%22%22%2C%22language%22%3A%22en%22%2C%22cup_abi%22%3A%22arm64-v8a%22%2C%22brand%22%3A%22motorola%22%2C%22rom%22%3A%22S2SE32.28-28-4%22%2C%22api_level%22%3A31%2C%22network_type%22%3A%22wifi%22%2C%22network_operator%22%3A%22%22%2C%22device_screen%22%3A%221080*2237%22%2C%22device_power_mode%22%3A0%2C%22webview%22%3A%5B%7B%22package_name%22%3A%22%22%2C%22version_name%22%3A%22Mozilla%5C%2F5.0+%28Linux%3B+Android+12%3B+moto+g42+Build%5C%2FS2SE32.28-28-4%3B+wv%29+AppleWebKit%5C%2F537.36+%28KHTML%2C+like+Gecko%29+Version%5C%2F4.0+Chrome%5C%2F153.0.8010.36+Mobile+Safari%5C%2F537.36%22%2C%22version_code%22%3A0%7D%5D%2C%22permission%22%3A%5B%7B%22CAMERA%22%3Afalse%7D%2C%7B%22READ_PHONE_STATE%22%3Afalse%7D%2C%7B%22READ_CALL_LOG%22%3Afalse%7D%2C%7B%22READ_SMS%22%3Afalse%7D%2C%7B%22READ_CONTACTS%22%3Afalse%7D%2C%7B%22READ_EXTERNAL_STORAGE%22%3Afalse%7D%2C%7B%22WRITE_EXTERNAL_STORAGE%22%3Afalse%7D%2C%7B%22READ_HISTORY_BOOKMARKS%22%3Afalse%7D%2C%7B%22WRITE_EXTERNAL_STORAGE%22%3Afalse%7D%2C%7B%22READ_EXTERNAL_STORAGE%22%3Afalse%7D%2C%7B%22READ_CALENDAR%22%3Afalse%7D%2C%7B%22WRITE_CALENDAR%22%3Afalse%7D%2C%7B%22ACCESS_FINE_LOCATION%22%3Afalse%7D%2C%7B%22ACCESS_COARSE_LOCATION%22%3Afalse%7D%2C%7B%22NOTIFICATIONS%22%3Atrue%7D%5D%2C%22total_memory%22%3A%2218.07+MB%22%2C%22free_memory%22%3A%221.69+MB%22%2C%22max_free%22%3A%22268+MB%22%7D&sdk_version=1.4.3.3&sequence_id=&system_version=12&version=3.0.4"
+ },
+ {
+  "sid": 54,
+  "method": "GET",
+  "url": "https://app-api.payrupikloan.in/Account/RegisterAgreement?cipher_txt=m%2FfP7dmo%2BK7GSKGRq27Ecw11eRvJhWMFYPVH87uVKrnZycAFcECATeYY%2F3urWGa%2FnY1rL%2Ft3EKK2%0AIA3LgyVG2tZfh9ElmgBYLyXQ8vzTgQTTRoHpQRNw7ddIz%2BXafZYx2o82KO3YSlvY7%2FDPEWhymPV1%0AhGhvLEvTAsTaejXb04yRcIL1uNO829e6V7je1I01HeobR1rAoXD5VkgOSODuUS85j2jwrj%2BGnLM7%0Ao02wj5k7FYmshrLP1qJbnvMb2yP5yVcsedo26zKx%2BFGsBrFY%2FQC1iC0bYBIRfR4%2BuP80slo%2B4pgg%0AlM7edlB88zLGHxBViafkua59PnyqjM9%2FRzgWA4swrLUqq1bmBiu5wh7%2FumxyB4q1syga3opPxuKi%0AOIS3Tv9GvWcr0w%2BKYEigUjyJVpzuk6Xk35JaStjapfn8jyadKjGGs7iE6yBr8hpfOvBXqCN%2BWcXq%0AwmcQn0jaZ0h0iQ%3D%3D%0A&digest=D1C5D841B6A935AB6132999D9ACC344AACADB034&encrypt_version=2.0",
+  "headers": [
+   [
+    "User-Agent",
+    "4c2576c7-56da-3568-9d9c-dd5ef029b6c8 india-hikredit(3.0.4) android"
+   ],
+   [
+    "x-india-hikredit-token",
+    "3B224B9BE17FF1943BB9184120E92E59EE981A7D"
+   ],
+   [
+    "Host",
+    "app-api.payrupikloan.in"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 55,
+  "method": "CONNECT",
+  "url": "india-security-pub.s3.ap-south-1.amazonaws.com:443",
+  "headers": [
+   [
+    "Host",
+    "india-security-pub.s3.ap-south-1.amazonaws.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 56,
+  "method": "CONNECT",
+  "url": "in-pdl-pub.s3.ap-south-1.amazonaws.com:443",
+  "headers": [
+   [
+    "Host",
+    "in-pdl-pub.s3.ap-south-1.amazonaws.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 57,
+  "method": "GET",
+  "url": "https://india-security-pub.s3.ap-south-1.amazonaws.com/india_hikr_data_prod/d82fc2c2ff78da0f17573857526352.gif?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWCCN74SRFM3C4LEN%2F20261007%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20261007T073549Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=8c396b3bba45b936e47766517b7e0e1300e898d92ef1e23ebe5d707fcc279953",
+  "headers": [
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "india-security-pub.s3.ap-south-1.amazonaws.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 58,
+  "method": "CONNECT",
+  "url": "in-pdl-pub.s3.ap-south-1.amazonaws.com:443",
+  "headers": [
+   [
+    "Host",
+    "in-pdl-pub.s3.ap-south-1.amazonaws.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 59,
+  "method": "CONNECT",
+  "url": "app.adjust.com:443",
+  "headers": [
+   [
+    "Host",
+    "app.adjust.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 60,
+  "method": "GET",
+  "url": "https://in-pdl-pub.s3.ap-south-1.amazonaws.com/images/Comment/uploader_1733811461EpCk5K.jpg",
+  "headers": [
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "in-pdl-pub.s3.ap-south-1.amazonaws.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 61,
+  "method": "GET",
+  "url": "https://in-pdl-pub.s3.ap-south-1.amazonaws.com/images/Comment/uploader_1733811461joPpyC.jpg",
+  "headers": [
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "in-pdl-pub.s3.ap-south-1.amazonaws.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 62,
+  "method": "CONNECT",
+  "url": "app.adjust.com:443",
+  "headers": [
+   [
+    "Host",
+    "app.adjust.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 63,
+  "method": "CONNECT",
+  "url": "example.com:443",
+  "headers": [
+   [
+    "Host",
+    "example.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 64,
+  "method": "GET",
+  "url": "https://example.com/",
+  "headers": [
+   [
+    "Host",
+    "example.com"
+   ],
+   [
+    "User-Agent",
+    "curl/7.73.0"
+   ],
+   [
+    "Accept",
+    "*/*"
+   ]
+  ]
+ },
+ {
+  "sid": 65,
+  "method": "POST",
+  "url": "https://app.adjust.com/session",
+  "headers": [
+   [
+    "Client-SDK",
+    "android5.6.0"
+   ],
+   [
+    "Authorization",
+    "Signature signature=\"3D1DEF1A20CF32B122471C0D24A2C9A2C373BF635949E49F9DFD64770D45FE92F33626145FD4C5CDA4DA60393F2393FA9105A4466A76D4C2D6C5DA5282E3E3F363D28F38ADA98612A6A2A3ACA6E0F511F1C7BA1561A948BE99ACBF59953B6923C481D9C0658A009715F2800194870C6F7F886706B23DD8054CEF66B13F927BBE5EBD2E3DF1208A114B746668AF3BC78F4DFD479575EE232A917A5F68BAB3D01C497813EE2B1D7F52F13270FDE1BD9F469C657DB72D09BAE11910DA606A2153FCD73EAABB93CE8040A9BB84D8F02EABC6C1D15603D013AC65EF094EE84BEDA6327EB92AB005ADBFC69556BDE255E57D9DF38C723BA371EC4576B19F01897BE6AA4B27F86C9EFD500F5A9BD1C27EBDCF97630FADBAF5C4E190E3F7739E80947402504CD3F69165A5415757A1902B872D4D\",adj_signing_id=\"1300000\",algorithm=\"adj7\",headers_id=\"8\",native_version=\"3.62.0\""
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "app.adjust.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Content-Length",
+    "1124"
+   ]
+  ],
+  "blob": "3D1DEF1A20CF32B122471C0D24A2C9A2C373BF635949E49F9DFD64770D45FE92F33626145FD4C5CDA4DA60393F2393FA9105A4466A76D4C2D6C5DA5282E3E3F363D28F38ADA98612A6A2A3ACA6E0F511F1C7BA1561A948BE99ACBF59953B6923C481D9C0658A009715F2800194870C6F7F886706B23DD8054CEF66B13F927BBE5EBD2E3DF1208A114B746668AF3BC78F4DFD479575EE232A917A5F68BAB3D01C497813EE2B1D7F52F13270FDE1BD9F469C657DB72D09BAE11910DA606A2153FCD73EAABB93CE8040A9BB84D8F02EABC6C1D15603D013AC65EF094EE84BEDA6327EB92AB005ADBFC69556BDE255E57D9DF38C723BA371EC4576B19F01897BE6AA4B27F86C9EFD500F5A9BD1C27EBDCF97630FADBAF5C4E190E3F7739E80947402504CD3F69165A5415757A1902B872D4D",
+  "adj_signing_id": "1300000",
+  "algorithm": "adj7",
+  "headers_id": "8",
+  "native_version": "3.62.0",
+  "client_sdk": "android5.6.0",
+  "body": "store_name_from_system=com.android.vending&gps_adid_attempt=1&country=IN&api_level=31&hardware_name=S2SE32.28-28-4&partner_params=%7B%22payrupik_c_id%22%3A%224c2576c7-56da-3568-9d9c-dd5ef029b6c8%22%7D&app_version=3.0.4&app_token=smxi7gqwu39c&installed_at=2026-10-07T13%3A05%3A24.574Z%2B0530&created_at=2026-10-07T13%3A05%3A49.294Z%2B0530&wait_total=0.0&device_type=phone&language=en&gps_adid=722e409b-3307-4d76-b76f-5e8f1e63c39a&foreground=1&connectivity_type=1&device_manufacturer=motorola&display_width=1080&device_name=moto+g42&needs_response_details=1&os_build=S2SE32.28-28-4&updated_at=2026-10-07T13%3A05%3A24.574Z%2B0530&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&screen_format=long&last_error=0&gps_adid_src=service&wait_time=0.0&os_version=12&first_error=0&android_uuid=83f5080d-be8a-4e1d-9291-d12eba2503c4&sent_at=2026-10-07T13%3A05%3A49.431Z%2B0530&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&session_count=1&display_height=2237&package_name=in.hanafintech&initiating_package_name=com.android.vending&os_name=android&ui_mode=1&enqueue_size=0&tracking_enabled=1"
+ },
+ {
+  "sid": 66,
+  "method": "POST",
+  "url": "https://app.adjust.com/sdk_click",
+  "headers": [
+   [
+    "Client-SDK",
+    "android5.6.0"
+   ],
+   [
+    "Authorization",
+    "Signature signature=\"3D1DEF1A20CF32B122471C0D24A2C9A254A3CE3D13D5E99CB560466A5B067165D1EE36687D3843C38030B9B919F05DB6C9D082F12C6C73C1675C0AC0A8D41DAE920A2E1675720101CD38CFB28B2D61746261FCA7587D9923A11A1B2A777007666F4FBAB7BB48ADB3A2B402F3A5C2304C85A07B11F643F761DC1F90FDF8D1156B03A3199F57EF3C8BB3DFE4F674F5B74B4242F4D700F6F862C90131C6DD592BA0C8FAB599872286141A8C8B8582DBBB0489106B1A499258E4DE6A2D6291AC107852A508B297972DD071D4DA1CD5F86E02B79194C2635B9754762AA5790F94EB91ECF0DD67278F76476EA9C8F4BA330F598D0256887419EDAAE7BBDE01D76FC5FC66F1DACBC02B6F04447A5334E6A9802D00691C2AB6A0BEE78D2C150941ACCC69D055A6D97AFE1C030FA08F83B53AB929\",adj_signing_id=\"1300000\",algorithm=\"adj7\",headers_id=\"8\",native_version=\"3.62.0\""
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "app.adjust.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Content-Length",
+    "1420"
+   ]
+  ],
+  "blob": "3D1DEF1A20CF32B122471C0D24A2C9A254A3CE3D13D5E99CB560466A5B067165D1EE36687D3843C38030B9B919F05DB6C9D082F12C6C73C1675C0AC0A8D41DAE920A2E1675720101CD38CFB28B2D61746261FCA7587D9923A11A1B2A777007666F4FBAB7BB48ADB3A2B402F3A5C2304C85A07B11F643F761DC1F90FDF8D1156B03A3199F57EF3C8BB3DFE4F674F5B74B4242F4D700F6F862C90131C6DD592BA0C8FAB599872286141A8C8B8582DBBB0489106B1A499258E4DE6A2D6291AC107852A508B297972DD071D4DA1CD5F86E02B79194C2635B9754762AA5790F94EB91ECF0DD67278F76476EA9C8F4BA330F598D0256887419EDAAE7BBDE01D76FC5FC66F1DACBC02B6F04447A5334E6A9802D00691C2AB6A0BEE78D2C150941ACCC69D055A6D97AFE1C030FA08F83B53AB929",
+  "adj_signing_id": "1300000",
+  "algorithm": "adj7",
+  "headers_id": "8",
+  "native_version": "3.62.0",
+  "client_sdk": "android5.6.0",
+  "body": "country=IN&api_level=31&hardware_name=S2SE32.28-28-4&app_version=3.0.4&partner_params=%7B%22payrupik_c_id%22%3A%224c2576c7-56da-3568-9d9c-dd5ef029b6c8%22%7D&app_token=smxi7gqwu39c&installed_at=2026-10-07T13%3A05%3A24.574Z%2B0530&device_type=phone&language=en&gps_adid=722e409b-3307-4d76-b76f-5e8f1e63c39a&source=install_referrer&foreground=1&connectivity_type=1&os_build=S2SE32.28-28-4&click_time=2026-10-07T13%3A05%3A16.000Z%2B0530&cpu_type=arm64-v8a&install_version=3.0.4&screen_size=normal&gps_adid_src=service&subsession_count=1&sent_at=2026-10-07T13%3A05%3A49.839Z%2B0530&offline_mode_enabled=0&screen_density=high&session_count=1&ui_mode=1&gps_adid_attempt=1&session_length=0&created_at=2026-10-07T13%3A05%3A49.718Z%2B0530&referrer_api=google&device_manufacturer=motorola&display_width=1080&time_spent=0&device_name=moto+g42&needs_response_details=1&updated_at=2026-10-07T13%3A05%3A24.574Z%2B0530&screen_format=long&click_time_server=2026-10-07T13%3A05%3A16.000Z%2B0530&os_version=12&google_play_instant=0&install_begin_time_server=2026-10-07T13%3A05%3A17.000Z%2B0530&android_uuid=83f5080d-be8a-4e1d-9291-d12eba2503c4&referrer=adjust_reftag%3Dcig3EKyu8m0zt%26utm_source%3DVL-Alliance%26utm_campaign%3DHM2%26utm_content%3DHM2_1722_&environment=production&attribution_deeplink=1&install_begin_time=2026-10-07T13%3A05%3A18.000Z%2B0530&display_height=2237&package_name=in.hanafintech&os_name=android&tracking_enabled=1"
+ },
+ {
+  "sid": 67,
+  "method": "GET",
+  "url": "https://app.adjust.com/attribution?initiated_by=backend&gps_adid_attempt=1&api_level=31&app_version=3.0.4&app_token=smxi7gqwu39c&os_version=12&created_at=2026-10-07T13%3A05%3A52.406Z%2B0530&device_type=phone&gps_adid=722e409b-3307-4d76-b76f-5e8f1e63c39a&foreground=1&android_uuid=83f5080d-be8a-4e1d-9291-d12eba2503c4&sent_at=2026-10-07T13%3A05%3A52.420Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=in.hanafintech&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1",
+  "headers": [
+   [
+    "Client-SDK",
+    "android5.6.0"
+   ],
+   [
+    "Authorization",
+    "Signature signature=\"40E0F7831EC4508F5085436F0DE0BC39019C73C6EFC74916CC5E3C0935DB5D618A81289CFF20BDC5D52B564D1361EF43C18766823614328214C2B66036B3F394ED44AA5990E0EC7EEFEA65788A326883FA2D82C5AC8EDA464BB994CEA6608DE05C9CD73E1955784B1270AD292D3EAD72C3A6D44CE49C0C52F0D77A7FEECC79820B363054225D904C63ABD5679E94F8BA6FB40F34D18D6F221A35B8A08F8CF255BC7164431D8ED344913967CF06DE87FC31F787A9DFE3B24EB1176D3BA465E39ADDDFE2C416814037989DD8AEDF039470A3FBE8FFA2426E1D6AC3FBC2920ACE9069D5595693FEB045999BD61E78575B86936803965BBF6B314485636DD20F86A71B150A7FEBC95DCDEAC6E3A7369708FF72EDECE19FD546EF256E45A280DB6C4425D1FC7CEBDAF50F27CC09995C6B47CD\",adj_signing_id=\"1300000\",algorithm=\"adj7\",headers_id=\"8\",native_version=\"3.62.0\""
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "app.adjust.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ],
+  "blob": "40E0F7831EC4508F5085436F0DE0BC39019C73C6EFC74916CC5E3C0935DB5D618A81289CFF20BDC5D52B564D1361EF43C18766823614328214C2B66036B3F394ED44AA5990E0EC7EEFEA65788A326883FA2D82C5AC8EDA464BB994CEA6608DE05C9CD73E1955784B1270AD292D3EAD72C3A6D44CE49C0C52F0D77A7FEECC79820B363054225D904C63ABD5679E94F8BA6FB40F34D18D6F221A35B8A08F8CF255BC7164431D8ED344913967CF06DE87FC31F787A9DFE3B24EB1176D3BA465E39ADDDFE2C416814037989DD8AEDF039470A3FBE8FFA2426E1D6AC3FBC2920ACE9069D5595693FEB045999BD61E78575B86936803965BBF6B314485636DD20F86A71B150A7FEBC95DCDEAC6E3A7369708FF72EDECE19FD546EF256E45A280DB6C4425D1FC7CEBDAF50F27CC09995C6B47CD",
+  "adj_signing_id": "1300000",
+  "algorithm": "adj7",
+  "headers_id": "8",
+  "native_version": "3.62.0",
+  "client_sdk": "android5.6.0"
+ },
+ {
+  "sid": 68,
+  "method": "GET",
+  "url": "https://app.adjust.com/attribution?initiated_by=backend&gps_adid_attempt=1&api_level=31&app_version=3.0.4&app_token=smxi7gqwu39c&os_version=12&created_at=2026-10-07T13%3A05%3A53.813Z%2B0530&device_type=phone&gps_adid=722e409b-3307-4d76-b76f-5e8f1e63c39a&foreground=1&android_uuid=83f5080d-be8a-4e1d-9291-d12eba2503c4&sent_at=2026-10-07T13%3A05%3A53.823Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=in.hanafintech&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1",
+  "headers": [
+   [
+    "Client-SDK",
+    "android5.6.0"
+   ],
+   [
+    "Authorization",
+    "Signature signature=\"078A0A812F36469B54A51712063883064F62C991381BACBE8A28299CA80B904F079A4D5FD518612CE9FB82E2F1310F1308EC0B09D17DFD264B39ED6C5BBC76A2DC41479B390012CBA6F2C77CADC2F250F486E1B09637C2298A2CDAE7E23C7615EAB6E9B373C7B38BC1AE273CB13296015B9783295B62B1670C4785062B4B322050C7092E334613E2D18CA410B5790C976F65CF159000982D514181966B9C91369D87FA7A63DE56A9F8F6898EEFCFC400450EF4E8B61E8B0CB83A5352D429F62BDD815B1F5CA728F57229B8822FDD857EE8B7AE24FA74BE8571F4D126389BA0547FEF3F0D3AD8DAE62898541568730E95B2AA82E3967844251A7A453AA11FB6AE6643FD2F82772F661A3097A641EF4BDA1898B8254979417010CA7C4AE17B46445584336BDA5CB824E8A92EF0B53A022E\",adj_signing_id=\"1300000\",algorithm=\"adj7\",headers_id=\"8\",native_version=\"3.62.0\""
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "app.adjust.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ],
+  "blob": "078A0A812F36469B54A51712063883064F62C991381BACBE8A28299CA80B904F079A4D5FD518612CE9FB82E2F1310F1308EC0B09D17DFD264B39ED6C5BBC76A2DC41479B390012CBA6F2C77CADC2F250F486E1B09637C2298A2CDAE7E23C7615EAB6E9B373C7B38BC1AE273CB13296015B9783295B62B1670C4785062B4B322050C7092E334613E2D18CA410B5790C976F65CF159000982D514181966B9C91369D87FA7A63DE56A9F8F6898EEFCFC400450EF4E8B61E8B0CB83A5352D429F62BDD815B1F5CA728F57229B8822FDD857EE8B7AE24FA74BE8571F4D126389BA0547FEF3F0D3AD8DAE62898541568730E95B2AA82E3967844251A7A453AA11FB6AE6643FD2F82772F661A3097A641EF4BDA1898B8254979417010CA7C4AE17B46445584336BDA5CB824E8A92EF0B53A022E",
+  "adj_signing_id": "1300000",
+  "algorithm": "adj7",
+  "headers_id": "8",
+  "native_version": "3.62.0",
+  "client_sdk": "android5.6.0"
+ },
+ {
+  "sid": 69,
+  "method": "POST",
+  "url": "https://app.adjust.com/event",
+  "headers": [
+   [
+    "Client-SDK",
+    "android5.6.0"
+   ],
+   [
+    "Authorization",
+    "Signature signature=\"52AC43747F491B2B39D352F15A169F168AF56EC34AEA433CFE23423E4A1E61774F158F7851CE0B35ACD0A53FCAF209E07DF6B95909B536545A006456126A5EDA0D59714BB8BFA1B9590A2623F39F9723088F387978918DC9F937DDDF7DF06D64A13DEAF05DDC01269ACD5C9FC05A55F52CE2A205DD7B9919EF60D6B286883B8421ADC5D0A41212892C1BE60AA19B2CA03D9BDFE4674DF42E23B53AB81431018C66AF276910091B2C6CBCDDA44EDEDA252B1C6BF17358272FD45C27FC426AA67645DEB6D67037874F9BC7C7CE9B07477635DD431252DE101C8A084B2C2EAEC3E72453043097556A71A083714BDC536ACBCF0E7EB8F54CDEC2F0994EBD9E310AA99B45730B6F5F97A15AF0856236484F296D9ECB73F674013E103A785E8645E45F7A7725278FC058AB8074953FDDBFD44E\",adj_signing_id=\"1300000\",algorithm=\"adj7\",headers_id=\"8\",native_version=\"3.62.0\""
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "app.adjust.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Content-Length",
+    "1114"
+   ]
+  ],
+  "blob": "52AC43747F491B2B39D352F15A169F168AF56EC34AEA433CFE23423E4A1E61774F158F7851CE0B35ACD0A53FCAF209E07DF6B95909B536545A006456126A5EDA0D59714BB8BFA1B9590A2623F39F9723088F387978918DC9F937DDDF7DF06D64A13DEAF05DDC01269ACD5C9FC05A55F52CE2A205DD7B9919EF60D6B286883B8421ADC5D0A41212892C1BE60AA19B2CA03D9BDFE4674DF42E23B53AB81431018C66AF276910091B2C6CBCDDA44EDEDA252B1C6BF17358272FD45C27FC426AA67645DEB6D67037874F9BC7C7CE9B07477635DD431252DE101C8A084B2C2EAEC3E72453043097556A71A083714BDC536ACBCF0E7EB8F54CDEC2F0994EBD9E310AA99B45730B6F5F97A15AF0856236484F296D9ECB73F674013E103A785E8645E45F7A7725278FC058AB8074953FDDBFD44E",
+  "adj_signing_id": "1300000",
+  "algorithm": "adj7",
+  "headers_id": "8",
+  "native_version": "3.62.0",
+  "client_sdk": "android5.6.0",
+  "body": "country=IN&api_level=31&hardware_name=S2SE32.28-28-4&partner_params=%7B%22payrupik_c_id%22%3A%224c2576c7-56da-3568-9d9c-dd5ef029b6c8%22%7D&app_version=3.0.4&app_token=smxi7gqwu39c&wait_total=0.0&device_type=phone&language=en&gps_adid=722e409b-3307-4d76-b76f-5e8f1e63c39a&foreground=1&connectivity_type=1&os_build=S2SE32.28-28-4&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&gps_adid_src=service&subsession_count=1&wait_time=0.0&first_error=0&sent_at=2026-10-07T13%3A05%3A54.216Z%2B0530&offline_mode_enabled=0&screen_density=high&session_count=1&ui_mode=1&enqueue_size=0&gps_adid_attempt=1&event_count=1&session_length=5&created_at=2026-10-07T13%3A05%3A54.205Z%2B0530&device_manufacturer=motorola&display_width=1080&event_token=y3sjx5&time_spent=5&device_name=moto+g42&needs_response_details=1&screen_format=long&last_error=0&seq=1&os_version=12&callback_params=%7B%22google_adid%22%3A%22722e409b-3307-4d76-b76f-5e8f1e63c39a%22%7D&android_uuid=83f5080d-be8a-4e1d-9291-d12eba2503c4&environment=production&attribution_deeplink=1&display_height=2237&package_name=in.hanafintech&os_name=android&tracking_enabled=1"
+ },
+ {
+  "sid": 70,
+  "method": "CONNECT",
+  "url": "example.com:443",
+  "headers": [
+   [
+    "Host",
+    "example.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 71,
+  "method": "GET",
+  "url": "https://example.com/",
+  "headers": [
+   [
+    "Host",
+    "example.com"
+   ],
+   [
+    "User-Agent",
+    "curl/7.73.0"
+   ],
+   [
+    "Accept",
+    "*/*"
+   ]
+  ]
+ },
+ {
+  "sid": 72,
+  "method": "CONNECT",
+  "url": "example.com:443",
+  "headers": [
+   [
+    "Host",
+    "example.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 73,
+  "method": "GET",
+  "url": "https://example.com/",
+  "headers": [
+   [
+    "Host",
+    "example.com"
+   ],
+   [
+    "User-Agent",
+    "curl/7.73.0"
+   ],
+   [
+    "Accept",
+    "*/*"
+   ]
+  ]
+ }
+]

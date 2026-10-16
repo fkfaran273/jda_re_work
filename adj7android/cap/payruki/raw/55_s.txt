@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+FiddlerGateway: Direct
+StartTime: 13:05:49.986
+Connection: close
+
+Encrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.
+
+Secure Protocol: Tls13
+Cipher: Aes128 128bits
+Hash Algorithm: Sha256 ?bits
+Key Exchange: None 256bits
+
+== Server Certificate ==========
+[Subject]
+  CN=*.s3.ap-south-1.amazonaws.com
+
+[Issuer]
+  CN=Amazon RSA 2048 M01, O=Amazon, C=US
+
+[Serial Number]
+  023F66AB8E74E4F2206BB67C6C15A3B6
+
+[Not Before]
+  15-07-2026 05:30:00
+
+[Not After]
+  29-01-2027 05:29:59
+
+[Thumbprint]
+  53C413B8D5F55AF89AD9812AED6F905CF0CA1410
+
+[SubjectAltNames]
+*.s3.ap-south-1.amazonaws.com, s3-deprecated.ap-south-1.amazonaws.com, *.s3.amazonaws.com, *.s3-ap-south-1.amazonaws.com, *.s3-accesspoint.ap-south-1.amazonaws.com, s3-control.dualstack.ap-south-1.amazonaws.com, s3-ap-south-1.amazonaws.com, s3.amazonaws.com, *.s3-deprecated.ap-south-1.amazonaws.com, *.s3-control.dualstack.ap-south-1.amazonaws.com, *.s3.dualstack.ap-south-1.amazonaws.com, *.s3-control.ap-south-1.amazonaws.com, s3.dualstack.ap-south-1.amazonaws.com, s3.ap-south-1.amazonaws.com, s3-control.ap-south-1.amazonaws.com, *.s3-accesspoint.dualstack.ap-south-1.amazonaws.com

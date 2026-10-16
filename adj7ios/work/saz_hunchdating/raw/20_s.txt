@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+content-type: application/json; charset=utf-8
+date: Wed, 01 Apr 2026 12:00:29 GMT
+content-length: 84
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-robots-tag: noindex
+
+{"app_token":"vf3lochhmgw0","adid":"3810bf75b9ab537b18908c59675f32c6","ask_in":2000}

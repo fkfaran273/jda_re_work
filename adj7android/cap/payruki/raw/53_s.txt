@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Wed, 07 Oct 2026 07:35:50 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 1688
+Connection: close
+Vary: Origin
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+x-download-options: noopen
+x-readtime: 2
+
+{"error_no":0,"error_message":"success","data":null,"query_params":{"carrier":"","channel":"PayRupik","d_id":"4c2576c7-56da-3568-9d9c-dd5ef029b6c8","device_time":"1791358549459","device_type":"motorola-moto g42","device_zone":"GMT+05:30","network_type":"wifi","platform":"android","project":"PayRupik","push_id":"","remark":"{\"is_root\":true,\"is_emulator\":false,\"app_name\":\"PayRupik\",\"package_name\":\"in.hanafintech\",\"version_code\":86,\"channel\":\"PayRupik\",\"sequence_id\":\"\",\"language\":\"en\",\"cup_abi\":\"arm64-v8a\",\"brand\":\"motorola\",\"rom\":\"S2SE32.28-28-4\",\"api_level\":31,\"network_type\":\"wifi\",\"network_operator\":\"\",\"device_screen\":\"1080*2237\",\"device_power_mode\":0,\"webview\":[{\"package_name\":\"\",\"version_name\":\"Mozilla\\/5.0 (Linux; Android 12; moto g42 Build\\/S2SE32.28-28-4; wv) AppleWebKit\\/537.36 (KHTML, like Gecko) Version\\/4.0 Chrome\\/153.0.8010.36 Mobile Safari\\/537.36\",\"version_code\":0}],\"permission\":[{\"CAMERA\":false},{\"READ_PHONE_STATE\":false},{\"READ_CALL_LOG\":false},{\"READ_SMS\":false},{\"READ_CONTACTS\":false},{\"READ_EXTERNAL_STORAGE\":false},{\"WRITE_EXTERNAL_STORAGE\":false},{\"READ_HISTORY_BOOKMARKS\":false},{\"WRITE_EXTERNAL_STORAGE\":false},{\"READ_EXTERNAL_STORAGE\":false},{\"READ_CALENDAR\":false},{\"WRITE_CALENDAR\":false},{\"ACCESS_FINE_LOCATION\":false},{\"ACCESS_COARSE_LOCATION\":false},{\"NOTIFICATIONS\":true}],\"total_memory\":\"18.07 MB\",\"free_memory\":\"1.69 MB\",\"max_free\":\"268 MB\"}","sdk_version":"1.4.3.3","sequence_id":"","system_version":"12","version":"3.0.4","ip":"180.151.14.234","device_id":"4c2576c7-56da-3568-9d9c-dd5ef029b6c8","create_time":1791358550117}}

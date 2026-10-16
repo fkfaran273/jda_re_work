@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+FiddlerGateway: Direct
+StartTime: 09:49:58.631
+Connection: close
+
+Encrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.
+
+Secure Protocol: Tls12
+Cipher: Aes128 128bits
+Hash Algorithm: Sha256 ?bits
+Key Exchange: ECDHE_RSA (0xae06) 255bits
+
+== Server Certificate ==========
+[Subject]
+  CN=eu1.clevertap-prod.com
+
+[Issuer]
+  CN=Amazon RSA 2048 M04, O=Amazon, C=US
+
+[Serial Number]
+  05683DE7927C280628EF0B063FD168B0
+
+[Not Before]
+  18-Feb-26 5:30:00 AM
+
+[Not After]
+  19-Mar-27 5:29:59 AM
+
+[Thumbprint]
+  ED23ED6F83E140E154BF648FE3BE4F751D0CFD31
+
+[SubjectAltNames]
+eu1.clevertap-prod.com

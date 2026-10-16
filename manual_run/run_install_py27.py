@@ -70,7 +70,7 @@ SEND_EVENT = "--event" in sys.argv
 SEND_INFO = "--info" in sys.argv
 # --gap N  pause N seconds before each request, so a slow tracker can
 #          register a click before we install against it
-GAP = 30
+GAP = 0
 for _i, _a in enumerate(sys.argv):
     if _a == "--gap" and _i + 1 < len(sys.argv):
         GAP = int(sys.argv[_i + 1])
@@ -240,10 +240,37 @@ CAMPAIGNS["creditsea"] = {
     "click_link": "http://clicks.mobpine.com/api/track/v1/click?aff_id=3&offer_id=23482250",
     "poll_delays": [3, 8, 20],
 }
-campaign_data = CAMPAIGNS["declic"]
+CAMPAIGNS["hsbc"] = {
+    "app_name": "HSBC",
+    "package_name": "tr.com.hsbc.hsbcturkey",
+    "app_version_name": "1.8.6",
+    "tracker": "adjust",
+    "adjust": {
+        "app_token": "y5qirhnmpxj4",
+        "sdk": "android5.0.0",
+        "domain": "app.tr.adjust.com",     # regional endpoint, not .com
+    },
+    "cert_sha1": "5f432709857de074ed38f2e7acb57e3363579910",
+    "head_phase": (0x40,),                # recovered from the capture
+    "adj_signing_id": "1500000",
+    "headers_id": "11",                   # this build signs headers_id 11
+    "native_version": "5.5.0",
+    "adj_verification": "KlcAG2cbAAsKSl1KVi0FGiJbDHMI",
+    # per-kind: the session signs a LONGER value than click/attribution
+    "adj_verification_session": "KlcAG2cbAAsKSl1KVi0FGiJbDHNZTQpZARUDHRFFUgV2HA==",
+    # the genuine hsbc session body carries neither store field
+    "session_store_fields": False,
+    # adshustle affiliate; {agent} stays literal (the genuine funnel left it
+    # unexpanded), gps_adid= is appended by open_click_link
+    "click_link": ("http://click-adshustle.appanalytics.in/api/track/v1/click"
+                   "?aff_id=2&offer_id=22049688&sub1={dp2}&sub2={agent}"
+                   "&sub3={gaid}"),
+    "poll_delays": [3, 8, 20],
+}
+campaign_data = CAMPAIGNS["hsbc"]
 if _args and _args[0] in CAMPAIGNS:
     campaign_data = CAMPAIGNS[_args[0]]
-print campaign_data.get("app_name")
+
 # --campaign FILE swaps the whole campaign dict (same nested layout)
 _cl_campaign = _cli_value("--campaign")
 if _cl_campaign:
@@ -300,6 +327,14 @@ def _headers(campaign, device, fields, kind, sec):
         "User-Agent": _ua(device),
         "Content-Type": "application/x-www-form-urlencoded",
     }
+
+
+def _api(campaign, path):
+    """The Adjust API base for this app.  Most apps live on app.adjust.com;
+    regional builds differ (hsbc: app.tr.adjust.com) -- adjust.domain in the
+    campaign decides."""
+    domain = (campaign.get("adjust") or {}).get("domain", "app.adjust.com")
+    return "https://%s/%s" % (domain, path)
 
 
 # The signing second sits a little in the past, so created_at/sent_at never
@@ -360,7 +395,6 @@ def session(campaign_data, device_data):
         "updated_at": installed,
         "gps_adid_src": "service",
         "screen_format": device_data.get("screen_format", "long"),
-        "store_name_from_system": "com.android.vending",
         "display_height": device_data.get("display_height", ""),
         "hardware_name": device_data.get("hardware_name", ""),
         "app_token": campaign_data["adjust"]["app_token"],
@@ -370,7 +404,6 @@ def session(campaign_data, device_data):
         "country": device_data.get("country", ""),
         "created_at": _stamp(sec, _ms(928), tz_minutes, tz),
         "session_count": "1",
-        "initiating_package_name": "com.android.vending",
         "device_name": device_data.get("device_name", ""),
         "retry_count": device_data.get("retry_count", "0"),
         "cpu_type": device_data.get("cpu_type", ""),
@@ -381,6 +414,12 @@ def session(campaign_data, device_data):
     # mcc/mnc go in only when the device dump carries both; both shapes are
     # genuine (the 3 Oct declic capture signed them, the g42/creditsea ones
     # did not) and the claims law signs whichever keys the map carries.
+    # store/initiating package: genuine on Play installs of most apps, but
+    # SOME builds sign neither (hsbc's session body carries none) -- the
+    # campaign decides
+    if campaign_data.get("session_store_fields", True):
+        fields["store_name_from_system"] = "com.android.vending"
+        fields["initiating_package_name"] = "com.android.vending"
     if device_data.get("mcc") and device_data.get("mnc"):
         fields["mcc"] = device_data["mcc"]
         fields["mnc"] = device_data["mnc"]
@@ -389,7 +428,7 @@ def session(campaign_data, device_data):
     if DRY_RUN:
         print("           dry run -- not sending")
         return {}
-    r = requests.post("https://app.adjust.com/session", data=fields,
+    r = requests.post(_api(campaign_data, "session"), data=fields,
                       headers=headers, timeout=30, proxies=PROXIES)
     print("           -> %d  [t=+%.0fs]"
           % (r.status_code, time.time() - RUN["t0"]))
@@ -468,7 +507,7 @@ def sdk_click(campaign_data, device_data):
     if DRY_RUN:
         print("           dry run -- not sending")
         return {}
-    r = requests.post("https://app.adjust.com/sdk_click", data=fields,
+    r = requests.post(_api(campaign_data, "sdk_click"), data=fields,
                       headers=headers, timeout=30, proxies=PROXIES)
     print("           -> %d  [t=+%.0fs]"
           % (r.status_code, time.time() - RUN["t0"]))
@@ -510,7 +549,7 @@ def attribution(campaign_data, device_data):
         time.sleep(GAP)
     for _try in range(3):                # long waits see transient TLS drops
         try:
-            r = requests.get("https://app.adjust.com/attribution",
+            r = requests.get(_api(campaign_data, "attribution"),
                              params=fields, headers=headers, timeout=30,
                              proxies=PROXIES)
             return r.json().get("attribution", {}) if r.content else {}
@@ -586,7 +625,7 @@ def event(campaign_data, device_data, event_token=None, partner_params=None,
     if DRY_RUN:
         print("           dry run -- not sending")
         return {}
-    r = requests.post("https://app.adjust.com/event", data=fields,
+    r = requests.post(_api(campaign_data, "event"), data=fields,
                       headers=headers, timeout=30, proxies=PROXIES)
     print("           -> %d  [t=+%.0fs]"
           % (r.status_code, time.time() - RUN["t0"]))
@@ -650,7 +689,7 @@ def info(campaign_data, device_data, source="push", push_token=None):
     if DRY_RUN:
         print("           dry run -- not sending")
         return {}
-    r = requests.post("https://app.adjust.com/info", data=fields,
+    r = requests.post(_api(campaign_data, "info"), data=fields,
                       headers=headers, timeout=30, proxies=PROXIES)
     print("           -> %d  [t=+%.0fs]"
           % (r.status_code, time.time() - RUN["t0"]))
@@ -770,7 +809,6 @@ def main():
     for delay in campaign_data["poll_delays"]:
         time.sleep(delay)
         verdict = attribution(campaign_data, DEVICE)
-        print verdict
         print("poll +%-2ds   %s / %s  eng %s  [t=+%.0fs]"
               % (delay, verdict.get("network"),
                  verdict.get("tracker_token"),

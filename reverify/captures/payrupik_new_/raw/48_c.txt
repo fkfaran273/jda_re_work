@@ -1,5 +1,0 @@
-GET https://example.com/ HTTP/1.1
-Host: example.com
-User-Agent: curl/7.73.0
-Accept: */*
-

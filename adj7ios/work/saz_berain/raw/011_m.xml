@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="11" BitFlags="2100">
+  <SessionTimers ClientConnected="2026-05-20T09:49:56.544995+05:30" ClientBeginRequest="2026-05-20T09:49:56.544995+05:30" GotRequestHeaders="2026-05-20T09:49:56.544995+05:30" ClientDoneRequest="2026-05-20T09:49:56.544995+05:30" GatewayTime="0" DNSTime="249" TCPConnectTime="259" HTTPSHandshakeTime="525" ServerConnected="2026-05-20T09:49:57.0536525+05:30" FiddlerBeginRequest="2026-05-20T09:49:57.0536525+05:30" ServerGotRequest="2026-05-20T09:49:57.0536525+05:30" ServerBeginResponse="0001-01-01T00:00:00" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="0001-01-01T00:00:00" ClientBeginResponse="2026-05-20T09:49:57.0546681+05:30" ClientDoneResponse="2026-05-20T09:49:57.0546681+05:30" />
+  <PipeInfo />
+  <TunnelInfo BytesEgress="0" BytesIngress="0" />
+  <SessionFlags>
+    <SessionFlag N="ui-color" V="Green" />
+    <SessionFlag N="https-client-version" V="Tls12" />
+    <SessionFlag N="x-egressport" V="56261" />
+    <SessionFlag N="https-client-snihostname" V="gspe19-ssl.ls.apple.com" />
+    <SessionFlag N="https-server-cipher" V="Aes128 128bits" />
+    <SessionFlag N="x-responsebodytransferlength" V="0" />
+    <SessionFlag N="x-clientip" V="::ffff:192.168.1.12" />
+    <SessionFlag N="x-clientport" V="54408" />
+    <SessionFlag N="https-server-version" V="Tls12" />
+    <SessionFlag N="ui-oldcolor" V="Gray" />
+    <SessionFlag N="ui-bold" V="user-marked" />
+    <SessionFlag N="x-hostip" V="184.86.117.223" />
+    <SessionFlag N="https-client-sessionid" V="92 BA D6 B1 90 02 17 B6 54 FB FF 6F 68 89 F4 0A 40 EF F2 01 B6 DC 7A 38 F9 8A 0B 38 FC 16 8E 3A" />
+    <SessionFlag N="ui-comments" V="app to open" />
+  </SessionFlags>
+</Session>

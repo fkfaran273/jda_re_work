@@ -1,0 +1,36 @@
+CONNECT gateway.icloud.com:443 HTTP/1.1
+Host: gateway.icloud.com
+Connection: keep-alive
+Connection: keep-alive
+
+A SSLv3-compatible ClientHello handshake was found. Fiddler extracted the parameters below.
+
+Version: 3.1 (TLS/1.0)
+Random: 8D 00 5A DC D4 10 C8 0E 10 1E F4 20 10 78 54 A4 74 47 F2 11 87 82 03 7A 1A 0F 9A 2F BB A3 B8 07
+"Time": 24-Feb-87 6:15:01 AM
+SessionID: empty
+Extensions: 
+	server_name	gateway.icloud.com
+	extended_master_secret	empty
+	renegotiation_info	00
+	supported_groups	x25519 [0x1d], secp256r1 [0x17], secp384r1 [0x18], secp521r1 [0x19]
+	ec_point_formats	uncompressed [0x0]
+	ALPN		h2, http/1.1
+	status_request	OCSP - Implicit Responder
+	SignedCertTimestamp (RFC6962)	empty
+Ciphers: 
+	[C00A]	TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
+	[C009]	TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
+	[C014]	TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+	[C013]	TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+	[0035]	TLS_RSA_WITH_AES_256_CBC_SHA
+	[002F]	TLS_RSA_WITH_AES_128_CBC_SHA
+	[C008]	TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA
+	[C012]	TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+	[000A]	SSL_RSA_WITH_3DES_EDE_SHA
+	[5600]	TLS_FALLBACK_SCSV
+
+Compression: 
+	[00]	NO_COMPRESSION
+
+

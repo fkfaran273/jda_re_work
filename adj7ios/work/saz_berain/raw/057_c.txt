@@ -1,0 +1,11 @@
+POST https://odm.app-ads-services.com/odm/psm?version=1.1&bundle_id=com.berain.berain&app_version=4.4.0&sdk_version=odm-sdk-i-v2.1.0&retry_count=0&odm2_count=0&source=ga4f&tfo=1779250800 HTTP/1.1
+Host: odm.app-ads-services.com
+Content-Type: application/x-www-form-urlencoded
+Connection: keep-alive
+Accept: */*
+Accept-Language: ar
+Content-Length: 142
+Accept-Encoding: gzip, deflate, br
+User-Agent: Berain-Swift/1 CFNetwork/1410.1 Darwin/22.6.0
+
+{"odmed":"CBYaFAgBEgcIBRUAAEhCEgcIAhUAAEhCKggwNGM0MWIxNw","psm_request":"CigKA1L4WBIhAkjwzIsMOnI0wIzMQ6ZTylLFiH3FFm0T6h5b_4zHRps5EgQQAhgWGCM"}

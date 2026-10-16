@@ -1,0 +1,12 @@
+POST https://sdk-03.moengage.com/v3/campaigns/inapp/live?push_opt_in_status=false&os=iOS&sdk_ver=9.22.2&device_type=MOBILE&inapp_ver=6.04.0&unique_id=4994D34F-B081-47DE-ACB0-4F6D1DA318BA-1775044827 HTTP/1.1
+Host: sdk-03.moengage.com
+Content-Type: application/json
+Connection: keep-alive
+Accept: */*
+MOE-APPKEY: WTV8ZYNUNWXAFP9F3VG9D2CT
+Accept-Language: en-GB,en;q=0.9
+Content-Length: 480
+Accept-Encoding: gzip, deflate, br
+User-Agent: hunch/3 CFNetwork/1410.1 Darwin/22.6.0
+
+{"query_params":{"os_ver":"16.7.15","app_id":"WTV8ZYNUNWXAFP9F3VG9D2CT","os":"iOS","unique_id":"4994D34F-B081-47DE-ACB0-4F6D1DA318BA-1775044827","device_tz":"Europe\/Minsk","app_ver":"3.0.1","model":"iPhone","device_unique_id":"P-77534AED-7818-42C8-83AE-0AEE3F402EF3-1775044827","sdk_ver":"9.22.2","device_tz_offset":"10800000","device_ts":"1775044827801","model_name":"iPhone 8"},"user_session_attributes":{"TIME_OF_THE_DAY":"15","USER_TYPE":"New","DAY_OF_THE_WEEK":"Wednesday"}}

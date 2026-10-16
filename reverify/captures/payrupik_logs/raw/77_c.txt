@@ -1,6 +1,0 @@
-GET https://play.googleapis.com/play/log/timestamp HTTP/1.1
-User-Agent: Dalvik/2.1.0 (Linux; U; Android 11; DN2101 Build/RP1A.200720.011)
-Host: play.googleapis.com
-Connection: Keep-Alive
-Accept-Encoding: gzip
-

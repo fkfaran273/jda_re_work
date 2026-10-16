@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+FiddlerGateway: Direct
+StartTime: 09:51:10.752
+Connection: close
+
+Encrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.
+
+Secure Protocol: Tls12
+Cipher: Aes128 128bits
+Hash Algorithm: Sha256 ?bits
+Key Exchange: ECDHE_RSA (0xae06) 255bits
+
+== Server Certificate ==========
+[Subject]
+  CN=*.gstatic.com
+
+[Issuer]
+  CN=WR2, O=Google Trust Services, C=US
+
+[Serial Number]
+  47AF508689C965B412EC8CF6880750F3
+
+[Not Before]
+  20-Apr-26 2:06:34 PM
+
+[Not After]
+  13-Jul-26 2:06:33 PM
+
+[Thumbprint]
+  999969B2FCB44FEA18FB044C0F8D3E4061B53100
+
+[SubjectAltNames]
+*.gstatic.com, gstatic.com, *.metric.gstatic.com

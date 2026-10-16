@@ -1,0 +1,13 @@
+POST https://eu1.clevertap-prod.com/a1?os=iOS&t=70501&z=R9Z-W4R-9W6Z&ts=1779250797 HTTP/1.1
+Host: eu1.clevertap-prod.com
+Content-Type: application/json; charset=utf-8
+Connection: keep-alive
+X-CleverTap-Account-Id: R9Z-W4R-9W6Z
+X-CleverTap-Token: 240-1c2
+Accept: */*
+Accept-Language: ar
+Content-Length: 612
+Accept-Encoding: gzip, deflate, br
+User-Agent: Berain-Swift/1 CFNetwork/1410.1 Darwin/22.6.0
+
+[{"id":"R9Z-W4R-9W6Z","imp":0,"tk":"240-1c2","fl":true,"frs":true,"tlc":[],"regURLs":["com.berain.berain.payments"],"type":"meta","af":{"wdt":"2.30","OS Version":"16.7.12","Version":"4.4.0","Build":"1","Model":"iPhone10,1","Radio":"","LIAMC":0,"ifaA":false,"locale":"ar_SA","wifi":true,"cc":"SA","SDK Version":70501,"useIP":true,"OS":"iOS","hgt":"4.09","Make":"Apple"},"ddnd":0,"debug":true,"l_ts":0,"f_ts":0,"g":"-2fe74a76dad849639d6bb69207a984b2"},{"pai":"com.berain.berain","n":"_bg","evtName":"wzrk_fetch","dsync":true,"pg":1,"evtData":{"t":1},"ep":1779250797,"type":"event","lsl":0,"s":1779250795,"f":true}]

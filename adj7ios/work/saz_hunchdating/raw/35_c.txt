@@ -1,0 +1,8 @@
+GET https://downloads.intercomcdn.com/i/o/kaz760u7/627704/d1d7a879df9a0f15411c13114052/609b6a126ace06297a8e2263551cac4a.png HTTP/1.1
+Host: downloads.intercomcdn.com
+Accept: */*
+Accept-Language: en-GB,en;q=0.9
+Connection: keep-alive
+Accept-Encoding: gzip, deflate, br
+User-Agent: hunch/3 CFNetwork/1410.1 Darwin/22.6.0
+

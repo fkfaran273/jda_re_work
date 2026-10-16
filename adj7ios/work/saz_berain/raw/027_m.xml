@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="27" BitFlags="100">
+  <SessionTimers ClientConnected="2026-05-20T09:49:58.660562+05:30" ClientBeginRequest="2026-05-20T09:49:58.660562+05:30" GotRequestHeaders="2026-05-20T09:49:58.660562+05:30" ClientDoneRequest="2026-05-20T09:49:58.6615243+05:30" GatewayTime="0" DNSTime="0" TCPConnectTime="265" HTTPSHandshakeTime="0" ServerConnected="2026-05-20T09:49:58.926815+05:30" FiddlerBeginRequest="2026-05-20T09:49:58.926815+05:30" ServerGotRequest="2026-05-20T09:49:58.926815+05:30" ServerBeginResponse="0001-01-01T00:00:00" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="0001-01-01T00:00:00" ClientBeginResponse="2026-05-20T09:49:58.926815+05:30" ClientDoneResponse="2026-05-20T09:49:58.926815+05:30" />
+  <PipeInfo />
+  <SessionFlags>
+    <SessionFlag N="x-egressport" V="56269" />
+    <SessionFlag N="x-responsebodytransferlength" V="0" />
+    <SessionFlag N="x-clientport" V="54415" />
+    <SessionFlag N="ui-bold" V="user-marked" />
+    <SessionFlag N="x-clientip" V="::ffff:192.168.1.12" />
+    <SessionFlag N="ui-oldcolor" V="Gray" />
+    <SessionFlag N="x-connect-peek" V="After the client received notice of the established CONNECT, it failed to send any data." />
+    <SessionFlag N="x-hostip" V="184.86.117.223" />
+    <SessionFlag N="ui-color" V="Green" />
+    <SessionFlag N="ui-comments" V="app to open" />
+  </SessionFlags>
+</Session>

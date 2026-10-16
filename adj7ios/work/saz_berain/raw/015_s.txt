@@ -1,0 +1,109 @@
+HTTP/1.1 200 OK
+Date: Wed, 20 May 2026 04:19:57 GMT
+Content-Type: application/json
+Connection: keep-alive
+last-modified: Mon, 09 Feb 2026 12:29:04 GMT
+cf-cache-status: HIT
+x-frame-options: SAMEORIGIN
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+content-security-policy: object-src 'self';
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+Age: 2626
+expires: Wed, 20 May 2026 08:19:57 GMT
+Cache-Control: public, max-age=14400
+etag: W/"06853adbf99dc1:0"
+Server: cloudflare
+CF-RAY: 9fe88bc9ee69f9d3-MCT
+Content-Length: 3462
+
+{
+    "KWT": {
+        "portal": "https://portal.myfatoorah.com",
+        "v1": "https://apikw.myfatoorah.com",
+        "v2": "https://api.myfatoorah.com",
+        "testPortal": "https://demo.myfatoorah.com",
+        "testv1": "https://apidemo.myfatoorah.com",
+        "testv2": "https://apitest.myfatoorah.com",
+        "countryNameAr": "الكويت",
+        "countryNameEn": "Kuwait",
+        "timeZone": "Asia/Kuwait"
+    },
+    "SAU": {
+        "portal": "https://sa.myfatoorah.com",
+        "v1": "https://apisa.myfatoorah.com",
+        "v2": "https://api-sa.myfatoorah.com",
+        "testPortal": "https://demo.myfatoorah.com",
+        "testv1": "https://apidemo.myfatoorah.com",
+        "testv2": "https://apitest.myfatoorah.com",
+        "countryNameAr": "السعودية",
+        "countryNameEn": "Saudi Arabia",
+        "timeZone": "Asia/Riyadh"
+    },
+    "ARE": {
+        "portal": "https://ae.myfatoorah.com",
+        "v1": "https://apiae.myfatoorah.com",
+        "v2": "https://api-ae.myfatoorah.com",
+        "testPortal": "https://demo.myfatoorah.com",
+        "testv1": "https://apidemo.myfatoorah.com",
+        "testv2": "https://apitest.myfatoorah.com",
+        "countryNameAr": "الإمارات العربية المتحدة",
+        "countryNameEn": "United Arab Emirates",
+        "timeZone": "Asia/Dubai"
+    },
+    "QAT": {
+        "portal": "https://qa.myfatoorah.com",
+        "v1": "https://apiqa.myfatoorah.com",
+        "v2": "https://api-qa.myfatoorah.com",
+        "testPortal": "https://demo.myfatoorah.com",
+        "testv1": "https://apidemo.myfatoorah.com",
+        "testv2": "https://apitest.myfatoorah.com",
+        "countryNameAr": "قطر",
+        "countryNameEn": "Qatar",
+        "timeZone": "Asia/Qatar"
+    },
+    "BHR": {
+        "portal": "https://portal.myfatoorah.com",
+        "v1": "https://apibh.myfatoorah.com",
+        "v2": "https://api.myfatoorah.com",
+        "testPortal": "https://demo.myfatoorah.com",
+        "testv1": "https://apidemo.myfatoorah.com",
+        "testv2": "https://apitest.myfatoorah.com",
+        "countryNameAr": "البحرين",
+        "countryNameEn": "Bahrain",
+        "timeZone": "Asia/Kuwait"
+    },
+    "OMN": {
+        "portal": "https://portal.myfatoorah.com",
+        "v1": "https://apiom.myfatoorah.com",
+        "v2": "https://api.myfatoorah.com",
+        "testPortal": "https://demo.myfatoorah.com",
+        "testv1": "https://apidemo.myfatoorah.com",
+        "testv2": "https://apitest.myfatoorah.com",
+        "countryNameAr": "عمان",
+        "countryNameEn": "Oman",
+        "timeZone": "Asia/Kuwait"
+    },
+    "JOR": {
+        "portal": "https://portal.myfatoorah.com",
+        "v1": "https://apijo.myfatoorah.com",
+        "v2": "https://api.myfatoorah.com",
+        "testPortal": "https://demo.myfatoorah.com",
+        "testv1": "https://apidemo.myfatoorah.com",
+        "testv2": "https://apitest.myfatoorah.com",
+        "countryNameAr": "اﻷردن",
+        "countryNameEn": "Jordan",
+        "timeZone": "Asia/Kuwait"
+    },
+    "EGY": {
+        "portal": "https://eg.myfatoorah.com",
+        "v1": "https://apieg.myfatoorah.com",
+        "v2": "https://api-eg.myfatoorah.com",
+        "testPortal": "https://demo.myfatoorah.com",
+        "testv1": "https://apidemo.myfatoorah.com",
+        "testv2": "https://apitest.myfatoorah.com",
+        "countryNameAr": "مصر",
+        "countryNameEn": "Egypt",
+        "timeZone": "Africa/Cairo"
+    }
+}

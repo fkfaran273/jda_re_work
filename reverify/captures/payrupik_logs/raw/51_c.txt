@@ -1,9 +1,0 @@
-POST https://oversee.froescik.in/add/appStartInfo HTTP/1.1
-Content-Type: application/x-www-form-urlencoded
-Content-Length: 286
-Host: oversee.froescik.in
-Connection: Keep-Alive
-Accept-Encoding: gzip
-User-Agent: okhttp/5.3.2
-
-carrier=JIO+4G&channel=PayRupik&d_id=b4bb4595-9007-392f-9c6d-608e5c50a29b&device_time=1791191434290&device_type=OnePlus-DN2101&device_zone=GMT%2B05%3A30&network_type=wifi&platform=android&project=PayRupik&push_id=&sdk_version=1.4.3.3&sequence_id=&system_version=11%2830%29&version=3.0.4

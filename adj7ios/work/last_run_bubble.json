@@ -1,0 +1,21 @@
+{
+ "mode": "live",
+ "app": "com.bugbomb.dumptruckjam",
+ "idfa": "48F27146-E6A4-4AB7-B45A-446D732D9F14",
+ "idfv": "2F93601C-7496-408A-BDEA-6196FCB8652A",
+ "dedupe": "7c495e59-8185-4391-abff-8c9329190465",
+ "reftag": null,
+ "click_second": 1791557811,
+ "adid": "7619a1bd7e956f80fa0e968efe9d1848",
+ "session_ask_in": 2000,
+ "attribution": {
+  "tracker_token": "1kj0shkc",
+  "tracker_name": "Organic",
+  "network": "Organic",
+  "engagement_time": "0001-01-01T00:00:00Z",
+  "installed_at": "2026-10-09T14:57:14Z",
+  "first_session_time": "2026-10-09T14:57:14Z",
+  "is_reattributed": false,
+  "is_redownload_install": false
+ }
+}

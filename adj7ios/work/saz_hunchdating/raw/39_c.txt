@@ -1,0 +1,14 @@
+POST https://app-analytics-services.com/sdk-exp HTTP/1.1
+Host: app-analytics-services.com
+Content-Type: application/x-www-form-urlencoded
+Connection: keep-alive
+Accept: */*
+Accept-Language: en-GB,en;q=0.9
+Content-Length: 83
+Accept-Encoding: gzip, deflate, br
+User-Agent: hunch/3 CFNetwork/1410.1 Darwin/22.6.0
+
+
+#
+ios"en-by*social.hunch.app08N,
+app_measurementC7FE6-app_measurementΔε

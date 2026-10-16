@@ -1,0 +1,55 @@
+CONNECT firebase-settings.crashlytics.com:443 HTTP/1.1
+Host: firebase-settings.crashlytics.com
+Connection: keep-alive
+Connection: keep-alive
+
+A SSLv3-compatible ClientHello handshake was found. Fiddler extracted the parameters below.
+
+Version: 3.3 (TLS/1.2)
+Random: D3 B8 A9 8F 4A F3 0A EE 2F 65 C2 76 25 7A 8C B1 99 59 36 E5 28 6E 7B FD 1D 58 8B 08 4B 04 8E 63
+"Time": 18-May-46 7:29:47 PM
+SessionID: EC 7F 51 B2 48 8E 35 33 CF C1 B9 4B 15 E2 52 4F C1 2E 9F 18 3F 28 66 3A 84 3D F3 F1 C8 3D E5 DC
+Extensions: 
+	grease (0x9a9a)	empty
+	server_name	firebase-settings.crashlytics.com
+	extended_master_secret	empty
+	renegotiation_info	00
+	supported_groups	grease [0x5a5a], x25519 [0x1d], secp256r1 [0x17], secp384r1 [0x18], secp521r1 [0x19]
+	ec_point_formats	uncompressed [0x0]
+	ALPN		h2, http/1.1
+	status_request	OCSP - Implicit Responder
+	signature_algs	ecdsa_secp256r1_sha256, rsa_pss_rsae_sha256, rsa_pkcs1_sha256, ecdsa_secp384r1_sha384, ecdsa_sha1, rsa_pss_rsae_sha384, rsa_pss_rsae_sha384, rsa_pkcs1_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha512, rsa_pkcs1_sha1
+	SignedCertTimestamp (RFC6962)	empty
+	key_share	00 29 5A 5A 00 01 00 00 1D 00 20 58 AC AD 51 E5 94 7A 03 A0 B2 70 F8 58 48 C3 80 E4 88 D9 7C 16 68 BD A8 EF 2C BB 8B 98 0D DF 2D
+	psk_key_exchange_modes	01 01
+	supported_versions	grease [0x4a4a], Tls1.3, Tls1.2, Tls1.1, Tls1.0
+	0x001b		02 00 01
+	grease (0x2a2a)	00
+	padding		173 null bytes
+Ciphers: 
+	[6A6A]	Unrecognized cipher - See https://www.iana.org/assignments/tls-parameters/
+	[1301]	TLS_AES_128_GCM_SHA256
+	[1302]	TLS_AES_256_GCM_SHA384
+	[1303]	TLS_CHACHA20_POLY1305_SHA256
+	[C02C]	TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+	[C02B]	TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+	[CCA9]	TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
+	[C030]	TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	[C02F]	TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	[CCA8]	TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+	[C00A]	TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
+	[C009]	TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
+	[C014]	TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+	[C013]	TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+	[009D]	TLS_RSA_WITH_AES_256_GCM_SHA384
+	[009C]	TLS_RSA_WITH_AES_128_GCM_SHA256
+	[0035]	TLS_RSA_WITH_AES_256_CBC_SHA
+	[002F]	TLS_RSA_WITH_AES_128_CBC_SHA
+	[C008]	TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA
+	[C012]	TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+	[000A]	SSL_RSA_WITH_3DES_EDE_SHA
+
+Compression: 
+	[00]	NO_COMPRESSION
+
+

@@ -1,0 +1,1852 @@
+[
+ {
+  "sid": 1,
+  "method": "CONNECT",
+  "url": "example.com:443",
+  "headers": [
+   [
+    "Host",
+    "example.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 2,
+  "method": "GET",
+  "url": "https://example.com/",
+  "headers": [
+   [
+    "Host",
+    "example.com"
+   ],
+   [
+    "User-Agent",
+    "curl/7.73.0"
+   ],
+   [
+    "Accept",
+    "*/*"
+   ]
+  ]
+ },
+ {
+  "sid": 3,
+  "method": "CONNECT",
+  "url": "graph.facebook.com:443",
+  "headers": [
+   [
+    "Host",
+    "graph.facebook.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 4,
+  "method": "CONNECT",
+  "url": "graph.facebook.com:443",
+  "headers": [
+   [
+    "Host",
+    "graph.facebook.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 5,
+  "method": "CONNECT",
+  "url": "graph.facebook.com:443",
+  "headers": [
+   [
+    "Host",
+    "graph.facebook.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 6,
+  "method": "CONNECT",
+  "url": "graph.facebook.com:443",
+  "headers": [
+   [
+    "Host",
+    "graph.facebook.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 7,
+  "method": "CONNECT",
+  "url": "sdk-03.moengage.com:443",
+  "headers": [
+   [
+    "Host",
+    "sdk-03.moengage.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 8,
+  "method": "GET",
+  "url": "https://graph.facebook.com/v16.0/app/mobile_sdk_gk?access_token=1237534153460824%7C03ad100a4d727ca87e2eb3debfb565dd&fields=gatekeepers&format=json&sdk_version=18.3.0&sdk=android&platform=android",
+  "headers": [
+   [
+    "User-Agent",
+    "FBAndroidSDK.18.3.0"
+   ],
+   [
+    "Accept-Language",
+    "en_IN"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Encoding",
+    "gzip"
+   ],
+   [
+    "Host",
+    "graph.facebook.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 9,
+  "method": "GET",
+  "url": "https://graph.facebook.com/v16.0/app?access_token=1237534153460824%7C03ad100a4d727ca87e2eb3debfb565dd&fields=supports_implicit_sdk_logging%2Cgdpv4_nux_content%2Cgdpv4_nux_enabled%2Candroid_dialog_configs%2Candroid_sdk_error_categories%2Capp_events_session_timeout%2Capp_events_feature_bitmask%2Cauto_event_mapping_android%2Cseamless_login%2Csmart_login_bookmark_icon_url%2Csmart_login_menu_icon_url%2Crestrictive_data_filter_params%2Caam_rules%2Csuggested_events_setting%2Cprotected_mode_rules%2Cauto_log_app_events_default%2Cauto_log_app_events_enabled%2Capp_events_config.os_version(12)&format=json&sdk=android",
+  "headers": [
+   [
+    "User-Agent",
+    "FBAndroidSDK.18.3.0"
+   ],
+   [
+    "Accept-Language",
+    "en_IN"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Encoding",
+    "gzip"
+   ],
+   [
+    "Host",
+    "graph.facebook.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 10,
+  "method": "GET",
+  "url": "https://graph.facebook.com/v16.0/app?access_token=1237534153460824%7C03ad100a4d727ca87e2eb3debfb565dd&fields=supports_implicit_sdk_logging%2Cgdpv4_nux_content%2Cgdpv4_nux_enabled%2Candroid_dialog_configs%2Candroid_sdk_error_categories%2Capp_events_session_timeout%2Capp_events_feature_bitmask%2Cauto_event_mapping_android%2Cseamless_login%2Csmart_login_bookmark_icon_url%2Csmart_login_menu_icon_url%2Crestrictive_data_filter_params%2Caam_rules%2Csuggested_events_setting%2Cprotected_mode_rules%2Cauto_log_app_events_default%2Cauto_log_app_events_enabled%2Capp_events_config.os_version(12)&format=json&sdk=android",
+  "headers": [
+   [
+    "User-Agent",
+    "FBAndroidSDK.18.3.0"
+   ],
+   [
+    "Accept-Language",
+    "en_IN"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Encoding",
+    "gzip"
+   ],
+   [
+    "Host",
+    "graph.facebook.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 11,
+  "method": "GET",
+  "url": "https://graph.facebook.com/v16.0/app?access_token=1237534153460824%7C03ad100a4d727ca87e2eb3debfb565dd&fields=supports_implicit_sdk_logging%2Cgdpv4_nux_content%2Cgdpv4_nux_enabled%2Candroid_dialog_configs%2Candroid_sdk_error_categories%2Capp_events_session_timeout%2Capp_events_feature_bitmask%2Cauto_event_mapping_android%2Cseamless_login%2Csmart_login_bookmark_icon_url%2Csmart_login_menu_icon_url%2Crestrictive_data_filter_params%2Caam_rules%2Csuggested_events_setting%2Cprotected_mode_rules%2Cauto_log_app_events_default%2Cauto_log_app_events_enabled%2Capp_events_config.os_version(12)&format=json&sdk=android",
+  "headers": [
+   [
+    "User-Agent",
+    "FBAndroidSDK.18.3.0"
+   ],
+   [
+    "Accept-Language",
+    "en_IN"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Encoding",
+    "gzip"
+   ],
+   [
+    "Host",
+    "graph.facebook.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 12,
+  "method": "POST",
+  "url": "https://sdk-03.moengage.com/v3/sdkconfig/android/WTV8ZYNUNWXAFP9F3VG9D2CT",
+  "headers": [
+   [
+    "MOE-APPKEY",
+    "WTV8ZYNUNWXAFP9F3VG9D2CT"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Accept-Charset",
+    "UTF-8"
+   ],
+   [
+    "Content-type",
+    "application/json"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "sdk-03.moengage.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Content-Length",
+    "262"
+   ]
+  ],
+  "body": "{\"query_params\":{\"os\":\"ANDROID\",\"app_id\":\"WTV8ZYNUNWXAFP9F3VG9D2CT\",\"sdk_ver\":\"130502\",\"unique_id\":\"a4e877ac-0cf5-44e5-a679-65e95713752f\",\"device_ts\":\"1791315643911\",\"device_tz_offset\":\"19800000\",\"app_ver\":\"306\",\"app_version_name\":\"3.2.33\",\"moe_push_ser\":\"FCM\"}}"
+ },
+ {
+  "sid": 13,
+  "method": "POST",
+  "url": "https://sdk-03.moengage.com/v1/cards/get",
+  "headers": [
+   [
+    "MOE-APPKEY",
+    "WTV8ZYNUNWXAFP9F3VG9D2CT"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Accept-Charset",
+    "UTF-8"
+   ],
+   [
+    "Content-type",
+    "application/json"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "sdk-03.moengage.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Content-Length",
+    "449"
+   ]
+  ],
+  "body": "{\"last_updated_time\":0,\"prev_sync_card_ids\":[],\"request_id\":\"1791315644288-52c4d2d1-2496-4b91-a41f-13545581ff1e\",\"platforms\":[\"android\"],\"unique_id\":\"a4e877ac-0cf5-44e5-a679-65e95713752f\",\"query_params\":{\"os\":\"ANDROID\",\"app_id\":\"WTV8ZYNUNWXAFP9F3VG9D2CT\",\"sdk_ver\":\"130502\",\"unique_id\":\"a4e877ac-0cf5-44e5-a679-65e95713752f\",\"device_ts\":\"1791315644288\",\"device_tz_offset\":\"19800000\",\"app_ver\":\"306\",\"app_version_name\":\"3.2.33\",\"moe_push_ser\":\"FCM\"}}"
+ },
+ {
+  "sid": 14,
+  "method": "GET",
+  "url": "https://graph.facebook.com/v16.0/app/mobile_sdk_gk?access_token=1237534153460824%7C03ad100a4d727ca87e2eb3debfb565dd&fields=gatekeepers&format=json&sdk_version=18.3.0&sdk=android&platform=android",
+  "headers": [
+   [
+    "User-Agent",
+    "FBAndroidSDK.18.3.0"
+   ],
+   [
+    "Accept-Language",
+    "en_IN"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Encoding",
+    "gzip"
+   ],
+   [
+    "Host",
+    "graph.facebook.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 15,
+  "method": "POST",
+  "url": "https://sdk-03.moengage.com/v3/campaigns/inapp/live?unique_id=a4e877ac-0cf5-44e5-a679-65e95713752f&sdk_ver=130502&os=ANDROID&inapp_ver=8.7.1&push_opt_in_status=true&device_type=MOBILE",
+  "headers": [
+   [
+    "MOE-APPKEY",
+    "WTV8ZYNUNWXAFP9F3VG9D2CT"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Accept-Charset",
+    "UTF-8"
+   ],
+   [
+    "Content-type",
+    "application/json"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "sdk-03.moengage.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Content-Length",
+    "361"
+   ]
+  ],
+  "body": "{\"query_params\":{\"os\":\"ANDROID\",\"app_id\":\"WTV8ZYNUNWXAFP9F3VG9D2CT\",\"sdk_ver\":\"130502\",\"unique_id\":\"a4e877ac-0cf5-44e5-a679-65e95713752f\",\"device_ts\":\"1791315644525\",\"device_tz_offset\":\"19800000\",\"app_ver\":\"306\",\"app_version_name\":\"3.2.33\",\"moe_push_ser\":\"FCM\"},\"user_session_attributes\":{\"USER_TYPE\":\"New\",\"DAY_OF_THE_WEEK\":\"Wednesday\",\"TIME_OF_THE_DAY\":\"01\"}}"
+ },
+ {
+  "sid": 16,
+  "method": "GET",
+  "url": "https://graph.facebook.com/v16.0/app/model_asset?access_token=1237534153460824%7C03ad100a4d727ca87e2eb3debfb565dd&fields=use_case%2Cversion_id%2Casset_uri%2Crules_uri%2Cthresholds&format=json&sdk=android",
+  "headers": [
+   [
+    "User-Agent",
+    "FBAndroidSDK.18.3.0"
+   ],
+   [
+    "Accept-Language",
+    "en_IN"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Encoding",
+    "gzip"
+   ],
+   [
+    "Host",
+    "graph.facebook.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 17,
+  "method": "POST",
+  "url": "https://graph.facebook.com/v16.0/1237534153460824/activities",
+  "headers": [
+   [
+    "User-Agent",
+    "FBAndroidSDK.18.3.0"
+   ],
+   [
+    "Accept-Language",
+    "en_IN"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Encoding",
+    "gzip"
+   ],
+   [
+    "Transfer-Encoding",
+    "chunked"
+   ],
+   [
+    "Host",
+    "graph.facebook.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ],
+  "body": "210\r\n\u001f\ufffd\b\u0000\u0000\u0000\u0000\u0000\u0000\ufffdmRMo\ufffd0\u0010\ufffd5p\ufffd\u0016\u0019\u001b\ufffd\ufffdC\ufffdI\ufffd\ufffdm\u001a)\ufffd\ufffd\ufffd\u015a\ufffd\u0007\ufffd.k#\u06e4\ufffd\ufffd\ufffd\ufffdBX\ufffd\ufffd\u0000\ufffd\ufffd7\u001f\ufffd\u0003Ja\b2\ufffd\u0003\ufffd:\ufffd*E\ufffd\u04f7f\u001b^$\u0556\t\ufffd9cP\ufffdW\n6\u0015r\ufffd\u000b\ufffd\ufffdf_\ufffdK\ufffd\ufffd\ufffd\ufffd#\ufffd\ufffdGp6\r\ufffdP\ufffd\ufffd\ufffd\u0019\ufffd\ufffd!Dw\ufffd\ufffd\ufffd6\ufffd:)\ufffd\ufffd\ufffd:\ufffd|\f\ufffd\ufffd\u0011\u9488+\ufffd7{IB\u00190Fc\ufffd \ufffd3\ufffd\u0016\ufffd\t\ufffd\u06d3\ufffds\ufffd\u03bc\n\ufffd\ufffd}.\ufffdr]\ufffd\t\u001d\u031ci\ufffd\u0007\ufffd~\ufffdY\ufffd\u0006\ufffd\u068c\ufffd\ufffd\f\ufffd\u001e_\ufffd\u001b\u008c\ufffd\u00192\ufffdD\u0003\ufffd[\ufffd!@\ufffdoH\ufffd\ufffd\u05e0\u000e\ufffdw\ufffd\ufffd\u0017\ufffd\u0002?\ufffd\ufffdQ&v\ufffd?\ufffdv\u001a\ufffd\u00a9n\ufffd\ufffd&u=z\ufffd\ufffdY\ufffdd\u000f\ufffd,\ufffd\ufffd\u0017\ufffd\u0019\ufffd\u0017\ufffd)\u00c8\ufffd\ufffd\ufffd\ufffd\u0007O\u0006\u0006<\ufffd\u0592\ufffd\u0012-\ufffdE\ufffd\u0160A\ufffd\u0010\u001d\u0011%\ufffd\ufffd\ufffdT\ufffd\ufffd_;\u001c\ufffd<\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffdgy\ufffd\ufffd o\ufffd\ufffd\ufffd\ufffd\u001eS\ufffd\ufffdJ\ufffd\ufffdo\u07d9\u0010\ufffd@\ufffdi\ufffdVE\ufffdl\u0005\ufffdZ\ufffdXCkS\ufffd\u0010e\ufffdR=j\ufffd<\ufffd\ufffd\ufffd\ufffd[tZG?`\n\ufffd\u0005}4\u0001=\ufffd\ufffd\ufffdu\u001d\ufffd3\ufffd/\ufffd\ufffd!\u0002A\ufffd\ufffdQ\u0007z\ufffdZ\ufffdc6\ufffd`F\ufffdjJ\ufffd\ufffd/\u06ac\u019d\ufffd\ufffd\u001c\ufffd\ufffd@p\ufffd^:{\u001e\ufffdz\u03a8\ufffd\u0011\u0010l=\ufffd\"\ufffd\u00103;\ufffd\b\ufffd.\ufffdwmq\t\ufffd\ufffdw\ufffd\ufffd\ufffd\ufffdq7\ufffd\ufffdC\ufffd6d\ufffd\ufffdrVc\ufffdg\ufffd\t\ufffd\ufffdW\u69fa#r\u0015\f$%\ufffd>|t\ufffd\u0001\"\ufffdhd\ufffd\u04b3iZii\u001b\ufffd\u007f\ufffdH\ufffd\u00000\ufffd\ufffdJ\ufffd\u0003\u0000\u0000\r\n0\r\n\r\n"
+ },
+ {
+  "sid": 18,
+  "method": "CONNECT",
+  "url": "r.lr-intake.com:443",
+  "headers": [
+   [
+    "Host",
+    "r.lr-intake.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 19,
+  "method": "POST",
+  "url": "https://graph.facebook.com/v16.0/1237534153460824/activities",
+  "headers": [
+   [
+    "User-Agent",
+    "FBAndroidSDK.18.3.0"
+   ],
+   [
+    "Accept-Language",
+    "en_IN"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Encoding",
+    "gzip"
+   ],
+   [
+    "Transfer-Encoding",
+    "chunked"
+   ],
+   [
+    "Host",
+    "graph.facebook.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ],
+  "body": "153\r\n\u001f\ufffd\b\u0000\u0000\u0000\u0000\u0000\u0000\ufffd]PMo\ufffd0\f\ufffd5\ufffdej\ufffd\ufffd\ufffd%\u0007`\ufffd\ufffd\ufffd6$8L\ufffdTn\ufffdB\u0592\ufffd6\ufffd\ufffd\ufffd\ufffd\u00151\ufffd\ufffd\u001d\ufffd\ufffd\ufffd\ufffd\u0003\ufffd\ufffdq\ufffd\ufffd\ufffd\u0429\ufffd\ufffdRr\ufffdG+h\ufffdDR.(\u0007\ufffdS\n\u0094\ufffd\ufffdP\ufffd\u0230\ufffd\u0006\ufffd\ufffd\ufffd\ufffd4\ufffd\ufffd~8@P_\ufffdwd4\ufffd\u0002g\u0006o\r\ufffd3\ufffd\ufffd^\ufffd\ufffd\ufffd\ufffdS=[\ufffd\ufffd\ufffd\ufffdf;[\ufffd\b8\ufffdjk\ufffd\ufffd'\ufffd\u001c)\u0018L\ufffd\ufffd4\u0015%\ufffd\u0014\u0682\ufffd\ufffd\ufffd\r\u0004\u0013\ufffd\u02d6\ufffd\ufffd\ufffd[\r\ufffd\u01aa0\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u04680\ufffd\ufffd\ufffd9\ufffd\u0010\ufffdC\ufffd\ufffd\ufffd\ufffd{\u053f\ufffd;\ufffduc\ufffd\b\r\ufffd1\ufffd\ufffd\u000e\ufffd\ufffd\ufffd\ufffd:m\u0016\ufffd5Q\ufffd\ufffdw\ufffd\ufffd\ufffd*\ufffd\ufffd1`\ufffd%l\u0011\ufffd\u8d45>\u06df\ufffd\ufffdgq\ufffd\t\u0d18`\ufffd\ufffd\ufffd\ufffd\u001b;\ufffd+<\ufffd\ufffd\u001fv\ufffd/\ufffd.\ufffd\ufffd\ufffd[n\ufffd\ufffdx\nrZ\ufffd\ufffdD\ufffdrJ\ufffd\ufffd\ufffdBU4\ufffd_\ufffdN\ufffdl\ufffd\ufffd\ufffd\u0018=\ufffd\ufffd\ufffd\ufffd\u0000\u0017\ufffd|\ufffd\ufffd\ufffdu\ufffd\ufffd\ufffd\u0001\ufffd\ufffd-\ufffd\u000f+H\ufffdh\ufffd\u0001\u0000\u0000\r\n0\r\n\r\n"
+ },
+ {
+  "sid": 20,
+  "method": "POST",
+  "url": "https://graph.facebook.com/v16.0/1237534153460824/activities",
+  "headers": [
+   [
+    "User-Agent",
+    "FBAndroidSDK.18.3.0"
+   ],
+   [
+    "Accept-Language",
+    "en_IN"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Encoding",
+    "gzip"
+   ],
+   [
+    "Transfer-Encoding",
+    "chunked"
+   ],
+   [
+    "Host",
+    "graph.facebook.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ],
+  "body": "282\r\n\u001f\ufffd\b\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\ufffdTMo\ufffd0\f\ufffd5\ufffdep [\ufffd\ufffd\u000e>\ufffdi\u0007\u0014[\ufffd\u0002M\ufffda\u0017\ufffd\ufffddG\ufffd,\u0019\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffda9\ufffd`C\u0012\u001f\ufffd\ufffdGR\ufffd\ufffdt\ufffdy\ufffd\ufffd\ufffd\ufffdb\ufffd\ufffd4\ufffd\ufffd\ufffd\ufffd*N\u0016\ufffd\ufffdP\u0010\u0011!\ufffd\ufffd<\ufffd9\ufffdr\u0019\u02d2\nYVe\ufffd\ufffdB\u0004\ufffd\ufffd\u001a\ufffd\ufffdwgM\ufffd\u013e\u0000#:\ufffdD\ufffd{\ufffdm\ufffd\ufffdA\u001a\ufffdEz\ufffd\u022f\u0016q<\u001e\ufffdC#q\ufffd\ufffdk\ufffdW%CG\ufffd\ufffd\ufffd\n\ufffd\ufffdu\ufffd\u011b\u0001\ufffdm\ufffdU/\ufffd(\u007f\u001f\ufffd(\ufffd\u0012z\ufffd\ufffdj\ufffd\ufffd\ufffd\ufffd\ufffd\u001ff\ufffdt;\ufffd$\u04eaDZ\ufffd{!\ufffd\u0004\ufffd&\u0010\ufffd\ufffdVf\ufffd.\ufffdjh\ufffd\ufffd\ufffd\ufffd\u000e\n\u017a\ufffdnPOij\ufffd]\u0002br\ufffd\\\ufffdQ\ufffdK\u0010n/\ufffd\ufffd\ufffd+\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffdA-\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u001c\ufffd\ufffd\u0000\ufffdG\u0001\u001b[*-\u0019p\ufffd\u000e\ufffdq\u0476\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\u001d(\ufffd\u001e(\ufffd\u007f\ufffd\ufffd\u001d\n\ufffd\ufffdaj\u000eJ\u01a2\ufffd\ufffd,\t\ufffd\f\ufffd0\u0001\ufffd\ufffdU%HH\ufffd,\ufffdyVE2%\u0013\ufffd\u001c\ufffd\ufffd\ufffd\ufffd\u001ds\ufffd\ufffd\ufffd\u001c\ufffd\u0013\ufffd\u0006xE\ufffd\u01b41\ufffd\ufffd:\ufffd\ufffd\ufffd\ufffd\u3f60Y\u000b\u001d\ufffd\ufffdew\ufffd\ufffd\n\u06b3\ufffd\u0013\ufffdhq\ufffd\ufffd\ufffd\u015bv\ufffd\ufffd\u0001V\ufffdf\ufffd@\ufffd\ufffd\ufffd\ufffdD7\ufffdE\ufffd\ufffdip\ufffd\ufffd_\ufffdqV\ufffd\ufffd\u001f\t\ufffdu\u0004\u0015\ufffd\ufffd\ufffd\ufffd\ufffd;\ufffd~x`7_n\uedcf\u0001\ufffdc\u52af\ufffd\b\ufffd\ufffd\ufffd\ufffd!\u0011\ufffd\ufffdI.I\bUFCR\ufffds\ufffd\ufffdIB\ufffd*8\ufffd$?\ufffd\ufffd|\ufffd\u001d{\u0016i\ufffd^\u0006 \u000e\ufffd\ufffd\n\ufffd\u0011i\u0019\ufffdZK~\ufffd\ufffd\ufffdR\ufffdy\u001c\u001d\u0004\ufffdH\u0002\ufffd,\ufffdm\ufffd\ufffd\ufffdi\ufffd\ufffd\n$\u000e\ufffdO\ufffdLe\ufffdE\ufffdQ\ufffd\ufffd\ufffd\ufffdr|\ufffd\ufffd\ufffd\ufffd]\ufffdS/S\ufffd\ufffdf\ufffd\ufffd\ufffd\ufffdN\ufffdhvl\ufffd\ufffd\ufffd\ufffdd>\ufffd\ufffd\ufffd\ufffdO\ufffd\ufffd\ufffd\ufffd\ufffd\u001e\u0017\u0011Y\ufffd\ufffd\u001b\ufffd\ufffd\ufffd\ufffdx\ufffd\ufffdL+\ufffd\ufffdh\ufffdw\ufffd\ufffd\ufffd\ufffdE\ufffd\ufffd\u000f\u001f\ufffd\u0783\ufffd\u0001\ufffd\u049fkv\u0296\u0019\ufffd\ufffdu\u0016\ufffdoxJ\ufffd\"\ufffd\u0005\u0000\u0000\r\n0\r\n\r\n"
+ },
+ {
+  "sid": 21,
+  "method": "CONNECT",
+  "url": "firebaseinstallations.googleapis.com:443",
+  "headers": [
+   [
+    "Host",
+    "firebaseinstallations.googleapis.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 22,
+  "method": "CONNECT",
+  "url": "firebase-settings.crashlytics.com:443",
+  "headers": [
+   [
+    "Host",
+    "firebase-settings.crashlytics.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 23,
+  "method": "POST",
+  "url": "https://firebaseinstallations.googleapis.com/v1/projects/hunch-prod-e1130/installations",
+  "headers": [
+   [
+    "Content-Type",
+    "application/json"
+   ],
+   [
+    "Accept",
+    "application/json"
+   ],
+   [
+    "Content-Encoding",
+    "gzip"
+   ],
+   [
+    "Cache-Control",
+    "no-cache"
+   ],
+   [
+    "X-Android-Package",
+    "social.hunch.app"
+   ],
+   [
+    "x-firebase-client",
+    "H4sIAAAAAAAA_6tWykhNLCpJSk0sKVayio7VUSpLLSrOzM9TslIyUqoFAFyivEQfAAAA"
+   ],
+   [
+    "X-Android-Cert",
+    "AA92A18790F85D4E9B5199C7792C55F2FB0F61E1"
+   ],
+   [
+    "x-goog-api-key",
+    "AIzaSyCjcvU0PqS2xESMb3yq2aqR-_0BDVznoBU"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "firebaseinstallations.googleapis.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Content-Length",
+    "138"
+   ]
+  ],
+  "body": "\u001f\ufffd\b\u0000\u0000\u0000\u0000\u0000\u0000\ufffd\ufffdVJ\ufffdLQ\ufffdRJ\ufffd\ufffd(t\u000e7\ufffd\r\ufffd\ufffd\u000f.,\ufffd\ufffd47\u000f4\ufffdT\ufffdQJ,(\ufffd\u0004)0\ufffd\ufffd07\ufffd0\ufffd0\ufffd404\ufffd\ufffdJ\ufffdK)\ufffd\ufffdL\ufffd2\u0003\ufffd-S\ufffdR\u030c\ufffd\u0492\ufffd-\f,S\ufffd\ufffdJ@\ufffdJK2\ufffdR\ufffd\ufffd3\ufffd\ufffd\ufffd<\ufffd\ufffd\u02cc\ufffd\ufffd\ufffd)\ufffd\b\ufffdD+C\u000b=\u0003=\u0003\ufffdZ\u0000jl]\ufffd\ufffd\u0000\u0000\u0000"
+ },
+ {
+  "sid": 24,
+  "method": "GET",
+  "url": "https://firebase-settings.crashlytics.com/spi/v2/platforms/android/gmp/1:871858590108:android:65909dfd632fb7809eb859/settings?instance=43f25123ade18163cecfc37b21e314e1b0de7c3f&build_version=306&display_version=3.2.33&source=4",
+  "headers": [
+   [
+    "X-CRASHLYTICS-DEVELOPER-TOKEN",
+    "470fa2b4ae81cd56ecbcda9735803434cec591fa"
+   ],
+   [
+    "X-CRASHLYTICS-DEVICE-MODEL",
+    "motorola/moto g42"
+   ],
+   [
+    "X-CRASHLYTICS-INSTALLATION-ID",
+    "db771df0adab42fabe9150352ae2120d"
+   ],
+   [
+    "X-CRASHLYTICS-OS-DISPLAY-VERSION",
+    "12"
+   ],
+   [
+    "Accept",
+    "application/json"
+   ],
+   [
+    "X-CRASHLYTICS-API-CLIENT-VERSION",
+    "19.4.2"
+   ],
+   [
+    "User-Agent",
+    "Crashlytics Android SDK/19.4.2"
+   ],
+   [
+    "X-CRASHLYTICS-API-CLIENT-TYPE",
+    "android"
+   ],
+   [
+    "X-CRASHLYTICS-GOOGLE-APP-ID",
+    "1:871858590108:android:65909dfd632fb7809eb859"
+   ],
+   [
+    "X-CRASHLYTICS-OS-BUILD-VERSION",
+    "4140d-bd21d"
+   ],
+   [
+    "Host",
+    "firebase-settings.crashlytics.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 25,
+  "method": "POST",
+  "url": "https://sdk-03.moengage.com/v2/sdk/report/WTV8ZYNUNWXAFP9F3VG9D2CT",
+  "headers": [
+   [
+    "MOE-APPKEY",
+    "WTV8ZYNUNWXAFP9F3VG9D2CT"
+   ],
+   [
+    "MOE-REQUEST-ID",
+    "288a06b9f4173c88e1adc2a7e09d3d58987f8ef893483da22478f1723b6c6c26"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Accept-Charset",
+    "UTF-8"
+   ],
+   [
+    "Content-type",
+    "application/json"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "sdk-03.moengage.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Content-Length",
+    "10860"
+   ]
+  ],
+  "body": "{\"viewsCount\":46,\"viewsInfo\":[{\"EVENT_ATTRS\":\"{}\",\"EVENT_G_TIME\":\"1791315644539\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ACTION\":\"EVENT_ACTION_DEVICE_ATTRIBUTE\",\"EVENT_ATTRS\":\"{\\\"moe_push_opted\\\":true}\",\"EVENT_G_TIME\":\"1791315644548\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\"},{\"EVENT_ACTION\":\"EVENT_ACTION_DEVICE_ATTRIBUTE\",\"EVENT_ATTRS\":\"{\\\"deviceType\\\":\\\"MOBILE\\\"}\",\"EVENT_G_TIME\":\"1791315644565\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"social.hunch.app.MainActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644576\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.yalantis.ucrop.UCropActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644578\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"io.intercom.android.sdk.lightbox.LightBoxActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644579\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"io.intercom.android.sdk.activities.IntercomPostActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644580\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"io.intercom.android.sdk.post.PostActivityV2\\\"}\",\"EVENT_G_TIME\":\"1791315644581\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"io.intercom.android.sdk.activities.IntercomNoteActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644583\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"io.intercom.android.sdk.activities.IntercomSheetActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644584\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"io.intercom.android.sdk.activities.IntercomCarouselActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644585\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"io.intercom.android.sdk.helpcenter.articles.IntercomArticleActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644587\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"io.intercom.android.sdk.survey.ui.IntercomSurveyActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644589\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"io.intercom.android.sdk.helpcenter.search.IntercomArticleSearchActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644590\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"io.intercom.android.sdk.m5.IntercomRootActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644591\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"io.intercom.android.sdk.m5.bubble.IntercomBubbleActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644592\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"io.intercom.android.sdk.ui.preview.ui.IntercomPreviewActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644597\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.google.firebase.auth.internal.GenericIdpActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644599\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.google.firebase.auth.internal.RecaptchaActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644602\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.facebook.FacebookActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644606\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.facebook.CustomTabMainActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644607\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.facebook.CustomTabActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644610\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.pichillilorenzo.flutter_inappwebview_android.in_app_browser.InAppBrowserActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644611\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.ChromeCustomTabsActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644612\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.TrustedWebActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644617\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance\\\"}\",\"EVENT_G_TIME\":\"1791315644620\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.TrustedWebActivitySingleInstance\\\"}\",\"EVENT_G_TIME\":\"1791315644623\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"io.flutter.plugins.urllauncher.WebViewActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644631\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.revenuecat.purchases.ui.revenuecatui.activity.PaywallActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644642\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.revenuecat.purchases.ui.revenuecatui.customercenter.CustomerCenterActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644646\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.revenuecat.purchases.ui.revenuecatui.checkpoints.CheckpointWorkflowActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644647\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.revenuecat.purchases.amazon.purchasing.ProxyAmazonBillingActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644652\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.revenuecat.purchases.SimulatedStoreErrorDialogActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644654\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.android.billingclient.api.ProxyBillingActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644658\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.android.billingclient.api.ProxyBillingActivityV2\\\"}\",\"EVENT_G_TIME\":\"1791315644662\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"androidx.credentials.playservices.HiddenActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644668\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.google.android.gms.auth.api.signin.internal.SignInHubActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644671\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.google.android.gms.common.api.GoogleApiActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644672\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.moengage.inapp.internal.activity.MoEInAppActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644676\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.moengage.pushbase.activities.PushTracker\\\"}\",\"EVENT_G_TIME\":\"1791315644679\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.moengage.pushbase.activities.PushClickDialogTracker\\\"}\",\"EVENT_G_TIME\":\"1791315644683\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.moengage.sdk.debugger.MoEDebuggerActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644695\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.moengage.hms.pushkit.PushClickTracker\\\"}\",\"EVENT_G_TIME\":\"1791315644697\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.google.android.play.core.common.PlayCoreDialogWrapperActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644698\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.moe.pushlibrary.activities.MoEActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644702\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"},{\"EVENT_ATTRS\":\"{\\\"ACTIVITY_NAME\\\":\\\"com.bytedance.sdk.open.tiktok.ui.TikTokWebAuthorizeActivity\\\"}\",\"EVENT_G_TIME\":\"1791315644708\",\"EVENT_L_TIME\":\"7:10:2026:1:10:44\",\"N_I_E\":1,\"EVENT_ACTION\":\"EVENT_ACTION_ACTIVITY_START\"}],\"meta\":{\"bid\":\"1791315644720-aeedd7af-585c-4fb4-b213-9f62e681e5cb\",\"request_time\":\"2026-10-06T19:40:44.720Z\",\"b_num\":1,\"source\":[],\"session\":{\"session_id\":\"fbda79ed-dba6-442d-8b9b-15dcf248b8a3\",\"start_time\":\"2026-10-06T19:40:44.370Z\"},\"dev_add_res\":\"failure\",\"integratedModules\":{\"moeSdk\":\"13.05.02\",\"cardsCore\":\"2.3.2\",\"richNotification\":\"5.1.0\",\"pushkit\":\"5.1.0\",\"inapp\":\"8.7.1\",\"app\":\"3.2.33\"},\"appState\":\"foreground\",\"t_p\":\"b_c_l\"},\"query_params\":{\"os\":\"ANDROID\",\"app_id\":\"WTV8ZYNUNWXAFP9F3VG9D2CT\",\"sdk_ver\":\"130502\",\"unique_id\":\"a4e877ac-0cf5-44e5-a679-65e95713752f\",\"device_ts\":\"1791315644870\",\"device_tz_offset\":\"19800000\",\"app_ver\":\"306\",\"app_version_name\":\"3.2.33\",\"moe_push_ser\":\"FCM\",\"device_tz\":\"Asia\\/Kolkata\",\"os_ver\":\"31\",\"model\":\"moto g42\",\"moe_drm_id\":\"aebe2493b2094d8e2ef9312bab832f08c6d08feb6ec7e7ea339fe091c9c3dde1\",\"manufacturer\":\"motorola\"}}"
+ },
+ {
+  "sid": 26,
+  "method": "CONNECT",
+  "url": "api.revenuecat.com:443",
+  "headers": [
+   [
+    "Host",
+    "api.revenuecat.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 27,
+  "method": "CONNECT",
+  "url": "api.revenuecat.com:443",
+  "headers": [
+   [
+    "Host",
+    "api.revenuecat.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 28,
+  "method": "GET",
+  "url": "https://api.revenuecat.com/v1/subscribers/%24RCAnonymousID%3A285b37abb58f4c33bf29dad3c56e8231/offerings",
+  "headers": [
+   [
+    "Content-Type",
+    "application/json"
+   ],
+   [
+    "X-Platform",
+    "android"
+   ],
+   [
+    "X-Platform-Flavor",
+    "flutter"
+   ],
+   [
+    "X-Platform-Flavor-Version",
+    "10.12.0"
+   ],
+   [
+    "X-Platform-Version",
+    "31"
+   ],
+   [
+    "X-Platform-Device",
+    "moto g42"
+   ],
+   [
+    "X-Platform-Brand",
+    "motorola"
+   ],
+   [
+    "X-Version",
+    "10.20.0"
+   ],
+   [
+    "X-Preferred-Locales",
+    "en_IN"
+   ],
+   [
+    "X-Client-Locale",
+    "en-IN"
+   ],
+   [
+    "X-Client-Version",
+    "3.2.33"
+   ],
+   [
+    "X-Client-Bundle-ID",
+    "social.hunch.app"
+   ],
+   [
+    "X-Observer-Mode-Enabled",
+    "false"
+   ],
+   [
+    "X-Is-Debug-Build",
+    "false"
+   ],
+   [
+    "X-Kotlin-Version",
+    "2.2.21"
+   ],
+   [
+    "X-Is-Backgrounded",
+    "false"
+   ],
+   [
+    "X-Billing-Client-Sdk-Version",
+    "8.3.0"
+   ],
+   [
+    "Authorization",
+    "Bearer goog_vuzPmLIPTnXuyfGmmWXVnZGbMqY"
+   ],
+   [
+    "X-RevenueCat-ETag",
+    ""
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "api.revenuecat.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 29,
+  "method": "POST",
+  "url": "https://api.revenuecat.com/v1/config/app",
+  "headers": [
+   [
+    "Content-Type",
+    "application/json"
+   ],
+   [
+    "Accept",
+    "application/x-rc-format"
+   ],
+   [
+    "Accept-RC-Element-Encoding",
+    "gzip"
+   ],
+   [
+    "X-Platform",
+    "android"
+   ],
+   [
+    "X-Platform-Flavor",
+    "flutter"
+   ],
+   [
+    "X-Platform-Flavor-Version",
+    "10.12.0"
+   ],
+   [
+    "X-Platform-Version",
+    "31"
+   ],
+   [
+    "X-Platform-Device",
+    "moto g42"
+   ],
+   [
+    "X-Platform-Brand",
+    "motorola"
+   ],
+   [
+    "X-Version",
+    "10.20.0"
+   ],
+   [
+    "X-Preferred-Locales",
+    "en_IN"
+   ],
+   [
+    "X-Client-Locale",
+    "en-IN"
+   ],
+   [
+    "X-Client-Version",
+    "3.2.33"
+   ],
+   [
+    "X-Client-Bundle-ID",
+    "social.hunch.app"
+   ],
+   [
+    "X-Observer-Mode-Enabled",
+    "false"
+   ],
+   [
+    "X-Is-Debug-Build",
+    "false"
+   ],
+   [
+    "X-Kotlin-Version",
+    "2.2.21"
+   ],
+   [
+    "X-Is-Backgrounded",
+    "false"
+   ],
+   [
+    "X-Billing-Client-Sdk-Version",
+    "8.3.0"
+   ],
+   [
+    "Authorization",
+    "Bearer goog_vuzPmLIPTnXuyfGmmWXVnZGbMqY"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "api.revenuecat.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Content-Length",
+    "115"
+   ]
+  ],
+  "body": "{\"app_user_id\":\"$RCAnonymousID:285b37abb58f4c33bf29dad3c56e8231\",\"fetch_context\":\"app_start\",\"prefetched_blobs\":[]}"
+ },
+ {
+  "sid": 30,
+  "method": "POST",
+  "url": "https://r.lr-intake.com/i?a=yk3qmz%2Fhunch-app&r=6-01a112bb-90b8-7850-af55-8cdf82d84485&t=f861602c-30b1-458c-a274-0d0bc3f3e2bd&s=0&rs=0%2Cu&ro=t&st=mobile",
+  "headers": [
+   [
+    "X-LogRocket-Relay-Version",
+    "2024.9.0"
+   ],
+   [
+    "Content-Type",
+    "application/octet-stream"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "r.lr-intake.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Content-Length",
+    "0"
+   ]
+  ],
+  "body": ""
+ },
+ {
+  "sid": 31,
+  "method": "CONNECT",
+  "url": "kaz760u7-android.mobile-messenger.intercom.com:443",
+  "headers": [
+   [
+    "Host",
+    "kaz760u7-android.mobile-messenger.intercom.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 32,
+  "method": "GET",
+  "url": "https://firebase-settings.crashlytics.com/spi/v2/platforms/android/gmp/1%3A871858590108%3Aandroid%3A65909dfd632fb7809eb859/settings?build_version=306&display_version=3.2.33",
+  "headers": [
+   [
+    "Accept",
+    "application/json"
+   ],
+   [
+    "X-Crashlytics-Installation-ID",
+    "dZ8qCW6mT8OSqw8H977Q2Y"
+   ],
+   [
+    "X-Crashlytics-Device-Model",
+    "motorolamoto g42"
+   ],
+   [
+    "X-Crashlytics-OS-Build-Version",
+    "4140d-bd21d"
+   ],
+   [
+    "X-Crashlytics-OS-Display-Version",
+    "12"
+   ],
+   [
+    "X-Crashlytics-API-Client-Version",
+    "2.1.0"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "firebase-settings.crashlytics.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 33,
+  "method": "GET",
+  "url": "https://api.revenuecat.com/v1/subscribers/%24RCAnonymousID%3A285b37abb58f4c33bf29dad3c56e8231",
+  "headers": [
+   [
+    "Content-Type",
+    "application/json"
+   ],
+   [
+    "X-Platform",
+    "android"
+   ],
+   [
+    "X-Platform-Flavor",
+    "flutter"
+   ],
+   [
+    "X-Platform-Flavor-Version",
+    "10.12.0"
+   ],
+   [
+    "X-Platform-Version",
+    "31"
+   ],
+   [
+    "X-Platform-Device",
+    "moto g42"
+   ],
+   [
+    "X-Platform-Brand",
+    "motorola"
+   ],
+   [
+    "X-Version",
+    "10.20.0"
+   ],
+   [
+    "X-Preferred-Locales",
+    "en_IN"
+   ],
+   [
+    "X-Client-Locale",
+    "en-IN"
+   ],
+   [
+    "X-Client-Version",
+    "3.2.33"
+   ],
+   [
+    "X-Client-Bundle-ID",
+    "social.hunch.app"
+   ],
+   [
+    "X-Observer-Mode-Enabled",
+    "false"
+   ],
+   [
+    "X-Is-Debug-Build",
+    "false"
+   ],
+   [
+    "X-Kotlin-Version",
+    "2.2.21"
+   ],
+   [
+    "X-Is-Backgrounded",
+    "false"
+   ],
+   [
+    "X-Billing-Client-Sdk-Version",
+    "8.3.0"
+   ],
+   [
+    "Authorization",
+    "Bearer goog_vuzPmLIPTnXuyfGmmWXVnZGbMqY"
+   ],
+   [
+    "X-RevenueCat-ETag",
+    ""
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "api.revenuecat.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 34,
+  "method": "CONNECT",
+  "url": "firebaseremoteconfig.googleapis.com:443",
+  "headers": [
+   [
+    "Host",
+    "firebaseremoteconfig.googleapis.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 35,
+  "method": "POST",
+  "url": "https://firebaseremoteconfig.googleapis.com/v1/projects/871858590108/namespaces/firebase:fetch",
+  "headers": [
+   [
+    "X-Goog-Api-Key",
+    "AIzaSyCjcvU0PqS2xESMb3yq2aqR-_0BDVznoBU"
+   ],
+   [
+    "X-Android-Package",
+    "social.hunch.app"
+   ],
+   [
+    "X-Android-Cert",
+    "AA92A18790F85D4E9B5199C7792C55F2FB0F61E1"
+   ],
+   [
+    "X-Google-GFE-Can-Retry",
+    "yes"
+   ],
+   [
+    "X-Goog-Firebase-Installations-Auth",
+    "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6ODcxODU4NTkwMTA4OmFuZHJvaWQ6NjU5MDlkZmQ2MzJmYjc4MDllYjg1OSIsImV4cCI6MTc5MTkyMDQ0NiwiZmlkIjoiZFo4cUNXNm1UOE9TcXc4SDk3N1EyWSIsInByb2plY3ROdW1iZXIiOjg3MTg1ODU5MDEwOH0.AB2LPV8wRQIhAJ-MGpDZVKA6QBUl_lPNokGLQRP9HqHx4_NBRwreIJTPAiA2urPzI-dE9X8z6wF6QSHRucH4X3x-gbnJkX7lPihofQ"
+   ],
+   [
+    "Content-Type",
+    "application/json"
+   ],
+   [
+    "Accept",
+    "application/json"
+   ],
+   [
+    "X-Firebase-RC-Fetch-Type",
+    "BASE/1"
+   ],
+   [
+    "Content-Length",
+    "656"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "firebaseremoteconfig.googleapis.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ],
+  "body": "{\"appInstanceId\":\"dZ8qCW6mT8OSqw8H977Q2Y\",\"appVersion\":\"3.2.33\",\"countryCode\":\"IN\",\"analyticsUserProperties\":{},\"appId\":\"1:871858590108:android:65909dfd632fb7809eb859\",\"platformVersion\":\"31\",\"timeZone\":\"Asia\\/Kolkata\",\"sdkVersion\":\"22.1.0\",\"packageName\":\"social.hunch.app\",\"appInstanceIdToken\":\"eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6ODcxODU4NTkwMTA4OmFuZHJvaWQ6NjU5MDlkZmQ2MzJmYjc4MDllYjg1OSIsImV4cCI6MTc5MTkyMDQ0NiwiZmlkIjoiZFo4cUNXNm1UOE9TcXc4SDk3N1EyWSIsInByb2plY3ROdW1iZXIiOjg3MTg1ODU5MDEwOH0.AB2LPV8wRQIhAJ-MGpDZVKA6QBUl_lPNokGLQRP9HqHx4_NBRwreIJTPAiA2urPzI-dE9X8z6wF6QSHRucH4X3x-gbnJkX7lPihofQ\",\"languageCode\":\"en-IN\",\"appBuild\":\"306\"}"
+ },
+ {
+  "sid": 36,
+  "method": "CONNECT",
+  "url": "firebaseremoteconfigrealtime.googleapis.com:443",
+  "headers": [
+   [
+    "Host",
+    "firebaseremoteconfigrealtime.googleapis.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 37,
+  "method": "POST",
+  "url": "https://firebaseremoteconfigrealtime.googleapis.com/v1/projects/871858590108/namespaces/firebase:streamFetchInvalidations",
+  "headers": [
+   [
+    "X-Goog-Firebase-Installations-Auth",
+    "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6ODcxODU4NTkwMTA4OmFuZHJvaWQ6NjU5MDlkZmQ2MzJmYjc4MDllYjg1OSIsImV4cCI6MTc5MTkyMDQ0NiwiZmlkIjoiZFo4cUNXNm1UOE9TcXc4SDk3N1EyWSIsInByb2plY3ROdW1iZXIiOjg3MTg1ODU5MDEwOH0.AB2LPV8wRQIhAJ-MGpDZVKA6QBUl_lPNokGLQRP9HqHx4_NBRwreIJTPAiA2urPzI-dE9X8z6wF6QSHRucH4X3x-gbnJkX7lPihofQ"
+   ],
+   [
+    "X-Goog-Api-Key",
+    "AIzaSyCjcvU0PqS2xESMb3yq2aqR-_0BDVznoBU"
+   ],
+   [
+    "X-Android-Package",
+    "social.hunch.app"
+   ],
+   [
+    "X-Android-Cert",
+    "AA92A18790F85D4E9B5199C7792C55F2FB0F61E1"
+   ],
+   [
+    "X-Google-GFE-Can-Retry",
+    "yes"
+   ],
+   [
+    "X-Accept-Response-Streaming",
+    "true"
+   ],
+   [
+    "Content-Type",
+    "application/json"
+   ],
+   [
+    "Accept",
+    "application/json"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "firebaseremoteconfigrealtime.googleapis.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Content-Length",
+    "200"
+   ]
+  ],
+  "body": "{\"appInstanceId\":\"dZ8qCW6mT8OSqw8H977Q2Y\",\"appId\":\"1:871858590108:android:65909dfd632fb7809eb859\",\"namespace\":\"firebase\",\"project\":\"871858590108\",\"sdkVersion\":\"22.1.0\",\"lastKnownVersionNumber\":\"1213\"}"
+ },
+ {
+  "sid": 38,
+  "method": "POST",
+  "url": "https://kaz760u7-android.mobile-messenger.intercom.com/messenger/mobile/users",
+  "headers": [
+   [
+    "Content-Length",
+    "458"
+   ],
+   [
+    "Host",
+    "kaz760u7-android.mobile-messenger.intercom.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "User-Agent",
+    "okhttp/4.12.0"
+   ],
+   [
+    "Authorization",
+    "Basic a2F6NzYwdTc6YW5kcm9pZF9zZGstNTFkYWMwYTA1MjMzMzg5Y2Q2ZjM4YzBiMWRmMDIwYmQ0Y2ZiMTA0Yg=="
+   ],
+   [
+    "Idempotency-Key",
+    "e1ae2c4622097ad4"
+   ],
+   [
+    "X-INTERCOM-AGENT",
+    "intercom-android-sdk/17.3.1"
+   ],
+   [
+    "Accept-Language",
+    "en-IN"
+   ],
+   [
+    "X-INTERCOM-SUPPORTED-LANGUAGES",
+    "ar,bg,bn,bs,ca,cs,da,de,de-form,el,es,et,fa-IR,fi,fr,hi,he,hr,hu,id,it,ja,ko,lt,lv,mn,ms,nb,nl,pl,pt-PT,pt-BR,ro,ru,sl,sr,sv,sw,th,tr,uk,vi,zh-Hant,zh-Hans"
+   ],
+   [
+    "X-INTERCOM-HOST-APP-VERSION",
+    "3.2.33"
+   ],
+   [
+    "Content-Type",
+    "application/json"
+   ]
+  ],
+  "body": "{\"device_data\":{\"sdk_type\":\"intercom-sdk-flutter\",\"platform_version\":\"12\",\"application\":\"Hunch\",\"browser\":\"Intercom-Android-SDK\",\"language\":\"English\",\"version\":\"3.2.33\",\"application_id\":\"social.hunch.app\",\"platform\":\"moto g42\"},\"sent_from_background\":false,\"carousel_visible\":false,\"device_identifier\":\"159f2a65-74a6-4dbc-862d-949111d76d59\",\"new_session\":true,\"user_attributes\":{},\"user\":{\"anonymous_id\":\"d44e005f-2443-4287-9640-122d0334fdd2\",\"type\":\"user\"}}"
+ },
+ {
+  "sid": 39,
+  "method": "CONNECT",
+  "url": "nexus-websocket-a.intercom.io:443",
+  "headers": [
+   [
+    "Host",
+    "nexus-websocket-a.intercom.io:443"
+   ]
+  ]
+ },
+ {
+  "sid": 40,
+  "method": "CONNECT",
+  "url": "example.com:443",
+  "headers": [
+   [
+    "Host",
+    "example.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 41,
+  "method": "CONNECT",
+  "url": "api.mixpanel.com:443",
+  "headers": [
+   [
+    "Host",
+    "api.mixpanel.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 42,
+  "method": "GET",
+  "url": "https://nexus-websocket-a.intercom.io/pubsub/5-4Fa_GV0lZmc5WnYA3TYh0Dhb4iPkKKrQ2NGyhVSenJ_4coCYnM5eL_Bs4oXKLetkKmUsiopOlyBdDF78ghwL5r3hNbzsXyWqu-Yw?X-Nexus-Version=android.1.3.0",
+  "headers": [
+   [
+    "Upgrade",
+    "websocket"
+   ],
+   [
+    "Connection",
+    "Upgrade"
+   ],
+   [
+    "Sec-WebSocket-Key",
+    "WYmKtbkJUe1hqwcgkE9TLA=="
+   ],
+   [
+    "Sec-WebSocket-Version",
+    "13"
+   ],
+   [
+    "Sec-WebSocket-Extensions",
+    "permessage-deflate"
+   ],
+   [
+    "Host",
+    "nexus-websocket-a.intercom.io"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "User-Agent",
+    "okhttp/4.12.0"
+   ]
+  ]
+ },
+ {
+  "sid": 43,
+  "method": "CONNECT",
+  "url": "app.adjust.com:443",
+  "headers": [
+   [
+    "Host",
+    "app.adjust.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 44,
+  "method": "GET",
+  "url": "https://example.com/",
+  "headers": [
+   [
+    "Host",
+    "example.com"
+   ],
+   [
+    "User-Agent",
+    "curl/7.73.0"
+   ],
+   [
+    "Accept",
+    "*/*"
+   ]
+  ]
+ },
+ {
+  "sid": 45,
+  "method": "CONNECT",
+  "url": "app.adjust.com:443",
+  "headers": [
+   [
+    "Host",
+    "app.adjust.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 46,
+  "method": "POST",
+  "url": "https://api.mixpanel.com/track/?ip=1",
+  "headers": [
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded; charset=utf-8"
+   ],
+   [
+    "Content-Length",
+    "5105"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "api.mixpanel.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ],
+  "body": "data=W3siZXZlbnQiOiIkYWVfZmlyc3Rfb3BlbiIsInByb3BlcnRpZXMiOnsibXBfbGliIjoiZmx1dHRlciIsIiRsaWJfdmVyc2lvbiI6IjIuNC40IiwiJG9zIjoiQW5kcm9pZCIsIiRvc192ZXJzaW9uIjoiMTIiLCIkbWFudWZhY3R1cmVyIjoibW90b3JvbGEiLCIkYnJhbmQiOiJtb3Rvcm9sYSIsIiRtb2RlbCI6Im1vdG8gZzQyIiwiJHNjcmVlbl9kcGkiOjQyMCwiJHNjcmVlbl9oZWlnaHQiOjIyMzcsIiRzY3JlZW5fd2lkdGgiOjEwODAsIiRhcHBfdmVyc2lvbiI6IjMuMi4zMyIsIiRhcHBfdmVyc2lvbl9zdHJpbmciOiIzLjIuMzMiLCIkYXBwX3JlbGVhc2UiOiIzMDYiLCIkYXBwX2J1aWxkX251bWJlciI6IjMwNiIsIiRoYXNfbmZjIjp0cnVlLCIkaGFzX3RlbGVwaG9uZSI6dHJ1ZSwiJHdpZmkiOnRydWUsIiRibHVldG9vdGhfdmVyc2lvbiI6ImJsZSIsInRva2VuIjoiMDY1MjE5YWMxMjAxMDZhNTA0YTEzZjRmMzdkNWQ1NGUiLCJ0aW1lIjoxNzkxMzE1NjQ1NjY2LCJkaXN0aW5jdF9pZCI6IiRkZXZpY2U6NTM1N2MyMWEtODJhOC00NzY4LWJmOTEtYmY1MmJkOTFiMDkzIiwiJGhhZF9wZXJzaXN0ZWRfZGlzdGluY3RfaWQiOmZhbHNlLCIkZGV2aWNlX2lkIjoiNTM1N2MyMWEtODJhOC00NzY4LWJmOTEtYmY1MmJkOTFiMDkzIn0sIiRtcF9tZXRhZGF0YSI6eyIkbXBfZXZlbnRfaWQiOiJlMzhhMDRjOTk4NTJiOGZlIiwiJG1wX3Nlc3Npb25faWQiOiI1YzAxYjg1YmJiOTI4NTRiIiwiJG1wX3Nlc3Npb25fc2VxX2lkIjowLCIkbXBfc2Vzc2lvbl9zdGFydF9zZWMiOjE3OTEzMTU2NDV9fSx7ImV2ZW50IjoiJGFwcF9vcGVuIiwicHJvcGVydGllcyI6eyJtcF9saWIiOiJmbHV0dGVyIiwiJGxpYl92ZXJzaW9uIjoiMi40LjQiLCIkb3MiOiJBbmRyb2lkIiwiJG9zX3ZlcnNpb24iOiIxMiIsIiRtYW51ZmFjdHVyZXIiOiJtb3Rvcm9sYSIsIiRicmFuZCI6Im1vdG9yb2xhIiwiJG1vZGVsIjoibW90byBnNDIiLCIkc2NyZWVuX2RwaSI6NDIwLCIkc2NyZWVuX2hlaWdodCI6MjIzNywiJHNjcmVlbl93aWR0aCI6MTA4MCwiJGFwcF92ZXJzaW9uIjoiMy4yLjMzIiwiJGFwcF92ZXJzaW9uX3N0cmluZyI6IjMuMi4zMyIsIiRhcHBfcmVsZWFzZSI6IjMwNiIsIiRhcHBfYnVpbGRfbnVtYmVyIjoiMzA2IiwiJGhhc19uZmMiOnRydWUsIiRoYXNfdGVsZXBob25lIjp0cnVlLCIkd2lmaSI6dHJ1ZSwiJGJsdWV0b290aF92ZXJzaW9uIjoiYmxlIiwidG9rZW4iOiIwNjUyMTlhYzEyMDEwNmE1MDRhMTNmNGYzN2Q1ZDU0ZSIsInRpbWUiOjE3OTEzMTU2NDU2NjYsImRpc3RpbmN0X2lkIjoiJGRldmljZTo1MzU3YzIxYS04MmE4LTQ3NjgtYmY5MS1iZjUyYmQ5MWIwOTMiLCIkaGFkX3BlcnNpc3RlZF9kaXN0aW5jdF9pZCI6ZmFsc2UsIiRkZXZpY2VfaWQiOiI1MzU3YzIxYS04MmE4LTQ3NjgtYmY5MS1iZjUyYmQ5MWIwOTMifSwiJG1wX21ldGFkYXRhIjp7IiRtcF9ldmVudF9pZCI6IjQzOWJkMjkxMThkYjIyOWEiLCIkbXBfc2Vzc2lvbl9pZCI6IjVjMDFiODViYmI5Mjg1NGIiLCIkbXBfc2Vzc2lvbl9zZXFfaWQiOjEsIiRtcF9zZXNzaW9uX3N0YXJ0X3NlYyI6MTc5MTMxNTY0NX19LHsiZXZlbnQiOiJzY3JlZW5fdGltZSIsInByb3BlcnRpZXMiOnsibXBfbGliIjoiZmx1dHRlciIsIiRsaWJfdmVyc2lvbiI6IjIuNC40IiwiJG9zIjoiQW5kcm9pZCIsIiRvc192ZXJzaW9uIjoiMTIiLCIkbWFudWZhY3R1cmVyIjoibW90b3JvbGEiLCIkYnJhbmQiOiJtb3Rvcm9sYSIsIiRtb2RlbCI6Im1vdG8gZzQyIiwiJHNjcmVlbl9kcGkiOjQyMCwiJHNjcmVlbl9oZWlnaHQiOjIyMzcsIiRzY3JlZW5fd2lkdGgiOjEwODAsIiRhcHBfdmVyc2lvbiI6IjMuMi4zMyIsIiRhcHBfdmVyc2lvbl9zdHJpbmciOiIzLjIuMzMiLCIkYXBwX3JlbGVhc2UiOiIzMDYiLCIkYXBwX2J1aWxkX251bWJlciI6IjMwNiIsIiRoYXNfbmZjIjp0cnVlLCIkaGFzX3RlbGVwaG9uZSI6dHJ1ZSwiJHdpZmkiOnRydWUsIiRibHVldG9vdGhfdmVyc2lvbiI6ImJsZSIsInRva2VuIjoiMDY1MjE5YWMxMjAxMDZhNTA0YTEzZjRmMzdkNWQ1NGUiLCJoYXNfcmVtZW1iZXJlZF9sb2dpbl9tZXRob2QiOmZhbHNlLCJyZW1lbWJlcmVkX2xvZ2luX21ldGhvZCI6Im5vbmUiLCJpc1ZwbkZvdW5kIjpmYWxzZSwidnBuSW50ZXJmYWNlTmFtZSI6Im5vbmUiLCJ2cG5Qcm90b2NvbCI6Im5vbmUiLCJ0aW1lIjoxNzkxMzE1NjQ4ODkwLCJkaXN0aW5jdF9pZCI6IiRkZXZpY2U6NTM1N2MyMWEtODJhOC00NzY4LWJmOTEtYmY1MmJkOTFiMDkzIiwiJGhhZF9wZXJzaXN0ZWRfZGlzdGluY3RfaWQiOmZhbHNlLCIkZGV2aWNlX2lkIjoiNTM1N2MyMWEtODJhOC00NzY4LWJmOTEtYmY1MmJkOTFiMDkzIiwib3NfbW9kZSI6IkRhcmsiLCJiYXR0ZXJ5X3N0YXRlIjoiY2hhcmdpbmciLCJkdXJhdGlvbl9zZWNvbmRzIjozLCJjdXJyZW50X21vZGUiOiJMaWdodCIsImJhdHRlcnlfbGV2ZWwiOjEwMCwiY3VzdG9tIjp7fSwicHVzaF9ub3RpZmljYXRpb25fZW5hYmxlZCI6InRydWUiLCJsb3dfcG93ZXJfbW9kZSI6ZmFsc2UsImR1cmF0aW9uX21pbGxpc2Vjb25kcyI6MzU3NCwiZXZlbnRfaWQiOiJkNGQ0Nzg3MC1jMWJkLTExZjEtYmM1Ny1iNzE5NDY0MWQ4M2IiLCJzY3JlZW5fbmFtZSI6Imh1bmNoMy1zcGxhc2giLCJleHRyYSI6e30sInByZXZpb3VzX3BhZ2VfbmFtZSI6IiIsImN1cnJlbnRfcGFnZV9uYW1lIjoiaHVuY2gzLXNwbGFzaCIsIm5ldHdvcmtfdHlwZSI6IndpZmkifSwiJG1wX21ldGFkYXRhIjp7IiRtcF9ldmVudF9pZCI6ImNmYTEwMjRlNTU3ZjVlNWQiLCIkbXBfc2Vzc2lvbl9pZCI6IjVjMDFiODViYmI5Mjg1NGIiLCIkbXBfc2Vzc2lvbl9zZXFfaWQiOjIsIiRtcF9zZXNzaW9uX3N0YXJ0X3NlYyI6MTc5MTMxNTY0NX19LHsiZXZlbnQiOiIkY3JlYXRlX2FsaWFzIiwicHJvcGVydGllcyI6eyJtcF9saWIiOiJmbHV0dGVyIiwiJGxpYl92ZXJzaW9uIjoiMi40LjQiLCIkb3MiOiJBbmRyb2lkIiwiJG9zX3ZlcnNpb24iOiIxMiIsIiRtYW51ZmFjdHVyZXIiOiJtb3Rvcm9sYSIsIiRicmFuZCI6Im1vdG9yb2xhIiwiJG1vZGVsIjoibW90byBnNDIiLCIkc2NyZWVuX2RwaSI6NDIwLCIkc2NyZWVuX2hlaWdodCI6MjIzNywiJHNjcmVlbl93aWR0aCI6MTA4MCwiJGFwcF92ZXJzaW9uIjoiMy4yLjMzIiwiJGFwcF92ZXJzaW9uX3N0cmluZyI6IjMuMi4zMyIsIiRhcHBfcmVsZWFzZSI6IjMwNiIsIiRhcHBfYnVpbGRfbnVtYmVyIjoiMzA2IiwiJGhhc19uZmMiOnRydWUsIiRoYXNfdGVsZXBob25lIjp0cnVlLCIkd2lmaSI6dHJ1ZSwiJGJsdWV0b290aF92ZXJzaW9uIjoiYmxlIiwidG9rZW4iOiIwNjUyMTlhYzEyMDEwNmE1MDRhMTNmNGYzN2Q1ZDU0ZSIsImhhc19yZW1lbWJlcmVkX2xvZ2luX21ldGhvZCI6ZmFsc2UsInJlbWVtYmVyZWRfbG9naW5fbWV0aG9kIjoibm9uZSIsImlzVnBuRm91bmQiOmZhbHNlLCJ2cG5JbnRlcmZhY2VOYW1lIjoibm9uZSIsInZwblByb3RvY29sIjoibm9uZSIsInRpbWUiOjE3OTEzMTU2NDg4OTUsImRpc3RpbmN0X2lkIjoiJGRldmljZTo1MzU3YzIxYS04MmE4LTQ3NjgtYmY5MS1iZjUyYmQ5MWIwOTMiLCIkaGFkX3BlcnNpc3RlZF9kaXN0aW5jdF9pZCI6ZmFsc2UsIiRkZXZpY2VfaWQiOiI1MzU3YzIxYS04MmE4LTQ3NjgtYmY5MS1iZjUyYmQ5MWIwOTMiLCJhbGlhcyI6ImU3YWJhYmY1LTg4Y2MtNDk5MS1hZTUxLWJmMTkxZGNkMjQwYSJ9LCIkbXBfbWV0YWRhdGEiOnsiJG1wX2V2ZW50X2lkIjoiNDdhZTljZmQ5YTgyODQzZiIsIiRtcF9zZXNzaW9uX2lkIjoiNWMwMWI4NWJiYjkyODU0YiIsIiRtcF9zZXNzaW9uX3NlcV9pZCI6MywiJG1wX3Nlc3Npb25fc3RhcnRfc2VjIjoxNzkxMzE1NjQ1fX1d"
+ },
+ {
+  "sid": 47,
+  "method": "POST",
+  "url": "https://app.adjust.com/session",
+  "headers": [
+   [
+    "Client-SDK",
+    "flutter5.5.0@android5.5.0"
+   ],
+   [
+    "Authorization",
+    "Signature signature=\"303F9D672AA138567C4018D7443BFB16E076E99DC3AE0243FA0CBC5C7450FBB50F0AC1CB40B334CD564CED9D85E588D0959BA298E3D077CDC031032927C07E1D5D7C523075517229BD10F10342F1CC667CC469C3605957E819B7392ED6023E69FA9071E6641360730630C123EDA047E6E78877737CC7350D2D82AC8A3725F0E70BBB32CC51138C43B8F06438A26DA6F415D0882CE7FE1A8839521C5220FAB0EBC3F0868D10C4E85142B39340E34B850E73F01BE0D3AD4C6D5622C0B8428B87B39C6B9A4908CA82F18D167F3F8A91F4E1E891D78496F1F83D380D7153DA20851A602B52B7F301A620D9C55CB1A4D4BCF045AE773F0A2EB16A378A38C0A856A98F614977389919B0474B64915886E83A817328654BFCA3CB4F762C4BFFE6B268522922C14F5AA9742CA049BA6F305FC271\",adj_signing_id=\"1300000\",algorithm=\"adj7\",headers_id=\"8\",native_version=\"3.62.0\""
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "app.adjust.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Content-Length",
+    "1066"
+   ]
+  ],
+  "blob": "303F9D672AA138567C4018D7443BFB16E076E99DC3AE0243FA0CBC5C7450FBB50F0AC1CB40B334CD564CED9D85E588D0959BA298E3D077CDC031032927C07E1D5D7C523075517229BD10F10342F1CC667CC469C3605957E819B7392ED6023E69FA9071E6641360730630C123EDA047E6E78877737CC7350D2D82AC8A3725F0E70BBB32CC51138C43B8F06438A26DA6F415D0882CE7FE1A8839521C5220FAB0EBC3F0868D10C4E85142B39340E34B850E73F01BE0D3AD4C6D5622C0B8428B87B39C6B9A4908CA82F18D167F3F8A91F4E1E891D78496F1F83D380D7153DA20851A602B52B7F301A620D9C55CB1A4D4BCF045AE773F0A2EB16A378A38C0A856A98F614977389919B0474B64915886E83A817328654BFCA3CB4F762C4BFFE6B268522922C14F5AA9742CA049BA6F305FC271",
+  "adj_signing_id": "1300000",
+  "algorithm": "adj7",
+  "headers_id": "8",
+  "native_version": "3.62.0",
+  "client_sdk": "flutter5.5.0@android5.5.0",
+  "body": "store_name_from_system=com.android.vending&gps_adid_attempt=1&country=IN&api_level=31&hardware_name=S2SE32.28-28-4&app_version=3.2.33&app_token=vf3lochhmgw0&installed_at=2026-10-07T01%3A10%3A34.279Z%2B0530&created_at=2026-10-07T01%3A10%3A48.959Z%2B0530&wait_total=0.0&device_type=phone&language=en&gps_adid=e7ababf5-88cc-4991-ae51-bf191dcd240a&foreground=1&connectivity_type=1&ff_first_session_delay=1&device_manufacturer=motorola&display_width=1080&device_name=moto+g42&needs_response_details=1&os_build=S2SE32.28-28-4&updated_at=2026-10-07T01%3A10%3A34.279Z%2B0530&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&screen_format=long&last_error=0&gps_adid_src=service&wait_time=0.0&os_version=12&first_error=0&android_uuid=009049a6-20d9-4511-9f25-705bced12ee5&sent_at=2026-10-07T01%3A10%3A49.032Z%2B0530&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&session_count=1&display_height=2237&package_name=social.hunch.app&initiating_package_name=com.android.vending&os_name=android&ui_mode=1&enqueue_size=0&tracking_enabled=1"
+ },
+ {
+  "sid": 48,
+  "method": "POST",
+  "url": "https://app.adjust.com/sdk_click",
+  "headers": [
+   [
+    "Client-SDK",
+    "flutter5.5.0@android5.5.0"
+   ],
+   [
+    "Authorization",
+    "Signature signature=\"303F9D672AA138567C4018D7443BFB1680D4C36383017F7B9F55E19D18D73EC8B7C078B79C1BCFEB379C74A0088975356563DFC699E6CF7251E714803B17627FFAB10C384CE02BBEA620CF5E18AF1E57B4C12549EF6AEE1E4ACB9C05E7745A8AE4FA3550E97349F1E13B929AD3E5CA6C3FCA41ECF52816694BFBD73F3920E205170B44502C32FD233B61563EE24BAE33AE58C2B4D037F2D7942EA42F878B5CF44A31F718856D5D2735C20779195B3507D8CE8FBDE3D52DB2B4571907B6F13AADD6EA6CBEBBAD602218D0E463BF354A7C7DBAECB96597D3AA09B367C247F224BA54C820FBBDDED8B220FF96DF8383E55DD4FC46FA06D78FA7D3D4F2558F68FC206152B29FCED4DA71ECB0B45934AF7A7EF6B48E8BAF1EE674563A1FE6631463164FBF66502C3AE37722A211C51F7B33C5\",adj_signing_id=\"1300000\",algorithm=\"adj7\",headers_id=\"8\",native_version=\"3.62.0\""
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "app.adjust.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Content-Length",
+    "1483"
+   ]
+  ],
+  "blob": "303F9D672AA138567C4018D7443BFB1680D4C36383017F7B9F55E19D18D73EC8B7C078B79C1BCFEB379C74A0088975356563DFC699E6CF7251E714803B17627FFAB10C384CE02BBEA620CF5E18AF1E57B4C12549EF6AEE1E4ACB9C05E7745A8AE4FA3550E97349F1E13B929AD3E5CA6C3FCA41ECF52816694BFBD73F3920E205170B44502C32FD233B61563EE24BAE33AE58C2B4D037F2D7942EA42F878B5CF44A31F718856D5D2735C20779195B3507D8CE8FBDE3D52DB2B4571907B6F13AADD6EA6CBEBBAD602218D0E463BF354A7C7DBAECB96597D3AA09B367C247F224BA54C820FBBDDED8B220FF96DF8383E55DD4FC46FA06D78FA7D3D4F2558F68FC206152B29FCED4DA71ECB0B45934AF7A7EF6B48E8BAF1EE674563A1FE6631463164FBF66502C3AE37722A211C51F7B33C5",
+  "adj_signing_id": "1300000",
+  "algorithm": "adj7",
+  "headers_id": "8",
+  "native_version": "3.62.0",
+  "client_sdk": "flutter5.5.0@android5.5.0",
+  "body": "country=IN&api_level=31&hardware_name=S2SE32.28-28-4&app_version=3.2.33&partner_params=%7B%22mixpanel_uuid%22%3A%22%24device%3A5357c21a-82a8-4768-bf91-bf52bd91b093%22%7D&app_token=vf3lochhmgw0&installed_at=2026-10-07T01%3A10%3A34.279Z%2B0530&device_type=phone&language=en&gps_adid=e7ababf5-88cc-4991-ae51-bf191dcd240a&source=install_referrer&foreground=1&connectivity_type=1&os_build=S2SE32.28-28-4&click_time=2026-10-07T01%3A07%3A25.000Z%2B0530&cpu_type=arm64-v8a&install_version=3.2.33&screen_size=normal&gps_adid_src=service&subsession_count=1&sent_at=2026-10-07T01%3A10%3A49.106Z%2B0530&offline_mode_enabled=0&screen_density=high&session_count=1&ui_mode=1&gps_adid_attempt=1&session_length=0&created_at=2026-10-07T01%3A10%3A49.068Z%2B0530&referrer_api=google&ff_first_session_delay=1&device_manufacturer=motorola&display_width=1080&time_spent=0&device_name=moto+g42&needs_response_details=1&updated_at=2026-10-07T01%3A10%3A34.279Z%2B0530&screen_format=long&click_time_server=2026-10-07T01%3A07%3A24.000Z%2B0530&os_version=12&google_play_instant=0&install_begin_time_server=2026-10-07T01%3A07%3A30.000Z%2B0530&android_uuid=009049a6-20d9-4511-9f25-705bced12ee5&referrer=adjust_reftag%3Dc9WQljjOu6Lc2%26utm_source%3DSpyke%2BMedia%26utm_campaign%3DSOHYPE_ADH%26utm_content%3D%257Baffiliate_id%257D&environment=production&attribution_deeplink=1&install_begin_time=2026-10-07T01%3A07%3A31.000Z%2B0530&display_height=2237&package_name=social.hunch.app&os_name=android&tracking_enabled=1"
+ },
+ {
+  "sid": 49,
+  "method": "GET",
+  "url": "https://app.adjust.com/attribution?gps_adid_attempt=1&api_level=31&app_version=3.2.33&app_token=vf3lochhmgw0&created_at=2026-10-07T01%3A10%3A52.479Z%2B0530&device_type=phone&gps_adid=e7ababf5-88cc-4991-ae51-bf191dcd240a&foreground=1&ff_first_session_delay=1&device_name=moto%20g42&needs_response_details=1&gps_adid_src=service&initiated_by=backend&os_version=12&android_uuid=009049a6-20d9-4511-9f25-705bced12ee5&sent_at=2026-10-07T01%3A10%3A52.491Z%2B0530&offline_mode_enabled=0&environment=production&attribution_deeplink=1&package_name=social.hunch.app&os_name=android&ui_mode=1&tracking_enabled=1",
+  "headers": [
+   [
+    "Client-SDK",
+    "flutter5.5.0@android5.5.0"
+   ],
+   [
+    "Authorization",
+    "Signature signature=\"4D37AC3262850AF47BCA6A8A372074C3F5F97FC6813E54FAA180E7ADBEB7F4ED771E6AC7B2762599D2D60A360323F2DBE63ED7C6546DE390F6697D9E0148FEADABB50A99D1D18A11F177EB4CE059A6FB168435FBFBF65D142E4236F7924705C687F0F6A9864E96808DE95D200581BC015937E259F64D54D30C340622ECDF75BED3B907E67ABE858A7C8F3B7818AF1965ECB4436804CE0658C1BB0D379ED8C3F1F9BCBA23EA481E6C68D6FF6EB7E7B7EA9A721008FDB86AB4E4CA496289651A093F3A165DC89E34E34F8B35B01BF9003629FE0F5A242572AC26CF21DE1576F6B185D262F356B0EB5D45EEDF0FA0DB36DD17C01414328CF1914BA6773B88275889DC5CCAAEDE9A6D5D33B287A19FFE7FC0B1411E0C111FB4DA410154709DAEA9AB4822852C24D7077762D6F771E153F091\",adj_signing_id=\"1300000\",algorithm=\"adj7\",headers_id=\"8\",native_version=\"3.62.0\""
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "app.adjust.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ],
+  "blob": "4D37AC3262850AF47BCA6A8A372074C3F5F97FC6813E54FAA180E7ADBEB7F4ED771E6AC7B2762599D2D60A360323F2DBE63ED7C6546DE390F6697D9E0148FEADABB50A99D1D18A11F177EB4CE059A6FB168435FBFBF65D142E4236F7924705C687F0F6A9864E96808DE95D200581BC015937E259F64D54D30C340622ECDF75BED3B907E67ABE858A7C8F3B7818AF1965ECB4436804CE0658C1BB0D379ED8C3F1F9BCBA23EA481E6C68D6FF6EB7E7B7EA9A721008FDB86AB4E4CA496289651A093F3A165DC89E34E34F8B35B01BF9003629FE0F5A242572AC26CF21DE1576F6B185D262F356B0EB5D45EEDF0FA0DB36DD17C01414328CF1914BA6773B88275889DC5CCAAEDE9A6D5D33B287A19FFE7FC0B1411E0C111FB4DA410154709DAEA9AB4822852C24D7077762D6F771E153F091",
+  "adj_signing_id": "1300000",
+  "algorithm": "adj7",
+  "headers_id": "8",
+  "native_version": "3.62.0",
+  "client_sdk": "flutter5.5.0@android5.5.0"
+ },
+ {
+  "sid": 50,
+  "method": "CONNECT",
+  "url": "api.revenuecat.com:443",
+  "headers": [
+   [
+    "Host",
+    "api.revenuecat.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 51,
+  "method": "GET",
+  "url": "https://api.revenuecat.com/v1/product_entitlement_mapping",
+  "headers": [
+   [
+    "Content-Type",
+    "application/json"
+   ],
+   [
+    "X-Platform",
+    "android"
+   ],
+   [
+    "X-Platform-Flavor",
+    "flutter"
+   ],
+   [
+    "X-Platform-Flavor-Version",
+    "10.12.0"
+   ],
+   [
+    "X-Platform-Version",
+    "31"
+   ],
+   [
+    "X-Platform-Device",
+    "moto g42"
+   ],
+   [
+    "X-Platform-Brand",
+    "motorola"
+   ],
+   [
+    "X-Version",
+    "10.20.0"
+   ],
+   [
+    "X-Preferred-Locales",
+    "en_IN"
+   ],
+   [
+    "X-Client-Locale",
+    "en-IN"
+   ],
+   [
+    "X-Client-Version",
+    "3.2.33"
+   ],
+   [
+    "X-Client-Bundle-ID",
+    "social.hunch.app"
+   ],
+   [
+    "X-Observer-Mode-Enabled",
+    "false"
+   ],
+   [
+    "X-Storefront",
+    "US"
+   ],
+   [
+    "X-Is-Debug-Build",
+    "false"
+   ],
+   [
+    "X-Kotlin-Version",
+    "2.2.21"
+   ],
+   [
+    "X-Is-Backgrounded",
+    "false"
+   ],
+   [
+    "X-Billing-Client-Sdk-Version",
+    "8.3.0"
+   ],
+   [
+    "Authorization",
+    "Bearer goog_vuzPmLIPTnXuyfGmmWXVnZGbMqY"
+   ],
+   [
+    "X-RevenueCat-ETag",
+    ""
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "api.revenuecat.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ]
+ },
+ {
+  "sid": 52,
+  "method": "CONNECT",
+  "url": "example.com:443",
+  "headers": [
+   [
+    "Host",
+    "example.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 53,
+  "method": "GET",
+  "url": "https://example.com/",
+  "headers": [
+   [
+    "Host",
+    "example.com"
+   ],
+   [
+    "User-Agent",
+    "curl/7.73.0"
+   ],
+   [
+    "Accept",
+    "*/*"
+   ]
+  ]
+ },
+ {
+  "sid": 54,
+  "method": "CONNECT",
+  "url": "graph.facebook.com:443",
+  "headers": [
+   [
+    "Host",
+    "graph.facebook.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 55,
+  "method": "POST",
+  "url": "https://graph.facebook.com/v16.0/1237534153460824/activities",
+  "headers": [
+   [
+    "User-Agent",
+    "FBAndroidSDK.18.3.0"
+   ],
+   [
+    "Accept-Language",
+    "en_IN"
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "Content-Encoding",
+    "gzip"
+   ],
+   [
+    "Transfer-Encoding",
+    "chunked"
+   ],
+   [
+    "Host",
+    "graph.facebook.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ],
+  "body": "229\r\n\u001f\ufffd\b\u0000\u0000\u0000\u0000\u0000\u0000\ufffdmRMo\ufffd0\u0010\ufffd5p\ufffd@\ufffd\u0006\ufffd=p\ufffdlR)j\ufffdF\u02b6\ufffdz\ufffdfmC\ufffdemd\ufffd\ufffd\ufffd\ufffd\ufffd](l\ufffd\u001cl\ufffd\ufffd\ufffd\ufffd{\u001e\ufffdR\ufffd \ufffd;j\ufffd\u0014\ufffd\ufffd\u0005\ufffd\ufffdlh\ufffd\ufffd\u001da\ufffd\nB\ufffdT\ufffdr\t\u001b\ufffd\ufffd>0\ufffd\u000f\ufffd\ufffd\ufffd+\ufffd\ufffd\ufffd\ufffd\u0013\ufffd\ufffdgp6\r\ufffd\u0600U\ufffd\u0019\ufffd\ufffd1Dw\u0012\ufffdE\ufffd\u0018\ufffd\ufffd\ufffdI\ufffdMB\ufffd\ufffdx\ufffd\ufffd\ufffdG\u00b6x\ufffd\u0007\ufffd\ufffd\"\ufffd\u0018\ufffd\ud090\ufffd`;\ufffd\ufffd8\u075dSz\ufffd\ufffd\u037f\ufffd\ufffd\ufffd/XQ\ufffde5\ufffd\ufffdY*\ufffd\ufffdh\ufffd/\ufffdf\u0006\ufffdf\ufffd\u0015F-1\ufffd\ufffd\ufffd\u001e\ufffd2\ufffdk\ufffdY\tJf\ufffdV\ufffd\ufffd\ufffd\u053cn\u000b]\ufffd\ufffd\ufffd\u001c\ufffd\ufffdq\ufffd\ufffd-\ufffd\ufffd\ufffd\ufffdqcX\ufffdj\ufffd\ufffd5\ufffd@\ufffd\u00164\u0006\ufffdV\ufffdk'aNCo\ufffd\ufffd\ufffd\ufffdO\ufffd\ufffd\ufffdO\ufffdg\ufffd\ufffd&\ufffdm\ufffd\u0006\ufffd!\"!\ufffd\ufffd\u0000\u001eE\ufffd\ufffd_\ufffdk`\ufffd\ufffd\ufffd\u0015&$,\r\ufffd0z\ufffd8\u8cee\u001d*.\ufffd\ufffdC\ufffd\ufffd\ufffdD$\b\u0018\ufffd\ufffd@\u0001\ufffd0\u007f\ufffd\ufffd\ufffd8\ufffd4\ufffd%\ufffd\ufffd}}\ufffd\u007f\ufffd,\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd)\u0005{\ufffd\ufffd\ufffd\ufffd\u000f\u0098&\ufffdtF\u0014!Y\ufffd5\u0260\ufffdYFZ\\\ufffd\ufffd\ufffd%\ufffd\ufffd\u0014\ufffd\ufffd\u0017\ufffd\"z\ufffd\u01ebI\ufffd\ufffdG\ufffd\ufffdz\ufffd>\ufffd\ufffd=\ufffd\u0015\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\r\u0011\u0010\ufffd<\ufffd\ufffd\ufffdt\ufffd|\ufffd\ufffd\u001cgUX8\u057fq\ufffdZw\ufffd\ufffdR\ufffd\ufffd\u0002\ufffdI\ufffd\ufffd\ufffdy\ufffd\ufffd9\u01d9&\ufffd\ufffdz\ufffdYNs\ufffd.E\ufffd&\ufffd\\t\ufffdruh+\ufffd\u001f\ufffd\ufffd\ufffd\ufffd~\ufffd'\ufffd \u001b\\\ufffd\u001d\ufffd\u44db\ufffd\ufffd\fm\ufffdT\u0179\ufffdl\ufffd\ufffd\ufffdB\ufffd\ufffdG\ufffd\u001f!\ufffd9\f\ufffd\ufffd\ufffdlf+,nC\ufffdE\ufffd\u0017\ufffd9\ufffd\ufffd\u0003\u0000\u0000\r\n0\r\n\r\n"
+ },
+ {
+  "sid": 56,
+  "method": "CONNECT",
+  "url": "example.com:443",
+  "headers": [
+   [
+    "Host",
+    "example.com:443"
+   ]
+  ]
+ },
+ {
+  "sid": 57,
+  "method": "GET",
+  "url": "https://example.com/",
+  "headers": [
+   [
+    "Host",
+    "example.com"
+   ],
+   [
+    "User-Agent",
+    "curl/7.73.0"
+   ],
+   [
+    "Accept",
+    "*/*"
+   ]
+  ]
+ }
+]

@@ -1,0 +1,8 @@
+HTTP/1.1 200 Connection Established
+FiddlerGateway: Direct
+StartTime: 09:50:22.931
+Connection: close
+
+fiddler.network.https> HTTPS handshake to gateway.icloud.com (for #66) failed. System.Security.Authentication.AuthenticationException A call to SSPI failed, see inner exception. < The function requested is not supported
+
+Win32 (SChannel) Native Error Code: 0x80090302

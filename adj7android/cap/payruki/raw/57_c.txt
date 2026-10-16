@@ -1,0 +1,6 @@
+GET https://india-security-pub.s3.ap-south-1.amazonaws.com/india_hikr_data_prod/d82fc2c2ff78da0f17573857526352.gif?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWCCN74SRFM3C4LEN%2F20261007%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20261007T073549Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=8c396b3bba45b936e47766517b7e0e1300e898d92ef1e23ebe5d707fcc279953 HTTP/1.1
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)
+Host: india-security-pub.s3.ap-south-1.amazonaws.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+

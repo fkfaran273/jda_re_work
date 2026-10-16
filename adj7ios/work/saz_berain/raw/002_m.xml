@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="2" BitFlags="2100">
+  <SessionTimers ClientConnected="2026-05-20T09:49:55.2954057+05:30" ClientBeginRequest="2026-05-20T09:49:55.2954057+05:30" GotRequestHeaders="2026-05-20T09:49:55.2954057+05:30" ClientDoneRequest="2026-05-20T09:49:55.2964124+05:30" GatewayTime="0" DNSTime="269" TCPConnectTime="259" HTTPSHandshakeTime="597" ServerConnected="2026-05-20T09:49:55.8258556+05:30" FiddlerBeginRequest="2026-05-20T09:49:55.8258556+05:30" ServerGotRequest="2026-05-20T09:49:55.8258556+05:30" ServerBeginResponse="0001-01-01T00:00:00" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="0001-01-01T00:00:00" ClientBeginResponse="2026-05-20T09:49:55.8258556+05:30" ClientDoneResponse="2026-05-20T09:49:55.8268756+05:30" />
+  <PipeInfo />
+  <TunnelInfo BytesEgress="0" BytesIngress="0" />
+  <SessionFlags>
+    <SessionFlag N="https-client-version" V="Tls12" />
+    <SessionFlag N="x-egressport" V="56254" />
+    <SessionFlag N="x-responsebodytransferlength" V="0" />
+    <SessionFlag N="x-clientport" V="54401" />
+    <SessionFlag N="https-server-version" V="Tls12" />
+    <SessionFlag N="x-clientip" V="::ffff:192.168.1.12" />
+    <SessionFlag N="https-client-sessionid" V="AF 03 DC AD 36 03 4D E6 A7 60 52 10 48 E1 FD 8E 18 54 73 79 A1 11 5B E4 31 48 C8 25 C3 D0 FC B3" />
+    <SessionFlag N="x-hostip" V="104.18.5.153" />
+    <SessionFlag N="https-client-snihostname" V="portal.myfatoorah.com" />
+    <SessionFlag N="https-server-cipher" V="Aes128 128bits" />
+  </SessionFlags>
+</Session>

@@ -1,0 +1,568 @@
+[
+ {
+  "sid": "59",
+  "method": "CONNECT",
+  "url": "app.adjust.com:443",
+  "client_ip": "",
+  "begin": "",
+  "done": "",
+  "request_headers": [
+   [
+    "Host",
+    "app.adjust.com:443"
+   ]
+  ],
+  "body": "A SSLv3-compatible ClientHello handshake was found. Fiddler extracted the parameters below.\n\nVersion: 3.3 (TLS/1.2)\nRandom: 42 F3 FA AE 55 8E 60 B3 7E A4 2D 13 C3 7E 20 A5 1C 9E F2 8E 67 E6 CD 2C 19 BF 63 66 FF F2 04 71\n\"Time\": 11-01-2063 00:40:58\nSessionID: 43 70 27 2F 9B 79 FA 96 FF C3 B6 82 0C 07 A8 F1 0A 1E D3 11 5A B9 67 C7 B0 D2 F5 F0 6D 2C 8E F7\nExtensions: \n\trenegotiation_info\t00\n\tserver_name\tapp.adjust.com\n\tec_point_formats\tuncompressed [0x0], ansiX962_compressed_prime [0x1], ansiX962_compressed_char2 [0x2]\n\tsupported_groups\tunknown [0x11ec], x25519 [0x1d], secp256r1 [0x17], x448 [0x1e], secp384r1 [0x18], secp521r1 [0x19], ffdhe2048 [0x0100], ffdhe3072 [0x0101]\n\tSessionTicket\tempty\n\tencrypt_then_mac (RFC7366)\tempty\n\textended_master_secret\tempty\n\tsignature_algs\tUnknown[0x5]_Unknown[0x9], Unknown[0x6]_Unknown[0x9], Unknown[0x4]_Unknown[0x9], ecdsa_secp256r1_sha256, ecdsa_secp384r1_sha384, ecdsa_secp521r1_sha512, ed25519, ed448, Unknown[0x1a]_Unknown[0x8], Unknown[0x1b]_Unknown[0x8], Unknown[0x1c]_Unknown[0x8], rsa_pss_pss_sha256, rsa_pss_pss_sha384, rsa_pss_pss_sha512, rsa_pss_rsae_sha256, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha256, rsa_pkcs1_sha384, rsa_pkcs1_sha512, ecdsa_sha224, rsa_sha224, dsa_sha224, dsa_sha256, dsa_sha384, dsa_sha512\n\tsupported_versions\tTls1.3, Tls1.2\n\tpsk_key_exchange_modes\t01 01\n\tkey_share\t04 E8 11 EC 04 C0 4D 16 9D C8 36 1D 8B B6 3B 1D 43 24 BF 73 66 C2 63 2A C8 19 2F 44 35 B3 8D 16 0A 7C 3B 74 3D 89 87 C4 78 AD 1E EB C0 10 6A 02 36 5B 7B 32 93 27 C7 53 A6 F4 A5 10 F3 24 AB 27 C5 61 63 48 87 A8 C6 AF 84 A1 1E B4 F3 46 94 74 71 4D 32 57 5C 62 42 45 E8 2E 0B F7 8F 14 A5 AA 76 03 7F C1 81 1E 85 20 1B A8 13 43 BB 29 82 84 21 46 7D 05 38 1A 3C 7D 54 E6 58 C2 71 08 9C 51 A5 15 F5 B5 E9 E0 11 AC 09 33 9F 75 A8 CE 82 9F 47 FA 4C A8 E2 02 07 F7 18 0F 33 A8 6C 51 A9 7E 1B 50 25 42 62 0E A2 21 BC 36 7C B8 C9 71 9F FC 8D A4 52 A7 BC 77 8E 3A C5 5C BD 5A 74 E7 2C 6A BE D0 16 70 55 08 F0 A9 B4 D8 51 87 47 31 94 D4 30 09 9A 5A C0 E6 DC 8D EA 31 B6 B7 49 47 E0 F4 40 28 20 B2 E0 24 B6 41 86 6E E8 5A 13 89 76 60 23 A8 48 51 D0 A4 76 87 24 2E 35 3E 5A E6 7F C6 51 3B 1D F6 C6 24 14 3A 35 12 B3 5D 45 25 F8 59 51 6F 9A AE 00 29 AA EE 54 CF AC 24 92 A4 D1 3B 00 A8 01 18 62 70 2C 02 76 C9 C7 76 CA 1A 38 60 E6 9D 01 70 CF B4 21 48 2E C9 48 A5 19 91 85 07 43 75 91 04 CE 62 75 B1 59 44 D2 08 66 93 3A 29 07 D4 6D 43 69 73 AB 20 A5 F3 E0 6E E1 47 1E B3 88 97 39 99 7C 0E C1 CD B5 E2 AB 86 92 9C CF A1 3D 03 E9 36 84 96 25 90 36 7B 4D 3A 14 E3 41 02 D6 8C AF 13 78 BB 32 55 7F 71 A0 C8 50 65 95 52 A1 A1 EA 44 5A 68 10 97 BC 9B 65 C2 58 19 BE 07 0A D2 CC AD E4 A6 86 B3 D6 CC 70 9B 1C 87 3C 3F B1 C2 05 16 80 13 CD 20 CB C9 63 30 97 C6 AE 79 FC 37 4A D5 6A C8 75 3B 55 F1 A7 CD 60 42 47 2A B6 62 95 21 F9 B2 C8 6A B6 70 DD 52 3C 44 07 92 CC C1 4A 02 CC 52 64 13 93 51 49 3E 3B 82 15 E7 B4 84 A9 9B 65 A9 3A 0B 0C 20 7D 0C 07 C8 CE 3B B7 0E B3 50 FB 93 4D C9 20 5F A6 87 27 79 DA 90 9E 48 96 33 0A 3F 97 39 3D 19 F6 70 7F E1 A0 F7 FC A1 6D AA 29 0A 52 BC C3 31 63 C9 76 32 A0 D3 36 FD 9A 78 78 F7 6B B4 7A B0 11 6A A4 A6 36 4F D7 70 8B 36 F0 32 B5 18 BE 8C 09 1C 9F D6 89 D1 46 17 49 A5 CC 42 96 28 DF 91 1F 6F 00 26 C1 B0 B8 B0 B7 B4 57 C1 00 8E 0C AF 53 38 A2 8E 18 27 1E 35 A3 4B 80 26 F0 14 1D 31 82 14 56 41 84 88 40 27 D3 D4 24 3C 10 79 B7 37 78 5D 04 98 D0 E7 67 69 45 A3 8F 19 05 78 C6 B5 15 26 17 BB B6 C0 4B 34 6F 59 72 05 D3 D7 35 4A EB B6 72 98 5C E2 67 58 0C 87 9A 4A 30 83 AB A8 0C 1D D7 A8 15 A7 A5 45 09 97 5B 79 22 60 D9 1B 34 8C 39 13 9C 6E A7 F4 7F D0 13 9B DE 2B 8C 93 1A 4A 9B 9C 4A 03 DC AF 10 06 30 0F 86 1D F4 C3 C5 A1 08 80 63 A3 A5 EE 99 06 0F CB 32 FC D6 52 D4 4A 7C 0E AC 18 44 0A B2 AD E9 3F 72 F2 44 E4 BC 39 36 A0 2D F5 11 6D 1D BC 08 1E DC 36 78 D9 6A 02 7C 64 1D 07 BA 29 F7 5F A1 36 0A B0 52 66 B5 9A 5E 6C C9 1D 39 28 C4 AB A9 CC 5A 89 B7 CB 68 4D 5C 65 B3 D4 9B 14 F7 73 5D E8 F0 C1 20 E0 5D EC 50 03 E1 B6 BC A6 88 10 3F EC 81 C7 88 04 23 25 4A 46 65 25 DF 7B 10 28 84 BB 40 96 16 D9 B7 C2 FB EA 44 C8 52 7B AE 24 32 CE 60 A9 F4 41 5D FF BC 9A 18 B9 C2 DF 1A 90 BF B4 55 78 75 9C 85 B6 97 8B 86 70 E4 F6 10 09 EC 79 97 96 82 DD CB 71 82 95 B7 2B 6C 57 B1 24 65 FD 36 AF FF 72 AF 51 1A 50 0E 7C 91 30 A9 3A A0 A7 99 7F 59 7D 03 75 3E 20 38 07 3E E8 B8 7F 59 6F D8 A2 5E 05 75 BB F8 09 34 FD C4 18 EF 09 96 92 D0 A5 E0 2C C2 EF 50 C0 7C D9 3A 00 A6 2E E2 A2 6B 77 7B 03 A2 D0 2B E5 01 B2 BE F4 38 84 5B B0 4F 54 7F FF AB AA 0F 66 36 F1 8C 7B CD B7 80 54 19 53 CA 62 26 DD 03 39 E2 75 96 57 75 25 E8 B8 83 51 C2 49 F6 01 00 6D 81 76 F5 37 94 25 BA 69 99 8B 0F 50 11 47 88 27 2A A2 63 C1 7C E2 94 04 A2 33 AE C3 6E DA 6C 62 0C 41 26 90 AB 11 A0 E3 5B 99 C8 C6 5D E7 44 DA F3 47 2D F6 46 9E 71 9A 39 B6 AA 70 11 50 C3 F0 B6 B5 E5 51 AE FB 22 61 F8 65 82 35 06 E0 87 C6 6F E1 6A 73 74 B9 7E D5 21 B2 5B A4 BF D5 68 41 E7 47 C4 B0 58 F7 11 60 79 C2 4A BC 4C F0 D5 21 AA 51 6E 99 6E E3 36 B1 4C A4 FD 0E 4F 36 08 ED AF ED DE DD 2B 81 59 3E 07 09 7B 37 46 A7 54 89 C2 7E 3C F6 34 01 10 A4 5B CE 0B 7B 2C F8 03 E2 D1 8F C6 5C 44 BF A1 07 00 1D 00 20 E2 B9 94 17 29 44 73 CE 42 4D 36 97 3F B6 DA FC 4C 0E 18 5E 83 03 51 33 B0 76 F0 63 59 18 56 69\nCiphers: \n\t[1302]\tTLS_AES_256_GCM_SHA384\r\n\t[1303]\tTLS_CHACHA20_POLY1305_SHA256\r\n\t[1301]\tTLS_AES_128_GCM_SHA256\r\n\t[C02C]\tTLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384\r\n\t[C030]\tTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384\r\n\t[C02B]\tTLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256\r\n\t[C02F]\tTLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256\r\n\t[CCA9]\tTLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256\r\n\t[CCA8]\tTLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256\r\n\t[C024]\tTLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384\r\n\t[C028]\tTLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384\r\n\t[C023]\tTLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256\r\n\t[C027]\tTLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256\r\n\t[009F]\tTLS_DHE_RSA_WITH_AES_256_GCM_SHA384\r\n\t[009E]\tTLS_DHE_RSA_WITH_AES_128_GCM_SHA256\r\n\t[006B]\tTLS_DHE_RSA_WITH_AES_256_CBC_SHA256\r\n\t[0067]\tTLS_DHE_RSA_WITH_AES_128_CBC_SHA256\r\n\nCompression: \n\t[00]\tNO_COMPRESSION\r\n\n\n",
+  "status": "200",
+  "response_headers": [
+   [
+    "FiddlerGateway",
+    "Direct"
+   ],
+   [
+    "StartTime",
+    "13:05:50.255"
+   ],
+   [
+    "Connection",
+    "close"
+   ]
+  ],
+  "response": "Encrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.\n\nSecure Protocol: Tls13\nCipher: Aes256 256bits\nHash Algorithm: Sha384 ?bits\nKey Exchange: None 255bits\n\n== Server Certificate ==========\r\n[Subject]\r\n  CN=app.adjust.com, O=Adjust GmbH, L=Berlin, S=Berlin, C=DE\r\n\r\n[Issuer]\r\n  CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1, O=DigiCert Inc, C=US\r\n\r\n[Serial Number]\r\n  0BD11C348B1867AC9D7B4B60549C19B3\r\n\r\n[Not Before]\r\n  02-02-2026 05:30:00\r\n\r\n[Not After]\r\n  02-02-2027 05:29:59\r\n\r\n[Thumbprint]\r\n  B8540DAB70534E0196B6D442E681D7E34AEA7372\r\n\r\n[SubjectAltNames]\napp.adjust.com, www.app.adjust.com\r\n"
+ },
+ {
+  "sid": "62",
+  "method": "CONNECT",
+  "url": "app.adjust.com:443",
+  "client_ip": "",
+  "begin": "",
+  "done": "",
+  "request_headers": [
+   [
+    "Host",
+    "app.adjust.com:443"
+   ]
+  ],
+  "body": "A SSLv3-compatible ClientHello handshake was found. Fiddler extracted the parameters below.\n\nVersion: 3.3 (TLS/1.2)\nRandom: F9 0A 73 60 96 0C 9E E8 C8 F3 C1 EB F6 EB 23 D7 72 A9 7A 26 EA 2D 56 8D 6F BC 97 12 8E 5E E8 2D\n\"Time\": 11-04-2021 20:13:05\nSessionID: 09 BF AB 51 0D 78 4E C0 54 FB F8 3C C1 A7 80 00 6A 5F 23 49 76 F1 C0 DE 18 59 00 F3 E0 0B 09 DB\nExtensions: \n\trenegotiation_info\t00\n\tserver_name\tapp.adjust.com\n\tec_point_formats\tuncompressed [0x0], ansiX962_compressed_prime [0x1], ansiX962_compressed_char2 [0x2]\n\tsupported_groups\tunknown [0x11ec], x25519 [0x1d], secp256r1 [0x17], x448 [0x1e], secp384r1 [0x18], secp521r1 [0x19], ffdhe2048 [0x0100], ffdhe3072 [0x0101]\n\tSessionTicket\tempty\n\tencrypt_then_mac (RFC7366)\tempty\n\textended_master_secret\tempty\n\tsignature_algs\tUnknown[0x5]_Unknown[0x9], Unknown[0x6]_Unknown[0x9], Unknown[0x4]_Unknown[0x9], ecdsa_secp256r1_sha256, ecdsa_secp384r1_sha384, ecdsa_secp521r1_sha512, ed25519, ed448, Unknown[0x1a]_Unknown[0x8], Unknown[0x1b]_Unknown[0x8], Unknown[0x1c]_Unknown[0x8], rsa_pss_pss_sha256, rsa_pss_pss_sha384, rsa_pss_pss_sha512, rsa_pss_rsae_sha256, rsa_pss_rsae_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha256, rsa_pkcs1_sha384, rsa_pkcs1_sha512, ecdsa_sha224, rsa_sha224, dsa_sha224, dsa_sha256, dsa_sha384, dsa_sha512\n\tsupported_versions\tTls1.3, Tls1.2\n\tpsk_key_exchange_modes\t01 01\n\tkey_share\t04 E8 11 EC 04 C0 2F 84 BF 52 B7 95 2F A1 04 10 88 95 4B BA A2 77 69 92 0E D3 3D 89 35 CB 7B F9 39 2A 29 28 6C C0 0C D7 05 A2 BD 56 06 5D E5 11 5D CB 8A D4 1A 48 BE 71 01 16 BC 32 25 8C 6B 4F 6B 7E 18 E6 0C 13 48 6A 54 0A 41 FA D8 05 F2 91 22 93 0A 75 E0 B3 AE 82 81 87 A6 3B C4 F2 AC 8C B5 00 99 80 37 07 FB 00 3A 1E 5A C7 34 03 66 59 55 3E AC D0 98 A5 11 21 5F 46 25 5E 4A C6 D9 96 48 3A 38 61 7C 28 A7 DF 58 AF 36 F5 0B 48 51 49 8D F0 11 44 E3 12 F1 C0 6D 10 28 6A FD 39 23 4E E8 7C 24 79 93 1F 1A 07 B0 39 50 C4 38 82 86 8C A2 BD E9 4D 61 A2 7C 64 DC 4E B5 A6 00 98 54 63 15 F5 C9 E8 30 C7 B4 23 41 49 6C 4B DC 00 79 5E 60 88 A4 A8 49 26 A4 A1 84 28 C7 0B 59 60 4B 74 A9 4B C0 3A C5 2C 51 C8 F7 1E BC 9B 70 6C 12 BD E6 C2 B6 F0 F5 C5 3D E5 06 8D 5C 6A E4 40 A8 6C E9 BD 8A 8B 21 F4 BC BD F9 E7 50 40 E1 A4 45 66 58 3B C3 B3 52 78 8A 51 0A CC F8 93 94 F0 33 78 72 94 6B BF 09 5A 4B B7 0E BB D0 10 CA 73 C2 BB 89 B0 22 28 29 87 31 A5 7A 1B 17 08 3B 4B E4 13 CE 6A 84 A6 29 48 47 BD A1 C8 84 C9 2B F5 50 9A 64 7B 9C A3 18 5D 1C 82 6F 92 9B 15 76 9C 2D 87 95 1F AE 3B 9F AA 91 74 7E 8C 2B 98 89 61 92 C6 64 FF 2B 2A 28 F2 7D 4C A1 6C 87 19 48 C6 50 B4 8A 7C 9A 11 72 C8 2E A4 18 52 DA AF 10 A6 22 51 61 0D A8 04 65 C3 A1 7E C0 54 01 DA 9A 2C B0 F0 B8 33 29 C7 BD 56 69 54 1A 8C AE 50 AD BF 85 41 C1 F1 83 F5 39 2E 9F 81 B9 7A 7A 06 FD AA 5F 7F 93 A8 42 83 39 A0 01 0F 4F E5 45 6A D5 73 35 17 1C 49 BB C3 6F 4C 9E 87 14 08 CE 35 34 B9 E1 B6 EC 93 3D 0C 4B 78 8D F3 90 A0 13 C2 9B D3 B2 A0 B1 5D 6D 4C C2 AB F0 79 8D EA 17 4A 56 30 2E 98 98 70 A6 61 83 80 89 02 B2 6F 9A 72 3A 01 35 78 ED C4 72 90 E5 4C B2 D1 12 A1 BA 33 75 BA BF BA EB 5F D2 75 AE 83 99 25 85 61 99 00 6D BD 50 BA 59 9E F7 23 B4 31 72 86 D4 89 6D 91 5C 25 E7 14 C8 D0 69 FB 53 1C 09 38 8A 52 43 C9 18 5B 51 E1 5C 67 ED C8 33 CA E3 B6 E8 58 5A 8D 60 5E D2 81 04 DF 88 1A 2C F2 4D 98 9C 48 BE 7A 84 C9 E7 97 9C 90 49 46 59 75 4D 94 36 A9 D0 5A 56 BB 3D 92 60 97 9D A3 62 87 61 6C 8E 8B A6 FB 90 05 BE 2B 20 A4 20 3C 09 92 3D 93 C8 3D 9B BC 25 4A FC 69 B2 A1 9B B7 97 3B A5 E8 C7 D4 5A C5 F2 F8 A6 AA FC 66 EF 05 70 BE 50 3B 73 40 64 0D 62 9C BA B2 52 0F 18 6D D2 24 6D 07 E6 33 7E EA A8 91 97 A9 0D 49 70 8A A3 C6 31 5C A4 AD 45 52 6E 31 5D 99 A7 1E 02 03 37 2D 8A 95 19 A5 6E 03 46 88 C3 AA 67 ED 19 9F FE E2 5D FC 53 9F 86 91 B1 FD D3 CE 8F F4 9A 6B 11 8E 3C D3 1A 54 F5 CD CD 06 2D CB 4A 55 59 90 56 D6 48 AF 06 6B 5B 83 A1 AE 30 0A A5 C9 F7 A8 A3 40 CF C3 94 30 EC 28 0D C5 43 23 57 B2 58 25 C4 4D F0 A3 36 23 12 99 CA 29 B2 BD CC B8 9F 84 62 03 D4 8B 0A 9B 8A EF 2A 92 1D 85 BB C6 A6 26 5D AC 9C 5F 05 99 91 D6 AB 4A C6 1E 21 39 2E 22 C3 82 73 F2 98 4E F2 78 F0 2B A0 34 41 8A 6A F6 33 15 89 2A F1 C8 1B F3 4B 38 5E 34 4A C4 F6 2F 9C 7B 6D 2E D8 9F 41 65 B5 A7 65 BF 48 50 74 A2 A9 0A E8 5B 47 3B 39 21 FC 29 7C 72 99 B7 F1 F3 6D EE D6 B9 F2 E3 40 43 EB 28 13 D1 38 1B 6C C1 A6 A1 B2 00 F5 35 2B F6 6B 07 40 8F C3 AA 8D FE E1 54 F3 5A 3A F7 5C 75 1F C5 0D 15 76 B7 46 20 86 65 E8 33 09 0C 85 15 09 42 AA 8B A7 8C 0A 83 81 B8 95 A4 DA A1 F9 25 BD 66 7A 96 2E 79 56 8B EA C8 D4 28 05 F3 97 CE 9C 91 8B BB BC 35 B7 53 15 BE 06 A5 62 35 32 A6 1B 84 5B 71 90 81 81 60 1F 33 75 51 F5 AD 7F 16 99 1F 6C 8B C4 07 2C DC 63 87 3A 65 81 21 33 6C CC 7B 61 30 06 C9 88 91 A0 FC 06 35 F5 F4 1A 55 55 A3 57 7B 1A EE 46 8A F0 FA 46 E7 1A 09 CE 07 01 9D 73 09 D9 89 39 2D C0 96 5F 88 9E 39 65 1C C8 75 61 97 D0 B6 76 56 1E 84 46 2D 7E 20 3A 84 BA 25 B9 C3 B6 29 A3 38 E5 01 BA C4 8B CF 4C 44 2F 6C 8C 52 9F 0A 23 1D A7 C8 FC 7A 11 97 44 F5 BB 64 1A E8 C0 36 38 5C D9 BE D9 40 2B 33 A2 E7 77 E2 F0 13 1F 6D 3C A9 7F DE 5F 08 E8 66 9D D9 22 9C CB DA 11 41 FD 62 05 90 1F 76 23 0E FC 4D 78 92 EF 46 AF B9 90 DA 5F 78 00 1D 00 20 55 10 2F 4D E4 C6 20 A0 D7 06 86 0E 3B 4E 6D 3C 7E E6 35 C3 DD 46 79 3A E2 A7 6C E6 60 C9 2D 6D\nCiphers: \n\t[1302]\tTLS_AES_256_GCM_SHA384\r\n\t[1303]\tTLS_CHACHA20_POLY1305_SHA256\r\n\t[1301]\tTLS_AES_128_GCM_SHA256\r\n\t[C02C]\tTLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384\r\n\t[C030]\tTLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384\r\n\t[C02B]\tTLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256\r\n\t[C02F]\tTLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256\r\n\t[CCA9]\tTLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256\r\n\t[CCA8]\tTLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256\r\n\t[C024]\tTLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384\r\n\t[C028]\tTLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384\r\n\t[C023]\tTLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256\r\n\t[C027]\tTLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256\r\n\t[009F]\tTLS_DHE_RSA_WITH_AES_256_GCM_SHA384\r\n\t[009E]\tTLS_DHE_RSA_WITH_AES_128_GCM_SHA256\r\n\t[006B]\tTLS_DHE_RSA_WITH_AES_256_CBC_SHA256\r\n\t[0067]\tTLS_DHE_RSA_WITH_AES_128_CBC_SHA256\r\n\nCompression: \n\t[00]\tNO_COMPRESSION\r\n\n\n",
+  "status": "200",
+  "response_headers": [
+   [
+    "FiddlerGateway",
+    "Direct"
+   ],
+   [
+    "StartTime",
+    "13:05:50.479"
+   ],
+   [
+    "Connection",
+    "close"
+   ]
+  ],
+  "response": "Encrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.\n\nSecure Protocol: Tls13\nCipher: Aes256 256bits\nHash Algorithm: Sha384 ?bits\nKey Exchange: None 255bits\n\n== Server Certificate ==========\r\n[Subject]\r\n  CN=app.adjust.com, O=Adjust GmbH, L=Berlin, S=Berlin, C=DE\r\n\r\n[Issuer]\r\n  CN=DigiCert Global G2 TLS RSA SHA256 2020 CA1, O=DigiCert Inc, C=US\r\n\r\n[Serial Number]\r\n  0BD11C348B1867AC9D7B4B60549C19B3\r\n\r\n[Not Before]\r\n  02-02-2026 05:30:00\r\n\r\n[Not After]\r\n  02-02-2027 05:29:59\r\n\r\n[Thumbprint]\r\n  B8540DAB70534E0196B6D442E681D7E34AEA7372\r\n\r\n[SubjectAltNames]\napp.adjust.com, www.app.adjust.com\r\n"
+ },
+ {
+  "sid": "65",
+  "method": "POST",
+  "url": "https://app.adjust.com/session",
+  "client_ip": "",
+  "begin": "",
+  "done": "",
+  "request_headers": [
+   [
+    "Client-SDK",
+    "android5.6.0"
+   ],
+   [
+    "Authorization",
+    "Signature signature=\"3D1DEF1A20CF32B122471C0D24A2C9A2C373BF635949E49F9DFD64770D45FE92F33626145FD4C5CDA4DA60393F2393FA9105A4466A76D4C2D6C5DA5282E3E3F363D28F38ADA98612A6A2A3ACA6E0F511F1C7BA1561A948BE99ACBF59953B6923C481D9C0658A009715F2800194870C6F7F886706B23DD8054CEF66B13F927BBE5EBD2E3DF1208A114B746668AF3BC78F4DFD479575EE232A917A5F68BAB3D01C497813EE2B1D7F52F13270FDE1BD9F469C657DB72D09BAE11910DA606A2153FCD73EAABB93CE8040A9BB84D8F02EABC6C1D15603D013AC65EF094EE84BEDA6327EB92AB005ADBFC69556BDE255E57D9DF38C723BA371EC4576B19F01897BE6AA4B27F86C9EFD500F5A9BD1C27EBDCF97630FADBAF5C4E190E3F7739E80947402504CD3F69165A5415757A1902B872D4D\",adj_signing_id=\"1300000\",algorithm=\"adj7\",headers_id=\"8\",native_version=\"3.62.0\""
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "app.adjust.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Content-Length",
+    "1124"
+   ]
+  ],
+  "body": {
+   "store_name_from_system": "com.android.vending",
+   "gps_adid_attempt": "1",
+   "country": "IN",
+   "api_level": "31",
+   "hardware_name": "S2SE32.28-28-4",
+   "partner_params": "{\"payrupik_c_id\":\"4c2576c7-56da-3568-9d9c-dd5ef029b6c8\"}",
+   "app_version": "3.0.4",
+   "app_token": "smxi7gqwu39c",
+   "installed_at": "2026-10-07T13:05:24.574Z+0530",
+   "created_at": "2026-10-07T13:05:49.294Z+0530",
+   "wait_total": "0.0",
+   "device_type": "phone",
+   "language": "en",
+   "gps_adid": "722e409b-3307-4d76-b76f-5e8f1e63c39a",
+   "foreground": "1",
+   "connectivity_type": "1",
+   "device_manufacturer": "motorola",
+   "display_width": "1080",
+   "device_name": "moto g42",
+   "needs_response_details": "1",
+   "os_build": "S2SE32.28-28-4",
+   "updated_at": "2026-10-07T13:05:24.574Z+0530",
+   "cpu_type": "arm64-v8a",
+   "retry_count": "0",
+   "screen_size": "normal",
+   "screen_format": "long",
+   "last_error": "0",
+   "gps_adid_src": "service",
+   "wait_time": "0.0",
+   "os_version": "12",
+   "first_error": "0",
+   "android_uuid": "83f5080d-be8a-4e1d-9291-d12eba2503c4",
+   "sent_at": "2026-10-07T13:05:49.431Z+0530",
+   "offline_mode_enabled": "0",
+   "environment": "production",
+   "screen_density": "high",
+   "attribution_deeplink": "1",
+   "session_count": "1",
+   "display_height": "2237",
+   "package_name": "in.hanafintech",
+   "initiating_package_name": "com.android.vending",
+   "os_name": "android",
+   "ui_mode": "1",
+   "enqueue_size": "0",
+   "tracking_enabled": "1"
+  },
+  "status": "200",
+  "response_headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 07 Oct 2026 07:35:50 GMT"
+   ],
+   [
+    "content-length",
+    "84"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "response": "{\"app_token\":\"smxi7gqwu39c\",\"adid\":\"eed7cbfcdebc9362f42ca8c7176f9521\",\"ask_in\":2000}"
+ },
+ {
+  "sid": "66",
+  "method": "POST",
+  "url": "https://app.adjust.com/sdk_click",
+  "client_ip": "",
+  "begin": "",
+  "done": "",
+  "request_headers": [
+   [
+    "Client-SDK",
+    "android5.6.0"
+   ],
+   [
+    "Authorization",
+    "Signature signature=\"3D1DEF1A20CF32B122471C0D24A2C9A254A3CE3D13D5E99CB560466A5B067165D1EE36687D3843C38030B9B919F05DB6C9D082F12C6C73C1675C0AC0A8D41DAE920A2E1675720101CD38CFB28B2D61746261FCA7587D9923A11A1B2A777007666F4FBAB7BB48ADB3A2B402F3A5C2304C85A07B11F643F761DC1F90FDF8D1156B03A3199F57EF3C8BB3DFE4F674F5B74B4242F4D700F6F862C90131C6DD592BA0C8FAB599872286141A8C8B8582DBBB0489106B1A499258E4DE6A2D6291AC107852A508B297972DD071D4DA1CD5F86E02B79194C2635B9754762AA5790F94EB91ECF0DD67278F76476EA9C8F4BA330F598D0256887419EDAAE7BBDE01D76FC5FC66F1DACBC02B6F04447A5334E6A9802D00691C2AB6A0BEE78D2C150941ACCC69D055A6D97AFE1C030FA08F83B53AB929\",adj_signing_id=\"1300000\",algorithm=\"adj7\",headers_id=\"8\",native_version=\"3.62.0\""
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "app.adjust.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Content-Length",
+    "1420"
+   ]
+  ],
+  "body": {
+   "country": "IN",
+   "api_level": "31",
+   "hardware_name": "S2SE32.28-28-4",
+   "app_version": "3.0.4",
+   "partner_params": "{\"payrupik_c_id\":\"4c2576c7-56da-3568-9d9c-dd5ef029b6c8\"}",
+   "app_token": "smxi7gqwu39c",
+   "installed_at": "2026-10-07T13:05:24.574Z+0530",
+   "device_type": "phone",
+   "language": "en",
+   "gps_adid": "722e409b-3307-4d76-b76f-5e8f1e63c39a",
+   "source": "install_referrer",
+   "foreground": "1",
+   "connectivity_type": "1",
+   "os_build": "S2SE32.28-28-4",
+   "click_time": "2026-10-07T13:05:16.000Z+0530",
+   "cpu_type": "arm64-v8a",
+   "install_version": "3.0.4",
+   "screen_size": "normal",
+   "gps_adid_src": "service",
+   "subsession_count": "1",
+   "sent_at": "2026-10-07T13:05:49.839Z+0530",
+   "offline_mode_enabled": "0",
+   "screen_density": "high",
+   "session_count": "1",
+   "ui_mode": "1",
+   "gps_adid_attempt": "1",
+   "session_length": "0",
+   "created_at": "2026-10-07T13:05:49.718Z+0530",
+   "referrer_api": "google",
+   "device_manufacturer": "motorola",
+   "display_width": "1080",
+   "time_spent": "0",
+   "device_name": "moto g42",
+   "needs_response_details": "1",
+   "updated_at": "2026-10-07T13:05:24.574Z+0530",
+   "screen_format": "long",
+   "click_time_server": "2026-10-07T13:05:16.000Z+0530",
+   "os_version": "12",
+   "google_play_instant": "0",
+   "install_begin_time_server": "2026-10-07T13:05:17.000Z+0530",
+   "android_uuid": "83f5080d-be8a-4e1d-9291-d12eba2503c4",
+   "referrer": "adjust_reftag=cig3EKyu8m0zt&utm_source=VL-Alliance&utm_campaign=HM2&utm_content=HM2_1722_",
+   "environment": "production",
+   "attribution_deeplink": "1",
+   "install_begin_time": "2026-10-07T13:05:18.000Z+0530",
+   "display_height": "2237",
+   "package_name": "in.hanafintech",
+   "os_name": "android",
+   "tracking_enabled": "1"
+  },
+  "status": "200",
+  "response_headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 07 Oct 2026 07:35:50 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "response": "{\"app_token\":\"smxi7gqwu39c\",\"adid\":\"eed7cbfcdebc9362f42ca8c7176f9521\"}"
+ },
+ {
+  "sid": "67",
+  "method": "GET",
+  "url": "https://app.adjust.com/attribution?initiated_by=backend&gps_adid_attempt=1&api_level=31&app_version=3.0.4&app_token=smxi7gqwu39c&os_version=12&created_at=2026-10-07T13%3A05%3A52.406Z%2B0530&device_type=phone&gps_adid=722e409b-3307-4d76-b76f-5e8f1e63c39a&foreground=1&android_uuid=83f5080d-be8a-4e1d-9291-d12eba2503c4&sent_at=2026-10-07T13%3A05%3A52.420Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=in.hanafintech&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1",
+  "client_ip": "",
+  "begin": "",
+  "done": "",
+  "request_headers": [
+   [
+    "Client-SDK",
+    "android5.6.0"
+   ],
+   [
+    "Authorization",
+    "Signature signature=\"40E0F7831EC4508F5085436F0DE0BC39019C73C6EFC74916CC5E3C0935DB5D618A81289CFF20BDC5D52B564D1361EF43C18766823614328214C2B66036B3F394ED44AA5990E0EC7EEFEA65788A326883FA2D82C5AC8EDA464BB994CEA6608DE05C9CD73E1955784B1270AD292D3EAD72C3A6D44CE49C0C52F0D77A7FEECC79820B363054225D904C63ABD5679E94F8BA6FB40F34D18D6F221A35B8A08F8CF255BC7164431D8ED344913967CF06DE87FC31F787A9DFE3B24EB1176D3BA465E39ADDDFE2C416814037989DD8AEDF039470A3FBE8FFA2426E1D6AC3FBC2920ACE9069D5595693FEB045999BD61E78575B86936803965BBF6B314485636DD20F86A71B150A7FEBC95DCDEAC6E3A7369708FF72EDECE19FD546EF256E45A280DB6C4425D1FC7CEBDAF50F27CC09995C6B47CD\",adj_signing_id=\"1300000\",algorithm=\"adj7\",headers_id=\"8\",native_version=\"3.62.0\""
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "app.adjust.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ],
+  "body": "",
+  "status": "200",
+  "response_headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 07 Oct 2026 07:35:53 GMT"
+   ],
+   [
+    "content-length",
+    "348"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "response": "{\"app_token\":\"smxi7gqwu39c\",\"adid\":\"eed7cbfcdebc9362f42ca8c7176f9521\",\"attribution\":{\"tracker_token\":\"g0bpyt5\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-10-07T07:35:50Z\",\"first_session_time\":\"2026-10-07T07:35:50Z\",\"is_reattributed\":false,\"is_redownload_install\":false},\"ask_in\":1000}"
+ },
+ {
+  "sid": "68",
+  "method": "GET",
+  "url": "https://app.adjust.com/attribution?initiated_by=backend&gps_adid_attempt=1&api_level=31&app_version=3.0.4&app_token=smxi7gqwu39c&os_version=12&created_at=2026-10-07T13%3A05%3A53.813Z%2B0530&device_type=phone&gps_adid=722e409b-3307-4d76-b76f-5e8f1e63c39a&foreground=1&android_uuid=83f5080d-be8a-4e1d-9291-d12eba2503c4&sent_at=2026-10-07T13%3A05%3A53.823Z%2B0530&offline_mode_enabled=0&device_name=moto%20g42&environment=production&needs_response_details=1&attribution_deeplink=1&package_name=in.hanafintech&os_name=android&ui_mode=1&gps_adid_src=service&tracking_enabled=1",
+  "client_ip": "",
+  "begin": "",
+  "done": "",
+  "request_headers": [
+   [
+    "Client-SDK",
+    "android5.6.0"
+   ],
+   [
+    "Authorization",
+    "Signature signature=\"078A0A812F36469B54A51712063883064F62C991381BACBE8A28299CA80B904F079A4D5FD518612CE9FB82E2F1310F1308EC0B09D17DFD264B39ED6C5BBC76A2DC41479B390012CBA6F2C77CADC2F250F486E1B09637C2298A2CDAE7E23C7615EAB6E9B373C7B38BC1AE273CB13296015B9783295B62B1670C4785062B4B322050C7092E334613E2D18CA410B5790C976F65CF159000982D514181966B9C91369D87FA7A63DE56A9F8F6898EEFCFC400450EF4E8B61E8B0CB83A5352D429F62BDD815B1F5CA728F57229B8822FDD857EE8B7AE24FA74BE8571F4D126389BA0547FEF3F0D3AD8DAE62898541568730E95B2AA82E3967844251A7A453AA11FB6AE6643FD2F82772F661A3097A641EF4BDA1898B8254979417010CA7C4AE17B46445584336BDA5CB824E8A92EF0B53A022E\",adj_signing_id=\"1300000\",algorithm=\"adj7\",headers_id=\"8\",native_version=\"3.62.0\""
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "app.adjust.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ]
+  ],
+  "body": "",
+  "status": "200",
+  "response_headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 07 Oct 2026 07:35:54 GMT"
+   ],
+   [
+    "content-length",
+    "398"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "response": "{\"app_token\":\"smxi7gqwu39c\",\"adid\":\"eed7cbfcdebc9362f42ca8c7176f9521\",\"attribution\":{\"tracker_token\":\"248wk8ym\",\"tracker_name\":\"VL-Alliance::HM2::HM2_1722_\",\"network\":\"VL-Alliance\",\"campaign\":\"HM2\",\"adgroup\":\"HM2_1722_\",\"engagement_time\":\"2026-10-07T07:35:15Z\",\"installed_at\":\"2026-10-07T07:35:50Z\",\"first_session_time\":\"2026-10-07T07:35:50Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ },
+ {
+  "sid": "69",
+  "method": "POST",
+  "url": "https://app.adjust.com/event",
+  "client_ip": "",
+  "begin": "",
+  "done": "",
+  "request_headers": [
+   [
+    "Client-SDK",
+    "android5.6.0"
+   ],
+   [
+    "Authorization",
+    "Signature signature=\"52AC43747F491B2B39D352F15A169F168AF56EC34AEA433CFE23423E4A1E61774F158F7851CE0B35ACD0A53FCAF209E07DF6B95909B536545A006456126A5EDA0D59714BB8BFA1B9590A2623F39F9723088F387978918DC9F937DDDF7DF06D64A13DEAF05DDC01269ACD5C9FC05A55F52CE2A205DD7B9919EF60D6B286883B8421ADC5D0A41212892C1BE60AA19B2CA03D9BDFE4674DF42E23B53AB81431018C66AF276910091B2C6CBCDDA44EDEDA252B1C6BF17358272FD45C27FC426AA67645DEB6D67037874F9BC7C7CE9B07477635DD431252DE101C8A084B2C2EAEC3E72453043097556A71A083714BDC536ACBCF0E7EB8F54CDEC2F0994EBD9E310AA99B45730B6F5F97A15AF0856236484F296D9ECB73F674013E103A785E8645E45F7A7725278FC058AB8074953FDDBFD44E\",adj_signing_id=\"1300000\",algorithm=\"adj7\",headers_id=\"8\",native_version=\"3.62.0\""
+   ],
+   [
+    "Content-Type",
+    "application/x-www-form-urlencoded"
+   ],
+   [
+    "User-Agent",
+    "Dalvik/2.1.0 (Linux; U; Android 12; moto g42 Build/S2SE32.28-28-4)"
+   ],
+   [
+    "Host",
+    "app.adjust.com"
+   ],
+   [
+    "Connection",
+    "Keep-Alive"
+   ],
+   [
+    "Accept-Encoding",
+    "gzip"
+   ],
+   [
+    "Content-Length",
+    "1114"
+   ]
+  ],
+  "body": {
+   "country": "IN",
+   "api_level": "31",
+   "hardware_name": "S2SE32.28-28-4",
+   "partner_params": "{\"payrupik_c_id\":\"4c2576c7-56da-3568-9d9c-dd5ef029b6c8\"}",
+   "app_version": "3.0.4",
+   "app_token": "smxi7gqwu39c",
+   "wait_total": "0.0",
+   "device_type": "phone",
+   "language": "en",
+   "gps_adid": "722e409b-3307-4d76-b76f-5e8f1e63c39a",
+   "foreground": "1",
+   "connectivity_type": "1",
+   "os_build": "S2SE32.28-28-4",
+   "cpu_type": "arm64-v8a",
+   "retry_count": "0",
+   "screen_size": "normal",
+   "gps_adid_src": "service",
+   "subsession_count": "1",
+   "wait_time": "0.0",
+   "first_error": "0",
+   "sent_at": "2026-10-07T13:05:54.216Z+0530",
+   "offline_mode_enabled": "0",
+   "screen_density": "high",
+   "session_count": "1",
+   "ui_mode": "1",
+   "enqueue_size": "0",
+   "gps_adid_attempt": "1",
+   "event_count": "1",
+   "session_length": "5",
+   "created_at": "2026-10-07T13:05:54.205Z+0530",
+   "device_manufacturer": "motorola",
+   "display_width": "1080",
+   "event_token": "y3sjx5",
+   "time_spent": "5",
+   "device_name": "moto g42",
+   "needs_response_details": "1",
+   "screen_format": "long",
+   "last_error": "0",
+   "seq": "1",
+   "os_version": "12",
+   "callback_params": "{\"google_adid\":\"722e409b-3307-4d76-b76f-5e8f1e63c39a\"}",
+   "android_uuid": "83f5080d-be8a-4e1d-9291-d12eba2503c4",
+   "environment": "production",
+   "attribution_deeplink": "1",
+   "display_height": "2237",
+   "package_name": "in.hanafintech",
+   "os_name": "android",
+   "tracking_enabled": "1"
+  },
+  "status": "200",
+  "response_headers": [
+   [
+    "content-type",
+    "application/json; charset=utf-8"
+   ],
+   [
+    "date",
+    "Wed, 07 Oct 2026 07:35:54 GMT"
+   ],
+   [
+    "content-length",
+    "70"
+   ],
+   [
+    "strict-transport-security",
+    "max-age=31536000; includeSubDomains; preload"
+   ],
+   [
+    "x-frame-options",
+    "SAMEORIGIN"
+   ],
+   [
+    "x-content-type-options",
+    "nosniff"
+   ],
+   [
+    "x-robots-tag",
+    "noindex"
+   ]
+  ],
+  "response": "{\"app_token\":\"smxi7gqwu39c\",\"adid\":\"eed7cbfcdebc9362f42ca8c7176f9521\"}"
+ }
+]

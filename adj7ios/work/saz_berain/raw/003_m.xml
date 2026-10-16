@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="3" BitFlags="2100">
+  <SessionTimers ClientConnected="2026-05-20T09:49:55.3370206+05:30" ClientBeginRequest="2026-05-20T09:49:55.3370206+05:30" GotRequestHeaders="2026-05-20T09:49:55.3370206+05:30" ClientDoneRequest="2026-05-20T09:49:55.3370206+05:30" GatewayTime="0" DNSTime="561" TCPConnectTime="259" HTTPSHandshakeTime="533" ServerConnected="2026-05-20T09:49:56.159055+05:30" FiddlerBeginRequest="2026-05-20T09:49:56.159055+05:30" ServerGotRequest="2026-05-20T09:49:56.159055+05:30" ServerBeginResponse="0001-01-01T00:00:00" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="0001-01-01T00:00:00" ClientBeginResponse="2026-05-20T09:49:56.159055+05:30" ClientDoneResponse="2026-05-20T09:49:56.159055+05:30" />
+  <PipeInfo />
+  <TunnelInfo BytesEgress="0" BytesIngress="0" />
+  <SessionFlags>
+    <SessionFlag N="https-client-version" V="Tls12" />
+    <SessionFlag N="x-egressport" V="56255" />
+    <SessionFlag N="x-responsebodytransferlength" V="0" />
+    <SessionFlag N="x-clientport" V="54402" />
+    <SessionFlag N="https-server-version" V="Tls12" />
+    <SessionFlag N="x-clientip" V="::ffff:192.168.1.12" />
+    <SessionFlag N="https-client-sessionid" V="E1 E9 6A 51 31 D9 60 D5 0A 27 EB AF 73 85 2B 29 69 B3 84 19 D0 59 9D 7F 17 87 37 19 2E EC 57 56" />
+    <SessionFlag N="x-hostip" V="18.64.141.126" />
+    <SessionFlag N="https-client-snihostname" V="clevertap-prod.com" />
+    <SessionFlag N="https-server-cipher" V="Aes128 128bits" />
+  </SessionFlags>
+</Session>

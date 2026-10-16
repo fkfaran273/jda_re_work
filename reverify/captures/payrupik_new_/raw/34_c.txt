@@ -1,6 +1,0 @@
-GET https://app-api.payrupikloan.in/api/GetUpgrade?project=PayRupik&version=3.0.4&sequence_id=&channel=PayRupik&system_version=12&device_type=motorola-moto%20g42&platform=android HTTP/1.1
-Host: app-api.payrupikloan.in
-Connection: Keep-Alive
-Accept-Encoding: gzip
-User-Agent: okhttp/5.3.2
-

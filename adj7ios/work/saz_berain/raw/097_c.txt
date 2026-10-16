@@ -1,0 +1,55 @@
+CONNECT app-analytics-services-att.com:443 HTTP/1.1
+Host: app-analytics-services-att.com
+Connection: keep-alive
+Connection: keep-alive
+
+A SSLv3-compatible ClientHello handshake was found. Fiddler extracted the parameters below.
+
+Version: 3.3 (TLS/1.2)
+Random: 1E 7E D4 0E 6F 37 23 32 FA 4B C7 DA F4 B6 FE EB 70 05 B8 0C C6 A5 54 C2 48 7A D4 9E 64 A5 E4 B7
+"Time": 19-Nov-77 10:32:22 PM
+SessionID: 2D 13 C8 8F A0 E8 0D 4E 37 D2 6F 45 CD 08 4A DC B6 9A 1A 95 C3 CF 4C 62 FB 4F B8 63 1F 4B CA D5
+Extensions: 
+	grease (0x1a1a)	empty
+	server_name	app-analytics-services-att.com
+	extended_master_secret	empty
+	renegotiation_info	00
+	supported_groups	grease [0xfafa], x25519 [0x1d], secp256r1 [0x17], secp384r1 [0x18], secp521r1 [0x19]
+	ec_point_formats	uncompressed [0x0]
+	ALPN		h2, http/1.1
+	status_request	OCSP - Implicit Responder
+	signature_algs	ecdsa_secp256r1_sha256, rsa_pss_rsae_sha256, rsa_pkcs1_sha256, ecdsa_secp384r1_sha384, ecdsa_sha1, rsa_pss_rsae_sha384, rsa_pss_rsae_sha384, rsa_pkcs1_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha512, rsa_pkcs1_sha1
+	SignedCertTimestamp (RFC6962)	empty
+	key_share	00 29 FA FA 00 01 00 00 1D 00 20 72 5A F5 5D 7F E9 05 9E BA 63 2D A2 5D 21 38 DC 6F 81 D8 6E 2D AC 76 F2 AB 79 08 C9 46 DB F4 5F
+	psk_key_exchange_modes	01 01
+	supported_versions	grease [0xbaba], Tls1.3, Tls1.2, Tls1.1, Tls1.0
+	0x001b		02 00 01
+	grease (0xfafa)	00
+	padding		176 null bytes
+Ciphers: 
+	[5A5A]	Unrecognized cipher - See https://www.iana.org/assignments/tls-parameters/
+	[1301]	TLS_AES_128_GCM_SHA256
+	[1302]	TLS_AES_256_GCM_SHA384
+	[1303]	TLS_CHACHA20_POLY1305_SHA256
+	[C02C]	TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+	[C02B]	TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+	[CCA9]	TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
+	[C030]	TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	[C02F]	TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	[CCA8]	TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+	[C00A]	TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
+	[C009]	TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
+	[C014]	TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+	[C013]	TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+	[009D]	TLS_RSA_WITH_AES_256_GCM_SHA384
+	[009C]	TLS_RSA_WITH_AES_128_GCM_SHA256
+	[0035]	TLS_RSA_WITH_AES_256_CBC_SHA
+	[002F]	TLS_RSA_WITH_AES_128_CBC_SHA
+	[C008]	TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA
+	[C012]	TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+	[000A]	SSL_RSA_WITH_3DES_EDE_SHA
+
+Compression: 
+	[00]	NO_COMPRESSION
+
+

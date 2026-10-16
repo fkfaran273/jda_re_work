@@ -1,0 +1,8 @@
+GET https://odm.app-ads-services.com/odm/config?version=1.1&bundle_id=com.berain.berain&app_version=4.4.0&sdk_version=odm-sdk-i-v2.1.0&retry_count=0&odm2_count=0&source=ga4f HTTP/1.1
+Host: odm.app-ads-services.com
+Accept: */*
+Accept-Language: ar
+Connection: keep-alive
+Accept-Encoding: gzip, deflate, br
+User-Agent: Berain-Swift/1 CFNetwork/1410.1 Darwin/22.6.0
+

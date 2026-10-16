@@ -1,0 +1,22 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Date: Wed, 20 May 2026 04:19:57 GMT
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Content-Length: 616
+
+{
+  "name": "projects/403517756777/installations/el2t9h-VBUzPvXr8FUcusZ",
+  "fid": "el2t9h-VBUzPvXr8FUcusZ",
+  "refreshToken": "3_AS3qfwJFcGlcOVzsPby9Yc9wTpKCjGuONqGqYNgDuF2s-vFYMUAxk8BTr9bA_qKIaP5LCo4OtfsiuUBvQV3-T_WpsNZvcIqokVTjx51XlEqOog",
+  "authToken": {
+    "token": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6NDAzNTE3NzU2Nzc3OmlvczowMWFhZWU5ZDE5ZDA0YTg2IiwiZXhwIjoxNzc5ODU1NTk3LCJmaWQiOiJlbDJ0OWgtVkJVelB2WHI4RlVjdXNaIiwicHJvamVjdE51bWJlciI6NDAzNTE3NzU2Nzc3fQ.AB2LPV8wRQIgCZ8yVZc7YJQZhnwwmWW_IQPtX4VIavWnu2mglOns0pQCIQDyR8kLsdgGCj4pegEpmk6oczV9fELJfBHJHiErQ4ZKNA",
+    "expiresIn": "604800s"
+  }
+}

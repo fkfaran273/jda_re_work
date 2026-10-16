@@ -1,0 +1,43 @@
+{
+ "G": {
+  "http": 400,
+  "json": {
+   "app_token": "3r0o0ou0m8ow",
+   "adid": "0401108525408f13763006a402d4199f",
+   "ask_in": 7200000
+  }
+ },
+ "O": {
+  "http": 400,
+  "json": {
+   "app_token": "3r0o0ou0m8ow",
+   "adid": "0401108525408f13763006a402d4199f",
+   "ask_in": 7200000
+  }
+ },
+ "ARM_session": {
+  "http": 200,
+  "json": {
+   "app_token": "3r0o0ou0m8ow",
+   "adid": "0401108525408f13763006a402d4199f",
+   "ask_in": 5000
+  }
+ },
+ "ARM": {
+  "http": 200,
+  "json": {
+   "app_token": "3r0o0ou0m8ow",
+   "adid": "0401108525408f13763006a402d4199f",
+   "attribution": {
+    "tracker_token": "unattr",
+    "tracker_name": "No User Consent",
+    "network": "No User Consent",
+    "engagement_time": "2026-05-15T05:26:24Z",
+    "installed_at": "2026-05-15T05:28:37Z",
+    "first_session_time": "2026-05-15T05:28:37Z",
+    "is_reattributed": false,
+    "is_redownload_install": false
+   }
+  }
+ }
+}

@@ -366,6 +366,14 @@ def sign(second, seed, claims, cert, head=None):
     body = encrypt(record, header)
     return header + body + record_digest(body)
 
+def _adj_verification(c, kind):
+    """adj_verification is per-kind on some builds: hsbc signs the session
+    with a longer value than click/attribution.  Presence-filtered."""
+    if kind == "session" and c.get("adj_verification_session"):
+        return c["adj_verification_session"]
+    return c.get("adj_verification", "")
+
+
 def sign_request(fields, kind, campaign=None, second=None, seed=None, head=None):
     """Sign one request and return the Authorization header VALUE (a string,
     nothing else).  The campaign is passed in:
@@ -396,13 +404,14 @@ def sign_request(fields, kind, campaign=None, second=None, seed=None, head=None)
                 "adj_signing_id": c.get("adj_signing_id", "1500000"),
                 "headers_id": c.get("headers_id", "10"),
                 "native_version": c.get("native_version", "5.0.0"),
-                "adj_verification": c.get("adj_verification", "")})
+                "adj_verification": _adj_verification(c, kind)})
     second = int(second if second is not None else time.time())
     seed = struct.unpack(">I", os.urandom(4))[0] if seed is None else seed
     padded, n = claims_padded(val, kind)
     blob = sign(second, seed, padded[:n], bytes.fromhex(c["cert_sha1"]),
                 head or c.get("head_phase") or HEAD_PHASE_DEFAULT)
-    return authorization_header(blob, c)
+    return authorization_header(blob, dict(c, adj_verification=
+                                           _adj_verification(c, kind)))
 
 def authorization_header(blob, campaign_data):
     """The envelope.  The server does not verify it, but it must be formed."""

@@ -1,0 +1,20 @@
+{
+ "mode": "live",
+ "app": "com.fdjservices.nirio",
+ "idfa": "C48E6F76-E127-4E4A-A6D9-ECA49A8097FE",
+ "idfv": "8D82E7C6-60E1-4F7E-83D0-C28F019CF2CB",
+ "dedupe": "1bee3f61-dab1-4347-8bec-e9b439286327",
+ "reftag": null,
+ "click_second": 1791526209,
+ "adid": "205101c69162d43aab92224c595d9dd1",
+ "attribution": {
+  "tracker_token": "pf7enwj",
+  "tracker_name": "Organic",
+  "network": "Organic",
+  "engagement_time": "0001-01-01T00:00:00Z",
+  "installed_at": "2026-10-09T06:10:32Z",
+  "first_session_time": "2026-10-09T06:10:32Z",
+  "is_reattributed": false,
+  "is_redownload_install": false
+ }
+}

@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+FiddlerGateway: Direct
+StartTime: 09:50:35.426
+Connection: close
+
+Encrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.
+
+Secure Protocol: Tls12
+Cipher: Aes128 128bits
+Hash Algorithm: Sha256 ?bits
+Key Exchange: ECDHE_RSA (0xae06) 255bits
+
+== Server Certificate ==========
+[Subject]
+  CN=berain.com.sa
+
+[Issuer]
+  CN=Amazon RSA 2048 M01, O=Amazon, C=US
+
+[Serial Number]
+  0878FEC84BA8EB6866B8478365F20E6B
+
+[Not Before]
+  11-Mar-26 5:30:00 AM
+
+[Not After]
+  25-Sep-26 5:29:59 AM
+
+[Thumbprint]
+  D2E1C00961070077983862295F21ED060B23D79A
+
+[SubjectAltNames]
+berain.com.sa

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="84" BitFlags="181">
+  <SessionTimers ClientConnected="2026-04-01T17:30:48.7489986+05:30" ClientBeginRequest="2026-04-01T17:30:48.7489986+05:30" GotRequestHeaders="2026-04-01T17:30:48.7489986+05:30" ClientDoneRequest="2026-04-01T17:30:48.7489986+05:30" GatewayTime="0" DNSTime="0" TCPConnectTime="143" HTTPSHandshakeTime="143" ServerConnected="2026-04-01T17:30:48.892422+05:30" FiddlerBeginRequest="2026-04-01T17:30:48.750005+05:30" ServerGotRequest="2026-04-01T17:30:48.750005+05:30" ServerBeginResponse="2026-04-01T17:30:48.7489986+05:30" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="2026-04-01T17:30:48.750005+05:30" ClientBeginResponse="2026-04-01T17:30:49.0415012+05:30" ClientDoneResponse="2026-04-01T17:30:49.0415012+05:30" />
+  <PipeInfo />
+  <SessionFlags>
+    <SessionFlag N="x-failsession-when" V="SendingRequest" />
+    <SessionFlag N="x-egressport" V="22731" />
+    <SessionFlag N="x-autoauth" V="(default)" />
+    <SessionFlag N="x-clientport" V="0" />
+    <SessionFlag N="x-clientip" V="" />
+    <SessionFlag N="x-serversocket" V="REUSE ServerPipe#71REUSE ServerPipe#33REUSE ServerPipe#32*NEW*" />
+    <SessionFlag N="x-hostip" V="185.151.204.2" />
+    <SessionFlag N="x-aborted-when" V="SendingRequest" />
+    <SessionFlag N="x-retryonfailedreceive" V="***" />
+  </SessionFlags>
+</Session>

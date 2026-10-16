@@ -1,0 +1,13 @@
+POST https://consent.adjust.com/event HTTP/1.1
+Host: consent.adjust.com
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Berain-Swift/1 CFNetwork/1410.1 Darwin/22.6.0
+Client-Sdk: ios5.5.2
+Connection: keep-alive
+Accept: */*
+Accept-Language: ar
+Authorization: Signature signature="29B5789206CAB9B84E45CDD905DDABEDA219016AC828594DD633330CF954DB11D1D07302A411A0A2AF85F31E2E4CFDFE0F5A6649902BFF55C3AEB4AB75485C12D768CA3E0B2102AF76AC85EA5D4827361BD80F1F87CC8F4B08B45156F59768EF75899B1E7636314A795FCF08C7C739C9894D03056C47FCD89B47C9E5DC8800A4A9E9FED3FC297C16DDF571EFFB8A5D13896695969C005C76001239BB2F84965ABFD1419D60AF69C8546CD8BCC55E5D098FB1BB5D549AAA4E14E148E9A87CC39671A52EA0FCA396ACD34554921E442643B59BED990F50BC638EA5228EFD1D8D682E9C19ACF9BC7FD991E287FB5136385A3D53E269CB5C63FF5DD00D8443486CFE457D3457B85D01A03A9B02206FDD32D7231B94A2C669BFAF9A64B566B6E8F8255FE11B6F68CF0AF3763D7244E763E311",adj_signing_id="1300000",algorithm="adj7",headers_id="8",native_version="3.62.0"
+Content-Length: 1020
+Accept-Encoding: gzip, deflate, br
+
+attribution_deeplink=1&retry_count=0&app_token=xb80fzavg0zk&installed_at=2026-05-20T00%3A17%3A55.604Z-0400&created_at=2026-05-20T00%3A20%3A34.239Z-0400&primary_dedupe_token=471fd96d-cbb5-4bae-80f2-13307b2d8e8a&enqueue_size=0&bundle_id=com.berain.berain&needs_response_details=1&os_version=16.7.12&offline_mode_enabled=0&app_version_short=4.4.0&send_in_background_enabled=0&subsession_count=2&environment=production&session_count=1&started_at=2026-04-21T06%3A12%3A44.000Z-0400&callback_params=%7B%22CleverTapAccountID%22%3A%22R9Z-W4R-9W6Z%22%2C%22app_version%22%3A%224.4.0%22%2C%22time_spend_in_app%22%3A%2239.485381960868835%22%2C%22mobile_source%22%3A%22iOS%22%2C%22event_date_time%22%3A%222026-05-20%2012%3A20%3A34%20AM%22%7D&os_name=ios&seq=1&idfa=0E0C62C4-5B3F-4B62-9F4C-7142390EBF69&idfv=F40C31FB-1D8B-4028-8683-E31B7104E844&device_type=iPhone&time_spent=32&sent_at=2026-05-20T00%3A20%3A34.259Z-0400&event_count=2&event_token=h38z4k&session_length=39&att_status=3&app_version=1&device_name=iPhone10%2C1&foreground=1

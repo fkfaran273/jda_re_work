@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+FiddlerGateway: Direct
+StartTime: 09:50:00.245
+Connection: close
+
+Encrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.
+
+Secure Protocol: Tls12
+Cipher: Aes256 256bits
+Hash Algorithm: Sha384 ?bits
+Key Exchange: ECDHE_RSA (0xae06) 255bits
+
+== Server Certificate ==========
+[Subject]
+  CN=fmf.icloud.com, O=Apple Inc., S=California, C=US
+
+[Issuer]
+  CN=Apple Public Server ECC CA 1 - G1, O=Apple Inc., C=US
+
+[Serial Number]
+  609150A53F7EFC4A1CE566AFCA0B1DBB
+
+[Not Before]
+  03-Feb-26 11:38:27 AM
+
+[Not After]
+  03-Mar-27 1:21:07 AM
+
+[Thumbprint]
+  1044EB709BA58A4B123394AAD2FA3439BE3E2A92
+
+[SubjectAltNames]
+p16-fmf.icloud.com, p42-fmf.icloud.com, p53-fmf.icloud.com, p59-fmf.icloud.com, p10-fmf.icloud.com, p20-fmf.icloud.com, p64-fmf.icloud.com, p27-fmf.icloud.com, p49-fmf.icloud.com, p05-fmf.icloud.com, p52-fmf.icloud.com, p37-fmf.icloud.com, p43-fmf.icloud.com, p28-fmf.icloud.com, p48-fmf.icloud.com, p54-fmf.icloud.com, p31-fmf.icloud.com, p69-fmf.icloud.com, p63-fmf.icloud.com, p22-fmf.icloud.com, p39-fmf.icloud.com, p51-fmf.icloud.com, p04-fmf.icloud.com, p62-fmf.icloud.com, p68-fmf.icloud.com, p14-fmf.icloud.com, p97-fmf.icloud.com, p33-fmf.icloud.com, p55-fmf.icloud.com, p09-fmf.icloud.com, p21-fmf.icloud.com, p32-fmf.icloud.com, p15-fmf.icloud.com, p26-fmf.icloud.com, p38-fmf.icloud.com, p03-fmf.icloud.com, p50-fmf.icloud.com, p98-fmf.icloud.com, p44-fmf.icloud.com, p56-fmf.icloud.com, p02-fmf.icloud.com, p13-fmf.icloud.com, p67-fmf.icloud.com, p45-fmf.icloud.com, p08-fmf.icloud.com, p71-fmf.icloud.com, p24-fmf.icloud.com, p61-fmf.icloud.com, p72-fmf.icloud.com, p46-fmf.icloud.com, p40-fmf.icloud.com, p34-fmf.icloud.com, p60-fmf.icloud.com, p19-fmf.icloud.com, p57-fmf.icloud.com, p25-fmf.icloud.com, p66-fmf.icloud.com, p36-fmf.icloud.com, p07-fmf.icloud.com, p65-fmf.icloud.com, p18-fmf.icloud.com, p58-fmf.icloud.com, p01-fmf.icloud.com, p30-fmf.icloud.com, p70-fmf.icloud.com, p11-fmf.icloud.com, p12-fmf.icloud.com, p06-fmf.icloud.com, p17-fmf.icloud.com, p29-fmf.icloud.com, p23-fmf.icloud.com, fmf.icloud.com, p41-fmf.icloud.com, p35-fmf.icloud.com, p47-fmf.icloud.com

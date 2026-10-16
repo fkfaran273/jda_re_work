@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+FiddlerGateway: Direct
+StartTime: 09:49:57.328
+Connection: close
+
+Encrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.
+
+Secure Protocol: Tls12
+Cipher: Aes256 256bits
+Hash Algorithm: Sha384 ?bits
+Key Exchange: ECDHE_RSA (0xae06) 256bits
+
+== Server Certificate ==========
+[Subject]
+  CN=gspe35-ssl.ls.apple.com, O=Apple Inc., S=California, C=US
+
+[Issuer]
+  C=US, S=California, O=Apple Inc., CN=Apple Public Server ECC CA 11 - G1
+
+[Serial Number]
+  23319652A53F4158F8E11D7758CEA03A
+
+[Not Before]
+  31-Mar-26 7:30:48 PM
+
+[Not After]
+  27-Aug-26 5:30:00 AM
+
+[Thumbprint]
+  1F20DC67AAC97D3F4A14D286AA396B9AB3EED1BB
+
+[SubjectAltNames]
+gspe35-ssl.ls.apple.com, gspe35-kr-ssl.ls.apple.com, gspe21-ssl.ls.apple.com, gspe1-ssl.ls.apple.com

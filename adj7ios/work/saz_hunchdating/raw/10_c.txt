@@ -1,0 +1,11 @@
+GET https://api.onesignal.com/apps/b100908f-0d29-4e4e-98e9-c95cf4a2defd/ios_params.js HTTP/1.1
+Host: api.onesignal.com
+Content-Type: application/json
+SDK-Wrapper: onesignal/flutter/050303
+Accept: application/vnd.onesignal.v1+json
+SDK-Version: onesignal/ios/050213
+Accept-Language: en-GB,en;q=0.9
+User-Agent: hunch/3 CFNetwork/1410.1 Darwin/22.6.0
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+

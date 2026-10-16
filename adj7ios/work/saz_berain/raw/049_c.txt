@@ -1,0 +1,8 @@
+GET https://app-analytics-services.com/config/app/1%3A403517756777%3Aios%3A01aaee9d19d04a86?platform=ios&runtime_version=0&gmp_version=111500 HTTP/1.1
+Host: app-analytics-services.com
+Accept: */*
+Accept-Language: ar
+Connection: keep-alive
+Accept-Encoding: gzip, deflate, br
+User-Agent: Berain-Swift/1 CFNetwork/1410.1 Darwin/22.6.0
+

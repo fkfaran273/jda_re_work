@@ -1,0 +1,6 @@
+GET https://www.gstatic.com/recaptcha/verify_key/orcas/prod/android/verify_key.txt HTTP/1.1
+User-Agent: tr.com.hsbc.hsbcturkey/104 (Linux; U; Android 12; en_US; GM1901; Build/SKQ1.211113.001; Cronet/143.0.7445.0)
+Host: www.gstatic.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+

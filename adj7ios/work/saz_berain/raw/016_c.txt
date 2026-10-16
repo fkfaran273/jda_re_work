@@ -1,0 +1,11 @@
+GET https://clevertap-prod.com/hello HTTP/1.1
+Host: clevertap-prod.com
+Content-Type: application/json; charset=utf-8
+X-CleverTap-Account-Id: R9Z-W4R-9W6Z
+X-CleverTap-Token: 240-1c2
+Accept: */*
+Accept-Language: ar
+User-Agent: Berain-Swift/1 CFNetwork/1410.1 Darwin/22.6.0
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+

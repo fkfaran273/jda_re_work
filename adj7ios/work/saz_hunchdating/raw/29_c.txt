@@ -1,0 +1,14 @@
+POST https://firebaseremoteconfig.googleapis.com/v1/projects/hunch-prod-e1130/namespaces/firebase:fetch?key=AIzaSyAXjuGrXJSjtHCmulJqfDvcXt6-FO1GQsU HTTP/1.1
+Host: firebaseremoteconfig.googleapis.com
+Accept: */*
+X-Firebase-RC-Fetch-Type: BASE/1
+X-Ios-Bundle-Identifier: social.hunch.app
+Accept-Language: en-GB,en;q=0.9
+Accept-Encoding: gzip
+Content-Type: application/json
+Content-Length: 727
+User-Agent: hunch/3 CFNetwork/1410.1 Darwin/22.6.0
+Connection: keep-alive
+x-goog-firebase-installations-auth: eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6ODcxODU4NTkwMTA4OmlvczpjYWM5YTVmODg3NjdmYWQ2OWViODU5IiwiZXhwIjoxNzc1NjQ5NjI5LCJmaWQiOiJjbHJiRnF2cmRVTkV0NEJkWnVpU2xZIiwicHJvamVjdE51bWJlciI6ODcxODU4NTkwMTA4fQ.AB2LPV8wRQIgAeiMQrgUgw6K77Dl2nfiglucb04120ccsccyhlThvJQCIQDi7FPDRKXDZmuIz69RmnxqkSdTExQnoIvFd0GtXss23A
+
+{app_instance_id:'clrbFqvrdUNEt4BdZuiSlY', app_instance_id_token:'eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6ODcxODU4NTkwMTA4OmlvczpjYWM5YTVmODg3NjdmYWQ2OWViODU5IiwiZXhwIjoxNzc1NjQ5NjI5LCJmaWQiOiJjbHJiRnF2cmRVTkV0NEJkWnVpU2xZIiwicHJvamVjdE51bWJlciI6ODcxODU4NTkwMTA4fQ.AB2LPV8wRQIgAeiMQrgUgw6K77Dl2nfiglucb04120ccsccyhlThvJQCIQDi7FPDRKXDZmuIz69RmnxqkSdTExQnoIvFd0GtXss23A', app_id:'1:871858590108:ios:cac9a5f88767fad69eb859', country_code:'by', language_code:'en_GB', platform_version:'16.7.15', time_zone:'Europe/Minsk', package_name:'social.hunch.app', app_version:'3.0.1', app_build:'3', sdk_version:'11.13.0', first_open_time:'2026-04-01T13:00:00Z', analytics_user_properties:{"env":"prod","app_version":"3.0.13"}}

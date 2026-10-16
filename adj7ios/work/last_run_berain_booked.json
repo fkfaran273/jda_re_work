@@ -1,0 +1,25 @@
+{
+  "mode": "live",
+  "app": "com.berain.berain",
+  "idfa": "F8572572-E3BB-4B5D-A909-84C8DECB2E34",
+  "idfv": "5E6FD322-2C6C-4A4A-8C12-AF8EE519E03D",
+  "dedupe": "372e8590-8abc-4a4e-92a5-616bd8a2d7cb",
+  "reftag": null,
+  "click_second": 1791542442,
+  "adid": "4a4bd2c212134f84bfd4a296dcdd977a",
+  "session_ask_in": 2000,
+  "BOOKING": "NON-ORGANIC -- pure Python adj7 iOS, first attribution poll",
+  "tracker": "20yvzdd5 (click link) -> app.adjust.com",
+  "attribution": {
+    "tracker_token": "20fholu3",
+    "tracker_name": "TMV Media::TMV May_Derby::NP_SH_Q",
+    "network": "TMV Media",
+    "campaign": "TMV May_Derby",
+    "adgroup": "NP_SH_Q",
+    "engagement_time": "2026-10-09T10:40:47Z",
+    "installed_at": "2026-10-09T10:41:05Z",
+    "first_session_time": "2026-10-09T10:41:05Z",
+    "is_reattributed": false,
+    "is_redownload_install": false
+  }
+}

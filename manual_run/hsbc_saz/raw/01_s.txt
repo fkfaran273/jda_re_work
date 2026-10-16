@@ -1,0 +1,22 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Date: Fri, 16 Oct 2026 09:29:34 GMT
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Content-Length: 622
+
+{
+  "name": "projects/387940012564/installations/dapnb6T8RLGyL7Mctb5RJ0",
+  "fid": "dapnb6T8RLGyL7Mctb5RJ0",
+  "refreshToken": "3_AS3qfwJ_Luc9DwIidB5UYKJXwHjQQZRBoJqMTNEyoaPqBHIOo20BJOlhl0TQolOm4gW9lvkdgQ5zoBbyVpRDvI2zpl3o3EeXYQtwJdX__dMXrKI",
+  "authToken": {
+    "token": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6Mzg3OTQwMDEyNTY0OmFuZHJvaWQ6NjMwMjA5OTNhYWQxZWYzNyIsImV4cCI6MTc5Mjc0Nzc3NCwiZmlkIjoiZGFwbmI2VDhSTEd5TDdNY3RiNVJKMCIsInByb2plY3ROdW1iZXIiOjM4Nzk0MDAxMjU2NH0.AB2LPV8wRQIhAM1Zo0vUG4IriyXsVYmVpa3vHPgkX2buBwgCBzFevXE5AiAmMe5bq_6WGkzRHEBufjPRtqy-L7LuITfkDsM9mT9VkA",
+    "expiresIn": "604800s"
+  }
+}

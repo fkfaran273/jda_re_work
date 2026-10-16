@@ -1,0 +1,10 @@
+POST https://www.recaptcha.net/recaptcha/api3/mri HTTP/1.1
+Content-Type: application/x-protobuffer
+User-Agent: tr.com.hsbc.hsbcturkey/104 (Linux; U; Android 12; en_US; GM1901; Build/SKQ1.211113.001; Cronet/143.0.7445.0)
+Content-Length: 153
+Host: www.recaptcha.net
+Connection: Keep-Alive
+Accept-Encoding: gzip
+
+
+(6LfOkQotAAAAACYiCLnbtqwpjAQ2soZtT0jflM3Ctr.com.hsbc.hsbcturkey18.9.1 2$f9b4bbfd-fcc0-423a-ba06-611460c020c7:31HPZcom.android.vendingbBQDhGLUE

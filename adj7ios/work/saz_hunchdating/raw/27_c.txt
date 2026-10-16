@@ -1,0 +1,13 @@
+GET https://firebase-settings.crashlytics.com/spi/v2/platforms/ios/gmp/1:871858590108:ios:cac9a5f88767fad69eb859/settings?build_version=3&display_version=3.0.1 HTTP/1.1
+Host: firebase-settings.crashlytics.com
+User-Agent: hunch/3 CFNetwork/1410.1 Darwin/22.6.0
+X-Crashlytics-OS-Display-Version: 16.7.15
+X-Crashlytics-Device-Model: iPhone10,1
+Connection: keep-alive
+X-Crashlytics-OS-Build-Version: 20H380
+Accept: application/json
+X-Crashlytics-API-Client-Version: 11.13.0
+Accept-Language: en-GB,en;q=0.9
+X-Crashlytics-Installation-ID: clrbFqvrdUNEt4BdZuiSlY
+Accept-Encoding: gzip, deflate, br
+

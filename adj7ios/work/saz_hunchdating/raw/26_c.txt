@@ -1,0 +1,14 @@
+GET https://api.onesignal.com/apps/b100908f-0d29-4e4e-98e9-c95cf4a2defd/subscriptions/088dc28d-173c-4330-a1da-8f4dda7be0cb/iams HTTP/1.1
+Host: api.onesignal.com
+OneSignal-RYW-Token: 10000000005316670475
+Accept: application/vnd.onesignal.v1+json
+OneSignal-Session-Duration: -1000
+SDK-Version: onesignal/ios/050213
+SDK-Wrapper: onesignal/flutter/050303
+Accept-Language: en-GB,en;q=0.9
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/json
+User-Agent: hunch/3 CFNetwork/1410.1 Darwin/22.6.0
+Connection: keep-alive
+Cookie: __cf_bm=wd2TJ9XE55ffSeqBM4S.YtUok7TT7pjTk_1rhvGs_jE-1775044828.9704921-1.0.1.1-6g0hH0hJfvrlOgQMRg5_ihGgegs297jYihGHB9hwukiSTSjjaQm4keiNIEsonMFW8oNHgj7fXvyf3duGBctQ6UqYof6GLZmmvKDH_ANh2vIbXl3MYtWVcIM7Nt_QXbQW
+

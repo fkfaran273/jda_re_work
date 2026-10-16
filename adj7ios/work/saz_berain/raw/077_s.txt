@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+FiddlerGateway: Direct
+StartTime: 09:50:41.385
+Connection: close
+
+Encrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.
+
+Secure Protocol: Tls12
+Cipher: Aes256 256bits
+Hash Algorithm: Sha384 ?bits
+Key Exchange: ECDHE_RSA (0xae06) 255bits
+
+== Server Certificate ==========
+[Subject]
+  CN=upload.video.google.com
+
+[Issuer]
+  CN=WR2, O=Google Trust Services, C=US
+
+[Serial Number]
+  00B1E7888A58A43C4C12B74D368020DCCB
+
+[Not Before]
+  20-Apr-26 2:06:34 PM
+
+[Not After]
+  13-Jul-26 2:06:33 PM
+
+[Thumbprint]
+  25C378A0E197BA8ACE43FA9CBF89EFDDA3CD9C40
+
+[SubjectAltNames]
+upload.video.google.com, *.clients.google.com, *.docs.google.com, *.drive.google.com, *.gdata.youtube.com, *.googleapis.com, *.photos.google.com, *.youtube-3rd-party.com, upload.google.com, *.upload.google.com, upload.youtube.com, *.upload.youtube.com, uploads.stage.gdata.youtube.com, bg-call-donation.goog, bg-call-donation-alpha.goog, bg-call-donation-canary.goog, bg-call-donation-dev.goog

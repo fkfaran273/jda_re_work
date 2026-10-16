@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="77" BitFlags="19">
+  <SessionTimers ClientConnected="2026-05-20T09:50:34.5874817+05:30" ClientBeginRequest="2026-05-20T09:50:39.6658341+05:30" GotRequestHeaders="2026-05-20T09:50:39.6658341+05:30" ClientDoneRequest="2026-05-20T09:50:39.740806+05:30" GatewayTime="0" DNSTime="0" TCPConnectTime="0" HTTPSHandshakeTime="0" ServerConnected="2026-05-20T09:50:35.42642+05:30" FiddlerBeginRequest="2026-05-20T09:50:39.740806+05:30" ServerGotRequest="2026-05-20T09:50:39.740806+05:30" ServerBeginResponse="2026-05-20T09:50:40.9938115+05:30" GotResponseHeaders="2026-05-20T09:50:40.9938115+05:30" ServerDoneResponse="2026-05-20T09:50:41.6895604+05:30" ClientBeginResponse="2026-05-20T09:50:41.7015329+05:30" ClientDoneResponse="2026-05-20T09:50:42.3511869+05:30" />
+  <PipeInfo CltReuse="true" Reused="true" />
+  <SessionFlags>
+    <SessionFlag N="x-egressport" V="56300" />
+    <SessionFlag N="x-responsebodytransferlength" V="140,574" />
+    <SessionFlag N="x-clientport" V="54442" />
+    <SessionFlag N="ui-bold" V="user-marked" />
+    <SessionFlag N="x-clientip" V="::ffff:192.168.1.12" />
+    <SessionFlag N="ui-oldcolor" V="WindowText" />
+    <SessionFlag N="x-serversocket" V="REUSE ServerPipe#73" />
+    <SessionFlag N="x-hostip" V="13.206.158.120" />
+    <SessionFlag N="ui-color" V="Green" />
+    <SessionFlag N="ui-comments" V="choose language english" />
+  </SessionFlags>
+</Session>

@@ -1,0 +1,17 @@
+POST https://fcmtoken.googleapis.com/register HTTP/1.1
+Host: fcmtoken.googleapis.com
+Accept: */*
+X-firebase-client: apple-platform/ios apple-sdk/23C53 appstore/true deploy/cocoapods device/iPhone10,1 fire-analytics/11.15.0 fire-fcm/11.15.0 fire-install/11.15.0 fire-ios/11.15.0 fire-ses/11.15.0 firebase-crashlytics/11.15.0 os-version/16.7.12 xcode/17C52
+Authorization: AidLogin 4905551870547768126:6564339531224480575
+X-firebase-client-log-type: 0
+Accept-Encoding: gzip, deflate, br
+Accept-Language: ar
+app: com.berain.berain
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 310
+User-Agent: Berain-Swift/1 CFNetwork/1410.1 Darwin/22.6.0
+Connection: keep-alive
+info: 4001Qlk3zlocQKri541rkWVFosk55Bk
+x-goog-firebase-installations-auth: eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6NDAzNTE3NzU2Nzc3OmlvczowMWFhZWU5ZDE5ZDA0YTg2IiwiZXhwIjoxNzc5ODU1NTk3LCJmaWQiOiJlbDJ0OWgtVkJVelB2WHI4RlVjdXNaIiwicHJvamVjdE51bWJlciI6NDAzNTE3NzU2Nzc3fQ.AB2LPV8wRQIgCZ8yVZc7YJQZhnwwmWW_IQPtX4VIavWnu2mglOns0pQCIQDyR8kLsdgGCj4pegEpmk6oczV9fELJfBHJHiErQ4ZKNA
+
+X-osv=16.7.12&device=4905551870547768126&X-scope=*&plat=2&app=com.berain.berain&app_ver=4.4.0&X-cliv=fiid-11.15.0&sender=403517756777&X-subtype=403517756777&appid=el2t9h-VBUzPvXr8FUcusZ&apns_token=p_bcdeb5ee44f7f390efc78726ff18f6c6b8e91f2a08c0b9ca8f99bed3d1f5e9a7&gmp_app_id=1:403517756777:ios:01aaee9d19d04a86

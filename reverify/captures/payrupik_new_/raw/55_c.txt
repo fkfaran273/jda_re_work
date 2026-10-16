@@ -1,9 +1,0 @@
-GET https://graph.facebook.com/v16.0/app/mobile_sdk_gk?access_token=2396553313942435%7Ccadf87a25aa2c0e89dd204c750f26545&fields=gatekeepers&format=json&sdk_version=18.2.3&sdk=android&platform=android HTTP/1.1
-User-Agent: FBAndroidSDK.18.2.3
-Accept-Language: en_IN
-Content-Type: application/x-www-form-urlencoded
-Content-Encoding: gzip
-Host: graph.facebook.com
-Connection: Keep-Alive
-Accept-Encoding: gzip
-

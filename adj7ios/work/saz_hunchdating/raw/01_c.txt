@@ -1,0 +1,12 @@
+POST https://sdk-03.moengage.com/v3/sdkconfig/ios/WTV8ZYNUNWXAFP9F3VG9D2CT HTTP/1.1
+Host: sdk-03.moengage.com
+Content-Type: application/json
+Connection: keep-alive
+Accept: */*
+MOE-APPKEY: WTV8ZYNUNWXAFP9F3VG9D2CT
+Accept-Language: en-GB,en;q=0.9
+Content-Length: 364
+Accept-Encoding: gzip, deflate, br
+User-Agent: hunch/3 CFNetwork/1410.1 Darwin/22.6.0
+
+{"os_ver":"16.7.15","model":"iPhone","sdk_ver":"9.22.2","unique_id":"4994D34F-B081-47DE-ACB0-4F6D1DA318BA-1775044827","model_name":"iPhone 8","os":"iOS","app_ver":"3.0.1","device_ts":"1775044827702","app_id":"WTV8ZYNUNWXAFP9F3VG9D2CT","device_unique_id":"P-77534AED-7818-42C8-83AE-0AEE3F402EF3-1775044827","device_tz_offset":"10800000","device_tz":"Europe\/Minsk"}

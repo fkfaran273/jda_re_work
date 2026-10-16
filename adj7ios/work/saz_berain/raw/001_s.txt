@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+FiddlerGateway: Direct
+StartTime: 09:49:55.517
+Connection: close
+
+Encrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.
+
+Secure Protocol: Tls12
+Cipher: Aes128 128bits
+Hash Algorithm: Sha256 ?bits
+Key Exchange: ECDHE_RSA (0xae06) 255bits
+
+== Server Certificate ==========
+[Subject]
+  CN=crashlytics.com
+
+[Issuer]
+  CN=WR2, O=Google Trust Services, C=US
+
+[Serial Number]
+  51C3AF911E613ABF1258FD2213F0EC6F
+
+[Not Before]
+  20-Apr-26 2:08:42 PM
+
+[Not After]
+  13-Jul-26 2:08:41 PM
+
+[Thumbprint]
+  D8A6DE23FDC4B9835652120E1525AD3F87075325
+
+[SubjectAltNames]
+crashlytics.com, *.crashlytics.com

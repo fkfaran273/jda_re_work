@@ -1,0 +1,13 @@
+POST https://eu1.clevertap-prod.com/a1?os=iOS&t=70501&z=R9Z-W4R-9W6Z&ts=1779250800 HTTP/1.1
+Host: eu1.clevertap-prod.com
+Content-Type: application/json; charset=utf-8
+Connection: keep-alive
+X-CleverTap-Account-Id: R9Z-W4R-9W6Z
+X-CleverTap-Token: 240-1c2
+Accept: */*
+Accept-Language: ar
+Content-Length: 1588
+Accept-Encoding: gzip, deflate, br
+User-Agent: Berain-Swift/1 CFNetwork/1410.1 Darwin/22.6.0
+
+[{"id":"R9Z-W4R-9W6Z","imp":0,"tk":"240-1c2","fl":false,"frs":false,"tlc":[],"regURLs":["com.berain.berain.payments"],"type":"meta","af":{"wdt":"2.30","OS Version":"16.7.12","Version":"4.4.0","Build":"1","Model":"iPhone10,1","Radio":"","LIAMC":0,"ifaA":false,"locale":"ar_SA","wifi":true,"cc":"SA","SDK Version":70501,"useIP":true,"OS":"iOS","hgt":"4.09","Make":"Apple"},"ddnd":0,"debug":true,"arp":{"wdt":2.2999999999999998,"i_n":"Y2tifAYEBA==","j_n":"Zw==","d_ts":0,"id":"R9Z-W4R-9W6Z","hgt":4.0899999999999999,"dh":0,"v":2,"j_s":"{}","av":"4.4.0","r_ts":1779250799},"l_ts":1779250797,"f_ts":1779250797,"g":"-2fe74a76dad849639d6bb69207a984b2"},{"s":1779250795,"n":"_bg","dsync":true,"pg":1,"ep":1779250800,"type":"profile","lsl":0,"f":true,"profile":{"tz":"America\/New_York","cc":"SA"}},{"pai":"com.berain.berain","n":"_bg","evtName":"App Launched","dsync":true,"pg":1,"evtData":{"wdt":"2.30","OS Version":"16.7.12","Version":"4.4.0","Build":"1","Model":"iPhone10,1","Radio":"","ifaA":false,"locale":"ar_SA","wifi":true,"cc":"SA","SDK Version":70501,"useIP":true,"OS":"iOS","hgt":"4.09","Make":"Apple"},"ep":1779250800,"type":"event","lsl":0,"s":1779250795,"f":true},{"n":"_bg","dsync":true,"data":{"id":"bcdeb5ee44f7f390efc78726ff18f6c6b8e91f2a08c0b9ca8f99bed3d1f5e9a7","action":"register","type":"apns"},"pg":1,"ep":1779250800,"type":"data","lsl":0,"f":true,"s":1779250795},{"n":"_bg","dsync":true,"data":{"id":"bcdeb5ee44f7f390efc78726ff18f6c6b8e91f2a08c0b9ca8f99bed3d1f5e9a7","action":"register","type":"apns"},"pg":1,"ep":1779250800,"type":"data","lsl":0,"f":true,"s":1779250795}]

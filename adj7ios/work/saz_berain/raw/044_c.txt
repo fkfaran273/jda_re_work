@@ -1,0 +1,13 @@
+POST https://consent.adjust.com/event HTTP/1.1
+Host: consent.adjust.com
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Berain-Swift/1 CFNetwork/1410.1 Darwin/22.6.0
+Client-Sdk: ios5.5.2
+Connection: keep-alive
+Accept: */*
+Accept-Language: ar
+Authorization: Signature signature="0F7497CE469191B248677731676ECE00166AD80A861123347D267E891A425912FE5AD4680D13E42E26B2EB6DD90FEABF37189CB35A8D162E5B47B290284967A902200846804757C84E897F0883B6838031832D39A7B0F5239BCD08F7B29F230AC2E7E92DD15A1D96F22EF2D6554A7E508FE5A325348256E76F790A5CFC2D9F10B6117457421238EA17688D105A0E826F5B7DF238E72B76C3AC79222EA51D688406864D672974233DCFBF3178612E1C79EA6AE96C0B72CE230617126DB1AEA131C71B4AA71DDC2D41CBC194E51157512134C3D3D9AD58049CF16A495F0A9F8DC9B615161DAE25E2606451BFF57616FACC7B8759C8C0C9F3D7FA37B1998DD7AD6C2B9D6EB11BEB476E9EBE9083784EB25BBC602C517F11B527E5952FDBDEFBBC594CBD6F8436B7B676AC0470B6E4E90463",adj_signing_id="1300000",algorithm="adj7",headers_id="8",native_version="3.62.0"
+Content-Length: 1018
+Accept-Encoding: gzip, deflate, br
+
+app_token=xb80fzavg0zk&retry_count=0&os_version=16.7.12&installed_at=2026-05-20T00%3A17%3A55.604Z-0400&created_at=2026-05-20T00%3A19%3A55.270Z-0400&primary_dedupe_token=471fd96d-cbb5-4bae-80f2-13307b2d8e8a&background=1&bundle_id=com.berain.berain&offline_mode_enabled=0&needs_response_details=1&enqueue_size=1&app_version_short=4.4.0&send_in_background_enabled=0&subsession_count=1&environment=production&session_count=1&started_at=2026-04-21T06%3A12%3A44.000Z-0400&callback_params=%7B%22CleverTapAccountID%22%3A%22R9Z-W4R-9W6Z%22%2C%22app_version%22%3A%224.4.0%22%2C%22time_spend_in_app%22%3A%220.5028200149536133%22%2C%22mobile_source%22%3A%22iOS%22%2C%22event_date_time%22%3A%222026-05-20%2012%3A19%3A55%20AM%22%7D&os_name=ios&seq=1&idfa=0E0C62C4-5B3F-4B62-9F4C-7142390EBF69&idfv=F40C31FB-1D8B-4028-8683-E31B7104E844&device_type=iPhone&time_spent=0&sent_at=2026-05-20T00%3A20%3A02.582Z-0400&event_count=1&event_token=j8ssfa&session_length=0&att_status=3&app_version=1&device_name=iPhone10%2C1&attribution_deeplink=1

@@ -1,0 +1,38 @@
+POST https://analytics.us.tiktok.com/api/v1/app_sdk/config HTTP/1.1
+Host: analytics.us.tiktok.com
+Content-Type: application/json
+Connection: keep-alive
+Accept: */*
+Accept-Language: en-GB,en;q=0.9
+Content-Length: 813
+Accept-Encoding: gzip, deflate, br
+User-Agent: hunch/3 CFNetwork/1410.1 Darwin/22.6.0
+
+{
+  "app" : {
+    "build" : "3",
+    "id" : "6444654663",
+    "tiktok_app_id" : "7387998030571536385",
+    "namespace" : "social.hunch.app",
+    "version" : "3.0.1",
+    "app_session_id" : "DCFE6198-1472-4119-89B3-BB2342303564",
+    "name" : "hunch"
+  },
+  "device" : {
+    "locale" : "en-BY\/BY",
+    "idfa" : "00000000-0000-0000-0000-000000000000",
+    "platform" : "ios",
+    "idfv" : "97DEDAE8-ECC8-4F16-9EDD-01F464B7D1D6",
+    "model" : "iPhone10,1",
+    "version" : "16.7.15",
+    "att_status" : "NOT_DETERMINED",
+    "ip" : "192.168.29.235",
+    "user_agent" : "hunch\/3.0.1 iPhone10,1 iOS\/16.7.15 CFNetwork\/1410.1 Darwin\/22.6.0 Resolution\/375*667"
+  },
+  "debug" : false,
+  "library" : {
+    "name" : "tiktok\/tiktok-business-ios-sdk",
+    "version" : "1.5.1",
+    "smart_sdk_client_flag" : true
+  }
+}

@@ -1,0 +1,20 @@
+{
+ "interpreter": "python2.7",
+ "runner": "run_install_ios_py27.py",
+ "app": "com.berain.berain (Berain Water, App Store id 1298014792)",
+ "app_token": "xb80fzavg0zk",
+ "click_link": "https://app.adjust.com/20yvzdd5?campaign=TMV+May_Derby&adgroup=NP_SH_Q&os_name=ios&idfa=<fresh>&gps_adid=<same idfa>&click_id=<fresh>",
+ "funnel": "click -> session 200 -> tps 202 -> sdk_click 200 -> attribution",
+ "signature": "REAL adj7-iOS mint on every signed call (verified on the wire: 711-char Authorization header)",
+ "adid": "18ed101332a0dfd116a73b84b669ad3c",
+ "attribution": {
+  "network": "TMV Media",
+  "tracker_token": "20fholu3",
+  "tracker_name": "TMV Media::TMV May_Derby::NP_SH_Q",
+  "campaign": "TMV May_Derby",
+  "adgroup": "NP_SH_Q",
+  "engagement_time": "2026-10-09T14:47:20Z",
+  "installed_at": "2026-10-09T14:47:39Z"
+ },
+ "note": "first poll after sdk_click; 29s end-to-end"
+}

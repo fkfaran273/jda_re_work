@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="60" BitFlags="2100">
+  <SessionTimers ClientConnected="2026-05-20T09:50:16.1884323+05:30" ClientBeginRequest="2026-05-20T09:50:16.1884323+05:30" GotRequestHeaders="2026-05-20T09:50:16.1884323+05:30" ClientDoneRequest="2026-05-20T09:50:16.1884323+05:30" GatewayTime="0" DNSTime="0" TCPConnectTime="382" HTTPSHandshakeTime="774" ServerConnected="2026-05-20T09:50:16.5710223+05:30" FiddlerBeginRequest="2026-05-20T09:50:16.5710223+05:30" ServerGotRequest="2026-05-20T09:50:16.5710223+05:30" ServerBeginResponse="0001-01-01T00:00:00" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="0001-01-01T00:00:00" ClientBeginResponse="2026-05-20T09:50:16.5710223+05:30" ClientDoneResponse="2026-05-20T09:50:16.5710223+05:30" />
+  <PipeInfo />
+  <TunnelInfo BytesEgress="0" BytesIngress="0" />
+  <SessionFlags>
+    <SessionFlag N="x-egressport" V="56286" />
+    <SessionFlag N="x-responsebodytransferlength" V="0" />
+    <SessionFlag N="x-clientport" V="54432" />
+    <SessionFlag N="ui-bold" V="user-marked" />
+    <SessionFlag N="x-clientip" V="::ffff:192.168.1.12" />
+    <SessionFlag N="https-client-sessionid" V="B9 A3 2D C4 3F 15 2E 3A 80 71 2E 25 F8 4F 9A 51 FF 56 99 27 C3 64 79 BF 4A 1A 90 44 E7 92 EC E3" />
+    <SessionFlag N="ui-oldcolor" V="Gray" />
+    <SessionFlag N="x-hostip" V="17.248.211.67" />
+    <SessionFlag N="ui-color" V="Green" />
+    <SessionFlag N="https-client-snihostname" V="gateway.icloud.com" />
+    <SessionFlag N="ui-comments" V="app to open" />
+  </SessionFlags>
+</Session>

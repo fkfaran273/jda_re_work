@@ -1,0 +1,16 @@
+HTTP/1.1 200 OK
+Server: CloudFront
+Content-Length: 0
+Connection: keep-alive
+Date: Wed, 20 May 2026 04:19:57 GMT
+Vary: Accept-Encoding, User-Agent
+X-Frame-Options: SAMEORIGIN
+Cache-Control: no-cache, no-store
+Strict-Transport-Security: max-age=31536000;includeSubDomains;preload
+X-WZRK-RD: eu1.clevertap-prod.com
+X-WZRK-SPIKY-RD: eu1-spiky.clevertap-prod.com
+X-Cache: Miss from cloudfront
+Via: 1.1 ddb5b55a39a9c668cc9837603903b39e.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: MCT50-P1
+X-Amz-Cf-Id: -aA_9YDHlZDpU74EumCkLA_s__Eyi1PnswXaF2FBD7W4z1pfGwMucA==
+

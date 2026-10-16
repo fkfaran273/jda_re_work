@@ -1,0 +1,17 @@
+POST https://fcmtoken.googleapis.com/register HTTP/1.1
+Host: fcmtoken.googleapis.com
+Accept: */*
+X-firebase-client: apple-platform/ios apple-sdk/22B74 appstore/true deploy/cocoapods device/iPhone10,1 fire-abt/11.13.0 fire-analytics/11.13.0 fire-app-check/11.13.0 fire-auth/11.13.0 fire-fcm/11.13.0 fire-install/11.13.0 fire-ios/11.13.0 fire-perf/11.13.0 fire-rc/11.13.0 fire-ses/11.13.0 firebase-crashlytics/11.13.0 flutter-fire-appcheck/0.3.2-7 flutter-fire-auth/5.6.0 flutter-fire-cls/4.3.7 flutter-fire-core/3.14.0 flutter-fire-fcm/15.2.7 flutter-fire-perf/0.10.1-7 flutter-fire-rc/5.4.5 os-version/16.7.15 xcode/16B40
+Authorization: AidLogin 5471144612206861711:3950944573602977217
+X-firebase-client-log-type: 0
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-GB,en;q=0.9
+app: social.hunch.app
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 315
+User-Agent: hunch/3 CFNetwork/1410.1 Darwin/22.6.0
+Connection: keep-alive
+info: Y2k_IzadV5ceUE1VIFLpkGhS46mO1Bk
+x-goog-firebase-installations-auth: eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6ODcxODU4NTkwMTA4OmlvczpjYWM5YTVmODg3NjdmYWQ2OWViODU5IiwiZXhwIjoxNzc1NjQ5NjI5LCJmaWQiOiJjbHJiRnF2cmRVTkV0NEJkWnVpU2xZIiwicHJvamVjdE51bWJlciI6ODcxODU4NTkwMTA4fQ.AB2LPV8wRQIgAeiMQrgUgw6K77Dl2nfiglucb04120ccsccyhlThvJQCIQDi7FPDRKXDZmuIz69RmnxqkSdTExQnoIvFd0GtXss23A
+
+X-osv=16.7.15&device=5471144612206861711&X-scope=*&plat=2&app=social.hunch.app&app_ver=3.0.1&X-cliv=fiid-11.13.0&sender=871858590108&X-subtype=871858590108&appid=clrbFqvrdUNEt4BdZuiSlY&apns_token=p_79a6179fad40e4835c28924b31e3647fbe8d04ad18280580aad4963faa4eb722&gmp_app_id=1:871858590108:ios:cac9a5f88767fad69eb859

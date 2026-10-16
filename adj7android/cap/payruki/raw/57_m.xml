@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="57" BitFlags="19" Aborted="true">
+  <SessionTimers ClientConnected="2026-10-07T13:05:49.9480629+05:30" ClientBeginRequest="2026-10-07T13:05:50.0366058+05:30" GotRequestHeaders="2026-10-07T13:05:50.0416134+05:30" ClientDoneRequest="2026-10-07T13:05:50.0416134+05:30" GatewayTime="0" DNSTime="0" TCPConnectTime="0" HTTPSHandshakeTime="0" ServerConnected="2026-10-07T13:05:49.9863992+05:30" FiddlerBeginRequest="2026-10-07T13:05:50.0416134+05:30" ServerGotRequest="2026-10-07T13:05:50.0416134+05:30" ServerBeginResponse="2026-10-07T13:05:50.0970714+05:30" GotResponseHeaders="2026-10-07T13:05:50.0970714+05:30" ServerDoneResponse="2026-10-07T13:05:50.2178368+05:30" ClientBeginResponse="2026-10-07T13:05:50.2178368+05:30" ClientDoneResponse="2026-10-07T13:05:50.2178368+05:30" />
+  <PipeInfo CltReuse="true" Reused="true" />
+  <SessionFlags>
+    <SessionFlag N="https-client-version" V="Tls13" />
+    <SessionFlag N="x-supported-client-tls-protocols" V="15360" />
+    <SessionFlag N="x-egressport" V="13994" />
+    <SessionFlag N="x-responsebodytransferlength" V="3,51,864" />
+    <SessionFlag N="x-clientport" V="13993" />
+    <SessionFlag N="x-clientip" V="::ffff:127.0.0.1" />
+    <SessionFlag N="x-serversocket" V="REUSE ServerPipe#55" />
+    <SessionFlag N="x-hostip" V="52.219.158.178" />
+    <SessionFlag N="x-aborted-when" V="SendingResponse" />
+    <SessionFlag N="x-processinfo" V="python:34048" />
+  </SessionFlags>
+</Session>

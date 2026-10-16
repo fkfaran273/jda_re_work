@@ -1,0 +1,13 @@
+POST https://api.onesignal.com/apps/b100908f-0d29-4e4e-98e9-c95cf4a2defd/users HTTP/1.1
+Host: api.onesignal.com
+Content-Type: application/json
+Connection: keep-alive
+SDK-Wrapper: onesignal/flutter/050303
+Accept: application/vnd.onesignal.v1+json
+SDK-Version: onesignal/ios/050213
+Accept-Language: en-GB,en;q=0.9
+Content-Length: 363
+Accept-Encoding: gzip, deflate, br
+User-Agent: hunch/3 CFNetwork/1410.1 Darwin/22.6.0
+
+{"identity":{},"subscriptions":[{"token":"79a6179fad40e4835c28924b31e3647fbe8d04ad18280580aad4963faa4eb722","type":"iOSPush","device_model":"iPhone10,1","sdk":"050213","app_version":"3.0.1","device_os":"16.7.15","enabled":false,"net_type":0,"notification_types":-18}],"refresh_device_metadata":true,"properties":{"timezone_id":"Europe\/Minsk","language":"en-BY"}}

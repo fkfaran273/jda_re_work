@@ -1,0 +1,30 @@
+{
+  "_comment": "adj7android per-app config (adj7 / native 3.62.0 / headers_id 8). libsigner.so md5 b00fa453f379843ced688676ca677622 identical across all three apps.",
+  "hanaf": {
+    "package_name": "in.hanafintech",
+    "app_token": "smxi7gqwu39c",
+    "client_sdk": "android5.6.0",
+    "cert_sha1": "C1BFAFCAFFB84B805288B985FBE48E7F33D2C6DF",
+    "apk": "apks/hanaf_base.apk",
+    "capture": "cap/payruki_signed.json",
+    "capture_sids": [65, 66, 67, 68, 69]
+  },
+  "hunch": {
+    "package_name": "social.hunch.app",
+    "app_token": "vf3lochhmgw0",
+    "client_sdk": "flutter5.5.0@android5.5.0",
+    "cert_sha1": "AA92A18790F85D4E9B5199C7792C55F2FB0F61E1",
+    "apk": "apks/hunch_base.apk",
+    "capture": "cap/hunch_signed.json",
+    "capture_sids": [47, 48, 49]
+  },
+  "mitra": {
+    "package_name": "in.pocketmitra",
+    "app_token": "y23vaaza5vcw",
+    "client_sdk": "android5.6.0",
+    "cert_sha1": "3D4B467CAF7630C7B546E27E4AE3BC14C9FE9B17",
+    "apk": "apks/mitra_base.apk",
+    "capture": null,
+    "note": "token from resources.arsc string res id 2131886186 (y23vaaza5vcw); Adjust wrapper com.pocketmitra.space.thirdpartcore.adjust.AdjustController"
+  }
+}

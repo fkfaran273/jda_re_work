@@ -1,0 +1,9 @@
+POST https://oversee.froescik.in/add/networkInfoReport HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 1264
+Host: oversee.froescik.in
+Connection: Keep-Alive
+Accept-Encoding: gzip
+User-Agent: okhttp/5.3.2
+
+carrier=&channel=PayRupik&d_id=4c2576c7-56da-3568-9d9c-dd5ef029b6c8&device_time=1791358537842&device_type=motorola-moto+g42&device_zone=IST&json=%5B%7B%22create_time%22%3A1791358537833%2C%22domain%22%3A%22json.dynamicdns.in%22%2C%22error_no%22%3A-1020%2C%22method%22%3A%22GET%22%2C%22request_time%22%3A1791358537645%2C%22response_code%22%3A200%2C%22response_length%22%3A355%2C%22response_time%22%3A1791358537832%2C%22total_time%22%3A187%2C%22url%22%3A%22https%3A%2F%2Fjson.dynamicdns.in%2Fappdomain%2Fdomain_prod.json%3Faccess_time%5Cu003d1791358537%5Cu0026adjust_id%5Cu003d%5Cu0026app_instance_id%5Cu003d%5Cu0026app_version%5Cu003d3.0.4%5Cu0026channel%5Cu003dPayRupik%5Cu0026common_google_adid%5Cu003d%5Cu0026d_id_store%5Cu003d4c2576c7-56da-3568-9d9c-dd5ef029b6c8%5Cu0026d_sys_ver%5Cu003d12%5Cu0026language%5Cu003den-in%5Cu0026package_name%5Cu003din.hanafintech%5Cu0026package_type%5Cu003d0%22%2C%22device_type%22%3A%22motorola-moto+g42%22%2C%22platform%22%3A%22android%22%2C%22project%22%3A%22PayRupik%22%2C%22push_id%22%3A%22%22%2C%22sequence_id%22%3A%22%22%2C%22system_version%22%3A%2212%22%2C%22version%22%3A%223.0.4%22%7D%5D&network_type=wifi&platform=android&project=PayRupik&push_id=&sdk_version=1.4.3.3&sequence_id=&system_version=12%2831%29&version=3.0.4

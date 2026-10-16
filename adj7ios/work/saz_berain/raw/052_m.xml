@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="52" BitFlags="2100">
+  <SessionTimers ClientConnected="2026-05-20T09:50:11.7181669+05:30" ClientBeginRequest="2026-05-20T09:50:11.7191757+05:30" GotRequestHeaders="2026-05-20T09:50:11.7191757+05:30" ClientDoneRequest="2026-05-20T09:50:11.7191757+05:30" GatewayTime="0" DNSTime="251" TCPConnectTime="359" HTTPSHandshakeTime="839" ServerConnected="2026-05-20T09:50:12.3303056+05:30" FiddlerBeginRequest="2026-05-20T09:50:12.3303056+05:30" ServerGotRequest="2026-05-20T09:50:12.3303056+05:30" ServerBeginResponse="0001-01-01T00:00:00" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="0001-01-01T00:00:00" ClientBeginResponse="2026-05-20T09:50:12.3312855+05:30" ClientDoneResponse="2026-05-20T09:50:12.3312855+05:30" />
+  <PipeInfo />
+  <TunnelInfo BytesEgress="0" BytesIngress="0" />
+  <SessionFlags>
+    <SessionFlag N="ui-color" V="Green" />
+    <SessionFlag N="https-client-version" V="Tls12" />
+    <SessionFlag N="x-egressport" V="56279" />
+    <SessionFlag N="https-client-snihostname" V="app-analytics-services-att.com" />
+    <SessionFlag N="https-server-cipher" V="Aes128 128bits" />
+    <SessionFlag N="x-responsebodytransferlength" V="0" />
+    <SessionFlag N="x-clientip" V="::ffff:192.168.1.12" />
+    <SessionFlag N="x-clientport" V="54426" />
+    <SessionFlag N="https-server-version" V="Tls12" />
+    <SessionFlag N="ui-oldcolor" V="Gray" />
+    <SessionFlag N="ui-bold" V="user-marked" />
+    <SessionFlag N="x-hostip" V="142.251.37.78" />
+    <SessionFlag N="https-client-sessionid" V="82 1F C8 27 9F D0 25 E2 BF 03 F5 E4 2A A3 FD AC C6 73 B6 BE 01 AD B7 98 F2 DB 91 C5 27 1F 08 97" />
+    <SessionFlag N="ui-comments" V="app to open" />
+  </SessionFlags>
+</Session>

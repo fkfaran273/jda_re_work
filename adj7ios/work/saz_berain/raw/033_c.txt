@@ -1,0 +1,9 @@
+GET https://gspe35-ssl.ls.apple.com/geo_manifest/dynamic/config?application=geod&application_version=1&country_code=IN&hardware=iPhone10,1&os=ios&os_build=20H364&os_version=16.7.12 HTTP/1.1
+Host: gspe35-ssl.ls.apple.com
+If-None-Match: "ddd36225e9b58f216372b2c750a3c51df1be2681"
+Accept: */*
+User-Agent: geod/1 CFNetwork/1410.1 Darwin/22.6.0
+Accept-Language: en-US,en;q=0.9
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+

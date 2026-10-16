@@ -1,0 +1,8 @@
+GET https://static.intercomassets.com/assets/fin/fin-thinking-branded-64x64-at-2x-fc5a642eb874cd054c90cd67f66e06b63dc9ccd69d101a5d97590284a0a70b8d.gif HTTP/1.1
+Host: static.intercomassets.com
+Accept: */*
+Accept-Language: en-GB,en;q=0.9
+Connection: keep-alive
+Accept-Encoding: gzip, deflate, br
+User-Agent: hunch/3 CFNetwork/1410.1 Darwin/22.6.0
+

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="89" BitFlags="2100">
+  <SessionTimers ClientConnected="2026-05-20T09:51:07.2805141+05:30" ClientBeginRequest="2026-05-20T09:51:07.2805141+05:30" GotRequestHeaders="2026-05-20T09:51:07.2805141+05:30" ClientDoneRequest="2026-05-20T09:51:07.2805141+05:30" GatewayTime="0" DNSTime="252" TCPConnectTime="256" HTTPSHandshakeTime="629" ServerConnected="2026-05-20T09:51:07.7888781+05:30" FiddlerBeginRequest="2026-05-20T09:51:07.7888781+05:30" ServerGotRequest="2026-05-20T09:51:07.7888781+05:30" ServerBeginResponse="0001-01-01T00:00:00" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="0001-01-01T00:00:00" ClientBeginResponse="2026-05-20T09:51:07.7898791+05:30" ClientDoneResponse="2026-05-20T09:51:07.7898791+05:30" />
+  <PipeInfo />
+  <TunnelInfo BytesEgress="0" BytesIngress="0" />
+  <SessionFlags>
+    <SessionFlag N="https-client-version" V="Tls12" />
+    <SessionFlag N="x-egressport" V="56315" />
+    <SessionFlag N="x-responsebodytransferlength" V="0" />
+    <SessionFlag N="x-clientport" V="54454" />
+    <SessionFlag N="https-server-version" V="Tls12" />
+    <SessionFlag N="x-clientip" V="::ffff:192.168.1.12" />
+    <SessionFlag N="https-client-sessionid" V="9A 44 16 AD 89 25 78 21 5D 59 90 5A 3C 70 6A 72 C6 A2 69 99 6A B7 1B F5 03 17 24 A2 E8 80 67 59" />
+    <SessionFlag N="x-hostip" V="142.250.202.14" />
+    <SessionFlag N="https-client-snihostname" V="clients4.google.com" />
+    <SessionFlag N="https-server-cipher" V="Aes128 128bits" />
+  </SessionFlags>
+</Session>

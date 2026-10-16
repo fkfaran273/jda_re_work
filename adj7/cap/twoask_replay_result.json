@@ -1,0 +1,10 @@
+{
+ "ask1": [
+  200,
+  "{\"app_token\":\"smxi7gqwu39c\",\"adid\":\"eed7cbfcdebc9362f42ca8c7176f9521\",\"attribution\":{\"tracker_token\":\"g0bpyt5\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-10-07T07:35:50Z\",\"first_session_time\":\"2026-10-07T07:35:50Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ ],
+ "ask2": [
+  200,
+  "{\"app_token\":\"smxi7gqwu39c\",\"adid\":\"eed7cbfcdebc9362f42ca8c7176f9521\",\"attribution\":{\"tracker_token\":\"g0bpyt5\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-10-07T07:35:50Z\",\"first_session_time\":\"2026-10-07T07:35:50Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}"
+ ]
+}

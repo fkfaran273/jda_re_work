@@ -1,0 +1,30 @@
+GET https://api.revenuecat.com/v1/subscribers/$RCAnonymousID%3A17db0474c6b54950971c98c6a8b1a645 HTTP/1.1
+Host: api.revenuecat.com
+User-Agent: hunch/3 CFNetwork/1410.1 Darwin/22.6.0
+X-Platform-Flavor: flutter
+X-Is-Backgrounded: false
+X-RevenueCat-ETag: 
+X-Client-Build-Version: 3
+X-Apple-Device-Identifier: 97DEDAE8-ECC8-4F16-9EDD-01F464B7D1D6
+X-Client-Bundle-ID: social.hunch.app
+X-Version: 5.58.0
+X-StoreKit-Version: 2
+X-Client-Version: 3.0.1
+X-Platform-Version: Version 16.7.15 (Build 20H380)
+X-Platform: iOS
+X-Observer-Mode-Enabled: false
+X-Platform-Flavor-Version: 9.12.0
+Authorization: Bearer appl_HDvIWHQpkBySokORIiOgyKeFCdc
+X-Storefront: USA
+X-Preferred-Locales: en_BY,it_BY
+X-Platform-Device: iPhone10,1
+X-Retry-Count: 0
+Accept-Language: en-GB,en;q=0.9
+Connection: keep-alive
+Accept: */*
+Content-Type: application/json
+X-Is-Debug-Build: false
+X-StoreKit2-Enabled: true
+X-Is-Sandbox: false
+Accept-Encoding: gzip, deflate, br
+

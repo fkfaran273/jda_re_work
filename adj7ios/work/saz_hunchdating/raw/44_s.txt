@@ -1,0 +1,10 @@
+HTTP/1.1 502 Fiddler - Connection Failed
+Date: Wed, 01 Apr 2026 12:00:49 GMT
+Content-Type: text/html; charset=UTF-8
+Connection: close
+Cache-Control: no-cache, must-revalidate
+Timestamp: 17:30:49.041
+
+[Fiddler] The connection to 'analytics.adjust.com' failed.  <br />System.Security.SecurityException Failed to negotiate HTTPS connection with server.fiddler.network.https&gt; HTTPS handshake to analytics.adjust.com (for #84) failed. System.Security.Authentication.AuthenticationException A call to SSPI failed, see inner exception. &lt; The function requested is not supported
+
+Win32 (SChannel) Native Error Code: 0x80090302                                                                                        

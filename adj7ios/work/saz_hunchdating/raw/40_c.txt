@@ -1,0 +1,8 @@
+GET https://app-analytics-services.com/config/app/1:871858590108:ios:cac9a5f88767fad69eb859?platform=ios&runtime_version=0&gmp_version=111300 HTTP/1.1
+Host: app-analytics-services.com
+Accept: */*
+Accept-Language: en-GB,en;q=0.9
+Connection: keep-alive
+Accept-Encoding: gzip, deflate, br
+User-Agent: hunch/3 CFNetwork/1410.1 Darwin/22.6.0
+

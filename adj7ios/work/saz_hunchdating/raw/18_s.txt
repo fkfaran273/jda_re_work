@@ -1,0 +1,26 @@
+HTTP/1.1 200 OK
+Server: nginx
+Content-Type: application/json; charset=utf-8
+Vary: Accept-Encoding
+Access-Control-Allow-Headers: Authorization,*
+Access-Control-Allow-Methods: GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS,UPDATE
+Access-Control-Allow-Origin: *
+X-Tt-Logid: 202604011200291C81ACF1339797A273BC
+Cross-Origin-Resource-Policy: cross-origin
+x-tt-trace-host: 016557d4cd4e525d3f8f6d4c565a26e5c639ed207370c195af1614222426c6a7c35695a4a0193d0a3891e46de5a196ec4e91f77f67588d2c95f4aa5ffcd0352f0488074d2061e64f7373953aed903ea65290f7afed506bc49375da8d69bd78ebbfb2385e41b6b586fa833254b75889256fcc03b7d5a82d1f048cdcc8aeeb48b6c0
+x-tt-trace-id: 00-2604011200291C81ACF1339797A273BC-38E73FC2A3599DEE-00
+Content-Length: 1633
+X-Origin-Response-Time: 17,23.52.15.172
+X-Akamai-Request-ID: e8cc83ec.1846bfd1.25c4539
+X-Parent-Response-Time: 209,23.32.9.140
+Date: Wed, 01 Apr 2026 12:00:29 GMT
+X-Cache: TCP_MISS from a49-44-50-23.deploy.akamaitechnologies.com (AkamaiGHost/22.4.5-f6127473d93ee4320e9a40154546bf6e) (-)
+Connection: keep-alive
+X-Cache-Remote: TCP_MISS from a23-32-9-140.deploy.akamaitechnologies.com (AkamaiGHost/22.4.4-cf5672731e69c345796af56199edfb50) (-)
+X-Check-Cacheable: NO
+x-tt-trace-tag: id=16;cdn-cache=miss;type=dyn
+Server-Timing: cdn-cache; desc=MISS, edge; dur=200, origin; dur=16
+Server-Timing: inner; dur=12
+X-Parent-Response-Time: 213,49.44.50.23
+
+{"code":0,"data":{"business_sdk_config":{"auto_track_Install_enable":true,"auto_track_Launch_enable":true,"auto_track_Payment_enable":true,"auto_track_Retention_enable":true,"available_version":"v1.2","crash_monitor_enable":true,"domain":"analytics.us.tiktok.com","enable_debug_info":true,"enable_debug_mode":false,"enable_sdk":true,"enhanced_data_postback_native_config":{"button_black_list":["UnityView","com.unity3d.player.UnityPlayer"],"enable_app_launch_track":true,"enable_click_track":true,"enable_page_show_track":true,"enable_pay_show_track":true,"enable_sdk":false,"enable_sync_get_touch_position":true,"enable_webview_request_track":false,"page_detail_upload_deep_count":12,"report_frequency_control":1,"sensig_filtering_regex_list":["([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\\.[a-zA-Z0-9._-]+)|(\\+?0?86-?)?1[3-9]\\d{9}|(\\+\\d{1,2}\\s?)?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}"],"sensig_filtering_regex_version":1,"time_diff_frequency_control":0.3},"enhanced_data_postback_unity_config":{"button_black_list":[],"enable_click_track":true,"enable_resource_track":false,"enable_scene_track":true,"enable_sdk":false,"page_detail_upload_deep_count":12,"report_frequency_control":1,"sensig_filtering_regex_list":["([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\\.[a-zA-Z0-9._-]+)|(\\+?0?86-?)?1[3-9]\\d{9}|(\\+\\d{1,2}\\s?)?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}"],"sensig_filtering_regex_version":1,"time_diff_frequency_control":0.3},"non_tracking_domain":"analytics.us.tiktok.com","skan4_exchange_err_report_rate":0.01,"tracking_domain":"analytics-tracksafe.tiktokads.us"}},"message":"OK","request_id":"202604011200291C81ACF1339797A273BC"}

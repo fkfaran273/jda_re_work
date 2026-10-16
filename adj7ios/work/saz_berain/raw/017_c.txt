@@ -1,0 +1,13 @@
+POST https://analytics.adjust.com/session HTTP/1.1
+Host: analytics.adjust.com
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Berain-Swift/1 CFNetwork/1410.1 Darwin/22.6.0
+Client-Sdk: ios5.5.2
+Connection: keep-alive
+Accept: */*
+Accept-Language: ar
+Authorization: Signature signature="19467F477160F56477F3663A71D21817BC8498F502E2BADCC6FA9EB6152A9D1F490A4C2A7BE5F0363E1F2EC68AA3009C851E18663F2E967998EF8B6870CD449937966EF95826190983621CC164C9519DA3815EA1D6CA8FF7D4C0F1BB056BD598C76266CF130AD8F0E7F917D030760DB0B648A4568FEF22D7572D262FA0A21A210EB580015C898817C6DBDB35D949E11EC4B10A07E86B3CAA22DE50976854A72FCF910F4E0A334AFB940C9B1497BB9357D29EB6412E9CACFBC9DD09372D6C4C58F7D3F0500779536D8AED2E18CBA76524F4DF7E4053C1228418E3DC702018E88EFEEC4386FB6E1EDABCF80B500D2900DAA9845F6E286A85305CAD431987808C1DA86E020ADBDC24324C84D3985B7BFEBAC4060EF43DA9F79E00011A007CF3EF8E82A9D9485DCF2D57E5CE9AA89D0D456D",adj_signing_id="1300000",algorithm="adj7",headers_id="8",native_version="3.62.0"
+Content-Length: 717
+Accept-Encoding: gzip, deflate, br
+
+bundle_id=com.berain.berain&primary_dedupe_token=471fd96d-cbb5-4bae-80f2-13307b2d8e8a&app_version=1&installed_at=2026-05-20T00%3A17%3A55.604Z-0400&background=1&app_version_short=4.4.0&retry_count=0&device_name=iPhone10%2C1&needs_response_details=1&attribution_deeplink=1&queue_size=1&session_count=1&os_name=ios&send_in_background_enabled=0&enqueue_size=0&idfv=F40C31FB-1D8B-4028-8683-E31B7104E844&app_token=xb80fzavg0zk&os_version=16.7.12&environment=production&callback_params=%7B%22CleverTapAccountID%22%3A%22R9Z-W4R-9W6Z%22%7D&started_at=2026-04-21T06%3A12%3A44.000Z-0400&sent_at=2026-05-20T00%3A19%3A55.442Z-0400&created_at=2026-05-20T00%3A19%3A55.257Z-0400&offline_mode_enabled=0&device_type=iPhone&att_status=0

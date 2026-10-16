@@ -1,0 +1,8 @@
+GET https://gspe19-ssl.ls.apple.com/tile.vf?style=68&size=2&scale=0&v=19457475&z=14&x=9779&y=8486&vlang=en&preflight=2&accessKey=1779254996_jXcVxuBu4IMjVDsR_aj%2B4xmmikSa3C%2BfXpFalmQyMo%2F%2B37HM1tBFjaJWOL5pk1sXFGI4aT1V58%2FrGjFr6D02xRryG4UHZPPChAoAUbuaCLwU65uAsm8A3EHwWfpy4vCv3rzQQu6UGBf2pIGdidf3U9FUsvOJinM3DpG%2BQvQ%3D%3D HTTP/1.1
+Host: gspe19-ssl.ls.apple.com
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Accept-Encoding: gzip, deflate, br
+User-Agent: 20H364
+

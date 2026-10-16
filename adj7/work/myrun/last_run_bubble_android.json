@@ -1,0 +1,20 @@
+{
+ "mode": "live",
+ "app": "com.bugbomb.dumptruckjam",
+ "gaid": "56ddbf71-e187-42fd-85df-9ef2f771a07a",
+ "android_uuid": "97e91c52-7ff2-45d7-a0e8-429e1708c2fc",
+ "reftag": "adjust_reftag=cnXPF4tRD2Qg6&utm_source=GlobalWide+Media+Agency&utm_campaign=AH&utm_content=43407",
+ "click_second": 1791559092,
+ "adid": "5a918b6813fc006efb80e75db2d013e8",
+ "session_ask_in": 2000,
+ "attribution": {
+  "tracker_token": "1kj0shkc",
+  "tracker_name": "Organic",
+  "network": "Organic",
+  "engagement_time": "0001-01-01T00:00:00Z",
+  "installed_at": "2026-10-09T15:18:38Z",
+  "first_session_time": "2026-10-09T15:18:38Z",
+  "is_reattributed": false,
+  "is_redownload_install": false
+ }
+}

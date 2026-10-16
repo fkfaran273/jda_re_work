@@ -1,0 +1,22 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+Vary: Origin
+Vary: X-Origin
+Vary: Referer
+Date: Wed, 01 Apr 2026 12:00:29 GMT
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Content-Length: 625
+
+{
+  "name": "projects/871858590108/installations/clrbFqvrdUNEt4BdZuiSlY",
+  "fid": "clrbFqvrdUNEt4BdZuiSlY",
+  "refreshToken": "3_AS3qfwKfgvPjRnBxbguZYmiXgarPmqLhFSWY7_2uA9fdh4ZxzcbSO_FWuI4gBuEK1lw2x2Zzqp_t-fOvv5wyM0O7LB308TvM3f3JwvgLmTtYeRA",
+  "authToken": {
+    "token": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6IjE6ODcxODU4NTkwMTA4OmlvczpjYWM5YTVmODg3NjdmYWQ2OWViODU5IiwiZXhwIjoxNzc1NjQ5NjI5LCJmaWQiOiJjbHJiRnF2cmRVTkV0NEJkWnVpU2xZIiwicHJvamVjdE51bWJlciI6ODcxODU4NTkwMTA4fQ.AB2LPV8wRQIgAeiMQrgUgw6K77Dl2nfiglucb04120ccsccyhlThvJQCIQDi7FPDRKXDZmuIz69RmnxqkSdTExQnoIvFd0GtXss23A",
+    "expiresIn": "604800s"
+  }
+}

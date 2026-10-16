@@ -1,0 +1,15 @@
+HTTP/1.1 200
+Content-Type: application/json
+Connection: keep-alive
+Date: Wed, 01 Apr 2026 12:00:28 GMT
+Strict-Transport-Security: max-age=16070400; includeSubDomains
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: *
+vary: accept-encoding
+X-Cache: Miss from cloudfront
+Via: 1.1 75aefb46842baff498bf4f0dd1592dc0.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: DEL51-P6
+X-Amz-Cf-Id: UiKkqM0avzxiEf8upmSgd6Yz5murQV0xLES4jc7zP_SP9dw_4Qa23A==
+Content-Length: 91
+
+{"status":"success","message":"Your request has been accepted and will be processed soon."}

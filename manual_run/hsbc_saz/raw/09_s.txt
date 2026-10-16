@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+content-type: application/json; charset=utf-8
+date: Fri, 16 Oct 2026 09:29:39 GMT
+content-length: 996
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-robots-tag: noindex
+
+{"app_token":"y5qirhnmpxj4","adid":"8e464677a0b15eb835af9f1c123a06d6","attribution":{"tracker_token":"21pk0t6f","tracker_name":"DoubleJump_Fon_CPA_v2","network":"DoubleJump_Fon_CPA_v2","deeplink":"hsbc-2ygt9mccsk://?adj_ad_group=%7Bagent%7D\u0026adj_advertising_id=doublejump\u0026adj_click_id=6Rba4UpIcS0LA9yIweMLPp\u0026adj_event_callback_s6k6jk_k0gki6_lckd9o_4sdthk_9toeh6_q5cb93=http%3A%2F%2Fec2-13-126-162-113.ap-south-1.compute.amazonaws.com%2Fapi%2Ftrack%2Fv1%2Fevents%3Fclick_id%3D6Rba4UpIcS0LA9yIweMLPp%26goal%3D%7Bevent%7D\u0026adj_gps_adid=%7Bgaid%7D\u0026adj_install_callback=http%3A%2F%2Fec2-13-126-162-113.ap-south-1.compute.amazonaws.com%2Fapi%2Ftrack%2Fv1%2Fpostback%3Fclick_id%3D6Rba4UpIcS0LA9yIweMLPp\u0026adj_offer_id=hsb2doummp\u0026adj_p_sub1=adjust\u0026adj_t=21pk0t6f\u0026adjust_no_sdkclick=1","engagement_time":"2026-10-16T09:29:02Z","installed_at":"2026-10-16T09:29:35Z","first_session_time":"2026-10-16T09:29:35Z","is_reattributed":false,"is_redownload_install":false}}

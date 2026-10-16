@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="18" BitFlags="2100">
+  <SessionTimers ClientConnected="2026-05-20T09:49:57.672774+05:30" ClientBeginRequest="2026-05-20T09:49:57.6737717+05:30" GotRequestHeaders="2026-05-20T09:49:57.6737717+05:30" ClientDoneRequest="2026-05-20T09:49:57.6737717+05:30" GatewayTime="0" DNSTime="256" TCPConnectTime="257" HTTPSHandshakeTime="634" ServerConnected="2026-05-20T09:49:58.1871793+05:30" FiddlerBeginRequest="2026-05-20T09:49:58.1871793+05:30" ServerGotRequest="2026-05-20T09:49:58.1871793+05:30" ServerBeginResponse="0001-01-01T00:00:00" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="0001-01-01T00:00:00" ClientBeginResponse="2026-05-20T09:49:58.1871793+05:30" ClientDoneResponse="2026-05-20T09:49:58.1871793+05:30" />
+  <PipeInfo />
+  <TunnelInfo BytesEgress="0" BytesIngress="0" />
+  <SessionFlags>
+    <SessionFlag N="ui-color" V="Green" />
+    <SessionFlag N="https-client-version" V="Tls12" />
+    <SessionFlag N="x-egressport" V="56264" />
+    <SessionFlag N="https-client-snihostname" V="fcmtoken.googleapis.com" />
+    <SessionFlag N="https-server-cipher" V="Aes256 256bits" />
+    <SessionFlag N="x-responsebodytransferlength" V="0" />
+    <SessionFlag N="x-clientip" V="::ffff:192.168.1.12" />
+    <SessionFlag N="x-clientport" V="54409" />
+    <SessionFlag N="https-server-version" V="Tls12" />
+    <SessionFlag N="ui-oldcolor" V="Gray" />
+    <SessionFlag N="ui-bold" V="user-marked" />
+    <SessionFlag N="x-hostip" V="142.250.203.170" />
+    <SessionFlag N="https-client-sessionid" V="A6 30 07 2D 40 90 41 46 3A AE C0 EA F2 B2 62 13 7D 97 8A FD CC 7B 7A F5 E0 B3 71 16 96 3C 22 C5" />
+    <SessionFlag N="ui-comments" V="app to open" />
+  </SessionFlags>
+</Session>

@@ -1,0 +1,21 @@
+{
+ "mode": "live",
+ "app": "social.hunch.app",
+ "idfa": "343EEBBD-D29F-4DE2-8A31-5DE51A37B6F8",
+ "idfv": "032BD35A-A939-4621-ADCE-AE199D4C7316",
+ "dedupe": "326f03ef-6b9f-4aee-a12d-4d0007131fb1",
+ "reftag": null,
+ "click_second": 1791542702,
+ "adid": "76d4bbed7ed289bacc234d66d30b54e7",
+ "session_ask_in": 2000,
+ "attribution": {
+  "tracker_token": "yuzxv6m",
+  "tracker_name": "Organic",
+  "network": "Organic",
+  "engagement_time": "0001-01-01T00:00:00Z",
+  "installed_at": "2026-10-09T10:45:25Z",
+  "first_session_time": "2026-10-09T10:45:25Z",
+  "is_reattributed": false,
+  "is_redownload_install": false
+ }
+}

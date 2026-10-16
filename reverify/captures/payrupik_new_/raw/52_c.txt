@@ -1,9 +1,0 @@
-GET https://graph.facebook.com/v16.0/app?access_token=2396553313942435%7Ccadf87a25aa2c0e89dd204c750f26545&fields=supports_implicit_sdk_logging%2Cgdpv4_nux_content%2Cgdpv4_nux_enabled%2Candroid_dialog_configs%2Candroid_sdk_error_categories%2Capp_events_session_timeout%2Capp_events_feature_bitmask%2Cauto_event_mapping_android%2Cseamless_login%2Csmart_login_bookmark_icon_url%2Csmart_login_menu_icon_url%2Crestrictive_data_filter_params%2Caam_rules%2Csuggested_events_setting%2Cprotected_mode_rules%2Cauto_log_app_events_default%2Cauto_log_app_events_enabled%2Capp_events_config.os_version(12)&format=json&sdk=android HTTP/1.1
-User-Agent: FBAndroidSDK.18.2.3
-Accept-Language: en_IN
-Content-Type: application/x-www-form-urlencoded
-Content-Encoding: gzip
-Host: graph.facebook.com
-Connection: Keep-Alive
-Accept-Encoding: gzip
-

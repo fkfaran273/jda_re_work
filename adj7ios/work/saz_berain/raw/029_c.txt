@@ -1,0 +1,17 @@
+POST https://fbs.smoot.apple.com/fb?key=cockatoo1790&type=Usage&v=2 HTTP/1.1
+Host: fbs.smoot.apple.com
+Content-Type: application/protobuf
+Connection: keep-alive
+Accept: */*
+X-Apple-Digest: 87fc23845fb8b67435f75b302d5203c850d6ec6e82963ebb8f40962ea12c673a422bdfcb8d15c12f29db18a519a59de6eb2bcaa5607ce81bb6ded954c9dc6f63
+User-Agent: parsecd/1 (iPhone10,1; iPhone OS 16.7.12 20H364) parsecd/1
+Content-Length: 102
+Accept-Language: en-US,en;q=0.9
+Accept-Encoding: gzip, deflate, br
+
+
+1¿ù™–¿¿Ø–*
+IN
+iPhone10,1en_US"20H3640r
+IN
+iPhone10,1en_US"20H364z¬ƒDõüJï°áF§&…

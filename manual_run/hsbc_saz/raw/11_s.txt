@@ -1,0 +1,8 @@
+HTTP/1.1 200 OK
+Date: Fri, 16 Oct 2026 09:29:40 GMT
+Content-Length: 44
+Connection: keep-alive
+Server: nginx
+X-Gateway-Host: 357060b5e344240f7c346b358da6ad75488e97a2db4aa0122f2623ab3f02d73651c064c0ff08f84535d8d3fb2327acc2
+
+{ "code": 200,"msg": "success","data": null}

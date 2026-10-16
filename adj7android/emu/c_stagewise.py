@@ -1,0 +1,85 @@
+# Stage-by-stage verification of block 0's pipeline vs traced states.
+import gzip
+
+SBOX = bytes.fromhex(
+ "637c777bf26b6fc53001672bfed7ab76ca82c97dfa5947f0add4a2af9ca472c0"
+ "b7fd9326363ff7cc34a5e5f171d8311504c723c31896059a071280e2eb27b275"
+ "09832c1a1b6e5aa0523bd6b329e32f8453d100ed20fcb15b6acbbe394a4c58cf"
+ "d0efaafb434d338545f9027f503c9fa851a3408f929d38f5bcb6da2110fff3d2"
+ "cd0c13ec5f974417c4a77e3d645d197360814fdc222a908846eeb814de5e0bdb"
+ "e0323a0a4906245cc2d3ac629195e479e7c8376d8dd54ea96c56f4ea657aae08"
+ "ba78252e1ca6b4c6e8dd741f4bbd8b8a703eb5664803f60e613557b986c11d9e"
+ "e1f8981169d98e949b1e87e9ce5528df8ca1890dbfe6426841992d0fb054bb16")
+
+
+def xt(a):
+    a <<= 1
+    return (a ^ 0x1B) & 0xFF if a & 0x100 else a
+
+
+def gmul(a, b):
+    p = 0
+    for _ in range(8):
+        if b & 1:
+            p ^= a
+        a = xt(a)
+        b >>= 1
+    return p
+
+
+def mc_col(c):
+    return bytes([
+        gmul(c[0], 2) ^ gmul(c[1], 3) ^ c[2] ^ c[3],
+        c[0] ^ gmul(c[1], 2) ^ gmul(c[2], 3) ^ c[3],
+        c[0] ^ c[1] ^ gmul(c[2], 2) ^ gmul(c[3], 3),
+        gmul(c[0], 3) ^ c[1] ^ c[2] ^ gmul(c[3], 2)])
+
+
+def sb(s):
+    return bytes(SBOX[b] for b in s)
+
+
+def sr(s):
+    o = list(s)
+    for r in range(1, 4):
+        row = [s[4 * c + r] for c in range(4)]
+        row = row[r:] + row[:r]
+        for c in range(4):
+            o[4 * c + r] = row[c]
+    return bytes(o)
+
+
+def mc(s):
+    return b"".join(mc_col(s[4 * i:4 * i + 4]) for i in range(4))
+
+
+STLO, KEYLO = 0x900e6e8, 0x900e3e8
+stw = []
+evi = 0
+with gzip.open("trace4.txt.gz", "rt") as f:
+    for line in f:
+        p = line.split()
+        if p[0] == "W":
+            a = int(p[2], 16)
+            s_ = int(p[3])
+            if s_ == 4 and STLO <= a < STLO + 1024 and (a - STLO) % 4 == 0:
+                stw.append((evi, (a - STLO) // 4,
+                            int(p[4], 16) & 0xFF))
+        evi += 1
+
+# collect chronological ST[0..15] write layers: a layer = maximal run where
+# each next write hits a NEW idx (not yet written in this layer)
+layers = []
+cur = {}
+for e, idx, v in stw:
+    if idx >= 16:
+        break
+    if idx in cur:
+        layers.append(cur)
+        cur = {}
+    cur[idx] = v
+layers.append(cur)
+print("layers:", len(layers))
+for li, L in enumerate(layers):
+    vals = bytes(L.get(i, 0) for i in range(16))
+    print("layer %2d (ev?) n=%2d : %s" % (li, len(L), vals.hex()))

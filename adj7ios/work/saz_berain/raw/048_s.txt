@@ -1,0 +1,33 @@
+HTTP/1.1 200 Connection Established
+FiddlerGateway: Direct
+StartTime: 09:50:10.326
+Connection: close
+
+Encrypted HTTPS traffic flows through this CONNECT tunnel. HTTPS Decryption is enabled in Fiddler, so decrypted sessions running in this tunnel will be shown in the Web Sessions list.
+
+Secure Protocol: Tls12
+Cipher: Aes128 128bits
+Hash Algorithm: Sha256 ?bits
+Key Exchange: ECDHE_RSA (0xae06) 255bits
+
+== Server Certificate ==========
+[Subject]
+  CN=*.google-analytics.com
+
+[Issuer]
+  CN=WR2, O=Google Trust Services, C=US
+
+[Serial Number]
+  00E0F920737EB24A4A12CC9001E2D29124
+
+[Not Before]
+  20-Apr-26 2:05:05 PM
+
+[Not After]
+  13-Jul-26 2:05:04 PM
+
+[Thumbprint]
+  E7E46210D04A344C5281208A193709ACCB164254
+
+[SubjectAltNames]
+*.google-analytics.com, region1.app-measurement.com, app-measurement.com, region1.att.app-measurement.com, att.app-measurement.com, region1.analytics.app-measurement.com, analytics.app-measurement.com, region1.app-analytics-services-att.com, app-analytics-services-att.com, region1.app-analytics-services.com, app-analytics-services.com, google-analytics.com, region1.google-analytics.com, ssl.google-analytics.com, www.google-analytics.com, region1.analytics.google.com, googletagmanager.com, www.googletagmanager.com, urchin.com, service.urchin.com, fps.goog, *.fps.goog, googleoptimize.com, www.googleoptimize.com

@@ -1,0 +1,11 @@
+POST https://app.tr.adjust.com/sdk_click HTTP/1.1
+Client-SDK: android5.0.0
+Authorization: Signature signature="MZIR7wZf6Q48CTVQMx0mkcsTCJpgTuL8neTLVhNhXUmLaLEB1lNtZIq2h0r/z3yR1QWhQJCt/n6sRTAvw9aOtpMFc9l4429QUowDn5dB6fUoMNMK0qQG2jMyUSIi+vU5gwaiYZeEz2tKsuPjZUvoO0HJJTPYTU2sMMy6HukqeNfPh8X3ivE4WSqPZ31lhyD1faG5q0BzfADmVhIqJyI+8bmkH6RFpjLn8tJkMjRQm9bBP+EL7AlixmgI+g2meWh2",adj_signing_id="1500000",algorithm="adj9",headers_id="11",native_version="5.5.0",adj_verification="KlcAG2cbAAsKSl1KVi0FGiJbDHMI"
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; GM1901 Build/SKQ1.211113.001)
+Host: app.tr.adjust.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 1266
+
+country=US&api_level=31&hardware_name=GM1901_11_H.41&app_version=1.8.6&app_token=y5qirhnmpxj4&installed_at=2026-10-16T14%3A59%3A16.081Z%2B0530&device_type=phone&language=en&gps_adid=d4ba96a1-88a7-424a-ab4e-690885714b30&source=install_referrer&foreground=1&connectivity_type=1&os_build=SKQ1.211113.001&click_time=2026-10-16T14%3A59%3A05.000Z%2B0530&cpu_type=arm64-v8a&install_version=1.8.6&screen_size=normal&gps_adid_src=service&subsession_count=1&sent_at=2026-10-16T14%3A59%3A35.679Z%2B0530&offline_mode_enabled=0&screen_density=high&session_count=1&ui_mode=1&gps_adid_attempt=1&session_length=0&created_at=2026-10-16T14%3A59%3A35.656Z%2B0530&referrer_api=google&device_manufacturer=OnePlus&display_width=1080&time_spent=0&device_name=GM1901&needs_response_details=1&updated_at=2026-10-16T14%3A59%3A16.081Z%2B0530&screen_format=long&click_time_server=2026-10-16T14%3A59%3A03.000Z%2B0530&os_version=12&google_play_instant=0&install_begin_time_server=2026-10-16T14%3A59%3A04.000Z%2B0530&android_uuid=f5bc5772-c8f0-4f86-abbd-e1711f0c4166&referrer=adjust_reftag%3Dcs1KA4eV6KFdc&environment=production&attribution_deeplink=1&install_begin_time=2026-10-16T14%3A59%3A06.000Z%2B0530&display_height=2215&package_name=tr.com.hsbc.hsbcturkey&os_name=android&tracking_enabled=1

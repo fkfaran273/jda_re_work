@@ -1,0 +1,14 @@
+POST https://app-analytics-services.com/sdk-exp HTTP/1.1
+Host: app-analytics-services.com
+Content-Type: application/x-www-form-urlencoded
+Connection: keep-alive
+Accept: */*
+Accept-Language: ar
+Content-Length: 81
+Accept-Encoding: gzip, deflate, br
+User-Agent: Berain-Swift/1 CFNetwork/1410.1 Darwin/22.6.0
+
+
+!
+ios"ar*com.berain.berain08êN,
+app_measurementFD03D-app_measurementåÁ

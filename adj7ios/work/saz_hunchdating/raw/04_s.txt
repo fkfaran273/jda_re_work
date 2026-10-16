@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 85
+Connection: keep-alive
+Date: Wed, 01 Apr 2026 12:00:28 GMT
+X-Content-Type-Options: nosniff
+Server: nginx
+access-control-allow-origin: *
+access-control-allow-methods: GET, POST, OPTIONS, DELETE, PUT, PATCH
+access-control-allow-headers: DNT, User-Agent, X-Requested-With, If-Modified-Since,Cache-Control, Content-Type, Range, MOE-DBNAME, MOE-APPKEY,MOE-REQUEST-ID, MOE-UNIQUE-ID, MOE-APPSECRET, MOE-INAPP-BATCH-ID, MOE-DASHBOARD-USER-ID, MOE-PROJECT-CODE
+moe-request-id: BvXRosWe
+Strict-Transport-Security: max-age=16070400; includeSubDomains
+X-Cache: Miss from cloudfront
+Via: 1.1 2acd55b320d9acd45150ff82d29b3b7c.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: DEL51-P6
+X-Amz-Cf-Id: xCADOppparBMxAxe1oMnvZf1WQ3qoQXHc-IM_O10pm3vVYrT5HF87Q==
+
+{"campaigns": [], "min_delay_btw_inapps": 0, "sync_interval": 900, "fc_settings": {}}

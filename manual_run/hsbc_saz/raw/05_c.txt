@@ -1,0 +1,22 @@
+POST https://icosa-service-us.allawnos.com/cosa/apk/info HTTP/1.1
+trackRegion: 
+otaVersion: GM1901_11.H.41_4410_202303231755
+romVersion: GM1901_11_H.41
+sign: 17d812d5b9716ff34da2974fe965481e41fdadc4f4c974b39925683606596ead
+language: en-US
+oplusOSVersion: V12.1
+operator: 
+uRegion: 
+androidVersion: 12
+cosaVersion: 12.0.207
+guid: C9655F4536B84D948F11B219D7A17DA9EC7D424979CC9C518DFD3D467BCBBBF3
+model: 18857
+timestamp: 1792142975055
+Content-Type: application/json; charset=utf-8
+Content-Length: 26
+Host: icosa-service-us.allawnos.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+User-Agent: okhttp/3.14.9
+
+["tr.com.hsbc.hsbcturkey"]

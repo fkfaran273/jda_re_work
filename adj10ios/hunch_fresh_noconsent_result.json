@@ -1,0 +1,6 @@
+{
+ "idfv": "398EEE06-E644-499F-BA9C-7C2E0267340F",
+ "adid": "94f9cb677ba6a43f306d40c932d343e0",
+ "resp": "{\"app_token\":\"vf3lochhmgw0\",\"adid\":\"94f9cb677ba6a43f306d40c932d343e0\",\"attribution\":{\"tracker_token\":\"yuzxv6m\",\"tracker_name\":\"Organic\",\"network\":\"Organic\",\"engagement_time\":\"0001-01-01T00:00:00Z\",\"installed_at\":\"2026-10-08T13:13:37Z\",\"first_session_time\":\"2026-10-08T13:13:37Z\",\"is_reattributed\":false,\"is_redownload_install\":false}}",
+ "verdict": "Organic"
+}

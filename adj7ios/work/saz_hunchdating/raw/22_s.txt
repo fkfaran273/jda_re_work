@@ -1,0 +1,22 @@
+HTTP/1.1 201 Created
+Content-Type: application/json
+Connection: keep-alive
+Date: Wed, 01 Apr 2026 12:00:29 GMT
+x-request-id: cf5537a0-4b64-4ab3-83af-54312089bf5b
+server: envoy
+x-revenuecat-etag: f7c5aff32b0424bb
+access-control-allow-origin: *
+access-control-expose-headers: X-Request-Id
+x-revenuecat-request-time: 1775044829878
+x-amzn-trace-id: Root=1-69cd08dd-7ff2eedf5e13dda85cfc2fdd
+x-envoy-upstream-service-time: 52
+vary: Accept-Encoding
+X-Cache: Miss from cloudfront
+Via: 1.1 8d05679762b7d5d0c2d70cc1efe5e6f0.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: DEL51-P5
+Alt-Svc: h3=":443"; ma=86400
+X-Amz-Cf-Id: JWSm_-GAw8aOL6xJuYgxmQ1ImOwRUjgsPJ_oarD1Elr8EuKZv_thLw==
+Server-Timing: cdn-upstream-layer;desc="EDGE",cdn-upstream-dns;dur=0,cdn-upstream-connect;dur=0,cdn-upstream-fbl;dur=287,cdn-cache-miss,cdn-pop;desc="DEL51-P5",cdn-rid;desc="JWSm_-GAw8aOL6xJuYgxmQ1ImOwRUjgsPJ_oarD1Elr8EuKZv_thLw==",cdn-downstream-fbl;dur=291
+Content-Length: 400
+
+{"request_date":"2026-04-01T12:00:29Z","request_date_ms":1775044829877,"subscriber":{"entitlements":{},"first_seen":"2026-04-01T12:00:29Z","last_seen":"2026-04-01T12:00:29Z","management_url":null,"non_subscriptions":{},"original_app_user_id":"$RCAnonymousID:17db0474c6b54950971c98c6a8b1a645","original_application_version":null,"original_purchase_date":null,"other_purchases":{},"subscriptions":{}}}

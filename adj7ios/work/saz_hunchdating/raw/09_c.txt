@@ -1,0 +1,13 @@
+POST https://firebaseinstallations.googleapis.com/v1/projects/hunch-prod-e1130/installations/ HTTP/1.1
+Host: firebaseinstallations.googleapis.com
+Content-Type: application/json
+User-Agent: hunch/3 CFNetwork/1410.1 Darwin/22.6.0
+X-Ios-Bundle-Identifier: social.hunch.app
+Connection: keep-alive
+Accept: */*
+Accept-Language: en-GB,en;q=0.9
+X-Goog-Api-Key: AIzaSyAXjuGrXJSjtHCmulJqfDvcXt6-FO1GQsU
+Content-Length: 132
+Accept-Encoding: gzip, deflate, br
+
+{"appId":"1:871858590108:ios:cac9a5f88767fad69eb859","fid":"clrbFqvrdUNEt4BdZuiSlY","authVersion":"FIS_v2","sdkVersion":"i:11.13.0"}

@@ -1,0 +1,38 @@
+[
+ [
+  "full (runner LINK)",
+  302,
+  "https://apps.apple.com/app/id1629451356?mt=8",
+  "a5488f503fbeec75681a63d95f4d4ae8=c4mX7U6U7RfDP; Path=/; Doma"
+ ],
+ [
+  "no ip_address",
+  302,
+  "https://apps.apple.com/app/id1629451356?mt=8",
+  "ab85f4a47a4f65c0ec190c17cbda6101=cSWWRSGMKDfT8; Path=/; Doma"
+ ],
+ [
+  "campaign only",
+  302,
+  "https://apps.apple.com/app/id1629451356?mt=8",
+  "91afdd50853ddd30188e3f3dd5bdd80a=ceULi7uw23QXi; Path=/; Doma"
+ ],
+ [
+  "idfa only",
+  302,
+  "https://apps.apple.com/app/id1629451356?mt=8",
+  "24dad23ecc3e79426c5c9112d4ac7ac0=cEC7KC3ItQ06S; Path=/; Doma"
+ ],
+ [
+  "idfa+gps_adid",
+  302,
+  "https://apps.apple.com/app/id1629451356?mt=8",
+  "ecfa36193efbef7f8035306eb1e3878c=cZLyWzUCylsd5; Path=/; Doma"
+ ],
+ [
+  "bundle only",
+  302,
+  "https://apps.apple.com/app/id1629451356?mt=8",
+  "19cb648188a6c4d88764773f16640b84=cREFT3xvdcGJd; Path=/; Doma"
+ ]
+]

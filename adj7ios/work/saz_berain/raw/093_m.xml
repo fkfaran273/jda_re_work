@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="95" BitFlags="2100">
+  <SessionTimers ClientConnected="2026-05-20T09:51:11.1431915+05:30" ClientBeginRequest="2026-05-20T09:51:11.1431915+05:30" GotRequestHeaders="2026-05-20T09:51:11.1431915+05:30" ClientDoneRequest="2026-05-20T09:51:11.1431915+05:30" GatewayTime="0" DNSTime="0" TCPConnectTime="278" HTTPSHandshakeTime="261" ServerConnected="2026-05-20T09:51:11.4214484+05:30" FiddlerBeginRequest="2026-05-20T09:51:11.4214484+05:30" ServerGotRequest="2026-05-20T09:51:11.4214484+05:30" ServerBeginResponse="0001-01-01T00:00:00" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="0001-01-01T00:00:00" ClientBeginResponse="2026-05-20T09:51:11.4214484+05:30" ClientDoneResponse="2026-05-20T09:51:11.4214484+05:30" />
+  <PipeInfo />
+  <TunnelInfo BytesEgress="0" BytesIngress="0" />
+  <SessionFlags>
+    <SessionFlag N="https-client-version" V="Tls12" />
+    <SessionFlag N="x-egressport" V="56318" />
+    <SessionFlag N="x-responsebodytransferlength" V="0" />
+    <SessionFlag N="x-clientport" V="54457" />
+    <SessionFlag N="https-server-version" V="Tls12" />
+    <SessionFlag N="x-clientip" V="::ffff:192.168.1.12" />
+    <SessionFlag N="https-client-sessionid" V="B5 76 44 50 BC 47 55 64 32 B9 95 04 F1 2B DA 12 63 7C 52 D5 32 B0 AB 01 17 D5 B3 B1 FC B8 8B 3F" />
+    <SessionFlag N="x-hostip" V="3.161.104.102" />
+    <SessionFlag N="https-client-snihostname" V="cdn.berain.com.sa" />
+    <SessionFlag N="https-server-cipher" V="Aes128 128bits" />
+  </SessionFlags>
+</Session>

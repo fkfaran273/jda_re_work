@@ -1,0 +1,56 @@
+CONNECT gateway.icloud.com:443 HTTP/1.1
+Host: gateway.icloud.com
+Connection: keep-alive
+Connection: keep-alive
+
+A SSLv3-compatible ClientHello handshake was found. Fiddler extracted the parameters below.
+
+Version: 3.3 (TLS/1.2)
+Random: 0B 2C 04 82 71 DE 08 D0 ED D7 8A C1 F4 77 D9 93 80 D2 B5 F3 67 35 05 A3 94 EF 53 00 EE B4 C3 CE
+"Time": 14-Feb-39 9:21:39 PM
+SessionID: 15 4A 72 CE 23 2E 60 8A 66 B9 F1 06 00 2A B1 BD 22 20 C9 B8 43 E6 6F F8 E7 F7 A3 26 0F 2A 1E 13
+Extensions: 
+	grease (0x8a8a)	empty
+	server_name	gateway.icloud.com
+	extended_master_secret	empty
+	renegotiation_info	00
+	supported_groups	grease [0xaaaa], x25519 [0x1d], secp256r1 [0x17], secp384r1 [0x18], secp521r1 [0x19]
+	ec_point_formats	uncompressed [0x0]
+	ALPN		h2, http/1.1
+	status_request	OCSP - Implicit Responder
+	signature_algs	ecdsa_secp256r1_sha256, rsa_pss_rsae_sha256, rsa_pkcs1_sha256, ecdsa_secp384r1_sha384, ecdsa_sha1, rsa_pss_rsae_sha384, rsa_pss_rsae_sha384, rsa_pkcs1_sha384, rsa_pss_rsae_sha512, rsa_pkcs1_sha512, rsa_pkcs1_sha1
+	SignedCertTimestamp (RFC6962)	empty
+	key_share	00 29 AA AA 00 01 00 00 1D 00 20 05 9D CB FA 4A 00 85 00 B4 3D 57 88 4F B7 CF 71 CB 6A 18 82 35 8B E7 53 0E BE EC 2F 8E 2B 1F 21
+	psk_key_exchange_modes	01 01
+	supported_versions	grease [0xcaca], Tls1.3, Tls1.2, Tls1.1, Tls1.0
+	0x001b		02 00 01
+	grease (0xa0a)	00
+	padding		186 null bytes
+Ciphers: 
+	[CACA]	Unrecognized cipher - See https://www.iana.org/assignments/tls-parameters/
+	[1301]	TLS_AES_128_GCM_SHA256
+	[1302]	TLS_AES_256_GCM_SHA384
+	[1303]	TLS_CHACHA20_POLY1305_SHA256
+	[C02C]	TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+	[C02B]	TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+	[CCA9]	TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256
+	[C030]	TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	[C02F]	TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+	[CCA8]	TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256
+	[C00A]	TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
+	[C009]	TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
+	[C014]	TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+	[C013]	TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+	[009D]	TLS_RSA_WITH_AES_256_GCM_SHA384
+	[009C]	TLS_RSA_WITH_AES_128_GCM_SHA256
+	[0035]	TLS_RSA_WITH_AES_256_CBC_SHA
+	[002F]	TLS_RSA_WITH_AES_128_CBC_SHA
+	[C008]	TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA
+	[C012]	TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+	[000A]	SSL_RSA_WITH_3DES_EDE_SHA
+	[5600]	TLS_FALLBACK_SCSV
+
+Compression: 
+	[00]	NO_COMPRESSION
+
+

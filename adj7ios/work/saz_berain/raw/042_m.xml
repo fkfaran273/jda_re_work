@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="42" BitFlags="2100">
+  <SessionTimers ClientConnected="2026-05-20T09:50:03.1669734+05:30" ClientBeginRequest="2026-05-20T09:50:03.1749899+05:30" GotRequestHeaders="2026-05-20T09:50:03.1749899+05:30" ClientDoneRequest="2026-05-20T09:50:03.1749899+05:30" GatewayTime="0" DNSTime="859" TCPConnectTime="514" HTTPSHandshakeTime="1023" ServerConnected="2026-05-20T09:50:04.5485025+05:30" FiddlerBeginRequest="2026-05-20T09:50:04.5485025+05:30" ServerGotRequest="2026-05-20T09:50:04.5485025+05:30" ServerBeginResponse="0001-01-01T00:00:00" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="0001-01-01T00:00:00" ClientBeginResponse="2026-05-20T09:50:04.5485025+05:30" ClientDoneResponse="2026-05-20T09:50:04.5485025+05:30" />
+  <PipeInfo />
+  <TunnelInfo BytesEgress="0" BytesIngress="0" />
+  <SessionFlags>
+    <SessionFlag N="ui-color" V="Green" />
+    <SessionFlag N="https-client-version" V="Tls12" />
+    <SessionFlag N="x-egressport" V="56274" />
+    <SessionFlag N="https-client-snihostname" V="consent.adjust.com" />
+    <SessionFlag N="https-server-cipher" V="Aes256 256bits" />
+    <SessionFlag N="x-responsebodytransferlength" V="0" />
+    <SessionFlag N="x-clientip" V="::ffff:192.168.1.12" />
+    <SessionFlag N="x-clientport" V="54421" />
+    <SessionFlag N="https-server-version" V="Tls12" />
+    <SessionFlag N="ui-oldcolor" V="Gray" />
+    <SessionFlag N="ui-bold" V="user-marked" />
+    <SessionFlag N="x-hostip" V="185.151.204.201" />
+    <SessionFlag N="https-client-sessionid" V="23 74 B8 83 27 9B 80 3D 83 7B FC 71 0E 79 34 C6 7B 11 CE E6 1E D0 EB C3 12 F6 35 51 F0 61 7A 1D" />
+    <SessionFlag N="ui-comments" V="app to open" />
+  </SessionFlags>
+</Session>

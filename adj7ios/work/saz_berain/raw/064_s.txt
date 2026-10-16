@@ -1,0 +1,15 @@
+HTTP/1.1 200 OK
+P3P: policyref="https://www.googleadservices.com/pagead/p3p.xml", CP="NOI DEV PSA PSD IVA IVD OTP OUR OTR IND OTC"
+Timing-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+Content-Type: application/json; charset=UTF-8
+X-Content-Type-Options: nosniff
+Content-Disposition: attachment; filename="f.txt"
+Date: Wed, 20 May 2026 04:20:17 GMT
+Server: cafe
+X-XSS-Protection: 0
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Content-Length: 249
+
+{"mv_ga4f": "AD8Dr_GGq_tbW4PAwGq0mwNS4bkHQB2r5QLjn8zpm8nXPW42B19w9CDtJNqMLuAcua3APzBO_qFtet7laFLwiGvgcTcsYz2ojaZLChENGFBa-HGFlfev_o788M41NCaW",
+        "mv_aaps": "AD8Dr_GSok5fswzlbo3D4yF55RstEA7yuyAviZpp-bpSpRalLFiWkOfs5HkmxgvXyc5yoDKeU3l9ifYIiv8"}

@@ -1,0 +1,23 @@
+{
+ "mode": "live",
+ "app": "com.berain.berain",
+ "idfa": "7D742A96-B4A4-4E27-80FD-75E80DC9F93F",
+ "idfv": "92B1A8D9-AF44-43B0-8386-C5420F5428BA",
+ "dedupe": "9653e942-6e50-41c7-9b6a-e53e129e442d",
+ "reftag": null,
+ "click_second": 1791558700,
+ "adid": "5c3da7d30109a1fd38dbaefcae97931b",
+ "session_ask_in": 2000,
+ "attribution": {
+  "tracker_token": "20fholu3",
+  "tracker_name": "TMV Media::TMV May_Derby::NP_SH_Q",
+  "network": "TMV Media",
+  "campaign": "TMV May_Derby",
+  "adgroup": "NP_SH_Q",
+  "engagement_time": "2026-10-09T15:11:48Z",
+  "installed_at": "2026-10-09T15:12:03Z",
+  "first_session_time": "2026-10-09T15:12:03Z",
+  "is_reattributed": false,
+  "is_redownload_install": false
+ }
+}

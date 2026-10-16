@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+Content-Type: text/plain; charset=UTF-8
+Date: Wed, 01 Apr 2026 12:00:32 GMT
+Expires: Wed, 01 Apr 2026 12:00:32 GMT
+Cache-Control: private, max-age=0
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+Server: GSE
+Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+Content-Length: 148
+
+token=clrbFqvrdUNEt4BdZuiSlY:APA91bG9HxMrTPUEbb9Me5PmmauLjCMQuqUEyMyPtxJ7iuZSAl4em0t_WqGrdUWfILXExNOgV3Nsvxk_fVvbwjnlXow71ZtXFjjDxJOhjxFvON7H11ROD_Q

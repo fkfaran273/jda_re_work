@@ -1,0 +1,11 @@
+POST https://app.tr.adjust.com/session HTTP/1.1
+Client-SDK: android5.0.0
+Authorization: Signature signature="MZIR7wZf6Q48CTVQMx0mkTh6LOdPSJFzjjYkD4KZah9nEPQAsyEOclcPcdKCi3pB2+0XL95o+gK0UOAk6lRIFu873JEgVMiWcqeM5qovxEeH/yHP/0W1Y7pSljBfDdGsAqaikNPzA/PB37eOFvIZziVB12FEGGrUeozt8/+wwBq0P+PUawQ0G6cF3DPS3qYKXeldZM50MvO4JkGW3V9kKU5Er4/gFeYBlDTQkd7jsG9eiR+9pBe5kvPzIDu24kqA",adj_signing_id="1500000",algorithm="adj9",headers_id="11",native_version="5.5.0",adj_verification="KlcAG2cbAAsKSl1KVi0FGiJbDHNZTQpZARUDHRFFUgV2HA=="
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; GM1901 Build/SKQ1.211113.001)
+Host: app.tr.adjust.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 957
+
+gps_adid_attempt=1&country=US&api_level=31&hardware_name=GM1901_11_H.41&app_version=1.8.6&app_token=y5qirhnmpxj4&installed_at=2026-10-16T14%3A59%3A16.081Z%2B0530&created_at=2026-10-16T14%3A59%3A35.605Z%2B0530&wait_total=0.0&device_type=phone&language=en&gps_adid=d4ba96a1-88a7-424a-ab4e-690885714b30&foreground=1&connectivity_type=1&device_manufacturer=OnePlus&display_width=1080&device_name=GM1901&needs_response_details=1&os_build=SKQ1.211113.001&updated_at=2026-10-16T14%3A59%3A16.081Z%2B0530&cpu_type=arm64-v8a&retry_count=0&screen_size=normal&screen_format=long&last_error=0&gps_adid_src=service&wait_time=0.0&os_version=12&first_error=0&android_uuid=f5bc5772-c8f0-4f86-abbd-e1711f0c4166&sent_at=2026-10-16T14%3A59%3A35.621Z%2B0530&offline_mode_enabled=0&environment=production&screen_density=high&attribution_deeplink=1&session_count=1&display_height=2215&package_name=tr.com.hsbc.hsbcturkey&os_name=android&ui_mode=1&enqueue_size=0&tracking_enabled=1

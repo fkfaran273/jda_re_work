@@ -1,0 +1,16 @@
+HTTP/1.1 202 Accepted
+Date: Wed, 01 Apr 2026 12:00:33 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 129
+Connection: keep-alive
+access-control-allow-headers: SDK-Version,Content-Type,Origin,Authorization,OneSignal-Subscription-Id
+access-control-allow-origin: *
+traceparent: 00-52b96ab6a411c90d292e3131f8a13980-76c615cce052f38c-00
+Server: cloudflare
+via: 1.1 google
+alt-svc: h3=":443"; ma=86400
+cf-cache-status: DYNAMIC
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+CF-RAY: 9e576f20e9c15518-DEL
+
+{"properties":{"country":"IN","last_active":1775044833,"ip":"115.245.205.68"},"ryw_token":"10000000005316670630","ryw_delay":500}

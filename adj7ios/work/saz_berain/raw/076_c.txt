@@ -1,0 +1,14 @@
+POST https://berain.com.sa/oms/api/v4/companysetting HTTP/1.1
+Host: berain.com.sa
+Content-Type: application/json
+Content-Length: 72
+Accept: */*
+Connection: keep-alive
+language: en
+Accept-Encoding: br;q=1.0, gzip;q=0.9, deflate;q=0.8
+User-Agent: Berain-Swift/4.4.0 (com.berain.berain; build:1; iOS 16.7.12) Alamofire/5.10.0
+Accept-Language: ar;q=1.0
+Authorization: 060fac9a80afec9b95eb292ad884c5f5
+AppVersion: 4.4.0
+
+{"user_id":"","location_date":"2024-10-04 14:15:42","country_id":"2229"}

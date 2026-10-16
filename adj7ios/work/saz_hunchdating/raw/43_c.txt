@@ -1,0 +1,194 @@
+POST https://analytics.us.tiktok.com/api/v1/app_sdk/monitor HTTP/1.1
+Host: analytics.us.tiktok.com
+Content-Type: application/json
+Connection: keep-alive
+X-TT-Signature: nLbkNm67QbUJmh4VqBopM8IstpL507+Hbub+OgekuNI=
+Accept: */*
+Accept-Language: en-GB,en;q=0.9
+Content-Length: 5752
+Accept-Encoding: gzip, deflate, br
+User-Agent: hunch/3 CFNetwork/1410.1 Darwin/22.6.0
+
+{
+  "batch" : [
+    {
+      "app" : {
+        "build" : "3",
+        "anonymous_id" : "3079F5A1-7D26-402A-9014-AE0045106497",
+        "id" : "6444654663",
+        "tiktok_app_id" : "7387998030571536385",
+        "version" : "3.0.1",
+        "app_session_id" : "DCFE6198-1472-4119-89B3-BB2342303564",
+        "name" : "hunch",
+        "app_namespace" : "social.hunch.app"
+      },
+      "monitor" : {
+        "meta" : {
+          "ts" : 1775044828700
+        },
+        "type" : "metric",
+        "name" : "init_start",
+        "extra" : {
+
+        }
+      },
+      "device" : {
+        "locale" : "en-BY\/BY",
+        "idfa" : "00000000-0000-0000-0000-000000000000",
+        "platform" : "ios",
+        "idfv" : "97DEDAE8-ECC8-4F16-9EDD-01F464B7D1D6",
+        "model" : "iPhone10,1",
+        "version" : "16.7.15",
+        "att_status" : "NOT_DETERMINED",
+        "ip" : "192.168.29.235",
+        "user_agent" : "Mozilla\/5.0 (iPhone; CPU iPhone OS 16_7_15 like Mac OS X) AppleWebKit\/605.1.15 (KHTML, like Gecko) Mobile\/15E148 hunch\/3.0.1 iPhone10,1 iOS\/16.7.15 CFNetwork\/1410.1 Darwin\/22.6.0 Resolution\/375*667"
+      },
+      "timestamp" : "2026-04-01T12:00:29Z",
+      "log_extra" : {
+
+      },
+      "library" : {
+        "name" : "tiktok\/tiktok-business-ios-sdk",
+        "version" : "1.5.1",
+        "smart_sdk_client_flag" : true
+      }
+    },
+    {
+      "app" : {
+        "build" : "3",
+        "anonymous_id" : "3079F5A1-7D26-402A-9014-AE0045106497",
+        "id" : "6444654663",
+        "tiktok_app_id" : "7387998030571536385",
+        "version" : "3.0.1",
+        "app_session_id" : "DCFE6198-1472-4119-89B3-BB2342303564",
+        "name" : "hunch",
+        "app_namespace" : "social.hunch.app"
+      },
+      "monitor" : {
+        "meta" : {
+          "latency" : 1220,
+          "ts" : 1775044829920
+        },
+        "type" : "metric",
+        "name" : "init_end",
+        "extra" : {
+
+        }
+      },
+      "device" : {
+        "locale" : "en-BY\/BY",
+        "idfa" : "00000000-0000-0000-0000-000000000000",
+        "platform" : "ios",
+        "idfv" : "97DEDAE8-ECC8-4F16-9EDD-01F464B7D1D6",
+        "model" : "iPhone10,1",
+        "version" : "16.7.15",
+        "att_status" : "NOT_DETERMINED",
+        "ip" : "192.168.29.235",
+        "user_agent" : "Mozilla\/5.0 (iPhone; CPU iPhone OS 16_7_15 like Mac OS X) AppleWebKit\/605.1.15 (KHTML, like Gecko) Mobile\/15E148 hunch\/3.0.1 iPhone10,1 iOS\/16.7.15 CFNetwork\/1410.1 Darwin\/22.6.0 Resolution\/375*667"
+      },
+      "timestamp" : "2026-04-01T12:00:29Z",
+      "log_extra" : {
+
+      },
+      "library" : {
+        "name" : "tiktok\/tiktok-business-ios-sdk",
+        "version" : "1.5.1",
+        "smart_sdk_client_flag" : true
+      }
+    },
+    {
+      "app" : {
+        "build" : "3",
+        "anonymous_id" : "3079F5A1-7D26-402A-9014-AE0045106497",
+        "id" : "6444654663",
+        "tiktok_app_id" : "7387998030571536385",
+        "version" : "3.0.1",
+        "app_session_id" : "DCFE6198-1472-4119-89B3-BB2342303564",
+        "name" : "hunch",
+        "app_namespace" : "social.hunch.app"
+      },
+      "monitor" : {
+        "meta" : {
+          "success" : true,
+          "ts" : 1775044828702,
+          "log_id" : "202604011200291C81ACF1339797A273BC",
+          "latency" : 1224
+        },
+        "type" : "metric",
+        "name" : "config_api",
+        "extra" : {
+
+        }
+      },
+      "device" : {
+        "locale" : "en-BY\/BY",
+        "idfa" : "00000000-0000-0000-0000-000000000000",
+        "platform" : "ios",
+        "idfv" : "97DEDAE8-ECC8-4F16-9EDD-01F464B7D1D6",
+        "model" : "iPhone10,1",
+        "version" : "16.7.15",
+        "att_status" : "NOT_DETERMINED",
+        "ip" : "192.168.29.235",
+        "user_agent" : "Mozilla\/5.0 (iPhone; CPU iPhone OS 16_7_15 like Mac OS X) AppleWebKit\/605.1.15 (KHTML, like Gecko) Mobile\/15E148 hunch\/3.0.1 iPhone10,1 iOS\/16.7.15 CFNetwork\/1410.1 Darwin\/22.6.0 Resolution\/375*667"
+      },
+      "timestamp" : "2026-04-01T12:00:29Z",
+      "log_extra" : {
+
+      },
+      "library" : {
+        "name" : "tiktok\/tiktok-business-ios-sdk",
+        "version" : "1.5.1",
+        "smart_sdk_client_flag" : true
+      }
+    },
+    {
+      "app" : {
+        "build" : "3",
+        "anonymous_id" : "3079F5A1-7D26-402A-9014-AE0045106497",
+        "id" : "6444654663",
+        "tiktok_app_id" : "7387998030571536385",
+        "version" : "3.0.1",
+        "app_session_id" : "DCFE6198-1472-4119-89B3-BB2342303564",
+        "name" : "hunch",
+        "app_namespace" : "social.hunch.app"
+      },
+      "monitor" : {
+        "meta" : {
+          "size" : 2,
+          "ts" : 1775044843708,
+          "interval" : 15,
+          "type" : "TIMER",
+          "latency" : 6
+        },
+        "type" : "metric",
+        "name" : "flush",
+        "extra" : {
+
+        }
+      },
+      "device" : {
+        "locale" : "en-BY\/BY",
+        "idfa" : "00000000-0000-0000-0000-000000000000",
+        "platform" : "ios",
+        "idfv" : "97DEDAE8-ECC8-4F16-9EDD-01F464B7D1D6",
+        "model" : "iPhone10,1",
+        "version" : "16.7.15",
+        "att_status" : "NOT_DETERMINED",
+        "ip" : "192.168.29.235",
+        "user_agent" : "Mozilla\/5.0 (iPhone; CPU iPhone OS 16_7_15 like Mac OS X) AppleWebKit\/605.1.15 (KHTML, like Gecko) Mobile\/15E148 hunch\/3.0.1 iPhone10,1 iOS\/16.7.15 CFNetwork\/1410.1 Darwin\/22.6.0 Resolution\/375*667"
+      },
+      "timestamp" : "2026-04-01T12:00:43Z",
+      "log_extra" : {
+
+      },
+      "library" : {
+        "name" : "tiktok\/tiktok-business-ios-sdk",
+        "version" : "1.5.1",
+        "smart_sdk_client_flag" : true
+      }
+    }
+  ],
+  "timestamp" : "2026-04-01T12:00:43Z",
+  "event_source" : "APP_EVENTS_SDK",
+  "tiktok_app_id" : 7387998030571536385
+}

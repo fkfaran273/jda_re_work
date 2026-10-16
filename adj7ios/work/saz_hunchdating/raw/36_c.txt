@@ -1,0 +1,12 @@
+POST https://api-adservices.apple.com/api/v1/ HTTP/1.1
+Host: api-adservices.apple.com
+Content-Type: text/plain
+User-Agent: hunch/3 CFNetwork/1410.1 Darwin/22.6.0
+Connection: keep-alive
+Accept: */*
+Accept-Language: en-GB,en;q=0.9
+Content-Length: 560
+Accept-Encoding: gzip, deflate, br
+Cache-Control: no-cache
+
+3eVI5qmptWVpxPKYgiy2WxKmhjxUR29HSTU5SixaYnwtlgB1rppDkgLlHnNyk7iVMKi6M5BmLShjS7WhF7Fds14zGltLDQdnPgAAAVADAAAAnQAAAIC9RshID8QiQReFwrIa6Qfnu9Tqwb9D8/cGFHrVnHQTSJT4Fu/iQcU0XbOPVEXlTTPPMjIjkpzITe/AzQGje3p31EDRTUTaxhES0Enm1mF3fnmoLu3Oeu9WA1Qe3QcB+EKcx7gDzMMZl9BGs+4adJhN27/67Q2IJ5ZA9f8P85E5XAAAAB3RLLwR+3Zn1kKERoJQvdeVXKhZWAtmSWgLzYErcAAAAJ8BDHUyrQ85FvcIsvWcMV5GTGXcyZ8AAACGCALFPE9usXtpTBZv8mytxgALaco6H25bmYG28xNBqXK6Qzd+VgZ105Gnb57VIat4Q2KdhEK1EVDL6BcWtKNpgpWNKrWaMODRYUdqiQk10ya38qJfEGJSSC+91tln4a/52ueT3HMhp4Qaez2lbvbWW5RuFskWjxOBwQ4N44acFerBAgtdA94AAAABBEcRAAA=

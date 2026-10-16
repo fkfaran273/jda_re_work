@@ -1,0 +1,9 @@
+GET https://ep2.facebook.com/v17.0/1237534153460824/server_domain_infos?fields=&format=json&include_headers=false&sdk=ios HTTP/1.1
+Host: ep2.facebook.com
+Content-Type: application/json
+Accept: */*
+User-Agent: FBiOSSDK.18.0.0
+Accept-Language: en-GB,en;q=0.9
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+

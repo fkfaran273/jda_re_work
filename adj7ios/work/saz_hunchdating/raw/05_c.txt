@@ -1,0 +1,12 @@
+POST https://sdk-03.moengage.com/v1/cards/get HTTP/1.1
+Host: sdk-03.moengage.com
+Content-Type: application/json
+Connection: keep-alive
+Accept: */*
+MOE-APPKEY: WTV8ZYNUNWXAFP9F3VG9D2CT
+Accept-Language: en-GB,en;q=0.9
+Content-Length: 649
+Accept-Encoding: gzip, deflate, br
+User-Agent: hunch/3 CFNetwork/1410.1 Darwin/22.6.0
+
+{"query_params":{"model_name":"iPhone 8","unique_id":"4994D34F-B081-47DE-ACB0-4F6D1DA318BA-1775044827","app_ver":"3.0.1","sdk_ver":"9.22.2","push_id":"79a6179fad40e4835c28924b31e3647fbe8d04ad18280580aad4963faa4eb722","device_ts":"1775044828342","device_tz_offset":"10800000","device_unique_id":"P-77534AED-7818-42C8-83AE-0AEE3F402EF3-1775044827","model":"iPhone","device_tz":"Europe\/Minsk","os_ver":"16.7.15","app_id":"WTV8ZYNUNWXAFP9F3VG9D2CT","os":"iOS"},"platforms":["ios"],"request_id":"1775044828-3D19C369-B9CD-4777-BE82-A09FB55409C4","unique_id":"4994D34F-B081-47DE-ACB0-4F6D1DA318BA-1775044827","last_updated_time":0,"prev_sync_card_ids":[]}

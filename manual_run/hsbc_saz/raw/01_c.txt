@@ -1,0 +1,15 @@
+POST https://firebaseinstallations.googleapis.com/v1/projects/hsbc-96b3b/installations HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+Cache-Control: no-cache
+X-Android-Package: tr.com.hsbc.hsbcturkey
+x-firebase-client: H4sIAAAAAAAA_6tWykhNLCpJSk0sKVayio7VUSpLLSrOzM9TslIyUqoFAFyivEQfAAAA
+X-Android-Cert: 5F432709857DE074ED38F2E7ACB57E3363579910
+x-goog-api-key: AIzaSyDz0EbK7-UgukaAhr2I1vhjRGs1dGkOkwI
+User-Agent: Dalvik/2.1.0 (Linux; U; Android 12; GM1901 Build/SKQ1.211113.001)
+Host: firebaseinstallations.googleapis.com
+Connection: Keep-Alive
+Accept-Encoding: gzip
+Content-Length: 129
+
+{"fid":"dapnb6T8RLGyL7Mctb5RJ0","appId":"1:387940012564:android:63020993aad1ef37","authVersion":"FIS_v2","sdkVersion":"a:17.2.0"}

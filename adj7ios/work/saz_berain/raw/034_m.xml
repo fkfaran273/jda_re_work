@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Session SID="34" BitFlags="2100">
+  <SessionTimers ClientConnected="2026-05-20T09:49:59.4580223+05:30" ClientBeginRequest="2026-05-20T09:49:59.4580223+05:30" GotRequestHeaders="2026-05-20T09:49:59.4580223+05:30" ClientDoneRequest="2026-05-20T09:49:59.4580223+05:30" GatewayTime="0" DNSTime="383" TCPConnectTime="403" HTTPSHandshakeTime="915" ServerConnected="2026-05-20T09:50:00.2452741+05:30" FiddlerBeginRequest="2026-05-20T09:50:00.2452741+05:30" ServerGotRequest="2026-05-20T09:50:00.2452741+05:30" ServerBeginResponse="0001-01-01T00:00:00" GotResponseHeaders="0001-01-01T00:00:00" ServerDoneResponse="0001-01-01T00:00:00" ClientBeginResponse="2026-05-20T09:50:00.2452741+05:30" ClientDoneResponse="2026-05-20T09:50:00.2452741+05:30" />
+  <PipeInfo />
+  <TunnelInfo BytesEgress="0" BytesIngress="0" />
+  <SessionFlags>
+    <SessionFlag N="ui-color" V="Green" />
+    <SessionFlag N="https-client-version" V="Tls12" />
+    <SessionFlag N="x-egressport" V="56271" />
+    <SessionFlag N="https-client-snihostname" V="p67-fmf.icloud.com" />
+    <SessionFlag N="https-server-cipher" V="Aes256 256bits" />
+    <SessionFlag N="x-responsebodytransferlength" V="0" />
+    <SessionFlag N="x-clientip" V="::ffff:192.168.1.12" />
+    <SessionFlag N="x-clientport" V="54417" />
+    <SessionFlag N="https-server-version" V="Tls12" />
+    <SessionFlag N="ui-oldcolor" V="Gray" />
+    <SessionFlag N="ui-bold" V="user-marked" />
+    <SessionFlag N="x-hostip" V="17.248.211.69" />
+    <SessionFlag N="https-client-sessionid" V="B6 58 A9 59 C7 1C 5F F4 1B 01 76 5C 5A B0 9F 90 78 4F 95 C6 93 1D 29 63 EF 30 DA DD E5 6A 5B 12" />
+    <SessionFlag N="ui-comments" V="app to open" />
+  </SessionFlags>
+</Session>

@@ -1,0 +1,18 @@
+HTTP/1.1 204 Register Service Successful. Queue Empty.
+Server: AppleHttpServer/f4f0a8db81a6
+Date: Wed, 20 May 2026 04:20:01 GMT
+Content-Type: application/json; charset=UTF-8
+Connection: keep-alive
+X-Responding-Instance: fmipservice:2:prod-p67-fmipservice--partial-6b85444fbc-ht66x:80:2599B59389:5aa2b6c6c0b7
+X-Robots-Tag: noindex, noarchive, nosnippet, nofollow
+X-Responding-Server: prod-p67-fmipservice--partial-6b85444fbc-ht66x_99
+X-Responding-Partition: p67
+X-Apple-DeviceRestart-Register-Interval: 86400
+Strict-Transport-Security: max-age=31536000; includeSubDomains;
+x-apple-user-partition: 67
+via: xrail:icloud-xrail-group123-ext-7f65d79899-p5wnj:8301:26R201:grp123,631194250daa17e24277dea86cf30319:ef9397529575fb8941d3d07a703e0d79:gbmnc1
+X-Apple-Request-UUID: d730c825-1247-4a02-a655-91407c56d711
+access-control-expose-headers: X-Apple-Request-UUID,Via
+alt-svc: h3=":443"; ma=2592000
+X-Apple-Edge-Response-Time: 361
+

@@ -1,0 +1,8 @@
+GET https://www.gstatic.com/maps/res/CompactLegend-NavigationTunnel-EnhancedNavStyleHoldbackForGeoD-88a6fc2aa38b8a544fb9ed577c4ebb11 HTTP/1.1
+Host: www.gstatic.com
+Accept: */*
+Accept-Language: ar
+Connection: keep-alive
+Accept-Encoding: gzip, deflate, br
+User-Agent: com.berain.berain/4.4.0 GMS-SDK/9.4.0.0 iPhone/16.7.12 hw/iPhone10_1 (gzip)
+

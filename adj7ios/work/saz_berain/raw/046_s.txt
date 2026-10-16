@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+content-type: application/json; charset=utf-8
+date: Wed, 20 May 2026 04:20:05 GMT
+content-length: 423
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-robots-tag: noindex
+
+{"app_token":"xb80fzavg0zk","adid":"1320196591db12584052ce8e77c6c76b","attribution":{"tracker_token":"unattr","tracker_name":"No User Consent","network":"No User Consent","engagement_time":"0001-01-01T00:00:00Z","installed_at":"2026-05-20T04:19:57Z","first_session_time":"2026-05-20T04:19:57Z","is_reattributed":false,"is_redownload_install":false},"skadn_conv_value":0,"skadn_coarse_value":"low","skadn_lock_window":false}

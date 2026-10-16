@@ -1,0 +1,17 @@
+HTTP/1.1 201 Created
+Date: Wed, 01 Apr 2026 12:00:29 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 420
+Connection: keep-alive
+access-control-allow-headers: SDK-Version,Content-Type,Origin,Authorization,OneSignal-Subscription-Id
+access-control-allow-origin: *
+traceparent: 00-1429f0f6528e1a741ad6c4d4f2176c27-7188b015f05dfedd-00
+Server: cloudflare
+via: 1.1 google
+alt-svc: h3=":443"; ma=86400
+cf-cache-status: DYNAMIC
+set-cookie: __cf_bm=wd2TJ9XE55ffSeqBM4S.YtUok7TT7pjTk_1rhvGs_jE-1775044828.9704921-1.0.1.1-6g0hH0hJfvrlOgQMRg5_ihGgegs297jYihGHB9hwukiSTSjjaQm4keiNIEsonMFW8oNHgj7fXvyf3duGBctQ6UqYof6GLZmmvKDH_ANh2vIbXl3MYtWVcIM7Nt_QXbQW; HttpOnly; Secure; Path=/; Domain=onesignal.com; Expires=Wed, 01 Apr 2026 12:30:29 GMT
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+CF-RAY: 9e576f0508fa5518-DEL
+
+{"properties":{"language":"en","timezone_id":"Europe/Minsk","country":"IN","ip":"115.245.205.68"},"identity":{"onesignal_id":"1bade7cb-40b0-4836-9bfd-c67e5ddc15bb"},"subscriptions":[{"id":"088dc28d-173c-4330-a1da-8f4dda7be0cb","app_id":"b100908f-0d29-4e4e-98e9-c95cf4a2defd","type":"iOSPush","token":"79a6179fad40e4835c28924b31e3647fbe8d04ad18280580aad4963faa4eb722"}],"ryw_token":"10000000005316670475","ryw_delay":500}

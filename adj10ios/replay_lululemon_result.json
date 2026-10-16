@@ -1,0 +1,44 @@
+{
+ "G": {
+  "http": 200,
+  "json": {
+   "app_token": "mo6lmgz7xedc",
+   "adid": "9d755291bd3d4180be3e7c0c9fe4c160",
+   "attribution": {
+    "tracker_token": "1vpot25n",
+    "tracker_name": "Organic",
+    "network": "Organic",
+    "engagement_time": "0001-01-01T00:00:00Z",
+    "installed_at": "2026-10-08T12:43:16Z",
+    "first_session_time": "2026-10-08T12:43:16Z",
+    "is_reattributed": false,
+    "is_redownload_install": false
+   }
+  }
+ },
+ "O": {
+  "http": 200,
+  "json": {
+   "app_token": "mo6lmgz7xedc",
+   "adid": "9d755291bd3d4180be3e7c0c9fe4c160",
+   "attribution": {
+    "tracker_token": "1vpot25n",
+    "tracker_name": "Organic",
+    "network": "Organic",
+    "engagement_time": "0001-01-01T00:00:00Z",
+    "installed_at": "2026-10-08T12:43:16Z",
+    "first_session_time": "2026-10-08T12:43:16Z",
+    "is_reattributed": false,
+    "is_redownload_install": false
+   }
+  }
+ },
+ "ARM_session": {
+  "http": 400,
+  "json": {
+   "app_token": "mo6lmgz7xedc",
+   "adid": "9d755291bd3d4180be3e7c0c9fe4c160",
+   "error": "Session failed (request check interval failed (Ignoring too frequent session. Last session: 2026-10-08T12:43:16, this session: 2026-10-08T12:50:15, interval: 6m59s, min interval: 20m))"
+  }
+ }
+}
